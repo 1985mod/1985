@@ -1,0 +1,48 @@
+add_namespace = KOR_unification
+
+country_event = {
+	id = KOR_unification.1
+	title = KOR_unification.1.t
+	desc = KOR_unification.1.desc
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = KOR
+				OR = {
+					has_government = communism
+					controls_state = 525
+				}
+			}
+			AND = {
+				tag = PRK
+				OR = {
+					has_government = democratic
+					controls_state = 527
+				}
+			}
+			
+		}
+	}
+
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				tag = KOR
+				has_government = communism
+			}
+			PRK = { transfer_state = 525 }
+			525 = { add_core_of = PRK }
+		}
+		if = {
+			limit = {
+				tag = PRK
+				has_government = democratic
+			}
+			KOR = { transfer_state = 527 }
+			527 = { add_core_of = KOR }
+		}
+	}
+}

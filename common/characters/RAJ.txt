@@ -1,0 +1,24 @@
+characters = {
+	RAJ_Rajil_Gandi  ={
+		name = RAJ_Rajil_Gandi
+		portraits ={
+			civilian ={
+				large = GFX_portrait_Rajil_Gandi
+			}
+        
+			army = {
+				large = GFX_portrait_Rajil_Gandi
+				small = GFX_portrait_Rajil_Gandii_small
+			}
+
+		}
+		country_leader={
+			ideology = despotism
+			traits = {  }
+			expire = "1999.1.1.1"
+			
+		}
+
+		id = -1
+	}
+}

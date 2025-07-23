@@ -1,0 +1,20 @@
+characters = {
+	CHI_chiang_ching_kuo = {
+		name = CHI_chiang_ching_kuo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_chiang_ching_kuo
+			}
+			army = {
+				large = GFX_portrait_CHI_chiang_ching_kuo
+				small = GFX_portrait_CHI_chiang_ching_kuo_small
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2020.3.10.1"
+			id = -90
+		}
+	}
+}

@@ -1,0 +1,281 @@
+add_namespace = SOV_collapse
+
+### Единый ивент: Распад СССР (14 республик + Чечня)
+country_event = {
+    id = SOV_collapse.1
+    title = SOV_collapse.1.t
+    desc = SOV_collapse.1.desc
+    hidden = yes
+
+    trigger = {
+        tag = SOV
+        has_civil_war = no
+        date > 1990.03.11
+		has_country_flag = gorbachev
+    }
+
+    immediate = {
+        # Выход из ОВД (Польша, Чехия, ГДР, Венгрия, Румыния, Болгария)
+        if = {
+            limit = {
+                date > 1990.03.11
+                NOT = { has_country_flag = collapse_OVD }
+            }
+			
+            set_country_flag = collapse_right_now
+
+			every_country = {
+			    limit = { is_in_faction_with = SOV }
+			    leave_faction = yes
+			}
+
+			set_autonomy = { 
+				target = POL
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = CZE
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = DDR
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = { 
+				target = HUN
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = ROM
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = BUL
+				autonomy_state = autonomy_free
+			}
+
+            set_country_flag = collapse_OVD
+        }
+
+        # Прибалтика — Литва (март 1990)
+        if = {
+            limit = {
+                date > 1990.03.11
+                NOT = { has_country_flag = collapse_LIT }
+            }
+            LIT = { transfer_state = 11 }
+            LIT = { transfer_state = 784 }
+            LIT = { transfer_state = 814 }
+            LIT = { transfer_state = 815 }
+            LIT = { transfer_state = 188 }
+            LIT = { transfer_state = 189 }
+            set_country_flag = collapse_LIT
+        }
+
+        # Прибалтика — Латвия (май 1990)
+        if = {
+            limit = {
+                date > 1990.05.04
+                NOT = { has_country_flag = collapse_LAT }
+            }
+            LAT = { transfer_state = 12 }
+            LAT = { transfer_state = 808 }
+            LAT = { transfer_state = 809 }
+            LAT = { transfer_state = 810 }
+            LAT = { transfer_state = 190 }
+            set_country_flag = collapse_LAT
+        }
+
+        # Прибалтика — Эстония (март 1991)
+        if = {
+            limit = {
+                date > 1991.03.20
+                NOT = { has_country_flag = collapse_EST }
+            }
+            EST = { transfer_state = 13 }
+            EST = { transfer_state = 811 }
+            EST = { transfer_state = 812 }
+            EST = { transfer_state = 813 }
+            EST = { transfer_state = 191 }
+            set_country_flag = collapse_EST
+        }
+
+        # Украина (август 1991)
+        if = {
+            limit = {
+                date > 1991.08.24
+                NOT = { has_country_flag = collapse_UKR }
+            }
+            UKR = { transfer_state = 73 }
+            UKR = { transfer_state = 80 }
+            UKR = { transfer_state = 89 }
+            UKR = { transfer_state = 91 }
+            UKR = { transfer_state = 93 }
+            UKR = { transfer_state = 137 }
+            UKR = { transfer_state = 192 }
+            UKR = { transfer_state = 193 }
+            UKR = { transfer_state = 196 }
+            UKR = { transfer_state = 197 }
+            UKR = { transfer_state = 198 }
+            UKR = { transfer_state = 199 }
+            UKR = { transfer_state = 200 }
+            UKR = { transfer_state = 201 }
+            UKR = { transfer_state = 202 }
+            UKR = { transfer_state = 203 }
+            UKR = { transfer_state = 221 }
+            UKR = { transfer_state = 225 }
+            UKR = { transfer_state = 226 }
+            UKR = { transfer_state = 227 }
+            UKR = { transfer_state = 228 }
+            UKR = { transfer_state = 259 }
+            UKR = { transfer_state = 766 }
+            UKR = { transfer_state = 834 }
+            set_country_flag = collapse_UKR
+        }
+
+        # Беларусь (август 1991)
+        if = {
+            limit = {
+                date > 1991.08.25
+                NOT = { has_country_flag = collapse_BLR }
+            }
+            BLR = { transfer_state = 94 }
+            BLR = { transfer_state = 95 }
+            BLR = { transfer_state = 96 }
+            BLR = { transfer_state = 194 }
+            BLR = { transfer_state = 204 }
+            BLR = { transfer_state = 206 }
+            BLR = { transfer_state = 207 }
+            BLR = { transfer_state = 241 }
+            set_country_flag = collapse_BLR
+        }
+
+        # Молдова (август 1991)
+        if = {
+            limit = {
+                date > 1991.08.27
+                NOT = { has_country_flag = collapse_MOL }
+            }
+            MOL = { transfer_state = 78 }
+            set_country_flag = collapse_MOL
+        }
+
+        # Кавказ — Грузия (апрель 1991)
+        if = {
+            limit = {
+                date > 1991.04.09
+                NOT = { has_country_flag = collapse_GEO }
+            }
+            GEO = { transfer_state = 231 }
+            GEO = { transfer_state = 826 }
+            set_country_flag = collapse_GEO
+        }
+
+        # Кавказ — Армения (сентябрь 1991)
+        if = {
+            limit = {
+                date > 1991.09.21
+                NOT = { has_country_flag = collapse_ARM }
+            }
+            ARM = { transfer_state = 230 }
+            set_country_flag = collapse_ARM
+        }
+
+        # Кавказ — Азербайджан (октябрь 1991)
+        if = {
+            limit = {
+                date > 1991.10.18
+                NOT = { has_country_flag = collapse_AZR }
+            }
+            AZR = { transfer_state = 229 }
+            set_country_flag = collapse_AZR
+        }
+
+        # Чечня (ноябрь 1991)
+        if = {
+            limit = {
+                date > 1991.11.01
+                NOT = { has_country_flag = collapse_CHE }
+            }
+            CHE = { transfer_state = 900 }  # Заменить 900 на корректный ID
+            set_country_flag = collapse_CHE
+        }
+
+        # Средняя Азия — Узбекистан (август 1991)
+        if = {
+            limit = {
+                date > 1991.08.31
+                NOT = { has_country_flag = collapse_UZB }
+            }
+            UZB = { transfer_state = 405 }
+            UZB = { transfer_state = 585 }
+            UZB = { transfer_state = 823 }
+            UZB = { transfer_state = 830 }
+            UZB = { transfer_state = 831 }
+            set_country_flag = collapse_UZB
+        }
+
+        # Средняя Азия — Туркменистан (октябрь 1991)
+        if = {
+            limit = {
+                date > 1991.10.27
+                NOT = { has_country_flag = collapse_TMS }
+            }
+            TMS = { transfer_state = 584 }
+            TMS = { transfer_state = 832 }
+            set_country_flag = collapse_TMS
+        }
+
+        # Средняя Азия — Кыргызстан (август 1991)
+        if = {
+            limit = {
+                date > 1991.08.31
+                NOT = { has_country_flag = collapse_KYR }
+            }
+            KYR = { transfer_state = 732 }
+            set_country_flag = collapse_KYR
+        }
+
+        # Средняя Азия — Таджикистан (август 1991)
+        if = {
+            limit = {
+                date > 1991.08.31
+                NOT = { has_country_flag = collapse_TAJ }
+            }
+            TAJ = { transfer_state = 742 }
+            set_country_flag = collapse_TAJ
+        }
+
+        # Казахстан (декабрь 1991)
+        if = {
+            limit = {
+                date > 1991.12.16
+                NOT = { has_country_flag = collapse_KAZ }
+            }
+            KAZ = { transfer_state = 402 }
+            KAZ = { transfer_state = 404 }
+            KAZ = { transfer_state = 406 }
+            KAZ = { transfer_state = 407 }
+            KAZ = { transfer_state = 583 }
+            KAZ = { transfer_state = 586 }
+            KAZ = { transfer_state = 587 }
+            KAZ = { transfer_state = 588 }
+            KAZ = { transfer_state = 589 }
+            KAZ = { transfer_state = 590 }
+            KAZ = { transfer_state = 881 }
+            KAZ = { transfer_state = 882 }
+            set_country_flag = collapse_KAZ
+
+            if = {
+                OR = { has_government = communism }
+                set_cosmetic_tag = SOV_russia
+            }
+            if = {
+                OR = { has_government = neutrality }
+                drop_cosmetic_tag = yes
+            }
+
+            clr_country_flag = collapse_right_now
+        }
+    }
+}

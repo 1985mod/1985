@@ -1,0 +1,30 @@
+{
+    "cwtools.errors.ignorefiles": [
+        "README.txt",
+        "credits.txt",
+        "credits_l_simp_chinese.txt",
+        "reference.txt",
+        "startup_info.txt"
+    ],
+    "cwtools.localisation.languages": [
+        "Russian"
+    ],
+    "hoi4ModUtilities.modFile": "C:\\Users\\danii\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\me\\descriptor.mod",
+    "cwtools.rules_version": "manual",
+    "cwtools.rules_folder": "C:\\Users\\danii\\Documents\\cwtools-hoi4-config-1.15.2",
+    "cwtools.experimental": false,
+    "cwtools.errors.ignore": [
+        "CW263",
+        "CW240",
+        "CW244",
+        "CW113",
+        "CW242",
+        "CW262",
+        "CW264",
+        "CW999",
+        "CW100",
+        "CW249",
+        "CW251",
+        "CW247"
+    ]
+}

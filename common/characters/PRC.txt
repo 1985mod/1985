@@ -1,0 +1,18 @@
+characters = {
+	PRC_li_xiannian ={
+		name = PRC_li_xiannian
+		portraits ={
+			civilian ={
+				large = GFX_portrait_PRC_li_xiannian
+			}
+		}
+		country_leader={
+			ideology = marxism
+			traits = {  }
+			expire = "1999.1.1.1"
+			
+		}
+
+		id = -99
+	}
+}

@@ -1,0 +1,7 @@
+﻿l_english:
+ FACTION_LEADER: "Alliance Leader: §Y$COUNTRY$§!"
+ FACTION_MEMBER: "Alliance member: §Y$COUNTRY$§!"
+ FACTION_CREATED_UNDER_MASTER_TITLE: "Metropolitan Alliance Member"
+ FACTION_CREATED_UNDER_MASTER_MESSAGE: "We joined the $FACTION|H$ Alliance with our metropolis"
+ WARSAW_PACT: "Warsaw Pact Organization"
+ NATO: "North Atlantic Alliance"

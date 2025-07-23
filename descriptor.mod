@@ -1,0 +1,13 @@
+version="1.0.1"
+tags={
+	"Alternative History"
+	"Events"
+	"Gameplay"
+	"Historical"
+	"Ideologies"
+	"National Focuses"
+}
+name="1985"
+picture="thumbnail.png"
+supported_version="1.16.9"
+remote_file_id="3520520901"
