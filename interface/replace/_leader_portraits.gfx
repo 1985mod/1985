@@ -6553,6 +6553,46 @@ spriteTypes = {
 		texturefile = "gfx/leaders/JAP/Portrait_Yasuhiro_Nakasone.dds"
 	}
 
+	spriteType = {
+		name = GFX_portrait_AFN_ahmad_shah_massoud
+		texturefile = "gfx/leaders/AFN/Portrait_Ahmad_Shah_Massoud.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_AFN_babrak_karmal
+		texturefile = "gfx/leaders/AFN/Portrait_Babrak_Karmal.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_AFN_mohammad_najibullah
+		texturefile = "gfx/leaders/AFN/Portrait_Mohammad_Najibullah.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_AFN_mohammed_omar
+		texturefile = "gfx/leaders/AFN/Portrait_Mohammed_Omar.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_AFS_ahmad_shah_massoud
+		texturefile = "gfx/leaders/AFS/Portrait_Ahmad_Shah_Massoud.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_AFS_babrak_karmal
+		texturefile = "gfx/leaders/AFS/Portrait_Babrak_Karmal.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_AFS_mohammad_najibullah
+		texturefile = "gfx/leaders/AFS/Portrait_Mohammad_Najibullah.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_AFS_mohammed_omar
+		texturefile = "gfx/leaders/AFS/Portrait_Mohammed_Omar.dds"
+	}
+
 # DEV
 	spriteType = {
 		name = GFX_portrait_SOV_georgy_zhukov
