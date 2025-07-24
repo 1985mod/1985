@@ -1,0 +1,28 @@
+
+state={
+	id=1017
+	name="STATE_1017"
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			6983 3
+		}
+		add_core_of = BOS
+		add_core_of = SER
+		add_core_of = YUG
+
+	}
+
+	provinces={
+		606 6983 9588 9591 11574
+	}
+	manpower=1569332
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=4.0 
+}
