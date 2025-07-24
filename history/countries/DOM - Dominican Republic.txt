@@ -36,13 +36,13 @@ set_war_support = 0.1
 set_convoys = 5
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservatism
 	last_election = "1934.5.16"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 75
+	conservatism = 75
 	fascism = 5
 	communism = 15
 	neutrality = 10

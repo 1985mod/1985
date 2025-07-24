@@ -83,13 +83,13 @@ set_country_flag = monroe_doctrine
 set_convoys = 5
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservatism
 	last_election = "1931.10.11"
 	election_frequency = 96
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 75
+	conservatism = 75
 	fascism = 5
 	communism = 15
 	neutrality = 10
