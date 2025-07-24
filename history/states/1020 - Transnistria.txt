@@ -7,8 +7,9 @@ state = {
 
 	history = {
 
-		owner = WGR
-		add_core_of = WGR
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = MOL
 
 		victory_points = {
 			13383 5 # Mongu
