@@ -195,10 +195,10 @@ country_event = {
         if = {
             limit = {
                 date > 1991.11.01
-                NOT = { has_country_flag = collapse_CHE }
+                NOT = { has_country_flag = collapse_CIN }
             }
-            CHE = { transfer_state = 900 }  # Заменить 900 на корректный ID
-            set_country_flag = collapse_CHE
+            CIN = { transfer_state = 821 }
+            set_country_flag = collapse_CIN
         }
 
         # Средняя Азия — Узбекистан (август 1991)

@@ -1,20 +1,5 @@
 ﻿capital = 267
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "AFG_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "AFG_1936_nsb"
-}
-
 set_technology = {
 	infantry_weapons = 1
 }
@@ -38,53 +23,22 @@ if = {
 	}
 }
 
+recruit_character = AFN_mohammed_omar
+recruit_character = AFN_ahmad_shah_massoud
+recruit_character = AFN_babrak_karmal
+recruit_character = AFN_mohammad_najibullah
+
+start_civil_war = {
+	ruling_party = communism
+	ideology = neutrality
+	size = 0.5
+	states = { 1005 1006 1008 1009 267 415 }
+}
+
 IF = {
 	limit = {
 		has_dlc = "Graveyard of Empires"
 	}
-	recruit_character = AFG_mohammed_zahir_shah
-	recruit_character = AFG_mohammad_hashim_khan
-	recruit_character = AFG_sardar_shah_wali_khan
-	recruit_character = AFG_abdur_rahim_khan
-	recruit_character = AFG_mahmud_tarzi
-	recruit_character = AFG_mohammed_daoud_khan
-	recruit_character = AFG_abdul_majid_zabuli
-	recruit_character = AFG_abdul_hai_habibi
-	recruit_character = AFG_qiamuddin_khadim
-	recruit_character = AFG_ghulam_yahya_khan_tarzi
-	recruit_character = AFG_ghulam_muhammad_ghobar
-	recruit_character = AFG_turbaz_khan
-	recruit_character = AFG_mohammad_gul_khan_momand
-	recruit_character = AFG_shah_mahmud_khan
-	recruit_character = AFG_amunullah_khan
-	recruit_character = AFG_soraya_tarzi
-	recruit_character = AFG_provisional_government
-	recruit_character = AFG_muhammad_ibrahim_khan
-	recruit_character = AFG_faqir_of_ipi
-	recruit_character = AFG_mazrak_zadran
-	recruit_character = AFG_nisar_muhammad_yousafzai
-	recruit_character = GER_oskar_von_nidermayer
-	recruit_character = AFG_abdurauf_fitrat
-	recruit_character = AFG_fayzulla_xojayev
-	recruit_character = AFG_korsirmat
-	recruit_character = AFG_junaid_khan
-	recruit_character = AFG_sher_khan_nashir
-	recruit_character = AFG_nur_muhammad_taraki
-	recruit_character = AFG_inyatullah_khan
-	recruit_character = AFG_sheikh_omar_mojadidi
-
-	# Generics
-	recruit_character = AFG_generic_army_1
-	recruit_character = AFG_generic_army_2
-	recruit_character = AFG_generic_army_3
-	recruit_character = AFG_generic_army_4
-	recruit_character = AFG_generic_navy_1
-	recruit_character = AFG_generic_navy_2
-	recruit_character = AFG_placeholder_fascist
-	recruit_character = AFG_generic_american_1
-	recruit_character = AFG_generic_american_2
-	recruit_character = AFG_generic_american_3
-	
 	#add_stability = -0.7
 	
 	set_variable = { AFG_electrification_cooldown = 0 }
@@ -97,7 +51,7 @@ IF = {
 	#### Ideas/Modifiers/Variables ####
 
 	add_ideas = AFG_mohammad_zahir_shah_ns
-	add_ideas = AFG_pashtunwali
+	#add_ideas = AFG_pashtunwali
 	add_ideas = AFG_turkish_military_mission
 	# Variables for subsistence economy modifier
 	set_variable = { AFG_economy_production_efficiency_gain_factor = -0.5 }
@@ -209,18 +163,16 @@ IF = {
 	}
 
 	set_politics = {
-		ruling_party = neutrality
+		ruling_party = communism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	
 	set_popularities = {
-		fascism = 10
-		communism = 0
-		democratic = 15
-		neutrality = 75
+		communism = 100
 	}
+
 	set_war_support = 0.1
 
 	set_stability = 0.0
@@ -258,39 +210,16 @@ IF = {
 	limit = {
 		NOT = { has_dlc = "Graveyard of Empires"}
 	}
-	recruit_character = AFG_mohammed_zahir_shah
-	recruit_character = AFG_akram_sattari
-	recruit_character = AFG_yaqub_khan
-	recruit_character = AFG_mihrdil_shahnawaz
-	recruit_character = AFG_sardar_shah_wali_khan
-	recruit_character = AFG_hares_muzafar
-	recruit_character = AFG_asadullah_seraj_khan
-	recruit_character = AFG_gholam_wali
-	recruit_character = AFG_nasirullah_husain
-	recruit_character = AFG_muhammad_amin_bughra
-	recruit_character = AFG_azam_ataullah
-	recruit_character = AFG_mohammed_daoud_khan
-	recruit_character = AFG_renato_bardolucci
-	recruit_character = AFG_ali_muhammed_khan
-	recruit_character = AFG_mohammed_etemadi_khan
-	recruit_character = AFG_aalem_daana
-	recruit_character = AFG_wazir_akbar_khan
-	recruit_character = AFG_mahmud_khan
-	recruit_character = AFG_haji_faiz_muhammed_zikeria
-	recruit_character = AFG_mohammad_hashim_khan
-	recruit_character = AFG_muhammed_nowroz
 	
 	set_politics = {
-		ruling_party = neutrality
+		ruling_party = communism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	
 	set_popularities = {
-		fascism = 15
-		communism = 10
-		neutrality = 75
+		communism = 100
 	}
 
 	### Techs ###
@@ -298,137 +227,3 @@ IF = {
 		gw_artillery = 1
 	}
 }
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	IF = {
-		limit = {
-			has_dlc = "Graveyard of Empires"
-		}
-		#1936
-		complete_national_focus = AFG_support_king_zahir
-		complete_national_focus = AFG_expand_telegraph_network
-		complete_national_focus = AFG_biding_our_time
-		complete_national_focus = AFG_visit_foreign_capitals
-		complete_national_focus = AFG_placeholder_1
-		complete_national_focus = AFG_fruit_packing
-		complete_national_focus = AFG_ministry_of_supply
-		complete_national_focus = AFG_implement_currency_controls
-		complete_national_focus = AFG_sugar_processing
-		complete_national_focus = AFG_clear_malarial_swamps
-		 #1937
-		complete_national_focus = AFG_clear_malarial_swamps
-		complete_national_focus = AFG_infrastructure_construction
-		complete_national_focus = AFG_electrification
-		complete_national_focus = AFG_establish_radio_networks
-		#1938
-		complete_national_focus = AFG_expand_karakul_lambskin_industry
-		complete_national_focus = AFG_reform_2
-		complete_national_focus = AFG_secure_dynasty
-		complete_national_focus = AFG_maintain_neutrality
-		#1939
-		complete_national_focus = AFG_qargha_dam
-		complete_national_focus = AFG_adopt_nufus
-		complete_national_focus = AFG_introduce_national_service
-		complete_national_focus = AFG_new_army
-
-		diplomatic_relation = {
-			country = TUR
-			relation = non_aggression_pact
-			active = yes
-		}
-
-		diplomatic_relation = {
-			country = PER
-			relation = non_aggression_pact
-			active = yes
-		}
-
-		diplomatic_relation = {
-			country = IRQ
-			relation = non_aggression_pact
-			active = yes
-		}
-
-		add_dynamic_modifier = { modifier = SSB_saadabad_pact }
-	}
-	IF = {
-		limit = {
-			NOT = { has_dlc = "Graveyard of Empires" }
-		}
-		# Generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = construction_effort_2
-		complete_national_focus = production_effort_2
-		complete_national_focus = infrastructure_effort
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort		
-	}
-	
-
-	oob = "AFG_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "AFG_1939_air_bba"
-		else = {
-			set_air_oob = "AFG_1939_air_legacy"
-			set_technology = {
-				early_fighter = 1
-				CAS1 = 1
-			}
-		}
-	}
-	set_technology = {
-		
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		fascism = 20
-		communism = 10
-		neutrality = 70
-	}
-}
-

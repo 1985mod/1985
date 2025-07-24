@@ -47,8 +47,6 @@ set_politics = {
 set_popularities = {
 	communism = 100
 }
-color = { 165 28 48 }           # Глубокий красный с бордовым оттенком — флаг Южного Йемена
-color_ui = { 200 50 50 }        # Яркий красный для интерфейса, хорошо виден на фоне
 
 graphical_culture = middle_eastern_gfx
 graphical_culture_2d = middle_eastern_2d
