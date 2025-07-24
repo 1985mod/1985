@@ -11,7 +11,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = autocracy
 			traits = {}
 			expire = "2020.1.1"
 			id = -100
@@ -49,7 +49,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = stalinism
+			ideology = leninism
 			traits = {}
 			expire = "2020.1.1"
 			id = -101
@@ -68,7 +68,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = socialism
+			ideology = classic_liberalism
 			traits = {}
 			expire = "2020.1.1"
 			id = -102
