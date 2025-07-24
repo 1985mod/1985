@@ -218,7 +218,7 @@ IF = {
 	set_popularities = {
 		fascism = 10
 		communism = 0
-		democratic = 15
+		conservatism = 15
 		neutrality = 75
 	}
 	set_war_support = 0.1

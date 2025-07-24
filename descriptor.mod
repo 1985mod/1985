@@ -8,6 +8,7 @@ tags={
 	"National Focuses"
 }
 replace_path="common/ai_strategy"
+replace_path="common/ai_strategy_plans"
 replace_path="common/characters"
 replace_path="common/national_focus"
 name="1985"
