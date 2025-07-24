@@ -33,7 +33,7 @@ IF = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	add_ideas = MTG_naval_treaty_adherent
+	
 }
 
 # Setup Reisstance and Compliance
