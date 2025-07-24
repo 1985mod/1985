@@ -7,21 +7,7 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 
-# Starting Ideas
-add_ideas = {
 
-	# Laws
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-
-	# National Spirits
-	state_shintoism
-	JAP_zaibatsus
-	JAP_duplicate_research_efforts
-	JAP_militarism
-
-}
 
 IF = {
 	limit = { has_dlc = "Waking the Tiger" }
@@ -36,62 +22,7 @@ IF = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 
-# Setup Reisstance and Compliance
-609 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
 
-527 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-525 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-745 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-524 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-647 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-684 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-633 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
 
 
 ### Starting Technology ###
@@ -274,13 +205,13 @@ set_convoys = 400
 
 # Setup Politics
 set_politics = {
-	ruling_party = democratic
+	ruling_party = liberalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 75
+	liberalism = 75
 	fascism = 5
 	communism = 15
 	neutrality = 10

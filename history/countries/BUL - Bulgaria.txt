@@ -30,7 +30,7 @@ if = { #DLC
 
 	#You don't want Bulgarian party names? Just remove these lines
 	set_party_name = { # DLC
-		ideology = democratic
+		ideology = conservatism
 		name = BUL_democratic_party_bftb
 		long_name = BUL_democratic_party_bftb_bulgarian_long
 	}	
@@ -189,7 +189,7 @@ if = { #DLC
 
 	#DLC POLIICS
 	set_popularities = { #DLC
-		democratic = 10
+		conservatism = 10
 		fascism = 30
 		neutrality = 55
 		communism = 5
@@ -280,7 +280,7 @@ if = { #DLC
 
 	}
 	set_popularities = {
-		democratic = 10
+		conservatism = 10
 		fascism = 5
 		communism = 75
 		neutrality = 10
@@ -301,7 +301,7 @@ if = { #DLC
 
 		}
 		set_popularities = {
-			democratic = 10
+			conservatism = 10
 			fascism = 5
 			communism = 75
 			neutrality = 10

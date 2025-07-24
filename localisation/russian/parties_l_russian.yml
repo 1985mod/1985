@@ -1,0 +1,39 @@
+﻿l_russian:
+
+ communism: "Коммунизм"
+ communism_noun: "Коммунизм"
+ communism_desc: "Социалистическое Государство"
+
+ socialism: "Социализм"
+ socialism_noun: "Социализм"
+ socialism_desc: "Социалистическое Государство"
+
+ liberalism: "Либерализм"
+ liberalism_noun: "Либерализм"
+ liberalism_desc: "Демократическое Государство"
+ 
+ conservatism: "Консерватизм"
+ conservatism_noun: "Консерватизм"
+ conservatism_desc: "Демократическое Государство"
+
+ neutrality: "Авторитаризм"
+ neutrality_noun: "Авторитаризм"
+ neutrality_desc: "Недемократическое Государство"
+
+ fascism: "Фашизм"
+ fascism_noun: "Фашизм"
+ fascism_desc: "Недемократическое Государство"
+
+ islamism: "Исламизм"
+ 
+
+
+ SOV_communism_party: "КПСС (Реакционное Крыло)"
+ SOV_communism_party_long: "Коммунистическая Партия Советского Союза"
+ SOV_socialism_party: "КПСС (Либеральное Крыло)"
+ SOV_socialism_party_long: "Коммунистическая Партия Советского Союза"
+ SOV_liberalism_party: "§RОтсутствует§!"
+ SOV_conservatism_party: "§RОтсутствует§!"
+ SOV_neutrality_party: "§RОтсутствует§!"
+ SOV_fascism_party: "НПФ «Память»"
+ SOV_fascism_party_long: "Национально-патриотический фронт «Память»"
