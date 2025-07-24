@@ -151,8 +151,7 @@ recruit_character = USA_ronald_reagan
 set_popularities = {
 	liberalism = 49
 	conservatism = 50
-	socialism = 3
-	communism = 1
+	socialism = 1
 }
 
 create_faction = NATO
