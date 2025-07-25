@@ -8,12 +8,6 @@ if = {
 	}
 	set_oob = "AFG_1936"
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "AFG_1936_nsb"
-}
 
 set_technology = {
 	infantry_weapons = 1
@@ -37,6 +31,8 @@ if = {
 		
 	}
 }
+
+surrender_limit = 0.1
 
 recruit_character = AFS_mohammed_omar
 recruit_character = AFS_ahmad_shah_massoud

@@ -20,6 +20,10 @@ state={
 		victory_points = {
 			2017 1
 		}
+		AFN = {
+			set_province_controller = 2017
+			set_province_controller = 2078
+		}
 	}
 	manpower = 281165
 	buildings_max_level_factor=1.000
