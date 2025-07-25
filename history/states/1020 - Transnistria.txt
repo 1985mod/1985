@@ -7,14 +7,10 @@ state = {
 
 	history = {
 
-<<<<<<< HEAD
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = MOL
-=======
-		owner = WGR
-		add_core_of = WGR
->>>>>>> 9997629
+
 
 		victory_points = {
 			13383 5 # Mongu

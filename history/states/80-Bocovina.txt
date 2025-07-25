@@ -19,7 +19,7 @@ state={
 		add_core_of = SOV
 	}
 	provinces={
-		577 9548
+		577 3407 9548
 	}
 
 	local_supplies=0.0 
