@@ -1407,7 +1407,7 @@ news_event = { # Trotsky Lands in Mexico
 	option = {
 		name = AAT_norway_news.1.sov
 		trigger = {
-			has_country_leader_ideology = stalinism
+			has_country_leader_ideology = communism
 		}
 	}
 
@@ -1415,7 +1415,7 @@ news_event = { # Trotsky Lands in Mexico
 		name = AAT_norway_news.1.a 
 		trigger = {
 			NOT = {
-				has_country_leader_ideology = stalinism
+				has_country_leader_ideology = communism
 			}
 		}
 	}

@@ -28,11 +28,9 @@ recruit_character = AFN_ahmad_shah_massoud
 recruit_character = AFN_babrak_karmal
 recruit_character = AFN_mohammad_najibullah
 
-start_civil_war = {
-	ruling_party = communism
-	ideology = neutrality
-	size = 0.5
-	states = { 1005 1006 1008 1009 267 415 }
+declare_war_on = {
+	target = AFS
+	type = take_core_state
 }
 
 IF = {
