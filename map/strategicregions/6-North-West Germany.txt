@@ -1,5 +1,5 @@
 
-strategic_region={
+strategic_region ={
 	id=6
 	name="STRATEGICREGION_6"
 	provinces={
