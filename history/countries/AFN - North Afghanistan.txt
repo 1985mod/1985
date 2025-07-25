@@ -28,6 +28,8 @@ recruit_character = AFN_ahmad_shah_massoud
 recruit_character = AFN_babrak_karmal
 recruit_character = AFN_mohammad_najibullah
 
+surrender_limit = 0.1
+
 declare_war_on = {
 	target = AFS
 	type = take_core_state
