@@ -1,0 +1,147 @@
+division_template = {
+	name = "Division der Bundeswehr"	
+	division_names_group = SPAN_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Panzer-brigade"
+
+	division_names_group = GER_Arm_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorisierte Schützenbrigade (mot.)" 			# Used to be SS division -> New system for SS. Also messed up the civil war by refusing to move to the fascists, and immersion-breaking to have them around as royalists
+
+	division_names_group = GER_MOT_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+	 	engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	##### Ejército Argentino #####
+	division= {	# "1era División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9320 # Buenos Aires
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "2da División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11544 # Southern Argentina
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "3era División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 6725 # Parana
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "4ta División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 11497 # Cordoba
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "5ta División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9524 # Salta
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Motorisierte Schützenbrigade (mot.)"
+		location = 6421 # Buenos Aires
+		division_template = "Motorisierte Schützenbrigade (mot.)"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Destacamento de Montaña Cuyo"
+		location = 11468 # Mendoza
+		division_template = "Panzer-brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Destacamento de Montaña Norte"
+		location = 9281 # Salta
+		division_template = "Panzer-brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "WGR"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 100
+	}
+}
