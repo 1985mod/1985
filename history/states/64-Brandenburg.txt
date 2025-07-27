@@ -32,9 +32,7 @@ state = {
             6521 = {
                 landmark_berlin_reichstag = {
                     level = 1
-                    allowed = {
-                        has_dlc = "Gotterdammerung"
-                    }
+
                 }
             }
             3499 = {

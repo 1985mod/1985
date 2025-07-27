@@ -1,4 +1,4 @@
-version="1.0.1"
+version="1.2.0"
 tags={
 	"Alternative History"
 	"Events"
@@ -17,5 +17,5 @@ replace_path="common/decisions/categories"
 replace_path="common/decisions"
 name="1985"
 picture="thumbnail.png"
-supported_version="1.16.9"
+supported_version="1.16.*"
 remote_file_id="3520520901"
