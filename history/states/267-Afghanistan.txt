@@ -24,6 +24,11 @@ state={
 		}
 		add_core_of = AFN
 		add_core_of = AFS
+		
+		AFN = {
+			set_province_controller = 12769
+			set_province_controller = 10737
+		}
 	}
 
 	provinces={
