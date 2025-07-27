@@ -481,27 +481,42 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ideology_neutrality_group"
-		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+		texturefile = "gfx/interface/ideologies/autoritarism_ideology.png"
 	}	
 	
 	spriteType = {
 		name = "GFX_ideology_communism_group"
-		texturefile = "gfx/interface/ideologies/communism_group.dds"
+		texturefile = "gfx/interface/ideologies/communist_ideology.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_socialism_group"
+		texturefile = "gfx/interface/ideologies/socialism_ideology.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_islamism_group"
+		texturefile = "gfx/interface/ideologies/islamism_ideology.png"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_fascism_group"
-		texturefile = "gfx/interface/ideologies/fascism_group.dds"
+		texturefile = "gfx/interface/ideologies/fascism_ideology.png"
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_democratic_group"
-		texturefile = "gfx/interface/ideologies/democratic_group.dds"
+		name = "GFX_ideology_conservatism_group"
+		texturefile = "gfx/interface/ideologies/conservatism_ideology.png"
 	}
 
 	spriteType = {
-		name = "GFX_ideology_anarchism"
-		texturefile = "gfx/interface/ideologies/anarchism.dds"
+		name = "GFX_ideology_liberalism_group"
+		texturefile = "gfx/interface/ideologies/liberalism_ideology.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_communist_perestroika"
+		texturefile = "gfx/interface/ideologies/perestoika_subideology.png"
 	}
 	
 	spriteType = {
