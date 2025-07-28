@@ -7,4 +7,3 @@ continents = {
 	asia
 	middle_east
 }
-

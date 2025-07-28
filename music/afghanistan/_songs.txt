@@ -1,0 +1,72 @@
+music_station = "radio_station_afghan"
+
+
+music = {
+    song = "cascade_we_are_leaving_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "blue_berets_attack_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "just_dont_tell_mom_im_in_afghan_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "soviet_war_song_caravan_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "swallowing_dust_alexander_doroshenko_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "regular_bus_lyube_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "eh_afghan_modern_version_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "eh_afghan_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "its_raining_at_the_pass_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "blue_berets_letter_to_mother_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}

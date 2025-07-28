@@ -1,0 +1,59 @@
+music = {
+    name = "cascade_we_are_leaving_name"
+    file = "cascade_we_are_leaving.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "blue_berets_attack_name"
+    file = "blue_berets_attack.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "just_dont_tell_mom_im_in_afghan_name"
+    file = "just_dont_tell_mom_im_in_afghan.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "soviet_war_song_caravan_name"
+    file = "soviet_war_song_caravan.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "swallowing_dust_alexander_doroshenko_name"
+    file = "swallowing_dust_alexander_doroshenko.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "regular_bus_lyube_name"
+    file = "regular_bus_lyube.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "eh_afghan_modern_version_name"
+    file = "eh_afghan_modern_version.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "eh_afghan_name"
+    file = "eh_afghan.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "its_raining_at_the_pass_name"
+    file = "its_raining_at_the_pass.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "blue_berets_letter_to_mother_name"
+    file = "blue_berets_letter_to_mother.ogg"
+    volume = 0.65
+}

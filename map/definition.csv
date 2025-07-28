@@ -13376,14 +13376,14 @@
 13375;249;107;36;land;false;forest;1
 
 13376;175;249;255;land;false;urban;1
-
 13377;188;18;47;land;false;mountain;6
 13378;191;120;99;land;false;mountain;6
 13379;147;188;176;land;false;mountain;6
 13380;191;130;155;land;false;mountain;6
-
 13381;67;61;255;land;false;forest;1
 13382;104;255;189;land;false;forest;1
 13383;50;204;255;land;false;urban;1
-
 13384;17;91;78;land;false;plains;1
+13385;195;171;216;land;true;desert;7
+13386;154;209;152;land;false;desert;7
+13387;66;182;255;land;false;desert;7
