@@ -1,0 +1,23 @@
+state={
+	id=1023
+	name="STATE_1023"
+	manpower = 98527
+	
+	state_category = large_city
+	
+	history={
+		owner = ENG
+		victory_points = { 1530 3 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = MAL
+	}
+
+	provinces={
+		12299
+	}
+
+	local_supplies=0.0 
+}
