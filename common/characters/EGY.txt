@@ -1,0 +1,15 @@
+characters = {
+	EGY_Hosni_Mubarak = {
+		name = EGY_Hosni_Mubarak
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EGY/Portrait_EGY_Hosni_Mubarak.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			traits = { }
+			expire = "2011.3.1.1"
+		}
+	}
+}
