@@ -18,45 +18,16 @@ if = {
 
 set_convoys = 5
 
+
 set_politics = {
-	ruling_party = conservatism
-	last_election = "1936.1.1"
+	ruling_party = socialism
+	last_election = "1986.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 80
+	socialism = 80
 	communism = 20
 }
 
-recruit_character = ISR_david_ben_gurion
-
-create_country_leader = {
-	name = "Itzhak Gaster"
-	desc = ""
-	picture = GFX_portrait_Itzhak_Gaster
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Rudolf Szabó"
-	desc = ""
-	picture = GFX_portrait_Rudolf_Szabo
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Shmuel Mikunis"
-	desc = ""
-	picture = GFX_portrait_Shmuel_Mikunis
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = ISR_Shimon_Peres
