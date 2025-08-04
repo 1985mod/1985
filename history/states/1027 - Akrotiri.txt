@@ -1,0 +1,32 @@
+
+state = {
+	id = 1027
+	name = "STATE_1027"
+	manpower = 13123
+	
+	state_category = rural
+
+	history = {
+
+		owner = ENG
+		add_core_of = CYP
+
+		victory_points = {
+			13388 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			13388 = {
+				naval_base = 3
+			}
+		}
+		
+	}
+
+	provinces = {
+		13388
+	}
+
+	local_supplies = 0.0 
+}

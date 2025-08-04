@@ -1,23 +1,33 @@
-state={
-	id=1025
-	name="STATE_1025"
+
+state = {
+	id = 1025
+	name = "STATE_1025"
 	manpower = 1745256
 	
-	state_category = large_city
-	
-	history={
+	state_category = rural
+
+	history = {
+
 		owner = ISR
-		victory_points = { 13386 5 }
+		add_core_of = PAL
+
+		victory_points = {
+			13386 3
+		}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
+			13386 = {
+				naval_base = 2
+				coastal_bunker = 1
+			}
 		}
-		add_core_of = ISR
-		add_core_of = PAL
+		
 	}
 
-	provinces={
+	provinces = {
 		13386 13387
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }
