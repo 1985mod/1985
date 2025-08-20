@@ -1,0 +1,30 @@
+
+state = {
+	id = 1031
+	name = "STATE_1031"
+	manpower = 147890
+	
+	state_category = rural
+
+	history = {
+
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = ARM
+
+		victory_points = {
+			6642 3
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+	}
+
+	provinces={
+		4660 6642
+	}
+
+	local_supplies = 0.0 
+}
