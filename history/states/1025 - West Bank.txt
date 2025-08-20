@@ -12,21 +12,17 @@ state = {
 		add_core_of = PAL
 
 		victory_points = {
-			13386 3
+			13381 3
 		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			13386 = {
-				naval_base = 2
-				coastal_bunker = 1
-			}
 		}
 		
 	}
 
 	provinces = {
-		13386 13387
+		13380 13381
 	}
 
 	local_supplies = 0.0 

@@ -9,6 +9,7 @@ set_technology = {
 	tech_recon = 1
 }
 
+recruit_character = ALB_Charchani
 
 set_politics = {
 	ruling_party = communism
@@ -18,9 +19,8 @@ set_politics = {
 }
 
 set_popularities = {
-	conservatism = 15
 	fascism = 5
-	communism = 75
+	communism = 80
 	neutrality = 10
 }
 

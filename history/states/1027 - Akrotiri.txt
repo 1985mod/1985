@@ -12,12 +12,12 @@ state = {
 		add_core_of = CYP
 
 		victory_points = {
-			13388 1
+			13383 1
 		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			13388 = {
+			13383 = {
 				naval_base = 3
 			}
 		}
@@ -25,7 +25,7 @@ state = {
 	}
 
 	provinces = {
-		13388
+		13383
 	}
 
 	local_supplies = 0.0 

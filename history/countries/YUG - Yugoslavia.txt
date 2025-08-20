@@ -87,7 +87,6 @@ if = {
 
 recruit_character = YUG_Milka_Planinc
 
-
 set_politics = {
 	ruling_party = communism
 	last_election = "1917.1.1"
@@ -96,8 +95,6 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 0
 	communism = 100
 	neutrality = 0
 }

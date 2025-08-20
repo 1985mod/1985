@@ -11,7 +11,7 @@ state = {
 		add_core_of = WGR
 
 		victory_points = {
-			13376 20 # Mongu
+			13379 20 # Mongu
 		}
 
 		buildings = {
@@ -20,7 +20,7 @@ state = {
 	}
 
 	provinces = {
-		13376
+		13379
 	}
 	
 	buildings_max_level_factor = 1.000

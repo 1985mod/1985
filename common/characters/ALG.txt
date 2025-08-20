@@ -1,0 +1,16 @@
+characters = {
+	ALG_Algeria_Chadli_Bendjedid = {
+		name = ALG_Algeria_Chadli_Bendjedid
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALG/Portrait_ALG_Algeria_Chadli_Bendjedid.dds"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = { }
+			expire = "2004.3.1.1"
+			id = -1
+		}
+	}
+}

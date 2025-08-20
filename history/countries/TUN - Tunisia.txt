@@ -17,12 +17,4 @@ set_popularities = {
 	neutrality = 100
 }
 
-create_country_leader = {
-	name = "Habib Bourguiba"
-	desc = ""
-	picture = GFX_portrait_Habib_Bourguiba
-	ideology = centrism
-	traits = {
-		#
-	}
-}
+recruit_character = TUN_Tunisia_Habib_Bourguiba

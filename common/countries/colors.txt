@@ -1122,3 +1122,7 @@ KUR = {
 	color = rgb { 234 179 30 }
 	color_ui = rgb { 255 153 0 }	
 }
+NCY = {
+	color = rgb { 234 179 30 }
+	color_ui = rgb { 255 153 0 }	
+}

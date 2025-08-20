@@ -1,0 +1,16 @@
+characters = {
+	YUG_Milka_Planinc = {
+		name = YUG_Milka_Planinc
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/portrait_YUG_Milka_Planinc.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}
+}

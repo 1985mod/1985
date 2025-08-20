@@ -20,12 +20,4 @@ set_popularities = {
 	neutrality = 50
 }
 
-create_country_leader = {
-	name = "Mohammed V"
-	desc = ""
-	picture = GFX_portrait_Mohammed_V
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = KingHassan_II

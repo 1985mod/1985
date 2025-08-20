@@ -7,8 +7,10 @@ set_technology = {
 
 set_convoys = 20
 
+recruit_character = ALG_Algeria_Chadli_Bendjedid
+
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = socialism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -18,15 +20,6 @@ set_popularities = {
 	conservatism = 25
 	fascism = 20
 	communism = 5
-	neutrality = 50
+	socialism = 50
 }
 
-create_country_leader = {
-	name = "Ahmed Ben Bella"
-	desc = ""
-	picture = GFX_portrait_Ahmed_Ben_Bella
-	ideology = despotism
-	traits = {
-		#
-	}
-}
