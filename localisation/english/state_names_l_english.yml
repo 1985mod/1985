@@ -1218,6 +1218,17 @@
  STATE_1023: "Singapore"
  STATE_1024: "Gaza Strip"
  STATE_1025: "West Bank"
+ STATE_1026: "Northern Cyprus"
+ STATE_1027: "Akrotiri"
+ STATE_1028: "Northern Kurdistan"
+ STATE_1029: "Sulaymaniyah"
+ STATE_1030: "Gorno-Badakhshan AR"
+ STATE_1031: "Syunik"
+ STATE_1032: "Shirak-Tavush"
+ STATE_1033: "Lankaran"
+ STATE_1034: "Eastern Georgia"
+ STATE_1035: "Western Georgia"
+ STATE_1036: "Name"
 
 
 
