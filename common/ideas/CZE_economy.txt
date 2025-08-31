@@ -1,0 +1,40 @@
+ideas = {
+  country = {
+    CZE_economy = {
+      allowed = {}
+      picture = CZE_economy        
+      available = {}
+      modifier = {
+        production_factory_efficiency_gain_factor = -0.15
+        production_factory_max_efficiency_factor = 0.05
+        consumer_goods_factor = 0.10
+        production_speed_industrial_complex_factor = 0.05
+        stability_factor = 0.10
+      }
+    }
+    CZE_economy_capy = {
+      allowed = {}
+      picture = CZE_economy_capy        
+      available = {}
+      modifier = {
+        production_factory_efficiency_gain_factor = 0.15
+        production_factory_max_efficiency_factor = -0.05
+        consumer_goods_factor = -0.10
+        production_speed_industrial_complex_factor = -0.05
+        stability_factor = -0.10
+      }
+    }
+    CZE_uusr_torg = {
+      allowed = {}
+      picture = CZE_torg_ussr        
+      available = {}
+      modifier = {
+        trade_opinion_factor = 1
+        consumer_goods_factor = 0.05
+        xtra_trade_to_overlord_factor = 0.5
+        overlord_trade_cost_factor = 0.5
+        
+      }
+    }
+  }
+}

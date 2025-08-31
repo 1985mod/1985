@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_CZE_global_ralal_global_event"
+        texturefile = "gfx/event_pictures/rasval.dds"
+        
+    }
+}
