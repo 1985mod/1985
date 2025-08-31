@@ -57,6 +57,9 @@ country_event = {
 			}
 			BOS = { transfer_state = 104 }
 			BOS = { transfer_state = 804 }
+			BOS = { transfer_state = 1017 }
+			BOS = { transfer_state = 1018 }
+			BOS = { transfer_state = 1036 }
 			set_country_flag = collapse_BOS
 		}
 

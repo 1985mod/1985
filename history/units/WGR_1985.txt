@@ -109,9 +109,83 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
+	division= {	# "5ta División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9517 # Salta
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "5ta División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9517 # Salta
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "5ta División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 571 # Salta
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "5ta División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 708 # Salta
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "5ta División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 317 # Salta
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "5ta División del Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 6389 # Salta
+		division_template = "Division der Bundeswehr"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
 	division= {	
 		name = "Motorisierte Schützenbrigade (mot.)"
 		location = 6421 # Buenos Aires
+		division_template = "Motorisierte Schützenbrigade (mot.)"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Motorisierte Schützenbrigade (mot.)"
+		location = 3444 # Buenos Aires
 		division_template = "Motorisierte Schützenbrigade (mot.)"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -128,6 +202,14 @@ units = {
 	division= {	
 		name = "Destacamento de Montaña Norte"
 		location = 9281 # Salta
+		division_template = "Panzer-brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Destacamento de Montaña Norte"
+		location = 11533 # Salta
 		division_template = "Panzer-brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5

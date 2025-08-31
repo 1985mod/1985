@@ -130,6 +130,7 @@ country_event = {
             UKR = { transfer_state = 259 }
             UKR = { transfer_state = 766 }
             UKR = { transfer_state = 834 }
+			UKR = { transfer_state = 1038 }
             set_country_flag = collapse_UKR
         }
 
@@ -157,6 +158,7 @@ country_event = {
                 NOT = { has_country_flag = collapse_MOL }
             }
             MOL = { transfer_state = 78 }
+			MOL = { transfer_state = 834 }
             set_country_flag = collapse_MOL
         }
 
@@ -168,6 +170,8 @@ country_event = {
             }
             GEO = { transfer_state = 231 }
             GEO = { transfer_state = 826 }
+			GEO = { transfer_state = 1034 }
+			GEO = { transfer_state = 1035 }
             set_country_flag = collapse_GEO
         }
 
@@ -178,6 +182,8 @@ country_event = {
                 NOT = { has_country_flag = collapse_ARM }
             }
             ARM = { transfer_state = 230 }
+			ARM = { transfer_state = 1031 }
+			ARM = { transfer_state = 1032 }
             set_country_flag = collapse_ARM
         }
 
@@ -188,6 +194,8 @@ country_event = {
                 NOT = { has_country_flag = collapse_AZR }
             }
             AZR = { transfer_state = 229 }
+			AZR = { transfer_state = 1033 }
+			AZR = { transfer_state = 1020 }
             set_country_flag = collapse_AZR
         }
 
@@ -243,6 +251,7 @@ country_event = {
                 NOT = { has_country_flag = collapse_TAJ }
             }
             TAJ = { transfer_state = 742 }
+			TAJ = { transfer_state = 1030 }
             set_country_flag = collapse_TAJ
         }
 
