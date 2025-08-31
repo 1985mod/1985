@@ -1,6 +1,0 @@
-﻿negative_relations_decay = {
-    icon = generic_negative
-    months = 12                    
-    opinion = -50                  
-    decay = -5                     
-}
