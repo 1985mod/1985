@@ -1,4 +1,4 @@
-﻿capital = 219 #Moskow
+﻿capital = 1037 #Moskow
 
 oob = "SOV_1985"
 
