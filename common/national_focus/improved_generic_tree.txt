@@ -728,7 +728,8 @@ has_completed_focus = RCP_centrism_gang
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_political_power = 100
-			add_popularity = { ideology = democratic popularity = 0.20 }
+			add_popularity = { ideology = conservatism popularity = 0.10 }
+			add_popularity = { ideology = liberalism popularity = 0.10 }
 		}
 	}
 
@@ -2107,7 +2108,7 @@ remove_ideas = liberty_ethos_focus
 		completion_reward = {
 			add_political_power = 50
 add_stability = -0.075
-set_politics = { ruling_party = democratic elections_allowed = yes}
+set_politics = { ruling_party = liberalism elections_allowed = yes}
 		}
 	}
 	
@@ -2131,7 +2132,7 @@ set_politics = { ruling_party = democratic elections_allowed = yes}
 			factor = 1
 		}
 		completion_reward = {
-			set_politics = { ruling_party = democratic elections_allowed = yes}
+			set_politics = { ruling_party = conservatism elections_allowed = yes}
 add_stability = 0.1
 add_political_power = 25
 		}
