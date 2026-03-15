@@ -1,0 +1,18 @@
+characters = {
+	BEL_wilfried_martens ={
+		name = BEL_wilfried_martens
+		portraits={
+			civilian={
+				large= GFX_portrait_BEL_wilfried_martens
+			}
+			army = {
+				large = GFX_portrait_BEL_wilfried_martens
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

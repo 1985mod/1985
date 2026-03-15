@@ -1,0 +1,18 @@
+characters = {
+	PRC_li_xiannian_leader ={
+		name = PRC_li_xiannian_leader
+		portraits ={
+			civilian ={
+				large = GFX_portrait_PRC_li_xiannian_leader
+			}
+		}
+		country_leader={
+			ideology = chinese_socialism
+			traits = {  }
+			expire = "1999.1.1.1"
+			
+		}
+
+		id = -99
+	}
+}

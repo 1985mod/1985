@@ -1,0 +1,173 @@
+add_namespace = SOV_important_choice
+
+country_event = {
+	id = SOV_important_choice.1
+	title = SOV_important_choice.1.t
+	desc = SOV_important_choice.1.desc
+	picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+
+	# Михаил Горбачев, социализм
+	option = {
+		name = SOV_important_choice.1.a
+		ai_chance = {
+			base = 10
+		}
+		
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = no
+			}
+		}
+
+		hidden_effect = {
+			set_cosmetic_tag = USSR
+			remove_country_leader = { name = "SOV_konstantin_chernenko" }
+			promote_character = {
+				character = SOV_oleg_chenin
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = no
+			}
+			#set_country_name = {
+			#	name = "СССР"
+			#	name_type = socialism
+			#}
+			set_country_flag = gorbachev
+			#set_country_flag = SOV_right_opposition_communism
+		}
+	}
+
+	# Олег Шенин
+	option = {
+		name = SOV_important_choice.1.b
+		ai_chance = {
+			base = 5
+		}
+		effect_tooltip = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = neutrality
+				keep_political_leader = no
+				size = 0.3
+			}
+			# гражданка коммунистов с нейтралами
+		}
+
+		hidden_effect = {
+			remove_country_leader = { name = "SOV_konstantin_chernenko" }
+			promote_character = {
+				character = SOV_oleg_chenin
+				ideology = communism
+			}
+
+			every_country = {
+			    limit = { is_in_faction_with = SOV }
+			    leave_faction = yes
+			}
+
+			set_autonomy = { 
+				target = POL
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = CZE
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = DDR
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = { 
+				target = HUN
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = ROM
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = BUL
+				autonomy_state = autonomy_free
+			}
+
+			start_civil_war = {
+				ruling_party = communism
+				ideology = neutrality
+				keep_political_leader = no
+				size = 0.3
+				capital = 219
+				states = { 13 191 811 812 813 813 137 146 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 262 263 264 265 329 351 397 398 399 40 400 401 402 403 404 405 406 407 408 409 516 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578 579 580 581 582 583 584 585 586 587 588 589 590 637 644 651 652 653 654 655 657 732 742 822 823 824 825 829 830 831 832 833 834 874 875 876 877 878 879 880 881 882 11 12 13 137 146 147 188 189 190 191 329 537 555 722 73 763 766 78 784 80 808 809 810 811 812 814 815 89 91 93 94 95 96 }
+			}
+			promote_character = {
+				character = SOV_oleg_chenin
+				ideology = communism
+			}
+		}
+	}
+
+	# Александр Дугин
+	option = {
+		name = SOV_important_choice.1.c
+		ai_chance = {
+			base = 3
+		}
+		effect_tooltip = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = fascism
+				keep_political_leader = no
+				size = 0.3
+			}
+			# гражданка фашистов с коммунистами и не только
+		}
+
+		hidden_effect = {
+			remove_country_leader = { name = "SOV_konstantin_chernenko" }
+			promote_character = {
+				character = SOV_oleg_chenin
+				ideology = communism
+			}
+			every_country = {
+			    limit = { is_in_faction_with = SOV }
+			    leave_faction = yes
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = communism
+				keep_political_leader = no
+				size = 0.3
+				capital = 219
+				states = { 137 192 193 194 196 197 198 199 200 201 202 203 204 205 206 207 214 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 245 248 249 250 251 252 253 254 255 256 257 258 259 260 262 265 351 397 398 399 40 400 401 402 403 404 405 406 407 408 409 516 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578 579 580 581 582 583 584 585 586 587 588 589 590 637 644 651 652 653 654 655 657 732 742 821 822 823 824 825 826 827 828 829 830 831 832 833 834 874 875 876 877 878 879 880 881 882 329 766 78 80 73 89 91 93 94 95 96 784 11 815 814 189 188 763 810 809 190 808 12 191 13 812 813 219 555 537 811 210 246 247 }
+			}
+			set_autonomy = { 
+				target = POL
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = CZE
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = DDR
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = { 
+				target = HUN
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = ROM
+				autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+				target = BUL
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+}

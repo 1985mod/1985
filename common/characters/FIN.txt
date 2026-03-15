@@ -1,0 +1,18 @@
+characters = {
+	FIN_mauno_koivisto ={
+		name = FIN_mauno_koivisto
+		portraits={
+			civilian={
+				large= GFX_portrait_FIN_mauno_koivisto
+			}
+			army = {
+				large = GFX_portrait_FIN_mauno_koivisto
+			}
+		}
+		country_leader={
+			ideology = autocracy
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

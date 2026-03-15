@@ -1,0 +1,15 @@
+characters = {
+	SYR_Hafez_al_Assad = {
+		name = SYR_Hafez_al_Assad
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SYR/portrait_SYR_Hafez_al_Assad.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}

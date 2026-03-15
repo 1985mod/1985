@@ -1,0 +1,131 @@
+﻿capital = 291 
+
+oob = "IRQ_1985"
+
+set_research_slots = 4
+if = {
+	declare_war_on = {
+		target = PER
+		type = take_claimed_state
+	}
+}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_fighter = 1
+		fighter1 = 1
+		early_bomber = 1
+		strategic_bomber1 = 1
+		naval_bomber1 = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "T-72A"
+	type = light_tank_chassis_1
+	parent_version = 1
+	modules = {
+		main_armament_slot = tank_small_cannon_2
+		turret_type_slot = tank_light_two_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_armor_upgrade = 1
+		tank_nsb_engine_upgrade = 2
+	}
+	icon = "GFX_ENG_basic_light_tank_medium"
+}
+	
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+
+recruit_character = IRQ_Saddam_Hussein
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1991.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+    war_economy
+	limited_exports
+	extensive_conscription
+}
+
+set_popularities = {
+	fascism = 20
+	neutrality = 80
+}

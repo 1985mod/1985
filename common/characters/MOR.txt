@@ -1,0 +1,16 @@
+characters = {
+	KingHassan_II = {
+		name = KingHassan_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MOR/Morroco_KingHassan_II.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}
+}

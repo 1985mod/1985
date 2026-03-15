@@ -1,0 +1,712 @@
+focus_tree = {
+    id = CZE_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = CZE
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 1500 y = 800 }
+
+    focus = { 
+        id = CZE_new_1985
+        icon = GFX_focus_ETH_callout_to_the_world
+        x = 10
+        y = 0
+        cost = 5
+        completion_reward = {
+            add_political_power = 25
+        }
+    }		 
+ 
+    focus = { 
+        id = CZE_west
+        prerequisite = { focus = CZE_new_1985 }
+        icon = GFX_focus_AFG_establish_darulaman
+        mutually_exclusive = { focus = CZE_East }
+        x = 5
+        y = 2
+        cost = 6
+        completion_reward = {
+            add_political_power = 100
+        }
+    }	
+	
+    focus = { 
+        id = CZE_army_reform
+        relative_position_id = CZE_new_1985
+        prerequisite = { focus = CZE_new_1985 }
+        icon = GFX_focus_SOV_penal_battalions
+        x = 5
+        y = 2
+        cost = 7
+        completion_reward = {
+            add_political_power = 150
+            army_experience = 30
+        }
+    }	
+	
+    focus = { 
+        id = CZE_East
+        relative_position_id = CZE_west
+        prerequisite = { focus = CZE_new_1985 }
+        icon = GFX_focus_AFG_defender_of_central_asia
+		mutually_exclusive = { focus = CZE_west }
+        x = 5
+        y = 0
+        cost = 7
+        completion_reward = {
+            add_political_power = 150
+        }
+    }	
+	
+    focus = { 
+        id = CZE_prepare_the_stasi
+        icon = GFX_focus_ger_strike_at_the_source
+        prerequisite = { focus = CZE_East }
+        x = 9
+        y = 3
+        cost = 5
+        completion_reward = {
+            country_event = { id = CZE_Czechoslovakia_kgb.1 days = 5 }
+        }
+    }
+    
+	
+    focus = { 
+        id = CZE_change_of_courses_in_the_ussr
+        icon = GFX_focus_SOV_socialism_in_one_country
+        prerequisite = { focus = CZE_East }
+        x = 11
+        y = 3
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+		
+    focus = { 
+        id = CZE_new_department_in_dresden
+        icon = GFX_focus_generic_befriend_czechoslovakia
+        prerequisite = { focus = CZE_change_of_courses_in_the_ussr }
+        x = 12
+        y = 4
+        cost = 5
+        completion_reward = {
+            country_event = { id = CZE_Czechoslovakia_perepro.1 days = 20 }
+        }
+    }
+    
+	
+    focus = { 
+        id = CZE_conflict_with_the_kgb
+        icon = GFX_focus_SWE_the_beast_stirs
+        prerequisite = { focus = CZE_prepare_the_stasi }
+        x = 8
+        y = 4
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+            end_puppet = SOV
+            remove_ideas = CZE_uusr_torg
+        }
+    }
+    focus = { 
+        id = CZE_german_reforms
+        icon = GFX_focus_SOV_the_comecon
+        prerequisite = { focus = CZE_new_department_in_dresden focus = CZE_conflict_with_the_kgb }
+        x = 10
+        y = 5
+        cost = 5
+        completion_reward = {
+            add_stability  = 0.1
+            add_tech_bonus = {
+                name = artillery
+                bonus = 0.5
+                category = industry
+                uses = 3
+            }
+        }
+    }
+    focus = { 
+        id = CZE_the_hunt_for_the_kgb
+        icon = GFX_focus_spa_caudillo_of_spain
+        prerequisite = { focus = CZE_german_reforms }
+        x = 10
+        y = 6
+        cost = 5
+        completion_reward = {
+            add_stability  = -0.05
+        }
+    }
+    focus = { 
+        id = CZE_honecker_resignation
+        icon = GFX_focus_GER_strengthen_the_proletarian_international
+        prerequisite = { focus = CZE_the_hunt_for_the_kgb }
+        x = 10
+        y = 7
+        cost = 5
+        completion_reward = {
+            add_stability  = -0.2
+        }
+    }
+    focus = { 
+        id = CZE_own_perestroika
+        icon = GFX_focus_GER_end_european_communism
+        prerequisite = { focus = CZE_honecker_resignation }
+        x = 10
+        y = 8
+        cost = 5
+        completion_reward = {
+            release_puppet_on_controlled = SLO
+        }
+    }
+
+    focus = { 
+        id = CZE_new_shipyards
+        icon = GFX_focus_RAJ_mountain_guns
+        prerequisite = { focus = CZE_army_reform }
+        x = 15
+        y = 3
+        cost = 5
+        completion_reward = {
+            70 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 70
+                    type = arms_factory  
+                    level = 2
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+
+    focus = { 
+        id = CZE_the_fleet_is_prepared
+        icon = GFX_focus_SOV_support_spanish_poum
+        prerequisite = { focus = CZE_new_shipyards }
+        x = 15
+        y = 4
+        cost = 5
+        completion_reward = {
+            air_experience = 50
+        }
+    }
+    focus = { 
+        id = CZE_aviation
+        icon = GFX_focus_generic_cas_aircraft
+        prerequisite = { focus = CZE_army_reform }
+        x = 18
+        y = 3
+        cost = 5
+        completion_reward = {
+            air_experience = 50
+            add_manpower = 5000
+        }
+    }
+    focus = { 
+        id = CZE_the_best_artillery
+        icon = GFX_focus_generic_anti_tank_guns
+        mutually_exclusive = { focus = CZE_the_best_infantry }
+        prerequisite = { focus = CZE_aviation }
+        x = 18
+        y = 4
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                name = artillery
+                bonus = 0.5
+                category = artillery
+                uses = 2
+            }
+            army_experience = 50  
+        }
+    }
+        
+    
+    focus = { 
+        id = CZE_tanks
+        icon = GFX_focus_generic_tank_production
+        prerequisite = { focus = CZE_army_reform }
+        x = 22
+        y = 3
+        cost = 5
+        completion_reward = {
+            production_bonus = {
+                armor_equipment = {
+                    production_cost_factor = -0.10
+                }
+            }
+            75 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 75
+                    type = arms_factory  
+                    level = 2
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+
+    focus = { 
+        id = CZE_the_best_infantry
+        icon = GFX_focus_generic_full_social_mobilization
+        mutually_exclusive = { focus = CZE_the_best_artillery }
+        prerequisite = { focus = CZE_tanks }
+        x = 22
+        y = 4
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                name = infantry_weapons
+                bonus = 0.5
+                category = infantry_weapons
+                uses = 2
+            }
+            army_experience = 50
+        }
+    }
+
+    focus = { 
+        id = CZE_friendship_with_germany
+        icon = GFX_focus_generic_whispers
+        prerequisite = { focus = CZE_west }
+        x = 5
+        y = 3
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+            end_puppet = SOV
+            release_puppet_on_controlled = SLO 
+            remove_ideas = CZE_uusr_torg
+        }
+    }
+        
+    focus = { 
+        id = CZE_the_destruction_of_communism
+        icon = GFX_focus_GER_the_peoples_victory
+        prerequisite = { focus = CZE_demolition_of_the_wall }
+		mutually_exclusive = { focus = CZE_accession_to_the_federal_republic_of_germany }
+        x = 5
+        y = 5
+        cost = 5
+        completion_reward = {
+            release_puppet_on_controlled = SLO
+            remove_ideas = CZE_economy
+            add_ideas =  CZE_economy_capy
+            SLO = {
+                set_politics = { 
+                    ruling_party = liberalism
+                    elections_allowed = yes
+                }
+                set_popularities = {
+                    liberalism = 70
+                    socialism = 10
+                    conservatism = 20
+                }
+            }
+            CZE = {
+                set_politics = { 
+                    ruling_party = liberalism
+                    elections_allowed = yes
+                }
+                set_popularities = {
+                    liberalism = 70
+                    socialism = 10
+                    conservatism = 20
+                }
+            }
+        }
+    }
+    focus = { 
+        id = CZE_demolition_of_the_wall
+        icon = GFX_focus_generic_workers
+        prerequisite = { focus = CZE_friendship_with_germany }
+        x = 5
+        y = 4
+        cost = 5
+        completion_reward = {
+            add_popularity = {
+                ideology = communism
+                popularity = -0.3
+            }
+            add_popularity = {
+                ideology = socialism
+                popularity = -0.1    
+            }
+        }
+    }
+    focus = { 
+        id = CZE_reunification_negotiations
+        icon = GFX_focus_generic_urban_training
+        prerequisite = { focus = CZE_west }
+        x = 2
+        y = 4
+        cost = 5
+        completion_reward = {
+            add_ideas =  CZE_economy_capy
+            remove_ideas = CZE_economy
+            CZE = {
+                set_politics = { 
+                    ruling_party = liberalism
+                    elections_allowed = yes
+                }
+                set_popularities = {
+                    liberalism = 70
+                    socialism = 10
+                    conservatism = 20
+                }
+            }
+        }
+    }
+    focus = { 
+        id = CZE_accession_to_the_federal_republic_of_germany
+        icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+        prerequisite = { focus = CZE_reunification_negotiations }
+        mutually_exclusive = { focus = CZE_the_destruction_of_communism }
+        x = 2
+        y = 5
+        cost = 5
+        completion_reward = {
+            add_core_of = SLO  
+            annex_country = { target = SLO }
+        }
+    }
+    focus = { 
+        id = CZE_western_and_neutral_germany
+        icon = GFX_focus_SWE_institute_of_technology
+        prerequisite = { focus = CZE_the_destruction_of_communism }
+        x = 5
+        y = 6
+        cost = 5
+        completion_reward = {
+            country_event = { id = CZE_global_ralal.1 days = 1 }
+            end_puppet = SLO
+            set_cosmetic_tag = CZE_demolish
+            leave_faction = yes  
+        }
+    }
+    focus = { 
+        id = CZE_change_of_course
+        icon = GFX_focus_SWE_the_threat_of_the_iron_curtain
+        prerequisite = { focus = CZE_own_perestroika }
+        x = 10
+        y = 9
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+    focus = { 
+        id = CZE_changes_in_the_CZE
+        icon = GFX_focus_SOV_builder_of_the_red_army
+        prerequisite = { focus = CZE_change_of_course }
+        mutually_exclusive = { focus = CZE_demolish_the_berlin_wall }
+        x = 12
+        y = 10
+        cost = 5
+        available = {
+            date > 1989.1.1
+        }
+        completion_reward = {
+            set_politics = { 
+                ruling_party = socialism
+                elections_allowed = yes
+            }
+        }
+    }
+    focus = { 
+        id = CZE_demolish_the_berlin_wall
+        icon = GFX_focus_ger_bulwark_against_bolshevism
+        prerequisite = { focus = CZE_change_of_course }
+        mutually_exclusive = { focus = CZE_changes_in_the_CZE } 
+        x = 8
+        y = 10
+        cost = 5
+        available = {
+            date > 1989.1.1
+        }
+        completion_reward = {
+            add_ideas =  CZE_economy_capy
+            remove_ideas = CZE_economy
+            country_event = { id = CZE_global_ralal.global_event days = 1 }
+            set_cosmetic_tag = CZE_demolish
+            add_political_power = -100
+            leave_faction = yes 
+            end_puppet = SLO
+            SLO = {
+                set_politics = { 
+                    ruling_party = liberalism
+                    elections_allowed = yes
+                }
+                set_popularities = {
+                    liberalism = 60
+                    socialism = 20
+                    conservatism = 20
+                }
+            }
+            CZE = {
+                set_politics = { 
+                    ruling_party = liberalism
+                    elections_allowed = yes
+                }
+                set_popularities = {
+                    liberalism = 60
+                    socialism = 20
+                    conservatism = 20
+                }
+            }
+        }
+    }
+    
+    focus = { 
+        id = CZE_the_Industrial_fist
+        relative_position_id = CZE_new_1985
+        prerequisite = { focus = CZE_new_1985 }
+        icon = GFX_focus_GER_proletarian_solidarity
+        x = 17
+        y = 2
+        cost = 7
+        completion_reward = {
+            70 = {  
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    state = 70
+                    type = industrial_complex  
+                    level = 3
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+    focus = { 
+        id = CZE_government_support
+        relative_position_id = CZE_new_1985
+        prerequisite = { focus = CZE_the_Industrial_fist }
+        mutually_exclusive = { focus = CZE_invest_in_oil_refineries }
+        icon = GFX_focus_AUS_union_of_danubian_socialist_republics
+        x = 17
+        y = 3
+        cost = 7
+        completion_reward = {
+            69 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 75
+                    type = industrial_complex  
+                    level = 2
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+    focus = { 
+        id = CZE_investments_in_factories
+        relative_position_id = CZE_new_1985
+        prerequisite = { focus = CZE_government_support }
+        icon = GFX_focus_generic_treaty
+        x = 17
+        y = 4
+        cost = 7
+        completion_reward = {
+            75 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 75
+                    type = industrial_complex  
+                    level = 2
+                    instant_build = yes  
+                }
+            }    
+        }
+    }
+    focus = { 
+        id = CZE_development_of_the_military_industrial_complex
+        relative_position_id = CZE_new_1985
+        prerequisite = { focus = CZE_the_Industrial_fist }
+        icon = GFX_focus_generic_communist_industry
+        x = 15
+        y = 4
+        cost = 7
+        completion_reward = {
+            75 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 75
+                    type = arms_factory  
+                    level = 2
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+    focus = { 
+        id = CZE_new_oil_refineries
+        relative_position_id = CZE_new_1985
+        prerequisite = { focus = CZE_new_1985 }
+        icon = GFX_goal_generic_oil_refinery
+        x = 20
+        y = 2
+        cost = 7
+        completion_reward = {
+            9 = {  
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = synthetic_refinery  
+                    level = 3
+                    instant_build = yes 
+                }           
+            }               
+        }
+    }
+
+    focus = { 
+        id = CZE_invest_in_oil_refineries
+        relative_position_id = CZE_new_1985
+        prerequisite = { focus = CZE_new_oil_refineries }
+		mutually_exclusive = { focus = CZE_government_support }
+        icon = GFX_focus_GER_factories_for_resources
+        x = 20
+        y = 3
+        cost = 7
+        completion_reward = {
+            972 = {  
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = synthetic_refinery  
+                    level = 3
+                    instant_build = yes 
+                }           
+            } 
+        }
+    }       
+    focus = { 
+        id = CZE_1
+        icon = GFX_focus_GER_SOV_defence_treaty
+        prerequisite = { focus = CZE_new_1985 }
+        mutually_exclusive = { focus = CZE_exit_from_the_ats }
+        x = 20
+        y = 2 
+        cost = 5
+        completion_reward = {
+            country_event = { id = CZE_Czechoslovakia_lenders.1 days = 7 }
+        }
+    }
+        
+    focus = { 
+        id = CZE_2
+        icon = GFX_focus_spr_masters_of_our_own_fate
+        prerequisite = { focus = CZE_8 }
+        mutually_exclusive = { focus = CZE_exit_from_the_ats }
+        x = 12
+        y = 12
+        cost = 5
+        completion_reward = {
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.2
+            }
+        }
+    }       
+    focus = { 
+        id = CZE_3
+        icon = GFX_focus_SWE_the_threat_of_the_iron_curtain
+        prerequisite = { focus = CZE_changes_in_the_CZE }
+        mutually_exclusive = { focus = CZE_exit_from_the_ats }
+        x = 14
+        y = 11
+        cost = 5
+        completion_reward = { 
+            add_manpower = -10000
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.1
+            }    
+        }
+    }       
+    focus = { 
+        id = CZE_4
+        icon = GFX_focus_spr_torchbearers_of_tomorrow
+        prerequisite = { focus = CZE_6 focus = CZE_2 }
+        mutually_exclusive = { focus = CZE_exit_from_the_ats }
+        x = 10
+        y = 14
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }       
+    focus = { 
+        id = CZE_5
+        icon = GFX_focus_RAJ_special_economic_zones
+        prerequisite = { focus = CZE_demolish_the_berlin_wall }
+        mutually_exclusive = { focus = CZE_exit_from_the_ats }
+        x = 8
+        y = 11
+        cost = 5
+        completion_reward = {
+            9 = {  
+                add_extra_state_shared_building_slots = -1
+                add_building_construction = {
+                    state = 75
+                    type = industrial_complex  
+                    level = -3
+                    instant_build = yes  
+                }
+            }
+        }
+    }       
+    focus = { 
+        id = CZE_6
+        icon = GFX_focus_renounce_the_treaty_of_trianon
+        prerequisite = { focus = CZE_5 }
+        mutually_exclusive = { focus = CZE_exit_from_the_ats }
+        x = 8
+        y = 12
+        cost = 5
+        completion_reward = {
+            USA = {
+                add_to_faction = CZE
+            }
+        }
+    }       
+    focus = { 
+        id = CZE_7
+        icon = GFX_focus_SWE_attack_landsorganisationen
+        prerequisite = { focus = CZE_demolish_the_berlin_wall }
+        mutually_exclusive = { focus = CZE_exit_from_the_ats }
+        x = 6
+        y = 11
+        cost = 5
+        completion_reward = {
+            add_ideas =  CZE_economy_capy
+            add_popularity = {
+                ideology = socialism
+                popularity = -0.1
+            }
+        }
+    }       
+    focus = { 
+        id = CZE_8
+        icon = GFX_focus_SOV_the_path_of_marxism_leninism
+        prerequisite = { focus = CZE_changes_in_the_CZE }
+        mutually_exclusive = { focus = CZE_exit_from_the_ats }
+        x = 12
+        y = 11
+        cost = 5
+        completion_reward = {
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.3
+            }
+            add_stability = 0.05
+        }
+    }
+}

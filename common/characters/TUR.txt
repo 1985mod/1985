@@ -1,0 +1,18 @@
+characters = {
+	TUR_kenan_evren={
+		name = TUR_kenan_evren
+		portraits={
+			civilian={
+				large= GFX_portrait_TUR_kenan_evren
+			}
+			army = {
+				large = GFX_portrait_TUR_kenan_evren
+			}
+		}
+		country_leader={
+			ideology = reactionism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

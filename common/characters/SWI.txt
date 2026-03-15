@@ -1,0 +1,18 @@
+characters = {
+	SWI_kurt_furgler={
+		name = SWI_kurt_furgler
+		portraits={
+			civilian={
+				large= GFX_portrait_SWI_kurt_furgler
+			}
+			army = {
+				large = GFX_portrait_SWI_kurt_furgler
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="2008.8.23.1"		
+		}
+	}
+}

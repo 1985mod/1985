@@ -1,0 +1,15 @@
+characters = {
+	ROM_Nicolae_Ceausescu = {
+		name = ROM_Nicolae_Ceausescu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/portrait_ROM_Nicolae_Ceausescu.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}

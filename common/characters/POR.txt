@@ -1,0 +1,18 @@
+characters = {
+	POR_cavaco_silva ={
+		name = POR_Cavaco_Silva
+		portraits={
+			civilian={
+				large= GFX_portrait_POR_Cavaco_Silva
+			}
+			army = {
+				large = GFX_portrait_POR_Cavaco_Silva
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

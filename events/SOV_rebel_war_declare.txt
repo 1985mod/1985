@@ -1,0 +1,47 @@
+add_namespace = SOV_rebel_war_declare
+
+country_event = {
+	id = SOV_rebel_war_declare.1
+	title = SOV_rebel_war_declare.1.t
+	desc = SOV_rebel_war_declare.1.desc
+
+	hidden = yes
+
+	trigger = {
+		has_civil_war = yes
+		OR = {
+			civilwar_target = SOV
+			tag = SOV
+		}
+		
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					tag = EST
+                    tag = LAT
+                    tag = LIT
+					tag = BLR
+					tag = UKR
+					tag = MOL
+					tag = GEO
+					tag = ARM
+					tag = AZR
+					tag = CIN
+					tag = KAZ
+					tag = UZB
+					tag = KYR
+					tag = TAJ
+					tag = TMS
+				}
+				exists = yes
+			}
+			declare_war_on = {
+				target = PREV
+				type = annex_everything
+			}
+		}
+	}
+}

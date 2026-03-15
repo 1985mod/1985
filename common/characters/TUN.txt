@@ -1,0 +1,15 @@
+characters = {
+	TUN_Tunisia_Habib_Bourguiba = {
+		name = TUN_Tunisia_Habib_Bourguiba
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUN/Portrait_TUN_Tunisia_Habib_Bourguiba.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { }
+			expire = "2000.3.1.1"
+		}
+	}
+}
