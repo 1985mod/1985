@@ -85,7 +85,9 @@ if = {
 
 set_convoys = 50
 
-create_faction = WARSAW_PACT
+#create_faction = WARSAW_PACT
+create_faction_from_template = faction_template_warsaw_pact
+
 add_to_faction = SOV  
 add_to_faction = POL
 add_to_faction = DDR 
@@ -138,7 +140,7 @@ set_autonomy = {
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1933.7.1"
+	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

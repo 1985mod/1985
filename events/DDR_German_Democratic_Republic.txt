@@ -1,0 +1,15 @@
+add_namespace = DDR_German_Democratic_Republic
+
+country_event = {
+    id = DDR_German_Democratic_Republic.1
+    title = DDR_German_Democratic_Republic.1.t
+    desc = DDR_German_Democratic_Republic.1.desc
+	picture = GFX_report_event_DDR_Honecker_and_Kohl
+    is_triggered_only = yes
+
+    option = {
+        name = DDR_German_Democratic_Republic.1.b
+        add_political_power = -10
+        add_stability  = -0.03 
+    }
+}

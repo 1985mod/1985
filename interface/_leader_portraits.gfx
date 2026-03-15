@@ -6524,7 +6524,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = GFX_portrait_PRC_li_xiannian_leader
+		name = GFX_portrait_PRC_li_xiannian
 		texturefile = "gfx/leaders/PRC/Portrait_Li_Xiannian.dds"
 	}
 

@@ -1,15 +1,11 @@
-version="1.1.2"
+version="1.0"
 tags={
-	"Technologies"
-	"Map"
 	"National Focuses"
-	"Military"
 }
-replace_path="common/characters"
-replace_path="common/decisions/categories"
-replace_path="common/decisions"
-replace_path="gfx/loadingscreens"
-replace_path="events"
-name="Cold war: 1985"
-supported_version="1.17.4.1"
-remote_file_id="3653019570"
+name="ddr focus"
+dependencies={
+	"Cold war: 1985"
+}
+picture="thumbnail.png"
+supported_version="1.17.*"
+remote_file_id="3658631248"

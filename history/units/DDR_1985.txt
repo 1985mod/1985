@@ -131,7 +131,7 @@ units = {
 	}
 	division= {	
 		name = "Motorisierte Schützenbrigade (mot.) National People's Army"
-		location = 9441 # Mendoza
+		location = 9941 # Mendoza
 		division_template = "Motorisierte Schützenbrigade (mot.)"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
