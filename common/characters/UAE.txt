@@ -1,0 +1,15 @@
+characters = {
+	UAE_Zayed_bin_Sultan_Al_Nahyan = {
+		name = UAE_Zayed_bin_Sultan_Al_Nahyan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UAE/Portrait_Zayed_bin_Sultan_Al_Nahyan.dds"
+			}
+		}
+		country_leader = {
+			ideology = classic_conservatism
+			traits = { }
+			expire = "2000.3.1.1"
+		}
+	}
+}

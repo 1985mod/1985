@@ -1,6 +1,6 @@
 ﻿capital = 293
 
-oob = "south_yeman_1936"
+oob = "SYE_1985"
 
 # Starting tech
 set_technology = {
@@ -26,3 +26,6 @@ set_politics = {
 set_popularities = {
 	communism = 100
 }
+
+
+recruit_character = SYE_Ali_Nasser_Muhammad

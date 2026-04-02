@@ -1,0 +1,29 @@
+state={
+	id=1047
+	name="STATE_1047"
+	resources={
+		coal = 12 #initial distribution
+	}
+
+	history={
+		owner = WGR
+		add_core_of = WGR
+		add_core_of = DDR
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			13385 20
+		}
+	}
+
+	provinces={
+		13385 
+	}
+	manpower = 1057400
+	buildings_max_level_factor = 1.000
+	state_category = town
+
+	local_supplies=0.0 
+}

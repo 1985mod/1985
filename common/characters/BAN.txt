@@ -1,0 +1,20 @@
+characters={
+	BAN_Hussain_Ershad={
+		name = BAN_Hussain_Ershad
+		portraits={
+			civilian={
+				large=GFX_Portrait_BAN_Hussain_Ershad
+			}
+			army = {
+				large =GFX_Portrait_BAN_Hussain_Ershad
+				small =GFX_Portrait_BAN_Hussain_Ershad
+			}
+		}
+		country_leader={
+			ideology=national_conservatism 
+			traits={  }
+			expire="1999.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -7,30 +7,25 @@ state = {
 
 	history = {
 
-		owner = POL
-		add_core_of = POL
-		add_core_of = DNZ
-		
-
-		victory_points = {
-			362 10 # Danzig
-		}
-		
-		set_demilitarized_zone = no
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
 		
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 3
-			362 = {
-				naval_base = 5
+			12068 = {
+				naval_base = 10
+				naval_supply_hub = 1
 			}
 		}
+		
 	}
 
 	provinces = {
-		362
+		1091 11914 12068
 	}
 
 	local_supplies = 0.0 

@@ -1,0 +1,18 @@
+characters = {
+	CAM_Heng_Samrin ={
+		name = CAM_Heng_Samrin
+		portraits={
+			civilian={
+				large= GFX_Portrait_Heng_Samrin
+			}
+			army = {
+				large = GFX_Portrait_Heng_Samrin
+			}
+		}
+		country_leader={
+			ideology = marxism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

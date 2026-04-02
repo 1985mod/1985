@@ -4,6 +4,7 @@ state = {
 	manpower = 6144743
 	resources = {
 		steel = 35  #was 18 #was 30 was: 54
+		coal = 60 # initial distribution / 660 total
 	}
 
 	state_category = megalopolis #was metropolis, 2 slots diff
@@ -21,13 +22,13 @@ state = {
 			587 5 # Köln
 		}
 
-		victory_points = {
-			3444 5 # Düsseldorf
-		}
+		#victory_points = {
+		#	3444 5 # Düsseldorf
+		#}
 
-		victory_points = {
-			3547 15 # Bonn
-		}
+		#victory_points = {
+		#	3547 1 # Bonn
+		#}
 
 		buildings = {
 			infrastructure = 4
@@ -35,9 +36,29 @@ state = {
 			industrial_complex = 4 #WAS 2
 			air_base = 3
 		}
-	
-		set_demilitarized_zone = no
 
+		1939.1.1 = {
+			buildings = {
+				air_base = 6
+				radar_station = 1
+				#Westwall Forts
+				3444 = {
+					bunker = 2
+				}
+				9522 = {
+					bunker = 2
+				}
+				3547 = {
+					bunker = 2
+				}
+			}
+		}
+	
+		set_demilitarized_zone = yes
+	
+		1936.3.7 = {
+			set_demilitarized_zone = no
+		}
 	}
 
 	provinces = {

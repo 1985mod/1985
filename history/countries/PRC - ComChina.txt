@@ -1,50 +1,94 @@
 ﻿capital = 608
 
-oob = "PRC_1936"
+oob = "PRC_1985"
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 	tech_trucks = 1
+	gw_artillery = 1
+	tech_support = 1
 	mass_assault = 1
 }
-set_stability = 0.6
-set_war_support = 0.7
 
-recruit_character = PRC_li_xiannian
-recruit_character = PRC_zhu_de
-recruit_character = PRC_chen_yi
-recruit_character = PRC_peng_dehuai
-recruit_character = PRC_lin_biao
-recruit_character = PRC_kwong_hu
-recruit_character = PRC_luo_zhao
-recruit_character = PRC_liang_ma
-recruit_character = PRC_ma_jin
-recruit_character = PRC_ziao_jingguang
-recruit_character = PRC_nie_rongzhen
-recruit_character = PRC_su_yu
-recruit_character = PRC_liu_bocheng
-recruit_character = PRC_chen_geng
-recruit_character = PRC_gao_qiu
-recruit_character = PRC_liang_shen
-recruit_character = PRC_otto_braun
-recruit_character = PRC_gao_gang
-recruit_character = PRC_fang_zeyi
-recruit_character = PRC_xu_xiangqian
-recruit_character = PRC_deng_ye_peng
-recruit_character = PRC_ye_jianying
-recruit_character = PRC_hsia_tian
-recruit_character = PRC_zhang_wei
-recruit_character = PRC_zhou_enlai
-recruit_character = PRC_liu_shaoqi
-recruit_character = PRC_lin_bojiu
-recruit_character = PRC_dong_biwu
-recruit_character = PRC_he_yuandang
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
 
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		engine_tech_1 = 1
+		engine_tech_2 = 1
+	}
+}
+create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts) and Chinese history file. Any changes here should also be applied there
+	name = "T-34-85"
+	type = light_tank_chassis_1
+	parent_version = 1
+	modules = {
+		main_armament_slot = tank_heavy_machine_gun
+		turret_type_slot = tank_light_one_man_tank_turret
+		suspension_type_slot = tank_christie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 5
+		tank_nsb_armor_upgrade = 1
+	}
+	icon = "GFX_generic_gw_light_tank"
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
 
-save_global_event_target_as = WTT_communist_china
+set_stability = 0.8
+set_war_support = 0.4
 
-set_cosmetic_tag = PRC_proclaimed_communism
+recruit_character = PRC_li_xiannian_leader
 
 set_politics = {
 	ruling_party = communism
@@ -53,13 +97,17 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 100
+	communism = 53
+	socialism = 37
+	liberalism = 3
+	conservatism = 3
+    neutrality = 4
 }
 
 add_ideas = {
-	closed_economy
-	service_by_requirement
-	partial_economic_mobilisation
+	free_trade
+	limited_conscription
+	civilian_economy
 }
 
 if = {
@@ -67,9 +115,9 @@ if = {
 		has_dlc = "Waking the Tiger"
 	}
 	add_ideas = {
-		PRC_low_popular_support_3
 		PRC_power_struggles
-		PRC_red_army_weakened
+		PRC_growing_economy
+		PRC_unitary_republic
 	}
 }
 

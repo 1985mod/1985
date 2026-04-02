@@ -11,7 +11,10 @@ ideologies = {
 			}
 
 			chinese_socialism = {
-				
+			}
+			
+			communist_perestroika = {
+
 			}
 		}
 
@@ -66,10 +69,7 @@ ideologies = {
 			}
 
 			democratic_socialism ={
-
-			}
 			
-			communist_perestroika = {
 			}
 
 		}
@@ -82,7 +82,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 
-		color = { 200 50 50 }
+		color = { 255 102 102 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -125,7 +125,10 @@ ideologies = {
 
 			}
 			neoliberalism = {
-
+			
+			}
+            
+			social_liberalism = {
 			}
 		}
 
@@ -187,6 +190,15 @@ ideologies = {
 
 			}
 			reactionism = {
+			
+			}
+			liberal_conservatism = {
+			
+			}
+			social_conservatism = {
+			
+			}
+			national_conservatism = {
 
 			}
 		}
@@ -250,13 +262,16 @@ ideologies = {
 
 			}
 
-			autocracy  = {
+			autocracy = {
+			
 			}
 
 			oligarchism  = {
+			
 			}
-
-
+			
+			constitutional_monarchy = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -305,11 +320,16 @@ ideologies = {
 
 		types = {
 
-			populism = {
-
+			ethnic_nationalism = {
+			
 			}
 
-			fascism_ideology = {
+			civil_nationalism = {
+			
+			}
+			
+			extreme_nationalism = {
+			
 			}
 
 		}

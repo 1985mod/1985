@@ -102,13 +102,19 @@ if = {
 	}
 }
 
+recruit_character = TUR_kenan_evren
+
 set_politics = {
 	ruling_party = conservatism
 	last_election = "1935.2.8"
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 100
+	conservatism = 65
+	socialism = 5
+	neutrality = 13
+	fascism = 4
+	islamism = 13
 }
 
 set_convoys = 20

@@ -92,14 +92,14 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 0
 	socialism = 20
 	communism = 80
-	neutrality = 0
 }
 
 
 recruit_character = DDR_Erich_Honecker
 recruit_character = DDR_Heinrich_Homann
+recruit_character = DDR_egon_krenz
+recruit_character = DDR_lothar_de_maiziere
 
 

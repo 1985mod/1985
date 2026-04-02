@@ -5,6 +5,11 @@ state = {
 
 	state_category = city
 
+	resources = {
+
+		coal = 8 #initial distribution
+	}
+	
 	history = {
 
 		owner = WGR
@@ -25,6 +30,12 @@ state = {
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
+		}
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
+			}
 		}
 	}
 

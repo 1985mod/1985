@@ -1,6 +1,6 @@
 ﻿capital = 183
 
-#oob = ""
+oob = "LUX_1936"
 
 # Starting tech
 set_technology = {
@@ -8,6 +8,8 @@ set_technology = {
 }
 
 set_convoys = 5
+
+recruit_character = CYP_spyros_kyprianou
 
 set_politics = {
 	ruling_party = conservatism

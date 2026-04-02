@@ -13,7 +13,7 @@ state= {
 		owner = CYP
 		add_core_of = CYP
 		victory_points = {
-			7193 5
+			7193 3
 		}
 		buildings = {
 			infrastructure = 2

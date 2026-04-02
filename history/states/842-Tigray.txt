@@ -35,6 +35,7 @@ state={
 		}
 		owner = ETH
 		add_core_of = ETH
+
 	}
 
 	provinces={

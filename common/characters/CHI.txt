@@ -11,7 +11,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = authoritarian_democracy
 			traits = {}
 			expire = "2020.3.10.1"
 			id = -90

@@ -39,6 +39,9 @@ if = {
 		CHI_warlord_state_idea
 	}
 }
+
+set_cosmetic_tag = SIK_puppet_communist_china
+
 1939.1.1 = {
 
 	add_political_power = 1198

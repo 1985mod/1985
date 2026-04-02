@@ -1,6 +1,6 @@
 ﻿capital = 671 #Hanoi
 
-oob = "VIN_1936"
+oob = "VIN_1985"
 
 set_research_slots = 3
 
@@ -92,16 +92,17 @@ if = {
 }
 
 set_politics = {
-	ruling_party = socialism
-	last_election = "1933.2.16"
+	ruling_party = communism
+	last_election = "1985.2.16"
 	election_frequency = 36
 	elections_allowed = no
 }
 set_popularities = {
-	socialism = 100
+	communism = 100
 }
 
-#NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
+
+recruit_character = VIN_Le_Duan
 
 
 

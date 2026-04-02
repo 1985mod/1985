@@ -8,8 +8,7 @@ state={
 
 	history={
 		owner = SOV
-		#add_core_of = JAP
-		add_claim_by = SOV # Removed because of too much aggression (ну-ну)
+		add_core_of = SOV
 		buildings = {
 			infrastructure = 2
 			1399 = {

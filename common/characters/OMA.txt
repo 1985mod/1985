@@ -1,0 +1,15 @@
+characters = {
+	OMA_Qaboos = {
+		name = OMA_Qaboos
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OMA/Portrait_Qaboos.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { }
+			expire = "2000.3.1.1"
+		}
+	}
+}

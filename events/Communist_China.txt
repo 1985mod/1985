@@ -1,0 +1,89 @@
+add_namespace = communist_china
+
+country_event = {
+	id = communist_china.1
+	title = communist_china.1.t
+	desc = communist_china.1.desc
+
+	trigger = {
+		tag = PRC
+		has_war = no
+		custom_trigger_tooltip = {
+		tooltip = has_integration_uyghurs_70_tt
+			check_variable = {
+				PRC.integration_uyghurs > 69
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		PRC = {
+			add_state_core = 287
+			add_state_core = 617
+			add_state_core = 618
+			add_state_core = 619
+			add_state_core = 759
+			add_state_core = 760
+			add_state_core = 1042
+		}
+	}
+}
+
+country_event = {
+	id = communist_china.2
+	title = communist_china.2.t
+	desc = communist_china.2.desc
+
+	trigger = {
+		tag = PRC
+		has_war = no
+		custom_trigger_tooltip = {
+		tooltip = has_integration_uyghurs_50_tt
+			check_variable = {
+				PRC.uyghur_resistance > 49
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+       immediate = {
+	    	SIK = { transfer_state = 287 }
+	    	SIK = { transfer_state = 617 }
+	     	SIK = { transfer_state = 618 }
+			SIK = { transfer_state = 619 }
+			SIK = { transfer_state = 759 }
+			SIK = { transfer_state = 760 }
+			SIK = { transfer_state = 1042 }   	
+	  }
+	  
+	  option = {
+			declare_war_on = {
+				target = SIK
+				type = annex_everything
+			}	  
+	  }
+}
+
+country_event = {
+	id = communist_china.3
+	title = communist_china.2.t
+	desc = communist_china.2.desc
+
+	trigger = {
+		tag = PRC
+		has_war = no
+		mean_time_to_happen = { days = 30 }
+	}
+	
+	fire_only_once = yes
+	  
+	  option = {
+			declare_war_on = {
+				target = SIK
+				type = annex_everything
+			}	  
+	  }
+}

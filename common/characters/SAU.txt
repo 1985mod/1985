@@ -1,0 +1,15 @@
+characters = {
+	SAU_Fahd = {
+		name = SAU_Fahd
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAU/Portrait_Fahd.dds"
+			}
+		}
+		country_leader = {
+			ideology = Salafism
+			traits = { }
+			expire = "2005.3.1.1"
+		}
+	}
+}

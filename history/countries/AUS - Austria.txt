@@ -1,11 +1,5 @@
 ﻿capital = 4 # Vienna
 
-
-
-
-
-
-
 set_research_slots = 3
 
 set_technology = {
@@ -40,7 +34,7 @@ IF = {
 		}
 }
 
-
+recruit_character = AUS_fred_sinowatz
 
 set_politics = {
 	ruling_party = conservatism
@@ -50,9 +44,7 @@ set_politics = {
 }
 
 set_popularities = {
-
 	conservatism = 100
-
 }
 
 set_stability = 0.50

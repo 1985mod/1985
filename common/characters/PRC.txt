@@ -1,6 +1,6 @@
 characters = {
-	PRC_li_xiannian ={
-		name = PRC_li_xiannian
+	PRC_li_xiannian_leader ={
+		name = PRC_li_xiannian_leader
 		portraits ={
 			civilian ={
 				large = GFX_portrait_PRC_li_xiannian

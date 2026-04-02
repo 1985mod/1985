@@ -1,9 +1,15 @@
 ﻿capital = 656 # Kuwait City
 
-#oob = ""
+oob = "KUW_1985"
 
 # Starting tech
 set_technology = {
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
 	infantry_weapons = 1
 	tech_trucks = 1
 }
@@ -16,30 +22,6 @@ IF = {
 }
 
 set_convoys = 5
-
-set_cosmetic_tag = KUW_protectorate
-
-recruit_character = KUW_ahmad_al_sabah
-recruit_character = KUW_pot
-recruit_character = KUW_aco2
-recruit_character = KUW_mt
-recruit_character = KUW_ar
-recruit_character = KUW_fascist_guy
-recruit_character = KUW_acd2
-recruit_character = KUW_ncm
-recruit_character = KUW_ai2
-recruit_character = KUW_acas
-recruit_character = KUW_democratic_guy
-recruit_character = KUW_aa2
-recruit_character = KUW_awt
-recruit_character = KUW_coi
-recruit_character = KUW_stc
-recruit_character = KUW_acgs
-recruit_character = KUW_nccr
-recruit_character = KUW_ncs
-recruit_character = KUW_nt
-recruit_character = KUW_communist_guy
-recruit_character = KUW_acr
 
 1939.1.1 = {
 	#generic focuses
@@ -90,4 +72,6 @@ set_popularities = {
 	neutrality = 58
 }
 
+
+recruit_character = KUW_Jaber
 

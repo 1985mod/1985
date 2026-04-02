@@ -39,7 +39,6 @@ technology_categories = {
 	cas_bomber
 	ship_modules_tech
 	dd_tech
-	cl_tech
 	ca_tech
 	cv_tech
 	bc_tech
@@ -63,6 +62,8 @@ technology_categories = {
 	cat_superior_firepower
 	cat_grand_battle_plan
 	cat_mass_assault
+	cat_deep_battle
+	cat_mass_mobilization
 	cat_base_strike
 	cat_trade_interdiction
 	cat_fleet_in_being
@@ -77,6 +78,7 @@ technology_categories = {
 	engineers_tech
 	recon_tech
 	mountaineers_tech
+	rangers_tech_cat
 	military_police_tech
 	hospital_tech
 	logistics_tech
@@ -95,11 +97,6 @@ technology_categories = {
 	cat_synth_oil
 	cat_armored_cars
 	cat_special_forces_generic
-	shock_tech
-	deserti_tech
-	amechanized_equipment
-	commando_tech
-	foresti_tech
 	cat_torpedoes
 	cat_ship_light_battery
 	cat_ship_medium_battery
@@ -110,17 +107,18 @@ technology_categories = {
 	cat_air_engine
 	cat_air_bombs
 	special_forces_doctrine
-	category_militia
-	category_helicopter
 	cat_maritime_patrol
 	cat_mountaineers_doctrine
 	cat_marines_doctrine
 	cat_paratroopers_doctrine
+	cat_rangers_doctrine
 	naval_armor
 	naval_artillery
 	helicopter_tech
 	pykrete_tech
 	transport_planes_cat
+	ifv_and_apc
+	thermal_imager_1st
 
 	mio_cat_tech_all_armor_and_modules #Includes modules and chassis (DOES NOT INCLUDE ARMORED CARS)
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
@@ -157,34 +155,18 @@ technology_folders = {
 				has_dlc = "No Step Back"
 			}
 		}
-					  
 	}
 	nsb_armour_folder = {
 		ledger = army
 		available = {
 			has_dlc = "No Step Back"
 		}
-			   
 	}
 	artillery_folder = {
 		ledger = army
 	}
 	air_techs_folder = {
-		available = {
-			not = { has_dlc = "By Blood Alone" }
-		}
-		ledger = air
-	}
-	air_bomber_techs_folder = {
-		available = {
-			not = { has_dlc = "By Blood Alone" }
-		}
-		ledger = air
-	}
-	bba_air_special_techs_folder = {
-		available = {
-			has_dlc = "By Blood Alone"
-		}
+		available = { NOT = { has_dlc = "By Blood Alone" } }
 		ledger = air
 	}
 	bba_air_techs_folder = {
@@ -205,14 +187,12 @@ technology_folders = {
 		}
 		ledger = navy
 	}
-
 	mtgnavalsupportfolder = {
 		available = {
 			has_dlc = "Man the Guns"
 		}
 		ledger = navy
 	}
-
 	industry_folder = {
 		ledger = civilian
 	}
@@ -230,7 +210,10 @@ technology_folders = {
 	}
 	special_forces_doctrine_folder = {
 		available = {
-			has_dlc = "Arms Against Tyranny"
+                        OR = {
+                                has_dlc = "Arms Against Tyranny"
+                                has_dlc = "No Compromise, No Surrender"
+                        }
 		}
 		ledger = hidden #For now
 		doctrine = yes
