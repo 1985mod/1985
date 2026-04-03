@@ -325,7 +325,7 @@ PixelShader =
 	static const float FEATHER_MAX = 0.01f;
 	static const float MOON_FEATHER_MIN = -0.01f;
 	static const float MOON_FEATHER_MAX = 0.01;
-	static const float NIGHT_OPACITY = 0.9f;
+	static const float NIGHT_OPACITY = 0.85f;
 	static const float NIGHT_DARKNESS = 0.5f;
 	static const float SOUTH_POLE_OFFSET = 0.17f; // Our map is missing big parts of globe on north and south
 	static const float NORTH_POLE_OFFSET = 0.93f;
@@ -358,7 +358,7 @@ PixelShader =
 	float DayNightFactor( float3 vGlobeNormal, float vMin, float vMax )
 	{
 		float vDot = dot( vGlobeNormal, DayNight_Hour_SunDir.yzw );
-		return saturate( 1 - vFoWOpacity_FoWTime_SnowMudFade_MaxGameSpeed.w );
+		return saturate ( 1 );
 	}
 
 
@@ -522,8 +522,8 @@ PixelShader =
 	float3 CalculatePBRSpecularPower( float3 vPos, float3 vNormal, float3 vMaterialSpecularColor, float vSpecularPower, float3 vLightColor, float3 vLightDirIn )
 	{	
 		float3 H = normalize( normalize( vCamPos - vPos ) + -vLightDirIn );
-		float NdotH = 0;
-		float NdotL = 0;
+		float NdotH = saturate( dot( H, vNormal ) );
+		float NdotL = saturate( dot( -vLightDirIn, vNormal ) );
 		float3 vSpecularColor = vLightColor * saturate( pow( NdotH, vSpecularPower ) * SPECULAR_MULTIPLIER ) * vMaterialSpecularColor;
 		vSpecularColor = FresnelSchlick( vMaterialSpecularColor * SPECULAR_MULTIPLIER, -vLightDirIn, H) * ((vSpecularPower + 2) / 8 ) * saturate( pow( NdotH, vSpecularPower ) ) * NdotL * vLightColor;
 		return vSpecularColor;
@@ -598,12 +598,6 @@ PixelShader =
 	float3 CalculateSunDirection( float3 vWorldPos, float3 SunPos, float3 SecondSunPos, float3 MoonPos, float3 SecondMoonPos )
 	{
 		float vSelected = DayNightFactor( CalcGlobeNormal( vWorldPos.xz ), 0.0f, 0.0001f  );
-		
-		SunPos = float3(3000.0, 1200.0, 0.0);
-		SecondSunPos = float3(0.0, 1200.0, 0.0);
-		MoonPos = float3(3000.0, 650.0, 0.0);
-		SecondMoonPos = float3(0.0, 650.0, 0.0);
-		
 		float3 vSourcePos = lerp( SunPos, MoonPos, vSelected );
 		float3 vSecondSourcePos = lerp( SecondSunPos, SecondMoonPos, vSelected );
 
@@ -991,9 +985,8 @@ PixelShader =
 		vBloomAlpha = vBloomAlpha * ( 1.0f - vOccupationMask );
 		vColor = lerp( vColor, vColorMask.rgb, vOccupationMask );
 	}
-
-
-    void dominance_fx_apply(inout float3 Color, float3 Normal, float2 UV, in sampler2D Texture1, in sampler2D Texture2, in sampler2D Texture3, float2 OutlineCutoff, float2 CameraDistOverride, float OutlineMult)
+	
+	void dominance_fx_apply(inout float3 Color, float3 Normal, float2 UV, in sampler2D Texture1, in sampler2D Texture2, in sampler2D Texture3, float2 OutlineCutoff, float2 CameraDistOverride, float OutlineMult)
 	{
 		// Since the gradient border texture is divided in two vertically, we need to map the UV to the expected part
 
