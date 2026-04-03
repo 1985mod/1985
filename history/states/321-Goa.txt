@@ -7,21 +7,21 @@ state={
 	state_category = enclave
 
 	history={
-		owner = RAJ
-		add_core_of = RAJ
+		owner = MOR
+		add_core_of = MOR
+		
+		set_demilitarized_zone = yes
+		
 		victory_points = {
-			1273 1 
+			13395 3
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
-			1273 ={
-				naval_base = 1
-			}
 		}
 	}
 
 	provinces={
-		1273 
+		13392 13393 13394 13395 
 	}
 
 	local_supplies=0.0 

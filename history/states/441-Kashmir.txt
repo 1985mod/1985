@@ -13,7 +13,11 @@ state={
 		}
 		add_claim_by = RAJ
 		add_claim_by = PAK
+<<<<<<< Updated upstream
 		add_core_of = KAS
+=======
+		add_core_of = RAJ
+>>>>>>> Stashed changes
 		
 		set_demilitarized_zone = yes
 

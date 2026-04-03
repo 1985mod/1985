@@ -21,7 +21,10 @@ state={
 
 		}
 		add_core_of = GRE
+<<<<<<< Updated upstream
 		add_claim_by = BUL
+=======
+>>>>>>> Stashed changes
 	}
 
 	provinces={

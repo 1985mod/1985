@@ -11,7 +11,10 @@ state={
 	}
 
 	history={
+<<<<<<< Updated upstream
 		add_core_of = SCO
+=======
+>>>>>>> Stashed changes
 		owner = ENG
 		victory_points = {
 			200 5 #Aberdeen

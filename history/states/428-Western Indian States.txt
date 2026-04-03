@@ -12,7 +12,11 @@ state = {
 	history = {
 
 		owner = RAJ
+<<<<<<< Updated upstream
 		add_core_of = WIS
+=======
+		add_core_of = RAJ
+>>>>>>> Stashed changes
 
 		victory_points = {
 			10118 1 # Jamnagar

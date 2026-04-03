@@ -28,7 +28,10 @@ state = {
 
 		add_core_of = CZE
 		add_core_of = SLO
+<<<<<<< Updated upstream
 		add_claim_by = HUN
+=======
+>>>>>>> Stashed changes
 		
 	}
 	

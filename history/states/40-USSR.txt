@@ -13,7 +13,10 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = SOV
+<<<<<<< Updated upstream
 		add_core_of = ALT #Could be a claim too
+=======
+>>>>>>> Stashed changes
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2

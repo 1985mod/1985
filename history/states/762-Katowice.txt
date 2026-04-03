@@ -16,8 +16,11 @@ state = {
 		
 		owner = POL
 		add_core_of = POL
+<<<<<<< Updated upstream
 		add_core_of = SIL
 		add_claim_by = PRE
+=======
+>>>>>>> Stashed changes
 
 		victory_points = {
 			6464 5 # Katovice

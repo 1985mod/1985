@@ -37,7 +37,11 @@ units = {
 	#Royal Afghani Army
 	division = {
 		name = "Royal Afghan Household Division"
+<<<<<<< Updated upstream
 		location = 10746
+=======
+		location = 8053
+>>>>>>> Stashed changes
 		division_template = "Royal Guard"
 		start_experience_factor = 0.3
 	}
@@ -49,7 +53,11 @@ units = {
 		}
 		location = 8053
 		division_template = "Militia"
+<<<<<<< Updated upstream
 		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.2
+>>>>>>> Stashed changes
 
 	}
 	division = {
@@ -60,7 +68,11 @@ units = {
 		}
 		location = 2017
 		division_template = "Militia"
+<<<<<<< Updated upstream
 		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.7
+>>>>>>> Stashed changes
 
 	}
 	division = {
@@ -71,7 +83,11 @@ units = {
 		}
 		location = 2078
 		division_template = "Militia"
+<<<<<<< Updated upstream
 		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.5
+>>>>>>> Stashed changes
 
 	}
 	#Herat Army
@@ -83,7 +99,11 @@ units = {
 		}
 		location = 10789
 		division_template = "Militia"
+<<<<<<< Updated upstream
 		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.5
+>>>>>>> Stashed changes
 
 	}
 	division = {
@@ -94,7 +114,11 @@ units = {
 		}
 		location = 12769
 		division_template = "Militia"
+<<<<<<< Updated upstream
 		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.2
+>>>>>>> Stashed changes
 
 	}
 	division = {
@@ -117,7 +141,11 @@ units = {
 		}
 		location = 12831
 		division_template = "Militia"
+<<<<<<< Updated upstream
 		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.4
+>>>>>>> Stashed changes
 
 	}
 	division = {
@@ -142,6 +170,57 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+<<<<<<< Updated upstream
+=======
+	
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12248
+		division_template = "Militia"
+		start_equipment_factor = 0.7
+
+	}
+	
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10476
+		division_template = "Militia"
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 2017
+		division_template = "Militia"
+		start_equipment_factor = 0.6
+
+	}
+	
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10789
+		division_template = "Militia"
+		start_equipment_factor = 0.5
+
+	}
+>>>>>>> Stashed changes
 }
 
 ### Starting Equipment ###

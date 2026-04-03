@@ -8,7 +8,10 @@ state = {
 
 		owner = CAN
 		add_core_of = CAN
+<<<<<<< Updated upstream
 		add_core_of = QUE
+=======
+>>>>>>> Stashed changes
 
 		buildings = {
 			infrastructure = 1

@@ -12,7 +12,10 @@ state = {
 
 		}
 		add_core_of = SOV
+<<<<<<< Updated upstream
 		add_core_of = NOA
+=======
+>>>>>>> Stashed changes
 		victory_points = {
 			9628 3
 		}

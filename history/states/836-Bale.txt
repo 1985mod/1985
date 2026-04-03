@@ -31,9 +31,13 @@ state = {
 		
 		owner = ETH
 		add_core_of = ETH
+<<<<<<< Updated upstream
 		add_core_of = SOM
 		add_core_of = ORO
 
+=======
+		
+>>>>>>> Stashed changes
 	}
 
 	provinces = {

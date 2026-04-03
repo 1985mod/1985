@@ -18,7 +18,10 @@ state = {
 			}
 		}
 		add_core_of = DEN
+<<<<<<< Updated upstream
 		add_core_of = GRN
+=======
+>>>>>>> Stashed changes
 
 		victory_points = { #Nuuk
 			12512 1

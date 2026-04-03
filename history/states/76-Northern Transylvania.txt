@@ -9,7 +9,10 @@ state = {
 
 		owner = ROM
 		add_core_of = ROM
+<<<<<<< Updated upstream
 		add_core_of = TRA
+=======
+>>>>>>> Stashed changes
 
 		buildings = {
 			infrastructure = 2

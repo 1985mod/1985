@@ -16,8 +16,11 @@ state = {
 		
 		add_core_of = SOV
 		add_core_of = UZB
+<<<<<<< Updated upstream
 		add_core_of = KKP
 		add_core_of = KHI
+=======
+>>>>>>> Stashed changes
 		
 	}
 

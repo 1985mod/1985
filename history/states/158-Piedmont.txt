@@ -32,7 +32,10 @@ state = {
 			}
 		}
 		add_core_of = ITA
+<<<<<<< Updated upstream
 		add_core_of = SPM
+=======
+>>>>>>> Stashed changes
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 10

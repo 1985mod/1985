@@ -11,9 +11,14 @@ state = {
 
 	history = {
 
+<<<<<<< Updated upstream
 		owner = JAP
 		add_core_of = FSM
 		add_core_of = PLU
+=======
+		owner = USA
+		add_core_of = USA
+>>>>>>> Stashed changes
 
 		buildings = {
 

@@ -5,6 +5,10 @@ state={
 	history={
 		owner = ISR
 		add_core_of = PAL
+<<<<<<< Updated upstream
+=======
+		start_resistance = yes
+>>>>>>> Stashed changes
 		set_resistance = 35
 		buildings = {
 			infrastructure = 1

@@ -10,7 +10,11 @@ state={
 
 	history={
 		owner = FRA
+<<<<<<< Updated upstream
 		add_core_of = TAH
+=======
+		add_core_of = FRA
+>>>>>>> Stashed changes
 		victory_points = {
 			4268 1
 		}

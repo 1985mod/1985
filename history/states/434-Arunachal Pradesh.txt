@@ -13,7 +13,10 @@ state={
 
 		owner = RAJ
 		add_core_of = RAJ
+<<<<<<< Updated upstream
 		add_core_of = TIB
+=======
+>>>>>>> Stashed changes
 
 		buildings = {
 			infrastructure = 1

@@ -9,7 +9,10 @@ state = {
 	state_category = rural
 	history = {
 		owner = PRC
+<<<<<<< Updated upstream
 		add_core_of = XSM
+=======
+>>>>>>> Stashed changes
 		add_core_of = CHI
 		add_core_of = PRC
 

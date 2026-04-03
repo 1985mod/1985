@@ -30,7 +30,10 @@ state = {
 			}
 		}
 		add_core_of = ITA
+<<<<<<< Updated upstream
 		add_core_of = SPM
+=======
+>>>>>>> Stashed changes
 	}
 	provinces = {
 		902 6891 9772 9863 11755 11773 11824 11874 	

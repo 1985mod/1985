@@ -29,7 +29,10 @@ state= {
 			}
 		}
 		add_core_of = ENG
+<<<<<<< Updated upstream
 		add_core_of = WLS
+=======
+>>>>>>> Stashed changes
 	}
 
 	provinces=

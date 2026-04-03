@@ -6,7 +6,11 @@ state={
 	state_category = tiny_island
 
 	history={
+<<<<<<< Updated upstream
 		add_core_of = BAH
+=======
+		add_core_of = ENG
+>>>>>>> Stashed changes
 		owner = ENG
 		buildings = {
 			infrastructure = 2

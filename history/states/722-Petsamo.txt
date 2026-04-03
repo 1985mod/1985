@@ -19,8 +19,12 @@ state={
 			}
 		}
 		add_core_of = SOV
+<<<<<<< Updated upstream
 		add_core_of = SMI
 		add_claim_by = FIN
+=======
+		add_core_of = KAR
+>>>>>>> Stashed changes
 
 	}
 	

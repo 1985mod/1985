@@ -10,8 +10,14 @@ state = {
 		owner = PRC
 		add_core_of = SIK
 		add_core_of = CHI
+<<<<<<< Updated upstream
 		add_core_of = PRC
 		add_core_of = KUM
+=======
+		start_resistance = yes
+		set_resistance = 15
+		set_compliance = 45
+>>>>>>> Stashed changes
 
 		buildings = {
 			infrastructure = 2

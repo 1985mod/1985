@@ -12,7 +12,10 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = SOV
+<<<<<<< Updated upstream
 		add_core_of = KAL
+=======
+>>>>>>> Stashed changes
 		victory_points = {
 			11724 1
 		}

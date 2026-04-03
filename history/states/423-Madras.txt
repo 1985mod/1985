@@ -5,7 +5,11 @@ state={
 		rubber=19.000
 	}
 	provinces={
+<<<<<<< Updated upstream
 		1238 1268 1381 4327 4416 4420 7265 7363 7391 7436 7447 8067 10130 10190 10246 10274 10278 10808 12164 12275 
+=======
+		1238 1268 1381 4327 4416 4420 7265 7363 7391 7436 7447 8067 10130 10149 10190 10246 10274 10278 10808 12164 12275 
+>>>>>>> Stashed changes
 	}
 	manpower=24993300
 	buildings_max_level_factor=1.000
@@ -15,6 +19,12 @@ state={
 		owner = RAJ
 		buildings = {
 			infrastructure = 2
+<<<<<<< Updated upstream
+=======
+			10149 = {
+				naval_base = 1
+			}
+>>>>>>> Stashed changes
 		}
 		victory_points = {
 			10246 3 # Madurai

@@ -13,7 +13,10 @@ state={
 	history={
 		owner = PRC
 		add_core_of = CHI
+<<<<<<< Updated upstream
 		add_core_of = MAN
+=======
+>>>>>>> Stashed changes
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 2

@@ -14,8 +14,11 @@ state = {
 
 		add_core_of = SOV
 		add_core_of = KAR
+<<<<<<< Updated upstream
 		add_core_of = SMI
 		add_claim_by = FIN
+=======
+>>>>>>> Stashed changes
 		
 		victory_points = { #Salla
 			197 1

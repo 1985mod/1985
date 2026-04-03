@@ -6,7 +6,11 @@ state={
 	state_category = rural
 
 	history={
+<<<<<<< Updated upstream
 		add_core_of = GDL
+=======
+		add_core_of = FRA
+>>>>>>> Stashed changes
 		owner = FRA
 		victory_points = {
 			9377 1

@@ -41,7 +41,10 @@ state = {
 
 		}
 		add_core_of = ITA
+<<<<<<< Updated upstream
 		add_core_of = TTS
+=======
+>>>>>>> Stashed changes
 
 	}
 

@@ -19,7 +19,10 @@ state = {
 		}
 		add_core_of = YUG
 		add_core_of = MAC
+<<<<<<< Updated upstream
 		add_claim_by = BUL
+=======
+>>>>>>> Stashed changes
 	}
 
 	provinces = {

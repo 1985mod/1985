@@ -7,8 +7,13 @@ state={
 	state_category = enclave
 
 	history={
+<<<<<<< Updated upstream
 		owner = MLD
 		add_core_of = MLD
+=======
+		owner = RAJ
+		add_core_of = RAJ
+>>>>>>> Stashed changes
 		buildings = {
 			infrastructure = 2
 			4967 = {

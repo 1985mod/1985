@@ -35,8 +35,11 @@ state={
 		}
 		owner = ETH
 		add_core_of = ETH
+<<<<<<< Updated upstream
 		add_core_of = TIG
 		add_claim_by = ERI
+=======
+>>>>>>> Stashed changes
 
 	}
 

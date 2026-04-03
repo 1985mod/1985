@@ -21,7 +21,10 @@ state={
 			690 1 
 		}
 		add_core_of = ROM
+<<<<<<< Updated upstream
 		add_core_of = TRA
+=======
+>>>>>>> Stashed changes
 	}
 
 	provinces={

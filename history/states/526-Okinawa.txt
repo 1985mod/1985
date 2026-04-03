@@ -13,8 +13,12 @@ state = {
 
 		owner = JAP
 		add_core_of = JAP
+<<<<<<< Updated upstream
 		add_core_of = OKN
 
+=======
+		
+>>>>>>> Stashed changes
 		buildings = {
 			infrastructure = 2
 			air_base = 3

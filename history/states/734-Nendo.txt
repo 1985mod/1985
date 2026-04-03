@@ -6,7 +6,11 @@ state={
 
 	history={
 		owner = FRA
+<<<<<<< Updated upstream
 		add_core_of = TAH
+=======
+		add_core_of = FRA
+>>>>>>> Stashed changes
 		buildings = {
 			infrastructure = 2
 			7390 = {

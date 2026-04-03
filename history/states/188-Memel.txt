@@ -10,7 +10,10 @@ state = {
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = LIT
+<<<<<<< Updated upstream
 		add_claim_by = PRE
+=======
+>>>>>>> Stashed changes
 
 		victory_points = {
 			3288 3 # Klaipeda/Memel

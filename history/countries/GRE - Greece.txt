@@ -163,6 +163,7 @@ set_convoys = 80
 
 recruit_character = GRE_andreas_papandreou
 
+<<<<<<< Updated upstream
 
 ### VARIANTS ###
 # 1936 Start #
@@ -299,3 +300,5 @@ if = {
 		obsolete = yes
 	}
 }
+=======
+>>>>>>> Stashed changes

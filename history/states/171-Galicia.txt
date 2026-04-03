@@ -8,7 +8,10 @@ state={
 
 	history={
 		owner = SPR
+<<<<<<< Updated upstream
 		add_core_of = GLC
+=======
+>>>>>>> Stashed changes
 		victory_points = {
 			758 5
 		}

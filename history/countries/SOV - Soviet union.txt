@@ -85,7 +85,10 @@ if = {
 
 set_convoys = 50
 
+<<<<<<< Updated upstream
 #create_faction = WARSAW_PACT
+=======
+>>>>>>> Stashed changes
 create_faction_from_template = faction_template_warsaw_pact
 
 add_to_faction = SOV  

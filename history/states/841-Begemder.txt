@@ -31,7 +31,10 @@ state = {
 		
 		owner = ETH
 		add_core_of = ETH
+<<<<<<< Updated upstream
 		add_core_of = QEM
+=======
+>>>>>>> Stashed changes
 		
 	}
 

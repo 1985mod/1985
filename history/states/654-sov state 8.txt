@@ -12,7 +12,10 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = SOV
+<<<<<<< Updated upstream
 		add_core_of = ALT
+=======
+>>>>>>> Stashed changes
 		victory_points = {
 			4800 1 #Oyrot-Tura/Gorno-Altaysk
 		}

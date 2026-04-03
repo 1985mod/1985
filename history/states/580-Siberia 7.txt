@@ -16,7 +16,10 @@ state = {
 
 		}
 		add_core_of = SOV
+<<<<<<< Updated upstream
 		add_core_of = OVO
+=======
+>>>>>>> Stashed changes
 	}
 
 	provinces = {

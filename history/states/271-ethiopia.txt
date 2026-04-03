@@ -37,7 +37,10 @@ state=
 		
 		
 		add_core_of = ETH
+<<<<<<< Updated upstream
 		add_core_of = ORO
+=======
+>>>>>>> Stashed changes
 
 	}
 

@@ -14,9 +14,12 @@ state = {
 
 		owner = SOV
 		add_core_of = SOV
+<<<<<<< Updated upstream
 		add_core_of = FER
 		add_core_of = ANU
 		add_claim_by = JAP
+=======
+>>>>>>> Stashed changes
 
 		buildings = {
 			infrastructure = 2

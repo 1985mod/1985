@@ -14,8 +14,11 @@ state = {
 
 		owner = POL
 		add_core_of = POL
+<<<<<<< Updated upstream
 		add_core_of = SIL
 		add_core_of = PRE
+=======
+>>>>>>> Stashed changes
 
 		victory_points = {
 			11467 5 # Gleiwitz

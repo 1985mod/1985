@@ -6,9 +6,14 @@ state=
 	manpower=21657
 	history=
 	{
+<<<<<<< Updated upstream
 		owner = JAP
 		add_core_of = JAP
 		add_core_of = GUM
+=======
+		owner = USA
+		add_core_of = USA
+>>>>>>> Stashed changes
 		buildings = {
 			infrastructure = 2
 			air_base = 3

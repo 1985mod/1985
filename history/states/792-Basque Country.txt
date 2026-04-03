@@ -10,7 +10,10 @@ state={
 		victory_points = {
 			740 10
 		}
+<<<<<<< Updated upstream
 		add_core_of = NAV
+=======
+>>>>>>> Stashed changes
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 1

@@ -15,7 +15,10 @@ state = {
 			infrastructure = 1
 		}
 		add_core_of = SOV
+<<<<<<< Updated upstream
 		add_core_of = FER
+=======
+>>>>>>> Stashed changes
 	}
 
 	provinces = {

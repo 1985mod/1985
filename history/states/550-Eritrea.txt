@@ -12,6 +12,10 @@ state=
 	history={
 		owner = ETH
 		add_core_of = ERI
+<<<<<<< Updated upstream
+=======
+		add_core_of = ETH
+>>>>>>> Stashed changes
 		victory_points = { #Massaua
 			12766 1
 		}

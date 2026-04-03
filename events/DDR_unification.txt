@@ -10,11 +10,6 @@ country_event = {
 		NOT = { has_global_flag = GER_unification1 }
 		is_in_faction = no
 		is_puppet = no
-		date > 1990.10.3 
-		}
-		set_politics = { 
-            ruling_party = communism
-		}
 	}
 
 	option = { # ГДР согласна

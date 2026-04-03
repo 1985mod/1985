@@ -11,8 +11,13 @@ state = {
 
 	history = {
 		
+<<<<<<< Updated upstream
 		owner = HOL
 		add_core_of = CRC
+=======
+		owner = USA
+		add_core_of = USA
+>>>>>>> Stashed changes
 
 		victory_points = {
 			153 1 # Willemstad

@@ -24,7 +24,10 @@ state={
 			}
 
 		}
+<<<<<<< Updated upstream
 		add_core_of = OCC
+=======
+>>>>>>> Stashed changes
 		add_core_of = FRA
 
 	}

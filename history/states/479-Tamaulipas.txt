@@ -14,7 +14,10 @@ state = {
 
 		owner = MEX
 		add_core_of = MEX
+<<<<<<< Updated upstream
 		add_core_of = RIG
+=======
+>>>>>>> Stashed changes
 
 		buildings = {
 			infrastructure = 2

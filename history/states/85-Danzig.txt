@@ -7,6 +7,7 @@ state = {
 
 	history = {
 
+<<<<<<< Updated upstream
 		owner = POL
 		add_core_of = POL
 		add_core_of = DNZ
@@ -18,6 +19,11 @@ state = {
 		}
 		
 		set_demilitarized_zone = yes
+=======
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+>>>>>>> Stashed changes
 		
 		buildings = {
 			infrastructure = 3

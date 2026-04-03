@@ -10,10 +10,15 @@ state={
 	history = {
 
 		owner = PRC
+<<<<<<< Updated upstream
 		add_core_of = SHX
 		add_core_of = CHI
 		add_core_of = PRC
 		add_core_of = MEN
+=======
+		add_core_of = CHI
+		add_core_of = PRC
+>>>>>>> Stashed changes
 
 		victory_points = {
 			3427 1 # Ordos

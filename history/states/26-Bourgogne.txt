@@ -20,7 +20,10 @@ state={
 			industrial_complex = 1
 
 		}
+<<<<<<< Updated upstream
 		add_core_of = OCC
+=======
+>>>>>>> Stashed changes
 		add_core_of = FRA
 	}
 

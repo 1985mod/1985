@@ -41,7 +41,10 @@ state={
 			}
 		}
 		add_core_of = FRA
+<<<<<<< Updated upstream
 		add_core_of = BRI
+=======
+>>>>>>> Stashed changes
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5

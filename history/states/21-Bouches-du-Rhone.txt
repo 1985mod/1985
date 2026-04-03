@@ -26,7 +26,10 @@ state={
 				coastal_bunker = 1
 			}
 		}
+<<<<<<< Updated upstream
 		add_core_of = OCC
+=======
+>>>>>>> Stashed changes
 		add_core_of = FRA
 		1939.1.1 = {
 			buildings = {

@@ -8,7 +8,10 @@ state={
 	history={
 		owner = SOV
 		add_core_of = SOV
+<<<<<<< Updated upstream
 		add_claim_by = FIN
+=======
+>>>>>>> Stashed changes
 		add_core_of = KAR
 		buildings = {
 			infrastructure = 3 #was: 5
