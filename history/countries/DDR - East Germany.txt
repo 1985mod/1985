@@ -96,6 +96,18 @@ set_popularities = {
 	communism = 80
 }
 
+add_opinion_modifier = {
+    target = WGR
+    modifier = divided_into_2_sides 
+}	
+
+WGR = {
+add_opinion_modifier = {
+    target = DDR
+    modifier = divided_into_2_sides
+}	
+}
+
 
 recruit_character = DDR_Erich_Honecker
 recruit_character = DDR_Heinrich_Homann

@@ -32,48 +32,16 @@ set_popularities = {
 	neutrality = 5
 }
 
-create_country_leader = {
-	name = "Syngman Rhee"
-	desc = ""
-	picture = GFX_portrait_Syngman_Rhee
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+add_opinion_modifier = {
+    target = KOR
+    modifier = divided_into_2_sides 
+}	
 
-create_country_leader = {
-	name = "Yi Kang"
-	desc = ""
-	picture = GFX_portrait_Yi_Kang
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Kim_Il_sung"
-	desc = ""
-	picture = GFX_portrait_Kim_Il_sung
-	expire = "1965.1.1"
-	ideology = communism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Yi Un"
-	desc = ""
-	picture = GFX_portrait_Yi_Un
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
+KOR = {
+add_opinion_modifier = {
+    target = PRK
+    modifier = divided_into_2_sides
+}	
 }
 
 color = { 180 0 0 }

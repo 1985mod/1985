@@ -85,17 +85,6 @@ if = {
 
 set_convoys = 50
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-#create_faction = WARSAW_PACT
-=======
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
-=======
-<<<<<<< Updated upstream
-#create_faction = WARSAW_PACT
-=======
->>>>>>> Stashed changes
->>>>>>> iron_dimon
 create_faction_from_template = faction_template_warsaw_pact
 
 add_to_faction = SOV  
@@ -159,6 +148,24 @@ set_popularities = {
 	socialism = 0
 	conservatism = 1
 	liberalism = 0
+}
+
+add_opinion_modifier = {
+    target = USA
+    modifier = cold_war 
+}	
+
+USA = {
+add_opinion_modifier = {
+    target = SOV
+    modifier = cold_war 
+}	
+}
+
+add_ideas = {
+SOV_soviet_contingent_in_afghanistan
+SOV_economic_stagnation
+SOV_cold_war
 }
 
 recruit_character = SOV_konstantin_chernenko
