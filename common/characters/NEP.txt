@@ -1,0 +1,16 @@
+characters = {
+	NEP_Birendra = {
+		name = NEP_Birendra
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/Portrait_Birendra.dds"
+			}
+		}
+		country_leader = {
+			ideology = ethnic_nationalism
+			traits = { }
+			expire = "2003.1.1"
+			id = -1
+		}
+	}
+}

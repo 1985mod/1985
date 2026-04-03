@@ -8,7 +8,10 @@ state = {
 	history = {
 
 		owner = FRA
+<<<<<<< HEAD
 		add_core_of = OCC
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		add_core_of = FRA
 
 		victory_points = {

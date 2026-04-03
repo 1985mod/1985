@@ -893,7 +893,7 @@
  STATE_739: "Хайда-Гуаи"
  STATE_740: "Остров Ванкувер"
  STATE_741: "Камбоджа"
- STATE_742: "Сталинабад"
+ STATE_742: "Душанбе"
  STATE_743: "Циндао"
  GER_STATE_743: "Циньдао"
  RKO_STATE_743: "Циньдао"
@@ -1270,3 +1270,7 @@
  STATE_1057: "Южная Осетия"
  STATE_1058: "Курдистан"
  STATE_1059: "Чернобыль"
+<<<<<<<< HEAD:localisation/state_names_l_russian.yml
+========
+ STATE_1060: "Ингушетия"
+>>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d:localisation/replace/state_names_l_russian.yml

@@ -1,0 +1,18 @@
+characters = {
+	MON_Jambyn_Batmonkh ={
+		name = MON_Jambyn_Batmonkh
+		portraits={
+			civilian={
+				large= GFX_Portrait_Jambyn_Batmonkh
+			}
+			army = {
+				large = GFX_Portrait_Jambyn_Batmonkh
+			}
+		}
+		country_leader={
+			ideology = marxism
+			traits={  }
+			expire="1997.1.1.1"		
+		}
+	}
+}

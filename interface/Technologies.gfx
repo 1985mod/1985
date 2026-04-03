@@ -6815,11 +6815,11 @@ spriteTypes = {
 	}
 
 
-	#####  ##    ##  #####
-	  #   #  #  #  #   #
-	  #   ####  ####   #
-	  #   #  #  #  #   #
-	  #   #  #  #  #   #
+	 ##    ##  #####
+	#  #  #  #   #
+	####  ####   #
+	#  #  #  #   #
+	#  #  #  #   #
 
 
 ### Trucks ###
@@ -8879,6 +8879,27 @@ spriteTypes = {
 		name = "GFX_CHI_main_battle_tank_1_medium"
 		texturefile = "gfx/interface/technologies/chi_main_battle_tank.dds"
 	}
+<<<<<<< HEAD
+=======
+	
+	
+	### 1985 ###
+	
+	SpriteType = {
+		name = "GFX_infantry_fighting_vehicle_medium"
+		texturefile = "gfx/interface/technologies/infantry_fighting_vehicle.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_infantry_fighting_vehicle_2_medium"
+		texturefile = "gfx/interface/technologies/infantry_fighting_vehicle_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_infantry_fighting_vehicle_3_medium"
+		texturefile = "gfx/interface/technologies/infantry_fighting_vehicle_3.dds"
+	}
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 
 		##### TEMPORARY PLACE FOR SUPPORT SHIPS ####

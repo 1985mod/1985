@@ -20,8 +20,11 @@ state = {
 			industrial_complex = 1 #Bolzano's industrial zone started in 1934-35 (Steel meels, Lancia...)
 		}
 		add_core_of = ITA
+<<<<<<< HEAD
 		add_core_of = LBV
 		add_claim_by = AUS
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 	}
 
 	provinces = {

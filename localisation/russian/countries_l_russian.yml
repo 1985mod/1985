@@ -1,6 +1,8 @@
 ﻿l_russian:
- PRK: "КНДР"
- PRK_DEF: "КНДР"
+ PRK: "Корейская Народно Демократическая Республика"
+ PRK_DEF: "Корейская Народно Демократическая Республика"
+ PRK_communism: "Корейская Народно Демократическая Республика"
+ PRK_communism_DEF: "Северокорейск"
  PRK_ADJ: "Северокорейск"
 
  KOR: "Республика Корея"
@@ -63,7 +65,11 @@
  SOV_conservatism_DEF: "Российская федерация"
  SOV_conservatism: "Российская федерация"
  SOV_conservatism_DEF: "Российская федерация"
+<<<<<<< HEAD
  SOV: "Советский Союз"
+=======
+ SOV: "Союз Советских Социалистических Республик"
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
  SOV_DEF: "Союз Советских Социалистических Республик"
  SOV_ADJ: "Советск"
  
@@ -102,7 +108,11 @@
  CZE_DEF: "Чехословацкая Республика"
  CZE_ADJ: "Чехословацк"
  CZE_communism: "Чехословацкая Социалистическая Республика"
+<<<<<<< HEAD
  CZE_communism_DEF: "ЧСCР"
+=======
+ CZE_communism_DEF: "Чехословацк"
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
  
  POL_fascism: "Фалангистская Польша"
  POL_fascism_DEF: "Фалангистская Польша"
@@ -212,6 +222,12 @@
  TUR: "Турецкая Республика"
  TUR_DEF: "Турецкая Республика"
  TUR_ADJ: "Турецк"
+ TUR_socialism: "Социалистическая Республика Турция"
+ TUR_socialism_DEF: "Социалистическая Республика Турция"
+ TUR_socialism_ADJ: "Турецк"
+ TUR_liberalism: "Турецкая Республика"
+ TUR_liberalism_DEF: "Турецкая Республика"
+ TUR_liberalism_ADJ: "Турецк"
  
  GRE_liberalism: "Греческая Республика"
  GRE_liberalism_DEF: "Греческая Республика"
@@ -727,32 +743,39 @@
  YEM_DEF: "Йеменская Арабская Республика"
  YEM_ADJ: "Йеменск"
  
+<<<<<<< HEAD
  ETH_fascism: "Эфиопская империя"
  ETH_fascism_DEF: "Эфиопская империя"
  ETH_democratic: "Федеральная демократическая республика Эфиопия"
  ETH_democratic_DEF: "Федеральная демократическая республика Эфиопия"
  ETH_neutrality: "Эфиопия"
  ETH_neutrality_DEF: "Эфиопия"
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
  ETH_communism: "Народная демократическая республика Эфиопия"
  ETH_communism_DEF: "Народная демократическая республика Эфиопия"
- ETH_fascism_ADJ: "Эфиопск"
- ETH_democratic_ADJ: "Эфиопск"
- ETH_neutrality_ADJ: "Эфиопск"
- ETH_communism_ADJ: "Эфиопск"
- ETH: "Эфиопия"
- ETH_DEF: "Эфиопия"
+ ETH: "Федеральная демократическая республика Эфиопия"
+ ETH_DEF: "Федеральная демократическая республика Эфиопия"
  ETH_ADJ: "Эфиопск"
  
+<<<<<<< HEAD
  SLO_fascism: "Словакия"
  SLO_fascism_DEF: "Словакия"
  SLO_democratic: "Словацкая республика"
  SLO_democratic_DEF: "Словацкая республика"
+=======
+ SLO_conservatism: "Словацкая республика"
+ SLO_conservatism_DEF: "Словацкая республика"
+ SLO_liberalism: "Словацкая республика"
+ SLO_liberalism_DEF: "Словацкая республика"
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
  SLO_neutrality: "Свободное государство Словакия"
  SLO_neutrality_DEF: "Свободное государство Словакия"
  SLO_communism: "Словацкая социалистическая республика"
  SLO_communism_DEF: "Словацкая социалистическая республика"
  SLO_fascism_ADJ: "Словацк"
- SLO_democratic_ADJ: "Словацк"
+ SLO_conservatism_ADJ: "Словацк"
+ SLO_liberalism_ADJ: "Словацк"
  SLO_neutrality_ADJ: "Словацк"
  SLO_communism_ADJ: "Словацк"
  SLO: "Словакия"
@@ -783,6 +806,7 @@
  CRO_DEF: "Хорватия"
  CRO_ADJ: "Хорватск"
  
+<<<<<<< HEAD
  GXC_fascism: "Третья гуансийская клика"
  GXC_fascism_DEF: "Третья гуансийская клика"
  GXC_democratic: "Независимая гуансийская республика"
@@ -843,6 +867,8 @@
  MEN: "Мэнцзян"
  MEN_DEF: "Мэнцзян"
  MEN_ADJ: "Менчиангск"
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
  SER_fascism: "Сербская империя"
  SER_fascism_DEF: "Сербская империя"
  SER_ITA_fascism_subject: "Сербский протекторат"
@@ -860,18 +886,7 @@
  SER: "Сербия"
  SER_DEF: "Сербия"
  SER_ADJ: "Сербск"
- ICE_fascism: "Исландсвельди"
- ICE_fascism_DEF: "Исландсвельди"
- ICE_democratic: "Исландия"
- ICE_democratic_DEF: "Исландия"
- ICE_neutrality: "Исландия"
- ICE_neutrality_DEF: "Исландия"
- ICE_communism: "Исландская рабочая республика"
- ICE_communism_DEF: "Исландская рабочая республика"
- ICE_fascism_ADJ: "Исландск"
- ICE_democratic_ADJ: "Исландск"
- ICE_neutrality_ADJ: "Исландск"
- ICE_communism_ADJ: "Исландск"
+
  ICE: "Исландия"
  ICE_DEF: "Исландия"
  ICE_ADJ: "Исландск"
@@ -1008,6 +1023,7 @@
  MNT: "Черногория"
  MNT_DEF: "Черногория"
  MNT_ADJ: "Черногорск"
+ 
  UKR_fascism: "Украинское националистическое государство"
  UKR_fascism_DEF: "Украинское националистическое государство"
  UKR_democratic: "Республика Украина"
@@ -1023,6 +1039,7 @@
  UKR: "Украина"
  UKR_DEF: "Украина"
  UKR_ADJ: "Украинск"
+ 
  GEO_fascism: "Кавказская администрация"
  GEO_fascism_DEF: "Кавказская администрация"
  GEO_GER_fascism_subject: "Рейхскомиссариат Кавказ"
@@ -1040,6 +1057,7 @@
  GEO: "Грузия"
  GEO_DEF: "Грузия"
  GEO_ADJ: "Грузинск"
+ 
  KAZ_fascism: "Алаш-Орда"
  KAZ_fascism_DEF: "Алаш-Орда"
  KAZ_democratic: "Казахстан"
@@ -1055,6 +1073,7 @@
  KAZ: "Казахстан"
  KAZ_DEF: "Казахстан"
  KAZ_ADJ: "Казахстанск"
+ 
  AZR_fascism: "Империя Огня"
  AZR_fascism_DEF: "Империя Огня"
  AZR_democratic: "Демократическая республика Азербайджан"

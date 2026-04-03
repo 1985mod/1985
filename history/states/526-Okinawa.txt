@@ -13,8 +13,12 @@ state = {
 
 		owner = JAP
 		add_core_of = JAP
+<<<<<<< HEAD
 		add_core_of = OKN
 
+=======
+		
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		buildings = {
 			infrastructure = 2
 			air_base = 3

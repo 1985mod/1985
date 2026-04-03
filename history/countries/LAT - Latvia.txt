@@ -198,8 +198,8 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1931.10.3"
+	ruling_party = communism
+	last_election = "1985.10.3"
 	election_frequency = 10
 	elections_allowed = no
 }

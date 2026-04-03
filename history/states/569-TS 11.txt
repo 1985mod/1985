@@ -17,7 +17,10 @@ state = {
 			industrial_complex = 1
 		}
 		add_core_of = SOV
+<<<<<<< HEAD
 		add_core_of = KHA
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		victory_points = {
 			7757 1
 		}

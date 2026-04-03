@@ -73,3 +73,5 @@ set_popularities = {
 }
 
 
+recruit_character = KUW_Jaber
+

@@ -87,10 +87,8 @@ if = {
 		elections_allowed = yes
 	}
 	set_popularities = {
-		conservatism = DEN_democratic_popularity
-		fascism = DEN_fascism_popularity
-		communism = DEN_communism_popularity
-		neutrality = DEN_neutrality_popularity
+		conservatism = 90
+		neutrality = 10
 	}
 
 	store_core_states_on_game_start = yes

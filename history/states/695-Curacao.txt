@@ -11,8 +11,13 @@ state = {
 
 	history = {
 		
+<<<<<<< HEAD
 		owner = HOL
 		add_core_of = CRC
+=======
+		owner = USA
+		add_core_of = USA
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		victory_points = {
 			153 1 # Willemstad

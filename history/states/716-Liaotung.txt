@@ -12,7 +12,10 @@ state={
 	history={
 		owner = PRC
 		add_core_of = CHI
+<<<<<<< HEAD
 		add_core_of = MAN
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 2

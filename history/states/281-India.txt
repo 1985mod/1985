@@ -7,8 +7,13 @@ state={
 	state_category = enclave
 
 	history={
+<<<<<<< HEAD
 		owner = MLD
 		add_core_of = MLD
+=======
+		owner = RAJ
+		add_core_of = RAJ
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		buildings = {
 			infrastructure = 2
 			4967 = {

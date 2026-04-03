@@ -12,7 +12,10 @@ state = {
 
 		}
 		add_core_of = SOV
+<<<<<<< HEAD
 		add_core_of = KBK
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		victory_points = {
 			11614 1
 		}

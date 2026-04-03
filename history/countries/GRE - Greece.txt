@@ -1,154 +1,110 @@
 ﻿capital = 47
 
-oob = "GRE_1936"
+oob = "GRE_1985"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "GRE_1936_naval_mtg"
+		set_naval_oob = "GRE_1985_naval_mtg"
 	else = {
-		set_naval_oob = "GRE_1936_naval_legacy"
-	}
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "GRE_1936_air_bba"
-		set_technology = {
-			bba_early_transport_plane = 1
-		}
-	else = {
-		set_air_oob = "GRE_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			early_transport_plane = 1
-		}
+		set_naval_oob = "GRE_1985_naval_legacy"
 	}
 }
 
-###################
-#### 3D MODELS ####
-###################
-
-#Cosmetic tags used (3D models will look for these cosmetic tags when hooking themselves):
-#GRE_communism
-#GRE_democratic
-#GRE_fascism
-#GRE_neutrality
-set_cosmetic_tag = GRE_neutrality
-
-set_research_slots = 3
+set_research_slots = 2
+set_convoys = 320
+set_stability = 0.15
 
 set_technology = {
 	infantry_weapons = 1
-	tech_mountaineers = 1
-	tech_support = 1		
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
-	tech_trucks = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
 	gw_artillery = 1
-	trench_warfare = 1
-	fuel_silos = 1
-	synth_oil_experiments = 1
+	interwar_artillery = 1
+	antitank = 1 
+ 	antitank1 = 1
+	interwar_antiair = 1
+	
+	corvette1 = 1
+	corvette2 = 2
+	frigate1 = 1
+	frigate2 = 2
+	destroyer1 = 1
+	destroyer2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	radio = 1 
+	radio_detection = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+	
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
 }
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		transport = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_battery = 1
-		basic_cruiser_armor_scheme = 1
-		basic_torpedo = 1
-		coastal_defense_ships = 1
-		pre_dreadnoughts = 1
-		mtg_transport = 1
-	}
-}
-1936.1.1 = {
-	if = {
-		limit = { has_dlc = "Battle for the Bosporus" }
-		add_opinion_modifier = { 
-			target = ROM
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = TUR
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = YUG
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = BUL
-			modifier = BFTB_balkan_pact_enemy
-		}
-		add_opinion_modifier = { 
-			target = HUN
-			modifier = BFTB_balkan_pact_enemy
-		}
-		set_country_flag = GRE_factions_unlocked
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-			GRE_george_ii
-			GRE_debt_to_the_ifc
-			GRE_foreign_monopolies
-			GRE_schachtplan
-			GRE_political_instability
-			GRE_agrarian_society
-		}
-
-		set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 }
-		set_variable = { var = GRE_debt_to_the_ifc_france_var value = 10 }
-		set_variable = { var = GRE_debt_to_the_ifc_italy_var value = 10 }
-		set_variable = { var = GRE_debt_to_the_ifc_paid_var value = 0 }
-
-		add_opinion_modifier = { 
-			target = GER
-			modifier = GRE_strong_trading_ties
-		}
-		GER = { 
-			add_opinion_modifier = { 
-				target = GRE
-				modifier = GRE_strong_trading_ties
-			}
-		}
-	}
-
-	if = {
-		limit = { NOT = { has_dlc = "Battle for the Bosporus" } }
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-		}
-	}
-}
-
-set_convoys = 10
 
 set_politics = {
 	ruling_party = conservatism
-	last_election = "1935.6.9"
-	election_frequency = 7
-	elections_allowed = yes # none after offset 1
+	last_election = "1985.10.18"
+	election_frequency = 48
+	elections_allowed = yes 
 }
 set_popularities = {
 	conservatism = 73
@@ -163,6 +119,7 @@ set_convoys = 80
 
 recruit_character = GRE_andreas_papandreou
 
+<<<<<<< HEAD
 
 ### VARIANTS ###
 # 1936 Start #
@@ -299,3 +256,5 @@ if = {
 		obsolete = yes
 	}
 }
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d

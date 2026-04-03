@@ -6,7 +6,11 @@ state={
 	state_category = rural
 
 	history={
+<<<<<<< HEAD
 		add_core_of = GDL
+=======
+		add_core_of = FRA
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		owner = FRA
 		victory_points = {
 			9377 1

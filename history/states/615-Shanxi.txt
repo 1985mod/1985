@@ -12,7 +12,10 @@ state = {
 	history = {
 
 		owner = PRC
+<<<<<<< HEAD
 		add_core_of = SHX
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		add_core_of = CHI
 		add_core_of = PRC
 

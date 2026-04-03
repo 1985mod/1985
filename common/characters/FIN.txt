@@ -10,7 +10,11 @@ characters = {
 			}
 		}
 		country_leader={
+<<<<<<< HEAD
 			ideology = autocracy
+=======
+			ideology = classic_conservatism
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			traits={  }
 			expire="1989.11.9.1"		
 		}

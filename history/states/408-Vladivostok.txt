@@ -25,8 +25,11 @@ state = {
 			}
 		}
 		add_core_of = SOV
+<<<<<<< HEAD
 		add_core_of = FER
 		add_core_of = VLA
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 	}
 
 	provinces = {

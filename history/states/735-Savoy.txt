@@ -9,9 +9,13 @@ state = {
 	history = {
 
 		owner = FRA
+<<<<<<< HEAD
 		add_core_of = OCC
 		add_core_of = FRA
 		add_claim_by = SPM
+=======
+		add_core_of = FRA
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		victory_points = {
 			778 1 # Annecy

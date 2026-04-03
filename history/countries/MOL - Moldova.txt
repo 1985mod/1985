@@ -67,10 +67,10 @@ recruit_character = MOL_ar
 	}
 }
 set_politics = {
-	ruling_party = conservatism
-	last_election = "1936.1.1"
+	ruling_party = communism
+	last_election = "1985.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	conservatism = 55
@@ -78,15 +78,4 @@ set_popularities = {
 	communism = 30
 	neutrality = 14
 }
-
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#}
 

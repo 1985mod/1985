@@ -8,9 +8,13 @@ state={
 
 	history={
 		owner = SOV
+<<<<<<< HEAD
 		add_core_of = ANU
 		add_core_of = SOV
 		add_claim_by = JAP
+=======
+		add_core_of = SOV
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		buildings = {
 			infrastructure = 2
 			1399 = {

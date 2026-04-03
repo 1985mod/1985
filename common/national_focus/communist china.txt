@@ -210,7 +210,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_priority_foreign_trade
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -675,7 +679,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_korean_peninsula
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1100,7 +1108,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_vietnam_accepted
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1118,7 +1130,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_vietnam_accepted
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1136,7 +1152,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_vietnam_accepted
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1175,7 +1195,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_vietnam_rejected
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1289,7 +1313,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_indochina_and_burma
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1314,8 +1342,13 @@ focus_tree = {
     }
 	
     focus = { 
+<<<<<<< HEAD
         id = PRC_the_influence_of_the_experience_of_the_asian_economic tigers
         icon = GFX_focus_por_workers_of_iberia
+=======
+        id = PRC_the_influence_of_the_experience_of_the_asian_economic_tigers
+        icon = GFX_focus_CHL_enlarge_the_textile_industries
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		prerequisite = {
 			focus = PRC_the_future_of_the_pda
 		}
@@ -1324,7 +1357,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_the_future_of_the_pda
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1333,9 +1370,15 @@ focus_tree = {
 	
     focus = { 
         id = PRC_cpc_elections
+<<<<<<< HEAD
         icon = GFX_focus_por_workers_of_iberia
 		prerequisite = {
 			focus = PRC_the_influence_of_the_experience_of_the_asian_economic
+=======
+        icon = GFX_focus_PRC_the_chinese_century
+		prerequisite = {
+			focus = PRC_the_influence_of_the_experience_of_the_asian_economic_tigers
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		}
         x = 0
         y = 2
@@ -1351,7 +1394,11 @@ focus_tree = {
 	
     focus = { 
         id = PRC_continuation_of_deng_xiaopings_policies
+<<<<<<< HEAD
         icon = GFX_focus_por_workers_of_iberia
+=======
+        icon = GFX_focus_PRC_embrace_change_in_leadership
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		mutually_exclusive = {
 			focus = PRC_liberal_hu_yaobang		
 		}
@@ -1372,7 +1419,11 @@ focus_tree = {
 	
     focus = { 
         id = PRC_the_second_stage_of_the_reform
+<<<<<<< HEAD
         icon = GFX_focus_por_workers_of_iberia
+=======
+        icon = GFX_focus_PRC_assume_leadership
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		prerequisite = {
 			focus = PRC_continuation_of_deng_xiaopings_policies
 		}
@@ -1381,7 +1432,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_continuation_of_deng_xiaopings_policies
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1390,6 +1445,7 @@ focus_tree = {
 	
     focus = { 
         id = PRC_dismantling_the_planned_system
+<<<<<<< HEAD
         icon = GFX_focus_por_workers_of_iberia
 		prerequisite = {
 			focus = PRC_the_second_stage_of_the_reform
@@ -1409,6 +1465,9 @@ focus_tree = {
     focus = { 
         id = PRC_transition_to_market_economy
         icon = GFX_focus_por_workers_of_iberia
+=======
+        icon = GFX_focus_CHI_baojia_system
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		prerequisite = {
 			focus = PRC_the_second_stage_of_the_reform
 		}
@@ -1417,7 +1476,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_continuation_of_deng_xiaopings_policies
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1426,7 +1489,11 @@ focus_tree = {
 	
     focus = { 
         id = PRC_foreign_companies_and_investments
+<<<<<<< HEAD
         icon = GFX_focus_por_workers_of_iberia
+=======
+        icon = GFX_focus_PRC_urbanization_two
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		prerequisite = {
 			focus = PRC_the_second_stage_of_the_reform
 		}
@@ -1435,7 +1502,32 @@ focus_tree = {
 		
 		relative_position_id = PRC_continuation_of_deng_xiaopings_policies
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_transition_to_market_economy
+        icon = GFX_focus_generic_economic_recovery
+		prerequisite = {
+			focus = PRC_dismantling_the_planned_system
+		}
+		prerequisite = {
+			focus = PRC_foreign_companies_and_investments
+		}
+        x = 0
+        y = 3
+		
+		relative_position_id = PRC_continuation_of_deng_xiaopings_policies
+			
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1444,7 +1536,11 @@ focus_tree = {
 	
     focus = { 
         id = PRC_liberal_hu_yaobang
+<<<<<<< HEAD
         icon = GFX_focus_por_workers_of_iberia
+=======
+        icon = GFX_focus_prc_social_democracy
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		mutually_exclusive = {
 			focus = PRC_continuation_of_deng_xiaopings_policies		
 		}
@@ -1465,7 +1561,11 @@ focus_tree = {
 	
     focus = { 
         id = PRC_opposition_to_conservatives
+<<<<<<< HEAD
         icon = GFX_focus_por_workers_of_iberia
+=======
+        icon = GFX_focus_ARG_defense_and_democracy
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		prerequisite = {
 			focus = PRC_liberal_hu_yaobang
 		}
@@ -1474,16 +1574,31 @@ focus_tree = {
 		
 		relative_position_id = PRC_liberal_hu_yaobang
 			
+<<<<<<< HEAD
         cost = 5
 		
         completion_reward = {
             add_political_power = 50
+=======
+        cost = 10
+		
+        completion_reward = {
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.05
+            }
+            add_stability = -0.05
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
         }
     }
 	
     focus = { 
         id = PRC_promotion_of_young_communists_to_leadership_positions
+<<<<<<< HEAD
         icon = GFX_focus_por_workers_of_iberia
+=======
+        icon = GFX_focus_generic_social_democracy
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		prerequisite = {
 			focus = PRC_liberal_hu_yaobang
 		}
@@ -1492,7 +1607,11 @@ focus_tree = {
 		
 		relative_position_id = PRC_liberal_hu_yaobang
 			
+<<<<<<< HEAD
         cost = 5
+=======
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50
@@ -1500,8 +1619,13 @@ focus_tree = {
     }
 	
     focus = { 
+<<<<<<< HEAD
         id = PRC_organize_an_underground_movement_for_free_сhina
         icon = GFX_focus_por_workers_of_iberia
+=======
+        id = PRC_organize_an_underground_movement_for_free_china
+        icon = GFX_focus_ARG_defense_and_democracy
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		prerequisite = {
 			focus = PRC_opposition_to_conservatives
 		}
@@ -1513,24 +1637,136 @@ focus_tree = {
 		
 		relative_position_id = PRC_liberal_hu_yaobang
 			
+<<<<<<< HEAD
         cost = 5
 		
         completion_reward = {
             add_political_power = 50
+=======
+        cost = 10
+		
+        completion_reward = {
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.03
+            }
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.03
+            }
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
         }
     }
 	
     focus = { 
         id = PRC_weakening_of_the_party_dictatorship
+<<<<<<< HEAD
         icon = GFX_focus_por_workers_of_iberia
 		prerequisite = {
 			focus = PRC_organize_an_underground_movement_for_free_сhina
 		}
         x = 1
+=======
+        icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = {
+			focus = PRC_organize_an_underground_movement_for_free_china
+		}
+        x = 0
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
         y = 3
 		
 		relative_position_id = PRC_liberal_hu_yaobang
 			
+<<<<<<< HEAD
+=======
+        cost = 10
+		
+        completion_reward = {
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.04
+            }
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.04
+            }
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.04
+            }
+            add_political_power = 75
+        }
+    }
+	
+    focus = { 
+        id = PRC_modernization_of_old_china
+        icon = GFX_focus_RAJ_peacock_throne_for_the_modern_age
+		prerequisite = {
+			focus = PRC_transition_to_market_economy
+			focus = PRC_weakening_of_the_party_dictatorship
+		}
+        x = -4
+        y = 5
+		
+		relative_position_id = PRC_liberal_hu_yaobang
+			
+        cost = 10
+		
+        completion_reward = {
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = PRC_modernization_of_old_china
+				bonus = 0.5
+				uses = 2
+				category = air_equipment
+			}
+        }
+    }
+	
+    focus = { 
+        id = PRC_one_china_policy
+        icon = GFX_focus_chi_one_china_policy
+		prerequisite = {
+			focus = PRC_modernization_of_old_china
+		}
+        x = 0
+        y = 1
+		
+		relative_position_id = PRC_modernization_of_old_china
+			
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
         cost = 5
 		
         completion_reward = {
@@ -1539,6 +1775,7 @@ focus_tree = {
     }
 	
     focus = { 
+<<<<<<< HEAD
         id = PRC_modernization_of_old_china
         icon = GFX_focus_por_workers_of_iberia
 		prerequisite = {
@@ -1550,6 +1787,200 @@ focus_tree = {
 		relative_position_id = PRC_liberal_hu_yaobang
 			
         cost = 5
+=======
+        id = PRC_taiwan_seizure
+        icon = GFX_focus_attack_china
+		prerequisite = {
+			focus = PRC_one_china_policy
+		}
+		mutually_exclusive = {
+			focus = PRC_support_of_friendly_relations_with_the_kuomintang
+		}
+        x = -2
+        y = 2
+		
+		relative_position_id = PRC_modernization_of_old_china
+			
+        cost = 10
+		
+        completion_reward = {
+            create_wargoal = {
+                type = take_state_focus
+                target = CHI
+		    }
+        }
+    }
+    focus = { 
+        id = PRC_support_of_friendly_relations_with_the_kuomintang
+        icon = GFX_focus_chi_proclaim_rival_government
+		prerequisite = {
+			focus = PRC_one_china_policy
+		}
+		mutually_exclusive = {
+			focus = PRC_taiwan_seizure
+		}
+        x = 2
+        y = 2
+		
+		relative_position_id = PRC_modernization_of_old_china
+			
+        cost = 10
+		
+        completion_reward = {
+            add_relation_modifier = {
+            	target = CHI
+            	modifier = FRA_carry_the_revolution_south
+            }
+        }
+    }
+	
+    focus = { 
+        id = PRC_integration_of_taiwan
+        icon = GFX_focus_chi_united_front
+		prerequisite = {
+			focus = PRC_taiwan_seizure
+			focus = PRC_support_of_friendly_relations_with_the_kuomintang
+		}
+        x = 0
+        y = 3
+		
+		relative_position_id = PRC_modernization_of_old_china
+			
+        cost = 10
+		
+        completion_reward = {
+            
+        }
+    }
+	
+    focus = { 
+        id = PRC_one_country_two_systems
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_integration_of_taiwan
+		}
+        x = 0
+        y = 4
+		
+		relative_position_id = PRC_modernization_of_old_china
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+	
+### Army ### Армия ###
+	
+    focus = { 
+        id = PRC_shame_in_the_first_socialist_war
+        icon = GFX_goal_anschluss
+        x = 2
+        y = 2
+		
+		relative_position_id = PRC_new_great_leap_forward
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_army_modernization
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_shame_in_the_first_socialist_war
+		}
+        x = 0
+        y = 1
+		
+		relative_position_id = PRC_shame_in_the_first_socialist_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_lessons_of_war
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_army_modernization
+		}
+        x = 0
+        y = 2
+		
+		relative_position_id = PRC_shame_in_the_first_socialist_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_tank_blitzkrieg
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_lessons_of_war
+		}
+		mutually_exclusive = {
+			focus = PRC_massive_attack		
+		}
+        x = -2
+        y = 3
+		
+		relative_position_id = PRC_shame_in_the_first_socialist_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_massive_attack
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_lessons_of_war
+		}
+		mutually_exclusive = {
+			focus = PRC_tank_blitzkrieg		
+		}
+        x = 2
+        y = 3
+		
+		relative_position_id = PRC_shame_in_the_first_socialist_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_exercises_with_the_dprk
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_tank_blitzkrieg
+			focus = PRC_massive_attack
+		}
+        x = 0
+        y = 4
+		
+		relative_position_id = PRC_shame_in_the_first_socialist_war
+			
+        cost = 10
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
         completion_reward = {
             add_political_power = 50

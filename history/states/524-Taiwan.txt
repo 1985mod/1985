@@ -15,16 +15,22 @@ state = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = PRC
+<<<<<<< HEAD
 		add_core_of = FOR
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
 			air_base = 6
+<<<<<<< HEAD
 			12068 = {
 				naval_base = 10
 				naval_supply_hub = 1
 			}
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			7186 = {
 				naval_base = 2
 			}
@@ -39,7 +45,11 @@ state = {
 
 	}
 	provinces = {
+<<<<<<< HEAD
 		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
+=======
+	    7186 7214 9955 11959
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 	}
 
 	local_supplies = 0.0 

@@ -7,6 +7,7 @@ state = {
 
 	history = {
 
+<<<<<<< HEAD
 		owner = POL
 		add_core_of = POL
 		add_core_of = DNZ
@@ -18,21 +19,27 @@ state = {
 		}
 		
 		set_demilitarized_zone = yes
+=======
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 3
-			362 = {
-				naval_base = 5
+			12068 = {
+				naval_base = 10
+				naval_supply_hub = 1
 			}
 		}
 		
 	}
 
 	provinces = {
-		362
+		1091 11914 12068
 	}
 
 	local_supplies = 0.0 

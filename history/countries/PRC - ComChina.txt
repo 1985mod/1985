@@ -105,9 +105,9 @@ set_popularities = {
 }
 
 add_ideas = {
-	closed_economy
-	service_by_requirement
-	partial_economic_mobilisation
+	free_trade
+	limited_conscription
+	civilian_economy
 }
 
 if = {
@@ -115,9 +115,9 @@ if = {
 		has_dlc = "Waking the Tiger"
 	}
 	add_ideas = {
-		PRC_low_popular_support_3
 		PRC_power_struggles
-		PRC_red_army_weakened
+		PRC_growing_economy
+		PRC_unitary_republic
 	}
 }
 

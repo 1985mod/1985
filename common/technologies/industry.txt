@@ -66,7 +66,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1937.1.1"
+				date > "1986.1.1"
 			}
 		}
 		
@@ -87,7 +87,11 @@ technologies = {
 		}
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1939
+=======
+		start_year = 1989
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -99,7 +103,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1939.1.1"
+				date > "1989.1.1"
 			}
 		}
 		
@@ -126,7 +130,11 @@ technologies = {
 		
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1941
+=======
+		start_year = 1991
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -138,7 +146,11 @@ technologies = {
 			
 			modifier = {
 				factor = 10
+<<<<<<< HEAD
 				date > "1941.1.1"
+=======
+				date > "1991.1.1"
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}			
 		}
 		
@@ -170,7 +182,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1943.1.1"
+				date > "1992.1.1"
 			}
 		}
 		
@@ -202,7 +214,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1943.1.1"
+				date > "1992.1.1"
 			}
 			
 		}
@@ -224,7 +236,11 @@ technologies = {
 		}
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1937
+=======
+		start_year = 1986
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -263,7 +279,11 @@ technologies = {
 		#equipment_conversion_speed = 0.40
 
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1939
+=======
+		start_year = 1989
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -357,7 +377,7 @@ technologies = {
 						
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1986.1.1"
 			}
 		}
 		
@@ -397,7 +417,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1937.1.1"
+				date > "1986.1.1"
 			}
 			
 		}
@@ -426,7 +446,11 @@ technologies = {
 		}
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1939
+=======
+		start_year = 1989
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -438,7 +462,11 @@ technologies = {
 			
 			modifier = {
 				factor = 10
+<<<<<<< HEAD
 				date > "1939.1.1"
+=======
+				date > "1989.1.1"
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}			
 		}
 		
@@ -466,7 +494,11 @@ technologies = {
 		}
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1941
+=======
+		start_year = 1991
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -478,7 +510,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1941.1.1"
+				date > "1991.1.1"
 			}
 		}
 		
@@ -518,7 +550,11 @@ technologies = {
 			
 			modifier = {
 				factor = 20
+<<<<<<< HEAD
 				date > "1943.1.1"
+=======
+				date > "1992.1.1"
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}			
 		}
 		
@@ -594,7 +630,7 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1986.1.1"
 			}
 		}
 		
@@ -637,7 +673,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1937.1.1"
+				date > "1986.1.1"
 			}
 		}
 		
@@ -668,7 +704,11 @@ technologies = {
 		}
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1939
+=======
+		start_year = 1989
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -680,7 +720,11 @@ technologies = {
 						
 			modifier = {
 				factor = 10
+<<<<<<< HEAD
 				date > "1939.1.1"
+=======
+				date > "1989.1.1"
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}			
 		}
 		
@@ -711,7 +755,11 @@ technologies = {
 		}
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1941
+=======
+		start_year = 1991
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -723,7 +771,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1941.1.1"
+				date > "1991.1.1"
 			}
 		}
 		
@@ -763,7 +811,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1943.1.1"
+				date > "1992.1.1"
 			}
 		}
 		
@@ -864,7 +912,7 @@ technologies = {
 			
 			modifier = {
 				factor = 0.2
-				date < "1937.1.1"
+				date < "1986.1.1"
 			}
 			modifier = {
 				factor = 0.4
@@ -1005,7 +1053,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 3
+<<<<<<< HEAD
 		start_year = 1939
+=======
+		start_year = 1989
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = industry_folder
 			position = { x = 3 y = 6 }
@@ -1052,7 +1104,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 3
+<<<<<<< HEAD
 		start_year = 1941
+=======
+		start_year = 1991
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = industry_folder
 			position = { x = 3 y = 8 }
@@ -1253,7 +1309,11 @@ technologies = {
 			modifier = {
 				factor = 25
 				original_tag = GER	
+<<<<<<< HEAD
 				date > "1937.1.1"	
+=======
+				date > "1986.1.1"	
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 		}
 		
@@ -1274,7 +1334,11 @@ technologies = {
 		}
 		
 		research_cost = 1.5
+<<<<<<< HEAD
 		start_year = 1939
+=======
+		start_year = 1989
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -1334,7 +1398,11 @@ technologies = {
 		}
 		
 		research_cost = 1.5
+<<<<<<< HEAD
 		start_year = 1941
+=======
+		start_year = 1991
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -1502,7 +1570,11 @@ technologies = {
 		}
 		
 		research_cost = 1.5
+<<<<<<< HEAD
 		start_year = 1939
+=======
+		start_year = 1989
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -1562,7 +1634,11 @@ technologies = {
 		}
 		
 		research_cost = 1.5
+<<<<<<< HEAD
 		start_year = 1941
+=======
+		start_year = 1991
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		folder = {
 			name = industry_folder
@@ -1686,7 +1762,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1986.1.1"
 			}
 		}
 	}
@@ -1777,7 +1853,11 @@ technologies = {
 			
 			modifier = {
 				factor = 10
+<<<<<<< HEAD
 				date > "1937.1.1"
+=======
+				date > "1986.1.1"
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}			
 		}
 	}
@@ -1853,7 +1933,11 @@ technologies = {
 		}
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1939
+=======
+		start_year = 1989
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		categories = {
 			industry
@@ -1896,7 +1980,11 @@ technologies = {
 		}
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1939
+=======
+		start_year = 1989
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		categories = {
 			industry
@@ -1963,7 +2051,11 @@ technologies = {
 		}
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1941
+=======
+		start_year = 1991
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		categories = {
 			industry
@@ -1980,7 +2072,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1941.1.1"
+				date > "1991.1.1"
 			}
 		}
 	}
@@ -1995,7 +2087,11 @@ technologies = {
 		}
 		
 		research_cost = 2
+<<<<<<< HEAD
 		start_year = 1941
+=======
+		start_year = 1991
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		categories = {
 			industry
@@ -2069,7 +2165,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1943.1.1"
+				date > "1992.1.1"
 			}
 		}
 	}

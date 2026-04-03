@@ -13,7 +13,10 @@ state={
 
 		owner = RAJ
 		add_core_of = RAJ
+<<<<<<< HEAD
 		add_core_of = TIB
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		buildings = {
 			infrastructure = 1

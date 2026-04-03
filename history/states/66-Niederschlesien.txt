@@ -15,8 +15,11 @@ state = {
 
 		owner = POL
 		add_core_of = POL
+<<<<<<< HEAD
 		add_core_of = SIL
 		add_core_of = PRE
+=======
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		victory_points = {
 			9570 10 # Breslau

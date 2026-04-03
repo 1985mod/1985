@@ -1,8 +1,20 @@
 
 state={
+<<<<<<< HEAD
 	id=654
 	name="STATE_654" # Gorno-Altaysk
 	manpower = 153510
+=======
+<<<<<<<< HEAD:history/states/406-Krasnyy Yar.txt
+	id=406
+	name="STATE_406" # Gurev
+	manpower = 146494
+========
+	id=654
+	name="STATE_654" # Gorno-Altaysk
+	manpower = 153510
+>>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d:history/states/654-sov state 8.txt
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 	
 	state_category = wasteland
 
@@ -12,7 +24,23 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = SOV
+<<<<<<< HEAD
 		add_core_of = ALT
+=======
+<<<<<<<< HEAD:history/states/406-Krasnyy Yar.txt
+		add_core_of = KAZ
+		victory_points = {
+			3618 1
+		}
+	}
+
+	provinces={
+		464 477 554 615 3459 3618 3622 6498 6514 6523 6615 7322 9453 9469 11442 11455 11469 11578 11591 
+	}
+
+	local_supplies=0.0 
+========
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		victory_points = {
 			4800 1 #Oyrot-Tura/Gorno-Altaysk
 		}
@@ -23,4 +51,8 @@ state={
 	}
 
 	local_supplies=2.0 
+<<<<<<< HEAD
+=======
+>>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d:history/states/654-sov state 8.txt
+>>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 }
