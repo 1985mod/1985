@@ -6,21 +6,12 @@ technologies = {
 	@firecontrol = 4
 	@encryption_x = 1
 	@decryption_x = 5
-<<<<<<< HEAD
-	@rockets_1940 = 0
-	@rockets_1942 = 2
-	@rockets_1943 = 4
-	@rockets_1944 = 6
-	@rockets_1945 = 8
-	@rockets_1946 = 10
-=======
 	@rockets_1989 = 0
 	@rockets_1992 = 2
 	@rockets_1993 = 4
 	@rockets_1994 = 6
 	@rockets_1995 = 8
 	@rockets_1996 = 10
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 	electronic_mechanical_engineering = {
 
@@ -186,11 +177,7 @@ technologies = {
 		land_reinforce_rate = 0.01
 		coordination_bonus = 0.02
 		
-<<<<<<< HEAD
-		start_year = 1941
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 		research_cost = 2
 		
@@ -217,11 +204,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-<<<<<<< HEAD
-				date > "1939.8.1"
-=======
 				date > "1988.8.1"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 		}
 		
@@ -345,11 +328,7 @@ technologies = {
 	#	}
 	#	
 	#	research_cost = 1.25
-<<<<<<< HEAD
-	#	start_year = 1939
-=======
 	#	start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 	#	
 	#	folder = {
 	#		name = electronics_folder
@@ -366,11 +345,7 @@ technologies = {
 	#			factor = 5
 	#		}
 	#		modifier = {
-<<<<<<< HEAD
-	#			date < "1939.1.1"
-=======
 	#			date < "1988.1.1"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 	#			factor = 0.5
 	#		}
 	#	}
@@ -1554,11 +1529,7 @@ technologies = {
 	#	}
 		
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1945
-=======
 		start_year = 1995
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 	#	folder = {
 	#		name = electronics_folder
@@ -1606,11 +1577,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1946
-=======
 		start_year = 1996
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		
 	#	folder = {
 	#		name = electronics_folder
@@ -1877,11 +1844,7 @@ technologies = {
 	lar_decryption_bonus_tech = {
 				
 		research_cost = 1.5 #Carrier Variant
-<<<<<<< HEAD
-		start_year = 1944
-=======
 		start_year = 1994
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		# only from focus!!! #####
 		allow = {
@@ -1932,19 +1895,11 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1944
-		
-		folder = {
-			name = electronics_folder
-			position = { x = -2 y = @rockets_1944 }
-=======
 		start_year = 1994
 		
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = @rockets_1994 }
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		}
 
 		ai_will_do = {
@@ -1980,19 +1935,11 @@ technologies = {
 		}		
 		
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1946
-		
-		folder = {
-			name = electronics_folder
-			position = { x = -2 y = @rockets_1946 }
-=======
 		start_year = 1996
 		
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = @rockets_1996 }
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		}
 
 		ai_will_do = {

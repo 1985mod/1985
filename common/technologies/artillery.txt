@@ -108,11 +108,7 @@ technologies = {
 
 		research_cost = 1.5
 
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -147,12 +143,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1988.1.1"
-			}
-
-			# It is imperative to prepare military tech for the war with China
-			modifier = {
-				factor = 5
-				original_tag = JAP
 			}
 
 			# It is imperative to prepare military tech for the war with China
@@ -197,11 +187,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -262,11 +248,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1940
-=======
 		start_year = 1989
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -325,11 +307,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1941
-=======
 		start_year = 1990
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -379,11 +357,7 @@ technologies = {
 
 		research_cost = 2
 
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -439,11 +413,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1943
-=======
 		start_year = 1996
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -524,11 +494,7 @@ technologies = {
 
 		research_cost = 2
 
-<<<<<<< HEAD
-		start_year = 1940
-=======
 		start_year = 1989
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -564,11 +530,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1941
-=======
 		start_year = 1990
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -605,11 +567,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -645,11 +603,7 @@ technologies = {
 		}
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1943
-=======
 		start_year = 1996
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -702,11 +656,7 @@ technologies = {
 
 		research_cost = 1.5
 
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -776,11 +726,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -841,11 +787,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1940
-=======
 		start_year = 1989
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -904,11 +846,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1941
-=======
 		start_year = 1990
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -964,11 +902,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -1020,11 +954,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1943
-=======
 		start_year = 1996
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -1078,11 +1008,7 @@ technologies = {
 
 		research_cost = 1.5
 
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -1131,11 +1057,7 @@ technologies = {
 
 			modifier = {
 				factor = 5
-<<<<<<< HEAD
-				date > "1939.1.1"
-=======
 				date > "1988.1.1"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 			modifier = {
 				factor = 10
@@ -1181,11 +1103,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -1257,25 +1175,12 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1940
-=======
 		start_year = 1989
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
 			position = { x = @anti_tank y = 6 }
 		}
-<<<<<<< HEAD
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1939.1.9"
-=======
 
 		ai_will_do = {
 			factor = 1
@@ -1283,7 +1188,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				date > "1988.1.9"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 			modifier = {
 				tag = JAP
@@ -1297,11 +1201,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-<<<<<<< HEAD
-				date > "1940.1.1"
-=======
 				date > "1989.1.1"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 			modifier = {
 				tag = USA
@@ -1310,11 +1210,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-<<<<<<< HEAD
-				date > "1940.1.6"
-=======
 				date > "1989.1.6"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 			modifier = {
 				factor = 10
@@ -1359,11 +1255,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1941
-=======
 		start_year = 1990
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -1383,11 +1275,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-<<<<<<< HEAD
-				date > "1941.1.1"
-=======
 				date > "1990.1.1"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 			modifier = {
 				factor = 10
@@ -1406,20 +1294,12 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-<<<<<<< HEAD
-				date > "1942.1.1"
-=======
 				date > "1991.1.1"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 
 			modifier = {
 				factor = 5
-<<<<<<< HEAD
-				date > "1943.1.1"
-=======
 				date > "1996.1.1"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 			modifier = {
 				factor = 10
@@ -1457,11 +1337,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -1473,11 +1349,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-<<<<<<< HEAD
-				date > "1942.1.6"
-=======
 				date > "1991.1.6"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 			modifier = {
 				tag = JAP
@@ -1491,11 +1363,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-<<<<<<< HEAD
-				date > "1943.1.1"
-=======
 				date > "1996.1.1"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 			modifier = {
 				factor = 10
@@ -1535,11 +1403,7 @@ technologies = {
 
 		research_cost = 1
 
-<<<<<<< HEAD
-		start_year = 1943
-=======
 		start_year = 1996
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -1551,11 +1415,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-<<<<<<< HEAD
-				date > "1942.1.9"
-=======
 				date > "1991.1.9"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 			modifier = {
 				tag = JAP
@@ -1569,20 +1429,12 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-<<<<<<< HEAD
-				date > "1943.1.1"
-=======
 				date > "1996.1.1"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 
 			modifier = {
 				factor = 5
-<<<<<<< HEAD
-				date > "1943.1.6"
-=======
 				date > "1996.1.6"
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			}
 			modifier = {
 				factor = 10
@@ -1682,11 +1534,7 @@ technologies = {
 
 		research_cost = 1.5
 
-<<<<<<< HEAD
-		start_year = 1940
-=======
 		start_year = 1989
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder
@@ -1740,11 +1588,7 @@ technologies = {
 
 		research_cost = 1.5
 
-<<<<<<< HEAD
-		start_year = 1940
-=======
 		start_year = 1989
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 		folder = {
 			name = artillery_folder

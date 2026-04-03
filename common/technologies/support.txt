@@ -1,18 +1,5 @@
 technologies = {
 
-<<<<<<< HEAD
-	@1918 = 0
-	@1936 = 2
-	@1938 = 4
-	@1939 = 6
-	@1940 = 8
-	@1941 = 10
-	@1942 = 12
-	@1943 = 14
-	@1944 = 16
-	@1945 = 18
-	@1946 = 20
-=======
 	@1976 = 0
 	@1985 = 2
 	@1987 = 4
@@ -24,7 +11,6 @@ technologies = {
 	@1993 = 16
 	@1997 = 18
 	@2000 = 20
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 
 	@field_hospital_x = 9 #it is actually Y :D
 	@logistic_x = 11 #it is actually Y :D
@@ -69,11 +55,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.0
-<<<<<<< HEAD
-		start_year = 1918
-=======
 		start_year = 1976
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1976 }
@@ -86,32 +68,6 @@ technologies = {
 		ai_will_do = {
 			base = 2
 
-<<<<<<< HEAD
-			modifier = {
-				factor = 4
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 4
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 4
-				date > "1939.1.1"
-			}
-
-			modifier = {
-				factor = 6
-				original_tag = CHI
-				NOT = {
-					has_dlc = "No Compromise, No Surrender"
-				}
-			}
-
-=======
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		}
 	}
 
@@ -133,11 +89,7 @@ technologies = {
 		}
 
 		research_cost = 1.25
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1985 }
@@ -155,36 +107,6 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
-<<<<<<< HEAD
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-			modifier = {
-				factor = 10
-				date > "1940.1.1"
-			}
-
-			modifier = {
-				factor = 6
-				original_tag = CHI
-				NOT = {
-					has_dlc = "No Compromise, No Surrender"
-				}
-			}
-=======
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 			
 		}
 
@@ -274,11 +196,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1988 }
@@ -374,11 +292,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1991 }
@@ -464,11 +378,7 @@ technologies = {
 			}
 		}
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1945
-=======
 		start_year = 1997
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1997 }
@@ -524,11 +434,7 @@ technologies = {
 		}
 
 		research_cost = 1.25
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1985 }
@@ -584,11 +490,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1988 }
@@ -639,11 +541,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1991 }
@@ -656,24 +554,6 @@ technologies = {
 
 		ai_will_do = {
 			base = 1
-<<<<<<< HEAD
-
-			modifier = {
-				factor = 1.2
-				date > "1943.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
-=======
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		}
 	}
 	tech_recon4 = {
@@ -687,11 +567,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1945
-=======
 		start_year = 1997
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1997 }
@@ -704,24 +580,6 @@ technologies = {
 
 		ai_will_do = {
 			base = 1
-<<<<<<< HEAD
-
-			modifier = {
-				factor = 1.2
-				date > "1946.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1947.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
-=======
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		}
 	}
 
@@ -742,11 +600,7 @@ technologies = {
 		}
 
 		research_cost = 1.25
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1985 }
@@ -836,11 +690,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1988 }
@@ -881,11 +731,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1991 }
@@ -920,11 +766,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1945
-=======
 		start_year = 1997
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1997 }
@@ -976,11 +818,7 @@ technologies = {
 		}
 
 		research_cost = 1.25
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1985 }
@@ -1035,11 +873,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1988 }
@@ -1103,11 +937,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1991 }
@@ -1151,11 +981,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1945
-=======
 		start_year = 1997
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1997 }
@@ -1207,11 +1033,7 @@ technologies = {
 		}
 
 		research_cost = 1.25
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @field_hospital_x y = @1985 }
@@ -1283,11 +1105,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @field_hospital_x y = @1988 }
@@ -1353,11 +1171,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @field_hospital_x y = @1991 }
@@ -1407,11 +1221,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1945
-=======
 		start_year = 1997
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @field_hospital_x y = @1997 }
@@ -1483,11 +1293,7 @@ technologies = {
 		}
 
 		research_cost = 1.25
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @logistic_x y = @1985 }
@@ -1541,11 +1347,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @logistic_x y = @1988 }
@@ -1604,11 +1406,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @logistic_x y = @1991 }
@@ -1652,11 +1450,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1945
-=======
 		start_year = 1997
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @logistic_x y = @1997 }
@@ -1712,11 +1506,7 @@ technologies = {
 		}
 
 		research_cost = 1.25
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @signal_x y = @1985 }
@@ -1759,11 +1549,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @signal_x y = @1988 }
@@ -1815,11 +1601,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1942
-=======
 		start_year = 1991
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @signal_x y = @1991 }
@@ -1866,11 +1648,7 @@ technologies = {
 
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1945
-=======
 		start_year = 1997
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = @signal_x y = @1997 }
@@ -1968,11 +1746,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 4 y = 3 }
@@ -2007,11 +1781,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1939
-=======
 		start_year = 1988
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1988 }
@@ -2060,11 +1830,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-<<<<<<< HEAD
-		start_year = 1936
-=======
 		start_year = 1985
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 2 y = 3 }
@@ -2134,11 +1900,7 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1938
-=======
 		start_year = 1987
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 1 y = @1987 }
@@ -2192,11 +1954,7 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1938
-=======
 		start_year = 1987
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 7 y = @1987 }
@@ -2250,11 +2008,7 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1938
-=======
 		start_year = 1987
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 15 y = @1987 }
@@ -2317,11 +2071,7 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1938
-=======
 		start_year = 1987
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 12 y = @1987 }
@@ -2370,11 +2120,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1938
-=======
 		start_year = 1987
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 3 y = @1987 }
@@ -2420,11 +2166,7 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1938
-=======
 		start_year = 1987
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 10 y = @1987 }
@@ -2482,11 +2224,7 @@ technologies = {
 		show_equipment_icon = yes
 
 		research_cost = 2.0
-<<<<<<< HEAD
-		start_year = 1938
-=======
 		start_year = 1987
->>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
 		folder = {
 			name = support_folder
 			position = { x = 5 y = @1987 }
