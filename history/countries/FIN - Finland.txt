@@ -1,6 +1,10 @@
 ﻿capital = 111
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> iron_dimon
 set_oob = "FIN_1936"
 
 
@@ -22,7 +26,11 @@ if = {
 
 =======
 oob = "FIN_1985"
+<<<<<<< HEAD
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FIN_1985_naval_mtg"
@@ -32,6 +40,10 @@ if = {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> iron_dimon
 set_research_slots = 3
 
 ##################
@@ -49,7 +61,11 @@ add_ideas = {
 set_research_slots = 2
 set_convoys = 320
 set_stability = 0.15
+<<<<<<< HEAD
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 
 set_technology = {
 	infantry_weapons = 1

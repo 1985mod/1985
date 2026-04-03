@@ -24,9 +24,16 @@ state={
 		add_core_of = ENG
 		add_core_of = IRE
 <<<<<<< HEAD
+<<<<<<< HEAD
 		add_core_of = NIR
 =======
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		add_core_of = NIR
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 	}
 
 	provinces={

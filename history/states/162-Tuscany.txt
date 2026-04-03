@@ -35,9 +35,16 @@ state = {
 		}
 		add_core_of = ITA
 <<<<<<< HEAD
+<<<<<<< HEAD
 		add_core_of = TOS
 =======
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		add_core_of = TOS
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2

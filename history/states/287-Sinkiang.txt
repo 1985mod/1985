@@ -8,18 +8,32 @@ state = {
 		add_core_of = SIK
 		add_core_of = CHI
 <<<<<<< HEAD
+<<<<<<< HEAD
 		add_core_of = PRC
 =======
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		add_core_of = PRC
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 
 		buildings = {
 			infrastructure = 0
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 	}
 
 

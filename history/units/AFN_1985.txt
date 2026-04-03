@@ -38,10 +38,18 @@ units = {
 	division = {
 		name = "Royal Afghan Household Division"
 <<<<<<< HEAD
+<<<<<<< HEAD
 		location = 10746
 =======
 		location = 8053
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		location = 10746
+=======
+		location = 8053
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 		division_template = "Royal Guard"
 		start_experience_factor = 0.3
 	}
@@ -54,10 +62,18 @@ units = {
 		location = 8053
 		division_template = "Militia"
 <<<<<<< HEAD
+<<<<<<< HEAD
 		start_equipment_factor = 0.3
 =======
 		start_equipment_factor = 0.2
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.2
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 
 	}
 	division = {
@@ -69,10 +85,18 @@ units = {
 		location = 2017
 		division_template = "Militia"
 <<<<<<< HEAD
+<<<<<<< HEAD
 		start_equipment_factor = 0.3
 =======
 		start_equipment_factor = 0.7
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.7
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 
 	}
 	division = {
@@ -84,10 +108,18 @@ units = {
 		location = 2078
 		division_template = "Militia"
 <<<<<<< HEAD
+<<<<<<< HEAD
 		start_equipment_factor = 0.3
 =======
 		start_equipment_factor = 0.5
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.5
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 
 	}
 	#Herat Army
@@ -100,10 +132,18 @@ units = {
 		location = 10789
 		division_template = "Militia"
 <<<<<<< HEAD
+<<<<<<< HEAD
 		start_equipment_factor = 0.3
 =======
 		start_equipment_factor = 0.5
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.5
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 
 	}
 	division = {
@@ -115,10 +155,18 @@ units = {
 		location = 12769
 		division_template = "Militia"
 <<<<<<< HEAD
+<<<<<<< HEAD
 		start_equipment_factor = 0.3
 =======
 		start_equipment_factor = 0.2
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.2
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 
 	}
 	division = {
@@ -142,10 +190,18 @@ units = {
 		location = 12831
 		division_template = "Militia"
 <<<<<<< HEAD
+<<<<<<< HEAD
 		start_equipment_factor = 0.3
 =======
 		start_equipment_factor = 0.4
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		start_equipment_factor = 0.3
+=======
+		start_equipment_factor = 0.4
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 
 	}
 	division = {
@@ -171,6 +227,10 @@ units = {
 
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> iron_dimon
 =======
 	
 	division = {
@@ -220,7 +280,11 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
+<<<<<<< HEAD
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 }
 
 ### Starting Equipment ###

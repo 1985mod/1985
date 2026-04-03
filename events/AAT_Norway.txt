@@ -433,7 +433,7 @@ country_event = { # Stumbling Storting
 		}
 		add_stability = -0.2
 		add_popularity = {
-			ideology = conservatism
+			ideology = democratic
 			popularity = -0.05
 		}
 	}
@@ -480,7 +480,7 @@ country_event = { # Vote of No Confidence
 		add_stability = -0.25
 		add_war_support = 0.05
 		add_popularity = {
-			ideology = conservatism 
+			ideology = democratic 
 			popularity = -0.1
 		}
 		promote_character = {
@@ -488,7 +488,7 @@ country_event = { # Vote of No Confidence
 			ideology = conservatism
 		}
 		set_party_name = {
-			ideology = conservatism
+			ideology = democratic
 			name = NOR_hoyre_name
 			long_name = NOR_hoyre_long
 		}
@@ -519,7 +519,7 @@ country_event = { # Quisling's Historical Coup event
 		custom_effect_tooltip = NOR_switch_to_fascist_TT # Warning about that Oslo City Shuffle
 	}
 	
-	option = { # Civil War triggers, player continues as conservatism 
+	option = { # Civil War triggers, player continues as democratic 
 		name = AAT_norway.13.b
 		ai_chance = {
 			base = 10
@@ -528,7 +528,7 @@ country_event = { # Quisling's Historical Coup event
 		trigger = {
 		}
 		NOR_start_fascist_civil_war = yes
-		custom_effect_tooltip = NOR_stay_conservatism_TT
+		custom_effect_tooltip = NOR_stay_democratic_TT
 	}
 
 	option = {
@@ -665,7 +665,7 @@ country_event = { # Delayed Coup
 		}
 		trigger = {
 		}
-		custom_effect_tooltip = NOR_stay_conservatism_TT
+		custom_effect_tooltip = NOR_stay_democratic_TT
 	}
 }
 
@@ -3533,7 +3533,7 @@ country_event = { #  Declaring the Regent's Intentions
 					original_tag = SWE
 				}
 				OR = {
-					has_government = conservatism
+					has_government = democratic
 					has_government = neutrality
 				}
 			}
@@ -3575,7 +3575,7 @@ country_event = { #  Declaring the Regent's Intentions
 					original_tag = FIN
 				}
 				OR = {
-					has_government = conservatism
+					has_government = democratic
 					has_government = neutrality
 				}
 			}
@@ -3615,7 +3615,7 @@ country_event = { #  Declaring the Regent's Intentions
 					original_tag = FIN
 				}
 				OR = {
-					has_government = conservatism
+					has_government = democratic
 					has_government = neutrality
 				}
 			}

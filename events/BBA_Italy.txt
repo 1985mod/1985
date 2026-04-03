@@ -17,7 +17,7 @@ add_namespace = BBA_italy_purge_the_party
 add_namespace = BBA_italy_recognize_the_empire
 add_namespace = BBA_italy_sends_military_support
 add_namespace = BBA_italy_communist_events
-add_namespace = BBA_italy_conservatism_events
+add_namespace = BBA_italy_democratic_events
 add_namespace = BBA_italy_anti_colonialism_events
 add_namespace = BBA_italy_interaction_events
 add_namespace = BBA_italy_interaction_events_news
@@ -5394,7 +5394,7 @@ country_event = {
 		ITA_anti_fascist_civil_war_deal_with_fascist_side = yes
 	}
 	
-	#Mimimimi conservatism
+	#Mimimimi democratic
 	option = { 
 		name = BBA_italy_civil_war.1.d #intentional
 
@@ -5408,9 +5408,9 @@ country_event = {
 
 		ITA_start_anti_fascist_civil_war = yes
 
-		set_politics = { ruling_party = conservatism }
+		set_politics = { ruling_party = democratic }
 
-		ITA_promote_cln_to_country_leader_conservatism = yes
+		ITA_promote_cln_to_country_leader_democratic = yes
 
 		ITA_civil_war_deal_with_militias = yes
 
@@ -5456,7 +5456,7 @@ country_event = {
 			limit = {
 				OR = {
 					has_completed_focus = ITA_christian_democracy
-					has_completed_focus = ITA_conservatism_king
+					has_completed_focus = ITA_democratic_king
 				}
 			}
 			ITA_grand_council = {
@@ -5464,7 +5464,7 @@ country_event = {
 
 				if = {
 					limit = {
-						NOT = { has_ideology_group = conservatism }
+						NOT = { has_ideology_group = democratic }
 					}
 					add_country_leader_role = {
 						promote_leader = yes
@@ -6720,16 +6720,16 @@ country_event = {
 
 #Democratic Leadership - Event for ITA
 country_event = {
-	id = BBA_italy_conservatism_events.01
-	title = BBA_italy_conservatism_events.01.t
-	desc = BBA_italy_conservatism_events.01.desc
-	picture = GFX_report_event_ITA_conservatism_parlament
+	id = BBA_italy_democratic_events.01
+	title = BBA_italy_democratic_events.01.t
+	desc = BBA_italy_democratic_events.01.desc
+	picture = GFX_report_event_ITA_democratic_parlament
 
 	is_triggered_only = yes
 
 	#PARRI (Popolare)
 	option = {
-		name = BBA_italy_conservatism_events.01.a
+		name = BBA_italy_democratic_events.01.a
 
 		ai_chance = {
 			base = 1
@@ -6764,7 +6764,7 @@ country_event = {
 
 	#BONOMI (Lavoro)
 	option = {
-		name = BBA_italy_conservatism_events.01.b
+		name = BBA_italy_democratic_events.01.b
 
 		ai_chance = {
 			base = 1
@@ -6778,25 +6778,25 @@ country_event = {
 		}
 		promote_character = ITA_ivanoe_bonomi
 		set_party_name = {
-			ideology = conservatism
-			name = ITA_partito_conservatismo_del_lavoro
-			long_name = ITA_partito_conservatismo_del_lavoro_long
+			ideology = democratic
+			name = ITA_partito_democratico_del_lavoro
+			long_name = ITA_partito_democratico_del_lavoro_long
 		}
 	}
 }
 
 #Scientific Cooperation - Event for Italian allies
 country_event = {
-	id = BBA_italy_conservatism_events.02
-	title = BBA_italy_conservatism_events.02.t
-	desc = BBA_italy_conservatism_events.02.desc
+	id = BBA_italy_democratic_events.02
+	title = BBA_italy_democratic_events.02.t
+	desc = BBA_italy_democratic_events.02.desc
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
 	#
 	option = {
-		name = BBA_italy_conservatism_events.02.a
+		name = BBA_italy_democratic_events.02.a
 
 		add_ideas = ITA_scientific_cooperation_ns
 	}
@@ -6804,9 +6804,9 @@ country_event = {
 
 #Mafia Spawns - Event for ITA
 country_event = {
-	id = BBA_italy_conservatism_events.03
-	title = BBA_italy_conservatism_events.03.t
-	desc = BBA_italy_conservatism_events.03.desc
+	id = BBA_italy_democratic_events.03
+	title = BBA_italy_democratic_events.03.t
+	desc = BBA_italy_democratic_events.03.desc
 	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
@@ -6814,13 +6814,13 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = ITA_country_is_aware_of_mafia_flag
-			country_event = { id = BBA_italy_conservatism_events.04 days = 40 random_days = 20 }
+			country_event = { id = BBA_italy_democratic_events.04 days = 40 random_days = 20 }
 		}
 	}
 
 	#Su vieja
 	option = {
-		name = BBA_italy_conservatism_events.03.a
+		name = BBA_italy_democratic_events.03.a
 
 		if = { #SICILIA PRIO
 			limit = {
@@ -6878,7 +6878,7 @@ country_event = {
 
 #Mafia Spreads - HIDDEN event for ITA to add Mafia state modifier to a new state
 country_event = {
-	id = BBA_italy_conservatism_events.04
+	id = BBA_italy_democratic_events.04
 
 	hidden = yes
 	is_triggered_only = yes
@@ -6913,7 +6913,7 @@ country_event = {
 									NOT = { has_country_flag = ITA_country_is_aware_of_mafia_flag }
 								}
 							}
-							controller = { country_event = { id = BBA_italy_conservatism_events.05 hours = 1 } }
+							controller = { country_event = { id = BBA_italy_democratic_events.05 hours = 1 } }
 						}
 					}
 				}
@@ -6932,7 +6932,7 @@ country_event = {
 								NOT = { has_country_flag = ITA_country_is_aware_of_mafia_flag }
 							}
 						}
-						controller = { country_event = { id = BBA_italy_conservatism_events.05 hours = 1 } }
+						controller = { country_event = { id = BBA_italy_democratic_events.05 hours = 1 } }
 					}
 				}
 			}
@@ -6945,7 +6945,7 @@ country_event = {
 						ITA_state_has_any_version_of_mafia_rising_modifier = no
 					}
 				}
-				country_event = { id = BBA_italy_conservatism_events.04 days = 40 random_days = 20 }
+				country_event = { id = BBA_italy_democratic_events.04 days = 40 random_days = 20 }
 			}
 		}
 	}
@@ -6953,9 +6953,9 @@ country_event = {
 
 #Mafia Abroad - Event for people getting Mafia
 country_event = {
-	id = BBA_italy_conservatism_events.05
-	title = BBA_italy_conservatism_events.05.t
-	desc = BBA_italy_conservatism_events.05.desc
+	id = BBA_italy_democratic_events.05
+	title = BBA_italy_democratic_events.05.t
+	desc = BBA_italy_democratic_events.05.desc
 	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
@@ -6968,7 +6968,7 @@ country_event = {
 
 	#Wtf
 	option = {
-		name = BBA_italy_conservatism_events.05.a
+		name = BBA_italy_democratic_events.05.a
 
 		custom_effect_tooltip = generic_states_affected_tt
 		effect_tooltip = {
@@ -12579,7 +12579,7 @@ country_event = { #Exiled country receives offer to become Italian puppet
 		ROOT = {
 			hidden_effect = {
 				set_popularities = {
-					conservatism = FROM.party_popularity_100@conservatism
+					democratic = FROM.party_popularity_100@democratic
 					neutrality = FROM.party_popularity_100@neutrality
 					fascism = FROM.party_popularity_100@fascism
 					communism = FROM.party_popularity_100@communism

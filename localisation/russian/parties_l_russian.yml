@@ -5,6 +5,7 @@
  communism_desc: "Социалистическое Государство"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  socialism: "Социал Демократия"
  socialism_noun: "Социал Демократия"
  socialism_desc: "Социал Демократическое Государство"
@@ -13,6 +14,11 @@
  socialism_noun: "Социал-Демократия"
  socialism_desc: "Социал-Демократическое Государство"
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+ socialism: "Социал-Демократия"
+ socialism_noun: "Социал-Демократия"
+ socialism_desc: "Социал-Демократическое Государство"
+>>>>>>> iron_dimon
  
  liberalism: "Либерализм"
  liberalism_noun: "Либерализм"

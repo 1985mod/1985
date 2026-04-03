@@ -31,9 +31,16 @@ state = {
 		}
 		add_core_of = ITA
 <<<<<<< HEAD
+<<<<<<< HEAD
 		add_core_of = SPM
 =======
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		add_core_of = SPM
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 	}
 	provinces = {
 		902 6891 9772 9863 11755 11773 11824 11874 	

@@ -66,10 +66,14 @@
  SOV_conservatism: "Российская федерация"
  SOV_conservatism_DEF: "Российская федерация"
 <<<<<<< HEAD
+<<<<<<< HEAD
  SOV: "Советский Союз"
 =======
  SOV: "Союз Советских Социалистических Республик"
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+ SOV: "Союз Советских Социалистических Республик"
+>>>>>>> iron_dimon
  SOV_DEF: "Союз Советских Социалистических Республик"
  SOV_ADJ: "Советск"
  
@@ -109,10 +113,14 @@
  CZE_ADJ: "Чехословацк"
  CZE_communism: "Чехословацкая Социалистическая Республика"
 <<<<<<< HEAD
+<<<<<<< HEAD
  CZE_communism_DEF: "ЧСCР"
 =======
  CZE_communism_DEF: "Чехословацк"
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+ CZE_communism_DEF: "Чехословацк"
+>>>>>>> iron_dimon
  
  POL_fascism: "Фалангистская Польша"
  POL_fascism_DEF: "Фалангистская Польша"
@@ -744,6 +752,7 @@
  YEM_ADJ: "Йеменск"
  
 <<<<<<< HEAD
+<<<<<<< HEAD
  ETH_fascism: "Эфиопская империя"
  ETH_fascism_DEF: "Эфиопская империя"
  ETH_democratic: "Федеральная демократическая республика Эфиопия"
@@ -752,6 +761,8 @@
  ETH_neutrality_DEF: "Эфиопия"
 =======
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+>>>>>>> iron_dimon
  ETH_communism: "Народная демократическая республика Эфиопия"
  ETH_communism_DEF: "Народная демократическая республика Эфиопия"
  ETH: "Федеральная демократическая республика Эфиопия"
@@ -759,16 +770,22 @@
  ETH_ADJ: "Эфиопск"
  
 <<<<<<< HEAD
+<<<<<<< HEAD
  SLO_fascism: "Словакия"
  SLO_fascism_DEF: "Словакия"
  SLO_democratic: "Словацкая республика"
  SLO_democratic_DEF: "Словацкая республика"
 =======
+=======
+>>>>>>> iron_dimon
  SLO_conservatism: "Словацкая республика"
  SLO_conservatism_DEF: "Словацкая республика"
  SLO_liberalism: "Словацкая республика"
  SLO_liberalism_DEF: "Словацкая республика"
+<<<<<<< HEAD
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+>>>>>>> iron_dimon
  SLO_neutrality: "Свободное государство Словакия"
  SLO_neutrality_DEF: "Свободное государство Словакия"
  SLO_communism: "Словацкая социалистическая республика"
@@ -806,6 +823,7 @@
  CRO_DEF: "Хорватия"
  CRO_ADJ: "Хорватск"
  
+<<<<<<< HEAD
 <<<<<<< HEAD
  GXC_fascism: "Третья гуансийская клика"
  GXC_fascism_DEF: "Третья гуансийская клика"
@@ -869,6 +887,8 @@
  MEN_ADJ: "Менчиангск"
 =======
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+>>>>>>> iron_dimon
  SER_fascism: "Сербская империя"
  SER_fascism_DEF: "Сербская империя"
  SER_ITA_fascism_subject: "Сербский протекторат"
@@ -942,14 +962,14 @@
 
  LBA_fascism: "Ливия"
  LBA_fascism_DEF: "Ливия"
- LBA_socialism: "Великая Социалистическая Народная Ливийская Арабская Джамахирия"
- LBA_socialism_DEF: "ВСНЛАД"
+ LBA_socialism: "Арабская Республика Ливия"
+ LBA_socialism_DEF: "Арабская Республика Ливия"
  LBA_liberalism: "Республика Ливия"
  LBA_liberalism_DEF: "Республика Ливия"
  LBA_conservatism: "Республика Ливия"
  LBA_conservatism_DEF: "Республика Ливия"
- LBA_neutrality: "Арабская Республика Ливия"
- LBA_neutrality_DEF: "Арабская Республика Ливия"
+ LBA_neutrality: "Великая Социалистическая Народная Ливийская Арабская Джамахирия"
+ LBA_neutrality_DEF: "Великая Социалистическая Народная Ливийская Арабская Джамахирия"
  LBA_communism: "Ливийская социалистическая республика"
  LBA_communism_DEF: "Ливийская социалистическая республика"
  LBA_fascism_ADJ: "Ливийск"
@@ -1058,6 +1078,7 @@
  GEO_DEF: "Грузия"
  GEO_ADJ: "Грузинск"
  
+<<<<<<< HEAD
  KAZ_fascism: "Алаш-Орда"
  KAZ_fascism_DEF: "Алаш-Орда"
  KAZ_democratic: "Казахстан"
@@ -1069,9 +1090,13 @@
  KAZ_fascism_ADJ: "Казахстанск"
  KAZ_democratic_ADJ: "Казахстанск"
  KAZ_neutrality_ADJ: "Казахстанск"
+=======
+ KAZ_communism: "Казахская Советская Социалистическая Республика"
+ KAZ_communism_DEF: "Казахская Советская Социалистическая Республика
+>>>>>>> iron_dimon
  KAZ_communism_ADJ: "Казахстанск"
- KAZ: "Казахстан"
- KAZ_DEF: "Казахстан"
+ KAZ: "Казахская Республика"
+ KAZ_DEF: "Казахская Республика"
  KAZ_ADJ: "Казахстанск"
  
  AZR_fascism: "Империя Огня"
@@ -1089,6 +1114,7 @@
  AZR: "Азербайджан"
  AZR_DEF: "Азербайджан"
  AZR_ADJ: "Азербайджанск"
+ 
  ARM_fascism: "Великая Армения"
  ARM_fascism_DEF: "Великая Армения"
  ARM_democratic: "Республика Армения"
@@ -1104,6 +1130,7 @@
  ARM: "Армения"
  ARM_DEF: "Армения"
  ARM_ADJ: "Армянск"
+ 
  BLR_fascism: "Белая Русь"
  BLR_fascism_DEF: "Белая Русь"
  BLR_democratic: "Республика Беларусь"
@@ -1445,14 +1472,15 @@
  SUR: "Суринам"
  SUR_DEF: "Суринам"
  SUR_ADJ: "Суринамск"
+ 
  TAJ_fascism: "Матчинское бекство"
  TAJ_fascism_DEF: "Матчинское бекство"
  TAJ_democratic: "Республика Таджикистан"
  TAJ_democratic_DEF: "Республика Таджикистан"
  TAJ_neutrality: "Таджикистан"
  TAJ_neutrality_DEF: "Таджикистан"
- TAJ_communism: "Таджикская Советская Республика"
- TAJ_communism_DEF: "Таджикская Советская Республика"
+ TAJ_communism: "Таджикская Советская Социалистическая Республика"
+ TAJ_communism_DEF: "Таджикская Советская Социалистическая Республика"
  TAJ_fascism_ADJ: "Таджикск"
  TAJ_democratic_ADJ: "Таджикск"
  TAJ_neutrality_ADJ: "Таджикск"
@@ -1460,29 +1488,15 @@
  TAJ: "Таджикистан"
  TAJ_DEF: "Таджикистан"
  TAJ_ADJ: "Таджикск"
- TRI_fascism: "Империя Каири"
- TRI_fascism_DEF: "Империя Каири"
- TRI_democratic: "Республика Тринидад и Тобаго"
- TRI_democratic_DEF: "Республика Тринидад и Тобаго"
- TRI_neutrality: "Тринидад и Тобаго"
- TRI_neutrality_DEF: "Тринидад и Тобаго"
- TRI_communism: "Америндская Народная Республика"
- TRI_communism_DEF: "Америндская Народная Республика"
- TRI_fascism_ADJ: "Каирийск"
- TRI_democratic_ADJ: "Тринидад-и-тобагск"
- TRI_neutrality_ADJ: "Тринидад-и-тобагск"
- TRI_communism_ADJ: "Америндск"
- TRI: "Тринидад и Тобаго"
- TRI_DEF: "Тринидад и Тобаго"
- TRI_ADJ: "Тринидад-и-тобагск"
- TMS_fascism: "Неосельджукская империя" #Changed from Khiva due to Khiva being added to the game
+ 
+ TMS_fascism: "Неосельджукская империя" 
  TMS_fascism_DEF: "Неосельджукская империя"
  TMS_democratic: "Республика Туркменистан"
  TMS_democratic_DEF: "Республика Туркменистан"
  TMS_neutrality: "Туркменистан"
  TMS_neutrality_DEF: "Туркменистан"
- TMS_communism: "Туркестанская Автономная  Республика"
- TMS_communism_DEF: "Туркестанская Автономная  Республика"
+ TMS_communism: "Туркменская Советская Социалистическая Республика"
+ TMS_communism_DEF: "Туркменская Советская Социалистическая Республика"
  TMS_fascism_ADJ: "Туркменск"
  TMS_democratic_ADJ: "Туркменск"
  TMS_neutrality_ADJ: "Туркменск"

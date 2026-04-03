@@ -195,7 +195,11 @@ country_event = {
             UKR = { transfer_state = 259 }
             UKR = { transfer_state = 766 }
             UKR = { transfer_state = 834 }
+<<<<<<< HEAD
 			UKR = { transfer_state = 1059 }
+=======
+			UKR = { transfer_state = 1038 }
+>>>>>>> iron_dimon
             set_country_flag = collapse_UKR
         }
 
@@ -235,7 +239,12 @@ country_event = {
             }
             GEO = { transfer_state = 231 }
             GEO = { transfer_state = 826 }
+<<<<<<< HEAD
 			GEO = { transfer_state = 1057 }
+=======
+			GEO = { transfer_state = 1034 }
+			GEO = { transfer_state = 1035 }
+>>>>>>> iron_dimon
             set_country_flag = collapse_GEO
         }
 
@@ -246,6 +255,11 @@ country_event = {
                 NOT = { has_country_flag = collapse_ARM }
             }
             ARM = { transfer_state = 230 }
+<<<<<<< HEAD
+=======
+			ARM = { transfer_state = 1031 }
+			ARM = { transfer_state = 1032 }
+>>>>>>> iron_dimon
             set_country_flag = collapse_ARM
         }
 
@@ -256,8 +270,13 @@ country_event = {
                 NOT = { has_country_flag = collapse_AZR }
             }
             AZR = { transfer_state = 229 }
+<<<<<<< HEAD
 			AZR = { transfer_state = 1054 }
 			AZR = { transfer_state = 1055 }
+=======
+			AZR = { transfer_state = 1033 }
+			AZR = { transfer_state = 1020 }
+>>>>>>> iron_dimon
             set_country_flag = collapse_AZR
         }
 
@@ -267,8 +286,12 @@ country_event = {
                 date > 1991.11.01
                 NOT = { has_country_flag = collapse_CIN }
             }
+<<<<<<< HEAD
             CHE = { transfer_state = 821 }
 			CHE = { transfer_state = 1060 }
+=======
+            CIN = { transfer_state = 821 }
+>>>>>>> iron_dimon
             set_country_flag = collapse_CIN
         }
 
@@ -314,6 +337,10 @@ country_event = {
                 NOT = { has_country_flag = collapse_TAJ }
             }
             TAJ = { transfer_state = 742 }
+<<<<<<< HEAD
+=======
+			TAJ = { transfer_state = 1030 }
+>>>>>>> iron_dimon
             set_country_flag = collapse_TAJ
         }
 

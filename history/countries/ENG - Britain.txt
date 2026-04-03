@@ -57,21 +57,6 @@ if = {
 		}
 	}
 }
-if = {
-	limit = {
-		has_dlc = "Gotterdammerung"
-	}
-	give_guarantee = BEL
-}
-if = {
-	limit = {
-		has_dlc = "Graveyard of Empires"
-	}
-	give_guarantee = IRQ
-	IRQ = {
-		give_military_access = ENG
-	}
-}
 
 set_research_slots = 4
 
@@ -209,13 +194,6 @@ IF = {
 }
 
 set_variable = { var = eng_gateway_to_europe_influence value = 0 }
-
-add_ideas = {
-	stiff_upper_lip
-	ENG_the_war_to_end_all_wars
-	george_v
-}
-	
 
 set_convoys = 1000
 

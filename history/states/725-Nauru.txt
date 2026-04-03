@@ -7,10 +7,18 @@ state={
 	history={
 		owner = ENG
 <<<<<<< HEAD
+<<<<<<< HEAD
 		add_core_of = FIJ
 =======
 		add_core_of = ENG
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		add_core_of = FIJ
+=======
+		add_core_of = ENG
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 		buildings = {
 			infrastructure = 2
 			13038 = {

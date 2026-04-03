@@ -120,6 +120,10 @@ set_convoys = 80
 recruit_character = GRE_andreas_papandreou
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> iron_dimon
 
 ### VARIANTS ###
 # 1936 Start #
@@ -257,4 +261,8 @@ if = {
 	}
 }
 =======
+<<<<<<< HEAD
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon

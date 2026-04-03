@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = news
+<<<<<<< Updated upstream
 
 # The Spanish Civil War
 news_event = {
@@ -10967,3 +10968,5 @@ news_event = {
 		}
 	}
 }
+=======
+>>>>>>> Stashed changes

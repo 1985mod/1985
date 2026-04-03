@@ -16,9 +16,16 @@ state = {
 		owner = MEX
 		add_core_of = MEX
 <<<<<<< HEAD
+<<<<<<< HEAD
 		add_core_of = RIG
 =======
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		add_core_of = RIG
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 
 		buildings = {
 			infrastructure = 2

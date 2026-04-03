@@ -2,19 +2,18 @@ state={
 	id=758
 	name="STATE_758"
 	provinces={
-		1961 5094 8029 10802 12784 12801 
+		13407 13409 
 	}
-	manpower=1000000
+	manpower=54000
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
-		owner = PRC
+		owner = UNI
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = TIB
-		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = ANG
+		add_core_of = UNI
 
 	}
 

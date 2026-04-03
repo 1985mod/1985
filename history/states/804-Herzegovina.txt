@@ -22,7 +22,10 @@ state={
 		}
 		add_core_of = YUG
 		add_core_of = BOS
+<<<<<<< Updated upstream
 		add_core_of = HRZ
+=======
+>>>>>>> Stashed changes
 	}
 
 	provinces={

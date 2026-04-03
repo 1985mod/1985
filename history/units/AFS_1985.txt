@@ -124,6 +124,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
+<<<<<<< HEAD
 		location = 4893
 		division_template = "Royal Guard"
 		start_equipment_factor = 0.4
@@ -136,6 +137,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
+=======
+>>>>>>> iron_dimon
 		location = 7916
 		division_template = "Militia"
 		start_equipment_factor = 0.2

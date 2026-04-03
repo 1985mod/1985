@@ -86,9 +86,16 @@ if = {
 set_convoys = 50
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #create_faction = WARSAW_PACT
 =======
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+#create_faction = WARSAW_PACT
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 create_faction_from_template = faction_template_warsaw_pact
 
 add_to_faction = SOV  

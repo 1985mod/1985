@@ -12,9 +12,7 @@ state = {
 	history = {
 	
 		owner = SOV
-		add_claim_by = JAP
 		add_core_of = SOV
-		add_core_of = ANU
 		
 		buildings = {
 			infrastructure = 2

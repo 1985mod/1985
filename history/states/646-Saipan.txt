@@ -7,13 +7,21 @@ state=
 	history=
 	{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+>>>>>>> iron_dimon
 		owner = JAP
 		add_core_of = JAP
 		add_core_of = GUM
 =======
 		owner = USA
 		add_core_of = USA
+<<<<<<< HEAD
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 		buildings = {
 			infrastructure = 2
 			air_base = 3

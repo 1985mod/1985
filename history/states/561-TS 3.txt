@@ -11,9 +11,16 @@ state={
 		owner = SOV
 		add_core_of = SOV
 <<<<<<< HEAD
+<<<<<<< HEAD
 		add_core_of = FER
 =======
 >>>>>>> dcdbc6ec61eb791d066e161a51b4b63e700f1e4d
+=======
+<<<<<<< Updated upstream
+		add_core_of = FER
+=======
+>>>>>>> Stashed changes
+>>>>>>> iron_dimon
 
 		buildings = {
 			infrastructure = 2
