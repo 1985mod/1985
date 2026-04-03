@@ -22,10 +22,6 @@ state = {
 		}
 
 		victory_points = {
-			3522 5 # Magdeburg
-		}
-
-		victory_points = {
 			6298 1 # Lüneburg
 		}
 
@@ -43,6 +39,16 @@ state = {
 			}
 			374 = { # Cuxhaven
 				naval_base = 1
+			}
+		}
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 6
+				arms_factory = 4
+				# Two more than before due to "Establish the Reichswerke"
+				industrial_complex = 5
+				dockyard = 3
 			}
 		}
 	}

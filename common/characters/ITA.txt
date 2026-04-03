@@ -12,7 +12,7 @@ characters = {
 		}
 
 		country_leader = {
-			ideology = democratic_socialism
+			ideology = classical_social_democracy
 			traits={  }
 			expire="1990.1.1.1"
 			

@@ -1,0 +1,18 @@
+characters = {
+	DEN_poul_schluter = {
+		name = DEN_poul_schluter
+		portraits={
+			civilian={
+				large= GFX_portrait_DEN_poul_schluter
+			}
+			army = {
+				large = GFX_portrait_DEN_poul_schluter
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

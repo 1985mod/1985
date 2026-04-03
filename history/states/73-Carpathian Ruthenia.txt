@@ -25,11 +25,9 @@ state = {
 			11691 2 # Uzhhorod
 		}
 
+        add_core_of = SOV
 		add_core_of = UKR
-		add_core_of = SOV
 		
-		# This should isntead be reclaimable through Hungarian focuses with ww
-
 	}
 
 	provinces = {

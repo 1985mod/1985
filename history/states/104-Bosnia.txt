@@ -2,13 +2,14 @@
 state={
 	id=104
 	name="STATE_104"
-	manpower =3330363
+	manpower =1910200
 	
 	
 	state_category = town
 	
 	resources={
 		aluminium=7 # was: 10
+		coal = 2 # initial distribution
 	}
 
 	history={
@@ -16,23 +17,17 @@ state={
 		victory_points = {
 			11899 5 
 		}
-		victory_points = {
-			6983 3
-		}
-		victory_points = {
-			9894 3
-		}
+
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			air_base = 2
+			industrial_complex = 1
 		}
 		add_core_of = YUG
 		add_core_of = BOS
 	}
 
 	provinces={
-		  3985 6942 6799 6957 9894 9922 11572 11872 11899 
+		 982 3985 6799 6957 9922 11572 11741 11872 11899 
 	}
 
 	local_supplies=7.0 

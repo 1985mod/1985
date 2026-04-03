@@ -1,0 +1,18 @@
+characters = {
+	LUX_jacques_santer ={
+		name = LUX_jacques_santer
+		portraits={
+			civilian={
+				large= GFX_portrait_LUX_jacques_santer
+			}
+			army = {
+				large = GFX_portrait_LUX_jacques_santer
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

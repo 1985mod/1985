@@ -82,15 +82,17 @@ if = {
 	}
 }
 
+recruit_character = SPR_felipe_gonzalez
+
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1933.2.16"
+	ruling_party = conservatism
+	last_election = "1982.10.28"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-	neutrality = 100
+	conservatism = 100
 }
 
 set_convoys = 150

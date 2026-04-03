@@ -13,7 +13,6 @@ state = {
 
 		owner = POL
 		add_core_of = POL
-		
 
 		victory_points = {
 			6282 5 # Stettin

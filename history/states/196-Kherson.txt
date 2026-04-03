@@ -14,10 +14,9 @@ state = {
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = UKR
-		add_core_of = CRI
 
 		victory_points = {
-			11715 3 # Kherson
+			721 1 # Kherson
 		}
 		
 		buildings = {

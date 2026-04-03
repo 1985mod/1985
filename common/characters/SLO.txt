@@ -1,0 +1,35 @@
+characters = {
+	SLO_milan_cic ={
+		name = SLO_milan_cic
+		portraits={
+			civilian={
+				large= GFX_portrait_SLO_milan_cic
+			}
+			army = {
+				large = GFX_portrait_SLO_milan_cic
+			}
+		}
+		country_leader={
+			ideology = marxism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+	
+	SLO_vladimir_meciar ={
+		name = SLO_vladimir_meciar
+		portraits={
+			civilian={
+				large= GFX_portrait_SLO_vladimir_meciar
+			}
+			army = {
+				large = GFX_portrait_SLO_vladimir_meciar
+			}
+		}
+		country_leader={
+			ideology = neoliberalism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

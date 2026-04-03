@@ -9,8 +9,6 @@ state = {
 
 		owner = POL
 		add_core_of = POL
-		
-		
 
 		victory_points = {
 			9263 5 # Gdynia
@@ -23,6 +21,10 @@ state = {
 		victory_points = {
 			279 1 # Bydgoszcz
 		}
+		
+		victory_points = {
+			362 10 # Danzig
+		}
 
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -32,11 +34,14 @@ state = {
 			9263 = {
 				naval_base = 1
 			}
+			362 = {
+				naval_base = 5
+			}
 		}
 	}
 
 	provinces = {
-		243 279 334 389 3295 3324 6347 9263
+		243 279 334 362 389 3295 3324 6347 9263
 	}
 
 	local_supplies = 0.0 

@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_select_date_1985"
+		texturefile = "gfx/dates/select_date_1985.dds"
+		legacy_lazy_load = no
+	}
+	
+}

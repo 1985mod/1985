@@ -1,211 +1,116 @@
-capital = 443
+﻿capital = 440
 
-oob = "PAK_1936"
+oob = "PAK_1985"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "PAK_1985_naval_mtg"
+	else = {
+		set_naval_oob = "PAK_1985_naval_legacy"
+	}
+}
 
-# Starting tech
+set_research_slots = 2
+set_convoys = 320
+set_stability = 0.15
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_trucks = 1
-	tech_support = 1		
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
+	motorised_infantry = 1
+	
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
-	transport = 1
-	trench_warfare = 1
-	fleet_in_being = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
 	
-}
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
-		early_fighter = 1
-		CAS1 = 1
-	}
-}
-
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
-set_convoys = 20
-
-recruit_character = PAK_acd2
-recruit_character = PAK_fascist_guy
-recruit_character = PAK_ncs
-recruit_character = PAK_nccr
-recruit_character = PAK_aco2
-recruit_character = PAK_communist_guy
-recruit_character = PAK_ai2
-recruit_character = PAK_ar
-recruit_character = PAK_coi
-recruit_character = PAK_acas
-recruit_character = PAK_acgs
-recruit_character = PAK_aa2
-recruit_character = PAK_democratic_guy
-recruit_character = PAK_acr
-recruit_character = PAK_stc
-recruit_character = PAK_awt
-recruit_character = PAK_pot
-recruit_character = PAK_mt
-recruit_character = PAK_ncm
-recruit_character = PAK_nt
-
-1939.1.1 = {#placeholder same tech as ENG
-	#generic focuses
-
-	add_political_power = 1198
-	add_command_power = 100
-	oob = "PAK_1939"
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
 	
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-
-	add_ideas = {
-		#laws
-		volunteer_only
-		low_economic_mobilisation
-	}
-
+	gw_artillery = 1
+	interwar_artillery = 1
+	antitank = 1 
+ 	antitank1 = 1
+	interwar_antiair = 1
 	
-	set_technology = {
-		#doctrines
-		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-		grand_battle_plan = 1
-
-		trench_warfare = 1
-		prepared_defense = 1
-		battlefleet_concentration = 1
-		subsidiary_carrier_role = 1
-		convoy_sailing = 1
-		convoy_escorts = 1
-		submarine_operations = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		cavity_magnatron = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "By Blood Alone" }
-		}
-		set_technology = {
-			early_fighter = 1
-			fighter1 = 1
-		}
-	}
+	corvette1 = 1
+	corvette2 = 2
+	frigate1 = 1
+	frigate2 = 2
+	destroyer1 = 1
+	destroyer2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	radio = 1 
+	radio_detection = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+	
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
 }
 
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.11.14"
+set_politics = {	
+	ruling_party = islamism
+	last_election = "1978.2.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
+
 set_popularities = {
-	conservatism = 17
-	fascism = 2
-	communism = 1
-	neutrality = 80
+    islamism = 80
+    communism = 20
 }
 
+recruit_character = PAK_Muhammad_Zia_ul_Haq
 
-create_country_leader = {
-	name = "Qazi Muhammad Essa"
-	
-	picture = "GFX_Portrait_RAJ_Political_Leader_Generic_2"
-	expire = "1960.1.1"
-	ideology = centrism
-	traits = {
-		
-	}
-}
-
-#Transfered instead
-#create_country_leader = {
-#	name = "Muhammad Ali Jinnah"
-#	
-#	picture = "GFX_Portrait_RAJ_Political_Leader_Generic_2"
-#	expire = "1960.1.1"
-#	ideology = liberalism
-#	traits = {
-#		
-#	}
-#}
-
-create_country_leader = {
-	name = "Haji Mohammad Danesh"
-	
-	picture = "GFX_Portrait_RAJ_Political_Leader_Generic_2"
-	expire = "1960.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_corps_commander = {
-	name = "Muhammad Zia-ul-Haq"
-	gfx = "GFX_Portrait_The_Raj_Army_Generic"
-	traits = {  }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Iftikhar Khan Janjua"
-	gfx = "GFX_Portrait_The_Raj_Army_Generic_2"
-	traits = {  }
-	skill = 3
-	
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Akbar Khan"
-	gfx = "GFX_Portrait_The_Raj_Army_Generic"
-	traits = { trickster }
-	skill = 3
-	
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}

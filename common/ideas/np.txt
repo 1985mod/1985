@@ -1,0 +1,274 @@
+ideas = {
+    country = {
+		PRK_international_sanctions = {
+			picture = generic_economic_crisis 
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  stability_factor = -0.15
+              research_speed_factor = -0.3
+			  consumer_goods_factor = 0.5
+			  production_speed_industrial_complex_factor = -0.25
+			}
+		}
+		PRK_international_sanctions_2 = {
+			picture = generic_economic_crisis 
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  stability_factor = -0.1
+              research_speed_factor = -0.25
+			  consumer_goods_factor = 0.35
+			  production_speed_industrial_complex_factor = -0.2
+			}
+		}
+		PRK_planned_economy = {
+			picture = ARG_economic_reactivation 
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  local_resources_factor = -0.1
+			  production_speed_industrial_complex_factor = 0.05
+			  production_factory_start_efficiency_factor = 0.1
+			  min_export = -0.05
+			}
+		}
+		PRK_planned_economy_2 = {
+			picture = ARG_economic_reactivation 
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  local_resources_factor = -0.15
+			  production_speed_industrial_complex_factor = 0.1
+			  production_factory_start_efficiency_factor = 0.15
+			  min_export = -0.1
+			}
+		}
+		PRK_isolation_policy = {
+			picture = generic_democracy_banned
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			available = {
+     			     set_ruling_party = communism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  army_chief_cost_factor = 0.3
+			  communism_drift = 0.05
+			  foreign_subversive_activites = 0.05
+              drift_defence_factor = 0.5
+			}
+		}
+		PRK_an_instructive_story_of_the_korean_war = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  stability_factor = -0.03
+              army_attack_factor = 0.05
+			  army_defence_factor = 0.05
+			  war_support_factor = 0.1
+			}
+		}
+		PRK_increase_military_spending = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  consumer_goods_factor = 0.1
+			  army_org_factor = 0.05
+			  production_factory_efficiency_gain_factor = 0.05
+			  production_factory_start_efficiency_factor = 0.05
+			  line_change_production_efficiency_factor = 0.03
+			}
+		}
+		PRK_two_koreas_one_people = {
+			picture = chi_wargaming_division
+			allowed = {
+				original_tag = PRK
+				original_tag = KOR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+              socialism_drift = 0.05
+			  communism_drift = 0.05
+			  conservatism_drift = 0.05
+			  stability_factor = 0.05
+			}
+		}
+		PRK_free_tourism_idea = {
+			picture = chi_wargaming_division
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.35
+			consumer_goods_factor = 0.05
+			}
+		}
+		PRK_korean_af = {
+			picture = chi_wargaming_division
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+               enemy_army_bonus_air_superiority_factor = -0.05
+			   experience_gain_air  = 0.05
+			   air_night_penalty = -0.05
+               air_weather_penalty = -0.1
+			}
+		}
+		PRK_victory_in_the_air_the_main_thing = {
+			picture = chi_wargaming_division
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		       air_ace_generation_chance_factor = 0.1
+			   experience_gain_air_factor -0.1
+			   air_night_penalty = -0.05
+			}
+		}
+		PRK_glory_to_the_korean_army = {
+			picture = mex_revolutionary_army
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			   experience_gain_air_factor = 0.05
+			   experience_gain_navy_factor = 0.05
+               army_attack_factor = 0.1
+			   army_defence_factor = 0.1
+			   army_org_factor = 0.05
+			   planning_speed = 0.05
+			   max_planning = 0.10
+			}
+		}
+		PRK_army_stronghold = {
+			picture = mex_revolutionary_army
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			   experience_gain_army_factor = 0.1
+               army_attack_factor = 0.05
+			   army_defence_factor = 0.05
+			}
+		}
+		PRK_foreign_policy = {
+			picture = generic_political_support
+			allowed = {
+				original_tag = PRK
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			   political_power_factor = 0.1
+               economy_cost_factor = -0.25
+			   send_volunteers_tension = -0.5
+			}
+		}
+	}
+}

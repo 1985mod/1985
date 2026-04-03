@@ -1,0 +1,90 @@
+
+PRK_lifting_sanctions = {
+    PRK_invite_korea = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = PRK_question_about_import
+			has_idea = PRK_international_sanctions
+		}
+		
+	    targets = { KOR }
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		cost = 75
+		
+		remove_effect = {
+
+		}
+	}
+	
+    PRK_invite_japan = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = PRK_question_about_import
+			has_idea = PRK_international_sanctions
+		}
+		
+	    targets = { JAP }
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		cost = 75
+		
+		remove_effect = {
+		
+		}
+	}
+	
+    PRK_invite_china = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = PRK_question_about_import
+			has_idea = PRK_international_sanctions
+		}
+		
+	    targets = { CHI }
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		cost = 75
+		
+		remove_effect = {
+		
+		}
+	}
+	
+    PRK_invite_phillipines = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = PRK_question_about_import
+			has_idea = PRK_international_sanctions
+		}
+		
+	    targets = { PHI }
+		
+		fire_only_once = yes
+		days_remove = 30
+		
+		cost = 75
+		
+		remove_effect = {
+			PRK = {
+				limit = {
+					has_idea = PRK_international_sanctions
+				}
+				add_ideas = PRK_international_sanctions_2
+			}
+		}
+	}

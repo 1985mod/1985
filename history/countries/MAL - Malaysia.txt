@@ -4,12 +4,7 @@ oob = "MAL_1936"
 
 set_research_slots = 3
 
-recruit_character = MAL_shenton_thomas
-recruit_character = MAL_onn_jaafar
-recruit_character = MAL_lai_teck
-recruit_character = MAL_ibrahim_hj_yaacob
-recruit_character = MAL_winston_tyron
-
+recruit_character = MAL_Mahathir
 
 # Starting tech
 # clone of UK
@@ -124,16 +119,12 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-
 set_popularities = {
 	conservatism = 33
 	communism = 33
 	neutrality = 34
 }
 
-
-#set_cosmetic_tag = # British Malaya
 
 
 

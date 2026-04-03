@@ -40,6 +40,9 @@ if = {
 	}
 }
 
+recruit_character = SLO_milan_cic
+recruit_character = SLO_vladimir_meciar
+
 set_politics = {
 	ruling_party = conservatism
 	last_election = "1933.3.5"

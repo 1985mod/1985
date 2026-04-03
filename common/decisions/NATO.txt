@@ -6,7 +6,7 @@ nato_decisions = {
 
 		available = {
 			has_war = no
-			is_in_faction = yes
+			is_in_faction = no
 			country_exists = SOV
 			NOT = { is_in_faction_with = SOV }
 		}

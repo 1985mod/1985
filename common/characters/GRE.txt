@@ -1,0 +1,18 @@
+characters = {
+	GRE_andreas_papandreou ={
+		name = GRE_andreas_papandreou
+		portraits={
+			civilian={
+				large= GFX_portrait_GRE_andreas_papandreou
+			}
+			army = {
+				large = GFX_portrait_GRE_andreas_papandreou
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

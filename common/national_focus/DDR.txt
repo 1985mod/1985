@@ -1,0 +1,25 @@
+focus_tree = {
+    id = DDR_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = DDR
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 200 y = 1200 }
+
+    focus = { 
+        id = DDR_new_1985
+        icon = GFX_
+        x = 10
+        y = 0
+        cost = 2
+        completion_reward = {
+	    }
+	}
+}

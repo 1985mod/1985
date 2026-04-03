@@ -22,6 +22,8 @@ set_technology = {
 	tech_mountaineers = 1
 }
 
+recruit_character = BEL_wilfried_martens
+
 set_politics = {
 	ruling_party = conservatism
 	last_election = "1936.1.1" #Was 1932.11.27 but changed to allow for Government Resigns focus to simulate this election.

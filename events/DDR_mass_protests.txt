@@ -1,0 +1,15 @@
+add_namespace = DDR_mass_protests
+
+country_event = {
+    id = DDR_mass_protests.1
+    title = DDR_mass_protests.1.t
+    desc = DDR_mass_protests.desc
+	picture = GFX_report_event_DDR_Honecker_and_Kohl
+    is_triggered_only = yes
+
+    option = {
+        name = DDR_mass_protests.1.b
+        add_political_power = -100
+        add_stability  = -0.10
+    }
+}

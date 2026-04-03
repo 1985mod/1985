@@ -1,0 +1,18 @@
+characters = {
+	SPR_felipe_gonzalez ={
+		name = SPR_felipe_gonzalez
+		portraits={
+			civilian={
+				large= GFX_portrait_SPR_felipe_gonzalez
+			}
+			army = {
+				large = GFX_portrait_SPR_felipe_gonzalez
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="1991.4.5.1"		
+		}
+	}
+}

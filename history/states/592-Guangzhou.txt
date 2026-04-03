@@ -11,6 +11,7 @@ state={
 
 	history={
 		owner = PRC
+		add_core_of = CHI
 		add_core_of = PRC
 		
 		buildings = {
@@ -25,8 +26,13 @@ state={
 			}
 
 		}
+
 		victory_points = {
-			1047 5 # Guangzhou
+			1047 10 # Guangzhou
+		}
+
+		victory_points = {
+			12077 1 # Maoming
 		}
 	}
 

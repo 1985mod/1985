@@ -11,8 +11,17 @@ ideologies = {
 			}
 
 			chinese_socialism = {
-				
 			}
+			
+			communist_perestroika = {
+			}
+		
+			authoritarian_socialism = {
+			}
+			
+			democratic_socialism = {
+			}
+
 		}
 
 		dynamic_faction_names = {
@@ -61,28 +70,32 @@ ideologies = {
 
 		types = {
 
-			authoritarian_socialism = {
-
+			nordic_model = {
 			}
 
-			democratic_socialism ={
-
+			the_third_way ={
 			}
 			
-			communist_perestroika = {
+		    classical_social_democracy ={                
 			}
-
+			
+			eco_social_democracy = {
+			}
+		
+			liberal_social_democracy = {
+			}
+		
 		}
 
 		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNIST_1"
-			"FACTION_NAME_COMMUNIST_2"
-			"FACTION_NAME_COMMUNIST_3"
-			"FACTION_NAME_COMMUNIST_4"
-			"FACTION_NAME_COMMUNIST_5"
+			"FACTION_NAME_SOCIALIST_1"
+			"FACTION_NAME_SOCIALIST_2"
+			"FACTION_NAME_SOCIALIST_3"
+			"FACTION_NAME_SOCIALIST_4"
+			"FACTION_NAME_SOCIALIST_5"
 		}
 
-		color = { 200 50 50 }
+		color = { 255 102 102 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -122,10 +135,12 @@ ideologies = {
 		types = {
 
 			classic_liberalism = {
-
 			}
+			
 			neoliberalism = {
-
+			}
+            
+			social_liberalism = {
 			}
 		}
 
@@ -187,6 +202,15 @@ ideologies = {
 
 			}
 			reactionism = {
+			
+			}
+			liberal_conservatism = {
+			
+			}
+			social_conservatism = {
+			
+			}
+			national_conservatism = {
 
 			}
 		}
@@ -250,13 +274,16 @@ ideologies = {
 
 			}
 
-			autocracy  = {
+			autocracy = {
+			
 			}
 
 			oligarchism  = {
+			
 			}
-
-
+			
+			constitutional_monarchy = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -305,11 +332,16 @@ ideologies = {
 
 		types = {
 
-			populism = {
-
+			ethnic_nationalism = {
+			
 			}
 
-			fascism_ideology = {
+			civil_nationalism = {
+			
+			}
+			
+			extreme_nationalism = {
+			
 			}
 
 		}
@@ -362,9 +394,6 @@ ideologies = {
 			Political_Islam = {
 
 			}
-			
-			
-
 		}
 
 		dynamic_faction_names = {

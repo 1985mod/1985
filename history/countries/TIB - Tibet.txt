@@ -28,6 +28,8 @@ recruit_character = TIB_jigme_taring
 recruit_character = TIB_reting_rimpoche
 recruit_character = TIB_taktra_rinpoche
 
+set_cosmetic_tag = TIB_puppet_china
+
 1939.1.1 = {
 
 	add_political_power = 1198

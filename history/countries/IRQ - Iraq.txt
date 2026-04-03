@@ -59,6 +59,26 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
+
+create_equipment_variant = {
+	name = "T-72A"
+	type = light_tank_chassis_1
+	parent_version = 1
+	modules = {
+		main_armament_slot = tank_small_cannon_2
+		turret_type_slot = tank_light_two_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_armor_upgrade = 1
+		tank_nsb_engine_upgrade = 2
+	}
+	icon = "GFX_ENG_basic_light_tank_medium"
+}
+	
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -97,6 +117,12 @@ set_politics = {
 	last_election = "1991.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+add_ideas = {
+    war_economy
+	limited_exports
+	extensive_conscription
 }
 
 set_popularities = {

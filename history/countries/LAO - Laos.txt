@@ -1,138 +1,117 @@
-﻿capital = 670 #today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos 
+﻿capital = 440
 
-oob = "LAO_1936"
+oob = "PAK_1985"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "PAK_1985_naval_mtg"
+	else = {
+		set_naval_oob = "PAK_1985_naval_legacy"
+	}
+}
 
-set_research_slots = 3
+set_research_slots = 2
+set_convoys = 320
+set_stability = 0.15
 
-# Starting tech
-# clone of France
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1
-	tech_recon = 1
-	tech_mountaineers = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	rail_integration_system = 1
+	support_weapons = 1
+	tandem_charge_warheads = 1
+	squad_automatic_weapon = 1
+	night_vision = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	special_forces = 1
 	motorised_infantry = 1
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	gen1_mbt = 1
+	gen2_mbt = 1
+	gen3_mbt = 1
+	gen3_light = 1
+	gen1_ifv = 1
+	gen1_apc = 1
+	
 	gw_artillery = 1
+	interwar_artillery = 1
+	antitank = 1 
+ 	antitank1 = 1
 	interwar_antiair = 1
-	trench_warfare = 1
-	fleet_in_being = 1
+	
+	corvette1 = 1
+	corvette2 = 2
+	frigate1 = 1
+	frigate2 = 2
+	destroyer1 = 1
+	destroyer2 = 1
+	submarine1 = 1
+	submarine2 = 1
+	destroyer_improved_engines = 1
+	destroyer_advanced_engines = 1
+	cold_war_ship_design = 1
+	
+	gen2_attack = 1
+	gen3_attack = 1
+	gen2_multirole = 1
+	gen3_multirole = 1
+	gen4_multirole = 1
+	gen2_mpa = 1
+	gen3_mpa = 1
+	gen4_mpa = 1
+	gen3_bomber = 1
+	modern_gen3_bomber = 1
+	gen1_ucav = 1
+	
+	cold_war_engineering = 1
+	radio = 1 
+	radio_detection = 1
+	modern_university_systems = 1
+	internet = 1
+	
+	assembly_line = 1
+	software1 = 1
+	software2 = 1
+	software3 = 1
+	machine_tools1 = 1
+	machine_tools2 = 1
+	machine_tools3 = 1
+	robotics1 = 1
+	oil1 = 1
+	oil2 = 1
+	construction1 = 1
+	manufacturing1 = 1
+	excavation1 = 1
+	
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
-		early_fighter = 1
-		naval_bomber1 = 1
-		cv_early_fighter = 1
-		cv_naval_bomber1 = 1
-		early_bomber = 1
-		tactical_bomber1 = 1
-		CAS1 = 1
-		
-	}
-}
-
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-	}
-}
-
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		early_carrier = 1
-		transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		early_ship_hull_carrier = 1
-		mtg_transport = 1
-		basic_battery = 1
-		basic_torpedo = 1
-	}
+set_politics = {	
+	ruling_party = communism
+	last_election = "1985.2.1"
+	election_frequency = 48
+	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism = 25
-	communism = 35
-	neutrality = 40
+    communism = 80
+    conservatism = 20
 }
 
-create_country_leader = {
-	name = "Souphanouvong"
-	desc = ""
-	picture = GFX_portrait_Souphanouvong
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
+recruit_character = LAO_Kaysone_Phomvihane
 
-create_country_leader = {
-	name = "Sisavang Vong"
-	desc = ""
-	picture = GFX_portrait_Sisavang_Vong
-	expire = "1953.3.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
 
-create_country_leader = {
-	name = "Kou Voragong" 
-	desc = ""
-	picture = GFX_portrait_Kou_Voragong
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-#couldnt find historical fascists

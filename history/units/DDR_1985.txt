@@ -130,8 +130,24 @@ units = {
 
 	}
 	division= {	
+		name = "Motorisierte Schützenbrigade (mot.) National People's Army"
+		location = 9941 # Mendoza
+		division_template = "Motorisierte Schützenbrigade (mot.)"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
 		name = "Panzer-brigade of National People's Army"
 		location = 3514 # Salta
+		division_template = "Panzer-brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Panzer-brigade of National People's Army"
+		location = 425 # Salta
 		division_template = "Panzer-brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -144,7 +160,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "DDR"
 		}
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.23
 		efficiency = 100
 	}
@@ -152,33 +168,30 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = GER
+			creator = DDR
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.2
 		efficiency = 50
-		industrial_manufacturer = mio:GER_carl_walther_organization
 	}
 	
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = GER 
+			creator = DDR 
 		}
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.1
 		efficiency = 50
-		industrial_manufacturer = mio:GER_rheinmetall_organization
 	}
 	
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = GER 
+			creator = DDR 
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.2
 		efficiency = 50
-		industrial_manufacturer = mio:GER_opel_organization
 	}
 }

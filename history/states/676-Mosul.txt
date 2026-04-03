@@ -1,7 +1,7 @@
 state={
 	id=676
 	name="STATE_676"
-	manpower = 1182741
+	manpower = 753027
 	
 	state_category = town
 	
@@ -13,14 +13,12 @@ state={
 		owner = IRQ
 		buildings = {
 			infrastructure = 2
-			air_base = 2
 		}
 		victory_points = {
 			10106 5 
 		}
 		add_core_of = IRQ
 		add_core_of = KUR
-		add_core_of = ASY
 	}
 	
 	provinces={

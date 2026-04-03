@@ -5,6 +5,7 @@ state = {
 	state_category = rural
 	
 	history = {
+
 		owner = WGR
 		add_core_of = WGR
 
