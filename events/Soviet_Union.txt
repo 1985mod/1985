@@ -1,0 +1,164 @@
+add_namespace = SOV_important_choice
+add_namespace = SOV_collapse
+add_namespace = SOV_chernobyl
+add_namespace = SOV_dead_cernenko
+add_namespace = SOV_jobs_ussr
+
+
+country_event = {
+	id = SOV_important_choice.1
+	title = SOV_important_choice.1.t
+	desc = SOV_important_choice.1.desc
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	# КПСС
+	option = {
+		name = SOV_important_choice.1.a
+		news_event = { id = SOV_dead_cernenko.1 days = 0 }
+		news_event = { id = SOV_important_choice.2 days = 1 }
+		ai_chance = {
+			base = 10
+		}
+		
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+
+		hidden_effect = {
+			remove_country_leader = { name = "SOV_konstantin_chernenko" }
+			promote_character = {
+				character = SOV_KPSS
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SOV_important_choice.2
+	title = SOV_important_choice.2.t
+	desc = SOV_important_choice.2.desc
+	picture = GFX_report_gorbachev_vs_romanov
+
+	is_triggered_only = yes
+
+	# Михаил Горбачев
+	option = {
+		name = SOV_important_choice.2.a
+		ai_chance = {
+			base = 10
+		}
+		
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+
+		hidden_effect = {
+			set_cosmetic_tag = USSR
+			remove_country_leader = { name = "SOV_konstantin_chernenko" }
+			promote_character = {
+				character = SOV_mikhail_gorbachev
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+
+	# Григорий Pоманов 
+	option = {
+		name = SOV_important_choice.2.b
+		ai_chance = {
+			base = 5
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+
+		hidden_effect = {
+			set_cosmetic_tag = USSR
+			remove_country_leader = { name = "SOV_konstantin_chernenko" }
+			promote_character = {
+				character = SOV_grigory_romanov
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+news_event = {
+	id = SOV_chernobyl.1
+	title = SOV_chernobyl.1.t
+	desc = SOV_chernobyl.1.desc
+	picture = GFX_news_SOV_chernobyl
+
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+		name = SOV_chernobyl.1.a
+		hidden_effect = {
+			add_stability = -0.15
+			add_war_support = -0.05
+			add_political_power = -50
+			add_manpower = -10000
+		}
+	}
+}
+
+news_event = {
+	id = SOV_dead_cernenko.1
+	title = SOV_dead_cernenko.1.t
+	desc = SOV_dead_cernenko.1.desc
+	picture = GFX_news_SOV_dead_chernenko2
+
+    fire_only_once = yes
+    major = yes
+	
+	trigger = {
+		tag = SOV
+		date > 1985.3.4
+	}
+}
+
+news_event = {
+	id = SOV_jobs_ussr.1
+	title = SOV_jobs_ussr.1.t
+	desc = SOV_jobs_ussr.1.desc
+	picture = GFX_news_SOV_jobs_ussr
+    
+	fire_only_once = yes
+    major = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_leader = { name = "SOV_mikhail_gorbachev" }
+		date > 1985.7.4
+	}
+}

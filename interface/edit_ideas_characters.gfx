@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	### SOV
+
+	spriteType = {
+		name = "GFX_idea_portrait_sov_Yazov"
+		texturefile = "gfx/interface/ideas/SOV/idea_portrait_sov_Yazov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_portrait_sov_Shaposhnikov"
+		texturefile = "gfx/interface/ideas/SOV/idea_portrait_sov_Shaposhnikov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_portrait_sov_Sokolov"
+		texturefile = "gfx/interface/ideas/SOV/idea_portrait_sov_Sokolov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_portrait_sov_Makarov"
+		texturefile = "gfx/interface/ideas/SOV/idea_portrait_sov_Makarov.dds"
+	}
+
+}

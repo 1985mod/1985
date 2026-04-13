@@ -1,0 +1,37 @@
+SOV_invade_infantry_in_afghanistan = {
+    allowed = {
+        original_tag = SOV
+    }
+    enable = {
+        country_exists = AFN
+        AFS = { has_war_with = AFN }
+    }
+    abort = {
+        NOT = { AFN = { has_war_with = AFS } }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = send_volunteers_desire
+        id = AFN
+        value = 1000
+    }
+}
+
+SOV_lend_lease_in_afghanistan = {
+    allowed = {
+        original_tag = SOV
+    }
+    enable = {
+        country_exists = AFN
+        AFS = { has_war_with = AFN }
+    }
+    abort = {
+        NOT = { AFN = { has_war_with = AFS } }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+       type = send_lend_lease_desire
+       id = AFS
+       value = 100
+    }
+}

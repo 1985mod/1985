@@ -1,0 +1,615 @@
+focus_tree = {
+    id = DDR_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 1000
+            tag = DDR
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 700 y = 2000 }
+	
+    focus = { 
+        id = DDR_new_1985
+        icon = GFX_	
+        x = 10
+        y = 0
+        cost = 5
+        completion_reward = {
+		       set_country_flag = main_tree_unlocked
+	    }
+	}
+
+    focus = { 
+        id = DDR_political_ddr
+        icon = GFX_
+        prerequisite = { focus = DDR_new_1985 }
+        x = 10
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_gerontocracy_of_the_sed
+        relative_position_id = DDR_political_ddr
+        prerequisite = { focus = DDR_political_ddr }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_doctrine_of_separation
+        relative_position_id = DDR_gerontocracy_of_the_sed
+        prerequisite = { focus = DDR_gerontocracy_of_the_sed }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+    
+    focus = { 
+        id = DDR_the_cult_of_the_anti_fascist_rampart
+        relative_position_id = DDR_gerontocracy_of_the_sed
+        prerequisite = { focus = DDR_gerontocracy_of_the_sed }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_ignore_signals_from_moscow
+        relative_position_id = DDR_gerontocracy_of_the_sed
+        prerequisite = { focus = DDR_gerontocracy_of_the_sed }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_xi_congress_of_the_sed
+        relative_position_id = DDR_ignore_signals_from_moscow
+        prerequisite = { focus = DDR_ignore_signals_from_moscow }
+        prerequisite = { focus = DDR_the_cult_of_the_anti_fascist_rampart }
+        prerequisite = { focus = DDR_doctrine_of_separation }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_honeckers_visit_to_bonn
+        relative_position_id = DDR_xi_congress_of_the_sed
+        prerequisite = { focus = DDR_xi_congress_of_the_sed }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_censorship_of_sputnik
+        relative_position_id = DDR_honeckers_visit_to_bonn
+        prerequisite = { focus = DDR_honeckers_visit_to_bonn }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_the_fight_against_the_church
+        relative_position_id = DDR_honeckers_visit_to_bonn
+        prerequisite = { focus = DDR_honeckers_visit_to_bonn }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_unity_with_those_who_disagree
+        relative_position_id = DDR_honeckers_visit_to_bonn
+        prerequisite = { focus = DDR_honeckers_visit_to_bonn }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_falsification_of_local_elections
+        relative_position_id = DDR_unity_with_those_who_disagree
+        prerequisite = { focus = DDR_unity_with_those_who_disagree }
+        prerequisite = { focus = DDR_censorship_of_sputnik }
+        prerequisite = { focus = DDR_the_fight_against_the_church }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_tiananmen_approval
+        relative_position_id = DDR_falsification_of_local_elections
+        prerequisite = { focus = DDR_falsification_of_local_elections }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_conspiracy_in_the_politburo
+        relative_position_id = DDR_tiananmen_approval
+        prerequisite = { focus = DDR_tiananmen_approval  }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_honeckers_resignation
+        relative_position_id = DDR_conspiracy_in_the_politburo
+        prerequisite = { focus = DDR_conspiracy_in_the_politburo }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_heading_for_the_turn
+        relative_position_id = DDR_conspiracy_in_the_politburo
+        prerequisite = { focus = DDR_conspiracy_in_the_politburo }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_repeal_of_article_1_of_the_constitution
+        relative_position_id = DDR_honeckers_resignation
+        prerequisite = { focus = DDR_honeckers_resignation }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_milkes_sacrifice
+        relative_position_id = DDR_conspiracy_in_the_politburo
+        prerequisite = { focus = DDR_conspiracy_in_the_politburo }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_order_101_do_not_shoot
+        relative_position_id = DDR_milkes_sacrifice
+        prerequisite = { focus = DDR_milkes_sacrifice }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_modrow_government
+        relative_position_id = DDR_heading_for_the_turn
+        prerequisite = { focus = DDR_heading_for_the_turn }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+     focus = { 
+        id = DDR_first_free_elections
+        relative_position_id = DDR_order_101_do_not_shoot
+        prerequisite = { focus = DDR_repeal_of_article_1_of_the_constitution }
+        prerequisite = { focus = DDR_modrow_government }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_end
+        relative_position_id = DDR_first_free_elections
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_socialism_on_the_brink_of_bankruptcy
+        icon = GFX_
+        prerequisite = { focus = DDR_new_1985 }
+        x = 5
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_combines
+        relative_position_id = DDR_socialism_on_the_brink_of_bankruptcy
+        prerequisite = { focus = DDR_socialism_on_the_brink_of_bankruptcy }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_microelectronics_program
+        relative_position_id = DDR_combines
+        prerequisite = { focus = DDR_combines }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_intensification_through_automation
+        relative_position_id = DDR_combines
+        prerequisite = { focus = DDR_combines }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_brown_coal_dependence
+        relative_position_id = DDR_microelectronics_program
+        prerequisite = { focus = DDR_microelectronics_program }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+    
+    focus = { 
+        id = DDR_shalk_golodkovsky_committee
+        relative_position_id = DDR_microelectronics_program
+        prerequisite = { focus = DDR_microelectronics_program }
+        prerequisite = { focus = DDR_intensification_through_automation }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_strausss_secret_loan
+        relative_position_id = DDR_microelectronics_program
+        prerequisite = { focus = DDR_intensification_through_automation }
+        icon = GFX_
+        x = 3
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_shortage_of_consumer_goods
+        relative_position_id = DDR_strausss_secret_loan
+        prerequisite = { focus = DDR_strausss_secret_loan }
+        prerequisite = { focus = DDR_shalk_golodkovsky_committee }
+        prerequisite = { focus = DDR_brown_coal_dependence }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_import_of_west_german_technology
+        relative_position_id = DDR_shortage_of_consumer_goods
+        prerequisite = { focus = DDR_shortage_of_consumer_goods }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_monetary_union
+        relative_position_id = DDR_shortage_of_consumer_goods
+        prerequisite = { focus = DDR_shortage_of_consumer_goods }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = DDR_board_of_Trustees
+        relative_position_id = DDR_import_of_west_german_technology
+        prerequisite = { focus = DDR_monetary_union }
+		prerequisite = { focus = DDR_import_of_west_german_technology }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+### Армия ### Army
+    focus = { 
+        id = DDR_national_peoples_army
+        relative_position_id = DDR_new_1985
+        prerequisite = { focus = DDR_new_1985 }
+        icon = GFX_
+        x = 5
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_coalition_warfare_doctrine
+        relative_position_id = DDR_national_peoples_army
+        prerequisite = { focus = DDR_national_peoples_army }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_ministry_of_state_security
+        relative_position_id = DDR_national_peoples_army
+        prerequisite = { focus = DDR_national_peoples_army }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_main_directorate_a
+        relative_position_id = DDR_ministry_of_state_security
+        prerequisite = { focus = DDR_ministry_of_state_security }
+        prerequisite = { focus = DDR_coalition_warfare_doctrine }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_filter_system
+        relative_position_id = DDR_main_directorate_a
+        prerequisite = { focus = DDR_main_directorate_a }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_felix_dzerzhinsky
+        relative_position_id = DDR_main_directorate_a
+        prerequisite = { focus = DDR_main_directorate_a }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_operation_romeo
+        relative_position_id = DDR_filter_system
+        prerequisite = { focus = DDR_filter_system }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_sigma_intercept
+        relative_position_id = DDR_filter_system
+        prerequisite = { focus = DDR_filter_system }
+        prerequisite = { focus = DDR_felix_dzerzhinsky }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_mig_29_deliveries
+        relative_position_id = DDR_felix_dzerzhinsky
+        prerequisite = { focus = DDR_felix_dzerzhinsky }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_t72_modernization
+        relative_position_id = DDR_operation_romeo
+        prerequisite = { focus = DDR_operation_romeo }
+        prerequisite = { focus = DDR_sigma_intercept }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_industrial_espionage_in_nato
+        relative_position_id = DDR_mig_29_deliveries
+        prerequisite = { focus = DDR_mig_29_deliveries }
+        prerequisite = { focus = DDR_sigma_intercept }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_border_guard_troops
+        relative_position_id = DDR_industrial_espionage_in_nato
+        prerequisite = { focus = DDR_t72_modernization }
+        prerequisite = { focus = DDR_industrial_espionage_in_nato }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_anti_terror_group
+        relative_position_id = DDR_border_guard_troops
+        prerequisite = { focus = DDR_border_guard_troops }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_sector_plan
+        relative_position_id = DDR_border_guard_troops
+        prerequisite = { focus = DDR_border_guard_troops }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_crisis_headquarters_in_ehrich
+        relative_position_id = DDR_anti_terror_group
+        prerequisite = { focus = DDR_anti_terror_group }
+        prerequisite = { focus = DDR_sector_plan }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = DDR_leuzpig_garrison
+        relative_position_id = DDR_crisis_headquarters_in_ehrich
+        prerequisite = { focus = DDR_crisis_headquarters_in_ehrich }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+}

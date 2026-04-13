@@ -1,0 +1,60 @@
+﻿l_english:
+ communism: "Totalitarian Socialism"
+ communism_noun: "Totalitarian Socialism"
+ communism_desc: "Socialist State"
+
+ socialism: "Social Democracy"
+ socialism_noun: "Social Democracy"
+ socialism_desc: "Social Democratic State"
+ 
+ liberalism: "Liberalism"
+ liberalism_noun: "Liberalism"
+ liberalism_desc: "Democratic State"
+ 
+ conservatism: "Conservatism"
+ conservatism_noun: "Conservatism"
+ conservatism_desc: "Democratic State"
+
+ neutrality: "Authoritarianism"
+ neutrality_noun: "Authoritarianism"
+ neutrality_desc: "Authoritarian State"
+
+ fascism: "Nationalism"
+ fascism_noun: "Nationalism"
+ fascism_desc: "Undemocratic State"
+ baathism: "Baathism"
+ baathism_desc: "Baathism is an ideology of Arab nationalism that aims to create a unified Arab state"
+
+ islamism: "Islamism"
+ islamism_noun: "Islamism"
+ islamism_desc: "Islamic State"
+ Salafism: "Salafism"
+ Salafism_desc: "Salafism is a movement within Sunni Islam that unites Muslim religious figures who, at various periods in Islamic history, have called for an orientation toward the way of life and faith of the early Muslim community and the righteous ancestors, and labeling all later innovations in these areas as ‘bid‘ah,’ ranging from methods of symbolic and allegorical interpretation of the Quran to all manner of innovations introduced into the Muslim world through its contact with the West"
+ Political_Islam: "Salafism"
+ Political_Islam_desc: "Political Islam — any interpretation of Islam as a source of political identity and action. The concept of ‘political Islam’ can refer to a wide range of individuals and groups who advocate for the transformation of the state and society in accordance with the principles of Islam."
+
+ SOV_communism_party: "CPSU"
+ SOV_communism_party_long: "Communist Party of the Soviet Union"
+ SOV_socialism_party: "§RNot available§!"
+ SOV_socialism_party_long: "§RNot available§!"
+ SOV_liberalism_party: "§RNot available§!"
+ SOV_conservatism_party: "§RNot available§!"
+ SOV_neutrality_party: "§RNot available§!"
+ SOV_fascism_party: "§RNot available§!"
+ SOV_fascism_party_long: "§RNot available§!"
+ 
+ DDR_communism_party: "SED"
+ DDR_communism_party_long: "Socialist Unity Party of Germany"
+ DDR_liberalism_party: "LDPG"
+ DDR_liberalism_party_long: "Liberal Democratic Party of Germany"
+ DDR_conservatism_party_party: "CDU"
+ DDR_conservatism_party_long: "Christian Democratic Union"
+ DDR_neutrality_party: "§RNot available§!"
+ DDR_fascism_party: "National Democratic Party of Germany"
+ DDR_fascism_party_long: "National Democratic Party of Germany"
+ 
+ ISR_socialism_party: "Avoda"
+ ISR_socialism_party_long: "Israeli Labor Party"
+ 
+ YUG_communism_party: "SKJ"
+ YUG_communism_party_long: "Communist Party of Yugoslavia"

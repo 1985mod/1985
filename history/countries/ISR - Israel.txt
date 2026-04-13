@@ -1,0 +1,33 @@
+﻿capital = 454
+ 
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	fuel_silos = 1
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+
+set_convoys = 5
+
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1986.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	socialism = 80
+	communism = 20
+}
+
+recruit_character = ISR_Shimon_Peres

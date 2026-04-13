@@ -1,0 +1,8 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_CZE_kgb_event"
+        texturefile = "gfx/event_pictures/prag.dds"
+        noOfFrames = 1
+        loadType = "INGAME"
+    }
+}

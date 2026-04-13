@@ -1,0 +1,161 @@
+add_namespace = DDR_unification
+
+country_event = {
+	id = DDR_unification.1
+	title = DDR_unification.1.t
+	desc = DDR_unification.1.desc
+
+	trigger = {
+		tag = DDR
+		NOT = { has_global_flag = GER_unification1 }
+		is_in_faction = no
+		is_puppet = no
+	}
+
+	option = { # ГДР согласна
+		name = DDR_unification.1.a
+		ai_chance = {
+			base = 20
+		}
+
+		effect_tooltip = {
+			WGR = { 
+				annex_country = {
+					target = DDR
+				}
+			}			
+		}
+
+		hidden_effect = {
+			set_global_flag = GER_unification1
+			WGR = { transfer_state = 60 }
+			WGR = { transfer_state = 61 }
+			WGR = { transfer_state = 62 }
+			WGR = { transfer_state = 64 }
+			WGR = { transfer_state = 65 }
+			WGR = {
+				add_core_of = 60
+				add_core_of = 61
+				add_core_of = 62
+				add_core_of = 64
+				add_core_of = 65
+			}
+			WGR = { capital = 64 }
+		}
+	}
+
+	option = { # ГДР отказывается
+		name = DDR_unification.1.b
+		ai_chance = {
+			base = 10
+		}
+
+		effect_tooltip = {
+		}
+
+		hidden_effect = {
+			set_global_flag = GER_unification1
+			WGR = {
+				country_event = {
+					id = DDR_unification.2
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = DDR_unification.2
+	title = DDR_unification.2.t
+	desc = DDR_unification.2.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = GER_unification2 }
+	}
+
+	option = { # ФРГ игнорирует
+		name = DDR_unification.2.a
+		ai_chance = {
+			base = 10
+		}
+		hidden_effect = {
+			set_global_flag = GER_unification2
+		}
+	}
+
+	option = { # ФРГ объявляет войну ГДР
+		name = DDR_unification.2.b
+		ai_chance = {
+			base = 999 # 10
+		}
+		effect_tooltip = {
+			declare_war_on = {
+				target = DDR
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			set_global_flag = GER_unification2
+			declare_war_on = {
+				target = DDR
+				type = annex_everything
+			}
+			WGR = {
+				add_core_of = 60
+				add_core_of = 61
+				add_core_of = 62
+				add_core_of = 64
+				add_core_of = 65
+			}
+			DDR = {
+				add_core = 909
+				add_core = 58
+				add_core = 59
+				add_core = 56
+				add_core = 51
+				add_core = 42
+				add_core = 55
+				add_core = 57
+				add_core = 978
+				add_core = 50
+				add_core = 54
+				add_core = 52
+				add_core = 53
+			}
+		}
+	}
+}
+
+country_event = {
+	id = DDR_unification.3
+	title = DDR_unification.3.t
+	desc = DDR_unification.3.desc
+
+	trigger = {
+		tag = DDR
+		NOT = { has_government = communism }
+		has_global_flag = GER_unification1
+		has_global_flag = GER_unification2
+	}
+
+	hidden = yes
+
+	immediate = {
+		WGR = { transfer_state = 60 }
+		WGR = { transfer_state = 61 }
+		WGR = { transfer_state = 62 }
+		WGR = { transfer_state = 64 }
+		WGR = { transfer_state = 65 }
+		WGR = {
+			add_core_of = 60
+			add_core_of = 61
+			add_core_of = 62
+			add_core_of = 64
+			add_core_of = 65
+		}
+		WGR = { capital = 64 }
+	}
+}

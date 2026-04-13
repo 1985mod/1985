@@ -1,0 +1,17 @@
+
+PRK_lifting_sanctions = {
+
+      icon = border_war
+	  
+	  priority = 90
+	  
+	  allowed = {
+	    original_tag = PRK
+		always = yes
+	  }
+	  
+	  visible = {
+          has_completed_focus = PRK_question_about_import
+		  original_tag = PRK
+	  }
+}

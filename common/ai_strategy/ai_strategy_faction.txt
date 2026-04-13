@@ -1,0 +1,254 @@
+FRA_fixed_alliance = {
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+ITA_fixed_alliance = {
+	allowed = {
+		tag = ITA
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+WGR_fixed_alliance = {
+	allowed = {
+		tag = WGR
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+DEN_fixed_alliance = {
+	allowed = {
+		tag = DEN
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+BEL_fixed_alliance = {
+	allowed = {
+		tag = BEL
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+LUX_fixed_alliance = {
+	allowed = {
+		tag = LUX
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+HOL_fixed_alliance = {
+	allowed = {
+		tag = HOL
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+ENG_fixed_alliance = {
+	allowed = {
+		tag = ENG
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+NOR_fixed_alliance = {
+	allowed = {
+		tag = NOR
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+SPR_fixed_alliance = {
+	allowed = {
+		tag = SPR
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+POR_fixed_alliance = {
+	allowed = {
+		tag = POR
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+CAN_fixed_alliance = {
+	allowed = {
+		tag = CAN
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+GRE_fixed_alliance = {
+	allowed = {
+		tag = GRE
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+TUR_fixed_alliance = {
+	allowed = {
+		tag = TUR
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}
+
+ICE_fixed_alliance = {
+	allowed = {
+		tag = ICE
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA" 
+		value = 1000
+	}
+}

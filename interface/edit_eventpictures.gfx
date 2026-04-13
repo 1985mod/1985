@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_SOV_chernobyl"
+		textureFile = "gfx/event_pictures/report_SOV_chernobyl.dds"
+	}
+}

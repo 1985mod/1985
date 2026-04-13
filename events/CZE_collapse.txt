@@ -1,0 +1,22 @@
+add_namespace = CZE_collapse
+
+### Распад Чехословакии
+country_event = {
+	id = CZE_collapse.1
+	title = CZE_collapse.1.t
+	desc = CZE_collapse.1.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1992.12.31
+		NOT = { has_country_flag = collapse }
+	}
+	immediate = {
+		SLO = { transfer_state = 70 }
+		SLO = { transfer_state = 71 }
+		SLO = { transfer_state = 664 }
+		set_country_flag = collapse
+	}
+}

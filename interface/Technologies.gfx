@@ -1,0 +1,41 @@
+spriteTypes = {
+
+	### generic equipment archetypes ###
+	
+	### 1985 ###	
+	SpriteType = {
+		name = "GFX_infantry_fighting_vehicle_medium"
+		texturefile = "gfx/interface/technologies/infantry_fighting_vehicle.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_infantry_fighting_vehicle_2_medium"
+		texturefile = "gfx/interface/technologies/infantry_fighting_vehicle_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_infantry_fighting_vehicle_3_medium"
+		texturefile = "gfx/interface/technologies/infantry_fighting_vehicle_3.dds"
+	}
+
+	##### TEMPORARY PLACE FOR SUPPORT SHIPS ####
+	# Remove/edit when final position for them has been given
+		
+	SpriteType = {
+		name = "GFX_repair_ship_1_medium"
+		texturefile = "gfx/interface/technologies/repair_support_ship_I.dds"
+	}
+	SpriteType = {
+		name = "GFX_repair_ship_2_medium"
+		texturefile = "gfx/interface/technologies/repair_support_ship_II.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_ship_1_medium"
+		texturefile = "gfx/interface/technologies/general_support_ship_I.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_ship_2_medium"
+		texturefile = "gfx/interface/technologies/general_support_ship_II.dds"
+	}
+
+}

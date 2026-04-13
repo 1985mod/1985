@@ -1,0 +1,9 @@
+force_return_to_faction = {
+	if = {
+		limit = {
+			tag = FRA
+			is_in_faction = no
+		}
+		USA = { add_to_faction = FRA }
+	}
+}

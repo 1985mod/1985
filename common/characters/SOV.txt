@@ -1,0 +1,265 @@
+# Aleksandra Kollontay has an unsed portrait
+# Viktor Baydalakov has an unused portrait
+
+characters = {
+
+
+  ####    ####   #    #  #    #  #####  #####   #   #      #       ######    ##    #####   ######  #####    ####  
+ #    #  #    #  #    #  ##   #    #    #    #   # #       #       #        #  #   #    #  #       #    #  #      
+ #       #    #  #    #  # #  #    #    #    #    #        #       #####   #    #  #    #  #####   #    #   ####  
+ #       #    #  #    #  #  # #    #    #####     #        #       #       ######  #    #  #       #####        # 
+ #    #  #    #  #    #  #   ##    #    #   #     #        #       #       #    #  #    #  #       #   #   #    # 
+  ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
+                                                                                                                  
+
+
+
+	SOV_konstantin_chernenko = {
+		name = SOV_konstantin_chernenko
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_konstantin_chernenko
+			}
+			army = {
+				large = GFX_portrait_SOV_konstantin_chernenko
+				small = GFX_portrait_SOV_konstantin_chernenko_small
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {}
+			expire = "1985.3.10.1"
+			id = -1
+		}
+	}
+
+	SOV_boris_yeltsin = {
+		name = SOV_boris_yeltsin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_boris_yeltsin
+			}
+			army = {
+				large = GFX_portrait_SOV_boris_yeltsin
+				small = GFX_portrait_SOV_boris_yeltsin_small
+			}
+		}
+		country_leader = {
+			ideology = classic_conservatism
+			traits = { democratic_reformer }
+			expire = "2007.04.23.1"
+			id = -1
+		}
+	}
+
+	SOV_mikhail_gorbachev = {
+		name = SOV_mikhail_gorbachev
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_mikhail_gorbachev
+			}
+			army = {
+				large = GFX_portrait_SOV_mikhail_gorbachev
+				small = GFX_portrait_SOV_mikhail_gorbachev_small
+			}
+		}
+		country_leader = {
+			ideology = communist_perestroika
+			traits = {}
+			expire = "2022.08.30.1"
+			id = -1
+		}
+	}
+
+	SOV_Dmitry_Vasilyev = {
+		name = SOV_dmitry_vasilyev
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Dmitry_Vasilyev
+			}
+			army = {
+				large = GFX_Portrait_Dmitry_Vasilyev
+				small = GFX_Portrait_Dmitry_Vasilyev_small
+			}
+		}
+		country_leader = {
+			ideology = ethnic_nationalism
+			traits = {}
+			expire = "2022.08.30.1"
+			id = -1
+		}
+	}
+
+	SOV_grigory_romanov = {
+		name = SOV_grigory_romanov
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Grigory_Romanov
+			}
+			army = {
+				large = GFX_Portrait_Grigory_Romanov
+				small = GFX_Portrait_Grigory_Romanov_small
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {}
+			expire = "2009.05.28.1"
+			id = -1
+		}
+	}
+	
+	
+	SOV_KPSS = {
+		name = KPSS
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_KPSS
+			}
+			army = {
+				large = GFX_Portrait_KPSS
+				small = GFX_Portrait_KPSS_small
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {}
+			expire = "2009.05.28.1"
+			id = -1
+		}
+	}
+	
+	######GENERALS####
+	SOV_Sokolov = {
+		name = SOV_Sokolov
+		portraits = {
+		    civilian = {
+				large = "gfx/leaders/SOV/Portrait_Sergey_Sokolov.dds"
+				small = "GFX_idea_portrait_sov_Sokolov"
+			}
+			army = {
+				small = "GFX_idea_portrait_sov_Sokolov"
+			}
+		}
+		advisor={
+			cost = 150			
+			slot = leaders_defens
+			idea_token = SOV_Sokolov
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = {
+			}
+		}
+		field_marshal={
+			traits={old_guard armor_officer trait_cautious}
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	SOV_dmitry_yazov = {
+		name = "SOV_dmitry_yazov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				small = "GFX_idea_portrait_sov_Yazov"
+			}
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+			}
+		}	
+		advisor={
+			cost = 150			
+			slot = leaders_defens
+			idea_token = SOV_dmitry_yazov
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = {
+			}
+		}
+		field_marshal={
+			traits={offensive_doctrine politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	SOV_Nikolai_Makarov = {
+		name = "SOV_Nikolai_Makarov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Portrait_Nikolai_Makarov.dds"
+				small = "GFX_idea_portrait_sov_Makarov"
+			}
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Nikolai_Makarov.dds"
+			}
+		}	
+		advisor={
+			cost = 150			
+			slot = army
+			idea_token = SOV_Nikolai_Makarov
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = {
+				army_CombinedArms_1
+			}
+		}
+		corps_commander={
+			traits={ army_cavalry_3 }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	#####POLIT SOVIET####
+	SOV_Shaposhnikov = {
+		name = SOV_Shaposhnikov
+		portraits = {
+			army = {
+				small = "GFX_idea_portrait_sov_Shaposhnikov"
+			}
+		}
+		advisor={
+			cost = 150			
+			slot = leaders_defens
+			idea_token = SOV_Shaposhnikov
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = {
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SOV_Shaposhnikov
+			ledger = air_chief
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+}

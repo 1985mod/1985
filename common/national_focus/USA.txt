@@ -1,0 +1,238 @@
+focus_tree = {
+    id = USA_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 1000
+            tag = USA
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 3000 y = 1200 }
+	
+    focus = { 
+        id = USA_reagans_second_presidency
+        icon = GFX_	
+        x = 15
+        y = 0
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_tough_confrontation_with_the_ussr
+		relative_position_id = USA_reagans_second_presidency
+		prerequisite = { focus = USA_reagans_second_presidency }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_intensify_the_arms_race
+		relative_position_id = USA_tough_confrontation_with_the_ussr
+		prerequisite = { focus = USA_tough_confrontation_with_the_ussr }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_move_away_from_cold_war_politics
+		relative_position_id = USA_intensify_the_arms_race
+		prerequisite = { focus = USA_intensify_the_arms_race }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_dialogue_of_detente_with_the_soviet_union
+		relative_position_id = USA_intensify_the_arms_race
+		prerequisite = { focus = USA_intensify_the_arms_race }
+        icon = GFX_	
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_meeting_with_gorbachev
+		relative_position_id = USA_intensify_the_arms_race
+		prerequisite = { focus = USA_move_away_from_cold_war_politics }
+		prerequisite = { focus = USA_dialogue_of_detente_with_the_soviet_union }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 2
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_second_reykjavik_summit
+		relative_position_id = USA_meeting_with_gorbachev
+		prerequisite = { focus = USA_meeting_with_gorbachev }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 2
+        available = {
+		   date > 1986.10.8
+		}
+		
+        completion_reward = {
+		    load_focus_tree = USA_focus_1986
+	    }
+	}
+	
+    focus = { 
+        id = USA_us_army
+		relative_position_id = USA_reagans_second_presidency
+		prerequisite = { focus = USA_reagans_second_presidency }
+        icon = GFX_	
+        x = 5
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_lessons_of_the_vietnam_war
+		relative_position_id = USA_us_army
+		prerequisite = { focus = USA_us_army }
+        icon = GFX_	
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_modernisation_army
+		relative_position_id = USA_us_army
+		prerequisite = { focus = USA_us_army }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_expand_military_bases
+		relative_position_id = USA_us_army
+		prerequisite = { focus = USA_us_army }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_modernization_of_abrams_and_bradley
+		relative_position_id = USA_us_army
+		prerequisite = { focus = USA_lessons_of_the_vietnam_war }
+		prerequisite = { focus = USA_modernisation_army }
+		prerequisite = { focus = USA_expand_military_bases }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = USA_stop_the_rapid_growth_of_public_debt
+        icon = GFX_	
+		relative_position_id = USA_reagans_second_presidency
+		prerequisite = { focus = USA_reagans_second_presidency }
+        x = -5
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_increase_in_production
+        icon = GFX_	
+		relative_position_id = USA_stop_the_rapid_growth_of_public_debt
+		prerequisite = { focus = USA_stop_the_rapid_growth_of_public_debt }
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_growth_of_technology_companies
+        icon = GFX_	
+		relative_position_id = USA_stop_the_rapid_growth_of_public_debt
+		prerequisite = { focus = USA_stop_the_rapid_growth_of_public_debt }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_increase_spending_on_the_military_industrial_complex
+        icon = GFX_	
+		relative_position_id = USA_stop_the_rapid_growth_of_public_debt
+		prerequisite = { focus = USA_stop_the_rapid_growth_of_public_debt }
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_more_tax_cuts
+        icon = GFX_	
+		relative_position_id = USA_stop_the_rapid_growth_of_public_debt
+		prerequisite = { focus = USA_increase_in_production }
+		prerequisite = { focus = USA_growth_of_technology_companies }
+		prerequisite = { focus = USA_increase_spending_on_the_military_industrial_complex }
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_the_first_mobile_phones
+        icon = GFX_	
+		relative_position_id = USA_more_tax_cuts
+		prerequisite = { focus = USA_more_tax_cuts }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}

@@ -1,0 +1,101 @@
+ideas = {
+    country = {
+		PRC_growing_economy = {
+			picture = PRC_the_central_committee 
+			allowed = {
+				original_tag = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  stability_factor = 0.05
+			  consumer_goods_factor = 0.15
+			  production_speed_industrial_complex_factor = 0.1
+			  production_factory_max_efficiency_factor = 0.1
+			  production_speed_buildings_factor = 0.05
+			}
+		}
+		PRC_unitary_republic = {
+			picture = scw_intervention_republicans_focus 
+			allowed = {
+				original_tag = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  stability_factor = 0.05
+			  political_power_factor = 0.15
+              drift_defence_factor = 0.25
+			}
+		}
+		PRC_shame_in_one_socialist_war = {
+			picture = scw_intervention_republicans_focus 
+			allowed = {
+				original_tag = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  army_morale_factor = -0.15
+              army_attack_factor = -0.3
+			  army_defence_factor = -0.25
+			  conscription_factor = -0.75
+			}
+		}
+		
+		PRC_shame_in_one_socialist_war_2 = {
+			picture = scw_intervention_republicans_focus 
+			allowed = {
+				original_tag = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  army_morale_factor = -0.1
+              army_attack_factor = -0.2
+			  army_defence_factor = -0.1
+			  conscription_factor = -0.55
+			}
+		}
+		
+		
+		PRC_shame_in_one_socialist_war_3 = {
+			picture = scw_intervention_republicans_focus 
+			allowed = {
+				original_tag = PRC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  army_morale_factor = 0.05
+              army_attack_factor = 0.1
+			  army_defence_factor = 0.05
+			}
+		}
+	}
+}

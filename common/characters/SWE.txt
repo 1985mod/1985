@@ -1,0 +1,18 @@
+characters = {
+	SWE_olof_palme ={
+		name = SWE_olof_palme
+		portraits={
+			civilian={
+				large= GFX_portrait_SWE_olof_palme
+			}
+			army = {
+				large = GFX_portrait_SWE_olof_palme
+			}
+		}
+		country_leader={
+			ideology = classical_social_democracy
+			traits={  }
+			expire="2008.8.23.1"		
+		}
+	}
+}

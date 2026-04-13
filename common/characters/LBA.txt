@@ -1,0 +1,15 @@
+characters = {
+	LBA_Muammar_Gaddafi = {
+		name = LBA_Muammar_Gaddafi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LBA/Portrait_LBA_Muammar_Gaddafi.dds"
+			}
+		}
+		country_leader = {
+			ideology = ethnic_nationalism
+			traits = { }
+			expire = "2011.3.1.1"
+		}
+	}
+}

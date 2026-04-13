@@ -1,0 +1,72 @@
+music_station = "radio_station_kino"
+
+
+music = {
+    song = "gruppa_krovi_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "hochu_peremen_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "kukushka_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "leto_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "mama_my_vse_tyazhelo_bolny_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "mesto_dlya_shaga_vperjod_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "poslednijj_gerojj_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "spokojjnaya_noch_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "zakrojj_za_mnojj_dver_ya_ukhozhu_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "zvezda_po_imeni_solnce_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}

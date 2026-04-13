@@ -1,0 +1,12 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			force_return_to_faction = yes
+		}
+	}
+	on_leave_faction = {
+		effect = {
+			force_return_to_faction = yes
+		}
+	}
+}

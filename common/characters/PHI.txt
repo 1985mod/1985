@@ -1,0 +1,15 @@
+characters = {
+	PHI_Ferdinand_R_Marcos_J = {
+		name = PHI_Ferdinand_R_Marcos_J
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PHI/Portrait_Ferdinand_R_Marcos_J.dds"
+			}
+		}
+		country_leader = {
+			ideology = reactionism
+			traits = { }
+			expire = "1989.3.1.1"
+		}
+	}
+}

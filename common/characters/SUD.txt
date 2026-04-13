@@ -1,0 +1,15 @@
+characters = {
+	SUD_Jafar_Mohammed_Nimeiri = {
+		name = SUD_Jafar_Mohammed_Nimeiri
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SUD/Portrait_SUD_Jafar_Mohammed_Nimeiri.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { }
+			expire = "1986.3.1.1"
+		}
+	}
+}

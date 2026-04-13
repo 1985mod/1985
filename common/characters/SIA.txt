@@ -1,0 +1,20 @@
+characters={
+	SIA_Prem_Tinsulanonda={
+		name = SIA_Prem_Tinsulanonda
+		portraits={
+			civilian={
+				large=GFX_Portrait_Prem_Tinsulanonda
+			}
+			army = {
+				large =GFX_Portrait_Prem_Tinsulanonda
+				small =GFX_Portrait_Prem_Tinsulanonda
+			}
+		}
+		country_leader={
+			ideology=reactionism
+			traits={  }
+			expire="1999.1.1.1"
+			id = -1
+		}
+	}
+}

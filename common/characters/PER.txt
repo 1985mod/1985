@@ -1,0 +1,15 @@
+characters = {
+	PER_Ali_Khamenei = {
+		name = PER_Ali_Khamenei
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/Portrait_PER_Ali_Khamenei.dds"
+			}
+		}
+		country_leader = {
+			ideology = Political_Islam
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}

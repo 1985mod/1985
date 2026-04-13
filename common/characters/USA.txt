@@ -1,0 +1,20 @@
+characters={
+	USA_ronald_reagan={
+		name = USA_ronald_reagan
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_ronald_reagan
+			}
+			army = {
+				large = GFX_portrait_USA_ronald_reagan
+				small = GFX_portrait_USA_ronald_reagan_small
+			}
+		}
+		country_leader={
+			ideology= classic_conservatism
+			traits={  }
+			expire="1999.1.1.1"
+			
+		}
+	}
+}
