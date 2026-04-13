@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_warsaw_pact_member_icon"
-		textureFile = "gfx/interface/autonomy/warsaw_pact_member_icon.dds"
-	}
-}
