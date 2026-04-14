@@ -66,7 +66,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_cosmetic_tag = USSR
 			remove_country_leader = { name = "SOV_konstantin_chernenko" }
 			promote_character = {
 				character = SOV_mikhail_gorbachev
@@ -94,7 +93,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_cosmetic_tag = USSR
 			remove_country_leader = { name = "SOV_konstantin_chernenko" }
 			promote_character = {
 				character = SOV_grigory_romanov
@@ -109,9 +107,9 @@ country_event = {
 }
 
 news_event = {
-	id = SOV_chernobyl.1
-	title = SOV_chernobyl.1.t
-	desc = SOV_chernobyl.1.desc
+	id = SOV_chernobyl.2
+	title = SOV_chernobyl.2.t
+	desc = SOV_chernobyl.2.desc
 	picture = GFX_news_SOV_chernobyl
 
 	is_triggered_only = yes
@@ -140,17 +138,17 @@ news_event = {
 
     fire_only_once = yes
     major = yes
-	
-	trigger = {
-		tag = SOV
-		date > 1985.3.4
+	option = {
+	name = SOV_dead_cernenko.1.a
+	hidden_effect = {
+		add_stability = -0.3
 	}
 }
 
 news_event = {
-	id = SOV_jobs_ussr.1
-	title = SOV_jobs_ussr.1.t
-	desc = SOV_jobs_ussr.1.desc
+	id = SOV_jobs_ussr.3
+	title = SOV_jobs_ussr.3.t
+	desc = SOV_jobs_ussr.3.desc
 	picture = GFX_news_SOV_jobs_ussr
     
 	fire_only_once = yes
