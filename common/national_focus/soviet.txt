@@ -1200,13 +1200,11 @@ focus_tree = {
 				limit = {
 					num_subjects > 0
 				}
-				add_ideas = SOV_comecon_sov_default
 				custom_effect_tooltip = SOV_found_the_comecon_subjects_tt
 				every_other_country = {
 					limit = {
 						is_subject_of = ROOT
 					}
-					add_ideas = SOV_comecon_puppet_default
 				}
 
 				custom_effect_tooltip = SOV_found_the_comecon_program_tt
@@ -1222,11 +1220,9 @@ focus_tree = {
 			}
 			else = { #Early tooltip for when Soviets have no subjects
 				effect_tooltip = {
-					add_ideas = SOV_comecon_sov_default
 				}
 				custom_effect_tooltip = SOV_found_the_comecon_subjects_tt
 				effect_tooltip = {
-					add_ideas = SOV_comecon_puppet_default
 				}
 				custom_effect_tooltip = SOV_found_the_comecon_program_tt
 			}
@@ -1260,13 +1256,11 @@ focus_tree = {
 				limit = {
 					num_subjects > 0
 				}
-				add_ideas = SOV_common_economic_space_sov_default
 				custom_effect_tooltip = SOV_found_the_comecon_subjects_tt
 				every_other_country = {
 					limit = {
 						is_subject_of = ROOT
 					}
-					add_ideas = SOV_common_economic_space_puppet_default
 				}
 
 				custom_effect_tooltip = SOV_found_the_comecon_program_tt
@@ -1282,11 +1276,9 @@ focus_tree = {
 			}
 			else = { #Early tooltip for when Soviets have no subjects
 				effect_tooltip = {
-					add_ideas = SOV_common_economic_space_sov_default
 				}
 				custom_effect_tooltip = SOV_found_the_comecon_subjects_tt
 				effect_tooltip = {
-					add_ideas = SOV_common_economic_space_puppet_default
 				}
 				custom_effect_tooltip = SOV_found_the_comecon_program_tt
 			}
@@ -1347,8 +1339,6 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_ideas = SOV_no_time_for_peace_idea
 		}
 	}
 
@@ -1375,7 +1365,6 @@ focus_tree = {
 
 			SOV_replace_industrial_designer = yes #"National" Industrial Designers get +5% research bonus
 			hidden_effect = {
-				add_ideas = SOV_national_specialists_ns
 			}
 		}
 	}
@@ -1845,13 +1834,13 @@ focus_tree = {
 				hidden_effect = {
 					add_dynamic_modifier = { modifier = SOV_ussr_academy_of_sciences_dynamic_modifier_alt }
 				}
-				effect_tooltip = { add_ideas = SOV_national_academy_of_sciences_alt_fake }
+				effect_tooltip = {  }
 			}
 			else = { #DEFAULT COMMUNISM
 				hidden_effect = {
 					add_dynamic_modifier = { modifier = SOV_ussr_academy_of_sciences_dynamic_modifier }
 				}
-				effect_tooltip = { add_ideas = SOV_national_academy_of_sciences_fake }
+				effect_tooltip = {  }
 			}
 		}
 	}
@@ -1940,7 +1929,7 @@ focus_tree = {
 				}
 			}
 
-			add_ideas = SOV_transformation_of_nature
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			217 = {	
@@ -2024,7 +2013,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_ideas = SOV_transformation_of_nature
+			
 		}
 	}
 
@@ -2271,7 +2260,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				#This handles the equipment bonus that's not supported by dynamic modifiers
-				add_ideas = SOV_increased_aircraft_production_ns_bonus
+				
 				add_to_variable = { SOV_soviet_airforce_air_accidents_factor = 0.05 }
 			}
 
@@ -3334,7 +3323,7 @@ focus_tree = {
 					add_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_1_dynamic_modifier_alt }
 				}
 				#This handles the equipment bonus that's not supported by dynamic modifiers
-				add_ideas = SOV_red_fleet_surface_bonus_1
+				
 			}
 			custom_effect_tooltip = SOV_surface_warfare_ns_tt
 
@@ -3384,7 +3373,7 @@ focus_tree = {
 				}
 				
 				#This handles the equipment bonus that's not supported by dynamic modifiers
-				add_ideas = SOV_red_fleet_submarine_bonus_1
+				
 			}
 			custom_effect_tooltip = SOV_submarine_warfare_ns_tt
 
@@ -3668,7 +3657,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				add_ideas = SOV_mine_warfare_ns
+				
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -3752,10 +3741,10 @@ focus_tree = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				add_ideas = cruiser_submarine_specialization_mtg
+				
 			}
 			ELSE = {
-				add_ideas = cruiser_submarine_specialization
+				
 			}
 		}
 	}
@@ -4477,7 +4466,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_ideas = SOV_defense_industry_artillery_bonus
+			
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -5007,7 +4996,7 @@ focus_tree = {
 					available_to_spy_master = yes
 					nationalities = { SOV GER }
 				}
-				add_ideas = SOV_soviet_atomic_bomb_project_ns
+				
 			}
 			custom_effect_tooltip = SOV_soviet_atomic_bomb_project_unlock_operation_tt
 		}
@@ -6294,7 +6283,7 @@ focus_tree = {
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			custom_effect_tooltip = SOV_rehabilitated_military_ns_tt
 
-			add_ideas = SOV_rehabilitated_military_ns
+			
 		}
 	}
 
@@ -6308,7 +6297,7 @@ focus_tree = {
 		cost = 10
 
 		select_effect = {
-			add_ideas = SOV_military_reorganization_ns
+			
 		}
 
 		available = {
@@ -6321,7 +6310,7 @@ focus_tree = {
 			#Tooltip purposes (Select Effect)
 			custom_effect_tooltip = SOV_focus_select_effect_tt
 			effect_tooltip = {
-				add_ideas = SOV_military_reorganization_ns
+				
 			}
 
 			#(Complete Effect)
@@ -6581,10 +6570,10 @@ focus_tree = {
 				limit = {
 					has_dlc = "La Resistance"
 				}
-				add_ideas = SOV_smersh
+				
 			}
 			else = {
-				add_ideas = SOV_smersh_no_lar
+				
 			}
 
 			if = {
@@ -6747,7 +6736,7 @@ focus_tree = {
 				}
 			}
 			else = {	
-				add_ideas = SOV_politicized_military_battle_priests
+				
 			}
 		}
 	}
@@ -6800,7 +6789,7 @@ focus_tree = {
 						has_government = fascism
 					}
 				}
-				add_ideas = SOV_politicized_military_swap
+				
 			}
 			else = { #To prevent the ugly "No current effects" tooltip if other focus taken
 				effect_tooltip = {
@@ -7333,7 +7322,7 @@ focus_tree = {
 #		
 #		completion_reward = {
 #			SOV_decrease_church_power = yes
-#			add_ideas = SOV_multi_religious_empire
+#			
 #		}
 #	}
 #
@@ -7621,7 +7610,7 @@ focus_tree = {
 #		
 #		completion_reward = {
 #			SOV_decrease_church_power = yes
-#			add_ideas = SOV_multi_religious_empire
+#			
 #			add_political_power = 50
 #		}
 #	}

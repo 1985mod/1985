@@ -24,17 +24,6 @@ if = {
 	store_core_states_on_game_start = yes
 }
 
-add_ideas = {
-	limited_conscription
-}
-IF = {
-	limit = { has_dlc = "No Step Back" }
-	add_ideas = {
-		LAT_perkonkrust_idea
-		democratic_opposition
-	}
-}
-
 recruit_character = LAT_gustavs_celminsh
 recruit_character = LAT_augusts_kirhensteins
 recruit_character = LAT_martinsh_penikis
@@ -111,9 +100,6 @@ set_convoys = 10
 
 	IF = {
 		limit = { has_dlc = "No Step Back" }
-		add_ideas = {
-			LAT_janis_balodis
-		}
 	}
 	
 	set_country_flag = fought_perkonkrust_flag

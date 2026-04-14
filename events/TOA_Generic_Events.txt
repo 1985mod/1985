@@ -173,7 +173,7 @@ country_event = { #FROM has CW against communists, should we support the democra
 #				days = 1
 #			}
 #		}
-#		add_ideas = TOA_saber_rattling
+#		
 #	}
 #
 #	option = { #ignore them
@@ -181,7 +181,7 @@ country_event = { #FROM has CW against communists, should we support the democra
 #		ai_chance = {
 #			base = 10
 #		}
-#		add_ideas = TOA_navy_humiliated
+#		
 #		FROM = {
 #			country_event = {
 #				id = south_american_events.35
@@ -588,7 +588,7 @@ country_event = {
 			base = 10
 		}
 		name = TOA_ven_blockade.1.a
-		add_ideas = idea_VEN_defensive_posture
+		
 
 	}
 
@@ -606,7 +606,7 @@ country_event = {
 			target = FROM
 		}
 
-		add_ideas = idea_VEN_defensive_posture
+		
 	}
 }
 

@@ -152,9 +152,7 @@ category = industry
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_political_change }
 		mutually_exclusive = { focus = RCP_collectivist_ethos }
-		completion_reward = {
-			add_ideas = liberty_ethos_focus
-		}
+		completion_reward = { }
 	}
 
 		#Focus for Modernization of the Army
@@ -194,7 +192,7 @@ category = industry
 		
 		
 		completion_reward = {
-			add_ideas = rcp_def_nation
+			
 		}
 	}
 	
@@ -239,7 +237,7 @@ category = industry
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_army_effort }
 		completion_reward = {
-			add_ideas = special_forces
+			
 add_tech_bonus = {
 name = special_forces_bonus
 bonus = 1.0
@@ -272,7 +270,7 @@ technology = tech_mountaineers2
 			is_puppet = yes
 		}
 		completion_reward = {
-			add_ideas = puppet_yes
+			
 		}
 	}
 	
@@ -636,7 +634,7 @@ date > 1937.1.1
 			is_puppet = yes
 		}
 		completion_reward = {
-			add_ideas = rcp_autonomy
+			
 		}
 	}
 	
@@ -746,7 +744,7 @@ has_completed_focus = RCP_centrism_gang
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_train_school
+			
 every_army_leader = {
 add_planning = 1
 add_logistics = 1
@@ -805,7 +803,7 @@ add_doctrine_cost_reduction = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_insta_con
+			
 		}
 	}
 	
@@ -843,7 +841,7 @@ days = 15
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_compl
+			
 		}
 	}
 	
@@ -1079,7 +1077,7 @@ instant_build = yes
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_infrastructure_effort }
 		completion_reward = {
-			add_ideas = dig_1
+			
 		}
 	}
 	
@@ -1373,7 +1371,7 @@ has_government = communism
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_spy_1
+			
 		}
 	}
 
@@ -1430,7 +1428,7 @@ has_government = communism
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_fund_p
+			
 		}
 	}
 	
@@ -1448,7 +1446,7 @@ has_government = communism
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_intel_c
+			
 		}
 	}
 
@@ -1466,7 +1464,7 @@ has_government = communism
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_intel
+			
 		}
 	}
 	#Focus for Quantity
@@ -1519,7 +1517,7 @@ has_government = communism
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_more_gun
+			
 		}
 	}
 	
@@ -1655,7 +1653,7 @@ add_equipment_to_stockpile = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_more_planes
+			
 		}
 	}
 	
@@ -1802,7 +1800,7 @@ category = ca_tech
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_mils
+			
 		}
 	}	
 	
@@ -1945,7 +1943,7 @@ amount = 15
 			has_army_manpower = { size > 999999 }
 		}
 		completion_reward = {
-			add_ideas = rcp_grand_army
+			
 		}
 	}
 	
@@ -2053,7 +2051,7 @@ days = 1000
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_partisan_def
+			
 		}
 	}
 	
@@ -2213,7 +2211,7 @@ add_doctrine_cost_reduction = {
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_immediate_conscription }
 		completion_reward = {
-			add_ideas = military_youth_focus
+			
 		}
 	}
 	 
@@ -2443,7 +2441,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-		add_ideas = rcp_road
+		
 		}
 	}
  
@@ -2585,7 +2583,7 @@ add_country_leader_trait = nationalist_symbol
 			focus = RCP_hyperconservative_populism 
 		}
 		completion_reward = {
-			add_ideas = fasc_1
+			
 set_politics = { ruling_party = fascism elections_allowed = no}
 		}
 	}
@@ -2746,7 +2744,7 @@ add_stability = -0.35
 			focus = RCP_ 
 		}
 		completion_reward = {
-			add_ideas = commie_1
+			
 set_politics = { ruling_party = communism elections_allowed = no}
 add_popularity = { ideology = communism popularity = 0.20 }
 		}
@@ -2988,7 +2986,7 @@ add_popularity = { ideology = neutrality popularity = 0.30 }
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_grill
+			
 		}
 	}
 	
@@ -3005,7 +3003,7 @@ add_popularity = { ideology = neutrality popularity = 0.30 }
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_welfare
+			
 		}
 	}
 
@@ -3022,7 +3020,7 @@ add_popularity = { ideology = neutrality popularity = 0.30 }
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_family
+			
 		}
 	}
 
@@ -3067,7 +3065,7 @@ technology = motorised_infantry
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_more_artl
+			
 		}
 	}
 
@@ -3131,7 +3129,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_foreign
+			
 		}
 	}
 	
@@ -3561,7 +3559,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-		add_ideas = rcp_civ 
+		
 		}
 	}
 
@@ -3717,7 +3715,7 @@ add_stability = 0.10
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_mil_school
+			
 		}
 	}
 
@@ -3735,7 +3733,7 @@ add_stability = 0.10
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_supr
+			
 		}
 	}
 
@@ -3867,7 +3865,7 @@ instant_build = yes
 				limit = {
 					NOT = { has_idea = closed_economy }
 				}
-				add_ideas = closed_economy
+				
 			}
 		}
 	}
@@ -3885,7 +3883,7 @@ instant_build = yes
 		prerequisite = { focus = RCP_socialism_in_one_country }
 		completion_reward = {
 			
-add_ideas = commie_2
+
 
 		}
 	}
@@ -3906,7 +3904,7 @@ limit = { has_idea = neutrality_idea }
 remove_ideas = neutrality_idea
 }
 add_political_power = 200
-add_ideas = idea_political_correctness
+
 
 		}
 	}
@@ -3924,7 +3922,7 @@ add_ideas = idea_political_correctness
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_exploitppl
+			
 		}
 	}
 
@@ -3942,7 +3940,7 @@ add_ideas = idea_political_correctness
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_onegod
+			
 		}
 	}
 
@@ -3957,7 +3955,7 @@ add_ideas = idea_political_correctness
 		prerequisite = { focus = RCP_military_coup }
 		completion_reward = {
 			
-add_ideas = mp_1
+
 
 		}
 	}
@@ -4009,8 +4007,7 @@ add_country_leader_trait = autocratic_imperialist
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_market
-add_ideas = free_trade
+
 		}
 	}
 
@@ -4027,7 +4024,7 @@ add_ideas = free_trade
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_tarrif
+	
 		}
 	}
 	
@@ -4049,7 +4046,7 @@ add_ideas = free_trade
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_qnt_1
+
 		}
 	}
 
@@ -4071,7 +4068,7 @@ add_ideas = free_trade
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_qlt_1
+	
 		}
 	}
 
@@ -4141,7 +4138,7 @@ if = {
 limit = { has_idea = neutrality_idea }
 remove_ideas = neutrality_idea
 }
-add_ideas = militarism_focus
+
 army_experience = 20
 set_rule = { can_send_volunteers = yes }
 
@@ -4416,7 +4413,7 @@ add_research_slot = 1
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_fund
+
 		}
 	}
 
@@ -4574,7 +4571,7 @@ instant_build = yes
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_militarized_schooling }
 		completion_reward = {
-			add_ideas = fasc_2
+	
 		}
 	}
 
@@ -4592,7 +4589,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_guide_ind
+	
 		}
 	}
 
@@ -4609,7 +4606,7 @@ instant_build = yes
 		}
 		prerequisite = { focus = RCP_end_elections }
 		completion_reward = {
-			add_ideas = rcp_border
+	
 		}
 	}
 
@@ -4626,7 +4623,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_worker_r
+	
 		}
 	}
 
@@ -4642,7 +4639,7 @@ instant_build = yes
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {add_ideas = rcp_ppl_army }
+		completion_reward = { }
 	} 
 
 		#Focus for Enforce Loyalty
@@ -4656,7 +4653,7 @@ instant_build = yes
 		prerequisite = { focus = RCP_planned_economy }
 		completion_reward = {
 			
-add_ideas = commie_3
+
 add_manpower = -5000
 
 		}
@@ -4674,7 +4671,7 @@ add_manpower = -5000
 		prerequisite = { focus = RCP_political_correctness }
 		completion_reward = {
 			
-add_ideas = indoctrination_focus
+
 add_political_power = 100
 
 		}
@@ -4693,7 +4690,7 @@ add_political_power = 100
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_rich
+	
 		}
 	}
 
@@ -4728,7 +4725,7 @@ add_political_power = 100
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = mp_2
+
 		}
 	}
 
@@ -4743,7 +4740,7 @@ add_political_power = 100
 		prerequisite = { focus = RCP_divine_rulership }
 		completion_reward = {
 			
-add_ideas = king
+
 
 		}
 	}
@@ -4778,7 +4775,7 @@ add_ideas = king
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_open
+
 		}
 	}
 
@@ -4795,7 +4792,7 @@ add_ideas = king
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_mil_priv
+	
 
 random_owned_controlled_state = {
 limit = {
@@ -4896,7 +4893,7 @@ category = motorized_equipment
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_more_misc
+	
 		}
 	}
 
@@ -4987,7 +4984,7 @@ category = rocketry
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_navy
+
 		}
 	}
 
@@ -5282,7 +5279,7 @@ has_government = communism
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_nationalisation }
 		completion_reward = {
-			add_ideas = fasc_0
+	
 		}
 	}
 
@@ -5297,7 +5294,7 @@ has_government = communism
 		prerequisite = { focus = RCP_economy_for_the_army }
 		completion_reward = {
 			
-add_ideas = fasc_3
+
 
 		}
 	}
@@ -5315,7 +5312,7 @@ add_ideas = fasc_3
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_imper_army
+	
 		}
 	}
 
@@ -5350,7 +5347,7 @@ add_war_support = 0.15
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_trade_un
+	
 		}
 	}
 
@@ -5367,7 +5364,7 @@ add_war_support = 0.15
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_no_gov
+	
 		}
 	}
 
@@ -5382,7 +5379,7 @@ add_war_support = 0.15
 		prerequisite = { focus = RCP_enforce_loyalty }
 		completion_reward = {
 			
-add_ideas = political_commissars_focus
+
 add_political_power = 125
 
 		}
@@ -5399,7 +5396,7 @@ add_political_power = 125
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_indoctrination }
 		completion_reward = {
-			add_ideas = commie_4
+
 		}
 	}
 	
@@ -5526,7 +5523,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_ari_con
+
 		}
 	}
 	
@@ -5547,7 +5544,7 @@ instant_build = yes
 		completion_reward = {
 			if = {
 limit = { NOT = { has_idea = neutrality_idea } }
-add_ideas = neutrality_idea
+
 }
 add_political_power = 125
 		}
@@ -5636,7 +5633,7 @@ add_political_power = 125
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_nukes
+
 		}
 	}   
  
@@ -5651,7 +5648,7 @@ add_political_power = 125
 		prerequisite = { focus = RCP_save_ethnic_minorities }
 		completion_reward = {
 			 
-add_ideas = paramilitarism_focus
+
  
 		}
 	}
@@ -5667,7 +5664,7 @@ add_ideas = paramilitarism_focus
 		prerequisite = { focus = RCP_racial_laws }
 		completion_reward = {
 			 
-add_ideas = fasc_4     
+
 
 		}
 	}
@@ -5686,7 +5683,7 @@ add_ideas = fasc_4
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_civils
+	
 		}
 	}
 
@@ -5721,7 +5718,7 @@ add_ideas = fasc_4
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_class_struggle
+	
 		}
 	}
 
@@ -5739,7 +5736,7 @@ add_ideas = fasc_4
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_no_god
+
 		}
 	}
 
@@ -5758,7 +5755,7 @@ add_ideas = fasc_4
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_collectivization
+	
 random_owned_controlled_state = {
 limit = {
 free_building_slots = {
@@ -5837,7 +5834,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_peace_war
+	
 		}
 	}
 	
@@ -5856,7 +5853,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_p_army
+	
 		}
 	}
 
@@ -5874,7 +5871,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_holy_army
+	
 		}
 	}
 	
@@ -5892,7 +5889,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_state_devo
+	
 		}
 	}
 
@@ -5909,7 +5906,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_new_serf
+
 		}
 	}
 
@@ -5925,7 +5922,7 @@ instant_build = yes
 		prerequisite = { focus = RCP_neutrality_focus }
 		completion_reward = {
 			
-add_ideas = deterrence
+
 
 		}
 	}
@@ -5941,8 +5938,7 @@ add_ideas = deterrence
 		prerequisite = { focus = RCP_interventionism_focus }
 		completion_reward = {
 			
-add_ideas = volunteer_corps_focus
-add_ideas = foreign_expeditions_focus
+
 
 		}
 	}
@@ -5987,7 +5983,7 @@ category = armor
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_partisan
+
 		}
 	}
 
@@ -6005,7 +6001,7 @@ category = armor
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_any_cost
+
 		}
 	}
 	
@@ -6022,7 +6018,6 @@ category = armor
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_for_empire
 		}
 	}
 
@@ -6042,7 +6037,6 @@ category = armor
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_claims
 		}
 	}
 
@@ -6098,7 +6092,6 @@ category = armor
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_social_sci
 		}
 	}
 
@@ -6116,7 +6109,6 @@ category = armor
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_rev
 		}
 	} 
 
@@ -6152,7 +6144,6 @@ category = armor
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_holy_war
 		}
 	}
 
@@ -6168,7 +6159,6 @@ category = armor
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_devotion_to_the_state }
 		completion_reward = {
-			add_ideas = mp_3
 		}
 	}
 
@@ -6182,7 +6172,6 @@ category = armor
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_modern_serfdom }
 		completion_reward = {
-			add_ideas = pope
 		}
 	}
 
@@ -6201,7 +6190,6 @@ category = armor
 		}
 		completion_reward = {
 			
-add_ideas = dem_1
 
 		}
 	}
@@ -6217,7 +6205,6 @@ add_ideas = dem_1
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_volunteer_corps }
 		completion_reward = {
-			add_ideas = dem_2
 		}
 	}
 
@@ -6285,7 +6272,6 @@ has_defensive_war = yes
 		}
 		completion_reward = {
 			
-add_ideas = why_we_fight_focus
 custom_effect_tooltip = why_we_fight_effect
 hidden_effect = {
 if = {
@@ -6307,7 +6293,6 @@ set_rule = { can_create_factions = yes }
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_world_police_force }
 		completion_reward = {
-			add_ideas = dem_3
 		}
 	}
 
@@ -6339,7 +6324,6 @@ set_rule = { can_create_factions = yes }
 			focus = RCP_spread_freedom 
 		}
 		completion_reward = {
-			add_ideas = ideological_fanaticism_focus
 set_rule = {
 can_create_factions = yes
 }
@@ -6364,7 +6348,6 @@ custom_effect_tooltip = kamikaze_focus_tooltip
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = rcp_more_bombers
 		}
 	}
 

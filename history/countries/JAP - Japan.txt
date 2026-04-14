@@ -11,9 +11,6 @@ set_fuel_ratio = 1.0
 
 IF = {
 	limit = { has_dlc = "Waking the Tiger" }
-	add_ideas = {
-		JAP_interservice_rivalry_balanced		
-	}
 }
 IF = {
 	limit = {

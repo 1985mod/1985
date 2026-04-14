@@ -33,11 +33,6 @@ if = {
 	limit = {
 		has_dlc = "Waking the Tiger"
 	}
-	add_ideas = {
-		PRC_government_corruption
-		CHI_ineffective_bureaucracy_warlord
-		CHI_warlord_state_idea
-	}
 }
 
 set_cosmetic_tag = SIK_puppet_communist_china

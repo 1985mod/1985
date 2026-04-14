@@ -6798,7 +6798,7 @@ country_event = {
 	option = {
 		name = BBA_italy_democratic_events.02.a
 
-		add_ideas = ITA_scientific_cooperation_ns
+		
 	}
 }
 
@@ -9922,7 +9922,7 @@ country_event = {
 			    target = ROOT
 			    modifier = ITA_sold_stuff_to_us
 			}
-			add_ideas = ITA_dodecanese_treaty_idea
+			
 		}
 		
 		add_to_faction = FROM
@@ -10019,7 +10019,7 @@ country_event = {
 			    target = ROOT
 			    modifier = ITA_sold_stuff_to_us
 			}
-			add_ideas = ITA_dodecanese_treaty_idea
+			
 		}
 		
 		add_to_faction = FROM

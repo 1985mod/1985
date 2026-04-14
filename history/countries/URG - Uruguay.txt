@@ -24,7 +24,7 @@ IF = {
 
 	JUNO_set_shared_military_branch_defaults = yes
 
-	add_ideas = idea_URG_low_amounts_of_external_debts
+	
 	set_war_support = 0.12
 	set_stability = 0.39
 

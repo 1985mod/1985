@@ -117,4 +117,5 @@ set_popularities = {
 recruit_character = WGR_Helmut_Kohl
 
 add_ideas = {
+	EU_member
 }

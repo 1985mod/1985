@@ -1703,7 +1703,7 @@ POL_support_monarchy_in_LIT_cat = {
 		}
 		
 		complete_effect = {
-			FROM = { add_ideas = POL_investments_monarchist }
+			FROM = { }
 		}
 
 		remove_effect = {

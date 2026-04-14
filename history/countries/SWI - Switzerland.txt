@@ -101,11 +101,6 @@ recruit_character = SWI_kurt_furgler
 		clear_variable = SWI_councilor_2
 		clear_variable = SWI_councilor_3
 
-		add_ideas = {
-			SWI_marcel_pilet_golaz
-			SWI_ernst_wetter
-			SWI_enrico_celio
-		}	
 		set_variable = { SWI_councilor_1 = SWI_marcel_pilet_golaz }
 		set_variable = { SWI_councilor_2 = SWI_ernst_wetter }
 		set_variable = { SWI_councilor_3 = SWI_enrico_celio }

@@ -115,3 +115,7 @@ set_popularities = {
 	retire_character = LUX_joseph_bech
 
 }
+
+add_ideas = {
+	EU_member
+}

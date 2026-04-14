@@ -1,0 +1,20 @@
+eu_dynamic_modifier = {
+    enable = { always = yes } #optional, the modifier won't apply if not enabled
+    remove_trigger = { always = no } #optional, will remove the modifier if true
+    attacker_modifier = no  # if yes this modifier will also be read in combat for
+    fuel_cost = 321
+    max_fuel = var_max_fuel # will be taken from a variable
+    political_power_factor = 0.1
+    stability_factor = 10
+    war_support_factor = -10
+    drift_defence_factor = 0.1
+    liberalism_drift = 0.01
+    liberalism_acceptance = 0.1
+    socialism_drift = 0.01
+    socialism_acceptance = 0.1
+    conservatism_drift = 0.01
+    conservatism_acceptance = 0.1
+    consumer_goods_factor = 0.1
+    production_speed_industrial_factor = 0.1
+    production_speed_arms_factory_factor = 0.1
+}

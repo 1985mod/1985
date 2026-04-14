@@ -209,9 +209,6 @@ set_popularities = {
 	communism = 20
 }
 
-add_ideas = {
-}
-
 recruit_character = FRA_philippe_petain
 recruit_character = FRA_maurice_thorez
 #recruit_character = FRA_pierre_laval
@@ -932,4 +929,8 @@ if = {
 			mid_1_custom_slot = empty
 		}
 	}
+}
+
+add_ideas = {
+	EU_member
 }

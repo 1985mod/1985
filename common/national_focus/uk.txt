@@ -345,7 +345,7 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
-			add_ideas = ENG_mi6_ns
+			
 
 		}
 	}
@@ -707,7 +707,7 @@ focus_tree = {
 				limit = {
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
-				add_ideas = wartime_industry_focus
+				
 			}
 			ELSE = {
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -860,7 +860,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {
-			add_ideas = british_austerity_idea
+			
 		}
 	}
 
@@ -882,7 +882,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_special_air_service_idea
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_david_stirling
@@ -1064,7 +1064,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			add_ideas = british_arms_discount
+			
 		}
 	}
 
@@ -1085,7 +1085,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 
-			add_ideas = generic_secret_weapons_ns
+			
 			add_tech_bonus = {
 				name = UK_secret_focus
 				bonus = 0.5 # was 1
@@ -1333,7 +1333,7 @@ focus_tree = {
 			navy_experience = 10
 			air_experience = 10
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = ENG_chiefs_of_staff_committee_idea
+			
 		}
 	}
 
@@ -1499,7 +1499,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			add_ideas = british_fighter_discount
+			
 		}
 	}
 	focus = {
@@ -1697,7 +1697,7 @@ focus_tree = {
 				category = cl_tech
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = ENG_secure_the_imperial_shipping_routes
+			
 		}
 	}
 
@@ -1769,7 +1769,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = british_convoy_discount
+			
 		}
 	}
 
@@ -1802,7 +1802,7 @@ focus_tree = {
 				category = convoy_defense_tree
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = ENG_anti_submarine_training_school
+			
 		}
 	}
 
@@ -1960,7 +1960,7 @@ focus_tree = {
 				set_state_flag = ENG_expand_the_repair_yards_2dockyard
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = ENG_expand_the_repair_yards
+			
 		}
 	}
 
@@ -2159,7 +2159,7 @@ focus_tree = {
 			navy_experience = 25
 			air_experience = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = ENG_service_overseas_idea
+			
 		}
 	}
 
@@ -2196,7 +2196,7 @@ focus_tree = {
 					NOT = { has_idea = ENG_fortify_the_empire_1 }
 					NOT = { has_idea = ENG_fortify_the_empire_2 }
 				}
-				add_ideas = ENG_fortify_the_empire_1
+				
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			447 = {
@@ -3042,7 +3042,7 @@ focus_tree = {
 					}
 					add_stability = 0.05
 					add_opinion_modifier = { target = ENG modifier = ENG_guiding_the_colonies }
-					add_ideas = ENG_guided_by_britain_1
+					
 					hidden_effect = { country_event = { id =  mtg_britain.17 hours = 6 } }
 				}
 			}
@@ -3053,7 +3053,7 @@ focus_tree = {
 					}
 					add_stability = 0.05
 					add_opinion_modifier = { target = ENG modifier = ENG_guiding_the_colonies }
-					add_ideas = ENG_guided_by_britain_1
+					
 					hidden_effect = { country_event = { id =  mtg_britain.17 hours = 6 } }
 				}
 			}
@@ -3064,7 +3064,7 @@ focus_tree = {
 					}
 					add_stability = 0.05
 					add_opinion_modifier = { target = ENG modifier = ENG_guiding_the_colonies }
-					add_ideas = ENG_guided_by_britain_1
+					
 					hidden_effect = { country_event = { id =  mtg_britain.17 hours = 6 } }
 				}
 			}
@@ -3075,7 +3075,7 @@ focus_tree = {
 					}
 					add_stability = 0.05
 					add_opinion_modifier = { target = ENG modifier = ENG_guiding_the_colonies }
-					add_ideas = ENG_guided_by_britain_1
+					
 					hidden_effect = { country_event = { id =  mtg_britain.17 hours = 6 } }
 				}
 			}
@@ -3086,7 +3086,7 @@ focus_tree = {
 					}
 					add_stability = 0.05
 					add_opinion_modifier = { target = ENG modifier = ENG_guiding_the_colonies }
-					add_ideas = ENG_guided_by_britain_2
+					
 					hidden_effect = { country_event = { id =  mtg_britain.17 hours = 6 } }
 				}
 			}
@@ -3097,7 +3097,7 @@ focus_tree = {
 					}
 					add_stability = 0.05
 					add_opinion_modifier = { target = ENG modifier = ENG_guiding_the_colonies }
-					add_ideas = ENG_guided_by_britain_2
+					
 					hidden_effect = { country_event = { id =  mtg_britain.17 hours = 6 } }
 				}
 			}
@@ -3271,7 +3271,7 @@ focus_tree = {
 						limit = { is_subject_of = ENG }
 						add_stability = 0.05
 						add_opinion_modifier = { target = ENG modifier = 	ENG_guiding_the_colonies }
-						add_ideas = ENG_guided_by_britain_raj_1
+						
 						hidden_effect = { country_event = { id = mtg_britain.19 hours 	= 6 } }
 						random_owned_controlled_state = {
 							limit = {
@@ -3315,7 +3315,7 @@ focus_tree = {
 					limit = { is_subject_of = ENG }
 					add_stability = 0.05
 					add_opinion_modifier = { target = ENG modifier = ENG_guiding_the_colonies }
-					add_ideas = ENG_guided_by_britain_raj_1
+					
 					hidden_effect = { country_event = { id = mtg_britain.19 hours = 6 } }
 					random_owned_controlled_state = {
 						limit = {
@@ -3394,7 +3394,7 @@ focus_tree = {
 						release = BAN
 						ENG = { set_autonomy = { target = BAN autonomy_state = autonomy_colony } }
 						BAN = {
-							add_ideas = ENG_guided_by_britain_raj_1
+							
 							hidden_effect = {
 								set_politics = {
 									ruling_party = democratic
@@ -3421,7 +3421,7 @@ focus_tree = {
 						release = PAK
 						ENG = { set_autonomy = { target = PAK autonomy_state = autonomy_colony } }
 						PAK = {
-							add_ideas = ENG_guided_by_britain_raj_1
+							
 							hidden_effect = {
 								set_politics = {
 									ruling_party = neutrality
@@ -5351,7 +5351,7 @@ focus_tree = {
 						}
 						remove_ideas = RAJ_marginalized_muslim_community
 						remove_ideas = RAJ_marginalized_muslim_community_angry
-						add_ideas = RAJ_marginalized_muslim_community_happy
+						
 					}
 				}
 			}
@@ -5628,7 +5628,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_ideas = { ENG_colonial_elite }
+			
 		}
 	}
 
@@ -5695,7 +5695,7 @@ focus_tree = {
 					NOT = { has_idea = ENG_fortify_the_empire_1 }
 					NOT = { has_idea = ENG_fortify_the_empire_2 }
 				}
-				add_ideas = ENG_fortify_the_empire_1
+				
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			336 = {
@@ -6682,21 +6682,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ENG_british_commonwealth_air_training_plan
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			every_country = {
 				limit = {
 					is_subject_of = ROOT
 					NOT = { original_tag = SAF }
 				}
-				add_ideas = ENG_british_commonwealth_air_training_plan
+				
 			}
 			SAF = {
 				if = {
 					limit = {
 						is_subject_of = ROOT
 					}
-					add_ideas = ENG_joint_air_training_scheme
+					
 				}
 			}
 		}
@@ -8719,7 +8719,7 @@ focus_tree = {
 			}
 			set_rule = { can_send_volunteers = yes }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = ENG_no_further_appeasement_idea
+			
 			hidden_effect = { news_event = { id = mtg_news.16 days = 1 } }
 		}
 	}
@@ -8921,31 +8921,31 @@ focus_tree = {
 				CAN = {
 					if = {
 						limit = { is_in_faction_with = ENG }
-						add_ideas = ENG_maintaining_imperial_integrity_idea
+						
 					}
 				}
 				AST = {
 					if = {
 						limit = { is_in_faction_with = ENG }
-						add_ideas = ENG_maintaining_imperial_integrity_idea
+						
 					}
 				}
 				NZL = {
 					if = {
 						limit = { is_in_faction_with = ENG }
-						add_ideas = ENG_maintaining_imperial_integrity_idea
+						
 					}
 				}
 				SAF = {
 					if = {
 						limit = { is_in_faction_with = ENG }
-						add_ideas = ENG_maintaining_imperial_integrity_idea
+						
 					}
 				}
 				RAJ = {
 					if = {
 						limit = { is_in_faction_with = ENG }
-						add_ideas = ENG_maintaining_imperial_integrity_idea
+						
 					}
 				}
 			}
@@ -9719,7 +9719,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { NOT = { has_idea = ENG_continuation_of_politics } }
-				add_ideas = ENG_continuation_of_politics
+				
 			}
 		}
 
@@ -9763,7 +9763,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { NOT = { has_idea = ENG_continuation_of_politics } }
-				add_ideas = ENG_continuation_of_politics
+				
 			}
 
 		}
@@ -9808,7 +9808,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { NOT = { has_idea = ENG_continuation_of_politics } }
-				add_ideas = ENG_continuation_of_politics
+				
 			}
 
 		}
@@ -9939,7 +9939,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { NOT = { has_idea = ENG_continuation_of_politics } }
-				add_ideas = ENG_continuation_of_politics
+				
 			}
 		}
 	}
@@ -9972,7 +9972,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { NOT = { has_idea = ENG_continuation_of_politics } }
-				add_ideas = ENG_continuation_of_politics
+				
 			}
 		}
 	}
@@ -10287,7 +10287,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_rule = { can_send_volunteers = yes }
-			add_ideas = ENG_the_kings_party_idea
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_party_name = { ideology = neutrality long_name = ENG_neutrality_party_kings_party_long name = ENG_neutrality_party_kings_party }
 			hidden_effect = {
@@ -11064,9 +11064,9 @@ focus_tree = {
 					NOT = { has_idea = limited_exports }
 					NOT = { has_idea = closed_economy }
 				}
-				add_ideas = limited_exports
+				
 			}
-			add_ideas = ENG_the_mosley_memorandum_idea
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
@@ -11238,12 +11238,12 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_MANPOWER}	
 		completion_reward = {
-			add_ideas = ENG_imperial_conscription_idea
+			
 			every_country = {
 				limit = {
 					is_subject_of = ENG
 				}
-				add_ideas = ENG_imperial_conscription_subject_idea
+				
 			}
 		}
 	}
@@ -11821,7 +11821,7 @@ focus_tree = {
 				category = ss_tech
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = ENG_the_sun_never_sets_idea
+			
 			custom_effect_tooltip = ENG_the_sun_never_sets_tt
 		}
 	}
@@ -12153,7 +12153,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			remove_ideas = ENG_the_war_to_end_all_wars
-			add_ideas = ENG_for_the_good_of_the_revolution_idea
+			
 		}
 	}
 
@@ -12914,7 +12914,7 @@ focus_tree = {
 					GER = { has_government = fascism }
 					ITA = { has_government = fascism }
 				}
-				add_ideas = ENG_tackle_fascism_idea_1
+				
 				GER = { add_opinion_modifier = { target = ENG modifier = ENG_tackle_fascism } }
 				ITA = { add_opinion_modifier = { target = ENG modifier = ENG_tackle_fascism } }
 			}
@@ -12923,7 +12923,7 @@ focus_tree = {
 					GER = { has_government = fascism }
 					NOT = { ITA = { has_government = fascism } }
 				}
-				add_ideas = ENG_tackle_fascism_idea_2
+				
 				GER = { add_opinion_modifier = { target = ENG modifier = ENG_tackle_fascism } }
 			}
 			if = {
@@ -12931,7 +12931,7 @@ focus_tree = {
 					NOT = { GER = { has_government = fascism } }
 					ITA = { has_government = fascism }
 				}
-				add_ideas = ENG_tackle_fascism_idea_3
+				
 				ITA = { add_opinion_modifier = { target = ENG modifier = ENG_tackle_fascism } }
 			}
 			hidden_effect = { news_event = { id = mtg_news.39 days = 1 } }
@@ -12988,7 +12988,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_POLITICAL}	
 		completion_reward = {
-			add_ideas = ENG_tackle_capitalism_idea
+			
 			USA = { add_opinion_modifier = { target = ENG modifier = ENG_tackle_capitalism } }
 			hidden_effect = { news_event = { id = mtg_news.40 days = 1 } }
 		}
@@ -13132,7 +13132,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {
-			add_ideas = ENG_spirit_of_the_industrial_revolution_idea
+			
 		}
 	}
 

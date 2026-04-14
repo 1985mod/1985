@@ -3550,7 +3550,7 @@ country_event = { #  Declaring the Regent's Intentions
 
 		custom_effect_tooltip = CHL_skip_one_line_tt
 
-		add_ideas = NOR_new_high_king
+		
 
 	}
 	option = { # We should befriend our Neighboring Monarchies
@@ -3587,7 +3587,7 @@ country_event = { #  Declaring the Regent's Intentions
 
 		custom_effect_tooltip = CHL_skip_one_line_tt
 
-		add_ideas = NOR_norwegian_regency
+		
 
 		hidden_effect = {
 			set_cosmetic_tag = NOR_neutrality_nordic_king_flag
@@ -3627,7 +3627,7 @@ country_event = { #  Declaring the Regent's Intentions
 
 		custom_effect_tooltip = CHL_skip_one_line_tt
 
-		add_ideas = NOR_second_north_sea_empire
+		
 
 		hidden_effect = {
 			set_cosmetic_tag = NOR_neutrality_purple_flag 

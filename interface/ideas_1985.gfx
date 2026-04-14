@@ -11,4 +11,8 @@ spriteTypes = {
         name = "GFX_idea_CZE_torg_ussr"
         texturefile = "gfx/interface/ideas/CZE/idea_can_wartime_prices_ussr.dds"
     }
+    spriteType = {
+        name = "GFX_idea_EU_member"
+        texturefile = "gfx/interface/ideas/european_union/EU_member.dds"
+    }
 }

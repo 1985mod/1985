@@ -153,13 +153,6 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = MTG_naval_treaty_cheating
-}
-
 set_convoys = 200
 
 recruit_character = ITA_sandro_pertini
@@ -176,4 +169,8 @@ set_popularities = {
 	fascism = 2
 	communism = 5
 	socialism = 20
+}
+
+add_ideas = {
+	EU_member
 }

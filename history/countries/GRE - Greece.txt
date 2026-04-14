@@ -119,3 +119,6 @@ set_convoys = 80
 
 recruit_character = GRE_andreas_papandreou
 
+add_ideas = {
+	EU_member
+}

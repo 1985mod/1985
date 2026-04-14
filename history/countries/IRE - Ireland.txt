@@ -87,3 +87,7 @@ set_popularities = {
 		elections_allowed = yes
 	}
 }
+
+add_ideas = {
+	EU_member
+}
