@@ -24,15 +24,10 @@ state={
 		}
 		add_core_of = AFN
 		add_core_of = AFS
-		
-		AFN = {
-			set_province_controller = 12769
-			set_province_controller = 10737
-		}
 	}
 
 	provinces={
-		7916 7984 10737 10852 12769 
+		7916 7984 10737 10852
 	}
 
 	local_supplies=0.0 

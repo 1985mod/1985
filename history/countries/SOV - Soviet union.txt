@@ -137,6 +137,11 @@ set_autonomy = {
 	end_wars = no
 }
 
+diplomatic_relation = {
+	country = AFN
+	relation = military_access
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1985.1.1"

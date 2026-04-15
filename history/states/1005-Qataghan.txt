@@ -9,7 +9,7 @@ state={
 	}
 
 	provinces={
-		7519 10781 10826 12314 12653 
+		7519 10781 10826 12314 12653 13445 13472 13475 13476
 	}
 	history={
 		owner = AFS
@@ -17,9 +17,6 @@ state={
 		add_core_of = AFS
 		victory_points = {
 			10781 1
-		}
-		AFN = {
-			set_province_controller = 10781
 		}
 	}
 	

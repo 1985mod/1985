@@ -1,4 +1,4 @@
-﻿capital = 267
+﻿capital = 1063
 
 oob = "AFN_1985"
 
