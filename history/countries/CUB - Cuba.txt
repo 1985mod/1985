@@ -101,5 +101,6 @@ set_popularities = {
 
 
 recruit_character = CUB_Fedel_Castro
+recruit_character = CUB_Steve_Jobs
 
 

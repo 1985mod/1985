@@ -1,0 +1,30 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_news_SOV_dead_chernenko2"
+		texturefile = "gfx/event_pictures/news_SOV_dead_chernenko2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_SOV_jobs_ussr"
+		texturefile = "gfx/event_pictures/news_SOV_jobs_ussr.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_dead_chernenko"
+		texturefile = "gfx/event_pictures/report_dead_chernenk.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_DDR_Honecker_and_Kohl"
+		texturefile = "gfx/event_pictures/report_event_DDR_Honecker_and_Kohl.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_gorbachev_vs_romanov"
+		texturefile = "gfx/event_pictures/report_gorbachev_vs_romanov.dds"
+	}
+}
+
+
+

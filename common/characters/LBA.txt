@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = autocracy
+			ideology = ethnic_nationalism
 			traits = { }
 			expire = "2011.3.1.1"
 		}

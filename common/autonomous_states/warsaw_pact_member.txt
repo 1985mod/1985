@@ -4,9 +4,9 @@ autonomy_state = {
 	default = yes
 	is_puppet = yes
 	
-	min_freedom_level = 0.0
+	min_freedom_level = 0.90
 	
-	manpower_influence = 0.5
+	manpower_influence = 0.10
 	use_overlord_color = no
 	
 	rule = {

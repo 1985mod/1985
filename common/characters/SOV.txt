@@ -71,34 +71,34 @@ characters = {
 		}
 	}
 
-	SOV_alexander_dugin = {
-		name = SOV_alexander_dugin
+	SOV_Dmitry_Vasilyev = {
+		name = SOV_dmitry_vasilyev
 		portraits = {
 			civilian = {
-				large = GFX_portrait_SOV_alexander_dugin
+				large = GFX_Portrait_Dmitry_Vasilyev
 			}
 			army = {
-				large = GFX_portrait_SOV_alexander_dugin
-				small = GFX_portrait_SOV_alexander_dugin_small
+				large = GFX_Portrait_Dmitry_Vasilyev
+				small = GFX_Portrait_Dmitry_Vasilyev_small
 			}
 		}
 		country_leader = {
-			ideology = fascism_ideology
+			ideology = ethnic_nationalism
 			traits = {}
 			expire = "2022.08.30.1"
 			id = -1
 		}
 	}
 
-	SOV_oleg_chenin = {
-		name = SOV_oleg_chenin
+	SOV_grigory_romanov = {
+		name = SOV_grigory_romanov
 		portraits = {
 			civilian = {
-				large = GFX_portrait_SOV_oleg_chenin
+				large = GFX_Portrait_Grigory_Romanov
 			}
 			army = {
-				large = GFX_portrait_SOV_oleg_chenin
-				small = GFX_portrait_SOV_oleg_chenin_small
+				large = GFX_Portrait_Grigory_Romanov
+				small = GFX_Portrait_Grigory_Romanov_small
 			}
 		}
 		country_leader = {
@@ -110,6 +110,24 @@ characters = {
 	}
 	
 	
+	SOV_KPSS = {
+		name = KPSS
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_KPSS
+			}
+			army = {
+				large = GFX_Portrait_KPSS
+				small = GFX_Portrait_KPSS_small
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {}
+			expire = "2009.05.28.1"
+			id = -1
+		}
+	}
 	
 	######GENERALS####
 	SOV_Sokolov = {

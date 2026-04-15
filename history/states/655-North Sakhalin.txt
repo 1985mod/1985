@@ -14,15 +14,22 @@ state = {
 
 		owner = SOV
 		add_core_of = SOV
+		
+		victory_points = {
+			12446 1 # Toyohara
+		}
 
 		buildings = {
 			infrastructure = 2
 			air_base = 1
+			12446 = {
+				naval_base = 1
+			}
 		}
 	}
 
 	provinces = {
-		855 1742 1755 
+		855 1322 1742 1755 1820 12446
 	}
 
 	local_supplies = 0.0 

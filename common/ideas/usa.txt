@@ -1,0 +1,60 @@
+ideas = {
+    country = {
+		USA_reaganomics_policy = {
+			picture = generic_political_support 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  consumer_goods_factor = 0.1
+			  stability_factor = 0.05
+			  production_factory_efficiency_gain_factor = 0.05
+			  production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		USA_stronghold_of_freedom = {
+			picture = ARG_eliminate_american_imperialism 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  drift_defence_factor = -0.15
+			  conservatism_drift = 0.02
+			  liberalism_drift = 0.02
+			}
+		}
+		USA_cold_war = {
+			picture = anti_soviet_pact 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  stability_factor = -0.05
+			  send_volunteers_tension = -0.5
+			  lend_lease_tension = -0.5
+			  request_lease_tension = -0.5
+			}
+		}
+	}
+}

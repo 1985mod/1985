@@ -139,6 +139,12 @@ if = {
 
 set_convoys = 700
 
+add_ideas = {
+USA_reaganomics_policy
+USA_stronghold_of_freedom
+USA_cold_war
+}
+
 
 set_politics = {
 	ruling_party = conservatism

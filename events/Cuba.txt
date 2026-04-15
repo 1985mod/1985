@@ -1,0 +1,52 @@
+add_namespace = CUB_jobs_leader
+
+country_event = {
+	id = CUB_jobs_leader.2
+	title = CUB_jobs_leader.2.t
+	desc = CUB_important_choice.2.desc
+	picture = GFX_
+
+	trigger = {
+		tag = CUB
+		exists = yes
+		NOT = { has_country_flag = cub_jobs_event_fired }
+		NOT = { SOV = { exists = yes } }
+		NOT = { USA = { exists = yes } }
+		NOT = { GER = { exists = yes } }
+		NOT = { FRA = { exists = yes } }
+		date > 1999.1.1
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = CUB_jobs_leader.2.a
+		ai_chance = {
+			base = 10
+		}
+		
+		set_country_flag = cub_jobs_event_fired
+		
+		remove_country_leader = { name = "CUB_Fedel_Castro" }
+		promote_character = {
+			character = CUB_Steve_Jobs
+			ideology = communism
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		
+		news_event = { id = news.1 days = 1 }
+	}
+
+	option = {
+		name = CUB_jobs_leader.2.b
+		ai_chance = {
+			base = 5
+		}
+		
+		set_country_flag = cub_jobs_event_fired
+		add_stability = 0.05
+	}
+}

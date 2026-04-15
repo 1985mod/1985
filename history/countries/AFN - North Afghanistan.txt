@@ -1,4 +1,4 @@
-﻿capital = 267
+﻿capital = 1063
 
 oob = "AFN_1985"
 
@@ -95,6 +95,9 @@ set_popularities = {
 	communism = 100
 }
 
+add_ideas = {
+AFN_kunar_operation
+}
 
 recruit_character = AFN_mohammed_omar
 recruit_character = AFN_ahmad_shah_massoud

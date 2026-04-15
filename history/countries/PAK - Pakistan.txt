@@ -101,14 +101,14 @@ set_technology = {
 }
 
 set_politics = {	
-	ruling_party = islamism
+	ruling_party = neutrality
 	last_election = "1978.2.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    islamism = 80
+    neutrality = 80
     communism = 20
 }
 

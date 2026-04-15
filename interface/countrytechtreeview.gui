@@ -232,20 +232,6 @@ guiTypes = {
 			
 			
 			
-			
-	    	gridboxtype = {
-	      		name = "infantry_fighting_vehicle_tree"
-		      	position = { x = 140  y = 775 }
-		    	slotsize = { width = 70 height = 70 }
-		    	format = "LEFT"
-		    }
-			
-	    	gridboxtype = {
-	      		name = "thermal_imager_1st_tree"
-		      	position = { x = 140  y = 430 }
-		    	slotsize = { width = 70 height = 70 }
-		    	format = "LEFT"
-		    }
 
 			gridboxtype = {
 				name = "support_weapons_tree"

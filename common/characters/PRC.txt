@@ -13,6 +13,6 @@ characters = {
 			
 		}
 
-		id = -99
+		id = -1
 	}
 }

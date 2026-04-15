@@ -1,3 +1,4 @@
+GER	= "countries/Germany.txt"
 ENG = "countries/United Kingdom.txt"
 SOV = "countries/Soviet Union.txt"
 SWE	= "countries/Sweden.txt"
@@ -337,8 +338,6 @@ ASY = "countries/Assyria.txt"
 BHR = "countries/Bahrain.txt"
 IMO = "countries/Omani Imamate.txt"
 BLC = "countries/Balochistan.txt"
-
-MOD
 
 RUS = "countries/Russia.txt"
 NCY = "countries/Northern Cyprus.txt"

@@ -1,0 +1,42 @@
+ideas = {
+    country = {
+		AFS_faith_in_sacred_islam = {
+			picture = PER_islamic_traditions_ns 
+			allowed = {
+				original_tag = AFS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  army_core_attack_factor = 0.25
+			  army_core_defence_factor = 0.2
+			  surrender_limit = 1.0
+			  islamism_drift = 0.05
+			  drift_defence_factor = 0.25
+			}
+		}
+		AFN_kunar_operation = {
+			picture = ARG_no_gods_no_masters 
+			allowed = {
+				original_tag = AFN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  targeted_modifier = { tag = AFS attack_bonus_against = 0.25 }
+			  targeted_modifier = { tag = AFS defense_bonus_against  = 0.20 }
+			  surrender_limit = 1.0
+			}
+		}
+	}
+}

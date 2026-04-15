@@ -1,0 +1,59 @@
+music = {
+    name = "gruppa_krovi_name"
+    file = "gruppa_krovi.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "hochu_peremen_name"
+    file = "hochu_peremen.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "kukushka_name"
+    file = "kukushka.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "leto_name"
+    file = "leto.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "mama_my_vse_tyazhelo_bolny_name"
+    file = "mama_my_vse_tyazhelo_bolny.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "mesto_dlya_shaga_vperjod_name"
+    file = "mesto_dlya_shaga_vperjod.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "poslednijj_gerojj_name"
+    file = "poslednijj_gerojj.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "spokojjnaya_noch_name"
+    file = "spokojjnaya_noch.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "zakrojj_za_mnojj_dver_ya_ukhozhu_name"
+    file = "zakrojj_za_mnojj_dver_ya_ukhozhu.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "zvezda_po_imeni_solnce_name"
+    file = "zvezda_po_imeni_solnce.ogg"
+    volume = 0.65
+}

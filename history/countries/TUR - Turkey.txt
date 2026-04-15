@@ -113,8 +113,7 @@ set_popularities = {
 	conservatism = 65
 	socialism = 5
 	neutrality = 13
-	fascism = 4
-	islamism = 13
+	fascism = 17
 }
 
 set_convoys = 20

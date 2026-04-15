@@ -186,41 +186,52 @@
  PRC_democratic_government: "Демократическая партия"
  PRC_democratic_reforms: "Демократические реформы"
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ DDR_new_1985: "Новый 1985"
+ DDR_political_ddr: "Политика ГДР"
+ DDR_gerontocracy_of_the_sed: "Геронтократия СЕПГ"
+ DDR_doctrine_of_separation: "Доктрина Обособления"
+ DDR_ignore_signals_from_moscow: "Игнорировать сигналы из Москвы"
+ DDR_the_cult_of_the_anti_fascist_rampart: "Культ Антифашистского вала"
+ DDR_xi_congress_of_the_sed: "XI съезд СЕПГ"
+ DDR_honeckers_visit_to_bonn: "Визит Хонеккера в Бонн"
+ DDR_censorship_of_sputnik: "Цензура Спутника"
+ DDR_the_fight_against_the_church: "Борьба с Церковью"
+ DDR_unity_with_those_who_disagree: "Единство с не согласными"
+ DDR_falsification_of_local_elections: "Фальсификация местных выборов"
+ DDR_tiananmen_approval: "Одобрение Тяньаньмэнь"
+ DDR_conspiracy_in_the_politburo: "Заговор в Политбюро"
+ DDR_honeckers_resignation: "Оставка Хонеккера"
+ DDR_heading_for_the_turn: "Курс на Поворот"
+ DDR_repeal_of_article_1_of_the_constitution: "Отмена 1-й статьи Конституции"
+ DDR_milkes_sacrifice: "Жертва Мильке"
+ DDR_order_101_do_not_shoot: "Приказ 101: Не стрелять"
+ DDR_modrow_government: "Правительство Модрова"
+ DDR_first_free_elections: "Первые свободные выборы"
+ DDR_socialism_on_the_brink_of_bankruptcy: "Социализм на грани банкротства"
+ DDR_combines: "Комбинаты"
+ DDR_microelectronics_program: "Программа Микроэлектроника"
+ DDR_intensification_through_automation: "Интенсификация через автоматизацию"
+ DDR_brown_coal_dependence: "Буроугольная зависимость"
+ DDR_shalk_golodkovsky_committee: "Комитет Шалк-Голодковского"
+ DDR_strausss_secret_loan: "Тайный заем от Штрауса"
+ DDR_shortage_of_consumer_goods: "Дефицит товаров народного потребления"
+ DDR_import_of_west_german_technology: "Импорт западногерманских технологий"
+ DDR_monetary_union: "Валютный союз"
+ DDR_board_of_Trustees: "Опекунский совет"
+ DDR_national_peoples_army: "Национальная Народная Армия"
+ DDR_coalition_warfare_doctrine: "Доктрина коалиционной войны"
+ DDR_ministry_of_state_security: "Министерство государственной безопасности"
+ DDR_main_directorate_a: "Главное управление А"
+ DDR_filter_system: "Система «Фильтр»"
+ DDR_felix_dzerzhinsky: "Феликс Дзержинский"
+ DDR_operation_romeo: "Операция Ромео"
+ DDR_sigma_intercept: "Перехват Сигма"
+ DDR_mig_29_deliveries: "Поставка МиГ-29"
+ DDR_t72_modernization: "Модернизация Т-72М1"
+ DDR_industrial_espionage_in_nato: "Промышленный шпионаж в НАТО"
+ DDR_border_guard_troops: "Войска пограничной охраны"
+ DDR_anti_terror_group: "Группа Антитеррор"
+ DDR_sector_plan: "План Сектор"
+ DDR_crisis_headquarters_in_ehrich: "Кризисный штаб в Эйрихе"
+ DDR_leuzpig_garrison: "Гарнизон Лейпцига"
+ DDR_end: "Конец для ГДР"

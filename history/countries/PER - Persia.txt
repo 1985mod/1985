@@ -103,13 +103,12 @@ if = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = islamism
-	last_election = "1931.10.11"
+	ruling_party = neutrality
+	last_election = "1985.10.11"
 	election_frequency = 96
 	elections_allowed = no
 }
 set_popularities = {
-	islamism = 75
-	neutrality = 25
+	neutrality = 100
 }
 recruit_character = PER_Ali_Khamenei

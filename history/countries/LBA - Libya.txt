@@ -86,17 +86,16 @@ if = {
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = fascism
+	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism = 10
-	fascism = 5
+	conservatism = 15
 	communism = 0
-	neutrality = 85
+	fascism = 85
 }
 
 recruit_character = LBA_Muammar_Gaddafi

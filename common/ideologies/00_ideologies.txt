@@ -198,20 +198,20 @@ ideologies = {
 	conservatism = {
 
 		types = {
+		
 			classic_conservatism = {
-
 			}
+			
 			reactionism = {
-			
 			}
+			
 			liberal_conservatism = {
-			
 			}
+			
 			social_conservatism = {
-			
 			}
+			
 			national_conservatism = {
-
 			}
 		}
 
@@ -271,18 +271,21 @@ ideologies = {
 		types = {
 
 			authoritarian_democracy = {
-
 			}
 
 			autocracy = {
-			
 			}
 
 			oligarchism  = {
-			
 			}
 			
-			constitutional_monarchy = {
+			military_regimes = {
+			}
+			
+			Salafism = {
+			}
+			
+			Political_Islam = {
 			}
 		}
 
@@ -333,17 +336,16 @@ ideologies = {
 		types = {
 
 			ethnic_nationalism = {
-			
 			}
 
 			civil_nationalism = {
-			
 			}
 			
 			extreme_nationalism = {
-			
 			}
-
+			
+			baathism = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -382,64 +384,6 @@ ideologies = {
 		ai_ideology_wanted_units_factor = 1.65
 		
 		ai_give_core_state_control_threshold = 10000
-	}
-	islamism = {
-
-		types = {
-
-			Salafism = {
-
-			}
-			
-			Political_Islam = {
-
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_ISLAMISM_1"
-			"FACTION_NAME_ISLAMISM_2"
-			"FACTION_NAME_ISLAMISM_3"
-			"FACTION_NAME_ISLAMISM_4"
-			"FACTION_NAME_ISLAMISM_5"
-		}
-
-		color = { 50 205 50 }
-
-		can_host_government_in_exile = yes
-		
-		war_impact_on_world_tension = 1.0
-		faction_impact_on_world_tension = 1.0
-
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-			can_boost_other_ideologies = no
-		}
-
-		can_collaborate = yes
-
-		modifiers = {
-			join_faction_tension = 1.0
-			lend_lease_tension = 0.0
-			send_volunteers_tension = 0.0
-			guarantee_tension = 0.50
-			
-			civilian_intel_to_others = 5.0
-			army_intel_to_others = 40.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 20.0
-			
-			justify_war_goal_time = -0.25
-			enemy_justify_war_goal_time = -0.5
-			
-			ai_desired_divisions_factor = 500 #Is cancelled if the AI has more divisions than factories in AI Strategies -- LEAVE THIS IN FOR EVERY IDEOLOGY!!!
-		}
-
-		ai_fascist = yes 
-		can_be_boosted = no
-		ai_ideology_wanted_units_factor = 1.0
 	}
 
 }

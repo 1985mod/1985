@@ -310,7 +310,7 @@ focus_tree = {
                     conservatism = 20
                 }
             }
-            CZE = {
+            ROOT = {
                 set_politics = { 
                     ruling_party = liberalism
                     elections_allowed = yes

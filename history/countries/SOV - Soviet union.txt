@@ -137,6 +137,11 @@ set_autonomy = {
 	end_wars = no
 }
 
+diplomatic_relation = {
+	country = AFN
+	relation = military_access
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1985.1.1"
@@ -150,11 +155,30 @@ set_popularities = {
 	liberalism = 0
 }
 
+add_opinion_modifier = {
+    target = USA
+    modifier = cold_war 
+}	
+
+USA = {
+add_opinion_modifier = {
+    target = SOV
+    modifier = cold_war 
+}	
+}
+
+add_ideas = {
+SOV_soviet_contingent_in_afghanistan
+SOV_economic_stagnation
+SOV_cold_war
+}
+
 recruit_character = SOV_konstantin_chernenko
+recruit_character = SOV_KPSS
 recruit_character = SOV_mikhail_gorbachev
 recruit_character = SOV_boris_yeltsin
-recruit_character = SOV_alexander_dugin
-recruit_character = SOV_oleg_chenin
+recruit_character = SOV_dmitry_vasilyev
+recruit_character = SOV_grigory_romanov
 recruit_character = SOV_dmitry_yazov
 recruit_character = SOV_Shaposhnikov
 recruit_character = SOV_Sokolov

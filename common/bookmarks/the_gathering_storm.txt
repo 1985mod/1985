@@ -19,25 +19,25 @@ bookmarks = {
 		
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservatism
 			ideas = {
 			}
 			focuses = {
 			}
 		}
 		
-		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+		"DDR"={
+			history = "DDR_GATHERING_STORM_DESC"
+			ideology = communism
 			ideas = {
 			}
 			focuses = {
 			}
 		}
 		
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
+		"WGR"={
+			history = "WGR_GATHERING_STORM_DESC"
+			ideology = conservatism
 			ideas = {
 			}
 			focuses = {
@@ -54,17 +54,17 @@ bookmarks = {
 			}
 		}
 
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = democratic
+		"PRK"={
+			history = "PRK_GATHERING_STORM_DESC"
+			ideology = communism
 			ideas = {
 			}	
 			focuses = {
 			}		
 		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = democratic
+		"CZE"={
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = communism
 			ideas = {
 			}	
 			focuses = {
@@ -75,8 +75,6 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
-
-		# minors from DLC ####
 		"IRQ"={
 			minor = yes
 			history = "IRQ_GATHERING_STORM_DESC"

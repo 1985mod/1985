@@ -3,7 +3,7 @@ characters = {
 		name = PRK_kim_sen
 		portraits ={
 			civilian ={
-				large = GFX_portrait_Kim_Il_sung
+				large = GFX_Portrait_Kim_Sen
 			}
 
 		}
