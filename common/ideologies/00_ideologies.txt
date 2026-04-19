@@ -331,6 +331,7 @@ ideologies = {
 		
 		ai_give_core_state_control_threshold = 10000
 	}
+	
 	fascism = {
 
 		types = {
