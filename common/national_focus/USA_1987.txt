@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 1000
+            add = 900
             tag = USA
         }
     }
@@ -69,6 +69,87 @@ focus_tree = {
         y = 2
         cost = 5
         completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_voice_of_america
+		relative_position_id = USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic
+		prerequisite = { focus = USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_war_on_drugs
+		relative_position_id = USA_voice_of_america
+		prerequisite = { focus = USA_voice_of_america }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_internet_development
+		relative_position_id = USA_war_on_drugs
+		prerequisite = { focus = USA_war_on_drugs }
+        icon = GFX_	
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_pc_standardization
+		relative_position_id = USA_war_on_drugs
+		prerequisite = { focus = USA_war_on_drugs }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 5
+		
+		available = {
+		   has_completed_focus = USA_internet_development
+		}
+		
+        completion_reward = {
+	    }
+	}
+
+    focus = { 
+        id = USA_rehabilitate_usaid
+		relative_position_id = USA_war_on_drugs
+		prerequisite = { focus = USA_internet_development }
+		prerequisite = { focus = USA_pc_standardization }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 5
+		
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_second_meeting_with_gorbachev
+		relative_position_id = USA_rehabilitate_usaid
+		prerequisite = { focus = USA_rehabilitate_usaid }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+		    load_focus_tree = USA_focus_1988
 	    }
 	}
 }

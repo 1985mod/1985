@@ -153,6 +153,8 @@ set_politics = {
 	elections_allowed = yes
 }
 recruit_character = USA_ronald_reagan
+recruit_character = USA_george_bush
+recruit_character = USA_michael_dukakis
 
 set_popularities = {
 	liberalism = 40

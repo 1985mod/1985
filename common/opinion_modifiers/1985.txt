@@ -1,0 +1,13 @@
+opinion_modifiers = {
+    cold_war = {
+       value = -90
+    }
+
+    evil_empire = {
+       value = -45
+    }
+   
+    divided_into_two_parts = {
+       value = -45
+    }
+}

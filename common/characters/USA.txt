@@ -17,4 +17,34 @@ characters={
 			
 		}
 	}
+	
+	USA_george_bush ={
+		name = USA_george_bush
+		portraits={
+			civilian={
+				large= GFX_Portrait_george_bush
+			}
+		}
+		country_leader={
+			ideology= classic_conservatism
+			traits={  }
+			expire="1999.1.1.1"
+			
+		}
+	}
+	
+	USA_michael_dukakis = {
+		name = USA_michael_dukakis
+		portraits={
+			civilian={
+				large= GFX_Portrait_michael_dukakis
+			}
+		}
+		country_leader={
+			ideology= classic_liberalism
+			traits={  }
+			expire="1999.1.1.1"
+			
+		}
+	}
 }
