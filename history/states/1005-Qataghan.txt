@@ -18,6 +18,10 @@ state={
 		victory_points = {
 			10781 1
 		}
+
+		AFN = {
+			set_province_controller = 7519
+		}
 	}
 	
 	buildings_max_level_factor=1.000

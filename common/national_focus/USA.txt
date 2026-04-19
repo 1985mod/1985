@@ -19,7 +19,9 @@ focus_tree = {
         x = 15
         y = 0
         cost = 5
+		
         completion_reward = {
+		    add_political_power = 100
 	    }
 	}
 	
@@ -31,7 +33,14 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
+		
         completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = evil_empire
+				}
+			}
 	    }
 	}
 	
@@ -43,7 +52,9 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
+		
         completion_reward = {
+		
 	    }
 	}
 	
@@ -55,7 +66,9 @@ focus_tree = {
         x = 2
         y = 1
         cost = 5
+		
         completion_reward = {
+		
 	    }
 	}
 	
@@ -67,7 +80,9 @@ focus_tree = {
         x = -2
         y = 1
         cost = 5
+		
         completion_reward = {
+		
 	    }
 	}
 	
@@ -80,7 +95,9 @@ focus_tree = {
         x = 0
         y = 2
         cost = 2
+		
         completion_reward = {
+		
 	    }
 	}
 	
@@ -92,12 +109,13 @@ focus_tree = {
         x = 0
         y = 1
         cost = 2
+		
         available = {
-		   date > 1986.10.8
+		   date > 1986.10.2
 		}
 		
         completion_reward = {
-		    load_focus_tree = USA_focus_1986
+		    load_focus_tree = USA_focus_1987
 	    }
 	}
 	
@@ -109,7 +127,9 @@ focus_tree = {
         x = 5
         y = 1
         cost = 5
+		
         completion_reward = {
+		   army_experience = 25
 	    }
 	}
 	
@@ -121,7 +141,15 @@ focus_tree = {
         x = -2
         y = 1
         cost = 5
+		
         completion_reward = {
+	        army_experience = 15
+        	add_doctrine_cost_reduction = {
+    			name = USA_lessons_of_the_vietnam_war
+    			cost_reduction = 0.5
+     			uses = 1
+     			category = land_doctrine
+        	}
 	    }
 	}
 	
@@ -133,7 +161,10 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
+		
         completion_reward = {
+		   army_experience = 10
+		   air_experience = 10
 	    }
 	}
 	
@@ -145,7 +176,15 @@ focus_tree = {
         x = 2
         y = 1
         cost = 5
+		
         completion_reward = {
+            army_experience = 10		
+        	add_doctrine_cost_reduction = {
+    			name = USA_expand_military_bases
+    			cost_reduction = 0.5
+     			uses = 1
+     			category = land_doctrine
+        	}
 	    }
 	}
 	
@@ -159,7 +198,14 @@ focus_tree = {
         x = 0
         y = 2
         cost = 5
+		
         completion_reward = {
+			add_tech_bonus = {
+				name = USA_modernization_of_abrams_and_bradley
+				bonus = 1
+				uses = 1
+				category = cat_medium_armor
+			}
 	    }
 	}
 
@@ -171,7 +217,24 @@ focus_tree = {
         x = -5
         y = 1
         cost = 5
+		
         completion_reward = {
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}		
 	    }
 	}
 	
@@ -182,8 +245,25 @@ focus_tree = {
 		prerequisite = { focus = USA_stop_the_rapid_growth_of_public_debt }
         x = 2
         y = 1
-        cost = 5
+        cost = 10
+		
         completion_reward = {
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 	    }
 	}
 	
@@ -195,7 +275,24 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
+		
         completion_reward = {
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 	    }
 	}
 	
@@ -206,8 +303,25 @@ focus_tree = {
 		prerequisite = { focus = USA_stop_the_rapid_growth_of_public_debt }
         x = -2
         y = 1
-        cost = 5
+        cost = 10
+		
         completion_reward = {
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}		
 	    }
 	}
 	
@@ -221,7 +335,24 @@ focus_tree = {
         x = 0
         y = 2
         cost = 5
+		
         completion_reward = {
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 	    }
 	}
 	
@@ -233,6 +364,23 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
+		
         completion_reward = {
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 	    }
 	}
