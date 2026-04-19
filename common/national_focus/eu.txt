@@ -1,0 +1,1580 @@
+shared_focus = { 
+    id = EU_focus_legacy_of_the_communities # Наследие Cообществ
+    x = 40
+    y = 0 
+    
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = {
+        add_political_power = 100
+    }
+} 
+
+shared_focus = { 
+    id = EU_focus_single_european_act # Единый европейский акт
+    x = 0
+    y = 1
+    relative_position_id = EU_focus_legacy_of_the_communities
+    prerequisite = { focus = EU_focus_legacy_of_the_communities }
+    
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = {
+        add_stability = 0.10
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_hanover_summit # Ганноверский саммит
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_single_european_act
+    prerequisite = { focus = EU_focus_single_european_act } 
+     
+    cost = 5
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        political_power_factor = 0.15
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_delors_report # Доклад Делора
+    x = -2
+    y = 1 
+    relative_position_id = EU_focus_hanover_summit
+    prerequisite = { focus = EU_focus_hanover_summit }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_madrid_summit # Мадридский саммит
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_delors_report
+    prerequisite = { focus = EU_focus_delors_report } 
+     
+    cost = 5
+
+    available = {
+        has_idea = EU_member
+        SPR = {
+            has_idea = EU_member
+        }
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_delors_plan # План Делора
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_dublin_council
+    prerequisite = { focus = EU_focus_dublin_council } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_dismantling_currency_barriers # Демонтаж валютных барьеров
+    x = 0
+    y = 1
+    relative_position_id = EU_focus_preparing_for_the_currency_leap
+    prerequisite = { focus = EU_focus_preparing_for_the_currency_leap } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_foundation_of_a_single_central_bank # Фундамент единого Центробанка
+    x = 2
+    y = 1 
+    relative_position_id = EU_focus_three_pillars_of_the_eu
+    prerequisite = { focus = EU_focus_three_pillars_of_the_eu } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_preparing_for_the_currency_leap # Подготовка к валютному прыжку
+    x = -2
+    y = 1
+    relative_position_id = EU_focus_three_pillars_of_the_eu
+    prerequisite = { focus = EU_focus_three_pillars_of_the_eu } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_stability_and_growth_pact # Пакт стабильности и роста
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_foundation_of_a_single_central_bank
+    prerequisite = { focus = EU_focus_foundation_of_a_single_central_bank } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_creation_of_the_ecb # Создание ЕЦБ
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_dismantling_currency_barriers
+    prerequisite = { focus = EU_focus_dismantling_currency_barriers } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_currency_triumph # Валютный триумф
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_stability_and_growth_pact
+    prerequisite = { focus = EU_focus_stability_and_growth_pact } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_introduction_of_the_euro # Введение евро
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_lisbon_treaty
+    prerequisite = { focus = EU_focus_creation_of_the_ecb }
+    prerequisite = { focus = EU_focus_lisbon_treaty }
+    prerequisite = { focus = EU_focus_currency_triumph }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_maastricht_negotiations # Маастрихтские переговоры
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_hanover_summit
+    prerequisite = { focus = EU_focus_hanover_summit }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_dublin_council # Дублинский совет
+    x = 2
+    y = 1 
+    relative_position_id = EU_focus_hanover_summit
+    prerequisite = { focus = EU_focus_hanover_summit }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+        IRE = {
+            has_idea = EU_member
+        }
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_rome_summit # Римский саммит
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_maastricht_negotiations
+    prerequisite = { focus = EU_focus_maastricht_negotiations }
+     
+    cost = 5
+
+    available = {
+        has_idea = EU_member
+        ITA = {
+            has_idea = EU_member
+        }
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_maastricht_treaty # Маастрихтский договор
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_rome_summit
+    prerequisite = { focus = EU_focus_madrid_summit }
+    prerequisite = { focus = EU_focus_rome_summit }
+    prerequisite = { focus = EU_focus_delors_plan } 
+     
+    cost = 5
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_ratification_of_maastricht # Ратификация Маастрихта
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_maastricht_treaty
+    prerequisite = { focus = EU_focus_maastricht_treaty } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_three_pillars_of_the_eu # Три опоры ЕС
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_ratification_of_maastricht
+    prerequisite = { focus = EU_focus_ratification_of_maastricht } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_amsterdam_treaty # Амстердамский договор
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_three_pillars_of_the_eu
+    prerequisite = { focus = EU_focus_three_pillars_of_the_eu } 
+     
+    cost = 5
+
+    available = {
+        has_idea = EU_member
+        HOL = {
+            has_idea = EU_member
+        }
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_nice_treaty # Ниццкий договор
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_amsterdam_treaty
+    prerequisite = { focus = EU_focus_amsterdam_treaty } 
+     
+    cost = 5
+
+    available = {
+        has_idea = EU_member
+        FRA = {
+            has_idea = EU_member
+        }
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_lisbon_treaty # Лиссабонский протокол
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_nice_treaty
+    prerequisite = { focus = EU_focus_nice_treaty } 
+     
+    cost = 5
+
+    available = {
+        has_idea = EU_member
+        POR = {
+            has_idea = EU_member
+        }
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_brussels_dictat # Брюссельский диктат
+    x = -15
+    y = 1
+    relative_position_id = EU_focus_introduction_of_the_euro
+    prerequisite = { focus = EU_focus_introduction_of_the_euro }
+
+    cost = 0
+
+    available = {
+        always = no
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_abolition_of_national_ministries # Упразднение национальных министерств
+    x = -3
+    y = 1
+    relative_position_id = EU_focus_brussels_dictat
+    prerequisite = { focus = EU_focus_brussels_dictat } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_elimination_of_internal_borders # Ликвидация внутренних границ
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_abolition_of_national_ministries
+    prerequisite = { focus = EU_focus_abolition_of_national_ministries } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = {
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_single_tax_service # Единая налоговая служба
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_brussels_dictat
+    prerequisite = { focus = EU_focus_brussels_dictat } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_european_gendarmerie # Европейская Жандармерия
+    x = 3
+    y = 1
+    relative_position_id = EU_focus_brussels_dictat
+    prerequisite = { focus = EU_focus_brussels_dictat } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_single_civil_code # Единый Гражданский Кодекс
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_single_tax_service
+    prerequisite = { focus = EU_focus_single_tax_service } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_nationalization_of_defense_industry # Национализация ВПК
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_european_gendarmerie
+    prerequisite = { focus = EU_focus_european_gendarmerie } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_airbus_defense_corporation # Корпорация «Airbus Defense»
+    x = 1
+    y = 1
+    relative_position_id = EU_focus_nationalization_of_defense_industry
+    prerequisite = { focus = EU_focus_nationalization_of_defense_industry } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_leopard_3_project # Проект «Леопард-3»
+    x = -2
+    y = 1 
+    relative_position_id = EU_focus_airbus_defense_corporation
+    prerequisite = { focus = EU_focus_nationalization_of_defense_industry }
+    prerequisite = { focus = EU_focus_airbus_defense_corporation }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_language_unification # Унификация языков
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_elimination_of_internal_borders
+    prerequisite = { focus = EU_focus_elimination_of_internal_borders } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_ban_on_regional_parties # Запрет региональных партий
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_language_unification
+    prerequisite = { focus = EU_focus_language_unification } 
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_single_intelligence_network # Единая разведывательная сеть
+    x = 0
+    y = 2
+    relative_position_id = EU_focus_single_civil_code
+    prerequisite = { focus = EU_focus_single_civil_code }
+    prerequisite = { focus = EU_focus_language_unification }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_european_ocean_shield # Европейский океанский щит
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_single_intelligence_network
+    prerequisite = { focus = EU_focus_ban_on_regional_parties }
+    prerequisite = { focus = EU_focus_single_intelligence_network }
+    prerequisite = { focus = EU_focus_leopard_3_project }
+    
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_atlantic_challenge # Атлантический вызов
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_european_ocean_shield
+    prerequisite = { focus = EU_focus_european_ocean_shield }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_new_european_constitution # Новая Европейская конституция
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_atlantic_challenge
+    prerequisite = { focus = EU_focus_atlantic_challenge }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    } 
+}
+
+shared_focus = { 
+    id = EU_focus_single_superpower # Единая Сверхдержава
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_new_european_constitution
+    prerequisite = { focus = EU_focus_new_european_constitution }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+        has_completed_focus = EU_focus_european_prosperity_zone
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_project_new_europe # Проект «Новой Европы»
+    x = 15
+    y = 1 
+    relative_position_id = EU_focus_introduction_of_the_euro
+    prerequisite = { focus = EU_focus_introduction_of_the_euro }
+    mutually_exclusive = { focus = EU_focus_brussels_dictat }
+     
+    cost = 0
+
+    available = {
+        always = no
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_meeting_in_paris # Встреча в Париже
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_project_new_europe
+    prerequisite = { focus = EU_focus_project_new_europe }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_start_of_integration # Начало интеграции
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_meeting_in_paris
+    prerequisite = { focus = EU_focus_meeting_in_paris }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_resolve_language_issues # Разрешить языковые проблемы
+    x = -3
+    y = 1
+    relative_position_id = EU_focus_start_of_integration
+    prerequisite = { focus = EU_focus_start_of_integration }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_cultural_unification # Культурное объединение
+    x = 0
+    y = 1
+    relative_position_id = EU_focus_resolve_language_issues
+    prerequisite = { focus = EU_focus_resolve_language_issues }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_languages_schools # Языковые школы
+    x = -2
+    y = 1 
+    relative_position_id = EU_focus_resolve_language_issues
+    prerequisite = { focus = EU_focus_resolve_language_issues }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_submit_idea_of_USE # Вынести идею о СШЕ на заседание
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_single_labor_market
+    prerequisite = { focus = EU_focus_single_labor_market }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_conference_in_antwerp # Конференция в Антверпене
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_submit_idea_of_USE
+    prerequisite = { focus = EU_focus_submit_idea_of_USE }
+    prerequisite = { focus = EU_focus_erasmus_programm }
+    prerequisite = { focus = EU_focus_counter_terrorism_strategy }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+        BEL = {
+            has_idea = EU_member
+        }
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_new_era_of_europe # Новая эра Европы
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_conference_in_antwerp
+    prerequisite = { focus = EU_focus_conference_in_antwerp }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+        has_completed_focus = EU_focus_european_prosperity_zone
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_act_european_solidarity # Акт о европейской солидарности
+    x = 0
+    y = 1
+    relative_position_id = EU_focus_introduction_of_the_euro
+    prerequisite = { focus = EU_focus_introduction_of_the_euro }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_european_communications_agency # Европейское агентство связи
+    x = -4
+    y = 1
+    relative_position_id = EU_focus_act_european_solidarity
+    prerequisite = { focus = EU_focus_act_european_solidarity }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_project_galileo # Проект «Галилео»
+    x = -1
+    y = 1 
+    relative_position_id = EU_focus_european_communications_agency
+    prerequisite = { focus = EU_focus_european_communications_agency }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_gsm_standard # Стандарт GSM
+    x = 1
+    y = 1 
+    relative_position_id = EU_focus_european_communications_agency
+    prerequisite = { focus = EU_focus_european_communications_agency }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_unified_energy_grid # Единая энергосеть
+    x = 2
+    y = 1
+    relative_position_id = EU_focus_high_speed_network
+    prerequisite = { focus = EU_focus_high_speed_network }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_high_speed_network # Сеть скоростных магистралей
+    x = 4
+    y = 1 
+    relative_position_id = EU_focus_act_european_solidarity
+    prerequisite = { focus = EU_focus_act_european_solidarity }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_bologna_system # Болонская система
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_agricultural_subsidies
+    prerequisite = { focus = EU_focus_agricultural_subsidies }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_arian_program # Программа «Ариан»
+    x = 1
+    y = 1
+    relative_position_id = EU_focus_project_galileo
+    prerequisite = { focus = EU_focus_project_galileo }
+    prerequisite = { focus = EU_focus_gsm_standard }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_unified_environmental_standard # Единый экологический стандарт
+    x = -1
+    y = 1 
+    relative_position_id = EU_focus_act_european_solidarity
+    prerequisite = { focus = EU_focus_act_european_solidarity }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_european_court_of_human_rights # Европейский суд по правам человека
+    x = 1
+    y = 1
+    relative_position_id = EU_focus_act_european_solidarity
+    prerequisite = { focus = EU_focus_act_european_solidarity }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_rail_integration # Интеграция железных дорог
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_high_speed_network
+    prerequisite = { focus = EU_focus_high_speed_network }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_joint_research_centre # Совместный исследовательский центр
+    x = 1
+    y = 1
+    relative_position_id = EU_focus_unified_environmental_standard
+    prerequisite = { focus = EU_focus_unified_environmental_standard }
+    prerequisite = { focus = EU_focus_european_court_of_human_rights }
+    
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_cern # Центр ядерных исследований (CERN)
+    x = 0
+    y = 1
+    relative_position_id = EU_focus_joint_research_centre
+    prerequisite = { focus = EU_focus_joint_research_centre }
+    
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_approve_construction_large_hadron_collider # Одобрить строительство адронного коллайдера
+    x = 0
+    y = 1
+    relative_position_id = EU_focus_cern
+    prerequisite = { focus = EU_focus_cern }
+    
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_agricultural_subsidies # Субсидии аграрным предприятиям
+    x = 1
+    y = 1 
+    relative_position_id = EU_focus_rail_integration
+    prerequisite = { focus = EU_focus_rail_integration }
+    prerequisite = { focus = EU_focus_unified_energy_grid }
+    
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_esprite_program # Программа ESPRIT
+    x = 0
+    y = 1
+    relative_position_id = EU_focus_arian_program
+    prerequisite = { focus = EU_focus_arian_program }
+     
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_european_prosperity_zone # Европейская зона процветания
+    x = 4
+    y = 2 
+    relative_position_id = EU_focus_esprite_program
+    prerequisite = { focus = EU_focus_esprite_program }
+    prerequisite = { focus = EU_focus_approve_construction_large_hadron_collider }
+    prerequisite = { focus = EU_focus_bologna_system }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_erasmus_programm # Программа Эразмус
+    x = -1
+    y = 1 
+    relative_position_id = EU_focus_cultural_capital
+    prerequisite = { focus = EU_focus_lingua_programm }
+    prerequisite = { focus = EU_focus_cultural_capital }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_schengen_agreement # Шенгенское соглашение
+    x = 3
+    y = 1 
+    relative_position_id = EU_focus_start_of_integration
+    prerequisite = { focus = EU_focus_start_of_integration }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_poverty_reduction_program # Программа борьбы с бедностью
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_start_of_integration
+    prerequisite = { focus = EU_focus_start_of_integration }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_charter_of_fundamental_rights # Хартия основных прав ЕС
+    x = -1
+    y = 1 
+    relative_position_id = EU_focus_poverty_reduction_program
+    prerequisite = { focus = EU_focus_poverty_reduction_program }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_olaf # Европейский офис по борьбе с мошенничеством (OLAF)
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_schengen_agreement
+    prerequisite = { focus = EU_focus_schengen_agreement }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_committee_of_the_regions # Комитет регионов
+    x = 1
+    y = 1 
+    relative_position_id = EU_focus_poverty_reduction_program
+    prerequisite = { focus = EU_focus_poverty_reduction_program }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_lingua_programm # Программа LINGUA
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_languages_schools
+    prerequisite = { focus = EU_focus_languages_schools }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_cultural_capital # Культурная столица Европы
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_cultural_unification
+    prerequisite = { focus = EU_focus_cultural_unification }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_single_labor_market # Единый рынок труда
+    x = 1
+    y = 1 
+    relative_position_id = EU_focus_charter_of_fundamental_rights
+    prerequisite = { focus = EU_focus_charter_of_fundamental_rights }
+    prerequisite = { focus = EU_focus_committee_of_the_regions }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_frontex # Фронтекс
+    x = 2
+    y = 1
+    relative_position_id = EU_focus_schengen_agreement
+    prerequisite = { focus = EU_focus_schengen_agreement }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_europol # Европол
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_olaf
+    prerequisite = { focus = EU_focus_olaf }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_eurojust # Евроюст
+    x = 0
+    y = 1 
+    relative_position_id = EU_focus_frontex
+    prerequisite = { focus = EU_focus_frontex }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
+
+shared_focus = { 
+    id = EU_focus_counter_terrorism_strategy # Стратегия по борьбе с терроризмом
+    x = 1
+    y = 1 
+    relative_position_id = EU_focus_europol
+    prerequisite = { focus = EU_focus_europol }
+    prerequisite = { focus = EU_focus_eurojust }
+
+    cost = 10
+
+    available = {
+        has_idea = EU_member
+    }
+
+    search_filters = { FOCUS_FILTER_POLITICAL } 
+
+    completion_reward = { 
+        add_political_power = 100 
+    }
+}
