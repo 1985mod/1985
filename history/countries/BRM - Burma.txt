@@ -1,6 +1,6 @@
 ﻿capital = 995 # Rangoon
 
-oob = "BRM_1936"
+set_oob = GEN_1985
 
 # Starting tech
 set_technology = {

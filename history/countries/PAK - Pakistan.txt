@@ -1,5 +1,7 @@
 ﻿capital = 440
 
+set_oob = GEN_1985
+
 oob = "PAK_1985"
 if = {
 	limit = { has_dlc = "Man the Guns" }
