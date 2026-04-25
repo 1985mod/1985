@@ -7,14 +7,12 @@ country_event = {
     picture = GFX_report_event_generic_peace
 
     trigger = {
-        AND = {
-            has_idea = EU_member
-            OR = {
-                has_offensive_war = yes
-                has_government = fascism
-                has_government = communism
-                has_government = neutrality
-            }
+        has_idea = EU_member
+        OR = {
+            has_offensive_war = yes
+            has_government = fascism
+            has_government = communism
+            has_government = neutrality
         }
     }
 

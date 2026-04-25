@@ -25,6 +25,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
+	atomic_research = 1
 }
 
 if = {
@@ -82,6 +83,17 @@ if = {
 	}
 }
 
+complete_special_project = {
+    project = sp:sp_nuclear_reactor
+}
+
+complete_special_project = {
+    project = sp:sp_nuclear_bomb
+}
+
+complete_special_project = {
+    project = sp:sp_thermo_nuclear_bomb
+}
 
 set_convoys = 50
 
@@ -179,4 +191,11 @@ recruit_character = SOV_Shaposhnikov
 recruit_character = SOV_Sokolov
 recruit_character = SOV_Nikolai_Makarov
 
-
+252 = {
+    add_building_construction = {
+        type = nuclear_facility
+        level = 1
+        instant_build = yes
+        province = 11375
+    }
+}

@@ -140,11 +140,20 @@ news_event = {
 
     fire_only_once = yes
     major = yes
+<<<<<<< Updated upstream
 	
 	trigger = {
 		tag = SOV
 		date > 1985.3.4
 	}
+=======
+	option = {
+        name = SOV_dead_cernenko.1.a
+        hidden_effect = {
+            add_stability = -0.3
+        }
+    }
+>>>>>>> Stashed changes
 }
 
 news_event = {
