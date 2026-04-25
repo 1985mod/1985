@@ -25,6 +25,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
+	atomic_research = 1
 }
 
 if = {
@@ -80,6 +81,13 @@ if = {
 		basic_depth_charges = 1
 		mtg_transport = 1
 	}
+}
+
+limit = {
+	has_dlc = "No Step Back"
+}
+complete_special_project = {
+	project = sp:sp_nuclear_reactor
 }
 
 

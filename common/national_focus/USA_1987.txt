@@ -19,6 +19,7 @@ focus_tree = {
         y = 0
         cost = 5
         completion_reward = {
+           remove_opinion_modifier = { target = SOV modifier = evil_empire }
 	    }
 	}
 	
@@ -31,6 +32,9 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+			UNI = {
+				country_event = { id = usa.4 hours = 12 }
+			}
 	    }
 	}
 	
@@ -43,6 +47,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+            MZB = { country_event = usa.4 hours = 12 }
 	    }
 	}
 	
@@ -55,6 +60,9 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+			AFS = {
+				country_event = { id = usa.4 hours = 12 }
+			}
 	    }
 	}
 	

@@ -1,0 +1,46 @@
+always_build_army = {
+	enable = {
+		always = yes
+		NOT = {
+			OR = {
+				original_tag = USA
+				original_tag = SOV
+			}
+		}
+	}
+    abort_when_not_enabled = yes
+	
+    ai_strategy = {
+       type = build_army
+       id = infantry
+       value = 45
+    }
+}
+
+SOV_build_army = {
+	enable = {
+		original_tag = SOV
+	}
+	
+    abort_when_not_enabled = yes
+	
+    ai_strategy = {
+       type = build_army
+       id = infantry
+       value = 180
+    }
+}
+
+USA_build_army = {
+	enable = {
+		original_tag = USA
+	}
+	
+    abort_when_not_enabled = yes
+	
+    ai_strategy = {
+       type = build_army
+       id = infantry
+       value = 170
+    }
+}

@@ -118,6 +118,7 @@ if = {
 		PRC_power_struggles
 		PRC_growing_economy
 		PRC_unitary_republic
+		PRC_shame_in_one_socialist_war
 	}
 }
 

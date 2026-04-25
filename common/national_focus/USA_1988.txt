@@ -167,7 +167,7 @@ focus_tree = {
         icon = GFX_	
         x = 0
         y = 2
-        cost = 5
+        cost = 10
         completion_reward = {
 		    add_stability = 0.05
 			add_popularity = {
@@ -284,7 +284,7 @@ focus_tree = {
         icon = GFX_	
         x = 0
         y = 2
-        cost = 5
+        cost = 10
         completion_reward = {
 		    add_stability = -0.07
 			add_popularity = {
@@ -342,6 +342,208 @@ focus_tree = {
 		available = {
 		   always = no
 		}
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_george_bush_srs_inauguration
+		relative_position_id = USA_republican_victory
+		prerequisite = { focus = USA_republican_victory  }
+        icon = GFX_	
+        x = -4
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_formation_of_the_one_hundred_and_one_us_congress
+		relative_position_id = USA_george_bush_srs_inauguration
+		prerequisite = { focus = USA_george_bush_srs_inauguration  }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_increase_investments_in_stocks
+		relative_position_id = USA_george_bush_srs_inauguration
+		prerequisite = { focus = USA_george_bush_srs_inauguration  }
+        icon = GFX_	
+        x = -2
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_refuse_to_support_repressive_regimes
+		relative_position_id = USA_george_bush_srs_inauguration
+		prerequisite = { focus = USA_formation_of_the_one_hundred_and_one_us_congress  }
+		prerequisite = { focus = USA_increase_investments_in_stocks  }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_support_new_democracies_in_eastern_europe
+		relative_position_id = USA_george_bush_srs_inauguration
+		prerequisite = { focus = USA_refuse_to_support_repressive_regimes  }
+        icon = GFX_	
+        x = 0
+        y = 3
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_reorient_the_armed_forces
+		relative_position_id = USA_george_bush_srs_inauguration
+		prerequisite = { focus = USA_support_new_democracies_in_eastern_europe  }
+		mutually_exclusive = { focus = USA_reduce_federal_budget_spending_on_arms }
+        icon = GFX_	
+        x = -2
+        y = 4
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_start_the_fight_against_terrorism
+		relative_position_id = USA_reorient_the_armed_forces
+		prerequisite = { focus = USA_reorient_the_armed_forces  }
+        icon = GFX_	
+        x = -1
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_ensuring_us_hegemony_in_the_world
+		relative_position_id = USA_reorient_the_armed_forces
+		prerequisite = { focus = USA_reorient_the_armed_forces  }
+        icon = GFX_	
+        x = 1
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_malta_summit
+		relative_position_id = USA_reorient_the_armed_forces
+		prerequisite = { focus = USA_start_the_fight_against_terrorism  }
+		prerequisite = { focus = USA_ensuring_us_hegemony_in_the_world  }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 2.1
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_immigration_reform
+		relative_position_id = USA_malta_summit
+		prerequisite = { focus = USA_malta_summit  }
+        icon = GFX_	
+        x = -2
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_beginning_of_troop_deployment
+		relative_position_id = USA_malta_summit
+		prerequisite = { focus = USA_malta_summit  }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+	
+	
+    focus = { 
+        id = USA_problems_with_kuwait
+		relative_position_id = USA_malta_summit
+		prerequisite = { focus = USA_immigration_reform  }
+		prerequisite = { focus = USA_beginning_of_troop_deployment  }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 1
+		
+        completion_reward = {
+
+	    }
+	}
+	
+    focus = { 
+        id = USA_form_an_anti_iraq_coalition
+		relative_position_id = USA_problems_with_kuwait
+		prerequisite = { focus = USA_problems_with_kuwait  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 2
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_reduce_federal_budget_spending_on_arms
+		relative_position_id = USA_george_bush_srs_inauguration
+		prerequisite = { focus = USA_support_new_democracies_in_eastern_europe  }
+		mutually_exclusive = { focus = USA_reorient_the_armed_forces }
+        icon = GFX_	
+        x = 2
+        y = 4
+        cost = 10
 		
         completion_reward = {
 

@@ -20,6 +20,9 @@ country_event = {
 			base = 10
 		}
 		
+        complete_national_focus = USA_election_day
+		complete_national_focus = USA_republican_victory
+		
 		effect_tooltip = {
 			set_politics = {
 				ruling_party = conservatism
@@ -61,6 +64,9 @@ country_event = {
 			base = 10
 		}
 		
+        complete_national_focus = USA_election_day
+		complete_national_focus = USA_victory_of_the_democrats
+		
 		effect_tooltip = {
 			set_politics = {
 				ruling_party = liberalism
@@ -79,5 +85,96 @@ country_event = {
 				elections_allowed = yes
 			}
 		}
+	}
+}
+
+country_event = {
+   id = usa.3
+   title = usa.3.t
+   desc = usa.3.d
+   picture = GFX_report_dead_chernenko
+
+   fire_only_once = yes
+
+   trigger = {
+       tag = USA
+       date = 1986.09.3
+    }
+
+    option = {
+  		name = usa.2.a
+		ai_chance = {
+			base = 10
+		}
+
+		set_global_flag = USA_sammit_in_reykjavik
+    }
+}
+
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.4.a
+		ai_chance = {
+			base = 75
+		}		
+        FROM = { country_event = usa.5 }
+	}
+
+	option = {
+		name = usa.4.b
+		ai_chance = {
+			base = 25
+		}	
+		FROM = { country_event = usa.6 }
+	}
+}
+
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.5.a
+		ai_chance = {
+			base = 100
+		}		
+        send_equipment = {
+           equipment = infantry_equipment
+           amount = 3500
+           target = FROM
+		}
+		FROM = {
+            add_opinion_modifier = {
+               target = FROM
+               modifier = lend_leased_spanish_civil_war 
+            }	
+	    } 
+	}
+}
+
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.6.a
+		ai_chance = {
+			base = 100
+		}		
 	}
 }
