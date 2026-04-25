@@ -423,11 +423,17 @@ news_event = {
 
     fire_only_once = yes
     major = yes
-	option = {
-	name = SOV_dead_cernenko.1.a
-	hidden_effect = {
-		add_stability = -0.3
+	trigger = {
+		tag = SOV
+		date > 1985.3.4
 	}
+
+    option = {
+        name = SOV_dead_cernenko.1.a
+        hidden_effect = {
+            add_stability = -0.3
+        }
+    }
 }
 
 news_event = {
