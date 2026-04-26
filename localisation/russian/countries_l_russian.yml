@@ -214,6 +214,12 @@
  TUR: "Турецкая Республика"
  TUR_DEF: "Турецкая Республика"
  TUR_ADJ: "Турецк"
+ TUR_liberalism: "Турецкая Республика"
+ TUR_liberalism_DEF: "Турецкая Республика"
+ TUR_conservatism: "Турецкая Республика"
+ TUR_conservatism_DEF: "Турецкая Республика"
+ TUR_neutrality: "Турецкая Республика"
+ TUR_neutrality_DEF: "Турецкая Республика"
  
  GRE_liberalism: "Греческая Республика"
  GRE_liberalism_DEF: "Греческая Республика"

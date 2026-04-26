@@ -40,22 +40,6 @@ focus_tree = {
 	default = yes
 	reset_on_civilwar = no
 
-#Focus for Political Change
-	focus = {
-		id = RCP_political_change
-		icon = GFX_goal_generic_demand_territory
-		x = 59
-		y = 0
-		cost = 6
-		ai_will_do = { factor = 1.5 }
-		available_if_capitulated = yes
-		completion_reward = {
-		add_political_power = 100
-		}
-	}
-
-
-
 	#Focus for Army Effort
 	focus = {
 		id = RCP_army_effort
@@ -96,43 +80,6 @@ uses = 3
 category = industry
 }
 
-		}
-	}
-	
-	#Focus for Misc Political Actions
-	focus = {
-		id = RCP_misc_political_actions
-		icon = GFX_focus_generic_treaty
-		x = 47
-		y = 1
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_political_change }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		date > 1937.1.1
-		is_ai = no
-		}
-		completion_reward = {
-		dd_political_power = 50
-		}
-	}
-		#Focus for Collectivist Ethos
-	focus = {
-		id = RCP_collectivist_ethos
-		icon = GFX_goal_generic_national_unity
-		x = 59
-		y = 1
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_political_change }
-		ai_will_do = {
-			factor = 6
-		}
-		completion_reward = {
-			
 		}
 	}
 
@@ -574,114 +521,6 @@ instant_build = yes
 }
 
 		}
-	}	
-	
-	#Focus for Major Power
-	focus = {
-		id = RCP_major_power
-		icon = GFX_focus_hol_united_netherlands
-		x = 44
-		y = 2
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_misc_political_actions }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			is_major = yes 
-date > 1937.1.1
-		}
-		completion_reward = {
-			
-			country_event = { days = 1 id = rcpnew.1 }
-		}
-		
-	}
-	
-		#Focus for Gain Autonomy
-	focus = {
-		id = RCP_gain_autonomy
-		icon = GFX_goal_continuous_increase_nu
-		x = 47
-		y = 2
-		cost = 4
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_misc_political_actions }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			is_puppet = yes
-		}
-		completion_reward = {
-			
-		}
-	}
-	
-	#Focus for A New Leader?
-	focus = {
-		id = RCP_a_new_leader
-		icon = GFX_focus_jap_cast_the_die
-		x = 50
-		y = 2
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_misc_political_actions }
-		ai_will_do = {
-			factor = 0.1
-		}
-		available = {
-		}
-		completion_reward = {
-			retire_country_leader = yes
-			add_political_power = 25
-		}
-	}
-	
-	#Focus for The Road to War
-	focus = {
-		id = RCP_the_road_to_war
-		icon = GFX_focus_generic_strike_at_democracy1
-		x = 54
-		y = 2
-		cost = 4
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = RCP_collectivist_ethos 
-			focus = RCP_misc_political_actions 
-		}
-		ai_will_do = {
-			factor = 0.01
-		}
-		available = {
-			has_war_support > 0.35
-		}
-		completion_reward = {
-			add_war_support = 0.05
-		}
-	}
-	
-		#Focus for Espionage Agency Developments
-	focus = {
-		id = RCP_espionage_agency_developments
-		icon = GFX_focus_usa_build_the_pentagon
-		x = 66
-		y = 2
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = RCP_collectivist_ethos 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_intelligence_agency = yes
-		}
-		completion_reward = {
-			add_political_power = 25
-		}
 	}
 
 	#Focus for Officer Training Schools
@@ -773,10 +612,6 @@ add_doctrine_cost_reduction = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea = {
-idea = rcp_buy
-days = 15
-}
 		}
 	}
 	
@@ -1033,370 +868,6 @@ instant_build = yes
 			
 		}
 	}
-	
-		#Focus for Industrial Superpower
-	focus = {
-		id = RCP_industrial_superpower
-		icon = GFX_goal_continuous_non_factory_construct
-		x = 43
-		y = 3
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_major_power }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		completion_reward = {
-			swap_ideas = { remove_idea = build_good add_idea = build_good_2 }
-		}
-	}
-	
-	#Focus for The Most Loyal Subjects
-	focus = {
-		id = RCP_the_most_loyal_subjects
-		icon = GFX_goal_continuous_restrict_freedom
-		x = 45
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_major_power }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		completion_reward = {
-			swap_ideas = { remove_idea = rcp_compl add_idea = rcp_comp2 }
-		}
-	}
-	
-	
-	
-	#Focus for Supreme Leader
-	focus = {
-		id = RCP_supreme_leader
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		x = 47
-		y = 3
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_major_power }
-		mutually_exclusive = { focus = RCP_a_true_kakistocracy }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { 
-			add_country_leader_trait = rcp_supreme
-		}
-	} 
-	 
-		#Focus for A True Kakistocracy
-	focus = {
-		id = RCP_a_true_kakistocracy
-		icon = GFX_focus_smiling_buddha
-		x = 50
-		y = 3
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_a_new_leader }
-		mutually_exclusive = { focus = RCP_supreme_leader }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power = 500
-add_country_leader_trait = rcp_kek
-		}
-	}
-	
-	#Focus for Claim Foreign Lands I
-	focus = {
-		id = RCP_claim_foreign_lands_i
-		icon = GFX_goal_generic_major_war
-		x = 52
-		y = 3
-		cost = 2
-		available_if_capitulated = yes
-		available = {
-		}
-		prerequisite = { focus = RCP_the_road_to_war }
-		ai_will_do = {
-			factor = 0.75
-		}
-		
-completion_reward = {
-    # First neighbor
-    random_neighbor_country = {
-        save_event_target_as = first_target_country
-
-        event_target:first_target_country = {
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-        }
-    }
-
-    create_wargoal = {
-        type = take_state_focus
-        target = event_target:first_target_country
-    }
-
-    # Second neighbor
-    random_neighbor_country = {
-        limit = {
-            NOT = { tag = event_target:first_target_country }
-        }
-
-        save_event_target_as = second_target_country
-
-        event_target:second_target_country = {
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-        }
-    }
-
-    create_wargoal = {
-        type = take_state_focus
-        target = event_target:second_target_country
-		}
-	}
-}
-
-	#Focus for Claim Foreign Lands II
-	focus = {
-		id = RCP_claim_foreign_lands_ii
-		icon = GFX_goal_generic_major_war
-		x = 54
-		y = 3
-		cost = 2
-		available_if_capitulated = yes
-		available = {
-		}
-		prerequisite = { focus = RCP_the_road_to_war }
-		ai_will_do = {
-			factor = 0.75
-		}
-		
-completion_reward = {
-    # First neighbor
-    random_neighbor_country = {
-        save_event_target_as = first_target_country
-
-        event_target:first_target_country = {
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-        }
-    }
-
-    create_wargoal = {
-        type = take_state_focus
-        target = event_target:first_target_country
-    }
-
-    # Second neighbor
-    random_neighbor_country = {
-        limit = {
-            NOT = { tag = event_target:first_target_country }
-        }
-
-        save_event_target_as = second_target_country
-
-        event_target:second_target_country = {
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-        }
-    }
-
-    create_wargoal = {
-        type = take_state_focus
-        target = event_target:second_target_country
-		}
-	}
-}
-
-	#Focus for Claim Foreign Lands III
-	focus = {
-		id = RCP_claim_foreign_lands_iii
-		icon = GFX_goal_generic_major_war
-		x = 56
-		y = 3
-		cost = 2
-		available_if_capitulated = yes
-		available = {
-		}
-		prerequisite = { focus = RCP_the_road_to_war }
-		ai_will_do = {
-			factor = 0.75
-		}
-
-completion_reward = {
-    # First neighbor
-    random_neighbor_country = {
-        save_event_target_as = first_target_country
-
-        event_target:first_target_country = {
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-        }
-    }
-
-    create_wargoal = {
-        type = take_state_focus
-        target = event_target:first_target_country
-    }
-
-    # Second neighbor
-    random_neighbor_country = {
-        limit = {
-            NOT = { tag = event_target:first_target_country }
-        }
-
-        save_event_target_as = second_target_country
-
-        event_target:second_target_country = {
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-            random_owned_state = { add_claim_by = ROOT }
-        }
-    }
-
-    create_wargoal = {
-        type = take_state_focus
-        target = event_target:second_target_country
-		}
-	}
-}
-	 
-
-	
-		#Focus for Dismantle the Constitution
-	focus = {
-		id = RCP_dismantle_the_constitution
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		x = 59
-		y = 3
-		cost = 4
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_collectivist_ethos }
-		ai_will_do = {
-			factor = 1
-		}
-		bypass = {
-			OR = {
-has_government = fascism
-has_government = communism 
-}
-		}
-		completion_reward = {
-		add_political_power = 50
-		}
-	}
-	
-	
-	#Focus for Expand Operative Capacity I
-	focus = {
-		id = RCP_expand_operative_capacity_i
-		icon = GFX_focus_generic_military_mission
-		x = 61
-		y = 3
-		cost = 4
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_espionage_agency_developments }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-
-	#Focus for Expand Operative Capacity II
-	focus = {
-		id = RCP_expand_operative_capacity_ii
-		icon = GFX_focus_generic_military_mission
-		x = 63
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_espionage_agency_developments }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		completion_reward = {
-			
-		}
-	}
-
-	#Focus for Expand Operative Capacity III
-	focus = {
-		id = RCP_expand_operative_capacity_iii
-		icon = GFX_focus_generic_military_mission
-		x = 65
-		y = 3
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_espionage_agency_developments }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_idea = rcp_spy_2
-		}
-		completion_reward = {
-			swap_ideas = { remove_idea = rcp_spy_2 add_idea = rcp_spy_3 }
-		}
-	}
-	
-		#Focus for Fund Partisans
-	focus = {
-		id = RCP_fund_partisans
-		icon = GFX_focus_prc_infiltration
-		x = 67
-		y = 3
-		cost = 7
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_espionage_agency_developments }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-	
-	#Focus for Expand Counter Intelligence
-	focus = {
-		id = RCP_expand_counter_intelligence
-		icon = GFX_goal_continuous_def_against_influence
-		x = 69
-		y = 3
-		cost = 7
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_espionage_agency_developments }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
 
 	#Focus for Quantity
 	focus = {
@@ -1511,10 +982,6 @@ instant_build = yes
 			factor = 0.8
 		}
 		completion_reward = {
-			add_timed_idea = {
-idea = rcp_buy
-days = 210
-}
 add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = 1000
@@ -1542,10 +1009,6 @@ add_equipment_to_stockpile = {
 			factor = 0.8
 		}
 		completion_reward = {
-			add_timed_idea = {
-idea = rcp_buy
-days = 120
-}
 add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = 800
@@ -1567,7 +1030,6 @@ add_equipment_to_stockpile = {
 			factor = 100
 		}
 		completion_reward = {
-			swap_ideas = { remove_idea = puppet_yes add_idea = puppet_yes_2 }
 		}
 	}
 	
@@ -1838,46 +1300,6 @@ amount = 15
 		}
 	}
 	
-		#Focus for The Greatest Minds
-	focus = {
-		id = RCP_the_greatest_minds
-		icon = GFX_focus_research2
-		x = 44
-		y = 4
-		cost = 12
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_major_power }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_idea = rcp_fund_2
-		}
-		completion_reward = {
-			swap_ideas = { remove_idea = rcp_fund_2 add_idea = rcp_fund_max }
-		}
-	}
-	
-		#Focus for Grand Army
-	focus = {
-		id = RCP_grand_army
-		icon = GFX_focus_generic_manpower
-		x = 46
-		y = 4
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_major_power }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_army_manpower = { size > 999999 }
-		}
-		completion_reward = {
-			
-		}
-	}
-	
 	#Focus for Bicycle Effort
 	focus = {
 		id = RCP_bicycle_effort
@@ -1971,10 +1393,6 @@ add_doctrine_cost_reduction = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea = {
-idea = rcp_buy
-days = 300
-}
 			add_equipment_to_stockpile = {
 				type = light_tank_equipment
 				amount = 800
@@ -2013,10 +1431,6 @@ days = 300
 				amount = 5000
 				producer = ROOT
 			}
-add_timed_idea = {
-idea = rcp_buy
-days = 60
-}
 		}
 	}
 	
@@ -2900,9 +2314,6 @@ instant_build = yes
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_rare_metals_excavation }
 		completion_reward = {
-			
-swap_ideas = { remove_idea = dig_1 add_idea = dig_2 }
-
 		}
 	}
 
