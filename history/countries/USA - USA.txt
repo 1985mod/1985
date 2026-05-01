@@ -75,7 +75,7 @@ if = {
 	}
 	set_technology = {
 		gwtank = 1
-
+		main_battle_tank_chassis = 1
 	}
 }
 if = {
@@ -85,6 +85,7 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
+		main_battle_tank_chassis = 1
 	}
 	
 }
@@ -164,6 +165,7 @@ add_ideas = {
 USA_reaganomics_policy
 USA_stronghold_of_freedom
 USA_cold_war
+USA_the_endless_war_on_drugs
 }
 
 
@@ -202,6 +204,25 @@ add_to_faction = POR
 add_to_faction = SPR
 add_to_faction = TUR
 add_to_faction = ENG
+
+create_equipment_variant = {
+	name = "M1A1 Abrams"
+	type = modern_armor
+	modules = {
+		main_armament_slot = tank_heavy_machine_gun
+		turret_type_slot = tank_small_cannon
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = secondary_turret_hmg
+	}
+	upgrades = {
+		tank_nsb_armor_upgrade = 3
+		tank_nsb_engine_upgrade = 2
+	}
+	icon = "GFX_ENG_light_BAB_camo"
+	obsolete = yes #export only
+}
 
 if = {
 	limit = {
