@@ -178,3 +178,101 @@ country_event = {
 		}		
 	}
 }
+
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.7.a
+		ai_chance = {
+			base = 90
+		}		
+		FROM = { country_event = usa.8 }
+	}
+
+	option = {
+		name = usa.7.b
+		ai_chance = {
+			base = 10
+		}		
+		FROM = { country_event = usa.9 }
+	}
+}
+
+
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.8.a
+		ai_chance = {
+			base = 90
+		}		
+		FROM = { set_country_flag = anti_iraq_coalition }
+		custom_effect_tooltip = we_join_in_anti_iraq_coalition
+	}
+}
+
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.9.a
+		ai_chance = {
+			base = 90
+		}		
+	}
+}
+
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.10.a
+		ai_chance = {
+			base = 100
+		}		
+        declare_war_on = {
+           target = IRQ
+           type = annex_everything
+        }
+        add_threat = 1
+	}
+}
+
+country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.11.a
+		ai_chance = {
+			base = 100
+		}		
+		add_political_power = 5
+	}
+}
