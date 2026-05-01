@@ -1,0 +1,61 @@
+EU_decision_cat = {
+    EU_add_stability = {
+        icon = generic_industry
+        available = {
+            has_stability < 1
+        }
+
+        visible = {
+            always = yes
+        }
+
+        cost = 50
+        fire_only_once = no
+        days_remove = 30
+
+        complete_effect = {
+            add_stability = 0.1
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 1
+                has_stability < 0.6
+                has_political_power > 150
+            }
+            modifier = {
+                factor = 2
+                has_political_power > 300
+            }
+        }
+    }
+
+    EU_pro_eu_campaign = {
+        icon = generic_industry
+        allowed = {
+            has_idea = EU_member
+        }
+        available = { has_political_power > 50 }
+        cost = 50
+        fire_only_once = no
+        days_re_enable = 365
+
+        complete_effect = {
+            add_to_variable = { var = europeanism value = 8 }
+            add_to_variable = { var = euroscepticism value = -2 }
+            add_timed_idea = { idea = eu_propaganda_boost days = 180 }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 3
+                check_variable = { var = europeanism < 40 }
+            }
+            modifier = {
+                factor = 0.1
+                check_variable = { var = europeanism > 80 }
+            }
+        }
+    }
+}

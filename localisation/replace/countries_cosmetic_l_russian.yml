@@ -779,6 +779,7 @@
  SOV_russia_communism: "Российская  Республика"
  SOV_russia_communism_DEF: "Российская  Республика"
  SOV_russia_communism_ADJ: "Русск"
+<<<<<<< Updated upstream
  HOL_benelux_unified_democratic: "Федерация Бенилюкс"
  HOL_benelux_unified_democratic_DEF: "Федерация Бенилюкс"
  HOL_benelux_unified_democratic_ADJ: "Бенилюксовск"
@@ -2755,3 +2756,35 @@
  neo_mesopotamia_communism: "Народная республика Месопотамия"
  neo_mesopotamia_communism_DEF: "Народная республика Месопотамия"
  neo_mesopotamia_communism_ADJ: "Месопотамск"
+=======
+ SOV_russia_liberalism: "Российская Федерация"
+ SOV_russia_liberalism_DEF: "Российская Федерация"
+ SOV_russia_liberalism_ADJ: "Русск"
+ SOV_russia_conservatism: "Российская Федерация"
+ SOV_russia_conservatism_DEF: "Российская Федерация"
+ SOV_russia_conservatism_ADJ: "Русск"
+ 
+ EU_Federation_neutrality:0 "Европейская Федерация"
+ EU_Federation_neutrality_DEF:0 "Европейская Федерация"
+ EU_Federation_neutrality_ADJ: "Европейск"
+
+ EU_Federation_communism:0 "Европейская коммуна"
+ EU_Federation_communism_DEF:0 "Европейская коммуна"
+ EU_Federation_communism_ADJ: "Европейск"
+
+ EU_Federation_fascism:0 "Европейское Государство"
+ EU_Federation_fascism_DEF:0 "Европейское Государство"
+ EU_Federation_fascism_ADJ: "Европейск"
+
+ EU_Federation_socialism:0 "Европейская Федерация"
+ EU_Federation_socialism_DEF:0 "Европейская Федерация"
+ EU_Federation_socialism_ADJ: "Европейск"
+
+ EU_Federation_liberalism:0 "Европейская Федерация"
+ EU_Federation_liberalism_DEF:0 "Европейская Федерация"
+ EU_Federation_liberalism_ADJ: "Европейск"
+
+ EU_Federation_conservatism:0 "Европейская Федерация"
+ EU_Federation_conservatism_DEF:0 "Европейская Федерация"
+ EU_Federation_conservatism_ADJ: "Европейск"
+>>>>>>> Stashed changes

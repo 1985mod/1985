@@ -25,14 +25,6 @@
  baathism: "Baathism"
  baathism_desc: "Baathism is an ideology of Arab nationalism that aims to create a unified Arab state"
 
- islamism: "Islamism"
- islamism_noun: "Islamism"
- islamism_desc: "Islamic State"
- Salafism: "Salafism"
- Salafism_desc: "Salafism is a movement within Sunni Islam that unites Muslim religious figures who, at various periods in Islamic history, have called for an orientation toward the way of life and faith of the early Muslim community and the righteous ancestors, and labeling all later innovations in these areas as ‘bid‘ah,’ ranging from methods of symbolic and allegorical interpretation of the Quran to all manner of innovations introduced into the Muslim world through its contact with the West"
- Political_Islam: "Salafism"
- Political_Islam_desc: "Political Islam — any interpretation of Islam as a source of political identity and action. The concept of ‘political Islam’ can refer to a wide range of individuals and groups who advocate for the transformation of the state and society in accordance with the principles of Islam."
-
  SOV_communism_party: "CPSU"
  SOV_communism_party_long: "Communist Party of the Soviet Union"
  SOV_socialism_party: "§RNot available§!"

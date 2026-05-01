@@ -1,0 +1,12 @@
+always_build_army = {
+	enable = {
+		always = yes
+	}
+    abort_when_not_enabled = yes
+	
+    ai_strategy = {
+       type = build_army
+       id = infantry
+       value = 180
+    }
+}
