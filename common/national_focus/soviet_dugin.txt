@@ -1,0 +1,92 @@
+focus_tree = {
+	id = soviet_dugin_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	focus = {
+		id = SOV_economic
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		x = 11
+		y = -1
+		available = {
+		}
+		completion_reward = { 
+			add_political_power = -200
+			add_ideas = ideas1
+		}
+	}
+	focus = {
+		id = SOV_ovd
+		icon = GFX_focus_generic_annex_country_2
+		cost = 10
+		x = 13
+		y = 0
+		available = {
+		}
+		completion_reward = { 
+		    custom_effect_tooltip = OVD_i
+		    hidden_effect = {
+		        country_event = SOV_important_choice.2
+		    }
+        }			
+	    prerequisite = { focus = SOV_economic }
+	}
+	focus = {
+		id = SOV_resp
+		icon = GFX_goal_tripartite_pact
+		cost = 10
+		x = 11
+		y = 0
+		available = {
+		has_completed_focus = SOV_ovd
+		}
+		completion_reward = { 
+		    custom_effect_tooltip = Respubli
+		    hidden_effect = {
+		        country_event = SOV_important_choice.3
+		    }
+		}	
+	    prerequisite = { focus = SOV_economic }
+	}
+	focus = {
+		id = SOV_sibir
+		icon = GFX_goal_generic_fortify_city
+		cost = 4
+		x = 9
+		y = 0
+		available = {
+		has_completed_focus = SOV_resp
+		}
+		completion_reward = { 
+		    custom_effect_tooltip = rara
+		}	
+	    prerequisite = { focus = SOV_economic }
+	}
+	focus = {
+		id = SOV_war
+		icon = GFX_goal_generic_major_war
+		cost = 2
+		x = 11
+		y = 1
+		available = {
+		has_completed_focus = SOV_sibir
+		}
+		completion_reward = { 
+		    custom_effect_tooltip = WAR
+			hidden_effect = {
+		        country_event = SOV_important_choice.4
+		    }
+		}	
+	    prerequisite = { focus = SOV_ovd }
+		prerequisite = { focus = SOV_resp }
+		prerequisite = { focus = SOV_sibir }
+	}
+	
