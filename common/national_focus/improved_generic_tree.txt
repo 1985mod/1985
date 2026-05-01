@@ -40,22 +40,6 @@ focus_tree = {
 	default = yes
 	reset_on_civilwar = no
 
-#Focus for Political Change
-	focus = {
-		id = RCP_political_change
-		icon = GFX_goal_generic_demand_territory
-		x = 59
-		y = 0
-		cost = 6
-		ai_will_do = { factor = 1.5 }
-		available_if_capitulated = yes
-		completion_reward = {
-		add_political_power = 100
-		}
-	}
-
-
-
 	#Focus for Army Effort
 	focus = {
 		id = RCP_army_effort
@@ -98,6 +82,7 @@ category = industry
 
 		}
 	}
+<<<<<<< Updated upstream
 	
 	#Focus for Misc Political Actions
 	focus = {
@@ -154,6 +139,8 @@ category = industry
 		mutually_exclusive = { focus = RCP_collectivist_ethos }
 		completion_reward = { }
 	}
+=======
+>>>>>>> Stashed changes
 
 		#Focus for Modernization of the Army
 	focus = {
@@ -593,6 +580,7 @@ instant_build = yes
 }
 
 		}
+<<<<<<< Updated upstream
 	}	
 	
 	#Focus for Major Power
@@ -711,6 +699,8 @@ has_completed_focus = RCP_centrism_gang
 		completion_reward = {
 			add_political_power = 25
 		}
+=======
+>>>>>>> Stashed changes
 	}
 	
 	
@@ -820,10 +810,6 @@ add_doctrine_cost_reduction = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea = {
-idea = rcp_buy
-days = 15
-}
 		}
 	}
 	
@@ -1080,6 +1066,7 @@ instant_build = yes
 			
 		}
 	}
+<<<<<<< Updated upstream
 	
 		#Focus for Industrial Superpower
 	focus = {
@@ -1449,6 +1436,8 @@ has_government = communism
 			
 		}
 	}
+=======
+>>>>>>> Stashed changes
 
 	#Focus for Expand Decryption Capabilities
 	focus = {
@@ -1580,10 +1569,6 @@ instant_build = yes
 			factor = 0.8
 		}
 		completion_reward = {
-			add_timed_idea = {
-idea = rcp_buy
-days = 210
-}
 add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = 1000
@@ -1611,10 +1596,6 @@ add_equipment_to_stockpile = {
 			factor = 0.8
 		}
 		completion_reward = {
-			add_timed_idea = {
-idea = rcp_buy
-days = 120
-}
 add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = 800
@@ -1636,7 +1617,6 @@ add_equipment_to_stockpile = {
 			factor = 100
 		}
 		completion_reward = {
-			swap_ideas = { remove_idea = puppet_yes add_idea = puppet_yes_2 }
 		}
 	}
 	
@@ -1907,6 +1887,7 @@ amount = 15
 		}
 	}
 	
+<<<<<<< Updated upstream
 		#Focus for The Greatest Minds
 	focus = {
 		id = RCP_the_greatest_minds
@@ -2137,6 +2118,9 @@ add_political_power = 25
 	}
 	
 		#Focus for Bicycle Effort
+=======
+	#Focus for Bicycle Effort
+>>>>>>> Stashed changes
 	focus = {
 		id = RCP_bicycle_effort
 		icon = GFX_goal_generic_production2
@@ -2229,10 +2213,6 @@ add_doctrine_cost_reduction = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea = {
-idea = rcp_buy
-days = 300
-}
 			add_equipment_to_stockpile = {
 				type = light_tank_equipment
 				amount = 800
@@ -2271,10 +2251,6 @@ days = 300
 				amount = 5000
 				producer = ROOT
 			}
-add_timed_idea = {
-idea = rcp_buy
-days = 60
-}
 		}
 	}
 	
@@ -3650,9 +3626,6 @@ instant_build = yes
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_rare_metals_excavation }
 		completion_reward = {
-			
-swap_ideas = { remove_idea = dig_1 add_idea = dig_2 }
-
 		}
 	}
 

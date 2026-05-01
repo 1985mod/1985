@@ -1,0 +1,99 @@
+focus_tree = {
+    id = SOV_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 40
+            tag = SOV
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 730 y = 450 }
+
+    focus = { 
+        id = SOV_course_towards_stability
+        icon = GFX_NONE
+        x = 10
+        y = 0
+        cost = 4.4
+  
+        available = {
+          has_country_leader = {
+            character = SOV_konstantin_chernenko
+            ruling_only = yes
+          }
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = { 
+        id = SOV_elections_to_the_supreme_council
+        relative_position_id = SOV_course_towards_stability
+        prerequisite = { focus = SOV_course_towards_stability }
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        cost = 1.5
+          
+        available = {
+          has_country_leader = {
+            character = SOV_konstantin_chernenko
+            ruling_only = yes
+          }
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = { 
+        id = SOV_preparing_for_the_victory_parade
+        relative_position_id = SOV_course_towards_stability
+        prerequisite = { focus = SOV_course_towards_stability }
+        icon = GFX_NONE
+        x = 1
+        y = 1
+        cost = 4.3
+       
+        available = {
+          has_country_leader = {
+            character = SOV_konstantin_chernenko
+            ruling_only = yes
+          }
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+
+        }
+    }
+
+    focus = { 
+        id = SOV_support_for_fraternal_regimes
+        relative_position_id = SOV_preparing_for_the_victory_parade
+        prerequisite = { focus = SOV_preparing_for_the_victory_parade }
+        prerequisite = { focus = SOV_elections_to_the_supreme_council }
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        cost = 8
+       
+        available = {
+          has_country_leader = {
+            character = SOV_konstantin_chernenko
+            ruling_only = yes
+          }
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+}
