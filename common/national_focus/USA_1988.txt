@@ -358,7 +358,11 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.03
+			}
+			add_political_power = 50
 	    }
 	}
 
@@ -415,7 +419,47 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-
+			POL = {
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.03
+				}
+			}
+			CZE = {
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.03
+				}
+			}
+			ROM = {
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.03
+				}
+			}
+			BUL = {
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.03
+				}
+			}
+			add_political_power = -100
 	    }
 	}
 
@@ -430,7 +474,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			army_experience = 25
 	    }
 	}
 
@@ -444,7 +488,7 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-
+			add_ideas = USA_fight_against_terrorism
 	    }
 	}
 
@@ -458,7 +502,7 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-
+			add_ideas = USA_us_world_hegemony
 	    }
 	}
 
@@ -473,7 +517,7 @@ focus_tree = {
         cost = 2.1
 		
         completion_reward = {
-
+			country_event = { id = usa.11 hours = 12 }
 	    }
 	}
 
@@ -501,7 +545,35 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
+			division_template = { 
+				name = "Tanks division"
+				is_locked = no
+				regiments = { 
+			    infantry = { x = 0 y = 0 }
+			    infantry = { x = 0 y = 1 }
+			    infantry = { x = 0 y = 2 }
+			    infantry = { x = 0 y = 3 }
+			    infantry = { x = 1 y = 0 }
+			    infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				infantry = { x = 2 y = 0 }
+				}
 
+				support = {
+			    recon = { x = 0 y = 0 }
+				}
+			}   
+			361 = {
+				create_unit = { 
+					division = "name = \"1. Tanks division\" division_template = \"Tanks division\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"2. Tanks division\" division_template = \"Tanks division\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+			}
 	    }
 	}
 	
@@ -515,9 +587,13 @@ focus_tree = {
         x = 0
         y = 2
         cost = 1
+
+		available = {
+			date > 1990.12.01
+		}
 		
         completion_reward = {
-
+			add_war_support = 0.05
 	    }
 	}
 	
@@ -531,9 +607,49 @@ focus_tree = {
         cost = 2
 		
         completion_reward = {
-
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = FRA
+						tag = EGY
+						tag = SAU
+						tag = KUW
+						tag = UAE
+						tag = OMA
+						tag = PAK
+					}
+				}
+				country_event = { id = usa.7 hours = 12 }
+			}
 	    }
 	}
+
+    focus = { 
+        id = USA_operation_desert_storm
+		relative_position_id = USA_form_an_anti_iraq_coalition
+		prerequisite = { focus = USA_form_an_anti_iraq_coalition  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 3
+		
+        completion_reward = {
+			every_country = {
+				limit = {
+					has_country_flag = anti_iraq_coalition
+				}
+				country_event = { id = usa.10 hours = 12 } 
+			}
+			ROOT = {
+      		    declare_war_on = {
+          		   target = IRQ
+         		   type = annex_everything
+      			}	
+			}
+	    }
+	}
+
 
     focus = { 
         id = USA_reduce_federal_budget_spending_on_arms

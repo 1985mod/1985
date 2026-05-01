@@ -457,4 +457,10 @@ spriteTypes = {
 		name = GFX_Portrait_Ali_Nasser_Muhammad 
 		texturefile = "gfx/leaders/SYE/Portrait_Ali_Nasser_Muhammad "
 	}
+	
+	## PAN ##
+	spriteType = {
+		name = GFX_Portrait_Manuel_Noriega 
+		texturefile = "gfx/leaders/PAN/Portrait_Manuel_Noriega.dds"
+	}
 }

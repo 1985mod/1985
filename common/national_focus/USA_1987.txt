@@ -47,7 +47,16 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            MZB = { country_event = usa.4 hours = 12 }
+			MZB = {
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.02
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.03
+				}
+			}
 	    }
 	}
 	
@@ -75,8 +84,19 @@ focus_tree = {
         icon = GFX_	
         x = 0
         y = 2
-        cost = 5
+        cost = 6.5
+
         completion_reward = {
+			CAM = {
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.02
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.03
+				}
+			}
 	    }
 	}
 	
@@ -87,8 +107,9 @@ focus_tree = {
         icon = GFX_	
         x = 0
         y = 1
-        cost = 5
+        cost = 6.5
         completion_reward = {
+            unlock_decision_category_tooltip = USA_voice_of_america
 	    }
 	}
 	
@@ -100,7 +121,9 @@ focus_tree = {
         x = 0
         y = 1
         cost = 10
+
         completion_reward = {
+            unlock_decision_category_tooltip = USA_war_on_drugs
 	    }
 	}
 	

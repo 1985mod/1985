@@ -13,6 +13,7 @@ shared_focus = {
 
     completion_reward = {
         add_political_power = 100
+        add_stability = 0.05
     }
 } 
 
@@ -32,8 +33,9 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = {
-        add_stability = 0.10
-    } 
+        add_political_power = 75
+        add_war_support = 0.03
+    }
 }
 
 shared_focus = { 
@@ -52,7 +54,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        political_power_factor = 0.15
+        add_political_power = 50
+        add_relation_modifier = { target = FRA modifier = hanover_summit_rapprochement }
     } 
 }
 
@@ -73,7 +76,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 60
+        set_country_flag = delors_report_prepared
     } 
 }
 
@@ -96,7 +100,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 80
+        add_stability = 0.03
     } 
 }
 
@@ -116,7 +121,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 100
+        add_war_support = 0.05
     } 
 }
 
@@ -136,7 +142,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 70
+        set_country_flag = currency_barriers_removed
     } 
 }
 
@@ -156,7 +163,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 90
+        add_stability = 0.05
     } 
 }
 
@@ -176,7 +184,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 80
+        add_manpower = 5000
     } 
 }
 
@@ -196,7 +205,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 120
+        add_stability = 0.10
     } 
 }
 
@@ -216,7 +226,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 150
+        set_country_flag = ecb_created
     } 
 }
 
@@ -236,7 +247,9 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 200
+        add_stability = 0.15
+        add_war_support = 0.05
     } 
 }
 
@@ -257,9 +270,11 @@ shared_focus = {
 
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
-    completion_reward = { 
-        add_political_power = 100 
-    } 
+    completion_reward = {
+        add_political_power = 250
+        set_country_flag = euro_introduced
+        add_stability = 0.10
+    }
 }
 
 shared_focus = { 
@@ -278,7 +293,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 100
+        set_country_flag = maastricht_negotiations_ongoing
     } 
 }
 
@@ -301,7 +317,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 80
+        add_relation_modifier = { target = IRL modifier = dublin_council_agreement }
     } 
 }
 
@@ -324,7 +341,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 100
+        add_stability = 0.05
     } 
 }
 
@@ -346,7 +364,9 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 200
+        add_stability = 0.10
+        set_country_flag = maastricht_signed
     } 
 }
 
