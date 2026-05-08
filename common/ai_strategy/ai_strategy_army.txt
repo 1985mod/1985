@@ -13,7 +13,7 @@ always_build_army = {
     ai_strategy = {
        type = build_army
        id = infantry
-       value = 45
+       value = 35
     }
 }
 
@@ -27,7 +27,7 @@ SOV_build_army = {
     ai_strategy = {
        type = build_army
        id = infantry
-       value = 180
+       value = 250
     }
 }
 
@@ -41,6 +41,6 @@ USA_build_army = {
     ai_strategy = {
        type = build_army
        id = infantry
-       value = 170
+       value = 200
     }
 }

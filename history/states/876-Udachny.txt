@@ -2,6 +2,12 @@ state = {
 	id = 876 
 	name = "STATE_876" #Udachny
 
+	resources = {
+		steel = 10
+		aluminium = 3
+		tungsten = 9
+	}
+
 	history = {
 		owner = SOV
 

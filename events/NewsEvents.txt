@@ -105,7 +105,7 @@ news_event = {
 	trigger = {
         NOT = { has_global_flag = iraq_invasion_in_kuweit }
         IRQ = { has_war_with = KUW }
-		date > 1990.8.1
+		date > 1990.1.1
 	}
 }
 
@@ -119,16 +119,50 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		tag = SOV
+        NOT = { has_global_flag = usa_visit_steve_jobs }
+		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
+		date > 1985.7.4
 	}
 
 	option = {
 		name = SOV_chernobyl.1.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = SOV_chernobyl.1.a
+		trigger = { TAG = SOV }
 		hidden_effect = {
 			add_stability = -0.15
 			add_war_support = -0.05
 			add_political_power = -50
 			add_manpower = -10000
 		}
+	}
+}
+
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.desc
+	picture = GFX_news_yugoslav_wars
+
+	major = yes
+
+	immediate = {
+		set_global_flag = yugoslav_wars_started
+	}
+	
+	trigger = {
+		NOT = { has_global_flag = yugoslav_wars_started }
+		YUG = { has_war_with = CRO }
+		country_exists = CRO
+	}
+
+	option = {
+		name = news.5.a
 	}
 }

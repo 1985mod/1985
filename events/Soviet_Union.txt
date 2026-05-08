@@ -390,3 +390,64 @@ country_event = {
         }
     }
 }
+
+news_event = {
+	id = SOV_chernobyl.2
+	title = SOV_chernobyl.2.t
+	desc = SOV_chernobyl.2.desc
+	picture = GFX_news_SOV_chernobyl
+
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+		name = SOV_chernobyl.1.a
+		hidden_effect = {
+			add_stability = -0.15
+			add_war_support = -0.05
+			add_political_power = -50
+			add_manpower = -10000
+		}
+	}
+}
+
+news_event = {
+	id = SOV_dead_cernenko.1
+	title = SOV_dead_cernenko.1.t
+	desc = SOV_dead_cernenko.1.desc
+	picture = GFX_news_SOV_dead_chernenko2
+
+    fire_only_once = yes
+    major = yes
+	trigger = {
+		tag = SOV
+		date > 1985.3.4
+	}
+
+    option = {
+        name = SOV_dead_cernenko.1.a
+        hidden_effect = {
+            add_stability = -0.3
+        }
+    }
+}
+
+news_event = {
+	id = SOV_jobs_ussr.3
+	title = SOV_jobs_ussr.3.t
+	desc = SOV_jobs_ussr.3.desc
+	picture = GFX_news_SOV_jobs_ussr
+    
+	fire_only_once = yes
+    major = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_leader = { name = "SOV_mikhail_gorbachev" }
+		date > 1985.7.4
+	}
+}

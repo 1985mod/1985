@@ -16,7 +16,8 @@ state={
 		add_core_of = AFN
 		add_core_of = AFS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			arms_factory = 1
 		}
 		victory_points = { 13414 3 }
 		

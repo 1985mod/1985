@@ -1,10 +1,10 @@
-add_namespace = YUG_collapse
+add_namespace = yugoslavia
 
 ### Единый ивент: Распад Югославии
 country_event = {
-	id = YUG_collapse.1
-	title = YUG_collapse.1.t
-	desc = YUG_collapse.1.desc
+	id = yugoslavia.1
+	title = yugoslavia.1.t
+	desc = yugoslavia.1.desc
 	hidden = yes
 
 	trigger = {
@@ -33,7 +33,6 @@ country_event = {
 			}
 			CRO = { transfer_state = 852 }
 			CRO = { transfer_state = 103 }
-			CRO = { transfer_state = 163 }
 			CRO = { transfer_state = 109 }
 			set_country_flag = collapse_CRO
 		}
@@ -88,6 +87,100 @@ country_event = {
 			}
 			KOS = { transfer_state = 802 }
 			set_country_flag = collapse_KOS
+		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.2
+	title = yugoslavia.2.t
+	desc = yugoslavia.2.desc
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1991.06.27
+	}
+
+	fire_only_once = yes
+
+	option = {
+		ROOT = {
+			declare_war_on = { target = CRO type = annex_everything }	
+		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.3
+	title = yugoslavia.3.t
+	desc = yugoslavia.3.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1990.05.16
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.3.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = communism
+			promote_character = {
+				character = YUG_borisav_jovic
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.4
+	title = yugoslavia.4.t
+	desc = yugoslavia.4.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1991.07.01
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.4.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = communism
+			promote_character = {
+				character = YUG_stipe_mesic
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
 		}
 	}
 }

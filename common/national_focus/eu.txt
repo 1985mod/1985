@@ -7,6 +7,9 @@ shared_focus = {
 
     available = {
         has_idea = EU_member
+        NOT = {
+            has_global_flag = eu_legacy
+        }
     }
 
     search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -14,6 +17,7 @@ shared_focus = {
     completion_reward = {
         add_political_power = 100
         add_stability = 0.05
+        set_global_flag = eu_legacy
     }
 } 
 
@@ -55,6 +59,7 @@ shared_focus = {
 
     completion_reward = { 
         add_political_power = 50
+        research_speed_factor = 0.05
         add_relation_modifier = { target = FRA modifier = hanover_summit_rapprochement }
     } 
 }
@@ -800,7 +805,24 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100 
+        add_political_power = 100
+        set_cosmetic_tag = EU_Federation
+        every_country = {
+            if = {
+                limit = {
+                    has_idea = EU_member
+                }
+                every_owned_state = {
+                    add_core_of = ROOT
+                }
+                ROOT = {
+                    annex_country = {
+                        target = PREV
+                        transfer_troops = yes
+                    }
+                }
+            }
+        }
     }
 }
 

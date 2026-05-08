@@ -12542,5 +12542,14 @@ spriteTypes = {
 		name = "GFX_focus_PLACEHOLDER"
 		texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
 	}
+
+	################
+	##1985##########
+	################
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_reagan_two_presidense"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_reagan_two_presidense.dds"
+	}
 	
 }

@@ -1,6 +1,7 @@
 ﻿capital = 47
 
-oob = "GRE_1985"
+oob = "GEN_1985"
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "GRE_1985_naval_mtg"
