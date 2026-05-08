@@ -24,6 +24,17 @@ spriteTypes = {
 		name = "GFX_report_gorbachev_vs_romanov"
 		texturefile = "gfx/event_pictures/report_gorbachev_vs_romanov.dds"
 	}
+
+	spriteType = {
+		name = "GFX_news_SOV_chernobyl"
+		texturefile = "gfx/event_pictures/news_SOV_chernobyl.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_yugoslav_wars"
+		texturefile = "gfx/event_pictures/news_yugoslav_wars.dds"
+	}
+
 }
 
 

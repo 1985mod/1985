@@ -13,4 +13,32 @@ characters = {
 			id = -1
 		}
 	}
+	YUG_stipe_mesic = {
+		name = YUG_stipe_mesic
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/portrait_YUG_Stipe_Mesic.dds"
+			}
+		}
+		country_leader = {
+			ideology = communist_perestroika
+			traits = { }
+			expire = "2000.3.1.1"
+			id = -1
+		}
+	}
+	YUG_borisav_jovic = {
+		name = YUG_borisav_jovic
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/portrait_YUG_Borisav_Jovic.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = { }
+			expire = "2000.3.1.1"
+			id = -1
+		}
+	}
 }

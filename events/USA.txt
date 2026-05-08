@@ -247,6 +247,10 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		has_country_flag = anti_iraq_coalition
+	}
+
 	option = {
 		name = usa.10.a
 		ai_chance = {

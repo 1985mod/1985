@@ -1,5 +1,7 @@
 ﻿capital = 559
 
+oob = "GEN_1985"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

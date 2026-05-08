@@ -355,7 +355,7 @@ focus_tree = {
         icon = GFX_	
         x = -4
         y = 1
-        cost = 5
+        cost = 6
 		
         completion_reward = {
 			add_popularity = {
@@ -536,6 +536,31 @@ focus_tree = {
 	}
 
     focus = { 
+        id = USA_increase_influence_in_the_middle_east
+		relative_position_id = USA_malta_summit
+		prerequisite = { focus = USA_malta_summit  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+			diplomatic_relation = {
+				country = SAU
+				relation = military_access
+			}
+			diplomatic_relation = {
+				country = KUW
+				relation = military_access
+			}
+			diplomatic_relation = {
+				country = QAT
+				relation = military_access
+			}
+	    }
+	}
+
+    focus = { 
         id = USA_beginning_of_troop_deployment
 		relative_position_id = USA_malta_summit
 		prerequisite = { focus = USA_malta_summit  }
@@ -581,8 +606,8 @@ focus_tree = {
     focus = { 
         id = USA_problems_with_kuwait
 		relative_position_id = USA_malta_summit
-		prerequisite = { focus = USA_immigration_reform  }
-		prerequisite = { focus = USA_beginning_of_troop_deployment  }
+		prerequisite = { focus = USA_immigration_reform focus = USA_beginning_of_troop_deployment  }
+		prerequisite = { focus = USA_increase_influence_in_the_middle_east  }
         icon = GFX_	
         x = 0
         y = 2
@@ -605,6 +630,8 @@ focus_tree = {
         x = 0
         y = 1
         cost = 2
+
+		will_lead_to_war_with = IRQ
 		
         completion_reward = {
 			every_country = {
@@ -632,7 +659,9 @@ focus_tree = {
         icon = GFX_	
         x = 0
         y = 1
-        cost = 3
+        cost = 5
+
+		will_lead_to_war_with = IRQ
 		
         completion_reward = {
 			every_country = {
@@ -650,6 +679,93 @@ focus_tree = {
 	    }
 	}
 
+    focus = { 
+        id = USA_massive_airstrikes_on_air_bases
+		relative_position_id = USA_operation_desert_storm
+		prerequisite = { focus = USA_operation_desert_storm  }
+        icon = GFX_	
+        x = -2
+        y = 1
+        cost = 1
+
+		available = {
+			has_war_with = IRQ
+		}
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_gain_air_superiority
+		relative_position_id = USA_massive_airstrikes_on_air_bases
+		prerequisite = { focus = USA_massive_airstrikes_on_air_bases  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 1
+
+		available = {
+			has_war_with = IRQ
+		}
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_use_the_global_positioning_system
+		relative_position_id = USA_operation_desert_storm
+		prerequisite = { focus = USA_operation_desert_storm  }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 1
+
+		available = {
+			has_war_with = IRQ
+		}
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_cooperation_with_allied_forces
+		relative_position_id = USA_use_the_global_positioning_system
+		prerequisite = { focus = USA_use_the_global_positioning_system  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 1
+
+		available = {
+			has_war_with = IRQ
+		}
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_victory_in_iraq
+		relative_position_id = USA_operation_desert_storm
+		prerequisite = { focus = USA_gain_air_superiority  }
+		prerequisite = { focus = USA_cooperation_with_allied_forces  }
+        icon = GFX_	
+        x = 0
+        y = 3
+        cost = 1
+		
+        completion_reward = {
+
+	    }
+	}
+
 
     focus = { 
         id = USA_reduce_federal_budget_spending_on_arms
@@ -662,7 +778,7 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-
+			add_political_power = 1000
 	    }
 	}
 }

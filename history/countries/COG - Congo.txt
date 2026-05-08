@@ -1,6 +1,6 @@
 ﻿capital = 295 Kinshaasa
 
-set_oob = "COG_1985"
+set_oob = "GEN_1985"
 
 # Starting tech
 set_technology = {
