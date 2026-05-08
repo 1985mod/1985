@@ -15,7 +15,7 @@ focus_tree = {
 	
     focus = { 
         id = USA_reagans_second_presidency
-        icon = GFX_	
+        icon = GFX_
         x = 15
         y = 0
         cost = 5
