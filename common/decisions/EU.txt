@@ -33,19 +33,41 @@ EU_decision_cat = {
 
     EU_pro_eu_campaign = {
         icon = generic_industry
-        allowed = {
-            has_idea = EU_member
+        available = {
+            has_political_power > 50
         }
-        available = { has_political_power > 50 }
         cost = 50
         fire_only_once = no
         days_re_enable = 365
 
-        complete_effect = {
-            add_to_variable = { var = europeanism value = 8 }
-            add_to_variable = { var = euroscepticism value = -2 }
-            add_timed_idea = { idea = eu_propaganda_boost days = 180 }
-        }
+        remove_effect = {
+            FROM = {
+				add_to_variable = {
+					var = ROOT.europeanism
+					value = +5
+				}
+				clamp_variable = {
+					var = ROOT.euroscepticism
+					min = 0
+					max = 100
+				}
+			}
+            
+            FROM = {
+				add_to_variable = {
+					var = ROOT.europeanism
+					value = +5
+				}
+				clamp_variable = {
+					var = ROOT.euroscepticism
+					min = 0
+					max = 100
+				}
+			}
+			custom_effect_tooltip = add_pro_eu_campaign
+			custom_effect_tooltip = add_3_integration_uyghurs_tt
+        }    
+        
         ai_will_do = {
             factor = 1
             modifier = {

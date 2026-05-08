@@ -9,10 +9,10 @@ state = {
 	history = {
 		owner = SOV
 		victory_points = {
-			3757 2 
+			3757 2
 		}
 		victory_points = {
-			741 1 
+			13384 1
 		}
 		buildings = {
 		
