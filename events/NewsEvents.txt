@@ -3,3 +3,166 @@
 ###########################
 
 add_namespace = news
+
+news_event = {
+    id = news.1
+    title = news.1.t
+    desc = news.1.d
+
+	major = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+
+    trigger = {
+		NOT = { has_global_flag = USA_sammit_in_reykjavik_news }
+        has_global_flag = USA_sammit_in_reykjavik
+        date > 1986.11.13
+    }
+	
+	immediate = {
+		set_global_flag = USA_sammit_in_reykjavik_news
+	}
+
+    option = {
+        name = news.1.a
+        ai_chance = {
+			base = 10
+        }
+    }
+}
+
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.desc
+	picture = GFX_news_SOV_dead_chernenko2
+
+    major = yes
+
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	trigger = {
+        NOT = { has_global_flag = usa_dead_chernenko }
+		tag = SOV
+		date > 1985.3.7
+	}
+
+	immediate = {
+		set_global_flag = usa_dead_chernenko
+	}
+
+    option = {
+        name = SOV_dead_cernenko.1.a
+        hidden_effect = {
+            add_stability = -0.3
+        }
+    }
+}
+
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.desc
+	picture = GFX_news_SOV_jobs_ussr
+    
+    major = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	immediate = {
+		set_global_flag = usa_visit_steve_jobs
+	}
+	
+	trigger = {
+        NOT = { has_global_flag = usa_visit_steve_jobs }
+		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
+		date > 1985.7.4
+	}
+}
+
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.desc
+	picture = GFX_news_SOV_jobs_ussr
+    
+    major = yes
+
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	immediate = {
+		set_global_flag = iraq_invasion_in_kuweit
+	}
+	
+	trigger = {
+        NOT = { has_global_flag = iraq_invasion_in_kuweit }
+        IRQ = { has_war_with = KUW }
+		date > 1990.1.1
+	}
+}
+
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.desc
+	picture = GFX_news_SOV_chernobyl
+
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+        NOT = { has_global_flag = usa_visit_steve_jobs }
+		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
+		date > 1985.7.4
+	}
+
+	option = {
+		name = SOV_chernobyl.1.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = SOV_chernobyl.1.a
+		trigger = { TAG = SOV }
+		hidden_effect = {
+			add_stability = -0.15
+			add_war_support = -0.05
+			add_political_power = -50
+			add_manpower = -10000
+		}
+	}
+}
+
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.desc
+	picture = GFX_news_yugoslav_wars
+
+	major = yes
+
+	immediate = {
+		set_global_flag = yugoslav_wars_started
+	}
+	
+	trigger = {
+		NOT = { has_global_flag = yugoslav_wars_started }
+		YUG = { has_war_with = CRO }
+		country_exists = CRO
+	}
+
+	option = {
+		name = news.5.a
+	}
+}

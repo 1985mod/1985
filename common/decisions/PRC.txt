@@ -15,12 +15,15 @@ PRC_uyghur_resistance = {
 		cost = 75
 		fire_only_once = no
 		days_remove = 30
+
 		ai_will_do = {
 			factor = 2
 		}
+
 		modifier = {
 			political_power_gain = -0.25
 		}
+		
 		remove_effect = {
 			FROM = {
 				add_to_variable = {

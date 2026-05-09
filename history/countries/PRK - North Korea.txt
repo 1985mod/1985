@@ -19,6 +19,18 @@ recruit_character = PRK_kang_sung_sang
 recruit_character = PRK_yong_hyun_muk
 recruit_character = PRK_kang_hyun_seop
 
+add_opinion_modifier = {
+    target = KOR
+    modifier = divided_into_two_parts 
+}	
+
+KOR = {
+add_opinion_modifier = {
+    target = PRK
+    modifier = divided_into_two_parts 
+}	
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"

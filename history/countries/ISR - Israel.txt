@@ -1,4 +1,6 @@
 ﻿capital = 454
+
+set_oob = GEN_1985
  
 # Starting tech
 set_technology = {

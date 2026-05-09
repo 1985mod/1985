@@ -1,0 +1,29 @@
+add_namespace = european_union
+
+country_event = {
+    id = european_union.1
+    title = european_union.1.t
+    desc = european_union.1.d
+    picture = GFX_report_event_generic_peace
+
+    trigger = {
+        has_idea = EU_member
+        OR = {
+            has_offensive_war = yes
+            has_government = fascism
+            has_government = communism
+            has_government = neutrality
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1 
+    }
+    
+    fire_only_once = no
+
+    option = {
+        name = european_union.1.a
+        remove_ideas = EU_member
+    }
+}

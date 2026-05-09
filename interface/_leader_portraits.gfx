@@ -495,4 +495,21 @@ spriteTypes = {
 		name = "GFX_portrait_unknown_female"
 		texturefile = "gfx/leaders/leader_unknown_female.dds"
 	}
+	
+	### 1985 ###
+	
+	spriteType = {
+		name = "GFX_Portrait_george_bush"
+		texturefile = "gfx/leaders/USA/Portrait_George_Bush.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_michael_dukakis"
+		texturefile = "gfx/leaders/USA/Portrait_Michael_Dukakis.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Muhammadu_Buhari"
+		texturefile = "gfx/leaders/NGA/Portrait_Muhammadu_Buhari.dds"
+	}
 }

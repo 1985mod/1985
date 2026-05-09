@@ -1,6 +1,6 @@
 ﻿capital = 293
 
-oob = "SYE_1985"
+oob = "GEN_1985"
 
 # Starting tech
 set_technology = {
