@@ -19,7 +19,7 @@ ideas = {
 			}
 		}
 		SOV_economic_stagnation = {
-			picture = generic_economic_recovery 
+			picture = NONE
 			allowed = {
 				original_tag = SOV
 			}
@@ -38,7 +38,7 @@ ideas = {
 			}
 		}
 		SOV_cold_war = {
-			picture = anti_soviet_pact 
+			picture = NONE 
 			allowed = {
 				original_tag = SOV
 			}
@@ -56,5 +56,22 @@ ideas = {
 			  request_lease_tension = -0.5
 			}
 		}		
-    }
+    	SOV_anti_alcohol_campaign = {
+			picture = NONE
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			 production_factory_efficiency_gain_factor = 0.05
+			 consumer_goods_factor = 0.15
+			}
+		}
+	}
 }

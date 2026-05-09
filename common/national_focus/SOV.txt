@@ -4,7 +4,11 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 1000
+<<<<<<< Updated upstream
+            add = 40
+=======
+            add = 10
+>>>>>>> Stashed changes
             tag = SOV
         }
     }
@@ -15,77 +19,146 @@ focus_tree = {
 
     focus = { 
         id = SOV_course_towards_stability
-        icon = GFX_
+        icon = GFX_NONE
         x = 10
         y = 0
-        cost = 1.5
+<<<<<<< Updated upstream
+        cost = 4.4
+  
+        available = {
+          has_country_leader = {
+            character = SOV_konstantin_chernenko
+            ruling_only = yes
+          }
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+=======
+        cost = 3
 		available = {
 			has_country_leader = {
 				character = SOV_konstantin_chernenko
 				ruling_only = yes
+            }
 		}
 		completion_reward = {
             add_political_power = 12
-			}
+            add_stability = 0.08
 		}
     } 
+>>>>>>> Stashed changes
 
     focus = { 
         id = SOV_elections_to_the_supreme_council
         relative_position_id = SOV_course_towards_stability
         prerequisite = { focus = SOV_course_towards_stability }
-        icon = GFX_
+        icon = GFX_NONE
         x = -1
         y = 1
-        cost = 2.2
+<<<<<<< Updated upstream
+        cost = 1.5
+          
+        available = {
+          has_country_leader = {
+            character = SOV_konstantin_chernenko
+            ruling_only = yes
+          }
+        }
+=======
+        cost = 4
 		available = {
 			has_country_leader = {
 				character = SOV_konstantin_chernenko
 				ruling_only = yes
+            }
 		}
+
 		completion_reward = {
             add_political_power = 10
-			}
+            country_event = { id = SOV_sovet_union.6 }
 		}
     } 
+>>>>>>> Stashed changes
 
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
 
     focus = { 
         id = SOV_preparing_for_the_victory_parade
         relative_position_id = SOV_course_towards_stability
         prerequisite = { focus = SOV_course_towards_stability }
-        icon = GFX_
+        icon = GFX_NONE
         x = 1
         y = 1
-        cost = 2.9
+        cost = 4.3
+       
         available = {
+<<<<<<< Updated upstream
+          has_country_leader = {
+            character = SOV_konstantin_chernenko
+            ruling_only = yes
+          }
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+
+        }
+    }
+=======
+            has_completed_focus = SOV_elections_to_the_supreme_council
 			has_country_leader = {
 				character = SOV_konstantin_chernenko
 				ruling_only = yes
+            }
 		}
+
 		completion_reward = {
             add_political_power = 10
-			}
+
 		}
     } 
+>>>>>>> Stashed changes
 
     focus = { 
         id = SOV_support_for_fraternal_regimes
         relative_position_id = SOV_preparing_for_the_victory_parade
         prerequisite = { focus = SOV_preparing_for_the_victory_parade }
         prerequisite = { focus = SOV_elections_to_the_supreme_council }
-        icon = GFX_
+        icon = GFX_NONE
         x = -1
         y = 1
+<<<<<<< Updated upstream
+        cost = 8
+       
+        available = {
+          has_country_leader = {
+            character = SOV_konstantin_chernenko
+            ruling_only = yes
+          }
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+=======
         cost = 2.9
 		available = {
 			has_country_leader = {
 				character = SOV_konstantin_chernenko
 				ruling_only = yes
+            }
 		}
+
 		completion_reward = {
             add_political_power = 10
-			}
 		}
     } 
+>>>>>>> Stashed changes
 }

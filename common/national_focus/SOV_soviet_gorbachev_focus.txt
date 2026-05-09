@@ -1,0 +1,390 @@
+focus_tree = {
+    id = SOV_soviet_gorbachev_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 2
+            tag = SOV
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 1500 y = 200 }
+
+    focus = { 
+        id = SOV_gorbachev_the_new_general_secretary
+        icon = GFX_NONE
+        x = 10
+        y = 0
+        cost = 1
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_acceleration_course
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_gorbachev_the_new_general_secretary
+        prerequisite = { focus = SOV_gorbachev_the_new_general_secretary }
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_new_foreign_minister
+        icon = GFX_NONE
+        x = -2
+        y = 1
+        relative_position_id = SOV_acceleration_course
+        prerequisite = { focus = SOV_acceleration_course }
+        cost = 5
+        completion_reward = {
+            country_event = { id = SOV_sovet_union.9 }
+        }
+    }
+
+    focus = { 
+        id = SOV_housing_2000_program
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_new_foreign_minister
+        prerequisite = { focus = SOV_new_foreign_minister }
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_replacing_tikhonov_with_ryzhkov
+        icon = GFX_NONE
+        x = 1
+        y = 1
+        relative_position_id = SOV_new_foreign_minister
+        prerequisite = { focus = SOV_new_foreign_minister }
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_the_beginning_of_the_anti_alcohol_campaign
+        icon = GFX_NONE
+        x = 2
+        y = 1
+        relative_position_id = SOV_acceleration_course
+        prerequisite = { focus = SOV_acceleration_course }
+        cost = 5
+        completion_reward = {
+            country_event = { id = SOV_sovet_union.10 }
+            add_ideas = SOV_anti_alcohol_campaign
+        }
+    }
+
+    focus = { 
+        id = SOV_closure_of_unwanted_factories
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_the_beginning_of_the_anti_alcohol_campaign
+        prerequisite = { focus = SOV_the_beginning_of_the_anti_alcohol_campaign }
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_destruction_of_vineyards
+        icon = GFX_NONE
+        x = 1
+        y = 1
+        relative_position_id = SOV_the_beginning_of_the_anti_alcohol_campaign
+        prerequisite = { focus = SOV_the_beginning_of_the_anti_alcohol_campaign }
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_geneva_meeting
+        icon = GFX_NONE
+        x = -3
+        y = 1
+        relative_position_id = SOV_destruction_of_vineyards
+        prerequisite = { focus = SOV_replacing_tikhonov_with_ryzhkov }
+        prerequisite = { focus = SOV_destruction_of_vineyards }
+        prerequisite = { focus = SOV_closure_of_unwanted_factories }
+        prerequisite = { focus = SOV_housing_2000_program }
+        cost = 5
+        completion_reward = {
+            country_event = { id = SOV_sovet_union.7 }
+        }
+    }
+
+    focus = { 
+        id = SOV_elimination_of_weapons_funding
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_geneva_meeting
+        prerequisite = { focus = SOV_geneva_meeting}
+        allow_branch = {has_country_flag = SOV_elimination_of_nuclear_weapons}
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_xxvii_congress_of_the_cpsu
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_elimination_of_weapons_funding
+        prerequisite = { focus = SOV_elimination_of_weapons_funding}
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_launch_of_mir_station
+        icon = GFX_NONE
+        x = -2
+        y = 1
+        relative_position_id = SOV_elimination_of_weapons_funding
+        prerequisite = { focus = SOV_elimination_of_weapons_funding}
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_visit_to_hungary
+        icon = GFX_NONE
+        x = 2
+        y = 1
+        relative_position_id = SOV_elimination_of_weapons_funding
+        prerequisite = { focus = SOV_elimination_of_weapons_funding}
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_introduction_of_state_acceptance
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_xxvii_congress_of_the_cpsu
+        prerequisite = { focus = SOV_elimination_of_weapons_funding}
+        prerequisite = { focus = SOV_xxvii_congress_of_the_cpsu focus = SOV_launch_of_mir_station}
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_renewal_of_the_ministry_of_foreign_affairs_composition
+        icon = GFX_NONE
+        x = 1
+        y = 1
+        relative_position_id = SOV_xxvii_congress_of_the_cpsu
+        prerequisite = { focus = SOV_elimination_of_weapons_funding}
+        prerequisite = { focus = SOV_xxvii_congress_of_the_cpsu focus = SOV_visit_to_hungary }
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_the_fight_against_unearned_income
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_renewal_of_the_ministry_of_foreign_affairs_composition
+        prerequisite = { focus = SOV_renewal_of_the_ministry_of_foreign_affairs_composition}
+        prerequisite = { focus = SOV_introduction_of_state_acceptance}
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_decree_on_the_establishment_of_cooperatives_in_the_tnp
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id =  SOV_the_fight_against_unearned_income
+        prerequisite = { focus = SOV_the_fight_against_unearned_income}
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_law_on_individual_labor_activity
+        icon = GFX_NONE
+        x = 1
+        y = 1
+        relative_position_id =  SOV_the_fight_against_unearned_income
+        prerequisite = { focus = SOV_the_fight_against_unearned_income}
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_the_fall_of_zheltoksan
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_law_on_individual_labor_activity
+        prerequisite = { focus = SOV_law_on_individual_labor_activity }
+        prerequisite = { focus = SOV_decree_on_the_establishment_of_cooperatives_in_the_tnp }
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_release_of_dissidents
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_the_fall_of_zheltoksan
+        prerequisite = { focus = SOV_the_fall_of_zheltoksan }
+        cost = 5
+        completion_reward = {
+            set_country_flag = SOV_visit_czechoslovakia
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    focus = { 
+        id = SOV_visit_czechoslovakia
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_release_of_dissidents
+        allow_branch = {has_country_flag = SOV_visit_czechoslovakia}
+        prerequisite = { focus = SOV_release_of_dissidents }
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_politics_of_glasnost
+        icon = GFX_NONE
+        relative_position_id = SOV_visit_czechoslovakia
+        prerequisite = { focus = SOV_visit_czechoslovakia }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_election_of_yazov
+        relative_position_id = SOV_politics_of_glasnost
+        prerequisite = { focus = SOV_politics_of_glasnost }
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_law_on_state_enterprise
+        relative_position_id = SOV_election_of_yazov
+        prerequisite = { focus = SOV_election_of_yazov }
+        icon = GFX_NONE
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_first_joint_ventures
+        relative_position_id = SOV_election_of_yazov
+        prerequisite = { focus = SOV_election_of_yazov }
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_yeltsin_criticizes_the_politburo
+        relative_position_id = SOV_election_of_yazov
+        prerequisite = { focus = SOV_election_of_yazov }
+        icon = GFX_NONE
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_destruction_of_missiles_in_europe
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        relative_position_id = SOV_first_joint_ventures
+        prerequisite = { focus = SOV_first_joint_ventures }
+        prerequisite = { focus = SOV_law_on_state_enterprise }
+        prerequisite = { focus = SOV_yeltsin_criticizes_the_politburo }
+        completion_reward = {
+        }
+    }
+
+    focus = { ## chernobyl ##
+        id = SOV_close_everyones_ears 
+        icon = GFX_
+        x = 7
+        y = 0
+        cost = 1
+        relative_position_id = SOV_elimination_of_weapons_funding
+        allow_branch = {has_country_flag = SOV_close_everyones_ears}
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_liquidation_of_the_consequences_of_the_accident
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 1
+        relative_position_id = SOV_close_everyones_ears
+        prerequisite = { focus = SOV_close_everyones_ears }
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_may_day_demonstration
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 1
+        relative_position_id = SOV_liquidation_of_the_consequences_of_the_accident
+        prerequisite = { focus = SOV_liquidation_of_the_consequences_of_the_accident }
+        completion_reward = {
+        }
+    }
+}
