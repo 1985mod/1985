@@ -44,7 +44,7 @@ focus_tree = {
         prerequisite = { focus = SOV_acceleration_course }
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_sovet_union.9 }
+            country_event = { id = SOV_soviet_union.9 }
         }
     }
 
@@ -81,7 +81,7 @@ focus_tree = {
         prerequisite = { focus = SOV_acceleration_course }
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_sovet_union.10 }
+            country_event = { id = SOV_soviet_union.10 }
             add_ideas = SOV_anti_alcohol_campaign
         }
     }
@@ -122,7 +122,7 @@ focus_tree = {
         prerequisite = { focus = SOV_housing_2000_program }
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_sovet_union.7 }
+            country_event = { id = SOV_soviet_union.7 }
         }
     }
 
@@ -349,6 +349,10 @@ focus_tree = {
         prerequisite = { focus = SOV_law_on_state_enterprise }
         prerequisite = { focus = SOV_yeltsin_criticizes_the_politburo }
         completion_reward = {
+            load_focus_tree = {
+    		tree = soviet_gorbachev_focus_part_two
+  			keep_completed = yes
+            }
         }
     }
 

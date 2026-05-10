@@ -48,7 +48,7 @@ focus_tree = {
 
 		completion_reward = {
             add_political_power = 10
-            country_event = { id = SOV_sovet_union.6 }
+            country_event = { id = SOV_soviet_union.6 }
 		}
     } 
 
