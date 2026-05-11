@@ -1,1 +1,392 @@
-﻿
+division_template = {
+	name = "Motostrelkovaya Diviziya 1"			# Infantry Division
+	# Note: also Fortress divisions
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		modern_armor = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		rocket_artillery_brigade = { x = 2 y = 0 }
+		rocket_artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+division_template = {
+	name = "Motostrelkovaya Diviziya 2"			# Infantry Division
+	# Note: also Fortress divisions
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+		mot_rocket_artillery_brigade = { x = 2 y = 0 }
+		armored_car = { x = 3 y = 0 }
+		armored_car = { x = 3 y = 1 }
+		armored_car = { x = 3 y = 1 }
+		mechanized = { x = 4 y = 0 }
+		mechanized = { x = 4 y = 1 }
+		mechanized = { x = 4 y = 2 }
+		mechanized = { x = 4 y = 3 }
+		mechanized = { x = 4 y = 4 } 
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }
+		armored_maintenance = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		super_heavy_artillery = { x = 1 y = 0 }
+		super_heavy_artillery = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Motostrelkovaya Diviziya 3"			# Infantry Division
+	# Note: also Fortress divisions
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		rocket_artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }   
+		armored_maintenance = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Motostrelkovaya Diviziya 4"			# Infantry Division
+	# Note: also Fortress divisions
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		medium_sp_artillery_brigade = { x = 2 y = 0 }
+		rocket_artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }   
+		armored_maintenance = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Motostrelkovaya Diviziya 5"			# Infantry Division
+	# Note: also Fortress divisions
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		rocket_artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {
+	name = "Motostrelkovaya Diviziya 6"			# Infantry Division
+	# Note: also Fortress divisions
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		modern_armor = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 3 }
+		medium_sp_artillery_brigade = { x = 2 y = 0 }
+		medium_sp_artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+division_template = {
+	name = "Tankovaya Diviziya 1"			# Infantry Division
+	# Note: also Fortress divisions
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		modern_armor = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mechanized = { x = 2 y = 4 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		medium_sp_artillery_brigade = { x = 3 y = 2 }
+		medium_sp_artillery_brigade = { x = 3 y = 3 }
+		rocket_artillery_brigade = { x = 4 y = 0 }
+		motorized_artillery_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }   
+		armored_maintenance = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "1ya Gvardeyskaya strelkovaya Diviziya"
+		location = 395
+		division_template = "Motostrelkovaya Diviziya 1"
+	}
+	division = {
+		name = "2ya Gvardeyskaya strelkovaya Diviziya"
+		location = 3391
+		division_template = "Motostrelkovaya Diviziya 2"
+	}
+	division = {
+		name = "3ya Gvardeyskaya strelkovaya Diviziya"
+		location = 3288
+		division_template = "Motostrelkovaya Diviziya 1"
+	}	
+	division = {
+		name = "4ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 7682
+		division_template = "Motostrelkovaya Diviziya 3"
+	}	
+	division = {
+		name = "5ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 4549
+		division_template = "Motostrelkovaya Diviziya 3"
+	}
+	division = {
+		name = "90ya Gvardeyskaya tankovaya Diviziya"
+		location = 6334
+		division_template = "Tankovaya Diviziya 1"
+	}	
+	division = {
+		name = "8ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 12583
+		division_template = "Motostrelkovaya Diviziya 1"
+	}
+	division = {
+		name = "9ya Motostrelkovaya Diviziya"
+		location = 9628
+		division_template = "Motostrelkovaya Diviziya 4"
+	}
+	division = {
+		name = "10ya Motostrelkovaya Diviziya"
+		location = 6669
+		division_template = "Motostrelkovaya Diviziya 4"
+	}
+	division = {
+		name = "11ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 7835
+		division_template = "Motostrelkovaya Diviziya 4"
+	}
+	division = {
+		name = "12ya Motostrelkovaya Diviziya"
+		location = 4801
+		division_template = "Motostrelkovaya Diviziya 5"
+	}
+	division = {
+		name = "13ya Motostrelkovaya Diviziya"
+		location = 1794
+		division_template = "Motostrelkovaya Diviziya 5"
+	}
+	division = {
+		name = "15ya Motostrelkovaya Diviziya"
+		location = 12441
+		division_template = "Motostrelkovaya Diviziya 5"
+	}
+	division = {
+		name = "17ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 3457
+		division_template = "Motostrelkovaya Diviziya 1"
+	}
+	division = {
+		name = "18ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 9414
+		division_template = "Motostrelkovaya Diviziya 2"
+	}
+	division = {
+		name = "19ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 9628
+		division_template = "Motostrelkovaya Diviziya 6"
+	}
+	division = {
+		name = "19ya Motostrelkovaya Diviziya"
+		location = 9628
+		division_template = "Motostrelkovaya Diviziya 6"
+	}
+	division = {
+		name = "20ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 538
+		division_template = "Motostrelkovaya Diviziya 2"
+	}
+	division = {
+		name = "21ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 11359
+		division_template = "Motostrelkovaya Diviziya 2"
+	}
+	division = {
+		name = "22ya Motostrelkovaya Diviziya"
+		location = 4728
+		division_template = "Motostrelkovaya Diviziya 3"
+	}
+	division = {
+		name = "24ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 11674
+		division_template = "Motostrelkovaya Diviziya 3"
+	}
+	division = {
+		name = "24ya Motostrelkovaya Diviziya"
+		location = 9519
+		division_template = "Motostrelkovaya Diviziya 4"
+	}
+	division = {
+		name = "26ya Motostrelkovaya Diviziya"
+		location = 348
+		division_template = "Motostrelkovaya Diviziya 5"
+	}
+	division = {
+		name = "27ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 9560
+		division_template = "Motostrelkovaya Diviziya 2"
+	}
+	division = {
+		name = "29ya Motostrelkovaya Diviziya"
+		location = 6684
+		division_template = "Motostrelkovaya Diviziya 6"
+	}
+	division = {
+		name = "30ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 11539
+		division_template = "Motostrelkovaya Diviziya 6"
+	}
+	division = {
+		name = "31ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 6380
+		division_template = "Motostrelkovaya Diviziya 1"
+	}
+	division = {
+		name = "33ya Motostrelkovaya Diviziya"
+		location = 12446
+		division_template = "Motostrelkovaya Diviziya 3"
+	}
+	division = {
+		name = "34ya Motostrelkovaya Diviziya"
+		location = 1821
+		division_template = "Motostrelkovaya Diviziya 3"
+	}
+	division = {
+		name = "35ya Motostrelkovaya Diviziya"
+		location = 6521
+		division_template = "Motostrelkovaya Diviziya 4"
+	}
+	division = {
+		name = "36ya Motostrelkovaya Diviziya"
+		location = 502
+		division_template = "Motostrelkovaya Diviziya 1"
+	}
+	division = {
+		name = "38ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 4705
+		division_template = "Motostrelkovaya Diviziya 6"
+	}
+	division = {
+		name = "39ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 9441
+		division_template = "Motostrelkovaya Diviziya 2"
+	}
+	division = {
+		name = "40ya Motostrelkovaya Diviziya"
+		location = 9895
+		division_template = "Motostrelkovaya Diviziya 1"
+	}
+	division = {
+		name = "41ya Motostrelkovaya Diviziya"
+		location = 7885
+		division_template = "Motostrelkovaya Diviziya 1"
+	}
+	division = {
+		name = "42ya Gvardeyskaya ychebnaya motostrelkovaya Diviziya"
+		location = 3672
+		division_template = "Motostrelkovaya Diviziya 3"
+	}
+	division = {
+		name = "43ya Ychebnaya motostrelkovaya Diviziya"
+		location = 11225
+		division_template = "Motostrelkovaya Diviziya 3"
+	}
+	division = {
+		name = "45ya Gvardeyskaya motostrelkovaya Diviziya"
+		location = 149
+		division_template = "Motostrelkovaya Diviziya 2"
+	}
+	division = {
+		name = "46ya Motostrelkovaya Diviziya"
+		location = 9461
+		division_template = "Motostrelkovaya Diviziya 6"
+	}
+	division = {
+		name = "47ya Motostrelkovaya Diviziya"
+		location = 9477
+		division_template = "Motostrelkovaya Diviziya 6"
+	}
