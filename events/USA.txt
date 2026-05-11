@@ -280,3 +280,23 @@ country_event = {
 		add_political_power = 5
 	}
 }
+
+country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		tag = usa
+		date > 1990.7.1
+	}
+
+	option = {
+		name = usa.12.a
+		ai_chance = {
+			base = 100
+		}		
+		add_ideas = USA_economic_recession
+	}
+}

@@ -8,6 +8,7 @@ news_event = {
     id = news.1
     title = news.1.t
     desc = news.1.d
+	picture = GFX_news_sammit_in_rejyavik
 
 	major = yes
 	
@@ -67,30 +68,7 @@ news_event = {
 	id = news.3
 	title = news.3.t
 	desc = news.3.desc
-	picture = GFX_news_SOV_jobs_ussr
-    
-    major = yes
-
-	mean_time_to_happen = {
-		days = 5
-	}
-
-	immediate = {
-		set_global_flag = usa_visit_steve_jobs
-	}
-	
-	trigger = {
-        NOT = { has_global_flag = usa_visit_steve_jobs }
-		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
-		date > 1985.7.4
-	}
-}
-
-news_event = {
-	id = news.3
-	title = news.3.t
-	desc = news.3.desc
-	picture = GFX_news_SOV_jobs_ussr
+	picture = GFX_news_iraq_invasion_in_kuweit
     
     major = yes
 
@@ -164,5 +142,98 @@ news_event = {
 
 	option = {
 		name = news.5.a
+	}
+}
+
+news_event = {
+	id = news.6 ## Выборы в Верховный Совет РСФСР ##
+	title = news.6.t
+	desc = news.6.desc
+	picture = GFX_news_elections_to_the_supreme_soviet_RSFSR
+    
+    is_triggered_only = yes
+	fire_only_once = yes
+    major = yes
+	
+	trigger = {
+		tag = SOV
+	}
+}
+
+news_event = {
+	id = news.7 ## Джобс в СССР ##
+	title = news.7.t
+	desc = news.7.desc
+	picture = GFX_news_SOV_jobs_ussr
+    
+    is_triggered_only = yes
+	fire_only_once = yes
+    major = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_leader = { name = "SOV_mikhail_gorbachev" }
+		date > 1985.7.4
+	}
+}
+
+news_event = {
+	id = news.9 ## Победа Республиканцев ##
+	title = news.9.t
+	desc = news.9.desc
+	picture = GFX_news_victory_republicans
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = usa_victory_republicans
+	}
+	
+	trigger = {
+	   NOT = { has_global_flag = usa_victory_republicans }
+	   date > 1988.11.01
+	   USA = { has_government = conservatism }
+	}
+}
+
+news_event = {
+	id = news.10 ## Победа демократов ##
+	title = news.10.t
+	desc = news.10.desc
+	picture = GFX_news_victory_democrats
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = usa_victory_democrats
+	}
+	
+	trigger = {
+	   NOT = { has_global_flag = usa_victory_democrats }
+	   date > 1988.11.01
+	   USA = { has_government = liberalism }
+	}
+}
+
+news_event = {
+	id = news.11
+	title = news.11.t
+	desc = news.11.desc
+	picture = GFX_news_yugoslav_wars
+
+	major = yes
+
+	immediate = {
+		set_global_flag = operation_desert_storm
+	}
+	
+	trigger = {
+	   NOT = { has_global_flag = operation_desert_storm }
+	   date > 1991.1.14
+	   has_global_flag = anti_iraq_coalition
+	}
+
+	option = {
+		name = news.11.a
 	}
 }

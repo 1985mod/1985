@@ -329,6 +329,62 @@ focus_tree = {
 
 	    }
 	}
+
+    focus = { 
+        id = USA_michael_dukakis_inauguration
+		relative_position_id = USA_victory_of_the_democrats
+		prerequisite = { focus = USA_victory_of_the_democrats  }
+        icon = GFX_	
+        x = 4
+        y = 1
+        cost = 6
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_cutting_back_on_bloated_military_programs
+		relative_position_id = USA_michael_dukakis_inauguration
+		prerequisite = { focus = USA_michael_dukakis_inauguration  }
+        icon = GFX_	
+        x = -2
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_increasing_federal_grants
+		relative_position_id = USA_michael_dukakis_inauguration
+		prerequisite = { focus = USA_michael_dukakis_inauguration  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_expansion_of_social_programs
+		relative_position_id = USA_michael_dukakis_inauguration
+		prerequisite = { focus = USA_michael_dukakis_inauguration  }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
 	
     focus = { 
         id = USA_republican_victory

@@ -15,7 +15,11 @@ focus_tree = {
 
     focus = { 
         id = SOV_course_towards_stability
+<<<<<<< Updated upstream
         icon = GFX_
+=======
+        icon = GFX_focus_icon_gorbachev
+>>>>>>> Stashed changes
         x = 10
         y = 0
         cost = 1.5
@@ -45,7 +49,11 @@ focus_tree = {
 		}
 		completion_reward = {
             add_political_power = 10
+<<<<<<< Updated upstream
 			}
+=======
+            country_event = { id = SOV_sovet_union.6 }
+>>>>>>> Stashed changes
 		}
     } 
 

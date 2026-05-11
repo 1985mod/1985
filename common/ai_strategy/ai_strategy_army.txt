@@ -5,6 +5,7 @@ always_build_army = {
 			OR = {
 				original_tag = USA
 				original_tag = SOV
+                original_tag = YUG
 			}
 		}
 	}
@@ -42,5 +43,19 @@ USA_build_army = {
        type = build_army
        id = infantry
        value = 200
+    }
+}
+
+YUG_build_army = {
+	enable = {
+		original_tag = YUG
+	}
+	
+    abort_when_not_enabled = yes
+	
+    ai_strategy = {
+       type = build_army
+       id = infantry
+       value = 33
     }
 }

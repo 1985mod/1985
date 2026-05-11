@@ -35,6 +35,31 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_yugoslav_wars.dds"
 	}
 
+	spriteType = {
+		name = "GFX_news_iraq_invasion_in_kuweit"
+		texturefile = "gfx/event_pictures/news_iraq_invasion_in_kuweit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_sammit_in_rejyavik"
+		texturefile = "gfx/event_pictures/news_sammit_in_rejyavik.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_elections_to_the_supreme_soviet_RSFSR"
+		texturefile = "gfx/event_pictures/news_elections_to_the_supreme_soviet_RSFSR.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_victory_republicans"
+		texturefile = "gfx/event_pictures/news_victory_republicans.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_victory_democrats"
+		texturefile = "gfx/event_pictures/news_victory_democrats.dds"
+	}
+
 }
 
 

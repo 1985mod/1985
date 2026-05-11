@@ -1,0 +1,23 @@
+scripted_gui = {
+    cat_main_container = {
+ 
+    window_name = "economy"
+
+    	visible = {
+
+		}
+		effects = {
+			raise_taxes_on_click  = {
+                add_stability = -0.01
+			}
+		}
+		triggers = {
+			raise_taxes_visible = {
+
+			}
+			raise_taxes_enabled = {
+
+			}
+		}
+    }
+}
