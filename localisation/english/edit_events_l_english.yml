@@ -1,46 +1,4 @@
 ﻿l_english:
- SOV_important_choice.1.t: "Konstantin Chernenko has died..."
- SOV_important_choice.1.desc: "Leonid Brezhnev symbolized stagnation and the ignoring of pressing problems that had only accumulated over all these decades. Brezhnev died, then Andropov, now Chernenko. We must decide the future fate of the Soviet Union. We are faced with a choice between the liberal Gorbachev, the Stalinist Shenin, and the fascist Dugin. Who is destined to rule the USSR now?"
- SOV_important_choice.1.a: "We need liberal reforms! For Gorbachev!" # Gorbachev
- SOV_important_choice.1.b: "Let us stand for the Fatherland and for Stalin! For Shenin!" # Shenin
- SOV_important_choice.1.c: "For Russia! For victory! Dugin is our candidate!" # Dugin
-
- SOV_chernobyl.1.t: "The Chernobyl Nuclear Power Plant Accident"
- SOV_chernobyl.1.desc: "On April 26, 1986, at 1:23 AM, a powerful explosion occurred at the fourth reactor unit of the Chernobyl Nuclear Power Plant during tests of the eighth turbogenerator. The explosion completely destroyed the reactor, causing one of the largest man-made releases of radioactive substances in history. Isotopes of uranium, plutonium, iodine-131, cesium-134, cesium-137, and strontium-90 were released into the atmosphere. Thousands of people took part in the liquidation of the consequences, many of whom received serious doses of radiation. This catastrophe was a blow to the stability of the Soviet Union, increasing tension in society and intensifying the political situation in the USSR."
- SOV_chernobyl.1.a: "Eternal memory to the heroes!"
-
- DDR_unification.1.t: "The Eastern Bloc has fallen"
- DDR_unification.1.desc: "The Warsaw Pact organization is no more... In connection with this, the question of German unification arises in the FRG and the GDR, which in effect means the dissolution of the GDR. Should we allow Germany to become unified again, or fight for our right to exist?"
- DDR_unification.1.a: "We agree! The GDR's time has long passed."
- DDR_unification.1.b: "The FRG is encroaching on us. Let us stand up for the communist system!"
-
- DDR_unification.2.t: "The GDR refused to unify with us"
- DDR_unification.2.desc: "In the GDR, there are more and more mass demonstrations and demands for the government's resignation. But they are clinging to power tooth and nail. What should we do?"
- DDR_unification.2.a: "Now is not the time for unification!"
- DDR_unification.2.b: "If the GDR won't come to us, we will go to them. With weapons."
-
- CZE_Czechoslovakia_kgb.1.t: "Memory of the Prague Spring"
- CZE_Czechoslovakia_kgb.1.desc: "Seventeen years have passed since the Warsaw Pact tanks entered Prague, and the CSSR is dissatisfied with the reforms beginning in the USSR. Because of this, a decision has been made: an oral order has been given to the leadership of the StB (State Security) to arrest KGB agents."
- CZE_Czechoslovakia_kgb.1.a: "Yes, begin the arrests"
- CZE_Czechoslovakia_kgb.1.b: "No, do not begin"
-
- CZE_Czechoslovakia_lenders.1.t: "Military Cooperation"
- CZE_Czechoslovakia_lenders.1.desc: "We have agreed with the USSR that military factories will be built on our territory in exchange for loyalty to Moscow."
- CZE_Czechoslovakia_lenders.1.a: "Excellent!"
-
- CZE_Czechoslovakia_perepro.1.t: "Negotiations"
- CZE_Czechoslovakia_perepro.1.desc: "To maintain control, the country's leadership held negotiations with the demonstrators, promising partial reforms and greater freedom of speech. This decision bought the government time, but at the same time undermined its authority — the people had already tasted power."
- CZE_Czechoslovakia_perepro.1.a: "Endure"
- CZE_Czechoslovakia_perepro.1.b: "Tell them to fuck off"
-
- CZE_global_ralal.1.t: "The Dissolution of Czechoslovakia"
- CZE_global_ralal.1.d: "Czechoslovakia no longer exists. After a multi-year crisis, the government of Czechoslovakia could not hold on."
- CZE_global_ralal.1.a: "Understood"
-
- CZE_Czechoslovakia_papy.1.t: "Report on the year 1985"
- CZE_Czechoslovakia_papy.1.desc: "The new year, 1985, has arrived. 1. The USSR is weakening due to internal contradictions. 2. The opposition in the country is becoming stronger. 3. The economy is experiencing stagnation.\nThe fate of Czechoslovakia and its people depends on you, the player."
- CZE_Czechoslovakia_papy.1.a: "Understood"
- 
  news.5.t: "Yugoslav wars started"
  news.5.desc: "Yugoslav wars started."
  news.5.a: "War."
