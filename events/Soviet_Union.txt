@@ -1,38 +1,18 @@
-<<<<<<< Updated upstream
-add_namespace = SOV_important_choice
-add_namespace = SOV_collapse
-add_namespace = SOV_chernobyl
-add_namespace = SOV_dead_cernenko
-add_namespace = SOV_jobs_ussr
-
+add_namespace = SOV_soviet_union
 
 country_event = {
-	id = SOV_important_choice.1
-	title = SOV_important_choice.1.t
-	desc = SOV_important_choice.1.desc
-=======
-add_namespace = SOV_sovet_union
-add_namespace = SOV_collapse
-country_event = {
-	id = SOV_sovet_union.1 ##  Смерть Черненко ##
-	title = SOV_sovet_union.1.t
-	desc = SOV_sovet_union.1.desc
->>>>>>> Stashed changes
+	id = SOV_soviet_union.1 ##  Смерть Черненко ##
+	title = SOV_soviet_union.1.t
+	desc = SOV_soviet_union.1.desc
 	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 
 	# КПСС
 	option = {
-<<<<<<< Updated upstream
-		name = SOV_important_choice.1.a
-		news_event = { id = SOV_dead_cernenko.1 days = 0 }
-		news_event = { id = SOV_important_choice.2 days = 1 }
-=======
-		name = SOV_sovet_union.1.a
-		news_event = { id = SOV_sovet_union.4 days = 3 }
-		news_event = { id = SOV_sovet_union.2 days = 1 }
->>>>>>> Stashed changes
+		name = SOV_soviet_union.1.a
+		news_event = { id = SOV_soviet_union.4 days = 3 }
+		news_event = { id = SOV_soviet_union.2 days = 1 }
 		ai_chance = {
 			base = 10
 		}
@@ -59,37 +39,27 @@ country_event = {
 }
 
 country_event = {
-<<<<<<< Updated upstream
-	id = SOV_important_choice.2
-	title = SOV_important_choice.2.t
-	desc = SOV_important_choice.2.desc
-=======
-	id = SOV_sovet_union.2 ## Выборы генсека ##
-	title = SOV_sovet_union.2.t
-	desc = SOV_sovet_union.2.desc
->>>>>>> Stashed changes
+	id = SOV_soviet_union.2 ## Выборы генсека ##
+	title = SOV_soviet_union.2.t
+	desc = SOV_soviet_union.2.desc
 	picture = GFX_report_gorbachev_vs_romanov
 
 	is_triggered_only = yes
 
 	# Михаил Горбачев
 	option = {
-<<<<<<< Updated upstream
-		name = SOV_important_choice.2.a
-=======
-		name = SOV_sovet_union.2.a
->>>>>>> Stashed changes
+		name = SOV_soviet_union.2.a
 		ai_chance = {
 			base = 10
 		}
-		
-		set_country_flag = gorbachev
 		
 		effect_tooltip = {
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
 			}
+             load_focus_tree = SOV_soviet_gorbachev_focus
+			 
 		}
 
 		hidden_effect = {
@@ -98,6 +68,7 @@ country_event = {
 				character = SOV_mikhail_gorbachev
 				ideology = communism
 			}
+			load_focus_tree = SOV_soviet_gorbachev_focus
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -107,11 +78,7 @@ country_event = {
 
 	# Григорий Pоманов 
 	option = {
-<<<<<<< Updated upstream
-		name = SOV_important_choice.2.b
-=======
-		name = SOV_sovet_union.2.b
->>>>>>> Stashed changes
+		name = SOV_soviet_union.2.b
 		ai_chance = {
 			base = 5
 		}
@@ -145,7 +112,6 @@ country_event = {
 
     trigger = {
         tag = SOV
-        has_civil_war = no
         date > 1990.03.11
 		has_country_flag = gorbachev
     }
@@ -420,11 +386,10 @@ country_event = {
     }
 }
 
-<<<<<<< Updated upstream
 news_event = {
-	id = SOV_chernobyl.2
-	title = SOV_chernobyl.2.t
-	desc = SOV_chernobyl.2.desc
+	id = SOV_soviet_union.3 ## новостной Чернобыль ##
+	title = SOV_soviet_union.3.t
+	desc = SOV_soviet_union.3.desc
 	picture = GFX_news_SOV_chernobyl
 
 	is_triggered_only = yes
@@ -433,33 +398,23 @@ news_event = {
 	trigger = {
 		tag = SOV
 	}
-
-	option = {
-		name = SOV_chernobyl.1.a
-		hidden_effect = {
-			add_stability = -0.15
-			add_war_support = -0.05
-			add_political_power = -50
-			add_manpower = -10000
-		}
-	}
 }
 
 news_event = {
-	id = SOV_dead_cernenko.1
-	title = SOV_dead_cernenko.1.t
-	desc = SOV_dead_cernenko.1.desc
+	id = SOV_soviet_union.4 ## новосной ивент на смерть Черненко ##
+	title = SOV_soviet_union.4.t
+	desc = SOV_soviet_union.4.desc
 	picture = GFX_news_SOV_dead_chernenko2
-
+     
+    is_triggered_only = yes
     fire_only_once = yes
     major = yes
 	trigger = {
 		tag = SOV
-		date > 1985.3.4
 	}
 
     option = {
-        name = SOV_dead_cernenko.1.a
+        name = SOV_soviet_union.4.a
         hidden_effect = {
             add_stability = -0.3
         }
@@ -467,11 +422,12 @@ news_event = {
 }
 
 news_event = {
-	id = SOV_jobs_ussr.3
-	title = SOV_jobs_ussr.3.t
-	desc = SOV_jobs_ussr.3.desc
+	id = SOV_soviet_union.5 ## Джобс в СССР ##
+	title = SOV_soviet_union.5.t
+	desc = SOV_soviet_union.5.desc
 	picture = GFX_news_SOV_jobs_ussr
     
+    is_triggered_only = yes
 	fire_only_once = yes
     major = yes
 	
@@ -480,11 +436,27 @@ news_event = {
 		has_country_leader = { name = "SOV_mikhail_gorbachev" }
 		date > 1985.7.4
 	}
-=======
+}
+
+news_event = {
+	id = SOV_soviet_union.6 ## Выборы в Верховный Совет РСФСР ##
+	title = SOV_soviet_union.6.t
+	desc = SOV_soviet_union.6.desc
+	picture = GFX_
+    
+    is_triggered_only = yes
+	fire_only_once = yes
+    major = yes
+	
+	trigger = {
+		tag = SOV
+	}
+}
+
 country_event = {
-	id = SOV_sovet_union.7 ## Встреча в Женеве ##
-	title = SOV_sovet_union.7.t
-	desc = SOV_sovet_union.7.desc
+	id = SOV_soviet_union.7 ## Встреча в Женеве ##
+	title = SOV_soviet_union.7.t
+	desc = SOV_soviet_union.7.desc
 	picture = GFX_
 
 	is_triggered_only = yes
@@ -492,7 +464,7 @@ country_event = {
 	fire_only_once = yes
 
     option = {
-        name = SOV_sovet_union.7.a
+        name = SOV_soviet_union.7.a
 		add_political_power = -10
 		set_country_flag = SOV_elimination_of_nuclear_weapons
 		mark_focus_tree_layout_dirty = yes
@@ -500,9 +472,9 @@ country_event = {
     }
 
 country_event = {
-	id = SOV_sovet_union.8 ## Чернобыль кунтри##
-	title = SOV_sovet_union.8.t
-	desc = SOV_sovet_union.8.desc
+	id = SOV_soviet_union.8 ## Чернобыль каунтри##
+	title = SOV_soviet_union.8.t
+	desc = SOV_soviet_union.8.desc
 	picture = GFX_
 
 	is_triggered_only = yes
@@ -510,7 +482,7 @@ country_event = {
 	fire_only_once = yes
 
     option = {
-        name = SOV_sovet_union.8.a
+        name = SOV_soviet_union.8.a
 		add_political_power = -10
 		set_country_flag = SOV_close_everyones_ears
 		mark_focus_tree_layout_dirty = yes
@@ -518,31 +490,62 @@ country_event = {
     }
 
 country_event = {
-	id = SOV_sovet_union.9 ## назначение Шеварднадзе ##
-	title = SOV_sovet_union.9.t
-	desc = SOV_sovet_union.9.desc
+	id = SOV_soviet_union.9 ## назначение Шеварднадзе ##
+	title = SOV_soviet_union.9.t
+	desc = SOV_soviet_union.9.desc
 	picture = GFX_
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
-        name = SOV_sovet_union.9.a
+        name = SOV_soviet_union.9.a
 		add_political_power = 100
-		}
+	}
 }
 
 country_event = {
-	id = SOV_sovet_union.10 ## Анти-алкагольная кампания  ##
-	title = SOV_sovet_union.10.t
-	desc = SOV_sovet_union.10.desc
+	id = SOV_soviet_union.10 ## Анти-алкагольная кампания  ##
+	title = SOV_soviet_union.10.t
+	desc = SOV_soviet_union.10.desc
 	picture = GFX_
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
-        name = SOV_sovet_union.10.a
+        name = SOV_soviet_union.10.a
     }
->>>>>>> Stashed changes
+}
+
+country_event = {
+	id = SOV_soviet_union.11 ## Назначение Горбачёва как президента  ##
+	title = SOV_soviet_union.11.t
+	desc = SOV_soviet_union.11.desc
+	picture = GFX_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.11.a
+        set_country_flag = SOV_iii_congress_of_peoples_deputies
+		mark_focus_tree_layout_dirty = yes
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.12 ## Беспорядки в республиках  ##
+	title = SOV_soviet_union.12.t
+	desc = SOV_soviet_union.12.desc
+	picture = GFX_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.12.a
+        set_country_flag = SOV_affairs_of_the_republics
+		mark_focus_tree_layout_dirty = yes
+    }
 }

@@ -298,5 +298,7 @@ country_event = {
 			base = 100
 		}		
 		add_ideas = USA_economic_recession
+		set_country_flag = USA_economic_recessions_load
+		mark_focus_tree_layout_dirty = yes
 	}
 }

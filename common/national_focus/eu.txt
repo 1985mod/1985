@@ -61,6 +61,7 @@ shared_focus = {
         add_political_power = 50
         research_speed_factor = 0.05
         add_relation_modifier = { target = FRA modifier = hanover_summit_rapprochement }
+        set_country_flag = hanover_summit
     } 
 }
 
