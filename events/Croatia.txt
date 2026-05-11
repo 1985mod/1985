@@ -86,33 +86,7 @@ country_event = {
 		}
 		103 = {
 			create_unit = { 
-				division = "name = \"1. Milicija\" division_template = \"Policajci\" start_experience_factor = 0.2" 
-				owner = ROOT
-			}
-			create_unit = { 
-				division = "name = \"2. Milicija\" division_template = \"Policajci\" start_experience_factor = 0.1" 
-				owner = ROOT
-			}
-			create_unit = { 
-				division = "name = \"2. Milicija\" division_template = \"Policajci\" start_experience_factor = 0.1" 
-				owner = ROOT
-			}
-			create_unit = { 
-				division = "name = \"2. Milicija\" division_template = \"Policajci\" start_experience_factor = 0.1" 
-				owner = ROOT
-			}
-		}
-		109 = {
-			create_unit = { 
-				division = "name = \"1. Milicija\" division_template = \"Policajci\" start_experience_factor = 0.2" 
-				owner = ROOT
-			}
-			create_unit = { 
-				division = "name = \"2. Milicija\" division_template = \"Policajci\" start_experience_factor = 0.1" 
-				owner = ROOT
-			}
-			create_unit = { 
-				division = "name = \"2. Milicija\" division_template = \"Policajci\" start_experience_factor = 0.1" 
+				division = "name = \"2. Policajci\" division_template = \"Policajci\" start_experience_factor = 0.1" 
 				owner = ROOT
 			}
 		}

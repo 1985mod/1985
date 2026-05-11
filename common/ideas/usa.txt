@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		USA_reaganomics_policy = {
-			picture = generic_political_support 
+			picture = idea_ 
 			allowed = {
 				original_tag = USA
 			}
@@ -20,7 +20,7 @@ ideas = {
 			}
 		}
 		USA_stronghold_of_freedom = {
-			picture = ARG_eliminate_american_imperialism 
+			picture = idea_ 
 			allowed = {
 				original_tag = USA
 			}
@@ -38,7 +38,7 @@ ideas = {
 			}
 		}
 		USA_cold_war = {
-			picture = anti_soviet_pact 
+			picture = idea_ 
 			allowed = {
 				original_tag = USA
 			}
@@ -57,7 +57,7 @@ ideas = {
 			}
 		}
 		USA_the_endless_war_on_drugs_2 = {
-			picture = generic_political_support 
+			picture = idea_ 
 			allowed = {
 				original_tag = USA
 			}
@@ -75,7 +75,7 @@ ideas = {
 			}
 		}
 		USA_the_endless_war_on_drugs = {
-			picture = generic_political_support 
+			picture = idea_ 
 			allowed = {
 				original_tag = USA
 			}
@@ -93,7 +93,7 @@ ideas = {
 			}
 		}
 		USA_fight_against_terrorism = {
-			picture = generic_political_support 
+			picture = idea_ 
 			allowed = {
 				original_tag = USA
 			}
@@ -112,7 +112,7 @@ ideas = {
 			}
 		}
 		USA_us_world_hegemony = {
-			picture = generic_political_support 
+			picture = idea_ 
 			allowed = {
 				original_tag = USA
 			}
@@ -127,6 +127,42 @@ ideas = {
 			  political_power_factor = 0.05
 			  drift_defence_factor = 0.1
 			  nuclear_production_factor = 0.03
+			}
+		}
+		USA_economic_recession = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = -0.1
+				consumer_goods_factor = 0.15
+				stability_factor = -0.05				
+			}
+		}
+		USA_economic_recession_2 = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = -0.2
+				consumer_goods_factor = 0.25
+				stability_factor = -0.1			
 			}
 		}
 	}

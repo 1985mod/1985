@@ -84,17 +84,11 @@ if = {
 }
 
 set_popularities = {
-	conservatism = 20
-	fascism = 30
-	communism = 50
+	democratic = 40
+	neutrality = 45
+	fascism = 5
+	communism = 10
 }
-
-recruit_character = UKR_mykhailo_omelianovych_pavlenko
-recruit_character = UKR_stepan_bandera
-recruit_character = UKR_nikita_krushchyov
-recruit_character = UKR_kost_levytsky
-recruit_character = IA_olga_taratuta 
-recruit_character = UKR_pavlo_shandruk 
 
 
 

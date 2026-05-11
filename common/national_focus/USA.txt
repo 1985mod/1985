@@ -128,7 +128,7 @@ focus_tree = {
         id = USA_us_army
 		relative_position_id = USA_reagans_second_presidency
 		prerequisite = { focus = USA_reagans_second_presidency }
-        icon = GFX_	
+        icon = GFX_focus_icon_army_usa	
         x = 5
         y = 1
         cost = 5
