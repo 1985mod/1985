@@ -100,8 +100,6 @@ set_popularities = {
 }
 
 recruit_character = SOV_boris_yeltsin
-recruit_character = SOV_alexander_dugin
-recruit_character = SOV_oleg_chenin
 recruit_character = SOV_dmitry_yazov
 recruit_character = SOV_Shaposhnikov
 recruit_character = SOV_Sokolov
