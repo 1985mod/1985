@@ -355,4 +355,40 @@ focus_tree = {
             }
         }
     }
+
+    focus = { ## chernobyl ##
+        id = SOV_close_everyones_ears 
+        icon = GFX_
+        x = 7
+        y = 0
+        cost = 1
+        relative_position_id = SOV_elimination_of_weapons_funding
+        allow_branch = {has_country_flag = SOV_close_everyones_ears}
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_liquidation_of_the_consequences_of_the_accident
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 1
+        relative_position_id = SOV_close_everyones_ears
+        prerequisite = { focus = SOV_close_everyones_ears }
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_may_day_demonstration
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 1
+        relative_position_id = SOV_liquidation_of_the_consequences_of_the_accident
+        prerequisite = { focus = SOV_liquidation_of_the_consequences_of_the_accident }
+        completion_reward = {
+        }
+    }
 }
