@@ -31,6 +31,11 @@ spriteTypes = {
 		name = GFX_Portrait_KPSS
 		textureFile = "gfx/leaders/SOV/Portrait_KPSS.dds"
 	}
+	
+	spriteType = {
+		name = GFX_Portrait_Zhirinovsky
+		textureFile = "gfx/leaders/SOV/Portrait_Zhirinovsky.dds"
+	}
 
     ##USA##
 	spriteType = {
