@@ -12551,5 +12551,10 @@ spriteTypes = {
 		name = "GFX_focus_icon_USA_reagan_two_presidense"
 		texturefile = "gfx/interface/goals/USA/focus_icon_USA_reagan_two_presidense.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_gorbachev"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_gorbachev.dds"
+	}
 	
 }

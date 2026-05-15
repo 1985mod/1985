@@ -1,0 +1,79 @@
+scripted_gui = {
+	economy_hide = {
+		context_type = player_context
+
+		window_name = "economy_hide_button"
+
+		visible = {
+			ROOT = { NOT = { has_country_flag = economy_hide } }
+		}
+
+		effects = {
+			economy_hide_bg_click = {
+				ROOT = { set_country_flag = economy_hide }
+			}
+		}
+	}
+	economy_show = {
+		context_type = player_context
+
+		window_name = "economy_show_button"
+
+		visible = {
+			ROOT = { has_country_flag = economy_hide }
+		}
+
+		effects = {
+			show_money_bg_click = {
+				ROOT = { clr_country_flag = economy_hide }
+			}
+		}
+	}
+	duty = {
+		context_type = player_context
+
+		window_name = "duty_container"
+
+		visible = {
+			ROOT = { NOT = { has_country_flag = economy_hide } }
+		}
+
+		effects = {
+			coffers_bg_click = {
+				ROOT = { add_to_variable = { coffers = 1 } }
+				ROOT = { add_to_variable = { duty = 1 } }
+			}
+		}
+	}
+	pay_debt = {
+		context_type = player_context
+
+		window_name = "taxes_container"
+
+		visible = {
+			ROOT = { NOT = { has_country_flag = economy_hide } }
+		}
+
+		effects = {
+			coffers_bg_click = {
+				ROOT = { add_to_variable = { coffers = -1 } }
+				ROOT = { add_to_variable = { duty = 1 } }
+			}
+		}
+	}
+	taxes_increase = {
+		context_type = player_context
+
+		window_name = "taxes_increase_container"
+
+		visible = {
+			ROOT = { NOT = { has_country_flag = economy_hide } }
+		}
+
+		effects = {
+			taxes_bg_click = {
+				ROOT = { add_to_variable = { taxes = 1 } }
+			}
+		}
+	}
+}

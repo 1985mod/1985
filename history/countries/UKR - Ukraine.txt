@@ -84,11 +84,12 @@ if = {
 }
 
 set_popularities = {
-	democratic = 40
+	conservatism = 40
 	neutrality = 45
 	fascism = 5
 	communism = 10
 }
 
+recruit_character = UKR_leonid_kravchuk
 
 

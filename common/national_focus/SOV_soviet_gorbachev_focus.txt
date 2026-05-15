@@ -15,7 +15,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_gorbachev_the_new_general_secretary
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_gorbachev
         x = 10
         y = 0
         cost = 1

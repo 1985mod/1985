@@ -291,6 +291,8 @@ country_event = {
 		tag = usa
 		date > 1990.7.1
 	}
+	
+	fire_only_once = yes
 
 	option = {
 		name = usa.12.a

@@ -1,6 +1,14 @@
-﻿capital = 800
+﻿capital = 1058
 
 set_research_slots = 2
+
+oob = "KUR_1985"
+
+declare_war_on = {
+	target = IRQ
+	type = take_state_focus
+	generator = { 676 }
+}
 
 set_technology = {
 	infantry_weapons = 1

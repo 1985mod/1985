@@ -77,7 +77,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 5014
+		location = 10106
 		division_template = "Firqat Mushaa"	
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -89,7 +89,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 6826
+		location = 8123
 		division_template = "Firqat Mushaa"	
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.6

@@ -670,6 +670,10 @@ focus_tree = {
         x = 2
         y = 1
         cost = 10
+
+		available = {
+			has_completed_focus = USA_increase_influence_in_the_middle_east
+		}
 		
         completion_reward = {
 			division_template = { 
@@ -691,7 +695,7 @@ focus_tree = {
 			    recon = { x = 0 y = 0 }
 				}
 			}   
-			361 = {
+			859 = {
 				create_unit = { 
 					division = "name = \"1. Tanks division\" division_template = \"Tanks division\" start_experience_factor = 0.3" 
 					owner = ROOT
@@ -897,6 +901,67 @@ focus_tree = {
 	}
 
     focus = { 
+        id = USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations
+		relative_position_id = USA_focus_on_internal_problems
+		prerequisite = { focus = USA_focus_on_internal_problems  }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 2
+
+		available = {
+			has_completed_focus = USA_increase_funding_for_research
+		}
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_address_to_joint_session_of_congress
+		relative_position_id = USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations
+		prerequisite = { focus = USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 2
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_reduction_of_military_contingent_in_saudi_arabia
+		relative_position_id = USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations
+		prerequisite = { focus = USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations  }
+        icon = GFX_	
+        x = 4
+        y = 1
+        cost = 4
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_signing_of_the_start_it_reaty
+		relative_position_id = USA_address_to_joint_session_of_congress
+		prerequisite = { focus = USA_address_to_joint_session_of_congress  }
+		prerequisite = { focus = USA_reduction_of_military_contingent_in_saudi_arabia  }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 3
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
         id = USA_fight_against_the_budget_deficit
 		relative_position_id = USA_focus_on_internal_problems
 		prerequisite = { focus = USA_focus_on_internal_problems  }
@@ -912,10 +977,68 @@ focus_tree = {
 
     focus = { 
         id = USA_break_your_promise
-		relative_position_id = USA_focus_on_internal_problems
-		prerequisite = { focus = USA_focus_on_internal_problems  }
+		relative_position_id = USA_fight_against_the_budget_deficit
+		prerequisite = { focus = USA_fight_against_the_budget_deficit  }
         icon = GFX_	
-        x = 2
+        x = -4
+        y = 1
+        cost = 3
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_modernization_of_its_industry
+		relative_position_id = USA_fight_against_the_budget_deficit
+		prerequisite = { focus = USA_fight_against_the_budget_deficit  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 7
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_increase_funding_for_research
+		relative_position_id = USA_fight_against_the_budget_deficit
+		prerequisite = { focus = USA_break_your_promise  }
+		prerequisite = { focus = USA_modernization_of_its_industry  }
+        icon = GFX_	
+        x = -2
+        y = 2
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_speech_in_kyiv
+		relative_position_id = USA_focus_on_internal_problems
+		prerequisite = { focus = USA_signing_of_the_start_it_reaty  }
+		prerequisite = { focus = USA_increase_funding_for_research  }
+        icon = GFX_	
+        x = 0
+        y = 4
+        cost = 2
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_reduction_of_nuclear_stockpiles
+		relative_position_id = USA_speech_in_kyiv
+		prerequisite = { focus = USA_speech_in_kyiv  }
+        icon = GFX_	
+        x = 0
         y = 1
         cost = 2
 		
@@ -925,13 +1048,27 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_try_to_ban_abortions
-		relative_position_id = USA_focus_on_internal_problems
-		prerequisite = { focus = USA_focus_on_internal_problems  }
+        id = USA_confirm_сlarence_thomas_as_assistant
+		relative_position_id = USA_reduction_of_nuclear_stockpiles
+		prerequisite = { focus = USA_reduction_of_nuclear_stockpiles  }
         icon = GFX_	
-        x = 0
+        x = -1
         y = 1
-        cost = 5
+        cost = 2
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_civil_rights_act_of_1991
+		relative_position_id = USA_reduction_of_nuclear_stockpiles
+		prerequisite = { focus = USA_reduction_of_nuclear_stockpiles  }
+        icon = GFX_	
+        x = 1
+        y = 1
+        cost = 2
 		
         completion_reward = {
 
