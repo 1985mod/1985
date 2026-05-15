@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = IRQ
+		owner = KUR
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -24,6 +24,7 @@ state={
 		add_claim_by = IRQ
 		add_core_of = KUR
 	}
+
 	
 	provinces={
 		3916 5014 6826 10804 10811

@@ -498,6 +498,7 @@ spriteTypes = {
 	
 	### 1985 ###
 	
+	## USA ##
 	spriteType = {
 		name = "GFX_Portrait_george_bush"
 		texturefile = "gfx/leaders/USA/Portrait_George_Bush.dds"
@@ -511,5 +512,40 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Muhammadu_Buhari"
 		texturefile = "gfx/leaders/NGA/Portrait_Muhammadu_Buhari.dds"
+	}
+
+	## UKR ##
+	spriteType = {
+		name = "GFX_Portrait_leonid_kravchuk"
+		texturefile = "gfx/leaders/UKR/Portrait_leonid_kravchuk.dds"
+	}
+
+	## LIT ##
+	spriteType = {
+		name = "GFX_Portrait_vytautas_landsbergis"
+		texturefile = "gfx/leaders/LIT/Portrait_vytautas_landsbergis.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_algirdas_brazauskas"
+		texturefile = "gfx/leaders/LIT/Portrait_algirdas_brazauskas.dds"
+	}
+
+	## LAT ##
+
+	spriteType = {
+		name = "GFX_Portrait_anatoliy_gorbynov"
+		texturefile = "gfx/leaders/LAT/Portrait_anatoliy_gorbynov.dds"
+	}
+
+	## MOL ##
+	spriteType = {
+		name = "GFX_Portrait_mircea_snegur"
+		texturefile = "gfx/leaders/MOL/Portrait_mircea_snegur.dds"
+	}
+
+	## PMR ##
+	spriteType = {
+		name = "GFX_Portrait_igor_smirnov"
+		texturefile = "gfx/leaders/PMR/Portrait_igor_smirnov.dds"
 	}
 }

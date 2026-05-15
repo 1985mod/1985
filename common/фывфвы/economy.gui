@@ -1,0 +1,206 @@
+guiTypes = {
+	containerWindowType = {
+		name = "economy_hide_button"
+		position = { x = 621 y = 78}
+		clipping = no
+		size = { width=56 height=28 }
+		Orientation = UPPER_LEFT
+
+		buttonType ={
+			name ="economy_hide_bg"
+			spriteType = "GFX_x"
+			position = { x=0 y=0 }
+		}
+			
+		instantTextBoxType = {
+			name ="economy_hide_text"
+			position = { x= 0 y = 0 }
+			font = "hoi_18mbs"
+			format = centre
+			maxWidth = 30
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "ECONOMY_HIDE_TOOLTIP"
+		}
+	}
+	containerWindowType = {
+		name = "economy_show_button"
+		position = { x = 621 y = 78}
+		clipping = no
+		size = { width=56 height=28 }
+		Orientation = UPPER_LEFT
+
+		buttonType ={
+			name ="economy_show_bg"
+			spriteType = "GFX_army_experience"
+			position = { x=0 y=0 }
+		}
+			
+		instantTextBoxType = {
+			name ="economy_show_text"
+			position = { x= 0 y = 0 }
+			font = "hoi_18mbs"
+			format = centre
+			maxWidth = 30
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "ECONOMY_SHOW_TOOLTIP"
+		}
+	}
+	containerWindowType = {
+		name = "taxes_container"
+		position = { x = 620 y = 90 }
+
+		buttonType ={
+			name ="taxes_bg"
+			spriteType = "GFX_tiled_generic_bg_1"
+			position = { x=-1 y=5 }
+		}
+
+		iconType = {
+			name ="taxes_icon"
+			spriteType = "GFX_x"
+			position = { x= 2 y = 5 }
+		}
+
+		instantTextBoxType = {
+			name ="taxes_text"
+			position = { x= 25 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?taxes]%"
+			format = centre
+			maxWidth = 10
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "TAXES_TOOLTIP"
+			pdx_tooltip_delayed = "TAXES_TOOLTIP_DELAYED"
+		}
+		containerWindowType = {
+			name = "taxes_increase_container"
+			position = { x = 3 y = 22 }
+
+			buttonType = {
+				name = "taxes_increase_bg"
+				spriteType = "GFX_army_experience"
+				position = { x = 0 y = 0 }
+			}
+
+			instantTextBoxType = {
+				name = "taxes_increase_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 24
+				maxHeight = 24
+				fixedsize = yes
+				pdx_tooltip = "TAXES_INCREASE_TOOLTIP"
+				pdx_tooltip_delayed = "TAXES_INCREASE_TOOLTIP_DELAYED"
+			}
+		}
+		containerWindowType = {
+			name = "taxes_decrease_container"
+			position = { x = 3 y = 37 }
+
+		buttonType = {
+			name = "taxes_decrease_bg"
+			spriteType = "GFX_army_experience"
+			position = { x = 0 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "taxes_decrease_tooltip"
+			position = { x = 0 y = 0 }
+			font = "hoi_18mbs"
+			format = left
+			maxWidth = 24
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "taxes_decrease_tax_tooltip"
+			pdx_tooltip_delayed = "taxes_decrease_delayed_tooltip"
+			}
+		}
+		containerWindowType = {
+			name = "duty_container"
+			position = { x = 45 y = 7 }
+
+		buttonType = {
+			name = "duty_bg"
+			spriteType = "GFX_army_experience"
+			position = { x = 0 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "duty_tooltip"
+			position = { x = 15 y = -4 }
+			font = "hoi_18mbs"
+			format = left
+			text = "[?duty]"
+			maxWidth = 75
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "duty_tooltip"
+			pdx_tooltip_delayed = "duty_delayed_tooltip"
+			}
+		}
+		containerWindowType = {
+			name = "coffers_button"
+			position = { x = 45 y = 23 }
+
+		buttonType = {
+			name = "coffers_bg"
+			spriteType = "GFX_army_experience"
+			position = { x = 0 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "coffers_tooltip"
+			position = { x = 15 y = -4 }
+			font = "hoi_18mbs"
+			format = left
+			text = "[?coffers]"
+			maxWidth = 75
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "coffers_tooltip"
+			pdx_tooltip_delayed = "coffers_delayed_tooltip"
+			}
+		}
+		containerWindowType = {
+			name = "nominal_gdp_button"
+			position = { x = 45 y = 39 }
+
+		instantTextBoxType = {
+			name = "nominal_gdp_tooltip"
+			position = { x = 0 y = 0 }
+			font = "hoi_18mbs"
+			format = left
+			text = "[?nominal_gdp]"
+			maxWidth = 75
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "nominal_gdp_tooltip"
+			pdx_tooltip_delayed = "nominal_gdp_delayed_tooltip"
+			}
+		}
+		containerWindowType = {
+			name = "real_gdp_button"
+			position = { x = 45 y = 55 }
+
+		instantTextBoxType = {
+			name = "real_gdp_tooltip"
+			position = { x = 0 y = 0 }
+			font = "hoi_18mbs"
+			format = left
+			text = "[?real_gdp]"
+			maxWidth = 75
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "real_gdp_tooltip"
+			pdx_tooltip_delayed = "real_gdp_delayed_tooltip"
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+characters = {
+	UKR_leonid_kravchuk = {
+		name = UKR_leonid_kravchuk
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_leonid_kravchuk
+			}
+		}
+		country_leader = {
+			ideology = classic_conservatism
+			traits = {}
+			expire = "2022.5.10"
+			id = -100
+		}
+	}
+}
