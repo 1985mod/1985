@@ -97,6 +97,7 @@ set_popularities = {
 
 add_ideas = {
 AFN_kunar_operation
+extensive_conscription
 }
 
 recruit_character = AFN_mohammed_omar
