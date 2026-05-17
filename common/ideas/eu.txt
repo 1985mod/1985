@@ -4,16 +4,16 @@ ideas = {
 			picture = GFX_idea_EU_member
 			allowed = {
 				OR = {
-				original_tag = WGR
-				original_tag = DEN
-				original_tag = HOL
-				original_tag = BEL
-				original_tag = LUX
-				original_tag = FRA
-				original_tag = ITA
-				original_tag = ENG
-				original_tag = IRE
-				original_tag = GRE
+					original_tag = WGR
+					original_tag = DEN
+					original_tag = HOL
+					original_tag = BEL
+					original_tag = LUX
+					original_tag = FRA
+					original_tag = ITA
+					original_tag = ENG
+					original_tag = IRE
+					original_tag = GRE
 				}
 			}
 			removal_cost = -1
