@@ -1,0 +1,144 @@
+focus_tree = {
+    id = usa_elections_1992
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 100
+            tag = USA
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 3000 y = 1200 }
+
+    focus = { 
+        id = USA_1992_election_campaign
+        icon = GFX_	
+        x = 5
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_we_choose_bush
+        icon = GFX_	
+        relative_position_id = USA_1992_election_campaign
+        x = -3
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_victory_in_the_primaries
+        icon = GFX_	
+        relative_position_id = USA_we_choose_bush
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_increase_defense_spending
+        icon = GFX_	
+        relative_position_id = USA_victory_in_the_primaries
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_promise_military_reforms
+        icon = GFX_	
+        relative_position_id = USA_increase_defense_spending
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_for_bill_clinton
+        icon = GFX_	
+        relative_position_id = USA_1992_election_campaign
+        x = 3
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_its_the_economy_stupid
+        icon = GFX_	
+        relative_position_id = USA_for_bill_clinton
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_promise_economic_reforms
+        icon = GFX_	
+        relative_position_id = USA_its_the_economy_stupid
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_the_position_of_the_centrist_political_philosophy_third_way
+        icon = GFX_	
+        relative_position_id = USA_promise_economic_reforms
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_1992_elections_day
+        icon = GFX_	
+        relative_position_id = USA_promise_military_reforms
+        x = 4
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+}

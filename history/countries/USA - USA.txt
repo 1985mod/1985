@@ -178,6 +178,8 @@ set_politics = {
 recruit_character = USA_ronald_reagan
 recruit_character = USA_george_bush
 recruit_character = USA_michael_dukakis
+recruit_character = USA_bill_clinton
+
 
 set_popularities = {
 	liberalism = 40
