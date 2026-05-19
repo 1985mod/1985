@@ -508,6 +508,11 @@ spriteTypes = {
 		name = "GFX_Portrait_michael_dukakis"
 		texturefile = "gfx/leaders/USA/Portrait_Michael_Dukakis.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Portrait_Bill_Clinton"
+		texturefile = "gfx/leaders/USA/Portrait_Bill_Clinton.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_Portrait_Muhammadu_Buhari"
@@ -547,5 +552,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_igor_smirnov"
 		texturefile = "gfx/leaders/PMR/Portrait_igor_smirnov.dds"
+	}
+
+	## LEB ##
+	spriteType = {
+		name = "GFX_Portrait_amin_pierre"
+		texturefile = "gfx/leaders/LEB/Portrait_amin_pierre.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_georges_hauy"
+		texturefile = "gfx/leaders/LEB/Portrait_georges_hauy.dds"
 	}
 }

@@ -1,0 +1,98 @@
+division_template = {
+	name = "Lebanese front brigade"			# Infantry Division
+
+	division_names_group = LEB_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Lebanese national movement brigade"			# Infantry Division
+
+	division_names_group = LEB_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Lebanese armed forces brigade"			# Infantry Division
+
+	division_names_group = LEB_INF_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+        motorized = { x = 0 y = 1 }
+        motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        modern_armor = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 792
+		division_template = "Lebanese front brigade"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13494
+		division_template = "Lebanese national movement brigade"	
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 792
+		division_template = "Lebanese armed forces brigade"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13494
+		division_template = "Lebanese armed forces brigade"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+    }
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = LEB
+		}
+		requested_factories = 1
+		progress = 0.34
+		efficiency = 100
+	}
+}

@@ -2,7 +2,7 @@
 state={
 	id=553
 	name="STATE_553"
-	manpower = 1104000
+	manpower = 1584020
 	
 	state_category = town
 
@@ -19,12 +19,18 @@ state={
 				naval_base = 3
 			}
 		}
+		SYR = {
+			set_province_controller = 1108
+			set_province_controller = 13412
+			set_province_controller = 13493
+			set_province_controller = 13496
+		}
 
 		add_core_of = LEB
 	}
 
 	provinces={
-		792 1108 11919 13412
+		792 1108 13412 13493 13494 13496
 	}
 
 	local_supplies=0.0 
