@@ -1,8 +1,8 @@
-
+﻿
 state={
 	id=178
 	name="STATE_178"
-	manpower = 561347
+	manpower = 1425210
 	
 	state_category = small_island
 
