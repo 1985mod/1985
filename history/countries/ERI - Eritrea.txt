@@ -19,6 +19,7 @@ declare_war_on = {
 
 set_convoys = 10
 
+>>>>>>> def
 
 1939.1.1 = {
 	

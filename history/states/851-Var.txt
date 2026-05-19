@@ -23,19 +23,8 @@ state = {
 				coastal_bunker = 1
 			}
 
-			# Malpasset Dam
-			#3928 = { dam = 1 }
+		}
 
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				dockyard = 1
-				911 = {
-					naval_facility = 1 # Toulon arsenal
-				}
-			}
-		}
 	}
 
 	provinces = {
