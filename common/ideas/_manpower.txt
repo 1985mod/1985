@@ -277,31 +277,9 @@ ideas = {
 					factor = 20
 				}
 				modifier = {
-					tag = ENG
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = ENG_ai_behavior
-							option = DEFAULT
-						}
-					}
-					date > 1939.1.1
-					date < 1939.9.1
-					has_war = no
-					NOT = { has_guaranteed = POL }
-					factor = 0
-				}
-				modifier = {
 					tag = SOV
 					threat > 0.8
 					factor = 3
-				}
-				modifier = {
-					tag = SOV
-					is_historical_focus_on = yes
-					date > 1939.1.1
-					has_idea = volunteer_only
-					factor = 201
 				}
 				modifier = {
 					factor = 0

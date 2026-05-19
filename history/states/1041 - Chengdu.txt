@@ -24,15 +24,6 @@ state = {
 		victory_points = {
 			1367 1 # Guanghan
 		}
-		
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-				infrastructure = 3
-				arms_factory = 1
-
-			}
-		}
 
 	}
 

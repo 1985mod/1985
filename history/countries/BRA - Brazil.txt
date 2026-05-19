@@ -300,6 +300,7 @@ IF = {
 	set_naval_oob = "BRA_1936_naval"	
 }
 
+<<<<<<< Updated upstream
 set_country_flag = monroe_doctrine
 recruit_character = BRA_plinio_salgado
 recruit_character = BRA_luis_carlos_prestes
@@ -435,19 +436,9 @@ recruit_character = BRA_random_army_chief
 	}
 }
 
+=======
+>>>>>>> Stashed changes
 set_convoys = 40
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1934.7.17"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		neutrality = 100
-	}
-}
 
 IF = {
 	limit = {
@@ -514,26 +505,6 @@ IF = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = ship_mine_layer_sub
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	IF = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		create_equipment_variant = {
-			name = "Tupi Class"
-			type = ship_hull_submarine_2
-			name_group = BRA_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_1
-				rear_1_custom_slot = empty
-			}
 		}
 	}
 }
