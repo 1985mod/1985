@@ -1,83 +1,163 @@
-EU_decision_cat = {
-    EU_add_stability = {
-        icon = generic_industry
-        available = {
-            has_stability < 1
-        }
+EU_eec = {
 
-        visible = {
-            always = yes
-        }
+	EU_domestic_integration_push = {
 
-        cost = 50
-        fire_only_once = no
-        days_remove = 30
+		icon = eng_propaganda_campaigns
 
-        complete_effect = {
-            add_stability = 0.1
-        }
+		available = {
+			has_idea = EU_member
+		}
 
-        ai_will_do = {
-            base = 0
-            modifier = {
-                add = 1
-                has_stability < 0.6
-                has_political_power > 150
-            }
-            modifier = {
-                factor = 2
-                has_political_power > 300
-            }
-        }
-    }
+		cost = 100
+		fire_only_once = no
+		days_remove = 30
 
-    EU_pro_eu_campaign = {
-        icon = generic_industry
-        available = {
-            has_political_power > 50
-        }
-        cost = 50
-        fire_only_once = no
-        days_re_enable = 365
+		ai_will_do = {
+			factor = 2
+		}
 
-        remove_effect = {
-            FROM = {
-				add_to_variable = {
-					var = ROOT.europeanism
-					value = +5
-				}
-				clamp_variable = {
-					var = ROOT.euroscepticism
-					min = 0
-					max = 100
-				}
+		modifier = {
+			political_power_gain = -0.25
+		}
+		
+		remove_effect = {
+			# +5% европеизма для страны
+			add_to_variable = {
+				var = europeanism
+				value = 5
 			}
-            
-            FROM = {
-				add_to_variable = {
-					var = ROOT.europeanism
-					value = +5
-				}
-				clamp_variable = {
-					var = ROOT.euroscepticism
-					min = 0
-					max = 100
-				}
+			clamp_variable = {
+				var = europeanism
+				min = 0
+				max = 100
 			}
-			custom_effect_tooltip = add_pro_eu_campaign
-			custom_effect_tooltip = add_3_integration_uyghurs_tt
-        }    
+		}
+	}
+	
+	EU_protection_of_national_sovereignty = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_idea = EU_member
+		}
+		
+		visible = {
+			has_idea = EU_member
+		}
+		
+
+		fire_only_once = no
+		days_remove = 30
+
+		cost = 100
+		
+		modifier = {
+			political_power_gain = -0.25
+			conservatism_drift = 0.03
+			liberalism_drift = 0.03
+		}
+
+		remove_effect = {
+			# +5% евроскептицизма для страны
+			add_to_variable = {
+				var = euroscepticism
+				value = 5
+			}
+			clamp_variable = {
+				var = euroscepticism
+				min = 0
+				max = 100
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	EU_pan_european_consolidation = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_idea = EU_member
+		}
+
+		visible = {
+			has_idea = EU_member
+		}
+		
+		fire_only_once = no
+		days_remove = 60
         
-        ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 3
-                check_variable = { var = europeanism < 40 }
-            }
-            modifier = {
-                factor = 0.1
-                check_variable = { var = europeanism > 80 }
-            }
-        }
-    }
+        cost = 150
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			# +3% европеизма для всех стран ЕЭС
+			every_country = {
+				limit = {
+					has_idea = EU_member
+				}
+				add_to_variable = {
+					var = europeanism
+					value = 3
+				}
+				clamp_variable = {
+					var = europeanism
+					min = 0
+					max = 100
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	EU_countering_brussels_dictate = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_idea = EU_member
+		}
+
+		visible = {
+			has_idea = EU_member
+		}
+		
+		fire_only_once = no
+		days_remove = 60
+        cost = 150
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			# +3% евроскептицизма для всех стран ЕЭС
+			every_country = {
+				limit = {
+					has_idea = EU_member
+				}
+				add_to_variable = {
+					var = euroscepticism
+					value = 3
+				}
+				clamp_variable = {
+					var = euroscepticism
+					min = 0
+					max = 100
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
 }
