@@ -1015,3 +1015,6 @@ IF = {
 			}
 		}
 }
+
+give_guarantee = CHI
+give_guarantee = KOR

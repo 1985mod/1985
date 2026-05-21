@@ -2,7 +2,7 @@
 
 oob = "GEN_1985"
 
-set_research_slots = 4
+set_research_slots = 7
 
 starting_train_buffer = 3.0
 
@@ -210,3 +210,11 @@ recruit_character = SOV_zhirinovsky
         province = 11375
     }
 }
+
+give_guarantee = DDR
+give_guarantee = POL
+give_guarantee = HUN
+give_guarantee = ROM
+give_guarantee = BUL
+give_guarantee = CZE
+give_guarantee = MON

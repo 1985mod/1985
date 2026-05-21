@@ -2,7 +2,7 @@
 
 oob = "USA_1936"
 
-starting_train_buffer = 5
+starting_train_buffer = 3.0
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -42,9 +42,9 @@ if = {
 	}
 }
 
-set_research_slots = 4
+set_research_slots = 9
 set_stability = 0.75
-set_war_support = 0
+set_war_support = 0.70
 add_command_power = 20
 
 
@@ -589,3 +589,8 @@ if = {
         province = 6823
     }
 }
+
+give_guarantee = CHI
+give_guarantee = KOR
+give_guarantee = JAP
+give_guarantee = ISR
