@@ -684,7 +684,7 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_confirm_сlarence_thomas_as_assistant
+        id = USA_confirm_clarence_thomac_as_assistant
 		relative_position_id = USA_reduction_of_nuclear_stockpiles
 		prerequisite = { focus = USA_reduction_of_nuclear_stockpiles  }
         icon = GFX_	
@@ -715,6 +715,7 @@ focus_tree = {
         id = USA_meeting_with_boris_yeltsin
 		relative_position_id = USA_reduction_of_nuclear_stockpiles
 		prerequisite = { focus = USA_civil_rights_act_of_1991  }
+		prerequisite = { focus = USA_confirm_clarence_thomac_as_assistant  }
         icon = GFX_	
         x = 0
         y = 2

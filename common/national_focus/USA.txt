@@ -398,7 +398,7 @@ focus_tree = {
         x = 0
         y = 1
 		allow_branch = { has_country_flag = USA_reconsider_relations_with_the_soviet_union }
-        cost = 2
+        cost = 5
 		
         available = {
 		   date > 1986.10.2

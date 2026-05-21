@@ -1,13 +1,11 @@
-state=
-{
+state={
 	id=626
 	name="STATE_626"
 	manpower = 192257
 	
 	state_category = pastoral
 	
-	history=
-	{
+	history={
 		owner = PHI
 		buildings = {
 			infrastructure = 2
@@ -16,11 +14,6 @@ state=
 			}
 		}
 		add_core_of = PHI
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-			}
-		}
 	}
 	provinces={
 		4429 7419 10145 

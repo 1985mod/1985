@@ -1,0 +1,16 @@
+characters = {
+	PNG_michael_thomas = {
+		name = PNG_michael_thomas
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_michael_thomas
+			}
+		}
+		country_leader = {
+			ideology = classic_conservatism
+			traits = {}
+			expire = "2022.5.10"
+			id = -100
+		}
+	}
+}

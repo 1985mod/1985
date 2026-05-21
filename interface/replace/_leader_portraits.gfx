@@ -513,6 +513,13 @@ spriteTypes = {
 		name = "GFX_Portrait_Bill_Clinton"
 		texturefile = "gfx/leaders/USA/Portrait_Bill_Clinton.dds"
 	}
+
+	## CAN ##
+
+	spriteType = {
+		name = "GFX_Portrait_brian_mulroney"
+		texturefile = "gfx/leaders/CAN/Portrait_brian_mulroney.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_Portrait_Muhammadu_Buhari"
@@ -562,5 +569,23 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_georges_hauy"
 		texturefile = "gfx/leaders/LEB/Portrait_georges_hauy.dds"
+	}
+
+	## PNG ##
+	spriteType = {
+		name = "GFX_Portrait_michael_thomas"
+		texturefile = "gfx/leaders/PNG/Portrait_michael_thomas.dds"
+	}
+
+	## AST ##
+	spriteType = {
+		name = "GFX_Portrait_bob_hawke"
+		texturefile = "gfx/leaders/AST/Portrait_bob_hawke.dds"
+	}
+
+	## NZL ##
+	spriteType = {
+		name = "GFX_Portrait_david_longhi"
+		texturefile = "gfx/leaders/NZL/Portrait_david_longhi.dds"
 	}
 }

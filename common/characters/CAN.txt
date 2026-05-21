@@ -1,0 +1,16 @@
+characters = {
+	CAN_brian_mulroney = {
+		name = CAN_brian_mulroney
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_brian_mulroney
+			}
+		}
+		country_leader = {
+			ideology = classic_conservatism
+			traits = {}
+			expire = "2022.5.10"
+			id = -100
+		}
+	}
+}
