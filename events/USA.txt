@@ -247,10 +247,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_country_flag = anti_iraq_coalition
-	}
-
 	option = {
 		name = usa.10.a
 		ai_chance = {
@@ -302,5 +298,40 @@ country_event = {
 		add_ideas = USA_economic_recession
 		set_country_flag = USA_economic_recessions_load
 		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = {
+	id = usa.13
+	title = usa.13.t
+	desc = usa.13.desc
+	picture = GFX_report_dead_chernenko
+	
+	fire_only_once = yes
+	
+	trigger = {
+	   tag = USA
+	   date > 1992.11.01
+	   liberalism > 0.5
+	}
+	
+	option = {
+		name = usa.13.a
+		ai_chance = {
+			base = 10
+		}
+		
+        complete_national_focus = USA_1992_elections_day
+		complete_national_focus = USA_lets_drink_to_the_democrats
+
+		remove_country_leader = { name = "USA_george_bush" }
+		promote_character = {
+			character = USA_bill_clinton
+			ideology = liberalism
+		}
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = yes
+		}
 	}
 }

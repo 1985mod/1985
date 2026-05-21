@@ -1,0 +1,16 @@
+characters = {
+	AST_bob_hawke = {
+		name = AST_bob_hawke
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_bob_hawke
+			}
+		}
+		country_leader = {
+			ideology = classic_conservatism
+			traits = {}
+			expire = "2022.5.10"
+			id = -100
+		}
+	}
+}

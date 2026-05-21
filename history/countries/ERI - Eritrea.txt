@@ -14,7 +14,7 @@ set_technology = {
 
 declare_war_on = {
 	target = ETH
-	type = take_claimed_state
+	type = independence
 }
 
 set_convoys = 10

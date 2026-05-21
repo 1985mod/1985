@@ -13,6 +13,8 @@ if = {
 	set_technology = { camelry = 1 }
 }
 
+recruit_character = SYE_Ali_Nasser_Muhammad
+
 set_war_support = 0.1
 set_stability = 0.8
 set_convoys = 5
@@ -26,6 +28,3 @@ set_politics = {
 set_popularities = {
 	communism = 100
 }
-
-
-recruit_character = SYE_Ali_Nasser_Muhammad

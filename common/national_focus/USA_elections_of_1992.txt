@@ -29,12 +29,20 @@ focus_tree = {
         id = USA_we_choose_bush
         icon = GFX_	
         relative_position_id = USA_1992_election_campaign
-        x = -3
+        prerequisite = { focus = USA_1992_election_campaign }
+        x = -2
         y = 1
         cost = 5
+
+		available = {
+		   NOT = { has_completed_focus = USA_for_bill_clinton }
+		}
 		
         completion_reward = {
-
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.02
+			}
 	    }
 	}
 
@@ -42,12 +50,17 @@ focus_tree = {
         id = USA_victory_in_the_primaries
         icon = GFX_	
         relative_position_id = USA_we_choose_bush
+        prerequisite = { focus = USA_we_choose_bush }
         x = 0
         y = 1
         cost = 5
 		
         completion_reward = {
-
+            add_stability = 0.05
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.03
+			}
 	    }
 	}
 
@@ -55,12 +68,27 @@ focus_tree = {
         id = USA_increase_defense_spending
         icon = GFX_	
         relative_position_id = USA_victory_in_the_primaries
+        prerequisite = { focus = USA_victory_in_the_primaries }
         x = 0
         y = 1
         cost = 5
 		
         completion_reward = {
-
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}            
+			add_popularity = {
+				ideology = conservatism
+				popularity = -0.02
+			}
 	    }
 	}
 
@@ -68,12 +96,17 @@ focus_tree = {
         id = USA_promise_military_reforms
         icon = GFX_	
         relative_position_id = USA_increase_defense_spending
+        prerequisite = { focus = USA_increase_defense_spending }
         x = 0
         y = 1
         cost = 5
 		
         completion_reward = {
-
+            add_war_support = 0.1
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.04
+			}
 	    }
 	}
 
@@ -81,12 +114,20 @@ focus_tree = {
         id = USA_for_bill_clinton
         icon = GFX_	
         relative_position_id = USA_1992_election_campaign
-        x = 3
+        x = 2
         y = 1
+        prerequisite = { focus = USA_1992_election_campaign }
         cost = 5
+
+		available = {
+		   NOT = { has_completed_focus = USA_we_choose_bush }
+		}
 		
         completion_reward = {
-
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.02
+			}
 	    }
 	}
 
@@ -94,12 +135,21 @@ focus_tree = {
         id = USA_its_the_economy_stupid
         icon = GFX_	
         relative_position_id = USA_for_bill_clinton
+        prerequisite = { focus = USA_for_bill_clinton }
         x = 0
         y = 1
         cost = 5
 		
         completion_reward = {
-
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = -0.02
+			}
+            add_stability = 0.05
 	    }
 	}
 
@@ -107,12 +157,27 @@ focus_tree = {
         id = USA_promise_economic_reforms
         icon = GFX_	
         relative_position_id = USA_its_the_economy_stupid
+        prerequisite = { focus = USA_its_the_economy_stupid }
         x = 0
         y = 1
         cost = 5
 		
         completion_reward = {
-
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.04
+			}
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 	    }
 	}
 
@@ -120,12 +185,24 @@ focus_tree = {
         id = USA_the_position_of_the_centrist_political_philosophy_third_way
         icon = GFX_	
         relative_position_id = USA_promise_economic_reforms
+        prerequisite = { focus = USA_promise_economic_reforms }
         x = 0
         y = 1
         cost = 5
 		
         completion_reward = {
-
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.04
+			}
 	    }
 	}
 
@@ -133,12 +210,13 @@ focus_tree = {
         id = USA_1992_elections_day
         icon = GFX_	
         relative_position_id = USA_promise_military_reforms
-        x = 4
+        prerequisite = { focus = USA_promise_military_reforms focus = USA_the_position_of_the_centrist_political_philosophy_third_way }
+        x = 2
         y = 1
         cost = 5
 		
         completion_reward = {
-
+            load_focus_tree = usa_bill_clinton_focus
 	    }
 	}
 }

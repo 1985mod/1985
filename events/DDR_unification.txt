@@ -17,31 +17,21 @@ country_event = {
 		ai_chance = {
 			base = 20
 		}
-
-		effect_tooltip = {
-			WGR = { 
-				annex_country = {
-					target = DDR
-				}
-			}			
-		}
-
-		hidden_effect = {
-			set_global_flag = GER_unification1
-			WGR = { transfer_state = 60 }
-			WGR = { transfer_state = 61 }
-			WGR = { transfer_state = 62 }
-			WGR = { transfer_state = 64 }
-			WGR = { transfer_state = 65 }
-			WGR = {
-				add_core_of = 60
-				add_core_of = 61
-				add_core_of = 62
-				add_core_of = 64
-				add_core_of = 65
+		set_global_flag = GER_unification1
+		WGR = {
+			annex_country = {
+   				target = DDR
+   				transfer_troops = yes
 			}
-			WGR = { capital = 64 }
 		}
+		WGR = {
+			add_state_core = 60
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 64
+			add_state_core = 65
+		}
+		WGR = { set_capital = { state = 64 } }
 	}
 
 	option = { # ГДР отказывается
@@ -91,40 +81,32 @@ country_event = {
 		ai_chance = {
 			base = 999 # 10
 		}
-		effect_tooltip = {
-			declare_war_on = {
-				target = DDR
-				type = annex_everything
-			}
-		}
-		hidden_effect = {
 			set_global_flag = GER_unification2
-			declare_war_on = {
-				target = DDR
-				type = annex_everything
-			}
-			WGR = {
-				add_core_of = 60
-				add_core_of = 61
-				add_core_of = 62
-				add_core_of = 64
-				add_core_of = 65
-			}
-			DDR = {
-				add_core = 909
-				add_core = 58
-				add_core = 59
-				add_core = 56
-				add_core = 51
-				add_core = 42
-				add_core = 55
-				add_core = 57
-				add_core = 978
-				add_core = 50
-				add_core = 54
-				add_core = 52
-				add_core = 53
-			}
+		declare_war_on = {
+			target = DDR
+			type = annex_everything
+		}
+		WGR = {
+			add_state_core = 60
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 64
+			add_state_core = 65
+		}
+		DDR = {
+			add_state_core = 909
+			add_state_core = 58
+			add_state_core = 59
+			add_state_core = 56
+			add_state_core = 51
+			add_state_core = 42
+			add_state_core = 55
+			add_state_core = 57
+			add_state_core = 978
+			add_state_core = 50
+			add_state_core = 54
+			add_state_core = 52
+			add_state_core = 53
 		}
 	}
 }
@@ -150,12 +132,12 @@ country_event = {
 		WGR = { transfer_state = 64 }
 		WGR = { transfer_state = 65 }
 		WGR = {
-			add_core_of = 60
-			add_core_of = 61
-			add_core_of = 62
-			add_core_of = 64
-			add_core_of = 65
+			add_state_core = 60
+			add_state_core = 61
+			add_state_core = 62
+			add_state_core = 64
+			add_state_core = 65
 		}
-		WGR = { capital = 64 }
+		WGR = { set_capital = { state = 64 } }
 	}
 }

@@ -23,6 +23,8 @@ IF = {
 
 set_convoys = 5
 
+recruit_character = KUW_Jaber
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -35,5 +37,3 @@ set_popularities = {
 	communism = 1
 	neutrality = 58
 }
-
-recruit_character = KUW_Jaber
