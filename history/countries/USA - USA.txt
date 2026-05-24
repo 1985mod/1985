@@ -166,7 +166,6 @@ complete_special_project = {
 add_ideas = {
 USA_reaganomics_policy
 USA_stronghold_of_freedom
-USA_cold_war
 USA_the_endless_war_on_drugs
 }
 

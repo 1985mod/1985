@@ -105,6 +105,16 @@ country_event = {
 			declare_war_on = { target = CRO type = annex_everything }	
 		}
 	}
+	trigger = {
+		NOT = {
+			is_ai = no
+		}
+	}
+	option = {
+		name = news.4.a
+		trigger = { is_ai = no }
+		CRO = { change_tag_from = YUG }
+	}
 }
 
 country_event = {
