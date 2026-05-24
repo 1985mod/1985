@@ -37,25 +37,6 @@ ideas = {
 			  liberalism_drift = 0.02
 			}
 		}
-		USA_cold_war = {
-			picture = idea_ 
-			allowed = {
-				original_tag = USA
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			  stability_factor = -0.05
-			  send_volunteers_tension = -0.5
-			  lend_lease_tension = -0.5
-			  request_lease_tension = -0.5
-			}
-		}
 		USA_the_endless_war_on_drugs_2 = {
 			picture = idea_ 
 			allowed = {

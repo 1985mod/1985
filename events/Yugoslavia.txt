@@ -19,9 +19,7 @@ country_event = {
 				date > 1991.06.25
 				NOT = { has_country_flag = collapse_SLV }
 			}
-			SLV = { transfer_state = 102 }
-			SLV = { transfer_state = 736 }
-			SLV = { transfer_state = 853 }
+			release = SLV
 			set_country_flag = collapse_SLV
 		}
 
@@ -31,9 +29,7 @@ country_event = {
 				date > 1991.06.25
 				NOT = { has_country_flag = collapse_CRO }
 			}
-			CRO = { transfer_state = 852 }
-			CRO = { transfer_state = 103 }
-			CRO = { transfer_state = 109 }
+            release = CRO
 			set_country_flag = collapse_CRO
 		}
 
@@ -108,6 +104,16 @@ country_event = {
 		ROOT = {
 			declare_war_on = { target = CRO type = annex_everything }	
 		}
+	}
+	trigger = {
+		NOT = {
+			is_ai = no
+		}
+	}
+	option = {
+		name = news.4.a
+		trigger = { is_ai = no }
+		CRO = { change_tag_from = YUG }
 	}
 }
 

@@ -46,7 +46,7 @@ focus_tree = {
         prerequisite = { focus = USA_bill_clinton_inauguration  }
         x = 2
         y = 1
-        cost = 5
+        cost = 10
 		
         completion_reward = {
 
@@ -74,7 +74,7 @@ focus_tree = {
         icon = GFX_	
         x = -2
         y = 1
-        cost = 5
+        cost = 10
 		
         completion_reward = {
 
@@ -136,7 +136,7 @@ focus_tree = {
         icon = GFX_	
         x = 0
         y = 3
-        cost = 1
+        cost = 10
 
         available = {
             has_completed_focus = USA_act_as_a_mediator_in_the_israeli_palestinian_conflict

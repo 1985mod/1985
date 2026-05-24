@@ -2,7 +2,7 @@
 
 oob = "SOV_1985"
 
-set_research_slots = 4
+set_research_slots = 7
 
 starting_train_buffer = 3.0
 
@@ -189,7 +189,6 @@ add_dynamic_modifier = { modifier = SOV_cold_war}
 add_ideas = {
 SOV_soviet_contingent_in_afghanistan
 SOV_economic_stagnation
-SOV_cold_war
 }
 
 recruit_character = SOV_konstantin_chernenko
@@ -212,3 +211,11 @@ recruit_character = SOV_zhirinovsky
         province = 11375
     }
 }
+
+give_guarantee = DDR
+give_guarantee = POL
+give_guarantee = HUN
+give_guarantee = ROM
+give_guarantee = BUL
+give_guarantee = CZE
+give_guarantee = MON
