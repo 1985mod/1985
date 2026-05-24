@@ -14,6 +14,10 @@ country_event = {
 
     option = {
         name = croatia.1.a
+		add_timed_idea = {
+    		idea = CRO_struggle_for_independence
+    		days = 180
+		}
 		division_template = { 
 				name = "Milicija"
 				is_locked = no

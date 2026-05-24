@@ -72,6 +72,10 @@ focus_tree = {
 			SOV = {
 				remove_opinion_modifier = { target = USA modifier = cold_war }
 			}
+			remove_dynamic_modifier = { modifier = USA_cold_war }
+			SOV = {
+				remove_dynamic_modifier = { modifier = SOV_cold_war }
+			}
 	    }
 	}
 	
@@ -85,7 +89,10 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-		
+			country_event = { id = usa.14 hours = 6 }
+			SOV = {
+				country_event = { id = usa.14 hours = 12 }
+			}	
 	    }
 	}
 	
@@ -100,7 +107,10 @@ focus_tree = {
         cost = 2
 		
         completion_reward = {
-		
+			country_event = { id = usa.15 hours = 6 }
+			SOV = {
+				country_event = { id = usa.15 hours = 12 }
+			}		
 	    }
 	}
 	
