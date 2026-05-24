@@ -1,7 +1,11 @@
 ideas = {
     country = {
 		SOV_soviet_contingent_in_afghanistan = {
+<<<<<<< HEAD
 			picture = NONE
+=======
+			picture = chi_army_corruption3 
+>>>>>>> parent of 42a57c78 (new portraits)
 			allowed = {
 				original_tag = SOV
 			}
@@ -71,40 +75,6 @@ ideas = {
 			modifier = {
 			 production_factory_efficiency_gain_factor = 0.05
 			 consumer_goods_factor = 0.15
-			}
-		}
-		SOV_housing_2000_program = {
-			picture = NONE
-			allowed = {
-				original_tag = SOV
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			production_factory_efficiency_gain_factor = 0.02
-            production_speed_infrastructure_factor = 0.10
-			}
-		}	
-    	SOV_acceleration_course = {
-			picture = NONE
-			allowed = {
-				original_tag = SOV
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			production_speed_industrial_complex_factor = 0.03
-            production_speed_infrastructure_factor = 0.03
 			}
 		}
 	}

@@ -11,6 +11,7 @@ country_event = {
 	# КПСС
 	option = {
 		name = SOV_soviet_union.1.a
+		news_event = { id = SOV_soviet_union.4 days = 3 }
 		news_event = { id = SOV_soviet_union.2 days = 1 }
 		ai_chance = {
 			base = 10
@@ -300,11 +301,11 @@ country_event = {
         if = {
             limit = {
                 date > 1991.11.01
-                NOT = { has_country_flag = collapse_CHE }
+                NOT = { has_country_flag = collapse_CIN }
             }
             CHE = { transfer_state = 821 }
 			CHE = { transfer_state = 1060 }
-            set_country_flag = collapse_CHE
+            set_country_flag = collapse_CIN
         }
 
         # Средняя Азия — Узбекистан (август 1991)
@@ -385,6 +386,73 @@ country_event = {
     }
 }
 
+news_event = {
+	id = SOV_soviet_union.3 ## новостной Чернобыль ##
+	title = SOV_soviet_union.3.t
+	desc = SOV_soviet_union.3.desc
+	picture = GFX_news_SOV_chernobyl
+
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = SOV
+	}
+}
+
+news_event = {
+	id = SOV_soviet_union.4 ## новосной ивент на смерть Черненко ##
+	title = SOV_soviet_union.4.t
+	desc = SOV_soviet_union.4.desc
+	picture = GFX_news_SOV_dead_chernenko2
+     
+    is_triggered_only = yes
+    fire_only_once = yes
+    major = yes
+	trigger = {
+		tag = SOV
+	}
+
+    option = {
+        name = SOV_soviet_union.4.a
+        hidden_effect = {
+            add_stability = -0.3
+        }
+    }
+}
+
+news_event = {
+	id = SOV_soviet_union.5 ## Джобс в СССР ##
+	title = SOV_soviet_union.5.t
+	desc = SOV_soviet_union.5.desc
+	picture = GFX_news_SOV_jobs_ussr
+    
+    is_triggered_only = yes
+	fire_only_once = yes
+    major = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_leader = { name = "SOV_mikhail_gorbachev" }
+		date > 1985.7.4
+	}
+}
+
+news_event = {
+	id = SOV_soviet_union.6 ## Выборы в Верховный Совет РСФСР ##
+	title = SOV_soviet_union.6.t
+	desc = SOV_soviet_union.6.desc
+	picture = GFX_
+    
+    is_triggered_only = yes
+	fire_only_once = yes
+    major = yes
+	
+	trigger = {
+		tag = SOV
+	}
+}
+
 country_event = {
 	id = SOV_soviet_union.7 ## Встреча в Женеве ##
 	title = SOV_soviet_union.7.t
@@ -397,7 +465,6 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.7.a
-        news_event = { id = news.12 days = 0 }
 		add_political_power = -10
 		set_country_flag = SOV_elimination_of_nuclear_weapons
 		mark_focus_tree_layout_dirty = yes

@@ -19,7 +19,9 @@ country_event = {
 				date > 1991.06.25
 				NOT = { has_country_flag = collapse_SLV }
 			}
-			release = SLV
+			SLV = { transfer_state = 102 }
+			SLV = { transfer_state = 736 }
+			SLV = { transfer_state = 853 }
 			set_country_flag = collapse_SLV
 		}
 
@@ -29,7 +31,9 @@ country_event = {
 				date > 1991.06.25
 				NOT = { has_country_flag = collapse_CRO }
 			}
-            release = CRO
+			CRO = { transfer_state = 852 }
+			CRO = { transfer_state = 103 }
+			CRO = { transfer_state = 109 }
 			set_country_flag = collapse_CRO
 		}
 
