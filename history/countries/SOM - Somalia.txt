@@ -5,7 +5,6 @@ oob = "SOM_1985"
 declare_war_on = {
 	target = ETH
 	type = take_claimed_state
-	generator = { 835 836 }
 }
 
 # Starting tech

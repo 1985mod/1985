@@ -465,7 +465,7 @@ spriteTypes = {
 	## SYE ##
 	spriteType = {
 		name = GFX_Portrait_Ali_Nasser_Muhammad 
-		texturefile = "gfx/leaders/SYE/Portrait_Ali_Nasser_Muhammad.dds"
+		texturefile = "gfx/leaders/SYE/Portrait_Ali_Nasser_Muhammad"
 	}
 	
 	## PRK ##

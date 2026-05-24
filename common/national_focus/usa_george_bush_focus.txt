@@ -593,7 +593,7 @@ focus_tree = {
         cost = 3
 		
         completion_reward = {
-			country_event = { id = usa.16 hours = 3 }
+
 	    }
 	}
 
@@ -693,7 +693,7 @@ focus_tree = {
         cost = 2
 		
         completion_reward = {
-			country_event = { id = usa.17 hours = 6 }
+
 	    }
 	}
 
@@ -722,7 +722,7 @@ focus_tree = {
         cost = 1
 		
         completion_reward = {
-			country_event = { id = usa.18 hours = 10 }
+
 	    }
 	}
 

@@ -302,7 +302,7 @@ country_event = {
 }
 
 country_event = {
-	id = usa.13 ### Победа Билла Клинтона ###
+	id = usa.13
 	title = usa.13.t
 	desc = usa.13.desc
 	picture = GFX_report_dead_chernenko
@@ -333,98 +333,5 @@ country_event = {
 			ruling_party = liberalism
 			elections_allowed = yes
 		}
-	}
-}
-
-country_event = {
-	id = usa.14 ### Разговор с СССР ###
-	title = usa.14.t
-	desc = usa.14.d
-	picture = GFX_report_dead_chernenko
-
-	is_triggered_only = yes
-
-	option = {
-		name = usa.14.a
-		ai_chance = {
-			base = 100
-		}		
-		add_political_power = 10
-	}
-}
-
-country_event = {
-	id = usa.15 ### Первая встреча с Горбачёвом ###
-	title = usa.15.t
-	desc = usa.15.d
-	picture = GFX_report_dead_chernenko
-
-	is_triggered_only = yes
-
-	option = {
-		name = usa.15.a
-		ai_chance = {
-			base = 100
-		}		
-		add_political_power = 25
-	}
-}
-
-country_event = {
-	id = usa.16 ### Договор CHB - 1 ###
-	title = usa.16.t
-	desc = usa.16.d
-	picture = GFX_report_dead_chernenko
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		name = usa.16.a
-		ai_chance = {
-			base = 100
-		}		
-		add_political_power = 50
-	}
-}
-
-country_event = {
-	id = usa.17 ### Утверждение Томаса Кларенсеном помощником судьи ###
-	title = usa.17.t
-	desc = usa.17.d
-	picture = GFX_report_dead_chernenko
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		name = usa.17.a
-		ai_chance = {
-			base = 100
-		}		
-		add_political_power = 100
-		add_stability = 0.05
-	}
-}
-
-country_event = {
-	id = usa.18 ### Встреча с Борисом Николаичем ###
-	title = usa.18.t
-	desc = usa.18.d
-	picture = GFX_report_dead_chernenko
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		name = usa.18.a
-		ai_chance = {
-			base = 100
-		}		
-		add_political_power = 5
-		add_stability = 0.03
 	}
 }

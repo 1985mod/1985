@@ -5,8 +5,7 @@ state={
 	history={
 		owner = ISR
 		add_core_of = PAL
-		start_resistance = yes
-		set_compliance = 100
+		add_core_of = ISR
 		buildings = {
 			infrastructure = 1
 		}

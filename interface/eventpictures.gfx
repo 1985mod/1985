@@ -32,7 +32,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_news_yugoslav_wars"
-		texturefile = "gfx/event_pictures/news/YUG/news_yugoslav_wars.dds"
+		texturefile = "gfx/event_pictures/news_yugoslav_wars.dds"
 	}
 
 	spriteType = {
