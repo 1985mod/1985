@@ -43,6 +43,11 @@
         relative_position_id = SOV_law_on_cooperation
         prerequisite = { focus = SOV_law_on_cooperation }
         cost = 9.3
+
+        available = {
+            date > 1988.12.10
+        }
+
         completion_reward = {
         }
     }
@@ -116,6 +121,10 @@
         prerequisite = { focus = SOV_elections_of_peoples_deputies_of_the_ussr }
         prerequisite = { focus = SOV_parade_of_sovereignties }
         cost = 1
+
+        available = {
+            date > 1990.2.25
+        }
         completion_reward = {
             country_event = { id = SOV_soviet_union.11 }
         }

@@ -49,7 +49,7 @@ news_event = {
 	trigger = {
         NOT = { has_global_flag = usa_dead_chernenko }
 		tag = SOV
-		date > 1985.3.7
+		date > 1985.3.3
 	}
 
 	immediate = {
@@ -151,12 +151,16 @@ news_event = {
 	desc = news.6.desc
 	picture = GFX_news_elections_to_the_supreme_soviet_RSFSR
     
-    is_triggered_only = yes
-	fire_only_once = yes
     major = yes
+
+	immediate = {
+		set_global_flag = elections_to_the_supreme_soviet_RSFSR
+	}
 	
 	trigger = {
 		tag = SOV
+		NOT = { has_global_flag = elections_to_the_supreme_soviet_RSFSR }
+		SOV = { has_completed_focus = SOV_elections_to_the_supreme_council }
 	}
 }
 
@@ -165,61 +169,32 @@ news_event = {
 	title = news.7.t
 	desc = news.7.desc
 	picture = GFX_news_SOV_jobs_ussr
-    
-    is_triggered_only = yes
-	fire_only_once = yes
+
     major = yes
+
+	immediate = {
+		set_global_flag = jobs_in_ussr
+	}
 	
 	trigger = {
+		NOT = { has_global_flag = jobs_in_ussr }
 		tag = SOV
 		has_country_leader = { name = "SOV_mikhail_gorbachev" }
 		date > 1985.7.4
 	}
-}
 
-news_event = {
-	id = news.9 ## Победа Республиканцев ##
-	title = news.9.t
-	desc = news.9.desc
-	picture = GFX_news_victory_republicans
-    
-    major = yes
-	
-	immediate = {
-		set_global_flag = usa_victory_republicans
-	}
-	
-	trigger = {
-	   NOT = { has_global_flag = usa_victory_republicans }
-	   date > 1988.11.01
-	   USA = { has_government = conservatism }
+	option = {
+		name = news.7.a
 	}
 }
 
 news_event = {
-	id = news.10 ## Победа демократов ##
-	title = news.10.t
-	desc = news.10.desc
-	picture = GFX_news_victory_democrats
-    
-    major = yes
-	
-	immediate = {
-		set_global_flag = usa_victory_democrats
-	}
-	
-	trigger = {
-	   NOT = { has_global_flag = usa_victory_democrats }
-	   date > 1988.11.01
-	   USA = { has_government = liberalism }
-	}
-}
-
-news_event = {
-	id = news.11
-	title = news.11.t
-	desc = news.11.desc
+	id = news.8
+	title = news.8.t
+	desc = news.8.desc
 	picture = GFX_news_yugoslav_wars
+
+	is_triggered_only = yes
 
 	major = yes
 
@@ -229,11 +204,47 @@ news_event = {
 	
 	trigger = {
 	   NOT = { has_global_flag = operation_desert_storm }
-	   date > 1991.1.14
-	   has_global_flag = anti_iraq_coalition
 	}
 
 	option = {
-		name = news.11.a
+		name = news.8.a
+	}
+}
+
+news_event = {
+	id = news.9 ## Победа Республиканцев ##
+	title = news.9.t
+	desc = news.9.desc
+	picture = GFX_news_victory_republicans
+
+	is_triggered_only = yes
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = usa_victory_republicans
+	}
+	
+	trigger = {
+	   NOT = { has_global_flag = usa_victory_republicans }
+	}
+}
+
+news_event = {
+	id = news.10 ## Победа демократов ##
+	title = news.10.t
+	desc = news.10.desc
+	picture = GFX_news_victory_democrats
+
+	is_triggered_only = yes
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = usa_victory_democrats
+	}
+	
+	trigger = {
+	   NOT = { has_global_flag = usa_victory_democrats }
 	}
 }

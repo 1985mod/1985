@@ -11,8 +11,12 @@ state = {
 
 	history = {
 
-		owner = ISR
+		owner = LEB
 		add_core_of = LEB
+
+		1984.12.1 = {
+			controller = ISR
+		}
 
 		buildings = {
 			infrastructure = 1

@@ -16,7 +16,6 @@ country_event = {
 
     option = {
         name = israel.1.a
-        remove_state_core = 1050
         1050 = { add_resistance = 35 }
         1050 = { add_compliance = -100 }
     }

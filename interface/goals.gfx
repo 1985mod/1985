@@ -12553,8 +12553,67 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_icon_SOV_gorbachev"
-		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_gorbachev.dds"
+		name = "GFX_focus_icon_SOV_course_towards_stability"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_course_towards_stability.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_elections_to_the_supreme_council"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_elections_to_the_supreme_council.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_preparing_for_the_victory_parade"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_preparing_for_the_victory_parade.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_support_for_fraternal_regimes"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_support_for_fraternal_regimes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_gorbachev_the_new_general_secretary"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_gorbachev_the_new_general_secretary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_acceleration_course"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_acceleration_course.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_new_foreign_minister"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_new_foreign_minister.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_replacing_tikhonov_with_ryzhkov"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_replacing_tikhonov_with_ryzhkov.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_housing_2000_program"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_housing_2000_program.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_the_beginning_of_the_anti_alcohol_campaign"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_the_beginning_of_the_anti_alcohol_campaign.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_closure_of_unwanted_factories"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_closure_of_unwanted_factories.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_destruction_of_vineyards"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_destruction_of_vineyards.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_geneva_meeting"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_geneva_meeting.dds"
+	}
 }
