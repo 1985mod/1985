@@ -1,7 +1,8 @@
 ideas = {
     country = {
 		SOV_soviet_contingent_in_afghanistan = {
-			picture = idea_freedom_fight
+			picture = NONE
+			
 			allowed = {
 				original_tag = SOV
 			}

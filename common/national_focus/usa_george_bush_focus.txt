@@ -199,7 +199,7 @@ focus_tree = {
 		prerequisite = { focus = USA_support_new_democracies_in_eastern_europe  }
 		mutually_exclusive = { focus = USA_reduce_federal_budget_spending_on_arms }
         icon = GFX_	
-        x = -2
+        x = -5
         y = 4
         cost = 5
 		
@@ -398,6 +398,7 @@ focus_tree = {
 		will_lead_to_war_with = IRQ
 		
         completion_reward = {
+			country_event = { id = news.8 }
 			every_country = {
 				limit = {
 					has_country_flag = anti_iraq_coalition
@@ -750,7 +751,7 @@ focus_tree = {
 		prerequisite = { focus = USA_support_new_democracies_in_eastern_europe  }
 		mutually_exclusive = { focus = USA_reorient_the_armed_forces }
         icon = GFX_	
-        x = 2
+        x = 5
         y = 4
         cost = 10
 		

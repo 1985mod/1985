@@ -32,6 +32,7 @@ country_event = {
 
 		hidden_effect = {
 			remove_country_leader = { name = "USA_ronald_reagan" }
+			country_event = { id = news.9 }
 			promote_character = {
 				character = USA_george_bush
 				ideology = conservatism
@@ -76,6 +77,7 @@ country_event = {
 
 		hidden_effect = {
 			remove_country_leader = { name = "USA_ronald_reagan" }
+			country_event = { id = news.10 }
 			promote_character = {
 				character = USA_michael_dukakis
 				ideology = liberalism

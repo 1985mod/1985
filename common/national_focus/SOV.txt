@@ -15,7 +15,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_course_towards_stability
-        icon = GFX_focus_icon_SOV_gorbachev
+        icon = GFX_focus_icon_SOV_course_towards_stability
         x = 10
         y = 0
         cost = 3
@@ -35,7 +35,7 @@ focus_tree = {
         id = SOV_elections_to_the_supreme_council
         relative_position_id = SOV_course_towards_stability
         prerequisite = { focus = SOV_course_towards_stability }
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_elections_to_the_supreme_council
         x = -1
         y = 1
         cost = 4
@@ -48,7 +48,7 @@ focus_tree = {
 
 		completion_reward = {
             add_political_power = 10
-            country_event = { id = SOV_soviet_union.6 }
+            country_event = { id = news.6 }
 		}
     } 
 
@@ -56,7 +56,7 @@ focus_tree = {
         id = SOV_preparing_for_the_victory_parade
         relative_position_id = SOV_course_towards_stability
         prerequisite = { focus = SOV_course_towards_stability }
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_preparing_for_the_victory_parade
         x = 1
         y = 1
         cost = 4.3
@@ -80,7 +80,7 @@ focus_tree = {
         relative_position_id = SOV_preparing_for_the_victory_parade
         prerequisite = { focus = SOV_preparing_for_the_victory_parade }
         prerequisite = { focus = SOV_elections_to_the_supreme_council }
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_support_for_fraternal_regimes
         x = -1
         y = 1
         cost = 2.9
