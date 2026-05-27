@@ -189,6 +189,7 @@ add_dynamic_modifier = { modifier = SOV_cold_war}
 add_ideas = {
 SOV_soviet_contingent_in_afghanistan
 SOV_economic_stagnation
+limited_conscription
 }
 
 recruit_character = SOV_konstantin_chernenko

@@ -1,4 +1,5 @@
 add_namespace = SOV_soviet_union
+add_namespace = SOV_collapse
 
 country_event = {
 	id = SOV_soviet_union.1 ##  Смерть Черненко ##
@@ -164,12 +165,7 @@ country_event = {
                 date > 1990.03.11
                 NOT = { has_country_flag = collapse_LIT }
             }
-            LIT = { transfer_state = 11 }
-            LIT = { transfer_state = 784 }
-            LIT = { transfer_state = 814 }
-            LIT = { transfer_state = 815 }
-            LIT = { transfer_state = 188 }
-            LIT = { transfer_state = 189 }
+            release = LIT
             set_country_flag = collapse_LIT
         }
 
@@ -179,11 +175,7 @@ country_event = {
                 date > 1990.05.04
                 NOT = { has_country_flag = collapse_LAT }
             }
-            LAT = { transfer_state = 12 }
-            LAT = { transfer_state = 808 }
-            LAT = { transfer_state = 809 }
-            LAT = { transfer_state = 810 }
-            LAT = { transfer_state = 190 }
+            release = LAT
             set_country_flag = collapse_LAT
         }
 
@@ -193,11 +185,7 @@ country_event = {
                 date > 1991.03.20
                 NOT = { has_country_flag = collapse_EST }
             }
-            EST = { transfer_state = 13 }
-            EST = { transfer_state = 811 }
-            EST = { transfer_state = 812 }
-            EST = { transfer_state = 813 }
-            EST = { transfer_state = 191 }
+            release = EST
             set_country_flag = collapse_EST
         }
 
@@ -207,30 +195,7 @@ country_event = {
                 date > 1991.08.24
                 NOT = { has_country_flag = collapse_UKR }
             }
-            UKR = { transfer_state = 73 }
-            UKR = { transfer_state = 80 }
-            UKR = { transfer_state = 89 }
-            UKR = { transfer_state = 91 }
-            UKR = { transfer_state = 93 }
-            UKR = { transfer_state = 137 }
-            UKR = { transfer_state = 192 }
-            UKR = { transfer_state = 193 }
-            UKR = { transfer_state = 196 }
-            UKR = { transfer_state = 197 }
-            UKR = { transfer_state = 198 }
-            UKR = { transfer_state = 199 }
-            UKR = { transfer_state = 200 }
-            UKR = { transfer_state = 201 }
-            UKR = { transfer_state = 202 }
-            UKR = { transfer_state = 203 }
-            UKR = { transfer_state = 221 }
-            UKR = { transfer_state = 225 }
-            UKR = { transfer_state = 226 }
-            UKR = { transfer_state = 227 }
-            UKR = { transfer_state = 228 }
-            UKR = { transfer_state = 259 }
-            UKR = { transfer_state = 766 }
-			UKR = { transfer_state = 1059 }
+            release = UKR
             set_country_flag = collapse_UKR
         }
 
@@ -240,14 +205,7 @@ country_event = {
                 date > 1991.08.25
                 NOT = { has_country_flag = collapse_BLR }
             }
-            BLR = { transfer_state = 94 }
-            BLR = { transfer_state = 95 }
-            BLR = { transfer_state = 96 }
-            BLR = { transfer_state = 194 }
-            BLR = { transfer_state = 204 }
-            BLR = { transfer_state = 206 }
-            BLR = { transfer_state = 207 }
-            BLR = { transfer_state = 241 }
+            release = BLR
             set_country_flag = collapse_BLR
         }
 
@@ -257,8 +215,7 @@ country_event = {
                 date > 1991.08.27
                 NOT = { has_country_flag = collapse_MOL }
             }
-            MOL = { transfer_state = 78 }
-			MOL = { transfer_state = 834 }
+            release = MOL
             set_country_flag = collapse_MOL
         }
 
@@ -268,9 +225,7 @@ country_event = {
                 date > 1991.04.09
                 NOT = { has_country_flag = collapse_GEO }
             }
-            GEO = { transfer_state = 231 }
-            GEO = { transfer_state = 826 }
-			GEO = { transfer_state = 1057 }
+            release = GEO
             set_country_flag = collapse_GEO
         }
 
@@ -280,7 +235,7 @@ country_event = {
                 date > 1991.09.21
                 NOT = { has_country_flag = collapse_ARM }
             }
-            ARM = { transfer_state = 230 }
+            release = arm
             set_country_flag = collapse_ARM
         }
 
@@ -290,9 +245,7 @@ country_event = {
                 date > 1991.10.18
                 NOT = { has_country_flag = collapse_AZR }
             }
-            AZR = { transfer_state = 229 }
-			AZR = { transfer_state = 1054 }
-			AZR = { transfer_state = 1055 }
+            release = AZR
             set_country_flag = collapse_AZR
         }
 
@@ -302,8 +255,7 @@ country_event = {
                 date > 1991.11.01
                 NOT = { has_country_flag = collapse_CHE }
             }
-            CHE = { transfer_state = 821 }
-			CHE = { transfer_state = 1060 }
+            release = CHE
             set_country_flag = collapse_CHE
         }
 
@@ -313,10 +265,7 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_UZB }
             }
-            UZB = { transfer_state = 405 }
-            UZB = { transfer_state = 585 }
-            UZB = { transfer_state = 823 }
-            UZB = { transfer_state = 830 }
+            release = UZB
             set_country_flag = collapse_UZB
         }
 
@@ -326,8 +275,7 @@ country_event = {
                 date > 1991.10.27
                 NOT = { has_country_flag = collapse_TMS }
             }
-            TMS = { transfer_state = 584 }
-            TMS = { transfer_state = 832 }
+            release = TMS
             set_country_flag = collapse_TMS
         }
 
@@ -337,7 +285,7 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_KYR }
             }
-            KYR = { transfer_state = 732 }
+            release = KYR
             set_country_flag = collapse_KYR
         }
 
@@ -347,7 +295,7 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_TAJ }
             }
-            TAJ = { transfer_state = 742 }
+            release = TAJ
             set_country_flag = collapse_TAJ
         }
 
@@ -357,18 +305,7 @@ country_event = {
                 date > 1991.12.16
                 NOT = { has_country_flag = collapse_KAZ }
             }
-            KAZ = { transfer_state = 402 }
-            KAZ = { transfer_state = 404 }
-            KAZ = { transfer_state = 406 }
-            KAZ = { transfer_state = 407 }
-            KAZ = { transfer_state = 583 }
-            KAZ = { transfer_state = 586 }
-            KAZ = { transfer_state = 587 }
-            KAZ = { transfer_state = 588 }
-            KAZ = { transfer_state = 589 }
-            KAZ = { transfer_state = 590 }
-            KAZ = { transfer_state = 881 }
-            KAZ = { transfer_state = 882 }
+            release = KAZ
             set_country_flag = collapse_KAZ
 
             if = {
@@ -480,5 +417,40 @@ country_event = {
         name = SOV_soviet_union.12.a
         set_country_flag = SOV_affairs_of_the_republics
 		mark_focus_tree_layout_dirty = yes
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.13 ## Россия становится демократической  ##
+	title = SOV_soviet_union.13.t
+	desc = SOV_soviet_union.13.desc
+	picture = GFX_
+
+	fire_only_once = yes
+
+    trigger = {
+        tag = SOV
+        communism > 0.75
+        date > 1991.12.18
+    }
+
+    option = {
+        name = SOV_soviet_union.13.a
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+	    }
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.3
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.16
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.9
+		}
     }
 }

@@ -508,6 +508,15 @@ spriteTypes = {
 	}
 	
 	### 1985 ###
+
+	### PAN ###
+
+	spriteType = {
+		name = "GFX_Portrait_Manuel_Noriega"
+		texturefile = "gfx/leaders/PAN/Portrait_Manuel_Noriega.dds"
+	}
+
+	## USA ###
 	
 	spriteType = {
 		name = "GFX_Portrait_george_bush"
