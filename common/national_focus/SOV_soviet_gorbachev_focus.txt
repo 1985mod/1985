@@ -155,7 +155,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_elimination_of_weapons_funding
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_elimination_of_weapons_funding
         x = 0
         y = 1
         relative_position_id = SOV_geneva_meeting
@@ -169,7 +169,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_xxvii_congress_of_the_cpsu 
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_xxvii_congress_of_the_cpsu
         x = 0
         y = 1
         relative_position_id = SOV_elimination_of_weapons_funding
@@ -181,7 +181,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_launch_of_mir_station
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_launch_of_mir_station
         x = -2
         y = 1
         relative_position_id = SOV_elimination_of_weapons_funding
@@ -198,7 +198,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_visit_to_hungary
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_visit_to_hungary
         x = 2
         y = 1
         relative_position_id = SOV_elimination_of_weapons_funding
@@ -210,7 +210,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_introduction_of_state_acceptance
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_introduction_of_state_acceptance
         x = -1
         y = 1
         relative_position_id = SOV_xxvii_congress_of_the_cpsu
@@ -223,7 +223,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_renewal_of_the_ministry_of_foreign_affairs_composition
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_renewal_of_the_ministry_of_foreign_affairs_composition
         x = 1
         y = 1
         relative_position_id = SOV_xxvii_congress_of_the_cpsu
@@ -236,7 +236,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_the_fight_against_unearned_income
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_the_fight_against_unearned_income
         x = -1
         y = 1
         relative_position_id = SOV_renewal_of_the_ministry_of_foreign_affairs_composition
@@ -249,7 +249,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_decree_on_the_establishment_of_cooperatives_in_the_tnp
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_decree_on_the_establishment_of_cooperatives_in_the_tnp
         x = -1
         y = 1
         relative_position_id =  SOV_the_fight_against_unearned_income
@@ -261,7 +261,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_law_on_individual_labor_activity
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_law_on_individual_labor_activity
         x = 1
         y = 1
         relative_position_id =  SOV_the_fight_against_unearned_income
@@ -273,7 +273,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_the_fall_of_zheltoksan
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_the_fall_of_zheltoksan
         x = -1
         y = 1
         relative_position_id = SOV_law_on_individual_labor_activity
@@ -287,7 +287,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_release_of_dissidents
-        icon = GFX_NONE
+        icon = GFX_focus_icon_SOV_release_of_dissidents
         x = 0
         y = 1
         relative_position_id = SOV_the_fall_of_zheltoksan
