@@ -1,7 +1,7 @@
 state = {
 	id = 50
 	name = "STATE_50" # Württemberg
-	manpower = 3076854 # was 5086854
+	manpower = 4501409
 
 	resources = {
 		aluminium = 6 # was: 10.000
