@@ -61,4 +61,28 @@ characters={
 			
 		}
 	}
+
+    USA_lloyd_bentsen = {
+		name = "USA_lloyd_bentsen" 
+		portraits = {
+			civilian = {
+				small = GFX_idea_portrait_usa_lloyd_bentsen
+			}
+		}
+      	advisor = {
+	        slot = political_advisor
+		    idea_token = USA_lloyd_bentsen
+
+		  	allowed = {
+		      	original_tag = USA
+		  	}
+		 	available = {
+		  
+		  	}
+
+		  	traits = {
+		      	the_republican_rebel
+		 	} 
+		}
+	}
 }
