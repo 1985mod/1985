@@ -180,6 +180,7 @@ recruit_character = USA_ronald_reagan
 recruit_character = USA_george_bush
 recruit_character = USA_michael_dukakis
 recruit_character = USA_bill_clinton
+recruit_character = USA_lloyd_bentsen
 
 
 set_popularities = {

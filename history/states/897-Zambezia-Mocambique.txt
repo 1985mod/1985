@@ -15,11 +15,20 @@ state={
 
 		}
 
+		REN = {
+			set_province_controller = 13522
+			set_province_controller = 13523
+			set_province_controller = 13525
+			set_province_controller = 13526
+			set_province_controller = 13528
+		}
+
 		add_core_of = MZB
+		add_core_of = REN
 
 	}
 	provinces={
-		2123 2159 2180 2202 2217 5164 10972 12971 
+		2123 2159 2180 2202 2217 5164 10972 12971 13510 13522 13523 13524 13525 13526 13527 13528
 	}
 
 	buildings_max_level_factor=1.000

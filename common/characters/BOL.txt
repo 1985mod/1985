@@ -1,0 +1,18 @@
+characters = {
+	BOL_hernan_siles ={
+		name = BOL_hernan_siles
+		portraits={
+			civilian={
+				large= GFX_Portrait_hernan_siles
+			}
+			army = {
+				large = GFX_Portrait_hernan_siles
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

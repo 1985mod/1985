@@ -2401,18 +2401,30 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/ger_armored_car_equipment_1.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_armored_car2_medium"
 		texturefile = "gfx/interface/technologies/ger_armored_car_equipment_2.dds"
 	}
 	
-	SpriteType = {
+	spriteType = {
 		name = "GFX_armored_car3_medium"
 		texturefile = "gfx/interface/technologies/ger_armored_car_equipment_3.dds"
 	}
 	
-
 	spriteType = {
+        name = "GFX_armored_car1_medium"
+        texturefile = "gfx/interface/technologies/armored_car_equipment_1.dds"
+    }
+	spriteType = {
+        name = "GFX_armored_car2_medium"
+        texturefile = "gfx/interface/technologies/armored_car_equipment_2.dds"
+    }
+	spriteType = {
+        name = "GFX_armored_car3_medium"
+        texturefile = "gfx/interface/technologies/armored_car_equipment_3.dds"
+    }
+
+    spriteType = {
 		name = "GFX_subtech_td"
 		textureFile = "gfx//interface//technologies//subtech_td.dds"
 	}
