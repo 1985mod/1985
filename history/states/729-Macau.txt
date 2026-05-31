@@ -1,11 +1,7 @@
 state={
 	id=729
 	name="STATE_729"
-<<<<<<< Updated upstream
-	manpower = 411543
-=======
 	manpower = 298412
->>>>>>> Stashed changes
 	
 	state_category = enclave
 	

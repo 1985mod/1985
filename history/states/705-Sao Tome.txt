@@ -1,11 +1,7 @@
 state={
 	id=705
 	name="STATE_705"
-<<<<<<< Updated upstream
-	manpower=104321	
-=======
 	manpower=106153	
->>>>>>> Stashed changes
 	state_category = tiny_island
 
 	history={
