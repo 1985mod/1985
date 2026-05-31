@@ -30,7 +30,11 @@ state={
 	provinces={
 		799 3798 3861 6924 11805 
 	}
+<<<<<<< Updated upstream
 	manpower=2843152
+=======
+	manpower=3821151
+>>>>>>> Stashed changes
 	buildings_max_level_factor=1.000
 	state_category=city
 

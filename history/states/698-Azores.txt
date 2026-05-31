@@ -1,7 +1,11 @@
 state={
 	id=698
 	name="STATE_698"
+<<<<<<< Updated upstream
 	manpower = 251486
+=======
+	manpower = 251847
+>>>>>>> Stashed changes
 	
 	state_category = small_island
 	
