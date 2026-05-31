@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		SOV_soviet_contingent_in_afghanistan = {
-			picture = GFX_idea_sov_soviet_contingent_in_afghanistan
+			picture = GFX_SOV_soviet_
 			
 			allowed = {
 				original_tag = SOV
@@ -20,7 +20,7 @@ ideas = {
 			}
 		}
 		SOV_economic_stagnation = {
-			picture = idea_i
+			picture = GFX_SOV_soviet_
 			allowed = {
 				original_tag = SOV
 			}

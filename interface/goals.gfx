@@ -12616,4 +12616,64 @@ spriteTypes = {
 		name = "GFX_focus_icon_SOV_geneva_meeting"
 		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_geneva_meeting.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_geneva_meeting"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_geneva_meeting.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_elimination_of_weapons_funding"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_elimination_of_weapons_funding.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_xxvii_congress_of_the_cpsu"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_xxvii_congress_of_the_cpsu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_visit_to_hungary"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_visit_to_hungary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_launch_of_mir_station"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_launch_of_mir_station.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_introduction_of_state_acceptance"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_introduction_of_state_acceptance.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_renewal_of_the_ministry_of_foreign_affairs_composition"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_renewal_of_the_ministry_of_foreign_affairs_composition.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_the_fight_against_unearned_income"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_the_fight_against_unearned_income.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_decree_on_the_establishment_of_cooperatives_in_the_tnp"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_decree_on_the_establishment_of_cooperatives_in_the_tnp.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_law_on_individual_labor_activity"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_law_on_individual_labor_activity.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_the_fall_of_zheltoksan"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_the_fall_of_zheltoksan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_SOV_release_of_dissidents"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_release_of_dissidents.dds"
+	}
 }
