@@ -2,7 +2,11 @@
 state={
 	id=180
 	name="STATE_180"
-	manpower = 1904600
+<<<<<<< Updated upstream
+	manpower = 3421583
+=======
+	manpower = 3245718
+>>>>>>> Stashed changes
 
 	resources = {
 		coal = 2 #initial distribution

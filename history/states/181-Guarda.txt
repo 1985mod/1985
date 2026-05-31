@@ -1,7 +1,11 @@
 state = {
 	id = 181
 	name = "STATE_181"
-	manpower = 964700
+<<<<<<< Updated upstream
+	manpower = 514234
+=======
+	manpower = 684219
+>>>>>>> Stashed changes
 	
 	state_category = town
 	
