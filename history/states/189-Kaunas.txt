@@ -32,7 +32,7 @@ state={
 	}
 
 	local_supplies=0.0 
-	manpower=697100
+	manpower=483498
 	buildings_max_level_factor=1.000
 	state_category=town
 }

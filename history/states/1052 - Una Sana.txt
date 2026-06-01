@@ -3,7 +3,7 @@ state = {
 	name = "STATE_1052" # Barotseland
 	
 	state_category = rural
-	manpower = 690043
+	manpower = 654210
 
 	history = {
 

@@ -2,7 +2,7 @@
 state={
 	id=109
 	name="STATE_109" # Croatia
-	manpower = 2224400
+	manpower = 712395
 
 	resources = {
 		coal = 1 #initial distribution

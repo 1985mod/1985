@@ -1,11 +1,10 @@
 state = { # Jan Mayen
 	id = 914
 	name = "STATE_914"
-	manpower = 10
+	manpower = 34
 	state_category = tiny_island
 	history = {
-		owner = NOR
-		#add_core_of = SWE		
+		owner = NOR	
 		add_core_of = NOR
 		buildings = {
 			13272 = {
