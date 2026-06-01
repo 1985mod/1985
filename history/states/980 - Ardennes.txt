@@ -1,10 +1,10 @@
 state = {
 	id = 980
 	name = "STATE_980"
-	manpower = 338130
+	manpower = 220662
 	resources={
-		steel=9 # was: 0
-		coal = 7 # initial distribution / 84 total
+		steel=9
+		coal = 7
 	}
 	
 	state_category = rural

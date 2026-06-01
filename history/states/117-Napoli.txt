@@ -2,7 +2,7 @@
 state = {
 	id = 117
 	name = "STATE_117" # Campania
-	manpower = 4240000 # (Campania 3697k + Basilicato 543k )  # was 5333611 before Puglia state was added
+	manpower = 5744892
 	
 	state_category = city
 	resources = {

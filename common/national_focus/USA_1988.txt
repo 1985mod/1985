@@ -385,4 +385,76 @@ focus_tree = {
 
 	    }
 	}
+
+    focus = { 
+        id = USA_investments_in_infrastructure
+		relative_position_id = USA_michael_dukakis_inauguration
+		prerequisite = { focus = USA_cutting_back_on_bloated_military_programs  }
+		prerequisite = { focus = USA_increasing_federal_grants  }
+		prerequisite = { focus = USA_expansion_of_social_programs  }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 7.2
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_war_on_poverty
+		relative_position_id = USA_investments_in_infrastructure
+		prerequisite = { focus = USA_investments_in_infrastructure  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_worker_retraining_programs
+		relative_position_id = USA_war_on_poverty
+		prerequisite = { focus = USA_war_on_poverty  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_repeat_the_massachusetts_miracle_throughout_america
+		relative_position_id = USA_worker_retraining_programs
+		prerequisite = { focus = USA_worker_retraining_programs  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 7.2
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_trade_agreement_with_canada
+		relative_position_id = USA_repeat_the_massachusetts_miracle_throughout_america
+		prerequisite = { focus = USA_repeat_the_massachusetts_miracle_throughout_america  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
 }
