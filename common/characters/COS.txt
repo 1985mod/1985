@@ -1,0 +1,16 @@
+characters = {
+	COS_alberto_monge ={
+		name = COS_alberto_monge
+		portraits={
+			civilian={
+				large= GFX_Portrait_alberto_monge
+			}
+		}
+		country_leader={
+			ideology = classical_social_democracy
+			traits={  }
+			expire="1999.1.1.1"
+			
+		}
+	}
+}

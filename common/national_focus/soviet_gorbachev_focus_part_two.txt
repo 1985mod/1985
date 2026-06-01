@@ -207,6 +207,7 @@
         y = 1
         cost = 5.5
         completion_reward = {
+            load_focus_tree = soviet_gorbachev_focus_part_three
         }
     }
 

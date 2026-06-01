@@ -666,10 +666,17 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ELS/Portrait_Jose_Napoleon.dds"
 	}
 
-	### ELS ###
+	### GUA ###
 
 	spriteType = {
 		name = "GFX_Portrait_Oscar_Umberto"
 		texturefile = "gfx/leaders/GUA/Portrait_Oscar_Umberto.dds"
+	}
+
+	### COS ###
+
+	spriteType = {
+		name = "GFX_Portrait_alberto_monge"
+		texturefile = "gfx/leaders/COS/Portrait_alberto_monge.dds"
 	}
 }

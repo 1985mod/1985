@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = military_regimes
+			ideology = classic_conservatism
 			expire = "2007.04.23.1"
 			id = -1
 		}
