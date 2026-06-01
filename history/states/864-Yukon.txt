@@ -1,7 +1,7 @@
 state = {
 	id = 864
 	name = "STATE_864"
-	manpower = 4230
+	manpower = 23145
 	state_category = wasteland
 	
 	history = {

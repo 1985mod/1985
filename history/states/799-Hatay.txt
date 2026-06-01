@@ -4,7 +4,7 @@ state={
 	provinces={
 		12029 
 	}
-	manpower = 234379
+	manpower = 2424312
 	
 	state_category = enclave
 
@@ -17,11 +17,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
-		}
-
-		1938.9.30 = {
-			owner = TUR
-			controller = TUR
 		}
 	}
 
