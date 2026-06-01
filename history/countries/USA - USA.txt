@@ -1,6 +1,6 @@
 ﻿capital = 361 # Washington DC
 
-oob = "USA_1936"
+oob = "USA_1985"
 
 starting_train_buffer = 3.0
 
@@ -66,6 +66,8 @@ set_technology = {
 	marines = 1
 	basic_train = 1
 	engine_tech_1 = 1
+	paratroopers = 1
+	tech_mountaineers = 1
 }
 
 add_dynamic_modifier = { modifier = USA_cold_war }

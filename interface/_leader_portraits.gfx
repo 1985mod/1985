@@ -630,4 +630,46 @@ spriteTypes = {
 		name = "GFX_Portrait_Manuel_Esquivel"
 		texturefile = "gfx/leaders/BLZ/Portrait_Manuel_Esquivel.dds"
 	}
+
+	### DOM ###
+
+	spriteType = {
+		name = "GFX_Portrait_salvador_jorge"
+		texturefile = "gfx/leaders/DOM/Portrait_salvador_jorge.dds"
+	}
+
+	### HAI ###
+
+	spriteType = {
+		name = "GFX_Portrait_Jean_Claude_Duvalier"
+		texturefile = "gfx/leaders/HAI/Portrait_Jean_Claude_Duvalier.dds"
+	}
+
+	### NIC ###
+
+	spriteType = {
+		name = "GFX_Portrait_Daniel_Ortega"
+		texturefile = "gfx/leaders/NIC/Portrait_Daniel_Ortega.dds"
+	}
+
+	### HON ###
+
+	spriteType = {
+		name = "GFX_Portrait_roberto_suazo"
+		texturefile = "gfx/leaders/HON/Portrait_roberto_suazo.dds"
+	}
+
+	### ELS ###
+
+	spriteType = {
+		name = "GFX_Portrait_Jose_Napoleon"
+		texturefile = "gfx/leaders/ELS/Portrait_Jose_Napoleon.dds"
+	}
+
+	### ELS ###
+
+	spriteType = {
+		name = "GFX_Portrait_Oscar_Umberto"
+		texturefile = "gfx/leaders/GUA/Portrait_Oscar_Umberto.dds"
+	}
 }

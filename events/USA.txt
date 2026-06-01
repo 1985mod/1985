@@ -250,7 +250,7 @@ country_event = {
 	trigger = {
 		ROOT = { has_country_flag = anti_iraq_coalition }
 		USA = { has_completed_focus = USA_operation_desert_storm }
-		date < 1990.2.1
+		date < 1991.2.1
 	}
 
 	option = {
@@ -262,7 +262,7 @@ country_event = {
            target = IRQ
            type = annex_everything
         }
-        add_threat = 1
+        add_threat = 0.5
 	}
 }
 
