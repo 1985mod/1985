@@ -2,7 +2,7 @@
 state={
 	id=614
 	name="STATE_614" # Hebei
-	manpower = 18434900
+	manpower = 4010000
 
 	resources = {
 		coal = 5 #initial distribution
