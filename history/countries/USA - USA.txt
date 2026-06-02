@@ -42,6 +42,11 @@ if = {
 	}
 }
 
+diplomatic_relation = {
+	country = KOR
+	relation = military_access
+}
+
 set_research_slots = 9
 set_stability = 0.75
 set_war_support = 0.70

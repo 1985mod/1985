@@ -37,7 +37,7 @@ state={
 	}
 
 	local_supplies=11.0
-	manpower=2249080
+	manpower=5712403
 
 	resources = {
 		coal = 11 #initial distribution = with infra 28.8 / 1280 total

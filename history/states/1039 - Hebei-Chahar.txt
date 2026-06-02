@@ -1,7 +1,7 @@
 state = {
 	id = 1039
 	name = "STATE_1039" # South Chahar
-	manpower = 367500
+	manpower = 2740000
 	
 	state_category = pastoral
 

@@ -2,7 +2,7 @@
 state={
 	id=395
 	name="STATE_395"
-	manpower = 7630651
+	manpower = 11512403
 
 	resources = {
 		coal = 34 #initial distribution = with infra 111.6 / 1280 total

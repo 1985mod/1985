@@ -2,7 +2,7 @@
 state = {
 	id = 880
 	name = "STATE_880" # Kotlas
-	manpower = 262721
+	manpower = 701234
 	
 	state_category = rural
 
