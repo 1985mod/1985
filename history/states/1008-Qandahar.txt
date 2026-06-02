@@ -4,7 +4,7 @@ state={
 	manpower = 562330
 	state_category = rural
 	provinces={
-		4949 5020 5064 8090 10789 
+		4949 5020
 	}
 	history={
 		owner = AFS
@@ -13,12 +13,6 @@ state={
 		}
 		add_core_of = AFN
 		add_core_of = AFS
-		victory_points = {
-			5064 1 
-		}
-		AFN = {
-			set_province_controller = 10789
-		}
 	}
 	
 	buildings_max_level_factor=1.000

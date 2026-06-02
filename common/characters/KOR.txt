@@ -1,0 +1,15 @@
+characters = {
+	KOR_chun_doo_hwan ={
+		name = KOR_chun_doo_hwan
+		portraits={
+			civilian={
+				large= GFX_Portrait_сhun_doo_hwan
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

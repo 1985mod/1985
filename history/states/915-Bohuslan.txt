@@ -5,20 +5,29 @@ state = {
 	state_category = rural
 
 	history = {
-		victory_points = {
-			6310 1
-		}
-		owner = SWE
-		add_core_of = SWE
+		owner = ERI
+		add_core_of = ERI
+		add_claim_by = ETH
 		buildings = {
 			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = { #Biscia
+			12723 1
+		}
+		victory_points = { #Asmara
+			5091 6
+		}
+		ETH = {
+			set_province_controller = 13251
 		}
 	}
 
 
 
 	provinces = {
-		171 6310 
+		5017 5047 5091 12723 13251
 	}
 
 	local_supplies=0.000

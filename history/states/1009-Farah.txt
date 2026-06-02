@@ -8,7 +8,7 @@ state={
 	}
 
 	provinces={
-		2017 2062 2078 1948 2101
+	   2062 1948 2101
 	}
 	history={
 		owner = AFS
@@ -17,13 +17,6 @@ state={
 		}
 		add_core_of = AFN
 		add_core_of = AFS
-		victory_points = {
-			2017 1
-		}
-		AFN = {
-			set_province_controller = 2017
-			set_province_controller = 2078
-		}
 	}
 	manpower = 281165
 	buildings_max_level_factor=1.000

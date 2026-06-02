@@ -36,6 +36,11 @@
  SOV_fascism_party: "§RОтсутствует§!"
  SOV_fascism_party_long: "§RОтсутствует§!"
  
+ USA_conservatism_party: "Республиканская партия"
+ USA_conservatism_party_long: "Республиканская партия Соединнёных Штатов Америки"
+ USA_liberalism_party: "Демократическая партия"
+ USA_liberalism_party_long: "Демократическая партия Соединнёных Штатов Америки"
+ 
  DDR_communism_party: "СЕПГ"
  DDR_communism_party_long: "Социалистическая единая партия Германии"
  DDR_liberalism_party: "ЛДПГ"

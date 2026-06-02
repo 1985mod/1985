@@ -1,0 +1,18 @@
+characters = {
+	SEN_Abdou_Diouf ={
+		name = SEN_Abdou_Diouf
+		portraits={
+			civilian={
+				large= GFX_portrait_SEN_Abdou_Diouf
+			}
+			army = {
+				large = GFX_portrait_SEN_Abdou_Diouf
+			}
+		}
+		country_leader={
+			ideology = classical_social_democracy
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

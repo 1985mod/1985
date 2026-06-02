@@ -2966,8 +2966,8 @@ spriteTypes = {
 	### 1985 ###
 	
 	spriteType = {
-		name = "GFX_picture_decision_cat_uyghur_country"
-		texturefile = "gfx/interface/decisions/decision_cat_uyghur_country.dds"
+		name = "GFX_picture_decision_cat_tibets_country"
+		texturefile = "gfx/interface/decisions/decision_cat_tibets_country.dds"
 	}
 
 }

@@ -5,7 +5,7 @@ state = {
 	manpower = 918619
 
 	resources = {
-		oil = 37 # was: 12
+		oil = 121 # was: 12
 	}
 
 	history = {

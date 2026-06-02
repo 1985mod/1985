@@ -1,0 +1,18 @@
+characters = {
+	MLW_Hastings_Kamuzu_Banda ={
+		name = MLW_Hastings_Kamuzu_Banda
+		portraits={
+			civilian={
+				large= GFX_portrait_MLW_Hastings_Kamuzu_Banda
+			}
+			army = {
+				large = GFX_portrait_MLW_Hastings_Kamuzu_Banda
+			}
+		}
+		country_leader={
+			ideology = autocracy
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

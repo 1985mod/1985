@@ -10,9 +10,9 @@ state = {
 
 	history = {
 
-		owner = PRC
-		add_core_of = CHI
-		add_core_of = PRC
+		owner = AFN
+		add_core_of = AFN
+		add_core_of = AFS
 
 		buildings = {
 			infrastructure = 1
@@ -22,11 +22,18 @@ state = {
 		victory_points = {
 			12331 1 # Pailingmiao
 		}
-
+		
+		AFS = {
+			set_province_controller = 13430
+			set_province_controller = 13431
+			set_province_controller = 13432
+			set_province_controller = 13434
+			set_province_controller = 13435
+		}
 	}
 
 	provinces = {
-		7048 12331 
+	   13417 13418 13419 13420 13421 13422 13423 13430 13431 13432 13434 13435
 	}
 
 	buildings_max_level_factor = 1.000

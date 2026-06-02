@@ -1,0 +1,18 @@
+characters = {
+	ARG_raul_alfonsin ={
+		name = ARG_raul_alfonsin
+		portraits={
+			civilian={
+				large= GFX_Portrait_raul_alfonsin
+			}
+			army = {
+				large = GFX_Portrait_raul_alfonsin
+			}
+		}
+		country_leader={
+			ideology = social_liberalism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

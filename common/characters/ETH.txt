@@ -1,0 +1,18 @@
+characters = {
+	ETH_Mengistu_Haile_Mariam ={
+		name = ETH_Mengistu_Haile_Mariam
+		portraits={
+			civilian={
+				large= GFX_portrait_ETH_Mengistu_Haile_Mariam
+			}
+			army = {
+				large = GFX_portrait_ETH_Mengistu_Haile_Mariam
+			}
+		}
+		country_leader={
+			ideology = leninism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

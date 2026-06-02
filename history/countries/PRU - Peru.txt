@@ -51,21 +51,20 @@ if = {
 	}
 }
 
-
-
-
-set_country_flag = monroe_doctrine
-
 set_convoys = 5
 
+
+recruit_character = PRU_belaunde_terry
+
 set_politics = {
-	ruling_party = conservatism
-	last_election = "1931.10.11"
+	ruling_party = liberalism
+	last_election = "1978.10.11"
 	election_frequency = 96
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 75
+	liberalism = 50
+	conservatism = 25
 	communism = 15
 	neutrality = 10
 }

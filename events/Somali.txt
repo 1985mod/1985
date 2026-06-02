@@ -1,0 +1,28 @@
+add_namespace = somali
+
+country_event = {
+    id = somali.1
+    title = somali.1.t
+    desc = somali.1.desc
+
+    picture = 
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SOM
+        has_war_with = ETH
+        date > 1988.4.5
+        OR = {
+            NOT = {
+                controls_state = 835
+                controls_state = 836
+            }
+        }
+    }
+
+    option = {
+        name = somali.1.a
+        white_peace = ETH
+    }
+}

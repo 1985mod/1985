@@ -1,0 +1,136 @@
+
+USA_voice_of_america = {
+    USA_give_interviews_to_african_countries = {
+	
+		icon = generic_speech
+
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+			has_completed_focus = USA_voice_of_america
+		}
+		
+		days_remove = 30
+		
+		cost = 25
+		
+		remove_effect = {
+
+		}
+	}
+
+    USA_promote_liberal_ideas = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = USA_voice_of_america
+            NOT = { has_completed_focus = USA_election_campaign }
+		}
+		
+		days_remove = 30
+		
+		cost = 75
+
+		modifier = {
+			political_power_gain = -0.25
+			liberalism_drift = 0.02
+		}
+	}
+
+    USA_promote_conservative_ideas = {
+	
+		icon = generic_speech
+
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+			has_completed_focus = USA_voice_of_america
+            NOT = { has_completed_focus = USA_election_campaign }
+		}
+		
+		days_remove = 30
+		
+		cost = 75
+		
+		modifier = {
+			political_power_gain = -0.25
+			conservatism_drift = 0.02
+		}
+	}
+}
+
+USA_war_on_drugs = {
+
+    USA_stop_drug_supply = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = USA_war_on_drugs
+            NOT = { has_completed_focus = USA_election_campaign }
+		}
+		
+		days_remove = 30
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		remove_effect = {
+			if = {
+				limit = { has_idea = USA_the_endless_war_on_drugs_2 }
+				remove_ideas = USA_the_endless_war_on_drugs_2
+			}
+			if = {
+				limit = { has_idea = USA_the_endless_war_on_drugs }
+				swap_ideas = {
+					remove_idea = USA_the_endless_war_on_drugs
+					add_idea = USA_the_endless_war_on_drugs_2
+				}
+			}
+		}
+	}
+
+    USA_invasion_in_panama = {
+	
+		icon = generic_speech
+
+		ai_will_do = {
+			base = 100
+		}
+
+		available = {
+          	has_completed_focus = USA_reorient_the_armed_forces
+			date > 1989.12.10
+		}
+		
+		days_remove = 8
+
+		fire_only_once = yes
+		
+		cost = 25
+		
+		remove_effect = {
+			if = {
+				limit = { has_idea = USA_the_endless_war_on_drugs }
+				swap_ideas = {
+					remove_idea = USA_the_endless_war_on_drugs
+					add_idea = USA_the_endless_war_on_drugs_2
+				}
+			}
+			if = {
+				limit = { has_idea = USA_the_endless_war_on_drugs_2 }
+				ROOT = { remove_ideas = USA_the_endless_war_on_drugs_2 }
+			}
+      		declare_war_on = {
+          		target = PAN
+         		 type = annex_everything
+      		}	
+		}
+	}
+}

@@ -5,6 +5,9 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+recruit_character = TOG_Gnassingbe_Eyadema
+promote_character = TOG_Gnassingbe_Eyadema
+
 set_convoys = 10
 
 set_politics = {

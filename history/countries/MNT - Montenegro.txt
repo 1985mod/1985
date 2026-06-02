@@ -73,10 +73,10 @@ if = {
 }
 
 set_politics = {
-	ruling_party = conservatism
-	last_election = "1936.1.1"
+	ruling_party = communism
+	last_election = "1985.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
@@ -85,9 +85,6 @@ set_popularities = {
 	communism = 34
 }
 
-recruit_character = MNT_kristo_popovic
-recruit_character = MNT_blazo_jovanovic
-recruit_character = MNT_blazo_dukanovic
 
 
 

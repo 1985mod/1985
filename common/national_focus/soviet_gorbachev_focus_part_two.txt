@@ -1,0 +1,291 @@
+﻿focus_tree = {
+    id = soviet_gorbachev_focus_part_two
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 3
+            tag = SOV
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 2000 y = 1450 }
+
+    focus = { 
+        id = SOV_xix_all_union_conference_of_the_cpsu
+        icon = GFX_
+        x = 10
+        y = 0
+        cost = 2.5
+		completion_reward = {
+			}
+		}
+
+    focus = { 
+        id = SOV_law_on_cooperation
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_xix_all_union_conference_of_the_cpsu
+        prerequisite = { focus = SOV_xix_all_union_conference_of_the_cpsu }
+        cost = 7.2
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_withdrawal_of_soviet_troops_from_afghanistan
+        icon = GFX_NONE
+        x = 2
+        y = 1
+        relative_position_id = SOV_law_on_cooperation
+        prerequisite = { focus = SOV_law_on_cooperation }
+        cost = 9.3
+
+        available = {
+            date > 1988.12.10
+        }
+
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_parade_of_sovereignties
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_withdrawal_of_soviet_troops_from_afghanistan
+        prerequisite = { focus = SOV_withdrawal_of_soviet_troops_from_afghanistan }
+        cost = 7.2
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_repeal_of_article_11_1
+        icon = GFX_NONE
+        x = 2
+        y = 1
+        relative_position_id = SOV_withdrawal_of_soviet_troops_from_afghanistan
+        prerequisite = { focus = SOV_withdrawal_of_soviet_troops_from_afghanistan }
+        cost = 4
+        completion_reward = {
+        }
+    }
+    
+    focus = { 
+        id = SOV_interregional_deputy_roup
+        icon = GFX_NONE
+        x = -2
+        y = 1
+        relative_position_id = SOV_law_on_cooperation
+        prerequisite = { focus = SOV_law_on_cooperation }
+        cost = 3
+        completion_reward = {
+        }
+    }
+    
+    focus = { 
+        id = SOV_elections_of_peoples_deputies_of_the_ussr
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_interregional_deputy_roup
+        prerequisite = { focus = SOV_interregional_deputy_roup }
+        cost = 3
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_law_on_the_press
+        icon = GFX_NONE
+        x = -2
+        y = 1
+        relative_position_id = SOV_interregional_deputy_roup
+        prerequisite = { focus = SOV_interregional_deputy_roup }
+        cost = 3
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_the_election_of_gorbachev_as_president_of_the_ussr
+        icon = GFX_NONE
+        x = 0
+        y = 3
+        relative_position_id = SOV_law_on_cooperation
+        prerequisite = { focus = SOV_elections_of_peoples_deputies_of_the_ussr }
+        prerequisite = { focus = SOV_parade_of_sovereignties }
+        cost = 1
+
+        available = {
+            date > 1990.2.25
+        }
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.11 }
+        }
+    }
+
+    focus = { 
+        id = SOV_iii_congress_of_peoples_deputies
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_the_election_of_gorbachev_as_president_of_the_ussr
+        prerequisite = { focus = SOV_the_election_of_gorbachev_as_president_of_the_ussr}
+        allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
+        cost = 3
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_declaration_of_independence_of_the_rsfsr
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_iii_congress_of_peoples_deputies
+        prerequisite = { focus = SOV_iii_congress_of_peoples_deputies}
+        allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
+        cost = 3
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_transition_to_a_market_economy
+        icon = GFX_NONE
+        x = -2
+        y = 1
+        relative_position_id = SOV_iii_congress_of_peoples_deputies
+        prerequisite = { focus = SOV_iii_congress_of_peoples_deputies}
+        allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
+        cost = 3
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_economic_blockade_of_lithuania
+        icon = GFX_NONE
+        x = 2
+        y = 1
+        relative_position_id = SOV_iii_congress_of_peoples_deputies
+        prerequisite = { focus = SOV_iii_congress_of_peoples_deputies}
+        allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
+        cost = 3
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_what_will_happen_next
+        icon = GFX_NONE
+        relative_position_id = SOV_economic_blockade_of_lithuania
+        prerequisite = { focus = SOV_economic_blockade_of_lithuania}
+        prerequisite = { focus = SOV_declaration_of_independence_of_the_rsfsr}
+        prerequisite = { focus = SOV_transition_to_a_market_economy}
+        allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
+        x = -2
+        y = 1
+        cost = 3
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_500_days
+        icon = GFX_NONE
+        relative_position_id = SOV_what_will_happen_next
+        prerequisite = { focus = SOV_what_will_happen_next}
+        allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
+        x = 0
+        y = 1
+        cost = 5.5
+        completion_reward = {
+            load_focus_tree = soviet_gorbachev_focus_part_three
+        }
+    }
+
+    focus = { 
+        id = SOV_affairs_of_the_republics
+        icon = GFX_NONE
+        relative_position_id = SOV_xix_all_union_conference_of_the_cpsu
+        allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
+        x = 7
+        y = 0
+        cost = 1
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_relaxation_of_supervision_over_the_baltics
+        icon = GFX_NONE
+        relative_position_id = SOV_affairs_of_the_republics
+        prerequisite = { focus = SOV_affairs_of_the_republics}
+        allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
+        x = -1
+        y = 1
+        cost = 2
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_karabakh_conflict
+        icon = GFX_NONE
+        relative_position_id = SOV_affairs_of_the_republics
+        prerequisite = { focus = SOV_affairs_of_the_republics}
+        allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
+        x = 1
+        y = 1
+        cost = 1
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_refusal_to_support_regimes_in_eastern_europe
+        icon = GFX_NONE
+        relative_position_id = SOV_karabakh_conflict
+        prerequisite = { focus = SOV_karabakh_conflict}
+        prerequisite = { focus = SOV_relaxation_of_supervision_over_the_baltics}
+        allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
+        x = -1
+        y = 1
+        cost = 2
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_negotiations_2_4
+        icon = GFX_NONE
+        relative_position_id = SOV_refusal_to_support_regimes_in_eastern_europe
+        prerequisite = { focus = SOV_refusal_to_support_regimes_in_eastern_europe}
+        allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
+        x = 0
+        y = 1
+        cost = 2.9
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_consent_to_the_unification_of_germany
+        icon = GFX_NONE
+        relative_position_id = SOV_negotiations_2_4
+        prerequisite = { focus = SOV_negotiations_2_4}
+        allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
+        x = 0
+        y = 1
+        cost = 1
+        completion_reward = {
+        }
+    }
+}

@@ -10,6 +10,9 @@ set_technology = {
 
 set_convoys = 5
 
+recruit_character = BOT_Masire_Quest_Ketumile
+promote_character = BOT_Masire_Quest_Ketumile
+
 set_politics = {
 	ruling_party = liberalism
 	last_election = "1985.1.1"

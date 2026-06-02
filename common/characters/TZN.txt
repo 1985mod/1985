@@ -1,0 +1,37 @@
+characters = {
+	TZN_Ali_Hassan_Mwinyi ={
+		name = TZN_Ali_Hassan_Mwinyi
+		portraits={
+			civilian={
+				large= GFX_portrait_TZN_Ali_Hassan_Mwinyi
+			}
+			army = {
+				large = GFX_portrait_TZN_Ali_Hassan_Mwinyi
+			}
+		}
+		country_leader={
+			ideology = socialism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}
+
+characters = {
+	TZN_Julius_Nyerere ={
+		name = TZN_Julius_Nyerere
+		portraits={
+			civilian={
+				large= GFX_portrait_TZN_Julius_Nyerere
+			}
+			army = {
+				large = GFX_portrait_TZN_Julius_Nyerere
+			}
+		}
+		country_leader={
+			ideology = classical_social_democracy
+			traits={  }
+			expire="1985.10.5.1"		
+		}
+	}
+}
