@@ -1,23 +1,32 @@
 scripted_gui = {
-    cat_main_container = {
- 
-    window_name = "economy"
+	economy_hide = {
+		context_type = player_context
 
-    	visible = {
+		window_name = "economy_hide_button"
 
+		visible = {
+			ROOT = { NOT = { has_country_flag = economy_hide } }
 		}
+
 		effects = {
-			raise_taxes_on_click  = {
-                add_stability = -0.01
+			economy_hide_bg_click = {
+				ROOT = { set_country_flag = economy_hide }
 			}
 		}
-		triggers = {
-			raise_taxes_visible = {
+	}
+	economy_show = {
+		context_type = player_context
 
-			}
-			raise_taxes_enabled = {
+		window_name = "economy_show_button"
 
+		visible = {
+			ROOT = { has_country_flag = economy_hide }
+		}
+
+		effects = {
+			economy_show_bg_click = {
+				ROOT = { clr_country_flag = economy_hide }
 			}
 		}
-    }
+	}
 }
