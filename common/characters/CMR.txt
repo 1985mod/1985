@@ -1,0 +1,18 @@
+characters = {
+	CMR_Paul_Biya ={
+		name = CMR_Paul_Biya
+		portraits={
+			civilian={
+				large= GFX_portrait_CMR_Paul_Biya
+			}
+			army = {
+				large = GFX_portrait_CMR_Paul_Biya
+			}
+		}
+		country_leader={
+			ideology = military_regimes
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

@@ -30,9 +30,12 @@ recruit_character = CAR_democratic_guy
 recruit_character = CAR_ar
 recruit_character = CAR_acgs
 
+recruit_character = CAR_Andre_Dieudonne_Kolingba
+promote_character = CAR_Andre_Dieudonne_Kolingba
+
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1985.1.1"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

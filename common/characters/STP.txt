@@ -1,0 +1,18 @@
+characters = {
+	STP_Manuel_Pinto_da_Costa ={
+		name = STP_Manuel_Pinto_da_Costa
+		portraits={
+			civilian={
+				large= GFX_portrait_STP_Manuel_Pinto_da_Costa
+			}
+			army = {
+				large = GFX_portrait_STP_Manuel_Pinto_da_Costa
+			}
+		}
+		country_leader={
+			ideology = autocracy
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

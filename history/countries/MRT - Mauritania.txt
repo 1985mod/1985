@@ -28,9 +28,12 @@ recruit_character = MRT_ai2
 recruit_character = MRT_coi
 recruit_character = MRT_acr
 
+recruit_character = MRT_Maaouya_Ould
+promote_character = MRT_Maaouya_Ould
+
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1985.1.1"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

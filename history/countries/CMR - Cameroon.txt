@@ -28,9 +28,12 @@ recruit_character = CMR_ai2
 recruit_character = CMR_ncs
 recruit_character = CMR_acr
 
+recruit_character = CMR_Paul_Biya
+promote_character = CMR_Paul_Biya
+
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1985.1.1"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

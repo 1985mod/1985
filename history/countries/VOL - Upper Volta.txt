@@ -7,9 +7,12 @@ set_technology = {
 
 set_convoys = 0
 
+recruit_character = VOL_Thomas_Sankara
+promote_character = VOL_Thomas_Sankara
+
 set_politics = {
 	ruling_party = socialism
-	last_election = "1985.1.1"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

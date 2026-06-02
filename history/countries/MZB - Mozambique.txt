@@ -1,6 +1,6 @@
 ﻿capital = 544
 
-oob = "MZB_1985"
+oob = "MZB_1936"
 
 # Starting tech
 set_technology = {
@@ -10,22 +10,15 @@ set_technology = {
 
 set_convoys = 5
 
+recruit_character = MZB_Samora_Machel
+promote_character = MZB_Samora_Machel
+
 set_politics = {
 	ruling_party = communism
-	last_election = "1985.1.1"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
 	communism = 100
-}
-
-create_country_leader = {
-	name = "Eduardo Tsonga"
-	picture = GFX_portrait_Eduardo_Tsonga
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
 }

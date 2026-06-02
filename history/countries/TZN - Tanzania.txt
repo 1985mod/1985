@@ -7,6 +7,10 @@ set_technology = {
 
 set_convoys = 20
 
+recruit_character = TZN_Julius_Nyerere
+recruit_character = TZN_Ali_Hassan_Mwinyi
+promote_character = TZN_Julius_Nyerere
+
 set_politics = {
 	ruling_party = socialism
 	last_election = "1985.1.1"
