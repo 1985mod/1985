@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = SYR
+		add_claim_by = ISR
 		victory_points = {
 			4111 5
 		}
