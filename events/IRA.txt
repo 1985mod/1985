@@ -1,0 +1,57 @@
+add_namespace = IRA
+
+
+country_event = {
+    id = IRA.1
+    title = "IRA.1.t"
+    desc = "IRA.1.d"
+    picture = GFX_idea_unknown
+    is_triggered_only = yes
+    hidden = yes
+    
+    option = {
+        119 = { remove_dynamic_modifier = { modifier = northern_ireland_ira_activity } }
+    }
+}
+
+
+country_event = {
+    id = IRA.2
+    title = "IRA.2.t"
+    desc = "IRA.2.d"
+    picture = GFX_idea_unknown
+    is_triggered_only = yes
+    hidden = yes
+    
+    option = {
+        119 = { add_dynamic_modifier = { modifier = northern_ireland_ira_activity } }
+    }
+}
+
+
+country_event = {
+    id = IRA.3
+    title = "IRA.3.t"
+    desc = "IRA.3.d"
+    picture = GFX_idea_unknown
+    is_triggered_only = yes
+    hidden = yes
+    
+    option = {
+        119 = { add_dynamic_modifier = { modifier = northern_ireland_autonomy } }
+    }
+}
+
+
+country_event = {
+    id = IRA.4
+    title = "IRA.4.t"
+    desc = "IRA.4.d"
+    picture = GFX_idea_unknown
+    is_triggered_only = yes
+    hidden = yes
+    
+    option = {
+        119 = { remove_dynamic_modifier = { modifier = northern_ireland_autonomy } }
+    }
+}

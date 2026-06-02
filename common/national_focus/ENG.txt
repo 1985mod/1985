@@ -1,0 +1,160 @@
+focus_tree = {
+	id = ENG_focus_tree
+
+	country = {
+		base = 0
+		modifier = {
+			add = 100
+			original_tag = ENG
+		}
+	}
+
+	continuous_focus_position = { x = 3000 y = 1000 }
+#================ North ireland block ======================
+	focus = {
+		id = NRA_strart_treaty
+		icon = GFX_unknow
+		x = 11
+		y = 4
+		cost = 0
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+		date > 1985.11.15	
+		}
+
+		completion_reward = {
+		IRE = {
+			country_event = IRA_focus.1
+		}		
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = NRA_no_deal_was_reached
+		icon = GFX_unknow
+		x = 13
+		y = 5
+		cost = 10
+		prerequisite = { focus = NRA_strart_treaty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+		always = no	
+		date > 1985.11.15	
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = NRA_end_of_NRA
+		icon = GFX_unknow
+		x = 9
+		y = 5
+		cost = 10
+		prerequisite = { focus = NRA_strart_treaty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+		always = no
+		date > 1985.11.15	
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = NRA_inegrated_North_Ireland
+		icon = GFX_unknow
+		x = 8
+		y = 6
+		cost = 10
+		prerequisite = { focus = NRA_end_of_NRA }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = NRA_North_ireland_authonomy
+		icon = GFX_unknow
+		x = 10
+		y = 6
+		cost = 10
+		prerequisite = { focus = NRA_end_of_NRA focus = NRA_no_deal_was_reached }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+		always = no
+		}
+
+		completion_reward = {
+		set_global_flag = northern_ireland_autonomy_unlocked
+        119 = { remove_dynamic_modifier = { modifier = northern_ireland_ira_activity } }
+        119 = { add_dynamic_modifier = { modifier = northern_ireland_autonomy } }	
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	focus = {
+		id = NRA_we_losed_to_NRA
+		icon = GFX_unknow
+		x = 14
+		y = 6
+		cost = 10
+		prerequisite = { focus = NRA_no_deal_was_reached }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = NRA_war_with_north_ireland
+		icon = GFX_unknow
+		x = 12
+		y = 6
+		cost = 10
+		prerequisite = { focus = NRA_no_deal_was_reached }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+		always = no	
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+}

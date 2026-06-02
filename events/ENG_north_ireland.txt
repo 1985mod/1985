@@ -1,0 +1,48 @@
+add_namespace = ENG_North_ireland
+
+country_event = {
+    id = ENG_North_ireland.1
+    title = ENG_North_ireland.1.t
+    desc = ENG_North_ireland.1.d
+    picture = GFX_report_event_generic_handshake
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = ENG_North_ireland.1.a
+        ENG = {
+            complete_national_focus = NRA_end_of_NRA
+        }
+    }
+}
+
+country_event = {
+    id = ENG_North_ireland.2
+    title = ENG_North_ireland.2.t
+    desc = ENG_North_ireland.2.d
+    picture = GFX_report_event_generic_handshake
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = ENG_North_ireland.2.a
+        ENG = {
+            complete_national_focus = NRA_no_deal_was_reached
+        }
+    }
+}
+country_event = {
+    id = ENG_North_ireland.3
+    title = ENG_North_ireland.3.t
+    desc = ENG_North_ireland.3.d
+    picture = GFX_report_event_generic_handshake
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = ENG_North_ireland.3.a
+        ENG = {
+            complete_national_focus = NRA_North_ireland_authonomy
+        }
+    }
+}
