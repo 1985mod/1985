@@ -2,7 +2,7 @@
 state={
 	id=193
 	name="STATE_193" # Chernihiv
-	manpower = 5513622
+	manpower = 1082497
 	
 	state_category = city
 

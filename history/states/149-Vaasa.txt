@@ -2,11 +2,9 @@
 state = {
 	id = 149
 	name = "STATE_149" # VAASA
-	manpower = 594860
+	manpower = 438206
 	
 	state_category = town
-
-	
 	
 	history = {
 		owner = FIN
