@@ -1,31 +1,6 @@
 ﻿capital = 808
 
-oob = "LAT_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "LAT_1936_naval_mtg"
-	else = {
-		set_naval_oob = "LAT_1936_naval_legacy"
-	}
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "LAT_1936_air_bba"
-	else = {
-		set_air_oob = "LAT_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-		}
-	}
-}
-
-if = {
-	limit = { has_dlc = "Arms Against Tyranny" }
-	store_core_states_on_game_start = yes
-}
-
-recruit_character = LAT_anatoliy_gorbynov
-
+oob = "GEN_1985"
 
 set_technology = {
 	infantry_weapons = 1
@@ -34,20 +9,6 @@ set_technology = {
 	gw_artillery = 1
 	tech_support = 1
 	basic_train = 1
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_torpedo = 1
-		submarine_mine_laying = 1
-		early_ship_hull_submarine = 1
-	}
 }
 
 set_research_slots = 3
@@ -66,3 +27,5 @@ set_popularities = {
 	communism = 15
 	neutrality = 40
 }
+
+recruit_character = LAT_anatoliy_gorbynov

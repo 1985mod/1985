@@ -1,3 +1,0 @@
-﻿capital = 594
-
-oob = "GXC_1936"

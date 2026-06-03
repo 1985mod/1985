@@ -1,2 +1,0 @@
-﻿capital = 325
-oob = "YUN_1936"

@@ -3,7 +3,7 @@ characters = {
 		name = SYE_Ali_Nasser_Muhammad
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_ali_nasser_muhammad
+				large = GFX_Portrait_Ali_Nasser_Muhammad
 			}
 		}
 		country_leader = {

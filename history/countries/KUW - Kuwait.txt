@@ -14,12 +14,6 @@ set_technology = {
 	tech_trucks = 1
 }
 
-IF = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
 
 set_convoys = 5
 
@@ -29,7 +23,7 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1985.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	conservatism = 40

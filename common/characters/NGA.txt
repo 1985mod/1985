@@ -10,7 +10,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = authoritarian_democracy
+			ideology = military_regimes
 			traits={  }
 			expire="2012.11.9.1"		
 		}

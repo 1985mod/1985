@@ -19,24 +19,6 @@ declare_war_on = {
 	type = topple_government
 }
 
-IF = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
-
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		main_battle_tank_chassis = 1
-	}
-}`
-
 set_convoys = 5
 
 add_ideas = {
@@ -46,7 +28,7 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "2000.1.1"
+	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

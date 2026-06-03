@@ -1,29 +1,8 @@
 ﻿capital = 11
 
-oob = "LIT_1936"
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "LIT_1936_air_bba"
-	else = {
-		set_air_oob = "LIT_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-		}
-	}
-}
+oob = "GEN_1985"
 
 set_research_slots = 3
-
-if = {
-	limit = {
-		has_DLC = "No Step Back"
-	}
-}
-
-set_variable = {
-	var = iron_wolf_days_var
-	value = 100
-}
 
 recruit_character = LIT_vytautas_landsbergis
 recruit_character = LIT_algirdas_brazauskas

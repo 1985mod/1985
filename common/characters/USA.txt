@@ -28,7 +28,7 @@ characters={
 		country_leader={
 			ideology= classic_conservatism
 			traits={  }
-			expire="1989.1.1.1"
+			expire="1999.1.1.1"
 			
 		}
 	}
@@ -45,44 +45,6 @@ characters={
 			traits={  }
 			expire="1999.1.1.1"
 			
-		}
-	}
-	USA_bill_clinton = {
-		name = USA_bill_clinton
-		portraits={
-			civilian={
-				large= GFX_Portrait_Bill_Clinton
-			}
-		}
-		country_leader={
-			ideology= classic_liberalism
-			traits={  }
-			expire="2000.1.1.1"
-			
-		}
-	}
-
-    USA_lloyd_bentsen = {
-		name = "USA_lloyd_bentsen" 
-		portraits = {
-			civilian = {
-				small = GFX_idea_portrait_usa_lloyd_bentsen
-			}
-		}
-      	advisor = {
-	        slot = political_advisor
-		    idea_token = USA_lloyd_bentsen
-
-		  	allowed = {
-		      	original_tag = USA
-		  	}
-		 	available = {
-		  
-		  	}
-
-		  	traits = {
-		      	the_republican_rebel
-		 	} 
 		}
 	}
 }

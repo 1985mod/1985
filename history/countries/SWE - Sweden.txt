@@ -1,13 +1,6 @@
 ﻿capital = 141
 
 oob = "SWE_1985"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SWE_1985_naval_mtg"
-	else = {
-		set_naval_oob = "SWE_1985_naval_legacy"
-	}
-}
 
 set_research_slots = 2
 set_convoys = 320
@@ -102,7 +95,7 @@ set_technology = {
 
 set_politics = {
 	ruling_party = socialism
-	last_election = "1982.1.17"
+	last_election = "1982.1.19"
 	election_frequency = 72
 	elections_allowed = yes 
 }

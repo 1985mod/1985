@@ -1,19 +1,4 @@
 ﻿capital = 3
-
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_oob = "SWI_1936_BBA"
-		set_air_oob = "SWI_1936_air_bba"
-	else = {
-		set_oob = "SWI_1936"
-		set_air_oob = "SWI_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
-}
-
 oob = "GEN_1985"
 
 set_research_slots = 3
@@ -30,20 +15,17 @@ set_technology = {
 	basic_train = 1
 }
 
-##### Characters for both
-
-recruit_character = SWI_kurt_furgler 
-
 set_politics = {
 	ruling_party = conservatism
-	last_election = "1935.10.27"
+	last_election = "1983.10.23"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 96
-	fascism = 2
-	communism = 2
+	conservatism = 75
+	socialism = 35
 }
+
+recruit_character = SWI_kurt_furgler 
 
 set_stability = 0.85

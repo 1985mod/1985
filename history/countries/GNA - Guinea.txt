@@ -4,6 +4,7 @@
 set_technology = {
 	infantry_weapons = 1
 }
+<<<<<<< Updated upstream
 
 set_convoys = 10
 
@@ -34,12 +35,21 @@ promote_character = GNA_Lansana_Conté
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"
+=======
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1985.1.1"
+>>>>>>> Stashed changes
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
 	conservatism = 25
 	fascism = 10
-	communism = 60
-	neutrality = 5
+	communism = 5
+	neutrality = 60
 }
+
+set_convoys = 10
+
+recruit_character = 
