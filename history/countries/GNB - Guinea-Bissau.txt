@@ -28,6 +28,9 @@ recruit_character = GNB_aa2
 recruit_character = GNB_nt
 recruit_character = GNB_communist_guy
 
+recruit_character = GNB_João_Bernardo
+promote_character = GNB_João_Bernardo
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"

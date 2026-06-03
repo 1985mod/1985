@@ -1,0 +1,18 @@
+characters = {
+	SAF_Pieter_Willem_Botha ={
+		name = SAF_Pieter_Willem_Botha
+		portraits={
+			civilian={
+				large= GFX_portrait_SAF_Pieter_Willem_Botha
+			}
+			army = {
+				large = GFX_portrait_SAF_Pieter_Willem_Botha
+			}
+		}
+		country_leader={
+			ideology = national_conservatism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

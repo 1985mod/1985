@@ -1,0 +1,18 @@
+characters = {
+	ANG_Jose_Eduardo_dos_Santos ={
+		name = ANG_Jose_Eduardo_dos_Santos
+		portraits={
+			civilian={
+				large= GFX_portrait_ANG_Jose_Eduardo_dos_Santos
+			}
+			army = {
+				large = GFX_portrait_ANG_Jose_Eduardo_dos_Santos
+			}
+		}
+		country_leader={
+			ideology = democratic_socialism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

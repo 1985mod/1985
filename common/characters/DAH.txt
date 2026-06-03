@@ -1,0 +1,18 @@
+characters = {
+	DAH_Mathieu_Kerekou ={
+		name = DAH_Mathieu_Kerekou
+		portraits={
+			civilian={
+				large= GFX_portrait_DAH_Mathieu_Kérékou
+			}
+			army = {
+				large = GFX_portrait_DAH_Mathieu_Kérékou
+			}
+		}
+		country_leader={
+			ideology = leninism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

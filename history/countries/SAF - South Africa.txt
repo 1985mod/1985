@@ -34,6 +34,9 @@ set_technology = {
 	fuel_silos = 1
 }
 
+recruit_character = SAF_Pieter_Willem_Botha
+promote_character = SAF_Pieter_Willem_Botha
+
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }

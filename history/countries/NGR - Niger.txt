@@ -27,6 +27,8 @@ recruit_character = NGR_fascist_guy
 recruit_character = NGR_ai2
 recruit_character = NGR_acas
 recruit_character = NGR_acd2
+recruit_character = NGR_Badamasi_Babangida
+promote_character = NGR_Badamasi_Babangida
 
 set_politics = {
 	ruling_party = neutrality

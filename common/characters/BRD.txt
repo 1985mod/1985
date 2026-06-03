@@ -1,0 +1,18 @@
+characters = {
+	BRD_Jean_Baptiste_Bagaza ={
+		name = BRD_Jean_Baptiste_Bagaza
+		portraits={
+			civilian={
+				large= GFX_portrait_BRD_Jean_Baptiste_Bagaza
+			}
+			army = {
+				large = GFX_portrait_BRD_Jean_Baptiste_Bagaza
+			}
+		}
+		country_leader={
+			ideology = oligarchism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

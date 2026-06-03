@@ -21,6 +21,9 @@ state={
 				naval_base = 4
 			}
 		}
+	add_dynamic_modifier = {
+        modifier = northern_ireland_ira_activity
+    }
 		add_core_of = ENG
 		add_core_of = IRE
 	}

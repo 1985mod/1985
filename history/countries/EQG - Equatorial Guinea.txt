@@ -28,6 +28,9 @@ recruit_character = EQG_stc
 recruit_character = EQG_ai2
 recruit_character = EQG_ncs
 
+recruit_character = EQG_Teodoro_Obiang_Nguema
+promote_character = EQG_Teodoro_Obiang_Nguema
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

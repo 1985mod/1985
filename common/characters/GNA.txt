@@ -1,0 +1,18 @@
+characters = {
+	GNA_Lansana_Conté ={
+		name = GNA_Lansana_Conté
+		portraits={
+			civilian={
+				large= GFX_portrait_GNA_Lansana_Conté
+			}
+			army = {
+				large = GFX_portrait_GNA_Lansana_Conté
+			}
+		}
+		country_leader={
+			ideology = authoritarian_socialism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

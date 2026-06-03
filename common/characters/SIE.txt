@@ -1,0 +1,18 @@
+characters = {
+	SIE_Joseph_Saidu_Momoh ={
+		name = SIE_Joseph_Saidu_Momoh
+		portraits={
+			civilian={
+				large= GFX_portrait_SIE_Joseph_Saidu_Momoh
+			}
+			army = {
+				large = GFX_portrait_SIE_Joseph_Saidu_Momoh
+			}
+		}
+		country_leader={
+			ideology = military_regimes
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

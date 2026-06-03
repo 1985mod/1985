@@ -1,0 +1,18 @@
+characters = {
+	NGR_Badamasi_Babangida ={
+		name = NGR_Badamasi_Babangida
+		portraits={
+			civilian={
+				large= GFX_portrait_NGR_Badamasi_Babangida
+			}
+			army = {
+				large = GFX_portrait_NGR_Badamasi_Babangida
+			}
+		}
+		country_leader={
+			ideology = authoritarian_democracy
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

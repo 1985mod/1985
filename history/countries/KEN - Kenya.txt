@@ -32,6 +32,9 @@ recruit_character = KEN_coi
 recruit_character = KEN_democratic_guy
 recruit_character = KEN_acd2
 
+recruit_character = KEN_Daniel_arap_Moi
+promote_character = KEN_Daniel_arap_Moi
+
 # A colony of Italy in 1939.  However, if independent it would have the same politics as in 1936
 set_politics = {
 	ruling_party = neutrality

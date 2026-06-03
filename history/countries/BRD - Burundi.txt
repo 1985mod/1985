@@ -35,6 +35,9 @@ recruit_character = BRD_ai2
 recruit_character = BRD_fascist_guy
 recruit_character = BRD_stc
 
+recruit_character = BRD_Jean_Baptiste_Bagaza
+promote_character = BRD_Jean_Baptiste_Bagaza
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

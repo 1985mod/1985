@@ -28,6 +28,9 @@ recruit_character = GNA_acr
 recruit_character = GNA_coi
 recruit_character = GNA_awt
 
+recruit_character = GNA_Lansana_Conté
+promote_character = GNA_Lansana_Conté
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"

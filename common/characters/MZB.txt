@@ -1,0 +1,18 @@
+characters = {
+	MZB_Samora_Machel ={
+		name = MZB_Samora_Machel
+		portraits={
+			civilian={
+				large= GFX_portrait_MZB_Samora_Machel
+			}
+			army = {
+				large = GFX_portrait_MZB_Samora_Machel
+			}
+		}
+		country_leader={
+			ideology = leninism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}
