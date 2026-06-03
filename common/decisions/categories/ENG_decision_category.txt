@@ -1,9 +1,0 @@
-ira_conflict_category = {
-    visible = {
-        has_completed_focus = NRA_no_deal_was_reached
-    }
-    allowed = {
-    }
-    icon = GFX_ira_category_icon
-    priority = 50
-}

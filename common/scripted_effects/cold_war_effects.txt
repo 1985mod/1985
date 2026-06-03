@@ -1,9 +1,0 @@
-
-
-soviet_union_won_the_proxy_war = {
-	add_to_variable = { amount_of_proxies_won_ussr = 0.02 }
-}
-
-united_states_won_the_proxy_war = {
-	add_to_variable = { amount_of_proxies_won_usa = 0.02 }
-}

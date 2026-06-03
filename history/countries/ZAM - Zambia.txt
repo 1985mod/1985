@@ -7,9 +7,6 @@ set_technology = {
 
 set_convoys = 0
 
-recruit_character = ZAM_Kenneth_Kaunda
-promote_character = ZAM_Kenneth_Kaunda
-
 set_politics = {
 	ruling_party = socialism
 	last_election = "1985.1.1"

@@ -2,7 +2,7 @@
 
 oob = "SOV_1985"
 
-set_research_slots = 7
+set_research_slots = 4
 
 starting_train_buffer = 3.0
 
@@ -45,7 +45,7 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
-		main_battle_tank_chassis = 1
+		improved_light_tank_chassis = 1
 		engine_tech_1 = 1
 		engine_tech_2 = 1
 	}
@@ -149,16 +149,6 @@ set_autonomy = {
 	end_wars = no
 }
 
-diplomatic_relation = {
-	country = AFN
-	relation = military_access
-}
-
-diplomatic_relation = {
-	country = MON
-	relation = military_access
-}
-
 set_politics = {
 	ruling_party = communism
 	last_election = "1985.1.1"
@@ -184,12 +174,10 @@ add_opinion_modifier = {
 }	
 }
 
-add_dynamic_modifier = { modifier = SOV_cold_war}
-
 add_ideas = {
 SOV_soviet_contingent_in_afghanistan
 SOV_economic_stagnation
-limited_conscription
+SOV_cold_war
 }
 
 recruit_character = SOV_konstantin_chernenko
@@ -202,7 +190,6 @@ recruit_character = SOV_dmitry_yazov
 recruit_character = SOV_Shaposhnikov
 recruit_character = SOV_Sokolov
 recruit_character = SOV_Nikolai_Makarov
-recruit_character = SOV_zhirinovsky
 
 252 = {
     add_building_construction = {
@@ -212,11 +199,3 @@ recruit_character = SOV_zhirinovsky
         province = 11375
     }
 }
-
-give_guarantee = DDR
-give_guarantee = POL
-give_guarantee = HUN
-give_guarantee = ROM
-give_guarantee = BUL
-give_guarantee = CZE
-give_guarantee = MON

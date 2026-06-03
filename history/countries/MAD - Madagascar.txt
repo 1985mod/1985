@@ -9,10 +9,6 @@ set_technology = {
 
 set_convoys = 5
 
-recruit_character = MAD_Didier_Ratsiraka
-promote_character = MAD_Didier_Ratsiraka
-
-
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"

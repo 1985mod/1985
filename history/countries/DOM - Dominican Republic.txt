@@ -10,19 +10,19 @@ set_technology = {
 }
 
 
-recruit_character = DOM_salvador_jorge
+
 
 set_war_support = 0.1
 set_convoys = 5
 
 set_politics = {
-	ruling_party = socialism
+	ruling_party = conservatism
 	last_election = "1934.5.16"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	socialism = 75
+	conservatism = 75
 	communism = 15
 	neutrality = 10
 }

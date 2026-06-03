@@ -9,9 +9,6 @@ state={
 		victory_points = {
 			1910 1
 		}
-
-		set_demilitarized_zone = yes
-		
 		owner = PAK
 		buildings = {
 			infrastructure = 1

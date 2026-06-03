@@ -1,7 +1,5 @@
 ﻿capital = 660
 
-set_oob = GEN_1985
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -29,9 +27,6 @@ recruit_character = CAR_ai2
 recruit_character = CAR_democratic_guy
 recruit_character = CAR_ar
 recruit_character = CAR_acgs
-
-recruit_character = CAR_Andre_Dieudonne_Kolingba
-promote_character = CAR_Andre_Dieudonne_Kolingba
 
 set_politics = {
 	ruling_party = neutrality

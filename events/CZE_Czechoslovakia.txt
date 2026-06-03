@@ -1,0 +1,93 @@
+add_namespace = CZE_Czechoslovakia_kgb
+add_namespace = CZE_Czechoslovakia_lenders
+add_namespace = CZE_Czechoslovakia_perepro
+add_namespace = CZE_global_ralal
+add_namespace = CZE_Czechoslovakia_papy
+
+country_event = {
+    id = CZE_Czechoslovakia_kgb.1
+    title = CZE_Czechoslovakia_kgb.1.t
+    picture = GFX_CZE_kgb_event
+    desc = CZE_Czechoslovakia_kgb.1.desc
+    is_triggered_only = yes
+
+    option = {
+        name = CZE_Czechoslovakia_kgb.1.a
+        add_political_power = -200
+        add_stability  = 0.05
+    }
+    option = {
+        name = CZE_Czechoslovakia_kgb.1.b
+        add_stability  = -0.05 
+    }
+}
+
+country_event = {
+    id = CZE_Czechoslovakia_lenders.1
+    title = CZE_Czechoslovakia_lenders.1.t
+    desc = CZE_Czechoslovakia_lenders.1.desc
+    is_triggered_only = yes
+
+    option = {
+        name = CZE_Czechoslovakia_lenders.1.a
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+        }
+    }
+}
+
+country_event = {
+    id = CZE_Czechoslovakia_perepro.1
+    title = CZE_Czechoslovakia_perepro.1.t
+    desc = CZE_Czechoslovakia_perepro.1.desc
+    is_triggered_only = yes
+
+    option = {
+        name = CZE_Czechoslovakia_perepro.1.a
+        add_popularity = {
+            ideology = communism
+            popularity = -0.3
+        }
+    }
+    option = {
+        name = CZE_Czechoslovakia_perepro.1.b
+        add_political_power = -444
+        add_stability  = -0.10 
+    }
+}
+
+news_event = {
+    id = CZE_global_ralal.1
+    title = CZE_global_ralal.1.t
+    picture = GFX_CZE_global_ralal_global_event
+    desc = CZE_global_ralal.1.d
+    is_triggered_only = yes
+
+    option = {
+        name = CZE_global_ralal.1.a
+        ai_will_do = { factor = 1 }
+    }
+    option = {
+        name = CZE_global_ralal.1.b
+        ai_will_do = { factor = 1 }
+    }
+    option = {
+        name = CZE_global_ralal.1.s
+        ai_will_do = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = CZE_Czechoslovakia_papy.1
+    title = CZE_Czechoslovakia_papy.1.t
+    desc = CZE_Czechoslovakia_papy.1.desc
+    is_triggered_only = yes
+
+    option = {
+        name = CZE_Czechoslovakia_papy.1.a
+        ai_will_do = { factor = 1 }
+    }
+}

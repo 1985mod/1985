@@ -1,6 +1,6 @@
 ﻿capital = 46 
 
-oob = "GEN_1985"
+oob = "ROM_1985"
 
 set_research_slots = 3
 
@@ -89,7 +89,7 @@ recruit_character = ROM_Nicolae_Ceausescu
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1985.1.1"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

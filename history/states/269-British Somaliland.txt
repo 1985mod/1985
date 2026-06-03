@@ -17,13 +17,9 @@ state=
 		add_core_of = SOM
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			10833 = {
 				naval_base = 1
 			}
-		}
-		ETH = {
-			set_province_controller = 5068
 		}
 	}
 	provinces={

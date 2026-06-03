@@ -19,10 +19,4 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SOV/idea_portrait_sov_Makarov.dds"
 	}
 
-	### USA
-
-	spriteType = {
-		name = "GFX_idea_portrait_usa_lloyd_bentsen"
-		texturefile = "gfx/interface/ideas/USA/idea_portrait_usa_lloyd_bentsen.dds"
-	}
 }

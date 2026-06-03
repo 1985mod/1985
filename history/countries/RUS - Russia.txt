@@ -99,8 +99,7 @@ set_popularities = {
 	fascism = 5
 }
 
-recruit_character = RUS_boris_yeltsin
-recruit_character = RUS_mikhail_gorbachev
-recruit_character = RUS_zhirinovsk
+recruit_character = SOV_boris_yeltsin
+recruit_character = SOV_mikhail_gorbachev
 
 

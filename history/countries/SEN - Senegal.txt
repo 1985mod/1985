@@ -7,8 +7,7 @@ set_technology = {
 
 set_convoys = 20
 
-recruit_character = SEN_Abdou_Diouf
-promote_character = SEN_Abdou_Diouf
+recruit_character = 
 
 set_politics = {
 	ruling_party = socialism

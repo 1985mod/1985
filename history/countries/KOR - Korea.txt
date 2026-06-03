@@ -14,11 +14,9 @@ set_technology = {
 
 set_convoys = 5
 
-recruit_character = KOR_chun_doo_hwan
-
 set_politics = {
 	ruling_party = conservatism
-	last_election = "1985.1.1"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -27,4 +25,48 @@ set_popularities = {
 	fascism = 10
 	communism = 0
 	neutrality = 20
+}
+
+create_country_leader = {
+	name = "Syngman Rhee"
+	desc = ""
+	picture = GFX_portrait_Syngman_Rhee
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yi Kang"
+	desc = ""
+	picture = GFX_portrait_Yi_Kang
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kim Il-sung"
+	desc = ""
+	picture = GFX_portrait_Kim_Il_sung
+	expire = "1965.1.1"
+	ideology = communism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yi Un"
+	desc = ""
+	picture = GFX_portrait_Yi_Un
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
 }

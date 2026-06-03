@@ -29,9 +29,6 @@ recruit_character = GHA_pot
 recruit_character = GHA_nccr
 recruit_character = GHA_mt
 
-recruit_character = GHA_Jerry_John_Rawlings
-promote_character = GHA_Jerry_John_Rawlings
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

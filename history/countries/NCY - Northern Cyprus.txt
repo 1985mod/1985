@@ -78,5 +78,3 @@ set_popularities = {
 	neutrality = 20
 	fascism = 5
 }
-
-recruit_character = NCY_denktash_rauf

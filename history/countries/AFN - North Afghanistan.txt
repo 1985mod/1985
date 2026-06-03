@@ -1,4 +1,4 @@
-﻿capital = 1063
+﻿capital = 267
 
 oob = "AFN_1985"
 
@@ -86,7 +86,7 @@ if = {
 }
 set_politics = {
 	ruling_party = communism
-	last_election = "1985.1.1"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -97,7 +97,6 @@ set_popularities = {
 
 add_ideas = {
 AFN_kunar_operation
-extensive_conscription
 }
 
 recruit_character = AFN_mohammed_omar

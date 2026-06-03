@@ -9,10 +9,10 @@ state={
 
 	state_category = rural
 	provinces={
-		10896 12877 13444 13448 13450 13454 13456
+		7448 7584 10896 12248 12877 
 	}
 	history={
-		owner = AFS
+		owner = AFN
 		buildings = {
 			infrastructure = 1 
 		}
@@ -20,6 +20,15 @@ state={
 		add_core_of = AFS
 		victory_points = {
 			12248 1
+		}
+		AFN = {
+			set_province_controller = 12248
+		}
+		AFS = {
+			set_province_controller = 7584
+			set_province_controller = 12877
+			set_province_controller = 10896
+			set_province_controller = 7448
 		}
 	}
 	

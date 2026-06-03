@@ -10,15 +10,4 @@ spriteTypes = {
 		noOfFrames = 2
 	}	
 	
-	spriteType = {
-		name = "GFX_radio_station_kino"
-		texturefile = "gfx/interface/topbar/musicplayer/radio_station_kino.dds"
-	}	
-	
-	spriteType = {
-		name = "GFX_radio_station_kino"
-		texturefile = "gfx/interface/topbar/musicplayer/radio_station_kino.dds"
-		noOfFrames = 2
-	}	
-	
 }
