@@ -28,9 +28,6 @@ recruit_character = SIE_pot
 recruit_character = SIE_aa2
 recruit_character = SIE_awt
 
-recruit_character = SIE_Joseph_Saidu_Momoh
-promote_character = SIE_Joseph_Saidu_Momoh
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

@@ -9,10 +9,7 @@ state={
 		owner = PRC
 		add_core_of = CHI
 		add_core_of = TIB
-		start_resistance = yes
-		set_resistance = 25
-		set_compliance = 30
-		
+		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 

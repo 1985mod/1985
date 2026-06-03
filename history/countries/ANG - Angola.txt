@@ -8,9 +8,6 @@ set_technology = {
 	tech_mountaineers = 1
 }
 
-recruit_character = ANG_Jose_Eduardo_dos_Santos
-promote_character = ANG_Jose_Eduardo_dos_Santos
-
 set_convoys = 5
 
 set_politics = {

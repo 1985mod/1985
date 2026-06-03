@@ -13,7 +13,6 @@ state={
 			10966 1 
 		}
 		add_core_of = ANG
-		add_core_of = UNI
 
 	}
 

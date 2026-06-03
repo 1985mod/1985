@@ -10,9 +10,6 @@ set_technology = {
 
 set_convoys = 5
 
-recruit_character = MZB_Samora_Machel
-promote_character = MZB_Samora_Machel
-
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"
@@ -21,4 +18,14 @@ set_politics = {
 }
 set_popularities = {
 	communism = 100
+}
+
+create_country_leader = {
+	name = "Eduardo Tsonga"
+	picture = GFX_portrait_Eduardo_Tsonga
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
 }

@@ -1,0 +1,74 @@
+focus_tree = {
+    id = USA_focus_1987
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 1000
+            tag = USA
+        }
+    }
+    default = no
+	
+    continuous_focus_position = { x = 3000 y = 1200 }
+	
+    focus = { 
+        id = USA_reconsider_relations_with_the_soviet_union
+        icon = GFX_	
+        x = 15
+        y = 0
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_military_aid_to_unita
+		relative_position_id = USA_reconsider_relations_with_the_soviet_union
+		prerequisite = { focus = USA_reconsider_relations_with_the_soviet_union }
+        icon = GFX_	
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_military_aid_to_the_mnr
+		relative_position_id = USA_reconsider_relations_with_the_soviet_union
+		prerequisite = { focus = USA_reconsider_relations_with_the_soviet_union }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_supporting_the_mujahideen_against_the_soviet_army
+		relative_position_id = USA_reconsider_relations_with_the_soviet_union
+		prerequisite = { focus = USA_reconsider_relations_with_the_soviet_union }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+	    }
+	}
+	
+    focus = { 
+        id = USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic
+		relative_position_id = USA_reconsider_relations_with_the_soviet_union
+		prerequisite = { focus = USA_military_aid_to_unita }
+		prerequisite = { focus = USA_military_aid_to_the_mnr }
+		prerequisite = { focus = USA_supporting_the_mujahideen_against_the_soviet_army }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+	    }
+	}
+}

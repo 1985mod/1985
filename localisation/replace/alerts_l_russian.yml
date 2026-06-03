@@ -216,5 +216,3 @@
  alert_got_raided_instant: "§YВражеские налеты завершены§!"
  alert_got_raided_delayed_header: ""
  alert_got_raided_delayed_entry: "Цель «$TARGET_NAME$» была поражена во время: $RAID_TYPE_NAME|H$. Результат: $OUTCOME$."
- we_join_in_anti_iraq_coalition: "Эта страна вступит в §Yанти-иракскую§! коалицию"
- USA_sammit_in_reykjavik: "Предложение Горбачёва принято"

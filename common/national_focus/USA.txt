@@ -15,13 +15,11 @@ focus_tree = {
 	
     focus = { 
         id = USA_reagans_second_presidency
-        icon = GFX_focus_icon_USA_reagan_two_presidense
+        icon = GFX_
         x = 15
         y = 0
         cost = 5
-		
         completion_reward = {
-		    add_political_power = 100
 	    }
 	}
 	
@@ -33,14 +31,7 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
-		
         completion_reward = {
-			ROOT = {
-				add_opinion_modifier = {
-					target = SOV
-					modifier = evil_empire
-				}
-			}
 	    }
 	}
 	
@@ -52,9 +43,7 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
-		
         completion_reward = {
-		
 	    }
 	}
 	
@@ -66,16 +55,7 @@ focus_tree = {
         x = 2
         y = 1
         cost = 5
-		
         completion_reward = {
-			remove_opinion_modifier = { target = SOV modifier = cold_war }
-			SOV = {
-				remove_opinion_modifier = { target = USA modifier = cold_war }
-			}
-			remove_dynamic_modifier = { modifier = USA_cold_war }
-			SOV = {
-				remove_dynamic_modifier = { modifier = SOV_cold_war }
-			}
 	    }
 	}
 	
@@ -87,12 +67,7 @@ focus_tree = {
         x = -2
         y = 1
         cost = 5
-		
         completion_reward = {
-			country_event = { id = usa.14 hours = 6 }
-			SOV = {
-				country_event = { id = usa.14 hours = 12 }
-			}	
 	    }
 	}
 	
@@ -105,12 +80,7 @@ focus_tree = {
         x = 0
         y = 2
         cost = 2
-		
         completion_reward = {
-			country_event = { id = usa.15 hours = 6 }
-			SOV = {
-				country_event = { id = usa.15 hours = 12 }
-			}		
 	    }
 	}
 	
@@ -122,15 +92,12 @@ focus_tree = {
         x = 0
         y = 1
         cost = 2
-		
         available = {
-		   date > 1986.10.2
-		   has_global_flag = USA_sammit_in_reykjavik
+		   date > 1986.10.8
 		}
 		
         completion_reward = {
-            set_country_flag = USA_reconsider_relations_with_the_soviet_union
-            mark_focus_tree_layout_dirty = yes
+		    load_focus_tree = USA_focus_1986
 	    }
 	}
 	
@@ -138,13 +105,11 @@ focus_tree = {
         id = USA_us_army
 		relative_position_id = USA_reagans_second_presidency
 		prerequisite = { focus = USA_reagans_second_presidency }
-        icon = GFX_focus_icon_army_usa	
+        icon = GFX_	
         x = 5
         y = 1
         cost = 5
-		
         completion_reward = {
-		   army_experience = 25
 	    }
 	}
 	
@@ -156,15 +121,7 @@ focus_tree = {
         x = -2
         y = 1
         cost = 5
-		
         completion_reward = {
-	        army_experience = 15
-        	add_doctrine_cost_reduction = {
-    			name = USA_lessons_of_the_vietnam_war
-    			cost_reduction = 0.5
-     			uses = 1
-     			category = land_doctrine
-        	}
 	    }
 	}
 	
@@ -176,10 +133,7 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
-		
         completion_reward = {
-		   army_experience = 10
-		   air_experience = 10
 	    }
 	}
 	
@@ -191,15 +145,7 @@ focus_tree = {
         x = 2
         y = 1
         cost = 5
-		
         completion_reward = {
-            army_experience = 10		
-        	add_doctrine_cost_reduction = {
-    			name = USA_expand_military_bases
-    			cost_reduction = 0.5
-     			uses = 1
-     			category = land_doctrine
-        	}
 	    }
 	}
 	
@@ -213,14 +159,7 @@ focus_tree = {
         x = 0
         y = 2
         cost = 5
-		
         completion_reward = {
-			add_tech_bonus = {
-				name = USA_modernization_of_abrams_and_bradley
-				bonus = 1
-				uses = 1
-				category = cat_medium_armor
-			}
 	    }
 	}
 
@@ -232,24 +171,7 @@ focus_tree = {
         x = -5
         y = 1
         cost = 5
-		
         completion_reward = {
-			random_owned_controlled_state = {
-				limit = {					
-					is_in_home_area = yes					
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}		
 	    }
 	}
 	
@@ -260,25 +182,8 @@ focus_tree = {
 		prerequisite = { focus = USA_stop_the_rapid_growth_of_public_debt }
         x = 2
         y = 1
-        cost = 10
-		
+        cost = 5
         completion_reward = {
-			random_owned_controlled_state = {
-				limit = {					
-					is_in_home_area = yes					
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 	    }
 	}
 	
@@ -290,24 +195,7 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
-		
         completion_reward = {
-			random_owned_controlled_state = {
-				limit = {					
-					is_in_home_area = yes					
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 	    }
 	}
 	
@@ -318,25 +206,8 @@ focus_tree = {
 		prerequisite = { focus = USA_stop_the_rapid_growth_of_public_debt }
         x = -2
         y = 1
-        cost = 10
-		
+        cost = 5
         completion_reward = {
-			random_owned_controlled_state = {
-				limit = {					
-					is_in_home_area = yes					
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}		
 	    }
 	}
 	
@@ -350,24 +221,7 @@ focus_tree = {
         x = 0
         y = 2
         cost = 5
-		
         completion_reward = {
-			random_owned_controlled_state = {
-				limit = {					
-					is_in_home_area = yes					
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 	    }
 	}
 	
@@ -379,212 +233,6 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
-		
-        completion_reward = {
-			random_owned_controlled_state = {
-				limit = {					
-					is_in_home_area = yes					
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-	    }
-	}
-
-    focus = { 
-        id = USA_reconsider_relations_with_the_soviet_union
-		relative_position_id = USA_second_reykjavik_summit
-		prerequisite = { focus = USA_second_reykjavik_summit }
-        icon = GFX_	
-        x = 0
-        y = 1
-		allow_branch = { has_country_flag = USA_reconsider_relations_with_the_soviet_union }
-        cost = 5
-		
-        available = {
-		   date > 1986.10.2
-		   has_global_flag = USA_sammit_in_reykjavik
-		}
-		
-        completion_reward = {
-		    remove_opinion_modifier = { target = SOV modifier = evil_empire }
-	    }
-	}
-	
-    focus = { 
-        id = USA_military_aid_to_unita
-		relative_position_id = USA_reconsider_relations_with_the_soviet_union
-		prerequisite = { focus = USA_reconsider_relations_with_the_soviet_union }
-        icon = GFX_	
-        x = -2
-        y = 1
-        cost = 5
-        completion_reward = {
-			UNI = {
-				country_event = { id = usa.4 hours = 12 }
-			}
-	    }
-	}
-	
-    focus = { 
-        id = USA_military_aid_to_the_mnr
-		relative_position_id = USA_reconsider_relations_with_the_soviet_union
-		prerequisite = { focus = USA_reconsider_relations_with_the_soviet_union }
-        icon = GFX_	
-        x = 2
-        y = 1
-        cost = 5
-        completion_reward = {
-			MZB = {
-				add_popularity = {
-					ideology = liberalism
-					popularity = 0.02
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.03
-				}
-			}
-	    }
-	}
-	
-    focus = { 
-        id = USA_supporting_the_mujahideen_against_the_soviet_army
-		relative_position_id = USA_reconsider_relations_with_the_soviet_union
-		prerequisite = { focus = USA_reconsider_relations_with_the_soviet_union }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 5
-        completion_reward = {
-			AFS = {
-				country_event = { id = usa.4 hours = 12 }
-			}
-	    }
-	}
-	
-    focus = { 
-        id = USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic
-		relative_position_id = USA_reconsider_relations_with_the_soviet_union
-		prerequisite = { focus = USA_military_aid_to_unita }
-		prerequisite = { focus = USA_military_aid_to_the_mnr }
-		prerequisite = { focus = USA_supporting_the_mujahideen_against_the_soviet_army }
-        icon = GFX_	
-        x = 0
-        y = 2
-        cost = 6.5
-
-        completion_reward = {
-			CAM = {
-				add_popularity = {
-					ideology = liberalism
-					popularity = 0.02
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.03
-				}
-			}
-	    }
-	}
-	
-    focus = { 
-        id = USA_voice_of_america
-		relative_position_id = USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic
-		prerequisite = { focus = USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 6.5
-        completion_reward = {
-            unlock_decision_category_tooltip = USA_voice_of_america
-	    }
-	}
-	
-    focus = { 
-        id = USA_war_on_drugs
-		relative_position_id = USA_voice_of_america
-		prerequisite = { focus = USA_voice_of_america }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 10
-
-        completion_reward = {
-            unlock_decision_category_tooltip = USA_war_on_drugs
-	    }
-	}
-	
-    focus = { 
-        id = USA_internet_development
-		relative_position_id = USA_war_on_drugs
-		prerequisite = { focus = USA_war_on_drugs }
-        icon = GFX_	
-        x = -2
-        y = 1
-        cost = 5
-        completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.05
-	    }
-	}
-	
-    focus = { 
-        id = USA_pc_standardization
-		relative_position_id = USA_war_on_drugs
-		prerequisite = { focus = USA_war_on_drugs }
-        icon = GFX_	
-        x = 2
-        y = 1
-        cost = 5
-		
-		available = {
-		   has_completed_focus = USA_internet_development
-		}
-		
-        completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.05
-	    }
-	}
-
-    focus = { 
-        id = USA_rehabilitate_usaid
-		relative_position_id = USA_war_on_drugs
-		prerequisite = { focus = USA_internet_development }
-		prerequisite = { focus = USA_pc_standardization }
-        icon = GFX_	
-        x = 0
-        y = 2
-        cost = 5
-		
         completion_reward = {
 	    }
 	}
-	
-    focus = { 
-        id = USA_second_meeting_with_gorbachev
-		relative_position_id = USA_rehabilitate_usaid
-		prerequisite = { focus = USA_rehabilitate_usaid }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 5
-		
-        completion_reward = {
-		    load_focus_tree = {
-    			tree = USA_focus_1988
-  			    keep_completed = yes
-			}
-	    }
-	}
-}

@@ -11,21 +11,21 @@ state = {
 
 	history = {
 
-		owner = LEB
-		add_core_of = LEB
-
-		1984.12.1 = {
-			controller = ISR
-		}
+		owner = OMA
+		add_core_of = OMA
 
 		buildings = {
 			infrastructure = 1
+		}
+
+		victory_points = {
+			5049 1 # Nizwa
 		}
 		
 	}
 
 	provinces = {
-		11919 13495 13497
+		2018 5049
 	}
 
 	local_supplies = 0.0 

@@ -1,7 +1,6 @@
 ﻿capital = 440
 
-oob = "GEN_1985"
-
+oob = "PAK_1985"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "PAK_1985_naval_mtg"

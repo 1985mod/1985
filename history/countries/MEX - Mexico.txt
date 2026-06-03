@@ -1,12 +1,10 @@
 ﻿capital = 277 
 
-oob = "GEN_1985"
+oob = "MEX_1985"
 
 set_research_slots = 4
 
 starting_train_buffer = 3.0
-
-recruit_character = MEX_miguel_la_madrid
 
 # Starting tech
 set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched

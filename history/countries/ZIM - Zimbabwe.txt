@@ -8,9 +8,6 @@ set_technology = {
 	tech_mountaineers = 1
 }
 
-recruit_character = ZIM_Robert_Mugabe
-promote_character = ZIM_Robert_Mugabe
-
 set_convoys = 5
 
 set_politics = {

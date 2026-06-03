@@ -31,7 +31,7 @@ SOV_lend_lease_in_afghanistan = {
     abort_when_not_enabled = yes
     ai_strategy = {
        type = send_lend_lease_desire
-       id = AFN
+       id = AFS
        value = 100
     }
 }

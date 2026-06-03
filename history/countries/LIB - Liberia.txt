@@ -24,9 +24,6 @@ recruit_character = LIB_benjamin_o_davis
 recruit_character = LIB_george_remond
 recruit_character = LIB_iver_virgin
 
-recruit_character = LIB_Samuel_Kanyon_Doe
-promote_character = LIB_Samuel_Kanyon_Doe
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1931.1.1"

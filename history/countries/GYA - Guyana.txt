@@ -9,17 +9,26 @@ set_technology = {
 
 set_convoys = 5
 
-recruit_character = GYA_Desmond_Hoyte
-
 set_politics = {
-	ruling_party = socialism
-	last_election = "1985.1.1"
+	ruling_party = conservatism
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	socialism = 75
-	conservatism = 8
+	conservatism = 75
+	fascism = 1
 	communism = 1
-	neutrality = 16
+	neutrality = 23
 }
+
+#create_country_leader = {
+#	
+#	name = "Jonas Lote"
+#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+#	expire = "1965.1.1"
+#	ideology = centrism
+#	traits = {
+#		#
+#	}
+#}

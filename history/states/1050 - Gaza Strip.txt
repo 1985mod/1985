@@ -5,8 +5,7 @@ state={
 	history={
 		owner = ISR
 		add_core_of = PAL
-		start_resistance = yes
-		set_compliance = 100
+		add_core_of = ISR
 		buildings = {
 			infrastructure = 1
 		}
@@ -19,7 +18,7 @@ state={
 	provinces={
 		13390
 	}
-	manpower = 450987
+	manpower = 1057400
 	buildings_max_level_factor = 1.000
 	state_category = town
 

@@ -15,7 +15,7 @@ focus_tree = {
 	
     focus = { 
         id = DDR_new_1985
-        icon = GFX_
+        icon = GFX_	
         x = 10
         y = 0
         cost = 5

@@ -12,7 +12,6 @@ state = {
 
 		owner = ANG
 		add_core_of = ANG
-		add_core_of = UNI
 
 		buildings = {
 			infrastructure = 1

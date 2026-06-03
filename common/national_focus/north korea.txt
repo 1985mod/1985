@@ -1,0 +1,2056 @@
+focus_tree = {
+    id = nk
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = PRK
+        }
+    }
+	
+    default = no
+	
+    focus = { 
+        id = PRK_strengthening_the_power_of_kim_sen
+        icon = GFX_focus_por_workers_of_iberia
+        x = 30
+        y = 0
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRK_suppression_of_dissent
+        icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = {
+			focus = PRK_strengthening_the_power_of_kim_sen
+		}
+        x = -1
+        y = 1
+		relative_position_id = PRK_strengthening_the_power_of_kim_sen
+        cost = 5
+        completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.03
+			}   
+			add_popularity = {
+				ideology = conservatism
+				popularity = -0.02
+			}   
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}   
+        }
+    }
+	
+    focus = { 
+        id = PRK_strengthening_social_identity
+        icon = GFX_focus_ARG_women_in_industry
+        x = -2
+        y = 2
+		prerequisite = {
+			focus = PRK_suppression_of_dissent
+		}
+		relative_position_id = PRK_strengthening_the_power_of_kim_sen
+        cost = 5
+        completion_reward = {
+            add_war_support = 0.05
+			add_stability = 0.05
+        }
+    }
+	
+    focus = { 
+        id = PRK_strengthening_internal_control
+        icon = GFX_focus_GER_total_control_over_domestic_affairs
+		prerequisite = {
+			focus = PRK_strengthening_the_power_of_kim_sen
+		}
+        x = 1
+        y = 1
+		relative_position_id = PRK_strengthening_the_power_of_kim_sen
+        cost = 5
+        completion_reward = {
+            add_stability = 0.1
+        }
+    }
+	
+    focus = { 
+        id = PRK_social_control
+        icon = GFX_focus_SWE_socialist_reforms
+		prerequisite = {
+			focus = PRK_strengthening_internal_control
+		}
+        x = 2
+        y = 2
+		relative_position_id = PRK_strengthening_the_power_of_kim_sen
+        cost = 5
+        completion_reward = {
+		    add_stability = 0.05
+            add_political_power = 25
+        }
+    }
+
+    focus = { 
+        id = PRK_kim_sen_personality_cult
+        icon = GFX_focus_AUS_union_of_danubian_socialist_republics
+		prerequisite = {
+			focus = PRK_strengthening_the_power_of_kim_sen
+		}
+        x = 0
+        y = 2
+		relative_position_id = PRK_strengthening_the_power_of_kim_sen
+        cost = 5
+        completion_reward = {
+            add_political_power = 75
+			add_stability = 0.05
+        }
+    }
+	
+    focus = { 
+        id = PRK_foreign_policy
+        icon = GFX_focus_generic_soviet_politics
+		prerequisite = {
+			focus = PRK_kim_sen_personality_cult
+		}
+		prerequisite = {
+			focus = PRK_strengthening_social_identity
+			focus = PRK_social_control
+		}
+        x = 0
+        y = 3
+		relative_position_id = PRK_strengthening_the_power_of_kim_sen
+        cost = 5
+        completion_reward = {
+            	add_timed_idea = {
+                 idea = PRK_foreign_policy
+                 days = 365
+                }
+        }
+    }
+	
+    focus = { 
+        id = PRK_cooperation_with_the_ussr
+        icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = {
+			focus = PRK_foreign_policy
+		}
+        x = -2
+        y = 4
+		relative_position_id = PRK_strengthening_the_power_of_kim_sen
+        cost = 5
+		available = {
+			NOT = { has_war_with = SOV }
+			is_subject = no
+			has_government = communism	
+		}
+        completion_reward = {
+            add_political_power = 50
+			SOV = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+        }
+    }
+	
+    focus = { 
+        id = PRK_ask_for_investment_from_ussr
+        icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = {
+			focus = PRK_cooperation_with_the_ussr
+		}
+        x = 1
+        y = 1
+		relative_position_id = PRK_cooperation_with_the_ussr
+        cost = 5
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+					    tag = SOV
+					}
+				}
+				country_event = { id = north.korea.7 hours = 12 }
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_trade_with_ussr
+        icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		prerequisite = {
+			focus = PRK_cooperation_with_the_ussr
+		}
+        x = -1
+        y = 1
+		relative_position_id = PRK_cooperation_with_the_ussr
+        cost = 10
+        completion_reward = {
+			527 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+        }
+    }
+	
+    focus = { 
+        id = PRK_cooperation_with_the_china
+        icon = GFX_focus_chi_cooperation_with_the_communists
+		prerequisite = {
+			focus = PRK_foreign_policy
+		}
+        x = 2
+        y = 4
+		relative_position_id = PRK_strengthening_the_power_of_kim_sen
+        cost = 5
+		available = {
+			NOT = { has_war_with = PRC }
+			is_subject = no
+			has_government = communism	
+		}
+        completion_reward = {
+            add_political_power = 50
+			PRC = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+        }
+    }
+    focus = { 
+        id = PRK_ask_for_investment_from_china
+        icon = GFX_focus_BRA_ethical_internationalism
+		prerequisite = {
+			focus = PRK_cooperation_with_the_china
+		}
+        x = 1
+        y = 1
+		relative_position_id = PRK_cooperation_with_the_china
+        cost = 5
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+					    tag = PRC
+					}
+				}
+				country_event = { id = north.korea.7 hours = 8 }
+			}
+		}
+    }
+    focus = { 
+        id = PRK_trade_with_china
+        icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = {
+			focus = PRK_cooperation_with_the_china
+		}
+        x = -1
+        y = 1
+		relative_position_id = PRK_cooperation_with_the_china
+        cost = 10
+        completion_reward = {
+			527 = {
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+			}
+        }
+    }
+	
+    focus = { 
+        id = PRK_trade_with_countries_warcaw_pact
+        icon = GFX_focus_SWE_the_threat_of_the_iron_curtain
+		prerequisite = {
+			focus = PRK_trade_with_china
+			focus = PRK_ask_for_investment_from_ussr
+		}
+        x = 0
+        y = 3
+		relative_position_id = PRK_foreign_policy
+        cost = 5
+        completion_reward = {
+			POL = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+			CZE = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+			HUN = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+			ROM = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+			BUL = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+			SOV = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+        }
+    }
+    focus = { 
+        id = PRK_do_not_carry_out_market_reform
+        icon = GFX_focus_SWE_socialist_reforms
+		prerequisite = {
+			focus = PRK_trade_with_countries_warcaw_pact
+		}
+		mutually_exclusive = { focus = PRK_market_reform }
+        x = -1
+        y = 4
+		relative_position_id = PRK_foreign_policy
+        cost = 10
+        completion_reward = {
+            add_political_power = 25
+			add_stability = 0.05
+        }
+    }
+	
+    focus = { 
+        id = PRK_market_reform
+        icon = GFX_focus_generic_currency_reforms
+		prerequisite = {
+			focus = PRK_trade_with_countries_warcaw_pact
+		}
+        mutually_exclusive = { focus = PRK_do_not_carry_out_market_reform }
+        x = 1
+        y = 4
+		relative_position_id = PRK_foreign_policy
+        cost = 10
+        completion_reward = {
+			add_stability = -0.05
+            add_tech_bonus = {
+                name = market_reform
+                bonus = 1.0
+                category = industry
+                uses = 2
+            }
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = limited_exports
+			}	
+        }
+    }
+	
+    focus = { 
+        id = PRK_attempt_to_get_closer_to_south_korea
+        icon = GFX_focus_usa_union_representation_act
+		prerequisite = {
+			focus = PRK_do_not_carry_out_market_reform
+			focus = PRK_market_reform
+		}
+        x = 0
+        y = 1
+		relative_position_id = PRK_do_not_carry_out_market_reform
+        cost = 5
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+					    tag = KOR
+					}
+				}
+				country_event = { id = north.korea.1 hours = 12 }
+			}
+		}
+    }
+    focus = { 
+        id = PRK_south_korea
+        icon = GFX_focus_generic_blue_flags
+		prerequisite = {
+			focus = PRK_attempt_to_get_closer_to_south_korea
+		}
+        x = -5
+        y = 1
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+		
+		bypass = {
+		controls_state = 525
+		}
+    }
+    focus = { 
+        id = PRK_south_korea_reject
+        icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = {
+			focus = PRK_south_korea
+		}
+        x = -6
+        y = 2
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+		
+        available = {
+		   NOT = { has_completed_focus = PRK_south_korea_accept }
+		}
+
+        completion_reward = {
+			
+        }
+    }
+	
+    focus = { 
+        id = PRK_old_enemy
+        icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = {
+			focus = PRK_south_korea_reject
+		}
+        x = 0
+        y = 1
+		relative_position_id = PRK_south_korea_reject
+        cost = 10
+        completion_reward = {
+			add_war_support = 0.1
+			add_political_power = -100
+        }
+    }
+	
+    focus = { 
+        id = PRK_cautionary_tale_from_the_korean_war
+        icon = GFX_focus_generic_total_war
+		prerequisite = {
+			focus = PRK_old_enemy
+		}
+        x = 0
+        y = 2
+		relative_position_id = PRK_south_korea_reject
+        cost = 10
+        completion_reward = {
+            	add_timed_idea = {
+                 idea = PRK_an_instructive_story_of_the_korean_war
+                 days = 360
+                }
+        }
+    }
+	
+    focus = { 
+        id = PRK_responsibility_for_ones_own_defense
+        icon = GFX_focus_generic_combined_arms
+		prerequisite = {
+			focus = PRK_agreement_with_china
+		}
+        x = -2
+        y = 2
+		relative_position_id = PRK_south_korea_reject
+        cost = 10
+        completion_reward = {
+            527 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 75
+                    type = arms_factory  
+                    level = 1
+                    instant_build = yes  
+                }
+            }			
+        }
+    }
+	
+    focus = { 
+        id = PRK_agreement_with_china
+        icon = GFX_focus_prc_proclaim_the_peoples_republic
+		prerequisite = {
+			focus = PRK_south_korea_reject
+		}
+        x = -2
+        y = 1
+		relative_position_id = PRK_south_korea_reject
+        cost = 10
+        completion_reward = {
+				give_guarantee = PRC
+				PRC = {
+					give_guarantee = ROOT
+				}
+        }
+    }
+	
+    focus = { 
+        id = PRK_the_best_defense_is_good_offense
+        icon = GFX_goal_generic_major_war
+		prerequisite = {
+			focus = PRK_cautionary_tale_from_the_korean_war
+		}
+		mutually_exclusive = {
+		   focus = PRK_peace_with_korea_for_now
+		} 
+        x = -0
+        y = 3
+		relative_position_id = PRK_south_korea_reject
+        cost = 10
+        completion_reward = {
+			create_wargoal = {
+              type = annex_everything
+		      target = KOR
+              expire = 90
+            }	
+			add_state_claim = 525
+        }
+    }
+	
+    focus = { 
+        id = PRK_peace_with_korea_for_now
+        icon = GFX_focus_hol_war_on_pacifism
+		prerequisite = {
+			focus = PRK_responsibility_for_ones_own_defense
+		}
+		mutually_exclusive = {
+		   focus = PRK_the_best_defense_is_good_offense
+		} 
+        x = -2
+        y = 3
+		relative_position_id = PRK_south_korea_reject
+        cost = 10
+        completion_reward = {
+			add_war_support = -0.05
+			add_stability = 0.05
+        }
+    }
+	
+    focus = { 
+        id = PRK_south_korea_accept
+        icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = {
+			focus = PRK_south_korea
+		}
+        x = -4
+        y = 2
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+		
+		available = {
+		    NOT = { has_completed_focus = PRK_south_korea_reject }
+		}
+		
+		
+        completion_reward = {
+			
+        }
+    }
+	
+    focus = { 
+        id = PRK_the_establishment_of_a_democratic_regime
+        icon = GFX_focus_generic_democratic_europe
+		prerequisite = {
+			focus = PRK_new_ally
+		}
+		prerequisite = {
+			focus = PRK_two_koreas_one_people
+		}
+        x = -3
+        y = 4
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+        completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}  
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}  
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.05
+			}  
+        }
+    }
+	
+    focus = { 
+        id = PRK_the_foundation_of_new_korea
+        icon = GFX_goal_tripartite_pact
+		prerequisite = {
+			focus = PRK_the_establishment_of_a_democratic_regime
+		}
+        x = -2
+        y = 5
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+        completion_reward = {
+			create_faction = PRK_new_korea
+        }
+    }
+    focus = { 
+        id = PRK_non_aggression_pact_with_south_korea
+        icon = GFX_focus_ETH_peacekeeping_forces
+		prerequisite = {
+			focus = PRK_the_establishment_of_a_democratic_regime
+		}
+        x = -4
+        y = 5
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+        completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+					    tag = KOR
+					}
+				}
+				country_event = { id = north.korea.10 hours = 6 }
+			}		
+        }
+    }
+	
+    focus = { 
+        id = PRK_new_ally
+        icon = GFX_focus_generic_social_democracy
+		prerequisite = {
+			focus = PRK_south_korea_accept
+		}
+        x = 0
+        y = 1
+		relative_position_id = PRK_south_korea_accept
+        cost = 10
+        completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+					    tag = KOR
+						tag = PRK
+					}
+				}
+				country_event = { id = north.korea.13 hours = 3 }
+			}				
+        }
+    }
+	
+    focus = { 
+        id = PRK_two_koreas_one_people
+        icon = GFX_focus_SWE_refuge_from_war
+		prerequisite = {
+			focus = PRK_south_korea_accept
+		}
+        x = 2
+        y = 1
+		relative_position_id = PRK_south_korea_accept
+        cost = 10
+        completion_reward = {
+			add_ideas = PRK_two_koreas_one_people
+			
+			KOR = {
+			   add_ideas = PRK_two_koreas_one_people
+			}
+        }
+    }
+	
+    focus = { 
+        id = PRK_new_korea
+        icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = {
+			focus = PRK_non_aggression_pact_with_south_korea
+			focus = PRK_the_foundation_of_new_korea
+			focus = PRK_truly_free_country
+		}
+        x = 1
+        y = 6
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+		
+		available = {
+		    is_subject = no
+		    country_exists = KOR
+		}
+		
+        completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+					    tag = KOR
+					}
+				}
+				country_event = { id = generic.5 hours = 6 }
+			}		
+        }
+    }
+	
+    focus = { 
+        id = PRK_unified_korea
+        icon = GFX_focus_hol_united_netherlands
+		prerequisite = {
+			focus = PRK_non_aggression_pact_with_south_korea
+			focus = PRK_the_foundation_of_new_korea
+		}
+		prerequisite = {
+			focus = PRK_new_korea
+		}
+        x = 1
+        y = 7
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+		available = {
+		    is_subject = no
+		    country_exists = KOR
+		}
+		
+        completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+					    tag = KOR
+					}
+				}
+				country_event = { id = north.korea.15 hours = 6 }
+			}		
+        }
+    }
+	
+    focus = { 
+        id = PRK_snap_elections
+        icon = GFX_focus_generic_election
+		prerequisite = {
+			focus = PRK_non_aggression_pact_with_south_korea
+			focus = PRK_the_foundation_of_new_korea
+		}
+		prerequisite = {
+			focus = PRK_new_korea
+		}
+        x = 1
+        y = 8
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+        completion_reward = {
+				country_event = { id = north.korea.14 }
+        }
+    }
+	
+    focus = { 
+        id = PRK_snap_socialism
+        icon = GFX_focus_generic_social_democracy
+		prerequisite = {
+			focus = PRK_snap_elections
+		}
+        x = 2
+        y = 9
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+		
+		available = {
+		has_government = socialism
+		socialism > 0.4
+		}
+		
+        completion_reward = {
+		
+        }
+    }
+	
+    focus = { 
+        id = PRK_snap_conservatism
+        icon = GFX_focus_generic_democratic_europe
+		prerequisite = {
+			focus = PRK_snap_elections
+		}
+        x = 0
+        y = 9
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+		
+		available = {
+		has_government = conservatism
+		conservatism > 0.4
+		}
+		
+        completion_reward = {
+		
+        }
+    }
+	
+    focus = { 
+        id = PRK_usa
+        icon = GFX_focus_generic_american_investments
+		prerequisite = {
+			focus = PRK_attempt_to_get_closer_to_usa
+		}
+        x = 5
+        y = 1
+		relative_position_id = PRK_attempt_to_get_closer_to_usa
+        cost = 5
+        completion_reward = {
+			
+        }
+    }
+    focus = { 
+        id = PRK_usa_reject
+        icon = GFX_focus_ARG_anti_american_propaganda
+		prerequisite = {
+			focus = PRK_usa
+		}
+        x = 4
+        y = 2
+		relative_position_id = PRK_attempt_to_get_closer_to_usa
+        cost = 10
+		
+		available = {
+		   NOT = { has_completed_focus = PRK_usa_accept }
+		}
+		
+        completion_reward = {
+			
+        }
+    }
+    focus = { 
+        id = PRK_usa_accept
+        icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = {
+			focus = PRK_usa
+		}
+        x = 6
+        y = 2
+		relative_position_id = PRK_attempt_to_get_closer_to_usa
+        cost = 10
+		
+		available = {
+		   NOT = { has_completed_focus = PRK_usa_reject }
+		}		
+		
+        completion_reward = {
+			
+        }
+    }
+    focus = { 
+        id = PRK_usa_and_south_korea
+        icon = GFX_focus_generic_workers
+		prerequisite = {
+			focus = PRK_attempt_to_get_closer_to_south_korea
+			focus = PRK_attempt_to_get_closer_to_usa
+		}
+        x = 1
+        y = 1
+		relative_position_id = PRK_attempt_to_get_closer_to_south_korea
+        cost = 10
+        completion_reward = {
+			KOR = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+			USA = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}			
+        }
+    }
+	
+    focus = { 
+        id = PRK_exchange_military_technologies
+        icon = GFX_focus_generic_workers
+		prerequisite = {
+			focus = PRK_usa_and_south_korea
+		}
+        x = -1
+        y = 1
+		relative_position_id = PRK_usa_and_south_korea
+        cost = 10
+        completion_reward = {
+			KOR = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+			USA = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}			
+        }
+    }
+	
+    focus = { 
+        id = PRK_opening_world
+        icon = GFX_focus_generic_workers
+		prerequisite = {
+			focus = PRK_usa_and_south_korea
+		}
+        x = 1
+        y = 1
+		relative_position_id = PRK_usa_and_south_korea
+        cost = 10
+        completion_reward = {
+			KOR = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+			USA = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}			
+        }
+    }
+	
+    focus = { 
+        id = PRK_renunciation_creation_illegal_nuclear_weapons
+        icon = GFX_focus_generic_workers
+		prerequisite = {
+			focus = PRK_exchange_military_technologies
+			focus = PRK_opening_world
+		}
+        x = 0
+        y = 2
+		relative_position_id = PRK_usa_and_south_korea
+        cost = 10
+        completion_reward = {
+			KOR = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}
+			USA = {
+				add_opinion_modifier = { target = PRK modifier = HUN_renew_the_rome_protocols }
+			}			
+        }
+    }
+    focus = { 
+        id = PRK_attempt_to_get_closer_to_usa
+        icon = GFX_focus_generic_befriend_usa
+		prerequisite = {
+			focus = PRK_do_not_carry_out_market_reform
+			focus = PRK_market_reform
+		}
+        x = 0
+        y = 1
+		relative_position_id = PRK_market_reform
+        cost = 5
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+					    tag = USA
+					}
+				}
+				country_event = { id = north.korea.4 hours = 12 }
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_dont_trust_the_americans
+        icon = GFX_focus_ARG_the_american_push
+		prerequisite = {
+			focus = PRK_usa_reject
+		}
+        x = 0
+        y = 1
+		relative_position_id = PRK_usa_reject
+        cost = 10
+        completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = 0.05
+        }
+    }
+	
+    focus = { 
+        id = PRK_increase_in_military_spending
+        icon = GFX_focus_generic_military_academy
+		prerequisite = {
+			focus = PRK_usa_reject
+		}
+        x = -2
+        y = 1
+		relative_position_id = PRK_usa_reject
+        cost = 10
+        completion_reward = {
+			army_experience = 15
+            add_ideas = PRK_increase_military_spending
+        }
+    }
+	
+    focus = { 
+        id = PRK_agreement_with_ussr
+        icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = {
+			focus = PRK_dont_trust_the_americans
+		}
+        x = 0
+        y = 2
+		relative_position_id = PRK_usa_reject
+        cost = 5
+        completion_reward = {
+				give_guarantee = SOV
+				SOV = {
+					give_guarantee = ROOT
+				}
+        }
+    }
+	
+    focus = { 
+        id = PRK_soviet_experts
+        icon = GFX_focus_GER_align_south_america
+		prerequisite = {
+			focus = PRK_increase_in_military_spending
+		}
+        x = -2
+        y = 2
+		relative_position_id = PRK_usa_reject
+        cost = 5
+		completion_reward = {
+			add_ideas = HOL_soviet_technical_teams
+		}
+    }
+	
+    focus = { 
+        id = PRK_support_for_the_military_industry
+        icon = GFX_focus_generic_communist_industry
+		prerequisite = {
+			focus = PRK_agreement_with_ussr
+			focus = PRK_soviet_experts
+		}
+        x = -1
+        y = 3
+		relative_position_id = PRK_usa_reject
+        cost = 10
+        completion_reward = {
+            527 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 75
+                    type = arms_factory  
+                    level = 1
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+	
+    focus = { 
+        id = PRK_end_the_isolation_policy
+        icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = {
+			focus = PRK_usa_accept
+		}
+        x = 0
+        y = 1
+		relative_position_id = PRK_usa_accept
+        cost = 10
+		completion_reward = {
+			add_ideas = rcp_welfare
+		}
+    }
+	
+    focus = { 
+        id = PRK_weakening_of_social_control
+        icon = GFX_goal_generic_national_unity
+		prerequisite = {
+			focus = PRK_usa_accept
+		}
+        x = 2
+        y = 1
+		relative_position_id = PRK_usa_accept
+        cost = 10
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+    }
+	
+    focus = { 
+        id = PRK_democratization_of_society
+        icon = GFX_focus_generic_surrender
+		prerequisite = {
+			focus = PRK_weakening_of_social_control
+		}
+        x = 2
+        y = 2
+		relative_position_id = PRK_usa_accept
+        cost = 10
+        completion_reward = {
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.05
+			}  
+			add_political_power = 75
+        }
+    }
+	
+    focus = { 
+        id = PRK_free_tourism
+        icon = GFX_focus_generic_support_the_left_right
+		prerequisite = {
+			focus = PRK_end_the_isolation_policy
+		}
+        x = 0
+        y = 2
+		relative_position_id = PRK_usa_accept
+        cost = 10
+        completion_reward = {
+			add_ideas = PRK_free_tourism_idea
+        }
+    }
+
+    focus = { 
+        id = PRK_truly_free_country
+        icon = GFX_focus_SWE_refuge_from_war
+		prerequisite = {
+			focus = PRK_free_tourism
+		}
+		prerequisite = {
+		   focus = PRK_democratization_of_society 
+		}
+        x = 1
+        y = 3
+		relative_position_id = PRK_usa_accept
+        cost = 10
+        completion_reward = {
+			remove_ideas = {
+			   PRK_isolation_policy
+			}
+        }
+    }
+	
+	
+	
+	
+	#### Промышленная ветка ####
+	    focus = { 
+        id = PRK_continuation_planned_economy
+        icon = GFX_focus_RAJ_special_economic_zones
+        x = 10
+        y = 0
+		relative_position_id = PRK_strengthening_the_power_of_kim_sen
+        cost = 5
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = PRK_planned_economy
+				add_idea = PRK_planned_economy_2
+			}				
+        }
+    }
+    focus = { 
+        id = PRK_desire_for_self_sufficiency
+        icon = GFX_focus_generic_self_management
+		prerequisite = {
+			focus = PRK_continuation_planned_economy
+		}
+        x = 0
+        y = 1
+		relative_position_id = PRK_continuation_planned_economy
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+    focus = { 
+        id = PRK_development_of_heavy_industry
+        icon = GFX_focus_generic_modernize_industry
+		prerequisite = {
+			focus = PRK_desire_for_self_sufficiency
+		}
+        x = -1
+        y = 2
+		relative_position_id = PRK_continuation_planned_economy
+        cost = 10
+        completion_reward = {
+            527 = {  
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    state = 75
+                    type = industrial_complex  
+                    level = 2
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+    focus = { 
+        id = PRK_development_of_military_industry
+        icon = GFX_focus_generic_military_industry
+		prerequisite = {
+			focus = PRK_desire_for_self_sufficiency
+		}
+        x = 1
+        y = 2
+		relative_position_id = PRK_continuation_planned_economy
+        cost = 10
+        completion_reward = {
+            527 = {  
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    state = 527
+                    type = arms_factory  
+                    level = 2
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+    focus = { 
+        id = PRK_continuation_of_the_collectivization_policy
+        icon = GFX_focus_GER_liberate_exploited_colonial_workers
+		prerequisite = {
+		    focus = PRK_development_of_heavy_industry
+			focus = PRK_development_of_military_industry
+            focus = PRK_introduction_of_computers
+		}
+        x = 0
+        y = 3
+		relative_position_id = PRK_continuation_planned_economy
+        cost = 7
+        completion_reward = {
+			if = {
+				limit = {
+					527 = { #Hinterpommern
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				527 = { 
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}  	
+        }
+    }
+}
+    focus = { 
+        id = PRK_investments_in_factories
+        icon = GFX_focus_GER_factories_for_resources
+		prerequisite = {
+		    focus = PRK_continuation_of_the_collectivization_policy
+		}
+        x = -1
+        y = 4
+		relative_position_id = PRK_continuation_planned_economy
+        cost = 7
+        completion_reward = {
+            527 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 75
+                    type = industrial_complex  
+                    level = 1
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+	
+    focus = { 
+        id = PRK_more_factories
+        icon = GFX_goal_generic_construct_civ_factory
+		mutually_exclusive = {
+		    focus = PRK_military_fist
+		}
+		prerequisite = {
+		    focus = PRK_investments_in_factories
+		}
+        x = -1
+        y = 5
+		relative_position_id = PRK_continuation_planned_economy
+        cost = 10
+        completion_reward = {
+            527 = {  
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    state = 75
+                    type = industrial_complex  
+                    level = 2
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+	
+    focus = { 
+        id = PRK_industrial_cities
+        icon = GFX_focus_DEN_civilian_preparations
+		prerequisite = {
+		    focus = PRK_more_factories
+			focus = PRK_military_fist
+		}
+        x = 0
+        y = 6
+		relative_position_id = PRK_continuation_planned_economy
+        cost = 10
+        completion_reward = {
+            527 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 75
+                    type = arms_factory  
+                    level = 1
+                    instant_build = yes  
+                }
+            }
+            527 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 75
+                    type = industrial_complex  
+                    level = 1
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+	
+    focus = { 
+        id = PRK_investments_in_the_military_industry
+        icon = GFX_focus_generic_military_industry
+		prerequisite = {
+		    focus = PRK_continuation_of_the_collectivization_policy
+		}
+        x = 1
+        y = 4
+		relative_position_id = PRK_continuation_planned_economy
+        cost = 7
+        completion_reward = {
+            527 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 75
+                    type = arms_factory  
+                    level = 1
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+	
+    focus = { 
+        id = PRK_military_fist
+        icon = GFX_focus_generic_advanced_military_studies
+		mutually_exclusive = {
+		    focus = PRK_more_factories
+		}
+		prerequisite = {
+		    focus = PRK_investments_in_the_military_industry
+		}
+        x = 1
+        y = 5
+		relative_position_id = PRK_continuation_planned_economy
+        cost = 10
+        completion_reward = {
+            527 = {  
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    state = 75
+                    type = arms_factory  
+                    level = 2
+                    instant_build = yes  
+                }
+            }
+        }
+    }
+    focus = { 
+        id = PRK_question_about_import
+        icon = GFX_goal_generic_trade
+        x = -3
+        y = 0
+		relative_position_id = PRK_continuation_planned_economy
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRK_import_of_technologies_from_the_ussr
+        icon = GFX_focus_SOV_socialism_in_one_country
+		prerequisite = {
+			focus = PRK_question_about_import
+		}
+        x = 0
+        y = 1
+		relative_position_id = PRK_question_about_import
+        cost = 5
+        completion_reward = {
+			add_tech_bonus = {
+				name = import_of_technologies_from_the_ussr
+				bonus = 1.0
+				uses = 1
+				category = support_tech
+			}
+        }
+    }
+    focus = { 
+        id = PRK_introduction_of_computers
+        icon = GFX_goal_generic_position_armies
+		prerequisite = {
+			focus = PRK_import_of_technologies_from_the_ussr
+		}
+        x = 0
+        y = 2
+		relative_position_id = PRK_question_about_import
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                name = computers
+                bonus = 0.75
+                category = industry
+                uses = 2
+            }
+        }
+    }
+    focus = { 
+        id = PRK_mine_steel
+        icon = GFX_focus_generic_steel
+		prerequisite = {
+			focus = PRK_import_of_technologies_from_the_ussr
+		}
+        x = -2
+        y = 2
+		relative_position_id = PRK_question_about_import
+        cost = 5
+	    completion_reward = {
+			527 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}
+    }
+    focus = { 
+        id = PRK_extract_oil
+        icon = GFX_focus_PER_invite_oil_nations
+		prerequisite = {
+			focus = PRK_introduction_of_computers
+		}
+        x = 0
+        y = 3
+		relative_position_id = PRK_question_about_import
+        cost = 5
+	    completion_reward = {
+			527 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+    }
+
+  #####  Армейские фокусы  ####
+  
+    focus = { 
+        id = PRK_extract_oil
+        icon = GFX_focus_PER_invite_oil_nations
+		prerequisite = {
+			focus = PRK_introduction_of_computers
+		}
+        x = 0
+        y = 3
+		relative_position_id = PRK_question_about_import
+        cost = 5
+	    completion_reward = {
+			527 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_north_korean_army
+        icon = GFX_focus_SOV_builder_of_the_red_army
+        x = 15
+        y = 0
+		relative_position_id = PRK_question_about_import
+        cost = 5
+	    completion_reward = {
+           army_experience = 10
+		   air_experience = 10
+		   navy_experience = 10
+		}
+    }
+	
+    focus = { 
+        id = PRK_treaty_non_proliferation_nuclear_weapons
+        icon = GFX_focus_generic_nuclear_development
+        x = 10
+        y = 1
+		relative_position_id = PRK_north_korean_army
+		prerequisite = {
+			focus = PRK_north_korean_army
+		}
+        cost = 10
+	    completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.25
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
+			}
+
+			IF = {
+				limit = {
+					NOT = {
+						has_tech = atomic_research
+					}
+				}
+				add_tech_bonus = {
+					name = PRK_treaty_non_proliferation_nuclear_weapons
+					bonus = 0.5
+					uses = 1 # was 2
+					category = nuclear
+				}
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_construction_of_nuclear_reactors
+        icon = GFX_focus_generic_communist_industry
+		prerequisite = {
+			focus = PRK_treaty_non_proliferation_nuclear_weapons
+		}
+        x = 1
+        y = 1
+		relative_position_id = PRK_treaty_non_proliferation_nuclear_weapons
+        cost = 15
+	    completion_reward = {
+            527 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 527
+                    type = nuclear_reactor  
+                    level = 1
+                    instant_build = yes  
+                }
+            }
+		}
+    }
+	
+    focus = { 
+        id = PRK_construction_light_water_reactors
+        icon = GFX_focus_RAJ_water_privatization
+		prerequisite = {
+			focus = PRK_treaty_non_proliferation_nuclear_weapons
+		}
+        x = -1
+        y = 1
+		relative_position_id = PRK_treaty_non_proliferation_nuclear_weapons
+        cost = 10
+	    completion_reward = {
+            1028 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 1028
+                    type = nuclear_reactor_heavy_water  
+                    level = 1
+                    instant_build = yes  
+                }
+            }
+		}
+    }
+	
+    focus = { 
+        id = PRK_construction_yongbyon_nuclear_research_center
+        icon = GFX_focus_AFG_a_modern_economy
+		prerequisite = {
+			focus = PRK_construction_of_nuclear_reactors
+			focus = PRK_construction_light_water_reactors
+		}
+        x = 0
+        y = 2
+		relative_position_id = PRK_treaty_non_proliferation_nuclear_weapons
+        cost = 20
+	    completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.5
+			}
+            1028 = {  
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    state = 1028
+                    type = nuclear_facility  
+                    level = 1
+                    instant_build = yes  
+                }
+            }
+		}
+    }
+	
+    focus = { 
+        id = PRK_north_korean_ground_forces
+        icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = PRK_north_korean_army
+		}
+        x = 0
+        y = 2
+		relative_position_id = PRK_north_korean_army
+        cost = 5
+	    completion_reward = {
+		army_experience = 5
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 4052
+				instant_build = yes
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_iron_men_of_the_dprk
+        icon = GFX_focus_generic_spur_communist_revolutions
+		prerequisite = {
+			focus = PRK_north_korean_ground_forces
+		}
+        x = -1
+        y = 3
+		relative_position_id = PRK_north_korean_army
+        cost = 10
+	    completion_reward = {
+            add_war_support = 0.1
+			add_political_power = 30
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}  
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}  
+		}
+    }
+	
+    focus = { 
+        id = PRK_the_countrys_army
+        icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = {
+			focus = PRK_north_korean_ground_forces
+		}
+        x = 1
+        y = 3
+		relative_position_id = PRK_north_korean_army
+        cost = 10
+	    completion_reward = {
+            add_stability = 0.05
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 12040
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 9981
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 848
+				instant_build = yes
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_army_of_the_people
+        icon = GFX_focus_ger_great_red_menace
+		prerequisite = {
+			focus = PRK_the_countrys_army
+		}
+        x = 1
+        y = 4
+		relative_position_id = PRK_north_korean_army
+        cost = 7
+	    completion_reward = {
+            add_stability = 0.05
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 12040
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 9981
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 848
+				instant_build = yes
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_loyal_soldiers_in_high_positions
+        icon = GFX_focus_generic_communist
+		prerequisite = {
+			focus = PRK_iron_men_of_the_dprk
+		}
+        x = -1
+        y = 4
+		relative_position_id = PRK_north_korean_army
+        cost = 7
+	    completion_reward = {
+             add_stability = 0.05
+			 add_war_support = 0.05
+		}
+    }
+	
+    focus = { 
+        id = PRK_the_dprk_army_reliable_stronghold
+        icon = GFX_focus_GER_strike_at_the_rising_sun
+		prerequisite = {
+			focus = PRK_loyal_soldiers_in_high_positions
+			focus = PRK_army_of_the_people
+		}
+        x = 0
+        y = 5
+		relative_position_id = PRK_north_korean_army
+        cost = 10
+	    completion_reward = {
+            add_ideas = {
+			   PRK_army_stronghold
+		    }
+		}
+    }
+	
+    focus = { 
+        id = PRK_korean_air_force
+        icon = GFX_focus_generic_tank_air_support
+		prerequisite = {
+			focus = PRK_north_korean_army
+		}
+        x = 5
+        y = 2
+		relative_position_id = PRK_north_korean_army
+        cost = 5
+	    completion_reward = {
+			air_experience = 5
+			add_building_construction = {
+				type = air_base
+				level = 3
+				instant_build = yes
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_air_support_rates
+        icon = GFX_focus_generic_air_bases
+		prerequisite = {
+			focus = PRK_korean_air_force
+		}
+		mutually_exclusive = {
+			focus = PRK_reliance_on_air_superiority		
+		}
+        x = 4
+        y = 3
+		relative_position_id = PRK_north_korean_army
+        cost = 5
+	    completion_reward = {
+		air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = PRK_shturmovik
+				cost_reduction = 0.25
+				uses = 2
+				category = operational_integrity_tree
+			}
+			add_tech_bonus = {
+				name = PRK_medium_aviation
+				bonus = 0.5
+				uses = 1
+				category = medium_air
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_reliance_on_air_superiority
+        icon = GFX_focus_PER_the_peoples_airforce
+		prerequisite = {
+			focus = PRK_korean_air_force
+		}
+		mutually_exclusive = {
+			focus = PRK_air_support_rates		
+		}
+        x = 6
+        y = 3
+		relative_position_id = PRK_north_korean_army
+        cost = 5
+	    completion_reward = {
+		air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = PRK_istrebitel
+				cost_reduction = 0.25
+				uses = 2
+				category = battlefield_support_tree
+			}
+			add_tech_bonus = {
+				name = PRK_istrebitel
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_helicopter_research
+        icon = GFX_focus_generic_early_helicopter
+		prerequisite = {
+			focus = PRK_air_support_rates
+		}
+        x = 4
+        y = 4
+		relative_position_id = PRK_north_korean_army
+        cost = 10
+	    completion_reward = {
+            air_experience = 25
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+    }
+	
+    focus = { 
+        id = PRK_victory_in_the_air_the_main_thing
+        icon = GFX_focus_GER_the_peoples_victory
+		prerequisite = {
+			focus = PRK_reliance_on_air_superiority
+		}
+        x = 6
+        y = 4
+		relative_position_id = PRK_north_korean_army
+        cost = 10
+	    completion_reward = {
+            add_ideas = {
+			   PRK_victory_in_the_air_the_main_thing
+		    }
+		}
+    }
+	
+    focus = { 
+        id = PRK_pilots_are_the_pride_our_country
+        icon = GFX_focus_ARG_the_buenos_aires_conference
+		prerequisite = {
+			focus = PRK_victory_in_the_air_the_main_thing
+			focus = PRK_helicopter_research
+		}
+        x = 5
+        y = 5
+		relative_position_id = PRK_north_korean_army
+        cost = 10
+	    completion_reward = {
+            add_ideas = {
+			   PRK_korean_af
+		    }
+		}
+    }
+	
+    focus = { 
+        id = PRK_northern_crete_fleet
+        icon = GFX_focus_generic_refit_civilian_ships
+		prerequisite = {
+			focus = PRK_north_korean_army
+		}
+        x = -5
+        y = 2
+		relative_position_id = PRK_north_korean_army
+        cost = 5
+	    completion_reward = {
+		navy_experience = 5
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 4052
+						instant_build = yes
+					}
+		}
+    }
+
+    focus = { 
+        id = PRK_bet_on_submarines
+        icon = GFX_focus_generic_midget_submarines
+		prerequisite = {
+			focus = PRK_northern_crete_fleet
+		}
+		mutually_exclusive = {
+			focus = PRK_focus_on_surface_combat
+		}
+        x = -6
+        y = 3
+		relative_position_id = PRK_north_korean_army
+        cost = 5
+	    completion_reward = {
+			navy_experience = 25		
+		
+			add_tech_bonus = {
+				name = PRK_submarine_warfare
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_creation_first_nuclear_submarine
+        icon = GFX_focus_POL_develop_polish_shipbuilding
+		prerequisite = {
+			focus = PRK_bet_on_submarines
+		}
+        x = -2
+        y = 1
+		relative_position_id = PRK_bet_on_submarines
+        cost = 10
+	    completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = PRK_expansion_of_naval_shipyards
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_focus_on_surface_combat
+        icon = GFX_focus_generic_naval_invasion_tank
+		prerequisite = {
+			focus = PRK_northern_crete_fleet
+		}
+		mutually_exclusive = {
+			focus = PRK_focus_on_surface_combat
+		}
+        x = -4
+        y = 3
+		relative_position_id = PRK_north_korean_army
+        cost = 5
+	    completion_reward = {
+			navy_experience = 15
+
+			add_tech_bonus = {
+				name = SOV_surface_warfare
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_preparation_of_naval_landing_forces
+        icon = GFX_focus_generic_naval_invasion
+		prerequisite = {
+			focus = PRK_focus_on_surface_combat
+		}
+        x = -4
+        y = 4
+		relative_position_id = PRK_north_korean_army
+        cost = 7
+	    completion_reward = {
+			add_tech_bonus = {
+				name = PRK_preparation_of_naval_landing_forces
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				name = PRK_preparation_of_naval_landing_forces
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_boat_schools
+        icon = GFX_focus_generic_military_mission
+		prerequisite = {
+			focus = PRK_bet_on_submarines
+		}
+        x = -6
+        y = 4
+		relative_position_id = PRK_north_korean_army
+        cost = 7
+	    completion_reward = {
+			navy_experience = 10
+			
+			add_doctrine_cost_reduction = {
+				name = PRK_waves_focus
+				cost_reduction = 0.75
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_expansion_of_naval_shipyards
+        icon = GFX_focus_POL_develop_polish_shipbuilding
+		prerequisite = {
+			focus = PRK_boat_schools
+			focus = PRK_preparation_of_naval_landing_forces
+		}
+        x = -5
+        y = 5
+		relative_position_id = PRK_north_korean_army
+        cost = 10
+	    completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = PRK_expansion_of_naval_shipyards
+			}
+		}
+    }
+	
+    focus = { 
+        id = PRK_glory_to_the_korean_peoples_army
+        icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = {
+			focus = PRK_expansion_of_naval_shipyards
+		}
+		prerequisite = {
+			focus = PRK_the_dprk_army_reliable_stronghold
+		}
+		prerequisite = {
+			focus = PRK_pilots_are_the_pride_our_country
+		}
+        x = 0
+        y = 6
+		relative_position_id = PRK_north_korean_army
+        cost = 10
+	    completion_reward = {
+            add_ideas = {
+			   PRK_glory_to_the_korean_army
+		    }
+		}
+    }
+
+}

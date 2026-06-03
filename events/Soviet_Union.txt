@@ -1,18 +1,23 @@
-add_namespace = SOV_soviet_union
+add_namespace = SOV_important_choice
 add_namespace = SOV_collapse
+add_namespace = SOV_chernobyl
+add_namespace = SOV_dead_cernenko
+add_namespace = SOV_jobs_ussr
+
 
 country_event = {
-	id = SOV_soviet_union.1 ##  Смерть Черненко ##
-	title = SOV_soviet_union.1.t
-	desc = SOV_soviet_union.1.desc
+	id = SOV_important_choice.1
+	title = SOV_important_choice.1.t
+	desc = SOV_important_choice.1.desc
 	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 
 	# КПСС
 	option = {
-		name = SOV_soviet_union.1.a
-		news_event = { id = SOV_soviet_union.2 days = 1 }
+		name = SOV_important_choice.1.a
+		news_event = { id = SOV_dead_cernenko.1 days = 0 }
+		news_event = { id = SOV_important_choice.2 days = 1 }
 		ai_chance = {
 			base = 10
 		}
@@ -39,16 +44,16 @@ country_event = {
 }
 
 country_event = {
-	id = SOV_soviet_union.2 ## Выборы генсека ##
-	title = SOV_soviet_union.2.t
-	desc = SOV_soviet_union.2.desc
+	id = SOV_important_choice.2
+	title = SOV_important_choice.2.t
+	desc = SOV_important_choice.2.desc
 	picture = GFX_report_gorbachev_vs_romanov
 
 	is_triggered_only = yes
 
 	# Михаил Горбачев
 	option = {
-		name = SOV_soviet_union.2.a
+		name = SOV_important_choice.2.a
 		ai_chance = {
 			base = 10
 		}
@@ -58,18 +63,15 @@ country_event = {
 				ruling_party = communism
 				elections_allowed = no
 			}
-             load_focus_tree = SOV_soviet_gorbachev_focus
-			 
 		}
 
 		hidden_effect = {
-            set_country_flag = gorbachev
+			set_cosmetic_tag = USSR
 			remove_country_leader = { name = "SOV_konstantin_chernenko" }
 			promote_character = {
 				character = SOV_mikhail_gorbachev
 				ideology = communism
 			}
-			load_focus_tree = SOV_soviet_gorbachev_focus
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -79,7 +81,7 @@ country_event = {
 
 	# Григорий Pоманов 
 	option = {
-		name = SOV_soviet_union.2.b
+		name = SOV_important_choice.2.b
 		ai_chance = {
 			base = 5
 		}
@@ -92,6 +94,7 @@ country_event = {
 		}
 
 		hidden_effect = {
+			set_cosmetic_tag = USSR
 			remove_country_leader = { name = "SOV_konstantin_chernenko" }
 			promote_character = {
 				character = SOV_grigory_romanov
@@ -105,318 +108,66 @@ country_event = {
 	}
 }
 
-country_event = {
-    id = SOV_collapse.1
-    title = SOV_collapse.1.t
-    desc = SOV_collapse.1.desc
-    hidden = yes
-
-    trigger = {
-        tag = SOV
-        date > 1990.03.11
-		has_country_flag = gorbachev
-    }
-
-    immediate = {
-        # Выход из ОВД (Польша, Чехия, ГДР, Венгрия, Румыния, Болгария)
-        if = {
-            limit = {
-                date > 1990.03.11
-                NOT = { has_country_flag = collapse_OVD }
-            }
-			
-            set_country_flag = collapse_right_now
-
-			every_country = {
-			    limit = { is_in_faction_with = SOV }
-			    leave_faction = yes
-			}
-
-			set_autonomy = { 
-				target = POL
-				autonomy_state = autonomy_free
-			}
-			set_autonomy = {
-				target = CZE
-				autonomy_state = autonomy_free
-			}
-			set_autonomy = {
-				target = DDR
-				autonomy_state = autonomy_free
-			}
-			set_autonomy = { 
-				target = HUN
-				autonomy_state = autonomy_free
-			}
-			set_autonomy = {
-				target = ROM
-				autonomy_state = autonomy_free
-			}
-			set_autonomy = {
-				target = BUL
-				autonomy_state = autonomy_free
-			}
-
-            set_country_flag = collapse_OVD
-        }
-
-        # Прибалтика — Литва (март 1990)
-        if = {
-            limit = {
-                date > 1990.03.11
-                NOT = { has_country_flag = collapse_LIT }
-            }
-            release = LIT
-            set_country_flag = collapse_LIT
-        }
-
-        # Прибалтика — Латвия (май 1990)
-        if = {
-            limit = {
-                date > 1990.05.04
-                NOT = { has_country_flag = collapse_LAT }
-            }
-            release = LAT
-            set_country_flag = collapse_LAT
-        }
-
-        # Прибалтика — Эстония (март 1991)
-        if = {
-            limit = {
-                date > 1991.03.20
-                NOT = { has_country_flag = collapse_EST }
-            }
-            release = EST
-            set_country_flag = collapse_EST
-        }
-
-        # Украина (август 1991)
-        if = {
-            limit = {
-                date > 1991.08.24
-                NOT = { has_country_flag = collapse_UKR }
-            }
-            release = UKR
-            set_country_flag = collapse_UKR
-        }
-
-        # Беларусь (август 1991)
-        if = {
-            limit = {
-                date > 1991.08.25
-                NOT = { has_country_flag = collapse_BLR }
-            }
-            release = BLR
-            set_country_flag = collapse_BLR
-        }
-
-        # Молдова (август 1991)
-        if = {
-            limit = {
-                date > 1991.08.27
-                NOT = { has_country_flag = collapse_MOL }
-            }
-            release = MOL
-            set_country_flag = collapse_MOL
-        }
-
-        # Кавказ — Грузия (апрель 1991)
-        if = {
-            limit = {
-                date > 1991.04.09
-                NOT = { has_country_flag = collapse_GEO }
-            }
-            release = GEO
-            set_country_flag = collapse_GEO
-        }
-
-        # Кавказ — Армения (сентябрь 1991)
-        if = {
-            limit = {
-                date > 1991.09.21
-                NOT = { has_country_flag = collapse_ARM }
-            }
-            release = arm
-            set_country_flag = collapse_ARM
-        }
-
-        # Кавказ — Азербайджан (октябрь 1991)
-        if = {
-            limit = {
-                date > 1991.10.18
-                NOT = { has_country_flag = collapse_AZR }
-            }
-            release = AZR
-            set_country_flag = collapse_AZR
-        }
-
-        # Чечня (ноябрь 1991)
-        if = {
-            limit = {
-                date > 1991.11.01
-                NOT = { has_country_flag = collapse_CHE }
-            }
-            release = CHE
-            set_country_flag = collapse_CHE
-        }
-
-        # Средняя Азия — Узбекистан (август 1991)
-        if = {
-            limit = {
-                date > 1991.08.31
-                NOT = { has_country_flag = collapse_UZB }
-            }
-            release = UZB
-            set_country_flag = collapse_UZB
-        }
-
-        # Средняя Азия — Туркменистан (октябрь 1991)
-        if = {
-            limit = {
-                date > 1991.10.27
-                NOT = { has_country_flag = collapse_TMS }
-            }
-            release = TMS
-            set_country_flag = collapse_TMS
-        }
-
-        # Средняя Азия — Кыргызстан (август 1991)
-        if = {
-            limit = {
-                date > 1991.08.31
-                NOT = { has_country_flag = collapse_KYR }
-            }
-            release = KYR
-            set_country_flag = collapse_KYR
-        }
-
-        # Средняя Азия — Таджикистан (август 1991)
-        if = {
-            limit = {
-                date > 1991.08.31
-                NOT = { has_country_flag = collapse_TAJ }
-            }
-            release = TAJ
-            set_country_flag = collapse_TAJ
-        }
-
-        # Казахстан (декабрь 1991)
-        if = {
-            limit = {
-                date > 1991.12.16
-                NOT = { has_country_flag = collapse_KAZ }
-            }
-            release = KAZ
-            set_country_flag = collapse_KAZ
-
-            if = {
-                OR = { has_government = communism }
-                set_cosmetic_tag = SOV_russia
-            }
-            if = {
-                OR = { has_government = neutrality }
-                drop_cosmetic_tag = yes
-            }
-
-            clr_country_flag = collapse_right_now
-        }
-    }
-}
-
-country_event = {
-	id = SOV_soviet_union.7 ## Встреча в Женеве ##
-	title = SOV_soviet_union.7.t
-	desc = SOV_soviet_union.7.desc
-	picture = GFX_
+news_event = {
+	id = SOV_chernobyl.1
+	title = SOV_chernobyl.1.t
+	desc = SOV_chernobyl.1.desc
+	picture = GFX_news_SOV_chernobyl
 
 	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = SOV
+	}
 
-	fire_only_once = yes
-
-    option = {
-        name = SOV_soviet_union.7.a
-        news_event = { id = news.12 days = 0 }
-		add_political_power = -10
-		set_country_flag = SOV_elimination_of_nuclear_weapons
-		mark_focus_tree_layout_dirty = yes
+	option = {
+		name = SOV_chernobyl.1.a
+		hidden_effect = {
+			add_stability = -0.15
+			add_war_support = -0.05
+			add_political_power = -50
+			add_manpower = -10000
 		}
-    }
-
-country_event = {
-	id = SOV_soviet_union.8 ## Чернобыль каунтри##
-	title = SOV_soviet_union.8.t
-	desc = SOV_soviet_union.8.desc
-	picture = GFX_
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-    option = {
-        name = SOV_soviet_union.8.a
-		add_political_power = -10
-		set_country_flag = SOV_close_everyones_ears
-		mark_focus_tree_layout_dirty = yes
-		}
-    }
-
-country_event = {
-	id = SOV_soviet_union.9 ## назначение Шеварднадзе ##
-	title = SOV_soviet_union.9.t
-	desc = SOV_soviet_union.9.desc
-	picture = GFX_
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-    option = {
-        name = SOV_soviet_union.9.a
-		add_political_power = 100
 	}
 }
 
-country_event = {
-	id = SOV_soviet_union.10 ## Анти-алкагольная кампания  ##
-	title = SOV_soviet_union.10.t
-	desc = SOV_soviet_union.10.desc
-	picture = GFX_
+news_event = {
+	id = SOV_dead_cernenko.1
+	title = SOV_dead_cernenko.1.t
+	desc = SOV_dead_cernenko.1.desc
+	picture = GFX_news_SOV_dead_chernenko2
 
-	is_triggered_only = yes
-	fire_only_once = yes
-
-    option = {
-        name = SOV_soviet_union.10.a
+    fire_only_once = yes
+    major = yes
+<<<<<<< Updated upstream
+	
+	trigger = {
+		tag = SOV
+		date > 1985.3.4
+	}
+=======
+	option = {
+        name = SOV_dead_cernenko.1.a
+        hidden_effect = {
+            add_stability = -0.3
+        }
     }
+>>>>>>> Stashed changes
 }
 
-country_event = {
-	id = SOV_soviet_union.11 ## Назначение Горбачёва как президента  ##
-	title = SOV_soviet_union.11.t
-	desc = SOV_soviet_union.11.desc
-	picture = GFX_
-
-	is_triggered_only = yes
+news_event = {
+	id = SOV_jobs_ussr.1
+	title = SOV_jobs_ussr.1.t
+	desc = SOV_jobs_ussr.1.desc
+	picture = GFX_news_SOV_jobs_ussr
+    
 	fire_only_once = yes
-
-    option = {
-        name = SOV_soviet_union.11.a
-        set_country_flag = SOV_iii_congress_of_peoples_deputies
-		mark_focus_tree_layout_dirty = yes
-    }
-}
-
-country_event = {
-	id = SOV_soviet_union.12 ## Беспорядки в республиках  ##
-	title = SOV_soviet_union.12.t
-	desc = SOV_soviet_union.12.desc
-	picture = GFX_
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-    option = {
-        name = SOV_soviet_union.12.a
-        set_country_flag = SOV_affairs_of_the_republics
-		mark_focus_tree_layout_dirty = yes
-    }
+    major = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_leader = { name = "SOV_mikhail_gorbachev" }
+		date > 1985.7.4
+	}
 }

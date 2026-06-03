@@ -26,7 +26,7 @@ call_to_war_rule_major_only = {
 		base = 0
 		modifier = { 
 			add = 2
-			tag = WGR 
+			tag = GER 
 		}
 	}
 	modifier = {
@@ -54,7 +54,7 @@ guarantee_threat_reduction_15 = {
 		}
 	}
 	modifier = {
-		guarantee_tension = -0.05
+		guarantee_tension = -0.15
 		stability_factor = -0.05
 	}
 	effect = {
@@ -68,8 +68,8 @@ guarantee_threat_reduction_40 = {
 		base = 0
 	}
 	modifier = {
-		guarantee_tension = -0.1
-		stability_factor = -0.05
+		guarantee_tension = -0.4
+		stability_factor = -0.1
 	}
 	effect = {
 	}

@@ -1,7 +1,5 @@
 ﻿capital = 558
 
-set_oob = GEN_1985
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -29,11 +27,10 @@ recruit_character = NGA_stc
 recruit_character = NGA_aa2
 recruit_character = NGA_ncm
 recruit_character = NGA_communist_guy
-recruit_character = NGA_muhammadu_buhari
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1985.1.1"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

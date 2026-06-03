@@ -2,8 +2,8 @@ on_actions = {
     on_startup = {
         effect = { 
             SOV = {
-                country_event = { id = SOV_soviet_union.1 days = 68 }
-                news_event = { id = SOV_soviet_union.8 days = 480 }
+                country_event = { id = SOV_important_choice.1 days = 68 }
+                news_event = { id = SOV_chernobyl.1 days = 480 }
             }
         }
     }
