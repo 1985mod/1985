@@ -1,0 +1,18 @@
+characters = {
+	EQG_Teodoro_Obiang_Nguema ={
+		name = EQG_Teodoro_Obiang_Nguema
+		portraits={
+			civilian={
+				large= GFX_portrait_EQG_Teodoro_Obiang_Nguema
+			}
+			army = {
+				large = GFX_portrait_EQG_Teodoro_Obiang_Nguema
+			}
+		}
+		country_leader={
+			ideology = autocracy
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

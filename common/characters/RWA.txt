@@ -1,0 +1,18 @@
+characters = {
+	RWA_Yuvenali_Habyarimana ={
+		name = RWA_Yuvenali_Habyarimana
+		portraits={
+			civilian={
+				large= GFX_portrait_RWA_Yuvenali_Habyarimana
+			}
+			army = {
+				large = GFX_portrait_RWA_Yuvenali_Habyarimana
+			}
+		}
+		country_leader={
+			ideology = military_regimes
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

@@ -5,7 +5,6 @@ oob = "SOM_1985"
 declare_war_on = {
 	target = ETH
 	type = take_claimed_state
-	generator = { 835 836 }
 }
 
 # Starting tech
@@ -20,16 +19,8 @@ set_technology = {
 	motorised_infantry = 1
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-
-	}
-}
+recruit_character = SOM_Mohamed_Siad_Barre
+promote_character = SOM_Mohamed_Siad_Barre
 
 set_convoys = 10
 
@@ -39,7 +30,7 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1985.1.1"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

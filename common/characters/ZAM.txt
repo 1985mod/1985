@@ -1,0 +1,18 @@
+characters = {
+	ZAM_Kenneth_Kaunda ={
+		name = ZAM_Kenneth_Kaunda
+		portraits={
+			civilian={
+				large= GFX_portrait_ZAM_Kenneth_Kaunda
+			}
+			army = {
+				large = GFX_portrait_ZAM_Kenneth_Kaunda
+			}
+		}
+		country_leader={
+			ideology = classical_social_democracy
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

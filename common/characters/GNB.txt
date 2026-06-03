@@ -1,0 +1,18 @@
+characters = {
+	GNB_João_Bernardo ={
+		name = GNB_João_Bernardo
+		portraits={
+			civilian={
+				large= GFX_portrait_GNB_João_Bernardo
+			}
+			army = {
+				large = GFX_portrait_GNB_João_Bernardo
+			}
+		}
+		country_leader={
+			ideology = marxism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

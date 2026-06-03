@@ -1,27 +1,5 @@
 spriteTypes = {
-	spriteType = {
-		name = "GFX_EMI_expanded_fuel_tank"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_fuel_drum.dds"
-		legacy_lazy_load = no
-	}
 
-	spriteType = {
-		name = "GFX_EMI_besh"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/HESH.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_nera_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/NERA.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_add_on_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/turret_skirt.dds"
-		legacy_lazy_load = no
-	}
 
 	spriteType = {
 		name = "GFX_EMI_tank_anti_air_cannon"
@@ -80,26 +58,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_gasoline_engine"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_gasoline_engine.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_cold_war_gas_turbine_engine"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Turbine_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_near_end_cold_war_gas_turbine_engine"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Turbine_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_cold_war_diesel_engine"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/diesel_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_near_end_cold_war_diesel_engine"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/diesel_2.dds"
 		legacy_lazy_load = no
 	}
 
@@ -336,6 +294,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_welded_armor.dds"
 		legacy_lazy_load = no
 	}
+	
+	spriteType = {
+		name = "GFX_EMI_NOR_tank_rikstanken_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_welded_armor.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_EMI_tank_close_support_gun"
@@ -390,6 +354,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_hmg.dds"
 		legacy_lazy_load = no
 	}
+
+	spriteType = { # GFF for the Rikstanken turret 
+		name = "GFX_EMI_NOR_rikstanken_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_hmg.dds"
+		legacy_lazy_load = no
+	}
 	
 	spriteType = {
 		name = "GFX_EMI_wet_ammo_storage"
@@ -406,6 +376,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_wheeled_suspension"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_wheeled_suspension.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_expanded_fuel_tank"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_fuel_drum.dds"
 		legacy_lazy_load = no
 	}
 
@@ -468,6 +444,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_flamethrower.dds"
 		legacy_lazy_load = no
 	}
+
+	spriteType = {
+		name = "GFX_EMI_advanced_flamethrower"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_flamethrower_2.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	
+
 
 
 
@@ -552,18 +538,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_EMI_tank_electronics_module"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/GPS_1.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_shells_module"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/ATGM.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
 		name = "GFX_EMI_tank_suspension_type"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_interleaved_roadwheels.dds"
 		legacy_lazy_load = no
@@ -575,218 +549,10 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	spriteType = {
-		name = "GFX_EMI_com_night_vision"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_com_night_vision.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_gen1_night_vision"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Night_Vision_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_gen2_night_vision"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Night_Vision_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_gen3_night_vision"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Night_Vision_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_gen1_thermal_vision"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Thermal_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_gen2_thermal_vision"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Thermal_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_gen3_thermal_vision"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Thermal_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_lean_fuel"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Fuel_Pump.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_atgm"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/ATGM.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_cutting_corner"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/BlowPipe_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_wp_smoke"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/WP_smoke_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_adv_optics"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Optic_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_em_optics"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Optic_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_modern_optics"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Optic_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_adv_dozer_blade"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Dozer_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_modern_dozer_blade"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Dozer_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_reactive_plate"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/reactive_armor_ plate_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_advanced_reactive_plate"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/reactive_armor_ plate_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_early_gps"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/GPS_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_modern_gps"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/GPS_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_composite_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Composite_armor_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_slopped_turret_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/sloppedtu.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_advanced_tank_composite_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Composite_armor_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_spaced_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Fence.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_early_modern_radio"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Radio_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_modern_radio"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Radio_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_long_range_radio"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Radio_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_heat_fs"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Heat_FS_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_post_war_howitzer"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Howitzer_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_early_modern_howitzer"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Howitzer_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_modern_howitzer"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Howitzer_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_advanced_modern_howitzer"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Howitzer_4.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_hard_kill_system"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/hard_kill.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_early_modern_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Moder_canon_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_modern_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Moder_canon_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_advanced_modern_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Moder_canon_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_early_modern_anti_air_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Anti_Air_Canon_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_modern_anti_air_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Anti_Air_Canon_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_advanced_modern_anti_air_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Anti_Air_Canon_3.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_apfsds"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/apfsds.dds"
-		legacy_lazy_load = no
-	}
 
-	spriteType = {
-		name = "GFX_EMI_early_light_modern_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Light_Cannon_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_light_modern_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Light_Cannon_2.dds"
-		legacy_lazy_load = no
-	}
-			####          ####  ####          ####
+
+
+		####          ####  ####          ####
 		 ##            ##    ##            ##
 		 ##            ##    ##            ##
 		 ##            ##    ##            ##
@@ -1048,6 +814,22 @@ spriteTypes = {
 		name = "GFX_EMI_lc_tank_module_radio_2"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/lc_tank_module_radio_2.dds"
 		legacy_lazy_load = no
+	}
+
+
+	SpriteType = {
+		name = "GFX_EMI_tank_cold_war_weapon_1"
+		texturefile = "gfx/interface/technologies/modules/tank_weapon_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_EMI_tank_cold_war_weapon_2"
+		texturefile = "gfx/interface/technologies/modules/tank_weapon_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_EMI_tank_cold_war_weapon_3"
+		texturefile = "gfx/interface/technologies/modules/tank_weapon_3.dds"
 	}
 
 

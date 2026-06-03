@@ -1,0 +1,18 @@
+characters = {
+	MAD_Didier_Ratsiraka ={
+		name = MAD_Didier_Ratsiraka
+		portraits={
+			civilian={
+				large= GFX_portrait_MAD_Didier_Ratsiraka
+			}
+			army = {
+				large = GFX_portrait_MAD_Didier_Ratsiraka
+			}
+		}
+		country_leader={
+			ideology = authoritarian_socialism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

@@ -13,6 +13,7 @@ armor_generic = {
 
 	role = armor
 	
+<<<<<<< Updated upstream
 	upgrade_prio = {
 		base = 2
 
@@ -32,6 +33,8 @@ armor_generic = {
 			}
 		}
 	}
+=======
+>>>>>>> Stashed changes
 
 	light_armor_early = {
 		upgrade_prio = {
@@ -141,6 +144,7 @@ armor_generic = {
 #		target_min_match = 0.5
 #	}
 
+<<<<<<< Updated upstream
 	medium_armor_early = {
 	
 		upgrade_prio = {
@@ -215,6 +219,8 @@ armor_generic = {
 		target_min_match = 0.5
 	}
 
+=======
+>>>>>>> Stashed changes
 	modern_armor_default = {
 	
 		upgrade_prio = {

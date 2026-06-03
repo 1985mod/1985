@@ -11,6 +11,7 @@ country_event = {
         has_war_with = PER
 		controls_state = 413
 		controls_state = 421
+        date < 1989.1.1
     }
 
     fire_only_once = yes
