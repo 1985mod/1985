@@ -1,13 +1,6 @@
 ﻿capital = 430
 
 oob = "BAN_1985"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "BAN_1985_naval_mtg"
-	else = {
-		set_naval_oob = "BAN_1985_naval_legacy"
-	}
-}
 
 set_research_slots = 2
 set_convoys = 320
@@ -101,14 +94,14 @@ set_technology = {
 }
 
 set_politics = {	
-	ruling_party = conservatism
-	last_election = "1978.2.1"
-	election_frequency = 48
+	ruling_party = neutrality
+	last_election = "1979.2.18"
+	election_frequency = 84
 	elections_allowed = yes
 }
 
 set_popularities = {
-    conservatism = 80
+    neutrality = 80
     communism = 20
 }
 

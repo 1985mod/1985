@@ -10,7 +10,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = leninism
+			ideology = autocracy
 			traits={  }
 			expire="2012.11.9.1"		
 		}

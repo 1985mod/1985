@@ -17,6 +17,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
+<<<<<<< Updated upstream
 
 	communism = 100
+=======
+	neutrality = 100
+>>>>>>> Stashed changes
 }

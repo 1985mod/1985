@@ -131,6 +131,25 @@ characters = {
 			id = -1
 		}
 	}
+
+	SOV_Mikhail_Gorbachev_SSG = {
+		name = SOV_Mikhail_Gorbachev
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Mikhail_Gorbachev_SSG
+			}
+			army = {
+				large = GFX_Portrait_Mikhail_Gorbachev_SSG
+				small = GFX_Portrait_Mikhail_Gorbachev_SSG_small
+			}
+		}
+		country_leader = {
+			ideology = classical_social_democracy
+			traits = {}
+			expire = "2022.05.28.1"
+			id = -1
+		}
+	}
 	
 	######GENERALS####
 	SOV_Sokolov = {

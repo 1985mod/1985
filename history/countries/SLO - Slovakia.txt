@@ -1,8 +1,8 @@
 ﻿capital = 70
 
+oob = GEN_1985
 
-
-
+# Starting tech
 set_technology = {
 	tech_trucks = 1
 	gw_artillery = 1
@@ -18,38 +18,16 @@ set_technology = {
 	tech_engineers = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "LT vz. 34"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 1
-		}
-	}
-}
-
 recruit_character = SLO_milan_cic
 recruit_character = SLO_vladimir_meciar
 
 set_politics = {
-	ruling_party = conservatism
-	last_election = "1933.3.5"
+	ruling_party = communism
+	last_election = "1985.5.14"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 100
+	communism = 100
 
 }

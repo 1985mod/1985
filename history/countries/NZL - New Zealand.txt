@@ -32,60 +32,17 @@ set_technology = {
 	trench_warfare = 1
 	fleet_in_being = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-	}
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_destroyer = 1
-		early_light_cruiser = 1
-		transport = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
-		mtg_transport = 1
-	}
-}
-
-recruit_character = NZL_david_longhi
-
-
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
 set_politics = {
-	ruling_party = conservatism
-	last_election = "1935.11.27"
+	ruling_party = socialism
+	last_election = "1984.7.14"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 100
+	socialism = 65
+	conservatism = 35
 }
+
+recruit_character = NZL_david_longhi
 
 set_convoys = 70

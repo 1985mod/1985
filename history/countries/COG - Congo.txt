@@ -31,8 +31,6 @@ set_politics = {
 }
 
 set_popularities = {
-	conservatism = 0
-	fascism = 0
-	communism = 0
-	neutrality = 100
+	fascism = 15
+	neutrality = 85
 }

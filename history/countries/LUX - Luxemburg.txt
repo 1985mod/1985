@@ -13,15 +13,6 @@ set_technology = {
 	basic_train = 1
 }
 
-IF = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
-		early_fighter = 1
-	}
-}
-
 set_war_support = 0.15
 set_stability = 0.7
 
@@ -29,15 +20,15 @@ recruit_character = LUX_jacques_santer
 
 set_politics = {
 	ruling_party = conservatism
-	last_election = "1934.6.3"
-	election_frequency = 36
+	last_election = "1984.6.17"
+	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-	conservatism = 70
-	neutrality = 15
-	fascism = 12
+	conservatism = 55
+	socialism = 29
+	liberalism = 13
 	communism = 3
 }
 

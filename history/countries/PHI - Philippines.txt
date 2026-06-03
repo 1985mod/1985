@@ -27,13 +27,12 @@ set_convoys = 5
 recruit_character = PHI_Ferdinand_R_Marcos_J
 
 set_politics = {
-	ruling_party = conservatism
-	last_election = "1935.9.15"
+	ruling_party = neutrality
+	last_election = "1981.9.16"
 	election_frequency = 72
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 82
-	fascism = 9
-	communism = 9
+	conservatism = 12
+	neutrality = 88
 }

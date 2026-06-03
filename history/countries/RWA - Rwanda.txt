@@ -4,6 +4,7 @@
 set_technology = {
 	infantry_weapons = 1
 }
+<<<<<<< Updated upstream
 
 set_convoys = 0
 
@@ -38,6 +39,8 @@ recruit_character = RWA_mt
 recruit_character = RWA_Yuvenali_Habyarimana
 promote_character = RWA_Yuvenali_Habyarimana
 
+=======
+>>>>>>> Stashed changes
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -50,3 +53,5 @@ set_popularities = {
 	communism = 5
 	neutrality = 50
 }
+
+recruit_character = 

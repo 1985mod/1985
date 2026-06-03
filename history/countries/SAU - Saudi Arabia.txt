@@ -7,26 +7,6 @@ set_technology = {
 	infantry_weapons = 1
 	tech_trucks = 1
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
-
-set_convoys = 5
-
-recruit_character = SAU_Fahd
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1985.1.1"
@@ -36,3 +16,7 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
+
+set_convoys = 5
+
+recruit_character = SAU_Fahd
