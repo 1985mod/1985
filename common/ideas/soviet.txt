@@ -1,7 +1,8 @@
 ideas = {
     country = {
 		SOV_soviet_contingent_in_afghanistan = {
-			picture = chi_army_corruption3 
+			picture = GFX_SOV_soviet_
+			
 			allowed = {
 				original_tag = SOV
 			}
@@ -19,7 +20,7 @@ ideas = {
 			}
 		}
 		SOV_economic_stagnation = {
-			picture = generic_economic_recovery 
+			picture = GFX_SOV_soviet_
 			allowed = {
 				original_tag = SOV
 			}
@@ -36,9 +37,9 @@ ideas = {
 			  production_factory_max_efficiency_factor = -0.2
 			  production_speed_buildings_factor = -0.1
 			}
-		}
-		SOV_cold_war = {
-			picture = anti_soviet_pact 
+		}	
+    	SOV_anti_alcohol_campaign = {
+			picture = NONE
 			allowed = {
 				original_tag = SOV
 			}
@@ -50,11 +51,43 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			  stability_factor = -0.05
-			  send_volunteers_tension = -0.5
-			  lend_lease_tension = -0.5
-			  request_lease_tension = -0.5
+			 production_factory_efficiency_gain_factor = 0.05
+			 consumer_goods_factor = 0.15
 			}
-		}		
-    }
+		}
+		SOV_housing_2000_program = {
+			picture = NONE
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_factory_efficiency_gain_factor = 0.02
+            production_speed_infrastructure_factor = 0.10
+			}
+		}	
+    	SOV_acceleration_course = {
+			picture = NONE
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_industrial_complex_factor = 0.03
+            production_speed_infrastructure_factor = 0.03
+			}
+		}
+	}
 }

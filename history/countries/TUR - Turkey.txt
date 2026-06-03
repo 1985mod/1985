@@ -38,9 +38,6 @@ if = {
 	}
 }
 
-
-set_cosmetic_tag = TUR_neutrality
-
 set_research_slots = 3
 
 set_technology = {
@@ -268,3 +265,5 @@ if = {
 		}
 	}
 }
+
+give_guarantee = NCY

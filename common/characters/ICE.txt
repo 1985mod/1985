@@ -1,0 +1,15 @@
+characters = {
+	ICE_vigdis_finnbogadottir ={
+		name = ICE_vigdis_finnbogadottir
+		portraits={
+			civilian={
+				large= GFX_Portrait_vigdis_finnbogaduttir
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="1991.11.9.1"		
+		}
+	}
+}

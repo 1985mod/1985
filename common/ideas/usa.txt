@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		USA_reaganomics_policy = {
-			picture = generic_political_support 
+			picture = idea_ 
 			allowed = {
 				original_tag = USA
 			}
@@ -20,7 +20,7 @@ ideas = {
 			}
 		}
 		USA_stronghold_of_freedom = {
-			picture = ARG_eliminate_american_imperialism 
+			picture = idea_ 
 			allowed = {
 				original_tag = USA
 			}
@@ -37,8 +37,8 @@ ideas = {
 			  liberalism_drift = 0.02
 			}
 		}
-		USA_cold_war = {
-			picture = anti_soviet_pact 
+		USA_the_endless_war_on_drugs_2 = {
+			picture = idea_ 
 			allowed = {
 				original_tag = USA
 			}
@@ -50,10 +50,136 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+			  consumer_goods_factor = 0.1
 			  stability_factor = -0.05
-			  send_volunteers_tension = -0.5
-			  lend_lease_tension = -0.5
-			  request_lease_tension = -0.5
+			  political_power_factor = -0.05
+			}
+		}
+		USA_the_endless_war_on_drugs = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  consumer_goods_factor = 0.2
+			  stability_factor = -0.15
+			  political_power_factor = -0.1
+			}
+		}
+		USA_fight_against_terrorism = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  stability_factor = 0.03
+			  army_attack_factor = 0.05
+			  army_defence_factor = 0.05
+			  army_org_factor = 0.03
+			}
+		}
+		USA_us_world_hegemony = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  political_power_factor = 0.05
+			  drift_defence_factor = 0.1
+			  nuclear_production_factor = 0.03
+			}
+		}
+		USA_economic_recession = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = -0.1
+				consumer_goods_factor = 0.15
+				stability_factor = -0.05				
+			}
+		}
+		USA_economic_recession_2 = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = -0.2
+				consumer_goods_factor = 0.25
+				stability_factor = -0.1			
+			}
+		}
+		USA_economic_recession_3 = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = -0.08
+				consumer_goods_factor = 0.01
+				stability_factor = -0.03				
+			}
+		}
+		USA_economic_recession_4 = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    political_power_factor = -0.05
+				consumer_goods_factor = 0.07
+				stability_factor = -0.1				
 			}
 		}
 	}

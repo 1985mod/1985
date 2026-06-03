@@ -1,6 +1,6 @@
 ﻿capital = 64 
 
-oob = "DDR_1985"
+oob = "GEN_1985"
 
 set_research_slots = 4
 
@@ -94,6 +94,18 @@ set_politics = {
 set_popularities = {
 	socialism = 20
 	communism = 80
+}
+
+add_opinion_modifier = {
+    target = WGR
+    modifier = divided_into_two_parts 
+}	
+
+WGR = {
+add_opinion_modifier = {
+    target = DDR
+    modifier = divided_into_two_parts 
+}	
 }
 
 

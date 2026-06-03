@@ -24,6 +24,10 @@ promote_character = SOM_Mohamed_Siad_Barre
 
 set_convoys = 10
 
+add_ideas = {
+	extensive_conscription
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"

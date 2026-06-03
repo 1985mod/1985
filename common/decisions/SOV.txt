@@ -1,0 +1,42 @@
+SOV_prohibition_ussr = {
+
+    SOV_destruction_of_vineyards = {
+	
+		icon = generic_speech
+
+		cost = 100
+		fire_only_once = no
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			has_completed_focus = SOV_destruction_of_vineyards
+		}
+		days_remove = 60
+		days_re_enable = 100
+		
+		cost = 25
+		modifier = {
+
+		}
+	}
+
+	SOV_reduction_in_alcohol_production = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+		    has_completed_focus = SOV_the_beginning_of_the_anti_alcohol_campaign
+		}
+		days_remove = 60
+		days_re_enable = 110000
+
+		cost = 50
+		modifier = {
+
+		}
+	}
+}

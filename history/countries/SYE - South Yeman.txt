@@ -1,6 +1,6 @@
 ﻿capital = 293
 
-oob = "SYE_1985"
+oob = "GEN_1985"
 
 # Starting tech
 set_technology = {
@@ -13,19 +13,18 @@ if = {
 	set_technology = { camelry = 1 }
 }
 
+recruit_character = SYE_Ali_Nasser_Muhammad
+
 set_war_support = 0.1
 set_stability = 0.8
 set_convoys = 5
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1936.1.1"
+	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
 	communism = 100
 }
-
-
-recruit_character = SYE_Ali_Nasser_Muhammad

@@ -1,0 +1,75 @@
+defined_text = {
+	name = raise_taxes
+
+	text = {
+		trigger = {
+			has_global_flag = raise_taxes
+		}
+		localization_key = raise_taxes
+	}
+}
+defined_text = {
+	name = lower_taxes
+
+	text = {
+		trigger = {
+			has_global_flag = lower_taxes
+		}
+		localization_key = lower_taxes
+	}
+}
+
+defined_text = {
+	name = taxes
+
+	text = {
+		trigger = {
+			has_global_flag = taxes
+		}
+		localization_key = taxes
+	}
+}
+
+defined_text = {
+	name = duty
+
+	text = {
+		trigger = {
+			has_global_flag = duty
+		}
+		localization_key = duty
+	}
+}
+
+defined_text = {
+	name = balance
+
+	text = {
+		trigger = {
+			has_global_flag = balance
+		}
+		localization_key = balance
+	}
+}
+
+defined_text = {
+	name = nominal_gdp
+
+	text = {
+		trigger = {
+			has_global_flag = nominal_gdp
+		}
+		localization_key = nominal_gdp
+	}
+}
+
+defined_text = {
+	name = real_gdp
+
+	text = {
+		trigger = {
+			has_global_flag = real_gdp
+		}
+		localization_key = real_gdp
+	}
+}

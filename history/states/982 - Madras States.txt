@@ -5,20 +5,25 @@ state={
 		rubber=2
 	}
 	provinces={
-		1321 1409 7288 7402 12247 
+	   4893 12871 13413 13414 13415 13416
 	}
-	manpower = 7600000
+	manpower = 15098
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
 	history={
-		owner = RAJ
-		add_core_of = RAJ
+		owner = AFN
+		add_core_of = AFN
+		add_core_of = AFS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			arms_factory = 1
 		}
-		victory_points = {
-			1321 3 
+		victory_points = { 13414 3 }
+		
+		AFS = {
+			set_province_controller = 4893
+			set_province_controller = 12871
 		}
 
 	}

@@ -33,11 +33,24 @@ division_template = {
 	priority = 0
 }
 
+division_template = {
+	name = "Garrison"				# Militia units (lowest experience, oldest equipment)
+
+	division_names_group = AFG_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+
 units = {
 	#Royal Afghani Army
 	division = {
 		name = "Royal Afghan Household Division"
-		location = 8053
+		location = 13453
 		division_template = "Royal Guard"
 		start_experience_factor = 0.3
 	}
@@ -47,7 +60,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 26
 		}
-		location = 8053
+		location = 13453
 		division_template = "Militia"
 		start_equipment_factor = 0.2
 
@@ -58,7 +71,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 2017
+		location = 13447
 		division_template = "Militia"
 		start_equipment_factor = 0.7
 
@@ -69,7 +82,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 2078
+		location = 13438
 		division_template = "Militia"
 		start_equipment_factor = 0.5
 
@@ -81,7 +94,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 10789
+		location = 13442
 		division_template = "Militia"
 		start_equipment_factor = 0.5
 
@@ -92,7 +105,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 12769
+		location = 13416
 		division_template = "Militia"
 		start_equipment_factor = 0.2
 
@@ -103,7 +116,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 10737
+		location = 13469
 		division_template = "Militia"
 		start_equipment_factor = 0.3
 
@@ -115,7 +128,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 12831
+		location = 13464
 		division_template = "Militia"
 		start_equipment_factor = 0.4
 
@@ -126,7 +139,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 10781
+		location = 13458
 		division_template = "Militia"
 		start_equipment_factor = 0.3
 
@@ -137,7 +150,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 12248
+		location = 13455
 		division_template = "Militia"
 		start_equipment_factor = 0.3
 
@@ -149,7 +162,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 12248
+		location = 13418
 		division_template = "Militia"
 		start_equipment_factor = 0.7
 
@@ -161,7 +174,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 10476
+		location = 13420
 		division_template = "Militia"
 		start_equipment_factor = 0.4
 
@@ -173,7 +186,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 2017
+		location = 134221
 		division_template = "Militia"
 		start_equipment_factor = 0.6
 
@@ -185,9 +198,260 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 10789
+		location = 13422
 		division_template = "Militia"
 		start_equipment_factor = 0.5
+
+	}
+
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13460
+		division_template = "Militia"
+		start_equipment_factor = 0.3
+
+	}
+	
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13451
+		division_template = "Militia"
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13437
+		division_template = "Militia"
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13428
+		division_template = "Militia"
+
+	}
+	
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13433
+		division_template = "Militia"
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13436
+		division_template = "Militia"
+		start_equipment_factor = 0.6
+
+	}
+
+	### Garrison divisions ###
+
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13414
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13413
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13417
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13419
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13421
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13425
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13424
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13449
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13461
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13464
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13465
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13446
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13423
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13443
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13415
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13425
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
 
 	}
 }

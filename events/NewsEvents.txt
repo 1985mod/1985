@@ -3,3 +3,248 @@
 ###########################
 
 add_namespace = news
+
+news_event = {
+    id = news.1
+    title = news.1.t
+    desc = news.1.d
+	picture = GFX_news_sammit_in_rejyavik
+
+	major = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+
+    trigger = {
+		NOT = { has_global_flag = USA_sammit_in_reykjavik_news }
+        has_global_flag = USA_sammit_in_reykjavik
+        date > 1986.11.13
+    }
+	
+	immediate = {
+		set_global_flag = USA_sammit_in_reykjavik_news
+	}
+
+    option = {
+        name = news.1.a
+        ai_chance = {
+			base = 10
+        }
+    }
+}
+
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.desc
+	picture = GFX_news_SOV_dead_chernenko2
+
+    major = yes
+
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	trigger = {
+        NOT = { has_global_flag = usa_dead_chernenko }
+		tag = SOV
+		date > 1985.3.3
+	}
+
+	immediate = {
+		set_global_flag = usa_dead_chernenko
+	}
+
+    option = {
+        name = SOV_dead_cernenko.1.a
+        hidden_effect = {
+            add_stability = -0.3
+        }
+    }
+}
+
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.desc
+	picture = GFX_news_iraq_invasion_in_kuweit
+    
+    major = yes
+
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	immediate = {
+		set_global_flag = iraq_invasion_in_kuweit
+	}
+	
+	trigger = {
+        NOT = { has_global_flag = iraq_invasion_in_kuweit }
+        IRQ = { has_war_with = KUW }
+		date > 1990.1.1
+	}
+}
+
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.desc
+	picture = GFX_news_SOV_chernobyl
+
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+        NOT = { has_global_flag = usa_visit_steve_jobs }
+		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
+		date > 1985.7.4
+	}
+
+	option = {
+		name = news.4.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.4.a
+		trigger = { TAG = SOV }
+		hidden_effect = {
+			add_stability = -0.15
+			add_war_support = -0.05
+			add_political_power = -50
+			add_manpower = -10000
+		}
+	}
+}
+
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.desc
+	picture = GFX_news_yugoslav_wars
+
+	major = yes
+
+	immediate = {
+		set_global_flag = yugoslav_wars_started
+	}
+	
+	trigger = {
+		NOT = { has_global_flag = yugoslav_wars_started }
+		YUG = { has_war_with = CRO }
+		country_exists = CRO
+	}
+
+	option = {
+		name = news.5.a
+	}
+}
+
+news_event = {
+	id = news.6 ## Выборы в Верховный Совет РСФСР ##
+	title = news.6.t
+	desc = news.6.desc
+	picture = GFX_news_elections_to_the_supreme_soviet_RSFSR
+    
+    major = yes
+
+	immediate = {
+		set_global_flag = elections_to_the_supreme_soviet_RSFSR
+	}
+	
+	trigger = {
+		tag = SOV
+		NOT = { has_global_flag = elections_to_the_supreme_soviet_RSFSR }
+		SOV = { has_completed_focus = SOV_elections_to_the_supreme_council }
+	}
+}
+
+news_event = {
+	id = news.7 ## Джобс в СССР ##
+	title = news.7.t
+	desc = news.7.desc
+	picture = GFX_news_SOV_jobs_ussr
+
+    major = yes
+
+	immediate = {
+		set_global_flag = jobs_in_ussr
+	}
+	
+	trigger = {
+		NOT = { has_global_flag = jobs_in_ussr }
+		tag = SOV
+		has_country_leader = { name = "SOV_mikhail_gorbachev" }
+		date > 1985.7.4
+	}
+
+	option = {
+		name = news.7.a
+	}
+}
+
+news_event = {
+	id = news.8
+	title = news.8.t
+	desc = news.8.desc
+	picture = GFX_news_yugoslav_wars
+
+	is_triggered_only = yes
+
+	major = yes
+
+	immediate = {
+		set_global_flag = operation_desert_storm
+	}
+	
+	trigger = {
+	   NOT = { has_global_flag = operation_desert_storm }
+	}
+
+	option = {
+		name = news.8.a
+	}
+}
+
+news_event = {
+	id = news.9 ## Победа Республиканцев ##
+	title = news.9.t
+	desc = news.9.desc
+	picture = GFX_news_victory_republicans
+
+	is_triggered_only = yes
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = usa_victory_republicans
+	}
+	
+	trigger = {
+	   NOT = { has_global_flag = usa_victory_republicans }
+	}
+}
+
+news_event = {
+	id = news.10 ## Победа демократов ##
+	title = news.10.t
+	desc = news.10.desc
+	picture = GFX_news_victory_democrats
+
+	is_triggered_only = yes
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = usa_victory_democrats
+	}
+	
+	trigger = {
+	   NOT = { has_global_flag = usa_victory_democrats }
+	}
+}

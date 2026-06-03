@@ -2,7 +2,7 @@ state={
 	id=322
 	name="STATE_322"
 	resources={
-		tungsten=2.000
+		tungsten=15
 	}
 
 	history={
@@ -18,7 +18,9 @@ state={
 		
 		add_core_of = TIB
 		add_core_of = CHI
-		add_core_of = PRC
+		start_resistance = yes
+		set_resistance = 25
+		set_compliance = 30
 
 	}
 

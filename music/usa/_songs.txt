@@ -1,0 +1,72 @@
+music_station = "radio_station_usa"
+
+
+music = {
+    song = "michael_jackson_beat_it_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "michael_jackson_billie_jean_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "michael_jackson_thriller_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "michael_jackson_heal_the_world_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "george_michael_faith_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "journey_dont_stop_believin_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "los_del_rio_macarena_slowed_reverb_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "kool_the_gang_celebration_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "garth_brooks_yhe_dance_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "bell_biv_devoe_poison_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}

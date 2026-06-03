@@ -5,9 +5,6 @@ state = {
 	state_category = city
 
 	history = {
-		victory_points = {
-			6626 3
-		}
 		owner = YUG
 		add_core_of = YUG
 		add_core_of = SLV
@@ -15,16 +12,12 @@ state = {
 			infrastructure = 1
 			dockyard = 1
 			arms_factory = 1
-			6626 = {
-				naval_base = 5
-			}
-
 		}
 
 	}
 
 	provinces = {
-		599 6626 11595 
+		599 11595 
 	}
 	manpower = 312840
 	buildings_max_level_factor = 1.000

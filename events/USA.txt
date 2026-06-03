@@ -1,0 +1,714 @@
+ add_namespace = usa
+
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.desc
+	picture = GFX_report_dead_chernenko
+	
+	fire_only_once = yes
+	
+	trigger = {
+	   tag = USA
+	   date > 1988.11.01
+	   conservatism > 0.5
+	}
+	
+	option = {
+		name = usa.1.a
+		ai_chance = {
+			base = 10
+		}
+		
+        complete_national_focus = USA_election_day
+		complete_national_focus = USA_republican_victory
+		
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			remove_country_leader = { name = "USA_ronald_reagan" }
+			country_event = { id = news.9 }
+			promote_character = {
+				character = USA_george_bush
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.desc
+	picture = GFX_report_dead_chernenko
+	
+	fire_only_once = yes
+	
+	trigger = {
+	   tag = USA
+	   date > 1988.11.01
+	   liberalism > 0.5
+	}
+	
+	option = {
+		name = usa.2.a
+		ai_chance = {
+			base = 10
+		}
+		
+        complete_national_focus = USA_election_day
+		complete_national_focus = USA_victory_of_the_democrats
+		
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			remove_country_leader = { name = "USA_ronald_reagan" }
+			country_event = { id = news.10 }
+			promote_character = {
+				character = USA_michael_dukakis
+				ideology = liberalism
+			}
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+   id = usa.3
+   title = usa.3.t
+   desc = usa.3.d
+   picture = GFX_report_dead_chernenko
+
+   fire_only_once = yes
+
+   trigger = {
+       tag = USA
+       date = 1986.09.3
+    }
+
+    option = {
+  		name = usa.2.a
+		ai_chance = {
+			base = 10
+		}
+
+		set_global_flag = USA_sammit_in_reykjavik
+    }
+}
+
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.4.a
+		ai_chance = {
+			base = 75
+		}		
+        FROM = { country_event = usa.5 }
+	}
+
+	option = {
+		name = usa.4.b
+		ai_chance = {
+			base = 25
+		}	
+		FROM = { country_event = usa.6 }
+	}
+}
+
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.5.a
+		ai_chance = {
+			base = 100
+		}		
+        send_equipment = {
+           equipment = infantry_equipment
+           amount = 3500
+           target = FROM
+		}
+		FROM = {
+            add_opinion_modifier = {
+               target = FROM
+               modifier = lend_leased_spanish_civil_war 
+            }	
+	    } 
+	}
+}
+
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.6.a
+		ai_chance = {
+			base = 100
+		}		
+	}
+}
+
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.7.a
+		ai_chance = {
+			base = 90
+		}		
+		FROM = { country_event = usa.8 }
+	}
+
+	option = {
+		name = usa.7.b
+		ai_chance = {
+			base = 10
+		}		
+		FROM = { country_event = usa.9 }
+	}
+}
+
+
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.8.a
+		ai_chance = {
+			base = 90
+		}		
+		FROM = { set_country_flag = anti_iraq_coalition }
+		custom_effect_tooltip = we_join_in_anti_iraq_coalition
+	}
+}
+
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.9.a
+		ai_chance = {
+			base = 90
+		}		
+	}
+}
+
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		ROOT = { has_country_flag = anti_iraq_coalition }
+		USA = { has_completed_focus = USA_operation_desert_storm }
+		date < 1991.2.1
+	}
+
+	option = {
+		name = usa.10.a
+		ai_chance = {
+			base = 100
+		}		
+        declare_war_on = {
+           target = IRQ
+           type = annex_everything
+        }
+        add_threat = 0.5
+	}
+}
+
+country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.11.a
+		ai_chance = {
+			base = 100
+		}		
+		add_political_power = 5
+	}
+}
+
+country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		tag = usa
+		date > 1990.7.1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = usa.12.a
+		ai_chance = {
+			base = 100
+		}		
+		add_ideas = USA_economic_recession
+		set_country_flag = USA_economic_recessions_load
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = {
+	id = usa.13 ### Победа Билла Клинтона ###
+	title = usa.13.t
+	desc = usa.13.desc
+	picture = GFX_report_dead_chernenko
+	
+	fire_only_once = yes
+	
+	trigger = {
+	   tag = USA
+	   date > 1992.11.01
+	   liberalism > 0.5
+	}
+	
+	option = {
+		name = usa.13.a
+		ai_chance = {
+			base = 10
+		}
+		
+        complete_national_focus = USA_1992_elections_day
+		complete_national_focus = USA_lets_drink_to_the_democrats
+
+		remove_country_leader = { name = "USA_george_bush" }
+		promote_character = {
+			character = USA_bill_clinton
+			ideology = liberalism
+		}
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = yes
+		}
+	}
+}
+
+country_event = {
+	id = usa.14 ### Разговор с СССР ###
+	title = usa.14.t
+	desc = usa.14.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.14.a
+		ai_chance = {
+			base = 100
+		}		
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = usa.15 ### Первая встреча с Горбачёвом ###
+	title = usa.15.t
+	desc = usa.15.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.15.a
+		ai_chance = {
+			base = 100
+		}		
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = usa.16 ### Договор CHB - 1 ###
+	title = usa.16.t
+	desc = usa.16.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.16.a
+		ai_chance = {
+			base = 100
+		}		
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = usa.17 ### Утверждение Томаса Кларенсеном помощником судьи ###
+	title = usa.17.t
+	desc = usa.17.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.17.a
+		ai_chance = {
+			base = 100
+		}		
+		add_political_power = 100
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = usa.18 ### Встреча с Борисом Николаичем ###
+	title = usa.18.t
+	desc = usa.18.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.18.a
+		ai_chance = {
+			base = 100
+		}		
+		add_political_power = 5
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = usa.19 ### ### Запись благотворительного сингла «We Are the World» «USA for Africa» ### ###
+	title = usa.19.t
+	desc = usa.19.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1985.1.24
+		ROOT = { has_government = conservatism }
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.19.a
+		ai_chance = {
+			base = 100
+		}		
+		add_political_power = 5
+		add_stability = 0.01
+		ETH = {
+			add_political_power = 25
+		}
+	}
+}
+
+country_event = {
+	id = usa.20 ### Убийство Энрике Камарена ###
+	title = usa.20.t
+	desc = usa.20.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1985.2.5
+		ROOT = { has_government = conservatism }
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.20.a
+		ai_chance = {
+			base = 100
+		}		
+		add_political_power = -25
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = usa.21 ### Авария авианосца USS Coral Sea ###
+	title = usa.21.t
+	desc = usa.21.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1985.4.7
+		ROOT = { has_government = conservatism }
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.21.a
+		ai_chance = {
+			base = 100
+		}		
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = usa.22 ### 41 Торнадо ###
+	title = usa.22.t
+	desc = usa.22.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1985.5.25
+		ROOT = { has_government = conservatism }
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.22.a
+		ai_chance = {
+			base = 100
+		}		
+		add_manpower = -76
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = usa.23 ### Лос‑Анджелес Лейкерс» выигрывают чемпионат NBA ###
+	title = usa.23.t
+	desc = usa.23.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1985.6.5
+		ROOT = { has_government = conservatism }
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.23.a
+		ai_chance = {
+			base = 100
+		}		
+		add_political_power = 10
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = usa.24 ### В США выходит игровая приставка NES ###
+	title = usa.24.t
+	desc = usa.24.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1985.10.15
+		ROOT = { has_government = conservatism }
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.24.a
+		ai_chance = {
+			base = 100
+		}		
+		random_owned_controlled_state = {
+			limit = {					
+				is_in_home_area = yes					
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = usa.25 ### Сенат США разрешает телевизионную трансляцию своих дебатов ###
+	title = usa.25.t
+	desc = usa.25.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1986.3.20
+		ROOT = { has_government = conservatism }
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.25.a
+		ai_chance = {
+			base = 100
+		}		
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.03
+		}
+	}
+}
+
+country_event = {
+	id = usa.26 ### Сенат США разрешает телевизионную трансляцию своих дебатов ###
+	title = usa.26.t
+	desc = usa.26.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1986.8.13
+		ROOT = { has_government = conservatism }
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.26.a
+		ai_chance = {
+			base = 100
+		}		
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.03
+		}
+		add_manpower = -15
+	}
+}
+
+country_event = {
+	id = usa.27 ### Рональд Рейган проходит операцию на предстательной железе ###
+	title = usa.27.t
+	desc = usa.27.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1987.1.1
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.27.a
+		ai_chance = {
+			base = 100
+		}		
+	}
+}
+
+country_event = {
+	id = usa.28 ### Иракские «Экзосеты» поражают эсминец USS Stark ###
+	title = usa.28.t
+	desc = usa.28.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1987.5.13
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.28.a
+		ai_chance = {
+			base = 100
+		}		
+		add_manpower = -37
+	}
+}
+
+country_event = {
+	id = usa.29 ###  «Черный понедельник»: мировой фондовый крах ###
+	title = usa.29.t
+	desc = usa.29.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1987.10.15
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.29.a
+		ai_chance = {
+			base = 100
+		}		
+	}
+}

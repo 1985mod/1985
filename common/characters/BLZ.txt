@@ -1,0 +1,15 @@
+characters = {
+	BLZ_Manuel_Esquivel = {
+		name = BLZ_Manuel_Esquivel
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Manuel_Esquivel
+			}
+		}
+		country_leader = {
+			ideology = classic_conservatism
+			expire = "2007.04.23.1"
+			id = -1
+		}
+	}
+}

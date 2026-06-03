@@ -1,6 +1,6 @@
-﻿capital = 
+﻿capital = 107
 
-oob = "YUG_1985"
+oob = "GEN_1985"
 
 set_research_slots = 4
 
@@ -86,10 +86,12 @@ if = {
 }
 
 recruit_character = YUG_Milka_Planinc
+recruit_character = YUG_borisav_jovic
+recruit_character = YUG_stipe_mesic
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1917.1.1"
+	last_election = "1986.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
