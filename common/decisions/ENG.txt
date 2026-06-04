@@ -1,14 +1,14 @@
-ira_conflict_category = {
-    ira_give_up_to_IRA = {
-        icon = GFX_decision_ira_negotiations
+IRA_conflict_category = {
+    IRA_give_up_to_IRA = {
+        icon = GFX_decision_IRA_negotiations
         
         visible = {
-            has_completed_focus = NRA_no_deal_was_reached
+            NOT = { has_global_flag = IRA_conflict_resolved }    
         }
         
         available = {
             is_controller_of_state = 119
-            NOT = { has_global_flag = ira_conflict_resolved }
+            NOT = { has_global_flag = IRA_conflict_resolved }
         }
         
         cost = 0
@@ -25,25 +25,26 @@ ira_conflict_category = {
             factor = 1
         }
     }    
-    ira_military_operation = {
-        icon = GFX_decision_ira_military
+    IRA_military_operation = {
+        icon = GFX_decision_IRA_military
         
         visible = {
-            has_completed_focus = NRA_no_deal_was_reached
+            NOT = { has_global_flag = IRA_conflict_resolved }    
         }
         
         available = {
             is_controller_of_state = 119
             divisions_in_state = { state = 119 size > 2 }
-            NOT = { has_global_flag = ira_conflict_resolved }
+            NOT = { has_global_flag = IRA_conflict_resolved }
         }
         
         cost = 300
         days_remove = 30
         
         complete_effect = {
-            set_global_flag = ira_conflict_resolved
-            119 = { remove_dynamic_modifier = { modifier = northern_ireland_ira_activity } }
+            set_global_flag = IRA_conflict_resolved
+            119 = { remove_dynamic_modifier = { modifier = northern_ireland_IRA_activity } }
+
         }
         
         ai_will_do = {
@@ -51,3 +52,27 @@ ira_conflict_category = {
         }
     }
 }
+IRA_peace_category = {
+    IRA_offer_autonomy = {
+        visible = {
+            NOT = { has_global_flag = IRA_conflict_resolved }    
+        }
+        available = {
+            is_controller_of_state = 119
+            NOT = { has_global_flag = IRA_conflict_resolved }
+        }
+        cost = 0
+        days_remove = 7
+    }
+     IRA_demand_recognition = {
+        visible = {
+            NOT = { has_global_flag = IRA_conflict_resolved }    
+        }
+        available = {
+            is_controller_of_state = 119
+            NOT = { has_global_flag = IRA_conflict_resolved }
+        cost = 0
+        days_remove = 7    
+        }
+    }
+}    
