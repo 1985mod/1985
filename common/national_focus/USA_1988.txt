@@ -349,7 +349,7 @@ focus_tree = {
 		relative_position_id = USA_michael_dukakis_inauguration
 		prerequisite = { focus = USA_michael_dukakis_inauguration  }
         icon = GFX_	
-        x = -2
+        x = -3
         y = 1
         cost = 10
 		
@@ -360,10 +360,10 @@ focus_tree = {
 
     focus = { 
         id = USA_increasing_federal_grants
-		relative_position_id = USA_michael_dukakis_inauguration
-		prerequisite = { focus = USA_michael_dukakis_inauguration  }
+		relative_position_id = USA_cutting_back_on_bloated_military_programs
+		prerequisite = { focus = USA_cutting_back_on_bloated_military_programs  }
         icon = GFX_	
-        x = 0
+        x = -2
         y = 1
         cost = 5
 		
@@ -373,9 +373,23 @@ focus_tree = {
 	}
 
     focus = { 
+        id = USA_investments_in_infrastructure
+		relative_position_id = USA_increasing_federal_grants
+		prerequisite = { focus = USA_increasing_federal_grants  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 7.2
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
         id = USA_expansion_of_social_programs
-		relative_position_id = USA_michael_dukakis_inauguration
-		prerequisite = { focus = USA_michael_dukakis_inauguration  }
+		relative_position_id = USA_cutting_back_on_bloated_military_programs
+		prerequisite = { focus = USA_cutting_back_on_bloated_military_programs  }
         icon = GFX_	
         x = 2
         y = 1
@@ -387,25 +401,9 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_investments_in_infrastructure
-		relative_position_id = USA_michael_dukakis_inauguration
-		prerequisite = { focus = USA_cutting_back_on_bloated_military_programs  }
-		prerequisite = { focus = USA_increasing_federal_grants  }
-		prerequisite = { focus = USA_expansion_of_social_programs  }
-        icon = GFX_	
-        x = 0
-        y = 2
-        cost = 7.2
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
         id = USA_war_on_poverty
-		relative_position_id = USA_investments_in_infrastructure
-		prerequisite = { focus = USA_investments_in_infrastructure  }
+		relative_position_id = USA_expansion_of_social_programs
+		prerequisite = { focus = USA_expansion_of_social_programs  }
         icon = GFX_	
         x = 0
         y = 1
@@ -417,9 +415,52 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_worker_retraining_programs
-		relative_position_id = USA_war_on_poverty
+        id = USA_repeat_the_massachusetts_miracle_throughout_america
+		relative_position_id = USA_cutting_back_on_bloated_military_programs
 		prerequisite = { focus = USA_war_on_poverty  }
+		prerequisite = { focus = USA_investments_in_infrastructure  }
+        icon = GFX_	
+        x = 0
+        y = 3
+        cost = 6.5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_support_the_policy_of_perestroika
+		relative_position_id = USA_michael_dukakis_inauguration
+		prerequisite = { focus = USA_michael_dukakis_inauguration  }
+        icon = GFX_	
+        x = 3
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_trade_agreement_with_canada
+		relative_position_id = USA_support_the_policy_of_perestroika
+		prerequisite = { focus = USA_support_the_policy_of_perestroika  }
+        icon = GFX_	
+        x = -2
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_economic_assistance_to_the_ussr
+		relative_position_id = USA_trade_agreement_with_canada
+		prerequisite = { focus = USA_trade_agreement_with_canada  }
         icon = GFX_	
         x = 0
         y = 1
@@ -431,13 +472,13 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_repeat_the_massachusetts_miracle_throughout_america
-		relative_position_id = USA_worker_retraining_programs
-		prerequisite = { focus = USA_worker_retraining_programs  }
+        id = USA_stop_supporting_the_contras
+		relative_position_id = USA_support_the_policy_of_perestroika
+		prerequisite = { focus = USA_support_the_policy_of_perestroika  }
         icon = GFX_	
-        x = 0
+        x = 2
         y = 1
-        cost = 7.2
+        cost = 5
 		
         completion_reward = {
 
@@ -445,12 +486,42 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_trade_agreement_with_canada
-		relative_position_id = USA_repeat_the_massachusetts_miracle_throughout_america
-		prerequisite = { focus = USA_repeat_the_massachusetts_miracle_throughout_america  }
+        id = USA_call_for_ratification_of_the_inf_treaty
+		relative_position_id = USA_stop_supporting_the_contras
+		prerequisite = { focus = USA_stop_supporting_the_contras  }
         icon = GFX_	
         x = 0
         y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_blockade_of_south_africa
+		relative_position_id = USA_support_the_policy_of_perestroika
+		prerequisite = { focus = USA_economic_assistance_to_the_ussr  }
+		prerequisite = { focus = USA_call_for_ratification_of_the_inf_treaty  }
+        icon = GFX_	
+        x = 0
+        y = 3
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_investments_and_diplomacy_are_our_everything
+		relative_position_id = USA_michael_dukakis_inauguration
+		prerequisite = { focus = USA_repeat_the_massachusetts_miracle_throughout_america  }
+		prerequisite = { focus = USA_blockade_of_south_africa  }
+        icon = GFX_	
+        x = 0
+        y = 5
         cost = 5
 		
         completion_reward = {
