@@ -95,9 +95,13 @@ news_event = {
 
 	is_triggered_only = yes
 	major = yes
+
+	immediate = {
+		set_global_flag = chernobyl_boooooom
+	}
 	
 	trigger = {
-        NOT = { has_global_flag = usa_visit_steve_jobs }
+        NOT = { has_global_flag = chernobyl_boooooom }
 		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
 		date > 1985.7.4
 	}
@@ -192,7 +196,7 @@ news_event = {
 	id = news.8
 	title = news.8.t
 	desc = news.8.desc
-	picture = GFX_news_yugoslav_wars
+	picture = GFX_news_operation_desert_storm
 
 	is_triggered_only = yes
 

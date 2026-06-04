@@ -51,6 +51,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_news_operation_desert_storm"
+		texturefile = "gfx/event_pictures/news_operation_desert_storm.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_victory_republicans"
 		texturefile = "gfx/event_pictures/news_victory_republicans.dds"
 	}
