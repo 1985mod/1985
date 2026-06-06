@@ -7,10 +7,7 @@ set_technology = {
 
 set_convoys = 10
 
-recruit_character = 
-
 recruit_character = DAH_Mathieu_Kerekou
-promote_character = DAH_Mathieu_Kerekou
 
 set_politics = {
 	ruling_party = communism

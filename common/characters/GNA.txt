@@ -1,6 +1,6 @@
 characters = {
-	GNA_Lansana_Conté ={
-		name = GNA_Lansana_Conté
+	GNA_Lansana_Contе ={
+		name = GNA_Lansana_Contе
 		portraits={
 			civilian={
 				large= GFX_portrait_GNA_Lansana_Conté
@@ -10,7 +10,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = authoritarian_socialism
+			ideology = military_regimes
 			traits={  }
 			expire="2012.11.9.1"		
 		}

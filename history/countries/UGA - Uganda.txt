@@ -6,7 +6,6 @@ set_technology = {
 }
 recruit_character = UGA_Bazilio_Olara-Оkello
 recruit_character = UGA_Milton_Obote
-promote_character = UGA_Milton_Obote
 
 set_convoys = 0
 
@@ -17,10 +16,5 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-<<<<<<< Updated upstream
-
 	communism = 100
-=======
-	neutrality = 100
->>>>>>> Stashed changes
 }

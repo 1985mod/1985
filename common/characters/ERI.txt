@@ -1,0 +1,15 @@
+characters = {
+	ERI_isaias_afeworki ={
+		name = ERI_isaias_afeworki
+		portraits={
+			civilian={
+				large= GFX_Portrait_isaias_afeworki
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="1991.11.9.1"		
+		}
+	}
+}
