@@ -34,5 +34,38 @@ ideas = {
 				production_speed_arms_factory_factor = -0.25
 			}
 	    }
+		EU_single_europ = {
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.20
+				industrial_capacity_factory = 0.1
+                
+			}
+	    }
+		EU_single_europ_evro = {
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+                consumer_goods_expected_value = -0.05
+                production_factory_max_efficiency_factor = 0.10
+                trade_opinion_factor = 0.25
+                political_power_gain = -0.10
+                
+			}
+	    }
+		EU_single_evror = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_expected_value = -0.05 
+				production_factory_max_efficiency_factor = 0.05 
+				trade_opinion_factor = 0.15 # 
+				production_speed_buildings_factor = 0.05 
+                
+			}
+	    }
+	}
   	}
-}

@@ -16,7 +16,7 @@ shared_focus = {
 
     completion_reward = {
         add_political_power = 100
-        add_stability = 0.05
+        country_event = { id = european_union.2 }
         set_global_flag = eu_legacy
     }
 } 
@@ -37,8 +37,7 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = {
-        add_political_power = 75
-        add_war_support = 0.03
+        country_event = { id = european_union.3 }
     }
 }
 
@@ -58,9 +57,9 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
+        country_event = { id = european_union.4 }
         add_political_power = 50
-        research_speed_factor = 0.05
-        add_relation_modifier = { target = FRA modifier = hanover_summit_rapprochement }
+
         set_country_flag = hanover_summit
     } 
 }
@@ -82,7 +81,7 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 60
+        country_event = { id = european_union.5 }
         set_country_flag = delors_report_prepared
     } 
 }
@@ -107,7 +106,8 @@ shared_focus = {
 
     completion_reward = { 
         add_political_power = 80
-        add_stability = 0.03
+        country_event = { id = european_union.6 }
+
     } 
 }
 
@@ -122,13 +122,19 @@ shared_focus = {
 
     available = {
         has_idea = EU_member
+        has_idea = EU_single_europ_evro
     }
 
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100
-        add_war_support = 0.05
+        every_country = {
+            limit = { has_idea = EU_member }
+            add_timed_idea = {
+                idea = EU_single_europ_evro
+                days = 1095
+            }
+        }
     } 
 }
 
@@ -272,14 +278,17 @@ shared_focus = {
 
     available = {
         has_idea = EU_member
+        NOT = {
+            has_idea = EU_single_europ_evro
+        }
     }
 
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = {
-        add_political_power = 250
+        country_event = { id = european_union.8 }
         set_country_flag = euro_introduced
-        add_stability = 0.10
+        
     }
 }
 
@@ -299,8 +308,8 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100
         set_country_flag = maastricht_negotiations_ongoing
+        country_event = { id = european_union.10 }
     } 
 }
 
@@ -314,6 +323,7 @@ shared_focus = {
     cost = 10
 
     available = {
+
         has_idea = EU_member
         IRE = {
             has_idea = EU_member
@@ -325,6 +335,7 @@ shared_focus = {
     completion_reward = { 
         add_political_power = 80
         add_relation_modifier = { target = IRL modifier = dublin_council_agreement }
+        
     } 
 }
 
@@ -341,14 +352,15 @@ shared_focus = {
         has_idea = EU_member
         ITA = {
             has_idea = EU_member
+        
         }
     }
 
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 100
-        add_stability = 0.05
+        country_event = { id = european_union.11 }
+
     } 
 }
 
@@ -365,13 +377,12 @@ shared_focus = {
 
     available = {
         has_idea = EU_member
+       
     }
 
     search_filters = { FOCUS_FILTER_POLITICAL } 
 
     completion_reward = { 
-        add_political_power = 200
-        add_stability = 0.10
         set_country_flag = maastricht_signed
     } 
 }

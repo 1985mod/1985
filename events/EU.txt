@@ -27,3 +27,141 @@ country_event = {
         remove_ideas = EU_member
     }
 }
+country_event = {
+    id = european_union.2
+    title = european_union.2.a
+    desc = european_union.2.d
+    #picture = GFX_report_event_generic_gay
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = european_union.2.c
+    }
+}
+country_event = {
+    id = european_union.3
+    title = european_union.3.a
+    desc = european_union.3.d
+    
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = european_union.3.c
+        every_country = {
+            limit = { has_idea = EU_member }
+            add_timed_idea = {
+                idea = EU_single_europ
+                days = 730
+            }
+        }
+    }
+} 
+country_event = {
+    id = european_union.4
+    title = european_union.4.a
+    desc = european_union.4.d
+    
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = european_union.4.c
+
+    }
+}
+country_event = {
+    id = european_union.5
+    title = european_union.5.a
+    desc = european_union.5.d
+    
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = european_union.5.c
+        
+    }
+}
+country_event = {
+    id = european_union.6
+    title = european_union.6.a
+    desc = european_union.6.d
+    
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = european_union.6.c
+        
+    }
+}
+country_event = {
+    id = european_union.7
+    title = european_union.7.a
+    desc = european_union.7.d
+    
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = european_union.7.c
+        
+    }
+}
+country_event = {
+    id = european_union.8
+    title = european_union.8.a
+    desc = european_union.8.d
+    
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = european_union.8.c
+        every_country = {
+            limit = { 
+                has_idea = EU_member
+            }
+            add_ideas = EU_single_evror
+        }
+    }
+}
+country_event = {
+    id = european_union.9
+    title = european_union.9.a
+    desc = european_union.9.d
+    
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = european_union.9.c
+    }
+}
+country_event = {
+    id = european_union.10
+    title = european_union.10.a
+    desc = european_union.10.d
+    
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = european_union.10.c
+    }
+}
+country_event = {
+    id = european_union.11
+    title = european_union.11.a
+    desc = european_union.11.d
+    
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = european_union.11.c
+    }
+}
