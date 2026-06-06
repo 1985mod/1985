@@ -17,6 +17,8 @@ declare_war_on = {
 	type = civil_war
 }
 
+recruit_character = ERI_isaias_afeworki
+
 set_convoys = 10
 
 add_ideas = {

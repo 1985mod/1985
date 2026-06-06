@@ -194,4 +194,21 @@ spriteTypes = {
 		textureFile = "gfx/leaders/MRT/Maaouya_Ould.dds"
 	}
 
+	##MRT##
+	spriteType = {
+		name = GFX_portrait_MZB_Samora_Machel
+		textureFile = "gfx/leaders/MZB/Samora_Machel.dds"
+	}
+
+	##REN##
+	spriteType = {
+		name = GFX_Portrait_afonso_dhlakama
+		textureFile = "gfx/leaders/REN/Portrait_afonso_dhlakama.dds"
+	}
+
+	##ERI##
+	spriteType = {
+		name = GFX_Portrait_isaias_afeworki
+		textureFile = "gfx/leaders/ERI/Portrait_isaias_afeworki.dds"
+	}
 }
