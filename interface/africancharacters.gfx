@@ -130,8 +130,8 @@ spriteTypes = {
 	}
     ##MLI##
 	spriteType = {
-		name = GFX_portrait_MLI_Moussa_Traoré
-		textureFile = "gfx/leaders/MLI/Moussa_Traoré.dds"
+		name = GFX_portrait_MLIMoussa_Traore
+		textureFile = "gfx/leaders/MLI/Moussa_Traore.dds"
 	}
     ##GAB##
 	spriteType = {

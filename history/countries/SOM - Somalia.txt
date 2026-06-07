@@ -20,7 +20,6 @@ set_technology = {
 }
 
 recruit_character = SOM_Mohamed_Siad_Barre
-promote_character = SOM_Mohamed_Siad_Barre
 
 set_convoys = 10
 

@@ -1,6 +1,6 @@
 characters = {
-	IVO_Félix_Houphouët-Boigny ={
-		name = IVO_Félix_Houphouët-Boigny
+	IVO_Feix_Houphouet_Boigny ={
+		name = IVO_Feix_Houphouet_Boigny
 		portraits={
 			civilian={
 				large= GFX_portrait_IVO_Félix_Houphouët-Boigny

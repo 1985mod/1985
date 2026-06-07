@@ -32,7 +32,6 @@ add_ideas = {
 }
 
 recruit_character = ETH_Mengistu_Haile_Mariam
-promote_character = ETH_Mengistu_Haile_Mariam
 
 set_politics = {
 	ruling_party = communism

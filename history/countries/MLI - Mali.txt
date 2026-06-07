@@ -9,7 +9,7 @@ set_technology = {
 
 set_convoys = 0
 
-recruit_character = MLI_Moussa_Traoré
+recruit_character = MLI_Moussa_Traore
 
 set_politics = {
 	ruling_party = neutrality

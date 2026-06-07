@@ -1,6 +1,6 @@
 characters = {
-	CHA_Hissène_Habré ={
-		name = CHA_Hissène_Habré
+	CHA_Hissene_Habre ={
+		name = CHA_Hissene_Habre
 		portraits={
 			civilian={
 				large= GFX_portrait_CHA_Hissène_Habré
