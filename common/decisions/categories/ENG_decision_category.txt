@@ -1,19 +1,9 @@
-IRA_conflict_category = {
+ira_conflict_category = {
     visible = {
-        has_completed_focus = IRA_no_deal_was_reached
+        has_completed_focus = NRA_no_deal_was_reached
     }
     allowed = {
     }
-    icon = GFX_IRA_category_icon
-    priority = 50
-}
-IRA_peace_category = {
-    visible = {
-        has_completed_focus = IRA_end_of_IRA
-    }
-    allowed = {
-    original_tag = ENG
-    }
-    icon = GFX_IRA_category_icon
+    icon = GFX_ira_category_icon
     priority = 50
 }

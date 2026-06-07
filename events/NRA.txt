@@ -1,4 +1,4 @@
-add_namespace = IRA_focus
+add_namespace = IRA_focusRA
 
 
 country_event = {

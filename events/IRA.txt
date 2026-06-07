@@ -10,7 +10,7 @@ country_event = {
     hidden = yes
     
     option = {
-        119 = { remove_dynamic_modifier = { modifier = northern_ireland_IRA_activity } }
+        119 = { remove_dynamic_modifier = { modifier = northern_ireland_ira_activity } }
     }
 }
 
@@ -24,7 +24,7 @@ country_event = {
     hidden = yes
     
     option = {
-        119 = { add_dynamic_modifier = { modifier = northern_ireland_IRA_activity } }
+        119 = { add_dynamic_modifier = { modifier = northern_ireland_ira_activity } }
     }
 }
 
