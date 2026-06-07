@@ -525,6 +525,164 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
+			set_country_flag = USA_iraq_invasion_in_kuwait_flag
+			mark_focus_tree_layout_dirty = yes
+	    }
+	}
+
+    focus = { 
+        id = USA_economic_blockade_of_iraq
+		relative_position_id = USA_investments_and_diplomacy_are_our_everything
+		prerequisite = { focus = USA_investments_and_diplomacy_are_our_everything  }
+		allow_branch = { has_country_flag = USA_iraq_invasion_in_kuwait_flag }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 7.2
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_we_remain_democrats
+		relative_position_id = USA_economic_blockade_of_iraq
+		prerequisite = { focus = USA_economic_blockade_of_iraq  }
+        mutually_exclusive = { focus = USA_we_need_to_act_more_decisively }
+        icon = GFX_	
+        x = -3
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_freezing_of_iraqi_assets
+		relative_position_id = USA_we_remain_democrats
+		prerequisite = { focus = USA_we_remain_democrats  }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_diplomatic_isolation_of_iraq
+		relative_position_id = USA_freezing_of_iraqi_assets
+		prerequisite = { focus = USA_freezing_of_iraqi_assets  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_troop_withdrawal_or_war
+		relative_position_id = USA_diplomatic_isolation_of_iraq
+		prerequisite = { focus = USA_diplomatic_isolation_of_iraq  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_we_need_to_act_more_decisively
+		relative_position_id = USA_economic_blockade_of_iraq
+		prerequisite = { focus = USA_economic_blockade_of_iraq  }
+        mutually_exclusive = { focus = USA_we_remain_democrats }
+        icon = GFX_	
+        x = 3
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_preparation_for_invasion
+		relative_position_id = USA_we_need_to_act_more_decisively
+		prerequisite = { focus = USA_we_need_to_act_more_decisively  }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_support_for_the_kuwaiti_resistance
+		relative_position_id = USA_preparation_for_invasion
+		prerequisite = { focus = USA_preparation_for_invasion  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_landing_in_basra
+		relative_position_id = USA_support_for_the_kuwaiti_resistance
+		prerequisite = { focus = USA_support_for_the_kuwaiti_resistance  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_a_new_model_of_collective_security
+		relative_position_id = USA_international_sanctions
+		prerequisite = { focus = USA_troop_withdrawal_or_war focus = USA_landing_in_basra  }
+        icon = GFX_	
+        x = 0
+        y = 4
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_international_sanctions
+		relative_position_id = USA_economic_blockade_of_iraq
+		prerequisite = { focus = USA_we_remain_democrats focus = USA_we_need_to_act_more_decisively  }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 5
+		
+        completion_reward = {
 
 	    }
 	}

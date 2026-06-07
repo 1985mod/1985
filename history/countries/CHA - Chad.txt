@@ -13,7 +13,7 @@ set_technology = {
 
 set_convoys = 0
 
-recruit_character = CHA_Hissène_Habré
+recruit_character = CHA_Hissene_Habre
 
 set_politics = {
 	ruling_party = neutrality

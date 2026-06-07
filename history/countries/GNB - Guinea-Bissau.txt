@@ -7,7 +7,7 @@ set_technology = {
 
 set_convoys = 10
 
-recruit_character = GNB_João_Bernardo
+recruit_character = GNB_Joao_Bernardo
 
 set_politics = {
 	ruling_party = communism

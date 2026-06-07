@@ -10,7 +10,6 @@ set_technology = {
 set_convoys = 5
 
 recruit_character = MAD_Didier_Ratsiraka
-promote_character = MAD_Didier_Ratsiraka
 
 
 set_politics = {

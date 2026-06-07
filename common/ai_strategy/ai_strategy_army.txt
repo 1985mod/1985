@@ -25,11 +25,11 @@ SOV_build_army = {
 	
     abort_when_not_enabled = yes
 	
-    ai_strategy = {
-       type = build_army
-       id = infantry
-       value = 250
-    }
+        ai_strategy = {
+            type = front_armor_score
+            id = SOV
+            value = 165
+        }   
 }
 
 USA_build_army = {

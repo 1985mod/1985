@@ -1,6 +1,6 @@
 characters = {
-	GNB_João_Bernardo ={
-		name = GNB_João_Bernardo
+	GNB_Joao_Bernardo ={
+		name = GNB_Joao_Bernardo
 		portraits={
 			civilian={
 				large= GFX_portrait_GNB_João_Bernardo
