@@ -1,11 +1,79 @@
 ﻿l_english:
- ira_conflict_category: "The Irish Crisis"
- ira_conflict_category_desc: "The Irish Republican Army (IRA) is a paramilitary organization seeking to detach Northern Ireland from the United Kingdom and unite it with the Republic of Ireland. This organization poses a direct threat to our territorial integrity and must be eliminated. Northern Ireland has been, is, and will forever remain an integral part of our Kingdom."
+#decisions
+ IRA_conflict_category: "The Irish Crisis"
+ IRA_conflict_category_desc: "The Irish Republican Army (IRA) is a paramilitary organization seeking to detach Northern Ireland from the United Kingdom and unite it with the Republic of Ireland. This organization poses a direct threat to our territorial integrity and must be eliminated. Northern Ireland has been, is, and will forever remain an integral part of our Kingdom."
  
- ira_give_up_to_IRA: "Concede to the IRA"
- ira_give_up_to_IRA_desc: "The prolonged conflict has exhausted our resources. We are forced to admit that a military solution is beyond our reach. The only way out is to persuade the Irish government to influence the IRA and offer Northern Ireland broad autonomy within the Kingdom. This is a difficult but necessary step toward peace."
+ IRA_give_up_to_IRA: "Concede to the IRA"
+ IRA_give_up_to_IRA_desc: "The prolonged conflict has exhausted our resources. We are forced to admit that a military solution is beyond our reach. The only way out is to persuade the Irish government to influence the IRA and offer Northern Ireland broad autonomy within the Kingdom. This is a difficult but necessary step toward peace."
  
- ira_military_operation: "Launch Military Operation in Ulster"
- ira_military_operation_desc: "His Majesty's Government has run out of patience. The separatists have crossed every line. The time has come for decisive and ruthless action. We will deploy all necessary forces to dismantle the IRA's terrorist network, hunting them down wherever they hide. Let them condemn us — preserving the integrity of the Kingdom matters more. Northern Ireland is forever part of Great Britain."
+ IRA_military_operation: "Launch Military Operation in Ulster"
+ IRA_military_operation_desc: "His Majesty's Government has run out of patience. The separatists have crossed every line. The time has come for decisive and ruthless action. We will deploy all necessary forces to dismantle the IRA's terrorist network, hunting them down wherever they hide. Let them condemn us — preserving the integrity of the Kingdom matters more. Northern Ireland is forever part of Great Britain."
  
- northern_ireland_ira_activity: "IRA Activity"
+ IRA_peace_category: "Peaceful Resolution of the IRA Conflict"
+ IRA_peace_category_desc: "Ireland has agreed to a peaceful resolution of the conflict in Northern Ireland. We must propose a plan of action to finally resolve this issue."
+ 
+ IRA_offer_autonomy: "Offer Autonomy to Northern Ireland"
+ IRA_offer_autonomy_desc: "We will propose to the Irish government that the IRA conflict be resolved by granting Northern Ireland autonomy within the United Kingdom. This is a compromise that may satisfy both sides."
+ 
+ IRA_demand_recognition: "Demand Recognition of Territorial Integrity"
+ IRA_demand_recognition_desc: "We will demand that the Irish government immediately recognize Northern Ireland as an integral part of our Kingdom. The IRA must be officially outlawed, and Irish authorities must publicly declare that Northern Ireland is our historic land."
+
+ # Modifiers
+ northern_ireland_IRA_activity: "IRA Activity"
+ northern_ireland_autonomy: "Autonomous Northern Ireland"
+ northern_ireland_IRA_activity_foreign: "IRA Activity (Occupation)"
+ 
+ # Global flags
+ IRA_conflict_resolved: "IRA Conflict Resolved"
+ 
+ # Decisions
+ IRA_start_treaty: "Start Negotiations with Ireland"
+ IRA_start_treaty_desc: "The IRA and their terrorist organization are a serious thorn in our side. The time has come to act. We have two paths: diplomatic pressure on Ireland to force the IRA to cease their activities, or complete military suppression, even if it goes against our democratic principles."
+ 
+ # Focuses
+ IRA_end_of_IRA: "The End of the IRA"
+ IRA_end_of_IRA_desc: "The IRA continues its activities in practice, but the Irish government's agreement to cooperate on this matter guarantees that the organization will cease to exist in the near future."
+ 
+ IRA_no_deal_was_reached: "No Deal Reached"
+ IRA_no_deal_was_reached_desc: "Unfortunately, Ireland has refused to cooperate on the matter of their own terrorist organization. Very well — if they won't solve the problem peacefully, we will destroy the IRA ourselves."
+
+ IRA_war_with_ireland: "War with Ireland"
+ IRA_war_with_ireland_desc: "No compromise has been reached. We must fully occupy Ireland to integrate the Irish people and finally crush the IRA."
+ 
+ IRA_British_triumph: "British Triumph"
+ IRA_British_triumph_desc: "We have achieved complete victory in the Irish region. This is a triumph for our nation and our leader — Margaret Thatcher. The sun will rise again over Britain, sooner or later."
+ 
+ IRA_British_shame: "Shame of Britain"
+ IRA_British_shame_desc: "We have suffered a devastating defeat in Ireland. This is a disgrace to our nation and to our miserable excuse for a leader — Margaret Thatcher."
+ 
+ IRA_we_losed_to_IRA: "Defeat by the IRA"
+ IRA_we_losed_to_IRA_desc: "Disgrace. We have been defeated by common terrorists. This is an humiliation for the entire nation."
+ 
+ IRA_North_ireland_authonomy: "Northern Irish Autonomy"
+ IRA_North_ireland_authonomy_desc: "We have managed to secure autonomy for Northern Ireland. It is not a triumph, but a respectable, moderate victory for our nation."
+ 
+ IRA_inegrated_North_Ireland: "Integration of Northern Ireland"
+ IRA_inegrated_North_Ireland_desc: "Hooray! We have successfully integrated Northern Ireland. This is a great victory and a fitting conclusion to this difficult struggle."
+ 
+ # Effects(focus tree)
+ IRA_conflict_decisions_unlocked: "Unlocks a decision category for resolving the conflict in Northern Ireland"
+ IRA_peace_decisions_unlocked: "Unlocks a decision category for integrating Northern Ireland"
+
+#events
+ IRA_focus.1.t: "Great Britain Proposes Cooperation to Resolve the IRA Conflict"
+ IRA_focus.1.d: "The British government has sent us an official letter proposing an end to the confrontation with the IRA. In return, they guarantee the security and inviolability of our current territorial borders."
+ IRA_focus.1.a: "Accept Cooperation"
+ IRA_focus.1.b: "Reject the Proposal"
+ 
+ IRA_focus.2.t: "Great Britain Requests Autonomy for Northern Ireland"
+ IRA_focus.2.d: "The British government is morally broken, yet still standing. Now the choice is ours: help a wounded tiger or leave it to die. But we must remember — if we abandon it now, this may come back to haunt us later."
+ IRA_focus.2.a: "Helping a predator is a bad idea"
+ IRA_focus.2.b: "We will help the wounded tiger"
+ 
+ ENG_North_ireland.1.t: "Ireland Has Agreed to Cooperate"
+ ENG_North_ireland.1.d: "The Irish government has approved our proposal for joint efforts to resolve the IRA issue."
+ ENG_North_ireland.1.a: "Excellent!"
+ 
+ ENG_North_ireland.2.t: "Ireland Has Refused to Cooperate"
+ ENG_North_ireland.2.d: "The Irish government has rejected our proposal for a peaceful resolution to the IRA conflict. We will act alone."
+ ENG_North_ireland.2.a: "Damn it!"
