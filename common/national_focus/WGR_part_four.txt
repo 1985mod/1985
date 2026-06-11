@@ -1,0 +1,130 @@
+focus_tree = {
+	id = WGR_part_four
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WGR
+		}
+	}
+	default = no
+	focus = {
+		id = WGR_snova_edin
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 21
+		y = 0
+
+	}
+	focus = {
+		id = WGR_i_nedelimi
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_snova_edin
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = WGR_integragsia_vostok_germany
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_i_nedelimi
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = WGR_decommuse
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_i_nedelimi
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = WGR_now_land
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_integragsia_vostok_germany
+		}
+		prerequisite = {
+			focus = WGR_decommuse
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = WGR_center_europe
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_i_nedelimi
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = WGR_germany_cold_war
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_i_nedelimi
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = WGR_now_europe
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_i_nedelimi
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = WGR_strategi_nato
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_cold_war
+		}
+		prerequisite = {
+			focus = WGR_now_europe
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = WGR_future_germany
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_center_europe
+		}
+		prerequisite = {
+			focus = WGR_strategi_nato
+		}
+		prerequisite = {
+			focus = WGR_now_land
+		}
+		x = 21
+		y = 4
+
+	}
+}

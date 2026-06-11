@@ -1,0 +1,391 @@
+focus_tree = {
+	id = WGR_part_three
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WGR
+		}
+	}
+	default = no
+	focus = {
+		id = WGR_germany_peremen
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 25
+		y = 0
+
+	}
+	focus = {
+		id = WGR_ostpolic
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_peremen
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = WGR_vnytrenaa_politica
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_ostpolic
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = WGR_migrant_door
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_vnytrenaa_politica
+		}
+		mutually_exclusive = {
+			focus = WGR_germany_nazi
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = WGR_germany_nazi
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_vnytrenaa_politica
+		}
+		mutually_exclusive = {
+			focus = WGR_migrant_door
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = WGR_lgot_germany
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_nazi
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = WGR_migrant_ploho
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_lgot_germany
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = WGR_germany_commynity
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_ostpolic
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = WGR_now_germany_arhitector
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_commynity
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = WGR_germany_rynok
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_commynity
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = WGR_edinoe_nation
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_rynok
+		}
+		prerequisite = {
+			focus = WGR_now_germany_arhitector
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = WGR_investicia_europe
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_edinoe_nation
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = WGR_prom_europe
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_edinoe_nation
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = WGR_economic_zapad
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_edinoe_nation
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = WGR_germany_wonderfol
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_investicia_europe
+		}
+		prerequisite = {
+			focus = WGR_prom_europe
+		}
+		prerequisite = {
+			focus = WGR_economic_zapad
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = WGR_vostok_hsatait
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_ostpolic
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = WGR_sov_otnoshenia
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_vostok_hsatait
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = WGR_reform_gorbachev
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_sov_otnoshenia
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = WGR_2+4
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_reform_gorbachev
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = WGR_zapad_leader
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_2+4
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = WGR_work_migrant
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_migrant_door
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = WGR_migrant_good
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_work_migrant
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = WGR_nash_vibor
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_migrant_ploho
+			focus = WGR_migrant_good
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = WGR_voprosi
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_vostok_hsatait
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = WGR_protest_gdr
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_voprosi
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = WGR_leispeg
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_protest_gdr
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = WGR_berlin_wall
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_leispeg
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = WGR_dialog_vostok
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_berlin_wall
+		}
+		prerequisite = {
+			focus = WGR_zapad_leader
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = WGR_germany_bydyshie
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_dialog_vostok
+		}
+		prerequisite = {
+			focus = WGR_germany_wonderfol
+		}
+		prerequisite = {
+			focus = WGR_nash_vibor
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = WGR_happy_day
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_bydyshie
+		}
+		mutually_exclusive = {
+			focus = WGR_razdelenyi_narod
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = WGR_razdelenyi_narod
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_bydyshie
+		}
+		mutually_exclusive = {
+			focus = WGR_happy_day
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = WGR_drygoe_obedinenie
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_razdelenyi_narod
+		}
+		x = 24
+		y = 10
+
+	}
+}
