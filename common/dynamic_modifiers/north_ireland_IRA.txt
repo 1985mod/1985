@@ -1,4 +1,4 @@
-northern_ireland_ira_activity = {
+northern_ireland_IRA_activity = {
     icon = GFX_idea_unknown
     
     enable = {
@@ -18,10 +18,10 @@ northern_ireland_autonomy = {
         has_global_flag = northern_ireland_autonomy_unlocked
     }
     local_building_slots = 2
-    monthly_population = 50
+    monthly_population = 0.5
     local_manpower = -0.7
 }
-northern_ireland_ira_activity_foreign = {
+northern_ireland_IRA_activity_foreign = {
     icon = GFX_idea_unknown
     
     enable = {
