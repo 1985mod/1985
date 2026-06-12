@@ -2,7 +2,7 @@ focus_tree = {
 	id = generic_focus
 	
 		country = {
-				factor = 1
+				factor = 100
 				
 				#Albania
 				modifier = { add = 10
@@ -11,6 +11,9 @@ focus_tree = {
 				#Italian Releasables
 				modifier = { add = 10
 					tag = LBV }
+
+				modifier = { add = 100
+					tag = BUL }
 					
 				#Yugoslav Releasables
 				modifier = { add = 10
