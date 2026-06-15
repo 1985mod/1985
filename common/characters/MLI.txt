@@ -1,12 +1,12 @@
 characters = {
-	MLI_Moussa_Traoré ={
-		name = MLI_Moussa_Traoré
+	MLI_Moussa_Traore ={
+		name = MLI_Moussa_Traore
 		portraits={
 			civilian={
-				large= GFX_portrait_MLI_Moussa_Traoré
+				large= GFX_portrait_MLIMoussa_Traore
 			}
 			army = {
-				large = GFX_portrait_MLI_Moussa_Traoré
+				large = GFX_portrait_MLIMoussa_Traore
 			}
 		}
 		country_leader={

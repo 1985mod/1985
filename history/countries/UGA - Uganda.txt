@@ -4,7 +4,7 @@
 set_technology = {
 	infantry_weapons = 1
 }
-recruit_character = UGA_Bazilio_Olara-Оkello
+recruit_character = UGA_bazilio_olara_okello
 recruit_character = UGA_Milton_Obote
 
 set_convoys = 0

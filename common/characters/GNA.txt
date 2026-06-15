@@ -1,6 +1,6 @@
 characters = {
-	GNA_Lansana_Contе ={
-		name = GNA_Lansana_Contе
+	GNA_Lansana_Conte ={
+		name = GNA_Lansana_Conte
 		portraits={
 			civilian={
 				large= GFX_portrait_GNA_Lansana_Conté

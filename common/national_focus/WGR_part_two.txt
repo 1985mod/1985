@@ -1,0 +1,436 @@
+focus_tree = {
+	id = WGR_part_two
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = 
+		}
+	}
+	default = no
+	focus = {
+		id = WGR_eras_of_tension
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 25
+		y = 0
+
+	}
+	focus = {
+		id = WGR_europe_leader
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_eras_of_tension
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = WGR_franco_germany
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_europe_leader
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = WGR_bundesver
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_franco_germany
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = WGR_leopard
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_bundesver
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = WGR_vozdyh_germany
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_bundesver
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = WGR_compyter_economic
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_franco_germany
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = WGR_rasvitie_microelectronic
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_compyter_economic
+		}
+		mutually_exclusive = {
+			focus = WGR_export_tovar
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = WGR_support_siemes
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_rasvitie_microelectronic
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = WGR_rasvite_rodnye_companiye
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_support_siemes
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = WGR_volkswagen
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_support_siemes
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = WGR_export_tovar
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_compyter_economic
+		}
+		mutually_exclusive = {
+			focus = WGR_rasvitie_microelectronic
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = WGR_modern_zabod_rure
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_export_tovar
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = WGR_gos_investuy
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_modern_zabod_rure
+			focus = WGR_support_siemes
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = WGR_ger_zavod
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_modern_zabod_rure
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = WGR_germany_dvigali
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_modern_zabod_rure
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = WGR_rein_chydo
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_gos_investuy
+			focus = WGR_ger_zavod
+			focus = WGR_germany_dvigali
+			focus = WGR_volkswagen
+			focus = WGR_rasvite_rodnye_companiye
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = WGR_ecology_reform
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_europe_leader
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = WGR_dogovor_rsmd
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_ecology_reform
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = WGR_fight_radicals
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_dogovor_rsmd
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = WGR_federal_police
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_dogovor_rsmd
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = WGR_rasvitie_nuke
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_dogovor_rsmd
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = WGR_bundestag
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_fight_radicals
+		}
+		prerequisite = {
+			focus = WGR_federal_police
+		}
+		prerequisite = {
+			focus = WGR_rasvitie_nuke
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = WGR_smotret_vostok
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_ecology_reform
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = WGR_cold_war
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_smotret_vostok
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = WGR_ybrat_napryagy_zapad_vostok
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_smotret_vostok
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = WGR_oslab_vostok
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_smotret_vostok
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = WGR_pacific
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_cold_war
+		}
+		prerequisite = {
+			focus = WGR_ybrat_napryagy_zapad_vostok
+		}
+		prerequisite = {
+			focus = WGR_oslab_vostok
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = WGR_stabili_democratic
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_bundestag
+		}
+		prerequisite = {
+			focus = WGR_pacific
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = WGR_nato_ycheniya
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_bundesver
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = WGR_nato_sil
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_vozdyh_germany
+		}
+		prerequisite = {
+			focus = WGR_nato_ycheniya
+		}
+		prerequisite = {
+			focus = WGR_leopard
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = WGR_plan_rein
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_nato_sil
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = WGR_tank_doktrine
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_nato_sil
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = WGR_europe_hit
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_tank_doktrine
+		}
+		prerequisite = {
+			focus = WGR_plan_rein
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = WGR_end_cold_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_stabili_democratic
+		}
+		prerequisite = {
+			focus = WGR_rein_chydo
+		}
+		prerequisite = {
+			focus = WGR_europe_hit
+		}
+		x = 20
+		y = 9
+		completion_reward = {
+			load_focus_tree = WGR_part_three
+		}
+	}
+}

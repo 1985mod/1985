@@ -1,0 +1,116 @@
+focus_tree = {
+	id = WGR_part_one
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = WGR
+		}
+	}
+	default = no
+
+	focus = {
+		id = WGR_germany_nation
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 9
+		y = 0
+	}
+
+	focus = {
+		id = WGR_germany_kurs
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = { focus = WGR_germany_nation }
+		x = 9
+		y = 1
+	}
+
+	focus = {
+		id = WGR_economic_modern
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = { focus = WGR_germany_kurs }
+		x = 6
+		y = 2
+	}
+
+	focus = {
+		id = WGR_avtomatic_zavod
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = { focus = WGR_economic_modern }
+		x = 5
+		y = 3
+	}
+
+	focus = {
+		id = WGR_nalogI_klass
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = { focus = WGR_economic_modern }
+		x = 7
+		y = 3
+	}
+
+	focus = {
+		id = WGR_doctrine_kolya
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = { focus = WGR_germany_kurs }
+		x = 9
+		y = 2
+	}
+
+	focus = {
+		id = WGR_worldlaw_and_safety
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = { focus = WGR_germany_kurs }
+		x = 12
+		y = 2
+	}
+
+	focus = {
+		id = WGR_nato_and_usa
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = { focus = WGR_worldlaw_and_safety }
+		x = 11
+		y = 3
+	}
+
+	focus = {
+		id = WGR_europa
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = { focus = WGR_worldlaw_and_safety }
+		x = 13
+		y = 3
+	}
+
+	focus = {
+		id = WGR_course_determination
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = { focus = WGR_doctrine_kolya }
+		prerequisite = { focus = WGR_avtomatic_zavod }
+		prerequisite = { focus = WGR_nalogI_klass }
+		prerequisite = { focus = WGR_nato_and_usa }
+		prerequisite = { focus = WGR_europa }
+		x = 9
+		y = 4
+	}
+
+	focus = {
+		id = WGR_rassvet_germany
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = { focus = WGR_course_determination } # Добавил логическую связь
+		x = 9
+		y = 5
+		completion_reward = {
+			load_focus_tree = WGR_part_two
+		}
+	}
+}
