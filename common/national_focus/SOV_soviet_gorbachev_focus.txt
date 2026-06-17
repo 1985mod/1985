@@ -104,7 +104,7 @@ focus_tree = {
         y = 1
         relative_position_id = SOV_the_beginning_of_the_anti_alcohol_campaign
         prerequisite = { focus = SOV_the_beginning_of_the_anti_alcohol_campaign }
-        cost = 1
+        cost = 2
         completion_reward = {
 			235 = {
 				remove_building = {
@@ -128,7 +128,7 @@ focus_tree = {
         y = 1
         relative_position_id = SOV_the_beginning_of_the_anti_alcohol_campaign
         prerequisite = { focus = SOV_the_beginning_of_the_anti_alcohol_campaign }
-        cost = 1
+        cost = 2
         completion_reward = {
         }
     }
@@ -161,7 +161,7 @@ focus_tree = {
         relative_position_id = SOV_geneva_meeting
         prerequisite = { focus = SOV_geneva_meeting}
         allow_branch = {has_country_flag = SOV_elimination_of_nuclear_weapons}
-        cost = 5
+        cost = 7.2
         completion_reward = {
             add_war_support = -0.10 #event#
         }
@@ -254,7 +254,7 @@ focus_tree = {
         y = 1
         relative_position_id =  SOV_the_fight_against_unearned_income
         prerequisite = { focus = SOV_the_fight_against_unearned_income}
-        cost = 5
+        cost = 10
         completion_reward = {
         }
     }
@@ -266,7 +266,7 @@ focus_tree = {
         y = 1
         relative_position_id =  SOV_the_fight_against_unearned_income
         prerequisite = { focus = SOV_the_fight_against_unearned_income}
-        cost = 5
+        cost = 10
         completion_reward = {
         }
     }
@@ -292,7 +292,7 @@ focus_tree = {
         y = 1
         relative_position_id = SOV_the_fall_of_zheltoksan
         prerequisite = { focus = SOV_the_fall_of_zheltoksan }
-        cost = 5
+        cost = 6.5
         completion_reward = { #event#
             set_country_flag = SOV_visit_czechoslovakia
             mark_focus_tree_layout_dirty = yes

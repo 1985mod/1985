@@ -252,3 +252,40 @@ news_event = {
 	   NOT = { has_global_flag = usa_victory_democrats }
 	}
 }
+
+news_event = {
+	id = news.11 ## Ирак выйграл в ИРАНО-ИРАКСКОЙ ##
+	title = news.11.t
+	desc = news.11.desc
+	picture = GFX_news_victory_iraq_in_iran_iraq_war
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = iraq_victory_in_iran_iraq_war
+	}
+	
+	trigger = {
+	   NOT = { has_global_flag = iraq_victory_in_iran_iraq_war }
+	   IRQ = { controls_state = 421 }
+	   IRQ = { controls_state = 413 }
+	}
+}
+
+news_event = {
+	id = news.12 ## Иран выйграл в ИРАНО-ИРАКСКОЙ ##
+	title = news.12.t
+	desc = news.12.desc
+	picture = GFX_news_victory_iran_in_iran_iraq_war
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = iran_victory_in_iran_iraq_war
+	}
+	
+	trigger = {
+	   NOT = { has_global_flag = iran_victory_in_iran_iraq_war }
+	   PER = { controls_state = 1011 }
+	}
+}

@@ -4,7 +4,7 @@
     country = {
         factor = 0
         modifier = {
-            add = 4
+            add = 2
             tag = SOV
         }
     }
@@ -14,110 +14,193 @@
     continuous_focus_position = { x = 2000 y = 1450 }
 
     focus = { 
-        id = SOV_referendum_on_the_preservation_of_the_ussr
+        id = SOV_introduce_troops_into_the_baltic_states
         icon = GFX_
         x = 10
         y = 0
-        cost = 1
+        cost = 2
+        
 		completion_reward = {
-			}
-        }
+
+		}
+    }
+
+    focus = { 
+        id = SOV_yeltsins_attempted_resignation
+        relative_position_id = SOV_introduce_troops_into_the_baltic_states
+        prerequisite = { focus = SOV_introduce_troops_into_the_baltic_states }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 2
+        
+		completion_reward = {
+
+		}
+    }
+
+    focus = { 
+        id = SOV_referendum_on_the_preservation_of_the_ussr
+        relative_position_id = SOV_introduce_troops_into_the_baltic_states
+        prerequisite = { focus = SOV_introduce_troops_into_the_baltic_states }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 1.4
+        
+		completion_reward = {
+
+		}
+    }
+
+    focus = { 
+        id = SOV_iii_congress_of_peoples_deputies_of_the_rsfsr
+        relative_position_id = SOV_introduce_troops_into_the_baltic_states
+        prerequisite = { focus = SOV_introduce_troops_into_the_baltic_states }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 1
+        
+		completion_reward = {
+
+		}
+    }
+
+    focus = { 
+        id = SOV_introduce_troops_into_moscow
+        relative_position_id = SOV_referendum_on_the_preservation_of_the_ussr
+        prerequisite = { focus = SOV_referendum_on_the_preservation_of_the_ussr }
+        prerequisite = { focus = SOV_yeltsins_attempted_resignation }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 1
+        
+		completion_reward = {
+
+		}
+    }
+
+    focus = { 
+        id = SOV_april_price_increase
+        relative_position_id = SOV_referendum_on_the_preservation_of_the_ussr
+        prerequisite = { focus = SOV_referendum_on_the_preservation_of_the_ussr }
+        prerequisite = { focus = SOV_iii_congress_of_peoples_deputies_of_the_rsfsr }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 1
+        
+		completion_reward = {
+
+		}
+    }
 
     focus = { 
         id = SOV_novo_ogaryovo_trial
         icon = GFX_NONE
         x = 0
-        y = 1
+        y = 2
         relative_position_id = SOV_referendum_on_the_preservation_of_the_ussr
-        prerequisite = { focus = SOV_referendum_on_the_preservation_of_the_ussr }
+        prerequisite = { focus = SOV_introduce_troops_into_moscow }
+        prerequisite = { focus = SOV_april_price_increase }
+        cost = 3
+        completion_reward = {
+
+        }
+    }
+
+    focus = { 
+        id = SOV_iv_congress_of_peoples_deputies_of_the_rsfsr
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_novo_ogaryovo_trial
+        prerequisite = { focus = SOV_novo_ogaryovo_trial }
+        cost = 2
+        completion_reward = {
+
+        }
+    }
+
+    focus = { 
+        id = SOV_decision_to_elect_a_president_within_a_short_timeframe
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_iv_congress_of_peoples_deputies_of_the_rsfsr
+        prerequisite = { focus = SOV_iv_congress_of_peoples_deputies_of_the_rsfsr }
         cost = 1
         completion_reward = {
+
         }
     }
 
     focus = { 
-        id = SOV_exacerbation
+        id = SOV_resume_the_development_of_the_treaty
         icon = GFX_NONE
-        x = 0
-        y = 2
-        relative_position_id = SOV_novo_ogaryovo_trial
-        prerequisite = { focus = SOV_novo_ogaryovo_trial }
-        cost = 2
-        completion_reward = {
-        }
-    }
-
-    focus = { 
-        id = SOV_elections_of_the_president_of_the_rsfsr
-        icon = GFX_NONE
-        x = 2
+        x = 1
         y = 1
         relative_position_id = SOV_novo_ogaryovo_trial
         prerequisite = { focus = SOV_novo_ogaryovo_trial }
-        cost = 2
+        cost = 5
         completion_reward = {
+
         }
     }
 
     focus = { 
-        id = SOV_attempt_to_sign_the_jcc
+        id = SOV_final_meeting
         icon = GFX_NONE
         x = 0
-        y = 2
-        relative_position_id = SOV_elections_of_the_president_of_the_rsfsr
-        prerequisite = { focus = SOV_elections_of_the_president_of_the_rsfsr }
-        cost = 2
+        y = 1
+        relative_position_id = SOV_resume_the_development_of_the_treaty
+        prerequisite = { focus = SOV_resume_the_development_of_the_treaty }
+        cost = 1
         completion_reward = {
+
         }
     }
 
     focus = { 
-        id = SOV_attempt_to_sign_the_jcc
+        id = SOV_what_to_do_now
         icon = GFX_NONE
         x = 0
-        y = 2
-        relative_position_id = SOV_elections_of_the_president_of_the_rsfsr
-        prerequisite = { focus = SOV_elections_of_the_president_of_the_rsfsr }
-        cost = 2
+        y = 3
+        relative_position_id = SOV_novo_ogaryovo_trial
+        prerequisite = { focus = SOV_decision_to_elect_a_president_within_a_short_timeframe focus = SOV_final_meeting }
+        cost = 2.2
         completion_reward = {
+
         }
     }
 
     focus = { 
-        id = SOV_april_price_increase
+        id = SOV_trip_to_crimea
         icon = GFX_NONE
         x = -2
         y = 1
-        relative_position_id = SOV_novo_ogaryovo_trial
-        prerequisite = { focus = SOV_novo_ogaryovo_trial }
-        cost = 1
+        relative_position_id = SOV_what_to_do_now
+        prerequisite = { focus = SOV_what_to_do_now }
+        mutually_exclusive = { focus = SOV_i_think_ill_stay_in_moscow }
+        cost = 1.5
         completion_reward = {
+
         }
     }
 
     focus = { 
-        id = SOV_strengthening_the_role_of_local_councils
-        icon = GFX_NONE
-        x = 0
-        y = 2
-        relative_position_id = SOV_april_price_increase
-        prerequisite = { focus = SOV_april_price_increase }
-        cost = 1
-        completion_reward = {
-        }
-    }
-
-    focus = { 
-        id = SOV_draft_treaty_on_the_union_of_sovereign_states
+        id = SOV_i_think_ill_stay_in_moscow
         icon = GFX_NONE
         x = 2
-        y = 3
-        relative_position_id = SOV_april_price_increase
-        prerequisite = { focus = SOV_strengthening_the_role_of_local_councils }
-        prerequisite = { focus = SOV_attempt_to_sign_the_jcc }
-        prerequisite = { focus = SOV_exacerbation }
-        cost = 2
+        y = 1
+        relative_position_id = SOV_what_to_do_now
+        prerequisite = { focus = SOV_what_to_do_now }
+        mutually_exclusive = { focus = SOV_trip_to_crimea }
+        cost = 1.5
         completion_reward = {
+
         }
     }
 }

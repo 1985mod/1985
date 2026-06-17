@@ -439,7 +439,7 @@ country_event = {
 	id = usa.19 ### ### Запись благотворительного сингла «We Are the World» «USA for Africa» ### ###
 	title = usa.19.t
 	desc = usa.19.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_we_are_world
 
 	trigger = {
 		date > 1985.1.24
@@ -490,7 +490,7 @@ country_event = {
 	id = usa.21 ### Авария авианосца USS Coral Sea ###
 	title = usa.21.t
 	desc = usa.21.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_coral_sea_aircraft_carrier_accident
 
 	trigger = {
 		date > 1985.4.7

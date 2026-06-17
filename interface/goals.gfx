@@ -12548,11 +12548,6 @@ spriteTypes = {
 	################
 
 	SpriteType = {
-		name = "GFX_focus_icon_USA_reagan_two_presidense"
-		texturefile = "gfx/interface/goals/USA/focus_icon_USA_reagan_two_presidense.dds"
-	}
-
-	SpriteType = {
 		name = "GFX_focus_icon_SOV_course_towards_stability"
 		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_course_towards_stability.dds"
 	}
@@ -12675,5 +12670,97 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_icon_SOV_release_of_dissidents"
 		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_release_of_dissidents.dds"
+	}
+
+	### USA ###
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_reagan_two_presidense"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_reagan_two_presidense.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_tough_confrontation_with_the_ussr"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_tough_confrontation_with_the_ussr.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_intensify_the_arms_race"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_intensify_the_arms_race.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_move_away_from_cold_war_politics"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_move_away_from_cold_war_politics.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_dialogue_of_detente_with_the_soviet_union"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_dialogue_of_detente_with_the_soviet_union.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_meeting_with_gorbachev"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_meeting_with_gorbachev.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_second_reykjavik_summit"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_second_reykjavik_summit.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_us_army"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_us_army.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_lessons_of_the_vietnam_war"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_lessons_of_the_vietnam_war.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_modernisation_army"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_modernisation_army.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_expand_military_bases"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_expand_military_bases.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_modernization_of_abrams_and_bradley"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_modernization_of_abrams_and_bradley.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_stop_the_rapid_growth_of_public_debt"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_stop_the_rapid_growth_of_public_debt.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_increase_in_production"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_increase_in_production.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_growth_of_technology_companies"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_growth_of_technology_companies.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_increase_spending_on_the_military_industrial_complex"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_increase_spending_on_the_military_industrial_complex.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_more_tax_cuts"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_more_tax_cuts.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_the_first_mobile_phones"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_the_first_mobile_phones.png"
 	}
 }
