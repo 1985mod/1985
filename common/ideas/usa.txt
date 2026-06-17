@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		USA_reaganomics_policy = {
-			picture = idea_ 
+			picture = reaganomics_policy 
 			allowed = {
 				original_tag = USA
 			}
@@ -20,7 +20,7 @@ ideas = {
 			}
 		}
 		USA_stronghold_of_freedom = {
-			picture = idea_ 
+			picture = stronghold_of_freedom 
 			allowed = {
 				original_tag = USA
 			}
@@ -38,7 +38,7 @@ ideas = {
 			}
 		}
 		USA_the_endless_war_on_drugs_2 = {
-			picture = idea_ 
+			picture = endless_war_on_drugs 
 			allowed = {
 				original_tag = USA
 			}
@@ -56,7 +56,7 @@ ideas = {
 			}
 		}
 		USA_the_endless_war_on_drugs = {
-			picture = idea_ 
+			picture = endless_war_on_drugs 
 			allowed = {
 				original_tag = USA
 			}
