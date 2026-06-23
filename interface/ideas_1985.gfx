@@ -15,4 +15,33 @@ spriteTypes = {
         name = "GFX_idea_EU_member"
         texturefile = "gfx/interface/ideas/european_union/EU_member.dds"
     }
+    spriteType = {
+        name = "GFX_idea_EU_member_2"
+        texturefile = "gfx/interface/ideas/european_union/EU_member_2.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_soviet_contingent_in_afghanistan"
+        texturefile = "gfx/interface/ideas/ideas/idea_sov_soviet_contingent_in_afghanistan.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_economic_stagnation"
+        texturefile = "gfx/interface/ideas/SOV/idea_economic_stagnation.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_endless_war_on_drugs"
+        texturefile = "gfx/interface/ideas/USA/endless_war_on_drugs.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_reaganomics_policy"
+        texturefile = "gfx/interface/ideas/USA/idea_reaganomics_policy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_stronghold_of_freedom"
+        texturefile = "gfx/interface/ideas/USA/idea_stronghold_of_freedom.dds"
+    }
 }

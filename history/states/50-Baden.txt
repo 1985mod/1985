@@ -1,7 +1,7 @@
 state = {
 	id = 50
 	name = "STATE_50" # Württemberg
-	manpower = 3076854 # was 5086854
+	manpower = 4501409
 
 	resources = {
 		aluminium = 6 # was: 10.000
@@ -28,14 +28,6 @@ state = {
 			industrial_complex = 1
 			air_base = 2
 		}
-		
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 8
-				industrial_complex = 2
-			}
-		}
-
 	}
 
 	provinces = {

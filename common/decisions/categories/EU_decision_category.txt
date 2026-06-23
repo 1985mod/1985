@@ -1,10 +1,11 @@
-EU_decision_cat = {
-    icon = generic_political_actions
-    allowed = {
-        always = yes
-    }
+EU_eec = {
+	allowed = {
+		has_idea = EU_member
+	}
 
-    visible = {
-        has_idea = EU_member
-    }
+	priority = 100 
+
+	visible = {
+		has_idea = EU_member
+	}
 }

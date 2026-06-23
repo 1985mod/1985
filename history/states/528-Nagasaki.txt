@@ -1,7 +1,7 @@
 state = {
 	id = 528
 	name = "STATE_528" # North Kyushu
-	manpower = 6046000 # was 9069000
+	manpower = 1594000
 
 	state_category = city # was large_city
 
@@ -43,17 +43,6 @@ state = {
 		victory_points = {
 			11925 5 # Kumamoto
 		}
-
-		1939.1.1 = {
-			buildings = {
-				dockyard = 4
-				industrial_complex = 2
-				7110 = {
-					naval_facility = 1 # Sasebo Naval Arsenal
-				}
-			}
-		}
-
 	}
 
 	provinces = {

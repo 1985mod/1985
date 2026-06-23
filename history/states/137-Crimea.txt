@@ -1,7 +1,7 @@
 state = {
 	id = 137
 	name = "STATE_137"
-	manpower = 1061607
+	manpower = 2285448
 	
 	state_category = city
 
@@ -51,15 +51,6 @@ state = {
 
 		add_core_of = SOV
 		add_core_of = UKR
-
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-				3686 = {
-					naval_facility = 1 # Sevastopol Naval Facilties
-				}
-			}
-		}
 	}
 
 	provinces = {

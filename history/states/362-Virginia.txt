@@ -30,15 +30,6 @@ state={
 		victory_points = {
 			10412 15 
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-				dockyard = 5
-
-			}
-
-		}
-
 	}
 
 	provinces={
@@ -46,7 +37,7 @@ state={
 	}
 
 	local_supplies=11.0
-	manpower=2249080
+	manpower=5712403
 
 	resources = {
 		coal = 11 #initial distribution = with infra 28.8 / 1280 total

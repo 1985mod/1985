@@ -13,7 +13,7 @@ recruit_character = ALB_Charchani
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1933.3.5"
+	last_election = "1985.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }

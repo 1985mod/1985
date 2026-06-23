@@ -1,0 +1,89 @@
+add_namespace = ENG_North_ireland
+
+country_event = {
+    id = ENG_North_ireland.1
+    title = ENG_North_ireland.1.t
+    desc = ENG_North_ireland.1.d
+    picture = GFX_report_event_generic_handshake
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = ENG_North_ireland.1.a
+        ENG = {
+            complete_national_focus = IRA_end_of_IRA
+        }
+    }
+}
+
+country_event = {
+    id = ENG_North_ireland.2
+    title = ENG_North_ireland.2.t
+    desc = ENG_North_ireland.2.d
+    picture = GFX_report_event_generic_handshake
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = ENG_North_ireland.2.a
+        ENG = {
+            complete_national_focus = IRA_no_deal_was_reached
+        }
+    }
+}
+country_event = {
+    id = ENG_North_ireland.3
+    title = ENG_North_ireland.3.t
+    desc = ENG_North_ireland.3.d
+    picture = GFX_report_event_generic_handshake
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = ENG_North_ireland.3.a
+        ENG = {
+            complete_national_focus = IRA_North_ireland_authonomy
+        }
+    }
+}
+country_event = {
+    id = ENG_North_ireland.4
+    title = ENG_North_ireland.4.t
+    desc = ENG_North_ireland.4.d
+    picture = GFX_report_event_generic_handshake
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = ENG_North_ireland.4.a
+        ENG = {
+            complete_national_focus = IRA_inegrated_North_Ireland
+            set_global_flag = IRA_conflict_resolved    
+        }
+    }
+    option = {
+        name = ENG_North_ireland.4.b
+        IRE = {
+            country_event = IRA_Focus.3
+        }
+    }
+}
+country_event = {
+    id = ENG_North_ireland.5
+    title = ENG_North_ireland.5.t
+    desc = ENG_North_ireland.5.d
+    picture = GFX_report_event_generic_handshake
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = ENG_North_ireland.5.a
+        ENG = {
+            complete_national_focus = IRA_inegrated_North_Ireland
+        }
+    }
+    option = {
+        name = ENG_North_ireland.5.b
+
+    }
+}

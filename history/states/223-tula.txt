@@ -2,7 +2,7 @@
 state={
 	id=223
 	name="STATE_223"
-	manpower = 1635549
+	manpower = 1854267
 	
 	state_category = town
 
@@ -18,11 +18,6 @@ state={
 			synthetic_refinery = 1 #NSB
 		}
 		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-			}
-		}
 	}
 
 	provinces={

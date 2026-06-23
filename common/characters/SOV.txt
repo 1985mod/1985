@@ -1,19 +1,4 @@
-# Aleksandra Kollontay has an unsed portrait
-# Viktor Baydalakov has an unused portrait
-
 characters = {
-
-
-  ####    ####   #    #  #    #  #####  #####   #   #      #       ######    ##    #####   ######  #####    ####  
- #    #  #    #  #    #  ##   #    #    #    #   # #       #       #        #  #   #    #  #       #    #  #      
- #       #    #  #    #  # #  #    #    #    #    #        #       #####   #    #  #    #  #####   #    #   ####  
- #       #    #  #    #  #  # #    #    #####     #        #       #       ######  #    #  #       #####        # 
- #    #  #    #  #    #  #   ##    #    #   #     #        #       #       #    #  #    #  #       #   #   #    # 
-  ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
-                                                                                                                  
-
-
-
 	SOV_konstantin_chernenko = {
 		name = SOV_konstantin_chernenko
 		portraits = {
@@ -146,6 +131,25 @@ characters = {
 			id = -1
 		}
 	}
+
+	SOV_Mikhail_Gorbachev_SSG = {
+		name = SOV_Mikhail_Gorbachev
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Mikhail_Gorbachev_SSG
+			}
+			army = {
+				large = GFX_Portrait_Mikhail_Gorbachev_SSG
+				small = GFX_Portrait_Mikhail_Gorbachev_SSG_small
+			}
+		}
+		country_leader = {
+			ideology = classical_social_democracy
+			traits = {}
+			expire = "2022.05.28.1"
+			id = -1
+		}
+	}
 	
 	######GENERALS####
 	SOV_Sokolov = {
@@ -262,21 +266,57 @@ characters = {
 			}
 			
 			traits = {
+				air_chief_ground_support_2
+			}
+		}
+	}
+	SOV_alexander_yakovlev = {
+		name = SOV_alexander_yakovlev
+		portraits = {
+			army = {
+				small = "GFX_idea_portrait_sov_Shaposhnikov"
 			}
 		}
 		advisor = {
-			slot = high_command
-			idea_token = SOV_Shaposhnikov
-			ledger = air_chief
-			allowed = {
-				original_tag = SOV
-			}
+			cost = 150			
+			slot = political_advisor
+			idea_token = SOV_alexander_yakovlev
 			traits = {
-				air_chief_ground_support_2
+				technocrat
 			}
-			cost = 150
-			ai_will_do = {
-				base = 1
+		}
+	}
+
+	SOV_andrey_gromyko = {
+		name = SOV_andrey_gromyko
+		portraits = {
+			army = {
+				small = "GFX_idea_portrait_sov_Shaposhnikov"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = political_advisor
+			idea_token = SOV_andrey_gromyko
+			traits = {
+				SOV_supreme_council
+			}
+		}
+	}
+
+	SOV_boris_yeltsin_advisor = {
+		name = SOV_boris_yeltsin_advisor
+		portraits = {
+			army = {
+				small = "GFX_idea_portrait_sov_Shaposhnikov"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = political_advisor
+			idea_token = SOV_boris_yeltsin_advisor
+			traits = {
+				SOV_moscow_city_committee
 			}
 		}
 	}

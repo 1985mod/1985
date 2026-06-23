@@ -1,0 +1,21 @@
+SOV_cold_war = {
+	enable = { always = yes }
+	
+	icon = GFX_
+	
+	command_power_gain_mult = amount_of_proxies_won_ussr
+	planning_speed = amount_of_proxies_won_ussr
+	faction_trade_opinion_factor = amount_of_proxies_won_ussr
+
+}
+
+USA_cold_war = {
+	enable = { always = yes }
+	
+	icon = GFX_
+	
+	command_power_gain_mult = amount_of_proxies_won_usa
+	planning_speed = amount_of_proxies_won_usa
+	faction_trade_opinion_factor = amount_of_proxies_won_usa
+
+}

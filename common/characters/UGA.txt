@@ -1,0 +1,36 @@
+characters = {
+	UGA_bazilio_olara_okello ={
+		name = UGA_bazilio_olara_okello
+		portraits={
+			civilian={
+				large= GFX_portrait_UGA_Bazilio_Olara-Оkello
+			}
+			army = {
+				large = GFX_portrait_UGA_Bazilio_Olara-Оkello
+			}
+		}
+		country_leader={
+			ideology = marxism
+			traits={  }
+			expire="2012.11.9.1"	
+		}
+	}
+}
+characters = {
+	UGA_Milton_Obote ={
+		name = UGA_Milton_Obote
+		portraits={
+			civilian={
+				large= GFX_portrait_UGA_Milton_Obote
+			}
+			army = {
+				large = GFX_portrait_UGA_Milton_Obote
+			}
+		}
+		country_leader={
+			ideology = marxism
+			traits={  }
+			expire="1985.7.9.1"		
+		}
+	}
+}

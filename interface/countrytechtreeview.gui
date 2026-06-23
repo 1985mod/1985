@@ -114,7 +114,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1960"
+					text = "1975"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -127,7 +127,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1975"
+					text = "1978"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -139,7 +139,7 @@ guiTypes = {
 					position = { x = 410 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1978"
+					text = "1980"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -151,7 +151,7 @@ guiTypes = {
 					position = { x = 550 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1980"
+					text = "1985"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -163,7 +163,7 @@ guiTypes = {
 					position = { x = 690 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1985"
+					text = "1987"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -175,7 +175,7 @@ guiTypes = {
 					position = { x = 830 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1987"
+					text = "1988"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -187,7 +187,7 @@ guiTypes = {
 					position = { x = 970 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1988"
+					text = "1990"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -199,7 +199,7 @@ guiTypes = {
 					position = { x = 1110 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1990"
+					text = "1995"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -211,7 +211,7 @@ guiTypes = {
 					position = { x = 1250 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1995"
+					text = "2000"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -222,7 +222,7 @@ guiTypes = {
 					position = { x = 1390 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "2000"
+					text = "2005"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -876,7 +876,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1960"
+						text = "1970"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -889,7 +889,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1976"
+						text = "1975"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -915,7 +915,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1988"
+						text = "1990"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -928,7 +928,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1990"
+						text = "1995"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -941,7 +941,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1993"
+						text = "1998"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -954,7 +954,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1995"
+						text = "2000"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -975,7 +975,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1960"
+						text = "1970"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -1082,6 +1082,14 @@ guiTypes = {
 			gridboxtype = {
 				name = "engine_tech_1_tree"
 				position = { x = 175 y = 40 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UPPER_LEFT"
+			}
+
+			gridboxtype = {
+				name = "tank_weapon_1_tree"
+				position = { x = -30 y = 40 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UPPER_LEFT"

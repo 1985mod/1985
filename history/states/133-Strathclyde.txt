@@ -2,7 +2,7 @@
 state={
 	id=133
 	name="STATE_133" # Lanark
-	manpower = 2257723
+	manpower = 2403189
 	
 	state_category = city
 	
@@ -31,12 +31,6 @@ state={
 
 		}
 		add_core_of = ENG
-		1939.1.1 = {
-			buildings = {
-				dockyard = 5
-				industrial_complex = 2
-			}
-		}
 	}
 
 	provinces={

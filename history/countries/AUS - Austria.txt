@@ -16,37 +16,17 @@ set_technology = {
 	gw_artillery = 1
 }
 
-IF = {
-	limit = { has_dlc = "No Step Back" }
-	set_technology = {
-		gwtank_chassis = 1
-	}
-
-	ELSE = {
-		set_technology = {
-			gwtank = 1
-		}
-	}
-}
-
-IF = {
-	limit = { has_dlc = "La Resistance" }
-		set_technology = {
-			armored_car1 = 1
-		}
-}
-
 recruit_character = AUS_fred_sinowatz
 
 set_politics = {
-	ruling_party = conservatism
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = socialism
+	last_election = "1983.4.24"
+	election_frequency = 36
+	elections_allowed = yes
 }
 
 set_popularities = {
-	conservatism = 100
+	socialism = 100
 }
 
 set_stability = 0.50

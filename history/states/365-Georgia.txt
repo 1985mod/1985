@@ -2,7 +2,7 @@
 state={
 	id=365
 	name="STATE_365"
-	manpower = 2908504
+	manpower = 5985412
 	
 	state_category = city
 
@@ -20,13 +20,6 @@ state={
 		victory_points = {
 			12384 10 
 		}
-
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
-
 	}
 
 	provinces={

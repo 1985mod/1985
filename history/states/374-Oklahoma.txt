@@ -2,7 +2,7 @@
 state={
 	id=374
 	name="STATE_374"
-	manpower = 2396039
+	manpower = 3284103
 	
 	state_category = city
 	
@@ -23,13 +23,6 @@ state={
 		victory_points = {
 			1806 1 
 		}
-
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 3
-			}
-		}
-
 	}
 
 	provinces={

@@ -2,7 +2,7 @@
 state={
 	id=26
 	name="STATE_26" # Auveregne
-	manpower = 877800
+	manpower = 1605342
 	
 	resources = {
 		coal = 2 # initial distribution / 140 total

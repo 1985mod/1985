@@ -2,7 +2,7 @@ state = {
 
 	id = 525
 	name = "STATE_525"
-	manpower = 6961368 # was 14284105, divided by 3 is 4761368
+	manpower = 16800000
 	
 	state_category = town
 
@@ -13,6 +13,7 @@ state = {
 
 		owner = KOR
 		add_core_of = KOR
+		add_core_of = PRK
 
 		buildings = {
 			infrastructure = 2

@@ -1,7 +1,7 @@
 state = {
 	id = 251
 	name = "STATE_251"
-	manpower = 1391819
+	manpower = 4090411
 	
 	state_category = town
 
@@ -22,12 +22,6 @@ state = {
 			# Kuybyshev Hydroelectric Station
 			#6275 = { dam = 1 }
 
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-			}
 		}
 	}
 

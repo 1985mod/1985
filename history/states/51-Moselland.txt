@@ -1,7 +1,7 @@
 state = {
 	id = 51
 	name = "STATE_51"
-	manpower = 6144743
+	manpower = 3005506
 	resources = {
 		steel = 35  #was 18 #was 30 was: 54
 		coal = 60 # initial distribution / 660 total
@@ -36,29 +36,8 @@ state = {
 			industrial_complex = 4 #WAS 2
 			air_base = 3
 		}
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 6
-				radar_station = 1
-				#Westwall Forts
-				3444 = {
-					bunker = 2
-				}
-				9522 = {
-					bunker = 2
-				}
-				3547 = {
-					bunker = 2
-				}
-			}
-		}
 	
-		set_demilitarized_zone = yes
-	
-		1936.3.7 = {
-			set_demilitarized_zone = no
-		}
+		set_demilitarized_zone = no
 	}
 
 	provinces = {

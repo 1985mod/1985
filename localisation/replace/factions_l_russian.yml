@@ -1094,5 +1094,5 @@
  faction_divider_dashes: "--------------"
  TRIGGER_HAS_ACTIVE_FACTION_RULE: "$COUNTRY_OR_FACTION|H$ с действующим правилом «$RULE|H$»"
  TRIGGER_HAS_NOT_ACTIVE_FACTION_RULE: "$COUNTRY_OR_FACTION|H$ без действующего правила «$RULE|H$»"
- warsaw_pact: "Организация варшавского договора"
+ faction_template_warsaw_pact: "Организация варшавского договора"
  nato: "Организация Североатлантического договора"

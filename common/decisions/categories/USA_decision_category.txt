@@ -33,3 +33,20 @@ USA_war_on_drugs = {
 		  original_tag = USA
 	  }
 }
+
+USA_black_monday = {
+
+      icon = border_war
+	  
+	  priority = 80
+	  
+	  allowed = {
+	    original_tag = USA
+	  }
+	  
+	  visible = {
+		  original_tag = USA
+		  has_country_flag = USA_black_monday_crisis
+		  NOT = { has_country_flag = USA_black_monday_stabilized }
+	  }
+}

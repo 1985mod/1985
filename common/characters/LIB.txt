@@ -1,0 +1,18 @@
+characters = {
+	LIB_Samuel_Kanyon_Doe ={
+		name = LIB_Samuel_Kanyon_Doe
+		portraits={
+			civilian={
+				large= GFX_portrait_LIB_Samuel_Kanyon_Doe
+			}
+			army = {
+				large = GFX_portrait_LIB_Samuel_Kanyon_Doe
+			}
+		}
+		country_leader={
+			ideology = autocracy
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

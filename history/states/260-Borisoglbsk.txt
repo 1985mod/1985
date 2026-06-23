@@ -2,7 +2,7 @@
 state={
 	id=260
 	name="STATE_260" # Voronezh
-	manpower = 2567983
+	manpower = 543482
 	
 	state_category = town
 
@@ -17,14 +17,6 @@ state={
 			413 5
 		}
 		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				9448 = {
-					air_facility = 1
-				}
-			}
-			
-		}
 	}
 
 	provinces={

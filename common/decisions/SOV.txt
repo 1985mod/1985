@@ -1,0 +1,86 @@
+SOV_prohibition_ussr = {
+
+    SOV_destruction_of_vineyards = {
+	
+		icon = generic_speech
+
+		cost = 100
+		fire_only_once = no
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			has_completed_focus = SOV_destruction_of_vineyards
+		}
+		days_remove = 60
+		days_re_enable = 100
+		
+		cost = 25
+		modifier = {
+
+		}
+	}
+
+	SOV_reduction_in_alcohol_production = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+		    has_completed_focus = SOV_the_beginning_of_the_anti_alcohol_campaign
+		}
+		days_remove = 60
+		days_re_enable = 110000
+
+		cost = 50
+		modifier = {
+
+		}
+	}
+}
+
+SOV_law_on_the_press_cat = {
+
+    SOV_abolition_of_censorship = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = SOV_law_on_the_press
+		}
+		
+		days_remove = 70
+
+		fire_only_once = yes
+		
+		cost = 50
+		
+		modifier = {
+			liberalism_drift = 0.03
+			conservatism_drift = 0.03
+		}
+	}
+
+    SOV_right_to_establish_media = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = SOV_law_on_the_press
+		}
+		
+		days_remove = 60
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		remove_effect = {
+			add_political_power = 75
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+	}
+}

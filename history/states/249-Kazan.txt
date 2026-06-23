@@ -2,7 +2,7 @@
 state={
 	id=249
 	name="STATE_249"
-	manpower = 2761291
+	manpower = 3573449
 	
 	state_category = town
 	resources={
@@ -20,11 +20,6 @@ state={
 		}
 		add_core_of = SOV
 		add_core_of = TAT
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-			}
-		}
 	}
 
 	provinces={

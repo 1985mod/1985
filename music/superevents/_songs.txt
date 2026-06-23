@@ -1,0 +1,20 @@
+
+music_station = "base_music"
+
+music = {
+	song = "victory_sec_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "unification_germany_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}

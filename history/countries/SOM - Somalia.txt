@@ -19,6 +19,8 @@ set_technology = {
 	motorised_infantry = 1
 }
 
+recruit_character = SOM_Mohamed_Siad_Barre
+
 set_convoys = 10
 
 add_ideas = {

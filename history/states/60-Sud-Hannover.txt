@@ -1,7 +1,7 @@
 state = {
 	id = 60
 	name = "STATE_60"
-	manpower = 3005214
+	manpower = 2494582
 	resources = {
 		steel = 9 # was 5 was: 13 was: 20
 		chromium = 3 # was: 4
@@ -31,15 +31,6 @@ state = {
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 3
-				arms_factory = 2
-				# From "The Four Year Plan"
-				industrial_complex = 2
-			}
 		}
 	}
 

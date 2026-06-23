@@ -464,8 +464,8 @@ spriteTypes = {
 	
 	## SYE ##
 	spriteType = {
-		name = GFX_Portrait_Ali_Nasser_Muhammad 
-		texturefile = "gfx/leaders/SYE/Portrait_Ali_Nasser_Muhammad"
+		name = "GFX_Portrait_ali_nasser_muhammad"
+		texturefile = "gfx/leaders/SYE/Portrait_ali_nasser_muhammad.dds"
 	}
 	
 	## PRK ##
@@ -474,6 +474,12 @@ spriteTypes = {
 		texturefile = gfx/leaders/PRK/Portrait_Kim_Sen.dds
 	}
 	
+	## KOR ##
+	spriteType = {
+		name = GFX_Portrait_сhun_doo_hwan
+		texturefile = gfx/leaders/KOR/Portrait_сhun_doo_hwan.dds
+	}
+
 	## CUB ##
 	spriteType = {
 		name = GFX_Portrait_CUB_Steve_Jobs
@@ -502,6 +508,15 @@ spriteTypes = {
 	}
 	
 	### 1985 ###
+
+	### PAN ###
+
+	spriteType = {
+		name = "GFX_Portrait_Manuel_Noriega"
+		texturefile = "gfx/leaders/PAN/Portrait_Manuel_Noriega.dds"
+	}
+
+	## USA ###
 	
 	spriteType = {
 		name = "GFX_Portrait_george_bush"
@@ -516,5 +531,152 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Muhammadu_Buhari"
 		texturefile = "gfx/leaders/NGA/Portrait_Muhammadu_Buhari.dds"
+	}
+
+	### ICE ###
+
+	spriteType = {
+		name = "GFX_Portrait_vigdis_finnbogaduttir"
+		texturefile = "gfx/leaders/ICE/Portrait_vigdis_finnbogaduttir.dds"
+	}
+
+	### ARG ###
+
+	spriteType = {
+		name = "GFX_Portrait_augusto_pinochet"
+		texturefile = "gfx/leaders/CHL/Portrait_augusto_pinochet.dds"
+	}
+
+	### BOL ###
+
+	spriteType = {
+		name = "GFX_Portrait_hernan_siles"
+		texturefile = "gfx/leaders/BOL/Portrait_hernan_siles.dds"
+	}
+
+	### BRA ###
+
+	spriteType = {
+		name = "GFX_Portrait_joao_figueiredo"
+		texturefile = "gfx/leaders/BRA/Portrait_joao_figueiredo.dds"
+	}
+
+	### CHL ###
+
+	spriteType = {
+		name = "GFX_Portrait_raul_alfonsin"
+		texturefile = "gfx/leaders/ARG/Portrait_raul_alfonsin.dds"
+	}
+
+	### COL ###
+
+	spriteType = {
+		name = "GFX_Portrait_belisario_betancourt"
+		texturefile = "gfx/leaders/COL/Portrait_belisario_betancourt.dds"
+	}
+
+	### ECU ###
+
+	spriteType = {
+		name = "GFX_Portrait_febres_cordero"
+		texturefile = "gfx/leaders/ECU/Portrait_febres_cordero.dds"
+	}
+
+	### PAR ###
+
+	spriteType = {
+		name = "GFX_Portrait_alfredo_stroessner"
+		texturefile = "gfx/leaders/PAR/Portrait_alfredo_stroessner.dds"
+	}
+
+	### URG ###
+
+	spriteType = {
+		name = "GFX_Portrait_gregorio_alvarez"
+		texturefile = "gfx/leaders/URG/Portrait_gregorio_alvarez.dds"
+	}
+
+	### PRU ###
+
+	spriteType = {
+		name = "GFX_Portrait_belaunde_terry"
+		texturefile = "gfx/leaders/PRU/Portrait_belaunde_terry.dds"
+	}
+
+	### VEN ###
+
+	spriteType = {
+		name = "GFX_Portrait_jaime_lusinchi"
+		texturefile = "gfx/leaders/VEN/Portrait_jaime_lusinchi.dds"
+	}
+
+	### GYA ###
+
+	spriteType = {
+		name = "GFX_Portrait_Desmond_Hoyte"
+		texturefile = "gfx/leaders/GYA/Portrait_Desmond_Hoyte.dds"
+	}
+
+	### SUR ###
+
+	spriteType = {
+		name = "GFX_Portrait_desi_bouterse"
+		texturefile = "gfx/leaders/SUR/Portrait_desi_bouterse.dds"
+	}
+
+	### BLZ ###
+
+	spriteType = {
+		name = "GFX_Portrait_Manuel_Esquivel"
+		texturefile = "gfx/leaders/BLZ/Portrait_Manuel_Esquivel.dds"
+	}
+
+	### DOM ###
+
+	spriteType = {
+		name = "GFX_Portrait_salvador_jorge"
+		texturefile = "gfx/leaders/DOM/Portrait_salvador_jorge.dds"
+	}
+
+	### HAI ###
+
+	spriteType = {
+		name = "GFX_Portrait_Jean_Claude_Duvalier"
+		texturefile = "gfx/leaders/HAI/Portrait_Jean_Claude_Duvalier.dds"
+	}
+
+	### NIC ###
+
+	spriteType = {
+		name = "GFX_Portrait_Daniel_Ortega"
+		texturefile = "gfx/leaders/NIC/Portrait_Daniel_Ortega.dds"
+	}
+
+	### HON ###
+
+	spriteType = {
+		name = "GFX_Portrait_roberto_suazo"
+		texturefile = "gfx/leaders/HON/Portrait_roberto_suazo.dds"
+	}
+
+	### ELS ###
+
+	spriteType = {
+		name = "GFX_Portrait_Jose_Napoleon"
+		texturefile = "gfx/leaders/ELS/Portrait_Jose_Napoleon.dds"
+	}
+
+	### GUA ###
+
+	spriteType = {
+		name = "GFX_Portrait_Oscar_Umberto"
+		texturefile = "gfx/leaders/GUA/Portrait_Oscar_Umberto.dds"
+	}
+
+	### COS ###
+
+	spriteType = {
+		name = "GFX_Portrait_alberto_monge"
+		texturefile = "gfx/leaders/COS/Portrait_alberto_monge.dds"
 	}
 }

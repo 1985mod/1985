@@ -1,0 +1,36 @@
+IRA_conflict_category = {
+    visible = {
+        has_completed_focus = IRA_no_deal_was_reached
+    }
+    allowed = {
+    }
+    icon = GFX_IRA_category_icon
+    priority = 50
+}
+IRA_peace_category = {
+    visible = {
+        has_completed_focus = IRA_end_of_IRA
+    }
+    allowed = {
+    original_tag = ENG
+    }
+    icon = GFX_IRA_category_icon
+    priority = 50
+}
+
+ENG_black_wednesday = {
+
+    icon = border_war
+
+    priority = 80
+
+    allowed = {
+        original_tag = ENG
+    }
+
+    visible = {
+        original_tag = ENG
+        has_country_flag = ENG_black_wednesday_crisis
+        NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+    }
+}

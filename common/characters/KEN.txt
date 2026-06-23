@@ -1,0 +1,18 @@
+characters = {
+	KEN_Daniel_arap_Moi ={
+		name = KEN_Daniel_arap_Moi
+		portraits={
+			civilian={
+				large= GFX_portrait_KEN_Daniel_arap_Moi
+			}
+			army = {
+				large = GFX_portrait_KEN_Daniel_arap_Moi
+			}
+		}
+		country_leader={
+			ideology = oligarchism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

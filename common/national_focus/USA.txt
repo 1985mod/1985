@@ -29,7 +29,7 @@ focus_tree = {
         id = USA_tough_confrontation_with_the_ussr
 		relative_position_id = USA_reagans_second_presidency
 		prerequisite = { focus = USA_reagans_second_presidency }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_tough_confrontation_with_the_ussr	
         x = 0
         y = 1
         cost = 5
@@ -48,7 +48,7 @@ focus_tree = {
         id = USA_intensify_the_arms_race
 		relative_position_id = USA_tough_confrontation_with_the_ussr
 		prerequisite = { focus = USA_tough_confrontation_with_the_ussr }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_intensify_the_arms_race
         x = 0
         y = 1
         cost = 5
@@ -62,7 +62,7 @@ focus_tree = {
         id = USA_move_away_from_cold_war_politics
 		relative_position_id = USA_intensify_the_arms_race
 		prerequisite = { focus = USA_intensify_the_arms_race }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_move_away_from_cold_war_politics
         x = 2
         y = 1
         cost = 5
@@ -72,6 +72,10 @@ focus_tree = {
 			SOV = {
 				remove_opinion_modifier = { target = USA modifier = cold_war }
 			}
+			remove_dynamic_modifier = { modifier = USA_cold_war }
+			SOV = {
+				remove_dynamic_modifier = { modifier = SOV_cold_war }
+			}
 	    }
 	}
 	
@@ -79,13 +83,16 @@ focus_tree = {
         id = USA_dialogue_of_detente_with_the_soviet_union
 		relative_position_id = USA_intensify_the_arms_race
 		prerequisite = { focus = USA_intensify_the_arms_race }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_dialogue_of_detente_with_the_soviet_union	
         x = -2
         y = 1
         cost = 5
 		
         completion_reward = {
-		
+			country_event = { id = usa.14 hours = 6 }
+			SOV = {
+				country_event = { id = usa.14 hours = 12 }
+			}	
 	    }
 	}
 	
@@ -94,13 +101,16 @@ focus_tree = {
 		relative_position_id = USA_intensify_the_arms_race
 		prerequisite = { focus = USA_move_away_from_cold_war_politics }
 		prerequisite = { focus = USA_dialogue_of_detente_with_the_soviet_union }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_meeting_with_gorbachev	
         x = 0
         y = 2
         cost = 2
 		
         completion_reward = {
-		
+			country_event = { id = usa.15 hours = 6 }
+			SOV = {
+				country_event = { id = usa.15 hours = 12 }
+			}		
 	    }
 	}
 	
@@ -108,7 +118,7 @@ focus_tree = {
         id = USA_second_reykjavik_summit
 		relative_position_id = USA_meeting_with_gorbachev
 		prerequisite = { focus = USA_meeting_with_gorbachev }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_second_reykjavik_summit	
         x = 0
         y = 1
         cost = 2
@@ -128,7 +138,7 @@ focus_tree = {
         id = USA_us_army
 		relative_position_id = USA_reagans_second_presidency
 		prerequisite = { focus = USA_reagans_second_presidency }
-        icon = GFX_focus_icon_army_usa	
+        icon = GFX_focus_icon_USA_us_army	
         x = 5
         y = 1
         cost = 5
@@ -142,7 +152,7 @@ focus_tree = {
         id = USA_lessons_of_the_vietnam_war
 		relative_position_id = USA_us_army
 		prerequisite = { focus = USA_us_army }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_lessons_of_the_vietnam_war	
         x = -2
         y = 1
         cost = 5
@@ -162,7 +172,7 @@ focus_tree = {
         id = USA_modernisation_army
 		relative_position_id = USA_us_army
 		prerequisite = { focus = USA_us_army }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_modernisation_army	
         x = 0
         y = 1
         cost = 5
@@ -177,7 +187,7 @@ focus_tree = {
         id = USA_expand_military_bases
 		relative_position_id = USA_us_army
 		prerequisite = { focus = USA_us_army }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_expand_military_bases	
         x = 2
         y = 1
         cost = 5
@@ -199,7 +209,7 @@ focus_tree = {
 		prerequisite = { focus = USA_lessons_of_the_vietnam_war }
 		prerequisite = { focus = USA_modernisation_army }
 		prerequisite = { focus = USA_expand_military_bases }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_modernization_of_abrams_and_bradley	
         x = 0
         y = 2
         cost = 5
@@ -216,7 +226,7 @@ focus_tree = {
 
     focus = { 
         id = USA_stop_the_rapid_growth_of_public_debt
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_stop_the_rapid_growth_of_public_debt	
 		relative_position_id = USA_reagans_second_presidency
 		prerequisite = { focus = USA_reagans_second_presidency }
         x = -5
@@ -245,7 +255,7 @@ focus_tree = {
 	
     focus = { 
         id = USA_increase_in_production
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_increase_in_production	
 		relative_position_id = USA_stop_the_rapid_growth_of_public_debt
 		prerequisite = { focus = USA_stop_the_rapid_growth_of_public_debt }
         x = 2
@@ -274,7 +284,7 @@ focus_tree = {
 	
     focus = { 
         id = USA_growth_of_technology_companies
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_growth_of_technology_companies	
 		relative_position_id = USA_stop_the_rapid_growth_of_public_debt
 		prerequisite = { focus = USA_stop_the_rapid_growth_of_public_debt }
         x = 0
@@ -303,7 +313,7 @@ focus_tree = {
 	
     focus = { 
         id = USA_increase_spending_on_the_military_industrial_complex
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_increase_spending_on_the_military_industrial_complex	
 		relative_position_id = USA_stop_the_rapid_growth_of_public_debt
 		prerequisite = { focus = USA_stop_the_rapid_growth_of_public_debt }
         x = -2
@@ -332,7 +342,7 @@ focus_tree = {
 	
     focus = { 
         id = USA_more_tax_cuts
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_more_tax_cuts	
 		relative_position_id = USA_stop_the_rapid_growth_of_public_debt
 		prerequisite = { focus = USA_increase_in_production }
 		prerequisite = { focus = USA_growth_of_technology_companies }
@@ -363,7 +373,7 @@ focus_tree = {
 	
     focus = { 
         id = USA_the_first_mobile_phones
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_the_first_mobile_phones	
 		relative_position_id = USA_more_tax_cuts
 		prerequisite = { focus = USA_more_tax_cuts }
         x = 0
@@ -398,7 +408,7 @@ focus_tree = {
         x = 0
         y = 1
 		allow_branch = { has_country_flag = USA_reconsider_relations_with_the_soviet_union }
-        cost = 2
+        cost = 5
 		
         available = {
 		   date > 1986.10.2

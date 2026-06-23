@@ -1,7 +1,7 @@
 state = {
 	id = 56
 	name = "STATE_56"
-	manpower = 2058467
+	manpower = 4509935
 	
 	state_category = city
 
@@ -37,16 +37,6 @@ state = {
 				}
 			}
 			air_base = 3
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-				dockyard = 3
-				241 = {
-					naval_facility = 1 # Wilhelmshaven Naval Dockyards
-				}
-			}
 		}
 	}
 

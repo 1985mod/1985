@@ -272,6 +272,7 @@ focus_tree = {
         id = DDR_end
         relative_position_id = DDR_first_free_elections
         icon = GFX_
+        prerequisite = { focus = DDR_first_free_elections }
         x = 0
         y = 1
         cost = 5
@@ -384,7 +385,7 @@ focus_tree = {
         icon = GFX_
         x = -1
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
 	    }
 	}
@@ -396,7 +397,7 @@ focus_tree = {
         icon = GFX_
         x = 1
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
 	    }
 	}

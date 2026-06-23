@@ -2,7 +2,7 @@
 state={
 	id=367
 	name="STATE_367"
-	manpower = 2646247
+	manpower = 3985214
 	
 	resources = {
 		coal = 8 # initial distribution = with infra 28.8 / 1280 total
@@ -26,12 +26,6 @@ state={
 		victory_points = {
 			12735 1 
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
-
 	}
 
 	provinces={

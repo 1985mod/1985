@@ -31,6 +31,8 @@ add_ideas = {
 	extensive_conscription
 }
 
+recruit_character = ETH_Mengistu_Haile_Mariam
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"

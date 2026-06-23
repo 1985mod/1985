@@ -1,0 +1,239 @@
+division_template = {
+	name = "Mozambican guerrillas"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+    }
+}
+
+units = {
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13499
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13500
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13501
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13502
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13504
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13505
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13506
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13508
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13509
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13514
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13518
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13515
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13517
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13519
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13520
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13522
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13523
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13525
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13526
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13528
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13516
+		division_template = "Mozambican guerrillas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+}

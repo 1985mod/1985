@@ -1,0 +1,35 @@
+northern_ireland_IRA_activity = {
+    icon = GFX_idea_unknown
+    
+    enable = {
+        NOT = { controller = IRE }
+        NOT = { has_global_flag = northern_ireland_autonomy_unlocked }
+    }
+    
+    army_attack_factor = -0.60
+    army_defence_factor = -0.60
+    local_manpower = -0.8
+}
+northern_ireland_autonomy = {
+    icon = GFX_idea_unknown
+    
+      enable = {
+        controller = ENG
+        has_global_flag = northern_ireland_autonomy_unlocked
+    }
+    local_building_slots = 2
+    monthly_population = 0.5
+    local_manpower = -0.7
+}
+northern_ireland_IRA_activity_foreign = {
+    icon = GFX_idea_unknown
+    
+    enable = {
+        controller = ENG
+        NOT = { controller = ENG }
+        NOT = { controller = IRE }
+    }
+    army_attack_factor = -0.60
+    army_defence_factor = -0.60
+    local_manpower = -0.8
+}

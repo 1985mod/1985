@@ -2,7 +2,7 @@
 state={
 	id=570
 	name="STATE_570" # Novosibirsk
-	manpower = 1765369
+	manpower = 1484725
 
 	state_category = town
 
@@ -17,11 +17,6 @@ state={
 			air_base = 1
 		}
 		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 3
-			}
-		}
 	}
 
 	provinces={

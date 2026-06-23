@@ -1,0 +1,18 @@
+characters = {
+	IVO_Feix_Houphouet_Boigny ={
+		name = IVO_Feix_Houphouet_Boigny
+		portraits={
+			civilian={
+				large= GFX_portrait_IVO_Félix_Houphouët-Boigny
+			}
+			army = {
+				large = GFX_portrait_IVO_Félix_Houphouët-Boigny
+			}
+		}
+		country_leader={
+			ideology = autocracy
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

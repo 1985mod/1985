@@ -1,0 +1,20 @@
+add_namespace = IRA_focus
+
+
+country_event = {
+	id = IRA_focus.1
+	title = IRA_focus.1.t
+	desc = IRA_focus.1.d
+	picture = GFX_report_event_generic_handshake
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = IRA_focus.1.a
+		ai_chance = { base = 50 }
+	}
+	option = {
+		name = IRA_focus.1.b
+		ai_chance = { base = 50 }
+	}
+}

@@ -1,0 +1,28 @@
+add_namespace = british_black_wednesday
+
+country_event = {
+	id = british_black_wednesday.1
+	title = british_black_wednesday.1.t
+	desc = british_black_wednesday.1.d
+	picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		date > 1992.3.19
+		tag = ENG
+		NOT = { has_country_flag = ENG_black_wednesday_crisis }
+		NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = british_black_wednesday.1.a
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = ENG_black_wednesday_crisis
+		set_variable = { ENG.sterling_pressure = 65 }
+		add_stability = -0.03
+		add_political_power = -50
+	}
+}

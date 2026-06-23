@@ -1,0 +1,350 @@
+IRA_conflict_category = {
+    IRA_give_up_to_IRA = {
+        icon = GFX_decision_IRA_negotiations
+        
+        visible = {
+            NOT = { has_global_flag = IRA_conflict_resolved }    
+        }
+        
+        available = {
+            is_controller_of_state = 119
+            NOT = { has_global_flag = IRA_conflict_resolved }
+        }
+        
+        cost = 0
+        days_remove = 7
+        
+        complete_effect = {
+            IRE = {
+        country_event = { id = IRA_focus.2 days = 7 }
+            }
+            }
+        
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }    
+    IRA_military_operation = {
+        icon = GFX_decision_IRA_military
+        
+        visible = {
+            NOT = { has_global_flag = IRA_conflict_resolved }    
+        }
+        
+        available = {
+            is_controller_of_state = 119
+            divisions_in_state = { state = 119 size > 2 }
+            NOT = { has_global_flag = IRA_conflict_resolved }
+        }
+        
+        cost = 300
+        days_remove = 30
+        
+        complete_effect = {
+            set_global_flag = IRA_conflict_resolved
+            119 = { remove_dynamic_modifier = { modifier = northern_ireland_IRA_activity } }
+
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
+IRA_peace_category = {
+    IRA_offer_autonomy = {
+        visible = {
+            NOT = { has_global_flag = IRA_conflict_resolved }    
+        }
+        available = {
+            is_controller_of_state = 119
+            NOT = { has_global_flag = IRA_conflict_resolved }
+        }
+        cost = 0
+        days_remove = 7
+    }
+     IRA_demand_recognition = {
+        visible = {
+            NOT = { has_global_flag = IRA_conflict_resolved }    
+        }
+        available = {
+            is_controller_of_state = 119
+            NOT = { has_global_flag = IRA_conflict_resolved }
+        cost = 0
+        days_remove = 7    
+        }
+    }
+}    
+
+ENG_black_wednesday = {
+
+    ENG_black_wednesday_deadline = {
+
+		icon = generic_industry
+
+		available = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		activation = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { has_country_flag = ENG_black_wednesday_crisis }
+				has_country_flag = ENG_black_wednesday_stabilized
+			}
+		}
+
+		is_good = no
+		fire_only_once = yes
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			set_country_flag = ENG_black_wednesday_deadline_finished
+			if = {
+				limit = {
+					check_variable = {
+						var = ENG.sterling_pressure
+						value = 69
+						compare = greater_than
+					}
+					NOT = { has_idea = black_wednesday_humiliation }
+				}
+				add_ideas = black_wednesday_humiliation
+				set_country_flag = ENG_black_wednesday_failed
+				set_country_flag = ENG_black_wednesday_stabilized
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+					check_variable = {
+						var = ENG.sterling_pressure
+						value = 39
+						compare = greater_than
+					}
+					check_variable = {
+						var = ENG.sterling_pressure
+						value = 70
+						compare = less_than
+					}
+					NOT = { has_idea = black_wednesday_erm_exit }
+				}
+				add_ideas = black_wednesday_erm_exit
+				set_country_flag = ENG_black_wednesday_stabilized
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+					check_variable = {
+						var = ENG.sterling_pressure
+						value = 40
+						compare = less_than
+					}
+					NOT = { has_idea = black_wednesday_contained }
+				}
+				add_ideas = black_wednesday_contained
+				set_country_flag = ENG_black_wednesday_stabilized
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+				}
+				add_ideas = black_wednesday_erm_exit
+				set_country_flag = ENG_black_wednesday_stabilized
+			}
+		}
+	}
+
+    ENG_sterling_pressure_spread = {
+
+		icon = generic_industry
+
+		available = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		activation = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { has_country_flag = ENG_black_wednesday_crisis }
+				has_country_flag = ENG_black_wednesday_stabilized
+			}
+		}
+
+		is_good = no
+		fire_only_once = no
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			add_to_variable = {
+				var = ENG.sterling_pressure
+				value = 10
+			}
+			clamp_variable = {
+				var = ENG.sterling_pressure
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = ENG_sterling_pressure_plus_10_tt
+		}
+	}
+
+    ENG_raise_interest_rates = {
+
+		icon = generic_industry
+
+		available = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		visible = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 75
+
+		complete_effect = {
+			add_to_variable = {
+				var = ENG.sterling_pressure
+				value = -10
+			}
+			clamp_variable = {
+				var = ENG.sterling_pressure
+				min = 0
+				max = 100
+			}
+			add_timed_idea = {
+				idea = ENG_black_wednesday_high_interest_rates
+				days = 60
+			}
+			custom_effect_tooltip = ENG_sterling_pressure_minus_10_tt
+		}
+	}
+
+    ENG_spend_currency_reserves = {
+
+		icon = generic_industry
+
+		available = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		visible = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 100
+
+		complete_effect = {
+			add_to_variable = {
+				var = ENG.sterling_pressure
+				value = -15
+			}
+			clamp_variable = {
+				var = ENG.sterling_pressure
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = ENG_sterling_pressure_minus_15_tt
+		}
+	}
+
+    ENG_pressure_bundesbank = {
+
+		icon = generic_industry
+
+		available = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		visible = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		fire_only_once = no
+		days_re_enable = 60
+		cost = 75
+
+		complete_effect = {
+			add_to_variable = {
+				var = ENG.sterling_pressure
+				value = -10
+			}
+			clamp_variable = {
+				var = ENG.sterling_pressure
+				min = 0
+				max = 100
+			}
+			if = {
+				limit = {
+					WGR = { exists = yes }
+				}
+				add_opinion_modifier = {
+					target = WGR
+					modifier = ENG_black_wednesday_bundesbank_pressure
+				}
+				WGR = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = ENG_black_wednesday_bundesbank_pressure
+					}
+				}
+			}
+			custom_effect_tooltip = ENG_sterling_pressure_minus_10_tt
+			custom_effect_tooltip = ENG_black_wednesday_bundesbank_pressure_tt
+		}
+	}
+
+    ENG_leave_erm = {
+
+		icon = generic_industry
+
+		available = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		visible = {
+			has_country_flag = ENG_black_wednesday_crisis
+			NOT = { has_country_flag = ENG_black_wednesday_stabilized }
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		complete_effect = {
+			add_ideas = black_wednesday_erm_exit
+			set_country_flag = ENG_black_wednesday_stabilized
+			add_stability = -0.05
+			add_political_power = -75
+		}
+	}
+}

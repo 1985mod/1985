@@ -349,7 +349,7 @@ focus_tree = {
 		relative_position_id = USA_michael_dukakis_inauguration
 		prerequisite = { focus = USA_michael_dukakis_inauguration  }
         icon = GFX_	
-        x = -2
+        x = -3
         y = 1
         cost = 10
 		
@@ -360,12 +360,26 @@ focus_tree = {
 
     focus = { 
         id = USA_increasing_federal_grants
-		relative_position_id = USA_michael_dukakis_inauguration
-		prerequisite = { focus = USA_michael_dukakis_inauguration  }
+		relative_position_id = USA_cutting_back_on_bloated_military_programs
+		prerequisite = { focus = USA_cutting_back_on_bloated_military_programs  }
+        icon = GFX_	
+        x = -2
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_investments_in_infrastructure
+		relative_position_id = USA_increasing_federal_grants
+		prerequisite = { focus = USA_increasing_federal_grants  }
         icon = GFX_	
         x = 0
         y = 1
-        cost = 5
+        cost = 7.2
 		
         completion_reward = {
 
@@ -374,122 +388,69 @@ focus_tree = {
 
     focus = { 
         id = USA_expansion_of_social_programs
+		relative_position_id = USA_cutting_back_on_bloated_military_programs
+		prerequisite = { focus = USA_cutting_back_on_bloated_military_programs  }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_war_on_poverty
+		relative_position_id = USA_expansion_of_social_programs
+		prerequisite = { focus = USA_expansion_of_social_programs  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 10
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_repeat_the_massachusetts_miracle_throughout_america
+		relative_position_id = USA_cutting_back_on_bloated_military_programs
+		prerequisite = { focus = USA_war_on_poverty  }
+		prerequisite = { focus = USA_investments_in_infrastructure  }
+        icon = GFX_	
+        x = 0
+        y = 3
+        cost = 6.5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_support_the_policy_of_perestroika
 		relative_position_id = USA_michael_dukakis_inauguration
 		prerequisite = { focus = USA_michael_dukakis_inauguration  }
         icon = GFX_	
-        x = 2
-        y = 1
-        cost = 10
-		
-        completion_reward = {
-
-	    }
-	}
-	
-    focus = { 
-        id = USA_republican_victory
-		relative_position_id = USA_election_day
-		prerequisite = { focus = USA_election_day  }
-        icon = GFX_	
-        x = -1
+        x = 3
         y = 1
         cost = 5
 		
-		available = {
-		   always = no
-		}
-		
         completion_reward = {
 
 	    }
 	}
 
     focus = { 
-        id = USA_budget_summit
-		relative_position_id = USA_election_day
-		allow_branch = { has_country_flag = USA_economic_recessions_load }
-        icon = GFX_	
-        x = 0
-        y = 3
-        cost = 2
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_budget_conrol_act_of_1990
-		relative_position_id = USA_budget_summit
-		prerequisite = { focus = USA_budget_summit  }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 4
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_limiting_expenses
-		relative_position_id = USA_budget_conrol_act_of_1990
-		prerequisite = { focus = USA_budget_conrol_act_of_1990  }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 2
-
-		available = {
-			date > 1991.01.5
-		}
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_george_bush_srs_inauguration
-		relative_position_id = USA_republican_victory
-		prerequisite = { focus = USA_republican_victory  }
-        icon = GFX_	
-        x = -4
-        y = 1
-        cost = 6
-		
-        completion_reward = {
-			add_popularity = {
-				ideology = conservatism
-				popularity = 0.03
-			}
-			add_political_power = 50
-	    }
-	}
-
-    focus = { 
-        id = USA_formation_of_the_one_hundred_and_one_us_congress
-		relative_position_id = USA_george_bush_srs_inauguration
-		prerequisite = { focus = USA_george_bush_srs_inauguration  }
-        icon = GFX_	
-        x = 2
-        y = 1
-        cost = 10
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_increase_investments_in_stocks
-		relative_position_id = USA_george_bush_srs_inauguration
-		prerequisite = { focus = USA_george_bush_srs_inauguration  }
+        id = USA_trade_agreement_with_canada
+		relative_position_id = USA_support_the_policy_of_perestroika
+		prerequisite = { focus = USA_support_the_policy_of_perestroika  }
         icon = GFX_	
         x = -2
         y = 1
-        cost = 10
+        cost = 5
 		
         completion_reward = {
 
@@ -497,14 +458,13 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_refuse_to_support_repressive_regimes
-		relative_position_id = USA_george_bush_srs_inauguration
-		prerequisite = { focus = USA_formation_of_the_one_hundred_and_one_us_congress  }
-		prerequisite = { focus = USA_increase_investments_in_stocks  }
+        id = USA_economic_assistance_to_the_ussr
+		relative_position_id = USA_trade_agreement_with_canada
+		prerequisite = { focus = USA_trade_agreement_with_canada  }
         icon = GFX_	
         x = 0
-        y = 2
-        cost = 10
+        y = 1
+        cost = 5
 		
         completion_reward = {
 
@@ -512,125 +472,102 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_support_new_democracies_in_eastern_europe
-		relative_position_id = USA_george_bush_srs_inauguration
-		prerequisite = { focus = USA_refuse_to_support_repressive_regimes  }
+        id = USA_stop_supporting_the_contras
+		relative_position_id = USA_support_the_policy_of_perestroika
+		prerequisite = { focus = USA_support_the_policy_of_perestroika  }
+        icon = GFX_	
+        x = 2
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_call_for_ratification_of_the_inf_treaty
+		relative_position_id = USA_stop_supporting_the_contras
+		prerequisite = { focus = USA_stop_supporting_the_contras  }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+
+	    }
+	}
+
+    focus = { 
+        id = USA_blockade_of_south_africa
+		relative_position_id = USA_support_the_policy_of_perestroika
+		prerequisite = { focus = USA_economic_assistance_to_the_ussr  }
+		prerequisite = { focus = USA_call_for_ratification_of_the_inf_treaty  }
         icon = GFX_	
         x = 0
         y = 3
         cost = 10
 		
         completion_reward = {
-			POL = {
-				add_popularity = {
-					ideology = liberalism
-					popularity = 0.03
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.03
-				}
-			}
-			CZE = {
-				add_popularity = {
-					ideology = liberalism
-					popularity = 0.03
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.03
-				}
-			}
-			ROM = {
-				add_popularity = {
-					ideology = liberalism
-					popularity = 0.03
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.03
-				}
-			}
-			BUL = {
-				add_popularity = {
-					ideology = liberalism
-					popularity = 0.03
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.03
-				}
-			}
-			add_political_power = -100
+
 	    }
 	}
 
     focus = { 
-        id = USA_reorient_the_armed_forces
-		relative_position_id = USA_george_bush_srs_inauguration
-		prerequisite = { focus = USA_support_new_democracies_in_eastern_europe  }
-		mutually_exclusive = { focus = USA_reduce_federal_budget_spending_on_arms }
+        id = USA_investments_and_diplomacy_are_our_everything
+		relative_position_id = USA_michael_dukakis_inauguration
+		prerequisite = { focus = USA_repeat_the_massachusetts_miracle_throughout_america  }
+		prerequisite = { focus = USA_blockade_of_south_africa  }
         icon = GFX_	
-        x = -2
-        y = 4
+        x = 0
+        y = 5
         cost = 5
 		
         completion_reward = {
-			army_experience = 25
+			set_country_flag = USA_iraq_invasion_in_kuwait_flag
+			mark_focus_tree_layout_dirty = yes
 	    }
 	}
 
     focus = { 
-        id = USA_start_the_fight_against_terrorism
-		relative_position_id = USA_reorient_the_armed_forces
-		prerequisite = { focus = USA_reorient_the_armed_forces  }
+        id = USA_economic_blockade_of_iraq
+		relative_position_id = USA_investments_and_diplomacy_are_our_everything
+		prerequisite = { focus = USA_investments_and_diplomacy_are_our_everything  }
+		allow_branch = { has_country_flag = USA_iraq_invasion_in_kuwait_flag }
         icon = GFX_	
-        x = -1
+        x = 0
         y = 1
-        cost = 10
+        cost = 7.2
 		
         completion_reward = {
-			add_ideas = USA_fight_against_terrorism
+
 	    }
 	}
 
     focus = { 
-        id = USA_ensuring_us_hegemony_in_the_world
-		relative_position_id = USA_reorient_the_armed_forces
-		prerequisite = { focus = USA_reorient_the_armed_forces  }
+        id = USA_we_remain_democrats
+		relative_position_id = USA_economic_blockade_of_iraq
+		prerequisite = { focus = USA_economic_blockade_of_iraq  }
+        mutually_exclusive = { focus = USA_we_need_to_act_more_decisively }
         icon = GFX_	
-        x = 1
+        x = -3
         y = 1
-        cost = 10
+        cost = 5
 		
         completion_reward = {
-			add_ideas = USA_us_world_hegemony
+
 	    }
 	}
 
     focus = { 
-        id = USA_malta_summit
-		relative_position_id = USA_reorient_the_armed_forces
-		prerequisite = { focus = USA_start_the_fight_against_terrorism  }
-		prerequisite = { focus = USA_ensuring_us_hegemony_in_the_world  }
+        id = USA_freezing_of_iraqi_assets
+		relative_position_id = USA_we_remain_democrats
+		prerequisite = { focus = USA_we_remain_democrats  }
         icon = GFX_	
         x = 0
         y = 2
-        cost = 2.1
-		
-        completion_reward = {
-			country_event = { id = usa.11 hours = 12 }
-	    }
-	}
-
-    focus = { 
-        id = USA_immigration_reform
-		relative_position_id = USA_malta_summit
-		prerequisite = { focus = USA_malta_summit  }
-        icon = GFX_	
-        x = -2
-        y = 1
-        cost = 10
+        cost = 5
 		
         completion_reward = {
 
@@ -638,165 +575,42 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_increase_influence_in_the_middle_east
-		relative_position_id = USA_malta_summit
-		prerequisite = { focus = USA_malta_summit  }
+        id = USA_diplomatic_isolation_of_iraq
+		relative_position_id = USA_freezing_of_iraqi_assets
+		prerequisite = { focus = USA_freezing_of_iraqi_assets  }
         icon = GFX_	
         x = 0
         y = 1
         cost = 5
 		
         completion_reward = {
-			diplomatic_relation = {
-				country = SAU
-				relation = military_access
-			}
-			diplomatic_relation = {
-				country = KUW
-				relation = military_access
-			}
-			diplomatic_relation = {
-				country = QAT
-				relation = military_access
-			}
+
 	    }
 	}
 
     focus = { 
-        id = USA_beginning_of_troop_deployment
-		relative_position_id = USA_malta_summit
-		prerequisite = { focus = USA_malta_summit  }
-        icon = GFX_	
-        x = 2
-        y = 1
-        cost = 10
-
-		available = {
-			has_completed_focus = USA_increase_influence_in_the_middle_east
-		}
-		
-        completion_reward = {
-			division_template = { 
-				name = "Tanks division"
-				is_locked = no
-				regiments = { 
-			    infantry = { x = 0 y = 0 }
-			    infantry = { x = 0 y = 1 }
-			    infantry = { x = 0 y = 2 }
-			    infantry = { x = 0 y = 3 }
-			    infantry = { x = 1 y = 0 }
-			    infantry = { x = 1 y = 1 }
-				infantry = { x = 1 y = 2 }
-				infantry = { x = 1 y = 3 }
-				infantry = { x = 2 y = 0 }
-				}
-
-				support = {
-			    recon = { x = 0 y = 0 }
-				}
-			}   
-			859 = {
-				create_unit = { 
-					division = "name = \"1. Tanks division\" division_template = \"Tanks division\" start_experience_factor = 0.3" 
-					owner = ROOT
-				}
-				create_unit = { 
-					division = "name = \"2. Tanks division\" division_template = \"Tanks division\" start_experience_factor = 0.3" 
-					owner = ROOT
-				}
-			}
-	    }
-	}
-	
-	
-    focus = { 
-        id = USA_problems_with_kuwait
-		relative_position_id = USA_malta_summit
-		prerequisite = { focus = USA_immigration_reform focus = USA_beginning_of_troop_deployment  }
-		prerequisite = { focus = USA_increase_influence_in_the_middle_east  }
-        icon = GFX_	
-        x = 0
-        y = 2
-        cost = 1
-
-		available = {
-			date > 1990.12.01
-		}
-		
-        completion_reward = {
-			add_war_support = 0.05
-	    }
-	}
-	
-    focus = { 
-        id = USA_form_an_anti_iraq_coalition
-		relative_position_id = USA_problems_with_kuwait
-		prerequisite = { focus = USA_problems_with_kuwait  }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 2
-
-		will_lead_to_war_with = IRQ
-		
-        completion_reward = {
-			every_country = {
-				limit = {
-					OR = {
-						tag = ENG
-						tag = FRA
-						tag = EGY
-						tag = SAU
-						tag = KUW
-						tag = UAE
-						tag = OMA
-						tag = PAK
-					}
-				}
-				country_event = { id = usa.7 hours = 12 }
-			}
-	    }
-	}
-
-    focus = { 
-        id = USA_operation_desert_storm
-		relative_position_id = USA_form_an_anti_iraq_coalition
-		prerequisite = { focus = USA_form_an_anti_iraq_coalition  }
+        id = USA_troop_withdrawal_or_war
+		relative_position_id = USA_diplomatic_isolation_of_iraq
+		prerequisite = { focus = USA_diplomatic_isolation_of_iraq  }
         icon = GFX_	
         x = 0
         y = 1
         cost = 5
-
-		will_lead_to_war_with = IRQ
 		
         completion_reward = {
-			every_country = {
-				limit = {
-					has_country_flag = anti_iraq_coalition
-				}
-				country_event = { id = usa.10 hours = 12 } 
-			}
-			ROOT = {
-      		    declare_war_on = {
-          		   target = IRQ
-         		   type = annex_everything
-      			}	
-			}
+
 	    }
 	}
 
     focus = { 
-        id = USA_massive_airstrikes_on_air_bases
-		relative_position_id = USA_operation_desert_storm
-		prerequisite = { focus = USA_operation_desert_storm  }
+        id = USA_we_need_to_act_more_decisively
+		relative_position_id = USA_economic_blockade_of_iraq
+		prerequisite = { focus = USA_economic_blockade_of_iraq  }
+        mutually_exclusive = { focus = USA_we_remain_democrats }
         icon = GFX_	
-        x = -2
+        x = 3
         y = 1
-        cost = 1
-
-		available = {
-			has_war_with = IRQ
-		}
+        cost = 5
 		
         completion_reward = {
 
@@ -804,82 +618,13 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_gain_air_superiority
-		relative_position_id = USA_massive_airstrikes_on_air_bases
-		prerequisite = { focus = USA_massive_airstrikes_on_air_bases  }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 1
-
-		available = {
-			has_war_with = IRQ
-		}
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_use_the_global_positioning_system
-		relative_position_id = USA_operation_desert_storm
-		prerequisite = { focus = USA_operation_desert_storm  }
-        icon = GFX_	
-        x = 2
-        y = 1
-        cost = 1
-
-		available = {
-			has_war_with = IRQ
-		}
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_cooperation_with_allied_forces
-		relative_position_id = USA_use_the_global_positioning_system
-		prerequisite = { focus = USA_use_the_global_positioning_system  }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 1
-
-		available = {
-			has_war_with = IRQ
-		}
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_victory_in_iraq
-		relative_position_id = USA_operation_desert_storm
-		prerequisite = { focus = USA_gain_air_superiority  }
-		prerequisite = { focus = USA_cooperation_with_allied_forces  }
-        icon = GFX_	
-        x = 0
-        y = 3
-        cost = 1
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_new_world_order
-		relative_position_id = USA_victory_in_iraq
-		prerequisite = { focus = USA_victory_in_iraq  }
+        id = USA_preparation_for_invasion
+		relative_position_id = USA_we_need_to_act_more_decisively
+		prerequisite = { focus = USA_we_need_to_act_more_decisively  }
         icon = GFX_	
         x = 0
         y = 2
-        cost = 3
+        cost = 5
 		
         completion_reward = {
 
@@ -887,13 +632,13 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_focus_on_internal_problems
-		relative_position_id = USA_new_world_order
-		prerequisite = { focus = USA_new_world_order  }
+        id = USA_support_for_the_kuwaiti_resistance
+		relative_position_id = USA_preparation_for_invasion
+		prerequisite = { focus = USA_preparation_for_invasion  }
         icon = GFX_	
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		
         completion_reward = {
 
@@ -901,31 +646,13 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations
-		relative_position_id = USA_focus_on_internal_problems
-		prerequisite = { focus = USA_focus_on_internal_problems  }
-        icon = GFX_	
-        x = 2
-        y = 1
-        cost = 2
-
-		available = {
-			has_completed_focus = USA_increase_funding_for_research
-		}
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_address_to_joint_session_of_congress
-		relative_position_id = USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations
-		prerequisite = { focus = USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations  }
+        id = USA_landing_in_basra
+		relative_position_id = USA_support_for_the_kuwaiti_resistance
+		prerequisite = { focus = USA_support_for_the_kuwaiti_resistance  }
         icon = GFX_	
         x = 0
         y = 1
-        cost = 2
+        cost = 5
 		
         completion_reward = {
 
@@ -933,70 +660,13 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_reduction_of_military_contingent_in_saudi_arabia
-		relative_position_id = USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations
-		prerequisite = { focus = USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations  }
-        icon = GFX_	
-        x = 4
-        y = 1
-        cost = 4
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_signing_of_the_start_it_reaty
-		relative_position_id = USA_address_to_joint_session_of_congress
-		prerequisite = { focus = USA_address_to_joint_session_of_congress  }
-		prerequisite = { focus = USA_reduction_of_military_contingent_in_saudi_arabia  }
-        icon = GFX_	
-        x = 2
-        y = 1
-        cost = 3
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_fight_against_the_budget_deficit
-		relative_position_id = USA_focus_on_internal_problems
-		prerequisite = { focus = USA_focus_on_internal_problems  }
-        icon = GFX_	
-        x = -2
-        y = 1
-        cost = 2
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_break_your_promise
-		relative_position_id = USA_fight_against_the_budget_deficit
-		prerequisite = { focus = USA_fight_against_the_budget_deficit  }
-        icon = GFX_	
-        x = -4
-        y = 1
-        cost = 3
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_modernization_of_its_industry
-		relative_position_id = USA_fight_against_the_budget_deficit
-		prerequisite = { focus = USA_fight_against_the_budget_deficit  }
+        id = USA_a_new_model_of_collective_security
+		relative_position_id = USA_international_sanctions
+		prerequisite = { focus = USA_troop_withdrawal_or_war focus = USA_landing_in_basra  }
         icon = GFX_	
         x = 0
-        y = 1
-        cost = 7
+        y = 4
+        cost = 5
 		
         completion_reward = {
 
@@ -1004,90 +674,16 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_increase_funding_for_research
-		relative_position_id = USA_fight_against_the_budget_deficit
-		prerequisite = { focus = USA_break_your_promise  }
-		prerequisite = { focus = USA_modernization_of_its_industry  }
+        id = USA_international_sanctions
+		relative_position_id = USA_economic_blockade_of_iraq
+		prerequisite = { focus = USA_we_remain_democrats focus = USA_we_need_to_act_more_decisively  }
         icon = GFX_	
-        x = -2
+        x = 0
         y = 2
-        cost = 10
+        cost = 5
 		
         completion_reward = {
 
-	    }
-	}
-
-    focus = { 
-        id = USA_speech_in_kyiv
-		relative_position_id = USA_focus_on_internal_problems
-		prerequisite = { focus = USA_signing_of_the_start_it_reaty  }
-		prerequisite = { focus = USA_increase_funding_for_research  }
-        icon = GFX_	
-        x = 0
-        y = 4
-        cost = 2
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_reduction_of_nuclear_stockpiles
-		relative_position_id = USA_speech_in_kyiv
-		prerequisite = { focus = USA_speech_in_kyiv  }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 2
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_confirm_сlarence_thomas_as_assistant
-		relative_position_id = USA_reduction_of_nuclear_stockpiles
-		prerequisite = { focus = USA_reduction_of_nuclear_stockpiles  }
-        icon = GFX_	
-        x = -1
-        y = 1
-        cost = 2
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_civil_rights_act_of_1991
-		relative_position_id = USA_reduction_of_nuclear_stockpiles
-		prerequisite = { focus = USA_reduction_of_nuclear_stockpiles  }
-        icon = GFX_	
-        x = 1
-        y = 1
-        cost = 2
-		
-        completion_reward = {
-
-	    }
-	}
-
-
-    focus = { 
-        id = USA_reduce_federal_budget_spending_on_arms
-		relative_position_id = USA_george_bush_srs_inauguration
-		prerequisite = { focus = USA_support_new_democracies_in_eastern_europe  }
-		mutually_exclusive = { focus = USA_reorient_the_armed_forces }
-        icon = GFX_	
-        x = 2
-        y = 4
-        cost = 10
-		
-        completion_reward = {
-			add_political_power = 1000
 	    }
 	}
 }

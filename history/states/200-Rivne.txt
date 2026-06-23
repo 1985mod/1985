@@ -1,7 +1,7 @@
 state = {
 	id = 200
 	name = "STATE_200" # Zaporozhe
-	manpower = 1294082
+	manpower = 1124225
 	state_category = town
 
 	history = {
@@ -11,7 +11,11 @@ state = {
 		add_core_of = UKR
 
 		victory_points = {
-			11405 1 # Zaporozhe
+			11405 5 # Zaporozhe
+		}
+
+		victory_points = {
+			6596 2 # Melitopol
 		}
 
 		buildings = {
@@ -21,12 +25,6 @@ state = {
 			# Dnieprostroi Hydroelectric Station
 			11405 = { dam = 1 }
 			
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-			}
 		}
 	}
 

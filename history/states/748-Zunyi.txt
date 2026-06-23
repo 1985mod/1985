@@ -15,14 +15,8 @@ state={
 		victory_points = {
 			1010 3
 		}
-		1939.1.1 = {
-			buildings = {
-				infrastructure = 2
-				air_base = 1
-			}
-		}
 	}
-	manpower=1500000
+	manpower=5230000
 	state_category=pastoral
 	buildings_max_level_factor=1.000
 

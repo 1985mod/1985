@@ -1,0 +1,16 @@
+characters = {
+	NZL_david_longhi = {
+		name = NZL_david_longhi
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_david_longhi
+			}
+		}
+		country_leader = {
+			ideology = classical_social_democracy
+			traits = {}
+			expire = "2022.5.10"
+			id = -100
+		}
+	}
+}

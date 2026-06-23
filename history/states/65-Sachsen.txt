@@ -1,7 +1,7 @@
 state = {
 	id = 65
 	name = "STATE_65"
-	manpower = 5592576
+	manpower = 7019894
 	resources = {
 		steel = 41 #was 12 was 32 #was 53 # was: 90
 		coal = 13 # initial distribution
@@ -31,14 +31,6 @@ state = {
 
 		victory_points = {
 			9471 2 # Chemnitz
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 2
-				arms_factory = 5
-				industrial_complex = 10
-			}
 		}
 	}
 

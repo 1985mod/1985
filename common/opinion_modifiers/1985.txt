@@ -10,4 +10,12 @@ opinion_modifiers = {
     divided_into_two_parts = {
        value = -45
     }
+
+    USA_black_monday_bundesbank_pressure = {
+       value = -50
+    }
+
+    ENG_black_wednesday_bundesbank_pressure = {
+       value = -50
+    }
 }

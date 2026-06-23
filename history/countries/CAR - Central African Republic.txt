@@ -2,44 +2,28 @@
 
 set_oob = GEN_1985
 
+set_research_slots = 1
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
 }
 
 set_convoys = 0
 
-recruit_character = CAR_awt
-recruit_character = CAR_acd2
-recruit_character = CAR_nt
-recruit_character = CAR_aco2
-recruit_character = CAR_acas
-recruit_character = CAR_acr
-recruit_character = CAR_mt
-recruit_character = CAR_stc
-recruit_character = CAR_aa2
-recruit_character = CAR_ncm
-recruit_character = CAR_communist_guy
-recruit_character = CAR_ncs
-recruit_character = CAR_pot
-recruit_character = CAR_nccr
-recruit_character = CAR_fascist_guy
-recruit_character = CAR_coi
-recruit_character = CAR_ai2
-recruit_character = CAR_democratic_guy
-recruit_character = CAR_ar
-recruit_character = CAR_acgs
+recruit_character = CAR_Andre_Dieudonne_Kolingba
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism = 25
+	conservatism = 10
+	neutrality = 70
 	fascism = 20
-	communism = 5
-	neutrality = 50
 }

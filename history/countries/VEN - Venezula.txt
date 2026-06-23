@@ -20,15 +20,19 @@ if = {
 	}
 }
 
+recruit_character = VEN_jaime_lusinchi
 
+set_convoys = 35
 
-set_convoys = 10
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = socialism
+	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	neutrality = 100
+	socialism = 46
+	conservatism = 24
+	liberalism = 23
+	communism = 7
 }

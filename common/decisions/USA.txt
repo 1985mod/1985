@@ -134,3 +134,407 @@ USA_war_on_drugs = {
 		}
 	}
 }
+
+USA_black_monday = {
+
+    USA_black_monday_crisis_deadline = {
+
+		icon = generic_industry
+
+		available = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		activation = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { has_country_flag = USA_black_monday_crisis }
+				has_country_flag = USA_black_monday_stabilized
+			}
+		}
+
+		is_good = no
+		fire_only_once = yes
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			set_country_flag = USA_black_monday_deadline_finished
+			if = {
+				limit = {
+					check_variable = {
+						var = USA.black_monday_panic
+						value = 49
+						compare = greater_than
+					}
+					has_country_flag = USA_black_monday_hidden_stock_purchases
+					NOT = { has_idea = black_monday_severe_scandal }
+				}
+				add_ideas = black_monday_severe_scandal
+				set_country_flag = USA_black_monday_failed
+				set_country_flag = USA_black_monday_stabilized
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = USA.black_monday_panic
+						value = 49
+						compare = greater_than
+					}
+					NOT = { has_country_flag = USA_black_monday_hidden_stock_purchases }
+					NOT = { has_idea = black_monday_severe }
+				}
+				add_ideas = black_monday_severe
+				set_country_flag = USA_black_monday_failed
+				set_country_flag = USA_black_monday_stabilized
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = USA.black_monday_panic
+						value = 24
+						compare = greater_than
+					}
+					check_variable = {
+						var = USA.black_monday_panic
+						value = 50
+						compare = less_than
+					}
+					NOT = { has_idea = black_monday }
+				}
+				add_ideas = black_monday
+				set_country_flag = USA_black_monday_stabilized
+			}
+			if = {
+				limit = {
+					check_variable = {
+						var = USA.black_monday_panic
+						value = 25
+						compare = less_than
+					}
+					NOT = { has_idea = black_monday_mild }
+				}
+				add_ideas = black_monday_mild
+				set_country_flag = USA_black_monday_stabilized
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = CAN
+						tag = JAP
+						tag = WGR
+						tag = FRA
+						tag = ITA
+						tag = HOL
+						tag = BEL
+						tag = SWI
+						tag = SWE
+						tag = DEN
+						tag = NOR
+						tag = FIN
+						tag = AST
+						tag = NZL
+						tag = MAL
+						tag = MEX
+						tag = AUS
+					}
+					NOT = { tag = USA }
+					USA = {
+						check_variable = {
+							var = USA.black_monday_panic
+							value = 49
+							compare = greater_than
+						}
+					}
+					NOT = { has_idea = black_monday_mild }
+					NOT = { has_idea = black_monday }
+					NOT = { has_idea = black_monday_severe }
+					NOT = { has_idea = black_monday_severe_scandal }
+				}
+				add_ideas = black_monday_severe
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = CAN
+						tag = JAP
+						tag = WGR
+						tag = FRA
+						tag = ITA
+						tag = HOL
+						tag = BEL
+						tag = SWI
+						tag = SWE
+						tag = DEN
+						tag = NOR
+						tag = FIN
+						tag = AST
+						tag = NZL
+						tag = MAL
+						tag = MEX
+						tag = AUS
+					}
+					NOT = { tag = USA }
+					USA = {
+						check_variable = {
+							var = USA.black_monday_panic
+							value = 24
+							compare = greater_than
+						}
+						check_variable = {
+							var = USA.black_monday_panic
+							value = 50
+							compare = less_than
+						}
+					}
+					NOT = { has_idea = black_monday_mild }
+					NOT = { has_idea = black_monday }
+					NOT = { has_idea = black_monday_severe }
+					NOT = { has_idea = black_monday_severe_scandal }
+				}
+				add_ideas = black_monday
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = CAN
+						tag = JAP
+						tag = WGR
+						tag = FRA
+						tag = ITA
+						tag = HOL
+						tag = BEL
+						tag = SWI
+						tag = SWE
+						tag = DEN
+						tag = NOR
+						tag = FIN
+						tag = AST
+						tag = NZL
+						tag = MAL
+						tag = MEX
+						tag = AUS
+					}
+					NOT = { tag = USA }
+					USA = {
+						check_variable = {
+							var = USA.black_monday_panic
+							value = 25
+							compare = less_than
+						}
+					}
+					NOT = { has_idea = black_monday_mild }
+					NOT = { has_idea = black_monday }
+					NOT = { has_idea = black_monday_severe }
+					NOT = { has_idea = black_monday_severe_scandal }
+				}
+				add_ideas = black_monday_mild
+			}
+		}
+	}
+
+    USA_black_monday_panic_spread = {
+
+		icon = generic_industry
+
+		available = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		activation = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { has_country_flag = USA_black_monday_crisis }
+				has_country_flag = USA_black_monday_stabilized
+			}
+		}
+
+		is_good = no
+		fire_only_once = no
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			add_to_variable = {
+				var = USA.black_monday_panic
+				value = 10
+			}
+			clamp_variable = {
+				var = USA.black_monday_panic
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = USA_black_monday_panic_plus_10_tt
+		}
+	}
+
+    USA_pressure_bundesbank = {
+
+		icon = generic_industry
+
+		available = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		visible = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		fire_only_once = no
+		days_re_enable = 60
+		cost = 75
+
+		complete_effect = {
+			add_to_variable = {
+				var = USA.black_monday_panic
+				value = -10
+			}
+			clamp_variable = {
+				var = USA.black_monday_panic
+				min = 0
+				max = 100
+			}
+			if = {
+				limit = {
+					WGR = { exists = yes }
+				}
+				add_opinion_modifier = {
+					target = WGR
+					modifier = USA_black_monday_bundesbank_pressure
+				}
+				WGR = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = USA_black_monday_bundesbank_pressure
+					}
+				}
+			}
+			custom_effect_tooltip = USA_black_monday_panic_minus_10_tt
+			custom_effect_tooltip = USA_black_monday_bundesbank_pressure_tt
+		}
+	}
+
+    USA_reagan_televised_address = {
+
+		icon = generic_speech
+
+		available = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		visible = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		fire_only_once = no
+		days_re_enable = 60
+		cost = 40
+
+		complete_effect = {
+			add_stability = -0.03
+			add_to_variable = {
+				var = USA.black_monday_panic
+				value = -6
+			}
+			clamp_variable = {
+				var = USA.black_monday_panic
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = USA_black_monday_panic_minus_6_tt
+		}
+	}
+
+    USA_hidden_stock_purchases = {
+
+		icon = generic_industry
+
+		available = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		visible = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		fire_only_once = yes
+		cost = 120
+
+		complete_effect = {
+			add_to_variable = {
+				var = USA.black_monday_panic
+				value = -15
+			}
+			clamp_variable = {
+				var = USA.black_monday_panic
+				min = 0
+				max = 100
+			}
+			set_country_flag = USA_black_monday_hidden_stock_purchases
+			custom_effect_tooltip = USA_black_monday_panic_minus_15_tt
+			custom_effect_tooltip = USA_black_monday_hidden_stock_purchases_tt
+		}
+	}
+
+    USA_federal_reserve_liquidity = {
+
+		icon = generic_industry
+
+		available = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+		}
+
+		visible = {
+			has_country_flag = USA_black_monday_crisis
+			NOT = { has_country_flag = USA_black_monday_stabilized }
+			NOT = { has_idea = USA_fed_economic_intervention }
+		}
+
+		fire_only_once = yes
+		cost = 200
+
+		complete_effect = {
+			add_to_variable = {
+				var = USA.black_monday_panic
+				value = -30
+			}
+			clamp_variable = {
+				var = USA.black_monday_panic
+				min = 0
+				max = 100
+			}
+			add_timed_idea = {
+				idea = USA_fed_economic_intervention
+				days = 365
+			}
+			custom_effect_tooltip = USA_black_monday_panic_minus_30_tt
+			custom_effect_tooltip = USA_black_monday_fed_intervention_tt
+		}
+	}
+}

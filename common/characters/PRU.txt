@@ -1,0 +1,16 @@
+characters = {
+	PRU_belaunde_terry = {
+		name = PRU_belaunde_terry
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_belaunde_terry
+			}
+		}
+		country_leader = {
+			ideology = classic_liberalism
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}
+}

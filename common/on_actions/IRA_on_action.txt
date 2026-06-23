@@ -1,0 +1,48 @@
+on_actions = {
+
+    on_startup = {
+        effect = {
+            119 = { remove_dynamic_modifier = { modifier = northern_ireland_IRA_activity } }
+            119 = { remove_dynamic_modifier = { modifier = northern_ireland_autonomy } }
+            
+       
+            ENG = { country_event = IRA.2 }
+        }
+    }
+
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { FROM.FROM = 119 }
+                
+                119 = { remove_dynamic_modifier = { modifier = northern_ireland_IRA_activity } }
+                119 = { remove_dynamic_modifier = { modifier = northern_ireland_autonomy } }
+                
+                if = { limit = { ROOT = { tag = IRE } } }
+                
+                else_if = {
+                    limit = { ROOT = { tag = ENG } }
+
+                    if = {
+                        limit = { has_global_flag = IRA_integration_complete }
+
+                    }
+
+                    else_if = {
+                        limit = { has_global_flag = northern_ireland_autonomy_unlocked }
+                        ROOT = { country_event = IRA.3 }
+                    }
+
+                    else = {
+                        ROOT = { country_event = IRA.2 } 
+                    }
+                }
+                
+                else = {
+                    ROOT = { country_event = IRA.2 }
+                }
+            }
+        }
+    }
+
+}

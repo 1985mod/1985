@@ -1,0 +1,18 @@
+characters = {
+	MLI_Moussa_Traore ={
+		name = MLI_Moussa_Traore
+		portraits={
+			civilian={
+				large= GFX_portrait_MLIMoussa_Traore
+			}
+			army = {
+				large = GFX_portrait_MLIMoussa_Traore
+			}
+		}
+		country_leader={
+			ideology = autocracy
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

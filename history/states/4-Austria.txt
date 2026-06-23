@@ -1,7 +1,7 @@
 state = {
 	id = 4
 	name = "STATE_4"
-	manpower = 2297983 # was 2595983
+	manpower = 2912413
 
 	resources = {
 		oil = 2 
@@ -36,13 +36,6 @@ state = {
                 }
             }
 		}
-
-		1939.1.1 = {
-			buildings = {
-				anti_air_building = 5
-			}
-		}
-
 	}
 
 	provinces = {

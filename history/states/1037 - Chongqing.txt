@@ -25,21 +25,12 @@ state = {
 			11972 1 # Yibin
 		}
 
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 3
-				infrastructure = 3
-				air_base = 3
-				arms_factory = 1
-			}
-		}
-
 	}
 
 	provinces = {
 		4431 6999 7240 11972 12705 
 	}
-	manpower = 31777980
+	manpower = 14500000
 	buildings_max_level_factor = 1.000
 	state_category = city
 

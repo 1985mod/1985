@@ -2,7 +2,7 @@
 state={
 	id=240
 	name="STATE_240" # Belgorod
-	manpower = 1364537
+	manpower = 2533454
 	
 	state_category = town
 
@@ -15,11 +15,6 @@ state={
 			infrastructure = 3 #was: 5
 		}
 		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-			}
-		}
 	}
 
 	provinces={

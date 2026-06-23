@@ -24,22 +24,13 @@ state = {
 		victory_points = {
 			1367 1 # Guanghan
 		}
-		
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-				infrastructure = 3
-				arms_factory = 1
-
-			}
-		}
 
 	}
 
 	provinces = {
 		1367 1395 4925 8026 10132 12141 12767 12819
 	}
-	manpower = 5448874
+	manpower = 9800000
 	buildings_max_level_factor = 1.000
 	state_category = town
 

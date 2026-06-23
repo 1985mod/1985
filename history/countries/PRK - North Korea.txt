@@ -33,62 +33,12 @@ add_opinion_modifier = {
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1936.1.1"
+	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 2
-	fascism = 3
-	communism = 90
-	neutrality = 5
+	fascism = 1
+	communism = 98
+	neutrality = 1
 }
-
-create_country_leader = {
-	name = "Syngman Rhee"
-	desc = ""
-	picture = GFX_portrait_Syngman_Rhee
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Yi Kang"
-	desc = ""
-	picture = GFX_portrait_Yi_Kang
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Kim_Il_sung"
-	desc = ""
-	picture = GFX_portrait_Kim_Il_sung
-	expire = "1965.1.1"
-	ideology = communism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Yi Un"
-	desc = ""
-	picture = GFX_portrait_Yi_Un
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-color = { 180 0 0 }
-color_ui = { 220 30 30 }
-graphical_culture = asian_gfx
-graphical_culture_2d = asian_2d

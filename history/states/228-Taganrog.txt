@@ -2,18 +2,21 @@
 state={
 	id=228
 	name="STATE_228" # Voroshilovgrad
-	manpower = 2167411
-
-	resources = {
-		coal = 39 # initial distribution
-	}
+	manpower = 1043238
 	
 	state_category = town
+
+	resources = {
+		coal = 39
+	}
 
 	history={
 		owner = SOV
 		victory_points = {
-			9461 1
+			9461 5
+		}
+		victory_points = {
+			6519 2
 		}
 		buildings = {
 			infrastructure = 3 #was: 5

@@ -1,0 +1,18 @@
+characters = {
+	GHA_Jerry_John_Rawlings ={
+		name = GHA_Jerry_John_Rawlings
+		portraits={
+			civilian={
+				large= GFX_portrait_GHA_Jerry_John_Rawlings
+			}
+			army = {
+				large = GFX_portrait_GHA_Jerry_John_Rawlings
+			}
+		}
+		country_leader={
+			ideology = oligarchism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

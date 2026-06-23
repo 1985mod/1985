@@ -2,7 +2,7 @@
 state={
 	id=378
 	name="STATE_378"
-	manpower = 5677248
+	manpower = 26453108
 	
 	state_category = metropolis
 	
@@ -44,11 +44,6 @@ state={
 		}
 		victory_points = {
 			9713 1 
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 7
-			}
 		}
 	}
 

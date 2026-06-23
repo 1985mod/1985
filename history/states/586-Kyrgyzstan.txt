@@ -20,20 +20,12 @@ state={
 			1591 3 
 		}
 		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-
-			}
-
-		}
-
 	}
 
 	provinces={
 		1591 1840 4773 4845 7706 10146 10547 10603 12640 12658 
 	}
-	manpower=2563404
+	manpower=3997833
 	buildings_max_level_factor=1.000
 	state_category=city
 

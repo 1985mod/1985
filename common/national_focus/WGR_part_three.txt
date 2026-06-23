@@ -1,0 +1,391 @@
+focus_tree = {
+	id = WGR_part_three
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WGR
+		}
+	}
+	default = no
+	focus = {
+		id = WGR_germany_facing_change
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 25
+		y = 0
+
+	}
+	focus = {
+		id = WGR_ostpolic
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_peremen
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = WGR_domestic_politics
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_ostpolic
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = WGR_open_doors_for_everyone
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_domestic_politics
+		}
+		mutually_exclusive = {
+			focus = WGR_germany_above_all
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = WGR_germany_above_all
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_domestic_politics
+		}
+		mutually_exclusive = {
+			focus = WGR_open_doors_for_everyone
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = WGR_consider_benefits_for_germans
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_above_all
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = WGR_tighten_migration_policy
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_consider_benefits_for_germans
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = WGR_germany_commynity
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_ostpolic
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = WGR_now_germany_arhitector
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_commynity
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = WGR_germany_market
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_commynity
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = WGR_united_nation
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_germany_market
+		}
+		prerequisite = {
+			focus = WGR_now_germany_arhitector
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = WGR_investment_europe
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_united_nation
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = WGR_industrial_backbone_of_europe
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_united_nation
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = WGR_economic_cooperation_the_west
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_united_nation
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = WGR_germany_wonderful
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_investment_europe
+		}
+		prerequisite = {
+			focus = WGR_industrial_backbone_of_europe
+		}
+		prerequisite = {
+			focus = WGR_economic_cooperation_the_west
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = WGR_eastern_bloc_is_tottering
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_ostpolic
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = WGR_relations_with_soviet_union
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_eastern_bloc_is_tottering
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = WGR_reforms_gorbachev
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_sov_otnoshenia
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = WGR_2+4
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_reforms_gorbachev
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = WGR_the_west_is_lead
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_2+4
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = WGR_jobs_for_migrants
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_open_doors_for_everyone
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = WGR_expansion_of_workers_unions
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_jobs_for_migrants
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = WGR_our_choice
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_tighten_migration_policy
+			focus = WGR_expansion_of_workers_unions
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = WGR_questions_divide_us
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_eastern_bloc_is_tottering
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = WGR_support_the_protests_in_gdr
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_questions_divide_us
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = WGR_demonstrations_in_leipzig
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_support_the_protests_in_gdr
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = WGR_berlin_wall
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = demonstrations_in_leipzig
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = WGR_dialogue_with_the_east
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_berlin_wall
+		}
+		prerequisite = {
+			focus = WGR_the_west_is_lead
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = WGR_german_future
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = dialogue_with_the_east
+		}
+		prerequisite = {
+			focus = WGR_germany_wonderful
+		}
+		prerequisite = {
+			focus = WGR_our_choice
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = WGR_happy_day
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_german_future
+		}
+		mutually_exclusive = {
+			focus = WGR_division_of_the_people
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = WGR_division_of_the_people
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_german_future
+		}
+		mutually_exclusive = {
+			focus = WGR_happy_day
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = WGR_other_association
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = WGR_division_of_the_people
+		}
+		x = 24
+		y = 10
+
+	}
+}
