@@ -32,8 +32,9 @@
         y = 1
         cost = 2.5
 		completion_reward = {
-			}
+            country_event = { id = SOV_soviet_union.24 }
 		}
+	}
 
     focus = { 
         id = SOV_withdrawal_of_soviet_troops_from_afghanistan
@@ -49,6 +50,7 @@
         }
 
         completion_reward = {
+
         }
     }
 
@@ -61,6 +63,7 @@
         prerequisite = { focus = SOV_withdrawal_of_soviet_troops_from_afghanistan }
         cost = 7.2
         completion_reward = {
+            country_event = { id = SOV_soviet_union.12 }
         }
     }
 
@@ -73,6 +76,7 @@
         prerequisite = { focus = SOV_withdrawal_of_soviet_troops_from_afghanistan }
         cost = 4
         completion_reward = {
+            add_stability = -0.05
         }
     }
 
@@ -86,6 +90,7 @@
         prerequisite = { focus = SOV_parade_of_sovereignties }
         cost = 4.4
         completion_reward = {
+            country_event = { id = SOV_soviet_union.25 }
         }
     }
     
@@ -98,6 +103,7 @@
         prerequisite = { focus = SOV_xix_all_union_conference_of_the_cpsu }
         cost = 3
         completion_reward = {
+
         }
     }
     
@@ -110,6 +116,7 @@
         prerequisite = { focus = SOV_interregional_deputy_roup }
         cost = 3
         completion_reward = {
+            country_event = { id = SOV_soviet_union.26 }
         }
     }
 
@@ -122,6 +129,7 @@
         prerequisite = { focus = SOV_interregional_deputy_roup }
         cost = 3
         completion_reward = {
+
         }
     }
 
@@ -135,6 +143,7 @@
         prerequisite = { focus = SOV_law_on_the_press }
         cost = 10
         completion_reward = {
+
         }
     }
 
@@ -166,6 +175,7 @@
         allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
         cost = 3
         completion_reward = {
+            country_event = { id = SOV_soviet_union.27 }
         }
     }
 
@@ -207,6 +217,19 @@
         allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
         cost = 3.7
         completion_reward = {
+            send_embargo = LIT
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = refused_market_trade
+				}
+			}
+			LIT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = refused_market_trade
+				}
+			}
         }
     }
 
@@ -222,6 +245,7 @@
         y = 1
         cost = 3
         completion_reward = {
+            country_event = { id = SOV_soviet_union.28 }
         }
     }
 
@@ -235,6 +259,7 @@
         y = 1
         cost = 4.4
         completion_reward = {
+            break_embargo = LIT
         }
     }
 
@@ -248,6 +273,18 @@
         y = 1
         cost = 4.4
         completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = sanctions_relations
+				}
+			}
+			LIT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = sanctions_relations
+				}
+			}
         }
     }
 
@@ -272,6 +309,12 @@
         y = 1
         cost = 2.2
         completion_reward = {
+            add_stability = -0.1
+            add_political_power = 50
+            add_popularity = {
+                ideology = communism
+                popularity = -0.05
+            }
         }
     }
 
@@ -284,6 +327,7 @@
         y = 1
         cost = 4.4
         completion_reward = {
+            country_event = { id = SOV_soviet_union.29 }
         }
     }
 
@@ -296,6 +340,15 @@
         y = 1
         cost = 3
         completion_reward = {
+            add_political_power = 50
+            add_popularity = {
+                ideology = liberalism
+                popularity = -0.03
+            }
+            add_popularity = {
+                ideology = conservatism
+                popularity = -0.03
+            }
         }
     }
 
@@ -308,6 +361,15 @@
         y = 1
         cost = 3
         completion_reward = {
+            add_political_power = 50
+            add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.05
+            }
         }
     }
 
@@ -332,6 +394,7 @@
         y = 1
         cost = 1
         completion_reward = {
+            country_event = { id = SOV_soviet_union.30 }
         }
     }
 
@@ -344,6 +407,7 @@
         y = 1
         cost = 1
         completion_reward = {
+            country_event = { id = SOV_soviet_union.31 }
         }
     }
 
@@ -358,6 +422,7 @@
         cost = 3
 
         completion_reward = {
+            country_event = { id = SOV_soviet_union.32 }
             load_focus_tree = soviet_gorbachev_focus_part_three
         }
     }

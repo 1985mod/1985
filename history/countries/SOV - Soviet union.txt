@@ -229,6 +229,9 @@ recruit_character = SOV_Shaposhnikov
 recruit_character = SOV_Sokolov
 recruit_character = SOV_Nikolai_Makarov
 recruit_character = SOV_zhirinovsky
+recruit_character = SOV_alexander_yakovlev
+recruit_character = SOV_andrey_gromyko
+recruit_character = SOV_boris_yeltsin_advisor
 
 252 = {
     add_building_construction = {

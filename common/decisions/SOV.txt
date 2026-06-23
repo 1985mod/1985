@@ -40,3 +40,47 @@ SOV_prohibition_ussr = {
 		}
 	}
 }
+
+SOV_law_on_the_press_cat = {
+
+    SOV_abolition_of_censorship = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = SOV_law_on_the_press
+		}
+		
+		days_remove = 70
+
+		fire_only_once = yes
+		
+		cost = 50
+		
+		modifier = {
+			liberalism_drift = 0.03
+			conservatism_drift = 0.03
+		}
+	}
+
+    SOV_right_to_establish_media = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = SOV_law_on_the_press
+		}
+		
+		days_remove = 60
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		remove_effect = {
+			add_political_power = 75
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+	}
+}
