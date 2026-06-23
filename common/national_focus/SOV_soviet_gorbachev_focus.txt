@@ -145,8 +145,8 @@ focus_tree = {
         prerequisite = { focus = SOV_housing_2000_program }
         cost = 5
         completion_reward = {
-        country_event = { id = SOV_soviet_union.7 }
-            add_global_tension = -0.5
+            country_event = { id = SOV_soviet_union.7 }
+            add_global_tension = -0.15
             USA = {
 	        add_opinion_modifier = { target = SOV modifier = generic_diplomatic_boost }
             }
@@ -175,7 +175,9 @@ focus_tree = {
         relative_position_id = SOV_elimination_of_weapons_funding
         prerequisite = { focus = SOV_elimination_of_weapons_funding}
         cost = 5
+
         completion_reward = { #event#
+            country_event = { id = SOV_soviet_union.14 }
         }
     }
 
@@ -189,10 +191,27 @@ focus_tree = {
         cost = 5
         completion_reward = {
         add_tech_bonus = {
-	    bonus = 0.10
-	    uses = 1
-	    category = electronics
+	        bonus = 0.10
+	        uses = 1
+	        category = electronics
         }
+		random_owned_controlled_state = {
+			limit = {					
+				is_in_home_area = yes					
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+        add_stability = 0.03
     }
 }
 
@@ -204,7 +223,9 @@ focus_tree = {
         relative_position_id = SOV_elimination_of_weapons_funding
         prerequisite = { focus = SOV_elimination_of_weapons_funding}
         cost = 5
+
         completion_reward = { #event#
+            country_event = { id = SOV_soviet_union.15 }
         }
     }
 
@@ -217,7 +238,9 @@ focus_tree = {
         prerequisite = { focus = SOV_elimination_of_weapons_funding}
         prerequisite = { focus = SOV_xxvii_congress_of_the_cpsu focus = SOV_launch_of_mir_station}
         cost = 5
+
         completion_reward = {
+            add_stability = 0.05
         }
     }
 
@@ -231,6 +254,7 @@ focus_tree = {
         prerequisite = { focus = SOV_xxvii_congress_of_the_cpsu focus = SOV_visit_to_hungary }
         cost = 5
         completion_reward = {
+
         }
     }
 
@@ -244,6 +268,8 @@ focus_tree = {
         prerequisite = { focus = SOV_introduction_of_state_acceptance}
         cost = 5
         completion_reward = {
+            add_political_power = 75
+            add_stability = 0.05
         }
     }
 
@@ -255,7 +281,9 @@ focus_tree = {
         relative_position_id =  SOV_the_fight_against_unearned_income
         prerequisite = { focus = SOV_the_fight_against_unearned_income}
         cost = 10
+        
         completion_reward = {
+            add_ideas = SOV_decree_on_the_establishment_of_cooperatives_in_the_tnp_idea
         }
     }
 
@@ -267,7 +295,9 @@ focus_tree = {
         relative_position_id =  SOV_the_fight_against_unearned_income
         prerequisite = { focus = SOV_the_fight_against_unearned_income}
         cost = 10
+
         completion_reward = {
+            add_ideas = SOV_law_on_individual_labor_activity_idea
         }
     }
 
@@ -281,7 +311,7 @@ focus_tree = {
         prerequisite = { focus = SOV_decree_on_the_establishment_of_cooperatives_in_the_tnp }
         cost = 5
         completion_reward = { #event#
-        add_stability = -0.03
+            add_stability = -0.03
         }
     }
 
@@ -296,6 +326,26 @@ focus_tree = {
         completion_reward = { #event#
             set_country_flag = SOV_visit_czechoslovakia
             mark_focus_tree_layout_dirty = yes
+		    add_popularity = {
+			    ideology = socialism
+			    popularity = 0.07
+	    	}
+		    add_popularity = {
+			    ideology = conservatism
+			    popularity = 0.02
+	    	}
+		    add_popularity = {
+			    ideology = liberalism
+			    popularity = 0.03
+	    	}
+		    add_popularity = {
+			    ideology = neutrality
+			    popularity = 0.02
+	    	}
+		    add_popularity = {
+			    ideology = fascism
+			    popularity = 0.02
+	    	}
         }
     }
 
@@ -308,7 +358,9 @@ focus_tree = {
         allow_branch = {has_country_flag = SOV_visit_czechoslovakia}
         prerequisite = { focus = SOV_release_of_dissidents }
         cost = 5
+        
         completion_reward = {
+            country_event = { id = SOV_soviet_union.20 }
         }
     }
 
@@ -320,8 +372,13 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
+
         completion_reward = { #event#
             add_stability = -0.02
+            add_timed_idea = {
+                idea = SOV_politics_of_glasnost_idea
+                days = 180
+            }
         }
     }
 
@@ -333,7 +390,9 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
+
         completion_reward = {
+            country_event = { id = SOV_soviet_union.21 }
         }
     }
 
@@ -344,8 +403,10 @@ focus_tree = {
         icon = GFX_NONE
         x = -2
         y = 1
-        cost = 5
+        cost = 10
+
         completion_reward = {
+            add_ideas = SOV_law_on_state_enterprise_idea
         }
     }
 
@@ -354,22 +415,26 @@ focus_tree = {
         relative_position_id = SOV_election_of_yazov
         prerequisite = { focus = SOV_election_of_yazov }
         icon = GFX_NONE
-        x = 0
-        y = 1
-        cost = 5
-        completion_reward = {
-        }
-    }
-
-    focus = { 
-        id = SOV_yeltsin_criticizes_the_politburo
-        relative_position_id = SOV_election_of_yazov
-        prerequisite = { focus = SOV_election_of_yazov }
-        icon = GFX_NONE
         x = 2
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
         }
     }
 
@@ -377,17 +442,17 @@ focus_tree = {
         id = SOV_destruction_of_missiles_in_europe
         icon = GFX_
         x = 0
-        y = 1
-        cost = 5
-        relative_position_id = SOV_first_joint_ventures
+        y = 2
+        cost = 7.2
+        relative_position_id = SOV_election_of_yazov
         prerequisite = { focus = SOV_first_joint_ventures }
         prerequisite = { focus = SOV_law_on_state_enterprise }
-        prerequisite = { focus = SOV_yeltsin_criticizes_the_politburo }
         completion_reward = {
             load_focus_tree = {
-    		tree = soviet_gorbachev_focus_part_two
-  			keep_completed = yes
+    		    tree = soviet_gorbachev_focus_part_two
+  			    keep_completed = yes
             }
+            add_stability = 0.05
         }
     }
 }

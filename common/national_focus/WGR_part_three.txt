@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = WGR_germany_peremen
+		id = WGR_germany_facing_change
 		icon = GFX_goal_unknown
 		cost = 5
 		x = 25
@@ -28,7 +28,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_vnytrenaa_politica
+		id = WGR_domestic_politics
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -39,50 +39,50 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_migrant_door
+		id = WGR_open_doors_for_everyone
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_vnytrenaa_politica
+			focus = WGR_domestic_politics
 		}
 		mutually_exclusive = {
-			focus = WGR_germany_nazi
+			focus = WGR_germany_above_all
 		}
 		x = 18
 		y = 3
 
 	}
 	focus = {
-		id = WGR_germany_nazi
+		id = WGR_germany_above_all
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_vnytrenaa_politica
+			focus = WGR_domestic_politics
 		}
 		mutually_exclusive = {
-			focus = WGR_migrant_door
+			focus = WGR_open_doors_for_everyone
 		}
 		x = 20
 		y = 3
 
 	}
 	focus = {
-		id = WGR_lgot_germany
+		id = WGR_consider_benefits_for_germans
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_germany_nazi
+			focus = WGR_germany_above_all
 		}
 		x = 20
 		y = 4
 
 	}
 	focus = {
-		id = WGR_migrant_ploho
+		id = WGR_tighten_migration_policy
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_lgot_germany
+			focus = WGR_consider_benefits_for_germans
 		}
 		x = 20
 		y = 5
@@ -111,7 +111,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_germany_rynok
+		id = WGR_germany_market
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -122,11 +122,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_edinoe_nation
+		id = WGR_united_nation
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_germany_rynok
+			focus = WGR_germany_market
 		}
 		prerequisite = {
 			focus = WGR_now_germany_arhitector
@@ -136,57 +136,57 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_investicia_europe
+		id = WGR_investment_europe
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_edinoe_nation
+			focus = WGR_united_nation
 		}
 		x = 23
 		y = 5
 
 	}
 	focus = {
-		id = WGR_prom_europe
+		id = WGR_industrial_backbone_of_europe
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_edinoe_nation
+			focus = WGR_united_nation
 		}
 		x = 25
 		y = 5
 
 	}
 	focus = {
-		id = WGR_economic_zapad
+		id = WGR_economic_cooperation_the_west
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_edinoe_nation
+			focus = WGR_united_nation
 		}
 		x = 27
 		y = 5
 
 	}
 	focus = {
-		id = WGR_germany_wonderfol
+		id = WGR_germany_wonderful
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_investicia_europe
+			focus = WGR_investment_europe
 		}
 		prerequisite = {
-			focus = WGR_prom_europe
+			focus = WGR_industrial_backbone_of_europe
 		}
 		prerequisite = {
-			focus = WGR_economic_zapad
+			focus = WGR_economic_cooperation_the_west
 		}
 		x = 25
 		y = 6
 
 	}
 	focus = {
-		id = WGR_vostok_hsatait
+		id = WGR_eastern_bloc_is_tottering
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -197,18 +197,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_sov_otnoshenia
+		id = WGR_relations_with_soviet_union
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_vostok_hsatait
+			focus = WGR_eastern_bloc_is_tottering
 		}
 		x = 30
 		y = 3
 
 	}
 	focus = {
-		id = WGR_reform_gorbachev
+		id = WGR_reforms_gorbachev
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -223,14 +223,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_reform_gorbachev
+			focus = WGR_reforms_gorbachev
 		}
 		x = 30
 		y = 5
 
 	}
 	focus = {
-		id = WGR_zapad_leader
+		id = WGR_the_west_is_lead
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -241,67 +241,67 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_work_migrant
+		id = WGR_jobs_for_migrants
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_migrant_door
+			focus = WGR_open_doors_for_everyone
 		}
 		x = 18
 		y = 4
 
 	}
 	focus = {
-		id = WGR_migrant_good
+		id = WGR_expansion_of_workers_unions
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_work_migrant
+			focus = WGR_jobs_for_migrants
 		}
 		x = 18
 		y = 5
 
 	}
 	focus = {
-		id = WGR_nash_vibor
+		id = WGR_our_choice
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_migrant_ploho
-			focus = WGR_migrant_good
+			focus = WGR_tighten_migration_policy
+			focus = WGR_expansion_of_workers_unions
 		}
 		x = 19
 		y = 6
 
 	}
 	focus = {
-		id = WGR_voprosi
+		id = WGR_questions_divide_us
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_vostok_hsatait
+			focus = WGR_eastern_bloc_is_tottering
 		}
 		x = 32
 		y = 3
 
 	}
 	focus = {
-		id = WGR_protest_gdr
+		id = WGR_support_the_protests_in_gdr
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_voprosi
+			focus = WGR_questions_divide_us
 		}
 		x = 32
 		y = 4
 
 	}
 	focus = {
-		id = WGR_leispeg
+		id = WGR_demonstrations_in_leipzig
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_protest_gdr
+			focus = WGR_support_the_protests_in_gdr
 		}
 		x = 32
 		y = 5
@@ -312,38 +312,38 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_leispeg
+			focus = demonstrations_in_leipzig
 		}
 		x = 32
 		y = 6
 
 	}
 	focus = {
-		id = WGR_dialog_vostok
+		id = WGR_dialogue_with_the_east
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
 			focus = WGR_berlin_wall
 		}
 		prerequisite = {
-			focus = WGR_zapad_leader
+			focus = WGR_the_west_is_lead
 		}
 		x = 31
 		y = 7
 
 	}
 	focus = {
-		id = WGR_germany_bydyshie
+		id = WGR_german_future
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_dialog_vostok
+			focus = dialogue_with_the_east
 		}
 		prerequisite = {
-			focus = WGR_germany_wonderfol
+			focus = WGR_germany_wonderful
 		}
 		prerequisite = {
-			focus = WGR_nash_vibor
+			focus = WGR_our_choice
 		}
 		x = 25
 		y = 8
@@ -354,21 +354,21 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_germany_bydyshie
+			focus = WGR_german_future
 		}
 		mutually_exclusive = {
-			focus = WGR_razdelenyi_narod
+			focus = WGR_division_of_the_people
 		}
 		x = 26
 		y = 9
 
 	}
 	focus = {
-		id = WGR_razdelenyi_narod
+		id = WGR_division_of_the_people
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_germany_bydyshie
+			focus = WGR_german_future
 		}
 		mutually_exclusive = {
 			focus = WGR_happy_day
@@ -378,11 +378,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_drygoe_obedinenie
+		id = WGR_other_association
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_razdelenyi_narod
+			focus = WGR_division_of_the_people
 		}
 		x = 24
 		y = 10

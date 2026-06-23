@@ -40,21 +40,9 @@ news_event = {
 	desc = news.2.desc
 	picture = GFX_news_SOV_dead_chernenko2
 
+	is_triggered_only = yes
+
     major = yes
-
-	mean_time_to_happen = {
-		days = 4
-	}
-
-	trigger = {
-        NOT = { has_global_flag = usa_dead_chernenko }
-		tag = SOV
-		date > 1985.3.3
-	}
-
-	immediate = {
-		set_global_flag = usa_dead_chernenko
-	}
 
     option = {
         name = SOV_dead_cernenko.1.a

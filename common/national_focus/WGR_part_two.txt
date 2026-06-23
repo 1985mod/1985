@@ -28,7 +28,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_franco_germany
+		id = WGR_franco_germany_engine
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -39,7 +39,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_bundesver
+		id = WGR_bundeswehr
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -50,47 +50,47 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_leopard
+		id = WGR_leopard_tank
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_bundesver
+			focus = WGR_bundeswehr
 		}
 		x = 9
 		y = 4
 
 	}
 	focus = {
-		id = WGR_vozdyh_germany
+		id = WGR_german_air_exercises
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_bundesver
+			focus = WGR_bundeswehr
 		}
 		x = 13
 		y = 4
 
 	}
 	focus = {
-		id = WGR_compyter_economic
+		id = WGR_computerization_economic
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = WGR_franco_germany
+			focus = WGR_franco_germany_engine
 		}
 		x = 21
 		y = 3
 
 	}
 	focus = {
-		id = WGR_rasvitie_microelectronic
+		id = WGR_microelectronic_development
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_compyter_economic
+			focus = WGR_computerization_economic
 		}
 		mutually_exclusive = {
-			focus = WGR_export_tovar
+			focus = WGR_export_product
 		}
 		x = 20
 		y = 4
@@ -101,14 +101,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_rasvitie_microelectronic
+			focus = WGR_microelectronic_development
 		}
 		x = 19
 		y = 5
 
 	}
 	focus = {
-		id = WGR_rasvite_rodnye_companiye
+		id = WGR_development_germany_company
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -130,36 +130,36 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_export_tovar
+		id = WGR_export_product
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_compyter_economic
+			focus = WGR_computerization_economic
 		}
 		mutually_exclusive = {
-			focus = WGR_rasvitie_microelectronic
+			focus = WGR_microelectronic_development
 		}
 		x = 22
 		y = 4
 
 	}
 	focus = {
-		id = WGR_modern_zabod_rure
+		id = WGR_modernize_the_ruhr_factories
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_export_tovar
+			focus = WGR_export_product
 		}
 		x = 23
 		y = 5
 
 	}
 	focus = {
-		id = WGR_gos_investuy
+		id = WGR_public_investment
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_modern_zabod_rure
+			focus = WGR_modernize_the_ruhr_factories
 			focus = WGR_support_siemes
 		}
 		x = 21
@@ -167,37 +167,37 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_ger_zavod
+		id = WGR_germany_fabric
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_modern_zabod_rure
+			focus = WGR_modernize_the_ruhr_factories
 		}
 		x = 23
 		y = 6
 
 	}
 	focus = {
-		id = WGR_germany_dvigali
+		id = WGR_german_motors
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_modern_zabod_rure
+			focus = WGR_modernize_the_ruhr_factories
 		}
 		x = 25
 		y = 6
 
 	}
 	focus = {
-		id = WGR_rein_chydo
+		id = WGR_rhine_miracle
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = WGR_gos_investuy
-			focus = WGR_ger_zavod
-			focus = WGR_germany_dvigali
+			focus = WGR_public_investment
+			focus = WGR_germany_fabric
+			focus = WGR_germany_motors
 			focus = WGR_volkswagen
-			focus = WGR_rasvite_rodnye_companiye
+			focus = WGR_development_germany_company
 		}
 		x = 20
 		y = 7
@@ -215,7 +215,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_dogovor_rsmd
+		id = WGR_contract_rsmd
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -230,7 +230,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_dogovor_rsmd
+			focus = WGR_contract_rsmd
 		}
 		x = 26
 		y = 4
@@ -241,18 +241,18 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_dogovor_rsmd
+			focus = WGR_contract_rsmd
 		}
 		x = 28
 		y = 4
 
 	}
 	focus = {
-		id = WGR_rasvitie_nuke
+		id = WGR_development_nuke
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_dogovor_rsmd
+			focus = WGR_contract_rsmd
 		}
 		x = 30
 		y = 4
@@ -269,14 +269,14 @@ focus_tree = {
 			focus = WGR_federal_police
 		}
 		prerequisite = {
-			focus = WGR_rasvitie_nuke
+			focus = WGR_development_nuke
 		}
 		x = 28
 		y = 5
 
 	}
 	focus = {
-		id = WGR_smotret_vostok
+		id = WGR_monitor_the_situation_east
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -291,46 +291,46 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_smotret_vostok
+			focus = WGR_monitor_the_situation_east
 		}
 		x = 34
 		y = 4
 
 	}
 	focus = {
-		id = WGR_ybrat_napryagy_zapad_vostok
+		id = WGR_remove_tension_west_east
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_smotret_vostok
+			focus = WGR_monitor_the_situation_east
 		}
 		x = 36
 		y = 4
 
 	}
 	focus = {
-		id = WGR_oslab_vostok
+		id = WGR_weakened_east
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_smotret_vostok
+			focus = weakened_east
 		}
 		x = 38
 		y = 4
 
 	}
 	focus = {
-		id = WGR_pacific
+		id = WGR_growth_pacifist_movement
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
 			focus = WGR_cold_war
 		}
 		prerequisite = {
-			focus = WGR_ybrat_napryagy_zapad_vostok
+			focus = WGR_monitor_the_situation_east
 		}
 		prerequisite = {
-			focus = WGR_oslab_vostok
+			focus = WGR_weakened_east
 		}
 		x = 36
 		y = 5
@@ -344,71 +344,71 @@ focus_tree = {
 			focus = WGR_bundestag
 		}
 		prerequisite = {
-			focus = WGR_pacific
+			focus = WGR_pacific_movement
 		}
 		x = 32
 		y = 7
 
 	}
 	focus = {
-		id = WGR_nato_ycheniya
+		id = WGR_learn_from_nato_exercises
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_bundesver
+			focus = WGR_bundeswehr
 		}
 		x = 11
 		y = 4
 
 	}
 	focus = {
-		id = WGR_nato_sil
+		id = WGR_nato_force_coordination
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_vozdyh_germany
+			focus = WGR_german_air_exercises
 		}
 		prerequisite = {
-			focus = WGR_nato_ycheniya
+			focus = WGR_learn_from_nato_exercises
 		}
 		prerequisite = {
-			focus = WGR_leopard
+			focus = WGR_leopard_tank
 		}
 		x = 11
 		y = 5
 
 	}
 	focus = {
-		id = WGR_plan_rein
+		id = WGR_rhine_defense_plan
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_nato_sil
+			focus = nato_force_coordination
 		}
 		x = 12
 		y = 6
 
 	}
 	focus = {
-		id = WGR_tank_doktrine
+		id = WGR_tank_doctrine
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_nato_sil
+			focus = nato_force_coordination
 		}
 		x = 10
 		y = 6
 
 	}
 	focus = {
-		id = WGR_europe_hit
+		id = WGR_europe_shield
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = WGR_tank_doktrine
+			focus = WGR_tank_doctrine
 		}
 		prerequisite = {
-			focus = WGR_plan_rein
+			focus = WGR_rhine_defense_plan
 		}
 		x = 11
 		y = 7
@@ -422,10 +422,10 @@ focus_tree = {
 			focus = WGR_stabili_democratic
 		}
 		prerequisite = {
-			focus = WGR_rein_chydo
+			focus = WGR_rhine_miracle
 		}
 		prerequisite = {
-			focus = WGR_europe_hit
+			focus = WGR_european_shield
 		}
 		x = 20
 		y = 9

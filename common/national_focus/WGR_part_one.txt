@@ -18,7 +18,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WGR_germany_kurs
+		id = WGR_german_course
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = { focus = WGR_germany_nation }
@@ -30,13 +30,13 @@ focus_tree = {
 		id = WGR_economic_modern
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = { focus = WGR_germany_kurs }
+		prerequisite = { focus = WGR_german_course }
 		x = 6
 		y = 2
 	}
 
 	focus = {
-		id = WGR_avtomatic_zavod
+		id = WGR_automatic_factory
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = { focus = WGR_economic_modern }
@@ -45,7 +45,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WGR_nalogI_klass
+		id = WGR_taxes_on_the_middle_class
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = { focus = WGR_economic_modern }
@@ -54,10 +54,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WGR_doctrine_kolya
+		id = WGR_doctrine_kohl
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = { focus = WGR_germany_kurs }
+		prerequisite = { focus = WGR_german_course }
 		x = 9
 		y = 2
 	}
@@ -66,7 +66,7 @@ focus_tree = {
 		id = WGR_worldlaw_and_safety
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = { focus = WGR_germany_kurs }
+		prerequisite = { focus = WGR_german_course }
 		x = 12
 		y = 2
 	}
@@ -93,9 +93,9 @@ focus_tree = {
 		id = WGR_course_determination
 		icon = GFX_goal_unknown
 		cost = 10
-		prerequisite = { focus = WGR_doctrine_kolya }
-		prerequisite = { focus = WGR_avtomatic_zavod }
-		prerequisite = { focus = WGR_nalogI_klass }
+		prerequisite = { focus = WGR_doctrine_kohl }
+		prerequisite = { focus = WGR_automatic_factory }
+		prerequisite = { focus = WGR_taxes_on_the_middle_class }
 		prerequisite = { focus = WGR_nato_and_usa }
 		prerequisite = { focus = WGR_europa }
 		x = 9
@@ -103,10 +103,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WGR_rassvet_germany
+		id = WGR_dawn_of_germany
 		icon = GFX_goal_unknown
 		cost = 10
-		prerequisite = { focus = WGR_course_determination } # Добавил логическую связь
+		prerequisite = { focus = WGR_course_determination }
 		x = 9
 		y = 5
 		completion_reward = {
