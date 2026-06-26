@@ -1,4 +1,260 @@
 
+
+USA_cold_war = {
+
+    USA_support_afghan_government = {
+	
+		icon = generic_speech
+
+		cost = 25
+		days_remove = 30
+
+	    visible = {
+        	AFN = { has_war_with = AFS }
+			original_tag = SOV
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			AFS = {
+				add_political_power = 10
+				add_stability = 0.02
+			}
+		}
+	}
+
+	USA_supply_of_weaponry_to_afghanistan = {
+
+		icon = eng_propaganda_campaigns
+
+	    visible = {
+        	AFN = { has_war_with = AFS }
+			original_tag = USA
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 499 }
+		}
+		custom_cost_text = decision_cost_ie_500
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 500
+           		target = AFS
+			}
+		}
+	}
+
+    SOV_support_unita_government = {
+	
+		icon = generic_speech
+
+		cost = 25
+		days_remove = 30
+
+	    visible = {
+        	ANG = { has_war_with = UNI }
+			original_tag = USA
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			UNI = {
+				add_political_power = 10
+				add_stability = 0.02
+			}
+		}
+	}
+
+	USA_supply_of_weaponry_to_unita = {
+
+		icon = eng_propaganda_campaigns
+
+	    visible = {
+        	ANG = { has_war_with = UNI }
+			original_tag = USA
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 499 }
+		}
+		custom_cost_text = decision_cost_ie_500
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 500
+           		target = UNI
+			}
+		}
+	}
+
+    USA_support_mozambican_government = {
+	
+		icon = generic_speech
+
+		cost = 25
+		days_remove = 30
+
+	    visible = {
+        	MZB = { has_war_with = REN }
+			original_tag = USA
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			REN = {
+				add_political_power = 10
+				add_stability = 0.02
+			}
+		}
+	}
+
+	USA_supply_of_weaponry_to_reno = {
+
+		icon = eng_propaganda_campaigns
+
+	    visible = {
+        	MZB = { has_war_with = REN }
+			original_tag = USA
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 499 }
+		}
+		custom_cost_text = decision_cost_ie_500
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 500
+           		target = REN
+			}
+		}
+	}
+
+	USA_supply_of_weaponry_to_somalia = {
+
+		icon = eng_propaganda_campaigns
+
+	    visible = {
+			ETH = { has_war_with = SOM }
+			original_tag = USA
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 499 }
+		}
+		custom_cost_text = decision_cost_ie_500
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 500
+           		target = SOM
+			}
+		}
+	}
+
+	USA_shadow_arms_shipments_to_iran = {
+
+		icon = eng_propaganda_campaigns
+
+	    visible = {
+			IRQ = { has_war_with = PER }
+			original_tag = USA
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 250 }
+			has_equipment = { artillery_equipment > 50 }
+		}
+		custom_cost_text = decision_cost_ie_500
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 250
+           		target = PER
+			}
+        	send_equipment = {
+           		equipment = artillery_equipment
+           		amount = 50
+           		target = PER
+			}
+		}
+	}
+}
+
 USA_voice_of_america = {
     USA_give_interviews_to_african_countries = {
 	

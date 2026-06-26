@@ -107,6 +107,70 @@ country_event = {
 }
 
 country_event = {
+	id = SOV_soviet_union.3 ## ввод войск в прибалтику ##
+	title = SOV_soviet_union.3.t
+	desc = SOV_soviet_union.3.desc
+	picture = GFX_report_gorbachev_vs_romanov
+
+	is_triggered_only = yes
+
+	option = {
+		name = SOV_soviet_union.3.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = SOV_soviet_union.4 ## референдум о сохранении ссср ##
+	title = SOV_soviet_union.4.t
+	desc = SOV_soviet_union.4.desc
+	picture = GFX_report_gorbachev_vs_romanov
+
+	is_triggered_only = yes
+
+	option = {
+		name = SOV_soviet_union.4.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = SOV_soviet_union.5 ## 3 Съезд РСФСР ##
+	title = SOV_soviet_union.5.t
+	desc = SOV_soviet_union.5.desc
+	picture = GFX_report_gorbachev_vs_romanov
+
+	is_triggered_only = yes
+
+	option = {
+		name = SOV_soviet_union.5.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = SOV_soviet_union.6 ## Ввод войск в Москву ##
+	title = SOV_soviet_union.6.t
+	desc = SOV_soviet_union.6.desc
+	picture = GFX_report_gorbachev_vs_romanov
+
+	is_triggered_only = yes
+
+	option = {
+		name = SOV_soviet_union.6.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
     id = SOV_collapse.1
     title = SOV_collapse.1.t
     desc = SOV_collapse.1.desc
@@ -166,6 +230,7 @@ country_event = {
             limit = {
                 date > 1990.03.11
                 NOT = { has_country_flag = collapse_LIT }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = LIT
             set_country_flag = collapse_LIT
@@ -176,6 +241,7 @@ country_event = {
             limit = {
                 date > 1990.05.04
                 NOT = { has_country_flag = collapse_LAT }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = LAT
             set_country_flag = collapse_LAT
@@ -186,6 +252,7 @@ country_event = {
             limit = {
                 date > 1991.03.20
                 NOT = { has_country_flag = collapse_EST }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = EST
             set_country_flag = collapse_EST
@@ -196,6 +263,7 @@ country_event = {
             limit = {
                 date > 1991.08.24
                 NOT = { has_country_flag = collapse_UKR }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = UKR
             set_country_flag = collapse_UKR
@@ -206,6 +274,7 @@ country_event = {
             limit = {
                 date > 1991.08.25
                 NOT = { has_country_flag = collapse_BLR }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = BLR
             set_country_flag = collapse_BLR
@@ -216,6 +285,7 @@ country_event = {
             limit = {
                 date > 1991.08.27
                 NOT = { has_country_flag = collapse_MOL }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = MOL
             set_country_flag = collapse_MOL
@@ -226,6 +296,7 @@ country_event = {
             limit = {
                 date > 1991.04.09
                 NOT = { has_country_flag = collapse_GEO }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = GEO
             set_country_flag = collapse_GEO
@@ -236,6 +307,7 @@ country_event = {
             limit = {
                 date > 1991.09.21
                 NOT = { has_country_flag = collapse_ARM }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = arm
             set_country_flag = collapse_ARM
@@ -246,6 +318,7 @@ country_event = {
             limit = {
                 date > 1991.10.18
                 NOT = { has_country_flag = collapse_AZR }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = AZR
             set_country_flag = collapse_AZR
@@ -256,6 +329,7 @@ country_event = {
             limit = {
                 date > 1991.11.01
                 NOT = { has_country_flag = collapse_CHE }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = CHE
             set_country_flag = collapse_CHE
@@ -266,6 +340,7 @@ country_event = {
             limit = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_UZB }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = UZB
             set_country_flag = collapse_UZB
@@ -276,6 +351,7 @@ country_event = {
             limit = {
                 date > 1991.10.27
                 NOT = { has_country_flag = collapse_TMS }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = TMS
             set_country_flag = collapse_TMS
@@ -286,6 +362,7 @@ country_event = {
             limit = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_KYR }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = KYR
             set_country_flag = collapse_KYR
@@ -296,6 +373,7 @@ country_event = {
             limit = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_TAJ }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = TAJ
             set_country_flag = collapse_TAJ
@@ -306,6 +384,7 @@ country_event = {
             limit = {
                 date > 1991.12.12
                 NOT = { has_country_flag = collapse_RUS }
+                NOT = { has_global_flag = ussr_not_collapsed }
                 has_country_flag = independence_of_the_rsfsr
             }
             release = RUS
@@ -327,6 +406,7 @@ country_event = {
             limit = {
                 date > 1991.12.16
                 NOT = { has_country_flag = collapse_KAZ }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = KAZ
             set_country_flag = collapse_KAZ
@@ -877,5 +957,47 @@ country_event = {
     option = {
         name = SOV_soviet_union.32.a
         add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.33 ## 4 Съезд РСФСР  ##
+	title = SOV_soviet_union.33.t
+	desc = SOV_soviet_union.33.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.33.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.34 ## Заключительное заседание ССГ  ##ЦЫ
+	title = SOV_soviet_union.34.t
+	desc = SOV_soviet_union.34.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.34.a
+        add_political_power = 25
+		custom_effect_tooltip = add_treaty_development_10_percent
+		FROM = {
+			add_to_variable = {
+				var = SOV.treaty_development
+				value = 10
+			}
+			clamp_variable = {
+				var = SOV.treaty_development
+				min = 0
+				max = 100
+			}
+		}
     }
 }

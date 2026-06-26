@@ -164,5 +164,25 @@ ideas = {
 				political_power_gain = 0.15
 			}
 		}
+
+    	SOV_april_increase = {
+			picture = NONE
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_factor = 0.1
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.15
+			}
+		}
 	}
 }
