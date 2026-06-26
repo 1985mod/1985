@@ -1,4 +1,27 @@
 
+USA_cold_war = {
+
+      icon = generic_political_actions
+	  
+	  priority = 1
+	  
+	  	allowed = {
+	    	original_tag = USA
+	  	}
+	  
+	    visible = {
+			OR = {
+				AFN = { has_war_with = AFS }
+				ANG = { has_war_with = UNI }
+				MZB = { has_war_with = REN }
+				ETH = { has_war_with = ERI }
+				ETH = { has_war_with = SOM }
+				SYR = { has_war_with = LEB }
+			}
+			original_tag = USA
+	    }
+}
+
 USA_voice_of_america = {
 
       icon = border_war

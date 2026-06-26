@@ -21,21 +21,7 @@
         cost = 2
         
 		completion_reward = {
-
-		}
-    }
-
-    focus = { 
-        id = SOV_yeltsins_attempted_resignation
-        relative_position_id = SOV_introduce_troops_into_the_baltic_states
-        prerequisite = { focus = SOV_introduce_troops_into_the_baltic_states }
-        icon = GFX_
-        x = -2
-        y = 1
-        cost = 2
-        
-		completion_reward = {
-
+            country_event = { id = SOV_soviet_union.3 }
 		}
     }
 
@@ -44,12 +30,12 @@
         relative_position_id = SOV_introduce_troops_into_the_baltic_states
         prerequisite = { focus = SOV_introduce_troops_into_the_baltic_states }
         icon = GFX_
-        x = 0
+        x = -2
         y = 1
-        cost = 1.4
+        cost = 2
         
 		completion_reward = {
-
+            country_event = { id = SOV_soviet_union.4 }
 		}
     }
 
@@ -63,51 +49,64 @@
         cost = 1
         
 		completion_reward = {
-
+            country_event = { id = SOV_soviet_union.5 }
 		}
     }
 
     focus = { 
         id = SOV_introduce_troops_into_moscow
-        relative_position_id = SOV_referendum_on_the_preservation_of_the_ussr
+        relative_position_id = SOV_introduce_troops_into_the_baltic_states
         prerequisite = { focus = SOV_referendum_on_the_preservation_of_the_ussr }
-        prerequisite = { focus = SOV_yeltsins_attempted_resignation }
         icon = GFX_
         x = -1
-        y = 1
+        y = 2
         cost = 1
         
 		completion_reward = {
-
+            country_event = { id = SOV_soviet_union.6 }
 		}
     }
 
     focus = { 
         id = SOV_april_price_increase
-        relative_position_id = SOV_referendum_on_the_preservation_of_the_ussr
-        prerequisite = { focus = SOV_referendum_on_the_preservation_of_the_ussr }
+        relative_position_id = SOV_introduce_troops_into_the_baltic_states
         prerequisite = { focus = SOV_iii_congress_of_peoples_deputies_of_the_rsfsr }
         icon = GFX_
         x = 1
-        y = 1
+        y = 2
         cost = 1
         
 		completion_reward = {
-
+            add_timed_idea = {
+                idea = SOV_april_increase
+                days = 150
+            }
 		}
     }
 
     focus = { 
         id = SOV_novo_ogaryovo_trial
         icon = GFX_NONE
-        x = 0
+        x = 2
         y = 2
         relative_position_id = SOV_referendum_on_the_preservation_of_the_ussr
         prerequisite = { focus = SOV_introduce_troops_into_moscow }
         prerequisite = { focus = SOV_april_price_increase }
         cost = 3
         completion_reward = {
-
+            unlock_decision_category_tooltip = SOV_formation_union_sovereign_states
+			custom_effect_tooltip = add_treaty_development_5_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.treaty_development
+					value = 5
+				}
+				clamp_variable = {
+					var = SOV.treaty_development
+					min = 0
+					max = 100
+				}
+			}
         }
     }
 
@@ -120,7 +119,7 @@
         prerequisite = { focus = SOV_novo_ogaryovo_trial }
         cost = 2
         completion_reward = {
-
+            country_event = { id = SOV_soviet_union.33 }
         }
     }
 
@@ -146,7 +145,18 @@
         prerequisite = { focus = SOV_novo_ogaryovo_trial }
         cost = 5
         completion_reward = {
-
+            custom_effect_tooltip = add_treaty_development_15_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.treaty_development
+					value = 15
+				}
+				clamp_variable = {
+					var = SOV.treaty_development
+					min = 0
+					max = 100
+				}
+			}
         }
     }
 
@@ -159,7 +169,7 @@
         prerequisite = { focus = SOV_resume_the_development_of_the_treaty }
         cost = 1
         completion_reward = {
-
+            country_event = { id = SOV_soviet_union.34 }
         }
     }
 
@@ -410,7 +420,7 @@
         y = 1
         relative_position_id = SOV_i_think_ill_stay_in_moscow
         prerequisite = { focus = SOV_i_think_ill_stay_in_moscow }
-        cost = 1.5
+        cost = 0.5
         completion_reward = {
 
         }
@@ -424,7 +434,7 @@
         relative_position_id = SOV_compromise_with_yeltsin
         prerequisite = { focus = SOV_compromise_with_yeltsin }
         mutually_exclusive = { focus = SOV_stick_to_yeltsins_side }
-        cost = 1.5
+        cost = 0.8
         completion_reward = {
 
         }
@@ -438,7 +448,7 @@
         relative_position_id = SOV_compromise_with_yeltsin
         prerequisite = { focus = SOV_compromise_with_yeltsin }
         mutually_exclusive = { focus = SOV_leave_yanaev }
-        cost = 1.5
+        cost = 0.8
         completion_reward = {
 
         }
@@ -451,9 +461,25 @@
         y = 2
         relative_position_id = SOV_compromise_with_yeltsin
         prerequisite = { focus = SOV_leave_yanaev focus = SOV_stick_to_yeltsins_side }
-        cost = 1.5
-        completion_reward = {
+        cost = 0.8
 
+        available = {
+            NOT = { has_country_flag = start_sec_country_flag }
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = add_treaty_development_10_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.treaty_development
+					value = 10
+				}
+				clamp_variable = {
+					var = SOV.treaty_development
+					min = 0
+					max = 100
+				}
+			}
         }
     }
 
@@ -465,8 +491,20 @@
         relative_position_id = SOV_continue_the_negotiation_process
         prerequisite = { focus = SOV_continue_the_negotiation_process }
         cost = 1.5
-        completion_reward = {
 
+        available = {
+            NOT = { has_country_flag = start_sec_country_flag }
+            custom_trigger_tooltip = {
+                tooltip = has_sov_treaty_development_99_precent
+                check_variable = {
+                    SOV.treaty_development > 99
+                }
+            }
+        }
+        completion_reward = {
+            set_global_flag = ussr_not_collapsed
+            set_cosmetic_tag = SOV_USS
+            load_focus_tree = soviet_gorbachev_victory
         }
     }
 }

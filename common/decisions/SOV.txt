@@ -1,3 +1,252 @@
+
+SOV_cold_war = {
+
+    SOV_support_afghan_government = {
+	
+		icon = generic_speech
+
+		cost = 25
+		days_remove = 30
+
+	    visible = {
+        	AFN = { has_war_with = AFS }
+			original_tag = SOV
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			AFN = {
+				add_political_power = 10
+				add_stability = 0.02
+			}
+		}
+	}
+
+	SOV_supply_of_weaponry_to_afghanistan = {
+
+		icon = eng_propaganda_campaigns
+
+	    visible = {
+        	AFN = { has_war_with = AFS }
+			original_tag = SOV
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 499 }
+		}
+		custom_cost_text = decision_cost_ie_500
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 500
+           		target = AFN
+			}
+		}
+	}
+
+    SOV_support_angolan_government = {
+	
+		icon = generic_speech
+
+		cost = 25
+		days_remove = 30
+
+	    visible = {
+        	ANG = { has_war_with = UNI }
+			original_tag = SOV
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			ANG = {
+				add_political_power = 10
+				add_stability = 0.02
+			}
+		}
+	}
+
+	SOV_supply_of_weaponry_to_angola = {
+
+		icon = eng_propaganda_campaigns
+
+	    visible = {
+        	ANG = { has_war_with = UNI }
+			original_tag = SOV
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 499 }
+		}
+		custom_cost_text = decision_cost_ie_500
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 500
+           		target = ANG
+			}
+		}
+	}
+
+    SOV_support_mozambican_government = {
+	
+		icon = generic_speech
+
+		cost = 25
+		days_remove = 30
+
+	    visible = {
+        	MZB = { has_war_with = REN }
+			original_tag = SOV
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			MZB = {
+				add_political_power = 10
+				add_stability = 0.02
+			}
+		}
+	}
+
+	SOV_supply_of_weaponry_to_mozambique = {
+
+		icon = eng_propaganda_campaigns
+
+	    visible = {
+        	MZB = { has_war_with = REN }
+			original_tag = SOV
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 499 }
+		}
+		custom_cost_text = decision_cost_ie_500
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 500
+           		target = MZB
+			}
+		}
+	}
+
+	SOV_supply_of_weaponry_to_ethiopia = {
+
+		icon = eng_propaganda_campaigns
+
+	    visible = {
+			OR = {
+				ETH = { has_war_with = ERI }
+				ETH = { has_war_with = SOM }
+			}
+			original_tag = SOV
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 499 }
+		}
+		custom_cost_text = decision_cost_ie_500
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 500
+           		target = ETH
+			}
+		}
+	}
+
+	SOV_supply_of_weaponry_to_syria = {
+
+		icon = eng_propaganda_campaigns
+
+	    visible = {
+        	SYR = { has_war_with = LEB }
+			original_tag = SOV
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 499 }
+		}
+		custom_cost_text = decision_cost_ie_500
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+		remove_effect = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 500
+           		target = SYR
+			}
+		}
+	}
+}
+
 SOV_prohibition_ussr = {
 
     SOV_destruction_of_vineyards = {
@@ -81,6 +330,129 @@ SOV_law_on_the_press_cat = {
 			add_political_power = 75
 			add_war_support = 0.05
 			add_stability = 0.05
+		}
+	}
+}
+
+SOV_formation_union_sovereign_states = {
+
+    SOV_negotiation_process_with_the_republics = {
+	
+		icon = SOV_academy_of_sciences
+
+		available = {
+			has_completed_focus = SOV_novo_ogaryovo_trial
+			NOT = { has_country_flag = start_sec_country_flag }
+		}
+		
+		days_remove = 10
+		days_re_enable = 25
+		
+		cost = 100
+		
+		remove_effect = {
+			custom_effect_tooltip = add_treaty_development_10_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.treaty_development
+					value = 10
+				}
+				clamp_variable = {
+					var = SOV.treaty_development
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+
+    SOV_development_of_a_contract = {
+	
+		icon = SWI_dismiss_council
+
+		available = {
+			has_completed_focus = SOV_novo_ogaryovo_trial
+			NOT = { has_country_flag = start_sec_country_flag }
+		}
+		
+		days_remove = 30
+		days_re_enable = 10
+		
+		cost = 50
+		
+		remove_effect = {
+			custom_effect_tooltip = add_treaty_development_10_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.treaty_development
+					value = 10
+				}
+				clamp_variable = {
+					var = SOV.treaty_development
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+
+    SOV_radical_expansion_of_the_powers_of_the_republics = {
+	
+		icon = generic_operation
+
+		available = {
+			has_completed_focus = SOV_novo_ogaryovo_trial
+			NOT = { has_country_flag = start_sec_country_flag }
+		}
+		
+		days_remove = 15
+		days_re_enable = 10
+		
+		cost = 100
+		
+		remove_effect = {
+			custom_effect_tooltip = add_treaty_development_15_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.treaty_development
+					value = 15
+				}
+				clamp_variable = {
+					var = SOV.treaty_development
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+
+    SOV_continuation_of_reforms = {
+	
+		icon = generic_speech
+
+		available = {
+			has_completed_focus = SOV_novo_ogaryovo_trial
+			NOT = { has_country_flag = start_sec_country_flag }
+		}
+		
+		days_remove = 60
+		days_re_enable = 10
+		
+		cost = 50
+		
+		remove_effect = {
+			custom_effect_tooltip = add_treaty_development_5_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.treaty_development
+					value = 5
+				}
+				clamp_variable = {
+					var = SOV.treaty_development
+					min = 0
+					max = 100
+				}
+			}
 		}
 	}
 }
