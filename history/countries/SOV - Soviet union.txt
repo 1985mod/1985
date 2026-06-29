@@ -2,7 +2,7 @@
 
 oob = "SOV_1985"
 
-set_research_slots = 7
+set_research_slots = 4
 
 starting_train_buffer = 3.0
 
@@ -224,14 +224,21 @@ recruit_character = SOV_mikhail_gorbachev
 recruit_character = SOV_boris_yeltsin
 recruit_character = SOV_dmitry_vasilyev
 recruit_character = SOV_grigory_romanov
-recruit_character = SOV_dmitry_yazov
-recruit_character = SOV_Shaposhnikov
-recruit_character = SOV_Sokolov
-recruit_character = SOV_Nikolai_Makarov
 recruit_character = SOV_zhirinovsky
 recruit_character = SOV_alexander_yakovlev
 recruit_character = SOV_andrey_gromyko
 recruit_character = SOV_boris_yeltsin_advisor
+recruit_character = SOV_dmitry_yazov
+recruit_character = SOV_Shaposhnikov
+recruit_character = SOV_Sokolov
+recruit_character = SOV_nikolai_makarov
+recruit_character = SOV_vladimir_arkhipov
+recruit_character = SOV_valery_belikov
+recruit_character = SOV_ivan_voloshin
+recruit_character = SOV_ivan_gerasimov
+recruit_character = SOV_nikolay_popov
+recruit_character = SOV_boris_snetkov
+recruit_character = SOV_ivan_tretyak
 
 252 = {
     add_building_construction = {
@@ -241,6 +248,8 @@ recruit_character = SOV_boris_yeltsin_advisor
         province = 11375
     }
 }
+
+add_nuclear_bombs = 999
 
 give_guarantee = DDR
 give_guarantee = POL

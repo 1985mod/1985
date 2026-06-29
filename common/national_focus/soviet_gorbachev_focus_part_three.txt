@@ -132,7 +132,7 @@
         prerequisite = { focus = SOV_iv_congress_of_peoples_deputies_of_the_rsfsr }
         cost = 1
         completion_reward = {
-
+            country_event = { id = SOV_soviet_union.36 }
         }
     }
 

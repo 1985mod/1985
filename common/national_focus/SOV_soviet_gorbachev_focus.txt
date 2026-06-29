@@ -163,7 +163,9 @@ focus_tree = {
         allow_branch = {has_country_flag = SOV_elimination_of_nuclear_weapons}
         cost = 7.2
         completion_reward = {
-            add_war_support = -0.10 #event#
+            add_war_support = -0.03
+            add_stability = 0.03
+            add_nuclear_bombs = -150 #event#
         }
     }
 

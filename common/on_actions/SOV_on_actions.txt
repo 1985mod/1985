@@ -9,7 +9,9 @@ on_actions = {
                 country_event = { id = SOV_soviet_union.19 days = 1111 }
                 country_event = { id = SOV_soviet_union.22 days = 1865 }
                 country_event = { id = SOV_soviet_union.23 days = 1889 }
-                news_event = { id = news.4 days = 480 }
+                country_event = { id = SOV_soviet_union.35 days =  2052 }
+                country_event = { id = SOV_soviet_union.8 days = 480 }
+                news_event = { id = news.4 days = 481 }
                 
             }
         }

@@ -13,3 +13,104 @@ characters = {
 			id = -1
 		}
 	}
+
+	WGR_johannes_rau = {
+		name = WGR_johannes_rau
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WGR/Portrait_johannes_rau.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_social_democracy
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}
+
+	WGR_gunter_kiebling = {
+		name = "WGR_gunter_kiebling"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WGR/Portrait_gunter_kiebling.dds"
+			}
+		}	
+		corps_commander = {
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	WGR_hans_henning_von_sandrart = {
+		name = "WGR_hans_henning_von_sandrart"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WGR/Portrait_hans_henning_von_sandrart.dds"
+			}
+		}	
+		corps_commander = {
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	WGR_hans_joachim_mack = {
+		name = "WGR_hans_joachim_mack"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WGR/Portrait_hans_joachim_mack.dds"
+			}
+		}	
+		corps_commander = {
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	WGR_leopold_chalupa = {
+		name = "WGR_leopold_chalupa"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WGR/Portrait_leopold_chalupa.dds"
+			}
+		}	
+		field_marshal = {
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	WGR_wolfgang_altenburg = {
+		name = "WGR_wolfgang_altenburg"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WGR/Portrait_wolfgang_altenburg.dds"
+			}
+		}	
+		field_marshal = {
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+}

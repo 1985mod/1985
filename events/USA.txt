@@ -392,6 +392,7 @@ country_event = {
 			base = 100
 		}		
 		add_political_power = 50
+		add_nuclear_bombs = -146
 	}
 }
 

@@ -31,6 +31,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_SOV_chernobyl"
+		texturefile = "gfx/event_pictures/report_SOV_chernobyl.dds"
+	}
+
+	spriteType = {
 		name = "GFX_report_unrest_in_the_republics"
 		texturefile = "gfx/event_pictures/report_unrest_in_the_republics.dds"
 	}
@@ -68,6 +73,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_coral_sea_aircraft_carrier_accident"
 		texturefile = "gfx/event_pictures/report_coral_sea_aircraft_carrier_accident.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_death_victor_tsoi"
+		texturefile = "gfx/event_pictures/report_death_victor_tsoi.dds"
 	}
 
 	spriteType = {

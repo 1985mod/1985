@@ -15,7 +15,7 @@ set_technology = {
 set_stability = 0.8
 set_war_support = 0.4
 
-recruit_character = PRC_li_xiannian_leader
+recruit_character = PRC_deng_xiaoping
 
 set_politics = {
 	ruling_party = communism
