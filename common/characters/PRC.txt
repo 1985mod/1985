@@ -7,12 +7,28 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = chinese_socialism
+			ideology = leninism
 			traits = {  }
 			expire = "1999.1.1.1"
 			
 		}
 
+		id = -1
+	}
+
+	PRC_deng_xiaoping ={
+		name = PRC_deng_xiaoping
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/Portrait_deng_xiaoping.dds"
+			}
+		}
+		country_leader={
+			ideology = chinese_socialism
+			traits = {  }
+			expire = "1999.1.1.1"
+			
+		}
 		id = -1
 	}
 }
