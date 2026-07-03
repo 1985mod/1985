@@ -1,7 +1,7 @@
 state = {
 	id = 163
 	name = "STATE_163"
-	manpower = 18000
+	manpower = 450000
 	
 	state_category = enclave
 	
@@ -14,7 +14,7 @@ state = {
 			infrastructure = 3 #was: 5
 		}
 		add_core_of = ANG
-
+		add_core_of = UNI
 	}
 	provinces = {	
 		13397 13398 13399 13410 

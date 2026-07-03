@@ -13,11 +13,12 @@ state={
 			2115 1 
 		}
 		add_core_of = ANG
+		add_core_of = UNI
 	}
 	provinces={
 		2115 
 	}
-	manpower=25000
+	manpower=1350000
 	buildings_max_level_factor=1.000
 	state_category=rural
 

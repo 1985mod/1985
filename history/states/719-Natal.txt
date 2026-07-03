@@ -1,7 +1,7 @@
 state={
 	id=719
 	name="STATE_719" # Natal
-	manpower = 3962157
+	manpower = 10900000
 	resources={
 		chromium=60 # was: 116
 		coal = 4 #initial distribution
