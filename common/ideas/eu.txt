@@ -35,6 +35,19 @@ ideas = {
 			}
 	    }
 
+		EU_euro = {
+			picture = GFX_idea_EU_member_2
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+
 		black_monday_mild = {
 			picture = GFX_idea_economic_stagnation
 			allowed = { always = no }
@@ -153,6 +166,20 @@ ideas = {
 				industrial_capacity_factory = -0.05
 				trade_opinion_factor = 0.10
 			}
+		}
+
+		ROM_post_revolution_chaos = {
+			picture = GFX_idea_romanian_revolution_chaos # Убедитесь, что эта GFX-запись определена
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.20
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.10
+				democratic_socialism_drift = 0.10
+			}
+			
+			duration = 730 # 2 года
 		}
   	}
 }

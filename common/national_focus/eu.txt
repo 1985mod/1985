@@ -280,6 +280,13 @@ shared_focus = {
         add_political_power = 250
         set_country_flag = euro_introduced
         add_stability = 0.10
+        every_country = {
+            limit = {
+                has_idea = EU_member
+                NOT = { has_idea = EU_euro }
+            }
+            add_ideas = EU_euro
+        }
     }
 }
 
