@@ -14,34 +14,35 @@
     continuous_focus_position = { x = 2000 y = 1450 }
 
     focus = { 
-        id = SOV_xix_all_union_conference_of_the_cpsu
-        icon = GFX_
-        x = 10
-        y = 0
-        cost = 2.5
-		completion_reward = {
-			}
-		}
-
-    focus = { 
         id = SOV_law_on_cooperation
         icon = GFX_NONE
-        x = 0
-        y = 1
-        relative_position_id = SOV_xix_all_union_conference_of_the_cpsu
-        prerequisite = { focus = SOV_xix_all_union_conference_of_the_cpsu }
+        x = 10
+        y = 0
         cost = 7.2
         completion_reward = {
         }
     }
 
     focus = { 
+        id = SOV_xix_all_union_conference_of_the_cpsu
+        icon = GFX_
+        relative_position_id = SOV_law_on_cooperation
+        prerequisite = { focus = SOV_law_on_cooperation }
+        x = 0
+        y = 1
+        cost = 2.5
+		completion_reward = {
+            country_event = { id = SOV_soviet_union.24 }
+		}
+	}
+
+    focus = { 
         id = SOV_withdrawal_of_soviet_troops_from_afghanistan
         icon = GFX_NONE
         x = 2
         y = 1
-        relative_position_id = SOV_law_on_cooperation
-        prerequisite = { focus = SOV_law_on_cooperation }
+        relative_position_id = SOV_xix_all_union_conference_of_the_cpsu
+        prerequisite = { focus = SOV_xix_all_union_conference_of_the_cpsu }
         cost = 9.3
 
         available = {
@@ -49,6 +50,7 @@
         }
 
         completion_reward = {
+
         }
     }
 
@@ -61,6 +63,7 @@
         prerequisite = { focus = SOV_withdrawal_of_soviet_troops_from_afghanistan }
         cost = 7.2
         completion_reward = {
+            country_event = { id = SOV_soviet_union.12 }
         }
     }
 
@@ -73,6 +76,21 @@
         prerequisite = { focus = SOV_withdrawal_of_soviet_troops_from_afghanistan }
         cost = 4
         completion_reward = {
+            add_stability = -0.05
+        }
+    }
+
+    focus = { 
+        id = SOV_visit_to_china
+        icon = GFX_NONE
+        x = 1
+        y = 2
+        relative_position_id = SOV_withdrawal_of_soviet_troops_from_afghanistan
+        prerequisite = { focus = SOV_repeal_of_article_11_1 }
+        prerequisite = { focus = SOV_parade_of_sovereignties }
+        cost = 4.4
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.25 }
         }
     }
     
@@ -81,10 +99,11 @@
         icon = GFX_NONE
         x = -2
         y = 1
-        relative_position_id = SOV_law_on_cooperation
-        prerequisite = { focus = SOV_law_on_cooperation }
+        relative_position_id = SOV_xix_all_union_conference_of_the_cpsu
+        prerequisite = { focus = SOV_xix_all_union_conference_of_the_cpsu }
         cost = 3
         completion_reward = {
+
         }
     }
     
@@ -97,6 +116,7 @@
         prerequisite = { focus = SOV_interregional_deputy_roup }
         cost = 3
         completion_reward = {
+            country_event = { id = SOV_soviet_union.26 }
         }
     }
 
@@ -109,6 +129,21 @@
         prerequisite = { focus = SOV_interregional_deputy_roup }
         cost = 3
         completion_reward = {
+
+        }
+    }
+
+    focus = { 
+        id = SOV_carry_out_constitutional_reform
+        icon = GFX_NONE
+        x = -1
+        y = 2
+        relative_position_id = SOV_interregional_deputy_roup
+        prerequisite = { focus = SOV_elections_of_peoples_deputies_of_the_ussr }
+        prerequisite = { focus = SOV_law_on_the_press }
+        cost = 10
+        completion_reward = {
+
         }
     }
 
@@ -116,10 +151,10 @@
         id = SOV_the_election_of_gorbachev_as_president_of_the_ussr
         icon = GFX_NONE
         x = 0
-        y = 3
-        relative_position_id = SOV_law_on_cooperation
-        prerequisite = { focus = SOV_elections_of_peoples_deputies_of_the_ussr }
-        prerequisite = { focus = SOV_parade_of_sovereignties }
+        y = 4
+        relative_position_id = SOV_xix_all_union_conference_of_the_cpsu
+        prerequisite = { focus = SOV_carry_out_constitutional_reform }
+        prerequisite = { focus = SOV_visit_to_china }
         cost = 1
 
         available = {
@@ -140,6 +175,7 @@
         allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
         cost = 3
         completion_reward = {
+            country_event = { id = SOV_soviet_union.27 }
         }
     }
 
@@ -151,8 +187,10 @@
         relative_position_id = SOV_iii_congress_of_peoples_deputies
         prerequisite = { focus = SOV_iii_congress_of_peoples_deputies}
         allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
-        cost = 3
+        cost = 5
         completion_reward = {
+            set_country_flag = independence_of_the_rsfsr
+            country_event = { id = SOV_soviet_union.13 }
         }
     }
 
@@ -164,7 +202,7 @@
         relative_position_id = SOV_iii_congress_of_peoples_deputies
         prerequisite = { focus = SOV_iii_congress_of_peoples_deputies}
         allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
-        cost = 3
+        cost = 3.7
         completion_reward = {
         }
     }
@@ -177,13 +215,26 @@
         relative_position_id = SOV_iii_congress_of_peoples_deputies
         prerequisite = { focus = SOV_iii_congress_of_peoples_deputies}
         allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
-        cost = 3
+        cost = 3.7
         completion_reward = {
+            send_embargo = LIT
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = refused_market_trade
+				}
+			}
+			LIT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = refused_market_trade
+				}
+			}
         }
     }
 
     focus = { 
-        id = SOV_what_will_happen_next
+        id = SOV_xxviii_congress_of_the_cpsu
         icon = GFX_NONE
         relative_position_id = SOV_economic_blockade_of_lithuania
         prerequisite = { focus = SOV_economic_blockade_of_lithuania}
@@ -194,19 +245,184 @@
         y = 1
         cost = 3
         completion_reward = {
+            country_event = { id = SOV_soviet_union.28 }
         }
     }
 
     focus = { 
-        id = SOV_500_days
+        id = SOV_lift_the_blockade_of_lithuania
         icon = GFX_NONE
-        relative_position_id = SOV_what_will_happen_next
-        prerequisite = { focus = SOV_what_will_happen_next}
-        allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
+        relative_position_id = SOV_xxviii_congress_of_the_cpsu
+        prerequisite = { focus = SOV_xxviii_congress_of_the_cpsu }
+        mutually_exclusive = { focus = SOV_continue_the_blockade_of_the_unrecognized_republic }
+        x = -2
+        y = 1
+        cost = 4.4
+        completion_reward = {
+            break_embargo = LIT
+        }
+    }
+
+    focus = { 
+        id = SOV_continue_the_blockade_of_the_unrecognized_republic
+        icon = GFX_NONE
+        relative_position_id = SOV_xxviii_congress_of_the_cpsu
+        prerequisite = { focus = SOV_xxviii_congress_of_the_cpsu}
+        mutually_exclusive = { focus = SOV_lift_the_blockade_of_lithuania }
+        x = 2
+        y = 1
+        cost = 4.4
+        completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = sanctions_relations
+				}
+			}
+			LIT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = sanctions_relations
+				}
+			}
+        }
+    }
+
+    focus = { 
+        id = SOV_decree_restoration
+        icon = GFX_NONE
+        relative_position_id = SOV_xxviii_congress_of_the_cpsu
+        prerequisite = { focus = SOV_lift_the_blockade_of_lithuania focus = SOV_continue_the_blockade_of_the_unrecognized_republic }
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_something_needs_to_be_done
+        icon = GFX_NONE
+        relative_position_id = SOV_decree_restoration
+        prerequisite = { focus = SOV_decree_restoration }
         x = 0
         y = 1
-        cost = 5.5
+        cost = 2.2
         completion_reward = {
+            add_stability = -0.1
+            add_political_power = 50
+            add_popularity = {
+                ideology = communism
+                popularity = -0.05
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_plenum_of_the_central_committee_of_the_cpsu
+        icon = GFX_NONE
+        relative_position_id = SOV_something_needs_to_be_done
+        prerequisite = { focus = SOV_something_needs_to_be_done }
+        x = 0
+        y = 1
+        cost = 4.4
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.29 }
+        }
+    }
+
+    focus = { 
+        id = SOV_criticize_the_left
+        icon = GFX_NONE
+        relative_position_id = SOV_plenum_of_the_central_committee_of_the_cpsu
+        prerequisite = { focus = SOV_plenum_of_the_central_committee_of_the_cpsu }
+        x = -2
+        y = 1
+        cost = 3
+        completion_reward = {
+            add_political_power = 50
+            add_popularity = {
+                ideology = liberalism
+                popularity = -0.03
+            }
+            add_popularity = {
+                ideology = conservatism
+                popularity = -0.03
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_turn_to_the_conservatives
+        icon = GFX_NONE
+        relative_position_id = SOV_plenum_of_the_central_committee_of_the_cpsu
+        prerequisite = { focus = SOV_plenum_of_the_central_committee_of_the_cpsu }
+        x = 2
+        y = 1
+        cost = 3
+        completion_reward = {
+            add_political_power = 50
+            add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.05
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_change_the_deck
+        icon = GFX_NONE
+        relative_position_id = SOV_plenum_of_the_central_committee_of_the_cpsu
+        prerequisite = { focus = SOV_criticize_the_left focus = SOV_turn_to_the_conservatives }
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_visit_to_wgr
+        icon = GFX_NONE
+        relative_position_id = SOV_change_the_deck
+        prerequisite = { focus = SOV_change_the_deck }
+        x = -1
+        y = 1
+        cost = 1
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.30 }
+        }
+    }
+
+    focus = { 
+        id = SOV_visit_to_paris
+        icon = GFX_NONE
+        relative_position_id = SOV_change_the_deck
+        prerequisite = { focus = SOV_change_the_deck }
+        x = 1
+        y = 1
+        cost = 1
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.31 }
+        }
+    }
+
+    focus = { 
+        id = SOV_IV_congress_of_peoples_deputies
+        icon = GFX_NONE
+        relative_position_id = SOV_change_the_deck
+        prerequisite = { focus = SOV_visit_to_wgr }
+        prerequisite = { focus = SOV_visit_to_paris }
+        x = 0
+        y = 2
+        cost = 3
+
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.32 }
             load_focus_tree = soviet_gorbachev_focus_part_three
         }
     }

@@ -1,4 +1,27 @@
 
+SOV_cold_war = {
+
+      icon = generic_political_actions
+	  
+	  priority = 1
+	  
+	  	allowed = {
+	    	original_tag = SOV
+	  	}
+	  
+	    visible = {
+			OR = {
+				AFN = { has_war_with = AFS }
+				ANG = { has_war_with = UNI }
+				MZB = { has_war_with = REN }
+				ETH = { has_war_with = ERI }
+				ETH = { has_war_with = SOM }
+				SYR = { has_war_with = LEB }
+			}
+			original_tag = SOV
+	    }
+}
+
 SOV_prohibition_ussr = {
 
       icon = border_war
@@ -11,6 +34,38 @@ SOV_prohibition_ussr = {
 	  
 	  visible = {
           has_completed_focus = SOV_the_beginning_of_the_anti_alcohol_campaign
+		  original_tag = SOV
+	  }
+}
+
+SOV_law_on_the_press_cat = {
+
+      icon = border_war
+	  
+	  priority = 90
+	  
+	  allowed = {
+	    original_tag = SOV
+	  }
+	  
+	  visible = {
+          has_completed_focus = SOV_law_on_the_press
+		  original_tag = SOV
+	  }
+}
+
+SOV_formation_union_sovereign_states = {
+
+      icon = generic_political_actions
+	  
+	  priority = 90
+	  
+	  allowed = {
+	    original_tag = SOV
+	  }
+	  
+	  visible = {
+          has_completed_focus = SOV_novo_ogaryovo_trial
 		  original_tag = SOV
 	  }
 }

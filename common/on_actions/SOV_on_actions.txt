@@ -3,7 +3,16 @@ on_actions = {
         effect = { 
             SOV = {
                 country_event = { id = SOV_soviet_union.1 days = 68 }
-                news_event = { id = news.4 days = 480 }
+                country_event = { id = SOV_soviet_union.16 days = 548 }
+                country_event = { id = SOV_soviet_union.17 days = 608 }
+                country_event = { id = SOV_soviet_union.18 days = 965 }
+                country_event = { id = SOV_soviet_union.19 days = 1111 }
+                country_event = { id = SOV_soviet_union.22 days = 1865 }
+                country_event = { id = SOV_soviet_union.23 days = 1889 }
+                country_event = { id = SOV_soviet_union.35 days =  2052 }
+                country_event = { id = SOV_soviet_union.8 days = 480 }
+                news_event = { id = news.4 days = 481 }
+                
             }
         }
     }

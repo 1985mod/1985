@@ -12,7 +12,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_report_dead_chernenko"
-		texturefile = "gfx/event_pictures/report_dead_chernenk.dds"
+		texturefile = "gfx/event_pictures/report_dead_chernenko.dds"
 	}
 	
 	spriteType = {
@@ -24,6 +24,66 @@ spriteTypes = {
 		name = "GFX_report_gorbachev_vs_romanov"
 		texturefile = "gfx/event_pictures/report_gorbachev_vs_romanov.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_report_geneva_meeting"
+		texturefile = "gfx/event_pictures/report_geneva_meeting.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_SOV_chernobyl"
+		texturefile = "gfx/event_pictures/report_SOV_chernobyl.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_unrest_in_the_republics"
+		texturefile = "gfx/event_pictures/report_unrest_in_the_republics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_gorbachevs_appointment_as_president_ussr"
+		texturefile = "gfx/event_pictures/report_gorbachevs_appointment_as_president_ussr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_antialkogolnaya_kampaniya"
+		texturefile = "gfx/event_pictures/report_antialkogolnaya_kampaniya.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_appointment_shevarnadze"
+		texturefile = "gfx/event_pictures/report_appointment_shevarnadze.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_congress_of_the_cpsu"
+		texturefile = "gfx/event_pictures/report_congress_of_the_cpsu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_visit_to_hungary"
+		texturefile = "gfx/event_pictures/report_visit_to_hungary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_mass_gatherings_and_song_marches_in_the_baltics"
+		texturefile = "gfx/event_pictures/report_mass_gatherings_and_song_marches_in_the_baltics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_coral_sea_aircraft_carrier_accident"
+		texturefile = "gfx/event_pictures/report_coral_sea_aircraft_carrier_accident.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_death_victor_tsoi"
+		texturefile = "gfx/event_pictures/report_death_victor_tsoi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_we_are_world"
+		texturefile = "gfx/event_pictures/report_we_are_world.dds"
+	}
 
 	spriteType = {
 		name = "GFX_news_SOV_chernobyl"
@@ -32,7 +92,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_news_yugoslav_wars"
-		texturefile = "gfx/event_pictures/news/YUG/news_yugoslav_wars.dds"
+		texturefile = "gfx/event_pictures/news_yugoslav_wars.dds"
 	}
 
 	spriteType = {
@@ -65,6 +125,15 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_victory_democrats.dds"
 	}
 
+	spriteType = {
+		name = "GFX_news_victory_iraq_in_iran_iraq_war"
+		texturefile = "gfx/event_pictures/news_victory_iraq_in_iran_iraq_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_victory_iran_in_iran_iraq_war"
+		texturefile = "gfx/event_pictures/news_victory_iran_in_iran_iraq_war.dds"
+	}
 }
 
 

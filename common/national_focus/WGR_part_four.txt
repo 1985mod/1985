@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = WGR_snova_edin
+		id = WGR_united_again
 		icon = GFX_goal_unknown
 		cost = 5
 		x = 21
@@ -17,58 +17,58 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_i_nedelimi
+		id = WGR_and_indivisible
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_snova_edin
+			focus = WGR_united_again
 		}
 		x = 21
 		y = 1
 
 	}
 	focus = {
-		id = WGR_integragsia_vostok_germany
+		id = WGR_integrate_east_germany
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_i_nedelimi
+			focus = WGR_and_indivisible
 		}
 		x = 17
 		y = 2
 
 	}
 	focus = {
-		id = WGR_decommuse
+		id = WGR_decommunization
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_i_nedelimi
+			focus = WGR_and_indivisible
 		}
 		x = 19
 		y = 2
 
 	}
 	focus = {
-		id = WGR_now_land
+		id = WGR_investment_in_new_lands
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_integragsia_vostok_germany
+			focus = WGR_integrate_east_germany
 		}
 		prerequisite = {
-			focus = WGR_decommuse
+			focus = WGR_decommunization
 		}
 		x = 19
 		y = 3
 
 	}
 	focus = {
-		id = WGR_center_europe
+		id = WGR_center_a_now_europe
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_i_nedelimi
+			focus = WGR_and_indivisible
 		}
 		x = 21
 		y = 2
@@ -79,32 +79,32 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_i_nedelimi
+			focus = WGR_and_indivisible
 		}
 		x = 23
 		y = 2
 
 	}
 	focus = {
-		id = WGR_now_europe
+		id = WGR_a_now_europe
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_i_nedelimi
+			focus = WGR_and_indivisible
 		}
 		x = 25
 		y = 2
 
 	}
 	focus = {
-		id = WGR_strategi_nato
+		id = WGR_new_nato_strategy
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
 			focus = WGR_germany_cold_war
 		}
 		prerequisite = {
-			focus = WGR_now_europe
+			focus = WGR_a_now_europe
 		}
 		x = 23
 		y = 3
@@ -115,13 +115,13 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = WGR_center_europe
+			focus = WGR_center_a_now_europe
 		}
 		prerequisite = {
-			focus = WGR_strategi_nato
+			focus = WGR_new_nato_strategy
 		}
 		prerequisite = {
-			focus = WGR_now_land
+			focus = WGR_investment_in_new_lands
 		}
 		x = 21
 		y = 4

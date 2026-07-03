@@ -492,3 +492,8 @@ NCY = {
 	color = rgb { 235 99 57 }
 	color_ui = rgb { 230 95 53 }	
 }
+
+SOV_USS = {
+	color = rgb { 162 47 47 }
+	color_ui = rgb { 166 53 65 }	
+}

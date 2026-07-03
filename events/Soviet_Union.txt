@@ -30,6 +30,7 @@ country_event = {
 				character = SOV_KPSS
 				ideology = communism
 			}
+            country_event = { id = news.2 }
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -106,6 +107,70 @@ country_event = {
 }
 
 country_event = {
+	id = SOV_soviet_union.3 ## ввод войск в прибалтику ##
+	title = SOV_soviet_union.3.t
+	desc = SOV_soviet_union.3.desc
+	picture = GFX_report_gorbachev_vs_romanov
+
+	is_triggered_only = yes
+
+	option = {
+		name = SOV_soviet_union.3.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = SOV_soviet_union.4 ## референдум о сохранении ссср ##
+	title = SOV_soviet_union.4.t
+	desc = SOV_soviet_union.4.desc
+	picture = GFX_report_gorbachev_vs_romanov
+
+	is_triggered_only = yes
+
+	option = {
+		name = SOV_soviet_union.4.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = SOV_soviet_union.5 ## 3 Съезд РСФСР ##
+	title = SOV_soviet_union.5.t
+	desc = SOV_soviet_union.5.desc
+	picture = GFX_report_gorbachev_vs_romanov
+
+	is_triggered_only = yes
+
+	option = {
+		name = SOV_soviet_union.5.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = SOV_soviet_union.6 ## Ввод войск в Москву ##
+	title = SOV_soviet_union.6.t
+	desc = SOV_soviet_union.6.desc
+	picture = GFX_report_gorbachev_vs_romanov
+
+	is_triggered_only = yes
+
+	option = {
+		name = SOV_soviet_union.6.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
     id = SOV_collapse.1
     title = SOV_collapse.1.t
     desc = SOV_collapse.1.desc
@@ -160,31 +225,34 @@ country_event = {
             set_country_flag = collapse_OVD
         }
 
-        # Прибалтика — Литва (март 1990)
+        # Прибалтика - Литва (март 1990)
         if = {
             limit = {
                 date > 1990.03.11
                 NOT = { has_country_flag = collapse_LIT }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = LIT
             set_country_flag = collapse_LIT
         }
 
-        # Прибалтика — Латвия (май 1990)
+        # Прибалтика - Латвия (май 1990)
         if = {
             limit = {
                 date > 1990.05.04
                 NOT = { has_country_flag = collapse_LAT }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = LAT
             set_country_flag = collapse_LAT
         }
 
-        # Прибалтика — Эстония (март 1991)
+        # Прибалтика - Эстония (март 1991)
         if = {
             limit = {
                 date > 1991.03.20
                 NOT = { has_country_flag = collapse_EST }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = EST
             set_country_flag = collapse_EST
@@ -195,6 +263,7 @@ country_event = {
             limit = {
                 date > 1991.08.24
                 NOT = { has_country_flag = collapse_UKR }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = UKR
             set_country_flag = collapse_UKR
@@ -205,6 +274,7 @@ country_event = {
             limit = {
                 date > 1991.08.25
                 NOT = { has_country_flag = collapse_BLR }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = BLR
             set_country_flag = collapse_BLR
@@ -215,36 +285,40 @@ country_event = {
             limit = {
                 date > 1991.08.27
                 NOT = { has_country_flag = collapse_MOL }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = MOL
             set_country_flag = collapse_MOL
         }
 
-        # Кавказ — Грузия (апрель 1991)
+        # Кавказ - Грузия (апрель 1991)
         if = {
             limit = {
                 date > 1991.04.09
                 NOT = { has_country_flag = collapse_GEO }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = GEO
             set_country_flag = collapse_GEO
         }
 
-        # Кавказ — Армения (сентябрь 1991)
+        # Кавказ - Армения (сентябрь 1991)
         if = {
             limit = {
                 date > 1991.09.21
                 NOT = { has_country_flag = collapse_ARM }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = arm
             set_country_flag = collapse_ARM
         }
 
-        # Кавказ — Азербайджан (октябрь 1991)
+        # Кавказ - Азербайджан (октябрь 1991)
         if = {
             limit = {
                 date > 1991.10.18
                 NOT = { has_country_flag = collapse_AZR }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = AZR
             set_country_flag = collapse_AZR
@@ -255,46 +329,51 @@ country_event = {
             limit = {
                 date > 1991.11.01
                 NOT = { has_country_flag = collapse_CHE }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = CHE
             set_country_flag = collapse_CHE
         }
 
-        # Средняя Азия — Узбекистан (август 1991)
+        # Средняя Азия - Узбекистан (август 1991)
         if = {
             limit = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_UZB }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = UZB
             set_country_flag = collapse_UZB
         }
 
-        # Средняя Азия — Туркменистан (октябрь 1991)
+        # Средняя Азия - Туркменистан (октябрь 1991)
         if = {
             limit = {
                 date > 1991.10.27
                 NOT = { has_country_flag = collapse_TMS }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = TMS
             set_country_flag = collapse_TMS
         }
 
-        # Средняя Азия — Кыргызстан (август 1991)
+        # Средняя Азия - Кыргызстан (август 1991)
         if = {
             limit = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_KYR }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = KYR
             set_country_flag = collapse_KYR
         }
 
-        # Средняя Азия — Таджикистан (август 1991)
+        # Средняя Азия - Таджикистан (август 1991)
         if = {
             limit = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_TAJ }
+                NOT = { has_global_flag = ussr_not_collapsed }
             }
             release = TAJ
             set_country_flag = collapse_TAJ
@@ -303,11 +382,13 @@ country_event = {
         # Казахстан (декабрь 1991)
         if = {
             limit = {
-                date > 1991.12.16
-                NOT = { has_country_flag = collapse_KAZ }
+                date > 1991.12.12
+                NOT = { has_country_flag = collapse_RUS }
+                NOT = { has_global_flag = ussr_not_collapsed }
+                has_country_flag = independence_of_the_rsfsr
             }
-            release = KAZ
-            set_country_flag = collapse_KAZ
+            release = RUS
+            set_country_flag = collapse_RUS
 
             if = {
                 OR = { has_government = communism }
@@ -318,6 +399,18 @@ country_event = {
                 drop_cosmetic_tag = yes
             }
 
+        }
+
+        # Казахстан (декабрь 1991)
+        if = {
+            limit = {
+                date > 1991.12.16
+                NOT = { has_country_flag = collapse_KAZ }
+                NOT = { has_global_flag = ussr_not_collapsed }
+            }
+            release = KAZ
+            set_country_flag = collapse_KAZ
+
             clr_country_flag = collapse_right_now
         }
     }
@@ -327,7 +420,7 @@ country_event = {
 	id = SOV_soviet_union.7 ## Встреча в Женеве ##
 	title = SOV_soviet_union.7.t
 	desc = SOV_soviet_union.7.desc
-	picture = GFX_
+	picture = GFX_report_geneva_meeting
 
 	is_triggered_only = yes
 
@@ -346,7 +439,7 @@ country_event = {
 	id = SOV_soviet_union.8 ## Чернобыль каунтри##
 	title = SOV_soviet_union.8.t
 	desc = SOV_soviet_union.8.desc
-	picture = GFX_
+	picture = GFX_report_SOV_chernobyl
 
 	is_triggered_only = yes
 
@@ -354,9 +447,15 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.8.a
-		add_political_power = -10
-		set_country_flag = SOV_close_everyones_ears
-		mark_focus_tree_layout_dirty = yes
+		    add_political_power = -30
+            1059 = {
+                set_demilitarized_zone = yes
+            }
+            launch_nuke = {
+                province = 9568
+            }
+		    set_country_flag = SOV_close_everyones_ears
+		    mark_focus_tree_layout_dirty = yes
 		}
     }
 
@@ -364,7 +463,7 @@ country_event = {
 	id = SOV_soviet_union.9 ## назначение Шеварднадзе ##
 	title = SOV_soviet_union.9.t
 	desc = SOV_soviet_union.9.desc
-	picture = GFX_
+	picture = GFX_report_appointment_shevarnadze
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -379,7 +478,7 @@ country_event = {
 	id = SOV_soviet_union.10 ## Анти-алкагольная кампания  ##
 	title = SOV_soviet_union.10.t
 	desc = SOV_soviet_union.10.desc
-	picture = GFX_
+	picture = GFX_report_antialkogolnaya_kampaniya
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -393,7 +492,7 @@ country_event = {
 	id = SOV_soviet_union.11 ## Назначение Горбачёва как президента  ##
 	title = SOV_soviet_union.11.t
 	desc = SOV_soviet_union.11.desc
-	picture = GFX_
+	picture = GFX_report_gorbachevs_appointment_as_president_ussr
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -409,7 +508,7 @@ country_event = {
 	id = SOV_soviet_union.12 ## Беспорядки в республиках  ##
 	title = SOV_soviet_union.12.t
 	desc = SOV_soviet_union.12.desc
-	picture = GFX_
+	picture = GFX_report_unrest_in_the_republics
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -418,5 +517,564 @@ country_event = {
         name = SOV_soviet_union.12.a
         set_country_flag = SOV_affairs_of_the_republics
 		mark_focus_tree_layout_dirty = yes
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.13 ## Декларация о Государственном Суверенитете РСФСР  ##
+	title = SOV_soviet_union.13.t
+	desc = SOV_soviet_union.13.desc
+	picture = GFX_report_unrest_in_the_republics
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.13.a
+        RUS = {
+            add_state_core = 233
+            add_state_core = 827
+            add_state_core = 828
+            add_state_core = 1060
+            add_state_core = 821
+            add_state_core = 232
+            add_state_core = 235
+            add_state_core = 234
+            add_state_core = 237
+            add_state_core = 238
+            add_state_core = 218
+            add_state_core = 245
+            add_state_core = 260
+            add_state_core = 240
+            add_state_core = 224
+            add_state_core = 243
+            add_state_core = 242
+            add_state_core = 210
+            add_state_core = 209
+            add_state_core = 208
+            add_state_core = 263
+            add_state_core = 244
+            add_state_core = 195
+            add_state_core = 146
+            add_state_core = 216
+            add_state_core = 215
+            add_state_core = 213
+            add_state_core = 722
+            add_state_core = 236
+            add_state_core = 217
+            add_state_core = 265
+            add_state_core = 829
+            add_state_core = 239
+            add_state_core = 220
+            add_state_core = 222
+            add_state_core = 205
+            add_state_core = 246
+            add_state_core = 264
+            add_state_core = 247
+            add_state_core = 219
+            add_state_core = 254
+            add_state_core = 223
+            add_state_core = 258
+            add_state_core = 257
+            add_state_core = 255
+            add_state_core = 401
+            add_state_core = 248
+            add_state_core = 253
+            add_state_core = 252
+            add_state_core = 250
+            add_state_core = 879
+            add_state_core = 351
+            add_state_core = 833
+            add_state_core = 256
+            add_state_core = 251
+            add_state_core = 249
+            add_state_core = 652
+            add_state_core = 400
+            add_state_core = 214
+            add_state_core = 880
+            add_state_core = 397
+            add_state_core = 262
+            add_state_core = 825
+            add_state_core = 398
+            add_state_core = 399
+            add_state_core = 651
+            add_state_core = 582
+            add_state_core = 573
+            add_state_core = 581
+            add_state_core = 579
+            add_state_core = 580
+            add_state_core = 653
+            add_state_core = 572
+            add_state_core = 403
+            add_state_core = 577
+            add_state_core = 571
+            add_state_core = 578
+            add_state_core = 824
+            add_state_core = 570
+            add_state_core = 40
+            add_state_core = 569
+            add_state_core = 654
+            add_state_core = 329
+            add_state_core = 568
+            add_state_core = 576
+            add_state_core = 516
+            add_state_core = 567
+            add_state_core = 878
+            add_state_core = 566
+            add_state_core = 575
+            add_state_core = 876
+            add_state_core = 564
+            add_state_core = 565
+            add_state_core = 563
+            add_state_core = 574
+            add_state_core = 877
+            add_state_core = 561
+            add_state_core = 657
+            add_state_core = 560
+            add_state_core = 562
+            add_state_core = 644
+            add_state_core = 874
+            add_state_core = 822
+            add_state_core = 637
+            add_state_core = 555
+            add_state_core = 409
+            add_state_core = 408
+            add_state_core = 655
+            add_state_core = 875
+            add_state_core = 763
+        }
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.14 ## XXVII Съезд КПСС  ##
+	title = SOV_soviet_union.14.t
+	desc = SOV_soviet_union.14.desc
+	picture = GFX_report_congress_of_the_cpsu
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.14.a
+        add_political_power = 25
+        add_stability = 0.03
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.15 ## Визит в Венгрию  ##
+	title = SOV_soviet_union.15.t
+	desc = SOV_soviet_union.15.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.15.a
+        add_political_power = 25
+		ROOT = {
+			add_opinion_modifier = {
+				target = HUN
+				modifier = medium_increase
+			}
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.16 ## Крушение рейса Аэрофлот 2306 в Коми АССР  ##
+	title = SOV_soviet_union.16.t
+	desc = SOV_soviet_union.15.desc
+	picture = GFX_report_unrest_in_the_republics
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.16.a
+        add_manpower = -54
+        add_stability = -0.03
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.17 ## Крушение теплохода «Адмирал Нахимов» в Чёрном море  ##
+	title = SOV_soviet_union.17.t
+	desc = SOV_soviet_union.17.desc
+	picture = GFX_report_unrest_in_the_republics
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.17.a
+        add_manpower = -415
+        add_stability = -0.05
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.18 ## Массовые собрания и «песенные марши» в память о жертвах сталинских репрессий  ##
+	title = SOV_soviet_union.18.t
+	desc = SOV_soviet_union.18.desc
+	picture = GFX_report_mass_gatherings_and_song_marches_in_the_baltics
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.18.a
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.03
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.19 ## указ «Об образовании Государственного комитета по охране природы»  ##
+	title = SOV_soviet_union.19.t
+	desc = SOV_soviet_union.19.desc
+	picture = GFX_report_unrest_in_the_republics
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.19.a
+        add_political_power = 50
+        add_stability = 0.03
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.20 ## Визит в Чехословакию  ##
+	title = SOV_soviet_union.20.t
+	desc = SOV_soviet_union.20.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.20.a
+        add_political_power = 25
+		ROOT = {
+			add_opinion_modifier = {
+				target = CZE
+				modifier = medium_increase
+			}
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.21 ## Избрание Дмитрия Язвы  ##
+	title = SOV_soviet_union.21.t
+	desc = SOV_soviet_union.21.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.21.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.22 ## митинг «Демократической России» на Болотной площади в Москве  ##
+	title = SOV_soviet_union.22.t
+	desc = SOV_soviet_union.22.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.22.a
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.16
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.17
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.23 ## авторитет Горбачёва падает  ##
+	title = SOV_soviet_union.23.t
+	desc = SOV_soviet_union.23.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.23.a
+        add_stability = -0.1
+        add_war_support = -0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.24 ## XIX Всесоюзная конференция КПСС  ##
+	title = SOV_soviet_union.24.t
+	desc = SOV_soviet_union.24.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.24.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.25 ## Визит в Китай  ##
+	title = SOV_soviet_union.25.t
+	desc = SOV_soviet_union.25.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.25.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.26 ## Выборы народных депутатов СССР  ##
+	title = SOV_soviet_union.26.t
+	desc = SOV_soviet_union.26.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.26.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.27 ## III съезд народных депутатов  ##
+	title = SOV_soviet_union.27.t
+	desc = SOV_soviet_union.27.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.27.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.28 ## XXVIII Съезд КПСС  ##
+	title = SOV_soviet_union.28.t
+	desc = SOV_soviet_union.28.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.28.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.29 ## Пленум ЦК КПСС  ##
+	title = SOV_soviet_union.29.t
+	desc = SOV_soviet_union.29.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.29.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.30 ## Визит в ФРГ  ##
+	title = SOV_soviet_union.30.t
+	desc = SOV_soviet_union.30.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.30.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.31 ## Визит в Париж  ##
+	title = SOV_soviet_union.31.t
+	desc = SOV_soviet_union.31.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.31.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.32 ## 4 съезд народных депутатов  ##
+	title = SOV_soviet_union.32.t
+	desc = SOV_soviet_union.32.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.32.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.33 ## 4 Съезд РСФСР  ##
+	title = SOV_soviet_union.33.t
+	desc = SOV_soviet_union.33.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.33.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.34 ## Заключительное заседание ССГ  ##ЦЫ
+	title = SOV_soviet_union.34.t
+	desc = SOV_soviet_union.34.desc
+	picture = GFX_report_visit_to_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.34.a
+        add_political_power = 25
+		custom_effect_tooltip = add_treaty_development_10_percent
+		FROM = {
+			add_to_variable = {
+				var = SOV.treaty_development
+				value = 10
+			}
+			clamp_variable = {
+				var = SOV.treaty_development
+				min = 0
+				max = 100
+			}
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.35 ## Смерть Виктора Цоя  ##ЦЫ
+	title = SOV_soviet_union.35.t
+	desc = SOV_soviet_union.35.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.35.a
+        add_stability = -0.03
+        add_war_support = -0.02
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.36 ## выборы президента россии  ##ЦЫ
+	title = SOV_soviet_union.36.t
+	desc = SOV_soviet_union.36.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.36.a
+        set_party_name = {
+            ideology = neutrality
+            long_name = SOV_liberal_democratic_party_soviet_union
+            name = SOV_ldpss
+        }
+        set_party_name = {
+            ideology = conservatism
+            long_name = SOV_non_partisan_conservatism
+            name = SOV_non_partisan_conservatism
+        }
+        set_party_name = {
+            ideology = liberalism
+            long_name = SOV_non_partisan_liberalism
+            name = SOV_non_partisan_liberalism
+        }
+        set_party_name = {
+            ideology = fascism
+            long_name = SOV_non_partisan_fascism
+            name = SOV_non_partisan_fascism
+        }
+        set_party_name = {
+            ideology = socialism
+            long_name = SOV_communist_party_soviet_union_reformed_wing
+            name = SOV_kpss_reformed
+        }
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.26
+		}
     }
 }

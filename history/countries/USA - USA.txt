@@ -47,9 +47,11 @@ diplomatic_relation = {
 	relation = military_access
 }
 
-set_research_slots = 9
+add_nuclear_bombs = 999
+
+set_research_slots = 5
 set_stability = 0.75
-set_war_support = 0.70
+set_war_support = 0.4
 add_command_power = 20
 
 

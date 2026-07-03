@@ -9,3 +9,12 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "unification_germany_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
