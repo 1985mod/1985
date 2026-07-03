@@ -2,7 +2,7 @@
 state={
 	id=443
 	name="STATE_443" # Sind
-	manpower = 4524236 #3887000
+	manpower = 21250000
 	
 	state_category = city
 

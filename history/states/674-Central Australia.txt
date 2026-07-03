@@ -3,7 +3,7 @@ state = {
 	name = "STATE_674"
 
 	state_category = wasteland
-	manpower = 30000
+	manpower = 30000 # столько же, сколько и в 1936
 
 	impassable = yes
 	force_link_ownership_to = 519 # South Australia

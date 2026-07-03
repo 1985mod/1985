@@ -2,7 +2,7 @@ state = {
 
 	id = 624
 	name = "STATE_624" # Central Islands
-	manpower = 1117695 
+	manpower = 5900000 
 
 	resources={
 		steel=7 # was: 0

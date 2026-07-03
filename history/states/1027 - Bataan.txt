@@ -2,7 +2,7 @@ state = {
 
 	id = 1027
 	name = "STATE_1027" # Bataan
-	manpower = 2371662 
+	manpower = 380000 
 
 	resources={
 		chromium=23 # was: 0

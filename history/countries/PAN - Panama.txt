@@ -30,11 +30,6 @@ recruit_character = PAN_victor_pareja
 recruit_character = PAN_nicolas_ardito_barletta
 recruit_character = PAN_jose_pezet
 
-<<<<<<< Updated upstream
-
-set_country_flag = monroe_doctrine
-=======
->>>>>>> Stashed changes
 set_war_support = 0.1
 set_convoys = 10
 
@@ -45,25 +40,6 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-<<<<<<< Updated upstream
-	conservatism = 100
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = conservatism
-		last_election = "1936.6.7"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	recruit_character = PAN_juan_demostenes_arosemena
-	promote_character = PAN_juan_demostenes_arosemena
-	recruit_character = PAN_july_portocarrero
-	promote_character = PAN_july_portocarrero
-	retire_character = PAN_harmodio_arias_madrid
-	retire_character = PAN_bartolomé_sinibaldi
-=======
 	neutrality = 65
 	fascism = 35
->>>>>>> Stashed changes
 }

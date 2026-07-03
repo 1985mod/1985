@@ -3,7 +3,7 @@ state = {
 	id = 1024
 	name = "STATE_1024"
 
-	manpower = 329800
+	manpower = 1110000
 
 	resources = {
 		rubber = 20

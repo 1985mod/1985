@@ -5,7 +5,7 @@ state={
 		1525 1553 12322  
 	}
 	state_category = rural
-	manpower = 445606
+	manpower = 400000 # ниче
 	history={
 		owner = RAJ
 		add_core_of = RAJ

@@ -14,7 +14,7 @@ state={
 		owner = SIA
 		add_core_of = SIA
 	}
-	manpower=2000000
+	manpower=10050000
 	
 	resources = {
 		coal = 1 #Lowgrade lignite and sub-bituminous coal
