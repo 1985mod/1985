@@ -2,7 +2,7 @@
 state={
 	id=441
 	name="STATE_441"
-	manpower = 2598027
+	manpower = 8476285
 	
 	state_category = rural
 
@@ -13,8 +13,6 @@ state={
 		}
 		add_claim_by = PAK
 		add_core_of = RAJ
-		
-		set_demilitarized_zone = yes
 
 		victory_points = {
 			12754 2

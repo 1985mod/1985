@@ -5,7 +5,7 @@ state={
 		7049 8098 8066
 	}
 	state_category = town
-	manpower = 480164
+	manpower = 890000
 
 	history = {
 		owner = PAK
