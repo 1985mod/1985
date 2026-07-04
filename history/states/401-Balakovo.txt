@@ -2,7 +2,7 @@
 state = {
 	id = 401
 	name = "STATE_401" #Balakovo
-	manpower = 699935
+	manpower = 280000
 	
 	state_category = rural
 	

@@ -2,7 +2,7 @@
 state={
 	id=210
 	name="STATE_210" # Nevel
-	manpower = 254181
+	manpower = 275000
 	
 	state_category = rural
 

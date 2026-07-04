@@ -2,7 +2,7 @@
 state={
 	id=208
 	name="STATE_208" # Luga
-	manpower = 154219
+	manpower = 320000
 	
 	state_category = rural
 

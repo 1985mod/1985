@@ -2,7 +2,7 @@
 state={
 	id=567
 	name="STATE_567" # Bratsk
-	manpower = 313423
+	manpower = 545000
 	state_category = rural
 	
 	resources={

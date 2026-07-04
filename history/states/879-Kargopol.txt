@@ -2,7 +2,7 @@
 state = {
 	id = 879
 	name = "STATE_879" # Kargopol
-	manpower = 685630
+	manpower = 145000
 	
 	state_category = rural
 

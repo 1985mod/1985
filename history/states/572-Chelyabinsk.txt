@@ -2,7 +2,7 @@
 state={
 	id=572
 	name="STATE_572" # Chelyabinsk
-	manpower = 1115330
+	manpower = 3200000
 	
 	resources = {
 		coal = 8 # initial distribution
