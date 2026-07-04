@@ -13,6 +13,7 @@ state={
 	}
 	history={
 		owner = AFS
+		
 		buildings = {
 			infrastructure = 1 
 		}

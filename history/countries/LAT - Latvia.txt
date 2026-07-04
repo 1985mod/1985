@@ -11,6 +11,8 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = LAT_anatoliy_gorbynov
+
 set_research_slots = 3
 
 set_convoys = 10
@@ -27,5 +29,3 @@ set_popularities = {
 	communism = 15
 	neutrality = 40
 }
-
-recruit_character = LAT_anatoliy_gorbynov

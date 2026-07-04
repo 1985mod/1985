@@ -1,0 +1,144 @@
+add_namespace = soviet_republics
+
+country_event = {
+	id = soviet_republics.1 ##  перекат в консерватизм ##
+	title = soviet_republics.1.t
+	desc = soviet_republics.1.desc
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+        has_country_flag = conservatism_soviet
+    }
+
+	option = {
+		name = soviet_republics.1.a
+		ai_chance = {
+			base = 10
+		}		
+        if = {
+            limit = {
+                OR = {
+                    tag = EST
+                    tag = BLR
+                    tag = UKR
+                    tag = MOL
+                    tag = RUS
+                }
+            }
+            set_politics = {
+                ruling_party = conservatism
+                elections_allowed = yes
+            }
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.4
+            }
+        }
+        clr_country_flag = conservatism_soviet
+        if = {
+            limit = {
+                tag = LIT
+            }
+            set_politics = {
+                ruling_party = socialism
+                elections_allowed = no
+            }
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.44
+            }
+        }
+        if = {
+            limit = {
+                tag = LAT
+            }
+            set_politics = {
+                ruling_party = liberalism
+                elections_allowed = no
+            }
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.32
+            }
+        }
+        if = {
+            limit = {
+                tag = ARM
+            }
+            set_politics = {
+                ruling_party = liberalism
+                elections_allowed = no
+            }
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.83
+            }
+        }
+        if = {
+            limit = {
+                tag = GEO
+            }
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+            }
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.95
+            }
+        }
+        if = {
+            limit = {
+                tag = TMS
+            }
+            set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+            }
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.99
+            }
+        }
+        if = {
+            limit = {
+                tag = KYR
+            }
+            set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+            }
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.95
+            }
+        }
+        if = {
+            limit = {
+                tag = UZB
+            }
+            set_politics = {
+                ruling_party = socialism
+                elections_allowed = no
+            }
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.87
+            }
+        }
+        if = {
+            limit = {
+                tag = CHE
+                date > 1991.10.27
+            }
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+            }
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.9
+            }
+        }
+	}
+}

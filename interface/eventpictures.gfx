@@ -86,6 +86,66 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_xi_congress_of_the_sed"
+		texturefile = "gfx/event_pictures/report_xi_congress_of_the_sed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_gerontocracy_of_the_sed"
+		texturefile = "gfx/event_pictures/report_gerontocracy_of_the_sed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_honeckers_visit_to_bonn"
+		texturefile = "gfx/event_pictures/report_honeckers_visit_to_bonn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_unity_with_those_who_disagree"
+		texturefile = "gfx/event_pictures/report_unity_with_those_who_disagree.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_falsification_of_local_elections"
+		texturefile = "gfx/event_pictures/report_falsification_of_local_elections.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_conspiracy_in_the_politburo"
+		texturefile = "gfx/event_pictures/report_conspiracy_in_the_politburo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_modrow_government"
+		texturefile = "gfx/event_pictures/report_modrow_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_first_free_elections"
+		texturefile = "gfx/event_pictures/report_first_free_elections.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_order_101"
+		texturefile = "gfx/event_pictures/report_order_101.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_honeckers_resignation"
+		texturefile = "gfx/event_pictures/report_honeckers_resignation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_socialism_on_the_brink_of_bankruptcy"
+		texturefile = "gfx/event_pictures/report_socialism_on_the_brink_of_bankruptcy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_mig_29_deliveries"
+		texturefile = "gfx/event_pictures/report_mig_29_deliveries.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_SOV_chernobyl"
 		texturefile = "gfx/event_pictures/news_SOV_chernobyl.dds"
 	}

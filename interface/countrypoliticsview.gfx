@@ -495,8 +495,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ideology_islamism_group"
-		texturefile = "gfx/interface/ideologies/islamism_ideology.png"
+		name = "GFX_ideology_Political_Islam"
+		texturefile = "gfx/interface/ideologies/Political_Islam_subideology.png"
 	}
 	
 	spriteType = {

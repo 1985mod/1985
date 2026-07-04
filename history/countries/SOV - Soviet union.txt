@@ -216,11 +216,14 @@ add_ideas = {
 SOV_soviet_contingent_in_afghanistan
 SOV_economic_stagnation
 limited_conscription
+limited_exports
 }
 
 recruit_character = SOV_konstantin_chernenko
 recruit_character = SOV_KPSS
 recruit_character = SOV_mikhail_gorbachev
+recruit_character = SOV_Mikhail_Gorbachev_SSG
+recruit_character = SOV_gennady_yanaev
 recruit_character = SOV_boris_yeltsin
 recruit_character = SOV_dmitry_vasilyev
 recruit_character = SOV_grigory_romanov

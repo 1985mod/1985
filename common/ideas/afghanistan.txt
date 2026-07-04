@@ -31,11 +31,12 @@ ideas = {
 			}
 
 			removal_cost = -1
+
+			targeted_modifier = { tag = AFS attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = AFS defense_bonus_against  = 0.05 }
 			
 			modifier = {
-			  targeted_modifier = { tag = AFS attack_bonus_against = 0.25 }
-			  targeted_modifier = { tag = AFS defense_bonus_against  = 0.20 }
-			  surrender_limit = 1.0
+			  surrender_limit = 0.9
 			}
 		}
 	}

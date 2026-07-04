@@ -236,6 +236,9 @@ country_event = {
             }
             release = LIT
             set_country_flag = collapse_LIT
+            LIT = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Прибалтика - Латвия (май 1990)
@@ -247,6 +250,9 @@ country_event = {
             }
             release = LAT
             set_country_flag = collapse_LAT
+            LAT = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Прибалтика - Эстония (март 1991)
@@ -258,6 +264,9 @@ country_event = {
             }
             release = EST
             set_country_flag = collapse_EST
+            EST = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Украина (август 1991)
@@ -269,6 +278,9 @@ country_event = {
             }
             release = UKR
             set_country_flag = collapse_UKR
+            UKR = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Беларусь (август 1991)
@@ -280,6 +292,9 @@ country_event = {
             }
             release = BLR
             set_country_flag = collapse_BLR
+            BLR = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Молдова (август 1991)
@@ -291,6 +306,9 @@ country_event = {
             }
             release = MOL
             set_country_flag = collapse_MOL
+            MOL = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Кавказ - Грузия (апрель 1991)
@@ -302,6 +320,9 @@ country_event = {
             }
             release = GEO
             set_country_flag = collapse_GEO
+            GEO = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Кавказ - Армения (сентябрь 1991)
@@ -313,6 +334,9 @@ country_event = {
             }
             release = arm
             set_country_flag = collapse_ARM
+            ARM = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Кавказ - Азербайджан (октябрь 1991)
@@ -324,6 +348,9 @@ country_event = {
             }
             release = AZR
             set_country_flag = collapse_AZR
+            AZR = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Чечня (ноябрь 1991)
@@ -335,6 +362,9 @@ country_event = {
             }
             release = CHE
             set_country_flag = collapse_CHE
+            CHE = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Средняя Азия - Узбекистан (август 1991)
@@ -346,6 +376,9 @@ country_event = {
             }
             release = UZB
             set_country_flag = collapse_UZB
+            UZB = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Средняя Азия - Туркменистан (октябрь 1991)
@@ -357,6 +390,9 @@ country_event = {
             }
             release = TMS
             set_country_flag = collapse_TMS
+            TMS = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Средняя Азия - Кыргызстан (август 1991)
@@ -368,6 +404,9 @@ country_event = {
             }
             release = KYR
             set_country_flag = collapse_KYR
+            KYR = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Средняя Азия - Таджикистан (август 1991)
@@ -412,6 +451,9 @@ country_event = {
             }
             release = KAZ
             set_country_flag = collapse_KAZ
+            KAZ = {
+                set_country_flag = conservatism_soviet
+            }
 
             clr_country_flag = collapse_right_now
         }
@@ -1077,6 +1119,292 @@ country_event = {
 		add_popularity = {
 			ideology = conservatism
 			popularity = 0.26
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.37 ## выборы президента россии  ##ЦЫ
+	title = SOV_soviet_union.37.t
+	desc = SOV_soviet_union.37.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.37.a
+        add_political_power = 50
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.38 ## соглашение о создании снг  ##ЦЫ
+	title = SOV_soviet_union.38.t
+	desc = SOV_soviet_union.38.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    immediate = {
+        release = RUS
+    }
+
+    option = {
+        name = SOV_soviet_union.38.a
+        add_political_power = -200
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+        RUS = {
+            set_country_flag = conservatism_soviet
+        }
+    }
+
+	trigger = {
+		NOT = {
+			is_ai = no
+		}
+	}
+	option = {
+		name = SOV_soviet_union.38.b
+		trigger = { is_ai = no }
+		RUS = { change_tag_from = SOV }
+        RUS = {
+            set_country_flag = conservatism_soviet
+        }
+	}
+}
+
+country_event = {
+	id = SOV_soviet_union.39 ## гкчп  ##ЦЫ
+	title = SOV_soviet_union.39.t
+	desc = SOV_soviet_union.39.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    immediate = {
+        set_country_flag = start_sec_country_flag
+    }
+
+    option = {
+        name = SOV_soviet_union.39.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		remove_country_leader = { name = "SOV_mikhail_gorbachev" }
+		promote_character = {
+			character = SOV_gennady_yanaev
+			ideology = communism
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.40 ## речь ельцина  ##ЦЫ
+	title = SOV_soviet_union.40.t
+	desc = SOV_soviet_union.40.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.40.a
+        add_political_power = 25
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.41 ## лебединое озеро  ##ЦЫ
+	title = SOV_soviet_union.41.t
+	desc = SOV_soviet_union.41.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.41.a
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.42 ## гкчп расформировывается  ##ЦЫ
+	title = SOV_soviet_union.42.t
+	desc = SOV_soviet_union.42.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.42.a
+		remove_country_leader = { name = "SOV_gennady_yanaev" }
+		promote_character = {
+			character = SOV_mikhail_gorbachev
+			ideology = communism
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.43 ## речь горбачёва 25 декабря 1991 года  ##ЦЫ
+	title = SOV_soviet_union.43.t
+	desc = SOV_soviet_union.43.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.43.a
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.44 ## компромисс с ельциным  ##ЦЫ
+	title = SOV_soviet_union.44.t
+	desc = SOV_soviet_union.44.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.44.a
+        set_country_flag = SOV_leave_yanaev_flag
+    }
+
+    option = {
+        name = SOV_soviet_union.44.b
+        set_country_flag = SOV_stick_to_yeltsins_side_flag
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.45 ## новый договор   ##ЦЫ
+	title = SOV_soviet_union.44.t
+	desc = SOV_soviet_union.44.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.44.a
+		promote_character = {
+			character = SOV_Mikhail_Gorbachev_SSG
+			ideology = socialism
+		}
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = yes
+		}
+        release = BLR
+			SOV = {
+				set_autonomy = {
+				target = BLR
+				autonomy_state = uss_member
+				freedom_level = 0.3
+				end_wars = no 
+				end_civil_wars = no 
+			}
+		}
+        release = UKR
+			SOV = {
+				set_autonomy = {
+				target = UKR
+				autonomy_state = uss_member
+				freedom_level = 0.3
+				end_wars = no 
+				end_civil_wars = no 
+			}
+		}
+        release = AZR
+			SOV = {
+				set_autonomy = {
+				target = AZR
+				autonomy_state = uss_member
+				freedom_level = 0.3
+				end_wars = no 
+				end_civil_wars = no 
+			}
+		}
+        release = KAZ
+			SOV = {
+				set_autonomy = {
+				target = KAZ
+				autonomy_state = uss_member
+				freedom_level = 0.3
+				end_wars = no 
+				end_civil_wars = no 
+			}
+		}
+        release = UZB
+			SOV = {
+				set_autonomy = {
+				target = UZB
+				autonomy_state = uss_member
+				freedom_level = 0.3
+				end_wars = no 
+				end_civil_wars = no 
+			}
+		}
+        release = TMS
+			SOV = {
+				set_autonomy = {
+				target = TMS
+				autonomy_state = uss_member
+				freedom_level = 0.3
+				end_wars = no 
+				end_civil_wars = no 
+			}
+		}
+        release = TAJ
+			SOV = {
+				set_autonomy = {
+				target = TAJ
+				autonomy_state = uss_member
+				freedom_level = 0.3
+				end_wars = no 
+				end_civil_wars = no 
+			}
+		}
+        release = KYR
+			SOV = {
+				set_autonomy = {
+				target = KYR
+				autonomy_state = uss_member
+				freedom_level = 0.3
+				end_wars = no 
+				end_civil_wars = no 
+			}
 		}
     }
 }

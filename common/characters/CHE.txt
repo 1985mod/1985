@@ -1,0 +1,16 @@
+characters = {
+	CHE_dzhokhar_dudayev = {
+		name = CHE_dzhokhar_dudayev
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHE/Portrait_Dzhokhar_Dudayev.dds"
+			}
+		}
+		country_leader = {
+			ideology = ethnic_nationalism
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,8 @@
+
+russia_liberalisation_economy  = {
+	add_to_variable = { russia_liberalisation_economy_variable = 0.03 }
+}
+
+russia_consumer_goods_factor  = {
+	add_to_variable = { russia_consumer_goods_factor_variable = -0.03 }
+}
