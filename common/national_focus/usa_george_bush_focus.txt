@@ -427,8 +427,27 @@ focus_tree = {
 			has_war_with = IRQ
 		}
 		
+		bypass = {
+			NOT = { has_war_with = IRQ }
+		}
+		
         completion_reward = {
-
+			custom_effect_tooltip = we_will_strike_at_the_infrastructure
+			damage_building = {
+				type = infrastructure
+				state = 656
+				damage = 1
+			}
+			damage_building = {
+				type = infrastructure
+				state = 1011
+				damage = 1
+			}
+			damage_building = {
+				type = infrastructure
+				state = 291
+				damage = 1
+			}
 	    }
 	}
 
@@ -443,6 +462,10 @@ focus_tree = {
 
 		available = {
 			has_war_with = IRQ
+		}
+
+		bypass = {
+			NOT = { has_war_with = IRQ }
 		}
 		
         completion_reward = {
@@ -462,9 +485,16 @@ focus_tree = {
 		available = {
 			has_war_with = IRQ
 		}
+
+		bypass = {
+			NOT = { has_war_with = IRQ }
+		}
 		
         completion_reward = {
-
+			add_timed_idea = {
+				idea = USA_use_the_global_positioning_system_idea
+				days = 15
+			}
 	    }
 	}
 
@@ -480,9 +510,21 @@ focus_tree = {
 		available = {
 			has_war_with = IRQ
 		}
+
+		bypass = {
+			NOT = { has_war_with = IRQ }
+		}
 		
         completion_reward = {
-
+			every_country = {
+				limit = {
+					has_country_flag = anti_iraq_coalition
+				}
+				add_timed_idea = {
+					idea = USA_cooperation_with_allied_forces_idea
+					days = 10
+				}
+			}
 	    }
 	}
 

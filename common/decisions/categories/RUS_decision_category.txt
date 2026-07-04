@@ -1,0 +1,31 @@
+RUS_liberalisation_economy = {
+
+      icon = border_war
+	  
+	  priority = 90
+	  
+	  allowed = {
+	    original_tag = RUS
+	  }
+	  
+	  visible = {
+          has_completed_focus = RUS_initiate_radical_liberal_reforms
+		  original_tag = RUS
+	  }
+}
+
+RUS_preparation_for_a_new_constitution = {
+
+      icon = border_war
+	  
+	  priority = 90
+	  
+	  allowed = {
+	    original_tag = RUS
+	  }
+	  
+	  visible = {
+          has_completed_focus = RUS_drafting_a_new_constitution
+		  original_tag = RUS
+	  }
+}

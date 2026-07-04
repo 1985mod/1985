@@ -53,3 +53,26 @@ country_event = {
         add_war_support = -0.1
     }
 }
+
+country_event = {
+    id = iraq.3
+    title = iraq.3.t
+    desc = iraq.3.d
+    picture = GFX_report_event_generic_peace
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = iraq.3.a
+        every_country = {
+            limit = {
+                has_war_with = IRQ
+            }
+            white_peace = ROOT
+        }
+        release = KUW
+        KUR = { transfer_state = 1058}
+    }
+}

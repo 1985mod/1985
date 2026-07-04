@@ -21,7 +21,7 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_idea_soviet_contingent_in_afghanistan"
+        name = "GFX_idea_sov_soviet_contingent_in_afghanistan"
         texturefile = "gfx/interface/ideas/ideas/idea_sov_soviet_contingent_in_afghanistan.dds"
     }
 

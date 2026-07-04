@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		SOV_soviet_contingent_in_afghanistan = {
-			picture = GFX_idea_soviet_contingent_in_afghanistan
+			picture = ячся
 			
 			allowed = {
 				original_tag = SOV
@@ -182,6 +182,61 @@ ideas = {
 				political_power_factor = 0.1
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.15
+			}
+		}
+
+    	SOV_interregional_parliamentary_group = {
+			picture = NONE
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				special_project_speed_factor = 0.03
+				political_power_factor = 0.05
+				conservatism_drift = 0.03
+			}
+		}
+    	SOV_abolition_of_the_union_kgb_idea = {
+			picture = NONE
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.15
+			}
+		}
+    	SOV_adopt_resolution_gs_13_idea = {
+			picture = NONE
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				consumer_goods_factor = -0.3	
+				research_speed_factor = -0.15	
 			}
 		}
 	}

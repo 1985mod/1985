@@ -38,12 +38,14 @@ units = {
 		location = 5082
 		division_template = "Royal Guard"
 		start_experience_factor = 0.3
+		start_experience_factor = 0.3
 	}
 	
 	division = {
 		name = "Royal Afghan Household Division"
 		location = 13445
 		division_template = "Royal Guard"
+		start_experience_factor = 0.4
 		start_experience_factor = 0.7
 	}
 	
@@ -51,6 +53,7 @@ units = {
 		name = "Royal Afghan Household Division"
 		location = 10737
 		division_template = "Royal Guard"
+		start_experience_factor = 0.4
 		start_experience_factor = 0.5
 	}
 	division = {
@@ -61,6 +64,7 @@ units = {
 		}
 		location = 8090
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.4
 
 	}
@@ -72,6 +76,7 @@ units = {
 		}
 		location = 5064
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -83,6 +88,7 @@ units = {
 		}
 		location = 4949
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.1
 
 	}
@@ -95,6 +101,7 @@ units = {
 		}
 		location = 1948
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
 
 	}
@@ -106,6 +113,7 @@ units = {
 		}
 		location = 2062
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -117,6 +125,7 @@ units = {
 		}
 		location = 12871
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.4
 
 	}
@@ -129,6 +138,7 @@ units = {
 		}
 		location = 4893
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
 
 	}
@@ -141,6 +151,7 @@ units = {
 		}
 		location = 7916
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
 
 	}
@@ -152,7 +163,8 @@ units = {
 		}
 		location = 12788
 		division_template = "Militia"
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
 
 	}	
 	division = {
@@ -163,6 +175,7 @@ units = {
 		}
 		location = 1995
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.6
 
 	}
@@ -175,6 +188,7 @@ units = {
 		}
 		location = 10826
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -187,6 +201,7 @@ units = {
 		}
 		location = 12653
 		division_template = "Militia"
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.9
 
 	}
@@ -199,6 +214,7 @@ units = {
 		}
 		location = 12314
 		division_template = "Militia"
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 
 	}
@@ -211,6 +227,7 @@ units = {
 		}
 		location = 7584
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -223,6 +240,7 @@ units = {
 		}
 		location = 10896
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.6
 
 	}
@@ -235,6 +253,7 @@ units = {
 		}
 		location = 7448
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 
 	}
@@ -247,6 +266,7 @@ units = {
 		}
 		location = 10852
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.6
 
 	}
@@ -259,6 +279,7 @@ units = {
 		}
 		location = 8053
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.4
 
 	}
@@ -271,6 +292,7 @@ units = {
 		}
 		location = 2017
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
@@ -283,6 +305,7 @@ units = {
 		}
 		location = 2078
 		division_template = "Militia"
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 
 	}
@@ -295,6 +318,7 @@ units = {
 		}
 		location = 5020
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.6
 
 	}
@@ -307,6 +331,7 @@ units = {
 		}
 		location = 13427
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 
 	}
@@ -319,6 +344,7 @@ units = {
 		}
 		location = 13429
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
@@ -331,6 +357,7 @@ units = {
 		}
 		location = 10789
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -343,6 +370,7 @@ units = {
 		}
 		location = 12769
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
@@ -355,6 +383,7 @@ units = {
 		}
 		location = 13475
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.4
 
 	}
@@ -367,6 +396,7 @@ units = {
 		}
 		location = 10781
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 
 	}
@@ -379,6 +409,7 @@ units = {
 		}
 		location = 13432
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
 
 	}
@@ -391,6 +422,7 @@ units = {
 		}
 		location = 13435
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
@@ -402,6 +434,7 @@ units = {
 		}
 		location = 13439
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
@@ -413,6 +446,7 @@ units = {
 		}
 		location = 12831
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -424,6 +458,7 @@ units = {
 		}
 		location = 13450
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -435,6 +470,7 @@ units = {
 		}
 		location = 13444
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -446,6 +482,7 @@ units = {
 		}
 		location = 13448
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -457,6 +494,7 @@ units = {
 		}
 		location = 13454
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -468,6 +506,7 @@ units = {
 		}
 		location = 12877
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -479,6 +518,7 @@ units = {
 		}
 		location = 13456
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -490,6 +530,7 @@ units = {
 		}
 		location = 13472
 		division_template = "Militia"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
@@ -501,6 +542,55 @@ units = {
 		}
 		location = 13476
 		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7984
+		division_template = "Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13474
+		division_template = "Militia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1948
+		division_template = "Royal Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 2062
+		division_template = "Royal Guard"
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 
 	}

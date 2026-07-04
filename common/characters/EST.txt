@@ -1,0 +1,16 @@
+characters = {
+	EST_lennart_meri = {
+		name = EST_lennart_meri
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/Portrait_lennart_meri.dds"
+			}
+		}
+		country_leader = {
+			ideology = classic_conservatism
+			traits = {}
+			expire = "2023.8.13"
+			id = -100
+		}
+	}
+}

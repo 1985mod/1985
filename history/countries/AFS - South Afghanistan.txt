@@ -39,7 +39,7 @@ set_popularities = {
 
 add_ideas = {
 AFS_faith_in_sacred_islam
-service_by_requirement
+all_adults_serve
 }
 
 

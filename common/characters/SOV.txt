@@ -30,7 +30,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = classic_conservatism
+			ideology = liberal_conservatism
 			traits = { democratic_reformer }
 			expire = "2007.04.23.1"
 			id = -1
@@ -45,13 +45,30 @@ characters = {
 			}
 			army = {
 				large = GFX_portrait_SOV_mikhail_gorbachev
-				small = GFX_portrait_SOV_mikhail_gorbachev_small
 			}
 		}
 		country_leader = {
 			ideology = communist_perestroika
 			traits = {}
 			expire = "2022.08.30.1"
+			id = -1
+		}
+	}
+
+	SOV_gennady_yanaev = {
+		name = SOV_gennady_yanaev
+		portraits = {
+			civilian = {
+				large = GFX_portrait_gennady_yanaev
+			}
+			army = {
+				large = GFX_portrait_gennady_yanaev
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_socialism
+			traits = {}
+			expire = "2010.08.30.1"
 			id = -1
 		}
 	}
@@ -133,13 +150,13 @@ characters = {
 	}
 
 	SOV_Mikhail_Gorbachev_SSG = {
-		name = SOV_Mikhail_Gorbachev
+		name = SOV_Mikhail_Gorbachev_SSG
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_Mikhail_Gorbachev_SSG
+				large = GFX_Portrait_Mikhail_Gorbachev_uss
 			}
 			army = {
-				large = GFX_Portrait_Mikhail_Gorbachev_SSG
+				large = GFX_Portrait_Mikhail_Gorbachev_uss
 				small = GFX_Portrait_Mikhail_Gorbachev_SSG_small
 			}
 		}
@@ -163,6 +180,22 @@ characters = {
 				small = "GFX_idea_portrait_sov_Sokolov"
 			}
 		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = SOV_Sokolov
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+
 		field_marshal={
 			traits={old_guard armor_officer trait_cautious}
 			skill=4
@@ -222,11 +255,11 @@ characters = {
 		name = "SOV_valery_belikov"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_valery_belikov.dds"
 				small = "GFX_idea_portrait_sov_Yazov"
 			}
 			army = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_valery_belikov.dds"
 			}
 		}	
 		field_marshal={
@@ -266,11 +299,11 @@ characters = {
 		name = "SOV_ivan_gerasimov"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_ivan_gerasimov.dds"
 				small = "GFX_idea_portrait_sov_Yazov"
 			}
 			army = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_ivan_gerasimov.dds"
 			}
 		}	
 		corps_commander={
@@ -288,11 +321,11 @@ characters = {
 		name = "SOV_nikolay_popov"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_nikolai_popov.dds"
 				small = "GFX_idea_portrait_sov_Yazov"
 			}
 			army = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_nikolai_popov.dds"
 			}
 		}	
 		field_marshal={
@@ -309,11 +342,11 @@ characters = {
 		name = "SOV_boris_snetkov"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_boris_snetkov.dds"
 				small = "GFX_idea_portrait_sov_Yazov"
 			}
 			army = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_boris_snetkov.dds"
 			}
 		}	
 		corps_commander={
@@ -331,11 +364,11 @@ characters = {
 		name = "SOV_ivan_tretyak"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_ivan_tretiak.dds"
 				small = "GFX_idea_portrait_sov_Yazov"
 			}
 			army = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_ivan_tretiak.dds"
 			}
 		}	
 		corps_commander={
@@ -394,7 +427,7 @@ characters = {
 		name = SOV_alexander_yakovlev
 		portraits = {
 			army = {
-				small = "GFX_idea_portrait_sov_Shaposhnikov"
+				small = "gfx/interface/ideas/SOV/idea_portrait_alexandr_yakovlev.dds"
 			}
 		}
 		advisor = {
@@ -404,6 +437,9 @@ characters = {
 			traits = {
 				technocrat
 			}
+			ai_will_do = {
+				base = 1.5
+			}
 		}
 	}
 
@@ -411,7 +447,7 @@ characters = {
 		name = SOV_andrey_gromyko
 		portraits = {
 			army = {
-				small = "GFX_idea_portrait_sov_Shaposhnikov"
+				small = "gfx/interface/ideas/SOV/idea_portrait_andrey_gromyko.dds"
 			}
 		}
 		advisor = {
@@ -421,6 +457,9 @@ characters = {
 			traits = {
 				SOV_supreme_council
 			}
+			ai_will_do = {
+				base = 1.5
+			}
 		}
 	}
 
@@ -428,7 +467,7 @@ characters = {
 		name = SOV_boris_yeltsin_advisor
 		portraits = {
 			army = {
-				small = "GFX_idea_portrait_sov_Shaposhnikov"
+				small = "gfx/interface/ideas/SOV/idea_portrait_boris_yeltsin.dds"
 			}
 		}
 		advisor = {
@@ -438,6 +477,10 @@ characters = {
 			traits = {
 				SOV_moscow_city_committee
 			}
+			ai_will_do = {
+				base = 1.5
+			}
 		}
+
 	}
 }

@@ -1,0 +1,65 @@
+DDR_the_fight_against_the_church_cat = {
+
+    DDR_surveillance_of_churches = {
+	
+		icon = generic_speech
+
+		cost = 75
+		days_remove = 30
+
+	    visible = {
+            has_completed_focus = DDR_the_fight_against_the_church
+            original_tag = DDR
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+            add_stability = 0.05
+		}
+	}
+
+    DDR_control_over_activity = {
+	
+		icon = generic_speech
+
+		cost = 50
+		days_remove = 30
+
+	    visible = {
+        	has_completed_focus = DDR_the_fight_against_the_church
+			original_tag = DDR
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+            add_stability = 0.05
+		}
+	}
+
+    DDR_persecution_of_refuseniks = {
+	
+		icon = generic_speech
+
+		cost = 50
+		days_remove = 30
+
+	    visible = {
+            has_completed_focus = DDR_the_fight_against_the_church
+            original_tag = DDR
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+            add_stability = 0.05
+		}
+	}
+}

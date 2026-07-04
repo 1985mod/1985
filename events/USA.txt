@@ -250,6 +250,7 @@ country_event = {
 	trigger = {
 		ROOT = { has_country_flag = anti_iraq_coalition }
 		USA = { has_completed_focus = USA_operation_desert_storm }
+		NOT = { has_global_flag = desert_storm_triggered }
 		date < 1991.2.1
 	}
 
@@ -262,6 +263,7 @@ country_event = {
            target = IRQ
            type = annex_everything
         }
+		set_country_flag = operation_desert_storm_start
         add_threat = 0.5
 	}
 }
@@ -708,6 +710,140 @@ country_event = {
 
 	option = {
 		name = usa.29.a
+		ai_chance = {
+			base = 100
+		}		
+	}
+}
+
+country_event = {
+	id = usa.30 ###  торговый договор ###
+	title = usa.30.t
+	desc = usa.30.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.7.a
+		ai_chance = {
+			base = 90
+		}		
+		FROM = { country_event = usa.31 }
+	}
+
+	option = {
+		name = usa.7.b
+		ai_chance = {
+			base = 10
+		}		
+		FROM = { country_event = usa.32 }
+	}
+}
+
+country_event = {
+	id = usa.31 ###  канада согласилась ###
+	title = usa.31.t
+	desc = usa.31.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1987.10.15
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.31.a
+		ai_chance = {
+			base = 100
+		}		
+	}
+}
+
+country_event = {
+	id = usa.32 ###  отказала ###
+	title = usa.32.t
+	desc = usa.32.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1987.10.15
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.32.a
+		ai_chance = {
+			base = 100
+		}		
+	}
+}
+
+country_event = {
+	id = usa.33 ###  экономическая помощь ###
+	title = usa.33.t
+	desc = usa.33.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.33.a
+		ai_chance = {
+			base = 90
+		}		
+		FROM = { country_event = usa.34 }
+	}
+
+	option = {
+		name = usa.33.b
+		ai_chance = {
+			base = 10
+		}		
+		FROM = { country_event = usa.35 }
+	}
+}
+
+country_event = {
+	id = usa.34 ###  CCCР согласился ###
+	title = usa.31.t
+	desc = usa.31.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1987.10.15
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.34.a
+		ai_chance = {
+			base = 100
+		}		
+	}
+}
+
+country_event = {
+	id = usa.35 ###  отказал ###
+	title = usa.32.t
+	desc = usa.32.d
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		date > 1987.10.15
+		tag = USA
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = usa.32.a
 		ai_chance = {
 			base = 100
 		}		

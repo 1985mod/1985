@@ -1,0 +1,62 @@
+ideas = {
+    country = {
+		RUS_visit_to_the_usa = {
+			picture = ячся
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                conservatism_drift = 0.03
+                liberalism_drift = 0.03
+                political_power_gain = 0.15
+			}
+		}
+		RUS_privatize_state_property = {
+			picture = ячся
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                consumer_goods_factor = 0.3
+                production_factory_efficiency_gain_factor = 0.1
+                political_power_gain = 0.1
+			}
+		}
+		RUS_free_trade_decree = {
+			picture = ячся
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                resource_trade_cost_bonus_per_factory = 1
+                trade_opinion_factor = 0.2
+                faction_trade_opinion_factor = 0.1
+                overlord_trade_cost_factor = -0.1
+			}
+		}
+    }
+}

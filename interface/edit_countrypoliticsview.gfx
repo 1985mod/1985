@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_warsaw_pact_member_icon"
 		textureFile = "gfx/interface/autonomy/warsaw_pact_member_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_uss_member_icon"
+		textureFile = "gfx/interface/autonomy/uss_member_icon.dds"
+	}
 }

@@ -21,9 +21,9 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = populism
+			ideology = extreme_nationalism
 			traits = { }
-			expire = "1971.3.1.1"
+			expire = "1990.3.1.1"
 			id = -1
 		}
 	}
@@ -38,7 +38,7 @@ characters = {
 		country_leader = {
 			ideology = authoritarian_socialism
 			traits = { }
-			expire = "1971.3.1.1"
+			expire = "1990.3.1.1"
 			id = -1
 		}
 	}
@@ -51,9 +51,9 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_democracy
+			ideology = classic_conservatism
 			traits = { }
-			expire = "1971.3.1.1"
+			expire = "1990.3.1.1"
 			id = -1
 		}
 	}

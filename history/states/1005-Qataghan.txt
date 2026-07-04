@@ -13,6 +13,7 @@ state={
 	}
 	history={
 		owner = AFS
+		
 		add_core_of = AFN
 		add_core_of = AFS
 		victory_points = {

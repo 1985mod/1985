@@ -181,7 +181,7 @@ PRC_tibets_resistance = {
 		}
 
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 	}
 }

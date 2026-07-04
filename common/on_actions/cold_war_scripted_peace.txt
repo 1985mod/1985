@@ -111,4 +111,33 @@ on_actions = {
             }
         }
     }
+
+    ### Operation desert storm
+    on_state_control_changed = {
+        effect = {
+            # Проверяем, что смена контроля произошла для одного из двух штатов
+            if = {
+                limit = {
+                    ROOT = { controls_state = 675 }
+                    ROOT = { controls_state = 656 }
+                    new_controller = {
+                        has_war_with = IRQ
+                    }
+                    # Флаг, чтобы событие не повторялось
+                    NOT = { has_global_flag = desert_storm_triggered }
+                }
+                if = {
+                    limit = {
+                        # Проверяем, что штат 675 и 656 под контролем new_controller
+                        is_state_controlled_by = { controls_state = 675 country = new_controller }
+                        is_state_controlled_by = { controls_state = 656 country = new_controller }
+                        ROOT = { has_country_flag = operation_desert_storm_start }
+                    }
+                    # Устанавливаем глобальный флаг
+                    set_global_flag = desert_storm_triggered
+                    IRQ = { country_event = iraq.3 }
+                }
+            }
+        }
+    }
 }

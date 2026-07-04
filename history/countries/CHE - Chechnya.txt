@@ -31,9 +31,9 @@ set_popularities = {
 	conservatism = 12
 	neutrality = 57
 	fascism = 18
-	communism = 3
+	communism = 13
 }
 
-recruit_character = 
+recruit_character = CHE_dzhokhar_dudayev
 
 

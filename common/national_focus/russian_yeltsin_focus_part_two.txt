@@ -1,0 +1,177 @@
+focus_tree = {
+    id = RUS_focus_part_two
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 120
+            tag = RUS
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 730 y = 1200 }
+
+    focus = { 
+        id = RUS_decree_on_the_introduction_of_a_special_management_regime
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = 10
+        y = 0
+        cost = 10
+
+		completion_reward = {
+            add_political_power = 50
+            add_stability = 0.05
+		}
+    } 
+
+    focus = { 
+        id = RUS_hold_a_national_referendum
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = -1
+        y = 1
+        relative_position_id = RUS_decree_on_the_introduction_of_a_special_management_regime
+        prerequisite = { focus = RUS_decree_on_the_introduction_of_a_special_management_regime }
+        cost = 5
+
+		available = {
+            NOT = { has_government = communism }
+		}
+
+		completion_reward = {
+            country_event = { id = russia.5 }
+		}
+    } 
+
+    focus = { 
+        id = RUS_ix_congress_of_peoples_deputies_of_russia
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = 1
+        y = 1
+        relative_position_id = RUS_decree_on_the_introduction_of_a_special_management_regime
+        prerequisite = { focus = RUS_decree_on_the_introduction_of_a_special_management_regime }
+        cost = 5
+
+		completion_reward = {
+            country_event = { id = russia.6 }
+		}
+    } 
+
+    focus = { 
+        id = RUS_drafting_a_new_constitution
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = 0
+        y = 2
+        relative_position_id = RUS_decree_on_the_introduction_of_a_special_management_regime
+        prerequisite = { focus = RUS_hold_a_national_referendum }
+        prerequisite = { focus = RUS_ix_congress_of_peoples_deputies_of_russia }
+        cost = 10
+
+		completion_reward = {
+            unlock_decision_category_tooltip = RUS_preparation_for_a_new_constitution
+		}
+    }
+
+    focus = { 
+        id = RUS_decree_number_1400
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = 0
+        y = 1
+        relative_position_id = RUS_drafting_a_new_constitution
+        prerequisite = { focus = RUS_drafting_a_new_constitution }
+        cost = 10
+
+		completion_reward = {
+            country_event = { id = russia.7 }
+		}
+    } 
+
+    focus = { 
+        id = RUS_x_congress_of_peoples_deputies_of_russia
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = 0
+        y = 1
+        relative_position_id = RUS_decree_number_1400
+        prerequisite = { focus = RUS_decree_number_1400 }
+        cost = 5
+
+		completion_reward = {
+            country_event = { id = russia.8 }
+		}
+    }
+
+    focus = { 
+        id = RUS_declare_a_state_of_emergency_in_moscow
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = -2
+        y = 1
+        relative_position_id = RUS_x_congress_of_peoples_deputies_of_russia
+        prerequisite = { focus = RUS_x_congress_of_peoples_deputies_of_russia }
+        cost = 1
+
+		completion_reward = {
+
+		}
+    } 
+
+    focus = { 
+        id = RUS_bring_troops_into_moscow
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = 2
+        y = 1
+        relative_position_id = RUS_x_congress_of_peoples_deputies_of_russia
+        prerequisite = { focus = RUS_x_congress_of_peoples_deputies_of_russia }
+        cost = 1
+
+		completion_reward = {
+
+		}
+    } 
+
+    focus = { 
+        id = RUS_a_decisive_day_for_russia
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = 0
+        y = 2
+        relative_position_id = RUS_x_congress_of_peoples_deputies_of_russia
+        prerequisite = { focus = RUS_declare_a_state_of_emergency_in_moscow }
+        prerequisite = { focus = RUS_bring_troops_into_moscow }
+        cost = 5
+
+		completion_reward = {
+            country_event = { id = russia.9 }
+		}
+    } 
+
+
+    focus = { 
+        id = RUS_victory_of_the_supreme_council
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = -2
+        y = 1
+        relative_position_id = RUS_a_decisive_day_for_russia
+        prerequisite = { focus = RUS_a_decisive_day_for_russia }
+        mutually_exclusive = { focus = RUS_yeltsins_victory }
+        cost = 5
+
+		completion_reward = {
+
+		}
+    } 
+
+
+    focus = { 
+        id = RUS_yeltsins_victory
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = 2
+        y = 1
+        relative_position_id = RUS_a_decisive_day_for_russia
+        prerequisite = { focus = RUS_a_decisive_day_for_russia }
+        mutually_exclusive = { focus = RUS_victory_of_the_supreme_council }
+        cost = 5
+
+		completion_reward = {
+
+		}
+    } 

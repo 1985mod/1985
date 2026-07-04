@@ -8,6 +8,7 @@ country_event = {
 	trigger = {
 		tag = DDR
 		NOT = { has_global_flag = GER_unification1 }
+		has_global_flag = agreement_to_the_unification_of_germany
 		is_in_faction = no
 		is_puppet = no
 	}

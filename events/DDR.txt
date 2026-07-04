@@ -1,0 +1,239 @@
+add_namespace = ddr
+
+country_event = {
+	id = ddr.1 ## съезд сепг ##
+	title = ddr.1.t
+	desc = ddr.1.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.1.a
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = ddr.2 ## визит хонеккера ##
+	title = ddr.2.t
+	desc = ddr.2.desc
+	picture = GFX_report_honeckers_visit_to_bonn
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.2.a
+		ROOT = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = small_increase
+			}
+		}
+		WGR = {
+			add_opinion_modifier = {
+				target = DDR
+				modifier = small_increase
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ddr.3 ## единтсво с несогласными ##
+	title = ddr.3.t
+	desc = ddr.3.desc
+	picture = GFX_report_unity_with_those_who_disagree
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.3.a
+		add_political_power = 25
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+	    }
+	}
+
+    option = {
+        name = ddr.3.b
+		add_political_power = 25
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+	    }
+	}
+}
+
+country_event = {
+	id = ddr.4 ## фальсификация выборов ##
+	title = ddr.4.t
+	desc = ddr.4.desc
+	picture = GFX_report_falsification_of_local_elections
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.4.a
+		add_political_power = -75
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+	    }
+	}
+}
+
+country_event = {
+	id = ddr.5 ## заговор в полит бюро ##
+	title = ddr.5.t
+	desc = ddr.5.desc
+	picture = GFX_report_conspiracy_in_the_politburo
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.5.a
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+	    }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+	    }
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.1
+	    }
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+	    }
+	}
+}
+
+country_event = {
+	id = ddr.6 ## правительство модрова ##
+	title = ddr.6.t
+	desc = ddr.6.desc
+	picture = GFX_report_modrow_government
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.6.a
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = ddr.7 ## первые свободные выборы ##
+	title = ddr.7.t
+	desc = ddr.7.desc
+	picture = GFX_report_first_free_elections
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.7.a
+        add_political_power = 10
+        add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = ddr.8 ## приказ 101 ##
+	title = ddr.8.t
+	desc = ddr.8.desc
+	picture = GFX_report_order_101
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.8.a
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = ddr.9 ## геронтократия сепг ##
+	title = ddr.9.t
+	desc = ddr.9.desc
+	picture = GFX_report_gerontocracy_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.9.a
+		add_war_support = 0.05
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = ddr.10 ## отставка хоннекера ##
+	title = ddr.10.t
+	desc = ddr.10.desc
+	picture = GFX_report_honeckers_resignation
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.10.a
+		retire_ideology_leader = communism
+		add_war_support = -0.03
+        add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = ddr.11 ## социализм на грани банкротства ##
+	title = ddr.11.t
+	desc = ddr.11.desc
+	picture = GFX_report_socialism_on_the_brink_of_bankruptcy
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.11.a
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = ddr.12 ## поставки миг 29 ##
+	title = ddr.12.t
+	desc = ddr.12.desc
+	picture = GFX_report_mig_29_deliveries
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.12.a
+	}
+}

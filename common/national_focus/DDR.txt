@@ -20,7 +20,7 @@ focus_tree = {
         y = 0
         cost = 5
         completion_reward = {
-		       set_country_flag = main_tree_unlocked
+            add_political_power = 50
 	    }
 	}
 
@@ -30,8 +30,9 @@ focus_tree = {
         prerequisite = { focus = DDR_new_1985 }
         x = 10
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
+            add_political_power = 100
 	    }
 	}
 
@@ -42,8 +43,9 @@ focus_tree = {
         icon = GFX_
         x = 0
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
+            country_event = { id = ddr.9 }
 	    }
 	}
 
@@ -52,22 +54,11 @@ focus_tree = {
         relative_position_id = DDR_gerontocracy_of_the_sed
         prerequisite = { focus = DDR_gerontocracy_of_the_sed }
         icon = GFX_
-        x = 0
-        y = 1
-        cost = 5
-        completion_reward = {
-	    }
-	}
-    
-    focus = { 
-        id = DDR_the_cult_of_the_anti_fascist_rampart
-        relative_position_id = DDR_gerontocracy_of_the_sed
-        prerequisite = { focus = DDR_gerontocracy_of_the_sed }
-        icon = GFX_
         x = -2
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
+            add_ideas = DDR_doctrine_of_separation
 	    }
 	}
 
@@ -78,8 +69,20 @@ focus_tree = {
         icon = GFX_
         x = 2
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = medium_decrease
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = medium_decrease
+				}
+			}
 	    }
 	}
 
@@ -92,8 +95,11 @@ focus_tree = {
         icon = GFX_
         x = -2
         y = 1
-        cost = 5
+        cost = 6.5
         completion_reward = {
+            set_country_flag = DDR_honeckers_visit_to_bonn
+            mark_focus_tree_layout_dirty = yes
+            country_event = { id = ddr.1 }
 	    }
 	}
 
@@ -101,35 +107,26 @@ focus_tree = {
         id = DDR_honeckers_visit_to_bonn
         relative_position_id = DDR_xi_congress_of_the_sed
         prerequisite = { focus = DDR_xi_congress_of_the_sed }
+        allow_branch = { has_country_flag = DDR_honeckers_visit_to_bonn }
         icon = GFX_
         x = 0
         y = 1
         cost = 5
         completion_reward = {
+            country_event = { id = ddr.2 }
 	    }
-	}
-
-    focus = { 
-        id = DDR_censorship_of_sputnik
-        relative_position_id = DDR_honeckers_visit_to_bonn
-        prerequisite = { focus = DDR_honeckers_visit_to_bonn }
-        icon = GFX_
-        x = -2
-        y = 1
-        cost = 5
-        completion_reward = {
-	    }
-	}
+	} 
 
     focus = { 
         id = DDR_the_fight_against_the_church
         relative_position_id = DDR_honeckers_visit_to_bonn
         prerequisite = { focus = DDR_honeckers_visit_to_bonn }
         icon = GFX_
-        x = 2
+        x = 1
         y = 1
         cost = 5
         completion_reward = {
+            unlock_decision_category_tooltip = DDR_the_fight_against_the_church_cat
 	    }
 	}
 
@@ -138,10 +135,11 @@ focus_tree = {
         relative_position_id = DDR_honeckers_visit_to_bonn
         prerequisite = { focus = DDR_honeckers_visit_to_bonn }
         icon = GFX_
-        x = 0
+        x = -1
         y = 1
         cost = 5
         completion_reward = {
+            country_event = { id = ddr.3 }
 	    }
 	}
 
@@ -149,13 +147,13 @@ focus_tree = {
         id = DDR_falsification_of_local_elections
         relative_position_id = DDR_unity_with_those_who_disagree
         prerequisite = { focus = DDR_unity_with_those_who_disagree }
-        prerequisite = { focus = DDR_censorship_of_sputnik }
         prerequisite = { focus = DDR_the_fight_against_the_church }
         icon = GFX_
-        x = 0
+        x = 1
         y = 1
         cost = 5
         completion_reward = {
+            country_event = { id = ddr.4 }
 	    }
 	}
 
@@ -166,8 +164,32 @@ focus_tree = {
         icon = GFX_
         x = 0
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = medium_increase
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = medium_increase
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = medium_decrease
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = medium_decrease
+				}
+			}
 	    }
 	}
 
@@ -178,8 +200,11 @@ focus_tree = {
         icon = GFX_
         x = 0
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
+            set_country_flag = DDR_honeckers_resignation
+            mark_focus_tree_layout_dirty = yes
+            country_event = { id = ddr.5 }
 	    }
 	}
 
@@ -187,11 +212,13 @@ focus_tree = {
         id = DDR_honeckers_resignation
         relative_position_id = DDR_conspiracy_in_the_politburo
         prerequisite = { focus = DDR_conspiracy_in_the_politburo }
+        allow_branch = { has_country_flag = DDR_honeckers_resignation }
         icon = GFX_
         x = -2
         y = 1
         cost = 5
         completion_reward = {
+            country_event = { id = ddr.10 }
 	    }
 	}
 
@@ -199,11 +226,13 @@ focus_tree = {
         id = DDR_heading_for_the_turn
         relative_position_id = DDR_conspiracy_in_the_politburo
         prerequisite = { focus = DDR_conspiracy_in_the_politburo }
+        allow_branch = { has_country_flag = DDR_honeckers_resignation }
         icon = GFX_
         x = 2
         y = 1
         cost = 5
         completion_reward = {
+            add_ideas = DDR_heading_for_the_turn
 	    }
 	}
 	
@@ -216,6 +245,18 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.17
+            }
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.15
+            }
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.23
+            }
 	    }
 	}
 
@@ -223,11 +264,21 @@ focus_tree = {
         id = DDR_milkes_sacrifice
         relative_position_id = DDR_conspiracy_in_the_politburo
         prerequisite = { focus = DDR_conspiracy_in_the_politburo }
+        allow_branch = { has_country_flag = DDR_honeckers_resignation }
         icon = GFX_
         x = 0
         y = 1
         cost = 5
         completion_reward = {
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.1
+            }
+            add_political_power = 50
 	    }
 	}
 	
@@ -238,8 +289,9 @@ focus_tree = {
         icon = GFX_
         x = 0
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
+            country_event = { id = ddr.8 }
 	    }
 	}
 
@@ -252,6 +304,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+            country_event = { id = ddr.6 }
 	    }
 	}
 
@@ -265,18 +318,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-	    }
-	}
-
-    focus = { 
-        id = DDR_end
-        relative_position_id = DDR_first_free_elections
-        icon = GFX_
-        prerequisite = { focus = DDR_first_free_elections }
-        x = 0
-        y = 1
-        cost = 5
-        completion_reward = {
+            country_event = { id = ddr.7 }
 	    }
 	}
 
@@ -284,10 +326,12 @@ focus_tree = {
         id = DDR_socialism_on_the_brink_of_bankruptcy
         icon = GFX_
         prerequisite = { focus = DDR_new_1985 }
+        allow_branch = { has_country_flag = DDR_honeckers_visit_to_bonn }
         x = 5
         y = 1
         cost = 5
         completion_reward = {
+            country_event = { id = ddr.11 }
 	    }
 	}
 
@@ -298,8 +342,41 @@ focus_tree = {
         icon = GFX_
         x = 0
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = infrastructure
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_stability = 0.03
 	    }
 	}
 
@@ -312,6 +389,11 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = electronics
+            }
 	    }
 	}
 
@@ -324,18 +406,27 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-	    }
-	}
-
-    focus = { 
-        id = DDR_brown_coal_dependence
-        relative_position_id = DDR_microelectronics_program
-        prerequisite = { focus = DDR_microelectronics_program }
-        icon = GFX_
-        x = -1
-        y = 1
-        cost = 5
-        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = industry
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
 	    }
 	}
     
@@ -349,29 +440,16 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-	    }
-	}
-
-    focus = { 
-        id = DDR_strausss_secret_loan
-        relative_position_id = DDR_microelectronics_program
-        prerequisite = { focus = DDR_intensification_through_automation }
-        icon = GFX_
-        x = 3
-        y = 1
-        cost = 5
-        completion_reward = {
+            add_ideas = DDR_shalk_golodkovsky_committee
 	    }
 	}
 
     focus = { 
         id = DDR_shortage_of_consumer_goods
-        relative_position_id = DDR_strausss_secret_loan
-        prerequisite = { focus = DDR_strausss_secret_loan }
+        relative_position_id = DDR_shalk_golodkovsky_committee
         prerequisite = { focus = DDR_shalk_golodkovsky_committee }
-        prerequisite = { focus = DDR_brown_coal_dependence }
         icon = GFX_
-        x = -2
+        x = 0
         y = 1
         cost = 5
         completion_reward = {
@@ -380,25 +458,41 @@ focus_tree = {
 
     focus = { 
         id = DDR_import_of_west_german_technology
-        relative_position_id = DDR_shortage_of_consumer_goods
-        prerequisite = { focus = DDR_shortage_of_consumer_goods }
+        relative_position_id = DDR_shalk_golodkovsky_committee
+        prerequisite = { focus = DDR_shalk_golodkovsky_committee }
         icon = GFX_
-        x = -1
+        x = -2
         y = 1
         cost = 10
         completion_reward = {
+            add_tech_bonus = {
+                bonus = 1.0
+                uses = 2
+                category = industry
+            }
+            add_tech_bonus = {
+                bonus = 1.0
+                uses = 2
+                category = electronics
+            }
+            add_tech_bonus = {
+                bonus = 1.0
+                uses = 1
+                category = cat_medium_armor
+            }
 	    }
 	}
 
     focus = { 
         id = DDR_monetary_union
-        relative_position_id = DDR_shortage_of_consumer_goods
-        prerequisite = { focus = DDR_shortage_of_consumer_goods }
+        relative_position_id = DDR_shalk_golodkovsky_committee
+        prerequisite = { focus = DDR_shalk_golodkovsky_committee }
         icon = GFX_
-        x = 1
+        x = 2
         y = 1
         cost = 10
         completion_reward = {
+            add_ideas = DDR_monetary_union
 	    }
 	}
 
@@ -408,10 +502,32 @@ focus_tree = {
         prerequisite = { focus = DDR_monetary_union }
 		prerequisite = { focus = DDR_import_of_west_german_technology }
         icon = GFX_
-        x = 1
+        x = 2
         y = 1
         cost = 5
         completion_reward = {
+            swap_ideas = {
+                remove_idea = export_focus
+                add_idea = free_trade
+            }
+            if = {
+				limit = {
+                    has_idea = limited_exports
+				}
+                swap_ideas = {
+                    remove_idea = limited_exports
+                    add_idea = export_focus
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = closed_economy
+				}
+                swap_ideas = {
+                    remove_idea = closed_economy
+                    add_idea = limited_exports
+                }  
+            }
 	    }
 	}
 	
@@ -420,11 +536,13 @@ focus_tree = {
         id = DDR_national_peoples_army
         relative_position_id = DDR_new_1985
         prerequisite = { focus = DDR_new_1985 }
+        allow_branch = { has_country_flag = DDR_honeckers_visit_to_bonn }
         icon = GFX_
         x = 5
         y = 1
         cost = 5
         completion_reward = {
+            add_ideas = DDR_iron_discipline
 	    }
 	}
 	
@@ -437,11 +555,12 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+            army_experience = 25
 	    }
 	}
 	
     focus = { 
-        id = DDR_ministry_of_state_security
+        id = DDR_mig_29_deliveries
         relative_position_id = DDR_national_peoples_army
         prerequisite = { focus = DDR_national_peoples_army }
         icon = GFX_
@@ -449,19 +568,25 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+            country_event = { id = ddr.12 }
 	    }
 	}
 	
     focus = { 
         id = DDR_main_directorate_a
-        relative_position_id = DDR_ministry_of_state_security
-        prerequisite = { focus = DDR_ministry_of_state_security }
+        relative_position_id = DDR_mig_29_deliveries
+        prerequisite = { focus = DDR_mig_29_deliveries }
         prerequisite = { focus = DDR_coalition_warfare_doctrine }
         icon = GFX_
         x = -1
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
+            create_intelligence_agency = {
+                name = "Stasi"
+                icon = GFX_intelligence_agency_logo_agency
+            }
+            upgrade_intelligence_agency = upgrade_form_department
 	    }
 	}
 	
@@ -470,10 +595,11 @@ focus_tree = {
         relative_position_id = DDR_main_directorate_a
         prerequisite = { focus = DDR_main_directorate_a }
         icon = GFX_
-        x = -1
+        x = -2
         y = 1
         cost = 5
         completion_reward = {
+            add_ideas = DDR_filter_system
 	    }
 	}
 	
@@ -482,73 +608,89 @@ focus_tree = {
         relative_position_id = DDR_main_directorate_a
         prerequisite = { focus = DDR_main_directorate_a }
         icon = GFX_
-        x = 1
+        x = 2
         y = 1
         cost = 5
         completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.03
+                uses = 1
+                category = cat_medium_armor
+            }
 	    }
 	}
 	
     focus = { 
         id = DDR_operation_romeo
-        relative_position_id = DDR_filter_system
-        prerequisite = { focus = DDR_filter_system }
+        relative_position_id = DDR_main_directorate_a
+        prerequisite = { focus = DDR_main_directorate_a }
         icon = GFX_
-        x = -1
+        x = 0
         y = 1
         cost = 5
         completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.03
+                uses = 1
+                category = cat_medium_armor
+            }
 	    }
 	}
 	
     focus = { 
         id = DDR_sigma_intercept
-        relative_position_id = DDR_filter_system
+        relative_position_id = DDR_operation_romeo
+        prerequisite = { focus = DDR_operation_romeo }
         prerequisite = { focus = DDR_filter_system }
         prerequisite = { focus = DDR_felix_dzerzhinsky }
         icon = GFX_
-        x = 1
+        x = 0
         y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
-	    }
-	}
-	
-    focus = { 
-        id = DDR_mig_29_deliveries
-        relative_position_id = DDR_felix_dzerzhinsky
-        prerequisite = { focus = DDR_felix_dzerzhinsky }
-        icon = GFX_
-        x = 1
-        y = 1
-        cost = 5
-        completion_reward = {
+            set_country_flag = DDR_t72_modernization
+            mark_focus_tree_layout_dirty = yes
+            add_tech_bonus = {
+                bonus = 0.03
+                uses = 1
+                category = cat_medium_armor
+            }
 	    }
 	}
 	
     focus = { 
         id = DDR_t72_modernization
-        relative_position_id = DDR_operation_romeo
-        prerequisite = { focus = DDR_operation_romeo }
+        relative_position_id = DDR_sigma_intercept
         prerequisite = { focus = DDR_sigma_intercept }
-        icon = GFX_
-        x = 1
-        y = 1
-        cost = 5
-        completion_reward = {
-	    }
-	}
-	
-    focus = { 
-        id = DDR_industrial_espionage_in_nato
-        relative_position_id = DDR_mig_29_deliveries
-        prerequisite = { focus = DDR_mig_29_deliveries }
-        prerequisite = { focus = DDR_sigma_intercept }
+        allow_branch = { has_country_flag = DDR_t72_modernization }
         icon = GFX_
         x = -1
         y = 1
         cost = 5
         completion_reward = {
+            add_tech_bonus = {
+                bonus = 1.0
+                uses = 1
+                category = cat_medium_armor
+            }
+	    }
+	}
+	
+    focus = { 
+        id = DDR_industrial_espionage_in_nato
+        relative_position_id = DDR_sigma_intercept
+        prerequisite = { focus = DDR_sigma_intercept }
+        allow_branch = { has_country_flag = DDR_t72_modernization }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.03
+                uses = 1
+                category = cat_medium_armor
+            }
 	    }
 	}
 	
@@ -562,6 +704,41 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+			division_template = { 
+				name = "Guard Troop"
+				is_locked = no
+				regiments = { 
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 0 y = 3 }
+                    infantry = { x = 1 y = 0 }
+				}
+
+				support = {
+                    recon = { x = 0 y = 0 }
+				}
+			}   
+			64 = {
+				create_unit = { 
+					division = "name = \"1. Guard Troop\" division_template = \"Guard Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"2. Guard Troop\" division_template = \"Guard Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+			}
+			61 = {
+				create_unit = { 
+					division = "name = \"1. Guard Troop\" division_template = \"Guard Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"2. Guard Troop\" division_template = \"Guard Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+			}
 	    }
 	}
 	
@@ -574,6 +751,31 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+			division_template = { 
+				name = "Anti Terror"
+				is_locked = no
+				regiments = { 
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 0 y = 3 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                    infantry = { x = 1 y = 3 }
+				}
+
+			}   
+			62 = {
+				create_unit = { 
+					division = "name = \"1. Anti Terror\" division_template = \"Anti Terror\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"2. Anti Terror\" division_template = \"Anti Terror\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+			}
 	    }
 	}
 	
@@ -586,11 +788,16 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.03
+                uses = 1
+                category = cat_medium_armor
+            }
 	    }
 	}
 	
     focus = { 
-        id = DDR_crisis_headquarters_in_ehrich
+        id = DDR_leuzpig_garrison
         relative_position_id = DDR_anti_terror_group
         prerequisite = { focus = DDR_anti_terror_group }
         prerequisite = { focus = DDR_sector_plan }
@@ -599,18 +806,21 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-	    }
-	}
-	
-    focus = { 
-        id = DDR_leuzpig_garrison
-        relative_position_id = DDR_crisis_headquarters_in_ehrich
-        prerequisite = { focus = DDR_crisis_headquarters_in_ehrich }
-        icon = GFX_
-        x = 0
-        y = 1
-        cost = 5
-        completion_reward = {
+			division_template = { 
+				name = "Leuzpig Garrison"
+				is_locked = no
+				regiments = { 
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+				}
+
+			}   
+			65 = {
+				create_unit = { 
+					division = "name = \"1. Leuzpig Garrison\" division_template = \"Leuzpig Garrison\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+			}
 	    }
 	}
 }
