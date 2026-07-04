@@ -2,7 +2,7 @@
 state={
 	id=568
 	name="STATE_568" # Krasnoyarsk
-	manpower = 416561
+	manpower = 2955000
 	
 	state_category = town
 

@@ -2,7 +2,7 @@
 state={
 	id=578
 	name="STATE_578" # Tomsk
-	manpower = 32345
+	manpower = 975000
 
 	resources = {
 		coal = 16 #initial distribution

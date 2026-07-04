@@ -2,7 +2,7 @@
 state={
 	id=40
 	name="STATE_40" # Barnaul
-	manpower = 2784102
+	manpower = 2792000
 	
 	state_category = large_town
 

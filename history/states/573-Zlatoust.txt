@@ -2,7 +2,7 @@
 state={
 	id=573
 	name="STATE_573" # Zlatoust
-	manpower = 190278
+	manpower = 495000
 	
 	state_category = pastoral
 	resources={

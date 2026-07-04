@@ -2,7 +2,7 @@
 state = {
 	id = 563
 	name = "STATE_563" # Chita
-	manpower = 477962
+	manpower = 1325000
 	state_category = rural
 	resources = {
 		steel=9 # was: 12
