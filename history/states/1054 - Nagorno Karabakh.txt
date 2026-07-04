@@ -16,7 +16,7 @@ state={
 			1467 3
 		}
 		add_core_of = SOV
-		add_core_of = AZR
+		add_claim_by = AZR
 		add_core_of = ARM
 	}
 
