@@ -1,7 +1,7 @@
 state={
 	id=1057
 	name="STATE_1057"
-	manpower = 94924
+	manpower = 98000
 	
 	state_category = large_city
 	
@@ -13,7 +13,8 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = SOV
-		add_core_of = GEO
+		add_core_of = SOO
+		add_claim_by = GEO
 	}
 
 	provinces={
