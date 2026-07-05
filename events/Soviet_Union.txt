@@ -98,6 +98,7 @@ country_event = {
 				character = SOV_grigory_romanov
 				ideology = communism
 			}
+			load_focus_tree = SOV_soviet_romanov_focus
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -185,48 +186,6 @@ country_event = {
     }
 
     immediate = {
-        # Выход из ОВД (Польша, Чехия, ГДР, Венгрия, Румыния, Болгария)
-        if = {
-            limit = {
-                date > 1990.03.11
-                NOT = { has_country_flag = collapse_OVD }
-            }
-			
-            set_country_flag = collapse_right_now
-
-			every_country = {
-			    limit = { is_in_faction_with = SOV }
-			    leave_faction = yes
-			}
-
-			set_autonomy = { 
-				target = POL
-				autonomy_state = autonomy_free
-			}
-			set_autonomy = {
-				target = CZE
-				autonomy_state = autonomy_free
-			}
-			set_autonomy = {
-				target = DDR
-				autonomy_state = autonomy_free
-			}
-			set_autonomy = { 
-				target = HUN
-				autonomy_state = autonomy_free
-			}
-			set_autonomy = {
-				target = ROM
-				autonomy_state = autonomy_free
-			}
-			set_autonomy = {
-				target = BUL
-				autonomy_state = autonomy_free
-			}
-
-            set_country_flag = collapse_OVD
-        }
-
         # Прибалтика - Литва (март 1990)
         if = {
             limit = {
