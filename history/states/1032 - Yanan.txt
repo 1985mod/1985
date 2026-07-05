@@ -1,7 +1,7 @@
 state = {
 	id = 1032
 	name = "STATE_1032"
-	manpower = 1740000
+	manpower = 1353410
 	buildings_max_level_factor = 1
 	state_category = town
 

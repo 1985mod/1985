@@ -767,7 +767,7 @@
  STATE_619:0 "Yarkand"
  STATE_620:0 "Hubei"
  STATE_621:0 "Suiyuan"
- STATE_622:0 "Shaanbei" #Was Shaanxi
+ STATE_622:0 "Shaanbei"
  STATE_623:0 "Luzon"
  STATE_624: "Central Islands"
  STATE_625:0 "Eastern Visayas" #was Samar
@@ -1244,7 +1244,7 @@
  JAP_STATE_1031: "Chūsei-Zenra"
  STATE_1031: "Chungcheong-Jeolla"
  STATE_1032: "Yan'an"
- STATE_1033: "Nanlu" # was Fangchenggang
+ STATE_1033: "Nanlu"
  STATE_1034: "Suzhou"
  STATE_1035: "Nanjing"
  STATE_1036: "Wuhan"

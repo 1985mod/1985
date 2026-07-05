@@ -2,7 +2,7 @@ state = {
 	id = 751
 	name = "STATE_751"
 	
-	manpower = 3380000
+	manpower = 3609095
 	buildings_max_level_factor = 1.000
 	state_category = pastoral
 

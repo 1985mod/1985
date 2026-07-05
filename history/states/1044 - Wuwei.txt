@@ -1,7 +1,7 @@
 state = {
 	id = 1044
 	name = "STATE_1044"
-	manpower = 1750000
+	manpower = 1804547
 	state_category = pastoral
 
 	history = {
@@ -17,20 +17,6 @@ state = {
 		victory_points = {
 			5100 1 #Wuwei
 		}
-
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-				}
-				CHI = {
-					transfer_state = PREV
-				}
-			}
-		}
-
 	}
 
 	provinces = {

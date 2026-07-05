@@ -26,10 +26,10 @@ state={
 		}
 		
 	}
-	manpower=1350000
+	manpower=1353410
 
 	resources = {
-		coal = 8 #initial distribution
+		coal = 8
 	}
 	buildings_max_level_factor=1.000
 

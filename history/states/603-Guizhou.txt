@@ -21,10 +21,10 @@ state={
 	provinces={
 		1474 1884 4504 4532 7521 7549 7577 8095 10616 10819  
 	}
-	manpower=48150000
+	manpower=25263670
 
 	resources = {
-		coal = 3 # initial distribution
+		coal = 3
 	}
 	buildings_max_level_factor=1.000
 	state_category=town
