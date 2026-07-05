@@ -18,6 +18,26 @@ always_build_army = {
     }
 }
 
+majors_build_army = {
+	enable = {
+        is_major = yes
+		NOT = {
+			OR = {
+				original_tag = USA
+				original_tag = SOV
+                original_tag = YUG
+			}
+		}
+	}
+    abort_when_not_enabled = yes
+	
+    ai_strategy = {
+       type = build_army
+       id = infantry
+       value = 90
+    }
+}
+
 SOV_build_army = {
 	enable = {
 		original_tag = SOV
@@ -25,11 +45,11 @@ SOV_build_army = {
 	
     abort_when_not_enabled = yes
 	
-        ai_strategy = {
-            type = front_armor_score
-            id = SOV
-            value = 165
-        }   
+    ai_strategy = {
+       type = build_army
+       id = infantry
+       value = 165
+    }
 }
 
 USA_build_army = {
@@ -56,6 +76,6 @@ YUG_build_army = {
     ai_strategy = {
        type = build_army
        id = infantry
-       value = 33
+       value = 15
     }
 }

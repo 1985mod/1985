@@ -20,7 +20,7 @@ state = {
 	provinces = {
 		13204 13254
 	}
-	manpower = 175491
+	manpower = 35000
 	buildings_max_level_factor = 1
 	state_category = "pastoral"
 

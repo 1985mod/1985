@@ -5,7 +5,7 @@ state={
 		5075 5105 8013 8044  
 	}
 	state_category = rural
-	manpower = 512000
+	manpower = 450000
 	history={
 		owner = PAK
 		add_core_of = PAK

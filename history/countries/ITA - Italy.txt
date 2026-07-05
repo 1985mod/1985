@@ -8,13 +8,13 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "ITA_1936"
+	set_oob = "GEN_1985"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "ITA_1936_nsb"
+	set_oob = "GEN_1985"
 }
 
 starting_train_buffer = 1.5

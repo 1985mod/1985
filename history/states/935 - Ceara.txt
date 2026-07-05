@@ -2,7 +2,7 @@
 state = {
 	id = 935
 	name = "STATE_935"
-	manpower = 1632000 # A third from Rio Grande
+	manpower = 7150268
 
 	state_category = town
 

@@ -509,7 +509,6 @@ on_actions = {
 				}
 				85 = {
 					add_core_of = DNZ
-					set_demilitarized_zone = yes
 					add_dynamic_modifier = { modifier =  international_city }
 				}
 				if = {

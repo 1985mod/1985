@@ -266,6 +266,7 @@ joining_rule_has_no_offensive_war = {
 	}
 	modifier = {
 		defensive_war_stability_factor = 0.15
+		joining_rule_has_no_offensive_war = yes
 	}
 }
 

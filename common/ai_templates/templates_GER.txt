@@ -5,6 +5,26 @@ armored_GER = {
 	}
 	
 	role = armor
+	
+	upgrade_prio = {
+		base = 2
+
+		modifier = {
+			factor = 4
+			OR = {
+				has_tech = basic_medium_tank
+				has_tech = basic_medium_tank_chassis
+			}
+		}
+		
+		modifier = {
+			factor = 2
+			OR = {
+				has_tech = main_battle_tank
+				has_tech = main_battle_tank_chassis
+			}
+		}
+	}
 
 	light_armor_early_GER = {
 		division_names_group = GER_Arm_01
@@ -269,6 +289,20 @@ infantry_GER = {
 	}
 	
 	role = infantry
+	
+	upgrade_prio = {
+		base = 4
+
+		modifier = {
+			factor = 4
+			NOT = {
+				has_tech = basic_medium_tank
+			}
+			NOT = {
+				has_tech = basic_medium_tank_chassis
+			}
+		}
+	}
 
 
 	infantry_default_GER = {

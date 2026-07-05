@@ -2,7 +2,7 @@
 state={
 	id=226
 	name="STATE_226" # Dnipropertovsk
-	manpower = 1399006
+	manpower = 4290000
 	
 	state_category = town
 	

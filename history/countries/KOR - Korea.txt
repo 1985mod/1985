@@ -1,6 +1,6 @@
 capital = 525 #South Korea - Seoul or Busan
 
-oob = "KOR_1985"
+oob = "GEN_1985"
 
 # Starting tech
 set_technology = {
