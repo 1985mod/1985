@@ -2,7 +2,7 @@
 state={
 	id=328
 	name="STATE_328" # Kirin
-	manpower = 25530000
+	manpower = 20752300
 	
 	state_category = rural
 

@@ -16,7 +16,7 @@ state={
 			1010 3
 		}
 	}
-	manpower=5230000
+	manpower=4511370
 	state_category=pastoral
 	buildings_max_level_factor=1.000
 

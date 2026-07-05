@@ -1,7 +1,7 @@
 state = {
 	id = 615
 	name = "STATE_615"
-	manpower = 5430000
+	manpower = 23459122
 
 	resources = {
 		coal = 19 #initial distribution
