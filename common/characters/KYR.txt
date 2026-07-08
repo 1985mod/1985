@@ -1,0 +1,21 @@
+characters = {
+	KYR_askar_akayev ={
+		name = KYR_askar_akayev
+		portraits={
+			civilian={
+				large= GFX_Portrait_askar_akayev
+			}
+		}
+		country_leader={
+			ideology = authoritarian_democracy
+			traits={  }
+			expire="1993.11.9.1"		
+		}
+		country_leader = {
+			ideology = liberal_social_democracy
+			expire = "1999.3.1"
+			id = -1
+			traits = {}
+		}
+	}
+}

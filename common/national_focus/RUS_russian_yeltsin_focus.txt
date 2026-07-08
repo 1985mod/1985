@@ -263,11 +263,12 @@ focus_tree = {
         cost = 5
 
 		completion_reward = {
-            set_rule = {
-                desc = TAG_my_rule_description
-                can_create_factions = yes
+            create_faction_from_template = {
+                template = faction_template_defensive_democratic
+                name = RUS_collective_security_treaty_organization
+                icon = GFX_faction_logo_generic_2
+                color = { 48 105 39 }
             }
-            create_faction = collective_security_treaty_organization
 		}
     }   
 }

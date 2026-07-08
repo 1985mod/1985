@@ -25,7 +25,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			remove_country_leader = { name = "SOV_konstantin_chernenko" }
+			kill_ideology_leader = communism
 			promote_character = {
 				character = SOV_KPSS
 				ideology = communism
@@ -59,8 +59,7 @@ country_event = {
 				ruling_party = communism
 				elections_allowed = no
 			}
-             load_focus_tree = SOV_soviet_gorbachev_focus
-			 
+            load_focus_tree = SOV_soviet_gorbachev_focus
 		}
 
 		hidden_effect = {
@@ -90,6 +89,7 @@ country_event = {
 				ruling_party = communism
 				elections_allowed = no
 			}
+			load_focus_tree = SOV_soviet_romanov_focus
 		}
 
 		hidden_effect = {
@@ -98,7 +98,6 @@ country_event = {
 				character = SOV_grigory_romanov
 				ideology = communism
 			}
-			load_focus_tree = SOV_soviet_romanov_focus
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -431,10 +430,10 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.7.a
-        news_event = { id = news.12 days = 0 }
-		add_political_power = -10
-		set_country_flag = SOV_elimination_of_nuclear_weapons
-		mark_focus_tree_layout_dirty = yes
+        	news_event = { id = news.14 days = 2 }
+			add_political_power = -10
+			set_country_flag = SOV_elimination_of_nuclear_weapons
+			mark_focus_tree_layout_dirty = yes
 		}
     }
 
@@ -805,11 +804,11 @@ country_event = {
         name = SOV_soviet_union.22.a
 		add_popularity = {
 			ideology = liberalism
-			popularity = 0.16
+			popularity = 0.1
 		}
 		add_popularity = {
 			ideology = conservatism
-			popularity = 0.17
+			popularity = 0.08
 		}
     }
 }
@@ -1063,6 +1062,8 @@ country_event = {
             long_name = SOV_communist_party_soviet_union_reformed_wing
             name = SOV_kpss_reformed
         }
+
+		
 		add_popularity = {
 			ideology = neutrality
 			popularity = 0.04
@@ -1122,7 +1123,14 @@ country_event = {
 			popularity = -0.1
 		}
         RUS = {
-            set_country_flag = conservatism_soviet
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.4
+			}
+            set_politics = {
+                ruling_party = conservatism
+                elections_allowed = yes
+            }
         }
     }
 
@@ -1136,7 +1144,14 @@ country_event = {
 		trigger = { is_ai = no }
 		RUS = { change_tag_from = SOV }
         RUS = {
-            set_country_flag = conservatism_soviet
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.4
+			}
+            set_politics = {
+                ruling_party = conservatism
+                elections_allowed = yes
+            }
         }
 	}
 }
@@ -1268,15 +1283,15 @@ country_event = {
 
 country_event = {
 	id = SOV_soviet_union.45 ## новый договор   ##ЦЫ
-	title = SOV_soviet_union.44.t
-	desc = SOV_soviet_union.44.desc
+	title = SOV_soviet_union.45.t
+	desc = SOV_soviet_union.45.desc
 	picture = GFX_report_death_victor_tsoi
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
-        name = SOV_soviet_union.44.a
+        name = SOV_soviet_union.45.a
 		promote_character = {
 			character = SOV_Mikhail_Gorbachev_SSG
 			ideology = socialism
@@ -1365,5 +1380,32 @@ country_event = {
 				end_civil_wars = no 
 			}
 		}
+		hidden_effect = {
+			retire_ideology_leader = communism
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.46 ## смерть ельцина   ##ЦЫ
+	title = SOV_soviet_union.46.t
+	desc = SOV_soviet_union.46.desc
+	picture = GFX_report_death_victor_tsoi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.46.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		retire_ideology_leader = socialism
+		kill_ideology_leader = conservatism
     }
 }

@@ -17,7 +17,6 @@ set_technology = {
 	paratroopers = 1
 	gw_artillery = 1
 	mass_assault = 1
-	fleet_in_being = 1
 }
 
 set_politics = {
@@ -33,6 +32,6 @@ set_popularities = {
 	communism = 36
 }
 
-recruit_character = 
+recruit_character = AZR_ayaz_mutalibov
 
 

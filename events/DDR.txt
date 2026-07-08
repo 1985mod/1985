@@ -151,6 +151,14 @@ country_event = {
 
     option = {
         name = ddr.7.a
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.6
+        }
         add_political_power = 10
         add_stability = 0.03
 	}
@@ -235,5 +243,43 @@ country_event = {
 
     option = {
         name = ddr.12.a
+	}
+}
+
+country_event = {
+	id = ddr.13 ## гдр независимая ##
+	title = ddr.13.t
+	desc = ddr.13.desc
+	picture = GFX_report_first_free_elections
+
+	trigger = {
+		SOV = { has_country_flag = gorbachev }
+		date > 1990.06.20
+	}
+
+    option = {
+        name = ddr.13.a
+        SOV = {
+            end_puppet = DDR
+        }
+        leave_faction = yes
+		SOV = {
+			country_event = { id = ddr.14 hours = 24 }
+		}	
+	}
+}
+
+country_event = {
+	id = ddr.14 ## гдр вышла из варшавского договора ##
+	title = ddr.14.t
+	desc = ddr.14.desc
+	picture = GFX_report_socialism_on_the_brink_of_bankruptcy
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.14.a
 	}
 }

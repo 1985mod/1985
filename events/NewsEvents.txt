@@ -18,6 +18,8 @@ news_event = {
 
     trigger = {
 		NOT = { has_global_flag = USA_sammit_in_reykjavik_news }
+		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
+		has_country_flag = USA_reconsider_relations_with_the_soviet_union
         has_global_flag = USA_sammit_in_reykjavik
         date > 1986.11.13
     }
@@ -171,7 +173,7 @@ news_event = {
 	trigger = {
 		NOT = { has_global_flag = jobs_in_ussr }
 		tag = SOV
-		has_country_leader = { name = "SOV_mikhail_gorbachev" }
+		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
 		date > 1985.7.4
 	}
 
@@ -254,9 +256,10 @@ news_event = {
 	}
 	
 	trigger = {
-	   NOT = { has_global_flag = iraq_victory_in_iran_iraq_war }
-	   IRQ = { controls_state = 421 }
-	   IRQ = { controls_state = 413 }
+		NOT = { PER = { has_war_with = IRQ } }
+	   	NOT = { has_global_flag = iraq_victory_in_iran_iraq_war }
+	   	IRQ = { controls_state = 413 }
+		IRQ = { controls_state = 421 }
 	}
 }
 
@@ -273,7 +276,83 @@ news_event = {
 	}
 	
 	trigger = {
-	   NOT = { has_global_flag = iran_victory_in_iran_iraq_war }
-	   PER = { controls_state = 1011 }
+		NOT = { PER = { has_war_with = IRQ } }
+	   	NOT = { has_global_flag = iran_victory_in_iran_iraq_war }
+	   	PER = { controls_state = 1011 }
+	}
+}
+
+news_event = {
+	id = news.13 ## Авария авианосца USS Coral Sea  ##
+	title = news.13.t
+	desc = news.13.desc
+	picture = GFX_news_victory_iran_in_iran_iraq_war
+    
+    major = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = coral_sea_aircraft_carrier_accident
+	}
+	
+	trigger = {
+	   	NOT = { has_global_flag = coral_sea_aircraft_carrier_accident }
+	}
+}
+
+news_event = {
+	id = news.14 ## Женевская встреча ##
+	title = news.14.t
+	desc = news.14.desc
+	picture = GFX_news_sammit_in_rejyavik
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = jenev_meeting
+	}
+	
+	trigger = {
+		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
+		SOV = { has_country_flag = SOV_elimination_of_nuclear_weapons }
+		NOT = { has_global_flag = jenev_meeting }
+	}
+}
+
+news_event = {
+	id = news.15 ## Майкл Дукакис поддерживает политику Перестройки ##
+	title = news.15.t
+	desc = news.15.desc
+	picture = GFX_news_sammit_in_rejyavik
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = michael_dukakis_supports_perestroika_policy
+	}
+	
+	trigger = {
+		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
+		USA = { has_country_flag = USA_support_policy_of_perestroika }
+		NOT = { has_global_flag = michael_dukakis_supports_perestroika_policy }
+	}
+}
+
+news_event = {
+	id = news.16 ## призыв к ратификации РСМД ##
+	title = news.16.t
+	desc = news.16.desc
+	picture = GFX_news_sammit_in_rejyavik
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = call_for_ratification_of_the_inf_treaty
+	}
+	
+	trigger = {
+		USA = { has_country_flag = USA_call_for_ratification_of_the_inf_treaty }
+		NOT = { has_global_flag = call_for_ratification_of_the_inf_treaty }
 	}
 }

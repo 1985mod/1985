@@ -9,7 +9,7 @@ set_technology = {
 	tech_recon = 1
 }
 
-recruit_character = 
+recruit_character = ARM_levon_ter_petrosyan
 
 set_politics = {
 	ruling_party = communism

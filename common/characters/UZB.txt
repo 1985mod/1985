@@ -1,0 +1,15 @@
+characters = {
+	UZB_islam_karimov ={
+		name = UZB_islam_karimov
+		portraits={
+			civilian={
+				large= GFX_Portrait_islam_karimov
+			}
+		}
+		country_leader={
+			ideology = classical_social_democracy
+			traits={  }
+			expire="1993.11.9.1"		
+		}
+	}
+}

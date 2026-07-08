@@ -1,0 +1,21 @@
+characters = {
+	TAJ_rakhmon_nabiev ={
+		name = TAJ_rakhmon_nabiev
+		portraits={
+			civilian={
+				large= GFX_Portrait_rakhmon_nabiev
+			}
+		}
+		country_leader={
+			ideology = authoritarian_socialism
+			traits={  }
+			expire="2008.8.23.1"		
+		}
+		country_leader = {
+			ideology = liberal_social_democracy
+			expire = "1999.3.1"
+			id = -1
+			traits = {}
+		}
+	}
+}

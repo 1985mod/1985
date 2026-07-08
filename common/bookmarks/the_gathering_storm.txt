@@ -4,90 +4,54 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1985.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "SOV"
+		default_country = "USA"
 		default = yes
-		
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-			}
-			focuses = {
-				
-			}	
-		}
-		
-		"USA"={
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = conservatism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
+
 		"DDR"={
 			history = "DDR_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
 			}
 			focuses = {
+				DDR_gerontocracy_of_the_sed
+				DDR_xi_congress_of_the_sed
+				DDR_first_free_elections
 			}
+		}
+		
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				SOV_soviet_contingent_in_afghanistan
+                SOV_economic_stagnation
+				SOV_cold_war
+			}
+			focuses = {
+				SOV_course_towards_stability
+                SOV_gorbachev_the_new_general_secretary
+				SOV_housing_2000_program
+			}
+		}
+
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = conservatism
+			ideas = {
+				USA_reaganomics_policy
+				USA_stronghold_of_freedom
+				USA_cold_war
+			}
+			focuses = {
+				USA_reagans_second_presidency
+				USA_second_reykjavik_summit
+                USA_growth_of_technology_companies
+			}	
 		}
 		
 		"WGR"={
 			history = "WGR_GATHERING_STORM_DESC"
 			ideology = conservatism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"PRC"={
-			history = "PRC_GATHERING_STORM_DESC"
-			ideology = communism
-			available = { }
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"PRK"={
-			history = "PRK_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-			}	
-			focuses = {
-			}		
-		}
-		"CZE"={
-			history = "CZE_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-			}	
-			focuses = {
-			}			
-		}
-
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
-
-		"IRQ"={
-			minor = yes
-			history = "IRQ_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		"PER"={
-			minor = yes
-			history = "PER_GATHERING_STORM_DESC"
-			ideology = islamism
 			ideas = {
 			}
 			focuses = {

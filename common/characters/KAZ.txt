@@ -1,0 +1,21 @@
+characters = {
+	KAZ_nursultan_nazarbayev ={
+		name = KAZ_nursultan_nazarbayev
+		portraits={
+			civilian={
+				large= GFX_Portrait_nursultan_nazarbayev
+			}
+		}
+		country_leader={
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+		country_leader = {
+			ideology = liberal_social_democracy
+			expire = "1999.3.1"
+			id = -1
+			traits = {}
+		}
+	}
+}

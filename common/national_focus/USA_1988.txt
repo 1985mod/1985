@@ -358,7 +358,90 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.05
+			}
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = -2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = -2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = -2
+                    instant_build = yes
+                }
+            }
 	    }
 	}
 
@@ -464,7 +547,7 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-
+            unlock_decision_category_tooltip = USA_war_on_poverty_cat
 	    }
 	}
 
@@ -572,7 +655,19 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = third_meeting
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = third_meeting
+				}
+			}
+            set_country_flag = USA_support_policy_of_perestroika
 	    }
 	}
 
@@ -614,7 +709,18 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+            NIC = {
+                add_popularity = {
+                    ideology = conservatism
+                    popularity = 0.02
+                }
+                add_popularity = {
+                    ideology = neutrality
+                    popularity = 0.05
+                }
+                add_political_power = 50
+            }
+            add_political_power = 50
 	    }
 	}
 
@@ -628,7 +734,8 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+            set_country_flag = USA_call_for_ratification_of_the_inf_treaty
+            news_event = { id = news.16 hours = 12 }
 	    }
 	}
 
@@ -670,6 +777,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
+            add_political_power = 50
 			set_country_flag = USA_iraq_invasion_in_kuwait_flag
 			mark_focus_tree_layout_dirty = yes
 	    }
@@ -741,7 +849,6 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
 	    }
 	}
 

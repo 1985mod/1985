@@ -9,7 +9,7 @@ set_technology = {
 
 set_convoys = 5
 
-recruit_character = 
+recruit_character = KYR_askar_akayev
 
 set_politics = {
 	ruling_party = communism

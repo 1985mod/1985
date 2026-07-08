@@ -12,5 +12,11 @@ characters = {
 			expire = "2022.5.10"
 			id = -100
 		}
+		country_leader = {
+			ideology = liberal_social_democracy
+			expire = "1999.3.1"
+			id = -1
+			traits = {}
+		}
 	}
 }

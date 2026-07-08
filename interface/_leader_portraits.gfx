@@ -689,4 +689,49 @@ spriteTypes = {
 		name = "GFX_Portrait_alberto_monge"
 		texturefile = "gfx/leaders/COS/Portrait_alberto_monge.dds"
 	}
+
+	spriteType = {
+		name = GFX_Portrait_zviad_gamsakhurdia
+		textureFile = "gfx/leaders/GEO/Portrait_zviad_gamsakhurdia.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_levon_ter_petrosyan
+		textureFile = "gfx/leaders/ARM/Portrait_levon_ter_petrosyan.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_ayaz_mutalibov
+		textureFile = "gfx/leaders/AZR/Portrait_ayaz_mutalibov.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_stanislav_shushkevich
+		textureFile = "gfx/leaders/BLR/Portrait_stanislav_shushkevich.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_nursultan_nazarbayev
+		textureFile = "gfx/leaders/KAZ/Portrait_nursultan_nazarbayev.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_islam_karimov
+		textureFile = "gfx/leaders/UZB/Portrait_islam_karimov.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_askar_akayev
+		textureFile = "gfx/leaders/KYR/Portrait_askar_akayev.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_saparmurat_niyazov
+		textureFile = "gfx/leaders/TMS/Portrait_saparmurat_niyazov.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_rakhmon_nabiev
+		textureFile = "gfx/leaders/TAJ/Portrait_rakhmon_nabiev.dds"
+	}
 }
