@@ -21,8 +21,8 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 4
 		}
 		
 	}
