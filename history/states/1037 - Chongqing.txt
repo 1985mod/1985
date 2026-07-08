@@ -11,9 +11,8 @@ state = {
 		add_core_of = PRC
 
 		buildings = {
-			infrastructure = 2 #was 3
-			arms_factory = 1
-			industrial_complex = 1 #was 2
+			infrastructure = 3
+			industrial_complex = 1
 			air_base = 2
 		}
 
@@ -30,7 +29,7 @@ state = {
 	provinces = {
 		4431 6999 7240 11972 12705 
 	}
-	manpower = 14500000
+	manpower = 25263670
 	buildings_max_level_factor = 1.000
 	state_category = city
 

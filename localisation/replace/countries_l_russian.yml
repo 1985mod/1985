@@ -1,7 +1,7 @@
 ﻿l_russian:
- PRK: "Корейская Народно Демократическая Республика"
- PRK_DEF: "Корейская Народно Демократическая Республика"
- PRK_communism: "Корейская Народно Демократическая Республика"
+ PRK: "Корейская Народно-Демократическая Республика"
+ PRK_DEF: "Корейская Народно-Демократическая Республика"
+ PRK_communism: "Корейская Народно-Демократическая Республика"
  PRK_communism_DEF: "Северокорейск"
  PRK_ADJ: "Северокорейск"
 
@@ -1149,13 +1149,13 @@
  
  VOL_conservatism: "Буркина-Фасо"
  VOL_conservatism_DEF: "Буркина-Фасо"
- VOL_conservatism_ADJ: "Буркинафасноск"
+ VOL_conservatism_ADJ: "Буркина-фасокск"
  VOL_neutrality: "Буркина-Фасо"
  VOL_neutrality_DEF: "Буркина-Фасо"
- VOL_neutrality_ADJ: "Буркинафасноск"
+ VOL_neutrality_ADJ: "Буркина-фасокск"
  VOL: "Буркина-Фасо"
  VOL_DEF: "Буркина-Фасо"
- VOL_ADJ: "Буркинафасноск"
+ VOL_ADJ: "Буркина-фасокск"
  
  CHA_liberalism: "Республика Чад"
  CHA_liberalism_DEF: "Республика Чад"
@@ -1164,13 +1164,13 @@
  CHA_neutrality: "Республика Чад"
  CHA_neutrality_DEF: "Республика Чад"
  CHA: "Республика Чад"
- CHA_DEF: Республика Чад"
+ CHA_DEF: "Республика Чад"
  CHA_ADJ: "Чадск"
  
  KUR_conservatism: "Демократическая партия Курдистана"
  KUR_conservatism_DEF: "Демократическая партия Курдистана"
  KUR_conservatism_ADJ: "Курдистанск"
- KUR_neutrality: "Курдистан
+ KUR_neutrality: "Курдистан"
  KUR_neutrality_DEF: "Курдистан"
  KUR_neutrality_ADJ: "Курдистанск"
  KUR: "Курдистан"

@@ -8,6 +8,7 @@ state={
 		owner = USA
 		add_core_of = USA
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 1
 			13048 = {
 				naval_base = 1

@@ -37,7 +37,7 @@ state = {
 
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 3
+			industrial_complex = 10
 		}
 	
 		set_demilitarized_zone = no

@@ -27,9 +27,8 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 3 #was: 5
-			arms_factory = 3
-			industrial_complex = 4
+			infrastructure = 5
+			industrial_complex = 2
 			air_base = 2
 			6560 = {
 				naval_base = 3

@@ -1,7 +1,7 @@
 state = {
 	id = 615
 	name = "STATE_615"
-	manpower = 5430000
+	manpower = 23459122
 
 	resources = {
 		coal = 19 #initial distribution
@@ -28,9 +28,8 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 2
+			infrastructure = 3
+			industrial_complex = 1
 			4174 = {
 				bunker = 1
 			}

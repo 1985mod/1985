@@ -1,0 +1,22 @@
+scripted_gui = {
+    economy = {
+        context_type = player_context
+        window_name = "economy"
+
+        visible = {
+            has_country_flag = economy_gui
+        }
+
+        effects = {
+            button_4_click = {
+                clr_country_flag = economy_gui
+            }
+        }
+
+        triggers = {
+            button_4_click_enabled = {
+                always = yes
+            }
+        }
+    }
+}

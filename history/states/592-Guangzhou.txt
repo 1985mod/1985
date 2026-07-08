@@ -1,7 +1,7 @@
 state={
 	id=592
 	name="STATE_592"
-	manpower = 6100000
+	manpower = 5413644
 	state_category = city
 	resources={
 		tungsten=8 # was: 10
@@ -16,7 +16,6 @@ state={
 		
 		buildings = {
 			infrastructure = 2
-			arms_factory = 2
 			industrial_complex = 2
 			air_base = 3
 			1047 = { # Guangzhou

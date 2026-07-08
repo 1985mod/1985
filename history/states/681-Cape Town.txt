@@ -11,8 +11,10 @@ state = {
 		add_core_of = SAF
 
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 2
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			dockyard = 1
 			air_base = 1
 
 			12589 = {

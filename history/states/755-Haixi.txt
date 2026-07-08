@@ -4,7 +4,7 @@ state={
 	provinces={
 		2053 2099 7997 10750 10796 10834 10865 12846 12890 13146 13381
 	}
-	manpower=260000
+	manpower=451136
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 
@@ -20,7 +20,6 @@ state={
 
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
 		}
 
 	}

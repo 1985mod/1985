@@ -9,10 +9,11 @@ state={
 		add_core_of = PAK
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
+			industrial_complex = 3
 		}
 		victory_points = { 	10898 1 }
 		victory_points = { 10173 3 }
+		victory_points = { 8022 15 }
 
 	}
 	state_category = town

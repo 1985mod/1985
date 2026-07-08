@@ -33,16 +33,27 @@ country_event = {
 				tag = KOR
 				has_government = communism
 			}
-			PRK = { transfer_state = 525 }
-			525 = { add_core_of = PRK }
+			PRK = {
+				annex_country = {
+					target = KOR
+					transfer_troops = no
+				}
+			}
 		}
 		if = {
 			limit = {
 				tag = PRK
-				has_government = democratic
+				OR = {
+					has_government = socialism
+					has_government = liberalism
+				}
 			}
-			KOR = { transfer_state = 527 }
-			527 = { add_core_of = KOR }
+			KOR = {
+				annex_country = {
+					target = PRK
+					transfer_troops = no
+				}
+			}
 		}
 	}
 }

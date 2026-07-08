@@ -1,0 +1,14 @@
+Economy = {
+	allowed = {
+		always = yes
+	}
+
+	icon = GFX_decision_category_eng_move_to_secure_the_dominions
+	priority = 100 
+	
+	picture = GFX_picture_decision_cat_tibets_country
+
+	visible = {
+		always = yes
+	}
+}
