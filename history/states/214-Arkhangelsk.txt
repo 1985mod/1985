@@ -18,6 +18,7 @@ state = {
 			3338 = {
 				naval_base = 3
 			}
+			dockyard = 1
 		}
 		add_core_of = SOV
 	}

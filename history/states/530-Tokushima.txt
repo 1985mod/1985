@@ -3,7 +3,7 @@ state = {
 	name = "STATE_530" # Shikoku
 	manpower = 4227000
 
-	state_category = town # was large_city
+	state_category = rural
 
 	history = {
 
@@ -11,10 +11,9 @@ state = {
 		add_core_of = JAP
 
 		buildings = {
+			industrial_complex = 3
 			infrastructure = 2
 			air_base = 3
-			arms_factory = 1
-			industrial_complex = 2
 			4179 = {
 				naval_base = 1
 			}

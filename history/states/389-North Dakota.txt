@@ -7,14 +7,15 @@ state={
 	resources={
 		steel=17 # was: 24
 		oil=7 # was: 10
-		coal = 12 # initial distribution = with infra 25.2 / 1280 total
+		coal = 12
 	}
 
 	history={
 		owner = USA
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		add_core_of = USA
 		victory_points = {

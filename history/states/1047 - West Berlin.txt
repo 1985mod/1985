@@ -11,6 +11,7 @@ state={
 		add_core_of = DDR
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 3
 		}
 
 		victory_points = {

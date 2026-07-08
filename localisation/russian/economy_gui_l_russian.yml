@@ -1,0 +1,8 @@
+﻿l_russian:
+ economy_title:0 "economy"
+ ECONOMY_CIV_FACTORIES:0 "[?num_of_civilian_factories|Y0]"
+ ECONOMY_MIL_FACTORIES:0 "[?num_of_military_factories|Y0]"
+ ECONOMY_NAVAL_FACTORIES:0 "[?num_of_naval_factories|Y0]"
+ GDP:0 "[?country_gdp|2Y]B"
+ GDP:0 "[?country_gdp|2Y]B"
+ GDP_PER_CAPITA:0 "[?gdp_per_capita|Y2]K"

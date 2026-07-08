@@ -13,8 +13,10 @@ state={
 	history={
 		owner = USA
 		buildings = {
+			arms_factory = 3
+			dockyard = 1
 			infrastructure = 3 #was: 5
-			industrial_complex = 3
+			industrial_complex = 4
 			7480 = {
 				naval_base = 3
 			}

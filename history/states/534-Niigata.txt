@@ -3,7 +3,7 @@ state = {
 	name = "STATE_534" # was Hokuriku, is actually Kōshin'etsu
 	manpower = 5410000
 	
-	state_category = city
+	state_category = large_town
 	resources = {
 		oil = 3
 	}
@@ -14,9 +14,8 @@ state = {
 		add_core_of = JAP
 
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 2
 			fuel_silo = 1
 		}
 		

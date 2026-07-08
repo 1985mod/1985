@@ -2,7 +2,7 @@ state = {
 	id = 533
 	name = "STATE_533" # North Tohoku
 	manpower = 1254000
-	state_category = town # was large_city
+	state_category = rural
 	resources = {
 		steel = 10 # was: 35, then 15
 		oil = 3 #Should be located in the northern state after the split
@@ -15,7 +15,6 @@ state = {
 		add_core_of = JAP
 
 		buildings = {
-			
 			industrial_complex = 1
 			fuel_silo = 1
 			infrastructure = 2
@@ -24,7 +23,6 @@ state = {
 			9859 = {
 				naval_base = 6
 			}
-
 		}
 		
 		victory_points = {
