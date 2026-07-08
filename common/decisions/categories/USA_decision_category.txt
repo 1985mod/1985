@@ -1,58 +1,75 @@
 
 USA_cold_war = {
 
-      icon = generic_political_actions
+    icon = generic_political_actions
 	  
-	  priority = 1
+	priority = 1
 	  
-	  	allowed = {
-	    	original_tag = USA
-	  	}
+	allowed = {
+	    original_tag = USA
+	}
 	  
-	    visible = {
-			OR = {
-				AFN = { has_war_with = AFS }
-				ANG = { has_war_with = UNI }
-				MZB = { has_war_with = REN }
-				ETH = { has_war_with = ERI }
-				ETH = { has_war_with = SOM }
-				SYR = { has_war_with = LEB }
-			}
-			original_tag = USA
-	    }
+	visible = {
+		OR = {
+			AFN = { has_war_with = AFS }
+			ANG = { has_war_with = UNI }
+			MZB = { has_war_with = REN }
+			ETH = { has_war_with = ERI }
+			ETH = { has_war_with = SOM }
+			SYR = { has_war_with = LEB }
+		}
+		original_tag = USA
+	}
 }
 
 USA_voice_of_america = {
 
-      icon = border_war
+    icon = border_war
 	  
-	  priority = 90
+	priority = 90
 	  
-	  allowed = {
-	    original_tag = USA
-	  }
+	allowed = {
+		original_tag = USA
+	}
 	  
-	  visible = {
-          has_completed_focus = USA_voice_of_america
-		  original_tag = USA
-	  }
+	visible = {
+        has_completed_focus = USA_voice_of_america
+		original_tag = USA
+	}
 }
 
 USA_war_on_drugs = {
 
-      icon = border_war
+    icon = border_war
 	  
-	  priority = 45
+	priority = 45
 	  
-	  allowed = {
-	    original_tag = USA
-	  }
+	allowed = {
+		original_tag = USA
+	}
 	  
-	  visible = {
-			OR = {
-				has_completed_focus = USA_war_on_drugs
-				has_completed_focus = USA_reorient_the_armed_forces
-			}
-		  original_tag = USA
-	  }
+	visible = {
+		OR = {
+			has_completed_focus = USA_war_on_drugs
+			has_completed_focus = USA_reorient_the_armed_forces
+		}
+		original_tag = USA
+	}
+}
+
+USA_war_on_poverty_cat = {
+
+	icon = border_war
+		
+	priority = 45
+	  
+	allowed = {
+		original_tag = USA
+	}
+	  
+	visible = {
+		has_completed_focus = USA_war_on_poverty
+		has_country_leader = { character = USA_michael_dukakis ruling_only = yes }
+		original_tag = USA
+	}
 }

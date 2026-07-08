@@ -1,0 +1,18 @@
+characters = {
+	GEO_zviad_gamsakhurdia ={
+		name = GEO_zviad_gamsakhurdia
+		portraits={
+			civilian={
+				large= GFX_Portrait_zviad_gamsakhurdia
+			}
+			army = {
+				large = GFX_Portrait_zviad_gamsakhurdia
+			}
+		}
+		country_leader={
+			ideology = ethnic_nationalism
+			traits={  }
+			expire="1993.11.9.1"		
+		}
+	}
+}

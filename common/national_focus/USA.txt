@@ -54,7 +54,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-		
+			add_ideas = USA_intensify_the_arms_race_idea
 	    }
 	}
 	
@@ -72,9 +72,12 @@ focus_tree = {
 			SOV = {
 				remove_opinion_modifier = { target = USA modifier = cold_war }
 			}
-			remove_dynamic_modifier = { modifier = USA_cold_war }
-			SOV = {
-				remove_dynamic_modifier = { modifier = SOV_cold_war }
+			add_political_power = 50
+			if = {
+				limit = {
+					has_country_leader = { character = SOV_grigory_romanov ruling_only = yes }
+				}
+				add_political_power = 100
 			}
 	    }
 	}
@@ -105,6 +108,10 @@ focus_tree = {
         x = 0
         y = 2
         cost = 2
+
+		bypass = {
+			has_country_leader = { character = SOV_grigory_romanov ruling_only = yes }
+		}
 		
         completion_reward = {
 			country_event = { id = usa.15 hours = 6 }
@@ -127,10 +134,15 @@ focus_tree = {
 		   date > 1986.10.2
 		   has_global_flag = USA_sammit_in_reykjavik
 		}
+
+		bypass = {
+			has_country_leader = { character = SOV_grigory_romanov ruling_only = yes }
+		}
 		
         completion_reward = {
             set_country_flag = USA_reconsider_relations_with_the_soviet_union
             mark_focus_tree_layout_dirty = yes
+			news_event = { id = news.1 hours = 6 }
 	    }
 	}
 	
@@ -533,8 +545,16 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.05
+            add_tech_bonus = {
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+            add_tech_bonus = {
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }
 	    }
 	}
 	
@@ -552,8 +572,12 @@ focus_tree = {
 		}
 		
         completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.05
+			add_stability = 0.03
+            add_tech_bonus = {
+                bonus = 0.50
+                uses = 2
+                category = industry
+            }
 	    }
 	}
 
@@ -568,6 +592,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
+			add_political_power = 100
 	    }
 	}
 	
@@ -581,6 +606,18 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = third_meeting
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = third_meeting
+				}
+			}
 		    load_focus_tree = {
     			tree = USA_focus_1988
   			    keep_completed = yes

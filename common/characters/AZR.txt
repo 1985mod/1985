@@ -1,0 +1,21 @@
+characters = {
+	AZR_ayaz_mutalibov ={
+		name = AZR_ayaz_mutalibov
+		portraits={
+			civilian={
+				large= GFX_Portrait_ayaz_mutalibov
+			}
+		}
+		country_leader={
+			ideology = marxism
+			traits={  }
+			expire="1993.11.9.1"		
+		}
+		country_leader = {
+			ideology = liberal_social_democracy
+			expire = "1999.3.1"
+			id = -1
+			traits = {}
+		}
+	}
+}

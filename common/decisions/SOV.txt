@@ -456,3 +456,63 @@ SOV_formation_union_sovereign_states = {
 		}
 	}
 }
+
+SOV_state_emergency_committee = {
+
+    SOV_surveillance_of_gorbachev = {
+	
+		icon = SOV_academy_of_sciences
+
+		available = {
+			has_completed_focus = SOV_on_the_side_of_the_sec
+		}
+		
+		days_remove = 13
+		days_re_enable = 25
+		
+		cost = 100
+		
+		remove_effect = {
+			custom_effect_tooltip = add_state_emergency_committee_influence_20_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.state_emergency_committee_influence
+					value = 20
+				}
+				clamp_variable = {
+					var = SOV.state_emergency_committee_influence
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+
+    SOV_suspend_the_activities_of_political_parties = {
+	
+		icon = SWI_dismiss_council
+
+		available = {
+			has_completed_focus = SOV_on_the_side_of_the_sec
+		}
+		
+		days_remove = 13
+		
+		cost = 100
+		
+		remove_effect = {
+			custom_effect_tooltip = add_state_emergency_committee_influence_15_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.state_emergency_committee_influence
+					value = 15
+				}
+				clamp_variable = {
+					var = SOV.state_emergency_committee_influence
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+}

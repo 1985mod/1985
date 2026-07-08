@@ -4,7 +4,7 @@
     country = {
         factor = 0
         modifier = {
-            add = 2
+            add = 2000
             tag = SOV
         }
     }
@@ -180,7 +180,7 @@
         y = 3
         relative_position_id = SOV_novo_ogaryovo_trial
         prerequisite = { focus = SOV_decision_to_elect_a_president_within_a_short_timeframe focus = SOV_final_meeting }
-        cost = 2.2
+        cost = 2.9
         completion_reward = {
             add_political_power = 25
 			add_popularity = {
@@ -198,7 +198,7 @@
         relative_position_id = SOV_what_to_do_now
         prerequisite = { focus = SOV_what_to_do_now }
         mutually_exclusive = { focus = SOV_i_think_ill_stay_in_moscow }
-        cost = 1.5
+        cost = 2
         completion_reward = {
 
         }
@@ -212,9 +212,9 @@
         relative_position_id = SOV_trip_to_crimea
         prerequisite = { focus = SOV_trip_to_crimea }
         mutually_exclusive = { focus = SOV_dissolve_the_ussr_cabinet_of_ministers }
-        cost = 1.5
+        cost = 0.6
         completion_reward = {
-
+            unlock_decision_category_tooltip = SOV_state_emergency_committee
         }
     }
 
@@ -225,9 +225,20 @@
         y = 1
         relative_position_id = SOV_on_the_side_of_the_sec
         prerequisite = { focus = SOV_on_the_side_of_the_sec }
-        cost = 1.5
+        cost = 0.4
         completion_reward = {
-
+            custom_effect_tooltip = add_state_emergency_committee_influence_10_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.state_emergency_committee_influence
+					value = 10
+				}
+				clamp_variable = {
+					var = SOV.state_emergency_committee_influence
+					min = 0
+					max = 100
+				}
+			}
         }
     }
 
@@ -238,9 +249,20 @@
         y = 1
         relative_position_id = SOV_on_the_side_of_the_sec
         prerequisite = { focus = SOV_on_the_side_of_the_sec }
-        cost = 1.5
+        cost = 0.4
         completion_reward = {
-
+            custom_effect_tooltip = add_state_emergency_committee_influence_15_percent
+			FROM = {
+				add_to_variable = {
+					var = SOV.state_emergency_committee_influence
+					value = 15
+				}
+				clamp_variable = {
+					var = SOV.state_emergency_committee_influence
+					min = 0
+					max = 100
+				}
+			}
         }
     }
 
@@ -251,9 +273,17 @@
         y = 2
         relative_position_id = SOV_on_the_side_of_the_sec
         prerequisite = { focus = SOV_make_amendments_to_the_documents_of_the_sec focus = SOV_decisive_meeting }
-        cost = 1.5
+        cost = 0.5
         completion_reward = {
-
+            add_political_power = 25
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+            hidden_effect =  {
+                country_event = { id = SOV_soviet_union.40 hours = 21 }
+                country_event = { id = SOV_soviet_union.41 hours = 10 }
+            }
         }
     }
 
@@ -264,9 +294,15 @@
         y = 1
         relative_position_id = SOV_trip_to_foros
         prerequisite = { focus = SOV_trip_to_foros }
-        cost = 1.5
+        cost = 0.2
         completion_reward = {
-
+            set_country_flag = SOV_introduce_emergency_flag
+            country_event = { id = SOV_soviet_union.39 }
+            add_political_power = 25
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
         }
     }
 
@@ -277,9 +313,18 @@
         y = 1
         relative_position_id = SOV_introduce_emergency
         prerequisite = { focus = SOV_introduce_emergency }
-        cost = 1.5
-        completion_reward = {
+        cost = 0.1
 
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = has_sov_state_emergency_committee_influence_50_precent
+                check_variable = {
+                    SOV.state_emergency_committee_influence > 49
+                }
+            }
+        }
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.46 }
         }
     }
 
@@ -292,7 +337,7 @@
         prerequisite = { focus = SOV_issue_written_order_to_storm_the_white_house }
         cost = 1.5
         completion_reward = {
-
+            add_political_power = 100
         }
     }
 
@@ -304,7 +349,7 @@
         relative_position_id = SOV_trip_to_crimea
         prerequisite = { focus = SOV_trip_to_crimea }
         mutually_exclusive = { focus = SOV_on_the_side_of_the_sec }
-        cost = 0.8
+        cost = 0.6
         completion_reward = {
             add_political_power = -25
             add_stability = -0.03
@@ -318,7 +363,7 @@
         y = 1
         relative_position_id = SOV_dissolve_the_ussr_cabinet_of_ministers
         prerequisite = { focus = SOV_dissolve_the_ussr_cabinet_of_ministers }
-        cost = 0.4
+        cost = 0.2
         completion_reward = {
             country_event = { id = SOV_soviet_union.37 }
             hidden_effect =  {
@@ -337,7 +382,7 @@
         y = 1
         relative_position_id = SOV_extraordinary_v_congress_of_peoples_deputies_of_the_ussr
         prerequisite = { focus = SOV_extraordinary_v_congress_of_peoples_deputies_of_the_ussr }
-        cost = 0.5
+        cost = 0.3
 
         bypass =  {
             has_country_flag = start_sec_country_flag
@@ -356,7 +401,7 @@
         y = 1
         relative_position_id = SOV_extraordinary_v_congress_of_peoples_deputies_of_the_ussr
         prerequisite = { focus = SOV_extraordinary_v_congress_of_peoples_deputies_of_the_ussr }
-        cost = 0.5
+        cost = 0.3
 
         bypass =  {
             has_country_flag = start_sec_country_flag
@@ -423,7 +468,7 @@
         relative_position_id = SOV_sign_a_new_union_treaty
         prerequisite = { focus = SOV_abolition_of_the_union_kgb }
         prerequisite = { focus = SOV_adopt_resolution_gs_13 }
-        cost = 4
+        cost = 6
 
         available = {
             country_exists = BLR
@@ -454,7 +499,7 @@
         relative_position_id = SOV_what_to_do_now
         prerequisite = { focus = SOV_what_to_do_now }
         mutually_exclusive = { focus = SOV_trip_to_crimea }
-        cost = 1.5
+        cost = 2
         completion_reward = {
 
         }
@@ -558,6 +603,10 @@
             }
         }
         completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.4
+			}
             set_global_flag = ussr_not_collapsed
             set_cosmetic_tag = SOV_USS
             load_focus_tree = soviet_gorbachev_victory

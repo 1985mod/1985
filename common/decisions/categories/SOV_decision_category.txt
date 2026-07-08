@@ -69,3 +69,19 @@ SOV_formation_union_sovereign_states = {
 		  original_tag = SOV
 	  }
 }
+
+SOV_state_emergency_committee = {
+
+      icon = generic_political_actions
+	  
+	  priority = 90
+	  
+	  allowed = {
+	    original_tag = SOV
+	  }
+	  
+	  visible = {
+          has_completed_focus = SOV_on_the_side_of_the_sec
+		  original_tag = SOV
+	  }
+}

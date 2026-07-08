@@ -375,6 +375,7 @@ country_event = {
 			base = 100
 		}		
 		add_political_power = 25
+		add_nuclear_bombs = -75
 	}
 }
 
@@ -509,6 +510,7 @@ country_event = {
 			base = 100
 		}		
 		add_stability = -0.05
+		news_event = { id = news.13 days = 4 }
 	}
 }
 
@@ -725,7 +727,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = usa.7.a
+		name = usa.30.a
 		ai_chance = {
 			base = 90
 		}		
@@ -733,7 +735,7 @@ country_event = {
 	}
 
 	option = {
-		name = usa.7.b
+		name = usa.30.b
 		ai_chance = {
 			base = 10
 		}		
@@ -810,8 +812,8 @@ country_event = {
 
 country_event = {
 	id = usa.34 ###  CCCР согласился ###
-	title = usa.31.t
-	desc = usa.31.d
+	title = usa.34.t
+	desc = usa.34.d
 	picture = GFX_report_dead_chernenko
 
 	trigger = {
@@ -831,8 +833,8 @@ country_event = {
 
 country_event = {
 	id = usa.35 ###  отказал ###
-	title = usa.32.t
-	desc = usa.32.d
+	title = usa.35.t
+	desc = usa.35.d
 	picture = GFX_report_dead_chernenko
 
 	trigger = {
@@ -843,7 +845,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = usa.32.a
+		name = usa.35.a
 		ai_chance = {
 			base = 100
 		}		

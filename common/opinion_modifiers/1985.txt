@@ -10,4 +10,12 @@ opinion_modifiers = {
     divided_into_two_parts = {
        value = -45
     }
+
+    third_meeting = {
+       value = 10
+    }
+
+    supports_the_policy_of_perestroika = {
+       value = 5
+    }
 }

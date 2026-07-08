@@ -1,0 +1,15 @@
+characters = {
+	ARM_levon_ter_petrosyan ={
+		name = ARM_levon_ter_petrosyan
+		portraits={
+			civilian={
+				large= GFX_Portrait_levon_ter_petrosyan
+			}
+		}
+		country_leader={
+			ideology = classic_liberalism
+			traits={  }
+			expire="1993.11.9.1"		
+		}
+	}
+}

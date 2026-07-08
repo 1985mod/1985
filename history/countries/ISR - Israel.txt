@@ -17,7 +17,10 @@ set_technology = {
 	basic_train = 1
 	tech_trucks = 1
 	motorised_infantry = 1
+	atomic_research = 1
 }
+
+add_nuclear_bombs = 32
 
 if = {
 	limit = {
@@ -33,6 +36,10 @@ if = {
 
 set_convoys = 5
 
+
+add_ideas = {
+	extensive_conscription
+}
 
 set_politics = {
 	ruling_party = socialism
