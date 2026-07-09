@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		AFS_faith_in_sacred_islam = {
-			picture = PER_islamic_traditions_ns 
+			picture = faith_in_islam 
 			allowed = {
 				original_tag = AFS
 			}

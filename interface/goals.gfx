@@ -13948,6 +13948,56 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/USA/focus_icon_USA_the_first_mobile_phones.png"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_icon_supporting_the_mujahideen_against_the_soviet_army"
+		texturefile = "gfx/interface/goals/USA/focus_icon_supporting_the_mujahideen_against_the_soviet_army.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_military_aid_to_unita"
+		texturefile = "gfx/interface/goals/USA/focus_icon_military_aid_to_unita.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_military_aid_to_the_mnr"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_military_aid_to_the_mnr.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_voice_of_america"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_voice_of_america.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_war_on_drugs"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_war_on_drugs.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_internet_development"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_internet_development.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_pc_standardization"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_pc_standardization.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_rehabilitate_usaid"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_rehabilitate_usaid.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_USA_second_meeting_with_gorbachev"
+		texturefile = "gfx/interface/goals/USA/focus_icon_USA_second_meeting_with_gorbachev.png"
+	}
+
 
 	################
 	##PLACEHOLDER###

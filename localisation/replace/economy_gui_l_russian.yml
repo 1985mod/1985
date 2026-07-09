@@ -6,3 +6,4 @@ l_russian:
  GDP:0 "[?country_gdp|2Y]B"
  GDP:0 "[?country_gdp|2Y]B"
  GDP_PER_CAPITA:0 "[?gdp_per_capita|Y2]K"
+ GDP_GROWTH: "[?gdp_growth_rate|+=2%%]"

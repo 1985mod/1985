@@ -416,7 +416,7 @@ focus_tree = {
         id = USA_reconsider_relations_with_the_soviet_union
 		relative_position_id = USA_second_reykjavik_summit
 		prerequisite = { focus = USA_second_reykjavik_summit }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_dialogue_of_detente_with_the_soviet_union
         x = 0
         y = 1
 		allow_branch = { has_country_flag = USA_reconsider_relations_with_the_soviet_union }
@@ -436,7 +436,7 @@ focus_tree = {
         id = USA_military_aid_to_unita
 		relative_position_id = USA_reconsider_relations_with_the_soviet_union
 		prerequisite = { focus = USA_reconsider_relations_with_the_soviet_union }
-        icon = GFX_	
+        icon = GFX_focus_icon_military_aid_to_unita	
         x = -2
         y = 1
         cost = 5
@@ -451,7 +451,7 @@ focus_tree = {
         id = USA_military_aid_to_the_mnr
 		relative_position_id = USA_reconsider_relations_with_the_soviet_union
 		prerequisite = { focus = USA_reconsider_relations_with_the_soviet_union }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_military_aid_to_the_mnr	
         x = 2
         y = 1
         cost = 5
@@ -473,7 +473,7 @@ focus_tree = {
         id = USA_supporting_the_mujahideen_against_the_soviet_army
 		relative_position_id = USA_reconsider_relations_with_the_soviet_union
 		prerequisite = { focus = USA_reconsider_relations_with_the_soviet_union }
-        icon = GFX_	
+        icon = GFX_focus_icon_supporting_the_mujahideen_against_the_soviet_army	
         x = 0
         y = 1
         cost = 5
@@ -490,7 +490,7 @@ focus_tree = {
 		prerequisite = { focus = USA_military_aid_to_unita }
 		prerequisite = { focus = USA_military_aid_to_the_mnr }
 		prerequisite = { focus = USA_supporting_the_mujahideen_against_the_soviet_army }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic	
         x = 0
         y = 2
         cost = 6.5
@@ -513,7 +513,7 @@ focus_tree = {
         id = USA_voice_of_america
 		relative_position_id = USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic
 		prerequisite = { focus = USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_voice_of_america	
         x = 0
         y = 1
         cost = 6.5
@@ -526,7 +526,7 @@ focus_tree = {
         id = USA_war_on_drugs
 		relative_position_id = USA_voice_of_america
 		prerequisite = { focus = USA_voice_of_america }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_war_on_drugs	
         x = 0
         y = 1
         cost = 10
@@ -540,7 +540,7 @@ focus_tree = {
         id = USA_internet_development
 		relative_position_id = USA_war_on_drugs
 		prerequisite = { focus = USA_war_on_drugs }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_internet_development	
         x = -2
         y = 1
         cost = 5
@@ -562,7 +562,7 @@ focus_tree = {
         id = USA_pc_standardization
 		relative_position_id = USA_war_on_drugs
 		prerequisite = { focus = USA_war_on_drugs }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_pc_standardization	
         x = 2
         y = 1
         cost = 5
@@ -586,7 +586,7 @@ focus_tree = {
 		relative_position_id = USA_war_on_drugs
 		prerequisite = { focus = USA_internet_development }
 		prerequisite = { focus = USA_pc_standardization }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_rehabilitate_usaid	
         x = 0
         y = 2
         cost = 5
@@ -600,7 +600,7 @@ focus_tree = {
         id = USA_second_meeting_with_gorbachev
 		relative_position_id = USA_rehabilitate_usaid
 		prerequisite = { focus = USA_rehabilitate_usaid }
-        icon = GFX_	
+        icon = GFX_focus_icon_USA_second_meeting_with_gorbachev	
         x = 0
         y = 1
         cost = 5
