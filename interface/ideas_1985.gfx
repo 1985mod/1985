@@ -44,4 +44,14 @@ spriteTypes = {
         name = "GFX_idea_stronghold_of_freedom"
         texturefile = "gfx/interface/ideas/USA/idea_stronghold_of_freedom.dds"
     }
+
+    spriteType = {
+        name = "GFX_idea_faith_in_islam"
+        texturefile = "gfx/interface/ideas/AFS/idea_faith_in_islam.dds"
+    }    
+
+    spriteType = {
+        name = "GFX_dynamic_modifier_cold_war"
+        texturefile = "gfx/interface/ideas/dynamic_modifier_cold_war.dds"
+    }
 }

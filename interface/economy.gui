@@ -114,6 +114,26 @@ guiTypes = {
             format = left
         }
 
+        instantTextBoxType = {
+            name = "gdp_growth_label"
+            position = { x = 30 y = 250 }
+            text = "GDP Growth"
+            font = "hoi_30header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "gdp_growth"
+            position = { x = 150 y = 250 }
+            text = "GDP_GROWTH"
+            font = "hoi_30header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
         containerWindowType = {
             name = "container_16"
             position = { x = 0 y = 0 }
