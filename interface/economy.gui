@@ -1,0 +1,143 @@
+guiTypes = {
+    containerWindowType = {
+        name = "economy"
+        position = { x = 0 y = 0 }
+        size = { width = 800 height = 600 }
+        orientation = CENTER
+        origo = CENTER
+        moveable = yes
+
+        background = {
+            name = "bg"
+            spriteType = "GFX_economy_background"
+        }
+
+        buttonType = {
+            name = "button_4"
+            position = { x = 730 y = 15 }
+            spriteType = "GFX_x"
+            scale = 3
+            clicksound = click_default
+        }
+
+        instantTextBoxType = {
+            name = "economy_civil_factories"
+            position = { x = 60 y = 90 }
+            text = "ECONOMY_CIV_FACTORIES"
+            font = "hoi_30header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        iconType = {
+            name = "civil_factory_icon"
+            position = { x = 20 y = 90 }
+            spriteType = "GFX_non_available_factory_icon"
+            alwaystransparent = yes
+            scale = 1.2
+        }
+
+        instantTextBoxType = {
+            name = "economy_military_factories"
+            position = { x = 170 y = 90 }
+            text = "ECONOMY_MIL_FACTORIES"
+            font = "hoi_30header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        iconType = {
+            name = "military_factory_icon"
+            position = { x = 130 y = 90 }
+            spriteType = "GFX_military_factory_icon"
+            alwaystransparent = yes
+            scale = 1.2
+        }
+
+        instantTextBoxType = {
+            name = "economy_naval_factories"
+            position = { x = 280 y = 90 }
+            text = "ECONOMY_NAVAL_FACTORIES"
+            font = "hoi_30header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        iconType = {
+            name = "naval_factory_icon"
+            position = { x = 240 y = 95 }
+            spriteType = "GFX_naval_factory_icon"
+            alwaystransparent = yes
+            scale = 1.2
+        }
+
+        instantTextBoxType = {
+            name = "gdp_label"
+            position = { x = 30 y = 150 }
+            text = "GDP: "
+            font = "hoi_30header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "gdp"
+            position = { x = 100 y = 150 }
+            text = "GDP"
+            font = "hoi_30header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "gdp_per_capita_label"
+            position = { x = 30 y = 200 }
+            text = "GDP P/C: "
+            font = "hoi_30header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "gdp_per_capita"
+            position = { x = 150 y = 200 }
+            text = "GDP_PER_CAPITA"
+            font = "hoi_30header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "gdp_growth_label"
+            position = { x = 30 y = 250 }
+            text = "GDP Growth: "
+            font = "hoi_30header"
+            maxWidth = 200
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "gdp_growth"
+            position = { x = 200 y = 250 }
+            text = "GDP_GROWTH"
+            font = "hoi_30header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        containerWindowType = {
+            name = "container_16"
+            position = { x = 0 y = 0 }
+            size = { width = 800 height = 600 }
+        }
+    }
+}

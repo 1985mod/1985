@@ -20,7 +20,7 @@ state={
 			6181 1
 		}
 
-		victory_points = { #Salla
+		victory_points = {
 			197 1
 		}
 		
