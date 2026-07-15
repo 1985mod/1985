@@ -60,7 +60,7 @@ USA_cold_war = {
 		}
 	}
 
-    SOV_support_unita_government = {
+    USA_support_unita_government = {
 	
 		icon = generic_speech
 
@@ -217,6 +217,7 @@ USA_cold_war = {
 	    visible = {
 			IRQ = { has_war_with = PER }
 			original_tag = USA
+			NOT = { set_country_flag = iran_contras }
 	    }
 
 		ai_will_do = {
@@ -451,33 +452,7 @@ USA_war_on_poverty_cat = {
 		}
 	}
 
-    USA_subsidizing_childcare_programs = {
-	
-		icon = generic_speech
-
-		available = {
-			has_completed_focus = USA_war_on_poverty
-		}
-		
-		days_remove = 80
-		
-		cost = 75
-
-		ai_will_do = {
-			factor = 10
-		}
-		
-		remove_effect = {
-			add_stability = 0.05 
-			add_political_power = 35
-			add_popularity = {
-				ideology = liberalism
-				popularity = 0.03
-			}
-		}
-	}
-
-    USA_reductions_in_ill-considered_military_spending = {
+    USA_reductions_in_ill_considered_military_spending = {
 	
 		icon = generic_speech
 

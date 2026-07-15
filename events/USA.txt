@@ -11,6 +11,7 @@ country_event = {
 	trigger = {
 	   tag = USA
 	   date > 1988.11.01
+	   date < 1991.11.01
 	   conservatism > 0.5
 	}
 	
@@ -56,6 +57,7 @@ country_event = {
 	trigger = {
 	   tag = USA
 	   date > 1988.11.01
+	   date < 1991.11.01
 	   liberalism > 0.5
 	}
 	
@@ -320,6 +322,7 @@ country_event = {
 	trigger = {
 	   tag = USA
 	   date > 1992.11.01
+	   date < 1994.11.01
 	   liberalism > 0.5
 	}
 	

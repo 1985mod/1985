@@ -1,9 +1,9 @@
-SSG = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+SOV_USS = {
+	color = rgb { 162 47 47 }
+	color_ui = rgb { 166 53 65 }	
 }
 
-EU_Federation = {
-	color = rgb { 0 0 255 }
-	color_ui = rgb { 0 0 255 }
+AFS_islamic_state_of_afghanistan = {
+	color = rgb { 73 87 119 }
+	color_ui = rgb { 80 89 123 }
 }

@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = classic_conservatism
+			ideology = autocracy
 			traits = { }
 			expire = "1989.3.1.1"
 		}

@@ -24,36 +24,6 @@ set_technology = {
 	paratroopers = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		main_battle_tank_chassis = 1
-	}
-	create_equipment_variant = {
-		name = "M60A1"
-		type = modern_tank_chassis_1
-		parent_version = 1
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_modern_tank_turret
-			suspension_type_slot = tank_torsion_bar_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = additional_machine_guns
-			special_type_slot_2 = sloped_armor
-		}
-		upgrades = {
-			tank_nsb_armor_upgrade = 1
-			tank_nsb_engine_upgrade = 1
-		}
-		icon = "GFX_USA_main_battle_tank"
-	}
-}
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1985.1.1"
@@ -63,11 +33,16 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
-
-add_ideas = {
-	limited_conscription
-}
-
 set_convoys = 5
 
 recruit_character = SAU_Fahd
+
+add_ideas = {
+	
+}
+
+give_guarantee = KUW
+give_guarantee = OMA
+give_guarantee = UAE
+give_guarantee = QAT
+

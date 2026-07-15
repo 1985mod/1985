@@ -37,6 +37,10 @@ set_popularities = {
 	communism = 80
 }
 
+add_ideas = {
+	WGR_divided_nation
+}
+
 add_opinion_modifier = {
     target = WGR
     modifier = divided_into_two_parts 

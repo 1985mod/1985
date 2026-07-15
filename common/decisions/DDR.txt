@@ -63,3 +63,117 @@ DDR_the_fight_against_the_church_cat = {
 		}
 	}
 }
+
+DDR_fight_with_a_satellite = {
+
+    DDR_conduct_a_propaganda_campaign_in_the_media = {
+	
+		icon = generic_speech
+
+		cost = 75
+		days_remove = 30
+
+	    visible = {
+            country_exists = SOV
+            original_tag = DDR
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		modifier = {
+			political_power_gain = -0.25
+			conservatism_drift = 0.02
+			consumer_goods_factor = 0.1
+		}
+
+		remove_effect = {
+            add_stability = 0.03
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_decrease
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = small_decrease
+				}
+			}
+		}
+	}
+
+    DDR_combating_the_culture_of_protest = {
+	
+		icon = generic_speech
+
+		cost = 50
+		days_remove = 30
+
+	    visible = {
+            country_exists = SOV
+            original_tag = DDR
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			add_war_support = 0.03
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_decrease
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = small_decrease
+				}
+			}
+		}
+	}
+
+    DDR_conduct_negotiations_with_moscow = {
+	
+		icon = generic_speech
+
+		cost = 100
+		days_remove = 30
+
+	    visible = {
+            country_exists = SOV
+            original_tag = DDR
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			add_stability = -0.01
+			add_war_support = 0.01
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = small_increase
+				}
+			}
+		}
+	}
+
+}

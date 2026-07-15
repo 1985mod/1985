@@ -253,6 +253,8 @@ country_event = {
 	picture = GFX_report_first_free_elections
 
 	trigger = {
+		tag = DDR
+		country_exists = DDR
 		SOV = { has_country_flag = gorbachev }
 		date > 1990.06.20
 	}

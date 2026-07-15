@@ -48,10 +48,48 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_faith_in_islam"
         texturefile = "gfx/interface/ideas/AFS/idea_faith_in_islam.dds"
-    }    
+    }   
+
+    spriteType = {
+        name = "GFX_idea_tiring_war"
+        texturefile = "gfx/interface/ideas/IRQ/idea_tiring_war.dds"
+    } 
 
     spriteType = {
         name = "GFX_dynamic_modifier_cold_war"
         texturefile = "gfx/interface/ideas/dynamic_modifier_cold_war.dds"
+    }
+
+
+    ### inflation and deflation ###
+
+    spriteType = {
+        name = "GFX_idea_acute_deflation"
+        texturefile = "gfx/interface/ideas/inflation_and_deflation/idea_acute_deflation.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_deflation"
+        texturefile = "gfx/interface/ideas/inflation_and_deflation/idea_deflation.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_target_inflation"
+        texturefile = "gfx/interface/ideas/inflation_and_deflation/idea_target_inflation.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_high_inflation"
+        texturefile = "gfx/interface/ideas/inflation_and_deflation/idea_high_inflation.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_galloping_inflation"
+        texturefile = "gfx/interface/ideas/inflation_and_deflation/idea_galloping_inflation.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_hyperinflation"
+        texturefile = "gfx/interface/ideas/inflation_and_deflation/idea_hyperinflation.dds"
     }
 }

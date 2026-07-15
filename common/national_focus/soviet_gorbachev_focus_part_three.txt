@@ -4,7 +4,7 @@
     country = {
         factor = 0
         modifier = {
-            add = 2000
+            add = 2
             tag = SOV
         }
     }
@@ -488,6 +488,43 @@
         }
         completion_reward = {
             country_event = { id = SOV_soviet_union.38 }
+        }
+    }
+
+    focus = { 
+        id = SOV_ratification_of_the_belovezh_accords
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_agreement_on_the_establishment_of_the_cis
+        prerequisite = { focus = SOV_agreement_on_the_establishment_of_the_cis }
+        cost = 2.5
+
+        available = {
+            country_exists = BLR
+            country_exists = UKR
+            country_exists = RUS
+            BLR = {
+                OR = {
+                    has_government = socialism
+                    NOT = { has_government = communism }
+                }
+            }
+            UKR = {
+                OR = {
+                    has_government = conservatism
+                    NOT = { has_government = communism }
+                }
+            }
+            RUS = {
+                OR = {
+                    has_government = conservatism
+                    NOT = { has_government = communism }
+                }
+            }
+        }
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.43 }
         }
     }
 

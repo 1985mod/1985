@@ -1,0 +1,82 @@
+add_namespace = amn
+
+country_event = {
+    id = amn.1
+    title = amn.1.t
+    desc = amn.1.desc
+
+	trigger = {
+        AFS = {
+            NOT = { has_war_with = AFN }
+        }
+        tag = AFS
+        country_exists = AFS
+    }
+	fire_only_once = yes
+
+    immediate = {
+		promote_character = {
+			character = AFS_sibghatullah_mojaddedi
+			ideology = neutrality
+		}
+        set_country_flag = {
+            flag = sibghatullah_mojaddedi_country_leader
+            days = 60
+            value = 1
+        }
+    }
+
+    option = {
+        name = amn.1.a
+        set_cosmetic_tag = AFS_islamic_state_of_afghanistan
+        add_stability = 0.03
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+    }
+}
+
+country_event = {
+    id = amn.2
+    title = amn.2.t
+    desc = amn.2.desc
+
+	trigger = {
+        AFS = {
+            NOT = { has_war_with = AFN }
+        }
+        NOT = { has_country_flag = sibghatullah_mojaddedi_country_leader }
+        tag = AFS
+        country_exists = AFS
+    }
+	fire_only_once = yes
+
+    immediate = {
+        add_country_leader_role = {
+            character = AFS_burhanuddin_rabbani
+            promote_leader = yes
+            country_leader = {
+                ideology = Political_Islam
+                expire = "2014.1.1.1"
+            }
+        }
+    }
+
+    option = {
+        name = amn.1.a
+        add_stability = 0.03
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+    }
+}

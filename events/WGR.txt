@@ -1,0 +1,357 @@
+add_namespace = wgr
+
+country_event = {
+	id = wgr.1 ## Курс ФРГ ##
+	title = wgr.1.t
+	desc = wgr.1.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.1.a
+        add_political_power = 10
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+	    }
+	}
+
+    option = {
+        name = wgr.1.b
+        add_political_power = 10
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.05
+	    }
+	}
+
+    option = {
+        name = wgr.1.c
+        add_political_power = 10
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+	    }
+	}
+}
+
+country_event = {
+	id = wgr.2 ## Определение курса ##
+	title = wgr.2.t
+	desc = wgr.2.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.2.a
+        add_political_power = 10
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.03
+	    }
+	}
+
+    option = {
+        name = wgr.2.b
+        add_political_power = 10
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.03
+	    }
+	}
+
+    option = {
+        name = wgr.2.c
+        add_political_power = 10
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.03
+	    }
+	}
+}
+
+country_event = {
+	id = wgr.3 ## Эпоха напряжения ##
+	title = wgr.3.t
+	desc = wgr.3.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.3.a
+		
+	}
+}
+
+country_event = {
+	id = wgr.4 ## Германия - европейский лидер ##
+	title = wgr.4.t
+	desc = wgr.4.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.4.a
+		add_political_power = 25
+        custom_effect_tooltip = add_europeanism_5_percent
+		FROM = {
+			add_to_variable = {
+				var = europeanism
+				value = 5
+			}
+			clamp_variable = {
+				var = europeanism
+				min = 0
+				max = 100
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wgr.5 ## Конец холодной войны ##
+	title = wgr.5.t
+	desc = wgr.5.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.5.a
+		add_political_power = 25
+        custom_effect_tooltip = add_europeanism_5_percent
+		FROM = {
+			add_to_variable = {
+				var = europeanism
+				value = 5
+			}
+			clamp_variable = {
+				var = europeanism
+				min = 0
+				max = 100
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wgr.6 ## Германия перед изменениями ##
+	title = wgr.6.t
+	desc = wgr.6.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.6.a
+	}
+}
+
+country_event = {
+	id = wgr.7 ## Восточный блок шатается ##
+	title = wgr.7.t
+	desc = wgr.7.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.7.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+	    }
+	}
+}
+
+country_event = {
+	id = wgr.8 ## Поддержка протестов в ГДР ##
+	title = wgr.8.t
+	desc = wgr.8.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.8.a
+        add_political_power = -25
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+	    }
+	}
+}
+
+country_event = {
+	id = wgr.9 ## Демонстрации в Лейцпиге ##
+	title = wgr.9.t
+	desc = wgr.9.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.9.a
+        add_political_power = -50
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.03
+	    }
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.03
+	    }
+	}
+}
+
+country_event = {
+	id = wgr.10 ## германия предлагает эк. сотрудничество ##
+	title = wgr.10.t
+	desc = wgr.10.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+    option = {
+		ai_chance = {
+			base = 75
+		}
+        name = wgr.10.a
+		FROM = { country_event = wgr.12 }
+	}
+
+    option = {
+		ai_chance = {
+			base = 10
+		}
+        name = wgr.10.b
+		FROM = { country_event = wgr.11 }
+	}
+}
+
+country_event = {
+	id = wgr.11 ## страна отказалась ##
+	title = wgr.11.t
+	desc = wgr.11.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.11.a
+	}
+}
+
+country_event = {
+	id = wgr.12 ## страна согласилась ##
+	title = wgr.12.t
+	desc = wgr.12.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.12.a
+		FROM = { add_ideas = EU_economic_cooperation_with_germany }
+	}
+}
+
+country_event = {
+	id = wgr.13 ## крах берлинской стены ##
+	title = wgr.13.t
+	desc = wgr.13.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.13.a
+		damage_building = {
+			type = infrastructure
+			state = 1047
+			damage = 1
+		}
+		damage_building = {
+			type = infrastructure
+			state = 64
+			damage = 1
+		}
+	}
+}
+
+country_event = {
+	id = wgr.14 ## переговоры 2+4 ##
+	title = wgr.14.t
+	desc = wgr.14.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.14.a
+
+	}
+
+    option = {
+        name = wgr.14.b
+		
+	}
+}
+
+country_event = {
+	id = wgr.15 ## диалог с востоком ##
+	title = wgr.15.t
+	desc = wgr.15.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.15.a
+
+	}
+
+    option = {
+        name = wgr.15.b
+		
+	}
+}
+
+country_event = {
+	id = wgr.16 ## Единая Германия ##
+	title = wgr.16.t
+	desc = wgr.16.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.16.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		remove_ideas = WGR_divided_nation
+		add_ideas = WGR_united_but_at_what_cost
+	}
+}

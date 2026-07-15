@@ -1,13 +1,16 @@
 SOV_invade_infantry_in_afghanistan = {
     allowed = {
         original_tag = SOV
+        NOT = { has_country_flag = withdrawal_soviet_troops_from_afghanistan }
     }
     enable = {
         country_exists = AFN
         AFS = { has_war_with = AFN }
+        NOT = { has_country_flag = withdrawal_soviet_troops_from_afghanistan }
     }
     abort = {
         NOT = { AFN = { has_war_with = AFS } }
+        has_country_flag = withdrawal_soviet_troops_from_afghanistan
     }
     abort_when_not_enabled = yes
     ai_strategy = {
@@ -20,13 +23,16 @@ SOV_invade_infantry_in_afghanistan = {
 SOV_lend_lease_in_afghanistan = {
     allowed = {
         original_tag = SOV
+        NOT = { has_country_flag = withdrawal_soviet_troops_from_afghanistan }
     }
     enable = {
         country_exists = AFN
         AFS = { has_war_with = AFN }
+        NOT = { has_country_flag = withdrawal_soviet_troops_from_afghanistan }
     }
     abort = {
         NOT = { AFN = { has_war_with = AFS } }
+        has_country_flag = withdrawal_soviet_troops_from_afghanistan
     }
     abort_when_not_enabled = yes
     ai_strategy = {

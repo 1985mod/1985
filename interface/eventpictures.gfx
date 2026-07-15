@@ -194,6 +194,26 @@ spriteTypes = {
 		name = "GFX_news_victory_iran_in_iran_iraq_war"
 		texturefile = "gfx/event_pictures/news_victory_iran_in_iran_iraq_war.dds"
 	}
+
+	spriteType = {
+		name = "GFX_news_news_space_shuttle_challenger_disaster"
+		texturefile = "gfx/event_pictures/news_space_shuttle_challenger_disaster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_halleys_comet"
+		texturefile = "gfx/event_pictures/news_halleys_comet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_iran_contras"
+		texturefile = "gfx/event_pictures/news_iran_contras.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_kill_olof_palme"
+		texturefile = "gfx/event_pictures/news_kill_olof_palme.dds"
+	}
 }
 
 

@@ -13,3 +13,19 @@ DDR_the_fight_against_the_church_cat = {
 		original_tag = DDR
 	}
 }
+
+DDR_fight_with_a_satellite = {
+
+    icon = generic_political_actions
+	  
+	priority = 1
+	  
+	allowed = {
+	    original_tag = DDR
+	}
+	  
+	visible = {
+        country_exists = SOV
+		original_tag = DDR
+	}
+}

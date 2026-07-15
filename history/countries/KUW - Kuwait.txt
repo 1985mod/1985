@@ -31,3 +31,12 @@ set_popularities = {
 	communism = 1
 	neutrality = 58
 }
+
+add_ideas = {
+	
+}
+
+give_guarantee = SAU
+give_guarantee = OMA
+give_guarantee = UAE
+give_guarantee = QAT

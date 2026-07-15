@@ -16,6 +16,21 @@ characters = {
 			expire = "2020.1.1"
 			id = -100
 		}
+		country_leader = {
+			ideology = civil_nationalism
+			traits = {}
+			expire = "2020.1.1"
+			id = -100
+		}
+		field_marshal={
+			traits = { politically_connected }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
 	}
 
 	AFS_mohammed_omar = {
@@ -30,10 +45,25 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = fascism_ideology
+			ideology = extreme_nationalism
 			traits = {}
 			expire = "2020.1.1"
 			id = -100
+		}
+	}
+
+	AFS_sibghatullah_mojaddedi = {
+		name = AFS_sibghatullah_mojaddedi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_sibghatullah_mojaddedi
+			}
+		}
+		country_leader = {
+			ideology = Political_Islam
+			traits = {}
+			expire = "2014.1.1"
+			id = -1
 		}
 	}
 
@@ -72,6 +102,129 @@ characters = {
 			traits = {}
 			expire = "2020.1.1"
 			id = -102
+		}
+	}
+
+	AFS_abdul_ali_mazari = {
+		name = AFS_abdul_ali_mazari
+		portraits = {
+			army = {
+				large = GFX_Portrait_abdul_ali_mazari
+			}
+		}
+		corps_commander={
+			traits = { offensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	AFS_abdul_rahim_wardak = {
+		name = AFS_abdul_rahim_wardak
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_abdul_rahim_wardak
+			}
+			army = {
+				large = GFX_Portrait_abdul_rahim_wardak
+			}
+		}
+		corps_commander={
+			traits = { offensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	AFS_burhanuddin_rabbani = {
+		name = AFS_burhanuddin_rabbani
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_burhanuddin_rabbani
+			}
+			army = {
+				large = GFX_Portrait_burhanuddin_rabbani
+			}
+		}
+		corps_commander={
+			traits = { offensive_doctrine }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	AFS_gulbuddin_hekmatyar = {
+		name = AFS_gulbuddin_hekmatyar
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_gulbuddin_hekmatyar
+			}
+			army = {
+				large = GFX_Portrait_gulbuddin_hekmatyar
+			}
+		}
+		corps_commander={
+			traits = { offensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	AFS_jalaluddin_haqqani = {
+		name = AFS_jalaluddin_haqqani
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_jalaluddin_haqqani
+			}
+			army = {
+				large = GFX_Portrait_jalaluddin_haqqani
+			}
+		}
+		corps_commander={
+			traits = { offensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	AFS_mohammad_yunus_khales = {
+		name = AFS_mohammad_yunus_khales
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_mohammad_yunus_khales
+			}
+			army = {
+				large = GFX_Portrait_mohammad_yunus_khales
+			}
+		}
+		corps_commander={
+			traits = { offensive_doctrine }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
 		}
 	}
 }

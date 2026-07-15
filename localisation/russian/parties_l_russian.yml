@@ -783,8 +783,8 @@
  AFS_conservatism_party_long: "§RЗапрещено§!"
  AFS_neutrality_party: "Пешаварская семёрка" 
  AFS_neutrality_party_long: "Пешаварская семёрка"
- AFS_fascism_party: "§RЗапрещено§!"
- AFS_fascism_party_long: "§RЗапрещено§!"
+ AFS_fascism_party: "Пешаварская семёрка"
+ AFS_fascism_party_long: "Пешаварская семёрка"
  
  VIN_communism_party: "КПВ"
  VIN_communism_party_long: "Коммунистическая партия Вьетнама"
@@ -929,10 +929,16 @@
  PNG_fascism_party: "НДД"
  PNG_fascism_party_long: "Народное демократическое движение"
 
- SOV_liberal_democratic_party_soVINt_union: "Либерально-демократическая партия Советского Союза"
+ SOV_liberal_democratic_party_soviet_union: "Либерально-демократическая партия Советского Союза"
  SOV_ldpss: "ЛДПСС"
  SOV_non_partisan_conservatism: "§RБеспартийные§!"
  SOV_non_partisan_liberalism: "§RБеспартийные§!"
  SOV_non_partisan_fascism: "§RБеспартийные§!"
  SOV_communist_party_soVINt_union_reformed_wing: "Коммунистическая Партия Советского Союза (Реформированное крыло)"
  SOV_kpss_reformed: "КПСС (Реформированное крыло)"
+ 
+ AFN_peoples_democratic_party_of_afghanistan: "Народно-демократическая партия Афганистана"
+ AFN_pdp_afghanistan: "НДПА"
+ AFN_organization_of_the_vanguard_of_afghan_workers: "Организация авангарда рабочих Афганистана"
+ AFN_ovaw: "ОАРА"
+ AFN_absent: "§RОтсутствует§!"

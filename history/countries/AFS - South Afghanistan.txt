@@ -31,7 +31,8 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 70
+	fascism = 30
 }
 
 add_ideas = {
@@ -40,9 +41,16 @@ all_adults_serve
 }
 
 
-recruit_character = AFS_mohammed_omar
 recruit_character = AFS_ahmad_shah_massoud
+recruit_character = AFS_mohammed_omar
+recruit_character = AFS_sibghatullah_mojaddedi
 recruit_character = AFS_babrak_karmal
 recruit_character = AFS_mohammad_najibullah
+recruit_character = AFS_abdul_ali_mazari
+recruit_character = AFS_abdul_rahim_wardak
+recruit_character = AFS_burhanuddin_rabbani
+recruit_character = AFS_gulbuddin_hekmatyar
+recruit_character = AFS_jalaluddin_haqqani
+recruit_character = AFS_mohammad_yunus_khales
 
 

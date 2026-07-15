@@ -13,104 +13,190 @@ focus_tree = {
 		id = WGR_germany_nation
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 9
+		x = 10
 		y = 0
+
+		completion_reward = {
+			add_political_power = 100
+		}
+
 	}
 
 	focus = {
 		id = WGR_german_course
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = { focus = WGR_germany_nation }
-		x = 9
+        relative_position_id = WGR_germany_nation
+        prerequisite = { focus = WGR_germany_nation }
+		x = 0
 		y = 1
+
+		completion_reward = {
+			country_event = { id = wgr.1 }
+		}
+
 	}
 
 	focus = {
 		id = WGR_economic_modern
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = { focus = WGR_german_course }
-		x = 6
-		y = 2
+        relative_position_id = WGR_german_course
+        prerequisite = { focus = WGR_german_course }
+		x = -3
+		y = 1
+
+		completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 2
+                category = industry
+            }
+		}
+
 	}
 
 	focus = {
 		id = WGR_automatic_factory
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = { focus = WGR_economic_modern }
-		x = 5
-		y = 3
-	}
+        relative_position_id = WGR_economic_modern
+        prerequisite = { focus = WGR_economic_modern }
+		x = 1
+		y = 1
 
-	focus = {
-		id = WGR_taxes_on_the_middle_class
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = { focus = WGR_economic_modern }
-		x = 7
-		y = 3
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
 	}
 
 	focus = {
 		id = WGR_doctrine_kohl
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = { focus = WGR_german_course }
-		x = 9
-		y = 2
+        relative_position_id = WGR_german_course
+        prerequisite = { focus = WGR_german_course }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.03
+			}
+		}
+
 	}
 
 	focus = {
 		id = WGR_worldlaw_and_safety
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = { focus = WGR_german_course }
-		x = 12
-		y = 2
+        relative_position_id = WGR_german_course
+        prerequisite = { focus = WGR_german_course }
+		x = 3
+		y = 1
+
+		completion_reward = {
+			add_ideas = 
+		}
+
 	}
 
 	focus = {
 		id = WGR_nato_and_usa
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = { focus = WGR_worldlaw_and_safety }
-		x = 11
-		y = 3
-	}
+        relative_position_id = WGR_worldlaw_and_safety
+        prerequisite = { focus = WGR_worldlaw_and_safety }
+		x = -1
+		y = 1
 
-	focus = {
-		id = WGR_europa
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = { focus = WGR_worldlaw_and_safety }
-		x = 13
-		y = 3
+		completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = medium_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = medium_increase
+				}
+			}
+			ITA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+		}
 	}
 
 	focus = {
 		id = WGR_course_determination
 		icon = GFX_goal_unknown
 		cost = 10
+		relative_position_id = WGR_doctrine_kohl
 		prerequisite = { focus = WGR_doctrine_kohl }
 		prerequisite = { focus = WGR_automatic_factory }
-		prerequisite = { focus = WGR_taxes_on_the_middle_class }
 		prerequisite = { focus = WGR_nato_and_usa }
-		prerequisite = { focus = WGR_europa }
-		x = 9
-		y = 4
+		x = 0
+		y = 2
+
+		completion_reward = {
+			country_event = { id = wgr.2 }
+		}
+		
 	}
 
 	focus = {
 		id = WGR_dawn_of_germany
 		icon = GFX_goal_unknown
 		cost = 10
-		prerequisite = { focus = WGR_course_determination }
-		x = 9
-		y = 5
+        relative_position_id = WGR_course_determination
+        prerequisite = { focus = WGR_course_determination }
+		x = 0
+		y = 1
 		completion_reward = {
 			load_focus_tree = WGR_part_two
+			add_political_power = 50
 		}
 	}
 }
