@@ -215,7 +215,10 @@ recruit_character = USA_ronald_reagan
 recruit_character = USA_george_bush
 recruit_character = USA_michael_dukakis
 recruit_character = USA_bill_clinton
-recruit_character = USA_lloyd_bentsen
+recruit_character = USA_george_bush_advisor
+recruit_character = USA_don_regan
+recruit_character = USA_donald_hodel
+recruit_character = USA_william_clark
 
 
 set_popularities = {

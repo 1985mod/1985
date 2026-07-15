@@ -148,6 +148,7 @@ AFS = {
 	color = rgb { 160 140 80 }     # Olive drab — тёмно-оливковый, песочный
 	color_ui = rgb { 194 178 128 } # Light tan — светло-песочный
 }
+
 ARG = {
 	color = rgb { 145 157 236 }
 	color_ui = rgb { 189 204 255 }
@@ -491,9 +492,4 @@ KUR = {
 NCY = {
 	color = rgb { 235 99 57 }
 	color_ui = rgb { 230 95 53 }	
-}
-
-SOV_USS = {
-	color = rgb { 162 47 47 }
-	color_ui = rgb { 166 53 65 }	
 }

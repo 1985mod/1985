@@ -114,6 +114,21 @@ spriteTypes = {
 		name = GFX_portrait_AFN_mohammed_omar
 		texturefile = "gfx/leaders/AFN/Portrait_Mohammed_Omar.dds"
 	}
+
+	spriteType = {
+		name = GFX_Portrait_mohammad_rafiel
+		texturefile = "gfx/leaders/AFN/Portrait_mohammad_rafieI.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_abdul_qadir
+		texturefile = "gfx/leaders/AFN/Portrait_abdul_qadir.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_abdul_rashid
+		texturefile = "gfx/leaders/AFN/Portrait_abdul_rashid.dds"
+	}
     
 	##AFS##
 	spriteType = {
@@ -134,6 +149,41 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_AFS_mohammed_omar
 		texturefile = "gfx/leaders/AFS/Portrait_Mohammed_Omar.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_sibghatullah_mojaddedi
+		texturefile = "gfx/leaders/AFS/Portrait_sibghatullah_mojaddedi.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_abdul_ali_mazari
+		texturefile = "gfx/leaders/AFS/Portrait_abdul_ali_mazari.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_abdul_rahim_wardak
+		texturefile = "gfx/leaders/AFS/Portrait_abdul_rahim_wardak.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_burhanuddin_rabbani
+		texturefile = "gfx/leaders/AFS/Portrait_burhanuddin_rabbani.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_gulbuddin_hekmatyar
+		texturefile = "gfx/leaders/AFS/Portrait_gulbuddin_hekmatyar.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_jalaluddin_haqqani
+		texturefile = "gfx/leaders/AFS/Portrait_jalaluddin_haqqani.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_mohammad_yunus_khales
+		texturefile = "gfx/leaders/AFS/Portrait_mohammad_yunus_khales.dds"
 	}
 
 	## HUN ##
@@ -532,10 +582,20 @@ spriteTypes = {
 		name = "GFX_Portrait_george_bush"
 		texturefile = "gfx/leaders/USA/Portrait_George_Bush.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Portrait_george_bush_1992"
+		texturefile = "gfx/leaders/USA/Portrait_George_Bush_1992.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_Portrait_michael_dukakis"
 		texturefile = "gfx/leaders/USA/Portrait_Michael_Dukakis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_bill_clinton"
+		texturefile = "gfx/leaders/USA/Portrait_Bill_Clinton.dds"
 	}
 	
 	spriteType = {

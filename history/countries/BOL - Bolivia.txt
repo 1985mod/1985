@@ -1,17 +1,6 @@
 ﻿capital = 302
 
-oob = "BOL_1936"
-
-IF = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "BOL_1936_air_bba"
-	ELSE = {
-		set_air_oob = "BOL_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-		}
-	}
-}
+oob = "GEN_1985"
 
 # Starting tech
 set_technology = {
@@ -27,7 +16,7 @@ recruit_character = BOL_hernan_siles
 
 set_politics = {
 	ruling_party = conservatism
-	last_election = "1934.11.11"
+	last_election = "1980.06.29"
 	election_frequency = 72
 	elections_allowed = yes
 }

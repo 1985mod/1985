@@ -17,7 +17,7 @@ set_convoys = 5
 
 set_politics = {
 	ruling_party = socialism
-	last_election = "1934.5.16"
+	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }

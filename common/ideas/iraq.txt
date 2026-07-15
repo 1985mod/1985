@@ -1,0 +1,27 @@
+ideas = {
+    country = {
+		IRQ_tiring_war = {
+			picture = tiring_war 
+			allowed = {
+				original_tag = IRQ
+			}
+
+            available = {
+                IRQ = { has_war_with = PER }
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.15
+                war_support_factor = -0.1
+                army_attack_factor = -0.2
+                ai_focus_defense_factor = 0.7
+			}
+		}
+    }
+}

@@ -49,12 +49,6 @@ division_template = {
 units = {
 	#Royal Afghani Army
 	division = {
-		name = "Royal Afghan Household Division"
-		location = 13453
-		division_template = "Royal Guard"
-		start_experience_factor = 0.3
-	}
-	division = {
 		#name = "Farah Military District"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
@@ -128,7 +122,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 13464
+		location = 13463
 		division_template = "Militia"
 		start_equipment_factor = 0.4
 
@@ -311,6 +305,54 @@ units = {
 		start_equipment_factor = 0.6
 
 	}
+
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13441
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
+
+	}
+
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13452
+		division_template = "Garrison"
+		start_equipment_factor = 0.7
+
+	}
+
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13457
+		division_template = "Garrison"
+		start_equipment_factor = 0.8
+
+	}
+
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13466
+		division_template = "Garrison"
+		start_equipment_factor = 0.4
+
+	}
 	division = {
 		#name = "Jalalabad Militia"
 		division_name = {    # New syntax for compatibility with name lists
@@ -319,7 +361,7 @@ units = {
 		}
 		location = 13419
 		division_template = "Garrison"
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -339,7 +381,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 13425
+		location = 13440
 		division_template = "Garrison"
 		start_equipment_factor = 0.6
 

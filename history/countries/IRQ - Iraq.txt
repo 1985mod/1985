@@ -124,6 +124,7 @@ set_politics = {
 }
 
 add_ideas = {
+	IRQ_tiring_war
     war_economy
 	limited_exports
 	all_adults_serve

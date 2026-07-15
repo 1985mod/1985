@@ -1,0 +1,9 @@
+SOV_USS = {
+	color = rgb { 162 47 47 }
+	color_ui = rgb { 166 53 65 }	
+}
+
+AFS_islamic_state_of_afghanistan = {
+	color = rgb { 73 87 119 }
+	color_ui = rgb { 80 89 123 }
+}

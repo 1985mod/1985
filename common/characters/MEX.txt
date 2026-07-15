@@ -11,7 +11,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = authoritarian_democracy
 			traits = {}
 			expire = "2012.4.1.1"
 			id = -1

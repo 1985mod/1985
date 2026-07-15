@@ -1,18 +1,10 @@
 ﻿capital = 314
 
-oob = "ELS_1936"
+oob = "GEN_1985"
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-}
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
-		early_fighter = 1
-	}
 }
 
 recruit_character = ELS_jose_napoleon
@@ -22,7 +14,7 @@ set_convoys = 5
 
 set_politics = {
 	ruling_party = conservatism
-	last_election = "1935.1.15"
+	last_election = "1984.4.25"
 	election_frequency = 48
 	elections_allowed = yes
 }

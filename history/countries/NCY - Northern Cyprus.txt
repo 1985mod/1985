@@ -1,6 +1,6 @@
 ﻿capital = 1056
 
-set_oob = "LUX_1936"
+set_oob = "GEN_1985"
 
 set_research_slots = 2
 
@@ -20,15 +20,15 @@ set_stability = 0.3
 set_war_support = 0.6
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = fascism
 	last_election = "1985.2.8"
+	election_frequency = 60
 	elections_allowed = yes
 }
 set_popularities = {
 	conservatism = 38
-	liberalism = 37
-	neutrality = 20
-	fascism = 5
+	neutrality = 10
+	fascism = 52
 }
 
 recruit_character = NCY_denktash_rauf

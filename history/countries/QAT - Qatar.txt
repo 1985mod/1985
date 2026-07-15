@@ -11,17 +11,23 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = neutrality
 	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 51
-	fascism = 1
-	communism = 1
-	neutrality = 47
+	neutrality = 100
 }
 
 
 recruit_character = QAT_Hamad_al_Thani
+
+add_ideas = {
+	
+}
+
+give_guarantee = KUW
+give_guarantee = OMA
+give_guarantee = UAE
+give_guarantee = SAU

@@ -4,433 +4,566 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = 
+			tag = WGR
 		}
 	}
 	default = no
 	focus = {
 		id = WGR_eras_of_tension
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 5
 		x = 25
 		y = 0
+
+		completion_reward = {
+			country_event = { id = wgr.3 }
+		}
 
 	}
 	focus = {
 		id = WGR_europe_leader
 		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = WGR_eras_of_tension
-		}
-		x = 25
+		cost = 5
+		relative_position_id = WGR_eras_of_tension
+		prerequisite = { focus = WGR_eras_of_tension }
+		x = 0
 		y = 1
+
+		completion_reward = {
+			country_event = { id = wgr.4 }
+		}
 
 	}
 	focus = {
 		id = WGR_franco_germany_engine
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = {
-			focus = WGR_europe_leader
+		relative_position_id = WGR_europe_leader
+		prerequisite = { focus = WGR_europe_leader }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = small_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
 		}
-		x = 17
-		y = 2
 
 	}
 	focus = {
 		id = WGR_bundeswehr
 		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = WGR_franco_germany
+		cost = 5
+		relative_position_id = WGR_franco_germany_engine
+		prerequisite = { focus = WGR_franco_germany_engine }
+		x = -5
+		y = 1
+
+		completion_reward = {
+			army_experience = 10
 		}
-		x = 11
-		y = 3
 
 	}
 	focus = {
 		id = WGR_leopard_tank
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = {
-			focus = WGR_bundeswehr
-		}
-		x = 9
-		y = 4
+		relative_position_id = WGR_bundeswehr
+		prerequisite = { focus = WGR_bundeswehr }
+		x = -2
+		y = 1
+
+        completion_reward = {
+			add_tech_bonus = {
+				name = WGR_leopard_tank
+				bonus = 1
+				uses = 1
+				category = cat_medium_armor
+			}
+	    }
 
 	}
 	focus = {
 		id = WGR_german_air_exercises
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = {
-			focus = WGR_bundeswehr
-		}
-		x = 13
-		y = 4
+		relative_position_id = WGR_bundeswehr
+		prerequisite = { focus = WGR_bundeswehr }
+		x = 0
+		y = 1
 
-	}
-	focus = {
-		id = WGR_computerization_economic
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = WGR_franco_germany_engine
+		completion_reward = {
+			air_experience = 10
 		}
-		x = 21
-		y = 3
+	}
 
-	}
-	focus = {
-		id = WGR_microelectronic_development
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_computerization_economic
-		}
-		mutually_exclusive = {
-			focus = WGR_export_product
-		}
-		x = 20
-		y = 4
-
-	}
-	focus = {
-		id = WGR_support_siemes
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_microelectronic_development
-		}
-		x = 19
-		y = 5
-
-	}
-	focus = {
-		id = WGR_development_germany_company
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_support_siemes
-		}
-		x = 17
-		y = 6
-
-	}
-	focus = {
-		id = WGR_volkswagen
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_support_siemes
-		}
-		x = 19
-		y = 6
-
-	}
-	focus = {
-		id = WGR_export_product
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_computerization_economic
-		}
-		mutually_exclusive = {
-			focus = WGR_microelectronic_development
-		}
-		x = 22
-		y = 4
-
-	}
-	focus = {
-		id = WGR_modernize_the_ruhr_factories
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_export_product
-		}
-		x = 23
-		y = 5
-
-	}
-	focus = {
-		id = WGR_public_investment
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_modernize_the_ruhr_factories
-			focus = WGR_support_siemes
-		}
-		x = 21
-		y = 6
-
-	}
-	focus = {
-		id = WGR_germany_fabric
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_modernize_the_ruhr_factories
-		}
-		x = 23
-		y = 6
-
-	}
-	focus = {
-		id = WGR_german_motors
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_modernize_the_ruhr_factories
-		}
-		x = 25
-		y = 6
-
-	}
-	focus = {
-		id = WGR_rhine_miracle
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = WGR_public_investment
-			focus = WGR_germany_fabric
-			focus = WGR_germany_motors
-			focus = WGR_volkswagen
-			focus = WGR_development_germany_company
-		}
-		x = 20
-		y = 7
-
-	}
-	focus = {
-		id = WGR_ecology_reform
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_europe_leader
-		}
-		x = 33
-		y = 2
-
-	}
-	focus = {
-		id = WGR_contract_rsmd
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = WGR_ecology_reform
-		}
-		x = 28
-		y = 3
-
-	}
-	focus = {
-		id = WGR_fight_radicals
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_contract_rsmd
-		}
-		x = 26
-		y = 4
-
-	}
-	focus = {
-		id = WGR_federal_police
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_contract_rsmd
-		}
-		x = 28
-		y = 4
-
-	}
-	focus = {
-		id = WGR_development_nuke
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_contract_rsmd
-		}
-		x = 30
-		y = 4
-
-	}
-	focus = {
-		id = WGR_bundestag
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_fight_radicals
-		}
-		prerequisite = {
-			focus = WGR_federal_police
-		}
-		prerequisite = {
-			focus = WGR_development_nuke
-		}
-		x = 28
-		y = 5
-
-	}
-	focus = {
-		id = WGR_monitor_the_situation_east
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = WGR_ecology_reform
-		}
-		x = 36
-		y = 3
-
-	}
-	focus = {
-		id = WGR_cold_war
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_monitor_the_situation_east
-		}
-		x = 34
-		y = 4
-
-	}
-	focus = {
-		id = WGR_remove_tension_west_east
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_monitor_the_situation_east
-		}
-		x = 36
-		y = 4
-
-	}
-	focus = {
-		id = WGR_weakened_east
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = weakened_east
-		}
-		x = 38
-		y = 4
-
-	}
-	focus = {
-		id = WGR_growth_pacifist_movement
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = WGR_cold_war
-		}
-		prerequisite = {
-			focus = WGR_monitor_the_situation_east
-		}
-		prerequisite = {
-			focus = WGR_weakened_east
-		}
-		x = 36
-		y = 5
-
-	}
-	focus = {
-		id = WGR_stabili_democratic
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = WGR_bundestag
-		}
-		prerequisite = {
-			focus = WGR_pacific_movement
-		}
-		x = 32
-		y = 7
-
-	}
 	focus = {
 		id = WGR_learn_from_nato_exercises
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = {
-			focus = WGR_bundeswehr
+		relative_position_id = WGR_bundeswehr
+		prerequisite = { focus = WGR_bundeswehr }
+		x = 2
+		y = 1
+
+		completion_reward = {
+			army_experience = 10
 		}
-		x = 11
-		y = 4
 
 	}
+
 	focus = {
 		id = WGR_nato_force_coordination
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = {
-			focus = WGR_german_air_exercises
+		relative_position_id = WGR_german_air_exercises
+		prerequisite = { focus = WGR_leopard_tank }
+		prerequisite = { focus = WGR_german_air_exercises }
+		prerequisite = { focus = WGR_learn_from_nato_exercises }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			army_experience = 10
 		}
-		prerequisite = {
-			focus = WGR_learn_from_nato_exercises
-		}
-		prerequisite = {
-			focus = WGR_leopard_tank
-		}
-		x = 11
-		y = 5
 
 	}
+
 	focus = {
 		id = WGR_rhine_defense_plan
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = {
-			focus = nato_force_coordination
+		relative_position_id = WGR_nato_force_coordination
+		prerequisite = { focus = WGR_nato_force_coordination }
+		x = -1
+		y = 1
+
+		available = {
+			51 = { is_controlled_by_ROOT_or_ally = yes }
+			42 = { is_controlled_by_ROOT_or_ally = yes }
 		}
-		x = 12
-		y = 6
+
+		completion_reward = {
+			army_experience = 10
+			51 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 587
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3547
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 6469
+					instant_build = yes
+				}
+			}
+			42 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11494
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3423
+					instant_build = yes
+				}		
+			}
+		}
 
 	}
 	focus = {
 		id = WGR_tank_doctrine
 		icon = GFX_goal_unknown
 		cost = 5
-		prerequisite = {
-			focus = nato_force_coordination
-		}
-		x = 10
-		y = 6
+		relative_position_id = WGR_nato_force_coordination
+		prerequisite = { focus = WGR_nato_force_coordination }
+		x = 1
+		y = 1
 
+		completion_reward = {
+            army_experience = 10		
+        	add_doctrine_cost_reduction = {
+    			name = USA_expand_military_bases
+    			cost_reduction = 0.5
+     			uses = 1
+     			category = land_doctrine
+        	}
+		}
 	}
 	focus = {
 		id = WGR_europe_shield
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 5
+		relative_position_id = WGR_nato_force_coordination
+		prerequisite = { focus = WGR_rhine_defense_plan }
+		prerequisite = { focus = WGR_tank_doctrine }
+		x = 0
+		y = 2
+
+		completion_reward = {
+			army_experience = 10
+		}
+
+	}
+	
+	focus = {
+		id = WGR_computerization_economic
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_franco_germany_engine
+		prerequisite = { focus = WGR_franco_germany_engine }
+		x = 5
+		y = 1
+
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = electronics
+            }
+		}
+
+	}
+	focus = {
+		id = WGR_microelectronic_development
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_computerization_economic
+		prerequisite = { focus = WGR_computerization_economic }
+		mutually_exclusive = { focus = WGR_export_product }
+		x = -1
+		y = 1
+
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+		}
+
+	}
+	focus = {
+		id = WGR_support_siemes
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_microelectronic_development
+		prerequisite = { focus = WGR_microelectronic_development }
+		x = 0
+		y = 1
+
+        completion_reward = {
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	    }
+
+	}
+	focus = {
+		id = WGR_volkswagen
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_support_siemes
+		prerequisite = { focus = WGR_support_siemes }
+		x = -1
+		y = 1
+
+        completion_reward = {
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	    }
+
+	}
+	focus = {
+		id = WGR_export_product
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_computerization_economic
+		prerequisite = { focus = WGR_computerization_economic }
+		mutually_exclusive = { focus = WGR_microelectronic_development }
+		x = 1
+		y = 1
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = export_focus
+                add_idea = free_trade
+            }
+            if = {
+				limit = {
+                    has_idea = limited_exports
+				}
+                swap_ideas = {
+                    remove_idea = limited_exports
+                    add_idea = export_focus
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = closed_economy
+				}
+                swap_ideas = {
+                    remove_idea = closed_economy
+                    add_idea = limited_exports
+                }  
+            }
+        }
+	}
+	focus = {
+		id = WGR_modernize_the_ruhr_factories
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_export_product
+		prerequisite = { focus = WGR_export_product }
+		x = 0
+		y = 1
+
+		completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.65
+                uses = 1
+                category = industry
+            }	
+		}
+	}
+
+	focus = {
+		id = WGR_germany_fabric
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_modernize_the_ruhr_factories
+		prerequisite = { focus = WGR_modernize_the_ruhr_factories }
+		x = 1
+		y = 1
+
+        completion_reward = {
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	    }
+
+	}
+	
+	focus = {
+		id = WGR_public_investment
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_computerization_economic
+		prerequisite = { focus = WGR_support_siemes focus = WGR_modernize_the_ruhr_factories }
+		x = 0
+		y = 3
+
+		completion_reward = {
+			add_ideas = WGR_public_investments
+		}
+
+	}
+	focus = {
+		id = WGR_rhine_miracle
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_public_investment
 		prerequisite = {
-			focus = WGR_tank_doctrine
+			focus = WGR_public_investment
 		}
 		prerequisite = {
-			focus = WGR_rhine_defense_plan
+			focus = WGR_germany_fabric
+			focus = WGR_germany_motors
+			focus = WGR_volkswagen
+			focus = WGR_development_germany_company
 		}
-		x = 11
-		y = 7
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_ideas = WGR_rhine_miracle
+		}
+
+	}
+	focus = {
+		id = WGR_ecology_reform
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_franco_germany_engine
+		prerequisite = { focus = WGR_franco_germany_engine }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.03
+			}
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = WGR_fight_radicals
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_ecology_reform
+		prerequisite = { focus = WGR_ecology_reform }
+		x = -2
+		y = 2
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.5
+			}
+			set_temp_variable = { fascism = party_popularity@fascism }
+			multiply_temp_variable = { fascism = -0.25 }
+			add_stability = fascism
+		}
+
+	}
+	focus = {
+		id = WGR_federal_police
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_ecology_reform
+		prerequisite = { focus = WGR_ecology_reform }
+		x = 0
+		y = 2
+
+		completion_reward = {
+			add_ideas = WGR_federal_police_idea
+		}
+
+	}
+	focus = {
+		id = WGR_development_nuke
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_ecology_reform
+		prerequisite = { focus = WGR_ecology_reform }
+		x = 2
+		y = 2
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = WGR_development_nuke
+				bonus = 1
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+	focus = {
+		id = WGR_bundestag
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_federal_police
+		prerequisite = { focus = WGR_federal_police }
+		prerequisite = { focus = WGR_fight_radicals }
+		prerequisite = { focus = WGR_development_nuke }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_ideas = WGR_bundestag
+		}
+
+	}
+
+	focus = {
+		id = WGR_stabili_democratic
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_bundestag
+		prerequisite = { focus = WGR_bundestag }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.03
+			}
+			add_stability = 0.03
+		}
 
 	}
 	focus = {
 		id = WGR_end_cold_war
 		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = WGR_stabili_democratic
-		}
-		prerequisite = {
-			focus = WGR_rhine_miracle
-		}
-		prerequisite = {
-			focus = WGR_european_shield
-		}
-		x = 20
-		y = 9
+		cost = 5
+		relative_position_id = WGR_stabili_democratic
+		prerequisite = { focus = WGR_stabili_democratic }
+		prerequisite = { focus = WGR_rhine_miracle }
+		prerequisite = { focus = WGR_europe_shield }
+		x = 0
+		y = 1
 		completion_reward = {
 			load_focus_tree = WGR_part_three
+			USA = {
+				remove_dynamic_modifier = { modifier = USA_cold_war }
+			}
+			SOV = {
+				remove_dynamic_modifier = { modifier = SOV_cold_war }
+			}
+			country_event = { id = wgr.5 }
 		}
 	}
 }

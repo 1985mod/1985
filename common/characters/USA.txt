@@ -47,4 +47,118 @@ characters={
 			
 		}
 	}
+
+	USA_bill_clinton = {
+		name = USA_bill_clinton
+		portraits={
+			civilian={
+				large= GFX_Portrait_bill_clinton
+			}
+		}
+		country_leader={
+			ideology= classic_liberalism
+			traits={  }
+			expire="1999.1.1.1"
+			
+		}
+	}
+
+	### Political advisors ###
+
+	USA_george_bush_advisor = {
+		name = USA_george_bush_advisor
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/USA/idea_portrait_george_bush.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = vice_president_or_prime_minister
+			idea_token = USA_george_bush_advisor
+			available = {
+				has_government = conservatism
+				NOT = { has_country_leader = { character = USA_george_bush ruling_only = yes } }
+			}
+			traits = {
+				good_diplomat
+			}
+
+			ai_will_do = {
+				base = 0.5
+			}
+		}
+	}
+
+	USA_don_regan = {
+		name = USA_don_regan
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/USA/idea_portrait_don_regan.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = minister_of_economy
+			idea_token = USA_don_regan
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				financial_expert
+			}
+
+			ai_will_do = {
+				base = 0.5
+			}
+		}
+	}
+
+	USA_donald_hodel = {
+		name = USA_donald_hodel
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/USA/idea_portrait_donald_hodel.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = minister_of_the_interior
+			idea_token = USA_donald_hodel
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				good_diplomat
+			}
+
+			ai_will_do = {
+				base = 0.5
+			}
+		}
+	}
+
+	USA_william_clark = {
+		name = USA_william_clark
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/USA/idea_portrait_william_clark.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = minister_of_the_interior
+			idea_token = USA_william_clark
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				voice_of_the_people
+			}
+
+			ai_will_do = {
+				base = 0.5
+			}
+		}
+	}
 }

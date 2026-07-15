@@ -68,10 +68,62 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = classic_liberalism
+			ideology = authoritarian_democracy
 			traits = {}
 			expire = "2020.1.1"
 			id = -102
+		}
+	}
+
+	AFN_abdul_qadir = {
+		name = AFN_abdul_qadir
+		portraits = {
+			army = {
+				large = GFX_Portrait_abdul_qadir
+			}
+		}
+		field_marshal ={
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	AFN_mohammad_rafiel = {
+		name = AFN_mohammad_rafiel
+		portraits = {
+			army = {
+				large = GFX_Portrait_mohammad_rafiel
+			}
+		}
+		corps_commander={
+			traits = { offensive_doctrine }
+			skill=3
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	AFN_abdul_rashid = {
+		name = AFN_abdul_rashid
+		portraits = {
+			army = {
+				large = GFX_Portrait_abdul_rashid
+			}
+		}
+		corps_commander ={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
 		}
 	}
 }

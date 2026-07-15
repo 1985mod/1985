@@ -32,3 +32,12 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
+
+add_ideas = {
+	
+}
+
+give_guarantee = KUW
+give_guarantee = SAU
+give_guarantee = UAE
+give_guarantee = QAT

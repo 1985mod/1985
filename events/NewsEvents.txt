@@ -355,4 +355,106 @@ news_event = {
 		USA = { has_country_flag = USA_call_for_ratification_of_the_inf_treaty }
 		NOT = { has_global_flag = call_for_ratification_of_the_inf_treaty }
 	}
+
+	option = {
+		name = news.16.a
+	}
+}
+
+news_event = {
+	id = news.17 ## Катастрофа шаттла «Челленджер» ##
+	title = news.17.t
+	desc = news.17.desc
+	picture = GFX_news_news_space_shuttle_challenger_disaster
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = space_shuttle_challenger_disaster
+	}
+	
+	trigger = {
+		date > 1986.1.28
+		NOT = { has_global_flag = space_shuttle_challenger_disaster }
+	}
+
+	option = {
+		name = news.17.a
+	}
+}
+
+news_event = {
+	id = news.18 ## Комета Галлея ##
+	title = news.18.t
+	desc = news.18.desc
+	picture = GFX_news_halleys_comet
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = halleys_comet
+	}
+	
+	trigger = {
+		date > 1986.3.8
+		NOT = { has_global_flag = halleys_comet }
+	}
+
+	option = {
+		name = news.18.a
+	}
+}
+
+news_event = {
+	id = news.19 ## Дело «Иран-контрас» ##
+	title = news.19.t
+	desc = news.19.desc
+	picture = GFX_news_iran_contras
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = iran_contra
+	}
+	
+	trigger = {
+		date > 1985.8.20
+		NOT = { has_global_flag = iran_contra }
+	}
+
+	option = {
+		name = news.19.a
+	}
+	option = {
+		name = news.19.b
+		trigger = { TAG = USA }
+		set_country_flag = iran_contras
+	}
+}
+
+news_event = {
+	id = news.20 ## Убийство Улофа Пальме ##
+	title = news.20.t
+	desc = news.20.desc
+	picture = GFX_news_kill_olof_palme
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = kill_olof_palme
+	}
+	
+	trigger = {
+		date > 1985.2.28
+		NOT = { has_global_flag = kill_olof_palme }
+	}
+
+	option = {
+		name = news.20.a
+	}
+	option = {
+		name = news.20.b
+		trigger = { TAG = SWE }
+		SWE = { kill_country_leader = yes }
+	}
 }

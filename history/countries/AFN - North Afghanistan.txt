@@ -35,9 +35,12 @@ AFN_kunar_operation
 extensive_conscription
 }
 
-recruit_character = AFN_mohammed_omar
 recruit_character = AFN_ahmad_shah_massoud
+recruit_character = AFN_mohammed_omar
 recruit_character = AFN_babrak_karmal
 recruit_character = AFN_mohammad_najibullah
+recruit_character = AFN_abdul_qadir
+recruit_character = AFN_mohammad_rafiel
+recruit_character = AFN_abdul_rashid
 
 

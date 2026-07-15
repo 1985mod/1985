@@ -34,8 +34,10 @@ set_politics = {
 }
 set_popularities = {
 	conservatism = 45
-	socialism = 10
-	liberalism = 45
+	socialism = 38
+	fascism = 3
+	neutrality = 1
+	liberalism = 13
 }
 
 recruit_character = WGR_Helmut_Kohl
@@ -48,4 +50,6 @@ recruit_character = WGR_wolfgang_altenburg
 
 add_ideas = {
 	EU_member
+	WGR_nato_front_line
+	WGR_divided_nation
 }

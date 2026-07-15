@@ -12,13 +12,13 @@ set_convoys = 5
 recruit_character = CYP_spyros_kyprianou
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = liberalism
 	last_election = "1985.12.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 50
+	liberalism = 50
 	fascism = 8
 	communism = 15
 	neutrality = 27

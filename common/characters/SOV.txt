@@ -64,12 +64,31 @@ characters = {
 			army = {
 				large = GFX_portrait_gennady_yanaev
 			}
+			army = {
+				small = "gfx/interface/ideas/SOV/idea_portrait_gennady_yanaev.dds"
+			}
 		}
 		country_leader = {
 			ideology = authoritarian_socialism
 			traits = {}
 			expire = "2010.08.30.1"
 			id = -1
+		}
+		advisor = {
+			cost = 150			
+			slot = vice_president_or_prime_minister
+			idea_token = SOV_gennady_yanaev
+
+			available = {
+				NOT = { has_country_leader = SOV_gennady_yanaev }
+				has_completed_focus = SOV_IV_congress_of_peoples_deputies
+			}
+			traits = {
+				an_heir_without_ambitions
+			}
+			ai_will_do = {
+				base = 1.5
+			}
 		}
 	}
 
@@ -443,6 +462,26 @@ characters = {
 		}
 	}
 
+	SOV_nikolay_baibakov = {
+		name = SOV_nikolay_baibakov
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SOV/idea_portrait_nikolay_baibakov.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = minister_of_economy
+			idea_token = SOV_andrey_gromyko
+			traits = {
+				financial_expert
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
 	SOV_andrey_gromyko = {
 		name = SOV_andrey_gromyko
 		portraits = {
@@ -452,10 +491,30 @@ characters = {
 		}
 		advisor = {
 			cost = 150			
-			slot = political_advisor
+			slot = minister_of_foreign_affairs
 			idea_token = SOV_andrey_gromyko
 			traits = {
-				SOV_supreme_council
+				good_diplomat
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	SOV_fedorchuk_vasilievich = {
+		name = SOV_fedorchuk_vasilievich
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SOV/idea_portrait_fedorchuk_vasilievich.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = minister_of_the_interior
+			idea_token = SOV_andrey_gromyko
+			traits = {
+				minister_of_the_interior_trait
 			}
 			ai_will_do = {
 				base = 1.5
