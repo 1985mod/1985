@@ -1,6 +1,6 @@
 state = {
 	id = 147
-	name = "STATE_147" #SALLA
+	name = "STATE_147" # Manunka
 	manpower = 15473
 	
 	state_category = enclave
@@ -15,7 +15,7 @@ state = {
 		add_core_of = REN
 		add_core_of = MZB
 		
-		victory_points = { #Salla
+		victory_points = { # Manunka
 			13518 1
 		}
 
