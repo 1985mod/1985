@@ -8,6 +8,7 @@ country_event = {
 
 	trigger = {
         has_country_flag = conservatism_soviet
+        has_government = communism
     }
 
 	option = {
@@ -23,6 +24,7 @@ country_event = {
                     tag = UKR
                     tag = MOL
                     tag = RUS
+                    tag = KAZ
                 }
             }
             set_politics = {
@@ -41,7 +43,7 @@ country_event = {
             }
             set_politics = {
                 ruling_party = socialism
-                elections_allowed = no
+                elections_allowed = yes
             }
             add_popularity = {
                 ideology = socialism
@@ -50,11 +52,24 @@ country_event = {
         }
         if = {
             limit = {
+                tag = BLR
+            }
+            set_politics = {
+                ruling_party = socialism
+                elections_allowed = yes
+            }
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.4
+            }
+        }
+        if = {
+            limit = {
                 tag = LAT
             }
             set_politics = {
                 ruling_party = liberalism
-                elections_allowed = no
+                elections_allowed = yes
             }
             add_popularity = {
                 ideology = liberalism
@@ -67,7 +82,7 @@ country_event = {
             }
             set_politics = {
                 ruling_party = liberalism
-                elections_allowed = no
+                elections_allowed = yes
             }
             add_popularity = {
                 ideology = liberalism
@@ -92,11 +107,11 @@ country_event = {
                 tag = TMS
             }
             set_politics = {
-                ruling_party = neutrality
+                ruling_party = fascism
                 elections_allowed = no
             }
             add_popularity = {
-                ideology = neutrality
+                ideology = fascism
                 popularity = 0.99
             }
         }
@@ -106,7 +121,7 @@ country_event = {
             }
             set_politics = {
                 ruling_party = neutrality
-                elections_allowed = no
+                elections_allowed = yes
             }
             add_popularity = {
                 ideology = neutrality
@@ -119,7 +134,7 @@ country_event = {
             }
             set_politics = {
                 ruling_party = socialism
-                elections_allowed = no
+                elections_allowed = yes
             }
             add_popularity = {
                 ideology = socialism
@@ -133,7 +148,7 @@ country_event = {
             }
             set_politics = {
                 ruling_party = fascism
-                elections_allowed = no
+                elections_allowed = yes
             }
             add_popularity = {
                 ideology = fascism

@@ -1,0 +1,22 @@
+ add_namespace = mol
+
+country_event = {
+	id = mol.1 ##  Смерть Черненко ##
+	title = mol.1.t
+	desc = mol.1.desc
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+        tag = MOL
+        country_exists = MOL
+        date > 1990.12.9
+    }
+
+	option = {
+		name = mol.1.a
+		PMR = { 
+			add_state_core = 834
+			transfer_state = 834
+		}
+	}
+}
