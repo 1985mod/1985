@@ -389,6 +389,10 @@ country_event = {
             release = RUS
             set_country_flag = collapse_RUS
 
+            RUS = {
+                set_country_flag = conservatism_soviet
+            }
+
             if = {
                 OR = { has_government = communism }
                 set_cosmetic_tag = SOV_russia
