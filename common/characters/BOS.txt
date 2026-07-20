@@ -1,0 +1,15 @@
+characters = {
+	BOS_alija_Izetbegovic ={
+		name = BOS_alija_Izetbegovic
+		portraits={
+			civilian={
+				large = "gfx/leaders/BOS/Portrait_alija_Izetbegovic.dds"
+			}
+		}
+		country_leader={
+			ideology = ethnic_nationalism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

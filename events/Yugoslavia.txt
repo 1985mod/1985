@@ -21,6 +21,9 @@ country_event = {
 			}
 			release = SLV
 			set_country_flag = collapse_SLV
+            SLV = {
+                set_country_flag = yugoslav_country
+            }
 		}
 
 		# Хорватия – 25 июня 1991
@@ -31,6 +34,9 @@ country_event = {
 			}
             release = CRO
 			set_country_flag = collapse_CRO
+            CRO = {
+                set_country_flag = yugoslav_country
+            }
 		}
 
 		# Македония – 8 сентября 1991
@@ -42,6 +48,9 @@ country_event = {
 			MAC = { transfer_state = 106 }
 			MAC = { transfer_state = 970 }
 			set_country_flag = collapse_MAC
+            MAC = {
+                set_country_flag = yugoslav_country
+            }
 		}
 
 		# Босния и Герцеговина – 1 марта 1992
@@ -51,11 +60,11 @@ country_event = {
 				NOT = { has_country_flag = collapse_BOS }
 			}
 			BOS = { transfer_state = 104 }
-			BOS = { transfer_state = 804 }
-			BOS = { transfer_state = 1048 }
 			BOS = { transfer_state = 1052 }
-			BOS = { transfer_state = 1053 }
 			set_country_flag = collapse_BOS
+            BOS = {
+                set_country_flag = yugoslav_country
+            }
 		}
 
 		# Черногория – 3 июня 2006
@@ -104,6 +113,16 @@ country_event = {
 		ROOT = {
 			declare_war_on = { target = CRO type = annex_everything }	
 		}
+		set_province_controller = 13489
+		set_province_controller = 13487
+		set_province_controller = 13483
+		set_province_controller = 13482
+		set_province_controller = 13481
+		set_province_controller = 13480
+		set_province_controller = 13479
+		set_province_controller = 984
+		set_province_controller = 3974
+		set_province_controller = 11577
 	}
 	trigger = {
 		NOT = {
@@ -126,7 +145,7 @@ country_event = {
 	trigger = {
 		tag = YUG
 		has_civil_war = no
-		date > 1990.05.16
+		date > 1985.05.15
 	}
 
 	fire_only_once = yes
@@ -143,7 +162,7 @@ country_event = {
 		hidden_effect = {
 			retire_ideology_leader = communism
 			promote_character = {
-				character = YUG_borisav_jovic
+				character = YUG_radovan_vlajkovic
 				ideology = communism
 			}
 			set_politics = {
@@ -163,7 +182,7 @@ country_event = {
 	trigger = {
 		tag = YUG
 		has_civil_war = no
-		date > 1991.07.01
+		date > 1986.05.16
 	}
 
 	fire_only_once = yes
@@ -180,7 +199,191 @@ country_event = {
 		hidden_effect = {
 			retire_ideology_leader = communism
 			promote_character = {
-				character = YUG_stipe_mesic
+				character = YUG_sinan_hasani
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.5
+	title = yugoslavia.5.t
+	desc = yugoslavia.5.desc
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		country_exists = BOS
+		date > 1992.03.1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		ROOT = {
+			declare_war_on = { target = BOS type = annex_everything }	
+		}
+		set_province_controller = 6957
+		set_province_controller = 3985
+		BOS = { set_province_controller = 6942 }
+		BOS = { set_province_controller = 9894 }
+		BOS = { set_province_controller = 982 }
+	}
+	trigger = {
+		NOT = {
+			is_ai = no
+		}
+	}
+	option = {
+		name = news.4.a
+		trigger = { is_ai = no }
+		BOS = { change_tag_from = YUG }
+	}
+}
+
+country_event = {
+	id = yugoslavia.6
+	title = yugoslavia.6.t
+	desc = yugoslavia.6.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1987.05.15
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.6.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = communism
+			promote_character = {
+				character = YUG_lazar_moysov
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.7
+	title = yugoslavia.7.t
+	desc = yugoslavia.7.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1988.05.16
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.7.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = communism
+			promote_character = {
+				character = YUG_raif_dizdarevich
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.8
+	title = yugoslavia.8.t
+	desc = yugoslavia.8.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1989.05.16
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.8.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = communism
+			promote_character = {
+				character = YUG_janez_drnovsek
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.9
+	title = yugoslavia.9.t
+	desc = yugoslavia.9.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1990.05.16
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.9.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = communism
+			promote_character = {
+				character = YUG_borisav_jovic
 				ideology = communism
 			}
 			set_politics = {

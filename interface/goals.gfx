@@ -2069,8 +2069,8 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_spr_anarchism_knows_no_borders"
-		texturefile = "gfx/interface/goals/focus_spr_anarchism_knows_no_borders.dds"
+		name = "GFX_focus_spr_chinese_socialism_knows_no_borders"
+		texturefile = "gfx/interface/goals/focus_spr_chinese_socialism_knows_no_borders.dds"
 	}
 
 	SpriteType = { 
@@ -12117,8 +12117,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_PRC_dissent_in_the_united_front.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_PRC_embrace_stalinism"
-		texturefile = "gfx/interface/goals/focus_PRC_embrace_stalinism.dds"
+		name = "GFX_focus_PRC_embrace_chinese_socialism"
+		texturefile = "gfx/interface/goals/focus_PRC_embrace_chinese_socialism.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_PRC_form_central_social_affairs_department"

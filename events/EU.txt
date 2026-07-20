@@ -34,6 +34,7 @@ country_event = {
         tag = ROM
         date > 1989.12.16
         has_government = communism
+        SOV = { has_country_flag = gorbachev }
     }
     mean_time_to_happen = {
         days = 7
@@ -46,6 +47,14 @@ country_event = {
             last_election = "1990.5.20"
             election_frequency = 48
             elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.3
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.3
         }
         SOV = {
             end_puppet = ROM
@@ -64,6 +73,7 @@ country_event = {
         tag = BUL
         date > 1989.11.10
         has_government = communism
+        SOV = { has_country_flag = gorbachev }
     }
     mean_time_to_happen = {
         days = 7
@@ -75,6 +85,14 @@ country_event = {
             last_election = "1990.5.20"
             election_frequency = 48
             elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.3
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.3
         }
         SOV = {
             end_puppet = BUL
@@ -92,6 +110,7 @@ country_event = {
         tag = HUN
         date > 1989.6.13
         has_government = communism
+        SOV = { has_country_flag = gorbachev }
     }
     mean_time_to_happen = {
         days = 14
@@ -104,6 +123,10 @@ country_event = {
             last_election = "1990.3.25"
             election_frequency = 48
             elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.4
         }
         SOV = {
             end_puppet = HUN
@@ -122,6 +145,7 @@ country_event = {
         tag = POL
         date > 1989.2.6
         has_government = communism
+        SOV = { has_country_flag = gorbachev }
     }
     mean_time_to_happen = {
         days = 14
@@ -135,6 +159,10 @@ country_event = {
             election_frequency = 48
             elections_allowed = yes
         }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.4
+        }    
         SOV = {
             end_puppet = POL
         }

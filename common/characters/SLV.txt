@@ -1,0 +1,16 @@
+characters = {
+    SLV_milan_kucan = {
+		name = SLV_milan_kucan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLV/Portrait_milan_kucan.dds"
+			}
+		}
+		country_leader = {
+			ideology = civil_nationalism
+			traits = { }
+			expire = "2000.3.1.1"
+			id = -1
+		}
+	}
+}

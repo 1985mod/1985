@@ -39,6 +39,7 @@ set_popularities = {
 
 add_ideas = {
 	WGR_divided_nation
+	DDR_showcase_of_socialism
 }
 
 add_opinion_modifier = {

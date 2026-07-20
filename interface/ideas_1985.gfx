@@ -56,6 +56,21 @@ spriteTypes = {
     } 
 
     spriteType = {
+        name = "GFX_idea_divided_nation"
+        texturefile = "gfx/interface/ideas/WGR/idea_divided_nation.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_nato_front_line"
+        texturefile = "gfx/interface/ideas/WGR/idea_nato_front_line.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_showcase_of_socialism"
+        texturefile = "gfx/interface/ideas/DDR/idea_showcase_of_socialism.dds"
+    }
+
+    spriteType = {
         name = "GFX_dynamic_modifier_cold_war"
         texturefile = "gfx/interface/ideas/dynamic_modifier_cold_war.dds"
     }

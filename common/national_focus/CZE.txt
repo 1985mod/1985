@@ -56,6 +56,7 @@ focus_tree = {
         id = CZE_East
         relative_position_id = CZE_west
         prerequisite = { focus = CZE_new_1985 }
+        mutually_exclusive = { focus = CZE_west }
         icon = GFX_focus_AFG_defender_of_central_asia
         x = 5
         y = 0
@@ -96,7 +97,7 @@ focus_tree = {
         prerequisite = { focus = CZE_change_of_courses_in_the_ussr }
         x = 12
         y = 4
-        cost = 5
+        cost = 10
         completion_reward = {
             country_event = { id = CZE_Czechoslovakia_perepro.1 days = 20 }
         }
@@ -109,7 +110,7 @@ focus_tree = {
         prerequisite = { focus = CZE_prepare_the_stasi }
         x = 8
         y = 4
-        cost = 5
+        cost = 10
         completion_reward = {
             add_political_power = 50
             end_puppet = SOV
@@ -293,6 +294,7 @@ focus_tree = {
         id = CZE_the_destruction_of_communism
         icon = GFX_focus_GER_the_peoples_victory
         prerequisite = { focus = CZE_demolition_of_the_wall }
+        mutually_exclusive = { focus = CZE_accession_to_the_federal_republic_of_germany }
         x = 5
         y = 5
         cost = 5
@@ -413,6 +415,7 @@ focus_tree = {
         cost = 5
         available = {
             date > 1989.1.1
+            always = no
         }
         completion_reward = {
             set_politics = { 
@@ -430,7 +433,7 @@ focus_tree = {
         y = 10
         cost = 5
         available = {
-            date > 1989.1.1
+            date > 1992.11.25
         }
         completion_reward = {
             add_ideas =  CZE_economy_capy
@@ -472,7 +475,7 @@ focus_tree = {
         icon = GFX_focus_GER_proletarian_solidarity
         x = 17
         y = 2
-        cost = 7
+        cost = 10
         completion_reward = {
             70 = {  
                 add_extra_state_shared_building_slots = 2
@@ -570,6 +573,7 @@ focus_tree = {
         id = CZE_invest_in_oil_refineries
         relative_position_id = CZE_new_1985
         prerequisite = { focus = CZE_new_oil_refineries }
+        mutually_exclusive = { focus = CZE_government_support }
         icon = GFX_focus_GER_factories_for_resources
         x = 20
         y = 3
@@ -592,7 +596,7 @@ focus_tree = {
         mutually_exclusive = { focus = CZE_exit_from_the_ats }
         x = 20
         y = 2 
-        cost = 5
+        cost = 10
         completion_reward = {
             country_event = { id = CZE_Czechoslovakia_lenders.1 days = 7 }
         }
