@@ -43,6 +43,7 @@ idea_categories = {
 		slot = economy
 		slot = inflation_and_deflation_law
 		slot = migration_policy_law
+		slot = economic_cycle_laws
 
 		ledger = civilian
 

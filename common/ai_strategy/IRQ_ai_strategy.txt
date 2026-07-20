@@ -1,0 +1,25 @@
+IRQ_preparing_for_war_in_kuwait = {
+    allowed = {
+        original_tag = IRQ
+    }
+    enable = {
+        country_exists = KUW
+        has_country_leader = { character = IRQ_Saddam_Hussein ruling_only = yes }
+        ROOT = { NOT = { has_war_with = PER } }
+        date > 1989.12.10
+    }
+    abort = {
+        NOT = { country_exists = KUW } 
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = KUW
+        value = 1000
+    }
+    ai_strategy = {
+        тип = front_armor_score
+        id = KUW
+        value = 100
+    }
+}

@@ -76,6 +76,12 @@ country_event = {   ### Ирак вторгается в Кувейт ###
                 active = no
             }
         }
+        hidden_effect = {
+            delete_unit = {
+                division_template = "Republican Guard"
+            }
+            load_oob = "IRQ_invasion_in_kuwait"
+        }
     }
 
     option = {

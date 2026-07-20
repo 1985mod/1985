@@ -55,6 +55,33 @@ country_event = {
 			ideology = conservatism
 			popularity = 0.03
 	    }
+        if = {
+			limit = {
+                has_idea = closed_borders
+			}
+            swap_ideas = {
+                remove_idea = closed_borders
+                add_idea = regulated_migration
+            }  
+        }
+        if = {
+			limit = {
+                has_idea = regulated_migration
+			}
+            swap_ideas = {
+                remove_idea = regulated_migration
+                add_idea = easily_adjustable_migration
+            }  
+        }
+        if = {
+			limit = {
+                has_idea = easily_adjustable_migration
+			}
+            swap_ideas = {
+                remove_idea = easily_adjustable_migration
+                add_idea = open_doors
+            }  
+        }
 	}
 
     option = {
@@ -64,15 +91,33 @@ country_event = {
 			ideology = socialism
 			popularity = 0.03
 	    }
-	}
-
-    option = {
-        name = wgr.2.c
-        add_political_power = 10
-		add_popularity = {
-			ideology = liberalism
-			popularity = 0.03
-	    }
+        if = {
+			limit = {
+                has_idea = open_doors
+			}
+            swap_ideas = {
+                remove_idea = open_doors
+                add_idea = easily_adjustable_migration
+            }  
+        }
+        if = {
+			limit = {
+                 has_idea = easily_adjustable_migration
+			}
+            swap_ideas = {
+                remove_idea = easily_adjustable_migration
+                add_idea = regulated_migration
+            }  
+        }
+        if = {
+			limit = {
+                has_idea = regulated_migration
+			}
+            swap_ideas = {
+                remove_idea = regulated_migration
+                add_idea = closed_borders
+            }  
+        }
 	}
 }
 
@@ -88,7 +133,7 @@ country_event = {
 
     option = {
         name = wgr.3.a
-		
+		add_war_support = 0.05
 	}
 }
 

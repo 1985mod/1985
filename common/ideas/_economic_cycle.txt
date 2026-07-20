@@ -1,0 +1,120 @@
+ideas = {
+
+	economic_cycle_laws = {
+		law = yes
+		use_list_view = yes
+
+		depression = {
+
+            picture = depression
+
+			cost = 350
+			removal_cost = -1
+			level = 7
+
+			available = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = -0.5 
+                stability_factor = -0.1
+                production_factory_max_efficiency_factor = -0.15
+                production_factory_start_efficiency_factor = -0.3
+			}
+
+			cancel_if_invalid = no
+		}
+
+		recession = {
+
+            picture = recession
+
+			cost = 350
+			removal_cost = -1
+			level = 7
+
+			available = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = -0.3
+                stability_factor = -0.1
+                production_factory_max_efficiency_factor = -0.1
+                production_factory_start_efficiency_factor = -0.05
+			}
+
+			cancel_if_invalid = no
+		}
+
+		stagnation = {
+
+            picture = stagnation
+
+			cost = 350
+			removal_cost = -1
+			level = 7
+
+            default = yes
+
+			available = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+                stability_factor = -0.05
+                production_factory_max_efficiency_factor = -0.05
+                production_factory_start_efficiency_factor = -0.05
+			}
+
+			cancel_if_invalid = no
+		}
+
+		sustainable_growth = {
+
+            picture = sustainable_growth
+
+			cost = 350
+			removal_cost = -1
+			level = 7
+
+			available = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+                stability_factor = 0.1
+                production_factory_max_efficiency_factor = 0.05
+                production_factory_start_efficiency_factor = 0.05
+			}
+
+			cancel_if_invalid = no
+		}
+
+		economic_boom = {
+
+            picture = economic_boom
+
+			cost = 350
+			removal_cost = -1
+			level = 7
+
+			available = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.3
+                stability_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.05
+                production_factory_max_efficiency_factor = 0.1
+                production_factory_start_efficiency_factor = 0.1
+			}
+
+			cancel_if_invalid = no
+		}
+    }
+}

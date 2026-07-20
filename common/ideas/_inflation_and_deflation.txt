@@ -6,7 +6,7 @@ ideas = {
 
 		acute_deflation = {
 
-            picture = idea_acute_deflation
+            picture = acute_deflation
 
 			cost = 250
 			removal_cost = -1
@@ -27,7 +27,7 @@ ideas = {
 		}
 		deflation = {
 
-            picture = idea_deflation
+            picture = deflation
 
 			cost = 250
 			removal_cost = -1
@@ -70,7 +70,7 @@ ideas = {
 		}
 		high_inflation = {
 
-            picture = idea_high_inflation
+            picture = high_inflation
 
 			cost = 250
 			removal_cost = -1
@@ -91,7 +91,7 @@ ideas = {
 		}
 		galloping_inflation = {
 
-            picture = idea_galloping_inflation
+            picture = galloping_inflation
 
 			cost = 250
 			removal_cost = -1
@@ -112,7 +112,7 @@ ideas = {
 		}
 		hyperinflation = {
 
-            picture = idea_hyperinflation
+            picture = hyperinflation
 
 			cost = 250
 			removal_cost = -1

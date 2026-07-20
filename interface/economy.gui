@@ -125,9 +125,9 @@ guiTypes = {
         }
 
         instantTextBoxType = {
-            name = "gdp_growth"
+            name = "gdp_growth_rate"
             position = { x = 200 y = 250 }
-            text = "GDP_GROWTH"
+            text = "GDP_GROWTH_RATE"
             font = "hoi_30header"
             maxWidth = 150
             maxHeight = 24
