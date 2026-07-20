@@ -107,4 +107,31 @@ spriteTypes = {
         name = "GFX_idea_hyperinflation"
         texturefile = "gfx/interface/ideas/inflation_and_deflation/idea_hyperinflation.dds"
     }
+
+    ### economic cycle ###
+
+    spriteType = {
+        name = "GFX_idea_depression"
+        texturefile = "gfx/interface/ideas/economic_cycle/idea_depression.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_recession"
+        texturefile = "gfx/interface/ideas/economic_cycle/idea_recession.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_stagnation"
+        texturefile = "gfx/interface/ideas/economic_cycle/idea_stagnation.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_sustainable_growth"
+        texturefile = "gfx/interface/ideas/economic_cycle/idea_sustainable_growth.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_economic_boom"
+        texturefile = "gfx/interface/ideas/economic_cycle/idea_economic_boom.dds"
+    }
 }

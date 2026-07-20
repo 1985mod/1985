@@ -602,7 +602,7 @@ focus_tree = {
         completion_reward = {
 			add_political_power = 25
 			hidden_effect = {
-				DDR = { country_event = { id = DDR_unification.1 days = 10 } }
+				DDR = { country_event = { id = DDR_unification.1 hours = 480 } }
 			}
 		}
 

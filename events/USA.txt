@@ -190,7 +190,6 @@ country_event = {
 	picture = GFX_report_offer_to_join_the_anti_iraq_coalition
 
 	trigger = {
-		has_country_flag = anti_iraq_coalition
 		OR = {
 			tag = ENG
 			tag = FRA
@@ -230,7 +229,6 @@ country_event = {
 	picture = GFX_report_generic_negotiations_between_two_parties
 
 	trigger = {
-		has_country_flag = anti_iraq_coalition
 		OR = {
 			tag = ENG
 			tag = FRA
@@ -262,7 +260,6 @@ country_event = {
 	picture = GFX_report_generic_negotiations_between_two_parties
 
 	trigger = {
-		has_country_flag = anti_iraq_coalition
 		OR = {
 			tag = ENG
 			tag = FRA
@@ -293,16 +290,6 @@ country_event = {
 
 	trigger = {
 		has_country_flag = anti_iraq_coalition
-		OR = {
-			tag = ENG
-			tag = FRA
-			tag = EGY
-			tag = SAU
-			tag = KUW
-			tag = UAE
-			tag = OMA
-			tag = PAK
-		}
 		NOT = { has_war_with = IRQ }
 		USA = { has_completed_focus = USA_operation_desert_storm }
 	}

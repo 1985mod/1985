@@ -1,0 +1,53 @@
+USA_preparing_for_war_in_iraq = {
+    allowed = {
+        original_tag = USA
+        USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
+    }
+    enable = {
+        country_exists = IRQ
+        OR = {
+            country_exists = SAU
+            country_exists = KUW
+            country_exists = UAE
+        }
+        USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
+        has_country_leader = { character = USA_george_bush ruling_only = yes }
+    }
+    abort = {
+        USA = { has_completed_focus = USA_victory_in_iraq }
+        country_exists = KUW
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = IRQ
+        value = 1000
+    }
+}
+
+USA_troops_in_middle_east = {
+    allowed = {
+        original_tag = USA
+        USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
+    }
+    enable = {
+        country_exists = IRQ
+        OR = {
+            country_exists = SAU
+            country_exists = KUW
+            country_exists = UAE
+        }
+        USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
+        has_country_leader = { character = USA_george_bush ruling_only = yes }
+    }
+    abort = {
+        USA = { has_completed_focus = USA_victory_in_iraq }
+        country_exists = KUW
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = force_defend_ally_borders
+        id = SAU
+        value = 1000
+    }
+}
