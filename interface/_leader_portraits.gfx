@@ -794,4 +794,27 @@ spriteTypes = {
 		name = GFX_Portrait_rakhmon_nabiev
 		textureFile = "gfx/leaders/TAJ/Portrait_rakhmon_nabiev.dds"
 	}
+
+	spriteType = {
+		name = GFX_Portrait_rakhmon_nabiev
+		textureFile = "gfx/leaders/TAJ/Portrait_rakhmon_nabiev.dds"
+	}
+
+
+	### RUS ###
+
+	spriteType = {
+		name = GFX_Portrait_gennady_zyuganov
+		textureFile = "gfx/leaders/RUS/Portrait_gennady_zyuganov.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_valeriya_novodvorskaya
+		textureFile = "gfx/leaders/RUS/Portrait_valeriya_novodvorskaya.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_dmitry_vasilyev
+		textureFile = "gfx/leaders/RUS/Portrait_Dmitry_Vasilyev.dds"
+	}
 }

@@ -1,9 +1,9 @@
 characters = {
-	YUG_Milka_Planinc = {
-		name = YUG_Milka_Planinc
+	YUG_veselic_djuranovic = {
+		name = YUG_veselic_djuranovic
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/YUG/portrait_YUG_Milka_Planinc.dds"
+				large = "gfx/leaders/YUG/Portrait_YUG_veselic_djuranovic.dds"
 			}
 		}
 		country_leader = {
@@ -13,17 +13,73 @@ characters = {
 			id = -1
 		}
 	}
-	YUG_stipe_mesic = {
-		name = YUG_stipe_mesic
+	YUG_radovan_vlajkovic = {
+		name = YUG_radovan_vlajkovic
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/YUG/portrait_YUG_Stipe_Mesic.dds"
+				large = "gfx/leaders/YUG/Portrait_radovan_vlajkovic.dds"
 			}
 		}
 		country_leader = {
-			ideology = communist_perestroika
+			ideology = authoritarian_socialism
 			traits = { }
-			expire = "2000.3.1.1"
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}
+	YUG_sinan_hasani = {
+		name = YUG_sinan_hasani
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Portrait_sinan_hasani.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}
+	YUG_lazar_moysov = {
+		name = YUG_lazar_moysov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Portrait_lazar_moysov.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}
+	YUG_raif_dizdarevich = {
+		name = YUG_raif_dizdarevich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Portrait_raif_dizdarevich.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}
+	YUG_janez_drnovsek = {
+		name = YUG_janez_drnovsek
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Portrait_janez_drnovsek.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { }
+			expire = "1971.3.1.1"
 			id = -1
 		}
 	}

@@ -1,0 +1,39 @@
+add_namespace = yugoslav_countries
+
+country_event = {
+	id = yugoslav_countries.1 ##  перекат в фашизм  ##
+	title = yugoslav_countries.1.t
+	desc = yugoslav_countries.1.desc
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+        has_country_flag = yugoslav_country
+        has_government = communism
+    }
+
+	option = {
+		name = yugoslav_countries.1.a
+		ai_chance = {
+			base = 10
+		}		
+        if = {
+            limit = {
+                OR = {
+                    tag = SLV
+                    tag = CRO
+                    tag = MAC
+                    tag = BOS
+                }
+            }
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = yes
+            }
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.6
+            }
+        }
+        clr_country_flag = yugoslav_country
+	}
+}

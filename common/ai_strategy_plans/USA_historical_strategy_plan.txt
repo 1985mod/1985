@@ -1,0 +1,181 @@
+USA_historical_plan = {
+	name = "US historical plan"
+	desc = "Historical behavior for US"
+
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					not = { has_dlc = "Man the Guns" }
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DEFAULT
+					}
+				}
+			}
+			has_country_flag = USA_AI_DEMOCRATIC_HISTORICAL
+			has_country_flag = democratic_usa_won_civil_war
+			has_game_rule = {
+				rule = USA_ai_behavior
+				option = DEMOCRATIC_HISTORICAL
+			}
+		}
+	}
+	abort = {
+		OR = {
+			AND = {
+				has_game_rule = {
+					rule = USA_ai_behavior
+					option = DEFAULT
+				}
+				OR = {	
+					SOV = {
+						OR = {
+							has_country_leader = { character = SOV_grigory_romanov ruling_only = yes }
+							has_completed_focus = SOV_on_the_side_of_the_sec
+							has_completed_focus = SOV_i_think_ill_stay_in_moscow
+						}
+					}
+					has_war_with = CAN
+					has_war_with = MEX
+					JAP = {
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+				}
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		#1985
+		USA_reagans_second_presidency
+		USA_tough_confrontation_with_the_ussr
+		USA_intensify_the_arms_race
+		USA_us_army
+		USA_stop_the_rapid_growth_of_public_debt
+		USA_increase_in_production
+		USA_growth_of_technology_companies
+		USA_increase_spending_on_the_military_industrial_complex
+		#1986
+		USA_lessons_of_the_vietnam_war
+		USA_modernisation_army
+		USA_expand_military_bases
+		USA_dialogue_of_detente_with_the_soviet_union
+		USA_move_away_from_cold_war_politics
+		USA_meeting_with_gorbachev
+		USA_modernization_of_abrams_and_bradley
+		USA_more_tax_cuts
+		USA_the_first_mobile_phones
+		USA_second_reykjavik_summit
+		USA_reconsider_relations_with_the_soviet_union
+		USA_military_aid_to_the_mnr
+		#1987
+		USA_supporting_the_mujahideen_against_the_soviet_army
+		USA_military_aid_to_unita
+		USA_support_for_the_royalists_and_the_opposition_nf_for_the_lkpic
+		USA_voice_of_america
+		USA_war_on_drugs
+		USA_internet_development
+		USA_pc_standardization
+		USA_rehabilitate_usaid
+		USA_second_meeting_with_gorbachev
+		USA_election_campaign
+		#1988
+		USA_on_the_republican_side
+		USA_use_reagans_popularity_to_their_advantage
+		USA_support_of_traditional_values
+		USA_harsh_criticism_of_the_democrats
+		USA_dukakis_anti_advertising
+		USA_republican_victory
+		#1989
+		USA_george_bush_srs_inauguration
+		USA_formation_of_the_one_hundred_and_one_us_congress
+		USA_increase_investments_in_stocks
+		USA_refuse_to_support_repressive_regimes
+		USA_support_new_democracies_in_eastern_europe
+		USA_reorient_the_armed_forces
+		USA_start_the_fight_against_terrorism
+		#1990
+		USA_ensuring_us_hegemony_in_the_world
+		USA_malta_summit
+		USA_immigration_reform
+		USA_increase_influence_in_the_middle_east
+		USA_beginning_of_troop_deployment
+		USA_budget_conrol_act_of_1990
+		USA_limiting_expenses
+		USA_problems_with_kuwait
+		#1991
+		USA_form_an_anti_iraq_coalition
+		USA_operation_desert_storm
+		USA_massive_airstrikes_on_air_bases
+		USA_gain_air_superiority
+		USA_use_the_global_positioning_system
+		USA_cooperation_with_allied_forces
+		USA_limiting_expenses
+		USA_victory_in_iraq
+		USA_new_world_order
+		USA_focus_on_internal_problems
+		USA_fight_against_the_budget_deficit
+		USA_break_your_promise
+		USA_modernization_of_its_industry
+		USA_increase_funding_for_research
+		USA_address_to_the_nation_regarding_the_suspension_of_offensive_operations
+		USA_address_to_joint_session_of_congress
+		USA_reduction_of_military_contingent_in_saudi_arabia
+		USA_signing_of_the_start_it_reaty
+		#1992
+		USA_speech_in_kyiv
+		USA_reduction_of_nuclear_stockpiles
+		USA_confirm_clarence_thomac_as_assistant
+		USA_civil_rights_act_of_1991
+		USA_meeting_with_boris_yeltsin
+		USA_help_the_ussr
+		#elections
+		USA_1992_election_campaign
+		USA_for_bill_clinton
+		USA_its_the_economy_stupid
+		USA_promise_economic_reforms
+		USA_the_position_of_the_centrist_political_philosophy_third_way
+		USA_1992_elections_day
+	}
+
+	focus_factors = {
+		USA_suspend_the_presecution = 0 # well done, not medium rare
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		war_industrialist = 5
+		financial_expert = 10
+		silent_workhorse = 25
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ENG"			
+		value = 200
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

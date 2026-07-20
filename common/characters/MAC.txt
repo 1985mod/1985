@@ -1,0 +1,16 @@
+characters = {
+    MAC_nikola_kljusev = {
+		name = MAC_nikola_kljusev
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MAC/Portrait_nikola_kljusev.dds"
+			}
+		}
+		country_leader = {
+			ideology = civil_nationalism
+			traits = { }
+			expire = "2000.3.1.1"
+			id = -1
+		}
+	}
+}

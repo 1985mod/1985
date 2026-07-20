@@ -219,6 +219,53 @@ spriteTypes = {
 		name = "GFX_news_event_nuke"
 		texturefile = "gfx/event_pictures/news_event_nuke.dds"
 	}
+
+	spriteType = {
+		name = "GFX_news_tiananmen_square_protests"
+		texturefile = "gfx/event_pictures/news_tiananmen_square_protests.dds"
+	}
+
+	### USA ###
+
+	spriteType = {
+		name = "GFX_report_republican_victory"
+		texturefile = "gfx/event_pictures/report_republican_victory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_democrats_victory"
+		texturefile = "gfx/event_pictures/report_democrats_victory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_gorbachevs_proposal"
+		texturefile = "gfx/event_pictures/report_gorbachevs_proposal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_aid_from_the_usa"
+		texturefile = "gfx/event_pictures/report_aid_from_the_usa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_generic_negotiations_between_two_parties"
+		texturefile = "gfx/event_pictures/report_generic_negotiations_between_two_parties.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_offer_to_join_the_anti_iraq_coalition"
+		texturefile = "gfx/event_pictures/report_offer_to_join_the_anti_iraq_coalition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_malta_summit"
+		texturefile = "gfx/event_pictures/report_malta_summit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_democrats_victory_1992"
+		texturefile = "gfx/event_pictures/report_democrats_victory_1992.dds"
+	}
 }
 
 

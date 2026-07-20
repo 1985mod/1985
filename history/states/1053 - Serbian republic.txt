@@ -9,8 +9,13 @@ state={
 			infrastructure = 2
 		}
 		victory_points = {
-			6983 3
+			9588 3
 		}
+
+		victory_points = {
+			11574 2
+		}
+
 		add_core_of = BOS
 		add_core_of = SER
 		add_core_of = YUG

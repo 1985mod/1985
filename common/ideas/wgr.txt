@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		WGR_divided_nation = {
-			picture = GFX_unknown
+			picture = divided_nation
 			
 			allowed = {
                 OR = {
@@ -23,7 +23,7 @@ ideas = {
 			}
 		}
 		WGR_nato_front_line = {
-			picture = GFX_unknown
+			picture = nato_front_line
 			
 			allowed = {
                 OR = {

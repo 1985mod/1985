@@ -40,6 +40,8 @@ if = {
 
 set_convoys = 5
 
+recruit_character = CRO_franjo_tudman
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1985.1.1"

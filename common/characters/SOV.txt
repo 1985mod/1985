@@ -104,7 +104,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = ethnic_nationalism
+			ideology = extreme_nationalism
 			traits = {}
 			expire = "2022.08.30.1"
 			id = -1
@@ -252,11 +252,10 @@ characters = {
 		name = "SOV_vladimir_arkhipov"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
-				small = "GFX_idea_portrait_sov_Yazov"
+				large = "gfx/leaders/SOV/Portrait_vladimir_arkhipov.dds"
 			}
 			army = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_vladimir_arkhipov.dds"
 			}
 		}	
 		corps_commander={
@@ -296,11 +295,10 @@ characters = {
 		name = "SOV_ivan_voloshin"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
-				small = "GFX_idea_portrait_sov_Yazov"
+				large = "gfx/leaders/SOV/Portrait_ivan_voloshin.dds"
 			}
 			army = {
-				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
+				large = "gfx/leaders/SOV/Portrait_ivan_voloshin.dds"
 			}
 		}	
 		field_marshal={
@@ -417,6 +415,87 @@ characters = {
 			attack_skill=2
 			defense_skill=2
 			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	SOV_boris_gromov = {
+		name = "SOV_boris_gromov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Portrait_Boris_Gromov.dds"
+			}
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Boris_Gromov.dds"
+			}
+		}	
+		corps_commander={
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	SOV_victor_ermakov = {
+		name = "SOV_victor_ermakov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Portrait_Victor_Ermakov.dds"
+			}
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Victor_Ermakov.dds"
+			}
+		}	
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	SOV_igor_rodionov = {
+		name = "SOV_igor_rodionov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Portrait_Igor_Rodionov.dds"
+			}
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Igor_Rodionov.dds"
+			}
+		}	
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	SOV_boris_tkach = {
+		name = "SOV_boris_tkach"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Portrait_Boris_Tkach.dds"
+			}
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Boris_Tkach.dds"
+			}
+		}	
+		corps_commander={
+			traits={ army_cavalry_3 }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
 			logistics_skill=2
 			legacy_id=-1
 		}

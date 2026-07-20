@@ -558,11 +558,11 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
-		localization_key = FRLOC_NEW_SPR_POR_anarchism_neutrality_INHAB
+		localization_key = FRLOC_NEW_SPR_POR_chinese_socialism_neutrality_INHAB
 	}
 
 ##### Cosmetic Tag (1) + Sub-Ideology	320 #####
@@ -8934,9 +8934,9 @@ defined_text = {
 		trigger = {
 			original_tag = BRA
 			has_government = communism
-			has_country_leader_ideology = anarchist_communism
+			has_country_leader_ideology = chinese_socialism
 		}
-		localization_key = FRLOC_NEW_BRA_anarchist_communism_INHAB
+		localization_key = FRLOC_NEW_BRA_chinese_socialism_INHAB
 	}
 	text = {
 		trigger = {
@@ -9021,11 +9021,7 @@ defined_text = {
 				OR = {
 					AND = {
 						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = AUS
@@ -19956,11 +19952,11 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
-		localization_key = FRLOC_NEW_SPR_POR_anarchism_neutrality_ADJ_FS
+		localization_key = FRLOC_NEW_SPR_POR_chinese_socialism_neutrality_ADJ_FS
 	}
 
 ##### Cosmetic Tag (1) + Sub-Ideology	320 #####
@@ -28290,9 +28286,9 @@ defined_text = {
 		trigger = {
 			original_tag = BRA
 			has_government = communism
-			has_country_leader_ideology = anarchist_communism
+			has_country_leader_ideology = chinese_socialism
 		}
-		localization_key = FRLOC_NEW_BRA_anarchist_communism_ADJ_FS
+		localization_key = FRLOC_NEW_BRA_chinese_socialism_ADJ_FS
 	}
 	text = {
 		trigger = {
@@ -28377,11 +28373,7 @@ defined_text = {
 				OR = {
 					AND = {
 						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = AUS
@@ -39277,11 +39269,11 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
-		localization_key = FRLOC_NEW_SPR_POR_anarchism_neutrality_ADJ_FP
+		localization_key = FRLOC_NEW_SPR_POR_chinese_socialism_neutrality_ADJ_FP
 	}
 
 ##### Cosmetic Tag (1) + Sub-Ideology	320 #####
@@ -47611,9 +47603,9 @@ defined_text = {
 		trigger = {
 			original_tag = BRA
 			has_government = communism
-			has_country_leader_ideology = anarchist_communism
+			has_country_leader_ideology = chinese_socialism
 		}
-		localization_key = FRLOC_NEW_BRA_anarchist_communism_ADJ_FP
+		localization_key = FRLOC_NEW_BRA_chinese_socialism_ADJ_FP
 	}
 	text = {
 		trigger = {
@@ -47696,14 +47688,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = AUS
 						is_subject = yes
@@ -58598,11 +58582,11 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
-		localization_key = FRLOC_NEW_SPR_POR_anarchism_neutrality_ADJ_MS
+		localization_key = FRLOC_NEW_SPR_POR_chinese_socialism_neutrality_ADJ_MS
 	}
 
 ##### Cosmetic Tag (1) + Sub-Ideology	320 #####
@@ -66919,9 +66903,9 @@ defined_text = {
 		trigger = {
 			original_tag = BRA
 			has_government = communism
-			has_country_leader_ideology = anarchist_communism
+			has_country_leader_ideology = chinese_socialism
 		}
-		localization_key = FRLOC_NEW_BRA_anarchist_communism_ADJ_MS
+		localization_key = FRLOC_NEW_BRA_chinese_socialism_ADJ_MS
 	}
 	text = {
 		trigger = {
@@ -67004,14 +66988,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = AUS
 						is_subject = yes
@@ -77901,11 +77877,11 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
-		localization_key = FRLOC_NEW_SPR_POR_anarchism_neutrality_ADJ_MP
+		localization_key = FRLOC_NEW_SPR_POR_chinese_socialism_neutrality_ADJ_MP
 	}
 
 ##### Cosmetic Tag (1) + Sub-Ideology	320 #####
@@ -86214,9 +86190,9 @@ defined_text = {
 		trigger = {
 			original_tag = BRA
 			has_government = communism
-			has_country_leader_ideology = anarchist_communism
+			has_country_leader_ideology = chinese_socialism
 		}
-		localization_key = FRLOC_NEW_BRA_anarchist_communism_ADJ_MP
+		localization_key = FRLOC_NEW_BRA_chinese_socialism_ADJ_MP
 	}
 	text = {
 		trigger = {
@@ -86299,14 +86275,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = AUS
 						is_subject = yes
@@ -97062,9 +97030,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -102672,7 +102640,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -102766,19 +102734,7 @@ defined_text = {
 		trigger = {
 				OR = {
 					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
-					AND = {
 						original_tag = ALB
-						is_subject = yes
-				}
-					AND = {
-						original_tag = AOI
 						is_subject = yes
 				}
 					AND = {
@@ -109197,9 +109153,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -114808,7 +114764,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -114901,14 +114857,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -121333,9 +121281,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -126943,7 +126891,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -127036,14 +126984,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -133469,9 +133409,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -139079,7 +139019,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -139172,14 +139112,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -145642,9 +145574,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ALA
 	}
@@ -151353,7 +151285,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -151561,14 +151493,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = BEL
 						is_subject = yes
@@ -157983,9 +157907,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ALA_CAP
 	}
@@ -163694,7 +163618,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -163902,14 +163826,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = BEL
 						is_subject = yes
@@ -170331,9 +170247,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_DANSLA
 	}
@@ -176180,7 +176096,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -176294,7 +176210,7 @@ defined_text = {
 				OR = {
 					AND = {
 						original_tag = AUS
-						has_country_leader_ideology = stalinism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = BEL
@@ -176409,10 +176325,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
 					AND = {
 						original_tag = IRQ
 						is_subject = yes
@@ -182827,9 +182739,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_DANSLA_CAP
 	}
@@ -188675,7 +188587,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -188789,7 +188701,7 @@ defined_text = {
 				OR = {
 					AND = {
 						original_tag = AUS
-						has_country_leader_ideology = stalinism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = BEL
@@ -188904,10 +188816,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
 					AND = {
 						original_tag = IRQ
 						is_subject = yes
@@ -195312,9 +195220,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ALAQUELLE
 	}
@@ -200975,7 +200883,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -201124,14 +201032,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -207576,9 +207476,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ALAQUELLE_CAP
 	}
@@ -213239,7 +213139,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -213388,14 +213288,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -219833,9 +219725,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_CELLE
 	}
@@ -225569,7 +225461,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -225603,14 +225495,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -232097,9 +231981,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_CELLE_CAP
 	}
@@ -237834,7 +237718,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -237868,14 +237752,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -244335,9 +244211,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -249945,7 +249821,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -250038,14 +249914,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -256471,9 +256339,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -262081,7 +261949,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -262174,14 +262042,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -268633,9 +268493,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_DELLE
 	}
@@ -274377,7 +274237,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -274403,14 +274263,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -280898,9 +280750,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_DELLE_CAP
 	}
@@ -286642,7 +286494,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -286668,14 +286520,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -293135,9 +292979,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -298746,7 +298590,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -298839,14 +298683,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -305314,9 +305150,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_DELA
 	}
@@ -311166,7 +311002,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -311199,10 +311035,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
 					AND = {
 						original_tag = LBV
 						is_subject = yes
@@ -311275,7 +311107,7 @@ defined_text = {
 				OR = {
 					AND = {
 						original_tag = AUS
-						has_country_leader_ideology = stalinism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = BEL
@@ -317748,9 +317580,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_DELA_CAP
 	}
@@ -323600,7 +323432,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -323633,10 +323465,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
 					AND = {
 						original_tag = LBV
 						is_subject = yes
@@ -323709,7 +323537,7 @@ defined_text = {
 				OR = {
 					AND = {
 						original_tag = AUS
-						has_country_leader_ideology = stalinism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = BEL
@@ -330175,9 +330003,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_DELA
 	}
@@ -335977,7 +335805,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -336062,14 +335890,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = BEL
 						is_subject = yes
@@ -342543,9 +342363,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_DELA_CAP
 	}
@@ -348345,7 +348165,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -348430,14 +348250,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = BEL
 						is_subject = yes
@@ -354893,9 +354705,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_DELA
 	}
@@ -360632,7 +360444,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -360658,14 +360470,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -367131,9 +366935,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_DELA_CAP
 	}
@@ -372869,7 +372673,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -372895,14 +372699,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -379384,9 +379180,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ELLE
 	}
@@ -385047,7 +384843,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -385181,14 +384977,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -391613,9 +391401,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -397223,7 +397011,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -397316,14 +397104,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -403784,9 +403564,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ELLE
 	}
@@ -409447,7 +409227,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -409581,14 +409361,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -416048,9 +415820,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ERE
 	}
@@ -421711,7 +421483,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -421845,14 +421617,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -428278,9 +428042,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -433888,7 +433652,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -433981,14 +433745,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -440413,9 +440169,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -446024,7 +445780,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -446117,14 +445873,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -452549,9 +452297,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -458159,7 +457907,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -458252,14 +458000,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -464685,9 +464425,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -470295,7 +470035,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -470388,14 +470128,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -476847,9 +476579,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ELLE
 	}
@@ -482583,7 +482315,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -482617,14 +482349,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -489112,9 +488836,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ELLE_CAP
 	}
@@ -494848,7 +494572,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -494882,14 +494606,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -501369,9 +501085,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_LA
 	}
@@ -507091,7 +506807,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -507134,14 +506850,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -513607,9 +513315,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_LA_CAP
 	}
@@ -519328,7 +519036,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -519371,14 +519079,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -525855,9 +525555,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_LA
 	}
@@ -531634,7 +531334,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -531736,14 +531436,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = BEL
 						is_subject = yes
@@ -538195,9 +537887,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_LA_CAP
 	}
@@ -543974,7 +543666,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -544076,14 +543768,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = BEL
 						is_subject = yes
@@ -550506,9 +550190,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -556116,7 +555800,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -556209,14 +555893,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -562641,9 +562317,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -568252,7 +567928,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -568345,14 +568021,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -574804,9 +574472,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ELLE
 	}
@@ -580548,7 +580216,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -580574,14 +580242,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -587069,9 +586729,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_ELLE_CAP
 	}
@@ -592813,7 +592473,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -592839,14 +592499,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -599306,9 +598958,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -604933,7 +604585,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -605024,14 +604676,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -611442,9 +611086,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -617069,7 +616713,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -617160,14 +616804,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -623577,9 +623213,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -629187,7 +628823,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -629280,14 +628916,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -635713,9 +635341,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -641323,7 +640951,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -641416,14 +641044,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -647875,9 +647495,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_QUELLE
 	}
@@ -653619,7 +653239,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -653645,14 +653265,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -660140,9 +659752,9 @@ defined_text = {
 ##### Cosmetic Tag (1) + Ideology + Sub-Ideology	330 #####
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_QUELLE_CAP
 	}
@@ -665884,7 +665496,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -665910,14 +665522,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -672377,9 +671981,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -678005,7 +677609,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -678096,14 +677700,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -684513,9 +684109,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -690140,7 +689736,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -690231,14 +689827,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -696649,9 +696237,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -702276,7 +701864,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -702367,14 +701955,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -708784,9 +708364,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -714411,7 +713991,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -714502,14 +714082,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -720920,9 +720492,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -726530,7 +726102,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -726623,14 +726195,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -733055,9 +732619,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -738665,7 +738229,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -738758,14 +738322,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -745226,9 +744782,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_SIELLE
 	}
@@ -750889,7 +750445,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -751023,14 +750579,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -757490,9 +757038,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_SIELLE_CAP
 	}
@@ -763153,7 +762701,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -763287,14 +762835,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -769720,9 +769260,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -775347,7 +774887,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -775438,14 +774978,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -781855,9 +781387,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -787483,7 +787015,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -787574,14 +787106,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -793991,9 +793515,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -799618,7 +799142,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -799709,14 +799233,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -806127,9 +805643,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -811754,7 +811270,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -811845,14 +811361,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -818262,9 +817770,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -823889,7 +823397,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -823980,14 +823488,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -830398,9 +829898,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -836025,7 +835525,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -836116,14 +835616,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -842533,9 +842025,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -848160,7 +847652,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -848251,14 +847743,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -854669,9 +854153,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -860279,7 +859763,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -860372,14 +859856,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -866804,9 +866280,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -872414,7 +871890,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -872507,14 +871983,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -878968,9 +878436,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_UNE
 	}
@@ -884641,7 +884109,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -884774,14 +884242,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -891205,9 +890665,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_UNE_CAP
 	}
@@ -896878,7 +896338,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -897011,14 +896471,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -903450,9 +902902,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_cosmetic_tag = SPR_POR_anarchism
+			has_cosmetic_tag = SPR_POR_chinese_socialism
 			has_government = neutrality
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = chinese_socialism
 		}
 		localization_key = FRLOC_E
 	}
@@ -909113,7 +908565,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -909247,14 +908699,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -915679,9 +915123,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -921290,7 +920734,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -921383,14 +920827,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes
@@ -927815,9 +927251,9 @@ defined_text = {
 						is_subject = yes
 				}
 					AND = {
-						has_cosmetic_tag = SPR_POR_anarchism
+						has_cosmetic_tag = SPR_POR_chinese_socialism
 						has_government = neutrality
-						has_country_leader_ideology = anarchism
+						has_country_leader_ideology = chinese_socialism
 				}
 			}
 		}
@@ -933425,7 +932861,7 @@ defined_text = {
 					AND = {
 						original_tag = BRA
 						has_government = communism
-						has_country_leader_ideology = anarchist_communism
+						has_country_leader_ideology = chinese_socialism
 				}
 					AND = {
 						original_tag = ENG
@@ -933518,14 +932954,6 @@ defined_text = {
 	text = {
 		trigger = {
 				OR = {
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = nazism
-				}
-					AND = {
-						original_tag = AUS
-						has_country_leader_ideology = stalinism
-				}
 					AND = {
 						original_tag = ALB
 						is_subject = yes

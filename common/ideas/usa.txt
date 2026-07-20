@@ -276,5 +276,44 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
+		USA_healthcare_reform = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				stability_weekly = 0.001
+				stability_factor = 0.1
+				army_speed_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+		USA_increase_in_federal_grants = {
+			picture = idea_ 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.3
+				political_power_factor = -0.1
+				stability_weekly = -0.002
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
 	}
 }

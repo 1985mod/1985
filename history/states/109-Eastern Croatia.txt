@@ -18,7 +18,13 @@ state={
 			arms_factory = 1			
 		}
 		victory_points = {
-			13491 10
+			13491 15
+		}
+		victory_points = {
+			13487 2
+		}
+		victory_points = {
+			13485 1
 		}
 		add_core_of = YUG
 		add_core_of = CRO

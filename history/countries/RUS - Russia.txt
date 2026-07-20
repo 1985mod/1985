@@ -42,6 +42,8 @@ set_convoys = 50
 
 recruit_character = RUS_boris_yeltsin
 recruit_character = RUS_mikhail_gorbachev
-recruit_character = RUS_zhirinovsk
-
+recruit_character = RUS_vladimir_zhirinovsky
+recruit_character = RUS_gennady_zyuganov
+recruit_character = RUS_valeriya_novodvorskaya
+recruit_character = RUS_dmitry_vasilyev
 

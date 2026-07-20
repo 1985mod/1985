@@ -12,7 +12,7 @@ state = {
 		add_core_of = BOS
 
 		victory_points = {
-			6614 5 # Mongu
+			6614 5
 		}
 
 		buildings = {

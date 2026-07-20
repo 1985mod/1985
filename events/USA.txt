@@ -4,7 +4,7 @@ country_event = {
 	id = usa.1
 	title = usa.1.t
 	desc = usa.1.desc
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_republican_victory
 	
 	fire_only_once = yes
 	
@@ -50,7 +50,7 @@ country_event = {
 	id = usa.2
 	title = usa.2.t
 	desc = usa.2.desc
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_democrats_victory
 	
 	fire_only_once = yes
 	
@@ -96,7 +96,7 @@ country_event = {
    id = usa.3
    title = usa.3.t
    desc = usa.3.d
-   picture = GFX_report_dead_chernenko
+   picture = GFX_report_gorbachevs_proposal
 
    fire_only_once = yes
 
@@ -119,7 +119,7 @@ country_event = {
 	id = usa.4
 	title = usa.4.t
 	desc = usa.4.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_aid_from_the_usa
 
 	is_triggered_only = yes
 
@@ -144,7 +144,7 @@ country_event = {
 	id = usa.5
 	title = usa.5.t
 	desc = usa.5.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 
@@ -155,7 +155,7 @@ country_event = {
 		}		
         send_equipment = {
            equipment = infantry_equipment
-           amount = 3500
+           amount = 2000
            target = FROM
 		}
 		FROM = {
@@ -171,7 +171,7 @@ country_event = {
 	id = usa.6
 	title = usa.6.t
 	desc = usa.6.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 
@@ -187,9 +187,23 @@ country_event = {
 	id = usa.7
 	title = usa.7.t
 	desc = usa.7.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_offer_to_join_the_anti_iraq_coalition
 
-	is_triggered_only = yes
+	trigger = {
+		has_country_flag = anti_iraq_coalition
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+			tag = PAK
+		}
+		NOT = { has_war_with = IRQ }
+		USA = { has_completed_focus = USA_form_an_anti_iraq_coalition }
+	}
 
 	option = {
 		name = usa.7.a
@@ -213,9 +227,23 @@ country_event = {
 	id = usa.8
 	title = usa.8.t
 	desc = usa.8.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
-	is_triggered_only = yes
+	trigger = {
+		has_country_flag = anti_iraq_coalition
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+			tag = PAK
+		}
+		NOT = { has_war_with = IRQ }
+		USA = { has_completed_focus = USA_form_an_anti_iraq_coalition }
+	}
 
 	option = {
 		name = usa.8.a
@@ -231,9 +259,23 @@ country_event = {
 	id = usa.9
 	title = usa.9.t
 	desc = usa.9.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
-	is_triggered_only = yes
+	trigger = {
+		has_country_flag = anti_iraq_coalition
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+			tag = PAK
+		}
+		NOT = { has_war_with = IRQ }
+		USA = { has_completed_focus = USA_form_an_anti_iraq_coalition }
+	}
 
 	option = {
 		name = usa.9.a
@@ -247,13 +289,22 @@ country_event = {
 	id = usa.10
 	title = usa.10.t
 	desc = usa.10.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_offer_to_join_the_anti_iraq_coalition
 
 	trigger = {
-		ROOT = { has_country_flag = anti_iraq_coalition }
+		has_country_flag = anti_iraq_coalition
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+			tag = PAK
+		}
+		NOT = { has_war_with = IRQ }
 		USA = { has_completed_focus = USA_operation_desert_storm }
-		NOT = { has_global_flag = desert_storm_triggered }
-		date < 1991.2.1
 	}
 
 	option = {
@@ -274,7 +325,7 @@ country_event = {
 	id = usa.11
 	title = usa.11.t
 	desc = usa.11.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_malta_summit
 
 	is_triggered_only = yes
 
@@ -291,7 +342,7 @@ country_event = {
 	id = usa.12
 	title = usa.12.t
 	desc = usa.12.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	trigger = {
 		tag = usa
@@ -315,7 +366,7 @@ country_event = {
 	id = usa.13 ### Победа Билла Клинтона ###
 	title = usa.13.t
 	desc = usa.13.desc
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_democrats_victory_1992
 	
 	fire_only_once = yes
 	

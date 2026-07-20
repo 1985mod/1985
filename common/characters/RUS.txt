@@ -1,6 +1,6 @@
 characters = {
 	RUS_boris_yeltsin = {
-		name = boris_yeltsin
+		name = RUS_boris_yeltsin
 		portraits = {
 			civilian = {
 				large = GFX_portrait_SOV_boris_yeltsin
@@ -18,8 +18,50 @@ characters = {
 		}
 	}
 
+	RUS_gennady_zyuganov = {
+		name = RUS_gennady_zyuganov
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_gennady_zyuganov
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "2026.04.23.1"
+			id = -1
+		}
+	}
+
+	RUS_valeriya_novodvorskaya = {
+		name = RUS_valeriya_novodvorskaya
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_valeriya_novodvorskaya
+			}
+		}
+		country_leader = {
+			ideology = classic_liberalism
+			expire = "2014.04.23.1"
+			id = -1
+		}
+	}
+
+	RUS_dmitry_vasilyev = {
+		name = RUS_dmitry_vasilyev
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_dmitry_vasilyev
+			}
+		}
+		country_leader = {
+			ideology = extreme_nationalism
+			expire = "2026.04.23.1"
+			id = -1
+		}
+	}
+
 	RUS_mikhail_gorbachev = {
-		name = mikhail_gorbachev
+		name = RUS_mikhail_gorbachev
 		portraits = {
 			civilian = {
 				large = GFX_portrait_SOV_mikhail_gorbachev
@@ -37,8 +79,8 @@ characters = {
 		}
 	}
 
-	RUS_zhirinovsky = {
-		name = vladimer_zhirinovsky
+	RUS_vladimir_zhirinovsky = {
+		name = RUS_vladimir_zhirinovsky
 		portraits = {
 			civilian = {
 				large = GFX_Portrait_Zhirinovsky

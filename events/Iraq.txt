@@ -48,6 +48,34 @@ country_event = {   ### Ирак вторгается в Кувейт ###
            target = KUW
            type = annex_everything
         }
+        SAU = {
+            diplomatic_relation = {
+                country = KUW
+                relation = guarantee
+                active = no
+            }
+        }
+        QAT = {
+            diplomatic_relation = {
+                country = KUW
+                relation = guarantee
+                active = no
+            }
+        }
+        UAE = {
+            diplomatic_relation = {
+                country = KUW
+                relation = guarantee
+                active = no
+            }
+        }
+        OMA = {
+            diplomatic_relation = {
+                country = KUW
+                relation = guarantee
+                active = no
+            }
+        }
     }
 
     option = {

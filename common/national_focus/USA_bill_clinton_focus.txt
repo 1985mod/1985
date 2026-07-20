@@ -35,7 +35,11 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}
+            add_political_power = 50
 	    }
 	}
 
@@ -49,7 +53,10 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-
+            add_timed_idea = {
+                idea = USA_increase_in_federal_grants
+                days = 365
+            }
 	    }
 	}
 
@@ -77,7 +84,7 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-
+            add_ideas = USA_healthcare_reform
 	    }
 	}
 
@@ -106,7 +113,30 @@ focus_tree = {
         cost = 6
 		
         completion_reward = {
-
+			ROOT = {
+				add_opinion_modifier = {
+					target = ISR
+					modifier = medium_increase
+				}
+			}
+			ISR = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = PAL
+					modifier = medium_increase
+				}
+			}
+			PAL = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
 	    }
 	}
 
@@ -124,7 +154,30 @@ focus_tree = {
         }
 		
         completion_reward = {
-
+			ROOT = {
+				add_opinion_modifier = {
+					target = ISR
+					modifier = small_decrease
+				}
+			}
+			ISR = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_decrease
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = PAL
+					modifier = medium_increase
+				}
+			}
+			PAL = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
 	    }
 	}
 
@@ -139,10 +192,61 @@ focus_tree = {
         cost = 10
 
         available = {
-            has_completed_focus = USA_act_as_a_mediator_in_the_israeli_palestinian_conflict
+            country_exists = UKR
+            country_exists = BLR
+            country_exists = MOL
+            country_exists = RUS
         }
 		
         completion_reward = {
-
+			ROOT = {
+				add_opinion_modifier = {
+					target = RUS
+					modifier = medium_increase
+				}
+			}
+			RUS = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = UKR
+					modifier = medium_increase
+				}
+			}
+			UKR = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = BLR
+					modifier = medium_increase
+				}
+			}
+			BLR = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = MOL
+					modifier = medium_increase
+				}
+			}
+			MOL = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
 	    }
 	}
+}

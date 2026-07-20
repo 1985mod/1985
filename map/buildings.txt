@@ -28640,7 +28640,6 @@
 828;arms_factory;3502.00;11.03;1382.00;0.91;0
 828;arms_factory;3496.00;10.60;1390.00;5.03;0
 828;arms_factory;3499.00;10.50;1390.00;1.42;0
-828;industrial_complex;3506.00;10.57;1390.00;1.93;0
 828;industrial_complex;3501.00;10.68;1387.00;6.15;0
 828;air_base;3504.00;10.10;1392.00;3.99;0
 828;supply_node;3502.00;11.03;1382.00;2.85;0
@@ -43711,7 +43710,6 @@
 232;special_project_facility_spawn;3556.00;10.40;1363.00;4.62;0
 232;special_project_facility_spawn;3543.00;10.62;1396.00;5.83;0
 232;special_project_facility_spawn;3550.00;13.43;1364.00;2.56;0
-232;special_project_facility_spawn;3531.00;9.95;1395.00;1.61;0
 232;special_project_facility_spawn;3547.00;11.32;1373.00;4.28;0
 232;special_project_facility_spawn;3539.00;11.18;1393.00;1.01;0
 232;special_project_facility_spawn;3534.00;17.12;1362.00;5.13;0
@@ -64712,7 +64710,6 @@
 94;industrial_complex;3202.00;10.25;1556.00;1.82;0
 94;industrial_complex;3229.00;9.80;1567.00;2.63;0
 232;arms_factory;3525.00;10.53;1399.00;2.32;0
-232;supply_node;3522.00;11.05;1396.00;1.98;0
 232;supply_node;3525.00;16.55;1366.00;0.96;0
 232;supply_node;3532.00;11.43;1377.00;6.24;0
 232;bunker;3528.00;13.53;1370.00;0.65;0
@@ -66520,3 +66517,6 @@
 915;arms_factory;3390.00;11.10;916.00;3.59;0
 915;industrial_complex;3415.00;9.98;920.00;5.09;0
 915;fuel_silo;3385.00;12.48;908.00;3.96;0
+232;supply_node;3521.00;11.15;1398.00;6.09;0
+232;special_project_facility_spawn;3523.00;10.90;1404.00;6.14;0
+828;industrial_complex;3494.00;15.60;1375.00;4.10;0

@@ -113,5 +113,24 @@ ideas = {
 				army_morale_factor = 0.05
             }
 		}
+		DDR_showcase_of_socialism = {
+			picture = showcase_of_socialism 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				communism_drift = 0.03
+				socialism_drift = 0.03
+            }
+		}
     }
 }

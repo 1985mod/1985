@@ -46,12 +46,21 @@ news_event = {
 
     major = yes
 
-    option = {
-        name = SOV_dead_cernenko.1.a
-        hidden_effect = {
-            add_stability = -0.3
-        }
-    }
+	option = {
+		name = news.2.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.2.a
+		trigger = { TAG = SOV }
+		add_stability = -0.15
+		add_war_support = -0.05
+		add_political_power = -50
+	}
 }
 
 news_event = {
@@ -424,6 +433,11 @@ news_event = {
 
 	option = {
 		name = news.19.a
+		trigger = {
+			NOT = {
+				TAG = USA
+			}
+		}
 	}
 	option = {
 		name = news.19.b
@@ -451,10 +465,45 @@ news_event = {
 
 	option = {
 		name = news.20.a
+		trigger = {
+			NOT = {
+				TAG = SWE
+			}
+		}
 	}
 	option = {
 		name = news.20.b
 		trigger = { TAG = SWE }
 		SWE = { kill_country_leader = yes }
+	}
+}
+
+news_event = {
+	id = news.21 ## Инцидент на площади тяньаньмень ##
+	title = news.21.t
+	desc = news.21.desc
+	picture = GFX_news_tiananmen_square_protests
+    
+	is_triggered_only = yes
+
+    major = yes
+	
+	immediate = {
+		set_global_flag = tiananmen_square_protests
+	}
+
+	option = {
+		name = news.21.a
+		trigger = {
+			NOT = {
+				TAG = PRC
+			}
+		}
+	}
+	option = {
+		name = news.21.b
+		trigger = { TAG = PRC }
+		add_stability = -0.1
+		add_war_support = -0.05
 	}
 }

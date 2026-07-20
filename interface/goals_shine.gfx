@@ -13083,11 +13083,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_spr_anarchism_knows_no_borders_shine"
-		texturefile = "gfx/interface/goals/focus_spr_anarchism_knows_no_borders.dds"
+		name = "GFX_focus_spr_chinese_socialism_knows_no_borders_shine"
+		texturefile = "gfx/interface/goals/focus_spr_chinese_socialism_knows_no_borders.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_spr_anarchism_knows_no_borders.dds"
+			animationmaskfile = "gfx/interface/goals/focus_spr_chinese_socialism_knows_no_borders.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -13100,7 +13100,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_spr_anarchism_knows_no_borders.dds"
+			animationmaskfile = "gfx/interface/goals/focus_spr_chinese_socialism_knows_no_borders.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -90020,11 +90020,11 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_PRC_embrace_stalinism_shine"
-		texturefile = "gfx/interface/goals/focus_PRC_embrace_stalinism.dds"
+		name = "GFX_focus_PRC_embrace_chinese_socialism_shine"
+		texturefile = "gfx/interface/goals/focus_PRC_embrace_chinese_socialism.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_PRC_embrace_stalinism.dds"
+			animationmaskfile = "gfx/interface/goals/focus_PRC_embrace_chinese_socialism.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -90036,7 +90036,7 @@ spriteTypes = {
 			animationtexturescale = { x = 2.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_PRC_embrace_stalinism.dds"
+			animationmaskfile = "gfx/interface/goals/focus_PRC_embrace_chinese_socialism.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -98404,11 +98404,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_icon_SOV_course_towards_stability"
-		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_course_towards_stability.dds"
+		name = "GFX_focus_icon_SOV_elections_to_the_supreme_council"
+		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_elections_to_the_supreme_council.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SOV/focus_icon_SOV_course_towards_stability.dds"
+			animationmaskfile = "gfx/interface/goals/focus_icon_SOV_elections_to_the_supreme_council.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -98420,7 +98420,7 @@ spriteTypes = {
 			animationtexturescale = { x = 2.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SOV/focus_icon_SOV_course_towards_stability.dds"
+			animationmaskfile = "gfx/interface/goals/SOV/focus_icon_SOV_elections_to_the_supreme_council.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
