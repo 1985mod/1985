@@ -1,4 +1,4 @@
-version="1.120"
+version="1.3.0"
 tags={
 	"Alternative History"
 	"Historical"

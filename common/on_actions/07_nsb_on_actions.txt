@@ -1820,113 +1820,6 @@ on_actions = {
 		}
 	}
 
-	on_daily_SOV = {
-		effect = {
-			if = {
-				limit = {
-					has_country_flag = { flag = SOV_last_purge_flag days > 15 }
-				}
-				add_to_variable = { SOV_paranoia_weekly_bucket = SOV_paranoia }
-				#log = "Added [?SOV_paranoia] Paranoia. Weekly BUCKET = [?SOV_paranoia_weekly_bucket]" #Debug 
-
-				if = { #MEDIUM PARANOIA LEVEL
-					limit = {
-						SOV_paranoia_is_medium_level = yes
-					}
-					add_to_variable = { SOV_medium_paranoia_days = 1 } #Used to randomize having a Great or a Regular purge (so that every day kinda counts)
-				}
-				else_if = { #HIGH PARANOIA LEVEL
-					limit = {
-						SOV_paranoia_is_high_level = yes
-					}
-					add_to_variable = { SOV_high_paranoia_days = 1 } #Used to randomize having a Great or a Regular purge (so that every day kinda counts)
-				}
-				#log = "Medium Paranoia days = [?SOV_medium_paranoia_days] // High Paranoia days = [?SOV_high_paranoia_days]" #Debug
-			}
-			else = {
-				#log = "NOT A PURGE WEEK" #Debug
-			}
-
-			### SOVIET CIVIL WAR TRIGGER
-			IF = {
-				limit = { 
-					SOV_is_opposition = yes # Don't test for Stalin
-					SOV_soviet_civil_war_not_started = yes # Only test before the war has started 
-					check_variable = { SOV_paranoia > 89}
-					is_ai = no # Slight cheat, but the ai needs some support
-				}
-				random_list = {
-					80 = { } # No effect
-					20 = { 
-						set_country_flag = SOV_civil_war_triggered_flag 
-						country_event = {
-							id = NSB_soviet_civil_war_common.003
-							hours = 0
-						}
-					}
-				}
-			}
-		}
-	}
-
-	on_monthly_SOV = { 
-		effect = { 
-			IF = {
-				limit = { has_global_flag = SOV_soviet_civil_war }
-				# nationalist uprisings 
-				IF = { 
-					limit = { 
-						check_variable = { SOV.SOV_civil_war_months > 2 }
-						SOV = { SOV_is_exiles = yes } # currently exiles only
-					}
-					SOV = {
-						country_event = {
-							id = NSB_soviet_nationalist.000
-							days = 2
-							random_days = 4
-						}
-					}
-				}
-				add_to_variable = { SOV.SOV_civil_war_months = 1 } # Civil war counter
-			}
-			# Check for leader desertions
-			IF = {
-				limit = {
-					ROOT = { has_global_flag = SOV_soviet_civil_war }
-
-					SOS = {
-						any_unit_leader = {
-							has_trait = trait_SOV_cowed_by_stalin_army
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-					}
-				}
-				SOS = {
-					random_unit_leader = {
-						limit = {
-							has_trait = trait_SOV_cowed_by_stalin_army
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-						set_variable = { SOS.SOV_general_to_desert = THIS }
-					}
-					
-				}
-				random_list = {
-					25 = {
-				        # defections
-				        country_event = {
-				        	id = NSB_soviet_communist_civil_war.010
-				        	hours = 1
-				        }
-				    }
-					75 = {
-				        # Nothing happens
-				    }
-				}
-			}
-		} 
-	}
-	
 	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
 	on_join_faction = {
 		effect = {
@@ -1968,160 +1861,44 @@ on_actions = {
 	}
 
 	on_release_as_puppet = { 
-		effect = { 
-			if = {
-				limit = {
-					FROM = { 
-						tag = SOV 
-					}
-					always = no
-				}
-			}
-			if = {
-				limit = {
-					FROM = { 
-						tag = SOV 
-						has_completed_focus = SOV_international_union_of_soviet_republics
-					}
-				}
-				ROOT = {
-					add_ideas = {
-						SOV_puppet_international_of_soviet_republics_idea
-					}
-				}
-			}
-		}
-	}
-
-	# called when a country send volunteers to another
-	# ROOT is sender, FROM is receiver
-	on_send_volunteers = {
-		#Manage Soviet volunteers in China
 		effect = {
-			if = { #Russia has sent volunteers to a Chinese faction
-				limit = {
-					original_tag = SOV
-					FROM = {is_literally_china = yes }
-				}
-				FROM = { set_country_flag = SOV_russian_volunteers_in_china_flag }
-			}	
+			always = no
 		}
 	}
 
 	on_startup = {
 		effect = {
-			#Set Iranian initial states (for Anglo-Soviet invasion of Iran)
-			PER = {
-				every_owned_state = {
-					add_to_array = { SOV_iranian_initial_states = PREV }
+			every_country = {
+				set_variable = { var = num_of_civ value = num_of_civilian_factories }
+				multiply_variable = { var = num_of_civ value = 15 }
+				
+				set_variable = { var = num_of_mil value = num_of_military_factories }
+				multiply_variable = { var = num_of_mil value = 10 }
+
+				set_variable = { var = num_of_naval value = num_of_naval_factories }
+				multiply_variable = { var = num_of_naval value = 10 }
+
+				set_variable = { var = country_gdp value = num_of_civ }
+				add_to_variable = { var = country_gdp value = num_of_mil }
+				add_to_variable = { var = country_gdp value = num_of_naval }
+
+				set_variable = { var = gdp_per_capita value = country_gdp }
+				multiply_variable = { var = gdp_per_capita value = 10000 }
+				if = {
+					limit = {
+						max_manpower > 0
+					}
+					divide_variable = { var = gdp_per_capita value = max_manpower }
 				}
+				multiply_variable = { var = gdp_per_capita value = 100 }
+				set_variable = { var = old_gdp value = country_gdp }
+				set_variable = { var = gdp_growth_rate value = 0 }
 			}
 		}
 	}
 
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
-		effect = {
-			if = {
-				limit = {
-					original_tag = GER
-					FROM = { tag = SOV }
-					SOV = {
-						NOT = { has_global_flag = GER_lost_core_state }
-						has_global_flag = achievement_france_surrender
-					}
-				}
-				SOV = { set_country_flag = achievement_race_for_germany }
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					tag = GER
-					FROM = {
-						original_tag = SOV
-					}
-					SOV = {
-						casualties_inflicted_by = {
-							opponent = GER
-							thousands < 1000
-						}
-					}
-				}
-				SOV = {
-					set_country_flag = achievement_no_statistics
-				}
-			}
-		}
-		#Soviet / Anglo-Soviet Invasion of Iran
-		effect = {
-			if = {
-				limit = {
-					original_tag = PER
-					FROM = { original_tag = SOV }
-				}
-				if = { #Soviets alone (or joint but ENG died)
-					limit = {
-						OR = {
-							has_global_flag = SOV_soviet_invasion_of_iran_flag
-							AND = {
-								has_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
-								NOT = { country_exists = ENG }
-							}
-						}
-					}
-					FROM = {
-						white_peace = PER
-						puppet = ROOT #SOV puppet Iran
-					}
-
-					if = {
-						limit = {
-							has_global_flag = SOV_soviet_invasion_of_iran_flag
-						}
-						clr_global_flag = SOV_soviet_invasion_of_iran_flag
-					}
-					else = {
-						clr_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
-					}
-					FROM = { country_event = { id = NSB_soviet_foreign_politics_events.156 days = 1 } } #Hidden Effect to transfer states and give resource rights
-				}
-				else_if = {
-					limit = {
-						has_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
-					}
-					FROM = { white_peace = PER }
-					ENG = {
-						white_peace = PER
-						puppet = ROOT #ENG gets to puppet Iran
-					}
-
-					clr_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
-
-					FROM = { country_event = { id = NSB_soviet_foreign_politics_events.157 days = 1 } } #Hidden Effect to transfer states and give resource rights and military access
-				}
-			}
-		}
-
-		#Spanish general from SPD/SPC exile in SOV -> NSB
-		effect = {
-			if = {
-				limit = {
-					SOV = { has_country_flag = SOV_spanish_refugee_generals_welcome_flag }
-					has_dlc = "La Resistance"
-					OR = {
-						tag = SPD
-						tag = SPC
-					}
-					OR = {
-						SPR_scw_in_progress = yes #In case someone else caps the Spanish faction
-						FROM = { original_tag = SPR }
-					}
-				}
-				SOV_manage_spanish_generals_exiled_in_ussr_effect = yes
-			}
-		}
-
 		#If Soviet capitulates, remove dynamic modifiers from propagandas and stuff
 		effect = {
 			if = {
@@ -2197,38 +1974,12 @@ on_actions = {
 		}
 
 		effect = {
-			if = {
-				limit = {
-					tag = SOV
-					FROM = { 
-						tag = GER 
-					}
-					FROM = {
-						NOT = { has_country_flag = achievement_stalingrad_taken }
-					}
-				}
-				FROM = { set_country_flag = achievement_not_much_fun_in_stalingrad }
-			}
 		}
 	}
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
 		effect = {
-			if = {
-				limit = {
-					FROM.FROM = {
-						state = 217
-					}
-					tag = GER
-					NOT = { has_country_flag = achievement_stalingrad_taken }
-					divisions_in_state = { state = 217 size > 1 } #only happens if Germany has at least one division in the state, because state control changes before on_capitulation fires
-				}
-				set_country_flag = achievement_stalingrad_taken
-			}
 		}
 	}
-
-	
 }
-

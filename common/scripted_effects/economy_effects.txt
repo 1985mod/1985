@@ -22,33 +22,23 @@ calculate_gdp_effect = {
             divide_variable = { var = gdp_per_capita value = max_manpower }
         }
         multiply_variable = { var = gdp_per_capita value = 100 }
-    }
-}
 
-calculate_gdp_growth_effect = {
-    every_country = {
-		set_variable = { var = gdp_growth }
-	
 		if = {
 			limit = {
-				check_variable = { var = old_gdp value = 0 }
+				check_variable = { var = old_gdp value = 0 compare = greater_than }
 			}
 			set_variable = { var = gdp_growth_calculate value = country_gdp }
 			subtract_from_variable  = { var = gdp_growth_calculate value = old_gdp }
-			divide_variable = { var = gdp_growth_calculate value = old_gdp }
 			multiply_variable = { var = gdp_growth_calculate value = 100 }
+			divide_variable = { var = gdp_growth_calculate value = old_gdp }
 
-			set_variable = { gdp_growth_rate = gdp_growth_calculate }
+			set_variable = { var = gdp_growth_rate value = gdp_growth_calculate }
 		}
 
-		if = {
-			limit = {
-				check_variable = { var = old_gdp value = 0 }
-			}
-			set_variable = { gdp_growth_rate = 0 }
+		else = {
+			set_variable = { var = gdp_growth_rate value = 0 }
 		}
 
-        set_variable = { old_gdp = country_gdp }
-        set_variable = { gdp_timer = 0 }
+        set_variable = { var = old_gdp value = country_gdp }
     }
 }
