@@ -4,6 +4,5 @@
  ECONOMY_MIL_FACTORIES:0 "[?num_of_military_factories|Y0]"
  ECONOMY_NAVAL_FACTORIES:0 "[?num_of_naval_factories|Y0]"
  GDP:0 "[?country_gdp|2Y]B"
- GDP:0 "[?country_gdp|2Y]B"
  GDP_PER_CAPITA:0 "[?gdp_per_capita|Y2]K"
- GDP_GROWTH: "[?gdp_growth_rate|+=2%%]"
+ GDP_GROWTH_RATE:0 "[?gdp_growth_rate|+=2%%]"
