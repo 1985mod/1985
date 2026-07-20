@@ -50,6 +50,7 @@ ideologies = {
 
 		modifiers = {
 			# puppet_cost_factor = -0.3 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			generate_wargoal_tension = 0.0
 			civilian_intel_to_others = 10.0
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
@@ -112,6 +113,7 @@ ideologies = {
 
 		modifiers = {
 			# puppet_cost_factor = -0.3 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			generate_wargoal_tension = 0.0
 			civilian_intel_to_others = 10.0
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
@@ -171,7 +173,7 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 
 		modifiers = {
-			generate_wargoal_tension = 1.00
+			generate_wargoal_tension = 0.0
 			join_faction_tension = 0.80
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
@@ -242,7 +244,7 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 
 		modifiers = {
-			generate_wargoal_tension = 1.00
+			generate_wargoal_tension = 0.0
 			join_faction_tension = 0.80
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
@@ -310,7 +312,7 @@ ideologies = {
 
 		modifiers = {
 			#increased_influence_factor = 0.3 #30% easier to influence
-			generate_wargoal_tension = 0.5
+			generate_wargoal_tension = 0.0
 			join_faction_tension = 0.4
 			lend_lease_tension = 0.6
 			send_volunteers_tension = 0.4
@@ -370,6 +372,7 @@ ideologies = {
 		can_collaborate = yes
 
 		modifiers = {
+			generate_wargoal_tension = 0.0
 			justify_war_goal_when_in_major_war_time = -0.80
 			civilian_intel_to_others = 15.0
 			army_intel_to_others = 10.0
