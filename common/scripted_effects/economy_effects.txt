@@ -15,6 +15,7 @@ calculate_gdp_effect = {
 
         set_variable = { var = gdp_per_capita value = country_gdp }
         multiply_variable = { var = gdp_per_capita value = 10000 }
+
         if = {
             limit = {
                 max_manpower > 0
@@ -22,23 +23,29 @@ calculate_gdp_effect = {
             divide_variable = { var = gdp_per_capita value = max_manpower }
         }
         multiply_variable = { var = gdp_per_capita value = 100 }
+    }
+}
 
-		if = {
-			limit = {
-				check_variable = { var = old_gdp value = 0 compare = greater_than }
-			}
-			set_variable = { var = gdp_growth_calculate value = country_gdp }
-			subtract_from_variable  = { var = gdp_growth_calculate value = old_gdp }
-			multiply_variable = { var = gdp_growth_calculate value = 100 }
-			divide_variable = { var = gdp_growth_calculate value = old_gdp }
+calculate_gdp_growth = {
+    if = {
+        limit = {
+            check_variable = { old_gdp > 0 }
+        }
+        set_variable = { var = gdp_growth_calculate value = country_gdp }
+        subtract_from_variable = { var = gdp_growth_calculate value = old_gdp }
+        divide_variable = { var = gdp_growth_calculate value = old_gdp }
+        multiply_variable = { var = gdp_growth_calculate value = 100 }
 
-			set_variable = { var = gdp_growth_rate value = gdp_growth_calculate }
-		}
-
-		else = {
-			set_variable = { var = gdp_growth_rate value = 0 }
-		}
-
+        set_variable = { var = gdp_growth_rate value = gdp_growth_calculate }
         set_variable = { var = old_gdp value = country_gdp }
+    }
+    else = {
+        if = {
+            limit = {
+                check_variable = { country_gdp > 0 }
+            }
+            set_variable = { var = old_gdp value = country_gdp }
+            set_variable = { var = gdp_growth_rate value = 0 }
+        }
     }
 }

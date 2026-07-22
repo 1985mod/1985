@@ -12,10 +12,10 @@ state = {
 			infrastructure = 3
 		}
 		victory_points = { #Biscia
-			12723 1
+			12723 7
 		}
 		victory_points = { #Asmara
-			5091 6
+			5091 3
 		}
 		ETH = {
 			set_province_controller = 13251
