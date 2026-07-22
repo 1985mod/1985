@@ -1,13 +1,13 @@
 characters = {
-	POL_HenrykJablonski = {
-		name = POL_HenrykJablonski
+	POL_wojciech_jaruzelski = {
+		name = POL_wojciech_jaruzelski
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/POL/Portrait_POL_HenrykJablonski.dds"
+				large = "gfx/leaders/POL/Portrait_wojciech_jaruzelski.dds"
 			}
 		}
 		country_leader = {
-			ideology = marxism
+			ideology = authoritarian_socialism
 			traits = { }
 			expire = "1988.3.1.1"
 			id = -1

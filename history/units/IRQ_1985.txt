@@ -15,6 +15,11 @@
 		artillery_brigade = { x = 2 y = 0 }
 		artillery_brigade = { x = 2 y = 1 }
 	}
+
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
 }
 
 division_template = {
@@ -32,6 +37,10 @@ division_template = {
 		motorized = { x = 1 y = 2 }
 		motorized = { x = 1 y = 3 }
 	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
 }
 
 division_template = {
@@ -43,6 +52,7 @@ division_template = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
 		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
 		mechanized = { x = 1 y = 0 }
 		mechanized = { x = 1 y = 1 }
 		mechanized = { x = 1 y = 2 }
@@ -65,6 +75,12 @@ division_template = {
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
 	}
 }
 
@@ -99,26 +115,6 @@ units = {
 		division_template = "Republican Guard"	
 		start_experience_factor = 0.2
 	}
-	
-	division = {
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 12855
-		division_template = "Republican Guard"	
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 78
-		division_template = "Armored Brigade of Iraq"	
-		start_experience_factor = 0.2
-	}
 
 	division = {
 		division_name = {    # New syntax for compatibility with name lists
@@ -136,36 +132,6 @@ units = {
 			name_order = 1
 		}
 		location = 10106
-		division_template = "Armored Brigade of Iraq"	
-		start_experience_factor = 0.2
-	}
-
-	division = {
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 10106
-		division_template = "Armored Brigade of Iraq"	
-		start_experience_factor = 0.2
-	}
-
-	division = {
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1938
-		division_template = "Armored Brigade of Iraq"	
-		start_experience_factor = 0.2
-	}
-	 
-	division = {
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 12726
 		division_template = "Armored Brigade of Iraq"	
 		start_experience_factor = 0.2
 	}
@@ -300,26 +266,6 @@ units = {
 		division_template = "Armored Brigade of Iraq"	
 		start_experience_factor = 0.2
 	}
-
-	division = {
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1938
-		division_template = "Armored Brigade of Iraq"	
-		start_experience_factor = 0.2
-	}
-
-	division = {
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1600
-		division_template = "Armored Brigade of Iraq"	
-		start_experience_factor = 0.2
-	}
 	
 	division = {
 		division_name = {    # New syntax for compatibility with name lists
@@ -327,16 +273,6 @@ units = {
 			name_order = 1
 		}
 		location = 1938
-		division_template = "Mechanised Brigade of Iraq"	
-		start_experience_factor = 0.2
-	}
-	
-	division = {
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 13368
 		division_template = "Mechanised Brigade of Iraq"	
 		start_experience_factor = 0.2
 	}

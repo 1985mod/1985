@@ -32,6 +32,6 @@ set_popularities = {
 }
 
 
-recruit_character = POL_HenrykJablonski
+recruit_character = POL_wojciech_jaruzelski
 
 
