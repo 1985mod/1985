@@ -1,0 +1,83 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+
+    take_our_cores = {
+        peace_action_type = { take_states }
+        enable = {
+            ROOT = { tag = ROOT.FROM } #We are negotiating for ourselves
+            ROOT.FROM.FROM.FROM = { is_core_of = ROOT.FROM } #It is ours
+        }
+        ai_desire = 500
+    }
+	
+    takes_our_claims = {
+        peace_action_type = { take_states }
+        enable = {
+            ROOT = { tag = ROOT.FROM } #We are negotiating for ourselves
+            ROOT.FROM.FROM.FROM = { is_claimed_by = ROOT.FROM } #It is ours
+        }
+        ai_desire = 300
+    }
+
+    block_unnatural_annexation = {
+        peace_action_type = { take_states }
+        enable = {
+            ROOT = { tag = ROOT.FROM }
+            ROOT.FROM.FROM.FROM = { NOT = { is_core_of = ROOT.FROM } }
+            ROOT.FROM.FROM.FROM = { NOT = { is_claimed_by = ROOT.FROM } }
+        }
+        ai_desire = -100000
+    }
+
+    totalitarian_puppet_focus = {
+        peace_action_type = { puppet }
+        enable = {
+            ROOT = { tag = ROOT.FROM }
+            # Чужую землю коммунисты, социалисты, нейтралы и фашисты обязаны марионетить
+            ROOT.FROM.FROM.FROM = { NOT = { is_core_of = ROOT.FROM } }
+            ROOT = {
+                OR = {
+                    has_government = communism
+                    has_government = neutrality
+                    has_government = fascism
+                }
+            }
+        }
+        ai_desire = 250
+    }
+
+    # ЛОГИКА ДЛЯ ДЕМОКРАТИЙ / НАТО (Смена правительства / Экспорт рынка)
+    democratic_export_market = {
+        peace_action_type = { change_government }
+        enable = {
+            ROOT = { tag = ROOT.FROM }
+            ROOT.FROM.FROM.FROM = { NOT = { is_core_of = ROOT.FROM } }
+            ROOT = {
+                OR = {
+                    has_government = communism
+                    has_government = neutrality
+                    has_government = fascism
+                }
+            }
+        }
+        ai_desire = 300 # Максимальный приоритет демократий на смену режима без оккупации
+    }
+
+    # Снижаем желание либералов и консерваторов плодить марионетки
+    democracies_hate_puppets = {
+        peace_action_type = { puppet }
+        enable = {
+            ROOT = { tag = ROOT.FROM }
+            ROOT = {
+                OR = {
+                    has_government = communism
+                    has_government = neutrality
+                    has_government = fascism
+                }
+            }
+        }
+        ai_desire = -500 # Демократии не будут делать марионеток, если можно сменить правительство
+    }
+}
