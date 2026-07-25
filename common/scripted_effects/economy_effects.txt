@@ -27,25 +27,44 @@ calculate_gdp_effect = {
 }
 
 calculate_gdp_growth = {
-    if = {
-        limit = {
-            check_variable = { old_gdp > 0 }
+    every_country = {
+        if = {
+            limit = { 
+                NOT = { has_variable = months_passed_timer } 
+            }
+            set_variable = { var = months_passed_timer value = 0 }
+            set_variable = { var = old_gdp value = country_gdp }
         }
-        set_variable = { var = gdp_growth_calculate value = country_gdp }
-        subtract_from_variable = { var = gdp_growth_calculate value = old_gdp }
-        divide_variable = { var = gdp_growth_calculate value = old_gdp }
-        multiply_variable = { var = gdp_growth_calculate value = 100 }
 
-        set_variable = { var = gdp_growth_rate value = gdp_growth_calculate }
-        set_variable = { var = old_gdp value = country_gdp }
-    }
-    else = {
+        add_to_variable = { var = months_passed_timer value = 1 }
+
         if = {
             limit = {
-                check_variable = { country_gdp > 0 }
+                check_variable = { months_passed_timer > 2 }
             }
-            set_variable = { var = old_gdp value = country_gdp }
+        }
+            
+        if = {
+            limit = {
+                check_variable = { var = old_gdp value = 0 compare = greater_than }
+            }
+            set_variable = { var = gdp_growth_calculate value = country_gdp }
+            subtract_from_variable = { var = gdp_growth_calculate value = old_gdp }
+            multiply_variable = { var = gdp_growth_calculate value = 320 }
+            divide_variable = { var = gdp_growth_calculate value = old_gdp }
+            set_variable = { var = gdp_growth_rate value = gdp_growth_calculate }
+        }      
+            
+        if = {
+            limit = {
+                NOT = { check_variable = { var = old_gdp value = 0 compare = greater_than } }
+
+            }
             set_variable = { var = gdp_growth_rate value = 0 }
+
+            set_variable = { var = old_gdp value = country_gdp }
+            clear_variable = months_passed_timer
+            set_variable = { var = months_passed_timer value = 0 }
         }
     }
 }

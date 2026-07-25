@@ -12,7 +12,8 @@ country_event = {
 
     option = {
         name = ddr.1.a
-		add_political_power = 50
+		add_stability = 0.05
+		add_war_support = 0.03
 	}
 }
 
@@ -193,7 +194,11 @@ country_event = {
     option = {
         name = ddr.9.a
 		add_war_support = 0.05
-		add_political_power = 50
+	}
+
+    option = {
+        name = ddr.9.b
+		add_war_support = 0.05
 	}
 }
 

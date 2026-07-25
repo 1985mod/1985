@@ -13999,6 +13999,38 @@ spriteTypes = {
 	}
 
 
+	### DDR ###
+
+	SpriteType = {
+		name = "GFX_focus_icon_DDR_new_1985"
+		texturefile = "gfx/interface/goals/DDR/focus_icon_DDR_new_1985.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_DDR_political_ddr"
+		texturefile = "gfx/interface/goals/DDR/focus_icon_DDR_political_ddr.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_DDR_gerontocracy_of_the_sed"
+		texturefile = "gfx/interface/goals/DDR/focus_icon_DDR_gerontocracy_of_the_sed.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_DDR_doctrine_of_separation"
+		texturefile = "gfx/interface/goals/DDR/focus_icon_DDR_doctrine_of_separation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_DDR_ignore_signals_from_moscow"
+		texturefile = "gfx/interface/goals/DDR/focus_icon_DDR_ignore_signals_from_moscow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_DDR_xi_congress_of_the_sed"
+		texturefile = "gfx/interface/goals/DDR/focus_icon_DDR_xi_congress_of_the_sed.dds"
+	}
+
 	################
 	##PLACEHOLDER###
 	################

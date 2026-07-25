@@ -15,7 +15,7 @@ focus_tree = {
 	
     focus = { 
         id = DDR_new_1985
-        icon = GFX_
+        icon = GFX_focus_icon_DDR_new_1985
         x = 10
         y = 0
         cost = 5
@@ -26,7 +26,7 @@ focus_tree = {
 
     focus = { 
         id = DDR_political_ddr
-        icon = GFX_
+        icon = GFX_focus_icon_DDR_political_ddr
         prerequisite = { focus = DDR_new_1985 }
         x = 10
         y = 1
@@ -40,7 +40,7 @@ focus_tree = {
         id = DDR_gerontocracy_of_the_sed
         relative_position_id = DDR_political_ddr
         prerequisite = { focus = DDR_political_ddr }
-        icon = GFX_
+        icon = GFX_focus_icon_DDR_gerontocracy_of_the_sed
         x = 0
         y = 1
         cost = 10
@@ -53,7 +53,7 @@ focus_tree = {
         id = DDR_doctrine_of_separation
         relative_position_id = DDR_gerontocracy_of_the_sed
         prerequisite = { focus = DDR_gerontocracy_of_the_sed }
-        icon = GFX_
+        icon = GFX_focus_icon_DDR_doctrine_of_separation
         x = -2
         y = 1
         cost = 10
@@ -66,7 +66,7 @@ focus_tree = {
         id = DDR_ignore_signals_from_moscow
         relative_position_id = DDR_gerontocracy_of_the_sed
         prerequisite = { focus = DDR_gerontocracy_of_the_sed }
-        icon = GFX_
+        icon = GFX_focus_icon_DDR_ignore_signals_from_moscow
         x = 2
         y = 1
         cost = 10
@@ -92,7 +92,7 @@ focus_tree = {
         prerequisite = { focus = DDR_ignore_signals_from_moscow }
         prerequisite = { focus = DDR_the_cult_of_the_anti_fascist_rampart }
         prerequisite = { focus = DDR_doctrine_of_separation }
-        icon = GFX_
+        icon = GFX_focus_icon_DDR_xi_congress_of_the_sed
         x = -2
         y = 1
         cost = 6.5

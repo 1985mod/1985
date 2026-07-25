@@ -11,6 +11,8 @@ bookmarks = {
 			history = "DDR_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
+				DDR_showcase_of_socialism
+				WGR_divided_nation
 			}
 			focuses = {
 				DDR_gerontocracy_of_the_sed
@@ -53,8 +55,14 @@ bookmarks = {
 			history = "WGR_GATHERING_STORM_DESC"
 			ideology = conservatism
 			ideas = {
+				WGR_divided_nation
+				WGR_nato_front_line
+				EU_member
 			}
 			focuses = {
+				WGR_germany_nation
+				WGR_dawn_of_germany
+				WGR_stabili_democratic
 			}
 		}
 		effect = {

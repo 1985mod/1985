@@ -9,7 +9,49 @@ characters = {
 		country_leader = {
 			ideology = marxism
 			traits = { }
-			expire = "1971.3.1.1"
+			expire = "1989.5.8.1"
+			id = -1
+		}
+	}
+	HUN_Karoly_Grosz = {
+		name = HUN_Karoly_Grosz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/portrait_HUN_Karoly_Grosz.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { }
+			expire = "1988.11.23.1"
+			id = -1
+		}
+	}
+	HUN_Miklos_Nemeth = {
+		name = HUN_Miklos_Nemeth
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/portrait_HUN_Miklos_Nemeth.dds"
+			}
+		}
+		country_leader = {
+			ideology = communist_perestroika
+			traits = { }
+			expire = "1989.10.23.1"
+			id = -1
+		}
+	}
+	HUN_Jozsef_Antall = {
+		name = HUN_Jozsef_Antall
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/Portrait_jozsef_antall.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = { }
+			expire = "1993.12.12.1"
 			id = -1
 		}
 	}

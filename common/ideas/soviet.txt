@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		SOV_soviet_contingent_in_afghanistan = {
-			picture = ячся
+			picture = soviet_contingent_in_afghanistan
 			
 			allowed = {
 				original_tag = SOV
