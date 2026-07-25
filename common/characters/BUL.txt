@@ -1,4 +1,18 @@
 characters = {
+	BUL_Todor_Zhivkov = {
+		name = BUL_Todor_Zhivkov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/Portrait_BUL_Todor_Zhivkov.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_socialism
+			traits = { }
+			expire = "1989.11.10.1"
+			id = -1
+		}
+	}
 	BUL_Petr_Mladenov = {
 		name = BUL_Petr_Mladenov
 		portraits = {
@@ -9,8 +23,22 @@ characters = {
 		country_leader = {
 			ideology = democratic_socialism
 			traits = { }
-			expire = "1988.3.1.1"
+			expire = "1990.2.2.1"
 			id = -1
 		}
 	}
+	BUL_Zhelyu_Zhelev = {
+        name = BUL_Zhelyu_Zhelev
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/BUL/Portrait_zhelyu_zhelev.dds"
+            }
+        }
+        country_leader = {
+            ideology = classic_liberalism
+            traits = { }
+            expire = "1997.1.22.1"
+			id = -1
+        }
+    }
 }

@@ -7,9 +7,24 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = marxism
+			ideology = leninism
 			traits = { }
-			expire = "1971.3.1.1"
+			expire = "1989.22.12.1"
 			id = -1
 		}
 	}
+	ROM_ion_iliescu = {
+		name = ROM_ion_iliescu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Portrait_ion_iliescu.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_social_democracy
+			traits = { }
+			expire = "1996.11.29.1"
+			id = -1
+		}
+	}
+}

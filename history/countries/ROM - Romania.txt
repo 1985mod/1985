@@ -17,6 +17,10 @@ set_technology = {
 	paratroopers = 1
 	gw_artillery = 1
 }
+
+recruit_character = ROM_Nicolae_Ceausescu
+recruit_character = ROM_ion_iliescu
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1985.1.1"
@@ -29,8 +33,6 @@ set_popularities = {
 	communism = 100
 	neutrality = 0
 }
-
-recruit_character = ROM_Nicolae_Ceausescu
 
 
 

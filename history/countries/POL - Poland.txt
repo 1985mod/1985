@@ -17,6 +17,10 @@ set_technology = {
 	paratroopers = 1
 	gw_artillery = 1
 }
+
+recruit_character = POL_wojciech_jaruzelski
+recruit_character = POL_lech_walesa
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1985.1.1"
@@ -30,8 +34,4 @@ set_popularities = {
 	communism = 0
 	neutrality = 0
 }
-
-
-recruit_character = POL_wojciech_jaruzelski
-
 

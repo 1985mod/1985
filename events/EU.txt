@@ -43,13 +43,13 @@ country_event = {
         name = european_union.2.a
         retire_country_leader = yes
         set_politics = {
-            ruling_party = liberalism
+            ruling_party = socialism
             last_election = "1990.5.20"
             election_frequency = 48
             elections_allowed = yes
         }
         add_popularity = {
-            ideology = liberalism
+            ideology = socialism
             popularity = 0.3
         }
         add_popularity = {
@@ -97,6 +97,7 @@ country_event = {
         SOV = {
             end_puppet = BUL
         }
+        leave_faction = yes
     }
 }
  

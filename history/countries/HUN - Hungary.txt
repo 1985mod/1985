@@ -99,5 +99,6 @@ set_popularities = {
 
 
 recruit_character = HUN_Janos_Kadar
+recruit_character = HUN_Jozsef_Antall
 
 

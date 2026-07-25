@@ -9,7 +9,21 @@ characters = {
 		country_leader = {
 			ideology = authoritarian_socialism
 			traits = { }
-			expire = "1988.3.1.1"
+			expire = "1990.22.12.1"
+			id = -1
+		}
+	}
+	POL_lech_walesa = {
+		name = POL_lech_walesa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Portrait_lech_walesa.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_conservatism
+			traits = { }
+			expire = "1995.22.12.1"
 			id = -1
 		}
 	}
