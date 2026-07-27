@@ -1096,3 +1096,4 @@
  TRIGGER_HAS_NOT_ACTIVE_FACTION_RULE: "$COUNTRY_OR_FACTION|H$ без действующего правила «$RULE|H$»"
  faction_template_warsaw_pact: "Организация варшавского договора"
  NATO: "Организация Североатлантического договора"
+ CSTO: "Организация Договора о коллективной безопасности"

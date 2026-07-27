@@ -292,6 +292,7 @@ country_event = {
 		has_country_flag = anti_iraq_coalition
 		NOT = { has_war_with = IRQ }
 		USA = { has_completed_focus = USA_operation_desert_storm }
+		NOT = { has_global_flag = desert_storm_triggered}
 	}
 
 	option = {

@@ -17,10 +17,11 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
-                stability_factor = -0.15
-                political_power_factor = -0.3
-                production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.8
+                stability_factor = -0.5
+                political_power_factor = -0.5
+                production_speed_buildings_factor = -0.7
+				production_factory_efficiency_gain_factor = -0.5
 			}
 
 			cancel_if_invalid = no
@@ -38,10 +39,11 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.1
-                stability_factor = -0.05
+				consumer_goods_factor = 0.6
+                stability_factor = -0.3
                 political_power_factor = -0.2
-                production_speed_buildings_factor = -0.05
+                production_speed_buildings_factor = -0.4
+				production_factory_efficiency_gain_factor = -0.3
 			}
 
 			cancel_if_invalid = no
@@ -62,6 +64,7 @@ ideas = {
 				consumer_goods_factor = 0.05
                 stability_factor = 0.05
                 political_power_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
 			}
 
             default = yes
@@ -81,10 +84,11 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.1
-                stability_factor = -0.1
-                political_power_factor = -0.15
-                production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.15
+                stability_factor = -0.15
+                political_power_factor = -0.1
+                production_speed_buildings_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.05
 			}
 
 			cancel_if_invalid = no
@@ -102,10 +106,11 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.3
+				consumer_goods_factor = 0.4
                 production_speed_buildings_factor = -0.5
-                stability_factor = -0.15
-                political_power_factor = -0.2
+                stability_factor = -0.2
+                political_power_factor = -0.4
+				production_factory_efficiency_gain_factor = -0.15
 			}
 
 			cancel_if_invalid = no
@@ -123,10 +128,11 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.5
+				consumer_goods_factor = 0.6
                 production_speed_buildings_factor = -0.7
-                stability_factor = -0.3
-                political_power_factor = -0.5
+                stability_factor = -0.4
+                political_power_factor = -0.7
+				production_factory_efficiency_gain_factor = -0.3
 			}
 
 			cancel_if_invalid = no

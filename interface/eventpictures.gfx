@@ -71,6 +71,131 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_declaration_of_state_sovereignty_of_the_rsfsr"
+		texturefile = "gfx/event_pictures/report_declaration_of_state_sovereignty_of_the_rsfsr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_tu_134_crash_near_syktyvkar"
+		texturefile = "gfx/event_pictures/report_tu_134_crash_near_syktyvkar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_the_admiral_nakhimov_disaster"
+		texturefile = "gfx/event_pictures/report_the_admiral_nakhimov_disaster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_visit_to_czechoslovakia"
+		texturefile = "gfx/event_pictures/report_visit_to_czechoslovakia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_election_of_dmitry_yazov"
+		texturefile = "gfx/event_pictures/report_election_of_dmitry_yazov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_democratic_russia_rally_in_moscow"
+		texturefile = "gfx/event_pictures/report_democratic_russia_rally_in_moscow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_gorbachevs_authority_is_declining"
+		texturefile = "gfx/event_pictures/report_gorbachevs_authority_is_declining.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_xix_all_union_conference_of_the_cpsu"
+		texturefile = "gfx/event_pictures/report_xix_all_union_conference_of_the_cpsu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_visit_to_china"
+		texturefile = "gfx/event_pictures/report_visit_to_china.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_elections_of_peoples_deputies_ussr"
+		texturefile = "gfx/event_pictures/report_elections_of_peoples_deputies_ussr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_iii_congress_of_peoples_deputies_ussr"
+		texturefile = "gfx/event_pictures/report_iii_congress_of_peoples_deputies_ussr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_plenum_central_committee_cpsu"
+		texturefile = "gfx/event_pictures/report_plenum_central_committee_cpsu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_visit_to_wgr"
+		texturefile = "gfx/event_pictures/report_visit_to_wgr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_visit_to_paris"
+		texturefile = "gfx/event_pictures/report_visit_to_paris.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_iv_congress_of_peoples_deputies_ussr"
+		texturefile = "gfx/event_pictures/report_iv_congress_of_peoples_deputies_ussr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_iv_congress_of_peoples_deputies_rsfsr"
+		texturefile = "gfx/event_pictures/report_iv_congress_of_peoples_deputies_rsfsr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_novo_ogaryovsky_trial"
+		texturefile = "gfx/event_pictures/report_novo_ogaryovsky_trial.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_election_of_president_russia"
+		texturefile = "gfx/event_pictures/report_election_of_president_russia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_belovezh_accords"
+		texturefile = "gfx/event_pictures/report_belovezh_accords.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_state_emergency_committee"
+		texturefile = "gfx/event_pictures/report_state_emergency_committee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_belovezh_accords"
+		texturefile = "gfx/event_pictures/report_belovezh_accords.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_swan_lake"
+		texturefile = "gfx/event_pictures/report_swan_lake.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_yeltsin_on_a_tank"
+		texturefile = "gfx/event_pictures/report_yeltsin_on_a_tank.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_gorbachevs_speech_on_december_25_1991"
+		texturefile = "gfx/event_pictures/report_gorbachevs_speech_on_december_25_1991.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_dead_of_yeltsin"
+		texturefile = "gfx/event_pictures/report_dead_of_yeltsin.dds"
+	}
+
+	spriteType = {
 		name = "GFX_report_coral_sea_aircraft_carrier_accident"
 		texturefile = "gfx/event_pictures/report_coral_sea_aircraft_carrier_accident.dds"
 	}

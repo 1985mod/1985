@@ -459,7 +459,7 @@ news_event = {
 	}
 	
 	trigger = {
-		date > 1985.2.28
+		date > 1986.2.28
 		NOT = { has_global_flag = kill_olof_palme }
 	}
 
