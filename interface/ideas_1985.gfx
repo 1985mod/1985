@@ -134,4 +134,31 @@ spriteTypes = {
         name = "GFX_idea_economic_boom"
         texturefile = "gfx/interface/ideas/economic_cycle/idea_economic_boom.dds"
     }
+
+    ### corruption ###
+
+    spriteType = {
+        name = "GFX_idea_horrific_corruption"
+        texturefile = "gfx/interface/ideas/corruption/idea_horrific_corruption.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_significant_corruption"
+        texturefile = "gfx/interface/ideas/corruption/idea_significant_corruption.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_moderate_corruption"
+        texturefile = "gfx/interface/ideas/corruption/idea_moderate_corruption.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_low_corruption"
+        texturefile = "gfx/interface/ideas/corruption/idea_low_corruption.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_minor_corruption"
+        texturefile = "gfx/interface/ideas/corruption/idea_minor_corruption.dds"
+    }
 }

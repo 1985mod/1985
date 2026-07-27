@@ -1869,17 +1869,18 @@ on_actions = {
 	on_startup = {
 		effect = {
 			calculate_gdp_effect = yes
+			if = {
+				limit = { NOT = { has_variable = inflation_rate } }
+				set_variable = { var = inflation_rate value = 5 }
+			}
 		}
 	}
 
 	on_weekly = {
 		effect = {
 			calculate_gdp_effect = yes
-		}
-	}
-
-	on_monthly = {
-		effect = {
+			calculate_nominal_gdp_effect = yes
+			inflation_effect = yes
 			calculate_gdp_growth = yes
 		}
 	}

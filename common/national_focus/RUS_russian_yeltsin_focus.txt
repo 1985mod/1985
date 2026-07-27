@@ -202,7 +202,7 @@ focus_tree = {
         cost = 5
 
 		completion_reward = {
-
+            add_political_power = 75
 		}
     }    
     ### Army ###
@@ -217,8 +217,7 @@ focus_tree = {
         cost = 5
 
 		completion_reward = {
-            add_political_power = 12
-            add_stability = 0.08
+            load_oob = "SOV_1985"
 		}
     }  
 
@@ -247,8 +246,19 @@ focus_tree = {
         cost = 1
 
 		completion_reward = {
-            add_political_power = 12
-            add_stability = 0.08
+            delete_unit = {
+                division_template = "Motostrelkovaya Diviziya 5"
+            }
+            delete_unit = {
+                division_template = "Tankovaya Diviziya 4"
+            }
+            delete_unit = {
+                division_template = "Tankovaya Diviziya 5"
+            }
+            delete_unit = {
+                division_template = "Motostrelkovaya Diviziya 6"
+            }
+            add_war_support = 0.05
 		}
     }    
 
@@ -263,12 +273,16 @@ focus_tree = {
         cost = 5
 
 		completion_reward = {
-            create_faction_from_template = {
-                template = faction_template_defensive_democratic
-                name = RUS_collective_security_treaty_organization
-                icon = GFX_faction_logo_generic_2
-                color = { 48 105 39 }
+            set_rule = {
+                desc = RUS_sign_the_tashkent_treaty
+                can_create_factions = yes
             }
+            create_faction_from_template = faction_template_CSTO
+            add_to_faction = ARM
+            add_to_faction = KAZ
+            add_to_faction = KYR
+            add_to_faction = TAJ
+            add_to_faction = UZB
 		}
     }   
 }

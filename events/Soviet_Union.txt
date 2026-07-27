@@ -106,6 +106,7 @@ country_event = {
 				character = SOV_grigory_romanov
 				ideology = communism
 			}
+			load_focus_tree = SOV_soviet_romanov_focus
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -553,7 +554,7 @@ country_event = {
 	id = SOV_soviet_union.13 ## Декларация о Государственном Суверенитете РСФСР  ##
 	title = SOV_soviet_union.13.t
 	desc = SOV_soviet_union.13.desc
-	picture = GFX_report_unrest_in_the_republics
+	picture = GFX_report_declaration_of_state_sovereignty_of_the_rsfsr
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -702,10 +703,15 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.15.a
-        add_political_power = 25
 		ROOT = {
 			add_opinion_modifier = {
 				target = HUN
+				modifier = medium_increase
+			}
+		}
+		HUN = {
+			add_opinion_modifier = {
+				target = SOV
 				modifier = medium_increase
 			}
 		}
@@ -716,7 +722,7 @@ country_event = {
 	id = SOV_soviet_union.16 ## Крушение рейса Аэрофлот 2306 в Коми АССР  ##
 	title = SOV_soviet_union.16.t
 	desc = SOV_soviet_union.15.desc
-	picture = GFX_report_unrest_in_the_republics
+	picture = GFX_report_tu_134_crash_near_syktyvkar
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -732,15 +738,16 @@ country_event = {
 	id = SOV_soviet_union.17 ## Крушение теплохода «Адмирал Нахимов» в Чёрном море  ##
 	title = SOV_soviet_union.17.t
 	desc = SOV_soviet_union.17.desc
-	picture = GFX_report_unrest_in_the_republics
+	picture = GFX_report_the_admiral_nakhimov_disaster
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = SOV_soviet_union.17.a
-        add_manpower = -415
+        add_manpower = -423
         add_stability = -0.05
+		add_war_support = -0.02
     }
 }
 
@@ -770,14 +777,13 @@ country_event = {
 	id = SOV_soviet_union.19 ## указ «Об образовании Государственного комитета по охране природы»  ##
 	title = SOV_soviet_union.19.t
 	desc = SOV_soviet_union.19.desc
-	picture = GFX_report_unrest_in_the_republics
+	picture = GFX_report_congress_of_the_cpsu
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = SOV_soviet_union.19.a
-        add_political_power = 50
         add_stability = 0.03
     }
 }
@@ -786,17 +792,22 @@ country_event = {
 	id = SOV_soviet_union.20 ## Визит в Чехословакию  ##
 	title = SOV_soviet_union.20.t
 	desc = SOV_soviet_union.20.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_visit_to_czechoslovakia
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = SOV_soviet_union.20.a
-        add_political_power = 25
 		ROOT = {
 			add_opinion_modifier = {
 				target = CZE
+				modifier = medium_increase
+			}
+		}
+		CZE = {
+			add_opinion_modifier = {
+				target = SOV
 				modifier = medium_increase
 			}
 		}
@@ -807,7 +818,7 @@ country_event = {
 	id = SOV_soviet_union.21 ## Избрание Дмитрия Язвы  ##
 	title = SOV_soviet_union.21.t
 	desc = SOV_soviet_union.21.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_election_of_dmitry_yazov
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -822,7 +833,7 @@ country_event = {
 	id = SOV_soviet_union.22 ## митинг «Демократической России» на Болотной площади в Москве  ##
 	title = SOV_soviet_union.22.t
 	desc = SOV_soviet_union.22.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_democratic_russia_rally_in_moscow
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -844,7 +855,7 @@ country_event = {
 	id = SOV_soviet_union.23 ## авторитет Горбачёва падает  ##
 	title = SOV_soviet_union.23.t
 	desc = SOV_soviet_union.23.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_gorbachevs_authority_is_declining
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -864,14 +875,14 @@ country_event = {
 	id = SOV_soviet_union.24 ## XIX Всесоюзная конференция КПСС  ##
 	title = SOV_soviet_union.24.t
 	desc = SOV_soviet_union.24.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_xix_all_union_conference_of_the_cpsu
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = SOV_soviet_union.24.a
-        add_political_power = 25
+		add_stability = 0.03
     }
 }
 
@@ -879,14 +890,25 @@ country_event = {
 	id = SOV_soviet_union.25 ## Визит в Китай  ##
 	title = SOV_soviet_union.25.t
 	desc = SOV_soviet_union.25.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_visit_to_china
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = SOV_soviet_union.25.a
-        add_political_power = 25
+		ROOT = {
+			add_opinion_modifier = {
+				target = PRC
+				modifier = small_increase
+			}
+		}
+		PRC = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = small_increase
+			}
+		}
     }
 }
 
@@ -894,7 +916,7 @@ country_event = {
 	id = SOV_soviet_union.26 ## Выборы народных депутатов СССР  ##
 	title = SOV_soviet_union.26.t
 	desc = SOV_soviet_union.26.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_elections_of_peoples_deputies_ussr
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -909,7 +931,7 @@ country_event = {
 	id = SOV_soviet_union.27 ## III съезд народных депутатов  ##
 	title = SOV_soviet_union.27.t
 	desc = SOV_soviet_union.27.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_iii_congress_of_peoples_deputies_ussr
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -924,14 +946,15 @@ country_event = {
 	id = SOV_soviet_union.28 ## XXVIII Съезд КПСС  ##
 	title = SOV_soviet_union.28.t
 	desc = SOV_soviet_union.28.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_congress_of_the_cpsu
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = SOV_soviet_union.28.a
-        add_political_power = 25
+        add_stability = 0.03
+		add_political_power = 10
     }
 }
 
@@ -939,7 +962,7 @@ country_event = {
 	id = SOV_soviet_union.29 ## Пленум ЦК КПСС  ##
 	title = SOV_soviet_union.29.t
 	desc = SOV_soviet_union.29.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_plenum_central_committee_cpsu
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -954,14 +977,25 @@ country_event = {
 	id = SOV_soviet_union.30 ## Визит в ФРГ  ##
 	title = SOV_soviet_union.30.t
 	desc = SOV_soviet_union.30.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_visit_to_wgr
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = SOV_soviet_union.30.a
-        add_political_power = 25
+		ROOT = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = small_increase
+			}
+		}
+		WGR = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = small_increase
+			}
+		}
     }
 }
 
@@ -969,14 +1003,25 @@ country_event = {
 	id = SOV_soviet_union.31 ## Визит в Париж  ##
 	title = SOV_soviet_union.31.t
 	desc = SOV_soviet_union.31.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_visit_to_paris
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = SOV_soviet_union.31.a
-        add_political_power = 25
+		ROOT = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = small_increase
+			}
+		}
+		FRA = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = small_increase
+			}
+		}
     }
 }
 
@@ -984,7 +1029,7 @@ country_event = {
 	id = SOV_soviet_union.32 ## 4 съезд народных депутатов  ##
 	title = SOV_soviet_union.32.t
 	desc = SOV_soviet_union.32.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_iv_congress_of_peoples_deputies_ussr
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -999,7 +1044,7 @@ country_event = {
 	id = SOV_soviet_union.33 ## 4 Съезд РСФСР  ##
 	title = SOV_soviet_union.33.t
 	desc = SOV_soviet_union.33.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_iv_congress_of_peoples_deputies_rsfsr
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1014,7 +1059,7 @@ country_event = {
 	id = SOV_soviet_union.34 ## Заключительное заседание ССГ  ##ЦЫ
 	title = SOV_soviet_union.34.t
 	desc = SOV_soviet_union.34.desc
-	picture = GFX_report_visit_to_hungary
+	picture = GFX_report_novo_ogaryovsky_trial
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1057,7 +1102,7 @@ country_event = {
 	id = SOV_soviet_union.36 ## выборы президента россии  ##ЦЫ
 	title = SOV_soviet_union.36.t
 	desc = SOV_soviet_union.36.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_election_of_president_russia
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1114,7 +1159,7 @@ country_event = {
 	id = SOV_soviet_union.37 ## выборы президента россии  ##ЦЫ
 	title = SOV_soviet_union.37.t
 	desc = SOV_soviet_union.37.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_novo_ogaryovsky_trial
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1133,7 +1178,7 @@ country_event = {
 	id = SOV_soviet_union.38 ## соглашение о создании снг  ##ЦЫ
 	title = SOV_soviet_union.38.t
 	desc = SOV_soviet_union.38.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_belovezh_accords
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1187,7 +1232,7 @@ country_event = {
 	id = SOV_soviet_union.39 ## гкчп  ##ЦЫ
 	title = SOV_soviet_union.39.t
 	desc = SOV_soviet_union.39.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_state_emergency_committee
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1218,7 +1263,7 @@ country_event = {
 	id = SOV_soviet_union.40 ## речь ельцина  ##ЦЫ
 	title = SOV_soviet_union.40.t
 	desc = SOV_soviet_union.40.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_yeltsin_on_a_tank
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1241,7 +1286,7 @@ country_event = {
 	id = SOV_soviet_union.41 ## лебединое озеро  ##ЦЫ
 	title = SOV_soviet_union.41.t
 	desc = SOV_soviet_union.41.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_swan_lake
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1255,7 +1300,7 @@ country_event = {
 	id = SOV_soviet_union.42 ## гкчп расформировывается  ##ЦЫ
 	title = SOV_soviet_union.42.t
 	desc = SOV_soviet_union.42.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_yeltsin_on_a_tank
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1278,7 +1323,7 @@ country_event = {
 	id = SOV_soviet_union.43 ## речь горбачёва 25 декабря 1991 года  ##ЦЫ
 	title = SOV_soviet_union.43.t
 	desc = SOV_soviet_union.43.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_gorbachevs_speech_on_december_25_1991
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1314,7 +1359,7 @@ country_event = {
 	id = SOV_soviet_union.44 ## компромисс с ельциным  ##ЦЫ
 	title = SOV_soviet_union.44.t
 	desc = SOV_soviet_union.44.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_yeltsin_on_a_tank
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1334,7 +1379,7 @@ country_event = {
 	id = SOV_soviet_union.45 ## новый договор   ##ЦЫ
 	title = SOV_soviet_union.45.t
 	desc = SOV_soviet_union.45.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_belovezh_accords
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1439,7 +1484,7 @@ country_event = {
 	id = SOV_soviet_union.46 ## смерть ельцина   ##ЦЫ
 	title = SOV_soviet_union.46.t
 	desc = SOV_soviet_union.46.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
