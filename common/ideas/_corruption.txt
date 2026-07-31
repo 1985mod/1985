@@ -31,8 +31,6 @@ ideas = {
 
             picture = significant_corruption
 
-			default = yes
-
 			cost = 350
 			removal_cost = -1
 			level = 6
@@ -57,6 +55,7 @@ ideas = {
 
 			cost = 350
 			removal_cost = -1
+			default = yes
 			level = 5
 
 			available = {
