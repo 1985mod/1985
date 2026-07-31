@@ -92,4 +92,5 @@ set_popularities = {
 }
 
 recruit_character = GEO_zviad_gamsakhurdia
+recruit_character = GEO_state_council_of_georgia
 

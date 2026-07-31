@@ -447,6 +447,7 @@
 
         completion_reward = {
             country_event = { id = SOV_soviet_union.32 }
+            set_country_flag = the_position_of_vice_president_was_introduced
             load_focus_tree = soviet_gorbachev_focus_part_three
         }
     }

@@ -23,6 +23,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	paratroopers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	interwar_antitank = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
@@ -215,6 +216,7 @@ SOV_soviet_contingent_in_afghanistan
 SOV_economic_stagnation
 limited_conscription
 limited_exports
+SOV_boris_yeltsin_advisor
 }
 
 recruit_character = SOV_konstantin_chernenko
@@ -231,6 +233,8 @@ recruit_character = SOV_andrey_gromyko
 recruit_character = SOV_fedorchuk_vasilievich
 recruit_character = SOV_nikolay_baibakov
 recruit_character = SOV_boris_yeltsin_advisor
+recruit_character = SOV_nikolay_tikhonov
+recruit_character = SOV_nikolay_ryzhkov
 recruit_character = SOV_dmitry_yazov
 recruit_character = SOV_Shaposhnikov
 recruit_character = SOV_Sokolov
@@ -246,6 +250,11 @@ recruit_character = SOV_boris_gromov
 recruit_character = SOV_victor_ermakov
 recruit_character = SOV_igor_rodionov
 recruit_character = SOV_boris_tkach
+
+activate_advisor = SOV_nikolay_tikhonov
+activate_advisor = SOV_andrey_gromyko
+activate_advisor = SOV_fedorchuk_vasilievich
+activate_advisor = SOV_nikolay_baibakov
 
 252 = {
     add_building_construction = {

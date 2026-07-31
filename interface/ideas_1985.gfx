@@ -161,4 +161,14 @@ spriteTypes = {
         name = "GFX_idea_minor_corruption"
         texturefile = "gfx/interface/ideas/corruption/idea_minor_corruption.dds"
     }
+
+    spriteType = {
+        name = "GFX_icon_plus"
+        texturefile = "gfx/interface/icon_plus.dds"
+    }
+
+    spriteType = {
+        name = "GFX_icon_minus"
+        texturefile = "gfx/interface/icon_minus.dds"
+    }
 }

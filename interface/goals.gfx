@@ -13732,8 +13732,8 @@ spriteTypes = {
 	################
 
 	SpriteType = {
-		name = "GFX_focus_icon_SOV_course_towards_stability"
-		texturefile = "gfx/interface/goals/SOV/focus_icon_SOV_course_towards_stability.dds"
+		name = "GFX_focus_SOV_course_towards_stability"
+		texturefile = "gfx/interface/goals/SOV/course_towards_stability.dds"
 	}
 	
 	SpriteType = {

@@ -756,6 +756,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_Portrait_state_council_of_georgia
+		textureFile = "gfx/leaders/GEO/Portrait_state_council_of_georgia.dds"
+	}
+
+	spriteType = {
 		name = GFX_Portrait_levon_ter_petrosyan
 		textureFile = "gfx/leaders/ARM/Portrait_levon_ter_petrosyan.dds"
 	}

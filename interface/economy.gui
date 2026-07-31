@@ -206,17 +206,17 @@ guiTypes = {
 
     	buttonType = {
 			name = "interest_rate_increase"
-			quadTextureSprite = "GFX_x"
+			quadTextureSprite = "GFX_icon_plus"
 			position = { x=320 y=150 }
-            scale = 1.5
+            scale = 1
 			font = "hoi_18mbs"
 		}
 
     	buttonType = {
 			name = "interest_rate_decrease"
-			quadTextureSprite = "GFX_x"
+			quadTextureSprite = "GFX_icon_minus"
 			position = { x=320 y=175 }
-            scale = 1.5
+            scale = 1
 			font = "hoi_18mbs"
 		}
 
@@ -232,17 +232,17 @@ guiTypes = {
 
     	buttonType = {
 			name = "population_taxes_increase"
-			quadTextureSprite = "GFX_x"
+			quadTextureSprite = "GFX_icon_plus"
 			position = { x=320 y=220 }
-            scale = 1.5
+            scale = 1
 			font = "hoi_18mbs"
 		}
 
     	buttonType = {
 			name = "population_taxes_decrease"
-			quadTextureSprite = "GFX_x"
+			quadTextureSprite = "GFX_icon_minus"
 			position = { x=320 y=245 }
-            scale = 1.5
+            scale = 1
 			font = "hoi_18mbs"
 		}
 
@@ -258,17 +258,17 @@ guiTypes = {
 
     	buttonType = {
 			name = "corporate_rate_increase"
-			quadTextureSprite = "GFX_x"
+			quadTextureSprite = "GFX_icon_plus"
 			position = { x=320 y=291 }
-            scale = 1.5
+            scale = 1
 			font = "hoi_18mbs"
 		}
 
     	buttonType = {
 			name = "corporate_rate_decrease"
-			quadTextureSprite = "GFX_x"
+			quadTextureSprite = "GFX_icon_minus"
 			position = { x=320 y=316 }
-            scale = 1.5
+            scale = 1
 			font = "hoi_18mbs"
 		}
 

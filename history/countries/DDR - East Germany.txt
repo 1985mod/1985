@@ -90,5 +90,10 @@ recruit_character = DDR_Erich_Honecker
 recruit_character = DDR_Heinrich_Homann
 recruit_character = DDR_egon_krenz
 recruit_character = DDR_lothar_de_maiziere
+recruit_character = DDR_heinz_kebler
+recruit_character = DDR_manfred_gratz
+recruit_character = DDR_wolfgang_reinhold
+recruit_character = DDR_theodor_hoffmann
+recruit_character = DDR_klaus_dieter_baumgarten
 
 

@@ -15,4 +15,21 @@ characters = {
 			expire="1993.11.9.1"		
 		}
 	}
+
+	GEO_state_council_of_georgia ={
+		name = GEO_state_council_of_georgia
+		portraits={
+			civilian={
+				large= GFX_Portrait_state_council_of_georgia
+			}
+			army = {
+				large = GFX_Portrait_state_council_of_georgia
+			}
+		}
+		country_leader={
+			ideology = ethnic_nationalism
+			traits={  }
+			expire="1993.11.9.1"		
+		}
+	}
 }

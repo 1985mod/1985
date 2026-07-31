@@ -516,8 +516,8 @@ should_USA_invade_europe_or_africa = {
 		USA = {
 			OR = {
 				AND = {
-					has_government = democratic
-					ENG = { has_government = democratic }
+					has_government = conservatism
+					ENG = { has_government = conservatism }
 					OR = {
 						GER = { has_government = fascism }
 						ITA = { has_government = fascism }
@@ -704,8 +704,8 @@ has_same_ideology = {
 		tooltip = has_same_ideology_tt
 		OR = {
 			AND = {
-				has_government = democratic
-				ROOT = { has_government = democratic }
+				has_government = conservatism
+				ROOT = { has_government = conservatism }
 			}
 			AND = {
 				has_government = fascism
@@ -1428,7 +1428,7 @@ is_democratic_seller_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = "Democratic Countries"
 		FROM = {
-			has_government = democratic
+			has_government = conservatism
 		}
 	}
 }
@@ -1441,7 +1441,7 @@ is_fascist_seller_trigger = {
 
 is_democracy_seller_trigger = {
 	NOT = { has_war_with = ROOT	}
-	has_government = democratic 
+	has_government = conservatism 
 }
 
 is_communist_seller_trigger = {
