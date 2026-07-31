@@ -14,6 +14,26 @@ spriteTypes = {
 		name = "GFX_report_dead_chernenko"
 		texturefile = "gfx/event_pictures/report_dead_chernenko.dds"
 	}
+
+	spriteType = {
+		name = "GFX_report_introduce_troops_in_lithuania"
+		texturefile = "gfx/event_pictures/GFX_report_introduce_troops_in_lithuania.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_soviet_union_referendum"
+		texturefile = "gfx/event_pictures/report_soviet_union_referendum.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_iii_congress_of_peoples_deputies_rsfsr"
+		texturefile = "gfx/event_pictures/report_iii_congress_of_peoples_deputies_rsfsr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_trops_in_moscow"
+		texturefile = "gfx/event_pictures/report_trops_in_moscow.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_report_event_DDR_Honecker_and_Kohl"
