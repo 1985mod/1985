@@ -1868,32 +1868,25 @@ on_actions = {
 
 	on_startup = {
 		effect = {
-			every_country = {
-				set_variable = { var = num_of_civ value = num_of_civilian_factories }
-				multiply_variable = { var = num_of_civ value = 15 }
-				
-				set_variable = { var = num_of_mil value = num_of_military_factories }
-				multiply_variable = { var = num_of_mil value = 10 }
+			calculate_gdp_effect = yes
+			calculate_nominal_gdp_effect = yes
+			inflation_effect = yes
+			calculate_gdp_growth = yes
+			corruption_effect = yes
+			population_tax_effect = yes
+			velocity_effect = yes
+		}
+	}
 
-				set_variable = { var = num_of_naval value = num_of_naval_factories }
-				multiply_variable = { var = num_of_naval value = 10 }
-
-				set_variable = { var = country_gdp value = num_of_civ }
-				add_to_variable = { var = country_gdp value = num_of_mil }
-				add_to_variable = { var = country_gdp value = num_of_naval }
-
-				set_variable = { var = gdp_per_capita value = country_gdp }
-				multiply_variable = { var = gdp_per_capita value = 10000 }
-				if = {
-					limit = {
-						max_manpower > 0
-					}
-					divide_variable = { var = gdp_per_capita value = max_manpower }
-				}
-				multiply_variable = { var = gdp_per_capita value = 100 }
-				set_variable = { var = old_gdp value = country_gdp }
-				set_variable = { var = gdp_growth_rate value = 0 }
-			}
+	on_weekly = {
+		effect = {
+			calculate_gdp_effect = yes
+			calculate_nominal_gdp_effect = yes
+			inflation_effect = yes
+			calculate_gdp_growth = yes
+			corruption_effect = yes
+			population_tax_effect = yes
+			velocity_effect = yes
 		}
 	}
 

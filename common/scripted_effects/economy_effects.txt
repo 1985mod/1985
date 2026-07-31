@@ -22,23 +22,271 @@ calculate_gdp_effect = {
             divide_variable = { var = gdp_per_capita value = max_manpower }
         }
         multiply_variable = { var = gdp_per_capita value = 100 }
+    }
+}
 
-		if = {
-			limit = {
-				check_variable = { var = old_gdp value = 0 compare = greater_than }
-			}
-			set_variable = { var = gdp_growth_calculate value = country_gdp }
-			subtract_from_variable  = { var = gdp_growth_calculate value = old_gdp }
-			multiply_variable = { var = gdp_growth_calculate value = 100 }
-			divide_variable = { var = gdp_growth_calculate value = old_gdp }
+calculate_nominal_gdp_effect = { 
+    every_country = { 
+        if = {
+            limit = { NOT = { has_variable = money_supply } }
+            set_variable = { var = money_supply value = country_gdp }
+        }
+        if = {
+            limit = { check_variable = { var = velocity value = 0 compare = less_than } }
+            set_variable = { var = velocity value = 0 }
+        }
+        set_variable = { var = nominal_gdp value = money_supply }
+        multiply_variable = { var = nominal_gdp value = velocity }
+    }
+}
 
-			set_variable = { var = gdp_growth_rate value = gdp_growth_calculate }
-		}
+calculate_gdp_growth = {
+    every_country = {
+        if = {
+            limit = { 
+                NOT = { has_variable = months_passed_timer } 
+            }
+            set_variable = { var = months_passed_timer value = 0 }
+            set_variable = { var = old_gdp value = country_gdp }
+        }
 
-		else = {
-			set_variable = { var = gdp_growth_rate value = 0 }
-		}
+        add_to_variable = { var = months_passed_timer value = 1 }
 
-        set_variable = { var = old_gdp value = country_gdp }
+        if = {
+            limit = {
+                check_variable = { months_passed_timer > 2 }
+            }
+        }
+            
+        if = {
+            limit = {
+                check_variable = { var = old_gdp value = 0 compare = greater_than }
+            }
+            set_temp_variable = { var = gdp_growth_calculate value = country_gdp }
+            subtract_from_temp_variable = { var = gdp_growth_calculate value = old_gdp }
+            multiply_temp_variable = { var = gdp_growth_calculate value = 100 }
+            divide_temp_variable = { var = gdp_growth_calculate value = old_gdp }
+            set_variable = { var = gdp_growth_rate value = gdp_growth_calculate }
+        }   
+            
+        else = {
+            set_variable = { var = gdp_growth_rate value = 0 }
+            set_variable = { var = old_gdp value = country_gdp }
+            clear_variable = months_passed_timer
+            set_variable = { var = months_passed_timer value = 0 }
+        }
+    }
+}
+
+inflation_effect = {
+    every_country = {   
+        if = { 
+            limit = { NOT = { has_variable = inflation_rate } } 
+            set_variable = { var = inflation_rate value = 0 } 
+        }
+        if = { 
+            limit = { NOT = { has_variable = nominal_gdp } } 
+            set_variable = { var = nominal_gdp value = country_gdp } 
+        }
+
+        if = {
+            limit = {
+                has_variable = country_gdp
+                has_variable = nominal_gdp
+                has_variable = inflation_rate
+                check_variable = { var = country_gdp value = 0 compare = greater_than }
+            }
+            
+            if = {
+                limit = {
+                    NOT = { has_variable = old_inflation }
+                }
+                set_variable = { var = old_inflation value = 0 }
+            }
+            
+            set_temp_variable = { var = instant_inflation value = nominal_gdp }
+            divide_temp_variable = { var = instant_inflation value = country_gdp }
+            subtract_from_temp_variable = { var = instant_inflation value = 1 }
+            multiply_temp_variable = { var = instant_inflation value = 100 }
+            
+            set_temp_variable = { var = weighted_old value = old_inflation }
+            multiply_temp_variable = { var = weighted_old value = 0.8 }
+
+            set_temp_variable = { var = weighted_instant value = instant_inflation }
+            multiply_temp_variable = { var = weighted_instant value = 0.2 }
+            
+            set_variable = { var = inflation_rate value = weighted_old }
+            add_to_variable = { var = inflation_rate value = weighted_instant }
+
+            set_variable = { var = old_inflation value = inflation_rate }
+        }
+    }
+}
+
+population_tax_effect = {
+
+    set_variable = { var = population_efficiency value = 1 }
+
+    set_temp_variable = { var = a value = tax_effiency }
+    multiply_temp_variable = { var = a value = 0.75 }
+
+    set_temp_variable = { var = b value = 1.55 }
+    subtract_from_temp_variable = { var = b value = a }
+    multiply_temp_variable = { var = b value = 1.36 }
+    multiply_temp_variable = { var = b value = pop_rate }
+    divide_temp_variable = { var = b value = 100 }
+    multiply_temp_variable = { var = b value = b }
+
+    subtract_from_variable = { var = population_efficiency value = b }
+    multiply_variable = { var = population_efficiency value = tax_effiency }
+
+    if = {
+        limit = { check_variable = { population_efficiency < 0 } }
+        set_variable = { var = population_efficiency value = 0 }
+    }
+
+    if = {
+        limit = { NOT = { has_variable = k_pop } }
+        if = {
+            limit = { has_government = communism }
+            set_variable = { var = k_pop value = 1 }
+        }
+        else = {
+            set_variable = { var = k_pop value = 4 }
+        }
+    }
+ 
+    set_variable = { var = population_tax value = k_pop }
+    multiply_variable = { var = population_tax value = nominal_gdp }
+    divide_variable = { var = population_tax value = 100 }
+    multiply_variable = { var = population_tax value = pop_rate }
+    multiply_variable = { var = population_tax value = population_efficiency }
+    multiply_variable = { var = population_tax value = 7 }
+    divide_variable = { var = population_tax value = 365 }
+
+    set_variable = { var = income_budget value = population_tax }
+}
+
+corruption_effect = {
+    if = {
+        limit = {
+            NOT = { has_variable = corruption_level }
+        }
+        set_variable = { var = corruption_level value = 0.4 }
+    }
+
+    if = { 
+        limit = {
+            has_variable = corruption_level
+            has_idea = horrific_corruption
+        }
+        set_variable = { var = corruption_level value = 0.25 }
+    }
+
+    if = { 
+        limit = {
+            has_variable = corruption_level
+            has_idea = significant_corruption
+        }
+        set_variable = { var = corruption_level value = 0.4 }
+    }
+
+    if = { 
+        limit = {
+            has_variable = corruption_level
+            has_idea = moderate_corruption
+        }
+        set_variable = { var = corruption_level value = 0.6 }
+    }
+
+    if = { 
+        limit = {
+            has_variable = corruption_level
+            has_idea = low_corruption
+        }
+        set_variable = { var = corruption_level value = 0.8 }
+    }
+
+    if = { 
+        limit = {
+            has_variable = corruption_level
+            has_idea = minor_corruption
+        }
+        set_variable = { var = corruption_level value = 0.95 }
+    }
+
+    if = { 
+        limit = {
+            has_government = communism
+            NOT = { has_variable = corruption_income_mod }
+        }
+
+        set_variable = { var = corruption_income_mod value = 0.5 }
+        multiply_variable = { var = corruption_income_mod value = corruption_level }
+        add_to_variable = { var = corruption_income_mod value = 0.5 }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_variable = corruption_income_mod }
+        }
+        set_variable = { var = corruption_income_mod value = corruption_level }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_variable = tax_effciency }
+        }
+        set_variable = { var = tax_effiency value = 0.6 }
+        multiply_variable = { var = tax_effiency value = gdp_per_capita }
+        
+        set_temp_variable = { var = tax_effiency_temp value = gdp_per_capita }
+        add_to_temp_variable = { var = tax_effiency_temp value = 3000 }
+        
+        divide_variable = { var = tax_effiency value = tax_effiency_temp }
+        add_to_variable = { var = tax_effiency value = 0.35 }
+
+        multiply_variable = { var = tax_effiency value = corruption_income_mod }
+    }
+}
+
+velocity_effect = {
+    every_country = {
+        if = {
+            limit = { NOT = { has_variable = interest_rate } }
+            set_variable = { var = interest_rate value = 0 }
+        }
+        if = {
+            limit = {
+                has_variable = interest_rate
+                has_variable = inflation_rate
+            }
+            set_temp_variable = { var = i value = interest_rate }
+            divide_temp_variable = { var = i value = 30 }
+
+            set_temp_variable = { var = f value = inflation_rate }
+            divide_temp_variable = { var = f = value = 50 }
+
+            set_temp_variable = { var = putin value = 1 }
+            set_temp_variable = { var = zelensky value = 1 }
+            add_to_temp_variable = { var = zelensky value = i }
+            divide_temp_variable = { var = putin value = zelensky }
+
+            set_temp_variable = { var = admiral_biden value = f }
+
+            if = {
+                limit = { check_variable = { var = inflation_rate value = 0 compare = greater_than } }
+                multiply_temp_variable = { var = admiral_biden value = 2 }
+            }
+            else = {
+                multiply_temp_variable = { var = admiral_biden value = -1.1 }
+            }
+
+            add_to_temp_variable = { var = admiral_biden value = 100 }
+            divide_temp_variable = { var = f value = admiral_biden }
+            add_to_temp_variable = { var = putin value = f }
+
+            set_variable = { var = velocity value = putin }
+        }
     }
 }
