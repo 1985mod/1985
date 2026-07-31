@@ -1866,6 +1866,101 @@ on_actions = {
 		}
 	}
 
+	on_monthly = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						check_variable = { var = inflation_rate value = -4 compare = less_than }
+					}
+					if = {
+						limit = { NOT = { has_idea = acute_deflation } }
+						remove_idea = deflation
+						remove_idea = inflation 
+						remove_idea = high_inflation 
+						remove_idea = galloping_inflation 
+						remove_idea = hyperinflation 
+						add_ideas = acute_deflation
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { var = inflation_rate value = -4 compare = greater_than_or_equals }
+						check_variable = { var = inflation_rate value = 0.01 compare = less_than }
+					}
+					if = {
+						limit = { NOT = { has_idea = deflation } }
+						remove_idea = acute_deflation 
+						remove_idea = inflation 
+						remove_idea = high_inflation 
+						remove_idea = galloping_inflation 
+						remove_idea = hyperinflation 
+						add_ideas = deflation
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { var = inflation_rate value = -0.01 compare = greater_than_or_equals }
+						check_variable = { var = inflation_rate value = 10 compare = less_than }
+					}
+					if = {
+						limit = { NOT = { has_idea = inflation } }
+						remove_idea = acute_deflation 
+						remove_idea = deflation
+						remove_idea = high_inflation 
+						remove_idea = galloping_inflation 
+						remove_idea = hyperinflation 
+						add_ideas = inflation
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { var = inflation_rate value = 10 compare = greater_than_or_equals }
+						check_variable = { var = inflation_rate value = 20 compare = less_than }
+					}
+					if = {
+						limit = { NOT = { has_idea = high_inflation } }
+						remove_idea = acute_deflation 
+						remove_idea = deflation
+						remove_idea = inflation 
+						remove_idea = galloping_inflation 
+						remove_idea = hyperinflation 
+						add_ideas = high_inflation
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { var = inflation_rate value = 20 compare = greater_than_or_equals }
+						check_variable = { var = inflation_rate value = 50 compare = less_than }
+					}
+					if = {
+						limit = { NOT = { has_idea = galloping_inflation } }
+						remove_idea = acute_deflation 
+						remove_idea = deflation
+						remove_idea = inflation 
+						remove_idea = high_inflation 
+						remove_idea = hyperinflation 
+						add_ideas = galloping_inflation
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { var = inflation_rate value = 50 compare = greater_than_or_equals }
+					}
+					if = {
+						limit = { NOT = { has_idea = hyperinflation } }
+						remove_idea = acute_deflation 
+						remove_idea = deflation
+						remove_idea = inflation 
+						remove_idea = high_inflation 
+						remove_idea = galloping_inflation 
+						add_ideas = hyperinflation
+					}
+				}
+			}
+		}
+	}
+
 	on_startup = {
 		effect = {
 			calculate_gdp_effect = yes
