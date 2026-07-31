@@ -57,4 +57,106 @@ characters = {
 			id = -1
 		}
 	}
+
+	######GENERALS####
+
+	DDR_heinz_kebler = {
+		name = DDR_heinz_kebler
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DDR/Portrait_heinz_kebler.dds"
+			}
+			army = {
+				large = "gfx/leaders/DDR/Portrait_heinz_kebler.dds"
+			}
+		}	
+		field_marshal={
+			skill=3
+			attack_skill=5
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	DDR_manfred_gratz = {
+		name = DDR_manfred_gratz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DDR/Portrait_manfred_gratz.dds"
+			}
+			army = {
+				large = "gfx/leaders/DDR/Portrait_manfred_gratz.dds"
+			}
+		}	
+		field_marshal={
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	DDR_wolfgang_reinhold = {
+		name = DDR_wolfgang_reinhold
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DDR/Portrait_wolfgang_reinhold.dds"
+			}
+			army = {
+				large = "gfx/leaders/DDR/Portrait_wolfgang_reinhold.dds"
+			}
+		}	
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	DDR_theodor_hoffmann = {
+		name = DDR_theodor_hoffmann
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DDR/Portrait_theodor_hoffmann.dds"
+			}
+			army = {
+				large = "gfx/leaders/DDR/Portrait_theodor_hoffmann.dds"
+			}
+		}	
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	DDR_klaus_dieter_baumgarten = {
+		name = DDR_klaus_dieter_baumgarten
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DDR/Portrait_klaus_dieter_baumgarten.dds"
+			}
+			army = {
+				large = "gfx/leaders/DDR/Portrait_klaus_dieter_baumgarten.dds"
+			}
+		}	
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
 }

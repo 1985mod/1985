@@ -28,42 +28,8 @@ calculate_gdp_effect = {
 
 calculate_nominal_gdp_effect = { 
     every_country = { 
-        set_variable = { var = gdp_from_resources value = 0 }
-        
-        set_temp_variable = { var = temp_resource value = resource_exported@oil }
-        multiply_variable = { var = temp_resource value = 25 }
-        add_to_variable = { var = gdp_from_resources value = temp_resource }
-        
-        set_temp_variable = { var = temp_resource value = resource_exported@aluminium }
-        multiply_variable = { var = temp_resource value = 15 }
-        add_to_variable = { var = gdp_from_resources value = temp_resource }
-        
-        set_temp_variable = { var = temp_resource value = resource_exported@rubber }
-        multiply_variable = { var = temp_resource value = 25 }
-        add_to_variable = { var = gdp_from_resources value = temp_resource }
-
-        set_temp_variable = { var = temp_resource value = resource_exported@tungsten }
-        multiply_variable = { var = temp_resource value = 50 }
-        add_to_variable = { var = gdp_from_resources value = temp_resource }
-        
-        set_temp_variable = { var = temp_resource value = resource_exported@steel }
-        multiply_variable = { var = temp_resource value = 50 }
-        add_to_variable = { var = gdp_from_resources value = temp_resource }
-        
-        set_temp_variable = { var = temp_resource value = resource_exported@chromium }
-        multiply_variable = { var = temp_resource value = 25 }
-        add_to_variable = { var = gdp_from_resources value = temp_resource }
-        
-        set_temp_variable = { var = temp_resource value = resource_exported@coal }
-        multiply_variable = { var = temp_resource value = 5 }
-        add_to_variable = { var = gdp_from_resources value = temp_resource }
-        
-        set_variable = { var = gdp_from_population value = max_manpower }
-        divide_variable = { var = gdp_from_population value = 4700000 }
-
         set_variable = { var = nominal_gdp_country value = country_gdp }
-        add_to_variable = { var = nominal_gdp_country value = gdp_from_resources }
-        add_to_variable = { var = nominal_gdp_country value = gdp_from_population }
+        add_to_variable = { var = nominal_gdp_country value = velocity_totally }
     }
 }
 
@@ -324,5 +290,35 @@ corruption_effect = {
         add_to_variable = { var = tax_effiency value = 0.35 }
 
         multiply_variable = { var = tax_effiency value = corruption_income_mod }
+    }
+}
+
+velocity_effect = {
+    every_country = {
+        if = {
+            limit = { NOT = { has_variable = velocity } }
+            set_variable = { var = velocity value = 1 }
+        }
+        if = {
+            limit = {
+                has_variable = key_interest_rate
+                has_variable = inflation_rate
+                check_variable = { key_interest_rate > 0 }
+            }
+            set_variable = { var = velocity value = 2 }
+            set_temp_variable = { var = velocity_interest_rate value = key_interest_rate }
+            divide_temp_variable = { var = velocity_interest_rate  value = 20 }
+            multiply_temp_variable = { var = velocity_interest_rate value = velocity_interest_rate pow = 1.5 }
+            add_to_temp_variable = { var = velocity_interest_rate value = 2.71 }
+            add_to_temp_variable = { var = velocity_interest_rate value = 1 }
+            divide_temp_variable = { var =  velocity_interest_rate  value = velocity }
+            multiply_temp_variable = { var = velocity_interest_rate value = 0.2 }
+
+            set_temp_variable = { var = velocity_inflation_rate value = inflation_rate }
+            divide_temp_variable = { var =  velocity_inflation_rate  value = 100 }
+            
+            add_to_temp_variable = { var = velocity_interest_rate value = velocity_inflation_rate }
+            set_variable = { var = velocity_totally value = velocity_interest_rate }
+        }
     }
 }

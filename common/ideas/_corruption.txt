@@ -1,5 +1,4 @@
 ideas = {
-
 	corruption_laws = {
 		law = yes
 		use_list_view = yes
@@ -8,7 +7,7 @@ ideas = {
 
             picture = horrific_corruption
 
-			cost = 750
+			cost = 350
 			removal_cost = -1
 			level = 7
 
@@ -32,7 +31,9 @@ ideas = {
 
             picture = significant_corruption
 
-			cost = 750
+			default = yes
+
+			cost = 350
 			removal_cost = -1
 			level = 6
 
@@ -54,9 +55,7 @@ ideas = {
 
             picture = depression
 
-			default = yes
-
-			cost = 750
+			cost = 350
 			removal_cost = -1
 			level = 5
 
@@ -77,7 +76,7 @@ ideas = {
 
             picture = low_corruption
 
-			cost = 750
+			cost = 350
 			removal_cost = -1
 			level = 4
 
@@ -98,7 +97,7 @@ ideas = {
 
             picture = minor_corruption
 
-			cost = 750
+			cost = 350
 			removal_cost = -1
 			level = 3
 

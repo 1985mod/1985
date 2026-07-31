@@ -81,7 +81,11 @@ characters = {
 
 			available = {
 				NOT = { has_country_leader = SOV_gennady_yanaev }
-				has_completed_focus = SOV_IV_congress_of_peoples_deputies
+				has_country_flag = the_position_of_vice_president_was_introduced
+			}
+
+			visible = {
+				has_country_flag = the_position_of_vice_president_was_introduced
 			}
 			traits = {
 				an_heir_without_ambitions
@@ -620,5 +624,58 @@ characters = {
 			}
 		}
 
+	}
+
+	SOV_nikolay_tikhonov = {
+		name = SOV_nikolay_tikhonov
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SOV/idea_portrait_nikolay_tikhonov.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = head_of_government
+			idea_token = SOV_nikolay_tikhonov
+
+			visible = {
+				OR = {
+					has_country_leader = { character = SOV_konstantin_chernenko ruling_only = yes }
+					has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
+					has_country_leader = { character = SOV_grigory_romanov ruling_only = yes }
+				}
+				NOT = { has_country_flag = replacing_tikhonov }
+			}
+			traits = {
+				heir_to_stagnation
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+	SOV_nikolay_ryzhkov = {
+		name = SOV_nikolay_ryzhkov
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SOV/idea_portrait_nikolay_ryzhkov.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = head_of_government
+			idea_token = SOV_nikolay_ryzhkov
+
+			visible = {
+				has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
+				has_country_flag = replacing_tikhonov
+			}
+			traits = {
+				supporter_of_perestroika
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
 	}
 }

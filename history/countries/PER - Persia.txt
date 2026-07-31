@@ -66,3 +66,4 @@ set_popularities = {
 set_convoys = 10
 
 recruit_character = PER_Ali_Khamenei
+recruit_character = PER_shapour_bakhtiar

@@ -73,6 +73,9 @@ focus_tree = {
         prerequisite = { focus = SOV_new_foreign_minister }
         cost = 5
         completion_reward = {
+            deactivate_advisor = SOV_nikolay_tikhonov
+            activate_advisor = SOV_nikolay_ryzhkov
+            set_country_flag = replacing_tikhonov
         }
     }
 
@@ -324,6 +327,7 @@ focus_tree = {
         cost = 5
         completion_reward = { #event#
             add_stability = -0.03
+            add_political_power = -25
         }
     }
 

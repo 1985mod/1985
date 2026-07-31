@@ -608,7 +608,8 @@ focus_tree = {
         cost = 2
 		
         completion_reward = {
-
+			add_stability = 0.03
+			add_war_support = 0.03
 	    }
 	}
 
@@ -622,7 +623,7 @@ focus_tree = {
         cost = 2
 		
         completion_reward = {
-
+			add_war_support = 0.05
 	    }
 	}
 
@@ -829,7 +830,11 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-			add_political_power = 1000
+			create_intelligence_agency = {
+				name = "C.I.A"
+				icon = GFX_intelligence_agency_logo_agency
+			}
+			upgrade_intelligence_agency = upgrade_form_department
 	    }
 	}
 
@@ -843,7 +848,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+			add_political_power = 125
 	    }
 	}
 
@@ -857,7 +862,8 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+			unlock_decision_category_tooltip = USA_operations_against_the_ayatollahs_cat
+			add_political_power = 50
 	    }
 	}
 
@@ -871,7 +877,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+			add_political_power = -100
 	    }
 	}
 
@@ -882,10 +888,16 @@ focus_tree = {
         icon = GFX_	
         x = 2
         y = 1
-        cost = 10
+        cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+			add_political_power = -50
+			PER = {
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.05
+				}
+			}
 	    }
 	}
 
@@ -900,8 +912,138 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-			add_political_power = 1000
-	    }
+			if = {
+				limit = {
+					PER = {
+						conservatism > 0.7
+						conservatism < 1.0
+					}
+				}
+				random_list = {
+					90 = { 
+						PER = { 
+							set_politics = {
+								ruling_party = conservatism
+								elections_allowed = yes
+								last_election = "1988.3.12"
+								election_frequency = 48
+							}
+						} 
+						ROOT = { complete_national_focus = USA_victory }
+					}
+					10 = { 
+						PER = { 
+							add_stability = -0.2
+							start_civil_war = {
+								ruling_party = neutrality
+								ideology = conservatism
+								size = 0.8
+								keep_political_leader = yes
+								keep_political_party_members = yes
+							}
+						} 
+					}
+				}
+			}
+			if = {
+				limit = {
+					PER = {
+						conservatism > 0.5
+						conservatism < 0.7
+					}
+				}
+				random_list = {
+					50 = { 
+						PER = { 
+							set_politics = {
+								ruling_party = conservatism
+								elections_allowed = yes
+								last_election = "1988.3.12"
+								election_frequency = 48
+							}
+						} 
+						ROOT = { complete_national_focus = USA_victory }
+					}
+					50 = { 
+						PER = { 
+							add_stability = -0.2
+							start_civil_war = {
+								ruling_party = neutrality
+								ideology = conservatism
+								size = 0.5
+								keep_political_leader = yes
+								keep_political_party_members = yes
+							}
+						} 
+					}
+				}
+			}
+			if = {
+				limit = {
+					PER = {
+						conservatism > 0.3
+						conservatism < 0.5
+					}
+				}
+				random_list = {
+					40 = { 
+						PER = { 
+							set_politics = {
+								ruling_party = conservatism
+								elections_allowed = yes
+								last_election = "1988.3.12"
+								election_frequency = 48
+							}
+						} 
+						ROOT = { complete_national_focus = USA_victory }
+					}
+					60 = { 
+						PER = { 
+							add_stability = -0.2
+							start_civil_war = {
+								ruling_party = neutrality
+								ideology = conservatism
+								size = 0.4
+								keep_political_leader = yes
+								keep_political_party_members = yes
+							}
+						} 
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					PER = {
+						conservatism > 0.03
+						conservatism < 0.3
+					}
+				}
+				15 = { 
+					PER = { 
+						set_politics = {
+							ruling_party = conservatism
+							elections_allowed = yes
+							last_election = "1988.3.12"
+							election_frequency = 48
+						}
+					} 
+					ROOT = { complete_national_focus = USA_victory }
+				}
+				85 = { 
+					PER = { 
+						add_stability = -0.2
+						start_civil_war = {
+							ruling_party = neutrality
+							ideology = conservatism
+							size = 0.2
+							keep_political_leader = yes
+							keep_political_party_members = yes
+						}
+					} 
+				}
+			}
+		}
 	}
 
     focus = { 
@@ -913,6 +1055,10 @@ focus_tree = {
         y = 1
         cost = 5
 		
+		available = {
+			always = no
+		}
+
         completion_reward = {
 			add_political_power = 1000
 	    }
@@ -925,7 +1071,7 @@ focus_tree = {
         icon = GFX_	
         x = 0
         y = 1
-        cost = 10
+        cost = 5
 		
         completion_reward = {
 			add_political_power = 1000
@@ -940,6 +1086,10 @@ focus_tree = {
         x = 1
         y = 1
         cost = 5
+
+		available = {
+			always = no
+		}
 		
         completion_reward = {
 			add_political_power = 1000
@@ -953,7 +1103,7 @@ focus_tree = {
         icon = GFX_	
         x = 0
         y = 1
-        cost = 10
+        cost = 5
 		
         completion_reward = {
 			add_political_power = 1000

@@ -1,0 +1,165 @@
+add_namespace = georgia
+
+country_event = {
+    id = georgia.1
+    title = georgia.1.t
+    desc = georgia.1.desc
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = GEO
+        country_exists = GEO
+        date > 1992.5.29
+        controls_state = 1057
+    }
+
+	immediate = {
+		division_template = { 
+			name = "National Guard of Georgia"
+			is_locked = no
+			regiments = { 
+			    infantry = { x = 0 y = 0 }
+			    infantry = { x = 0 y = 1 }
+			    infantry = { x = 0 y = 2 }
+			}
+		} 
+		231 = {
+			create_unit = { 
+				division = "name = \"1. National Guard of Georgia\" division_template = \"National Guard of Georgia\" start_experience_factor = 0.1" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"2. National Guard of Georgia\" division_template = \"National Guard of Georgia\" start_experience_factor = 0.1" 
+				owner = ROOT
+			}
+		} 
+		division_template = { 
+			name = "Zviadist detachments"
+			is_locked = no
+			regiments = { 
+			    infantry = { x = 0 y = 0 }
+			}
+		} 
+		231 = {
+			create_unit = { 
+				division = "name = \"1. Zviadist detachments\" division_template = \"Zviadist detachments\" start_experience_factor = 0.1" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"2. Zviadist detachments\" division_template = \"Zviadist detachments\" start_experience_factor = 0.1" 
+				owner = ROOT
+			}
+		}  
+		SOO = {
+			transfer_state = 1057
+		}
+	}
+
+    option = {
+        name = georgia.1.a
+        declare_war_on = {
+            target = SOO
+            type = annex_everything
+        }
+		SOO = {
+			division_template = { 
+				name = "Self defense units"
+				is_locked = no
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+				}
+			} 
+			1057 = {
+				create_unit = { 
+					division = "name = \"1. Self defense units\" division_template = \"Self defense units\" start_experience_factor = 0.1" 
+					owner = SOO
+				}
+				create_unit = { 
+					division = "name = \"2. Self defense units\" division_template = \"Self defense units\" start_experience_factor = 0.1" 
+					owner = SOO
+				}
+			}
+		}
+		country_event = { id = georgia.2 days = 1 }
+    }
+}
+
+country_event = {
+    id = georgia.2
+    title = georgia.2.t
+    desc = georgia.2.desc
+
+    fire_only_once = yes
+
+	is_triggered_only = yes
+
+    option = {
+        name = georgia.2.a
+		retire_country_leader = GEO_zviad_gamsakhurdia
+    }
+}
+
+country_event = {
+    id = georgia.3
+    title = georgia.3.t
+    desc = georgia.3.desc
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = GEO
+        country_exists = GEO
+        date > 1992.7.23
+        controls_state = 826
+    }
+
+	immediate = {
+		ABK = {
+			transfer_state = 826
+		}
+	}
+
+    option = {
+        name = georgia.3.a
+		ABK = {
+			division_template = { 
+				name = "Self defense units"
+				is_locked = no
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+				}
+			} 
+			826 = {
+				create_unit = { 
+					division = "name = \"1. Self defense units\" division_template = \"Self defense units\" start_experience_factor = 0.1" 
+					owner = ABK
+				}
+				create_unit = { 
+					division = "name = \"2. Self defense units\" division_template = \"Self defense units\" start_experience_factor = 0.1" 
+					owner = ABK
+				}
+			}
+		}
+		country_event = { id = georgia.4 days = 23 }
+    }
+}
+
+country_event = {
+    id = georgia.4
+    title = georgia.4.t
+    desc = georgia.4.desc
+
+    fire_only_once = yes
+
+	is_triggered_only = yes
+
+    option = {
+        name = georgia.4.a
+        declare_war_on = {
+            target = ABK
+            type = annex_everything
+        }
+    }
+}
+

@@ -13,3 +13,18 @@ characters = {
 			id = -1
 		}
 	}
+
+	PER_shapour_bakhtiar = {
+		name = PER_shapour_bakhtiar
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/Portrait_shapour_bakhtiar.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism
+			traits = { }
+			expire = "1971.3.1.1"
+			id = -1
+		}
+	}

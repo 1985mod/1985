@@ -73,3 +73,36 @@ USA_war_on_poverty_cat = {
 		original_tag = USA
 	}
 }
+
+USA_operations_against_the_ayatollahs_cat = {
+
+	icon = border_war
+		
+	priority = 45
+	  
+	allowed = {
+		original_tag = USA
+	}
+	  
+	visible = {
+		has_completed_focus = USA_operations_against_the_ayatollahs
+		has_country_leader = { character = USA_george_bush ruling_only = yes }
+		original_tag = USA
+	}
+}
+
+USA_operation_desert_storm_mission = {
+
+	icon = border_war
+		
+	priority = 45
+	  
+	allowed = {
+		original_tag = USA
+	}
+	  
+	visible = {
+		has_completed_focus = USA_operation_desert_storm
+		original_tag = USA
+	}
+}

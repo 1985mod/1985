@@ -24,7 +24,7 @@ idea_categories = {
 	}
 	
 	government = {
-		character_slot = vice_president_or_prime_minister
+		character_slot = head_of_government
 		character_slot = minister_of_foreign_affairs
 		character_slot = minister_of_the_interior
 		character_slot = minister_of_economy

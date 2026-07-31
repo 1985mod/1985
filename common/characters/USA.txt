@@ -63,6 +63,189 @@ characters={
 		}
 	}
 
+
+	######GENERALS####
+
+	USA_glenn_otis = {
+		name = USA_glenn_otis
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_glenn_otis.dds"
+			}
+			army = {
+				large = "gfx/leaders/USA/Portrait_glenn_otis.dds"
+			}
+		}	
+		field_marshal={
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	USA_robert_elton = {
+		name = USA_robert_elton
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_robert_elton.dds"
+			}
+			army = {
+				large = "gfx/leaders/USA/Portrait_robert_elton.dds"
+			}
+		}	
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	USA_norman_schwarzkop = {
+		name = USA_norman_schwarzkop
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_norman_schwarzkop.dds"
+			}
+			army = {
+				large = "gfx/leaders/USA/Portrait_norman_schwarzkop.dds"
+			}
+		}	
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	USA_joseph_palastra = {
+		name = USA_joseph_palastra
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_joseph_palastra.dds"
+			}
+			army = {
+				large = "gfx/leaders/USA/Portrait_joseph_palastra.dds"
+			}
+		}	
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	USA_maxwell_thurman = {
+		name = USA_maxwell_thurman
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_maxwell_thurman.dds"
+			}
+			army = {
+				large = "gfx/leaders/USA/Portrait_maxwell_thurman.dds"
+			}
+		}	
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	USA_robert_sennewald = {
+		name = USA_robert_sennewald
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_robert_sennewald.dds"
+			}
+			army = {
+				large = "gfx/leaders/USA/Portrait_robert_sennewald.dds"
+			}
+		}	
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	USA_robert_kingston = {
+		name = USA_robert_kingston
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_robert_kingston.dds"
+			}
+			army = {
+				large = "gfx/leaders/USA/Portrait_robert_kingston.dds"
+			}
+		}	
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	USA_carl_vuono = {
+		name = USA_carl_vuono
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_carl_vuono.dds"
+			}
+			army = {
+				large = "gfx/leaders/USA/Portrait_carl_vuono.dds"
+			}
+		}	
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	USA_andrew_chambers = {
+		name = USA_andrew_chambers
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_andrew_chambers.dds"
+			}
+			army = {
+				large = "gfx/leaders/USA/Portrait_andrew_chambers.dds"
+			}
+		}	
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
 	### Political advisors ###
 
 	USA_george_bush_advisor = {
@@ -74,11 +257,35 @@ characters={
 		}
 		advisor = {
 			cost = 150
-			slot = vice_president_or_prime_minister
+			slot = head_of_government
 			idea_token = USA_george_bush_advisor
 			available = {
 				has_government = conservatism
 				NOT = { has_country_leader = { character = USA_george_bush ruling_only = yes } }
+			}
+			traits = {
+				the_fixer
+			}
+
+			ai_will_do = {
+				base = 0.5
+			}
+		}
+	}
+
+	USA_george_shultz = {
+		name = USA_george_shultz
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/USA/idea_portrait_george_shultz.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = minister_of_foreign_affairs
+			idea_token = USA_george_shultz
+			available = {
+				has_government = conservatism
 			}
 			traits = {
 				good_diplomat
@@ -129,7 +336,7 @@ characters={
 				has_government = conservatism
 			}
 			traits = {
-				good_diplomat
+				minister_of_the_interior_trait
 			}
 
 			ai_will_do = {

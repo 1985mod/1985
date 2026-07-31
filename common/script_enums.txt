@@ -13,7 +13,7 @@ script_enum_advisor_slot_type = {
 	navy_chief
 	air_chief
 	political_advisor
-	vice_president_or_prime_minister
+	head_of_government
 	minister_of_foreign_affairs
 	minister_of_the_interior
 	minister_of_economy

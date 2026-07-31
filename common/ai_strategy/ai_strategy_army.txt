@@ -73,7 +73,7 @@ asian_mass_mobilization = {
 SOV_build_army = {
 	enable = {
         OR = {
-    		original_tag = SOV
+            original_tag = SOV
             original_tag = RUS
         }
 	}
@@ -81,9 +81,9 @@ SOV_build_army = {
     abort_when_not_enabled = yes
 	
     ai_strategy = {
-       type = build_army
-       id = infantry
-       value = 320
+        type = build_army
+        id = infantry
+        value = 320
     }
 }
 
