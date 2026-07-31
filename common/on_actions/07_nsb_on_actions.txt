@@ -1873,7 +1873,7 @@ on_actions = {
 			inflation_effect = yes
 			calculate_gdp_growth = yes
 			corruption_effect = yes
-			population_tax_effect = yes
+			tax_effect = yes
 			velocity_effect = yes
 		}
 	}
@@ -1885,7 +1885,7 @@ on_actions = {
 			inflation_effect = yes
 			calculate_gdp_growth = yes
 			corruption_effect = yes
-			population_tax_effect = yes
+			tax_effect = yes
 			velocity_effect = yes
 		}
 	}
