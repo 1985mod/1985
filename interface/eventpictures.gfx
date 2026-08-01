@@ -226,6 +226,31 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_congress_of_the_peoples_deputies_of_russia"
+		texturefile = "gfx/event_pictures/report_congress_of_the_peoples_deputies_of_russia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_federative_treaty_1992"
+		texturefile = "gfx/event_pictures/report_federative_treaty_1992.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_chb_ii"
+		texturefile = "gfx/event_pictures/report_chb_ii.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_all_russian_referendum"
+		texturefile = "gfx/event_pictures/report_all_russian_referendum.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_decree_no_1400"
+		texturefile = "gfx/event_pictures/report_decree_no_1400.dds"
+	}
+
+	spriteType = {
 		name = "GFX_report_we_are_world"
 		texturefile = "gfx/event_pictures/report_we_are_world.dds"
 	}

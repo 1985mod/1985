@@ -4,16 +4,20 @@ country_event = {
 	id = russia.1 ##   VI Съезд народных депутатов России  ##
 	title = russia.1.t
 	desc = russia.1.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_congress_of_the_peoples_deputies_of_russia
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = russia.1.a
-        add_political_power = 25
+        add_political_power = 35
 		add_popularity = {
 			ideology = conservatism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = socialism
 			popularity = 0.03
 		}
     }
@@ -23,17 +27,64 @@ country_event = {
 	id = russia.2 ## Федеративный договор ##
 	title = russia.2.t
 	desc = russia.2.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_federative_treaty_1992
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = russia.2.a
-        add_political_power = 25
-		add_popularity = {
-			ideology = conservatism
-			popularity = 0.03
+        add_political_power = 50
+		custom_effect_tooltip = we_will_sign_federal_treaty
+		KAR = {
+            set_politics = {
+                ruling_party = ROOT
+                elections_allowed = yes
+            }
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.4
+            }
+		}
+		DAG = {
+            set_politics = {
+                ruling_party = ROOT
+                elections_allowed = yes
+            }
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.4
+            }
+		}
+		TAN = {
+            set_politics = {
+                ruling_party = ROOT
+                elections_allowed = yes
+            }
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.4
+            }
+		}
+		YAK = {
+            set_politics = {
+                ruling_party = ROOT
+                elections_allowed = yes
+            }
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.4
+            }
+		}
+		TAT = {
+            set_politics = {
+                ruling_party = ROOT
+                elections_allowed = yes
+            }
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.4
+            }
 		}
     }
 }
@@ -42,7 +93,7 @@ country_event = {
 	id = russia.3 ## VIII Съезд народных депутатов России ##
 	title = russia.3.t
 	desc = russia.3.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_congress_of_the_peoples_deputies_of_russia
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -61,7 +112,7 @@ country_event = {
 	id = russia.4 ## CHB II ##
 	title = russia.4.t
 	desc = russia.4.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_chb_ii
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -80,7 +131,7 @@ country_event = {
 	id = russia.5 ## Всенародный референдум ##
 	title = russia.5.t
 	desc = russia.5.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_all_russian_referendum
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -99,7 +150,7 @@ country_event = {
 	id = russia.6 ## IX Съезд народных депутатов России ##
 	title = russia.6.t
 	desc = russia.6.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_congress_of_the_peoples_deputies_of_russia
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -118,17 +169,17 @@ country_event = {
 	id = russia.7 ## Указ No 1400 ##
 	title = russia.7.t
 	desc = russia.7.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_decree_no_1400
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = russia.7.a
-        add_political_power = 25
+        add_political_power = 75
 		add_popularity = {
 			ideology = conservatism
-			popularity = 0.03
+			popularity = 0.1
 		}
     }
 }
@@ -137,17 +188,17 @@ country_event = {
 	id = russia.8 ## X Съезд народных депутатов России ##
 	title = russia.8.t
 	desc = russia.8.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_congress_of_the_peoples_deputies_of_russia
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
     option = {
         name = russia.8.a
-        add_political_power = 25
+        add_political_power = 50
 		add_popularity = {
 			ideology = conservatism
-			popularity = 0.03
+			popularity = 0.05
 		}
     }
 }
@@ -156,7 +207,7 @@ country_event = {
 	id = russia.9 ## Решающий день для России ##
 	title = russia.9.t
 	desc = russia.9.desc
-	picture = GFX_report_death_victor_tsoi
+	picture = GFX_report_decree_no_1400
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -168,5 +219,26 @@ country_event = {
 			ideology = conservatism
 			popularity = 0.03
 		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.05
+		}
+    }
+}
+
+country_event = {
+	id = russia.10 ## Решающий день для России ##
+	title = russia.10.t
+	desc = russia.10.desc
+	picture = GFX_report_decree_no_1400
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = russia.10.a
+        add_political_power = -10
+		add_stability = -0.05
+		add_ideas = RUS_mass_banditry
     }
 }

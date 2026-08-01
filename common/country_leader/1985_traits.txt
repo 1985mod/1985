@@ -131,7 +131,7 @@ leader_traits = {
 		stability_factor = -0.1
 		party_popularity_stability_factor = 0.05
 		political_power_factor = 0.1
-		socialism_drift = 0.03
+		socialism_drift = 0.02
 
 		ai_will_do = {
 			factor = 1
@@ -144,6 +144,19 @@ leader_traits = {
 		party_popularity_stability_factor = 0.05
 		improve_relations_maintain_cost_factor = -0.05
 		conservatism_drift = 0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	moderate_socialist = {
+		sprite = 13
+
+		party_popularity_stability_factor = 0.05
+		economy_cost_factor = -0.1
+		conservatism_drift = 0.01
+		socialism_drift = 0.02
 
 		ai_will_do = {
 			factor = 1

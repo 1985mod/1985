@@ -162,4 +162,8 @@ recruit_character = RUS_vladimir_zhirinovsky
 recruit_character = RUS_gennady_zyuganov
 recruit_character = RUS_valeriya_novodvorskaya
 recruit_character = RUS_dmitry_vasilyev
+recruit_character = RUS_alexander_rutskoi
+recruit_character = RUS_egor_gaidar
+recruit_character = RUS_andrey_kozyrev
+recruit_character = RUS_victor_erin
 

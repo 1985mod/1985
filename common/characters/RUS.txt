@@ -97,4 +97,102 @@ characters = {
 			id = -1
 		}
 	}
+	#####POLITICAL ADVISORS####
+	RUS_alexander_rutskoi = {
+		name = RUS_alexander_rutskoi
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/RUS/idea_portrait_alexander_rutskoi.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = head_of_government
+			idea_token = RUS_alexander_rutskoi
+
+			visible = {
+				has_country_leader = { character = SOV_boris_yeltsin ruling_only = yes }
+				NOT = { has_country_leader = { character = RUS_alexander_rutskoi ruling_only = yes } }
+				RUS = { has_completed_focus = RUS_new_year_of_the_ew_russia }
+			}
+			traits = {
+				moderate_socialist
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	RUS_egor_gaidar = {
+		name = RUS_egor_gaidar
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/RUS/idea_portraot_egor_gaidar.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = minister_of_economy
+			idea_token = RUS_egor_gaidar
+
+			visible = {
+				RUS = { has_completed_focus = RUS_new_year_of_the_ew_russia }
+			}
+			traits = {
+				resource_development_company
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	RUS_andrey_kozyrev = {
+		name = RUS_andrey_kozyrev
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/RUS/idea_portrait_andrey_kozyrev.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = minister_of_foreign_affairs
+			idea_token = RUS_andrey_kozyrev
+
+			visible = {
+				RUS = { has_completed_focus = RUS_new_year_of_the_ew_russia }
+			}
+			traits = {
+				good_diplomat
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	RUS_victor_erin = {
+		name = RUS_victor_erin
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/RUS/idea_portrait_victor_erin.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = minister_of_the_interior
+			idea_token = RUS_victor_erin
+
+			visible = {
+				RUS = { has_completed_focus = RUS_new_year_of_the_ew_russia }
+			}
+			traits = {
+				minister_of_the_interior_trait
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
 }

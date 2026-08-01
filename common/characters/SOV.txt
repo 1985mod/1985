@@ -504,7 +504,7 @@ characters = {
 			legacy_id=-1
 		}
 	}
-	#####POLIT SOVIET####
+	#####POLITICAL ADVISORS####
 	SOV_Shaposhnikov = {
 		name = SOV_Shaposhnikov
 		portraits = {

@@ -4,7 +4,7 @@ ideas = {
 			picture = ячся
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = RUS
 			}
 
 			allowed_civil_war = {
@@ -23,7 +23,7 @@ ideas = {
 			picture = ячся
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = RUS
 			}
 
 			allowed_civil_war = {
@@ -42,7 +42,7 @@ ideas = {
 			picture = ячся
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = RUS
 			}
 
 			allowed_civil_war = {
@@ -56,6 +56,47 @@ ideas = {
                 trade_opinion_factor = 0.2
                 faction_trade_opinion_factor = 0.1
                 overlord_trade_cost_factor = -0.1
+			}
+		}
+
+		RUS_mass_banditry = {
+			picture = mass_banditry
+			
+			allowed = {
+				original_tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.35
+				political_power_factor = -0.15
+				war_support_factor = -0.1
+				stability_weekly = -0.01
+			}
+		}
+		RUS_plundered_army = {
+			picture = plundered_army
+			
+			allowed = {
+				original_tag = RUS
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                army_attack_factor = -0.15
+                army_defence_factor = -0.2
+                army_morale_factor = -0.1
+                max_planning_factor = -0.3
 			}
 		}
     }

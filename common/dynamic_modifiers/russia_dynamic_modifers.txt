@@ -1,7 +1,7 @@
 russia_radical_liberalisation_reforms = {
 	enable = { always = yes }
 	
-	icon = GFX_
+	icon = GFX_dynamic_modifier_russia_radical_reforms
 	
 	trade_opinion_factor = russia_liberalisation_economy_variable
 	consumer_goods_factor = russia_consumer_goods_factor_variable
