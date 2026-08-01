@@ -128,7 +128,6 @@ country_event = {   ### Иран соглашается ###
         name = iraq.4.a
         white_peace = FROM
         ROOT = { transfer_state = 413 }
-        ROOT = { transfer_state = 421 }
     }
 }
 
@@ -146,5 +145,34 @@ country_event = {   ### Иран отказывается
         name = iraq.5.a
         PER = { add_stability = -0.05 }
         PER = { add_war_support = -0.15 }
+    }
+}
+
+country_event = {   ### Иран отказывается
+    id = iraq.6
+    title = iraq.6.t
+    desc = iraq.6.d
+    picture = GFX_report_event_generic_peace
+
+    fire_only_once = yes
+
+    trigger = {
+        country_exists = IRQ
+        tag = IRQ
+        IRQ = {
+            has_government = fascism
+            controls_state = 1058
+            controls_state = 413
+            controls_state = 656
+        }
+    }
+
+    option = {
+        name = iraq.6.a
+        set_cosmetic_tag = IRQ_greater_iraq
+		IRQ = {
+			add_state_core = 413
+			add_state_core = 656
+		}
     }
 }

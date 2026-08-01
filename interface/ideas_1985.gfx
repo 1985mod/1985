@@ -71,8 +71,23 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_idea_plundered_army"
+        texturefile = "gfx/interface/ideas/RUS/idea_plundered_army.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_mass_banditry"
+        texturefile = "gfx/interface/ideas/RUS/idea_mass_banditry.dds"
+    }
+
+    spriteType = {
         name = "GFX_dynamic_modifier_cold_war"
         texturefile = "gfx/interface/ideas/dynamic_modifier_cold_war.dds"
+    }
+
+    spriteType = {
+        name = "GFX_dynamic_modifier_russia_radical_reforms"
+        texturefile = "gfx/interface/ideas/dynamic_modifier_russia_radical_reforms.dds"
     }
 
 

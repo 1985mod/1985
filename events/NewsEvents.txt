@@ -268,7 +268,6 @@ news_event = {
 		NOT = { PER = { has_war_with = IRQ } }
 	   	NOT = { has_global_flag = iraq_victory_in_iran_iraq_war }
 	   	IRQ = { controls_state = 413 }
-		IRQ = { controls_state = 421 }
 	}
 }
 

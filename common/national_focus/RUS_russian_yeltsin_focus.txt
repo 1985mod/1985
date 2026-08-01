@@ -25,6 +25,13 @@ focus_tree = {
 		completion_reward = {
             add_political_power = 50
             add_stability = 0.05
+            activate_advisor = RUS_alexander_rutskoi
+            activate_advisor = RUS_egor_gaidar
+            activate_advisor = RUS_andrey_kozyrev
+            activate_advisor = RUS_victor_erin
+            hidden_effect = {
+                country_event = { id = russia.10 days = 10 }
+            }
 		}
     } 
 
@@ -218,6 +225,7 @@ focus_tree = {
 
 		completion_reward = {
             load_oob = "SOV_1985"
+            add_ideas = RUS_plundered_army
 		}
     }  
 
