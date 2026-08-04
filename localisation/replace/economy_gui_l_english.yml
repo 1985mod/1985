@@ -1,5 +1,4 @@
 ﻿l_english:
- economy_title:0 "economy"
  ECONOMY_CIV_FACTORIES:0 "[?num_of_civilian_factories|Y0]"
  ECONOMY_MIL_FACTORIES:0 "[?num_of_military_factories|Y0]"
  ECONOMY_NAVAL_FACTORIES:0 "[?num_of_naval_factories|Y0]"
@@ -12,5 +11,15 @@
  POPULATION_TAXES:0 "[?pop_rate]%"
  CORPORATE_RATE:0 "[?corp_rate]%"
  VAT_RATE:0 "[?vat_rate]%"
- INCOME:0 "§G[?income_budget]B§!"
-
+ POPULATION_INCOME:0 "$§G[?population_tax|.3]"
+ CORPORATE_INCOME:0 "$§G[?corporate_tax|.3]"
+ VAT_INCOME:0 "$§G[?vat_tax|.3]"
+ RESOURCE_REVENUE:0 "$§G[?resource_revenue|.3]"
+ INCOME:0 "$§G[?income_budget|.3]§!"
+ MY_TOOLTIP_KEY:0 "§HGDP Structure:§!\nCivilian Production: [?civ_of_gdp|%0]\nMilitary Industry: [?mil_of_gdp|%0]\nNaval Sector & Dockyards: [?naval_of_gdp|%0]§!"
+ CORPORATE_RATE_LABEL:0 "[Root.corporate_rate_display]"
+ CORPORATE_RATE_LABEL_capitalism:0 "Corporate Tax Rate"
+ CORPORATE_RATE_LABEL_communism:0 "Enterprise Tax Rate"
+ CORPORATE_RATE_TAX_LABEL:0 "[Root.corporate_rate_tax_display]"
+ CORPORATE_RATE_TAX_LABEL_capitalism:0 "Corporate Income:"
+ CORPORATE_RATE_TAX_LABEL_communism:0 "Enterprise Income:"

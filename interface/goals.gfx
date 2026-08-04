@@ -2465,8 +2465,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_POL_belarus_army.dds"
 	}
 	SpriteType = { 
-		name = "GFX_focus_POL_clamp_down_on_danzig"
-		texturefile = "gfx/interface/goals/focus_POL_clamp_down_on_danzig.dds"
+		name = "GFX_focus_POL_clamp_down_on_Gdansk"
+		texturefile = "gfx/interface/goals/focus_POL_clamp_down_on_Gdansk.dds"
 	}
 	SpriteType = { 
 		name = "GFX_focus_POL_common_organization_of_society"
@@ -8112,12 +8112,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_GER_demand_sudetenland.dds"
 	}
 	SpriteType = { 
-		name = "GFX_focus_GER_danzig_or_war"
-		texturefile = "gfx/interface/goals/focus_GER_danzig_or_war.dds"
+		name = "GFX_focus_GER_Gdansk_or_war"
+		texturefile = "gfx/interface/goals/focus_GER_Gdansk_or_war.dds"
 	}
 	SpriteType = { 
-		name = "GFX_focus_GER_danzig_or_war_historical"
-		texturefile = "gfx/interface/goals/focus_GER_danzig_or_war_historical.dds"
+		name = "GFX_focus_GER_Gdansk_or_war_historical"
+		texturefile = "gfx/interface/goals/focus_GER_Gdansk_or_war_historical.dds"
 	}
 	SpriteType = { 
 		name = "GFX_focus_GER_operation_wesserubung"

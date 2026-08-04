@@ -19,12 +19,11 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			infrastructure = 3
 			air_base = 3
-
-			# Dnieprostroi Hydroelectric Station
 			11405 = { dam = 1 }
-			
+			nuclear_reactor = 1			
 		}
 	}
 

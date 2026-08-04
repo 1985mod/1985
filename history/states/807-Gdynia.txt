@@ -23,7 +23,7 @@ state = {
 		}
 		
 		victory_points = {
-			362 10 # Danzig
+			362 10 # Gdansk
 		}
 
 		buildings = {

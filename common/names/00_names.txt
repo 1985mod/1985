@@ -9077,7 +9077,7 @@ COR = {
 	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
 }
 
-#Danzig (same as Germany)
+#Gdansk (same as Germany)
 DNZ = {
 	male = {
 		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
@@ -9092,7 +9092,7 @@ DNZ = {
 		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm
 		Beisswenger Duttmann Wilbs Berglen Behrmann
 		}
-	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Danzig" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Gdansk" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
 #Cossacks
 DON = {

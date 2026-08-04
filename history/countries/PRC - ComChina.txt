@@ -34,4 +34,4 @@ add_ideas = {
 	civilian_economy
 }
 
-give_guarantee = PKR
+give_guarantee = PRK
