@@ -435,7 +435,7 @@
  FABRICATE_CLAIMS_ONSUCCESS_MESSAGE: "Наш шпион $SPY$ успешно обосновал претензии к государству §Y$COUNTRY$§!"
  guarantee: "Гарантирует независимость"
  guarantee_target: "Гарантирована независимость"
- danzig_for_guarantees: "Данциг в обмен на гарантии"
+ Gdansk_for_guarantees: "Гданьск в обмен на гарантии"
  betrayed_guarantee: "Гарантия нарушена"
  BREAKING_GUARANTEE_DESC: "Если мы откажемся, то нарушим гарантию. Стабильность уменьшится на $STABILITY|H%$, а государство $TARGET$ изменит свое мнение на $VALUE|H$."
  at_war: "В состоянии войны"

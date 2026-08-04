@@ -19,7 +19,7 @@ on_actions = {
 				limit = {
 					FROM.FROM = {
 						is_core_of = GER
-						NOT = { #these two cores are given to germany in the Danzig or War event, but the states are not transfered immediately
+						NOT = { #these two cores are given to germany in the Gdansk or War event, but the states are not transfered immediately
 							state = 85
 							state = 807
 							state = 8 #Luxembourg & Alsace
@@ -58,7 +58,7 @@ on_actions = {
 				limit = {
 					FROM.FROM = { state = 85 }
 				}
-				85 = { POL_remove_danzig_effect = yes }
+				85 = { POL_remove_Gdansk_effect = yes }
 				if = {
 					limit = {
 						ROOT = {
@@ -499,7 +499,7 @@ on_actions = {
 					} # Trigger the Post Civil War effects
 				}
 			}
-			#Make Danzig demilitarised again
+			#Make Gdansk demilitarised again
 			if = {
 				limit = {
 					original_tag = POL
@@ -513,7 +513,7 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = POL_clamp_down_on_danzig
+						has_completed_focus = POL_clamp_down_on_Gdansk
 					}
 					85 = {
 						remove_dynamic_modifier = {
@@ -1957,6 +1957,30 @@ on_actions = {
 						add_ideas = hyperinflation
 					}
 				}
+
+				set_variable = { var = pop_optimal value = 42.45 }
+				set_temp_variable = { var = t value = 0.75 }
+				multiply_temp_variable = { var = t value = tax_efficiency }
+				set_temp_variable = { var = delitel value = 1.55 }
+				subtract_from_temp_variable = { var = delitel value = t }
+				divide_variable = { var = pop_optimal value = delitel }
+				round_variable = pop_optimal
+
+				set_variable = { var = corp_optimal value = 23.86 }
+				set_temp_variable = { var = t value = 0.95 }
+				multiply_temp_variable = { var = t value = tax_efficiency }
+				set_temp_variable = { var = delitel value = 1.65 }
+				subtract_from_temp_variable = { var = delitel value = t }
+				divide_variable = { var = corp_optimal value = delitel }
+				round_variable = corp_optimal
+
+				set_variable = { var = vat_optimal value = 33.18 }
+				set_temp_variable = { var = t value = 1.15 }
+				multiply_temp_variable = { var = t value = tax_efficiency }
+				set_temp_variable = { var = delitel value = 2.55 }
+				subtract_from_temp_variable = { var = delitel value = t }
+				divide_variable = { var = vat_optimal value = delitel }
+				round_variable = vat_optimal
 			}
 		}
 	}

@@ -16963,11 +16963,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_POL_clamp_down_on_danzig_shine"
-		texturefile = "gfx/interface/goals/focus_POL_clamp_down_on_danzig.dds"
+		name = "GFX_focus_POL_clamp_down_on_Gdansk_shine"
+		texturefile = "gfx/interface/goals/focus_POL_clamp_down_on_Gdansk.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_POL_clamp_down_on_danzig.dds"
+			animationmaskfile = "gfx/interface/goals/focus_POL_clamp_down_on_Gdansk.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16980,7 +16980,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_POL_clamp_down_on_danzig.dds"
+			animationmaskfile = "gfx/interface/goals/focus_POL_clamp_down_on_Gdansk.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -57910,11 +57910,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GER_danzig_or_war_shine"
-		texturefile = "gfx/interface/goals/focus_GER_danzig_or_war.dds"
+		name = "GFX_focus_GER_Gdansk_or_war_shine"
+		texturefile = "gfx/interface/goals/focus_GER_Gdansk_or_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_GER_danzig_or_war.dds"
+			animationmaskfile = "gfx/interface/goals/focus_GER_Gdansk_or_war.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -57926,7 +57926,7 @@ spriteTypes = {
 			animationtexturescale = { x = 2.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_GER_danzig_or_war.dds"
+			animationmaskfile = "gfx/interface/goals/focus_GER_Gdansk_or_war.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -57941,11 +57941,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GER_danzig_or_war_historical_shine"
-		texturefile = "gfx/interface/goals/focus_GER_danzig_or_war_historical.dds"
+		name = "GFX_focus_GER_Gdansk_or_war_historical_shine"
+		texturefile = "gfx/interface/goals/focus_GER_Gdansk_or_war_historical.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_GER_danzig_or_war_historical.dds"
+			animationmaskfile = "gfx/interface/goals/focus_GER_Gdansk_or_war_historical.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -57957,7 +57957,7 @@ spriteTypes = {
 			animationtexturescale = { x = 2.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_GER_danzig_or_war_historical.dds"
+			animationmaskfile = "gfx/interface/goals/focus_GER_Gdansk_or_war_historical.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

@@ -36,3 +36,5 @@ set_popularities = {
 recruit_character = RAJ_Rajil_Gandi
 
 set_convoys = 100
+
+give_guarantee = BHU
