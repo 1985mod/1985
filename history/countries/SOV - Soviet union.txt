@@ -214,9 +214,10 @@ add_dynamic_modifier = { modifier = SOV_cold_war}
 add_ideas = {
 SOV_soviet_contingent_in_afghanistan
 SOV_economic_stagnation
+SOV_support_for_regimes_in_eastern_europe
+low_economic_mobilisation
 limited_conscription
 limited_exports
-SOV_boris_yeltsin_advisor
 }
 
 recruit_character = SOV_konstantin_chernenko

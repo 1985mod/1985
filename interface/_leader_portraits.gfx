@@ -822,4 +822,14 @@ spriteTypes = {
 		name = GFX_Portrait_dmitry_vasilyev
 		textureFile = "gfx/leaders/RUS/Portrait_Dmitry_Vasilyev.dds"
 	}
+
+	spriteType = {
+		name = GFX_Portrait_alexander_rutskoi
+		textureFile = "gfx/leaders/RUS/Portrait_alexander_rutskoi.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_boris_yeltsin_1993
+		textureFile = "gfx/leaders/RUS/Portrait_boris_yeltsin_1993.dds"
+	}
 }

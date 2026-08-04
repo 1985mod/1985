@@ -143,10 +143,6 @@ focus_tree = {
         x = 0
         y = 3
         cost = 10
-
-		available = {
-			has_political_power > 100
-		}
 		
         completion_reward = {
 			POL = {

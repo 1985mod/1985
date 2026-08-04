@@ -1,0 +1,201 @@
+division_template = {
+	name = "Armored brigade of England"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+}
+
+division_template = {
+	name = "Mechanized brigade of England"
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+division_template = {
+	name = "Infantry brigade of England"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3271
+		division_template = "Armored brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3271
+		division_template = "Armored brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3271
+		division_template = "Armored brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 405
+		division_template = "Armored brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 405
+		division_template = "Armored brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 405
+		division_template = "Armored brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9332
+		division_template = "Infantry brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9332
+		division_template = "Infantry brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9332
+		division_template = "Infantry brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 507
+		division_template = "Infantry brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 311
+		division_template = "Infantry brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 385
+		division_template = "Infantry brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10062
+		division_template = "Infantry brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13389
+		division_template = "Infantry brigade of England"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12960
+		division_template = "Infantry brigade of England"	
+		start_experience_factor = 0.2
+	}
+}

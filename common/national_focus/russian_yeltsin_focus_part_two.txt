@@ -156,7 +156,23 @@ focus_tree = {
         cost = 5
 
 		completion_reward = {
-
+            set_cosmetic_tag = RUS_victory_supreme_council
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = yes
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = 0.4
+            }
+            add_country_leader_role = {
+                character = RUS_alexander_rutskoi
+                promote_leader = yes
+                country_leader = {
+                    ideology = authoritarian_socialism
+                    expire = "2026.1.1.1"
+                }
+            }
 		}
     } 
 
@@ -172,7 +188,11 @@ focus_tree = {
         cost = 5
 
 		completion_reward = {
-
+            set_cosmetic_tag = RUS_russia_1993
+            set_country_leader_portrait = {
+                ideology = conservatism
+                portrait = GFX_Portrait_boris_yeltsin_1993
+            }
 		}
     } 
 }

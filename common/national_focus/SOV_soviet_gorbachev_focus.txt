@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 2
+            add = 200
             tag = SOV
         }
     }
@@ -325,8 +325,13 @@ focus_tree = {
         prerequisite = { focus = SOV_law_on_individual_labor_activity }
         prerequisite = { focus = SOV_decree_on_the_establishment_of_cooperatives_in_the_tnp }
         cost = 5
-        completion_reward = { #event#
-            add_stability = -0.03
+
+		select_effect = {
+			country_event = { id = sov_soviet_union.39 days = 15 } 
+		}
+
+        completion_reward = {
+            add_stability = 0.03
             add_political_power = -25
         }
     }

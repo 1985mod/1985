@@ -9,6 +9,7 @@ country_event = {
 	trigger = {
         has_country_flag = conservatism_soviet
         has_government = communism
+        NOT = { has_country_leader = { character = RUS_alexander_rutskoi ruling_only = yes } }
     }
 
 	option = {

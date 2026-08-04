@@ -23,7 +23,7 @@ set_politics = {
 }
 set_popularities = {
 	conservatism = 75
-	socialism = 35
+	socialism = 25
 }
 
 recruit_character = SWI_kurt_furgler 

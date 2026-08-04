@@ -506,3 +506,29 @@ news_event = {
 		add_war_support = -0.05
 	}
 }
+
+news_event = {
+	id = news.22 ## Провозглашение Великого Ирака ##
+	title = news.22.t
+	desc = news.22.desc
+	picture = GFX_news_proclamation_of_a_great_iraq
+    
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.22.a
+		trigger = {
+			NOT = {
+				TAG = IRQ
+			}
+		}
+	}
+	option = {
+		name = news.22.b
+		trigger = { TAG = IRQ }
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}

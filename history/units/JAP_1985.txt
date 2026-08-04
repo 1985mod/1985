@@ -1,1 +1,303 @@
-﻿
+﻿division_template = {
+	name = "Self-defense division of Japan"			# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored division of Japan"			# Infantry Division
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12421
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7595
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10512
+		division_template = "Armored division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10512
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10512
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10444
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4067
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6994
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7169
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11847
+		division_template = "Armored division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1182
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7169
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4188
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4188
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4142
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7072
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10125
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10100
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10125
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4094
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11960
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1025
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4164
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11932
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4027
+		division_template = "Armored division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1025
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7110
+		division_template = "Self-defense division of Japan"	
+		start_experience_factor = 0.1
+	}
+}

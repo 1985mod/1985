@@ -83,6 +83,11 @@ if = {
 		basic_torpedo = 1
 	}
 }
+
+add_ideas = {
+	EEC_support_from_the_ussr
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1985.1.1"

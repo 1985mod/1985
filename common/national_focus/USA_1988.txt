@@ -821,7 +821,11 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.03
+            }
+            add_political_power = 50
 	    }
 	}
 
@@ -877,7 +881,11 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.02
+            }
+            add_political_power = 25
 	    }
 	}
 
@@ -905,7 +913,24 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+            add_political_power = -50
+            if = {
+                limit = {
+                    IRQ = {
+                        controls_state = 656
+                    }
+                }
+                656 = { add_resistance = 15 }
+            }
+            add_political_power = -10
+            if = {
+                limit = {
+                    IRQ = {
+                        controls_state = 1058
+                    }
+                }
+                1058 = { add_resistance = 10 }
+            }
 	    }
 	}
 
@@ -919,7 +944,20 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			ROOT = {
+      		    declare_war_on = {
+          		   target = IRQ
+         		   type = annex_everything
+      			}	
+			}
+            if = {
+                limit = {
+                    IRQ = {
+                        controls_state = 1058
+                    }
+                }
+                1058 = { add_resistance = 100 }
+            }
 	    }
 	}
 
@@ -933,7 +971,8 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+            add_war_support = 0.1
+            add_stability = 0.05
 	    }
 	}
 

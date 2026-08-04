@@ -30,13 +30,12 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	early_submarine = 1
 	basic_submarine = 1
 	early_destroyer = 1
-	}
 }
 
 set_convoys = 50
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = conservatism
 	last_election = "1982.4.7"
 	election_frequency = 71
 	elections_allowed = no
@@ -44,7 +43,7 @@ set_politics = {
 set_popularities = {
 	communism = 10
 	socialism = 10
-	neutrality = 70
+	conservatism = 70
 	liberalism = 10
 }
 
