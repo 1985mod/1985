@@ -225,6 +225,7 @@ recruit_character = USA_robert_kingston
 recruit_character = USA_carl_vuono
 recruit_character = USA_andrew_chambers
 recruit_character = USA_george_shultz
+recruit_character = USA_george_bush_advisor
 recruit_character = USA_don_regan
 recruit_character = USA_donald_hodel
 recruit_character = USA_william_clark

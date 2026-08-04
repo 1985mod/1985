@@ -128,6 +128,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
+		add_stability = 0.02
 	}
 }
 
@@ -138,14 +139,12 @@ country_event = {
 	picture = GFX_report_soviet_union_referendum
 
 	is_triggered_only = yes
-
     fire_only_once = yes
-    major = yes
+
 	option = {
-        name = SOV_dead_cernenko.1.a
-        hidden_effect = {
-            add_stability = -0.3
-        }
+        name = SOV_soviet_union.4.a
+        add_stability = 0.03
+		add_political_power = 50
     }
 }
 
@@ -714,7 +713,7 @@ country_event = {
 country_event = {
 	id = SOV_soviet_union.16 ## Крушение рейса Аэрофлот 2306 в Коми АССР  ##
 	title = SOV_soviet_union.16.t
-	desc = SOV_soviet_union.15.desc
+	desc = SOV_soviet_union.16.desc
 	picture = GFX_report_tu_134_crash_near_syktyvkar
 
 	is_triggered_only = yes
@@ -723,7 +722,7 @@ country_event = {
     option = {
         name = SOV_soviet_union.16.a
         add_manpower = -54
-        add_stability = -0.03
+        add_stability = -0.05
     }
 }
 
@@ -1494,5 +1493,256 @@ country_event = {
 		}
 		retire_ideology_leader = socialism
 		kill_ideology_leader = conservatism
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.47 ## Желтоксан ##
+	title = SOV_soviet_union.47.t
+	desc = SOV_soviet_union.47.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.47.a
+		add_stability = -0.07
+		add_political_power = -50
+    }
+
+    option = {
+        name = SOV_soviet_union.47.b
+		add_stability = -0.05
+		country_event = { id = SOV_soviet_union.48 days = 1 }
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.48 ## План «Метель-1986» ##
+	title = SOV_soviet_union.48.t
+	desc = SOV_soviet_union.48.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.48.a
+		add_manpower = -2
+		add_stability = 0.02
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.49 ## События в Новом Узене ##
+	title = SOV_soviet_union.49.t
+	desc = SOV_soviet_union.49.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	trigger = {
+		has_country_flag = gorbachev
+		date > 1986.06.7
+	}
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.49.a
+		add_stability = -0.1
+		add_manpower = -65
+		country_event = { id = SOV_soviet_union.50 days = 2 }
+    }
+
+    option = {
+        name = SOV_soviet_union.49.b
+		add_stability = -0.05
+		add_manpower = -56
+		country_event = { id = SOV_soviet_union.51 days = 5 }
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.50 ## Ввод советских войск ##
+	title = SOV_soviet_union.50.t
+	desc = SOV_soviet_union.50.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.50.a
+		add_manpower = -253
+		add_stability = 0.05
+		add_political_power = -25
+		country_event = { id = SOV_soviet_union.52 days = 10 }
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.51 ## протесты усиливаются ##
+	title = SOV_soviet_union.51.t
+	desc = SOV_soviet_union.51.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.51.a
+		add_stability = -0.05
+		add_manpower = -62
+		country_event = { id = SOV_soviet_union.52 days = 6 }
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.52 ## протесты стихают ##
+	title = SOV_soviet_union.52.t
+	desc = SOV_soviet_union.52.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.52.a
+		add_stability = 0.03
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.53 ## Ферганские погромы ##
+	title = SOV_soviet_union.53.t
+	desc = SOV_soviet_union.53.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	trigger = {
+		has_country_flag = gorbachev
+		date > 1989.05.7
+	}
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.53.a
+		add_stability = -0.03
+		hidden_effect = {
+			country_event = { id = SOV_soviet_union.55 days = 6 }
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.54 ## Ввод милиции ##
+	title = SOV_soviet_union.54.t
+	desc = SOV_soviet_union.54.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.54.a
+		add_stability = 0.03
+		add_political_power = 10
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.55 ## погромы усиливаются ##
+	title = SOV_soviet_union.55.t
+	desc = SOV_soviet_union.55.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.55.a
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = { id = SOV_soviet_union.54 days = 1 }
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.56 ## Массовые беспорядки в Душанбе ##
+	title = SOV_soviet_union.56.t
+	desc = SOV_soviet_union.56.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	trigger = {
+		has_country_flag = gorbachev
+		date > 1990.02.1
+	}
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.56.a
+		add_stability = -0.05
+		add_political_power = -10
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.57 ## Ошские события 1990 года ##
+	title = SOV_soviet_union.57.t
+	desc = SOV_soviet_union.57.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	trigger = {
+		has_country_flag = gorbachev
+		date > 1990.05.10
+	}
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.57.a
+		add_stability = -0.03
+		add_political_power = -10
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.58 ## Статус НКАо ##
+	title = SOV_soviet_union.58.t
+	desc = SOV_soviet_union.58.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.58.a
+		ARM = {
+			add_state_core = 1054
+		}
+    }
+    option = {
+        name = SOV_soviet_union.58.b
+		AZR = {
+			add_state_core = 1054
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.59 ## Дела республик ##
+	title = SOV_soviet_union.59.t
+	desc = SOV_soviet_union.59.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.59.a
+		add_political_power = 25
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.03
+		}
     }
 }

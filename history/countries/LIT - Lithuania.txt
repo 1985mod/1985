@@ -1,4 +1,4 @@
-﻿capital = 11
+﻿capital = 784
 
 oob = "GEN_1985"
 

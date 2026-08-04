@@ -436,6 +436,11 @@ spriteTypes = {
 		name = "GFX_report_democrats_victory_1992"
 		texturefile = "gfx/event_pictures/report_democrats_victory_1992.dds"
 	}
+
+	spriteType = {
+		name = "GFX_news_proclamation_of_a_great_iraq"
+		texturefile = "gfx/event_pictures/news_proclamation_of_a_great_iraq.dds"
+	}
 }
 
 

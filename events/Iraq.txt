@@ -44,6 +44,10 @@ country_event = {   ### Ирак вторгается в Кувейт ###
         name = iraq.2.a
         set_global_flag = iraq_invade_in_kuwait
         ROOT = { add_state_claim = 656 }
+        add_timed_idea = {
+            idea = IRQ_invasion_of_kuwait
+            days = 50
+        }
         declare_war_on = {
            target = KUW
            type = annex_everything
@@ -170,6 +174,7 @@ country_event = {   ### Иран отказывается
     option = {
         name = iraq.6.a
         set_cosmetic_tag = IRQ_greater_iraq
+        news_event = { id = news.22 hours = 6 }
 		IRQ = {
 			add_state_core = 413
 			add_state_core = 656

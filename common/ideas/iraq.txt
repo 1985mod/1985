@@ -20,7 +20,30 @@ ideas = {
 			    stability_factor = -0.15
                 war_support_factor = -0.1
                 army_attack_factor = -0.2
-                ai_focus_defense_factor = 0.7
+                ai_focus_defense_factor = 5.0
+			}
+		}
+
+		IRQ_invasion_of_kuwait = {
+			picture = invasion_of_kuwait 
+			allowed = {
+				original_tag = IRQ
+			}
+
+            available = {
+                IRQ = { has_war_with = KUW }
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 2.0
+				army_defence_factor = 0.7
+				breakthrough_factor = 1.5
 			}
 		}
     }

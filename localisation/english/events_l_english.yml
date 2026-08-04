@@ -220,3 +220,7 @@ l_english:
  news.21.desc: "Many days of protests by students and workers in Beijing have reached a critical point. The demonstrators, demanding democratic reforms and an end to corruption, have completely paralyzed the center of the capital. Following sharp debates within the party leadership, a radical decision was made.\nThe deployment of army units and armored vehicles turned the square into a war zone. Despite barricades and resistance, the 'counter-revolutionary rebellion' was brutally suppressed by military forces. While the government claims order has been restored, the international community remains in shock. This day will forever alter the nation's domestic and foreign course."
  news.21.a: "This is a terrible tragedy..."
  news.21.b: "But surely nothing happened there..?"
+ news.22.t: "Proclamation of Greater Iraq"
+ news.22.desc: "Shortly after the fall of Kuwait and the suppression of resistance in Kurdistan and Khuzestan, Baghdad declared the creation of Greater Iraq, redrawing the British-drawn borders. Saddam Hussein was proclaimed the 'Guardian of the Arab Tiger,' and the incorporation of new territories gave Iraq control over a fifth of the world's oil reserves. Now the regime faces the challenge of holding together these disparate regions, uniting their resources to ensure economic and military growth."
+ news.22.a: "The world has changed forever..."
+ news.22.b: "Allahu Akbar! Glory to Iraq and to Saddam Hussein himself!"

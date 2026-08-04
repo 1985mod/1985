@@ -31,6 +31,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_idea_support_for_regimes_in_eastern_europe"
+        texturefile = "gfx/interface/ideas/SOV/idea_support_for_regimes_in_eastern_europe.dds"
+    }
+
+    spriteType = {
         name = "GFX_idea_endless_war_on_drugs"
         texturefile = "gfx/interface/ideas/USA/endless_war_on_drugs.dds"
     }
@@ -53,6 +58,11 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_tiring_war"
         texturefile = "gfx/interface/ideas/IRQ/idea_tiring_war.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_invasion_of_kuwait"
+        texturefile = "gfx/interface/ideas/IRQ/idea_invasion_of_kuwait.dds"
     } 
 
     spriteType = {

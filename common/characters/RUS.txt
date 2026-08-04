@@ -101,6 +101,9 @@ characters = {
 	RUS_alexander_rutskoi = {
 		name = RUS_alexander_rutskoi
 		portraits = {
+			civilian = {
+				large = GFX_Portrait_alexander_rutskoi
+			}
 			army = {
 				small = "gfx/interface/ideas/RUS/idea_portrait_alexander_rutskoi.dds"
 			}

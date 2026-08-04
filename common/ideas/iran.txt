@@ -20,7 +20,7 @@ ideas = {
 			    stability_factor = -0.15
                 war_support_factor = -0.1
                 army_attack_factor = -0.2
-                ai_focus_defense_factor = 0.7
+                ai_focus_defense_factor = 1.0
 			}
 		}
     }

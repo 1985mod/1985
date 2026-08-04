@@ -321,6 +321,11 @@
         y = 2
         cost = 5
         completion_reward = {
+            add_political_power = 25
+            add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
         }
     }
 
@@ -461,6 +466,7 @@
         y = 0
         cost = 5
         completion_reward = {
+            country_event = { id = SOV_soviet_union.59 }
         }
     }
 
@@ -487,6 +493,7 @@
         y = 1
         cost = 5
         completion_reward = {
+            country_event = { id = SOV_soviet_union.58 }
         }
     }
 
@@ -501,6 +508,25 @@
         y = 1
         cost = 5
         completion_reward = {
+            remove_ideas = SOV_support_for_regimes_in_eastern_europe
+            DDR = {
+                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+            }
+            CZE = {
+                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+            }
+            POL = {
+                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+            }
+            HUN = {
+                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+            }
+            ROM = {
+                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+            }
+            BUL = {
+                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+            }
         }
     }
 

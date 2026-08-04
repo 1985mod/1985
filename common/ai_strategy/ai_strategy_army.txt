@@ -45,7 +45,7 @@ majors_build_army = {
 	
     ai_strategy = {
        type = build_army
-       id = infantry
+       id = modern_armor
        value = 150
     }
 }
@@ -82,7 +82,7 @@ SOV_build_army = {
 	
     ai_strategy = {
         type = build_army
-        id = infantry
+        id = mechanized
         value = 320
     }
 }
@@ -96,7 +96,7 @@ USA_build_army = {
 	
     ai_strategy = {
        type = build_army
-       id = infantry
+       id = modern_armor
        value = 200
     }
 }

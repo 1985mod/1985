@@ -599,7 +599,10 @@ USA_operation_desert_storm_mission = {
 		
 		activation = {
 			ROOT = { has_war_with = IRQ }
-			USA = { has_completed_focus = USA_operation_desert_storm }
+			OR = {
+				USA = { has_completed_focus = USA_operation_desert_storm }
+				USA = { has_completed_focus = USA_landing_in_basra }
+			}
 		}
 		available = {
 			NOT = { has_war_with = IRQ }
@@ -610,7 +613,10 @@ USA_operation_desert_storm_mission = {
 				is_controlled_by_ROOT_or_subject = 656
 			}
 			original_tag = USA
-			USA = { has_completed_focus = USA_operation_desert_storm }
+			OR = {
+				USA = { has_completed_focus = USA_operation_desert_storm }
+				USA = { has_completed_focus = USA_landing_in_basra }
+			}
 		}
 		cancel_trigger = {
 			NOT = {
@@ -622,7 +628,10 @@ USA_operation_desert_storm_mission = {
 				}
 			}
 			original_tag = USA
-			USA = { has_completed_focus = USA_operation_desert_storm }
+			OR = {
+				USA = { has_completed_focus = USA_operation_desert_storm }
+				USA = { has_completed_focus = USA_landing_in_basra }
+			}
 		}
 		icon = mission_icon
 		days_mission_timeout = 30
