@@ -1,0 +1,30 @@
+﻿capital = 1015
+
+set_oob = GEN_1985
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	basic_train = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1985.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	conservatism = 26
+	neutrality = 74
+}
+
+recruit_character = HEZ_muhammad_hussein_fadlallah

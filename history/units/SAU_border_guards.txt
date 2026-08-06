@@ -1,0 +1,56 @@
+division_template = {
+	name = "Saudi border guards"			# Infantry Division
+	# Note: also Fortress divisions
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+}
+
+units = {
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1955
+		division_template = "Saudi border guards"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10850
+		division_template = "Saudi border guards"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12749
+		division_template = "Saudi border guards"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5058
+		division_template = "Saudi border guards"
+		start_experience_factor = 0.1
+	}
+}

@@ -491,13 +491,10 @@ script_enum_equipment_bonus_type = {
 	medium_tank_chassis_1
 	medium_tank_chassis_2
 	medium_tank_chassis_3
-	heavy_tank_chassis
-	heavy_tank_chassis_0
-	heavy_tank_chassis_1
-	heavy_tank_chassis_2
-	heavy_tank_chassis_3
 	modern_tank_chassis
-	modern_tank_chassis_1
+	modern_tank_chassis_2
+	modern_tank_chassis_3
+	modern_tank_chassis_4
 	super_heavy_tank_chassis
 	super_heavy_tank_chassis_1
 	amphibious_tank_chassis
@@ -776,5 +773,5 @@ script_enum_equipment_bonus_type = {
 	amphibious_tank_equipment_4
 	amphibious_tank_equipment_5
 	amphibious_tank_equipment_6
-	supersonic_fighter_equipment_1
+	supersonic_fighter_equipment_
 }

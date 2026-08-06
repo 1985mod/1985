@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		RUS_visit_to_the_usa = {
-			picture = ячся
+			picture = visit_to_the_usa
 			
 			allowed = {
 				original_tag = RUS
@@ -20,7 +20,7 @@ ideas = {
 			}
 		}
 		RUS_privatize_state_property = {
-			picture = ячся
+			picture = privatize_state_property
 			
 			allowed = {
 				original_tag = RUS
@@ -39,7 +39,7 @@ ideas = {
 			}
 		}
 		RUS_free_trade_decree = {
-			picture = ячся
+			picture = free_trade_decree
 			
 			allowed = {
 				original_tag = RUS

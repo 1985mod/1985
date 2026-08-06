@@ -392,20 +392,17 @@ focus_tree = {
         cost = 5
 
 		will_lead_to_war_with = IRQ
+		SAU = { will_lead_to_war_with = IRQ }
 		
         completion_reward = {
 			country_event = { id = news.8 }
+			set_country_flag = anti_iraq_coalition
 			every_country = {
 				limit = {
 					has_country_flag = anti_iraq_coalition
 				}
 				country_event = { id = usa.10 hours = 12 } 
-			}
-			ROOT = {
-      		    declare_war_on = {
-          		   target = IRQ
-         		   type = annex_everything
-      			}	
+				set_rule = { can_send_volunteers = yes }
 			}
 	    }
 	}
@@ -420,11 +417,7 @@ focus_tree = {
         cost = 1
 
 		available = {
-			has_war_with = IRQ
-		}
-		
-		bypass = {
-			NOT = { has_war_with = IRQ }
+			SAU = { has_war_with = IRQ }
 		}
 		
         completion_reward = {
@@ -457,11 +450,7 @@ focus_tree = {
         cost = 1
 
 		available = {
-			has_war_with = IRQ
-		}
-
-		bypass = {
-			NOT = { has_war_with = IRQ }
+			SAU = { has_war_with = IRQ }
 		}
 		
         completion_reward = {
@@ -479,11 +468,7 @@ focus_tree = {
         cost = 1
 
 		available = {
-			has_war_with = IRQ
-		}
-
-		bypass = {
-			NOT = { has_war_with = IRQ }
+			SAU = { has_war_with = IRQ }
 		}
 		
         completion_reward = {
@@ -504,11 +489,7 @@ focus_tree = {
         cost = 1
 
 		available = {
-			has_war_with = IRQ
-		}
-
-		bypass = {
-			NOT = { has_war_with = IRQ }
+			SAU = { has_war_with = IRQ }
 		}
 		
         completion_reward = {

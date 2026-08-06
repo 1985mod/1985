@@ -510,22 +510,22 @@
         completion_reward = {
             remove_ideas = SOV_support_for_regimes_in_eastern_europe
             DDR = {
-                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+                remove_ideas = EEC_support_from_the_ussr
             }
             CZE = {
-                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+                remove_ideas = EEC_support_from_the_ussr
             }
             POL = {
-                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+                remove_ideas = EEC_support_from_the_ussr
             }
             HUN = {
-                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+                remove_ideas = EEC_support_from_the_ussr
             }
             ROM = {
-                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+                remove_ideas = EEC_support_from_the_ussr
             }
             BUL = {
-                remove_ideas = SOV_support_for_regimes_in_eastern_europe
+                remove_ideas = EEC_support_from_the_ussr
             }
         }
     }
