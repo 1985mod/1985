@@ -19,6 +19,8 @@ recruit_character = REN_afonso_dhlakama
 
 set_convoys = 5
 
+add_manpower = 5000
+
 set_politics = {
 	ruling_party = conservatism
 	last_election = "1985.1.1"

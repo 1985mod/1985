@@ -1,17 +1,33 @@
 USA_preparing_for_war_in_iraq = {
     allowed = {
-        original_tag = USA
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+		    tag = PAK
+            tag = USA
+		}
         USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
     }
     enable = {
         country_exists = IRQ
-        OR = {
-            country_exists = SAU
-            country_exists = KUW
-            country_exists = UAE
-        }
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+		    tag = PAK
+            tag = USA
+		}
+        has_country_flag = anti_iraq_coalition
         USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
-        has_country_leader = { character = USA_george_bush ruling_only = yes }
     }
     abort = {
         USA = { has_completed_focus = USA_victory_in_iraq }
@@ -19,35 +35,53 @@ USA_preparing_for_war_in_iraq = {
     }
     abort_when_not_enabled = yes
     ai_strategy = {
-        type = prepare_for_war
-        id = IRQ
+        type = send_volunteers_desire
+        id = SAU
         value = 1000
     }
 }
 
-USA_troops_in_middle_east = {
+USA_preparing_for_war_in_iraq = {
     allowed = {
-        original_tag = USA
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+		    tag = PAK
+            tag = USA
+		}
         USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
     }
     enable = {
         country_exists = IRQ
-        OR = {
-            country_exists = SAU
-            country_exists = KUW
-            country_exists = UAE
-        }
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+		    tag = PAK
+            tag = USA
+		}
+        has_country_flag = anti_iraq_coalition
         USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
-        has_country_leader = { character = USA_george_bush ruling_only = yes }
     }
     abort = {
-        USA = { has_completed_focus = USA_victory_in_iraq }
         country_exists = KUW
+        USA = { has_completed_focus = USA_victory_in_iraq }
     }
     abort_when_not_enabled = yes
     ai_strategy = {
-        type = force_defend_ally_borders
-        id = SAU
+        type = force_concentration_target_weight
+        state = 675
+        state = 656
+
         value = 1000
     }
 }

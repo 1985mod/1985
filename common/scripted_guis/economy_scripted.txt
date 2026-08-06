@@ -24,7 +24,20 @@ scripted_gui = {
                     set_variable = { var = interest_rate value = 100 }
                 }
                 else = {
-                    add_political_power = -75
+                    add_political_power = -25
+                }
+            }
+            interest_rate_increase_shift_click = {
+                add_to_variable = { var = interest_rate value = 5 }
+                velocity_effect = yes
+                if = {
+                    limit = { 
+                        check_variable = { interest_rate > 100 } 
+                    }
+                    set_variable = { var = interest_rate value = 100 }
+                }
+                else = {
+                    add_political_power = -125
                 }
             }
             interest_rate_decrease_click = {
@@ -37,7 +50,20 @@ scripted_gui = {
                     set_variable = { var = interest_rate value = -5 }
                 }
                 else = {
-                    add_political_power = -75
+                    add_political_power = -25
+                }
+            }
+            interest_rate_decrease_shift_click = {
+                subtract_from_variable = { var = interest_rate value = 5 }
+                velocity_effect = yes
+                if = {
+                    limit = { 
+                        check_variable = { interest_rate < -5 } 
+                    }
+                    set_variable = { var = interest_rate value = -5 }
+                }
+                else = {
+                    add_political_power = -125
                 }
             }
             population_taxes_increase_click = {
@@ -50,7 +76,20 @@ scripted_gui = {
                     set_variable = { var = pop_rate value = 100 }
                 }
                 else = {
-                    add_political_power = -50
+                    add_political_power = -25
+                }
+            }
+            population_taxes_increase_shift_click = {
+                add_to_variable = { var = pop_rate value = 5 }
+                tax_effect = yes
+                if = {
+                    limit = {
+                        check_variable = { pop_rate > 100 } 
+                    }
+                    set_variable = { var = pop_rate value = 100 }
+                }
+                else = {
+                    add_political_power = -125
                 }
             }
             population_taxes_decrease_click = {
@@ -63,7 +102,20 @@ scripted_gui = {
                     set_variable = { var = pop_rate value = 0 }
                 }
                 else = {
-                    add_political_power = -50
+                    add_political_power = -25
+                }
+            }
+            population_taxes_decrease_shift_click = {
+                subtract_from_variable = { var = pop_rate value = 5 }
+                tax_effect = yes
+                if = {
+                    limit = {
+                        check_variable = { pop_rate < 0 } 
+                    }
+                    set_variable = { var = pop_rate value = 0 }
+                }
+                else = {
+                    add_political_power = -125
                 }
             }
             corporate_rate_increase_click = {
@@ -76,7 +128,20 @@ scripted_gui = {
                     set_variable = { var = corp_rate value = 100 }
                 }
                 else = {
-                    add_political_power = -50
+                    add_political_power = -25
+                }
+            }
+            corporate_rate_increase_shift_click = {
+                add_to_variable = { var = corp_rate value = 5 }
+                tax_effect = yes
+                if = {
+                    limit = {
+                        check_variable = { corp_rate > 100 } 
+                    }
+                    set_variable = { var = corp_rate value = 100 }
+                }
+                else = {
+                    add_political_power = -125
                 }
             }
             corporate_rate_decrease_click = {
@@ -89,7 +154,20 @@ scripted_gui = {
                     set_variable = { var = corp_rate value = 0 }
                 }
                 else = {
-                    add_political_power = -50
+                    add_political_power = -25
+                }
+            }
+            corporate_rate_decrease_shift_click = {
+                subtract_from_variable = { var = corp_rate value = 5 }
+                tax_effect = yes
+                if = {
+                    limit = {
+                        check_variable = { corp_rate < 0 } 
+                    }
+                    set_variable = { var = corp_rate value = 0 }
+                }
+                else = {
+                    add_political_power = -125
                 }
             }
             vat_rate_increase_click = {
@@ -102,7 +180,20 @@ scripted_gui = {
                     set_variable = { var = vat_rate value = 100 }
                 }
                 else = {
-                    add_political_power = -50
+                    add_political_power = -25
+                }
+            }
+            vat_rate_increase_shift_click = {
+                add_to_variable = { var = vat_rate value = 5 }
+                tax_effect = yes
+                if = {
+                    limit = {
+                        check_variable = { vat_rate > 100 } 
+                    }
+                    set_variable = { var = vat_rate value = 100 }
+                }
+                else = {
+                    add_political_power = -125
                 }
             }
             vat_rate_decrease_click = {
@@ -115,7 +206,20 @@ scripted_gui = {
                     set_variable = { var = vat_rate value = 0 }
                 }
                 else = {
-                    add_political_power = -50
+                    add_political_power = -25
+                }
+            }
+            vat_rate_decrease_shift_click = {
+                subtract_from_variable = { var = vat_rate value = 5 }
+                tax_effect = yes
+                if = {
+                    limit = {
+                        check_variable = { vat_rate < 0 } 
+                    }
+                    set_variable = { var = vat_rate value = 0 }
+                }
+                else = {
+                    add_political_power = -125
                 }
             }
         }
@@ -126,44 +230,84 @@ scripted_gui = {
             }
             interest_rate_increase_click_enabled = {
                 ROOT = {
-                    has_political_power > 74
+                    has_political_power > 24
                 }
             }
+            interest_rate_increase_shift_click_enabled = {
+                ROOT = {
+                    has_political_power > 124
+                }
+            }            
             interest_rate_decrease_click_enabled = {
                 ROOT = {
-                    has_political_power > 74
+                    has_political_power > 24
+                }
+            }
+            interest_rate_decrease_shift_click_enabled = {
+                ROOT = {
+                    has_political_power > 124
                 }
             }
             population_taxes_increase_click_enabled = {
                 ROOT = {
-                    has_political_power > 49
+                    has_political_power > 24
+                }
+            }
+            population_taxes_increase_shift_click_enabled = {
+                ROOT = {
+                    has_political_power > 124
                 }
             }
             population_taxes_decrease_click_enabled = {
                 ROOT = {
-                    has_political_power > 49
+                    has_political_power > 24
+                }
+            }
+            population_taxes_decrease_shift_click_enabled = {
+                ROOT = {
+                    has_political_power > 124
                 }
             }
             corporate_rate_increase_click_enabled = {
                 ROOT = {
-                    has_political_power > 49
+                    has_political_power > 24
+                }
+            }
+            corporate_rate_increase_shift_click_enabled = {
+                ROOT = {
+                    has_political_power > 124
                 }
             }
             corporate_rate_decrease_click_enabled = {
                 ROOT = {
-                    has_political_power > 49
+                    has_political_power > 24
+                }
+            }
+            corporate_rate_decrease_shift_click_enabled = {
+                ROOT = {
+                    has_political_power > 124
                 }
             }
             vat_rate_increase_click_enabled = {
                 ROOT = {
-                    has_political_power > 49
+                    has_political_power > 24
+                }
+            }
+            vat_rate_increase_shift_click_enabled = {
+                ROOT = {
+                    has_political_power > 124
                 }
             }
             vat_rate_decrease_click_enabled = {
                 ROOT = {
-                    has_political_power > 49
+                    has_political_power > 24
                 }
-            }            
+            }
+            vat_rate_decrease_shift_click_enabled = {
+                ROOT = {
+                    has_political_power > 124
+                }
+            }     
         }
     }
 }

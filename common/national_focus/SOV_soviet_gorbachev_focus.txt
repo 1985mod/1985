@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 200
+            add = 20
             tag = SOV
         }
     }
@@ -327,7 +327,7 @@ focus_tree = {
         cost = 5
 
 		select_effect = {
-			country_event = { id = sov_soviet_union.39 days = 15 } 
+			country_event = { id = sov_soviet_union.47 days = 15 } 
 		}
 
         completion_reward = {

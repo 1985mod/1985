@@ -1415,14 +1415,14 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetDanzigGuaranteesBolsheviksDesc
+	name = GetGdanskGuaranteesBolsheviksDesc
 	text = {
 		trigger = {
 			SOV = {
 				has_government = communism
 			}
 		}
-		localization_key = SOV_DANZIG_GUARANTEES_BOLSHEVIKS_DESC_COMMUNIST
+		localization_key = SOV_Gdansk_GUARANTEES_BOLSHEVIKS_DESC_COMMUNIST
 	}
 	text = {
 		trigger = {
@@ -1430,7 +1430,7 @@ defined_text = {
 				has_government = fascism
 			}
 		}
-		localization_key = SOV_DANZIG_GUARANTEES_BOLSHEVIKS_DESC_FASCISM
+		localization_key = SOV_Gdansk_GUARANTEES_BOLSHEVIKS_DESC_FASCISM
 	}
 	text = {
 		trigger = {
@@ -1441,19 +1441,19 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = SOV_DANZIG_GUARANTEES_BOLSHEVIKS_DESC_NEUTRALITY
+		localization_key = SOV_Gdansk_GUARANTEES_BOLSHEVIKS_DESC_NEUTRALITY
 	}
 }
 
 defined_text = {
-	name = GetDanzigGuaranteesRedsDesc
+	name = GetGdanskGuaranteesRedsDesc
 	text = {
 		trigger = {
 			SOV = {
 				has_government = communism
 			}
 		}
-		localization_key = SOV_DANZIG_GUARANTEES_REDS_DESC_COMMUNIST
+		localization_key = SOV_Gdansk_GUARANTEES_REDS_DESC_COMMUNIST
 	}
 	text = {
 		trigger = {
@@ -1461,7 +1461,7 @@ defined_text = {
 				NOT = { has_government = communism }
 			}
 		}
-		localization_key = SOV_DANZIG_GUARANTEES_REDS_DESC_NEUTRALITY
+		localization_key = SOV_Gdansk_GUARANTEES_REDS_DESC_NEUTRALITY
 	}
 }
 

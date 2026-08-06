@@ -5,7 +5,7 @@ state={
 	manpower = 975000
 
 	resources = {
-		coal = 16 #initial distribution
+		coal = 16
 	}
 	
 	state_category = rural
@@ -14,6 +14,7 @@ state={
 		owner = SOV
 		buildings = {
 			infrastructure = 2
+			nuclear_reactor = 1
 		}
 		add_core_of = SOV
 		victory_points = {

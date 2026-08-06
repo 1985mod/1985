@@ -9,6 +9,7 @@ state={
 			industrial_complex = 3
 			infrastructure = 3
 			air_base = 3
+			nuclear_reactor = 1
 		}
 		victory_points = {
 			7588 3
@@ -20,7 +21,7 @@ state={
 	manpower=1912403
 
 	resources = {
-		coal = 88 #initial distribution = with infra 248 / 1280 total
+		coal = 88
 	}
 
 	buildings_max_level_factor=1.000

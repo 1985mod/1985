@@ -441,6 +441,16 @@ spriteTypes = {
 		name = "GFX_news_proclamation_of_a_great_iraq"
 		texturefile = "gfx/event_pictures/news_proclamation_of_a_great_iraq.dds"
 	}
+
+	spriteType = {
+		name = "GFX_news_yemen_unification"
+		texturefile = "gfx/event_pictures/news_yemen_unification.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_hezbollah_uprising"
+		texturefile = "gfx/event_pictures/news_hezbollah_uprising.dds"
+	}
 }
 
 

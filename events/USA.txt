@@ -207,16 +207,24 @@ country_event = {
 	option = {
 		name = usa.7.a
 		ai_chance = {
-			base = 90
-		}		
+			base = 30
+			modifier = {
+				add = 30
+				is_historical_focus_on = yes
+			}
+		}	
 		FROM = { country_event = usa.8 }
 	}
 
 	option = {
 		name = usa.7.b
 		ai_chance = {
-			base = 10
-		}		
+			base = 30
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
 		FROM = { country_event = usa.9 }
 	}
 }
@@ -246,8 +254,12 @@ country_event = {
 	option = {
 		name = usa.8.a
 		ai_chance = {
-			base = 90
-		}		
+			base = 30
+			modifier = {
+				add = 30
+				is_historical_focus_on = yes
+			}
+		}
 		FROM = { set_country_flag = anti_iraq_coalition }
 		custom_effect_tooltip = we_join_in_anti_iraq_coalition
 	}
@@ -277,8 +289,12 @@ country_event = {
 	option = {
 		name = usa.9.a
 		ai_chance = {
-			base = 90
-		}		
+			base = 30
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
 	}
 }
 
@@ -300,12 +316,24 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
+		trigger = {
+			NOT = {
+				TAG = SAU
+			}
+		}
+		set_country_flag = operation_desert_storm_start
+        add_threat = 0.5
+	}
+	option = {
+		name = news.2.a
+		trigger = { TAG = SAU }
+		set_country_flag = operation_desert_storm_start
+		load_oob = "SAU_border_guards"
         declare_war_on = {
            target = IRQ
            type = annex_everything
         }
-		set_country_flag = operation_desert_storm_start
-        add_threat = 0.5
+		add_threat = 5.0
 	}
 }
 

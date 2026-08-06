@@ -44,7 +44,7 @@ peace_action_modifiers = {
             NOT = { FROM.FROM.FROM = { is_core_of = ROOT.FROM.FROM } }
         }
 
-        cost_multiplier = 5.0
+        cost_multiplier = 0.5
     }
 
 
@@ -88,7 +88,7 @@ peace_action_modifiers = {
         enable = {
             ROOT = { has_government = fascism }
         }
-        cost_multiplier = 1.0
+        cost_multiplier = 0.5
     }
 
 

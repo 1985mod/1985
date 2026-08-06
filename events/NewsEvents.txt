@@ -532,3 +532,43 @@ news_event = {
 		add_war_support = 0.05
 	}
 }
+
+news_event = {
+	id = news.23 ## Воссоединение Йемена ##
+	title = news.23.t
+	desc = news.23.desc
+	picture = GFX_news_yemen_unification
+    
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.23.a
+		trigger = {
+			NOT = {
+				TAG = YEM
+			}
+		}
+	}
+	option = {
+		name = news.23.b
+		trigger = { TAG = YEM }
+		add_stability = 0.05
+	}
+}
+
+news_event = {
+	id = news.24 ## Восстание Хезболлы ##
+	title = news.24.t
+	desc = news.24.desc
+	picture = GFX_news_hezbollah_uprising
+    
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.24.a
+	}
+}

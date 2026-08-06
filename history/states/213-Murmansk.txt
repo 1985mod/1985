@@ -32,6 +32,7 @@ state={
 				naval_base = 4
 				coastal_bunker = 1
 			}
+			nuclear_reactor = 1
 		}
 
 		add_core_of = SOV

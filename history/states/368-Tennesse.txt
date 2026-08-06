@@ -7,8 +7,8 @@ state={
 	state_category = city
 	
 	resources={
-		steel=60 # was: 112
-		coal = 5 # initial distribution = with infra 11.2 / 1280 total
+		steel=60
+		coal = 5
 	}
 
 
@@ -16,8 +16,9 @@ state={
 		owner = USA
 		buildings = {
 			arms_factory = 4
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 			industrial_complex = 4
+			nuclear_reactor = 1
 		}
 		add_core_of = USA
 		victory_points = {

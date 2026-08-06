@@ -1,0 +1,16 @@
+characters = {
+	HEZ_muhammad_hussein_fadlallah = {
+		name = HEZ_muhammad_hussein_fadlallah
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_muhammad_hussein_fadlallah
+			}
+		}
+		country_leader = {
+			ideology = Political_Islam
+			traits = {}
+			expire = "2014.5.10"
+			id = -1
+		}
+	}
+}

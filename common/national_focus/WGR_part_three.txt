@@ -569,7 +569,18 @@ focus_tree = {
 		y = 1
 
         completion_reward = {
-			SOV = { country_event = { id = wgr.14 } }
+			every_country = {
+				limit = {
+					OR = {
+						tag = USA
+						tag = SOV
+						tag = ENG
+						tag = FRA
+						tag = DDR
+					}
+				}
+				country_event = { id = wgr.14 hours = 6 }
+			}
 		}
 
 	}

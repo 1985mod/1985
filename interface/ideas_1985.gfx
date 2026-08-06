@@ -31,6 +31,61 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_idea_anti_alcohol_campaign"
+        texturefile = "gfx/interface/ideas/SOV/idea_anti_alcohol_campaign.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_housing_2000_program"
+        texturefile = "gfx/interface/ideas/SOV/idea_housing_2000_program.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_acceleration_course"
+        texturefile = "gfx/interface/ideas/SOV/idea_acceleration_course.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_decree_on_the_establishment_of_cooperatives_in_the_tnp"
+        texturefile = "gfx/interface/ideas/SOV/idea_decree_on_the_establishment_of_cooperatives_in_the_tnp.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_law_on_individual_labor_activity"
+        texturefile = "gfx/interface/ideas/SOV/idea_law_on_individual_labor_activity.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_politics_of_glasnost"
+        texturefile = "gfx/interface/ideas/SOV/idea_politics_of_glasnost.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_law_on_state_enterprise"
+        texturefile = "gfx/interface/ideas/SOV/idea_law_on_state_enterprise.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_april_increase"
+        texturefile = "gfx/interface/ideas/SOV/idea_april_increase.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_interregional_parliamentary_group"
+        texturefile = "gfx/interface/ideas/SOV/idea_interregional_parliamentary_group.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_abolition_of_the_union_kgb"
+        texturefile = "gfx/interface/ideas/SOV/idea_abolition_of_the_union_kgb.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_adopt_resolution_gs_13"
+        texturefile = "gfx/interface/ideas/SOV/idea_adopt_resolution_gs_13.dds"
+    }
+
+    spriteType = {
         name = "GFX_idea_support_for_regimes_in_eastern_europe"
         texturefile = "gfx/interface/ideas/SOV/idea_support_for_regimes_in_eastern_europe.dds"
     }
@@ -88,6 +143,21 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_mass_banditry"
         texturefile = "gfx/interface/ideas/RUS/idea_mass_banditry.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_free_trade_decree"
+        texturefile = "gfx/interface/ideas/RUS/idea_free_trade_decree.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_visit_to_the_usa"
+        texturefile = "gfx/interface/ideas/RUS/idea_visit_to_the_usa.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_privatize_state_property"
+        texturefile = "gfx/interface/ideas/RUS/idea_privatize_state_property.dds"
     }
 
     spriteType = {

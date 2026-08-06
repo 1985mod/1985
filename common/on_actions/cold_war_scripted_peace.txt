@@ -17,7 +17,7 @@ on_actions = {
                     white_peace = UNI
                     annex_country = {
                         target = UNI
-                        transfer_troops = yes
+                        transfer_troops = no
                     }
                 }
 
@@ -56,6 +56,167 @@ on_actions = {
         }
     }
 
+    ### Mozambique wins 
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        tag = MZB
+                    }
+                    ROOT = {
+                        tag = REN
+                    }
+                }
+
+                MZB = {
+                    white_peace = REN
+                    annex_country = {
+                        target = REN
+                        transfer_troops = no
+                    }
+                }
+
+                SOV = {
+                    soviet_union_won_the_proxy_war = yes
+                }
+            }
+        }
+    }
+
+    ### RENAMO wins 
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        tag = REN
+                    }
+                    ROOT = {
+                        tag = MZB
+                    }
+                }
+
+                REN = {
+                    white_peace = MZB
+                    annex_country = {
+                        target = MZB
+                        transfer_troops = no
+                    }
+                }
+
+                USA = {
+                    united_states_won_the_proxy_war = yes
+                }
+            }
+        }
+    }
+
+    ### Eritrea wins 
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {
+                    ERI = { controls_state = 915 }
+                    ERI = { controls_state = 550 }
+                    new_controller = {
+                        has_war_with = ETH
+                    }
+                }
+                if = {
+                    limit = {
+                        is_state_controlled_by = { controls_state = 915 country = ERI }
+                        is_state_controlled_by = { controls_state = 550 country = ERI }
+                    }
+                    ERI = {
+                        transfer_state = 550
+                    }
+                }
+            }
+        }
+    }
+
+    ### Ethiopia wins Eritrea
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        tag = ETH
+                    }
+                    ROOT = {
+                        tag = ERI
+                    }
+                }
+
+                ETH = {
+                    white_peace = ERI
+                    annex_country = {
+                        target = ERI
+                        transfer_troops = no
+                    }
+                }
+
+                SOV = {
+                    soviet_union_won_the_proxy_war = yes
+                }
+            }
+        }
+    }
+
+    ### Ethiopia wins Somalia
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        tag = ETH
+                    }
+                    ROOT = {
+                        tag = SOM
+                    }
+                }
+
+                ETH = {
+                    white_peace = SOM
+                    puppet = SOM
+                }
+
+                SOV = {
+                    soviet_union_won_the_proxy_war = yes
+                }
+            }
+        }
+    }
+
+    ### Somalia wins Ethiopia
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {
+                    SOM = { controls_state = 835 }
+                    SOM = { controls_state = 836 }
+                    new_controller = {
+                        has_war_with = ETH
+                    }
+                }
+                if = {
+                    limit = {
+                        is_state_controlled_by = { controls_state = 835 country = SOM }
+                        is_state_controlled_by = { controls_state = 836 country = SOM }
+                    }
+                    SOM = {
+                        transfer_state = 835
+                        transfer_state = 836
+                    }
+                    USA = {
+                        united_states_won_the_proxy_war = yes
+                    }
+                }
+            }
+        }
+    }
+
     ### Mujahidden wins 
     on_capitulation = {
         effect = {
@@ -73,7 +234,7 @@ on_actions = {
                     white_peace = AFN
                     annex_country = {
                         target = AFN
-                        transfer_troops = yes
+                        transfer_troops = no
                     }
                 }
 
@@ -101,7 +262,7 @@ on_actions = {
                     white_peace = AFS
                     annex_country = {
                         target = AFS
-                        transfer_troops = yes
+                        transfer_troops = no
                     }
                 }
 
@@ -126,7 +287,6 @@ on_actions = {
                 }
                 if = {
                     limit = {
-                        # Проверяем, что штат 675 и 656 под контролем new_controller
                         is_state_controlled_by = { controls_state = 675 country = new_controller }
                         is_state_controlled_by = { controls_state = 656 country = new_controller }
                         ROOT = { has_country_flag = operation_desert_storm_start }

@@ -47,7 +47,7 @@
  RULE_ALLOW_RELEASE_NATIONS_NOT_TRANSYLVANIA_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! может не предоставить независимость этому государству."
  RULE_ALLOW_RELEASE_NATIONS_NOT_GERMAN_CONSTITUENT_STATES_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! может не предоставить независимость германским составным государствам."
  RULE_ALLOW_RELEASE_NATIONS_NOT_ETHIOPIA_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! может не предоставить независимость этому государству."
- RULE_ALLOW_RELEASE_NATIONS_POLAND_DANZIG_TOOLTIP: "§Y[DNZ.GetNameDefCap]§! может так никогда и не освободиться."
+ RULE_ALLOW_RELEASE_NATIONS_POLAND_Gdansk_TOOLTIP: "§Y[DNZ.GetNameDefCap]§! может так никогда и не освободиться."
  RULE_ALLOW_RELEASE_NATIONS_POLAND_KASHUBIA_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! может не освободить государство §Y[KSH.GetNameDef]§!."
  RULE_ALLOW_RELEASE_NATIONS_COSSACK_TOOLTIP: "Это государство можно освободить только при помощи события."
  RULE_ALLOW_RELEASE_NATIONS_POLAND_SILESIA_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! может не освободить государство §Y[SIL.GetNameDef]§!."

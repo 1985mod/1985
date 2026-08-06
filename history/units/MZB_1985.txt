@@ -122,7 +122,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 13513
+		location = 13512
 		division_template = "Mozambique infantry brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.4

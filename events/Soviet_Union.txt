@@ -1542,7 +1542,7 @@ country_event = {
 
 	trigger = {
 		has_country_flag = gorbachev
-		date > 1986.06.7
+		date > 1989.06.7
 	}
 	fire_only_once = yes
 

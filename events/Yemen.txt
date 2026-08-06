@@ -1,0 +1,66 @@
+add_namespace = yemen
+
+country_event = {
+    id = yemen.1
+    title = yemen.1.t
+    desc = yemen.1.desc
+
+    picture = GFX_report_dead_chernenko
+
+	fire_only_once = yes
+
+	trigger = {
+        tag = YEM
+        country_exists = YEM
+        country_exists = SYE
+        OR = {
+            YEM = {
+                NOT = { has_war_with = SYE }
+            }
+            SYE = {
+                NOT = { has_war_with = YEM }
+            }
+        }
+        date > 1990.05.22
+    }
+
+    option = {
+        name = yemen.1.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+        set_global_flag = united_yemen
+        set_cosmetic_tag = YEM_united_yemen
+		YEM = {
+			annex_country = {
+   				target = SYE
+   				transfer_troops = no
+			}
+        }
+        SYE = {
+            remove_state_core = 992
+            remove_state_core = 659
+        }
+        news_event = { id = news.23 days = 1 }
+    }
+
+    option = {
+        name = yemen.1.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				is_historical_focus_on = yes
+			}
+		}
+        declare_war_on = {
+           target = SYE
+           type = annex_everything
+        }
+		add_threat = 2.0
+    }
+}

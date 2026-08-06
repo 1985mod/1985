@@ -21,10 +21,20 @@ guiTypes = {
         }
 
         instantTextBoxType = {
+            name = "economy_title"
+            position = { x = 0 y = 20 }
+            text = "Economy System"
+            font = "hoi_36header"
+            maxWidth = 800
+            maxHeight = 50
+            format = CENTER
+        }
+
+        instantTextBoxType = {
             name = "economy_civil_factories"
-            position = { x = 60 y = 90 }
+            position = { x = 530 y = 150 }
             text = "ECONOMY_CIV_FACTORIES"
-            font = "hoi_30header"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -32,7 +42,7 @@ guiTypes = {
 
         iconType = {
             name = "civil_factory_icon"
-            position = { x = 20 y = 90 }
+            position = { x = 490 y = 150 }
             spriteType = "GFX_non_available_factory_icon"
             alwaystransparent = yes
             scale = 1.2
@@ -40,9 +50,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "economy_military_factories"
-            position = { x = 170 y = 90 }
+            position = { x = 640 y = 150 }
             text = "ECONOMY_MIL_FACTORIES"
-            font = "hoi_30header"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -50,7 +60,7 @@ guiTypes = {
 
         iconType = {
             name = "military_factory_icon"
-            position = { x = 130 y = 90 }
+            position = { x = 600 y = 150 }
             spriteType = "GFX_military_factory_icon"
             alwaystransparent = yes
             scale = 1.2
@@ -58,9 +68,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "economy_naval_factories"
-            position = { x = 280 y = 90 }
+            position = { x = 750 y = 150 }
             text = "ECONOMY_NAVAL_FACTORIES"
-            font = "hoi_30header"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -68,7 +78,7 @@ guiTypes = {
 
         iconType = {
             name = "naval_factory_icon"
-            position = { x = 240 y = 95 }
+            position = { x = 710 y = 155 }
             spriteType = "GFX_naval_factory_icon"
             alwaystransparent = yes
             scale = 1.2
@@ -76,9 +86,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "income_label"
-            position = { x = 350 y = 95 }
+            position = { x = 30 y = 500 }
             text = "Income:"
-            font = "hoi_30header"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -86,9 +96,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "income"
-            position = { x = 450 y = 95 }
+            position = { x = 140 y = 500 }
             text = "INCOME"
-            font = "hoi_30header"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -96,9 +106,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "gdp_label"
-            position = { x = 30 y = 150 }
-            text = "GDP: "
-            font = "hoi_30header"
+            position = { x = 30 y = 70 }
+            text = "Real GDP"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -106,19 +116,21 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "gdp"
-            position = { x = 210 y = 150 }
+            position = { x = 30 y = 100 }
             text = "GDP"
-            font = "hoi_30header"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
+
+            pdx_tooltip = "MY_TOOLTIP_KEY"
         }
 
         instantTextBoxType = {
             name = "nominal_gdp_label"
-            position = { x = 30 y = 200 }
-            text = "Nominal GDP:"
-            font = "hoi_30header"
+            position = { x = 140 y = 70 }
+            text = "Nominal GDP"
+            font = "hoi_24header"
             maxWidth = 200
             maxHeight = 24
             format = left
@@ -126,9 +138,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "nominal_gdp"
-            position = { x = 210 y = 200 }
+            position = { x = 140 y = 100 }
             text = "NOMINAL_GDP"
-            font = "hoi_30header"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -136,9 +148,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "gdp_per_capita_label"
-            position = { x = 30 y = 200 }
-            text = "GDP P/C: "
-            font = "hoi_30header"
+            position = { x = 280 y = 70 }
+            text = "GDP/C"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -146,9 +158,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "gdp_per_capita"
-            position = { x = 210 y = 250 }
+            position = { x = 280 y = 100 }
             text = "GDP_PER_CAPITA"
-            font = "hoi_30header"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -156,9 +168,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "gdp_growth_label"
-            position = { x = 30 y = 250 }
-            text = "GDP Growth: "
-            font = "hoi_30header"
+            position = { x = 360 y = 70 }
+            text = "GDP Growth"
+            font = "hoi_24header"
             maxWidth = 200
             maxHeight = 24
             format = left
@@ -166,9 +178,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "gdp_growth_rate"
-            position = { x = 210 y = 300 }
+            position = { x = 360 y = 100 }
             text = "GDP_GROWTH_RATE"
-            font = "hoi_30header"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -176,9 +188,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "inflation_label"
-            position = { x = 30 y = 350 }
-            text = "Inflation:"
-            font = "hoi_30header"
+            position = { x = 490 y = 70 }
+            text = "Inflation"
+            font = "hoi_24header"
             maxWidth = 200
             maxHeight = 24
             format = left
@@ -186,9 +198,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "inflation"
-            position = { x = 210 y = 350 }
+            position = { x = 490 y = 100 }
             text = "INFLATION"
-            font = "hoi_30header"
+            font = "hoi_24header"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -196,9 +208,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "interest_rate_label"
-            position = { x = 350 y = 150 }
-            text = "Key rate: "
-            font = "hoi_30header"
+            position = { x = 200 y = 198 }
+            text = "Key rate"
+            font = "hoi_18mbs"
             maxWidth = 150
             maxHeight = 24
             format = left
@@ -206,9 +218,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "interest_rate"
-            position = { x = 570 y = 150 }
+            position = { x = 200 y = 223 }
             text = "INTEREST_RATE"
-            font = "hoi_30header"
+            font = "hoi_18b"
             maxWidth = 100
             maxHeight = 10
             format = left
@@ -217,34 +229,34 @@ guiTypes = {
     	buttonType = {
 			name = "interest_rate_increase"
 			quadTextureSprite = "GFX_icon_plus"
-			position = { x = 615 y = 138 }
-            scale = 1
+			position = { x = 235 y = 223 }
+            scale = 0.5
 			font = "hoi_18mbs"
 		}
 
     	buttonType = {
 			name = "interest_rate_decrease"
 			quadTextureSprite = "GFX_icon_minus"
-			position = { x = 615 y = 162 }
-            scale = 1
+			position = { x = 235 y = 235 }
+            scale = 0.5
 			font = "hoi_18mbs"
 		}
 
         instantTextBoxType = {
             name = "population_taxes_label"
-            position = { x = 350 y = 200 }
-            text = "Population Tax: "
-            font = "hoi_30header"
-            maxWidth = 250
+            position = { x = 30 y = 146 }
+            text = "Population Tax Rate"
+            font = "hoi_18mbs"
+            maxWidth = 300
             maxHeight = 24
             format = left
         }
 
         instantTextBoxType = {
             name = "population_taxes"
-            position = { x = 570 y = 200 }
+            position = { x = 30 y = 171 }
             text = "POPULATION_TAXES"
-            font = "hoi_30header"
+            font = "hoi_18b"
             maxWidth = 100
             maxHeight = 10
             format = left
@@ -253,24 +265,24 @@ guiTypes = {
     	buttonType = {
 			name = "population_taxes_increase"
 			quadTextureSprite = "GFX_icon_plus"
-			position = { x = 615 y = 188 }
-            scale = 1
+			position = { x = 65 y = 171 }
+            scale = 0.5
 			font = "hoi_18mbs"
 		}
 
     	buttonType = {
 			name = "population_taxes_decrease"
 			quadTextureSprite = "GFX_icon_minus"
-			position = { x = 615 y = 212 }
-            scale = 1
+			position = { x = 65 y = 183 }
+            scale = 0.5
 			font = "hoi_18mbs"
 		}
 
         instantTextBoxType = {
             name = "corporate_rate"
-            position = { x = 570 y = 250 }
+            position = { x = 30 y = 223 }
             text = "CORPORATE_RATE"
-            font = "hoi_30header"
+            font = "hoi_18b"
             maxWidth = 150
             maxHeight = 10
             format = left
@@ -278,10 +290,10 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "corporate_rate_label"
-            position = { x = 350 y = 250 }
-            text = "Corporate Tax: "
-            font = "hoi_30header"
-            maxWidth = 250
+            position = { x = 30 y = 198 }
+            text = "CORPORATE_RATE_LABEL"
+            font = "hoi_18mbs"
+            maxWidth = 300
             maxHeight = 24
             format = left
         }
@@ -289,24 +301,24 @@ guiTypes = {
     	buttonType = {
 			name = "corporate_rate_increase"
 			quadTextureSprite = "GFX_icon_plus"
-			position = { x = 615 y = 238 }
-            scale = 1
+			position = { x = 65 y = 223 }
+            scale = 0.5
 			font = "hoi_18mbs"
 		}
 
     	buttonType = {
 			name = "corporate_rate_decrease"
 			quadTextureSprite = "GFX_icon_minus"
-			position = { x = 615 y = 262 }
-            scale = 1
+			position = { x = 65 y = 235 }
+            scale = 0.5
 			font = "hoi_18mbs"
 		}
 
         instantTextBoxType = {
             name = "vat_rate"
-            position = { x = 570 y = 300 }
+            position = { x = 200 y = 171 }
             text = "VAT_RATE"
-            font = "hoi_30header"
+            font = "hoi_18b"
             maxWidth = 150
             maxHeight = 10
             format = left
@@ -314,9 +326,9 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "vat_rate_label"
-            position = { x = 350 y = 300 }
-            text = "Vat rate: "
-            font = "hoi_30header"
+            position = { x = 200 y = 146 }
+            text = "Vat rate"
+            font = "hoi_18mbs"
             maxWidth = 250
             maxHeight = 24
             format = left
@@ -325,18 +337,238 @@ guiTypes = {
     	buttonType = {
 			name = "vat_rate_increase"
 			quadTextureSprite = "GFX_icon_plus"
-			position = { x = 615 y = 288 }
-            scale = 1
+			position = { x = 235 y = 171 }
+            scale = 0.5
 			font = "hoi_18mbs"
 		}
 
     	buttonType = {
 			name = "vat_rate_decrease"
 			quadTextureSprite = "GFX_icon_minus"
-			position = { x = 615 y = 312 }
-            scale = 1
+			position = { x = 235 y = 183 }
+            scale = 0.5
 			font = "hoi_18mbs"
 		}
+
+        instantTextBoxType = {
+            name = "state_revenue_label"
+            position = { x = 30 y = 250 }
+            text = "State Revenue"
+            font = "hoi_24header"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "state_expenditure_label"
+            position = { x = 300 y = 250 }
+            text = "State Expenditure"
+            font = "hoi_24header"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "population_tax_label"
+            position = { x = 30 y = 280 }
+            text = "Population Income: "
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "population_tax_income"
+            position = { x = 165 y = 280 }
+            text = "POPULATION_INCOME"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "corporate_tax_label"
+            position = { x = 30 y = 300 }
+            text = "CORPORATE_RATE_TAX_LABEL"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "corporate_tax_income"
+            position = { x = 165 y = 300 }
+            text = "CORPORATE_INCOME"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "vat_tax_label"
+            position = { x = 30 y = 320 }
+            text = "VAT Income: "
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "vat_tax_income"
+            position = { x = 165 y = 320 }
+            text = "VAT_INCOME"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "resource_revenue_label"
+            position = { x = 30 y = 340 }
+            text = "Resource Revenue: "
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "resource_revenue_income"
+            position = { x = 165 y = 340 }
+            text = "RESOURCE_REVENUE"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "administration_label"
+            position = { x = 300 y = 280 }
+            text = "Civil Administration: "
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+         instantTextBoxType = {
+            name = "administration_expenditure"
+            position = { x = 445 y = 280 }
+            text = "ADMINISTRATION_EXPENDITURE"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }       
+
+        instantTextBoxType = {
+            name = "economy_label"
+            position = { x = 300 y = 300 }
+            text = "National Economy: "
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "economy_expenditure"
+            position = { x = 445 y = 300 }
+            text = "ECONOMY_EXPENDITURE"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "welfare_label"
+            position = { x = 300 y = 320 }
+            text = "Social Welfare: "
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "welfare_expenditure"
+            position = { x = 445 y = 320 }
+            text = "WELFARE_EXPENDITURE"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "defense_label"
+            position = { x = 300 y = 340 }
+            text = "National Defense: "
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "defense_expenditure"
+            position = { x = 445 y = 340 }
+            text = "DEFENSE_EXPENDITURE"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "science_label"
+            position = { x = 300 y = 360 }
+            text = "Science & R&D: "
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "science_expenditure"
+            position = { x = 445 y = 360 }
+            text = "SCIENCE_EXPENDITURE"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "debt_service_label"
+            position = { x = 300 y = 380 }
+            text = "Debt Service: "
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "debt_service_expenditure"
+            position = { x = 445 y = 380 }
+            text = "DEBT_SERVICE_EXPENDITURE"
+            font = "hoi_18mbs"
+            maxWidth = 250
+            maxHeight = 24
+            format = left
+        }
 
         containerWindowType = {
             name = "container_16"

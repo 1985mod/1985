@@ -1,13 +1,13 @@
 calculate_gdp_effect = { 
-    every_country = { 
-        set_variable = { var = num_of_civ value = num_of_civilian_factories }
-        multiply_variable = { var = num_of_civ value = 15 }
+    every_country = {
+        set_temp_variable = { var = num_of_civ value = num_of_civilian_factories }
+        multiply_temp_variable = { var = num_of_civ value = 15 }
         
-        set_variable = { var = num_of_mil value = num_of_military_factories }
-        multiply_variable = { var = num_of_mil value = 10 }
+        set_temp_variable = { var = num_of_mil value = num_of_military_factories }
+        multiply_temp_variable = { var = num_of_mil value = 10 }
 
-        set_variable = { var = num_of_naval value = num_of_naval_factories }
-        multiply_variable = { var = num_of_naval value = 10 }
+        set_temp_variable = { var = num_of_naval value = num_of_naval_factories }
+        multiply_temp_variable = { var = num_of_naval value = 10 }
 
         set_variable = { var = country_gdp value = num_of_civ }
         add_to_variable = { var = country_gdp value = num_of_mil }
@@ -21,7 +21,23 @@ calculate_gdp_effect = {
             }
             divide_variable = { var = gdp_per_capita value = max_manpower }
         }
+        else = {
+            set_variable = { var = gdp_per_capita value = 0 }
+        }
+
         multiply_variable = { var = gdp_per_capita value = 100 }
+
+        set_variable = { var = civ_of_gdp value = num_of_civ }
+        divide_variable = { var = civ_of_gdp value = country_gdp }
+        add_to_variable = { var = civ_of_gdp value = 0.005 }
+
+        set_variable = { var = mil_of_gdp value = num_of_mil }
+        divide_variable = { var = mil_of_gdp value = country_gdp }
+        add_to_variable = { var = mil_of_gdp value = 0.005 }
+
+        set_variable = { var = naval_of_gdp value = num_of_naval }
+        divide_variable = { var = naval_of_gdp value = country_gdp }
+        add_to_variable = { var = naval_of_gdp value = 0.005 }
     }
 }
 
@@ -103,17 +119,17 @@ inflation_effect = {
                 }
                 set_variable = { var = old_inflation value = 0 }
             }
-            
+
             set_temp_variable = { var = instant_inflation value = nominal_gdp }
             divide_temp_variable = { var = instant_inflation value = country_gdp }
             subtract_from_temp_variable = { var = instant_inflation value = 1 }
             multiply_temp_variable = { var = instant_inflation value = 100 }
             
             set_temp_variable = { var = weighted_old value = old_inflation }
-            multiply_temp_variable = { var = weighted_old value = 0.8 }
+            multiply_temp_variable = { var = weighted_old value = 0.95 }
 
             set_temp_variable = { var = weighted_instant value = instant_inflation }
-            multiply_temp_variable = { var = weighted_instant value = 0.2 }
+            multiply_temp_variable = { var = weighted_instant value = 0.05 }
             
             set_variable = { var = inflation_rate value = weighted_old }
             add_to_variable = { var = inflation_rate value = weighted_instant }
@@ -127,7 +143,7 @@ tax_effect = {
 
     set_variable = { var = population_efficiency value = 1 }
 
-    set_temp_variable = { var = a value = tax_effiency }
+    set_temp_variable = { var = a value = tax_efficiency }
     multiply_temp_variable = { var = a value = 0.75 }
 
     set_temp_variable = { var = b value = 1.55 }
@@ -138,7 +154,7 @@ tax_effect = {
     multiply_temp_variable = { var = b value = b }
 
     subtract_from_variable = { var = population_efficiency value = b }
-    multiply_variable = { var = population_efficiency value = tax_effiency }
+    multiply_variable = { var = population_efficiency value = tax_efficiency }
 
     if = {
         limit = { check_variable = { population_efficiency < 0 } }
@@ -166,7 +182,7 @@ tax_effect = {
 
     set_variable = { var = corporate_efficiency value = 1 }
 
-    set_temp_variable = { var = a value = tax_effiency }
+    set_temp_variable = { var = a value = tax_efficiency }
     multiply_temp_variable = { var = a value = 0.95 }
 
     set_temp_variable = { var = b value = 1.65 }
@@ -177,7 +193,7 @@ tax_effect = {
     multiply_temp_variable = { var = b value = b }
 
     subtract_from_variable = { var = corporate_efficiency value = b }
-    multiply_variable = { var = corporate_efficiency value = tax_effiency }
+    multiply_variable = { var = corporate_efficiency value = tax_efficiency }
 
     if = {
         limit = { check_variable = { corporate_efficiency < 0 } }
@@ -205,7 +221,7 @@ tax_effect = {
 
     set_variable = { var = vat_efficiency value = 1 }
 
-    set_temp_variable = { var = a value = tax_effiency }
+    set_temp_variable = { var = a value = tax_efficiency }
     multiply_temp_variable = { var = a value = 1.15 }
 
     set_temp_variable = { var = b value = 2.55 }
@@ -216,7 +232,7 @@ tax_effect = {
     multiply_temp_variable = { var = b value = b }
 
     subtract_from_variable = { var = vat_efficiency value = b }
-    multiply_variable = { var = vat_efficiency value = tax_effiency }
+    multiply_variable = { var = vat_efficiency value = tax_efficiency }
 
     if = {
         limit = { check_variable = { vat_efficiency < 0 } }
@@ -242,9 +258,41 @@ tax_effect = {
     multiply_variable = { var = vat_tax value = 7 }
     divide_variable = { var = vat_tax value = 365 }
 
+    set_variable = { var = export_oil value = resource_exported@oil }
+    multiply_variable = { var = export_oil value = 0.06 }
+
+    set_variable = { var = export_tungsten value = resource_exported@tungsten }
+    multiply_variable = { var = export_tungsten value = 0.04 }
+
+    set_variable = { var = export_aluminum value = resource_exported@aluminum }
+    multiply_variable = { var = export_aluminum value = 0.035 }
+
+    set_variable = { var = export_steel value = resource_exported@steel }
+    multiply_variable = { var = export_steel value = 0.03 }
+
+    set_variable = { var = export_chromium value = resource_exported@chromium }
+    multiply_variable = { var = export_chromium value = 0.03 }
+
+    set_variable = { var = export_rubber value = resource_exported@rubber }
+    multiply_variable = { var = export_rubber value = 0.025 }
+
+    set_variable = { var = export_coal value = resource_exported@coal }
+    multiply_variable = { var = export_coal value = 0.01 }
+
+    set_variable = { var = resource_revenue value = export_oil }
+    add_to_variable = { var = resource_revenue value = export_tungsten }
+    add_to_variable = { var = resource_revenue value = export_aluminum }
+    add_to_variable = { var = resource_revenue value = export_steel }
+    add_to_variable = { var = resource_revenue value = export_chromium }
+    add_to_variable = { var = resource_revenue value = export_rubber }
+    add_to_variable = { var = resource_revenue value = export_coal }
+
+    multiply_variable = { var = resource_revenue value = corruption_income_mod }
+
     set_variable = { var = income_budget value = population_tax }
     add_to_variable = { var = income_budget value = corporate_tax }
     add_to_variable = { var = income_budget value = vat_tax }
+    add_to_variable = { var = income_budget value = resource_revenue }
 }
 
 corruption_effect = {
@@ -298,36 +346,26 @@ corruption_effect = {
     if = { 
         limit = {
             has_government = communism
-            NOT = { has_variable = corruption_income_mod }
         }
 
         set_variable = { var = corruption_income_mod value = 0.5 }
         multiply_variable = { var = corruption_income_mod value = corruption_level }
         add_to_variable = { var = corruption_income_mod value = 0.5 }
     }
-
-    if = {
-        limit = {
-            NOT = { has_variable = corruption_income_mod }
-        }
+    else = {
         set_variable = { var = corruption_income_mod value = corruption_level }
     }
 
-    if = {
-        limit = {
-            NOT = { has_variable = tax_effiency }
-        }
-        set_variable = { var = tax_effiency value = 0.6 }
-        multiply_variable = { var = tax_effiency value = gdp_per_capita }
-        
-        set_temp_variable = { var = tax_effiency_temp value = gdp_per_capita }
-        add_to_temp_variable = { var = tax_effiency_temp value = 3000 }
-        
-        divide_variable = { var = tax_effiency value = tax_effiency_temp }
-        add_to_variable = { var = tax_effiency value = 0.35 }
+    set_variable = { var = tax_efficiency value = 0.6 }
+    multiply_variable = { var = tax_efficiency value = gdp_per_capita }
+    
+    set_temp_variable = { var = tax_efficiency_temp value = gdp_per_capita }
+    add_to_temp_variable = { var = tax_efficiency_temp value = 3000 }
+    
+    divide_variable = { var = tax_efficiency value = tax_efficiency_temp }
+    add_to_variable = { var = tax_efficiency value = 0.35 }
 
-        multiply_variable = { var = tax_effiency value = corruption_income_mod }
-    }
+    multiply_variable = { var = tax_efficiency value = corruption_income_mod }
 }
 
 velocity_effect = {
@@ -341,32 +379,46 @@ velocity_effect = {
                 has_variable = interest_rate
                 has_variable = inflation_rate
             }
-            set_temp_variable = { var = i value = interest_rate }
-            divide_temp_variable = { var = i value = 30 }
+            set_temp_variable = { var = rate_divisor value = 80 }
+            if = {
+                limit = { check_variable = { var = interest_rate compare = less_than } }
+                set_temp_variable = { var = rate_divisor value = 10 }
+            }
 
-            set_temp_variable = { var = f value = inflation_rate }
-            divide_temp_variable = { var = f = value = 50 }
+            set_temp_variable = { var = normalized_rate value = interest_rate }
+            divide_temp_variable = { var = normalized_rate value = 80 }
 
-            set_temp_variable = { var = putin value = 1 }
-            set_temp_variable = { var = zelensky value = 1 }
-            add_to_temp_variable = { var = zelensky value = i }
-            divide_temp_variable = { var = putin value = zelensky }
+            set_temp_variable = { var = base_velocity value = 1 }
+            set_temp_variable = { var = rate_denominator value = 1 }
+            add_to_temp_variable = { var = rate_denominator value = normalized_rate }
+            divide_temp_variable = { var = base_velocity value = rate_denominator }
 
-            set_temp_variable = { var = admiral_biden value = f }
+            set_temp_variable = { var = raw_inflation_impact value = inflation_rate }
+            divide_temp_variable = { var = raw_inflation_impact value = 40 }
 
             if = {
-                limit = { check_variable = { var = inflation_rate value = 0 compare = greater_than } }
-                multiply_temp_variable = { var = admiral_biden value = 2 }
+                limit = { check_variable = { var = raw_inflation_impact value = 0.5 compare = greater_than } }
+                set_temp_variable = { var = raw_inflation_impact value = 0.5 }
             }
-            else = {
-                multiply_temp_variable = { var = admiral_biden value = -1.1 }
+            
+            if = {
+                limit = { check_variable = { var = raw_inflation_impact value = -0.5 compare = less_than } }
+                set_temp_variable = { var = raw_inflation_impact value = -0.5 }
             }
 
-            add_to_temp_variable = { var = admiral_biden value = 100 }
-            divide_temp_variable = { var = f value = admiral_biden }
-            add_to_temp_variable = { var = putin value = f }
+            add_to_temp_variable = { var = base_velocity value = raw_inflation_impact }
 
-            set_variable = { var = velocity value = putin }
+            if = { 
+                limit = { check_variable = { var = base_velocity value = 0.1 compare = less_than } }
+                set_temp_variable = { var = base_velocity value = 0.1 }
+            }
+            
+            if = {
+                limit = { check_variable = { var = base_velocity value = 2.0 compare = greater_than } }
+                set_temp_variable = { var = base_velocity value = 2.0 }
+            }
+
+            set_variable = { var = velocity value = base_velocity }
         }
     }
 }

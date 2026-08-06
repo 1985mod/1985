@@ -11,7 +11,7 @@ state = {
 		add_core_of = USA
 
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 3
 			arms_factory = 3
 			industrial_complex = 3
 			dockyard = 1
@@ -21,9 +21,7 @@ state = {
 				naval_base = 3
 			}
 
-			# Grand Coulee Dam
-			#10327 = { dam = 1 }
-
+			nuclear_reactor = 1
 		}
 		
 		victory_points = {

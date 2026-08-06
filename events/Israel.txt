@@ -65,3 +65,56 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = israel.4
+    title = israel.4.t
+    desc = israel.4.d
+    picture = GFX_report_event_generic_peace
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    immediate = {
+        HEZ = {
+            transfer_state = 1015
+            add_state_core = 1015
+            add_state_claim = 553
+            division_template = { 
+                name = "Hezbollah irregular army"
+                is_locked = yes
+                regiments = { 
+                    irregular_infantry = { x = 0 y = 0 }
+                }
+            } 
+            1015 = {
+                create_unit = { 
+                    division = "name = \"1. Hezbollah irregular army\" division_template = \"Hezbollah irregular army\" start_experience_factor = 0.3" 
+                    owner = HEZ
+                }
+                create_unit = { 
+                    division = "name = \"2. Hezbollah irregular army\" division_template = \"Hezbollah irregular army\" start_experience_factor = 0.3" 
+                    owner = HEZ
+                }
+                create_unit = { 
+                    division = "name = \"2. Hezbollah irregular army\" division_template = \"Hezbollah irregular army\" start_experience_factor = 0.3" 
+                    owner = HEZ
+                }
+            }
+        }
+    }
+
+    option = {
+        name = israel.4.a
+        ISR = {
+            declare_war_on = {
+	            target = HEZ
+	            type = take_claimed_state
+            }
+        }
+        set_province_controller = 11919
+        news_event = { id = news.24 days = 2 }
+        add_stability = -0.05
+    }
+}

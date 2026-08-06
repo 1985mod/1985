@@ -39,7 +39,7 @@ ideas = {
 			}
 		}	
     	SOV_anti_alcohol_campaign = {
-			picture = NONE
+			picture = anti_alcohol_campaign
 			allowed = {
 				original_tag = SOV
 			}
@@ -56,7 +56,7 @@ ideas = {
 			}
 		}
 		SOV_housing_2000_program = {
-			picture = NONE
+			picture = housing_2000_program
 			allowed = {
 				original_tag = SOV
 			}
@@ -73,7 +73,7 @@ ideas = {
 			}
 		}	
     	SOV_acceleration_course = {
-			picture = NONE
+			picture = acceleration_course
 			allowed = {
 				original_tag = SOV
 			}
@@ -90,7 +90,7 @@ ideas = {
 			}
 		}
     	SOV_decree_on_the_establishment_of_cooperatives_in_the_tnp_idea = {
-			picture = NONE
+			picture = decree_on_the_establishment_of_cooperatives_in_the_tnp
 			allowed = {
 				original_tag = SOV
 			}
@@ -109,7 +109,7 @@ ideas = {
 			}
 		}
     	SOV_law_on_individual_labor_activity_idea = {
-			picture = NONE
+			picture = law_on_individual_labor_activity
 			allowed = {
 				original_tag = SOV
 			}
@@ -128,7 +128,7 @@ ideas = {
 			}
 		}
     	SOV_politics_of_glasnost_idea = {
-			picture = NONE
+			picture = politics_of_glasnost
 			allowed = {
 				original_tag = SOV
 			}
@@ -148,7 +148,7 @@ ideas = {
 			}
 		}
     	SOV_law_on_state_enterprise_idea = {
-			picture = NONE
+			picture = law_on_state_enterprise
 			allowed = {
 				original_tag = SOV
 			}
@@ -166,7 +166,7 @@ ideas = {
 		}
 
     	SOV_april_increase = {
-			picture = NONE
+			picture = april_increase
 			allowed = {
 				original_tag = SOV
 			}
@@ -186,7 +186,7 @@ ideas = {
 		}
 
     	SOV_interregional_parliamentary_group = {
-			picture = NONE
+			picture = interregional_parliamentary_group
 			allowed = {
 				original_tag = SOV
 			}
@@ -205,7 +205,7 @@ ideas = {
 			}
 		}
     	SOV_abolition_of_the_union_kgb_idea = {
-			picture = NONE
+			picture = abolition_of_the_union_kgb
 			allowed = {
 				original_tag = SOV
 			}
@@ -222,7 +222,7 @@ ideas = {
 			}
 		}
     	SOV_adopt_resolution_gs_13_idea = {
-			picture = NONE
+			picture = adopt_resolution_gs_13
 			allowed = {
 				original_tag = SOV
 			}

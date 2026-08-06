@@ -1,16 +1,29 @@
 defined_text = {
-	name = gdp_display
+	name = corporate_rate_display
 	
-	# Вариант 1: Если ВВП больше или равен 10 миллиардам (9.999)
 	text = {
 		trigger = {
-			check_variable = { country_gdp > 9.999 }
+			has_government = communism
 		}
-		localization_key = gdp_display_huge
+		localization_key = CORPORATE_RATE_LABEL_communism
 	}
 	
-	# Вариант 2: Обычный ВВП (работает как "else" / дефолтный вариант)
 	text = {
-		localization_key = gdp_display_normal
+		localization_key = CORPORATE_RATE_LABEL_capitalism
+	}
+}
+
+defined_text = {
+	name = corporate_rate_tax_display
+
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = CORPORATE_RATE_TAX_LABEL_communism
+	}
+
+	text = {
+		localization_key = CORPORATE_RATE_TAX_LABEL_capitalism
 	}
 }

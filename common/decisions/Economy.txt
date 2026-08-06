@@ -8,6 +8,8 @@ Economy = {
 			always = yes
 		}
 
+		visible = {}
+
 		cost = 0
 		fire_only_once = no
 		days_remove = 0
@@ -21,6 +23,214 @@ Economy = {
 		
 		remove_effect = {
 			set_country_flag = economy_gui
+			if = {
+				limit = {
+					NOT = { has_country_flag = set_economy_taxes }
+				}
+				set_variable = { var = pop_rate value = 20 }
+				set_variable = { var = corp_rate value = 15 }
+				set_variable = { var = vat_rate value = 10 }
+				set_variable = { var = interest_rate value = 0 }
+				set_country_flag = set_economy_taxes
+			}
 		}
+	}
+
+	ai_increase_pop_rate = {
+		allowed = { always = yes }
+		
+		available = {
+			has_political_power > 24
+			NOT = { check_variable = { pop_rate > 99 } }
+		}
+
+		visible = { is_ai = yes }
+
+		remove_effect = {
+			add_to_variable = { var = pop_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { pop_rate > 100 }
+				}
+				set_variable = { var = pop_rate value = 100 }
+			}
+			else = {
+				add_political_power = -25
+			}
+		}
+
+		ai_will_do = {
+            base = -1000
+            modifier = {
+                add = 2000
+                check_variable = { var = pop_rate value = pop_optimal compare = less_than }
+            }
+        }
+	}
+
+	ai_decrease_pop_rate = {
+		allowed = { always = yes }
+		
+		available = {
+			has_political_power > 24
+			NOT = { check_variable = { pop_rate < 1 } }
+		}
+
+		visible = { is_ai = yes }
+
+		remove_effect = {
+			subtract_from_variable = { var = pop_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { pop_rate < 0 }
+				}
+				set_variable = { var = pop_rate value = 0 }
+			}
+			else = {
+				add_political_power = -25
+			}
+		}
+
+		ai_will_do = {
+            base = -1000
+            modifier = {
+                add = 2000
+                check_variable = { var = pop_rate value = pop_optimal compare = greater_than }
+            }
+        }		
+	}
+
+	ai_increase_corp_rate = {
+		allowed = { always = yes }
+		
+		available = {
+			has_political_power > 24
+			NOT = { check_variable = { corp_rate > 99 } }
+		}
+
+		visible = { is_ai = yes }
+
+		remove_effect = {
+			add_to_variable = { var = corp_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { corp_rate > 100 }
+				}
+				set_variable = { var = corp_rate value = 100 }
+			}
+			else = {
+				add_political_power = -25
+			}
+		}
+
+		ai_will_do = {
+            base = -1000
+            modifier = {
+                add = 2000
+                check_variable = { var = corp_rate value = corp_optimal compare = less_than }
+            }
+        }
+	}
+
+	ai_decrease_corp_rate = {
+		allowed = { always = yes }
+		
+		available = {
+			has_political_power > 24
+			NOT = { check_variable = { corp_rate < 1 } }
+		}
+
+		visible = { is_ai = yes }
+
+		remove_effect = {
+			subtract_from_variable = { var = corp_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { corp_rate < 0 }
+				}
+				set_variable = { var = corp_rate value = 0 }
+			}
+			else = {
+				add_political_power = -25
+			}
+		}
+
+		ai_will_do = {
+            base = -1000
+            modifier = {
+                add = 2000
+                check_variable = { var = corp_rate value = corp_optimal compare = greater_than }
+            }
+        }		
+	}
+
+	ai_increase_vat_rate = {
+		allowed = { always = yes }
+		
+		available = {
+			has_political_power > 24
+			NOT = { check_variable = { vat_rate > 99 } }
+		}
+
+		visible = { is_ai = yes }
+
+		remove_effect = {
+			add_to_variable = { var = vat_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { vat_rate > 100 }
+				}
+				set_variable = { var = vat_rate value = 100 }
+			}
+			else = {
+				add_political_power = -25
+			}
+		}
+
+		ai_will_do = {
+            base = -1000
+            modifier = {
+                add = 2000
+                check_variable = { var = vat_rate value = vat_optimal compare = less_than }
+            }
+        }
+	}
+
+	ai_decrease_vat_rate = {
+		allowed = { always = yes }
+		
+		available = {
+			has_political_power > 24
+			NOT = { check_variable = { vat_rate < 1 } }
+		}
+
+		visible = { is_ai = yes }
+
+		remove_effect = {
+			subtract_from_variable = { var = vat_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { vat_rate < 0 }
+				}
+				set_variable = { var = vat_rate value = 0 }
+			}
+			else = {
+				add_political_power = -25
+			}
+		}
+
+		ai_will_do = {
+            base = -1000
+            modifier = {
+                add = 2000
+                check_variable = { var = vat_rate value = vat_optimal compare = greater_than }
+            }
+        }		
 	}
 }

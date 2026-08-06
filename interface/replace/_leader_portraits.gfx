@@ -571,6 +571,13 @@ spriteTypes = {
 		texturefile = "gfx/leaders/LEB/Portrait_georges_hauy.dds"
 	}
 
+	## HEZ ##
+
+	spriteType = {
+		name = "GFX_Portrait_muhammad_hussein_fadlallah"
+		texturefile = "gfx/leaders/HEZ/Portrait_muhammad_hussein_fadlallah.dds"
+	}
+
 	## PNG ##
 	spriteType = {
 		name = "GFX_Portrait_michael_thomas"

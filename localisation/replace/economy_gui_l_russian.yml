@@ -1,5 +1,4 @@
 l_russian:
- economy_title:0 "economy"
  ECONOMY_CIV_FACTORIES:0 "[?num_of_civilian_factories|Y0]"
  ECONOMY_MIL_FACTORIES:0 "[?num_of_military_factories|Y0]"
  ECONOMY_NAVAL_FACTORIES:0 "[?num_of_naval_factories|Y0]"
@@ -12,4 +11,5 @@ l_russian:
  POPULATION_TAXES:0 "[?pop_rate]%"
  CORPORATE_RATE:0 "[?corp_rate]%"
  VAT_RATE:0 "[?vat_rate]%"
- INCOME:0 "§G[?income_budget]B§!"
+ INCOME:0 "§G[?income_budget|.3]B§!"
+ MY_TOOLTIP_KEY:0 "§HСтруктура ВВП:§!\nГражданское производство: [?civ_of_gdp|%0]\nВоенная промышленность: [?mil_of_gdp|%0]\nВерфи и морской сектор: [?naval_of_gdp|%0]§!"

@@ -1245,3 +1245,13 @@
  CHA_DEF: "Республика Чад"
  CHA_ADJ: "Чадск"
 
+ HEZ_liberalism: "Исламская Республика Ливан"
+ HEZ_liberalism_DEF: "Исламская Республика Ливан"
+ HEZ_conservatism: "Исламская Республика Ливан"
+ HEZ_conservatism_DEF: "Исламская Республика Ливан"
+ HEZ_neutrality: "Хезболла"
+ HEZ_neutrality_DEF: "Хезболла"
+ HEZ: "Хезболла"
+ HEZ_DEF: "Хезболла"
+ HEZ_ADJ: "Хезболлахск"
+
