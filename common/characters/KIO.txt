@@ -1,0 +1,19 @@
+characters={
+	KIO_maran_bran_seng ={
+		name = KIO_maran_bran_seng
+		portraits={
+			civilian={
+				large=GFX_Portrait_maran_bran_seng
+			}
+			army = {
+				large =GFX_Portrait_maran_bran_seng 
+			}
+		}
+		country_leader={
+			ideology= military_regimes
+			traits={  }
+			expire="1999.1.1.1"
+			id = -1
+		}
+	}
+}

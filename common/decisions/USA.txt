@@ -643,3 +643,109 @@ USA_operation_desert_storm_mission = {
 		}
 	}
 }
+
+USA_preparation_for_invasion_in_iraq = {
+	USA_enlist_the_support_of_the_un = {
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		modifier = {
+			political_power_gain = -0.25
+		}
+			
+		remove_effect = {
+			FROM = {
+				add_to_variable = {
+					var = USA.un_support
+					value = 10
+				}
+				clamp_variable = {
+					var = USA.un_support
+					min = 0
+					max = 100
+				}
+			}
+			custom_effect_tooltip = add_5_un_support_tt
+		}
+	}
+
+	USA_convince_congress = {
+
+		cost = 75
+		fire_only_once = no
+		days_remove = 15
+
+		ai_will_do = {
+			factor = 5
+		}
+			
+		remove_effect = {
+			FROM = {
+				add_to_variable = {
+					var = USA.un_support
+					value = 10
+				}
+				clamp_variable = {
+					var = USA.un_support
+					min = 0
+					max = 100
+				}
+			}
+			custom_effect_tooltip = add_10_un_support_tt
+		}
+	}
+
+	USA_conduct_nato_exercises = {
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 25
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		modifier = {
+			experience_gain_army_factor = 0.15
+			experience_gain_air_factor = 0.1
+			experience_gain_navy_factor = 0.05
+		}
+			
+		remove_effect = {
+			every_country = {
+				limit = {
+					is_in_faction_with = USA
+				}
+				army_experience = 20
+				air_experience = 10
+				navy_experience = 10
+			}
+		}
+	}
+
+	USA_develop_operational_plans = {
+
+		cost = 100
+		fire_only_once = yes
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		modifier = {
+			experience_gain_army_factor = 0.05
+		}
+			
+		remove_effect = {
+			custom_effect_tooltip = we_will_get_bonuses_during_the_invasion
+			set_country_flag = USA_operational_plans
+		}
+	}
+}

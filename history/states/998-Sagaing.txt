@@ -1,13 +1,33 @@
-state = {
-	id = 998
-	name = "STATE_998"
-	
-	state_category = rural
-	manpower = 4395000
-	
+state={
+	id=998
+	name="STATE_998"
+	provinces={
+		1082 1197 1934 4087 4318 4425 4588 4996 8063 10386 10486 12335 12464 12492 13543 13544 13545 13546 13547 13548 13549 13550 
+	}
+
 	history = {
-		owner = BRM
+		owner = KIO
 		add_core_of = BRM
+		add_core_of = PDB
+		add_core_of = KIO
+
+		BRM = {
+			set_province_controller = 1082
+			set_province_controller = 4588
+			set_province_controller = 10386
+			set_province_controller = 10486
+			set_province_controller = 12335
+			set_province_controller = 12464
+			set_province_controller = 12492
+			set_province_controller = 13543
+		}
+
+		PDB = {
+			set_province_controller = 4996
+			set_province_controller = 13544
+			set_province_controller = 13546
+			set_province_controller = 13549
+		}
 
 		buildings = {
 			infrastructure = 1
@@ -16,12 +36,18 @@ state = {
 		victory_points = {
 			4425 1 
 		}
-	}
 
-	provinces={
-		1082 1197 1934 4087 4318 4425 4588 4996 8063 10386 10486 12335 12464 12492 
-	}
+		victory_points = {
+			4318 3
+		}
 
-	local_supplies = 0.000
-	buildings_max_level_factor = 1.000
+		victory_points = {
+			8063 1
+		}
+	}
+	
+	manpower=4395000
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
 }

@@ -68,7 +68,7 @@
  STATE_43:0 "Northern Hungary"
  STATE_44: "Central Albania"
  STATE_45: "Vojvodina" 
- YUG_STATE_45: "Backa" # was Vojvodina
+ YUG_STATE_45: "Backa"
  HUN_STATE_45: "Délvidék"
  STATE_46:0 "Muntenia"
  STATE_47:0 "Attica"
@@ -248,7 +248,7 @@
  SWE_STATE_149: "Vasa"
  STATE_150:1 "Kuopio"
  STATE_151:1 "Eastern Swiss Alps"
- STATE_152:0 "Upper Austria" # was Upper Austria
+ STATE_152:0 "Upper Austria"
  AUS_STATE_152: "Oberösterreich"
  GER_STATE_152: "Oberösterreich"
  BAY_STATE_152: "Oberösterreich"
@@ -256,11 +256,11 @@
  AUS_STATE_153: "Tirol"
  GER_STATE_153: "Tirol"
  BAY_STATE_153: "Tirol"
- STATE_154: "Transtisza" # was Alföld
+ STATE_154: "Transtisza"
  HUN_STATE_154: "Tiszántúl"
  POL_STATE_154: "Kraj Zacisański"
  ROM_STATE_154: "Crisana de Vest"
- STATE_155:1 "North Transdanubia" # was Transdanubia
+ STATE_155:1 "North Transdanubia"
  STATE_156:0 "Calabria"
  STATE_157:0 "Abruzzo"
  STATE_158:2 "Piedmont"
@@ -324,7 +324,7 @@
  STATE_197:0 "Mykolaiv"
  SOV_STATE_197:1 "Nikolayev"
  STATE_198:0 "Vinnytsia"
- STATE_199:1 "Proskuriv" # Was Khmelnytskyi
+ STATE_199:1 "Proskuriv"
  STATE_200:0 "Zaporozhe"
  UKR_STATE_200: "Zaporizhzha"
  STATE_201:0 "Zhytomyr"
@@ -414,7 +414,7 @@
  STATE_275:0 "Transvaal"
  STATE_276:0 "Southern Ontario"
  STATE_277:0 "Mexico City"
- STATE_278:0 "Buenos Aires" # Was Pampas
+ STATE_278:0 "Buenos Aires"
  STATE_279:0 "Santiago"
  STATE_280:0 "Mato Grosso"
  STATE_281:0 "Maldives"
@@ -422,21 +422,21 @@
  STATE_283:0 "Gansu"
  STATE_284:0 "North Island"
  STATE_285:0 "New South Wales"
- STATE_286: "Champa" # was Southern Indochina
+ STATE_286: "Champa"
  STATE_287:0 "Taklamakan"
  STATE_288:0 "Magwe"
  STATE_289:0 "Siam"
  STATE_290:0 "Spanish Africa"
  STATE_291:0 "Baghdad"
  STATE_292:0 "Nejd"
- STATE_293: "North Yemen" # Was Yemen
- STATE_294: "Muscat" # Was Oman
+ STATE_293: "North Yemen"
+ STATE_294: "Oman"
  STATE_295: "Léopoldville"
  STATE_296:0 "Portuguese Guinea"
  STATE_297:0 "Equatorial Guinea"
  STATE_298:0 "Liberia"
  STATE_299:0 "Falkland Islands"
- STATE_300:0 "Montevideo" # was uruguay
+ STATE_300:0 "Montevideo"
  STATE_301:0 "Paraguay"
  STATE_302:0 "La Paz"
  STATE_303:0 "Lima"
@@ -471,10 +471,10 @@
  330_non_monarchist_name: "Ikh Khüree"
  STATE_331:0 "Newfoundland"
  STATE_332:0 "Labrador"
- STATE_333: "Sarawak" # Was North Borneo
+ STATE_333: "Sarawak"
  STATE_334:1 "Kalimantan"
  STATE_335:0 "Java"
- STATE_336: "Malaya" # was Singapore
+ STATE_336: "Malaya"
  STATE_337:0 "Faroe Islands"
  STATE_338:0 "Gloucestershire"
  STATE_339:0 "Izmir"
@@ -1274,5 +1274,6 @@
  STATE_1061: "Kunduz"
  STATE_1062: "Chagcharan"
  STATE_1063: "Kabul"
+ STATE_1064: "Manaplow"
 
 

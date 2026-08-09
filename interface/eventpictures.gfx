@@ -395,6 +395,26 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_tiananmen_square_protests.dds"
 	}
 
+	spriteType = {
+		name = "GFX_news_mujahideen_won_the_afghan_war"
+		texturefile = "gfx/event_pictures/news_mujahideen_won_the_afghan_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_democratic_republic_won_the_afghan_war"
+		texturefile = "gfx/event_pictures/news_democratic_republic_won_the_afghan_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_withdrawal_of_soviet_troops_from_afghanistan"
+		texturefile = "gfx/event_pictures/news_withdrawal_of_soviet_troops_from_afghanistan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_germany_reunification"
+		texturefile = "gfx/event_pictures/news_germany_reunification.dds"
+	}
+
 	### USA ###
 
 	spriteType = {

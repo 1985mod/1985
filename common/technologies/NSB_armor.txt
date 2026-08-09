@@ -4,17 +4,17 @@ technologies = {
 	@1918 = 0
 	@1934 = 2
 	@1935 = 3
-	@1936 = 4
+	@1985 = 4
 	@1937 = 5
 	@1938 = 5
-	@1939 = 7
-	@1940 = 7
+	@1988 = 7
+	@1990 = 7
 	@1941 = 8
 	@1942 = 9
-	@1943 = 10
-	@1944 = 11
-	@1945 = 12
-	@1946 = 20
+	@1993 = 10
+	@1994 = 11
+	@1995 = 12
+	@1996 = 20
 
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank_chassis = { #Leichttraktor
@@ -133,7 +133,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > 1939.1.1
+				date > 1988.1.1
 			}
 		}
 
@@ -228,7 +228,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > 1939.1.1
+				date > 1988.1.1
 			}
 		}
 
@@ -299,13 +299,13 @@ technologies = {
 				factor = 8
 				# Matilda II was designed and entered production in 1937
 				tag = ENG
-				date > 1936.9.1
+				date > 1985.9.1
 			}
 			modifier = {
 				factor = 8
 				# M3 Stuart entered production in 1941
 				tag = USA
-				date > 1940.9.1
+				date > 1990.9.1
 			}
 
 			modifier = {
@@ -320,7 +320,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > 1939.1.1
+				date > 1988.1.1
 			}
 		}
 
@@ -529,9 +529,9 @@ technologies = {
 			}
 			modifier = {
 				factor = 8
-				# M24 Chaffee was designed and entered production in 1943
+				# M24 Chaffee was designed and entered production in 1993
 				tag = USA
-				date > 1943.3.1
+				date > 1993.3.1
 			}
 
 			modifier = {
@@ -541,12 +541,12 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > 1943.1.1
+				date > 1993.1.1
 			}
 
 			modifier = {
 				factor = 1.1
-				date > 1944.1.1
+				date > 1994.1.1
 			}
 		}
 
@@ -589,7 +589,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > 1946.1.1
+				date > 1996.1.1
 			}
 
 			modifier = {
@@ -604,9 +604,9 @@ technologies = {
 
 			modifier = {
 				factor = 6
-				# Centurion was designed and entered production in 1945-1946
+				# Centurion was designed and entered production in 1995-1996
 				tag = ENG
-				date > 1944.9.1
+				date > 1994.9.1
 			}
 		}
 
@@ -646,7 +646,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > 1946.1.1
+				date > 1996.1.1
 			}
 
 			modifier = {
@@ -661,9 +661,9 @@ technologies = {
 
 			modifier = {
 				factor = 6
-				# Centurion was designed and entered production in 1945-1946
+				# Centurion was designed and entered production in 1995-1996
 				tag = ENG
-				date > 1944.9.1
+				date > 1994.9.1
 			}
 		}
 
@@ -703,7 +703,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > 1946.1.1
+				date > 1996.1.1
 			}
 
 			modifier = {
@@ -718,9 +718,9 @@ technologies = {
 
 			modifier = {
 				factor = 6
-				# Centurion was designed and entered production in 1945-1946
+				# Centurion was designed and entered production in 1995-1996
 				tag = ENG
-				date > 1944.9.1
+				date > 1994.9.1
 			}
 		}
 
@@ -755,7 +755,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > 1946.1.1
+				date > 1996.1.1
 			}
 
 			modifier = {
@@ -770,9 +770,9 @@ technologies = {
 
 			modifier = {
 				factor = 6
-				# Centurion was designed and entered production in 1945-1946
+				# Centurion was designed and entered production in 1995-1996
 				tag = ENG
-				date > 1944.9.1
+				date > 1994.9.1
 			}
 		}
 
@@ -828,7 +828,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "1988.1.1"
 			}
 		}
 
@@ -881,7 +881,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "1988.1.1"
 			}
 		}
 
@@ -929,7 +929,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "1988.1.1"
 			}
 		}
 
@@ -985,7 +985,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "1988.1.1"
 			}
 		}
 
@@ -1040,12 +1040,12 @@ technologies = {
 
 			modifier = {
 				factor = 1.5
-				date > "1939.1.1"
+				date > "1988.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1940.1.1"
+				date > "1990.1.1"
 			}
 		}
 
@@ -1106,7 +1106,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1943.1.1"
+				date > "1993.1.1"
 			}
 		}
 
@@ -1148,17 +1148,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1944.1.1"
+				date > "1994.1.1"
 			}
 
 			modifier = {
 				factor = 1.5
-				date > "1945.1.1"
+				date > "1995.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1946.1.1"
+				date > "1996.1.1"
 			}
 		}
 
@@ -1214,7 +1214,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "1988.1.1"
 			}
 		}
 
@@ -1267,12 +1267,12 @@ technologies = {
 
 			modifier = {
 				factor = 1.5
-				date > "1939.1.1"
+				date > "1988.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1940.1.1"
+				date > "1990.1.1"
 			}
 		}
 
@@ -1328,7 +1328,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1943.1.1"
+				date > "1993.1.1"
 			}
 		}
 
@@ -1368,17 +1368,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1944.1.1"
+				date > "1994.1.1"
 			}
 
 			modifier = {
 				factor = 1.5
-				date > "1945.1.1"
+				date > "1995.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1946.1.1"
+				date > "1996.1.1"
 			}
 		}
 
@@ -1411,7 +1411,7 @@ technologies = {
 		show_effect_as_desc = no
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1985
 
 
 		categories = {
