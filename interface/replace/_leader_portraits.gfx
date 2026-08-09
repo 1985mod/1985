@@ -384,6 +384,24 @@ spriteTypes = {
 		name = GFX_Portrait_Ne_Win
 		texturefile = "gfx/leaders/BRM/Portrait_Ne_Win.dds"
 	}
+
+	## KIO ##
+	spriteType = {
+		name = GFX_Portrait_maran_bran_seng
+		texturefile = "gfx/leaders/KIO/Portrait_maran_bran_seng.dds"
+	}
+
+	## PDB ##
+	spriteType = {
+		name = GFX_Portrait_peoples_democratic_front
+		texturefile = "gfx/leaders/PDB/Portrait_peoples_democratic_front.dds"
+	}
+
+	## NDB ##
+	spriteType = {
+		name = GFX_Portrait_saw_bo
+		texturefile = "gfx/leaders/NDB/Portrait_saw_bo.dds"
+	}
 	
 	## SIA ##
 	spriteType = {

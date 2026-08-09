@@ -27,6 +27,10 @@ country_event = {
                 end_civil_wars = no 
             }
         }
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
     }
 }
 

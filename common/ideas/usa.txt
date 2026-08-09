@@ -75,7 +75,7 @@ ideas = {
 		}
 
 		USA_intensify_the_arms_race_idea = {
-			picture = endless_war_on_drugs 
+			picture = intensify_the_arms_race 
 			allowed = {
 				original_tag = USA
 			}
@@ -93,7 +93,7 @@ ideas = {
 			}
 		}
 		USA_fight_against_terrorism = {
-			picture = idea_ 
+			picture = fight_against_terrorism 
 			allowed = {
 				original_tag = USA
 			}
@@ -112,7 +112,7 @@ ideas = {
 			}
 		}
 		USA_us_world_hegemony = {
-			picture = idea_ 
+			picture = us_world_hegemony 
 			allowed = {
 				original_tag = USA
 			}
@@ -130,7 +130,7 @@ ideas = {
 			}
 		}
 		USA_economic_recession = {
-			picture = idea_ 
+			picture = economic_recession 
 			allowed = {
 				original_tag = USA
 			}
@@ -148,7 +148,7 @@ ideas = {
 			}
 		}
 		USA_economic_recession_2 = {
-			picture = idea_ 
+			picture = economic_recession 
 			allowed = {
 				original_tag = USA
 			}
@@ -166,7 +166,7 @@ ideas = {
 			}
 		}
 		USA_economic_recession_3 = {
-			picture = idea_ 
+			picture = economic_recession 
 			allowed = {
 				original_tag = USA
 			}
@@ -184,7 +184,7 @@ ideas = {
 			}
 		}
 		USA_economic_recession_4 = {
-			picture = idea_ 
+			picture = economic_recession 
 			allowed = {
 				original_tag = USA
 			}
@@ -203,7 +203,7 @@ ideas = {
 		}
 
 		USA_use_the_global_positioning_system_idea = {
-			picture = idea_ 
+			picture = use_the_global_positioning_system 
 			allowed = {
 				original_tag = USA
 			}
@@ -222,7 +222,7 @@ ideas = {
 		}
 
 		USA_cooperation_with_allied_forces_idea = {
-			picture = idea_ 
+			picture = cooperation_with_allied_forces 
 			allowed = {
 				original_tag = USA
 			}
@@ -240,7 +240,7 @@ ideas = {
 			}
 		}
 		USA_increasing_federal_grants_idea = {
-			picture = idea_ 
+			picture = increasing_federal_grants 
 			allowed = {
 				original_tag = USA
 			}
@@ -258,7 +258,7 @@ ideas = {
 			}
 		}
 		USA_expansion_of_social_programs_idea = {
-			picture = idea_ 
+			picture = expansion_of_social_programs 
 			allowed = {
 				original_tag = USA
 			}
@@ -277,7 +277,7 @@ ideas = {
 			}
 		}
 		USA_healthcare_reform = {
-			picture = idea_ 
+			picture = healthcare_reform 
 			allowed = {
 				original_tag = USA
 			}
@@ -297,7 +297,7 @@ ideas = {
 			}
 		}
 		USA_increase_in_federal_grants = {
-			picture = idea_ 
+			picture = increasing_federal_grants 
 			allowed = {
 				original_tag = USA
 			}
@@ -313,6 +313,29 @@ ideas = {
 				political_power_factor = -0.1
 				stability_weekly = -0.002
 				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+
+		USA_operation_in_iraq = {
+			picture = operation_in_iraq 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+            targeted_modifier = {
+                tag = IRQ
+                attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+				breakthrough_bonus_against = 0.1
+            }
+			modifier = {
+				stability_weekly = -0.001
 			}
 		}
 	}

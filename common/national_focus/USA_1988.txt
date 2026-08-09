@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 800
+            add = 80
             tag = USA
         }
     }
@@ -866,7 +866,15 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+            add_popularity = {
+                ideology = liberalism
+                popularity = -0.03
+            }
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.03
+            }
+            add_political_power = -10
 	    }
 	}
 
@@ -899,7 +907,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+            unlock_decision_category_tooltip = USA_preparation_for_invasion_in_iraq
 	    }
 	}
 
@@ -942,6 +950,10 @@ focus_tree = {
         x = 0
         y = 1
         cost = 5
+
+        available = {
+            custom_trigger_tooltip = { tooltip = un_support_more_50 check_variable = { USA.un_support > 49 } }
+        }
 		
         completion_reward = {
 			ROOT = {
@@ -957,6 +969,18 @@ focus_tree = {
                     }
                 }
                 1058 = { add_resistance = 100 }
+            }
+            if = {
+                limit = {
+                    has_country_flag =  USA_operational_plans
+                }
+                add_timed_idea = {
+                    idea = USA_operation_in_iraq
+                    days = 75
+                }
+            }
+            hidden_effect = {
+                load_oob = USA_in_iraq
             }
 	    }
 	}
@@ -987,6 +1011,191 @@ focus_tree = {
 		
         completion_reward = {
 
+	    }
+	}
+
+    focus = { 
+        id = USA_develop_space_programs
+		relative_position_id = USA_a_new_model_of_collective_security
+		prerequisite = { focus = USA_a_new_model_of_collective_security }
+        icon = GFX_	
+        x = -4
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_affordable_housing_act
+		relative_position_id = USA_develop_space_programs
+		prerequisite = { focus = USA_develop_space_programs }
+        icon = GFX_	
+        x = -1
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_tax_cuts_for_the_middle_class
+		relative_position_id = USA_develop_space_programs
+		prerequisite = { focus = USA_develop_space_programs }
+        icon = GFX_	
+        x = 1
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_digitalization_of_the_usa
+		relative_position_id = USA_develop_space_programs
+		prerequisite = { focus = USA_affordable_housing_act }
+        prerequisite = { focus = USA_tax_cuts_for_the_middle_class }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_maintain_good_relations_with_the_ussr
+		relative_position_id = USA_a_new_model_of_collective_security
+		prerequisite = { focus = USA_a_new_model_of_collective_security }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_the_fate_of_the_ussrs_nuclear_stockpile
+		relative_position_id = USA_maintain_good_relations_with_the_ussr
+		prerequisite = { focus = USA_maintain_good_relations_with_the_ussr }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_cooperation_with_israel
+		relative_position_id = USA_the_fate_of_the_ussrs_nuclear_stockpile
+		prerequisite = { focus = USA_the_fate_of_the_ussrs_nuclear_stockpile }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_soldier_retraining_programs
+		relative_position_id = USA_a_new_model_of_collective_security
+		prerequisite = { focus = USA_a_new_model_of_collective_security }
+        icon = GFX_	
+        x = 4
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_conduct_nato_exercises
+		relative_position_id = USA_soldier_retraining_programs
+		prerequisite = { focus = USA_soldier_retraining_programs }
+        icon = GFX_	
+        x = -1
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_national_health_service
+		relative_position_id = USA_soldier_retraining_programs
+		prerequisite = { focus = USA_soldier_retraining_programs }
+        icon = GFX_	
+        x = 1
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_yugoslav_conflict
+		relative_position_id = USA_soldier_retraining_programs
+		prerequisite = { focus = USA_conduct_nato_exercises }
+        prerequisite = { focus = USA_national_health_service }
+        icon = GFX_	
+        x = 0
+        y = 2
+        cost = 5
+		
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_election_1992
+		relative_position_id = USA_cooperation_with_israel
+		prerequisite = { focus = USA_cooperation_with_israel }
+        prerequisite = { focus = USA_yugoslav_conflict focus = USA_digitalization_of_the_usa }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+		    load_focus_tree = {
+    			tree = usa_elections_1992
+  			    keep_completed = yes
+			}
 	    }
 	}
 }

@@ -46,7 +46,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1975
 
 		folder = {
 			name = mtgnavalfolder
@@ -87,7 +87,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1985
 
 		folder = {
 			name = mtgnavalfolder
@@ -135,7 +135,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1939
+		start_year = 1988
 
 		folder = {
 			name = mtgnavalfolder
@@ -175,7 +175,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1943
+		start_year = 1993
 
 		folder = {
 			name = mtgnavalfolder
@@ -210,7 +210,7 @@ technologies = {
 
 		research_cost = 0.75
 
-		start_year = 1922
+		start_year = 1975
 
 		folder = {
 			name = mtgnavalfolder
@@ -251,7 +251,7 @@ technologies = {
 
 	#	research_cost = 0.75
 
-	#	start_year = 1936
+	#	start_year = 1985
 
 	#	folder = {
 	#		name = mtgnavalfolder
@@ -304,7 +304,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1975
 
 		folder = {
 			name = mtgnavalfolder
@@ -352,7 +352,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1985
 
 		folder = {
 			name = mtgnavalfolder
@@ -399,7 +399,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1939
+		start_year = 1988
 
 		folder = {
 			name = mtgnavalfolder
@@ -443,7 +443,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1943
+		start_year = 1993
 
 		folder = {
 			name = mtgnavalfolder
@@ -486,7 +486,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1975
 
 		folder = {
 			name = mtgnavalfolder
@@ -530,7 +530,7 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1936
+		start_year = 1985
 
 		folder = {
 			name = mtgnavalfolder
@@ -574,7 +574,7 @@ technologies = {
 		}		
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1988
 
 		folder = {
 			name = mtgnavalfolder
@@ -614,7 +614,7 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 1993
 
 		folder = {
 			name = mtgnavalfolder
@@ -684,7 +684,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1975
 
 		folder = {
 			name = mtgnavalfolder
@@ -732,7 +732,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1985
 
 		folder = {
 			name = mtgnavalfolder
@@ -777,7 +777,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1939
+		start_year = 1988
 
 		folder = {
 			name = mtgnavalfolder
@@ -817,7 +817,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1943
+		start_year = 1993
 
 		folder = {
 			name = mtgnavalfolder
@@ -859,7 +859,7 @@ technologies = {
 
 	#	research_cost = 0.75
 
-	#	start_year = 1936
+	#	start_year = 1985
 
 	#	folder = {
 	#		name = mtgnavalfolder
@@ -916,7 +916,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 0.5
 
-		start_year = 1922
+		start_year = 1975
 
 		folder = {
 			name = mtgnavalfolder
@@ -981,7 +981,7 @@ technologies = {
 		}
 		research_cost = 1.75
 
-		start_year = 1922
+		start_year = 1975
 
 		folder = {
 			name = mtgnavalfolder
@@ -1039,7 +1039,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1985
 
 		folder = {
 			name = mtgnavalfolder
@@ -1092,7 +1092,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1985
 
 		ai_will_do = {
 			factor = 1
@@ -1128,7 +1128,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1939
+		start_year = 1988
 
 		folder = {
 			name = mtgnavalfolder
@@ -1176,7 +1176,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1943
+		start_year = 1993
 
 		folder = {
 			name = mtgnavalfolder
@@ -1229,7 +1229,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.25
 
-		start_year = 1936
+		start_year = 1985
 
 		folder = {
 			name = mtgnavalfolder
@@ -1336,7 +1336,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.75
 
-		start_year = 1922
+		start_year = 1975
 
 		folder = {
 			name = mtgnavalfolder
@@ -1388,7 +1388,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1985
 
 		folder = {
 			name = mtgnavalfolder
@@ -1455,7 +1455,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1939
+		start_year = 1988
 
 		folder = {
 			name = mtgnavalfolder
@@ -1502,7 +1502,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1.5
 
-		start_year = 1943
+		start_year = 1993
 
 		folder = {
 			name = mtgnavalfolder
@@ -1564,7 +1564,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1975
 
 		folder = {
 			name = mtgnavalfolder
@@ -1625,7 +1625,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1985
 
 		folder = {
 			name = mtgnavalfolder
@@ -1674,7 +1674,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1939
+		start_year = 1988
 
 		folder = {
 			name = mtgnavalfolder
@@ -1712,7 +1712,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1943
+		start_year = 1993
 
 		folder = {
 			name = mtgnavalfolder
@@ -1754,7 +1754,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1988
 
 		folder = {
 			name = mtgnavalfolder
@@ -1803,7 +1803,7 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 1943
+		start_year = 1993
 
 		folder = {
 			name = mtgnavalfolder
@@ -1838,7 +1838,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1985
 
 		#set at gamestart
 		allow = {
@@ -1852,7 +1852,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1985
 
 		#set at gamestart
 		allow = {
@@ -1866,7 +1866,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1985
 
 		#set at gamestart
 		allow = {
@@ -1880,7 +1880,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1985
 
 		#set at gamestart
 		allow = {
@@ -1896,7 +1896,7 @@ early_ship_hull_carrier = {
 			ship_extra_fuel_tank
 		}
 		research_cost = 1
-		start_year = 1936
+		start_year = 1985
 
 		#set at gamestart
 		allow = {
@@ -1909,7 +1909,7 @@ early_ship_hull_carrier = {
 			ship_hull_midget_submarine
 		}
 		research_cost = 1
-		start_year = 1936
+		start_year = 1985
 
 		#set at gamestart
 		allow = {
@@ -1943,7 +1943,7 @@ early_ship_hull_carrier = {
 		force_use_small_tech_layout = yes		
 		is_special_project_tech = yes
 		research_cost = 2
-		start_year = 1939
+		start_year = 1988
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 1 y = 13 }
@@ -1972,7 +1972,7 @@ early_ship_hull_carrier = {
 		force_use_small_tech_layout = yes		
 		is_special_project_tech = yes
 		research_cost = 2
-		start_year = 1943
+		start_year = 1993
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 1 y = 19 }
@@ -2039,7 +2039,7 @@ early_ship_hull_carrier = {
 		force_use_small_tech_layout = yes
 		is_special_project_tech = yes			
 		research_cost = 1
-		start_year = 1944
+		start_year = 1994
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 23 }
@@ -2058,7 +2058,7 @@ early_ship_hull_carrier = {
 		#HIDDEN EFFECT FOR THE PROXIMITY FUZE 
 		navy_anti_air_attack_factor = 0.25
 		research_cost = 1
-		start_year = 1940
+		start_year = 1990
 		
 		allow = {
 			always = no
@@ -2070,7 +2070,7 @@ early_ship_hull_carrier = {
 		underway_replenishment_range = 0.2
 		underway_replenishment_convoy_cost = 0.1
 		research_cost = 1
-		start_year = 1940
+		start_year = 1990
 
 		allow = {
 			always = no
@@ -2081,7 +2081,7 @@ early_ship_hull_carrier = {
 		underway_replenishment_range = -0.1
 		underway_replenishment_convoy_cost = -0.2
 		research_cost = 1
-		start_year = 1940
+		start_year = 1990
 
 		allow = {
 			always = no
@@ -2091,7 +2091,7 @@ early_ship_hull_carrier = {
 	sp_naval_support_ships_pick_a = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
-		start_year = 1940
+		start_year = 1990
 		naval_general_support_value_factor = 0.25
 		naval_general_support_factor = -0.1
 		allow = {
@@ -2101,7 +2101,7 @@ early_ship_hull_carrier = {
 	sp_naval_support_ships_pick_b = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
-		start_year = 1940
+		start_year = 1990
 		naval_general_support_value_factor = 0.05
 		allow = {
 			always = no
@@ -2110,7 +2110,7 @@ early_ship_hull_carrier = {
 	sp_naval_support_ships_pick_c = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
-		start_year = 1940
+		start_year = 1990
 		naval_general_support_factor = 0.25
 		naval_general_support_value_factor = -0.15
 		allow = {
@@ -2120,7 +2120,7 @@ early_ship_hull_carrier = {
 	sp_naval_repair_ships_pick_a = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
-		start_year = 1940
+		start_year = 1990
 		naval_repair_support_value_factor = 0.25
 		naval_repair_support_factor = -0.1
 		allow = {
@@ -2130,7 +2130,7 @@ early_ship_hull_carrier = {
 	sp_naval_repair_ships_pick_b = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
-		start_year = 1940
+		start_year = 1990
 		naval_repair_support_value_factor = 0.05
 		allow = {
 			always = no
@@ -2139,7 +2139,7 @@ early_ship_hull_carrier = {
 	sp_naval_repair_ships_pick_c = {
 		#HIDDEN EFFECT FOR REWARD CHOICE
 		research_cost = 1
-		start_year = 1940
+		start_year = 1990
 		naval_repair_support_factor = 0.25
 		naval_repair_support_value_factor = -0.15
 		allow = {

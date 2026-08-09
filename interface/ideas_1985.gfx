@@ -106,6 +106,56 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_idea_intensify_the_arms_race"
+        texturefile = "gfx/interface/ideas/USA/idea_intensify_the_arms_race_idea.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_fight_against_terrorism"
+        texturefile = "gfx/interface/ideas/USA/idea_fight_against_terrorism.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_us_world_hegemony"
+        texturefile = "gfx/interface/ideas/USA/idea_us_world_hegemony.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_economic_recession"
+        texturefile = "gfx/interface/ideas/USA/idea_economic_recession.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_use_the_global_positioning_system"
+        texturefile = "gfx/interface/ideas/USA/idea_use_the_global_positioning_system_idea.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_cooperation_with_allied_forces"
+        texturefile = "gfx/interface/ideas/USA/idea_cooperation_with_allied_forces_idea.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_increasing_federal_grants"
+        texturefile = "gfx/interface/ideas/USA/idea_increasing_federal_grants_idea.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_expansion_of_social_programs"
+        texturefile = "gfx/interface/ideas/USA/idea_expansion_of_social_programs_idea.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_healthcare_reform"
+        texturefile = "gfx/interface/ideas/USA/idea_healthcare_reform.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_operation_in_iraq"
+        texturefile = "gfx/interface/ideas/USA/idea_operation_in_iraq.dds"
+    }
+
+    spriteType = {
         name = "GFX_idea_faith_in_islam"
         texturefile = "gfx/interface/ideas/AFS/idea_faith_in_islam.dds"
     }   
@@ -133,6 +183,31 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_showcase_of_socialism"
         texturefile = "gfx/interface/ideas/DDR/idea_showcase_of_socialism.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_national_people_army"
+        texturefile = "gfx/interface/ideas/DDR/idea_national_people_army.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_filter_system"
+        texturefile = "gfx/interface/ideas/DDR/idea_filter_system.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_shalk_golodkovcky_committee"
+        texturefile = "gfx/interface/ideas/DDR/idea_shalk_golodkovcky_committee.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_monetary_union"
+        texturefile = "gfx/interface/ideas/DDR/idea_monetary_union.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_heading_for_the_turn"
+        texturefile = "gfx/interface/ideas/DDR/idea_heading_for_the_turn.dds"
     }
 
     spriteType = {

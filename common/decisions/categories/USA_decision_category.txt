@@ -106,3 +106,22 @@ USA_operation_desert_storm_mission = {
 		original_tag = USA
 	}
 }
+
+USA_preparation_for_invasion_in_iraq = {
+
+	icon = border_war
+		
+	priority = 45
+	  
+	allowed = {
+		original_tag = USA
+	}
+	  
+	visible = {
+		NOT = { has_war_with = IRQ }
+		NOT = { has_completed_focus = USA_a_new_model_of_collective_security }
+		NOT = { has_completed_focus = USA_landing_in_basra }
+		has_completed_focus = USA_preparation_for_invasion
+		original_tag = USA
+	}
+}

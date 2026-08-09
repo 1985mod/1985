@@ -572,3 +572,129 @@ news_event = {
 		name = news.24.a
 	}
 }
+
+news_event = {
+	id = news.25 ## Моджахеды выиграли в афганской войне ##
+	title = news.25.t
+	desc = news.25.desc
+	picture = GFX_news_mujahideen_won_the_afghan_war
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = mujahideen_won_the_afghan_war
+	}
+	
+	trigger = {
+		country_exists = AFS
+		NOT = { has_war_with = AFN }
+		NOT = { has_global_flag = mujahideen_won_the_afghan_war }
+	}
+
+	option = {
+		name = news.25.a
+		trigger = {
+			NOT = {
+				TAG = AFS
+			}
+		}
+	}
+	option = {
+		name = news.25.b
+		trigger = { TAG = AFS }
+		add_stability = 0.03
+	}
+}
+
+news_event = {
+	id = news.26 ## Республика Афганистан выиграл в афганской войне ##
+	title = news.26.t
+	desc = news.26.desc
+	picture = GFX_news_democratic_republic_won_the_afghan_war
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = democratic_republic_won_the_afghan_war
+	}
+	
+	trigger = {
+		country_exists = AFN
+		NOT = { has_war_with = AFS }
+		NOT = { has_global_flag = democratic_republic_won_the_afghan_war }
+	}
+
+	option = {
+		name = news.26.a
+		trigger = {
+			NOT = {
+				TAG = AFN
+			}
+		}
+	}
+	option = {
+		name = news.26.b
+		trigger = { TAG = AFN }
+		add_stability = 0.03
+	}
+}
+
+news_event = {
+	id = news.27 ## Вывод советских войск из Афганистана ##
+	title = news.27.t
+	desc = news.27.desc
+	picture = GFX_news_withdrawal_of_soviet_troops_from_afghanistan
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = withdrawal_of_soviet_troops_from_afghanistan
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.27.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.27.b
+		trigger = { TAG = SOV }
+		add_stability = 0.05
+		add_war_support = -0.05
+	}
+}
+
+news_event = {
+	id = news.28 ## Объединение Германии ##
+	title = news.28.t
+	desc = news.28.desc
+	picture = GFX_news_germany_reunification
+    
+    major = yes
+	
+	immediate = {
+		set_global_flag = germany_reunification
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.28.a
+		trigger = {
+			NOT = {
+				TAG = WGR
+			}
+		}
+	}
+	option = {
+		name = news.28.b
+		trigger = { TAG = WGR }
+		add_stability = 0.03
+		add_war_support = 0.03
+	}
+}

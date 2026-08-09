@@ -8951,4 +8951,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tank_weapon_3.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_computer_from_the_eighty_medium"
+		texturefile = "gfx/interface/technologies/computer_from_the_eighty.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_computer_from_the_late_eighties_medium"
+		texturefile = "gfx/interface/technologies/computer_from_the_late_eighties.dds"
+	}
+
 }

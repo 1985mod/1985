@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		DDR_doctrine_of_separation = {
-			picture = generic_economic_crisis 
+			picture = national_people_army 
 			allowed = {
 				original_tag = DDR
 			}
@@ -25,7 +25,7 @@ ideas = {
             }
 		}
 		DDR_heading_for_the_turn = {
-			picture = generic_economic_crisis 
+			picture = heading_for_the_turn 
 			allowed = {
 				original_tag = DDR
 			}
@@ -43,7 +43,7 @@ ideas = {
             }
 		}
 		DDR_shalk_golodkovsky_committee = {
-			picture = generic_economic_crisis 
+			picture = shalk_golodkovcky_committee 
 			allowed = {
 				original_tag = DDR
 			}
@@ -61,7 +61,7 @@ ideas = {
             }
 		}
 		DDR_monetary_union = {
-			picture = generic_economic_crisis 
+			picture = monetary_union 
 			allowed = {
 				original_tag = DDR
 			}
@@ -79,7 +79,7 @@ ideas = {
             }
 		}
 		DDR_iron_discipline = {
-			picture = generic_economic_crisis 
+			picture = national_people_army 
 			allowed = {
 				original_tag = DDR
 			}
@@ -97,7 +97,7 @@ ideas = {
             }
 		}
 		DDR_filter_system = {
-			picture = generic_economic_crisis 
+			picture = filter_system 
 			allowed = {
 				original_tag = DDR
 			}

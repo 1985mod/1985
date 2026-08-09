@@ -12,6 +12,7 @@ bookmarks = {
 			ideology = communism
 			ideas = {
 				DDR_showcase_of_socialism
+				DDR_monetary_union
 				WGR_divided_nation
 			}
 			focuses = {
@@ -27,7 +28,7 @@ bookmarks = {
 			ideas = {
 				SOV_soviet_contingent_in_afghanistan
                 SOV_economic_stagnation
-				SOV_cold_war
+				SOV_acceleration_course
 			}
 			focuses = {
 				SOV_course_towards_stability
@@ -42,7 +43,7 @@ bookmarks = {
 			ideas = {
 				USA_reaganomics_policy
 				USA_stronghold_of_freedom
-				USA_cold_war
+				USA_the_endless_war_on_drugs
 			}
 			focuses = {
 				USA_reagans_second_presidency

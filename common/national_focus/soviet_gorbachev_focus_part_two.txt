@@ -72,6 +72,7 @@
         }
 
         completion_reward = {
+            news_event = { id = news.27 hours = 24 }
             remove_ideas = SOV_soviet_contingent_in_afghanistan
             set_country_flag = withdrawal_soviet_troops_from_afghanistan
             recall_volunteers_from = AFN

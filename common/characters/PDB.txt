@@ -1,0 +1,15 @@
+characters = {
+	PDB_peoples_democratic_front = {
+		name = PDB_peoples_democratic_front
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_peoples_democratic_front
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { }
+			expire = "2000.3.1.1"
+		}
+	}
+}

@@ -11,7 +11,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1922
+		start_year = 1975
 
 		path = {
 			leads_to_tech = basic_light_battery
@@ -81,7 +81,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1936
+		start_year = 1985
 
 		path = {
 			leads_to_tech = basic_light_shell
@@ -128,7 +128,7 @@ technologies = {
 		
 		research_cost = 0.5
 
-		start_year = 1936
+		start_year = 1985
 
 		path = {
 			leads_to_tech = improved_light_battery
@@ -189,7 +189,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1988
 
 		path = {
 			leads_to_tech = improved_light_shell
@@ -301,7 +301,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1994
 
 		enable_equipment_modules = {
 			ship_light_battery_4
@@ -342,7 +342,7 @@ technologies = {
 
 		#research_cost = 1
 
-		#start_year = 1936
+		#start_year = 1985
 
 
 		#on_research_complete = {
@@ -392,7 +392,7 @@ technologies = {
 
 		#research_cost = 0.5
 
-		#start_year = 1936
+		#start_year = 1985
 
 		#path = {
 		#	leads_to_tech = improved_medium_battery
@@ -435,7 +435,7 @@ technologies = {
 
 		#research_cost = 1
 
-		#start_year = 1939
+		#start_year = 1988
 
 		#path = {
 		#	leads_to_tech = improved_medium_shell
@@ -529,7 +529,7 @@ technologies = {
 
 		#research_cost = 1
 
-		#start_year = 1944
+		#start_year = 1994
 
 		#enable_equipment_modules = {
 		#	ship_medium_battery_4
@@ -566,7 +566,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1936
+		start_year = 1985
 
 		path = {
 			leads_to_tech = basic_heavy_shell
@@ -617,7 +617,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1988
 
 		path = {
 			leads_to_tech = improved_heavy_shell
@@ -667,7 +667,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1994
 
 		enable_equipment_modules = {
 			ship_heavy_battery_4
@@ -712,7 +712,7 @@ technologies = {
 
 		research_cost = 0.5
 
-		start_year = 1936
+		start_year = 1985
 
 		path = {
 			leads_to_tech = improved_heavy_battery
@@ -803,7 +803,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1988
 
 		enable_equipment_modules = {
 			dp_light_battery_2
@@ -855,7 +855,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 1990
 
 		enable_equipment_modules = {
 			dp_light_battery_3
@@ -905,7 +905,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1994
 
 		enable_equipment_modules = {
 			dp_light_battery_4
@@ -951,7 +951,7 @@ technologies = {
 
 		#research_cost = 1.5
 
-		#start_year = 1944
+		#start_year = 1994
 
 		#enable_equipment_modules = {
 		#	dp_ship_medium_1
@@ -999,7 +999,7 @@ technologies = {
 
 		research_cost = 2.0
 
-		start_year = 1922
+		start_year = 1975
 
 
 
@@ -1057,7 +1057,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 2.5
 
-		start_year = 1936
+		start_year = 1985
 
 		#path = {
 		#	leads_to_tech = homing_torpedo
@@ -1191,7 +1191,7 @@ technologies = {
 	#	xp_research_bonus = 1.50
 	#	research_cost = 2.5
 
-	#	start_year = 1940
+	#	start_year = 1990
 
 
 	#	naval_torpedo_reveal_chance_factor = -0.25
@@ -1229,7 +1229,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1985
 
 		path = {
 			leads_to_tech = magnetic_detonator
@@ -1273,7 +1273,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1990
 
 
 		path = {
@@ -1319,7 +1319,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1944
+		start_year = 1994
 
 		enable_equipment_modules = {
 			ship_torpedo_4
@@ -1682,7 +1682,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1922
+		start_year = 1975
 
 		path = {
 			leads_to_tech = improved_naval_mines
@@ -1743,7 +1743,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1922
+		start_year = 1975
 
 		path = {
 			leads_to_tech = improved_submarine_mine_laying
@@ -1786,7 +1786,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1990
 
 		submarine = {
 			mines_planting = 0.2
@@ -1824,7 +1824,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1936
+		start_year = 1985
 
 		path = {
 			leads_to_tech = advanced_naval_mines
@@ -1931,7 +1931,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1990
 
 		#path = {
 		#	leads_to_tech = modern_naval_mines
@@ -2070,7 +2070,7 @@ technologies = {
 
 	#	research_cost = 2
 
-	#	start_year = 1945
+	#	start_year = 1995
 
 	#	path = {
 	#		leads_to_tech = airsweep_mines
@@ -2195,7 +2195,7 @@ technologies = {
 		}	
 
 		research_cost = 1.5
-		start_year = 1922
+		start_year = 1975
 
 		folder = {
 			name = mtgnavalsupportfolder
@@ -2263,7 +2263,7 @@ technologies = {
 		show_equipment_icon = yes
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1990
 
 		folder = {
 			name = mtgnavalsupportfolder
@@ -2334,7 +2334,7 @@ technologies = {
 		#naval_invasion_capacity = 100
 
 		research_cost = 2
-		start_year = 1944
+		start_year = 1994
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = 19 }
@@ -2437,7 +2437,7 @@ technologies = {
 		xp_boost_cost = 75
 		xp_research_bonus = 1.5
 		research_cost = 2.5
-		start_year = 1943
+		start_year = 1993
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 1 y = 17 }

@@ -437,12 +437,12 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1944.1.1"
+				date > "1994.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1945.1.1"
+				date > "1995.1.1"
 			}
 		}
 	}

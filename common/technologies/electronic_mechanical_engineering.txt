@@ -31,6 +31,11 @@ technologies = {
 			leads_to_tech = cavity_magnatron 
 			research_cost_coeff = 1
 		}
+
+		path = {
+			leads_to_tech = basic_fire_control_system 
+			research_cost_coeff = 1
+		}
 		
 
 
@@ -518,17 +523,13 @@ technologies = {
 	mechanical_computing = {
 
 		# small boost to research speed
-		research_speed_factor = 0.04
+		research_speed_factor = 0.05
 		
 		path = {
-			leads_to_tech = computing_machine 
+			leads_to_tech = computer_from_the_eighty 
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = basic_fire_control_system
-			research_cost_coeff = 1
-		}
 		enable_equipment_modules = {
 			bomb_sights_1
 		}
@@ -551,14 +552,14 @@ technologies = {
 		special_project_specialization = { specialization_nuclear }
 
 	}
-	
-	computing_machine = {
+
+	computer_from_the_eighty = {
 
 		# small boost to research speed
 		research_speed_factor = 0.05
 		
 		path = {
-			leads_to_tech = improved_computing_machine 
+			leads_to_tech = computing_machine 
 			research_cost_coeff = 1
 		}
 		path = {
@@ -569,8 +570,52 @@ technologies = {
 			leads_to_tech = basic_decryption 
 			research_cost_coeff = 1
 		}
+		research_cost = 2
+		start_year = 1987
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @computing y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+			
+			modifier = {
+				factor = 3
+				date > "1987.1.6"
+			}
+			
+			modifier = {
+				factor = 7
+				date > "1988.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+		special_project_specialization = { specialization_nuclear }
+	}
+	
+	computing_machine = {
+
+		# small boost to research speed
+		research_speed_factor = 0.05
+
 		path = {
-			leads_to_tech = improved_fire_control_system
+			leads_to_tech = computer_from_the_late_eighties 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_decryption 
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
@@ -603,11 +648,64 @@ technologies = {
 		}
 		special_project_specialization = { specialization_nuclear }
 	}
+
+	computer_from_the_late_eighties = {
+
+		research_speed_factor = 0.07
+
+		path = {
+			leads_to_tech = improved_computing_machine 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_decryption 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.7
+		start_year = 1989
+		
+		folder = {
+			name = electronics_folder
+			position = { x = @computing y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1989.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1991.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+		special_project_specialization = { specialization_nuclear }
+	}
 	
 	improved_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
+		research_speed_factor = 0.1
 		enable_equipment_modules = {
 			stabilizer
 			bomb_sights_2
@@ -622,11 +720,6 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = improved_decryption 
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = advanced_fire_control_system
 			research_cost_coeff = 1
 		}
 		
@@ -669,7 +762,7 @@ technologies = {
 	advanced_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
+		research_speed_factor = 0.1
 		
 		path = {
 			leads_to_tech = advanced_encryption 
@@ -709,6 +802,142 @@ technologies = {
 			computing_tech
 		}
 		special_project_specialization = { specialization_nuclear }
+	}
+
+	basic_fire_control_system = {
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_1
+		}
+
+		path = {
+			leads_to_tech = improved_fire_control_system
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 1985
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					can_research = improved_fire_control_system
+					has_tech = improved_fire_control_system
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	improved_fire_control_system = {
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_2
+		}
+		
+		research_cost = 1
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 1.5
+		start_year = 1988
+
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = advanced_fire_control_system
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				OR = {
+					can_research = advanced_fire_control_system
+					has_tech = advanced_fire_control_system
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	advanced_fire_control_system = {
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_3
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+		start_year = 1990
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
 	}
 	
 	basic_encryption = {
@@ -954,126 +1183,6 @@ technologies = {
 		categories = {
 			electronics
 			decryption_tech
-		}
-	}
-
-	basic_fire_control_system = {
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
-		enable_equipment_modules = { 
-			ship_fire_control_system_1
-		}
-		
-		research_cost = 1
-		
-		folder = {
-			name = electronics_folder
-			position = { x = @firecontrol y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				OR = {
-					can_research = improved_fire_control_system
-					has_tech = improved_fire_control_system
-				}
-				factor = 0
-			}
-		}
-		
-		categories = {
-			electronics
-			computing_tech
-			naval_equipment
-		}
-	}
-
-	improved_fire_control_system = {
-
-		enable_equipment_modules = { 
-			ship_fire_control_system_2
-		}
-		
-		research_cost = 1
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-		folder = {
-			name = electronics_folder
-			position = { x = @firecontrol y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			modifier = {
-				OR = {
-					can_research = advanced_fire_control_system
-					has_tech = advanced_fire_control_system
-				}
-				factor = 0
-			}
-		}
-		
-		categories = {
-			electronics
-			computing_tech
-			naval_equipment
-		}
-	}
-
-	advanced_fire_control_system = {
-
-		enable_equipment_modules = { 
-			ship_fire_control_system_3
-		}
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-		
-		research_cost = 1
-		
-		folder = {
-			name = electronics_folder
-			position = { x = @firecontrol y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 0.75
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
-			
-		}
-		
-		categories = {
-			electronics
-			computing_tech
-			naval_equipment
 		}
 	}
 
