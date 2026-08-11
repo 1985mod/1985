@@ -15,7 +15,7 @@ Economy = {
 		days_remove = 0
 
 		ai_will_do = {
-			factor = 2
+			factor = -1000
 		}
 
 		modifier = {
@@ -23,16 +23,6 @@ Economy = {
 		
 		remove_effect = {
 			set_country_flag = economy_gui
-			if = {
-				limit = {
-					NOT = { has_country_flag = set_economy_taxes }
-				}
-				set_variable = { var = pop_rate value = 20 }
-				set_variable = { var = corp_rate value = 15 }
-				set_variable = { var = vat_rate value = 10 }
-				set_variable = { var = interest_rate value = 0 }
-				set_country_flag = set_economy_taxes
-			}
 		}
 	}
 
@@ -230,6 +220,73 @@ Economy = {
             modifier = {
                 add = 2000
                 check_variable = { var = vat_rate value = vat_optimal compare = greater_than }
+            }
+        }		
+	}
+	ai_increase_interest_rate = {
+		allowed = { always = yes }
+		
+		available = {
+			has_political_power > 24
+			NOT = { check_variable = { interest_rate > 99 } }
+		}
+
+		visible = { is_ai = yes }
+
+		remove_effect = {
+			add_to_variable = { var = interest_rate value = 1 }
+			velocity_effect = yes
+			inflation_effect = yes
+			if = {
+				limit = {
+					check_variable = { interest_rate > 100 }
+				}
+				set_variable = { var = interest_rate value = 100 }
+			}
+			else = {
+				add_political_power = -25
+			}
+		}
+
+		ai_will_do = {
+            base = -1000
+            modifier = {
+                add = 2000
+                check_variable = { var = inflation_rate value = 8 compare = greater_than }
+            }
+        }
+	}
+
+	ai_decrease_interest_rate = {
+		allowed = { always = yes }
+		
+		available = {
+			has_political_power > 24
+			NOT = { check_variable = { interest_rate < -5 } }
+		}
+
+		visible = { is_ai = yes }
+
+		remove_effect = {
+			subtract_from_variable = { var = interest_rate value = 1 }
+			velocity_effect = yes
+			inflation_effect = yes
+			if = {
+				limit = {
+					check_variable = { interest_rate < -5 }
+				}
+				set_variable = { var = interest_rate value = -5 }
+			}
+			else = {
+				add_political_power = -25
+			}
+		}
+
+		ai_will_do = {
+            base = -1000
+            modifier = {
+                add = 2000
+                check_variable = { var = inflation_rate value = 2 compare = less_than }
             }
         }		
 	}

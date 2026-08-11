@@ -27,3 +27,33 @@ defined_text = {
 		localization_key = CORPORATE_RATE_TAX_LABEL_capitalism
 	}
 }
+
+defined_text = {
+	name = real_gdp_display
+	
+	text = {
+		trigger = {
+			check_variable = { var = country_gdp value = 1000 compare = less_than }
+		}
+		localization_key = REAL_GDP_less_than_1000
+	}
+	
+	text = {
+		localization_key = REAL_GDP_more_than_1000
+	}
+}
+
+defined_text = {
+	name = nominal_gdp_display
+	
+	text = {
+		trigger = {
+			check_variable = { var = nominal_gdp value = 1000 compare = less_than }
+		}
+		localization_key = NOMINAL_GDP_less_than_1000
+	}
+	
+	text = {
+		localization_key = NOMINAL_GDP_more_than_1000
+	}
+}
