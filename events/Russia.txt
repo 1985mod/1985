@@ -197,8 +197,12 @@ country_event = {
         name = russia.8.a
         add_political_power = 50
 		add_popularity = {
-			ideology = conservatism
+			ideology = communism
 			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.03
 		}
     }
 }
@@ -227,7 +231,7 @@ country_event = {
 }
 
 country_event = {
-	id = russia.10 ## Решающий день для России ##
+	id = russia.10 ## Массовый бандитизм ##
 	title = russia.10.t
 	desc = russia.10.desc
 	picture = GFX_report_decree_no_1400
@@ -240,5 +244,29 @@ country_event = {
         add_political_power = -10
 		add_stability = -0.05
 		add_ideas = RUS_mass_banditry
+    }
+}
+
+country_event = {
+	id = russia.11 ## Решающий день для России ##
+	title = russia.11.t
+	desc = russia.11.desc
+	picture = GFX_report_decree_no_1400
+
+	trigger = {
+		country_exists = RUS
+		tag = RUS
+		RUS = {
+			NOT = { controls_state = 1060 }
+		}
+		date > 1992.06.04
+	}
+	fire_only_once = yes
+
+    option = {
+        name = russia.11.a
+        add_political_power = 25
+		add_stability = 0.05
+		transfer_state = 1060
     }
 }

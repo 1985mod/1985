@@ -1,0 +1,13 @@
+WGR_election_campaign_in_germany = {
+    icon = generic_foreign_policy
+	  
+	priority = 90
+	  
+	allowed = {
+		original_tag = WGR
+	}
+	  
+	visible = {
+		has_country_flag = election_campaign_in_germany_1987
+	}
+}

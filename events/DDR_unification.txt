@@ -15,6 +15,10 @@ country_event = {
 		name = DDR_unification.1.a
 		ai_chance = {
 			base = 20
+			modifier = {
+				add = 80
+				is_historical_focus_on = yes
+			}
 		}
 		set_global_flag = GER_unification1
 		WGR = {
@@ -48,6 +52,10 @@ country_event = {
 		name = DDR_unification.1.b
 		ai_chance = {
 			base = 10
+			modifier = {
+				add = -10
+				is_historical_focus_on = yes
+			}
 		}
 
 		effect_tooltip = {
@@ -75,7 +83,7 @@ country_event = {
 	option = { # ФРГ игнорирует
 		name = DDR_unification.2.a
 		ai_chance = {
-			base = 10
+			base = 100
 		}
 		hidden_effect = {
 			set_global_flag = GER_unification2

@@ -499,3 +499,93 @@ country_event = {
 		add_stability = 0.02
 	}
 }
+
+country_event = {
+	id = wgr.23 ## Победа ХДС ##
+	title = wgr.23.t
+	desc = wgr.23.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	trigger = {
+		country_exists = WGR
+		tag = WGR
+		date > 1987.02.25
+		date < 1991.01.01
+		conservatism > party_popularity@socialism
+		conservatism > party_popularity@liberalism
+	}
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.23.a
+		add_political_power = 25
+		add_stability = 0.05
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			complete_national_focus = WGR_victory_for_the_cdu
+			set_country_flag = victory_in_germany_cdu
+			mark_focus_tree_layout_dirty = yes
+		}
+		custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
+	}
+}
+
+country_event = {
+	id = wgr.24 ## Победа СДПГ ##
+	title = wgr.24.t
+	desc = wgr.24.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	trigger = {
+		country_exists = WGR
+		tag = WGR
+		date > 1987.02.25
+		date < 1991.01.01
+		socialism > party_popularity@conservatism
+		socialism > party_popularity@liberalism
+	}
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.24.a
+		add_political_power = 25
+		add_stability = 0.05
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			complete_national_focus = WGR_victory_for_the_spd
+			set_country_flag = victory_in_germany_spd
+			mark_focus_tree_layout_dirty = yes
+		}
+		custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
+	}
+}
+
+country_event = {
+	id = wgr.25 ## Предвыборная кампания 1987 года ##
+	title = wgr.25.t
+	desc = wgr.25.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	trigger = {
+		country_exists = WGR
+		tag = WGR
+		date > 1986.11.25
+		date < 1988.01.01
+	}
+
+	fire_only_once = yes
+
+    option = {
+        name = wgr.25.a
+		add_political_power = 10
+		set_country_flag = election_campaign_in_germany_1987
+	}
+}

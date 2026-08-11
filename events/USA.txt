@@ -12,7 +12,7 @@ country_event = {
 	   tag = USA
 	   date > 1988.11.01
 	   date < 1991.11.01
-	   conservatism > 0.5
+	   conservatism > party_popularity@liberalism
 	}
 	
 	option = {
@@ -29,6 +29,7 @@ country_event = {
 				ruling_party = conservatism
 				elections_allowed = yes
 			}
+			custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
 		}
 
 		hidden_effect = {
@@ -58,7 +59,7 @@ country_event = {
 	   tag = USA
 	   date > 1988.11.01
 	   date < 1991.11.01
-	   liberalism > 0.5
+	   liberalism > party_popularity@conservatism
 	}
 	
 	option = {
@@ -75,6 +76,7 @@ country_event = {
 				ruling_party = liberalism
 				elections_allowed = yes
 			}
+			custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
 		}
 
 		hidden_effect = {

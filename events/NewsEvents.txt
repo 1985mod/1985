@@ -587,7 +587,9 @@ news_event = {
 	
 	trigger = {
 		country_exists = AFS
-		NOT = { has_war_with = AFN }
+		AFS = {
+			NOT = { has_war_with = AFN }
+		}
 		NOT = { has_global_flag = mujahideen_won_the_afghan_war }
 	}
 
@@ -620,7 +622,9 @@ news_event = {
 	
 	trigger = {
 		country_exists = AFN
-		NOT = { has_war_with = AFS }
+		AFN = {
+			NOT = { has_war_with = AFS }
+		}
 		NOT = { has_global_flag = democratic_republic_won_the_afghan_war }
 	}
 

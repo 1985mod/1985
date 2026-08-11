@@ -73,10 +73,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = -0.35
+				stability_factor = -0.25
 				political_power_factor = -0.15
 				war_support_factor = -0.1
-				stability_weekly = -0.01
+				stability_weekly = -0.0025
 			}
 		}
 		RUS_plundered_army = {

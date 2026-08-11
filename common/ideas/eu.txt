@@ -35,6 +35,7 @@ ideas = {
 			}
 	    }
 		EU_single_europ = {
+			picture = GFX_idea_EU_member
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.03
@@ -47,6 +48,7 @@ ideas = {
 			}
 	    }
 		EU_single_europ_evro = {
+			picture = GFX_idea_EU_member
 			removal_cost = -1
 			modifier = {
 				production_speed_industrial_complex_factor = 0.15
@@ -58,6 +60,7 @@ ideas = {
 			}
 	    }
 		EU_single_evror = {
+			picture = GFX_idea_EU_member
 			removal_cost = -1
 			modifier = {
 				consumer_goods_expected_value = -0.05 
@@ -68,6 +71,7 @@ ideas = {
 			}
 	    }
 		EU_economic_cooperation_with_germany = {
+			picture = economic_cooperation_with_germany
 			removal_cost = -1
 			modifier = {
 				consumer_goods_expected_value = -0.1
