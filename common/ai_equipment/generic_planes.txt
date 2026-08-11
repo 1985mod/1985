@@ -15,7 +15,7 @@ generic_fighter = {
 
 	great_war_fighter_default = {
 		priority = {
-			factor = 1
+			factor = 100
 			modifier = { 
 				has_tech = basic_small_airframe
 				factor = 0 #let's not waste XP here
@@ -43,7 +43,7 @@ generic_fighter = {
 
 	basic_fighter_default = {
 		priority = {
-			factor = 100
+			factor = 1000
 			modifier = { 
 				has_tech = improved_small_airframe
 				factor = 0 #let's not waste XP here
@@ -73,7 +73,7 @@ generic_fighter = {
 
 	improved_fighter_default = {
 		priority = {
-			factor = 10
+			factor = 1000
 			modifier = { 
 				has_tech = advanced_small_airframe 
 				factor = 0 #let's not waste XP here
@@ -102,7 +102,7 @@ generic_fighter = {
 
 	advanced_fighter_default = {
 		priority = {
-			factor = 10
+			factor = 10000
 		}
 
 		history = yes

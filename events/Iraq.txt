@@ -128,7 +128,13 @@ country_event = {   ### Ирак капитулирует ###
             white_peace = ROOT
         }
         release = KUW
-        KUR = { transfer_state = 1058}
+        KUR = { transfer_state = 1058 }
+        hidden_effect = {
+            delete_unit = {
+                division_template = "Republican Guard"
+                division_template = "Mechanised Brigade of Iraq"
+            }
+        }
     }
 }
 

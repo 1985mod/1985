@@ -15,9 +15,15 @@ spriteTypes = {
         name = "GFX_idea_EU_member"
         texturefile = "gfx/interface/ideas/european_union/EU_member.dds"
     }
+
     spriteType = {
         name = "GFX_idea_EU_member_2"
         texturefile = "gfx/interface/ideas/european_union/EU_member_2.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_economic_cooperation_with_germany"
+        texturefile = "gfx/interface/ideas/european_union/idea_economic_cooperation_with_germany.dds"
     }
 
     spriteType = {
@@ -178,6 +184,36 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_nato_front_line"
         texturefile = "gfx/interface/ideas/WGR/idea_nato_front_line.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_public_investments"
+        texturefile = "gfx/interface/ideas/WGR/idea_public_investments.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_rhine_miracle"
+        texturefile = "gfx/interface/ideas/WGR/idea_rhine_miracle.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_federal_police"
+        texturefile = "gfx/interface/ideas/WGR/idea_federal_police_idea.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_bundestag"
+        texturefile = "gfx/interface/ideas/WGR/idea_bundestag.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_wonderful"
+        texturefile = "gfx/interface/ideas/WGR/idea_wonderful_idea.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_united_but_at_what_cost"
+        texturefile = "gfx/interface/ideas/WGR/idea_united_but_at_what_cost.dds"
     }
 
     spriteType = {

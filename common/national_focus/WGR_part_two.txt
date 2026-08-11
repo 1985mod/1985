@@ -8,6 +8,188 @@ focus_tree = {
 		}
 	}
 	default = no
+
+
+	focus = {
+		id = WGR_victory_for_the_cdu
+		icon = GFX_goal_unknown
+		cost = 5
+		allow_branch = { has_country_flag = victory_in_germany_cdu }
+		x = 15
+		y = 0
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_recognizing_ours_problems
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_victory_for_the_cdu
+		prerequisite = { focus = WGR_victory_for_the_cdu }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WGR_parliamentary_reform
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_victory_for_the_cdu
+		prerequisite = { focus = WGR_victory_for_the_cdu }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WGR_formation_of_a_new_government
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_victory_for_the_cdu
+		prerequisite = { focus = WGR_victory_for_the_cdu }
+		x = 2
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WGR_developing_our_course
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_parliamentary_reform
+		prerequisite = { focus = WGR_parliamentary_reform }
+		prerequisite = { focus = WGR_recognizing_ours_problems }
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WGR_adopt_new_infrastructure_projects
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_parliamentary_reform
+		prerequisite = { focus = WGR_parliamentary_reform }
+		prerequisite = { focus = WGR_formation_of_a_new_government }
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WGR_victory_for_the_spd
+		icon = GFX_goal_unknown
+		cost = 5
+		allow_branch = { has_country_flag = victory_in_germany_spd }
+		x = 35
+		y = 0
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_fighting_unemployment
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_victory_for_the_spd
+		prerequisite = { focus = WGR_victory_for_the_spd }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WGR_forming_a_coalition_with_the_liberals
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_victory_for_the_spd
+		prerequisite = { focus = WGR_victory_for_the_spd }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WGR_collapse_kolya_programs
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_victory_for_the_spd
+		prerequisite = { focus = WGR_victory_for_the_spd }
+		x = 2
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WGR_focus_on_ecology
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_forming_a_coalition_with_the_liberals
+		prerequisite = { focus = WGR_forming_a_coalition_with_the_liberals }
+		prerequisite = { focus = WGR_fighting_unemployment }
+		x = -1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = WGR_course_towards_detente_with_the_east
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_forming_a_coalition_with_the_liberals
+		prerequisite = { focus = WGR_forming_a_coalition_with_the_liberals }
+		prerequisite = { focus = WGR_collapse_kolya_programs }
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {
 		id = WGR_eras_of_tension
 		icon = GFX_goal_unknown
@@ -18,7 +200,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = wgr.3 }
 		}
-
 	}
 	focus = {
 		id = WGR_europe_leader
@@ -32,7 +213,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = wgr.4 }
 		}
-
 	}
 	focus = {
 		id = WGR_franco_germany_engine
@@ -57,7 +237,6 @@ focus_tree = {
 				}
 			}
 		}
-
 	}
 	focus = {
 		id = WGR_bundeswehr
@@ -71,7 +250,6 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 		}
-
 	}
 	focus = {
 		id = WGR_leopard_tank
@@ -90,7 +268,6 @@ focus_tree = {
 				category = cat_medium_armor
 			}
 	    }
-
 	}
 	focus = {
 		id = WGR_german_air_exercises
@@ -118,7 +295,6 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 		}
-
 	}
 
 	focus = {
@@ -135,7 +311,6 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 		}
-
 	}
 
 	focus = {
@@ -189,7 +364,6 @@ focus_tree = {
 				}		
 			}
 		}
-
 	}
 	focus = {
 		id = WGR_tank_doctrine

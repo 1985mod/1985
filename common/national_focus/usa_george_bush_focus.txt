@@ -454,7 +454,16 @@ focus_tree = {
 		}
 		
         completion_reward = {
-
+			damage_building = {
+				type = infrastructure
+				state = 1011
+				damage = 1
+			}
+			damage_building = {
+				type = infrastructure
+				state = 291
+				damage = 1
+			}
 	    }
 	}
 

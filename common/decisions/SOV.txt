@@ -44,12 +44,6 @@ SOV_cold_war = {
 		custom_cost_text = decision_cost_ie_500
 		days_remove = 30
 
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -500
-			}
-		}
 		remove_effect = {
         	send_equipment = {
            		equipment = infantry_equipment
@@ -102,12 +96,6 @@ SOV_cold_war = {
 		custom_cost_text = decision_cost_ie_500
 		days_remove = 30
 
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -500
-			}
-		}
 		remove_effect = {
         	send_equipment = {
            		equipment = infantry_equipment
@@ -160,12 +148,6 @@ SOV_cold_war = {
 		custom_cost_text = decision_cost_ie_500
 		days_remove = 30
 
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -500
-			}
-		}
 		remove_effect = {
         	send_equipment = {
            		equipment = infantry_equipment
@@ -231,12 +213,6 @@ SOV_cold_war = {
 		custom_cost_text = decision_cost_ie_500
 		days_remove = 30
 
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -500
-			}
-		}
 		remove_effect = {
         	send_equipment = {
            		equipment = infantry_equipment

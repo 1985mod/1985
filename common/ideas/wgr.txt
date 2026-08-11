@@ -45,7 +45,7 @@ ideas = {
 		}
 
 		WGR_public_investments = {
-			picture = GFX_unknown
+			picture = public_investments
 			
 			allowed = {
                 OR = {
@@ -67,7 +67,7 @@ ideas = {
 		}
 
 		WGR_rhine_miracle = {
-			picture = GFX_unknown
+			picture = rhine_miracle
 			
 			allowed = {
                 OR = {
@@ -89,7 +89,7 @@ ideas = {
 			}
 		}
 		WGR_federal_police_idea = {
-			picture = GFX_unknown
+			picture = federal_police
 			
 			allowed = {
                 OR = {
@@ -111,7 +111,7 @@ ideas = {
 			}
 		}
 		WGR_bundestag = {
-			picture = GFX_unknown
+			picture = bundestag
 			
 			allowed = {
                 OR = {
@@ -132,7 +132,7 @@ ideas = {
 			}
 		}
 		WGR_wonderful_idea = {
-			picture = GFX_unknown
+			picture = wonderful
 			
 			allowed = {
                 OR = {
@@ -154,7 +154,7 @@ ideas = {
 			}
 		}
 		WGR_united_but_at_what_cost = {
-			picture = GFX_unknown
+			picture = united_but_at_what_cost
 			
 			allowed = {
                 OR = {

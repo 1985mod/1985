@@ -1,0 +1,174 @@
+WGR_election_campaign_in_germany = {
+    WGR_focus_on_stability = {
+	
+		icon = eng_trade_unions_support
+
+		cost = 50
+		days_remove = 30
+
+		visible = {
+			has_country_flag = election_campaign_in_germany_1987
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+	
+		remove_effect = {
+			add_stability = 0.03
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.02
+			}
+		}
+	}
+
+    WGR_criticism_of_the_spd = {
+	
+		icon = eng_propaganda_campaigns
+
+		cost = 75
+		days_remove = 15
+		days_re_enable = 30
+
+	    visible = {
+			has_country_flag = election_campaign_in_germany_1987
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		modifier = {
+			political_power_gain = -0.3
+			conservatism_drift = 0.02
+		}
+	
+		remove_effect = {
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.05
+			}
+		}
+	}
+
+    WGR_targeted_the_middle_class = {
+	
+		icon = generic_speech
+
+		cost = 75
+		days_remove = 15
+		days_re_enable = 30
+
+	    visible = {
+			has_country_flag = election_campaign_in_germany_1987
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			add_stability = 0.02
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.02
+			}
+		}
+	}
+
+    WGR_fought_for_peace = {
+	
+		icon = generic_speech
+
+		cost = 50
+		days_remove = 30
+
+	    visible = {
+			has_country_flag = election_campaign_in_germany_1987
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			add_war_suppport = 0.03
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+		}
+	}
+
+    WGR_protecting_workers = {
+	
+		icon = eng_trade_unions_support
+
+		cost = 75
+		days_remove = 30
+
+	    visible = {
+			has_country_flag = election_campaign_in_germany_1987
+	    }
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = -20
+				is_historical_focus_on = yes
+			}
+		}
+
+		modifier = {
+			political_power_gain = -0.3
+			socialism_drift = 0.02
+		}
+	
+		remove_effect = {
+			add_stability = 0.02
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+		}
+	}
+
+    WGR_for_peace_and_security = {
+	
+		icon = eng_propaganda_campaigns
+
+		cost = 100
+		days_remove = 50
+
+	    visible = {
+			has_country_flag = election_campaign_in_germany_1987
+	    }
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = -20
+				is_historical_focus_on = yes
+			}
+		}
+
+		modifier = {
+			political_power_gain = -0.3
+			socialism_drift = 0.02
+			war_support_weekly = -0.01
+		}
+	
+		remove_effect = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+	}
+}
