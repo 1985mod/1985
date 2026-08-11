@@ -1,0 +1,8 @@
+unemployment_dynamic = {
+    enable = {
+        always = yes
+    }
+
+    stability_factor = unemployment_stability
+    consumer_goods_factor = unemployment_consumer_goods
+}

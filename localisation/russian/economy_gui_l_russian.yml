@@ -1,15 +1,65 @@
 ﻿l_russian:
+ ECONOMY_TITLE:0 "Экономика"
+
  ECONOMY_CIV_FACTORIES:0 "[?num_of_civilian_factories|Y0]"
  ECONOMY_MIL_FACTORIES:0 "[?num_of_military_factories|Y0]"
  ECONOMY_NAVAL_FACTORIES:0 "[?num_of_naval_factories|Y0]"
- GDP:0 "[?country_gdp|2Y]B"
- GDP_PER_CAPITA:0 "[?gdp_per_capita|Y2]K"
- GDP_GROWTH_RATE:0 "[?gdp_growth_rate|+=2]%"
- NOMINAL_GDP:0 "[?nominal_gdp|Y2]B"
+
+ REAL_GDP:0 "[Root.real_gdp_display]   "
+ REAL_GDP_more_than_1000:0 "[?country_gdp_divided_by_1000|2Y] трлн $"
+ REAL_GDP_less_than_1000:0 "[?country_gdp|2Y] млрд $"
+
+ NOMINAL_GDP:0 "      [Root.nominal_gdp_display]"
+ NOMINAL_GDP_more_than_1000:0 "[?nominal_gdp_divided_by_1000|2Y] трлн $"
+ NOMINAL_GDP_less_than_1000:0 "[?nominal_gdp|2Y] млрд $"
+
+ GDP_PER_CAPITA:0 "         [?gdp_per_capita|Y2] тыс. $"
+ GDP_GROWTH_RATE:0 "           [?gdp_growth_rate|+=2]%"
  INTEREST_RATE:0 "[?interest_rate]%"
  INFLATION:0 "[?inflation_rate|Y2]%"
+
  POPULATION_TAXES:0 "[?pop_rate]%"
  CORPORATE_RATE:0 "[?corp_rate]%"
  VAT_RATE:0 "[?vat_rate]%"
- INCOME:0 "§G[?income_budget|.3]B§!"
- MY_TOOLTIP_KEY:0 "Подсказка"
+
+ POPULATION_INCOME:0 "          $§G[?population_tax|.3]"
+ CORPORATE_INCOME:0 "          $§G[?corporate_tax|.3]"
+ VAT_INCOME:0 "          $§G[?vat_tax|.3]"
+ RESOURCE_REVENUE:0 "          $§G[?resource_revenue|.3]"
+ INCOME:0 "$§G[?income_budget|.3]§!"
+
+ Real_GDP_Tooltip:0 "§HРеальный ВВП§!\nОбщая стоимость всех товаров и услуг, произведенных в стране, скорректированная с учетом инфляции.\n\nНаш экономический выпуск напрямую привязан к промышленным мощностям. Каждая активная §Yгражданская фабрика§! приносит в экономику §G15.0 млрд $§!, в то время как каждый §Yвоенный завод§! и §Yверфь§! генерируют по §G10.0 млрд $§! соответственно.\n\n§HСтруктура ВВП:§!\nГражданское производство: [?civ_of_gdp|%0]\nВоенная промышленность: [?mil_of_gdp|%0]\nМорской сектор и верфи: [?naval_of_gdp|%0]"
+ GDP_Per_Capita_Tooltip:0 "§HВВП на душу населения§!\nОпределяет §Yреальный экономический выпуск§! в пересчете на одного гражданина.\n\nБолее высокий §YВВП на душу населения§! расширяет налогооблагаемую базу и открывает доступ к более высоким §Gоптимальным налоговым ставкам§!, но при этом значительно увеличивает §Rрасходы на содержание госаппарата§! и другие государственные издержки.\n\nПо мере роста национального благосостояния §Yцелевой диапазон безработицы§! сужается и смещается вниз.\n\nПоддерживайте сбалансированную §Yденежно-кредитную политику§! и внимательно следите за экономическими показателями — иначе вы столкнетесь с массовыми §Rгражданскими беспорядками§!."
+ Nominal_GDP_Tooltip:0 "§HНоминальный ВВП§!\nОбщая рыночная стоимость национальной экономики, измеряемая в текущих ценах.\n\n§HФормула расчета:§!\n§YНоминальный ВВП = Денежная масса × Скорость оборота денег§!\n\n§YДенежная масса:§! Общий объем валюты в обращении. Она §Gувеличивается за счет госрасходов§! и §Rсокращается за счет налогообложения§!.\n§YСкорость оборота денег:§! Скорость, с которой валюта переходит из рук в руки. Этот темп во многом диктуется §Yключевой процентной ставкой§!.\n\n§HМакроэкономическое влияние:§!\nНоминальный ВВП напрямую определяет §Yналоговую базу§! вашей страны.\n\nЕсли Номинальный ВВП поднимется слишком высоко относительно Реального ВВП, гарантирована §Rгиперинфляция§!.\nЕсли Номинальный ВВП упадет слишком низко относительно Реального ВВП, экономика скатится в §Rдефляцию§!.\n\n§WБалансируйте экономические весы: регулируйте процентные ставки, корректируйте расходы и меняйте налоги, когда это возможно.§!"
+ GDP_Growth_Tooltip:0 "§HРост ВВП§!\nОтслеживает краткосрочную траекторию национальной экономики за последний квартал.\n\n§YЭкономическое здоровье:§! Чем быстрее растет ваша экономика, тем лучше... §HСпасибо, Капитан Очевидность!§!\n§YРиск перегрева:§! Слишком быстрый рост в сочетании с низкой §Yключевой процентной ставкой§! серьезно увеличивает опасность возникновения финансового пузыря.\n\n§RСледите за показателями, ужесточайте денежно-кредитную политику при необходимости и не допустите финансового краха, чтобы§! §Gmake your economy great again!§!"
+
+ CORPORATE_RATE_LABEL:0 "[Root.corporate_rate_display]"
+ CORPORATE_RATE_LABEL_capitalism:0 "Налог на бизнес"
+ CORPORATE_RATE_LABEL_communism:0 "Налог на предприятия"
+
+ CORPORATE_RATE_TAX_LABEL:0 "[Root.corporate_rate_tax_display]"
+ CORPORATE_RATE_TAX_LABEL_capitalism:0 "Доход от корпораций:"
+ CORPORATE_RATE_TAX_LABEL_communism:0 "Доход от предприятий:"
+
+ ADMINISTRATION_EXPENDITURE:0 "$§R[?administration_expenditure|.3]§!"
+ EDUCATION_EXPENDITURE:0 "$§R[?education_expenditure|.3]§!"
+
+ UNEMPLOYMENT_RATE:0 "§R[?unemployment_rate|.2]%"
+ TARGET_UNEMPLOYMENT:0 "§H[?target_unemployment_down|.2]% - §H[?target_unemployment_up|.2]%"
+
+ REAL_GDP_LABEL:0 "Реальный ВВП   "
+ NOMINAL_GDP_LABEL:0 "      Номинальный ВВП"
+ GDP_PER_CAPITA_LABEL:0 "         ВВП на д/н"
+ GDP_GROWTH_LABEL:0 "           Рост ВВП"
+ INFLATION_LABEL:0 "Инфляция"
+ POPULATION_TAX_RATE_LABEL:0 "Подоходный налог"
+ VAT_RATE_LABEL:0 "Ставка НДС"
+ INTEREST_RATE_LABEL:0 "Ключевая ставка"
+ STATE_REVENUE_LABEL:0 "Доходы государства"
+ POPULATION_INCOME_LABEL:0 "Подоходный налог:"
+ VAT_INCOME_LABEL:0 "Доход от НДС:"
+ RESOURCE_REVENUE_LABEL:0 "Экспорт ресурсов:"
+ EMPLOYMENT_LABEL:0 "Занятость"
+ UNEMPLOYMENT_RATE_LABEL:0 "Безработица:"
+ TARGET_UNEMPLOYMENT_LABEL:0 "Целевой уровень:"
+ STATE_EXPENDITURE_LABEL:0 "Расходы государства"
