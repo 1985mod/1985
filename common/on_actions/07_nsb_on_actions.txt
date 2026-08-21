@@ -1883,12 +1883,12 @@ on_actions = {
 				add_to_variable = { var = country_gdp value = num_of_naval }
 
 				set_variable = { var = gdp_per_capita value = country_gdp }
-				multiply_variable = { var = gdp_per_capita value = 10000 }
+				multiply_variable = { var = gdp_per_capita value = 10 }
 				if = {
 					limit = {
 						max_manpower > 0
 					}
-					divide_variable = { var = gdp_per_capita value = max_manpower }
+					divide_variable = { var = gdp_per_capita value = max_manpower_k }
 				}
 				else = {
 					set_variable = { var = gdp_per_capita value = 0 }
@@ -2065,12 +2065,12 @@ on_actions = {
 				add_to_variable = { var = country_gdp value = num_of_naval }
 
 				set_variable = { var = gdp_per_capita value = country_gdp }
-				multiply_variable = { var = gdp_per_capita value = 10000 }
+				multiply_variable = { var = gdp_per_capita value = 10 }
 				if = {
 					limit = {
 						max_manpower > 0
 					}
-					divide_variable = { var = gdp_per_capita value = max_manpower }
+					divide_variable = { var = gdp_per_capita value = max_manpower_k }
 				}
 				else = {
 					set_variable = { var = gdp_per_capita value = 0 }
@@ -2418,8 +2418,8 @@ on_actions = {
 				add_to_variable = { var = income_budget value = vat_tax }
 				add_to_variable = { var = income_budget value = resource_revenue }
 
-				set_temp_variable = { var = A value = max_manpower }
-				multiply_temp_variable = { var = A value = 0.00004 }
+				set_temp_variable = { var = A value = max_manpower_k }
+				multiply_temp_variable = { var = A value = 0.04 }
 				multiply_temp_variable = { var = A value = gdp_per_capita }
 				divide_temp_variable = { var = A value = 1000000 }
 
@@ -2466,8 +2466,8 @@ on_actions = {
 				multiply_temp_variable = { var = A value = k }
 				set_variable = { var = administration_expenditure value = A }
 
-				set_variable = { var = education_expenditure value = max_manpower }
-				multiply_variable = { var = education_expenditure value = 0.0006 }
+				set_variable = { var = education_expenditure value = max_manpower_k }
+				multiply_variable = { var = education_expenditure value = 0.6 }
 				divide_variable = { var = education_expenditure value = 1000000 }
 				multiply_variable = { var = education_expenditure value = gdp_per_capita }
 				multiply_variable = { var = education_expenditure value = k }
@@ -2484,8 +2484,7 @@ on_actions = {
 				}
 
 				set_variable = { var = labour_force value = employment_rate }
-				multiply_variable = { var = labour_force value = max_manpower }
-				divide_variable = { var = labour_force value = 1000 }
+				multiply_variable = { var = labour_force value = max_manpower_k }
 
 				set_variable = { var = civ_workers_per_fac value = 580 }
 				set_temp_variable = { var = civ_workers_per_fac_k value = 19 }
