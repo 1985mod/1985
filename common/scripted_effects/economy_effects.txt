@@ -23,12 +23,12 @@ calculate_gdp_effect = {
         }
 
         set_variable = { var = gdp_per_capita value = country_gdp }
-        multiply_variable = { var = gdp_per_capita value = 10000 }
+        multiply_variable = { var = gdp_per_capita value = 10 }
         if = {
             limit = {
                 max_manpower > 0
             }
-            divide_variable = { var = gdp_per_capita value = max_manpower }
+            divide_variable = { var = gdp_per_capita value = max_manpower_k }
         }
         else = {
             set_variable = { var = gdp_per_capita value = 0 }
@@ -293,8 +293,8 @@ tax_effect = {
     add_to_variable = { var = income_budget value = vat_tax }
     add_to_variable = { var = income_budget value = resource_revenue }
 
-    set_temp_variable = { var = A value = max_manpower }
-    multiply_temp_variable = { var = A value = 0.00004 }
+    set_temp_variable = { var = A value = max_manpower_k }
+    multiply_temp_variable = { var = A value = 0.04 }
     multiply_temp_variable = { var = A value = gdp_per_capita }
     divide_temp_variable = { var = A value = 1000000 }
 
@@ -335,17 +335,17 @@ tax_effect = {
 
     multiply_temp_variable = { var = A value = E }
 
-    set_variable = { var = k value = 2 }
-    subtract_from_variable = { var = k value = corruption_level }
+    set_variable = { var = corruption_k value = 2 }
+    subtract_from_variable = { var = corruption_k value = corruption_level }
 
-    multiply_temp_variable = { var = A value = k }
+    multiply_temp_variable = { var = A value = corruption_k }
     set_variable = { var = administration_expenditure value = A }
 
-    set_variable = { var = education_expenditure value = max_manpower }
-    multiply_variable = { var = education_expenditure value = 0.0006 }
+    set_variable = { var = education_expenditure value = max_manpower_k }
+    multiply_variable = { var = education_expenditure value = 0.6 }
     divide_variable = { var = education_expenditure value = 1000000 }
     multiply_variable = { var = education_expenditure value = gdp_per_capita }
-    multiply_variable = { var = education_expenditure value = k }
+    multiply_variable = { var = education_expenditure value = corruption_k }
 
     set_variable = { var = employment_rate value = 0.008 }
     multiply_variable = { var = employment_rate value = gdp_per_capita }
@@ -359,8 +359,7 @@ tax_effect = {
     }
 
     set_variable = { var = labour_force value = employment_rate }
-    multiply_variable = { var = labour_force value = max_manpower }
-    divide_variable = { var = labour_force value = 1000 }
+    multiply_variable = { var = labour_force value = max_manpower_k }
 
     set_variable = { var = civ_workers_per_fac value = 580 }
     set_temp_variable = { var = civ_workers_per_fac_k value = 19 }
@@ -472,6 +471,22 @@ tax_effect = {
     else = {
         set_variable = { var = unemployment_stability value = 2 }
     }
+
+    set_temp_variable = { var = unemployment_manpower value = labour_force }
+    subtract_from_temp_variable = { var = unemployment_manpower value = employment_workers }
+    divide_temp_variable = { var = unemployment_manpower value = 1000 }
+
+    set_temp_variable = { var = gdp_per_capita_for_welfare value = gdp_per_capita }
+    multiply_temp_variable = { var = gdp_per_capita_for_welfare value = 0.35 }
+
+    multiply_temp_variable = { var = unemployment_manpower value = gdp_per_capita_for_welfare }
+    multiply_temp_variable = { var = unemployment_manpower value = 7 }
+    divide_temp_variable = { var = unemployment_manpower value = 365 }
+    multiply_temp_variable = { var = unemployment_manpower value = corruption_k }
+
+    set_variable = { var = welfare_expenditure value = unemployment_manpower }
+
+    set_variable = { var = defense_expenditure value = 0 } # вот тут надо посчитать в пересчете на неделю (важно посмотреть, какая математика в других частях и по коэффициентам расчитать, но если можно посчитать более точно, то сделай)
 }
 
 corruption_effect = {
