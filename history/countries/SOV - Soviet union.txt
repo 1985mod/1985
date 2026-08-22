@@ -1,4 +1,4 @@
-﻿capital = 219 #Moskow
+capital = 219 #Moscow
 
 oob = "SOV_1985"
 
@@ -212,19 +212,12 @@ add_opinion_modifier = {
 add_dynamic_modifier = { modifier = SOV_cold_war}
 
 add_ideas = {
-<<<<<<< Updated upstream
-SOV_soviet_contingent_in_afghanistan
-SOV_economic_stagnation
-limited_conscription
-limited_exports
-=======
 	SOV_soviet_contingent_in_afghanistan
 	SOV_economic_stagnation
 	SOV_support_for_regimes_in_eastern_europe
 	limited_conscription
 	limited_exports
 	partial_economic_mobilisation
->>>>>>> Stashed changes
 }
 
 recruit_character = SOV_konstantin_chernenko
@@ -269,3 +262,27 @@ give_guarantee = ROM
 give_guarantee = BUL
 give_guarantee = CZE
 give_guarantee = MON
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+		name = "KGB"
+		icon = GFX_intelligence_agency_logo_sov
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Vladimir Putin"
+		GFX = GFX_Portrait_vladimir_putin
+		traits = { operative_escape_artist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV }
+	}
+}
