@@ -1,8 +1,5 @@
 ﻿capital = 765 # Doha
 
-#oob = "QAT_1985"
-
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	tech_trucks = 1
@@ -23,5 +20,13 @@ set_popularities = {
 	neutrality = 47
 }
 
-
 recruit_character = QAT_Hamad_al_Thani
+
+add_ideas = {
+	low_economic_mobilisation
+}
+
+give_guarantee = KUW
+give_guarantee = OMA
+give_guarantee = UAE
+give_guarantee = SAU

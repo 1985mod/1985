@@ -15,7 +15,7 @@ Economy = {
 		days_remove = 0
 
 		ai_will_do = {
-			factor = -1000
+			factor = 10
 		}
 
 		modifier = {

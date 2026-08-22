@@ -4,7 +4,6 @@ oob = "GEO_1936"
 
 set_research_slots = 3
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -100,3 +99,6 @@ recruit_character = GEO_shalva_maglakelidze
 recruit_character = GEO_grigol_robakidze
 recruit_character = GEO_ioseb_jughashvili
 
+add_ideas = {
+	war_economy
+}

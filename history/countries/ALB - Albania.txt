@@ -25,3 +25,6 @@ set_popularities = {
 
 set_convoys = 5
 
+add_ideas = {
+	partial_economic_mobilisation
+}

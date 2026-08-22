@@ -4,7 +4,6 @@ oob = "GEN_1985"
 
 set_research_slots = 4
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -36,3 +35,6 @@ recruit_character = YUG_Milka_Planinc
 recruit_character = YUG_borisav_jovic
 recruit_character = YUG_stipe_mesic
 
+add_ideas = {
+	partial_economic_mobilisation
+}

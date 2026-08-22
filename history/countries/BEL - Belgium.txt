@@ -43,4 +43,5 @@ set_stability = 0.75
 
 add_ideas = {
 	EU_member
+	low_economic_mobilisation
 }

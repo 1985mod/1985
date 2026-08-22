@@ -23,18 +23,27 @@ calculate_gdp_effect = {
         }
 
         set_variable = { var = gdp_per_capita value = country_gdp }
-        multiply_variable = { var = gdp_per_capita value = 10 }
+
+        set_temp_variable = { var = manpower_k value = 0.001 }
+        multiply_temp_variable = { var = manpower_k value = max_manpower }
+
         if = {
             limit = {
                 max_manpower > 0
             }
-            divide_variable = { var = gdp_per_capita value = max_manpower_k }
+            divide_variable = { var = gdp_per_capita value = manpower_k }
+            multiply_variable = { var = gdp_per_capita value = 1000 }
         }
         else = {
             set_variable = { var = gdp_per_capita value = 0 }
         }
 
-        multiply_variable = { var = gdp_per_capita value = 100 }
+        if = {
+            limit = {
+                gdp_per_capita < 0
+            }
+            set_variable = { var = gdp_per_capita value = 0 }
+        }
 
         set_variable = { var = civ_of_gdp value = num_of_civ }
         divide_variable = { var = civ_of_gdp value = country_gdp }
@@ -288,6 +297,26 @@ tax_effect = {
 
     multiply_variable = { var = resource_revenue value = corruption_income_mod }
 
+    if = {
+        limit = { check_variable = { population_tax < 0 } }
+        set_variable = { var = population_tax value = 0 }
+    }
+
+    if = {
+        limit = { check_variable = { corporate_tax < 0 } }
+        set_variable = { var = corporate_tax value = 0 }
+    }
+
+    if = {
+        limit = { check_variable = { vat_tax < 0 } }
+        set_variable = { var = vat_tax value = 0 }
+    }
+
+    if = {
+        limit = { check_variable = { resource_revenue < 0 } }
+        set_variable = { var = resource_revenue value = 0 }
+    }
+
     set_variable = { var = income_budget value = population_tax }
     add_to_variable = { var = income_budget value = corporate_tax }
     add_to_variable = { var = income_budget value = vat_tax }
@@ -358,8 +387,20 @@ tax_effect = {
         set_variable = { var = employment_rate value = 0.55 }
     }
 
+    set_variable = { var = army_manpower value = amount_manpower_in_deployment_queue }
+    divide_variable = { var = army_manpower value = 1000 }
+    add_to_variable = { var = army_manpower value = deployed_army_manpower_k }
+    add_to_variable = { var = army_manpower value = deployed_navy_manpower_k }
+    add_to_variable = { var = army_manpower value = deployed_airforce_manpower_k }
+    set_temp_variable = { var = garrison_manpower_k value = garrison_manpower_need }
+    divide_temp_variable = { var = garrison_manpower_k value = 1000 }
+    add_to_variable = { var = army_manpower value = garrison_manpower_k }
+
+    set_temp_variable = { var = manpower_k value = 0.001 }
+    multiply_temp_variable = { var = manpower_k value = max_manpower }
     set_variable = { var = labour_force value = employment_rate }
-    multiply_variable = { var = labour_force value = max_manpower_k }
+    multiply_variable = { var = labour_force value = manpower_k }
+    subtract_from_variable = { var = labour_force value = army_manpower }
 
     set_variable = { var = civ_workers_per_fac value = 580 }
     set_temp_variable = { var = civ_workers_per_fac_k value = 19 }
@@ -409,6 +450,7 @@ tax_effect = {
     set_variable = { var = employment_workers value = civ_workers }
     add_to_variable = { var = employment_workers value = mil_workers }
     add_to_variable = { var = employment_workers value = naval_workers }
+    add_to_variable = { var = employment_workers value = army_manpower }
 
     set_variable = { var = unemployment_rate value = labour_force }
     subtract_from_variable = { var = unemployment_rate value = employment_workers }
@@ -416,11 +458,18 @@ tax_effect = {
     multiply_variable = { var = unemployment_rate value = 100 }
     set_variable = { var = k_unemployment_rate value = unemployment_rate }
 
-    if =  {
+    if = {
         limit = {
             check_variable = { unemployment_rate < 0 }
         }
         set_variable = { var = unemployment_rate value = 0 }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = { unemployment_rate > 100 }
+        }
+        set_variable = { var = unemployment_rate value = 100 }
     }
 
     set_temp_variable = { var = target_unemployment_k value = 0.25 }
@@ -486,7 +535,7 @@ tax_effect = {
 
     set_variable = { var = welfare_expenditure value = unemployment_manpower }
 
-    set_variable = { var = defense_expenditure value = 0 } # вот тут надо посчитать в пересчете на неделю (важно посмотреть, какая математика в других частях и по коэффициентам расчитать, но если можно посчитать более точно, то сделай)
+    set_variable = { var = defense_expenditure value = army_manpower }
 }
 
 corruption_effect = {

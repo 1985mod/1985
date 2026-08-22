@@ -23,6 +23,7 @@ set_politics = {
 	election_frequency = 10
 	elections_allowed = no
 }
+
 set_popularities = {
 	conservatism = 30
 	fascism = 15

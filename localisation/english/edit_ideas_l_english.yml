@@ -129,15 +129,15 @@
  leaders_cultur_desc: ""
  ENROUTE: "Мы уже отослали дипломатический запрос. Мы не вправе беспокоить их другим запросом до §Y$DATE$§!."
  ################################################
- 
- CUB_revolucion_duh: "Revolutionary Spirit"
- CUB_revolucion_duh_desc: ""
+
+ CUB_revolution_spirit: "Revolutionary Spirit"
+ CUB_revolution_spirit_desc: ""
  CZE_economy: "Socialist Economy"
  CZE_economy_desc: "Our economy operates according to socialist principles"
  CZE_economy_capy: "Capitalist Economy"
- CZE_economy_capy_desc: "Our economy operates according to capitalist principles"
- CZE_uusr_torg: "Trade Dependence on the USSR"
- CZE_uusr_torg_desc: "We depend on trade with the USSR"
+ CZE_economy_capy_desc: "Our economy operates on capitalist principles"
+ CZE_ussr_trade: "Trade Dependence on the USSR"
+ CZE_ussr_trade_desc: "We are dependent on trade with the USSR"
  CRO_struggle_for_independence: "Struggle for Independence"
  CRO_struggle_for_independence_desc: "When the bonds of the Yugoslav federation collapsed, the very idea of Croatian statehood was put at stake. The centuries‑old aspiration for one's own country, suppressed by decades of unitary centralism, burst forth in the fire of Vukovar's street barricades and the sieges of Dubrovnik. This war is not merely a conflict over territory: it is an existential battle of a people who revived the red‑and‑white chessboard (šahovnica) as a symbol of their right to exist."
  SOV_soviet_contingent_in_afghanistan: "Soviet Contingent of Troops in Afghanistan"

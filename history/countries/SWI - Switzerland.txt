@@ -29,3 +29,7 @@ set_popularities = {
 recruit_character = SWI_kurt_furgler 
 
 set_stability = 0.85
+
+add_ideas = {
+	low_economic_mobilisation
+}

@@ -100,3 +100,7 @@ set_popularities = {
 	conservatism = 1
 	liberalism = 1
 }
+
+add_ideas = {
+	partial_economic_mobilisation
+}

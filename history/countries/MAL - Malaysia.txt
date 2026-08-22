@@ -6,8 +6,6 @@ set_research_slots = 3
 
 recruit_character = MAL_Mahathir
 
-# Starting tech
-# clone of UK
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -38,6 +36,6 @@ set_popularities = {
 	neutrality = 34
 }
 
-
-
-
+add_ideas = {
+	low_economic_mobilisation
+}

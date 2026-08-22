@@ -2,7 +2,6 @@
 
 set_oob = LEB_1985
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
@@ -32,3 +31,7 @@ set_popularities = {
 
 recruit_character = LEB_amin_pierre
 recruit_character = LEB_georges_hauy
+
+add_ideas = {
+	war_economy
+}

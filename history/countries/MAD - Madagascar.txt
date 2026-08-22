@@ -1,8 +1,5 @@
 ﻿capital = 543
 
-#oob = ""
-
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
@@ -25,3 +22,6 @@ set_popularities = {
 	neutrality = 15
 }
 
+add_ideas = {
+	low_economic_mobilisation
+}

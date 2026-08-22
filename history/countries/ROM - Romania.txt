@@ -4,7 +4,6 @@ oob = "GEN_1985"
 
 set_research_slots = 3
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -20,6 +19,15 @@ set_technology = {
 	mass_assault = 1
 	fleet_in_being = 1
 }
+
+recruit_character = ROM_Nicolae_Ceausescu
+recruit_character = ROM_ion_iliescu
+
+add_ideas = {
+	EEC_support_from_the_ussr
+	low_economic_mobilisation
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1985.1.1"
@@ -32,9 +40,3 @@ set_popularities = {
 	communism = 100
 	neutrality = 0
 }
-
-recruit_character = ROM_Nicolae_Ceausescu
-
-
-
-

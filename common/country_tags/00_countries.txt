@@ -1,4 +1,4 @@
-SOV = "countries/Soviet union.txt"
+SOV = "countries/Soviet Union.txt"
 USA = "countries/USA.txt"
 ARG = "countries/Argentina.txt"
 ABK	= "countries/Abkhazia.txt"

@@ -4,7 +4,6 @@ oob = "CHE_1985"
 
 set_research_slots = 3
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -36,4 +35,6 @@ set_popularities = {
 
 recruit_character = CHE_dzhokhar_dudayev
 
-
+add_ideas = {
+	war_economy
+}

@@ -4,8 +4,6 @@ oob = "INS_1936"
 
 set_research_slots = 2
 
-# Starting tech
-# clone of Holland
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1		
@@ -72,14 +70,6 @@ set_popularities = {
 
 recruit_character = INS_Suharto
 
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	recruit_character = INS_hein_ter_poorten
+add_ideas = {
+	low_economic_mobilisation
 }
-
-#set_cosmetic_tag =  # Netherlands East Indies
-
-

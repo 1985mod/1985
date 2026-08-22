@@ -57,7 +57,7 @@ set_stability = 0.75
 set_war_support = 0.37
 add_command_power = 10
 
-
 add_ideas = {
 	EU_member
+	low_economic_mobilisation
 }

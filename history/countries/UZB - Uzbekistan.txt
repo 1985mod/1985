@@ -2,12 +2,13 @@
 
 #oob = ""
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
 
 set_convoys = 5
+
+recruit_character = UZB_islam_karimov
 
 set_politics = {
 	ruling_party = communism
