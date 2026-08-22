@@ -252,3 +252,32 @@ ICE_fixed_alliance = {
 		value = 1000
 	}
 }
+
+CSTO_fixed_alliance = {
+	allowed = {
+		OR = {
+			tag = ARM
+			tag = KAZ
+			tag = KYR
+			tag = TAJ
+			tag = UZB
+			tag = BLR
+		}
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		OR = {
+			RUS = { 
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = "RUS" 
+		value = 1000
+	}
+}

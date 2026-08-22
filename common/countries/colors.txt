@@ -253,6 +253,12 @@ PRU = {
 	color = rgb { 196 189 204 }
 	color_ui = rgb { 255 246 255 }
 }
+
+PMR = {
+	color = rgb { 182 83 83 }
+	color_ui = rgb { 188 89 95 }
+}
+
 SAF = {
 	color = rgb { 195 107 160 }
 	color_ui = rgb { 198 169 248 }
@@ -265,10 +271,22 @@ SIA = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
+
+SPL = {
+	color = rgb { 69 132 103 }
+	color_ui = rgb { 79 135 120 }
+}
+
 SIK = {
 	color = rgb { 71 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
+
+PMR = {
+	color = rgb { 190 213 41 }
+	color_ui = rgb { 199 222 60 }
+}
+
 TIB = {
 	color = rgb { 80 115 45}
 	color_ui = rgb { 222 247 198 }

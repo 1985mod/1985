@@ -12,4 +12,18 @@ characters = {
 			expire = "1986.3.1.1"
 		}
 	}
+
+	SUD_abdel_rahman_suwar_al_dahab = {
+		name = SUD_abdel_rahman_suwar_al_dahab
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SUD/Portrait_abdel_rahman_suwar_al_dahab.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_regimes
+			traits = { }
+			expire = "1986.3.1.1"
+		}
+	}
 }

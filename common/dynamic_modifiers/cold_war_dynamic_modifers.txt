@@ -19,3 +19,14 @@ USA_cold_war = {
 	faction_trade_opinion_factor = amount_of_proxies_won_usa
 
 }
+
+martial_law_in_the_region = {
+	enable = { always = yes }
+	
+	icon = GFX_dynamic_modifier_russia_radical_reforms
+	
+	local_manpower = 0.2
+	army_speed_factor = -0.5
+	state_production_speed_industrial_complex_factor = -0.9
+	state_production_speed_arms_factory_factor = -0.9
+}

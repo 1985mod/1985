@@ -255,16 +255,16 @@ focus_tree = {
 
 		completion_reward = {
             delete_unit = {
+                division_template = "Motostrelkovaya Diviziya 2"
+            }
+            delete_unit = {
+                division_template = "Motostrelkovaya Diviziya 3"
+            }
+            delete_unit = {
+                division_template = "Motostrelkovaya Diviziya 4"
+            }
+            delete_unit = {
                 division_template = "Motostrelkovaya Diviziya 5"
-            }
-            delete_unit = {
-                division_template = "Tankovaya Diviziya 4"
-            }
-            delete_unit = {
-                division_template = "Tankovaya Diviziya 5"
-            }
-            delete_unit = {
-                division_template = "Motostrelkovaya Diviziya 6"
             }
             add_war_support = 0.05
 		}

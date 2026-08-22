@@ -171,7 +171,11 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			
+			custom_effect_tooltip = green_support_will_increase
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}
 		}
 	}
 

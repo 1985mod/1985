@@ -1,23 +1,20 @@
-state = {
+state={
 	id=884
-	name = "STATE_884"  # Upper Nile 
-	manpower = 1530000
-	state_category = pastoral
+	name="STATE_884"
+	provinces={
+		2096 10859 10877 12800 13567 13568 13571
+	}
 
 	history = {
 		owner = SUD
 		add_core_of = SUD
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 1
 		}
-
 	}
-
-	provinces = {
-		2096 10859 10877 12800 
-	}
-
-	buildings_max_level_factor = 1.000
-	local_supplies = 0.000
+	
+	manpower=1530000
+	buildings_max_level_factor=1
+	state_category=pastoral
+	local_supplies=0
 }

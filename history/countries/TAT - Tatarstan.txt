@@ -32,6 +32,6 @@ set_popularities = {
 }
 
 
-recruit_character = 
-
-
+recruit_character = TAT_mintimer_shaimiev
+recruit_character = TAT_fauzia_bayramova
+recruit_character = TAT_union_of_afghan_veterans

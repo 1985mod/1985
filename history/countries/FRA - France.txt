@@ -7,6 +7,7 @@ set_research_slots = 3
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	anti_tank_grenade_launcher = 1
 	tech_mountaineers = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -62,4 +63,14 @@ set_popularities = {
 recruit_character = FRA_francois_mitterrand
 add_ideas = {
 	EU_member
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+		name = "DGSE"
+		icon = GFX_intelligence_agency_logo_fra
+	}
 }

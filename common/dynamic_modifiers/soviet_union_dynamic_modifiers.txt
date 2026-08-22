@@ -1,0 +1,10 @@
+SOV_economic_cooperation_with_the_republics = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_economic_cooperation_with_the_uss
+	
+	production_factory_efficiency_gain_factor = consenting_republic
+	production_factory_max_efficiency_factor = consenting_republic
+	industrial_capacity_factory = consenting_republic
+
+}

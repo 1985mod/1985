@@ -832,4 +832,32 @@ spriteTypes = {
 		name = GFX_Portrait_boris_yeltsin_1993
 		textureFile = "gfx/leaders/RUS/Portrait_boris_yeltsin_1993.dds"
 	}
+
+	spriteType = {
+		name = GFX_Portrait_vladimir_putin
+		textureFile = "gfx/leaders/RUS/Portrait_vladimir_putin.dds"
+	}
+
+	### TAT ###
+
+	spriteType = {
+		name = GFX_Portrait_mintimer_shaimiev
+		textureFile = "gfx/leaders/TAT/Portrait_mintimer_shaimiev.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_fauzia_bayramova
+		textureFile = "gfx/leaders/TAT/Portrait_fauzia_bayramova.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_union_of_afghan_veterans
+		textureFile = "gfx/leaders/TAT/Portrait_union_of_afghan_veterans.dds"
+	}
+
+	### SPL ###
+	spriteType = {
+		name = GFX_Portrait_john_garang
+		textureFile = "gfx/leaders/SPL/Portrait_john_garang.dds"
+	}	
 }

@@ -265,6 +265,14 @@ guiTypes = {
 			}
 
 			gridboxtype = {
+				name = "anti_tank_grenade_launcher_tree"
+				position = { x = 140 y = 450 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+
+			}
+
+			gridboxtype = {
 				name = "tech_trucks_tree"
 				position = { x = 140 y = 620 }
 				slotsize = { width = 70 height = 70 }

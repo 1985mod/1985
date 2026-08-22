@@ -12,4 +12,17 @@ characters = {
 			expire = "1989.3.1.1"
 		}
 	}
+	PHI_corazon_aquino = {
+		name = PHI_corazon_aquino
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PHI/Portrait_corazon_aquino.dds"
+			}
+		}
+		country_leader = {
+			ideology = neoliberalism
+			traits = { }
+			expire = "1989.3.1.1"
+		}
+	}
 }

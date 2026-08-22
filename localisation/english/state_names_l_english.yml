@@ -919,7 +919,7 @@
  ISR_STATE_762: "Kattevitz"
  GER_STATE_762: "Kattowitz"
  762_german_name: "Kattowitz"
- STATE_763:0 "Königsberg"
+ STATE_763:0 "Kaliningrad"
  SOV_STATE_763: "Kaliningrad"
  LIT_STATE_763: "Karaliaucius"
  POL_STATE_763: "Królewiec"
@@ -1275,5 +1275,9 @@
  STATE_1062: "Chagcharan"
  STATE_1063: "Kabul"
  STATE_1064: "Manaplow"
+ STATE_1065: "Western part of Agasher"
+ STATE_1066: "Eastern part of Agasher"
+ STATE_1067: "Wow"
+ STATE_1068: "Aouzou Strip"
 
 

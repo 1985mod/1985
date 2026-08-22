@@ -198,4 +198,126 @@ characters = {
 			}
 		}
 	}
+
+	RUS_pavel_grachev = {
+		name = "RUS_pavel_grachev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_pavel_grachev.dds"
+			}
+			army = {
+				large = "gfx/leaders/RUS/Portrait_pavel_grachev.dds"
+			}
+		}	
+		field_marshal={
+			traits = { politically_connected }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	RUS_pavel_grachev = {
+		name = "RUS_pavel_grachev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_pavel_grachev.dds"
+			}
+			army = {
+				large = "gfx/leaders/RUS/Portrait_pavel_grachev.dds"
+			}
+		}	
+		field_marshal={
+			traits = { politically_connected }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	RUS_anatoly_kvashnin = {
+		name = "RUS_anatoly_kvashnin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_anatoly_kvashnin.dds"
+			}
+			army = {
+				large = "gfx/leaders/RUS/Portrait_anatoly_kvashnin.dds"
+			}
+		}	
+		field_marshal={
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	RUS_alexander_lebed = {
+		name = "RUS_alexander_lebed"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_alexander_lebed.dds"
+			}
+			army = {
+				large = "gfx/leaders/RUS/Portrait_alexander_lebed.dds"
+			}
+		}	
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	RUS_anatoly_golovnev = {
+		name = "RUS_anatoly_golovnev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_anatoly_golovnev.dds"
+			}
+			army = {
+				large = "gfx/leaders/RUS/Portrait_anatoly_golovnev.dds"
+			}
+		}	
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	RUS_vladimir_semenov = {
+		name = "RUS_vladimir_semenov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_vladimir_semenov.dds"
+			}
+			army = {
+				large = "gfx/leaders/RUS/Portrait_vladimir_semenov.dds"
+			}
+		}	
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 }

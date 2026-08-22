@@ -24,7 +24,7 @@ USA_cold_war = {
 
 USA_voice_of_america = {
 
-    icon = border_war
+    icon = CHL_nacista_decisions
 	  
 	priority = 90
 	  
@@ -40,7 +40,7 @@ USA_voice_of_america = {
 
 USA_war_on_drugs = {
 
-    icon = border_war
+    icon = eng_move_to_secure_the_dominions
 	  
 	priority = 45
 	  
@@ -59,7 +59,7 @@ USA_war_on_drugs = {
 
 USA_war_on_poverty_cat = {
 
-	icon = border_war
+	icon = SOV_merge_designers
 		
 	priority = 45
 	  
@@ -122,6 +122,23 @@ USA_preparation_for_invasion_in_iraq = {
 		NOT = { has_completed_focus = USA_a_new_model_of_collective_security }
 		NOT = { has_completed_focus = USA_landing_in_basra }
 		has_completed_focus = USA_preparation_for_invasion
+		original_tag = USA
+	}
+}
+
+USA_anti_terrorist_operations = {
+
+	icon = border_war
+		
+	priority = 45
+	  
+	allowed = {
+		original_tag = USA
+	}
+	  
+	visible = {
+		has_government = conservatism
+		has_country_leader = { character = USA_ronald_reagan ruling_only = yes }
 		original_tag = USA
 	}
 }

@@ -27,3 +27,32 @@ RUS_preparation_for_a_new_constitution = {
 		original_tag = RUS
 	}
 }
+
+RUS_peoples_deputies_cat = {
+	icon = usa_congress
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = {
+		NOT = { has_government = fascism }
+	}
+
+	scripted_gui = rus_peoples_deputies_scripted_gui	
+
+	priority = 85
+}
+
+RUS_caucasus_crisis_category = {
+	icon = generic_foreign_policy
+	allowed = {
+		original_tag = RUS
+	}
+	
+	visible = {
+		country_exists = CHE
+		NOT = { has_war_with = CHE }
+		has_country_flag = caucasus_crisis_exacerbation
+		NOT = { has_global_flag = caucasus_conflict_over }
+	}
+}

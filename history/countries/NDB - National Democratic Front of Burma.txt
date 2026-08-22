@@ -1,6 +1,6 @@
 ﻿capital = 995 # Rangoon
 
-set_oob = GEN_1985
+set_oob = NDB_1985
 
 declare_war_on = {
 	target = KIO

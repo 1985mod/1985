@@ -1,0 +1,43 @@
+characters = {
+	TAT_mintimer_shaimiev = {
+		name = TAT_mintimer_shaimiev
+		portraits={
+			civilian={
+				large= GFX_Portrait_mintimer_shaimiev
+			}
+		}
+		country_leader={
+			ideology = social_liberalism
+			traits={  }
+			expire="2010.11.9.1"		
+		}
+	}
+
+	TAT_fauzia_bayramova = {
+		name = TAT_fauzia_bayramova
+		portraits={
+			civilian={
+				large= GFX_Portrait_fauzia_bayramova
+			}
+		}
+		country_leader={
+			ideology = ethnic_nationalism
+			traits={  }
+			expire="2026.11.9.1"		
+		}
+	}
+
+	TAT_union_of_afghan_veterans = {
+		name = TAT_union_of_afghan_veterans
+		portraits={
+			civilian={
+				large= GFX_Portrait_union_of_afghan_veterans
+			}
+		}
+		country_leader={
+			ideology = military_regimes
+			traits={  }
+			expire="2025.11.9.1"		
+		}
+	}
+}

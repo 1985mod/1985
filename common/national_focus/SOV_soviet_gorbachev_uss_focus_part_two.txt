@@ -1,0 +1,143 @@
+focus_tree = {
+    id = SOV_soviet_gorbachev_uss_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 5
+            tag = SOV
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 1500 y = 200 }
+
+    focus = { 
+        id = SOV_national_elections_of_the_president_of_the_uss
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        x = 10
+        y = 0
+        cost = 2
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_for_yeltsin
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_national_elections_of_the_president_of_the_uss
+		prerequisite = { focus = SOV_national_elections_of_the_president_of_the_uss }
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_to_enjoy_the_popularity_of_the_people
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_for_yeltsin
+		prerequisite = { focus = SOV_for_yeltsin }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_promise_rapid_economic_reforms
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_to_enjoy_the_popularity_of_the_people
+		prerequisite = { focus = SOV_to_enjoy_the_popularity_of_the_people }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_advocate_for_even_greater_rights_for_the_republics
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_promise_rapid_economic_reforms
+		prerequisite = { focus = SOV_promise_rapid_economic_reforms }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_nursultan_nazarbayev
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_national_elections_of_the_president_of_the_uss
+		prerequisite = { focus = SOV_national_elections_of_the_president_of_the_uss }
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_first_economics_then_politics
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_nursultan_nazarbayev
+		prerequisite = { focus = SOV_nursultan_nazarbayev }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_focus_on_multinationality
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_first_economics_then_politics
+		prerequisite = { focus = SOV_first_economics_then_politics }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_bridge_between_different_cultures
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_focus_on_multinationality
+		prerequisite = { focus = SOV_focus_on_multinationality }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_the_first_free_elections_in_the_ussr
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_bridge_between_different_cultures
+		prerequisite = { focus = SOV_bridge_between_different_cultures focus = SOV_advocate_for_even_greater_rights_for_the_republics }
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+}

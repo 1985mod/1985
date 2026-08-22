@@ -57,12 +57,19 @@ country_event = {
 
     option = {
         name = israel.3.a
+        PAL = {
+            add_timed_idea = {
+                idea = PAL_first_intifada
+                days = 1825
+            }
+        }
         ISR = {
             declare_war_on = {
 	            target = PAL
 	            type = take_claimed_state
             }
         }
+        news_event = { id = news.31 hours = 12 }
     }
 }
 

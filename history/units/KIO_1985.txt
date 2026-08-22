@@ -1,0 +1,99 @@
+division_template = {
+	name = "Kachin Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+    }
+}
+
+units = {
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13550
+		division_template = "Kachin Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4318
+		division_template = "Kachin Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1934
+		division_template = "Kachin Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4425
+		division_template = "Kachin Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13545
+		division_template = "Kachin Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13548
+		division_template = "Kachin Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13547
+		division_template = "Kachin Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12363
+		division_template = "Kachin Brigade"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10920
+		division_template = "Kachin Brigade"
+		start_experience_factor = 0.1
+	}
+}

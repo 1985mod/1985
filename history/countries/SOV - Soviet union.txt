@@ -10,9 +10,12 @@ starting_train_buffer = 3.0
 set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	anti_tank_grenade_launcher = 1
+	infantry_at = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
+	tech_logistics_company = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
 	tech_trucks = 1
@@ -62,7 +65,7 @@ if = {
 		parent_version = 1
 		modules = {
 			main_armament_slot = tank_cold_war_weapon_1
-			turret_type_slot = tank_light_three_man_tank_turret
+			turret_type_slot = tank_modern_tank_turret
 			suspension_type_slot = tank_torsion_bar_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_diesel_engine
@@ -75,6 +78,36 @@ if = {
 		icon = "GFX_SOV_main_battle_tank"
 	}
 }
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			engines_1 = 1
+			engines_2 = 1
+			aa_lmg = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			air_torpedoe_1 = 1
+			bba_early_transport_plane = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			cv_CAS1 = 1
+			naval_bomber1 = 1
+			CAS1 = 1
+			early_bomber = 1
+			early_transport_plane = 1
+		}
+	}
+}
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -251,6 +284,7 @@ recruit_character = SOV_boris_gromov
 recruit_character = SOV_victor_ermakov
 recruit_character = SOV_igor_rodionov
 recruit_character = SOV_boris_tkach
+recruit_character = SOV_dzhokhar_dudayev
 
 activate_advisor = SOV_nikolay_tikhonov
 activate_advisor = SOV_andrey_gromyko
@@ -275,3 +309,28 @@ give_guarantee = ROM
 give_guarantee = BUL
 give_guarantee = CZE
 give_guarantee = MON
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+		name = "KGB"
+		icon = GFX_intelligence_agency_logo_sov
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Vladimir Putin"
+		GFX = GFX_Portrait_vladimir_putin
+		traits = { operative_escape_artist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { SOV DDR WGR }
+	}
+}

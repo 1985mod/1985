@@ -8961,4 +8961,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/computer_from_the_late_eighties.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_anti_tank_grenade_launcher_medium"
+		texturefile = "gfx/interface/technologies/anti_tank_grenade_launcher.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_anti_tank_grenade_launcher1_medium"
+		texturefile = "gfx/interface/technologies/anti_tank_grenade_launcher1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_anti_tank_grenade_launcher1_medium"
+		texturefile = "gfx/interface/technologies/anti_tank_grenade_launcher1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_anti_tank_grenade_launcher2_medium"
+		texturefile = "gfx/interface/technologies/anti_tank_grenade_launcher2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_anti_tank_grenade_launcher3_medium"
+		texturefile = "gfx/interface/technologies/anti_tank_grenade_launcher3.dds"
+	}
+
 }

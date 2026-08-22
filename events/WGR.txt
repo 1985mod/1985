@@ -530,6 +530,7 @@ country_event = {
 			set_country_flag = victory_in_germany_cdu
 			mark_focus_tree_layout_dirty = yes
 		}
+		clr_country_flag = election_campaign_in_germany_1987
 		custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
 	}
 }
@@ -564,6 +565,7 @@ country_event = {
 			set_country_flag = victory_in_germany_spd
 			mark_focus_tree_layout_dirty = yes
 		}
+		clr_country_flag = election_campaign_in_germany_1987
 		custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
 	}
 }

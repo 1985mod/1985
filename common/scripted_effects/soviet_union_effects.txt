@@ -1,0 +1,3 @@
+economic_cooperation_with_the_republic = {
+	add_to_variable = { consenting_republic = 0.01 }
+}

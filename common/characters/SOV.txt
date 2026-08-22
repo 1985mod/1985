@@ -504,6 +504,35 @@ characters = {
 			legacy_id=-1
 		}
 	}
+
+	SOV_dzhokhar_dudayev = {
+		name = SOV_dzhokhar_dudayev
+		portraits = {
+		    civilian = {
+				large = "gfx/leaders/SOV/Portrait_Dzhokhar_Dudayev.dds"
+			}
+			army = {
+				small = "gfx/interface/ideas/SOV/idea_portrait_dzhokhar_dudayev.dds"
+			}
+		}
+
+		available = {
+			NOT = { has_country_leader = { character = CHE_dzhokhar_dudayev ruling_only = yes } }
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = SOV_dzhokhar_dudayev
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+
+	}
 	#####POLITICAL ADVISORS####
 	SOV_Shaposhnikov = {
 		name = SOV_Shaposhnikov
@@ -514,7 +543,7 @@ characters = {
 		}
 		advisor={
 			cost = 150			
-			slot = leaders_defens
+			slot = high_command
 			idea_token = SOV_Shaposhnikov
 			allowed = {
 				original_tag = SOV
