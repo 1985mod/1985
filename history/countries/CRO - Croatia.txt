@@ -54,7 +54,6 @@ set_popularities = {
 	communism = 40
 }
 
-recruit_character = 
-
-
-
+add_ideas = {
+	war_economy
+}

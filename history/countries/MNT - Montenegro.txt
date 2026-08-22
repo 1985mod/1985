@@ -4,8 +4,6 @@ oob = "GEN_1985"
 
 set_research_slots = 3
 
-# Starting tech
-# clone of Yugoslavia
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
@@ -26,7 +24,6 @@ set_popularities = {
 	communism = 34
 }
 
-
-
-
-
+add_ideas = {
+	partial_economic_mobilisation
+}

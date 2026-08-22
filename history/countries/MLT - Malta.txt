@@ -4,7 +4,6 @@ oob = ""
 
 set_research_slots = 1
 
-# Starting tech
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
@@ -23,7 +22,6 @@ set_popularities = {
 	conservatism = 100
 }
 
-
-
-
-
+add_ideas = {
+	low_economic_mobilisation
+}

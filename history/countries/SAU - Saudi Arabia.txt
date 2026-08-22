@@ -2,8 +2,6 @@
 
 oob = "SAU_1985"
 
-# Starting tech
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -64,7 +62,7 @@ set_convoys = 5
 recruit_character = SAU_Fahd
 
 add_ideas = {
-	
+	partial_economic_mobilisation
 }
 
 give_guarantee = KUW

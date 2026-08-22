@@ -31,3 +31,7 @@ set_stability = 0.75
 set_convoys = 50
 
 recruit_character = POR_cavaco_silva
+
+add_ideas = {
+	low_economic_mobilisation
+}

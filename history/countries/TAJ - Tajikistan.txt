@@ -1,14 +1,10 @@
 ﻿capital = 742
 
-#oob = ""
-
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
 
 set_convoys = 5
-
 
 recruit_character = TAJ_rakhmon_nabiev
 
@@ -23,4 +19,8 @@ set_popularities = {
 	fascism = 1
 	communism = 40
 	neutrality = 9
+}
+
+add_ideas = {
+	war_economy
 }

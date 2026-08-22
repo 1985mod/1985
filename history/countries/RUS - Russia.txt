@@ -1,4 +1,4 @@
-﻿capital = 219 #Moskow
+﻿capital = 219 #Moscow
 
 oob = "RUS_1985"
 
@@ -6,7 +6,6 @@ set_research_slots = 3
 
 starting_train_buffer = 3.0
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -186,3 +185,7 @@ recruit_character = RUS_anatoly_kvashnin
 recruit_character = RUS_alexander_lebed
 recruit_character = RUS_anatoly_golovnev
 recruit_character = RUS_vladimir_semenov
+
+add_ideas = {
+	low_economic_mobilisation
+}

@@ -114,7 +114,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 50
             end_puppet = SOV
-            remove_ideas = CZE_uusr_torg
+            remove_ideas = CZE_ussr_trade
         }
     }
     focus = { 
@@ -286,7 +286,7 @@ focus_tree = {
             add_political_power = 50
             end_puppet = SOV
             release_puppet_on_controlled = SLO 
-            remove_ideas = CZE_uusr_torg
+            remove_ideas = CZE_ussr_trade
         }
     }
         

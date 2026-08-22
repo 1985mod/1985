@@ -2,7 +2,6 @@
 
 oob = GEN_1985
 
-# Starting tech
 set_technology = {
 	tech_trucks = 1
 	gw_artillery = 1
@@ -29,5 +28,8 @@ set_politics = {
 }
 set_popularities = {
 	communism = 100
+}
 
+add_ideas = {
+	low_economic_mobilisation
 }

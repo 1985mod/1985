@@ -2,7 +2,6 @@
 
 oob = "OMA_1936"
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	tech_trucks = 1
@@ -10,9 +9,7 @@ set_technology = {
 
 recruit_character = OMA_Qaboos
 
-# RESISTANCE / COMPLIANCE
-
-1015 = { #INTERIOR OMAN
+1015 = {
 	start_resistance = yes
 	set_compliance = 10
 	set_resistance = 40
@@ -34,7 +31,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	
+	partial_economic_mobilisation
 }
 
 give_guarantee = KUW

@@ -1,10 +1,6 @@
 ﻿capital = 9
-add_ideas = { 
-	CZE_economy 
-	CZE_uusr_torg
-	}
-oob = "CZE_1985"
 
+oob = "CZE_1985"
 
 set_research_slots = 3
 
@@ -20,13 +16,17 @@ set_technology = {
 	fuel_silos = 1
 	basic_train = 1
 }
+
 recruit_character = CZE_Gustav_Gusak
 recruit_character = CZE_Vaclav_Havel
 recruit_character = CZE_Adamec_Ladislav
 recruit_character = CZE_Miroslav_Sladek
 
 add_ideas = {
+	CZE_economy
+	CZE_ussr_trade
 	EEC_support_from_the_ussr
+	partial_economic_mobilisation
 }
 
 set_politics = {

@@ -2,7 +2,6 @@
 
 set_oob = GEN_1985
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
@@ -24,3 +23,6 @@ set_popularities = {
 	neutrality = 70
 }
 
+add_ideas = {
+	low_economic_mobilisation
+}

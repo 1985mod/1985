@@ -44,3 +44,6 @@ set_popularities = {
 
 recruit_character = PAK_Muhammad_Zia_ul_Haq
 
+add_ideas = {
+	partial_economic_mobilisation
+}

@@ -34,5 +34,8 @@ set_convoys = 20
 set_stability = 0.5
 set_war_support = 0.3
 
-
 give_guarantee = NCY
+
+add_ideas = {
+	partial_economic_mobilisation
+}

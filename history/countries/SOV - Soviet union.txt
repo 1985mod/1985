@@ -6,8 +6,7 @@ set_research_slots = 4
 
 starting_train_buffer = 3.0
 
-# Starting tech
-set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
+set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	anti_tank_grenade_launcher = 1
@@ -245,12 +244,21 @@ add_opinion_modifier = {
 add_dynamic_modifier = { modifier = SOV_cold_war}
 
 add_ideas = {
+<<<<<<< Updated upstream
 SOV_soviet_contingent_in_afghanistan
 SOV_economic_stagnation
 SOV_support_for_regimes_in_eastern_europe
 low_economic_mobilisation
 limited_conscription
 limited_exports
+=======
+	SOV_soviet_contingent_in_afghanistan
+	SOV_economic_stagnation
+	SOV_support_for_regimes_in_eastern_europe
+	limited_conscription
+	limited_exports
+	partial_economic_mobilisation
+>>>>>>> Stashed changes
 }
 
 recruit_character = SOV_konstantin_chernenko

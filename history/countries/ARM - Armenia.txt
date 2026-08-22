@@ -23,3 +23,7 @@ set_popularities = {
 	conservatism = 30
 	communism = 36
 }
+
+add_ideas = {
+	war_economy
+}

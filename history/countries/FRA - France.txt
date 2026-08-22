@@ -4,7 +4,6 @@ oob = "FRA_1985"
 
 set_research_slots = 3
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	anti_tank_grenade_launcher = 1
@@ -63,6 +62,7 @@ set_popularities = {
 recruit_character = FRA_francois_mitterrand
 add_ideas = {
 	EU_member
+	partial_economic_mobilisation
 }
 
 if = {

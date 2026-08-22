@@ -1,4 +1,4 @@
-﻿capital = 613 # Nanjing
+﻿capital = 613 # Taipei
 
 oob = "GEN_1985"
 

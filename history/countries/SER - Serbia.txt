@@ -25,8 +25,11 @@ set_popularities = {
 	fascism = 0
 	communism = 10
 	neutrality = 80
-}
-recruit_character = 
+} 
 
 set_convoys = 0
 set_stability = 0.6
+
+add_ideas = {
+	war_economy
+}

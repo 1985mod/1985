@@ -2,7 +2,6 @@
 
 set_oob = GEN_1985
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
@@ -23,3 +22,7 @@ set_popularities = {
 }
 
 recruit_character = KingHassan_II
+
+add_ideas = {
+	partial_economic_mobilisation
+}

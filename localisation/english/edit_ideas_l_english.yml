@@ -154,14 +154,14 @@
 
  ################################################
 
- CUB_revolucion_duh: "Revolutionary Spirit"
- CUB_revolucion_duh_desc: ""
+ CUB_revolution_spirit: "Revolutionary Spirit"
+ CUB_revolution_spirit_desc: ""
  CZE_economy: "Socialist Economy"
  CZE_economy_desc: "Our economy operates on socialist principles"
  CZE_economy_capy: "Capitalist Economy"
  CZE_economy_capy_desc: "Our economy operates on capitalist principles"
- CZE_uusr_torg: "Trade Dependence on the USSR"
- CZE_uusr_torg_desc: "We are dependent on trade with the USSR"
+ CZE_ussr_trade: "Trade Dependence on the USSR"
+ CZE_ussr_trade_desc: "We are dependent on trade with the USSR"
  CRO_struggle_for_independence: "Struggle for Independence"
  CRO_struggle_for_independence_desc: "When the pillars of the Yugoslav federation collapsed, the very idea of Croatian statehood was put at stake. Centuries of yearning for their own country, suppressed by decades of unitary centralism, burst out in the fire of Vukovar's street barricades and the sieges of Dubrovnik. This war is not just a territorial conflict: it is an existential battle of a people who revived the red-and-white chequy as a symbol of their right to live."
  SOV_soviet_contingent_in_afghanistan: "Soviet Troop Contingent in Afghanistan"
