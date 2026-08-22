@@ -97,6 +97,16 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_idea_economic_cooperation_with_the_uss"
+        texturefile = "gfx/interface/ideas/SOV/idea_economic_cooperation_with_the_uss.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_uss_peacekeeping_contingent"
+        texturefile = "gfx/interface/ideas/SOV/idea_uss_peacekeeping_contingent.dds"
+    }
+
+    spriteType = {
         name = "GFX_idea_endless_war_on_drugs"
         texturefile = "gfx/interface/ideas/USA/endless_war_on_drugs.dds"
     }
@@ -169,6 +179,11 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_tiring_war"
         texturefile = "gfx/interface/ideas/IRQ/idea_tiring_war.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_enfal_operation"
+        texturefile = "gfx/interface/ideas/IRQ/idea_enfal_operation.dds"
     }
 
     spriteType = {
@@ -269,6 +284,11 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_privatize_state_property"
         texturefile = "gfx/interface/ideas/RUS/idea_privatize_state_property.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_first_intifada"
+        texturefile = "gfx/interface/ideas/idea_first_intifada.dds"
     }
 
     spriteType = {

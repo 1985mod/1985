@@ -36,55 +36,62 @@ country_event = {
         name = russia.2.a
         add_political_power = 50
 		custom_effect_tooltip = we_will_sign_federal_treaty
-		KAR = {
-            set_politics = {
-                ruling_party = ROOT
-                elections_allowed = yes
-            }
-            add_popularity = {
-                ideology = ROOT
-                popularity = 0.4
-            }
-		}
-		DAG = {
-            set_politics = {
-                ruling_party = ROOT
-                elections_allowed = yes
-            }
-            add_popularity = {
-                ideology = ROOT
-                popularity = 0.4
-            }
-		}
-		TAN = {
-            set_politics = {
-                ruling_party = ROOT
-                elections_allowed = yes
-            }
-            add_popularity = {
-                ideology = ROOT
-                popularity = 0.4
-            }
-		}
-		YAK = {
-            set_politics = {
-                ruling_party = ROOT
-                elections_allowed = yes
-            }
-            add_popularity = {
-                ideology = ROOT
-                popularity = 0.4
-            }
-		}
-		TAT = {
-            set_politics = {
-                ruling_party = ROOT
-                elections_allowed = yes
-            }
-            add_popularity = {
-                ideology = ROOT
-                popularity = 0.4
-            }
+		hidden_effect = {
+			KAR = {
+				set_politics = {
+					ruling_party = ROOT
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.4
+				}
+			}
+			DAG = {
+				set_politics = {
+					ruling_party = ROOT
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.4
+				}
+			}
+			TAN = {
+				set_politics = {
+					ruling_party = ROOT
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.4
+				}
+			}
+			YAK = {
+				set_politics = {
+					ruling_party = ROOT
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.4
+				}
+			}
+			TAT = {
+				set_politics = {
+					ruling_party = liberalism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.4
+				}
+			}			
+			country_event = { id = russia.12 days = 1 }
+			country_event = { id = russia.13 days = 2 }
+			country_event = { id = russia.14 days = 2 }
+			set_country_flag = rfg_treaty_signed
+			add_stability = 0.03
 		}
     }
 }
@@ -270,3 +277,341 @@ country_event = {
 		transfer_state = 1060
     }
 }
+
+country_event = {
+	id = russia.12 ## Ингушетия отказалась ##
+	title = russia.12.t
+	desc = russia.12.desc
+	picture = GFX_report_decree_no_1400
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = russia.12.a
+		1060 = { add_dynamic_modifier = { modifier = disagreeing_region } }
+	}
+}
+
+country_event = {
+	id = russia.13 ## Татарстан отказался ##
+	title = russia.13.t
+	desc = russia.13.desc
+	picture = GFX_report_decree_no_1400
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = russia.13.a
+		249 = { add_dynamic_modifier = { modifier = disagreeing_region } }
+	}
+}
+
+country_event = {
+	id = russia.14 ## Чечня отказалась ##
+	title = russia.14.t
+	desc = russia.14.desc
+	picture = GFX_report_decree_no_1400
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = russia.14.a
+		add_stability = -0.03
+		add_political_power = -10
+	}
+}
+
+country_event = {
+	id = russia.15 ## Кризис в Татарстане ##
+	title = russia.15.t
+	desc = russia.15.desc
+	picture = GFX_report_decree_no_1400
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		release = TAT
+		TAT = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.4
+			}
+		}	
+	}
+
+    option = {
+        name = russia.15.a
+		add_political_power = -25
+		add_stability = -0.10
+		RUS = {
+			remove_state_core = 249
+		}
+	}
+
+    option = {
+        name = russia.15.b
+		create_wargoal = {
+			type = annex_everything
+			target = TAT
+		}
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = 0.05
+		set_country_flag = {
+			flag = the_growing_crisis_in_the_caucasus
+			days = 14
+			value = 1
+		}
+	}
+}
+
+country_event = {
+	id = russia.16 ## Кризис на кавказе ##
+	title = russia.16.t
+	desc = russia.16.desc
+	picture = GFX_report_decree_no_1400
+
+	trigger = {
+		tag = RUS
+		NOT = { has_country_flag = the_growing_crisis_in_the_caucasus }
+		RUS = { has_war_with = TAT }
+		country_exists = CHE
+		country_exists = TAT
+	}
+	fire_only_once = yes
+
+    option = {
+        name = russia.16.a
+		add_political_power = -25
+		add_stability = -0.05
+		unlock_decision_category_tooltip = RUS_caucasus_crisis_category
+		set_country_flag = caucasus_crisis_exacerbation
+		CHE = {
+			set_country_flag = caucasus_crisis_exacerbation
+		}
+		hidden_effect = {
+			set_country_flag = {
+				flag = the_impending_collapse_of_russia
+				days = 60
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = russia.17 ## Россия предлагает уступки ##
+	title = russia.17.t
+	desc = russia.17.desc
+	picture = GFX_report_decree_no_1400
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = russia.17.a ### Чечня соглашается ###
+		FROM = { country_event = { id = russia.18 hours = 3 } }
+	}
+
+    option = {
+        name = russia.17.b ### Чечня требует дагестан ###
+		FROM = { country_event = { id = russia.19 hours = 3 } }
+	}
+}
+
+country_event = {
+	id = russia.18 ## Чечня согласилась ##
+	title = russia.18.t
+	desc = russia.18.desc
+	picture = GFX_report_decree_no_1400
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = russia.18.a
+		FROM = { transfer_state = 828 }
+		set_global_flag = caucasus_conflict_over
+		add_stability = -0.05
+		add_war_support = -0.03
+		diplomatic_relation = {
+			country = CHE
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+country_event = {
+	id = russia.19 ## Чечня потребовала дагестан ##
+	title = russia.19.t
+	desc = russia.19.desc
+	picture = GFX_report_decree_no_1400
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = russia.19.a ### россия согласилась
+		FROM = { country_event = { id = russia.20 hours = 3 } }
+	}
+
+    option = {
+        name = russia.19.b
+		FROM = { country_event = { id = russia.21 hours = 3 } }
+	}
+}
+
+country_event = {
+	id = russia.20 ## Россия согласилась ##
+	title = russia.20.t
+	desc = russia.20.desc
+	picture = GFX_report_decree_no_1400
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = russia.19.a ### россия согласилась
+		FROM = { transfer_state = 828 }
+		FROM = { transfer_state = 232 }
+		set_global_flag = caucasus_conflict_over
+		add_stability = -0.1
+		add_war_support = -0.05
+		diplomatic_relation = {
+			country = CHE
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+country_event = {
+	id = russia.21 ## Россия отвергла требования Чечни P.s первая чеченская война ##
+	title = russia.21.t
+	desc = russia.21.desc
+	picture = GFX_report_decree_no_1400
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = russia.21.a
+		add_war_support = 0.1
+		set_global_flag = caucasus_conflict_over
+        declare_war_on = {
+            target = FROM
+            type = annex_everything
+			generator = { 232 828 }
+        }
+	}
+}
+
+country_event = {
+	id = russia.22 ## отделилась Якутия ##
+	title = russia.22.t
+	desc = russia.22.desc
+	picture = GFX_report_decree_no_1400
+
+	trigger = {
+		tag = RUS
+		NOT = { has_country_flag = the_impending_collapse_of_russia }
+		RUS = { has_war_with = TAT }
+		has_stability < 0.3
+		country_exists = TAT
+	}
+	fire_only_once = yes
+
+    option = {
+        name = russia.22.a
+		add_stability = -0.1
+		set_global_flag = the_impending_collapse_of_russia_global_flag
+		release = YAK
+	}
+}
+
+country_event = {
+	id = russia.23 ## отделилась Тыва и Карелия ##
+	title = russia.23.t
+	desc = russia.23.desc
+	picture = GFX_report_decree_no_1400
+
+	trigger = {
+		tag = RUS
+		has_global_flag = the_impending_collapse_of_russia_global_flag
+		has_stability < 0.3
+		country_exists = YAK
+	}
+	fire_only_once = yes
+
+    option = {
+        name = russia.23.a
+		add_war_support = -0.05
+		add_stability = -0.15
+		release = TAN
+		release = KAR
+		if = {
+			limit = {
+				CHE = { NOT = { controls_state = 232 }}
+			}
+			release = DAG
+		}
+		set_global_flag = collapse_of_russia
+	}
+}
+
+country_event = {
+	id = russia.24 ## Переворот Общества «Память» ##
+	title = russia.24.t
+	desc = russia.24.desc
+	picture = GFX_report_decree_no_1400
+
+	trigger = {
+		tag = RUS
+		has_global_flag = collapse_of_russia
+		has_stability < 0.15
+		OR = {
+			country_exists = YAK
+			country_exists = TAN
+			country_exists = KAR
+			country_exists = DAG
+		}
+	}
+	fire_only_once = yes
+
+    option = {
+        name = russia.24.a
+		add_war_support = 0.4
+		set_cosmetic_tag = RUS_state_pamyat
+		add_stability = -0.15
+        set_politics = {
+            ruling_party = fascism
+        	elections_allowed = yes
+        }
+		effect_tooltip = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.8
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+		}
+		hidden_effect = {
+			set_popularities = {
+				neutrality = 20
+				fascism = 80
+			}
+		}
+	}
+}
+

@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 20
+            add = 2
             tag = SOV
         }
     }
@@ -98,6 +98,9 @@ focus_tree = {
             country_event = { id = SOV_soviet_union.10 }
             add_ideas = SOV_anti_alcohol_campaign
             unlock_decision_category_tooltip = SOV_prohibition_ussr
+            hidden_effect = {
+                set_country_flag = SOV_anti_alcohol_campaign_flag
+            }
         }
     }
 
@@ -157,7 +160,16 @@ focus_tree = {
             country_event = { id = SOV_soviet_union.7 }
             add_global_tension = -0.15
             USA = {
-	        add_opinion_modifier = { target = SOV modifier = generic_diplomatic_boost }
+	            add_opinion_modifier = {
+                    target = SOV
+                    modifier = small_increase
+                }
+            }
+            SOV = {
+	            add_opinion_modifier = {
+                    target = USA
+                    modifier = small_increase
+                }
             }
         }
     }

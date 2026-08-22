@@ -10,6 +10,7 @@ set_technology = {
 set_convoys = 20
 
 recruit_character = SUD_Jafar_Mohammed_Nimeiri
+recruit_character = SUD_abdel_rahman_suwar_al_dahab
 
 
 

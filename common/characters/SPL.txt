@@ -1,0 +1,15 @@
+characters = {
+	SPL_john_garang = {
+		name = SPL_john_garang
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_john_garang
+			}
+		}
+		country_leader = {
+			ideology = civil_nationalism
+			traits = { }
+			expire = "2000.3.1.1"
+		}
+	}
+}

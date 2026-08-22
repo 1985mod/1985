@@ -25,6 +25,7 @@ set_technology = {
 set_convoys = 5
 
 recruit_character = PHI_Ferdinand_R_Marcos_J
+recruit_character = PHI_corazon_aquino
 
 set_politics = {
 	ruling_party = neutrality

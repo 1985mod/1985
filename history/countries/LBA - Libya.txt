@@ -1,24 +1,60 @@
 ﻿capital = 448 
 
-oob = "GEN_1985"
+oob = "LBA_1985"
 
-set_research_slots = 3
+set_research_slots = 2
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	anti_tank_grenade_launcher = 1
+	infantry_at = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
+	tech_logistics_company = 1
 	motorised_infantry = 1
+	motorized_rocket_unit = 1
+	armored_car1 = 1
+	mechanised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-	
-	mass_assault = 1
+	interwar_antiair = 1
 }
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		main_battle_tank_chassis = 1
+	}
+
+	create_equipment_variant = {
+		name = "T-54"
+		type = modern_tank_chassis_1
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_three_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+	}
+}
+
+add_ideas = {
+	service_by_requirement
+}
+
 set_politics = {
 	ruling_party = fascism
 	last_election = "1985.1.1"

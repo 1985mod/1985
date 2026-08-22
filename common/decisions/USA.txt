@@ -715,3 +715,132 @@ USA_preparation_for_invasion_in_iraq = {
 		}
 	}
 }
+
+USA_anti_terrorist_operations = {
+	
+	USA_operation_eldorado_canyon = {
+		cost = 50
+		fire_only_once = yes
+		days_remove = 5
+
+		icon = generic_speech
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+				date > 1986.04.01
+			}
+		}
+
+		available = {
+			LBA = { 
+				has_country_leader = { character = LBA_Muammar_Gaddafi ruling_only = yes } 
+			}
+		}
+		
+		modifier = {
+			experience_gain_army_factor = 0.1
+		}
+
+		remove_effect = {
+			set_country_flag = USA_operation_eldorado_canyon
+			custom_effect_tooltip = we_will_bomb_libya
+			news_event = { id = news.30 days = 1 }
+			hidden_effect = {
+				LBA = {
+					damage_building = {
+						type = infrastructure
+						state = 448
+						damage = 1
+					}
+					damage_building = {
+						type = infrastructure
+						state = 449
+						damage = 2
+					}
+				}			
+			}
+		}
+	}
+
+	USA_conduct_repeated_bombings_of_libya = {
+		cost = 75
+		fire_only_once = yes
+		days_remove = 3
+		
+		modifier = {
+			experience_gain_army_factor = 0.1
+		}
+
+		visible = {
+			has_country_flag = USA_operation_eldorado_canyon
+			has_country_leader = { character = USA_ronald_reagan ruling_only = yes }
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				LBA = {
+					damage_building = {
+						type = infrastructure
+						state = 448
+						damage = 1
+					}
+					damage_building = {
+						type = infrastructure
+						state = 449
+						damage = 2
+					}
+				}			
+			}
+		}
+	}
+
+	USA_foreign_persecution_act = {
+		cost = 75
+		fire_only_once = yes
+		days_remove = 60
+		days_re_enable = 120
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+
+		remove_effect = {
+			add_stability = 0.05
+		}
+	}
+
+	USA_weinberger_doctrine = {
+		cost = 75
+		fire_only_once = yes
+		days_remove = 30
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+		
+		modifier = {
+			experience_gain_army_factor = 0.15
+		}
+
+		remove_effect = {
+            army_experience = 10		
+        	add_doctrine_cost_reduction = {
+    			name = USA_expand_military_bases
+    			cost_reduction = 0.5
+     			uses = 1
+     			category = land_doctrine
+        	}
+		}
+	}
+}

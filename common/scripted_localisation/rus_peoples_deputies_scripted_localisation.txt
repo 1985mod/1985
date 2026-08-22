@@ -1,0 +1,44 @@
+defined_text = {
+	name = GetPeoplesDeputiesPartyName
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+			NOT = {
+				has_country_flag = peoples_deputies_parliament
+			}
+		}
+		localization_key = block_russian_unity_text
+	}
+
+	text = {
+		trigger = {
+			check_variable = { v = 2 }
+			has_country_flag = peoples_deputies_parliament
+		}
+		localization_key = block_creative_forces_text
+	}
+
+	text = {
+		trigger = {
+			check_variable = { v = 3 }
+			has_country_flag = peoples_deputies_parliament
+		}
+		localization_key = outside_the_blocks_text
+	}
+
+	text = {
+		trigger = {
+			check_variable = { v = 4 }
+			has_country_flag = peoples_deputies_parliament
+		}
+		localization_key = block_democratic_union_text
+	}
+
+	text = {
+		trigger = {
+			check_variable = { v = 5 }
+			has_country_flag = peoples_deputies_parliament
+		}
+		localization_key = block_reform_coalition_text
+	}
+}

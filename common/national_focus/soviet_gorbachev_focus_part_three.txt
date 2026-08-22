@@ -646,7 +646,7 @@
 			}
             set_global_flag = ussr_not_collapsed
             set_cosmetic_tag = SOV_USS
-            load_focus_tree = soviet_gorbachev_victory
+            load_focus_tree = SOV_soviet_gorbachev_uss_focus
             country_event = { id = SOV_soviet_union.45 }
         }
     }

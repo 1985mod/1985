@@ -140,6 +140,21 @@ complete_special_project = {
     project = sp:sp_thermo_nuclear_bomb
 }
 
+### System of peoples deputies ###
+
+set_country_flag = peoples_deputies_parliament
+
+set_variable = { var = russian_unity value = 305 }
+set_variable = { var = creative_forces value = 154 }
+set_variable = { var = outside_the_blocks value = 70 }
+set_variable = { var = democratic_union value = 237 }
+set_variable = { var = reform_coalition value = 302 }
+
+peoples_deputies_russia_initial = yes
+
+set_country_flag = reform_coalition_allied
+####
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1991.7.1"
@@ -147,10 +162,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	communism = 27
-	socialism = 3
-	liberalism = 49
-	conservatism = 16
+	communism = 7
+	socialism = 1
+	liberalism = 34
+	conservatism = 53
 	fascism = 5
 }
 
@@ -166,4 +181,8 @@ recruit_character = RUS_alexander_rutskoi
 recruit_character = RUS_egor_gaidar
 recruit_character = RUS_andrey_kozyrev
 recruit_character = RUS_victor_erin
-
+recruit_character = RUS_pavel_grachev
+recruit_character = RUS_anatoly_kvashnin
+recruit_character = RUS_alexander_lebed
+recruit_character = RUS_anatoly_golovnev
+recruit_character = RUS_vladimir_semenov

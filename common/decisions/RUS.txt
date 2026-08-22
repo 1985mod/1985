@@ -125,3 +125,64 @@ RUS_preparation_for_a_new_constitution = {
 		}
 	}
 }
+
+RUS_peoples_deputies_cat = {
+    RUS_goida = {
+	
+		icon = generic_speech
+
+		cost = 75
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+	
+		remove_effect = {
+			add_stability = 0.03
+			add_political_power = 20
+		}
+	}
+}
+
+RUS_caucasus_crisis_category = {
+	RUS_terrorist_clashes_management = {
+
+		fire_only_once = yes
+		
+		activation = {
+			RUS = { has_country_flag = caucasus_crisis_exacerbation }
+			CHE = { has_country_flag = caucasus_crisis_exacerbation }
+		}
+		available = {
+			has_global_flag = caucasus_conflict_over
+			RUS = { has_country_flag = caucasus_crisis_exacerbation }
+			CHE = { has_country_flag = caucasus_crisis_exacerbation }
+		}
+		icon = mission_icon
+		days_mission_timeout = 35
+		selectable_mission = no
+		complete_effect = {
+			add_political_power = 10
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		timeout_effect = {
+			add_political_power = 25
+			add_stability = 0.05
+			add_war_support = -0.15
+		}
+	}
+	chechnya_appeasement = {
+	
+		cost = 35
+		
+		complete_effect = {
+			CHE = {
+				country_event = { id = russia.17 hours = 3 }
+			}
+
+			add_stability = -0.05
+		}
+	}
+}

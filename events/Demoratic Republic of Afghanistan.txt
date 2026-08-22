@@ -18,19 +18,50 @@ country_event = {
     option = {
         name = dra.1.a
         add_to_faction = AFN
-		SOV = {
-            set_autonomy = {
-                target = AFN
-                autonomy_state = autonomy_supervised_state
-                freedom_level = 0.3
-                end_wars = no 
-                end_civil_wars = no 
+		promote_character = {
+			character = AFN_mohammad_najibullah
+			ideology = neutrality
+		}
+        if = {
+            limit = {
+                SOV = { has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes } }
+            }
+            SOV = {
+                set_autonomy = {
+                    target = AFN
+                    autonomy_state = autonomy_supervised_state
+                    freedom_level = 0.3
+                    end_wars = no 
+                    end_civil_wars = no 
+                }
+            }
+            AFN = {
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no
+                }
             }
         }
-		set_politics = {
-			ruling_party = neutrality
-			elections_allowed = no
-		}
+        if = {
+            limit = {
+                SOV = { has_country_leader = { character = SOV_grigory_romanov ruling_only = yes } }
+            }
+            SOV = {
+                set_autonomy = {
+                    target = AFN
+                    autonomy_state = autonomy_puppet
+                    freedom_level = 0.3
+                    end_wars = no 
+                    end_civil_wars = no 
+                }
+            }
+            AFN = {
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no
+                }
+            }
+        }
     }
 }
 

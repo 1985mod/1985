@@ -9,3 +9,14 @@ russia_radical_liberalisation_reforms = {
 	stability_factor = russia_consumer_goods_factor_variable
 
 }
+
+disagreeing_region = {
+	enable = { always = yes }
+	
+	icon = GFX_dynamic_modifier_russia_radical_reforms
+	
+	local_manpower = -0.9
+	army_speed_factor = -0.3
+	state_production_speed_industrial_complex_factor = -0.5
+	state_production_speed_arms_factory_factor = -0.5
+}

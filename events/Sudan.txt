@@ -1,0 +1,198 @@
+add_namespace = sudan
+
+country_event = {
+	id = sudan.1
+	desc = sudan.1.desc
+	title = sudan.1.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sudan.1.a
+		retire_country_leader = SUD_Jafar_Mohammed_Nimeiri
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	id = sudan.2
+	desc = sudan.2.desc
+	title = sudan.2.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+        every_core_state = { 
+            limit = {
+                owner = SUD
+            }
+            add_core_of = SPL
+        }
+		SPL = {
+			transfer_state = 1067
+			division_template = { 
+					name = "Rebels"
+					is_locked = yes
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+				}
+			}
+			1067 = {
+				create_unit = { 
+					division = "name = \"1. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"2. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"3. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"4. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"5. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"6. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"7. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"8. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"9. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"10. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"11. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"12. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"13. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"14. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"15. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"16. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+			}
+		}
+	}
+
+	option = {
+		name = sudan.1.a
+		SPL = {
+			division_template = { 
+					name = "Rebels"
+					is_locked = yes
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+				}
+			}
+			1067 = {
+				create_unit = { 
+					division = "name = \"1. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"2. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"3. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"4. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"5. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"6. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"7. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"8. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"9. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"10. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"11. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"12. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"13. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"14. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"15. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+				create_unit = { 
+					division = "name = \"16. Rebels\" division_template = \"Rebels\" start_experience_factor = 0.3" 
+					owner = SPL
+				}
+			}
+		}
+        declare_war_on = {
+            target = SPL
+            type = civil_war
+        }
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_stability = -0.05
+	}
+}

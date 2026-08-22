@@ -59,6 +59,8 @@ add_command_power = 20
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	anti_tank_grenade_launcher = 1
+	infantry_at = 1
 	tech_trucks = 1
 	tech_recon = 1
 	tech_support = 1		
@@ -653,3 +655,13 @@ give_guarantee = CHI
 give_guarantee = KOR
 give_guarantee = JAP
 give_guarantee = ISR
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = {
+		name = "CIA"
+		icon = GFX_intelligence_agency_logo_usa
+	}
+}

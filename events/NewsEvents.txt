@@ -702,3 +702,93 @@ news_event = {
 		add_war_support = 0.03
 	}
 }
+
+news_event = {
+	id = news.29 ## Агашерская война ##
+	title = news.29.t
+	desc = news.29.desc
+	picture = GFX_news_agasher_war
+    
+    major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.29.a
+	}
+}
+
+news_event = {
+	id = news.30 ## Операция «Каньон Эльдорадо» ##
+	title = news.30.t
+	desc = news.30.desc
+	picture = GFX_news_bombing_of_libya
+    
+    major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.30.a
+	}
+}
+
+news_event = {
+	id = news.31 ## Первая палестинская интифада ##
+	title = news.31.t
+	desc = news.31.desc
+	picture = GFX_news_first_intifada
+    
+    major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.31.a
+	}
+}
+
+news_event = {
+	id = news.32 ##	Беловежские соглашения ##
+	title = news.32.t
+	desc = news.32.desc
+	picture = GFX_news_belovezha_accords
+    
+    major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.32.a
+	}
+}
+
+news_event = {
+	id = news.33 ##	Война «Тойот» ##
+	title = news.33.t
+	desc = news.33.desc
+	picture = GFX_news_toyota_war
+    
+    major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.33.a
+	}
+}
+
+news_event = {
+	id = news.34 ##	Жёлтая революция ##
+	title = news.34.t
+	desc = news.34.desc
+	picture = GFX_news_yellow_revolution_in_philippines
+    
+    major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.34.a
+	}
+}

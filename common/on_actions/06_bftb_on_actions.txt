@@ -1,3 +1,35 @@
 on_actions = {
-    
+    on_startup = {
+        effect = { 
+            MLI = {
+                country_event = { id = mali.1 days = 358 }
+            }
+			SUD = {
+				country_event = { id = sudan.1 days = 96 }
+				country_event = { id = sudan.2 days = 1403 }
+			}
+			CHA = {
+				country_event = { id = chad.1 days = 713 }
+			}
+			PHI = {
+				country_event = { id = philippines.1 days = 419 }
+			}
+        }
+    }
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1992.08.01
+					RUS = {
+						NOT = { has_country_flag = rfg_treaty_signed }
+					}
+					NOT = { has_global_flag = tatar_referendum_happened }
+				}
+				RUS = { country_event = { id = russia.15 } }
+				set_global_flag = tatar_referendum_happened
+			}
+		}
+	}
 }

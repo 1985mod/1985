@@ -2,6 +2,8 @@
 
 oob = "IRQ_1985"
 
+set_war_support = 0.8
+
 set_research_slots = 3
 if = {
 	declare_war_on = {
@@ -13,6 +15,8 @@ if = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	anti_tank_grenade_launcher = 1
+	infantry_at = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -72,7 +76,7 @@ if = {
 		parent_version = 1
 		modules = {
 			main_armament_slot = tank_cold_war_weapon_1
-			turret_type_slot = tank_light_three_man_tank_turret
+			turret_type_slot = tank_modern_tank_turret
 			suspension_type_slot = tank_torsion_bar_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_diesel_engine
@@ -128,6 +132,7 @@ set_politics = {
 
 add_ideas = {
 	IRQ_tiring_war
+	IRQ_enfal_operation
     war_economy
 	limited_exports
 	all_adults_serve

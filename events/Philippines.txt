@@ -1,0 +1,23 @@
+add_namespace = philippines
+
+country_event = {
+    id = philippines.1
+    title = philippines.1.t
+    desc = philippines.1.desc
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = philippines.1.a
+		news_event = { id = news.34 hours = 24 }
+        set_politics = {
+            ruling_party = liberalism
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.4
+        }
+    }
+}

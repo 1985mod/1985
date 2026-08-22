@@ -5,7 +5,7 @@ SOV_cold_war = {
 	
 		icon = generic_speech
 
-		cost = 25
+		cost = 35
 		days_remove = 30
 
 	    visible = {
@@ -57,7 +57,7 @@ SOV_cold_war = {
 	
 		icon = generic_speech
 
-		cost = 25
+		cost = 35
 		days_remove = 30
 
 	    visible = {
@@ -109,7 +109,7 @@ SOV_cold_war = {
 	
 		icon = generic_speech
 
-		cost = 25
+		cost = 35
 		days_remove = 30
 
 	    visible = {
@@ -230,8 +230,7 @@ SOV_prohibition_ussr = {
 		icon = generic_speech
 
 		cost = 100
-		fire_only_once = no
-		days_remove = 30
+		days_remove = 60
 
 		ai_will_do = {
 			factor = 2
@@ -240,12 +239,36 @@ SOV_prohibition_ussr = {
 		available = {
 			has_completed_focus = SOV_destruction_of_vineyards
 		}
-		days_remove = 60
-		days_re_enable = 100
 		
-		cost = 25
 		modifier = {
+			consumer_goods_factor = 0.05
+		}
 
+		remove_effect = {
+            add_tech_bonus = {
+                bonus = 0.50
+                uses = 1
+                category = industry
+            }			
+		}
+	}
+
+	SOV_curtail_the_anti_alcohol_campaign = {
+
+		fire_only_once = yes
+
+		icon = generic_political_discourse
+
+		available = {
+		    has_completed_focus = SOV_the_beginning_of_the_anti_alcohol_campaign
+		}
+		days_remove = 60
+		days_re_enable = 240
+
+		cost = 100
+
+		remove_effect = {
+			remove_ideas = SOV_anti_alcohol_campaign
 		}
 	}
 
@@ -256,12 +279,17 @@ SOV_prohibition_ussr = {
 		available = {
 		    has_completed_focus = SOV_the_beginning_of_the_anti_alcohol_campaign
 		}
-		days_remove = 60
-		days_re_enable = 110000
+		days_remove = 120
+		days_re_enable = 240
 
 		cost = 50
 		modifier = {
+			consumer_goods_factor = 0.1
+			stability_weekly = -0.002
+		}
 
+		remove_effect = {
+			add_stability = 0.1
 		}
 	}
 }
@@ -488,6 +516,181 @@ SOV_state_emergency_committee = {
 					min = 0
 					max = 100
 				}
+			}
+		}
+	}
+}
+
+SOV_discontent_of_the_republics = {
+
+	SOV_discontent_among_the_republics_is_growing = {
+
+		icon = SWI_dismiss_council
+		
+		activation = {
+			SOV = { has_global_flag = ussr_not_collapsed }
+			SOV = { has_variable = SOV.discontent_of_the_republics }
+		}
+		available = {
+			always = no
+		}
+		icon = mission_icon
+		days_mission_timeout = 210
+		selectable_mission = no
+		timeout_effect = {
+			custom_effect_tooltip = discontent_among_the_republics_will_increase_by_1
+			add_to_variable = {
+				var = SOV.discontent_of_the_republics
+				value = 1
+			}
+		}
+	}
+
+	SOV_supplies_of_grain_and_goods = {
+
+		icon = generic_factory
+
+		available = {
+			has_completed_focus = SOV_fragile_alliance
+			NOT = { has_country_flag = satisfaction_of_the_republics }
+		}
+
+		days_remove = 120
+		days_re_enable = 180
+		
+		cost = 150
+
+		complete_effect = {
+			set_country_flag = satisfaction_of_the_republics
+		}
+
+		modifier = {
+			consumer_goods_factor = 0.1
+			political_power_factor = -0.05
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = discontent_among_the_republics_will_decrease_by_2
+			FROM = {
+				subtract_from_variable = {
+					var = SOV.discontent_of_the_republics
+					value = 2			
+				}
+				clamp_variable = {
+					var = SOV.discontent_of_the_republics
+					min = 0
+					max = 5
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = satisfaction_of_the_republics
+				}
+				clr_country_flag = satisfaction_of_the_republics
+			}
+		}
+	}
+
+	SOV_expanding_the_autonomy_of_local_communist_parties = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_completed_focus = SOV_fragile_alliance
+			NOT = { has_country_flag = satisfaction_of_the_republics }
+		}
+
+		days_remove = 120
+		days_re_enable = 60
+		
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = satisfaction_of_the_republics
+		}
+
+		modifier = {
+			stability_weekly = -0.001
+			socialism_drift = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = discontent_among_the_republics_will_decrease_by_1
+			FROM = {
+				subtract_from_variable = {
+					var = SOV.discontent_of_the_republics
+					value = 1					
+				}
+				clamp_variable = {
+					var = SOV.discontent_of_the_republics
+					min = 0
+					max = 5
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = satisfaction_of_the_republics
+				}
+				clr_country_flag = satisfaction_of_the_republics
+			}
+		}
+	}
+
+	SOV_amnesty_for_national_activists = {
+
+		icon = POL_organize_strike_two
+
+		available = {
+			has_completed_focus = SOV_fragile_alliance
+			NOT = { has_country_flag = satisfaction_of_the_republics }
+		}
+
+		days_remove = 60
+		days_re_enable = 100
+		
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = satisfaction_of_the_republics
+		}
+
+		modifier = {
+			consumer_goods_factor = -0.05
+			political_power_factor = -0.15
+			conservatism_drift = 0.02
+			liberalism_drift = 0.02
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = discontent_among_the_republics_will_decrease_by_1
+			FROM = {
+				subtract_from_variable = {
+					var = SOV.discontent_of_the_republics
+					value = 1	
+				}
+				clamp_variable = {
+					var = SOV.discontent_of_the_republics
+					min = 0
+					max = 5
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = satisfaction_of_the_republics
+				}
+				clr_country_flag = satisfaction_of_the_republics
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.01
 			}
 		}
 	}

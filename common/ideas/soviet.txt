@@ -51,8 +51,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			 production_factory_efficiency_gain_factor = 0.05
-			 consumer_goods_factor = 0.15
+			 	production_factory_efficiency_gain_factor = 0.05
+			 	stability_factor = 0.05
+			 	consumer_goods_factor = 0.15
 			}
 		}
 		SOV_housing_2000_program = {
@@ -256,6 +257,253 @@ ideas = {
 				consumer_goods_factor = 0.1
 				research_speed_factor = -0.05
 				research_sharing_per_country_bonus_factor = 0.3	
+			}
+		}
+
+    	SOV_strengthening_the_labor_cissipline = {
+			picture = support_for_regimes_in_eastern_europe
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.03
+			}
+		}
+    	SOV_fines_for_moonshining = {
+			picture = support_for_regimes_in_eastern_europe
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+    	SOV_betting_on_technocrats = {
+			picture = support_for_regimes_in_eastern_europe
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				research_speed_factor = 0.08
+				special_project_speed_factor  = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+    	SOV_elimination_of_nonsense = {
+			picture = support_for_regimes_in_eastern_europe
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+    	SOV_media_censorship = {
+			picture = support_for_regimes_in_eastern_europe
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				conservatism_drift = -0.05
+				liberalism_drift = -0.05
+				socialism_drift = -0.05
+			}
+		}
+    	SOV_arms_race = {
+			picture = support_for_regimes_in_eastern_europe
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			  	production_factory_efficiency_gain_factor = 0.05
+			 	nuclear_production_factor = 0.05
+			}
+		}
+    	SOV_developed_socialist_state = {
+			picture = support_for_regimes_in_eastern_europe
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+			  	political_power_factor = 0.1
+			 	research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+    	SOV_party_squabbles = {
+			picture = support_for_regimes_in_eastern_europe
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+			  	political_power_factor = -0.25
+			 	research_speed_factor = -0.1
+			}
+		}
+    	SOV_indestructible_and_legendary = {
+			picture = support_for_regimes_in_eastern_europe
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  	army_attack_factor = 0.15
+			 	army_defence_factor = 0.3
+				max_planning_factor = 0.1
+				war_support_factor = 0.3
+			}
+		}
+    	SOV_seven_days_to_the_rhine = {
+			picture = support_for_regimes_in_eastern_europe
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            targeted_modifier = {
+                tag = WGR
+                attack_bonus_against = 0.5
+            }
+            targeted_modifier = {
+                tag = WGR
+                defense_bonus_against = 0.5
+            }
+			modifier = {
+				war_support_factor = 0.15
+			}
+		}
+    	SOV_economic_cooperation_with_the_uss = {
+			picture = economic_cooperation_with_the_uss
+			allowed = {
+				OR = {
+					original_tag = UKR
+					original_tag = BLR
+					original_tag = AZR
+					original_tag = KAZ
+					original_tag = UZB
+					original_tag = TMS
+					original_tag = KYR
+					original_tag = TAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				local_resources_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}		
+    	SOV_uss_peacekeeping_contingent = {
+			picture = uss_peacekeeping_contingent
+			allowed = {
+				OR = {
+					original_tag = UKR
+					original_tag = BLR
+					original_tag = AZR
+					original_tag = KAZ
+					original_tag = UZB
+					original_tag = TMS
+					original_tag = KYR
+					original_tag = TAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				send_volunteer_size = 5
+				air_volunteer_cap = 100
+				lend_lease_tension = -0.5
 			}
 		}
 	}

@@ -1,0 +1,41 @@
+scripted_gui = {
+	rus_peoples_deputies_scripted_gui = {
+		context_type = decision_category
+		window_name = "rus_peoples_deputies_decision_ui_window"
+
+		dynamic_lists = {
+			peoples_deputies_main_grid = {
+				array = peoples_deputies_main_array
+				index = peoples_deputies_main_index
+				change_scope = no
+				entry_container = peoples_deputies_main_entry
+			}
+			peoples_deputies_semicircle_main_grid = {
+				array = peoples_deputies_main_array
+				index = peoples_deputies_main_index
+				change_scope = no
+				entry_container = peoples_deputies_semicircle_main_entry
+			}
+			peoples_deputies_member_grid = {
+				array = peoples_deputies_member_array
+				index = peoples_deputies_member_index
+				change_scope = no
+				entry_container = peoples_deputies_member_entry
+			}
+		}
+
+		properties = {
+			peoples_deputies_main_icon = {
+				frame = v
+			}
+			peoples_deputies_semicircle_main_icon = {
+				frame = v
+				x = peoples_deputies_x_array^peoples_deputies_main_index
+				y = peoples_deputies_y_array^peoples_deputies_main_index
+			}
+			peoples_deputies_member_icon = {
+				frame = v
+			}
+		}
+	}
+}

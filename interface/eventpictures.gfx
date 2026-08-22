@@ -415,6 +415,26 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_germany_reunification.dds"
 	}
 
+	spriteType = {
+		name = "GFX_news_first_intifada"
+		texturefile = "gfx/event_pictures/news_first_intifada.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_belovezha_accords"
+		texturefile = "gfx/event_pictures/news_belovezha_accords.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_toyota_war"
+		texturefile = "gfx/event_pictures/news_toyota_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_yellow_revolution_in_philippines"
+		texturefile = "gfx/event_pictures/news_yellow_revolution_in_philippines.dds"
+	}
+
 	### USA ###
 
 	spriteType = {
@@ -470,6 +490,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_hezbollah_uprising"
 		texturefile = "gfx/event_pictures/news_hezbollah_uprising.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_agasher_war"
+		texturefile = "gfx/event_pictures/news_agasher_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_bombing_of_libya"
+		texturefile = "gfx/event_pictures/news_bombing_of_libya.dds"
 	}
 }
 

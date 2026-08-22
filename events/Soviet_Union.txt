@@ -874,7 +874,8 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.24.a
-		add_stability = 0.03
+		add_stability = 0.05
+		add_war_support = 0.05
     }
 }
 
@@ -1186,6 +1187,11 @@ country_event = {
 			ideology = communism
 			popularity = -0.1
 		}
+		trigger = {
+			NOT = {
+				is_ai = no
+			}
+		}
         RUS = {
 			add_popularity = {
 				ideology = conservatism
@@ -1196,13 +1202,8 @@ country_event = {
                 elections_allowed = yes
             }
         }
+		news_event = { id = news.32 hours = 12 }
     }
-
-	trigger = {
-		NOT = {
-			is_ai = no
-		}
-	}
 	option = {
 		name = SOV_soviet_union.38.b
 		trigger = { is_ai = no }
@@ -1217,6 +1218,7 @@ country_event = {
                 elections_allowed = yes
             }
         }
+		news_event = { id = news.32 hours = 12 }
 	}
 }
 
@@ -1468,6 +1470,7 @@ country_event = {
 		}
 		hidden_effect = {
 			retire_ideology_leader = communism
+			set_variable = { var = SOV.discontent_of_the_republics value = 3 }
 		}
     }
 }
@@ -1743,6 +1746,295 @@ country_event = {
 		add_popularity = {
 			ideology = communism
 			popularity = -0.03
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.60 ## Визит Романова в Волгоград ##
+	title = SOV_soviet_union.60.t
+	desc = SOV_soviet_union.60.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.60.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+    }
+
+    option = {
+        name = SOV_soviet_union.60.b
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+    }
+
+    option = {
+        name = SOV_soviet_union.60.c
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.61 ## Визит Романова в Волгоград ##
+	title = SOV_soviet_union.61.t
+	desc = SOV_soviet_union.61.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.61.a
+		set_country_flag = SOV_visit_to_the_volgograd_flag
+		mark_focus_tree_layout_dirty = yes
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.62 ## Вопрос Афганистана ##
+	title = SOV_soviet_union.62.t
+	desc = SOV_soviet_union.62.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.62.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				AFS = { surrender_progress > 0.5 }
+			}
+			modifier = {
+				add = 50
+				AFN = { surrender_progress < 0.2 }
+			}
+		}
+		set_country_flag = withdraw_troops_from_afghanistan_romanov_flag
+    }
+
+    option = {
+        name = SOV_soviet_union.62.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				AFS = { surrender_progress > 0.5 }
+			}
+			modifier = {
+				add = -50
+				AFN = { surrender_progress < 0.2 }
+			}
+		}
+		set_country_flag = special_operations_in_afghanistan_flag
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.63 ## Партийная грызня ##
+	title = SOV_soviet_union.63.t
+	desc = SOV_soviet_union.63.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.63.a
+		ai_chance = {
+			base = 100
+		}
+		add_ideas = SOV_party_squabbles
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.64 ## Визит Романова в Китай ##
+	title = SOV_soviet_union.64.t
+	desc = SOV_soviet_union.64.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.65.a
+		ai_chance = {
+			base = 100
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = PRC
+				modifier = medium_increase
+			}
+		}
+		PRC = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = medium_increase
+			}
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.65 ## Противостояние с Китаем ##
+	title = SOV_soviet_union.65.t
+	desc = SOV_soviet_union.65.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.65.a
+		ai_chance = {
+			base = 100
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = PRC
+				modifier = medium_decrease
+			}
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.66 ## ССГ предлагает сотрудничество ##
+	title = SOV_soviet_union.66.t
+	desc = SOV_soviet_union.66.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+    option = {
+        name = SOV_soviet_union.66.a
+		ai_chance = {
+			base = 70
+		}
+		FROM = { country_event = { id = SOV_soviet_union.67 hours = 3 } }
+    }
+
+    option = {
+        name = SOV_soviet_union.66.b
+		ai_chance = {
+			base = 30
+		}
+		FROM = { country_event = { id = SOV_soviet_union.68 hours = 3 } }
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.67 ## Страна согласилась ##
+	title = SOV_soviet_union.67.t
+	desc = SOV_soviet_union.67.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+	immediate = {
+		add_dynamic_modifier = {
+			modifier = SOV_economic_cooperation_with_the_republics
+		}		
+	}
+
+    option = {
+        name = SOV_soviet_union.67.a
+		ai_chance = {
+			base = 100
+		}
+		FROM = { add_ideas = SOV_economic_cooperation_with_the_uss }
+		economic_cooperation_with_the_republic = yes
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.68 ## Страна отказалась ##
+	title = SOV_soviet_union.68.t
+	desc = SOV_soviet_union.68.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+    option = {
+        name = SOV_soviet_union.68.a
+		ai_chance = {
+			base = 100
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.69 ## ССГ разрешает нац. гвардии ##
+	title = SOV_soviet_union.69.t
+	desc = SOV_soviet_union.69.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+    option = {
+        name = SOV_soviet_union.69.a
+		ai_chance = {
+			base = 100
+		}
+		division_template = {
+			name = "National Guard"
+			is_locked = yes
+			division_names_group = GEN_INF_01
+			priority = 0
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+			}
+		}
+		random_core_state = {
+			create_unit = { 
+				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
 		}
     }
 }

@@ -1,6 +1,6 @@
 capital = 993
 
-set_oob = GEN_1985
+set_oob = PDB_1985
 
 declare_war_on = {
 	target = KIO

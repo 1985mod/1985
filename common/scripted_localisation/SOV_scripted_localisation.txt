@@ -1,0 +1,50 @@
+defined_text = {
+	name = GetDiscontentRepublicName
+	text = {
+		trigger = {
+			check_variable = { SOV.discontent_of_the_republics = 0 }
+			SOV = { has_global_flag = ussr_not_collapsed } 
+		}
+		localization_key = absolute_integration_text
+	}
+
+	text = {
+		trigger = {
+			check_variable = { SOV.discontent_of_the_republics = 1 }
+			SOV = { has_global_flag = ussr_not_collapsed } 
+		}
+		localization_key = high_loyalty_text
+	}
+
+	text = {
+		trigger = {
+			check_variable = { SOV.discontent_of_the_republics = 2 }
+			SOV = { has_global_flag = ussr_not_collapsed } 
+		}
+		localization_key = moderate_calm_text
+	}
+
+	text = {
+		trigger = {
+			check_variable = { SOV.discontent_of_the_republics = 3 }
+			SOV = { has_global_flag = ussr_not_collapsed } 
+		}
+		localization_key = neutral_text
+	}
+
+	text = {
+		trigger = {
+			check_variable = { SOV.discontent_of_the_republics = 4 }
+			SOV = { has_global_flag = ussr_not_collapsed } 
+		}
+		localization_key = growing_discontent_text
+	}
+
+	text = {
+		trigger = {
+			check_variable = { SOV.discontent_of_the_republics = 5 }
+			SOV = { has_global_flag = ussr_not_collapsed } 
+		}
+		localization_key = critical_text
+	}
+}
