@@ -1883,18 +1883,21 @@ on_actions = {
 				add_to_variable = { var = country_gdp value = num_of_naval }
 
 				set_variable = { var = gdp_per_capita value = country_gdp }
-				multiply_variable = { var = gdp_per_capita value = 10 }
+
+				set_variable = { var = saddam value = max_manpower }
+				set_variable = { var = m_manpower_k value = 0.001 }
+				multiply_variable = { var = m_manpower_k value = saddam }
+
 				if = {
 					limit = {
-						max_manpower > 0
+						max_manpower_k > 0
 					}
-					divide_variable = { var = gdp_per_capita value = max_manpower_k }
+					divide_variable = { var = gdp_per_capita value = m_manpower_k }
+					multiply_variable = { var = gdp_per_capita value = 1000 }
 				}
 				else = {
 					set_variable = { var = gdp_per_capita value = 0 }
 				}
-
-				multiply_variable = { var = gdp_per_capita value = 100 }
 
 				set_variable = { var = civ_of_gdp value = num_of_civ }
 				divide_variable = { var = civ_of_gdp value = country_gdp }
@@ -1911,25 +1914,21 @@ on_actions = {
 				set_variable = { var = country_gdp_divided_by_1000 value = country_gdp }
 				divide_variable = { var = country_gdp_divided_by_1000 value = 1000 }
 
-				set_variable = { var = old_gdp_0 value = country_gdp }
-				set_variable = { var = old_gdp_1 value = country_gdp }
-				set_variable = { var = old_gdp_2 value = country_gdp }
+				set_variable = { var = real_gdp_3m_ago value = real_gdp_2m_ago }
+				set_variable = { var = real_gdp_2m_ago value = real_gdp_1m_ago }
+				set_variable = { var = real_gdp_1m_ago value = country_gdp }
+
+				set_variable = { var = nominal_gdp_3m_ago value = nominal_gdp_2m_ago }
+				set_variable = { var = nominal_gdp_2m_ago value = nominal_gdp_1m_ago }
+				set_variable = { var = nominal_gdp_1m_ago value = nominal_gdp }
 
 				if = {
-					limit = {
-						check_variable = { var = old_gdp_2 value = 0 compare = greater_than }
-					}
-					set_temp_variable = { var = gdp_growth_calculate value = country_gdp }
-					subtract_from_temp_variable = { var = gdp_growth_calculate value = old_gdp_2 }
-					multiply_temp_variable = { var = gdp_growth_calculate value = 100 }
-					divide_temp_variable = { var = gdp_growth_calculate value = old_gdp_2 }
-					set_variable = { var = gdp_growth_rate value = gdp_growth_calculate }
-				}   
-					
-				else = {
-					set_variable = { var = gdp_growth_rate value = 0 }
+					limit = { check_variable = { real_gdp_3m_ago > 0 } }
+					set_variable = { var = gdp_growth_rate value = country_gdp }
+					divide_variable = { var = gdp_growth_rate value = real_gdp_3m_ago }
+					subtract_from_variable = { var = gdp_growth_rate value = 1 }
+					multiply_variable = { var = gdp_growth_rate value = 100 }
 				}
-
 
 				if = {
 					limit = {
@@ -2076,6 +2075,32 @@ on_actions = {
 					set_variable = { var = army_multiplier value = 1.6 }
 				}
 
+				# Corruption Law
+				if = { 
+					limit = { has_idea = horrific_corruption }
+					set_variable = { var = corruption_level value = 0.25 }
+				}
+
+				if = { 
+					limit = { has_idea = significant_corruption }
+					set_variable = { var = corruption_level value = 0.4 }
+				}
+
+				if = { 
+					limit = { has_idea = moderate_corruption }
+					set_variable = { var = corruption_level value = 0.6 }
+				}
+
+				if = { 
+					limit = { has_idea = low_corruption }
+					set_variable = { var = corruption_level value = 0.8 }
+				}
+
+				if = { 
+					limit = { has_idea = minor_corruption }
+					set_variable = { var = corruption_level value = 0.95 }
+				}
+
 				# Calculate GDP effect
 				set_temp_variable = { var = num_of_civ value = num_of_civilian_factories }
 				multiply_temp_variable = { var = num_of_civ value = 15 }
@@ -2129,6 +2154,15 @@ on_actions = {
 				set_variable = { var = nominal_gdp_divided_by_1000 value = nominal_gdp }
 				divide_variable = { var = nominal_gdp_divided_by_1000 value = 1000 }
 
+				# Old GDP
+				set_variable = { var = real_gdp_3m_ago value = country_gdp }
+				set_variable = { var = real_gdp_2m_ago value = country_gdp }
+				set_variable = { var = real_gdp_1m_ago value = country_gdp }
+
+				set_variable = { var = nominal_gdp_3m_ago value = nominal_gdp }
+				set_variable = { var = nominal_gdp_2m_ago value = nominal_gdp }
+				set_variable = { var = nominal_gdp_1m_ago value = nominal_gdp }
+
 				# Inflation effect
 
 				set_variable = { var = inflation_rate value = 0 } 
@@ -2164,50 +2198,6 @@ on_actions = {
 
 					set_variable = { var = old_inflation value = inflation_rate }
 				}
-
-				# Velocity effect
-
-				if = {
-					limit = { NOT = { has_variable = interest_rate } }
-					set_variable = { var = interest_rate value = 0 }
-				}
-				if = {
-					limit = {
-						has_variable = interest_rate
-						has_variable = inflation_rate
-					}
-					set_temp_variable = { var = rate_divisor value = 80 }
-					if = {
-						limit = { check_variable = { var = interest_rate compare = less_than } }
-						set_temp_variable = { var = rate_divisor value = 10 }
-					}
-
-					set_temp_variable = { var = normalized_rate value = interest_rate }
-					divide_temp_variable = { var = normalized_rate value = 80 }
-
-					set_temp_variable = { var = base_velocity value = 1 }
-					
-					set_temp_variable = { var = inflation_impact value = inflation_rate }
-					divide_temp_variable = { var = inflation_impact value = 20 }
-
-					set_temp_variable = { var = interest_rate_impact value = interest_rate }
-					divide_temp_variable = { var = interest_rate_impact value = 80 }
-
-					
-
-					if = { 
-						limit = { check_variable = { var = base_velocity value = 0.5 compare = less_than } }
-						set_temp_variable = { var = base_velocity value = 0.5 }
-					}
-					
-					if = {
-						limit = { check_variable = { var = base_velocity value = 10.0 compare = greater_than } }
-						set_temp_variable = { var = base_velocity value = 10.0 }
-					}
-
-					set_variable = { var = velocity value = base_velocity }
-				}
-
 
 				# Corruption effect
 

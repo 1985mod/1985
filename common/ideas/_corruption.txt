@@ -31,8 +31,13 @@ ideas = {
 				planning_speed = -0.1
 			}
 
+			on_add = {
+				set_variable = { var = corruption_level value = 0.25 }
+			}
+
 			cancel_if_invalid = no
 		}
+
 		significant_corruption = {
 
             picture = significant_corruption
@@ -59,8 +64,13 @@ ideas = {
 				planning_speed = -0.05
 			}
 
+			on_add = {
+				set_variable = { var = corruption_level value = 0.4 }
+			}
+
 			cancel_if_invalid = no
 		}
+
 		moderate_corruption = {
 
             picture = moderate_corruption
@@ -86,6 +96,10 @@ ideas = {
 				naval_speed_factor = -0.1
 			}
 
+			on_add = {
+				set_variable = { var = corruption_level value = 0.6 }
+			}
+		
             default = yes
 
 			cancel_if_invalid = no
@@ -115,8 +129,13 @@ ideas = {
 				naval_speed_factor = -0.05
 			}
 
+			on_add = {
+				set_variable = { var = corruption_level value = 0.8 }
+			}
+
 			cancel_if_invalid = no
 		}
+
 		minor_corruption = {
 
             picture = minor_corruption
@@ -136,6 +155,10 @@ ideas = {
 			modifier = {
 				political_advisor_cost_factor = 0.05
 				political_power_cost = 0.05
+			}
+			
+			on_add = {
+				set_variable = { var = corruption_level value = 0.95 }
 			}
 
 			cancel_if_invalid = no
