@@ -105,6 +105,26 @@ guiTypes = {
         }
 
         instantTextBoxType = {
+            name = "expense_label"
+            position = { x = 300 y = 500 }
+            text = "Expense:"
+            font = "hoi_24header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "expense"
+            position = { x = 430 y = 500 }
+            text = "EXPENSE"
+            font = "hoi_24header"
+            maxWidth = 150
+            maxHeight = 24
+            format = left
+        }
+
+        instantTextBoxType = {
             name = "gdp_label"
             position = { x = 30 y = 70 }
             text = "REAL_GDP_LABEL"
