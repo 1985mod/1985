@@ -591,3 +591,16 @@ country_event = {
 		set_country_flag = election_campaign_in_germany_1987
 	}
 }
+
+country_event = {
+	id = wgr.26 ## Формирование нового правительства ##
+	title = wgr.26.t
+	desc = wgr.26.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.26.a
+	}
+}

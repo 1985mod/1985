@@ -68,5 +68,5 @@
  UNEMPLOYMENT_RATE_LABEL:0 "Безработица:"
  TARGET_UNEMPLOYMENT_LABEL:0 "Целевой уровень:"
  STATE_EXPENDITURE_LABEL:0 "Расходы государства"
- BALANCE_VALUE:0 "[?weekly_income|.2]"
+ BALANCE_VALUE:0 "[?treasury|.2]"
  DEBT_VALUE:0 "[?current_debt|.2]"

@@ -2147,8 +2147,6 @@ on_actions = {
 				# Nominal GDP effect
 
 				set_variable = { var = money_supply value = country_gdp }
-				set_variable = { var = velocity value = 1 }
-
 				set_variable = { var = nominal_gdp value = money_supply }
 				multiply_variable = { var = nominal_gdp value = velocity }
 				set_variable = { var = nominal_gdp_divided_by_1000 value = nominal_gdp }
@@ -2644,7 +2642,7 @@ on_actions = {
 			corruption_effect = yes
 			tax_effect = yes
 			velocity_effect = yes
-			if = { limit = { NOT = { has_variable = weekly_income } } set_variable = { var = weekly_income value = 0 } }
+			if = { limit = { NOT = { has_variable = treasury } } set_variable = { var = treasury value = 0 } }
 			if = { limit = { NOT = { has_variable = current_debt } } set_variable = { var = current_debt value = 0 } }
 			if = { limit = { NOT = { has_variable = income_budget } } set_variable = { var = income_budget value = 0 } }
 			if = { limit = { NOT = { has_variable = expense_budget } } set_variable = { var = expense_budget value = 0 } }
@@ -2652,14 +2650,14 @@ on_actions = {
 			set_variable = { var = temp_balance value = income_budget }
 			subtract_from_variable = { var = temp_balance value = expense_budget }
 
-			clamp_variable = { var = weekly_income min = 0 }
+			clamp_variable = { var = treasury min = 0 }
 			clamp_variable = { var = current_debt min = 0 }
 
 			if = {
 				limit = {
 					check_variable = { var = temp_balance value = 0 compare = greater_than }
 				}
-				add_to_variable = { var = weekly_income value = temp_balance }
+				add_to_variable = { var = treasury value = temp_balance }
 			}
 
 			if = {
@@ -2681,9 +2679,9 @@ on_actions = {
 				multiply_variable = { var = temp_balance value = -1 }
 
 				set_variable = { var = temp_take value = temp_balance }
-				clamp_variable = { var = temp_take max = weekly_income }
+				clamp_variable = { var = temp_take max = treasury }
 
-				subtract_from_variable = { var = weekly_income value = temp_take }
+				subtract_from_variable = { var = treasury value = temp_take }
 
 				subtract_from_variable = { var = temp_balance value = temp_take }
 
@@ -2696,7 +2694,7 @@ on_actions = {
 				}
 			}
 
-			clamp_variable = { var = weekly_income min = 0 }
+			clamp_variable = { var = treasury min = 0 }
 			clamp_variable = { var = current_debt min = 0 }
 		}
 	}

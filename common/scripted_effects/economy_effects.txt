@@ -4,6 +4,14 @@ calculate_nominal_gdp_effect = {
             limit = { NOT = { has_variable = money_supply } }
             set_variable = { var = money_supply value = country_gdp }
         }
+        if = {
+            limit = { check_variable = { velocity < 0.5 } }
+            set_variable = { var = velocity value = 0.5 }
+        }
+        if = {
+            limit = { check_variable = { velocity > 3 } }
+            set_variable = { var = velocity value = 3 }
+        }
         set_variable = { var = nominal_gdp value = money_supply }
         multiply_variable = { var = nominal_gdp value = velocity }
         set_variable = { var = nominal_gdp_divided_by_1000 value = nominal_gdp }
@@ -507,13 +515,24 @@ tax_effect = {
 
     ### обслуживание долга ###
 
-    set_variable = { var = debt_service_cost value = current_debt }
+    set_temp_variable = { var = temp_interest_rate value = interest_rate }
+    if = {
+        limit = { check_variable = { temp_interest_rate < 0 } }
+        set_temp_variable = { var = temp_interest_rate value = 0 }
+    }
+    add_to_temp_variable = { var = temp_interest_rate value = 2.5 }
 
-    divide_variable = { var = debt_service_cost value = 120.4 }
+    set_variable = { var = debt_service_cost value = current_debt }
+    
+    multiply_variable = { var = debt_service_cost value = temp_interest_rate }
+    divide_variable = { var = debt_service_cost value = 100 }
+    multiply_variable = { var = debt_service_cost value = 7 }
+
+    divide_variable = { var = debt_service_cost value = 365 }
 
     if = {
-        limit = { check_variable = { debt_service_cost < 0.0 } }
-        set_variable = { var = debt_service_cost value = 0.0 }
+        limit = { check_variable = { debt_service_cost < 0 } }
+        set_variable = { var = debt_service_cost value = 0 }
     }
 }
 
@@ -542,20 +561,31 @@ corruption_effect = {
 
 velocity_effect = {
     every_country = {
-        if = { limit = { NOT = { has_variable = money_supply } } set_variable = { var = money_supply value = 1000 } }
-        if = { limit = { NOT = { has_variable = nominal_gdp } } set_variable = { var = nominal_gdp value = 1000 } }
-        if = { limit = { NOT = { has_variable = inflation_rate } } set_variable = { var = inflation_rate value = 0 } }
-        if = { limit = { NOT = { has_variable = annual_interest_rate } } set_variable = { var = annual_interest_rate value = 0.05 } }
-        if = { limit = { NOT = { has_variable = target_inflation } } set_variable = { var = target_inflation value = 2.0 } }
 
+        set_temp_variable = { var = inflation_rate_temp }
         if = {
-            limit = { check_variable = { var = money_supply value = 0 compare = greater_than } }
-            set_variable = { var = velocity value = nominal_gdp }
-            divide_variable = { var = velocity value = money_supply }
+            limit = { check_variable = { inflation_rate < -150 } }
+            set_temp_variable = { var = inflation_rate_temp value = -150 }
         }
-        else = {
-            set_variable = { var = velocity value = 0 }
-        }
-        clamp_variable = { var = velocity min = 0.1 max = 10 }
+
+        set_variable = { var = velocity value = 1 }
+
+        set_temp_variable = { var = temp_velocity_interest_rate value = interest_rate }
+        add_to_temp_variable = { var = temp_velocity_interest_rate value = 5 }
+        set_temp_variable = { var = temp_velocity_interest_rate_2 value = interest_rate }
+        add_to_temp_variable = { var = temp_velocity_interest_rate_2 value = 25 }
+        divide_temp_variable = { var = temp_velocity_interest_rate value = temp_velocity_interest_rate_2 }
+        multiply_temp_variable = { var = temp_velocity_interest_rate value = 1.7 }
+
+        set_temp_variable = { var = temp_inflation_rate value = inflation_rate_temp }
+        add_to_temp_variable = { var = temp_inflation_rate value = 50 }
+        set_temp_variable = { var = temp_inflation_rate_2 value = inflation_rate_temp }
+        add_to_temp_variable = { var = temp_inflation_rate_2 value = 150 }
+        divide_temp_variable = { var = temp_inflation_rate value = temp_inflation_rate_2 }
+        multiply_temp_variable = { var = temp_inflation_rate value = 0.55 }
+        
+        subtract_from_variable = { var = velocity value = temp_velocity_interest_rate }
+
+        add_to_variable = { var = velocity value = temp_inflation_rate }
     }
 }
