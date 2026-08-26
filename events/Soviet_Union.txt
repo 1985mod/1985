@@ -177,6 +177,9 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
+		add_political_power = -50
+		add_stability = 0.05
+		add_war_support = 0.03
 	}
 }
 
@@ -250,6 +253,34 @@ country_event = {
                 set_country_flag = conservatism_soviet
             }
         }
+
+        # Молдова (август 1991)
+        if = {
+            limit = {
+                date > 1991.08.27
+                NOT = { has_country_flag = collapse_MOL }
+                NOT = { has_global_flag = ussr_not_collapsed }
+            }
+            release = MOL
+            set_country_flag = collapse_MOL
+            MOL = {
+                set_country_flag = conservatism_soviet
+            }
+        }
+
+        # Кавказ - Армения (сентябрь 1991)
+        if = {
+            limit = {
+                date > 1991.09.21
+                NOT = { has_country_flag = collapse_ARM }
+                NOT = { has_global_flag = ussr_not_collapsed }
+            }
+            release = ARM
+            set_country_flag = collapse_ARM
+            ARM = {
+                set_country_flag = conservatism_soviet
+            }
+        }
     }
 }
     
@@ -291,34 +322,6 @@ country_event = {
             release = BLR
             set_country_flag = collapse_BLR
             BLR = {
-                set_country_flag = conservatism_soviet
-            }
-        }
-
-        # Молдова (август 1991)
-        if = {
-            limit = {
-                date > 1991.08.27
-                NOT = { has_country_flag = collapse_MOL }
-                NOT = { has_global_flag = ussr_not_collapsed }
-            }
-            release = MOL
-            set_country_flag = collapse_MOL
-            MOL = {
-                set_country_flag = conservatism_soviet
-            }
-        }
-
-        # Кавказ - Армения (сентябрь 1991)
-        if = {
-            limit = {
-                date > 1991.09.21
-                NOT = { has_country_flag = collapse_ARM }
-                NOT = { has_global_flag = ussr_not_collapsed }
-            }
-            release = ARM
-            set_country_flag = collapse_ARM
-            ARM = {
                 set_country_flag = conservatism_soviet
             }
         }
@@ -1323,7 +1326,9 @@ country_event = {
 	fire_only_once = yes
 
     immediate = {
-        release = KAZ
+		hidden_effect = {
+	        release = KAZ		
+		}
 		SOV = {
 			delete_unit = {}
 		}
@@ -2036,5 +2041,52 @@ country_event = {
 				owner = ROOT
 			}
 		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.70 ## Победа Ельцина в ССГ ##
+	title = SOV_soviet_union.70.t
+	desc = SOV_soviet_union.70.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+    option = {
+        name = SOV_soviet_union.69.a
+		ai_chance = {
+			base = 100
+		}
+		remove_country_leader = { name = "SOV_Mikhail_Gorbachev_SSG" }
+		complete_national_focus = SOV_the_first_free_elections_in_the_ussr
+		complete_national_focus = SOV_yeltsin_path
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.71 ## Победа Назарбаева в ССГ ##
+	title = SOV_soviet_union.71.t
+	desc = SOV_soviet_union.71.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+    option = {
+        name = SOV_soviet_union.69.a
+		ai_chance = {
+			base = 100
+		}
+		remove_country_leader = { name = "SOV_Mikhail_Gorbachev_SSG" }
+		complete_national_focus = SOV_the_first_free_elections_in_the_ussr
+		complete_national_focus = SOV_nazarbayev_path
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = yes
+		}
+		add_stability = 0.05
     }
 }

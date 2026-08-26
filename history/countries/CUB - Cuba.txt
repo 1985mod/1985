@@ -4,7 +4,6 @@ oob = "CUB_1986"
 
 set_research_slots = 3
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -17,9 +16,12 @@ set_technology = {
 	paratroopers = 1
 	gw_artillery = 1
 }
+
 add_ideas = {
-CUB_revolucion_duh
+	CUB_revolution_spirit
+	partial_economic_mobilisation
 }
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1985.1.1"
@@ -32,8 +34,4 @@ set_popularities = {
 	socialism = 30
 }
 
-
-recruit_character = CUB_Fedel_Castro
-recruit_character = CUB_Steve_Jobs
-
-
+recruit_character = CUB_Fidel_Castro

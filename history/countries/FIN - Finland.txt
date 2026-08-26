@@ -49,3 +49,6 @@ set_convoys = 80
 
 recruit_character = FIN_mauno_koivisto
 
+add_ideas = {
+	low_economic_mobilisation
+}

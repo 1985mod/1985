@@ -30,6 +30,28 @@ on_actions = {
 				RUS = { country_event = { id = russia.15 } }
 				set_global_flag = tatar_referendum_happened
 			}
+			if = {
+				limit = {
+					country_exists = SOV
+					date > 1993.03.01
+					conservatism > party_popularity@socialism
+					has_global_flag = ussr_not_collapsed
+					NOT = { has_global_flag = ssg_elections_resolved }
+				}
+				SOV = { country_event = { id = SOV_soviet_union.70 } }
+				set_global_flag = ssg_elections_resolved
+			}
+			if = {
+				limit = {
+					country_exists = SOV
+					date > 1993.03.01
+					socialism > party_popularity@conservatism
+					has_global_flag = ussr_not_collapsed
+					NOT = { has_global_flag = ssg_elections_resolved }
+				}
+				SOV = { country_event = { id = SOV_soviet_union.71 } }
+				set_global_flag = ssg_elections_resolved
+			}
 		}
 	}
 }

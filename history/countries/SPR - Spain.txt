@@ -31,3 +31,7 @@ recruit_character = SPR_felipe_gonzalez
 
 set_convoys = 150
 set_stability = 0.5
+
+add_ideas = {
+	low_economic_mobilisation
+}

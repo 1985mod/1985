@@ -55,7 +55,6 @@ set_war_support = 0.4
 add_command_power = 20
 
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -201,11 +200,11 @@ complete_special_project = {
 }
 
 add_ideas = {
-USA_reaganomics_policy
-USA_stronghold_of_freedom
-USA_the_endless_war_on_drugs
+	USA_reaganomics_policy
+	USA_stronghold_of_freedom
+	USA_the_endless_war_on_drugs
+	partial_economic_mobilisation
 }
-
 
 set_politics = {
 	ruling_party = conservatism
@@ -237,8 +236,7 @@ activate_advisor = USA_george_shultz
 activate_advisor = USA_donald_hodel
 activate_advisor = USA_don_regan
 
-
-
+set_variable = { var = current_debt value = 1823 }
 
 set_popularities = {
 	liberalism = 40

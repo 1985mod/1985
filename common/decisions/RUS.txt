@@ -127,20 +127,179 @@ RUS_preparation_for_a_new_constitution = {
 }
 
 RUS_peoples_deputies_cat = {
-    RUS_goida = {
+    RUS_propose_bill_to_increase_taxes_on_the_population = {
 	
 		icon = generic_speech
 
-		cost = 75
-		days_remove = 30
+		cost = 25
+		days_remove = 35
 
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				add = -15
+				is_historical_focus_on = yes
+				check_variable = { total_allies_votes < 500 }
+			}
 		}
 	
 		remove_effect = {
-			add_stability = 0.03
-			add_political_power = 20
+
+            set_temp_variable = { var = total_allies_votes value = 0 }
+            add_to_temp_variable = { total_allies_votes = democratic_union }
+            add_to_temp_variable = { total_allies_votes = reform_coalition }
+
+            if = {
+                limit = {
+                    check_variable = { total_allies_votes < 500 }
+                }
+                add_political_power = -50
+                add_stability = -0.05
+            }
+
+            else = {        
+				custom_effect_tooltip = we_will_raise_taxes_by_1_percent 
+                add_to_variable = { var = pop_rate value = 1 }
+                tax_effect = yes
+                if = {
+                    limit = {
+                        check_variable = { pop_rate > 100 } 
+                    }
+                    set_variable = { var = pop_rate value = 100 }
+                }
+            }
+		}
+	}
+
+   RUS_propose_bill_to_increase_taxes_on_businesses = {
+	
+		icon = generic_speech
+
+		cost = 25
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				add = -15
+				is_historical_focus_on = yes
+				check_variable = { total_allies_votes < 500 }
+			}
+		}
+	
+		remove_effect = {
+
+            set_temp_variable = { var = total_allies_votes value = 0 }
+            add_to_temp_variable = { total_allies_votes = democratic_union }
+            add_to_temp_variable = { total_allies_votes = reform_coalition }
+
+            if = {
+                limit = {
+                    check_variable = { total_allies_votes < 500 }
+                }
+                add_political_power = -50
+                add_stability = -0.05
+            }
+
+            else = {        
+				custom_effect_tooltip = we_will_raise_taxes_on_businesses_by_1_percent 
+                add_to_variable = { var = corp_rate value = 1 }
+                tax_effect = yes
+                if = {
+                    limit = {
+                        check_variable = { corp_rate > 100 } 
+                    }
+                    set_variable = { var = corp_rate value = 100 }
+                }
+            }
+		}
+	}
+
+   RUS_propose_bill_to_increase_the_vat_rate = {
+	
+		icon = generic_speech
+
+		cost = 25
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				add = -15
+				is_historical_focus_on = yes
+				check_variable = { total_allies_votes < 500 }
+			}
+		}
+	
+		remove_effect = {
+
+            set_temp_variable = { var = total_allies_votes value = 0 }
+            add_to_temp_variable = { total_allies_votes = democratic_union }
+            add_to_temp_variable = { total_allies_votes = reform_coalition }
+
+            if = {
+                limit = {
+                    check_variable = { total_allies_votes < 500 }
+                }
+                add_political_power = -50
+                add_stability = -0.05
+            }
+
+            else = {        
+				custom_effect_tooltip = we_will_increase_the_vat_rate_by_1_percent 
+                add_to_variable = { var = vat_rate value = 1 }
+                tax_effect = yes
+                if = {
+                    limit = {
+                        check_variable = { vat_rate > 100 } 
+                    }
+                    set_variable = { var = vat_rate value = 100 }
+                }
+            }
+		}
+	}
+
+   RUS_propose_bill_to_raise_interest_rates = {
+	
+		icon = generic_speech
+
+		cost = 25
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				add = -15
+				is_historical_focus_on = yes
+				check_variable = { total_allies_votes < 500 }
+			}
+		}
+	
+		remove_effect = {
+
+            set_temp_variable = { var = total_allies_votes value = 0 }
+            add_to_temp_variable = { total_allies_votes = democratic_union }
+            add_to_temp_variable = { total_allies_votes = reform_coalition }
+
+            if = {
+                limit = {
+                    check_variable = { total_allies_votes < 500 }
+                }
+                add_political_power = -50
+                add_stability = -0.05
+            }
+
+            else = {        
+				custom_effect_tooltip = we_will_raise_the_interest_rate_by_1_percent 
+                add_to_variable = { var = interest_rate value = 1 }
+                velocity_effect = yes
+                if = {
+                    limit = { 
+                        check_variable = { interest_rate > 100 } 
+                    }
+                    set_variable = { var = interest_rate value = 100 }
+                }
+            }
 		}
 	}
 }

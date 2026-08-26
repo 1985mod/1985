@@ -37,3 +37,6 @@ set_convoys = 80
 
 recruit_character = SWE_olof_palme
 
+add_ideas = {
+	low_economic_mobilisation
+}

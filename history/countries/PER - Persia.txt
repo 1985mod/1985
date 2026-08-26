@@ -58,6 +58,7 @@ if = {
 add_ideas = {
 	service_by_requirement
 	PER_tiring_war
+	war_economy
 }
 set_politics = {
 	ruling_party = neutrality

@@ -88,7 +88,18 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            add_political_power = 50
+            every_country = {
+                limit = {
+                    OR = {
+                        tag = SOV
+                        tag = UKR
+                        tag = BLR
+                        tag = AZR
+                        tag = KAZ
+                    }
+                }
+                add_ideas = SOV_visa_free_regime
+            }
         }
     }
 
@@ -217,6 +228,7 @@ focus_tree = {
         completion_reward = {
             set_rule = { can_send_volunteers = yes }
             add_ideas = SOV_uss_peacekeeping_contingent
+            load_focus_tree = SOV_soviet_gorbachev_uss_focus_part_two
         }
     }
 }

@@ -34,3 +34,6 @@ set_popularities = {
 
 recruit_character = SIA_Prem_Tinsulanonda
 
+add_ideas = {
+	low_economic_mobilisation
+}

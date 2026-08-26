@@ -12,7 +12,6 @@ declare_war_on = {
 	type = civil_war
 }
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
@@ -33,4 +32,8 @@ set_popularities = {
 	fascism = 73
 	conservatism = 15
 	liberalism = 12
+}
+
+add_ideas = {
+	war_economy
 }

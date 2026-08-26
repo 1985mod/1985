@@ -27,3 +27,6 @@ set_popularities = {
 
 recruit_character = BAN_Hussain_Ershad
 
+add_ideas = {
+	low_economic_mobilisation
+}

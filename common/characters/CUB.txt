@@ -1,9 +1,9 @@
 characters = {
-	CUB_Fedel_Castro = {
-		name = CUB_Fedel_Castro
+	CUB_Fidel_Castro = {
+		name = CUB_Fidel_Castro
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/CUB/Portrait_CUB_Fedel_Castro.dds"
+				large = "gfx/leaders/CUB/Portrait_CUB_Fidel_Castro.dds"
 			}
 		}
 		country_leader = {
@@ -13,18 +13,4 @@ characters = {
 			id = -1
 		}
 	}
-	
-	CUB_Steve_Jobs = {
-		name = CUB_Steve_Jobs
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/CUB/Portrait_CUB_Steve_Jobs.dds"
-			}
-		}
-		country_leader = {
-			ideology = marxism
-			traits = { }
-			expire = "2011.3.1.1"
-			id = -1
-		}
-	}
+}

@@ -19,7 +19,6 @@ IF = {
 }
 
 set_research_slots = 2
-# TODO JA, add the correct dlc-requirments
 IF = {
 	limit = {
 		has_dlc = "Trial of Allegiance"
@@ -32,7 +31,6 @@ IF = {
 }
 
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
@@ -54,4 +52,8 @@ set_popularities = {
 	neutrality = 75
 	fascism = 12
 	conservatism = 13
+}
+
+add_ideas = {
+	low_economic_mobilisation
 }

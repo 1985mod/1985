@@ -32,4 +32,6 @@ set_popularities = {
 
 recruit_character = LAO_Kaysone_Phomvihane
 
-
+add_ideas = {
+	low_economic_mobilisation
+}

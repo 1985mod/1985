@@ -24,7 +24,7 @@ ideas = {
         stability_factor = -0.10
       }
     }
-    CZE_uusr_torg = {
+    CZE_ussr_trade = {
       allowed = {}
       picture = CZE_torg_ussr        
       available = {}
