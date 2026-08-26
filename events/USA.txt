@@ -363,7 +363,7 @@ country_event = {
 	picture = GFX_report_generic_negotiations_between_two_parties
 
 	trigger = {
-		tag = usa
+		tag = USA
 		date > 1990.7.1
 	}
 	
@@ -374,7 +374,42 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
-		add_ideas = USA_economic_recession
+		if = {
+			limit = {
+				has_idea = recession
+			}
+			swap_ideas = {
+				remove_idea = recession
+				add_idea = depression
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = stagnation
+			}
+			swap_ideas = {
+				remove_idea = stagnation
+				add_idea = recession
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = sustainable_growth
+			}
+			swap_ideas = {
+				remove_idea = sustainable_growth
+				add_idea = stagnation
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = economic_boom
+			}
+			swap_ideas = {
+				remove_idea = economic_boom
+				add_idea = sustainable_growth
+			}  
+		}	
 		set_country_flag = USA_economic_recessions_load
 		mark_focus_tree_layout_dirty = yes
 	}
@@ -459,15 +494,48 @@ country_event = {
 
 	is_triggered_only = yes
 
-	fire_only_once = yes
-
 	option = {
 		name = usa.16.a
 		ai_chance = {
 			base = 100
 		}		
-		add_political_power = 50
+		add_political_power = 25
+		add_stability = 0.05
 		add_nuclear_bombs = -146
+		if = {
+			limit = {
+				tag = USA
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = SOV
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+		}
 	}
 }
 
@@ -508,6 +576,18 @@ country_event = {
 		}		
 		add_political_power = 5
 		add_stability = 0.03
+		ROOT = {
+			add_opinion_modifier = {
+				target = RUS
+				modifier = small_increase
+			}
+		}
+		RUS = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_increase
+			}
+		}
 	}
 }
 
@@ -517,12 +597,7 @@ country_event = {
 	desc = usa.19.d
 	picture = GFX_report_we_are_world
 
-	trigger = {
-		date > 1985.1.24
-		ROOT = { has_government = conservatism }
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -544,12 +619,7 @@ country_event = {
 	desc = usa.20.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1985.2.5
-		ROOT = { has_government = conservatism }
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -568,12 +638,7 @@ country_event = {
 	desc = usa.21.d
 	picture = GFX_report_coral_sea_aircraft_carrier_accident
 
-	trigger = {
-		date > 1985.4.7
-		ROOT = { has_government = conservatism }
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -592,12 +657,7 @@ country_event = {
 	desc = usa.22.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1985.5.25
-		ROOT = { has_government = conservatism }
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -605,7 +665,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
-		add_manpower = -76
+		add_manpower = -89
 		add_stability = -0.05
 	}
 }
@@ -616,12 +676,7 @@ country_event = {
 	desc = usa.23.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1985.6.5
-		ROOT = { has_government = conservatism }
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -640,12 +695,7 @@ country_event = {
 	desc = usa.24.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1985.10.15
-		ROOT = { has_government = conservatism }
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -679,12 +729,7 @@ country_event = {
 	desc = usa.25.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1986.3.20
-		ROOT = { has_government = conservatism }
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -705,12 +750,7 @@ country_event = {
 	desc = usa.26.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1986.8.13
-		ROOT = { has_government = conservatism }
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -732,11 +772,7 @@ country_event = {
 	desc = usa.27.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1987.1.1
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -753,11 +789,7 @@ country_event = {
 	desc = usa.28.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1987.5.13
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -786,7 +818,43 @@ country_event = {
 		name = usa.29.a
 		ai_chance = {
 			base = 100
-		}		
+		}
+		if = {
+			limit = {
+				has_idea = recession
+			}
+			swap_ideas = {
+				remove_idea = recession
+				add_idea = depression
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = stagnation
+			}
+			swap_ideas = {
+				remove_idea = stagnation
+				add_idea = recession
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = sustainable_growth
+			}
+			swap_ideas = {
+				remove_idea = sustainable_growth
+				add_idea = stagnation
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = economic_boom
+			}
+			swap_ideas = {
+				remove_idea = economic_boom
+				add_idea = sustainable_growth
+			}  
+		}	
 	}
 }
 
@@ -821,10 +889,7 @@ country_event = {
 	desc = usa.31.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1987.10.15
-		tag = USA
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
@@ -842,11 +907,7 @@ country_event = {
 	desc = usa.32.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1987.10.15
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -888,11 +949,7 @@ country_event = {
 	desc = usa.34.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1987.10.15
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -904,16 +961,12 @@ country_event = {
 }
 
 country_event = {
-	id = usa.35 ###  отказал ###
+	id = usa.35 ###  СССР отказал ###
 	title = usa.35.t
 	desc = usa.35.d
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-		date > 1987.10.15
-		tag = USA
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -921,5 +974,107 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
+	}
+}
+
+country_event = {
+	id = usa.36 ###  Бюджетный Саммит ###
+	title = usa.36.t
+	desc = usa.36.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.36.a
+		ai_chance = {
+			base = 100
+		}	
+		add_to_variable = {
+			var = treasury
+			value = 2
+			tooltip = add_2_billion_to_treasury_tt
+		}
+	}
+}
+
+country_event = {
+	id = usa.37 ###  СССР согласился ###
+	title = usa.37.t
+	desc = usa.37.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.37.a
+		ai_chance = {
+			base = 100
+		}	
+		FROM = { country_event = usa.16 hours = 3 }
+		hidden_effect = {
+			ROOT = { country_event = usa.16 hours = 3 }
+		}
+	}
+
+	option = {
+		name = usa.37.b
+		ai_chance = {
+			base = 100
+		}	
+		FROM = { country_event = usa.38 hours = 3 }
+	}
+}
+
+country_event = {
+	id = usa.38 ###  СССР отказался ###
+	title = usa.38.t
+	desc = usa.38.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.38.a
+		ai_chance = {
+			base = 100
+		}	
+		if = {
+			limit = {
+				tag = USA
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_decrease
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_decrease
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = SOV
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_decrease
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_decrease
+				}
+			}
+		}
 	}
 }

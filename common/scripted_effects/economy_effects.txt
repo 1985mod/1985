@@ -472,7 +472,10 @@ tax_effect = {
     multiply_variable = { var = num_of_supply_nodes_defense value = 0.05 }
 
     set_variable = { var = num_battalions_defense value = num_battalions }
-    multiply_variable = { var = num_battalions_defense value = 0.0007 }
+    multiply_variable = { var = num_battalions_defense value = 0.0011 }
+
+    set_variable = { var = num_of_nukes_defense value = num_of_nukes }
+    multiply_variable = { var = num_of_nukes_defense value = 0.00017 } 
 
     set_variable = { var = defense_expenditure value = army_manpower_k_defense }
     add_to_variable = { var = defense_expenditure value = num_deployed_planes_defense }
@@ -480,6 +483,7 @@ tax_effect = {
     add_to_variable = { var = defense_expenditure value = amount_manpower_in_deployment_queue_defense }
     add_to_variable = { var = defense_expenditure value = num_of_supply_nodes_defense }
     add_to_variable = { var = defense_expenditure value = num_battalions_defense }
+    add_to_variable = { var = defense_expenditure value = num_of_nukes_defense }
 
     set_variable = { var = conscription_defense value = modifier@conscription }
     multiply_variable = { var = conscription_defense value = 4 }
