@@ -38,7 +38,8 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			
+		add_political_power = -50
+		add_stability = 0.02
 		}
 	}
 
@@ -52,7 +53,12 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			
+			add_stability = 0.03
+			add_political_power = -100
+			add_popularity = { 
+            ideology = conservatism
+            popularity = 0.02
+            }
 		}
 	}
 
@@ -66,7 +72,7 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			
+			country_event = { id = wgr.26 days = 1 }
 		}
 	}
 
@@ -81,7 +87,13 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			
+			add_war_support = 0.03
+			add_stability = 0.02
+            add_political_power = 200
+			add_popularity = { 
+            ideology = conservatism
+            popularity = 0.03
+            }
 		}
 	}
 
@@ -95,7 +107,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		completion_reward = {
+		completion_reward = { 
 			
 		}
 	}
@@ -119,7 +131,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WGR_fighting_unemployment
+		id = WGR_fighting_unemployment 
 		icon = GFX_goal_unknown
 		cost = 5
 		relative_position_id = WGR_victory_for_the_spd
@@ -127,8 +139,8 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		completion_reward = {
-			
+		completion_reward = { #Экономика#
+
 		}
 	}
 
@@ -142,7 +154,14 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			
+			add_popularity = { 
+            ideology = liberalism
+            popularity = 0.03
+            }
+			add_popularity = { 
+            ideology = socialism
+            popularity = 0.03
+            }
 		}
 	}
 
@@ -155,7 +174,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		completion_reward = {
+		completion_reward = { #Экономика#
 			
 		}
 	}
@@ -189,9 +208,92 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		completion_reward = {
-			
-		}
+        completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = small_increase
+				}
+			}
+			DDR = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = small_increase
+				}
+			}
+			POL = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = small_increase
+				}
+			}
+			HUN = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = CZE
+					modifier = small_increase
+				}
+			}
+			CZE = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = ROM
+					modifier = small_increase
+				}
+			}
+			ROM = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = BUL
+					modifier = small_increase
+				}
+			}
+			BUL = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+	    }
 	}
 
 	focus = {
