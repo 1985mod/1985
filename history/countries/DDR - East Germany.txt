@@ -33,6 +33,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+set_variable = { var = current_debt value = 46 }
+
 set_popularities = {
 	socialism = 20
 	communism = 80

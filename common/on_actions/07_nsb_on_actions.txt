@@ -2633,7 +2633,6 @@ on_actions = {
 				subtract_from_temp_variable = { var = delitel value = t }
 				divide_variable = { var = vat_optimal value = delitel }
 				round_variable = vat_optimal
-
 			}
 		}
 	}
@@ -2645,6 +2644,60 @@ on_actions = {
 			corruption_effect = yes
 			tax_effect = yes
 			velocity_effect = yes
+			if = { limit = { NOT = { has_variable = weekly_income } } set_variable = { var = weekly_income value = 0 } }
+			if = { limit = { NOT = { has_variable = current_debt } } set_variable = { var = current_debt value = 0 } }
+			if = { limit = { NOT = { has_variable = income_budget } } set_variable = { var = income_budget value = 0 } }
+			if = { limit = { NOT = { has_variable = expense_budget } } set_variable = { var = expense_budget value = 0 } }
+
+			set_variable = { var = temp_balance value = income_budget }
+			subtract_from_variable = { var = temp_balance value = expense_budget }
+
+			clamp_variable = { var = weekly_income min = 0 }
+			clamp_variable = { var = current_debt min = 0 }
+
+			if = {
+				limit = {
+					check_variable = { var = temp_balance value = 0 compare = greater_than }
+				}
+				add_to_variable = { var = weekly_income value = temp_balance }
+			}
+
+			if = {
+				limit = { check_variable = { current_debt > 50 } }
+				
+				set_temp_variable = { inflation_growth = current_debt }
+				
+				subtract_from_temp_variable = { inflation_growth = 50 }
+				
+				multiply_temp_variable = { inflation_growth = 0.0001 }
+				
+				add_to_variable = { inflation_rate = inflation_growth }
+			}
+
+			if = {
+				limit = {
+					check_variable = { var = temp_balance value = 0 compare = less_than }
+				}
+				multiply_variable = { var = temp_balance value = -1 }
+
+				set_variable = { var = temp_take value = temp_balance }
+				clamp_variable = { var = temp_take max = weekly_income }
+
+				subtract_from_variable = { var = weekly_income value = temp_take }
+
+				subtract_from_variable = { var = temp_balance value = temp_take }
+
+
+				if = {
+					limit = {
+						check_variable = { var = temp_balance value = 0 compare = greater_than }
+					}
+					add_to_variable = { var = current_debt value = temp_balance }
+				}
+			}
+
+			clamp_variable = { var = weekly_income min = 0 }
+			clamp_variable = { var = current_debt min = 0 }
 		}
 	}
 

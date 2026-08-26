@@ -2693,4 +2693,13 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_topbar_balance_debt"
+		texturefile = "gfx/interface/balance_debt_icon.dds"							
+	}
+
+	spriteType = {
+		name = "GFX_topbar_debt"
+		texturefile = "gfx/interface/debt_icon.dds"							
+	}
 }

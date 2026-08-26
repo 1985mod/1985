@@ -66,3 +66,5 @@
  UNEMPLOYMENT_RATE_LABEL:0 "Unemployment Rate:"
  TARGET_UNEMPLOYMENT_LABEL:0 "Target Unemployment:"
  STATE_EXPENDITURE_LABEL:0 "State Expenditure"
+ BALANCE_VALUE:0 "$§R[?weekly_balance|.3]§!"
+ DEBT_VALUE:0 "$§R[?current_debt|.3]§!"

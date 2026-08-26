@@ -54,6 +54,8 @@ set_research_slots = 4
 set_convoys = 50
 set_stability = 0.7
 
+set_variable = { var = current_debt value = 127 }
+
 set_politics = {
 	ruling_party = conservatism
 	last_election = "1983.3.9"

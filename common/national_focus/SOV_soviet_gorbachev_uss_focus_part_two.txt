@@ -1,5 +1,5 @@
 focus_tree = {
-    id = SOV_soviet_gorbachev_uss_focus
+    id = SOV_soviet_gorbachev_uss_focus_part_two
 
     country = {
         factor = 0
@@ -20,7 +20,7 @@ focus_tree = {
         y = 0
         cost = 2
         completion_reward = {
-            add_political_power = 50
+            add_political_power = 100
         }
     }
 
@@ -32,8 +32,17 @@ focus_tree = {
         x = -2
         y = 1
         cost = 5
+
+        available = {
+            NOT = { has_completed_focus = SOV_nursultan_nazarbayev }
+        }
+
         completion_reward = {
-            add_political_power = 50
+            add_political_power = 25
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.03
+            }
         }
     }
 
@@ -46,7 +55,12 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            add_political_power = 50
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.05
+            }
+            add_stability = 0.05
+            add_war_support = 0.03
         }
     }
 
@@ -59,6 +73,10 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.05
+            }
             add_political_power = 50
         }
     }
@@ -72,7 +90,19 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            add_political_power = 50
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.05
+            }
+            every_country = {
+                 limit = {
+                    is_puppet_of = SOV
+                }
+                add_autonomy_ratio = {
+                    value = 0.2
+                    localization = SOV_cooperation_with_the_republics
+                }               
+            }
         }
     }
 
@@ -84,8 +114,17 @@ focus_tree = {
         x = 2
         y = 1
         cost = 5
+
+        available = {
+            NOT = { has_completed_focus = SOV_for_yeltsin }
+        }
+
         completion_reward = {
-            add_political_power = 50
+            add_political_power = 25
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.03
+            }
         }
     }
 
@@ -99,6 +138,11 @@ focus_tree = {
         cost = 5
         completion_reward = {
             add_political_power = 50
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.05
+            }
+            add_stability = 0.1
         }
     }
 
@@ -111,7 +155,19 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            add_political_power = 50
+            add_war_support = 0.05
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = 0.03
+            }
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.03
+            }
         }
     }
 
@@ -124,7 +180,19 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            add_political_power = 50
+            add_war_support = 0.05
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = 0.03
+            }
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.03
+            }
         }
     }
 
@@ -136,8 +204,213 @@ focus_tree = {
         x = -2
         y = 1
         cost = 5
+
+        available = {
+            always = no
+        }
+        
         completion_reward = {
             add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_yeltsin_path
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_the_first_free_elections_in_the_ussr
+		prerequisite = { focus = SOV_the_first_free_elections_in_the_ussr }
+        x = -2
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.03
+			}
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_shock_therapy
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_yeltsin_path
+		prerequisite = { focus = SOV_yeltsin_path }
+        x = -2
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+
+        }
+    }
+
+    focus = { 
+        id = SOV_save_ruble
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_shock_therapy
+		prerequisite = { focus = SOV_shock_therapy }
+        x = -1
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            
+        }
+    }
+
+    focus = { 
+        id = SOV_fight_hyperinflation
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_shock_therapy
+		prerequisite = { focus = SOV_shock_therapy }
+        x = 1
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            
+        }
+    }
+
+    focus = { 
+        id = SOV_friendship_with_usa
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_shock_therapy
+		prerequisite = { focus = SOV_save_ruble }
+        prerequisite = { focus = SOV_fight_hyperinflation }
+        x = 0
+        y = 2
+        cost = 5
+        
+        completion_reward = {
+            
+        }
+    }
+
+    focus = { 
+        id = SOV_baltic_negotiations
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_the_first_free_elections_in_the_ussr
+		prerequisite = { focus = SOV_yeltsin_path focus = SOV_nazarbayev_path }
+        x = 0
+        y = 2
+        cost = 5
+        
+        completion_reward = {
+            
+        }
+    }
+
+    focus = { 
+        id = SOV_georgia_negotiations
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_baltic_negotiations
+		prerequisite = { focus = SOV_baltic_negotiations }
+        x = 0
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            
+        }
+    }
+
+    focus = { 
+        id = SOV_create_uss_defense_union
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_georgia_negotiations
+		prerequisite = { focus = SOV_georgia_negotiations }
+        x = 0
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            
+        }
+    }
+
+    focus = { 
+        id = SOV_nazarbayev_path
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_the_first_free_elections_in_the_ussr
+		prerequisite = { focus = SOV_the_first_free_elections_in_the_ussr }
+        x = 2
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_create_an_inter_republican_bank
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_nazarbayev_path
+		prerequisite = { focus = SOV_nazarbayev_path }
+        x = 2
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+
+        }
+    }
+
+    focus = { 
+        id = SOV_conduct_small_scale_privatization
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_create_an_inter_republican_bank
+		prerequisite = { focus = SOV_create_an_inter_republican_bank }
+        x = -1
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+
+        }
+    }
+
+    focus = { 
+        id = SOV_freedom_of_movement_of_goods
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_create_an_inter_republican_bank
+		prerequisite = { focus = SOV_create_an_inter_republican_bank }
+        x = 1
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+
+        }
+    }
+
+    focus = { 
+        id = SOV_policy_of_compromise
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_create_an_inter_republican_bank
+		prerequisite = { focus = SOV_conduct_small_scale_privatization }
+        prerequisite = { focus = SOV_freedom_of_movement_of_goods }
+        x = 0
+        y = 2
+        cost = 5
+        
+        completion_reward = {
+
         }
     }
 }

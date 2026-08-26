@@ -152,6 +152,7 @@ set_variable = { var = reform_coalition value = 302 }
 peoples_deputies_russia_initial = yes
 
 set_country_flag = reform_coalition_allied
+set_country_flag = democratic_union_allied
 ####
 
 set_politics = {

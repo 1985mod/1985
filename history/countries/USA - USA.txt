@@ -236,8 +236,7 @@ activate_advisor = USA_george_shultz
 activate_advisor = USA_donald_hodel
 activate_advisor = USA_don_regan
 
-
-
+set_variable = { var = current_debt value = 1823 }
 
 set_popularities = {
 	liberalism = 40

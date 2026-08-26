@@ -184,22 +184,22 @@ tax_effect = {
     divide_variable = { var = vat_tax value = 365 }
 
     set_variable = { var = export_oil value = resource_exported@oil }
-    multiply_variable = { var = export_oil value = 0.06 }
+    multiply_variable = { var = export_oil value = 0.025 }
 
     set_variable = { var = export_tungsten value = resource_exported@tungsten }
-    multiply_variable = { var = export_tungsten value = 0.04 }
+    multiply_variable = { var = export_tungsten value = 0.030 }
 
     set_variable = { var = export_aluminum value = resource_exported@aluminum }
-    multiply_variable = { var = export_aluminum value = 0.035 }
+    multiply_variable = { var = export_aluminum value = 0.032 }
 
     set_variable = { var = export_steel value = resource_exported@steel }
-    multiply_variable = { var = export_steel value = 0.03 }
+    multiply_variable = { var = export_steel value = 0.027 }
 
     set_variable = { var = export_chromium value = resource_exported@chromium }
     multiply_variable = { var = export_chromium value = 0.03 }
 
     set_variable = { var = export_rubber value = resource_exported@rubber }
-    multiply_variable = { var = export_rubber value = 0.025 }
+    multiply_variable = { var = export_rubber value = 0.03 }
 
     set_variable = { var = export_coal value = resource_exported@coal }
     multiply_variable = { var = export_coal value = 0.01 }
@@ -465,14 +465,14 @@ tax_effect = {
     multiply_variable = { var = num_ships_defense value = 0.0003 }
 
     set_variable = { var = amount_manpower_in_deployment_queue_defense value = amount_manpower_in_deployment_queue }
-    multiply_variable = { var = amount_manpower_in_deployment_queue_defense value = 0.0009 }
+    multiply_variable = { var = amount_manpower_in_deployment_queue_defense value = 0.0012 }
     divide_variable = { var = amount_manpower_in_deployment_queue_defense value = 1000 }
 
     set_variable = { var = num_of_supply_nodes_defense value = num_of_supply_nodes }
-    multiply_variable = { var = num_of_supply_nodes_defense value = 0.001 }
+    multiply_variable = { var = num_of_supply_nodes_defense value = 0.05 }
 
     set_variable = { var = num_battalions_defense value = num_battalions }
-    multiply_variable = { var = num_battalions_defense value = 0.00005 }
+    multiply_variable = { var = num_battalions_defense value = 0.0007 }
 
     set_variable = { var = defense_expenditure value = army_manpower_k_defense }
     add_to_variable = { var = defense_expenditure value = num_deployed_planes_defense }
@@ -493,6 +493,8 @@ tax_effect = {
     add_to_variable = { var = expense_budget value = education_expenditure }
     add_to_variable = { var = expense_budget value = welfare_expenditure }
     add_to_variable = { var = expense_budget value = defense_expenditure }
+    add_to_variable = { var = expense_budget value = current_research_cost }
+    add_to_variable = { var = expense_budget value = debt_service_cost }
 
     # Money supply
     add_to_variable = { var = money_supply value = expense_budget }
@@ -502,6 +504,24 @@ tax_effect = {
     if = {
         limit = { check_variable = { money_supply < 0 } }
         set_variable = { var = money_supply value = 0 }
+    }
+
+    set_variable = { var = science_budget_ratio value = 0.0015 }
+	set_variable = { var = gdp_research_penalty value = nominal_gdp }
+	multiply_variable = { var = gdp_research_penalty value = science_budget_ratio }
+
+	set_variable = { var = current_research_cost value = gdp_research_penalty }
+
+
+    ### обслуживание долга ###
+
+    set_variable = { var = debt_service_cost value = current_debt }
+
+    divide_variable = { var = debt_service_cost value = 120.4 }
+
+    if = {
+        limit = { check_variable = { debt_service_cost < 0.0 } }
+        set_variable = { var = debt_service_cost value = 0.0 }
     }
 }
 
@@ -530,5 +550,20 @@ corruption_effect = {
 
 velocity_effect = {
     every_country = {
+        if = { limit = { NOT = { has_variable = money_supply } } set_variable = { var = money_supply value = 1000 } }
+        if = { limit = { NOT = { has_variable = nominal_gdp } } set_variable = { var = nominal_gdp value = 1000 } }
+        if = { limit = { NOT = { has_variable = inflation_rate } } set_variable = { var = inflation_rate value = 0 } }
+        if = { limit = { NOT = { has_variable = annual_interest_rate } } set_variable = { var = annual_interest_rate value = 0.05 } }
+        if = { limit = { NOT = { has_variable = target_inflation } } set_variable = { var = target_inflation value = 2.0 } }
+
+        if = {
+            limit = { check_variable = { var = money_supply value = 0 compare = greater_than } }
+            set_variable = { var = velocity value = nominal_gdp }
+            divide_variable = { var = velocity value = money_supply }
+        }
+        else = {
+            set_variable = { var = velocity value = 0 }
+        }
+        clamp_variable = { var = velocity min = 0.1 max = 10 }
     }
 }

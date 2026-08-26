@@ -3,9 +3,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { v = 1 }
-			NOT = {
-				has_country_flag = peoples_deputies_parliament
-			}
+			has_country_flag = peoples_deputies_parliament
 		}
 		localization_key = block_russian_unity_text
 	}
@@ -40,5 +38,48 @@ defined_text = {
 			has_country_flag = peoples_deputies_parliament
 		}
 		localization_key = block_reform_coalition_text
+	}
+}
+
+defined_text = {
+	name = GetPeoplesDeputiesBlocAlliance
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+			has_country_flag = russian_unity_allied
+		}
+		localization_key = peoples_deputies_bloc_allied
+	}
+
+	text = {
+		trigger = {
+			check_variable = { v = 2 }
+			has_country_flag = creative_forces_allied
+		}
+		localization_key = peoples_deputies_bloc_allied
+	}
+
+	text = {
+		trigger = {
+			check_variable = { v = 3 }
+			has_country_flag = outside_the_blocks_allied
+		}
+		localization_key = peoples_deputies_bloc_allied
+	}
+
+	text = {
+		trigger = {
+			check_variable = { v = 4 }
+			has_country_flag = democratic_union_allied
+		}
+		localization_key = peoples_deputies_bloc_allied
+	}
+
+	text = {
+		trigger = {
+			check_variable = { v = 5 }
+			has_country_flag = reform_coalition_allied
+		}
+		localization_key = peoples_deputies_bloc_allied
 	}
 }

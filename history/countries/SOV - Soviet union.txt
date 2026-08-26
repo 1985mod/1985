@@ -241,7 +241,7 @@ add_opinion_modifier = {
 }	
 }
 
-add_dynamic_modifier = { modifier = SOV_cold_war}
+add_dynamic_modifier = { modifier = SOV_cold_war }
 
 add_ideas = {
 	SOV_soviet_contingent_in_afghanistan
@@ -308,6 +308,8 @@ give_guarantee = ROM
 give_guarantee = BUL
 give_guarantee = CZE
 give_guarantee = MON
+
+set_variable = { var = current_debt value = 289.3 }
 
 if = {
 	limit = {

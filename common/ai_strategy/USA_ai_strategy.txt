@@ -4,7 +4,6 @@ USA_preparing_for_war_in_iraq = {
 			tag = ENG
 			tag = FRA
 			tag = EGY
-			tag = SAU
 			tag = KUW
 			tag = UAE
 			tag = OMA
@@ -19,7 +18,6 @@ USA_preparing_for_war_in_iraq = {
 			tag = ENG
 			tag = FRA
 			tag = EGY
-			tag = SAU
 			tag = KUW
 			tag = UAE
 			tag = OMA
@@ -27,7 +25,6 @@ USA_preparing_for_war_in_iraq = {
             tag = USA
 		}
         has_country_flag = anti_iraq_coalition
-        USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
     }
     abort = {
         USA = { has_completed_focus = USA_victory_in_iraq }
@@ -47,7 +44,6 @@ USA_preparing_for_war_in_iraq = {
 			tag = ENG
 			tag = FRA
 			tag = EGY
-			tag = SAU
 			tag = KUW
 			tag = UAE
 			tag = OMA
@@ -62,7 +58,6 @@ USA_preparing_for_war_in_iraq = {
 			tag = ENG
 			tag = FRA
 			tag = EGY
-			tag = SAU
 			tag = KUW
 			tag = UAE
 			tag = OMA
