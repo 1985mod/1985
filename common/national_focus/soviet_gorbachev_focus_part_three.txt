@@ -329,19 +329,6 @@
     }
 
     focus = { 
-        id = SOV_win_day
-        icon = GFX_NONE
-        x = 0
-        y = 1
-        relative_position_id = SOV_issue_written_order_to_storm_the_white_house
-        prerequisite = { focus = SOV_issue_written_order_to_storm_the_white_house }
-        cost = 1.5
-        completion_reward = {
-            add_political_power = 100
-        }
-    }
-
-    focus = { 
         id = SOV_dissolve_the_ussr_cabinet_of_ministers
         icon = GFX_NONE
         x = 2
