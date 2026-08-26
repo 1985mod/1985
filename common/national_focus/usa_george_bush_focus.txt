@@ -38,7 +38,7 @@ focus_tree = {
         cost = 2
 		
         completion_reward = {
-
+			country_event = { id = usa.36 hours = 3 }
 	    }
 	}
 
@@ -52,7 +52,42 @@ focus_tree = {
         cost = 4
 		
         completion_reward = {
-
+			if = {
+				limit = {
+					has_idea = depression
+				}
+				swap_ideas = {
+					remove_idea = depression
+					add_idea = recession
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = recession
+				}
+				swap_ideas = {
+					remove_idea = recession
+					add_idea = stagnation
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = stagnation
+				}
+				swap_ideas = {
+					remove_idea = stagnation
+					add_idea = sustainable_growth
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = sustainable_growth
+				}
+				swap_ideas = {
+					remove_idea = sustainable_growth
+					add_idea = economic_boom
+				}  
+			}	
 	    }
 	}
 
@@ -580,7 +615,7 @@ focus_tree = {
 		}
 		
         completion_reward = {
-
+			add_stability = 0.05
 	    }
 	}
 
@@ -624,7 +659,7 @@ focus_tree = {
         cost = 3
 		
         completion_reward = {
-			country_event = { id = usa.16 hours = 3 }
+			SOV = { country_event = { id = usa.37 hours = 3 } }
 	    }
 	}
 
@@ -652,7 +687,37 @@ focus_tree = {
         cost = 2
 		
         completion_reward = {
-
+			add_timed_idea = {
+				idea = USA_break_your_promise_idea
+				days = 180
+			}
+			custom_effect_tooltip = we_will_raise_taxes_by_1_percent 
+			add_to_variable = { var = pop_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { pop_rate > 100 } 
+				}
+				set_variable = { var = pop_rate value = 100 }
+			}
+			custom_effect_tooltip = we_will_raise_taxes_on_businesses_by_1_percent 
+			add_to_variable = { var = corp_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { corp_rate > 100 } 
+				}
+				set_variable = { var = corp_rate value = 100 }
+			}
+			custom_effect_tooltip = we_will_increase_the_vat_rate_by_1_percent 
+			add_to_variable = { var = vat_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { vat_rate > 100 } 
+				}
+				set_variable = { var = vat_rate value = 100 }
+			}
 	    }
 	}
 
@@ -701,7 +766,7 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_speech_in_kyiv
+        id = USA_reduction_of_nuclear_stockpiles
 		relative_position_id = USA_focus_on_internal_problems
 		prerequisite = { focus = USA_signing_of_the_start_it_reaty  }
 		prerequisite = { focus = USA_increase_funding_for_research  }
@@ -711,21 +776,8 @@ focus_tree = {
         cost = 2
 		
         completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_reduction_of_nuclear_stockpiles
-		relative_position_id = USA_speech_in_kyiv
-		prerequisite = { focus = USA_speech_in_kyiv  }
-        icon = GFX_	
-        x = 0
-        y = 1
-        cost = 2
-		
-        completion_reward = {
-			add_stability = -0.1
+			add_stability = 0.05
+			add_war_support = -0.05
 	    }
 	}
 
@@ -753,7 +805,7 @@ focus_tree = {
         cost = 2
 		
         completion_reward = {
-
+			add_political_power = 50
 	    }
 	}
 
@@ -1046,7 +1098,7 @@ focus_tree = {
 		}
 
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1078,7 +1130,7 @@ focus_tree = {
 		}
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1092,7 +1144,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1106,7 +1158,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1120,7 +1172,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1134,7 +1186,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1148,7 +1200,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1162,7 +1214,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1177,7 +1229,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1191,7 +1243,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1205,7 +1257,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1219,7 +1271,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1234,7 +1286,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1248,7 +1300,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1262,7 +1314,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1276,7 +1328,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 
@@ -1292,7 +1344,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			add_political_power = 1000
+
 	    }
 	}
 }

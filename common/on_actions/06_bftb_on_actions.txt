@@ -14,6 +14,18 @@ on_actions = {
 			PHI = {
 				country_event = { id = philippines.1 days = 419 }
 			}
+			USA = {
+				country_event = { id = usa.19 days = 28 }
+				country_event = { id = usa.20 days = 39 }
+				country_event = { id = usa.21 days = 100 }
+				country_event = { id = usa.22 days = 150 }
+				country_event = { id = usa.23 days = 159 }
+				country_event = { id = usa.24 days = 290 }
+				country_event = { id = usa.25 days = 517 }
+				country_event = { id = usa.26 days = 570 }
+				country_event = { id = usa.27 days = 734 }
+				country_event = { id = usa.28 days = 866 }
+			}
         }
     }
 	on_monthly = {
