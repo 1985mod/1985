@@ -33,7 +33,7 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			check_variable = { var = country_gdp value = 1000 compare = less_than }
+			check_variable = { var = real_gdp value = 1000 compare = less_than }
 		}
 		localization_key = REAL_GDP_less_than_1000
 	}

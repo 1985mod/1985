@@ -2,7 +2,7 @@ calculate_nominal_gdp_effect = {
     every_country = { 
         if = {
             limit = { NOT = { has_variable = money_supply } }
-            set_variable = { var = money_supply value = country_gdp }
+            set_variable = { var = money_supply value = real_gdp }
         }
         if = {
             limit = { check_variable = { velocity < 0.5 } }
@@ -27,15 +27,15 @@ inflation_effect = {
         }
         if = { 
             limit = { NOT = { has_variable = nominal_gdp } } 
-            set_variable = { var = nominal_gdp value = country_gdp } 
+            set_variable = { var = nominal_gdp value = real_gdp } 
         }
 
         if = {
             limit = {
-                has_variable = country_gdp
+                has_variable = real_gdp
                 has_variable = nominal_gdp
                 has_variable = inflation_rate
-                check_variable = { var = country_gdp value = 0 compare = greater_than }
+                check_variable = { var = real_gdp value = 0 compare = greater_than }
             }
             
             if = {
@@ -46,7 +46,7 @@ inflation_effect = {
             }
 
             set_temp_variable = { var = instant_inflation value = nominal_gdp }
-            divide_temp_variable = { var = instant_inflation value = country_gdp }
+            divide_temp_variable = { var = instant_inflation value = real_gdp }
             subtract_from_temp_variable = { var = instant_inflation value = 1 }
             multiply_temp_variable = { var = instant_inflation value = 100 }
             

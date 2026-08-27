@@ -6,8 +6,8 @@
  ECONOMY_NAVAL_FACTORIES:0 "[?num_of_naval_factories|Y0]"
 
  REAL_GDP:0 "[Root.real_gdp_display]   "
- REAL_GDP_more_than_1000:0 "[?country_gdp_divided_by_1000|2Y] трлн $"
- REAL_GDP_less_than_1000:0 "[?country_gdp|2Y] млрд $"
+ REAL_GDP_more_than_1000:0 "[?real_gdp_divided_by_1000|2Y] трлн $"
+ REAL_GDP_less_than_1000:0 "[?real_gdp|2Y] млрд $"
 
  NOMINAL_GDP:0 "      [Root.nominal_gdp_display]"
  NOMINAL_GDP_more_than_1000:0 "[?nominal_gdp_divided_by_1000|2Y] трлн $"

@@ -261,7 +261,12 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}		
+			}	
+			add_to_variable = {
+				var = treasury
+				value = 2
+				tooltip = add_2_billion_to_treasury_tt
+			}	
 	    }
 	}
 	
@@ -320,6 +325,16 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+            add_tech_bonus = {
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 1
+                category = industry
+            }
 	    }
 	}
 	
@@ -364,21 +379,14 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			random_owned_controlled_state = {
-				limit = {					
-					is_in_home_area = yes					
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
+			custom_effect_tooltip = we_will_decrease_taxes_by_3_percent 
+			subtract_from_variable = { var = pop_rate value = 3 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { pop_rate > 100 } 
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+				set_variable = { var = pop_rate value = 100 }
 			}
 	    }
 	}
@@ -409,6 +417,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+            add_tech_bonus = {
+                bonus = 1.0
+                uses = 1
+                category = electronics
+            }
 	    }
 	}
 
