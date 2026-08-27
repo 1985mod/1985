@@ -20,15 +20,32 @@ set_technology = {
 	gw_artillery = 1
 }
 
+country_event = {
+	id = sweden.1
+	days = 257
+}
+
+country_event = {
+	id = sweden.2
+	days = 1357
+}
+
+country_event = {
+	id = sweden.3
+	days = 2449
+}
+
 set_politics = {
 	ruling_party = socialism
-	last_election = "1982.1.19"
-	election_frequency = 72
+	last_election = "1982.9.19"
+	election_frequency = 36
 	elections_allowed = yes 
 }
 set_popularities = {
-	socialism = 55
-	conservatism = 45
+	socialism = 45
+	conservatism = 23
+	liberalism = 27
+	communism = 5
 }
 
 set_stability = 0.72
@@ -36,7 +53,13 @@ set_war_support = 0.23
 set_convoys = 80
 
 recruit_character = SWE_olof_palme
+recruit_character = SWE_ingvar_carlsson
+recruit_character = SWE_bengt_westerberg
+recruit_character = SWE_ulf_adelsoh
+recruit_character = SWE_carl_bildt
 
 add_ideas = {
 	low_economic_mobilisation
+	SWE_military_neutrality
+	SWE_industrial_exports
 }

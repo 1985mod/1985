@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = marxism
+			ideology = marxism_leninism
 			traits={  }
 			expire="1993.11.9.1"		
 		}

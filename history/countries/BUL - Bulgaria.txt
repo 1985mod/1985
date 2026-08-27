@@ -16,7 +16,7 @@ set_technology = {
 	paratroopers = 1
 	gw_artillery = 1
 }
-
+recruit_character = BUL_Todor_Zhivkov
 recruit_character = BUL_Petr_Mladenov
 recruit_character = BUL_Zhelyu_Zhelev
 

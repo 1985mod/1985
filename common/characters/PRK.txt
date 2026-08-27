@@ -8,7 +8,7 @@ characters = {
 
 		}
 		country_leader={
-			ideology = marxism
+			ideology = marxism_leninism
 			traits = {  }
 			expire = "1994.8.8.2"
 		}
@@ -23,7 +23,7 @@ characters = {
 
 		}
 		country_leader={
-			ideology = marxism
+			ideology = marxism_leninism
 			traits = {  }
 			expire = "2011.1.1.1"
 		}

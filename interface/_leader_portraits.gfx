@@ -52,6 +52,31 @@ spriteTypes = {
 		name = GFX_portrait_USA_ronald_reagan
 		textureFile = "gfx/leaders/USA/Portrait_Ronald_Reagan.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Portrait_george_bush"
+		texturefile = "gfx/leaders/USA/Portrait_George_Bush.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_george_bush_1992"
+		texturefile = "gfx/leaders/USA/Portrait_George_Bush_1992.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_michael_dukakis"
+		texturefile = "gfx/leaders/USA/Portrait_Michael_Dukakis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_bill_clinton"
+		texturefile = "gfx/leaders/USA/Portrait_Bill_Clinton.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Muhammadu_Buhari"
+		texturefile = "gfx/leaders/NGA/Portrait_Muhammadu_Buhari.dds"
+	}
     
 	##FRA##
 	spriteType = {
@@ -319,6 +344,31 @@ spriteTypes = {
 		name = GFX_portrait_SWE_olof_palme
 		texturefile = "gfx/leaders/SWE/Portrait_Olof_Palme.dds"
 	}
+
+	spriteType = {
+		name = GFX_portrait_SWE_ingvar_carlsson
+		texturefile = "gfx/leaders/SWE/Portrait_Ingvar_Carlsson.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWE_ingvar_carlsson
+		texturefile = "gfx/leaders/SWE/Portrait_Ingvar_Carlsson.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWE_carl_bildt
+		texturefile = "gfx/leaders/SWE/Portrait_Carl_Bildt.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWE_bengt_westerberg
+		texturefile = "gfx/leaders/SWE/Portrait_bengt_westerberg.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWE_ulf_adelsohn
+		texturefile = "gfx/leaders/SWE/Portrait_Ulf_Adelsohn.dds"
+	}
 	
 	## SPR ##
 	spriteType = {
@@ -347,6 +397,21 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_NOR_kare_willoch
 		texturefile = "gfx/leaders/NOR/Portrait_Kåre_Willoch.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_NOR_Jan_Syse
+		texturefile = "gfx/leaders/NOR/Portrait_Jan_Syse.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_NOR_Gro_Harlem_Brundtland
+		texturefile = "gfx/leaders/NOR/Portrait_Gro_Harlem_Brundtland.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_NOR_Erling_Norvik
+		texturefile = "gfx/leaders/NOR/Portrait_Erling_Norvik.dds"
 	}
 	
 	## LUX ##
@@ -377,6 +442,26 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_FIN_mauno_koivisto
 		texturefile = "gfx/leaders/FIN/Portrait_Mauno_Koivisto.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_FIN_par_stenback
+		texturefile = "gfx/leaders/FIN/Portrait_Par_Stenback.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_FIN_harri_holkeri
+		texturefile = "gfx/leaders/FIN/Portrait_Harri_Holkeri.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_FIN_Taisto_Sinisalo
+		texturefile = "gfx/leaders/FIN/Portrait_Taisto_Sinisalo.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_FIN_Paavo_Vayrynen
+		texturefile = "gfx/leaders/FIN/Portrait_Paavo_Vayrynen.dds"
 	}
 	
 	## DEN ##
@@ -574,33 +659,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Manuel_Noriega"
 		texturefile = "gfx/leaders/PAN/Portrait_Manuel_Noriega.dds"
-	}
-
-	## USA ###
-	
-	spriteType = {
-		name = "GFX_Portrait_george_bush"
-		texturefile = "gfx/leaders/USA/Portrait_George_Bush.dds"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_george_bush_1992"
-		texturefile = "gfx/leaders/USA/Portrait_George_Bush_1992.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_Portrait_michael_dukakis"
-		texturefile = "gfx/leaders/USA/Portrait_Michael_Dukakis.dds"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_bill_clinton"
-		texturefile = "gfx/leaders/USA/Portrait_Bill_Clinton.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_Portrait_Muhammadu_Buhari"
-		texturefile = "gfx/leaders/NGA/Portrait_Muhammadu_Buhari.dds"
 	}
 
 	### ICE ###

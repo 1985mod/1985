@@ -1,0 +1,298 @@
+add_namespace = sweden
+
+country_event = {
+	id = sweden.1 ##  Выборы 1985 года ##
+	title = sweden.1.t
+	desc = sweden.1.desc
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+    # Улоф Пальме
+	option = {
+		name = sweden.1.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+	}
+
+	# Ульф Адельсон
+	option = {
+		name = sweden.1.b
+		ai_chance = {
+			base = 15
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = conservatism
+                popularity = 0.15
+			}
+		}
+	}
+
+	# Бенгт Вестерберг
+	option = {
+		name = sweden.1.c
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = liberalism
+                popularity = 0.15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.2 ##  Выборы 1988 года ##
+	title = sweden.2.t
+	desc = sweden.2.desc
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+    # Ингвар Карлссон
+	option = {
+		name = sweden.2.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+	}
+
+	# Карл Бильдт
+	option = {
+		name = sweden.2.b
+		ai_chance = {
+			base = 15
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = bildt
+			remove_country_leader = { name = "SWE_ulf_adelsoh" }
+			promote_character = {
+				character = SWE_carl_bildt
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = conservatism
+                popularity = 0.15
+			}
+		}
+	}
+
+	# Бенгт Вестерберг
+	option = {
+		name = sweden.2.c
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = liberalism
+                popularity = 0.15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sweden.3 ##  Выборы 1991 года ##
+	title = sweden.3.t
+	desc = sweden.3.desc
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+    # Карл Бильдт
+	option = {
+		name = sweden.3.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = bildt
+			remove_country_leader = { name = "SWE_ulf_adelsoh" }
+			promote_character = {
+				character = SWE_carl_bildt
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = conservatism
+                popularity = 0.15
+			}
+		}
+	}
+
+	# Ингвар Карлссон
+	option = {
+		name = sweden.3.b
+		ai_chance = {
+			base = 15
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+	}
+
+	# Бенгт Вестерберг
+	option = {
+		name = sweden.3.c
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = liberalism
+                popularity = 0.15
+			}
+		}
+	}
+}
