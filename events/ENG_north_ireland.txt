@@ -58,14 +58,16 @@ country_event = {
         name = ENG_North_ireland.4.a
         ENG = {
             complete_national_focus = IRA_inegrated_North_Ireland
-            set_global_flag = IRA_conflict_resolved    
+            set_global_flag = IRA_conflict_resolved  
+            set_global_flag = IRA_integration_complete  
         }
     }
     option = {
         name = ENG_North_ireland.4.b
-        IRE = {
-            country_event = IRA_Focus.3
-        }
+            complete_national_focus = IRA_inegrated_North_Ireland
+            complete_national_focus = IRA_war_with_ireland
+            set_global_flag = IRA_conflict_resolved  
+            set_global_flag = IRA_integration_complete      
     }
 }
 country_event = {
@@ -78,12 +80,26 @@ country_event = {
 
     option = {
         name = ENG_North_ireland.5.a
-        ENG = {
-            complete_national_focus = IRA_inegrated_North_Ireland
-        }
     }
-    option = {
-        name = ENG_North_ireland.5.b
+}
+country_event = {
+        id = ENG_North_ireland.6
+    title = ENG_North_ireland.6.t
+    desc = ENG_North_ireland.6.d
+    picture = GFX_report_event_generic_handshake
+    fire_only_once = yes
+    is_triggered_only = yes
 
+    option = {
+        name = ENG_North_ireland.6.a
+        set_global_flag = IRA_conflict_resolved  
+        set_global_flag = IRA_integration_complete      
+    }
+        option = {
+        name = ENG_North_ireland.6.b
+        complete_national_focus = IRA_inegrated_North_Ireland
+        complete_national_focus = IRA_war_with_ireland
+        set_global_flag = IRA_conflict_resolved  
+        set_global_flag = IRA_integration_complete      
     }
 }
