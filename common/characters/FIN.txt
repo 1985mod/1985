@@ -12,7 +12,81 @@ characters = {
 		country_leader={
 			ideology = nordic_model
 			traits={  }
-			expire="1989.11.9.1"		
+			expire="1989.11.9.1"
+			id = -1
+		}
+	}
+
+	FIN_par_stenback ={
+		name = FIN_par_stenback
+		portraits={
+			civilian={
+				large= GFX_Portrait_FIN_par_stenback
+			}
+			army = {
+				large = GFX_Portrait_FIN_par_stenback
+			}
+		}
+		country_leader={
+			ideology = social_liberalism
+			traits={  }
+			expire="1989.11.9.1"
+			id = -1		
+		}
+	}
+	
+    FIN_paavo_vayrynen ={
+		name = FIN_paavo_vayrynen
+		portraits={
+			civilian={
+				large= GFX_Portrait_FIN_Paavo_Vayrynen
+			}
+			army = {
+				large = GFX_Portrait_FIN_Paavo_Vayrynen
+			}
+		}
+		country_leader={
+			ideology = national_conservatism
+			traits={  }
+			expire="1989.11.9.1"
+			id = -1		
+		}
+	}
+
+	FIN_harri_holkeri ={
+		name = FIN_harri_holkeri
+		portraits={
+			civilian={
+				large= GFX_Portrait_FIN_harri_holkeri
+			}
+			army = {
+				large = GFX_Portrait_FIN_harri_holkeri
+			}
+		}
+		country_leader={
+			ideology = social_conservatism
+			traits={  }
+			expire="1989.11.9.1"
+			id = -1		
+		}
+	}
+
+	FIN_taisto_sinisalo ={
+		name = FIN_taisto_sinisalo
+		portraits={
+			civilian={
+				large= GFX_Portrait_FIN_Taisto_Sinisalo
+			}
+			army = {
+				large = GFX_Portrait_FIN_Taisto_Sinisalo
+			}
+		}
+		country_leader={
+			ideology = stalinism
+			traits={  }
+			expire="1989.11.9.1"
+			id = -1	
 		}
 	}
 }
+	

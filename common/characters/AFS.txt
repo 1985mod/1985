@@ -79,7 +79,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = leninism
+			ideology = marxism_leninism
 			traits = {}
 			expire = "2020.1.1"
 			id = -101

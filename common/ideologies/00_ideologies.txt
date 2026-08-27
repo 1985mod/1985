@@ -4,10 +4,10 @@ ideologies = {
 
 		types = {
 
-			marxism = {
+			marxism_leninism = {
 			}
 
-			leninism = {
+			stalinism = {
 			}
 
 			chinese_socialism = {
@@ -284,6 +284,12 @@ ideologies = {
 			}
 			
 			military_regimes = {
+			}
+
+			absolute_monarchy = {
+			}
+
+			constitutional_monarchy = {
 			}
 			
 			Salafism = {

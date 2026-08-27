@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = leninism
+			ideology = marxism_leninism
 			traits = { }
 			expire = "1989.22.12.1"
 			id = -1
