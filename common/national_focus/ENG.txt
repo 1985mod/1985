@@ -14,7 +14,7 @@ focus_tree = {
 	focus = {
 		id = IRA_start_treaty
 		icon = GFX_unknow
-		x = 11
+		x = 10
 		y = 4
 		cost = 0
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -36,7 +36,7 @@ focus_tree = {
 	focus = {
 		id = IRA_no_deal_was_reached
 		icon = GFX_unknow
-		x = 13
+		x = 11
 		y = 5
 		cost = 10
 		prerequisite = { focus = IRA_start_treaty }
@@ -84,17 +84,17 @@ focus_tree = {
 	focus = {
 		id = IRA_inegrated_North_Ireland
 		icon = GFX_unknow
-		x = 8
+		x = 9
 		y = 6
 		cost = 10
-		prerequisite = { focus = IRA_end_of_IRA }
+		prerequisite = { focus = IRA_end_of_IRA focus = IRA_no_deal_was_reached }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available = {
 			always = no
 		}
 
 		completion_reward = {
-		 set_global_flag = IRA_integration_complete	
+		 set_global_flag = IRA_integration_complete
 		119 = { remove_dynamic_modifier = { modifier = northern_ireland_IRA_activity } }
 		}
 
@@ -106,7 +106,7 @@ focus_tree = {
 	focus = {
 		id = IRA_North_ireland_authonomy
 		icon = GFX_unknow
-		x = 10
+		x = 11
 		y = 6
 		cost = 10
 		prerequisite = { focus = IRA_end_of_IRA focus = IRA_no_deal_was_reached }
@@ -119,85 +119,6 @@ focus_tree = {
 		set_global_flag = northern_ireland_autonomy_unlocked
         119 = { remove_dynamic_modifier = { modifier = northern_ireland_IRA_activity } }
         119 = { add_dynamic_modifier = { modifier = northern_ireland_autonomy } }	
-		}
-
-		ai_will_do = {
-			base = 1
-		}
-	}
-	focus = {
-		id = IRA_we_losed_to_IRA
-		icon = GFX_unknow
-		x = 14
-		y = 6
-		cost = 10
-		prerequisite = { focus = IRA_no_deal_was_reached focus = IRA_end_of_IRA }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		available = {
-			always = no
-		}
-
-		completion_reward = {
-		}
-
-		ai_will_do = {
-			base = 1
-		}
-	}
-
-	focus = {
-		id = IRA_war_with_ireland
-		icon = GFX_unknow
-		x = 12
-		y = 6
-		cost = 10
-		prerequisite = { focus = IRA_no_deal_was_reached focus = IRA_end_of_IRA }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		available = {
-		always = no	
-		}
-
-		completion_reward = {
-		}
-
-		ai_will_do = {
-			base = 1
-		}
-	}
-	focus = {
-		id = IRA_British_triumph
-		icon = GFX_unknow
-		x = 10
-		y = 7
-		cost = 10
-		prerequisite = { focus = IRA_inegrated_North_Ireland }
-		prerequisite = { focus = IRA_war_with_ireland }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		available = {
-		always = no	
-		}
-
-		completion_reward = {
-		}
-
-		ai_will_do = {
-			base = 1
-		}
-	}
-	focus = {
-		id = IRA_British_shame
-		icon = GFX_unknow
-		x = 12
-		y = 7
-		cost = 10
-		prerequisite = { focus = IRA_war_with_ireland }
-		prerequisite = { focus = IRA_we_losed_to_IRA }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		available = {
-		always = no	
-		}
-
-		completion_reward = {
 		}
 
 		ai_will_do = {
