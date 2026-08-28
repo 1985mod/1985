@@ -11,14 +11,10 @@ state = {
 
 	history = {
 
-		owner = LEB
+		owner = ISR
 		add_core_of = LEB
 		victory_points = {
 			13497 3
-		}
-
-		1984.12.1 = {
-			controller = ISR
 		}
 
 		buildings = {

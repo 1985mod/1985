@@ -652,6 +652,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = WGR_division_of_the_people
 		prerequisite = { focus = WGR_division_of_the_people }
+		mutually_exclusive = { focus = WGR_accept_separation }
 		x = -2
 		y = 1
 
@@ -667,6 +668,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = WGR_division_of_the_people
 		prerequisite = { focus = WGR_division_of_the_people }
+		mutually_exclusive = { focus = WGR_other_association }
 		x = 0
 		y = 1
 

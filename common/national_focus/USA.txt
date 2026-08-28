@@ -92,7 +92,6 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-			country_event = { id = usa.14 hours = 6 }
 			SOV = {
 				country_event = { id = usa.14 hours = 12 }
 			}	

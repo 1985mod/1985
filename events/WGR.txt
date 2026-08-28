@@ -521,6 +521,7 @@ country_event = {
         name = wgr.23.a
 		add_political_power = 25
 		add_stability = 0.05
+		news_event = { id = news.35 }
 		set_politics = {
 			ruling_party = conservatism
 			elections_allowed = yes
@@ -556,6 +557,7 @@ country_event = {
         name = wgr.24.a
 		add_political_power = 25
 		add_stability = 0.05
+		news_event = { id = news.36 }
 		set_politics = {
 			ruling_party = socialism
 			elections_allowed = yes

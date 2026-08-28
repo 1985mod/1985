@@ -368,4 +368,76 @@ characters={
 			}
 		}
 	}
+
+	USA_donald_rumsfeld = {
+		name = USA_donald_rumsfeld
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/USA/idea_portrait_donald_rumsfeld.dds"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = USA_donald_rumsfeld
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	USA_charles_gabriel = {
+		name = USA_charles_gabriel
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/USA/idea_portrait_charles_gabriel.dds"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = USA_charles_gabriel
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	USA_james_watkins = {
+		name = USA_james_watkins
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/USA/idea_portrait_james_watkins.dds"
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = USA_james_watkins
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				navy_chief_maneuver_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
 }
