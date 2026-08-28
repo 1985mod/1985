@@ -1,11 +1,6 @@
 ﻿capital = 454
 
 set_oob = ISR_1985
-
-declare_war_on = {
-	target = LEB
-	type = topple_government
-}
  
 set_technology = {
 	infantry_weapons = 1

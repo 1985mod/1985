@@ -266,6 +266,9 @@ recruit_character = SOV_andrey_gromyko
 recruit_character = SOV_fedorchuk_vasilievich
 recruit_character = SOV_nikolay_baibakov
 recruit_character = SOV_boris_yeltsin_advisor
+recruit_character = SOV_mikhail_suslov
+recruit_character = SOV_yegor_yakovlev
+recruit_character = SOV_heydar_aliyev
 recruit_character = SOV_nikolay_tikhonov
 recruit_character = SOV_nikolay_ryzhkov
 recruit_character = SOV_dmitry_yazov
@@ -284,6 +287,7 @@ recruit_character = SOV_victor_ermakov
 recruit_character = SOV_igor_rodionov
 recruit_character = SOV_boris_tkach
 recruit_character = SOV_dzhokhar_dudayev
+recruit_character = SOV_sergey_gorshkov
 
 activate_advisor = SOV_nikolay_tikhonov
 activate_advisor = SOV_andrey_gromyko

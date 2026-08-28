@@ -533,6 +533,28 @@ characters = {
 		}
 
 	}
+
+	SOV_sergey_gorshkov = {
+		name = SOV_sergey_gorshkov
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SOV/idea_portrait_sergey_gorshkov.dds"
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = SOV_sergey_gorshkov
+			traits = {
+				navy_chief_decisive_battle_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+
+	}
 	#####POLITICAL ADVISORS####
 	SOV_Shaposhnikov = {
 		name = SOV_Shaposhnikov
@@ -647,6 +669,69 @@ characters = {
 			idea_token = SOV_boris_yeltsin_advisor
 			traits = {
 				SOV_moscow_city_committee
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+
+	}
+
+	SOV_mikhail_suslov = {
+		name = SOV_mikhail_suslov
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SOV/idea_portrait_mikhail_suslov.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = political_advisor
+			idea_token = SOV_mikhail_suslov
+			traits = {
+				patriotic_socialist 
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+
+	}
+
+	SOV_yegor_yakovlev = {
+		name = SOV_yegor_yakovlev
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SOV/idea_portrait_yegor_yakovlev.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = political_advisor
+			idea_token = SOV_yegor_yakovlev
+			traits = {
+				renowned_revolutionary_poet 
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+
+	}
+
+	SOV_heydar_aliyev = {
+		name = SOV_heydar_aliyev
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SOV/idea_portrait_heydar_aliyev.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = political_advisor
+			idea_token = SOV_heydar_aliyev
+			traits = {
+				prince_of_terror 
 			}
 			ai_will_do = {
 				base = 1.5

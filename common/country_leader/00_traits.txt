@@ -581,8 +581,7 @@ leader_traits = {
 		random = no
 		sprite = 13 
 
-		communism_drift = 0.1
-		stability_factor = 0.1
+		communism_drift = 0.03
 		war_support_factor = 0.1
 		
 	}

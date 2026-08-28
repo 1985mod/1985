@@ -230,6 +230,9 @@ recruit_character = USA_george_bush_advisor
 recruit_character = USA_don_regan
 recruit_character = USA_donald_hodel
 recruit_character = USA_william_clark
+recruit_character = USA_donald_rumsfeld
+recruit_character = USA_charles_gabriel
+recruit_character = USA_james_watkins
 
 activate_advisor = USA_george_bush_advisor
 activate_advisor = USA_george_shultz

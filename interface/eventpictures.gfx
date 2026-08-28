@@ -501,6 +501,16 @@ spriteTypes = {
 		name = "GFX_news_bombing_of_libya"
 		texturefile = "gfx/event_pictures/news_bombing_of_libya.dds"
 	}
+
+	spriteType = {
+		name = "GFX_news_victory_cdu_in_1987"
+		texturefile = "gfx/event_pictures/news_victory_cdu_in_1987.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_victory_spd_in_1987"
+		texturefile = "gfx/event_pictures/news_victory_spd_in_1987.dds"
+	}
 }
 
 

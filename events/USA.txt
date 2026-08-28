@@ -464,7 +464,15 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
-		add_political_power = 10
+		FROM = { country_event = usa.39 hours = 6 }
+	}
+
+	option = {
+		name = usa.14.b
+		ai_chance = {
+			base = 100
+		}		
+		FROM = { country_event = usa.40 hours = 6 }
 	}
 }
 
@@ -1039,6 +1047,108 @@ country_event = {
 
 	option = {
 		name = usa.38.a
+		ai_chance = {
+			base = 100
+		}	
+		if = {
+			limit = {
+				tag = USA
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_decrease
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_decrease
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = SOV
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_decrease
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_decrease
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.39 ###  СССР Согласился ###
+	title = usa.39.t
+	desc = usa.39.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.39.a
+		ai_chance = {
+			base = 100
+		}	
+		if = {
+			limit = {
+				tag = USA
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = SOV
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_decrease
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_decrease
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.40 ###  СССР отказался ###
+	title = usa.40.t
+	desc = usa.40.d
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = usa.40.a
 		ai_chance = {
 			base = 100
 		}	
