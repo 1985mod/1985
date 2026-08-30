@@ -38,8 +38,6 @@ country_event = {   ### Ирак вторгается в Кувейт ###
         date > 1990.8.1
     }
 
-    fire_only_once = yes
-
     option = {
 		ai_chance = {
 			base = 30
@@ -106,6 +104,9 @@ country_event = {   ### Ирак вторгается в Кувейт ###
 		}
         add_stability = -0.05
         add_war_support = -0.1
+        hidden_effect = {
+            country_event = { id = iraq.2 days = 160 }
+        }
     }
 }
 
@@ -172,7 +173,7 @@ country_event = {   ### Иран отказывается
     }
 }
 
-country_event = {   ### Иран отказывается
+country_event = {   ### Провозглашение Великого Ирака
     id = iraq.6
     title = iraq.6.t
     desc = iraq.6.d

@@ -1,0 +1,38 @@
+ideas = {
+    country = {
+		NOR_oil_wealth = {
+			picture = GFX_	
+			allowed = {
+				original_tag = NOR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.05
+				income_growth_factor = 0.1
+			}
+		}
+		NOR_nato_northern_flank = {
+			picture = GFX_	
+			allowed = {
+				original_tag = NOR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			  army_core_attack_factor = 0.07
+			  army_core_defence_factor = 0.06
+			}
+		}
+	}
+}

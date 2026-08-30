@@ -14,7 +14,8 @@ set_technology = {
 }
 
 recruit_character = UNI_Jonas_Malheiro
-promote_character = UNI_Jonas_Malheiro
+recruit_character = UNI_unita_parliament
+recruit_character = UNI_holden_roberto
 
 set_convoys = 5
 

@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = marxism
+			ideology = marxism_leninism
 			traits = { }
 			expire = "2000.3.1.1"
 		}

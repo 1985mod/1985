@@ -329,6 +329,361 @@
     }
 
     focus = { 
+        id = SOV_victory
+        icon = GFX_NONE
+        x = 0
+        y = 2
+        relative_position_id = SOV_issue_written_order_to_storm_the_white_house
+        prerequisite = { focus = SOV_issue_written_order_to_storm_the_white_house }
+        cost = 1
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = { 
+        id = SOV_determine_the_composition
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_victory
+        prerequisite = { focus = SOV_victory }
+        cost = 5
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_operation_in_the_baltic_states
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_determine_the_composition
+        prerequisite = { focus = SOV_determine_the_composition }
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = {
+                    country_exists = EST
+                }
+                declare_war_on = {
+                    target = EST
+                    type = annex_everything
+                }
+            }
+            if = {
+                limit = {
+                    country_exists = LAT
+                }
+                declare_war_on = {
+                    target = LAT
+                    type = annex_everything
+                }
+            }
+            if = {
+                limit = {
+                    country_exists = LIT
+                }
+                declare_war_on = {
+                    target = LIT
+                    type = annex_everything
+                }
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_chinese_dragon
+        icon = GFX_NONE
+        x = 1
+        y = 1
+        relative_position_id = SOV_determine_the_composition
+        prerequisite = { focus = SOV_determine_the_composition }
+        cost = 1
+        completion_reward = {
+            ROOT = {
+                add_opinion_modifier = {
+                    target = PRC
+                    modifier = small_increase
+                }
+            }
+            PRC = {
+                add_opinion_modifier = {
+                    target = SOV
+                    modifier = small_increase
+                }
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_suppression_of_national_movements
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_operation_in_the_baltic_states
+        prerequisite = { focus = SOV_operation_in_the_baltic_states }
+        cost = 10
+        completion_reward = {
+        }
+    }
+
+    focus = { 
+        id = SOV_to_mend_relations_with_china
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_chinese_dragon
+        prerequisite = { focus = SOV_chinese_dragon }
+        cost = 5
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.73 }
+        }
+    }
+
+    focus = { 
+        id = SOV_a_strong_independent_ussr
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_to_mend_relations_with_china
+        prerequisite = { focus = SOV_to_mend_relations_with_china }
+        prerequisite = { focus = SOV_suppression_of_national_movements }
+        cost = 1
+
+        available = {
+            has_completed_focus = SOV_roll_back_many_market_reforms
+            has_completed_focus = SOV_things_arent_all_that_bad
+        }
+        
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.72 hours = 6 }
+        }
+    }
+
+    focus = { 
+        id = SOV_temporary_reduction_of_the_armed_forces
+        icon = GFX_NONE
+        x = -4
+        y = 1
+        relative_position_id = SOV_victory
+        prerequisite = { focus = SOV_victory}
+        cost = 5
+        completion_reward = {
+            delete_unit = {
+                division_template = "Motostrelkovaya Diviziya 2"
+            }
+            delete_unit = {
+                division_template = "Motostrelkovaya Diviziya 3"
+            }
+            delete_unit = {
+                division_template = "Motostrelkovaya Diviziya 4"
+            }
+            add_war_support = 0.05
+        }
+    }
+
+    focus = { 
+        id = SOV_a_return_to_a_planned_economy
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_temporary_reduction_of_the_armed_forces
+        prerequisite = { focus = SOV_temporary_reduction_of_the_armed_forces}
+        cost = 5
+        completion_reward = {
+            add_ideas = war_economy
+        }
+    }
+
+    focus = { 
+        id = SOV_fight_corruption
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_a_return_to_a_planned_economy
+        prerequisite = { focus = SOV_a_return_to_a_planned_economy}
+        cost = 5
+        completion_reward = {
+            if = {
+				limit = {
+                    has_idea = horrific_corruption
+				}
+                swap_ideas = {
+                    remove_idea = horrific_corruption
+                    add_idea = significant_corruption
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = significant_corruption
+				}
+                swap_ideas = {
+                    remove_idea = significant_corruption
+                    add_idea = moderate_corruption
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = moderate_corruption
+				}
+                swap_ideas = {
+                    remove_idea = moderate_corruption
+                    add_idea = low_corruption
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = low_corruption
+				}
+                swap_ideas = {
+                    remove_idea = low_corruption
+                    add_idea = minor_corruption
+                }  
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_andropovs_economic_policy
+        icon = GFX_NONE
+        x = 1
+        y = 1
+        relative_position_id = SOV_a_return_to_a_planned_economy
+        prerequisite = { focus = SOV_a_return_to_a_planned_economy}
+        cost = 5
+        completion_reward = {
+            add_ideas = SOV_andropovs_economic_policy
+        }
+    }
+
+    focus = { 
+        id = SOV_roll_back_many_market_reforms
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_andropovs_economic_policy
+        prerequisite = { focus = SOV_andropovs_economic_policy focus = SOV_fight_corruption}
+        cost = 5
+
+        completion_reward = {
+            add_ideas = SOV_arms_race
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_calm_the_population
+        icon = GFX_NONE
+        x = 4
+        y = 1
+        relative_position_id = SOV_victory
+        prerequisite = { focus = SOV_victory}
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = {
+                    SOV = { has_idea = SOV_public_concern }
+                }
+                remove_ideas = SOV_public_concern
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_provide_apartments_to_afghan_veterans
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_calm_the_population
+        prerequisite = { focus = SOV_calm_the_population }
+        cost = 5
+
+        completion_reward = {
+            add_timed_idea = {
+                idea = SOV_provide_apartments_to_afghan_veterans_idea
+                days = 365
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_arrest_the_leaders_of_the_democratic_movement
+        icon = GFX_NONE
+        x = 1
+        y = 1
+        relative_position_id = SOV_calm_the_population
+        prerequisite = { focus = SOV_calm_the_population}
+        cost = 5
+
+        completion_reward = {
+            retire_character = SOV_nikolay_ryzhkov
+            RUS = {
+                retire_character = RUS_valeriya_novodvorskaya
+                retire_character = RUS_alexander_rutskoi               
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_repressions_among_the_unfaithful
+        icon = GFX_NONE
+        x = -1
+        y = 1
+        relative_position_id = SOV_arrest_the_leaders_of_the_democratic_movement
+        prerequisite = { focus = SOV_arrest_the_leaders_of_the_democratic_movement }
+        prerequisite = { focus = SOV_provide_apartments_to_afghan_veterans }
+        cost = 5
+
+        completion_reward = {
+            add_ideas = SOV_media_censorship
+        }
+    }
+
+    focus = { 
+        id = SOV_things_arent_all_that_bad
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_repressions_among_the_unfaithful
+        prerequisite = { focus = SOV_repressions_among_the_unfaithful}
+        cost = 5
+        completion_reward = {
+            add_popularity = {
+                ideology = fascism
+                popularity = -0.5
+            }
+            add_popularity = {
+                ideology = socialism
+                popularity = -0.5
+            }
+            add_popularity = {
+                ideology = liberalism
+                popularity = -0.5
+            }
+            add_popularity = {
+                ideology = conservatism
+                popularity = -0.5
+            }
+            add_stability = 0.1
+        }
+    }
+
+    focus = { 
+        id = xxix_congress_of_the_cpsu
+        icon = GFX_NONE
+        x = 0
+        y = 1
+        relative_position_id = SOV_a_strong_independent_ussr
+        prerequisite = { focus = SOV_a_strong_independent_ussr}
+        prerequisite = { focus = SOV_roll_back_many_market_reforms focus = SOV_things_arent_all_that_bad}
+        cost = 1
+        completion_reward = {
+            country_event = { id = SOV_soviet_union.74 }
+        }
+    }
+
+    focus = { 
         id = SOV_dissolve_the_ussr_cabinet_of_ministers
         icon = GFX_NONE
         x = 2

@@ -14,14 +14,14 @@ country_event = {
 		ENG = {
 			country_event = ENG_North_ireland.1
 		}
-		ai_chance = { base = 1000 }
+		ai_chance = { base = 1 }
 	}
 	option = {
 		name = IRA_focus.1.b
 		ENG = {
 			country_event = ENG_North_ireland.2
 		}
-		ai_chance = { base = 1 }
+		ai_chance = { base = 1000000 }
 	}
 }
 country_event = {
@@ -34,15 +34,19 @@ country_event = {
 
 	option = {
 		name = IRA_focus.2.a
-		ai_chance = { base = 50 }
+		ai_chance = { base = 1 }
+		ENG = {
+			country_event = ENG_North_ireland.5
+	set_global_flag = Ireland_declied	
 	}
+}
 	option = {
 		name = IRA_focus.2.b
 		set_global_flag = IRA_conflict_resolved
 		ENG = {
 			country_event = ENG_North_ireland.3
 		}
-		ai_chance = { base = 50 }
+		ai_chance = { base = 1000 }
 	}
 }
 country_event = {
@@ -55,16 +59,18 @@ country_event = {
 
 	option = {
 		name = IRA_focus.3.a
-		ENG = {
-			country_event = ENG_North_ireland.6
-		}
-		ai_chance = { base = 50 }
-	}
-	option = {
-		name = IRA_focus.3.b
+		ai_chance = { base = 1000 }
 		ENG = {
 			country_event = ENG_North_ireland.5
+	}
+}
+	option = {
+		name = IRA_focus.3.b
+		set_global_flag = IRA_conflict_resolved
+		ENG = {
+			country_event = ENG_North_ireland.4
+		complete_national_focus = IRA_inegrated_North_Ireland
 		}
-		ai_chance = { base = 50 }
+		ai_chance = { base = 1 }
 	}
 }

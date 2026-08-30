@@ -11,7 +11,6 @@ focus_tree = {
 	
     default = no
 	
-    shared_focus = EU_focus_legacy_of_the_communities
     continuous_focus_position = { x = 1500 y = 800 }
 
     focus = { 

@@ -37,6 +37,7 @@ recruit_character = RAJ_Rajil_Gandi
 set_convoys = 100
 
 give_guarantee = BHU
+give_guarantee = NEP
 
 add_ideas = {
 	partial_economic_mobilisation

@@ -997,6 +997,7 @@ focus_tree = {
         completion_reward = {
             add_war_support = 0.1
             add_stability = 0.05
+            add_ideas = USA_us_world_hegemony
 	    }
 	}
 
@@ -1024,8 +1025,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
+            unlock_decision_category_tooltip = USA_space_programs
 	    }
 	}
 
@@ -1039,8 +1039,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
+            add_ideas = USA_affordable_housing_act
 	    }
 	}
 
@@ -1054,8 +1053,37 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.03
+            }
+			custom_effect_tooltip = we_will_decrease_taxes_by_3_percent 
+			subtract_from_variable = { var = pop_rate value = 3 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { pop_rate > 100 } 
+				}
+				set_variable = { var = pop_rate value = 100 }
+			}
+			custom_effect_tooltip = we_will_decrease_taxes_on_businesses_by_1_percent 
+			subtract_from_variable = { var = corp_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { corp_rate > 100 } 
+				}
+				set_variable = { var = corp_rate value = 100 }
+			}
+			custom_effect_tooltip = we_will_decrease_the_vat_rate_by_1_percent 
+			subtract_from_variable = { var = vat_rate value = 1 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { vat_rate > 100 } 
+				}
+				set_variable = { var = vat_rate value = 100 }
+			}
 	    }
 	}
 
@@ -1070,8 +1098,11 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 2
+                category = electronics
+            }
 	    }
 	}
 
@@ -1085,8 +1116,18 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
+            ROOT = {
+                add_opinion_modifier = {
+                    target = SOV
+                    modifier = small_increase
+                }
+            }
+            SOV = {
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = small_increase
+                }
+            }
 	    }
 	}
 
@@ -1115,8 +1156,19 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
+            ISR = { country_event = { id = usa.30 hours = 6 } }
+            ROOT = {
+                add_opinion_modifier = {
+                    target = ISR
+                    modifier = small_increase
+                }
+            }
+            ISR = {
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = small_increase
+                }
+            }
 	    }
 	}
 
@@ -1130,8 +1182,11 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
+            army_experience = 10
+            add_timed_idea = {
+                idea = USA_soldier_retraining_programs
+                days = 180
+            }
 	    }
 	}
 
@@ -1145,8 +1200,13 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
+            add_war_support = 0.05
+            every_country = {
+                limit = {
+                    is_in_faction_with = USA
+                }
+                country_event = { id = usa.46 hours = 3 }
+            }
 	    }
 	}
 
@@ -1160,8 +1220,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
+            add_ideas = USA_national_health_service
 	    }
 	}
 
@@ -1174,10 +1233,16 @@ focus_tree = {
         x = 0
         y = 2
         cost = 5
+
+        available = {
+            OR = {
+                YUG = { has_war_with = CRO }
+                YUG = { has_war_with = BOS }
+            }
+        }
 		
         completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
+            add_war_support = 0.05
 	    }
 	}
 

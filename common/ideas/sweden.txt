@@ -1,0 +1,39 @@
+ideas = {
+    country = {
+		SWE_military_neutrality = {
+			picture = GFX_	
+			allowed = {
+				original_tag = SWE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.05
+                war_support_factor = -0.03
+			}
+		}
+		SWE_industrial_exports = {
+			picture = GFX_	
+			allowed = {
+				original_tag = SWE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.05
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+}

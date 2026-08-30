@@ -1,10 +1,4 @@
 on_actions = {
-	on_release_as_puppet = { 
-		effect = {
-			always = no
-		}
-	}
-
 	on_monthly = {
 		effect = {
 			every_country = {
@@ -53,20 +47,28 @@ on_actions = {
 				set_variable = { var = real_gdp_divided_by_1000 value = real_gdp }
 				divide_variable = { var = real_gdp_divided_by_1000 value = 1000 }
 
-				set_variable = { var = real_gdp_3m_ago value = real_gdp_2m_ago }
-				set_variable = { var = real_gdp_2m_ago value = real_gdp_1m_ago }
-				set_variable = { var = real_gdp_1m_ago value = real_gdp }
+				set_variable = { var = gdp_growth_rate value = real_gdp }
+				subtract_from_variable = { var = gdp_growth_rate value = real_gdp_list^0 }
+				divide_variable = { var = gdp_growth_rate value = real_gdp_list^0 }
 
-				set_variable = { var = nominal_gdp_3m_ago value = nominal_gdp_2m_ago }
-				set_variable = { var = nominal_gdp_2m_ago value = nominal_gdp_1m_ago }
-				set_variable = { var = nominal_gdp_1m_ago value = nominal_gdp }
+				remove_from_array = {
+					array = real_gdp_list
+					index = 0
+				}
 
-				if = {
-					limit = { check_variable = { real_gdp_3m_ago > 0 } }
-					set_variable = { var = gdp_growth_rate value = real_gdp }
-					divide_variable = { var = gdp_growth_rate value = real_gdp_3m_ago }
-					subtract_from_variable = { var = gdp_growth_rate value = 1 }
-					multiply_variable = { var = gdp_growth_rate value = 100 }
+				add_to_array = {
+					array = real_gdp_list
+					value = real_gdp
+				}
+
+				remove_from_array = {
+					array = nominal_gdp_list
+					index = 0
+				}
+
+				add_to_array = {
+					array = nominal_gdp_list
+					value = nominal_gdp
 				}
 
 				if = {
@@ -181,6 +183,10 @@ on_actions = {
 				subtract_from_temp_variable = { var = delitel value = t }
 				divide_variable = { var = vat_optimal value = delitel }
 				round_variable = vat_optimal
+
+				set_variable = { var = test value = real_gdp_list^0 }
+				set_variable = { var = goida value = real_gdp_list^1 }
+				set_variable = { var = zov value = real_gdp_list^2 }
 			}
 		}
 	}
@@ -286,19 +292,12 @@ on_actions = {
 				# Nominal GDP effect
 
 				set_variable = { var = money_supply value = real_gdp }
+				set_variable = { var = velocity value = 1 }
+
 				set_variable = { var = nominal_gdp value = money_supply }
 				multiply_variable = { var = nominal_gdp value = velocity }
 				set_variable = { var = nominal_gdp_divided_by_1000 value = nominal_gdp }
 				divide_variable = { var = nominal_gdp_divided_by_1000 value = 1000 }
-
-				# Old GDP
-				set_variable = { var = real_gdp_3m_ago value = real_gdp }
-				set_variable = { var = real_gdp_2m_ago value = real_gdp }
-				set_variable = { var = real_gdp_1m_ago value = real_gdp }
-
-				set_variable = { var = nominal_gdp_3m_ago value = nominal_gdp }
-				set_variable = { var = nominal_gdp_2m_ago value = nominal_gdp }
-				set_variable = { var = nominal_gdp_1m_ago value = nominal_gdp }
 
 				# Inflation effect
 
@@ -743,8 +742,6 @@ on_actions = {
 				}
 
 				add_dynamic_modifier = { modifier = unemployment_dynamic_modifier }
-				set_variable = { unemployment_stability = 0.0 }
-				set_variable = { unemployment_consumer_goods = 0.0 }
 
 				# Get optimal taxes for AI
 				set_variable = { var = pop_optimal value = 42.45 }
@@ -774,12 +771,31 @@ on_actions = {
 				add_to_array = {
 					array = real_gdp_list
 					value = real_gdp
-					index = 0
 				}
 
 				add_to_array = {
 					array = real_gdp_list
 					value = real_gdp
+				}
+
+				add_to_array = {
+					array = real_gdp_list
+					value = real_gdp
+				}
+
+				add_to_array = {
+					array = nominal_gdp_list
+					value = nominal_gdp
+				}
+
+				add_to_array = {
+					array = nominal_gdp_list
+					value = nominal_gdp
+				}
+
+				add_to_array = {
+					array = nominal_gdp_list
+					value = nominal_gdp
 				}
 			}
 		}
@@ -813,13 +829,11 @@ on_actions = {
 			if = {
 				limit = { check_variable = { current_debt > 50 } }
 				
-				set_temp_variable = { inflation_growth = current_debt }
+				set_temp_variable = { var = inflation_growth_temp value = current_debt }
+				subtract_from_variable = { var = inflation_growth_temp value = 50 }
+                multiply_temp_variable = { var = inflation_growth_temp value = 0.0028 }
 				
-				subtract_from_temp_variable = { inflation_growth = 50 }
-				
-				multiply_temp_variable = { inflation_growth = 0.0001 }
-				
-				add_to_variable = { inflation_rate = inflation_growth }
+				add_to_variable = { var = inflation_rate value = inflation_growth_temp }
 			}
 
 			if = {
@@ -844,7 +858,7 @@ on_actions = {
 				}
 			}
 
-			clamp_variable = { var = treasury min = 0 }
+			clamp_variable = { var = weekly_income min = 0 }
 			clamp_variable = { var = current_debt min = 0 }
 		}
 	}

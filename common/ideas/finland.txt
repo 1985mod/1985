@@ -1,0 +1,56 @@
+ideas = {
+    country = {
+		FIN_military_neutrality = {
+			picture = GFX_	
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.05
+                war_support_factor = -0.03
+			}
+		}
+		FIN_treaty_of_friendship_with_the_ussr = {
+			picture = GFX_	
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.1
+				communism_acceptance = 15
+			}
+		}
+		FIN_trade_dependence_on_the_ussr = {
+			picture = GFX_	
+			allowed = {
+				original_tag = FIN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				income_growth_factor = -0.1
+				expense_growth_factor = 0.15
+			}
+		}
+	}
+}

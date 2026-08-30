@@ -16,17 +16,14 @@ set_technology = {
 	basic_train = 1
 	tech_trucks = 1
 	motorised_infantry = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	main_battle_tank_chassis = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		main_battle_tank_chassis = 1
-	}
+country_event = {
+	id = finland.1
+	days = 1126
 }
 
 set_politics = {
@@ -36,19 +33,27 @@ set_politics = {
 	elections_allowed = yes 
 }
 set_popularities = {
-	socialism = 53
-	conservatism = 20
-	liberalism = 27
+	socialism = 49
+	conservatism = 18
+	liberalism = 21
+	communism = 12
 }
 145 = {
 	set_demilitarized_zone = yes
 }
 set_stability = 0.72
-set_war_support = 0.23
+set_war_support = 0.15
 set_convoys = 80
 
 recruit_character = FIN_mauno_koivisto
+recruit_character = FIN_par_stenback
+recruit_character = FIN_paavo_vayrynen
+recruit_character = FIN_harri_holkeri
+recruit_character = FIN_taisto_sinisalo
 
 add_ideas = {
 	low_economic_mobilisation
+	FIN_military_neutrality
+	FIN_treaty_of_friendship_with_the_ussr
+	FIN_trade_dependence_on_the_ussr
 }

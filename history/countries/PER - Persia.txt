@@ -71,5 +71,7 @@ set_popularities = {
 }
 set_convoys = 10
 
+set_variable = { var = current_debt value = 121.5 }
+
 recruit_character = PER_Ali_Khamenei
 recruit_character = PER_shapour_bakhtiar

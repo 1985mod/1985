@@ -114,9 +114,6 @@ focus_tree = {
 		
         completion_reward = {
 			country_event = { id = usa.15 hours = 6 }
-			SOV = {
-				country_event = { id = usa.15 hours = 12 }
-			}		
 	    }
 	}
 	
@@ -441,6 +438,7 @@ focus_tree = {
 		
         completion_reward = {
 		    remove_opinion_modifier = { target = SOV modifier = evil_empire }
+			set_country_flag = reconsider_relations_with_the_soviet_union_flag
 	    }
 	}
 	
@@ -468,14 +466,23 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 750
+           		target = REN
+			}
+			add_manpower = -3500
+			REN = {
+				add_manpower = 3500
+			}
 			MZB = {
 				add_popularity = {
 					ideology = liberalism
-					popularity = 0.02
+					popularity = 0.04
 				}
 				add_popularity = {
 					ideology = conservatism
-					popularity = 0.03
+					popularity = 0.06
 				}
 			}
 	    }

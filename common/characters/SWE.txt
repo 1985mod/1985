@@ -10,9 +10,77 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = classical_social_democracy
+			ideology = nordic_model
 			traits={  }
-			expire="2008.8.23.1"		
+			expire="1986.8.23.1"		
+		}
+	}
+
+	SWE_ingvar_carlsson ={
+		name = SWE_ingvar_carlsson
+		portraits={
+			civilian={
+				large= GFX_portrait_SWE_ingvar_carlsson
+			}
+			army = {
+				large = GFX_portrait_SWE_ingvar_carlsson
+			}
+		}
+		country_leader={
+			ideology = nordic_model
+			traits={  }
+			expire="1989.8.23.1"		
+		}
+	}
+
+	SWE_ulf_adelsoh ={
+		name = SWE_ulf_adelsoh
+		portraits={
+			civilian={
+				large= GFX_portrait_SWE_ulf_adelsohn
+			}
+			army = {
+				large = GFX_portrait_SWE_carl_bildt
+			}
+		}
+		country_leader={
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1989.8.23.1"		
+		}
+	}
+
+	SWE_carl_bildt ={
+		name = SWE_carl_bildt
+		portraits={
+			civilian={
+				large= GFX_portrait_SWE_carl_bildt
+			}
+			army = {
+				large = GFX_portrait_SWE_carl_bildt
+			}
+		}
+		country_leader={
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1989.8.23.1"		
+		}
+	}
+
+	SWE_bengt_westerberg ={
+		name = SWE_bengt_westerberg
+		portraits={
+			civilian={
+				large= GFX_portrait_SWE_bengt_westerberg
+			}
+			army = {
+				large = GFX_portrait_SWE_bengt_westerberg
+			}
+		}
+		country_leader={
+			ideology = social_liberalism
+			traits={  }
+			expire="1989.8.23.1"		
 		}
 	}
 }

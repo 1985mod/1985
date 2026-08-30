@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = marxism
+			ideology = marxism_leninism
 			traits = { }
 			expire = "1971.3.1.1"
 			id = -1
@@ -35,7 +35,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = marxism
+			ideology = marxism_leninism
 			traits = { }
 			expire = "1971.3.1.1"
 			id = -1
@@ -49,7 +49,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = marxism
+			ideology = marxism_leninism
 			traits = { }
 			expire = "1971.3.1.1"
 			id = -1
@@ -63,7 +63,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = marxism
+			ideology = marxism_leninism
 			traits = { }
 			expire = "1971.3.1.1"
 			id = -1
@@ -77,7 +77,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = marxism
+			ideology = marxism_leninism
 			traits = { }
 			expire = "1971.3.1.1"
 			id = -1

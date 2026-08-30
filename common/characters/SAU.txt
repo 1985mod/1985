@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = Salafism
+			ideology = absolute_monarchy
 			traits = { }
 			expire = "2005.3.1.1"
 		}

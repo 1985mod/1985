@@ -88,6 +88,16 @@ spriteTypes = {
 		name = GFX_portrait_UNI_Jonas_Malheiro
 		textureFile = "gfx/leaders/UNI/Jonas_Malheiro.dds"
 	}
+
+	spriteType = {
+		name = GFX_Portrait_unita_parliament
+		textureFile = "gfx/leaders/UNI/Portrait_unita_parliament.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_holden_roberto
+		textureFile = "gfx/leaders/UNI/Portrait_holden_roberto.dds"
+	}
 	##ANG##
 	spriteType = {
 		name = GFX_portrait_ANG_Jose_Eduardo_dos_Santos

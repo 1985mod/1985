@@ -897,7 +897,7 @@ focus_tree = {
         icon = GFX_	
         x = -4
         y = 1
-        cost = 5
+        cost = 2
 		
         completion_reward = {
 			unlock_decision_category_tooltip = USA_operations_against_the_ayatollahs_cat
@@ -973,8 +973,8 @@ focus_tree = {
 						PER = { 
 							add_stability = -0.2
 							start_civil_war = {
-								ruling_party = neutrality
-								ideology = conservatism
+								ruling_party = conservatism
+								ideology = neutrality
 								size = 0.8
 								keep_political_leader = yes
 								keep_political_party_members = yes
@@ -1006,8 +1006,8 @@ focus_tree = {
 						PER = { 
 							add_stability = -0.2
 							start_civil_war = {
-								ruling_party = neutrality
-								ideology = conservatism
+								ruling_party = conservatism
+								ideology = neutrality
 								size = 0.5
 								keep_political_leader = yes
 								keep_political_party_members = yes
@@ -1039,8 +1039,8 @@ focus_tree = {
 						PER = { 
 							add_stability = -0.2
 							start_civil_war = {
-								ruling_party = neutrality
-								ideology = conservatism
+								ruling_party = conservatism
+								ideology = neutrality
 								size = 0.4
 								keep_political_leader = yes
 								keep_political_party_members = yes
@@ -1072,8 +1072,8 @@ focus_tree = {
 					PER = { 
 						add_stability = -0.2
 						start_civil_war = {
-							ruling_party = neutrality
-							ideology = conservatism
+							ruling_party = conservatism
+							ideology = neutrality
 							size = 0.2
 							keep_political_leader = yes
 							keep_political_party_members = yes
@@ -1144,7 +1144,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			PER = { country_event = usa.41 hours = 6 }
 	    }
 	}
 
@@ -1158,78 +1158,208 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			PER = { country_event = usa.42 hours = 6 }
 	    }
 	}
 
     focus = { 
-        id = USA_operations_against_palestine
+        id = USA_operations_against_cuba
 		relative_position_id = USA_underground_operations
 		prerequisite = { focus = USA_underground_operations }
         icon = GFX_	
         x = 0
         y = 1
-        cost = 5
+        cost = 2
 		
         completion_reward = {
-
+			unlock_decision_category_tooltip = USA_operations_against_cuba_cat
+			add_political_power = 50
 	    }
 	}
 
     focus = { 
-        id = USA_military_support_for_israel
-		relative_position_id = USA_operations_against_palestine
-		prerequisite = { focus = USA_operations_against_palestine }
+        id = USA_bribe_those_who_disagree_with_the_cuban_government
+		relative_position_id = USA_operations_against_cuba
+		prerequisite = { focus = USA_operations_against_cuba }
         icon = GFX_	
         x = 0
         y = 1
         cost = 5
 		
         completion_reward = {
-
+			CUB = {
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.02
+				}
+			}
 	    }
 	}
 
     focus = { 
-        id = USA_second_trade_agreement
-		relative_position_id = USA_military_support_for_israel
-		prerequisite = { focus = USA_military_support_for_israel }
-        icon = GFX_	
-        x = -1
-        y = 1
-        cost = 5
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_meeting_in_tel_aviv
-		relative_position_id = USA_military_support_for_israel
-		prerequisite = { focus = USA_military_support_for_israel }
-        icon = GFX_	
-        x = 1
-        y = 1
-        cost = 5
-		
-        completion_reward = {
-
-	    }
-	}
-
-    focus = { 
-        id = USA_infiltrate_the_plo
-		relative_position_id = USA_military_support_for_israel
-		prerequisite = { focus = USA_second_trade_agreement }
-		prerequisite = { focus = USA_meeting_in_tel_aviv }
+        id = USA_military_support_for_the_rebels
+		relative_position_id = USA_bribe_those_who_disagree_with_the_cuban_government
+		prerequisite = { focus = USA_bribe_those_who_disagree_with_the_cuban_government }
         icon = GFX_	
         x = 0
-        y = 2
+        y = 1
         cost = 5
 		
         completion_reward = {
+			CUB = {
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.02
+				}
+			}
+	    }
+	}
 
+    focus = { 
+        id = USA_overthrow_castro
+		relative_position_id = USA_military_support_for_the_rebels
+		prerequisite = { focus = USA_military_support_for_the_rebels }
+        icon = GFX_	
+        x = 0
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+			if = {
+				limit = {
+					CUB = {
+						conservatism > 0.7
+						conservatism < 1.0
+					}
+				}
+				random_list = {
+					90 = { 
+						CUB = { 
+							set_politics = {
+								ruling_party = conservatism
+								elections_allowed = yes
+								last_election = "1988.3.12"
+								election_frequency = 48
+							}
+						} 
+					}
+					10 = { 
+						CUB = { 
+							add_stability = -0.2
+							start_civil_war = {
+								ruling_party = conservatism
+								ideology = communism
+								size = 0.8
+								keep_political_leader = yes
+								keep_political_party_members = yes
+							}
+						} 
+					}
+				}
+			}
+			if = {
+				limit = {
+					CUB = {
+						conservatism > 0.5
+						conservatism < 0.7
+					}
+				}
+				random_list = {
+					50 = { 
+						CUB = { 
+							set_politics = {
+								ruling_party = conservatism
+								elections_allowed = yes
+								last_election = "1988.3.12"
+								election_frequency = 48
+							}
+						} 
+					}
+					50 = { 
+						CUB = { 
+							add_stability = -0.2
+							start_civil_war = {
+								ruling_party = conservatism
+								ideology = communism
+								size = 0.5
+								keep_political_leader = yes
+								keep_political_party_members = yes
+							}
+						} 
+					}
+				}
+			}
+			if = {
+				limit = {
+					CUB = {
+						conservatism > 0.3
+						conservatism < 0.5
+					}
+				}
+				random_list = {
+					40 = { 
+						CUB = { 
+							set_politics = {
+								ruling_party = conservatism
+								elections_allowed = yes
+								last_election = "1988.3.12"
+								election_frequency = 48
+							}
+						} 
+					}
+					60 = { 
+						CUB = { 
+							add_stability = -0.2
+							start_civil_war = {
+								ruling_party = conservatism
+								ideology = communism
+								size = 0.4
+								keep_political_leader = yes
+								keep_political_party_members = yes
+							}
+						} 
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					CUB = {
+						conservatism > 0.03
+						conservatism < 0.3
+					}
+				}
+				15 = { 
+					CUB = { 
+						set_politics = {
+							ruling_party = conservatism
+							elections_allowed = yes
+							last_election = "1988.3.12"
+							election_frequency = 48
+						}
+					} 
+				}
+				85 = { 
+					CUB = { 
+						add_stability = -0.2
+						start_civil_war = {
+							ruling_party = conservatism
+							ideology = communism
+							size = 0.2
+							keep_political_leader = yes
+							keep_political_party_members = yes
+						}
+					} 
+				}
+			}
 	    }
 	}
 
@@ -1243,7 +1373,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			UNI = { country_event = usa.41 hours = 6 }
 	    }
 	}
 
@@ -1257,7 +1387,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			ANG = { country_event = { id = usa.45  hours = 6 } }
 	    }
 	}
 
@@ -1271,7 +1401,13 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			ANG = {
+				damage_building = {
+					type = infrastructure
+					state = 796
+					damage = 1
+				}
+			}	
 	    }
 	}
 
@@ -1286,7 +1422,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+			add_ideas = USA_dispatch_of_peacekeeping_forces
 	    }
 	}
 
@@ -1300,7 +1436,11 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-
+        	send_equipment = {
+           		equipment = infantry_equipment
+           		amount = 1500
+           		target = UNI
+			}
 	    }
 	}
 
@@ -1311,10 +1451,16 @@ focus_tree = {
         icon = GFX_	
         x = 0
         y = 1
-        cost = 5
+        cost = 3
 		
         completion_reward = {
-
+			UNI = {
+				kill_ideology_leader = fascism
+				set_politics = {
+					ruling_party = conservatism
+					elections_allowed = yes
+				}
+			}
 	    }
 	}
 
@@ -1325,18 +1471,20 @@ focus_tree = {
         icon = GFX_	
         x = 0
         y = 1
-        cost = 5
+        cost = 2
 		
         completion_reward = {
-
+			UNI = {
+				retire_ideology_leader = conservatism
+			}
 	    }
 	}
 
     focus = { 
         id = USA_we_are_everywhere
-		relative_position_id = USA_infiltrate_the_plo
+		relative_position_id = USA_overthrow_castro
 		prerequisite = { focus = USA_new_allies }
-		prerequisite = { focus = USA_infiltrate_the_plo }
+		prerequisite = { focus = USA_overthrow_castro }
 		prerequisite = { focus = USA_install_a_new_leader }
         icon = GFX_	
         x = 0

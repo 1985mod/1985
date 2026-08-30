@@ -24,6 +24,17 @@ set_technology = {
 	fuel_refining = 1
 	basic_train = 1
 }
+
+country_event = {
+	id = norway.1
+	days = 251
+}
+
+country_event = {
+	id = norway.2
+	days = 1715
+}
+
 set_convoys = 50
 
 set_politics = {
@@ -33,14 +44,19 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	communism = 10
-	socialism = 10
-	conservatism = 70
-	liberalism = 10
+	communism = 5
+	socialism = 40
+	conservatism = 38
+	liberalism = 17
 }
 
 recruit_character = NOR_kare_willoch
+recruit_character = NOR_Gro_Harlem_Brundtland
+recruit_character = NOR_Erling_Norvik
+recruit_character = NOR_jan_syse
 
 add_ideas = {
+	NOR_oil_wealth
+	NOR_nato_northern_flank
 	low_economic_mobilisation
 }

@@ -295,8 +295,13 @@ focus_tree = {
         prerequisite = { focus = SOV_introduction_of_state_acceptance}
         cost = 5
         completion_reward = {
-            add_political_power = 75
+            add_political_power = 25
             add_stability = 0.05
+			add_to_variable = {
+				var = treasury
+				value = 5
+				tooltip = add_5_billion_to_treasury_tt
+			}
         }
     }
 
