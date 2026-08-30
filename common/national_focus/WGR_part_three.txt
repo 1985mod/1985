@@ -646,6 +646,7 @@ focus_tree = {
 		}
 
 	}
+
 	focus = {
 		id = WGR_other_association
 		icon = GFX_goal_unknown
@@ -659,7 +660,173 @@ focus_tree = {
         completion_reward = {
 			add_political_power = 25
 		}
+	}
 
+	focus = {
+		id = WGR_conduct_legitimization_through_the_un
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_other_association
+		prerequisite = { focus = WGR_other_association }
+		x = -2
+		y = 1
+
+        completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = WGR_preparing_for_special_operation
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_conduct_legitimization_through_the_un
+		prerequisite = { focus = WGR_conduct_legitimization_through_the_un }
+		x = 0
+		y = 1
+
+        completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = WGR_bringing_troops_to_combat_readiness
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_preparing_for_special_operation
+		prerequisite = { focus = WGR_preparing_for_special_operation }
+		x = -1
+		y = 1
+
+        completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = WGR_total_mobilization_of_the_bundeswehr
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_preparing_for_special_operation
+		prerequisite = { focus = WGR_preparing_for_special_operation }
+		x = 1
+		y = 1
+
+        completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = WGR_labor_mobilization
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_preparing_for_special_operation
+		prerequisite = { focus = WGR_bringing_troops_to_combat_readiness }
+		prerequisite = { focus = WGR_total_mobilization_of_the_bundeswehr }
+		x = 0
+		y = 2
+
+        completion_reward = {
+            if = {
+				limit = {
+                    has_idea = civilian_economy
+				}
+                swap_ideas = {
+                    remove_idea = civilian_economy
+                    add_idea = low_economic_mobilisation
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = low_economic_mobilisation
+				}
+                swap_ideas = {
+                    remove_idea = low_economic_mobilisation
+                    add_idea = partial_economic_mobilisation
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = partial_economic_mobilisation
+				}
+                swap_ideas = {
+                    remove_idea = partial_economic_mobilisation
+                    add_idea = war_economy
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = war_economy
+				}
+                swap_ideas = {
+                    remove_idea = war_economy
+                    add_idea = tot_economic_mobilisation
+                }  
+            }
+		}
+	}
+
+	focus = {
+		id = WGR_conduct_an_information_campaign
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_labor_mobilization
+		prerequisite = { focus = WGR_labor_mobilization }
+		x = -2
+		y = 1
+
+        completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = WGR_support_the_opposition_within_the_gdr
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_labor_mobilization
+		prerequisite = { focus = WGR_labor_mobilization }
+		x = 0
+		y = 1
+
+        completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = WGR_blockade_of_the_gdr
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_labor_mobilization
+		prerequisite = { focus = WGR_labor_mobilization }
+		x = 2
+		y = 1
+
+        completion_reward = {
+			send_embargo = DDR
+		}
+	}
+
+	focus = {
+		id = WGR_invasion_of_the_gdr
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = WGR_labor_mobilization
+		prerequisite = { focus = WGR_conduct_an_information_campaign }
+		prerequisite = { focus = WGR_support_the_opposition_within_the_gdr }
+		prerequisite = { focus = WGR_blockade_of_the_gdr }
+		x = 0
+		y = 2
+
+        completion_reward = {
+			declare_war_on = {
+				target = DDR
+				type = annex_everything
+			}
+		}
 	}
 
 	focus = {
@@ -675,6 +842,5 @@ focus_tree = {
         completion_reward = {
 			add_political_power = 25
 		}
-
 	}
 }

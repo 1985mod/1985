@@ -311,6 +311,7 @@ country_event = {
 		NOT = { has_war_with = IRQ }
 		USA = { has_completed_focus = USA_operation_desert_storm }
 		NOT = { has_global_flag = desert_storm_triggered}
+		NOT = { has_country_flag = operation_desert_storm_start }
 	}
 
 	option = {
@@ -455,7 +456,7 @@ country_event = {
 	id = usa.14 ### Разговор с СССР ###
 	title = usa.14.t
 	desc = usa.14.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 
@@ -480,7 +481,7 @@ country_event = {
 	id = usa.15 ### Первая встреча с Горбачёвом ###
 	title = usa.15.t
 	desc = usa.15.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 
@@ -488,9 +489,13 @@ country_event = {
 		name = usa.15.a
 		ai_chance = {
 			base = 100
-		}		
-		add_political_power = 25
-		add_nuclear_bombs = -75
+		}	
+		army_experience = 10	
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 2500
+			producer = ROOT
+		}
 	}
 }
 
@@ -498,7 +503,7 @@ country_event = {
 	id = usa.16 ### Договор CHB - 1 ###
 	title = usa.16.t
 	desc = usa.16.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 
@@ -551,7 +556,7 @@ country_event = {
 	id = usa.17 ### Утверждение Томаса Кларенсеном помощником судьи ###
 	title = usa.17.t
 	desc = usa.17.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 
@@ -571,7 +576,7 @@ country_event = {
 	id = usa.18 ### Встреча с Борисом Николаичем ###
 	title = usa.18.t
 	desc = usa.18.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 
@@ -625,7 +630,7 @@ country_event = {
 	id = usa.20 ### Убийство Энрике Камарена ###
 	title = usa.20.t
 	desc = usa.20.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -663,7 +668,7 @@ country_event = {
 	id = usa.22 ### 41 Торнадо ###
 	title = usa.22.t
 	desc = usa.22.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -682,7 +687,7 @@ country_event = {
 	id = usa.23 ### Лос‑Анджелес Лейкерс» выигрывают чемпионат NBA ###
 	title = usa.23.t
 	desc = usa.23.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -701,7 +706,7 @@ country_event = {
 	id = usa.24 ### В США выходит игровая приставка NES ###
 	title = usa.24.t
 	desc = usa.24.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -735,7 +740,7 @@ country_event = {
 	id = usa.25 ### Сенат США разрешает телевизионную трансляцию своих дебатов ###
 	title = usa.25.t
 	desc = usa.25.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -756,7 +761,7 @@ country_event = {
 	id = usa.26 ### Сенат США разрешает телевизионную трансляцию своих дебатов ###
 	title = usa.26.t
 	desc = usa.26.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -778,7 +783,7 @@ country_event = {
 	id = usa.27 ### Рональд Рейган проходит операцию на предстательной железе ###
 	title = usa.27.t
 	desc = usa.27.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -795,7 +800,7 @@ country_event = {
 	id = usa.28 ### Иракские «Экзосеты» поражают эсминец USS Stark ###
 	title = usa.28.t
 	desc = usa.28.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -813,7 +818,7 @@ country_event = {
 	id = usa.29 ###  «Черный понедельник»: мировой фондовый крах ###
 	title = usa.29.t
 	desc = usa.29.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	trigger = {
 		date > 1987.10.15
@@ -870,7 +875,7 @@ country_event = {
 	id = usa.30 ###  торговый договор ###
 	title = usa.30.t
 	desc = usa.30.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 
@@ -895,7 +900,7 @@ country_event = {
 	id = usa.31 ###  канада согласилась ###
 	title = usa.31.t
 	desc = usa.31.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 
@@ -913,7 +918,7 @@ country_event = {
 	id = usa.32 ###  отказала ###
 	title = usa.32.t
 	desc = usa.32.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -930,7 +935,7 @@ country_event = {
 	id = usa.33 ###  экономическая помощь ###
 	title = usa.33.t
 	desc = usa.33.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 
@@ -955,7 +960,7 @@ country_event = {
 	id = usa.34 ###  CCCР согласился ###
 	title = usa.34.t
 	desc = usa.34.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -965,6 +970,35 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
+		if = {
+			limit = {
+				check_variable = { treasury > 4 }
+			}
+			subtract_from_variable = {
+				var = treasury
+				value = 5
+				tooltip = subtract_5_billion_to_treasury_tt
+			}
+			FROM = {
+				add_to_variable = {
+					var = treasury
+					value = 5
+					tooltip = add_5_billion_to_treasury_tt
+				}
+			}
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = small_increase
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_increase
+			}
+		}
 	}
 }
 
@@ -972,7 +1006,7 @@ country_event = {
 	id = usa.35 ###  СССР отказал ###
 	title = usa.35.t
 	desc = usa.35.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -981,7 +1015,7 @@ country_event = {
 		name = usa.35.a
 		ai_chance = {
 			base = 100
-		}		
+		}	
 	}
 }
 
@@ -989,7 +1023,7 @@ country_event = {
 	id = usa.36 ###  Бюджетный Саммит ###
 	title = usa.36.t
 	desc = usa.36.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1011,7 +1045,7 @@ country_event = {
 	id = usa.37 ###  СССР согласился ###
 	title = usa.37.t
 	desc = usa.37.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1040,7 +1074,7 @@ country_event = {
 	id = usa.38 ###  СССР отказался ###
 	title = usa.38.t
 	desc = usa.38.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1091,7 +1125,7 @@ country_event = {
 	id = usa.39 ###  СССР Согласился ###
 	title = usa.39.t
 	desc = usa.39.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1142,7 +1176,7 @@ country_event = {
 	id = usa.40 ###  СССР отказался ###
 	title = usa.40.t
 	desc = usa.40.d
-	picture = GFX_report_dead_chernenko
+	picture = GFX_report_generic_negotiations_between_two_parties
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1186,5 +1220,335 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+country_event = {
+	id = usa.41 ###  Экономическая помощь от США ###
+	title = usa.41.t
+	desc = usa.41.d
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.41.a
+		ai_chance = {
+			base = 100
+		}	
+		FROM = {
+			subtract_from_variable = {
+				var = treasury
+				value = 5
+				tooltip = subtract_5_billion_to_treasury_tt
+			}
+		}
+		ROOT = {
+			add_to_variable = {
+				var = treasury
+				value = 5
+				tooltip = add_5_billion_to_treasury_tt
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.42 ###  Предложение о взаимной помощи ###
+	title = usa.42.t
+	desc = usa.42.d
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.42.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 30
+				PER = { has_government = conservatism }
+			}
+		}	
+		FROM = { country_event = { id = usa.43 hours = 6 } }
+	}
+
+	option = {
+		name = usa.42.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -30
+				PER = { has_government = conservatism }
+			}
+		}	
+		FROM = { country_event = { id = usa.44 hours = 6 } }
+	}
+}
+
+country_event = {
+	id = usa.43 ###  Иран принял ###
+	title = usa.43.t
+	desc = usa.43.d
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.43.a
+		ai_chance = {
+			base = 100
+		}	
+		PER = {
+			diplomatic_relation = {
+				country = USA
+				relation = guarantee
+				active = yes
+			}			
+		}
+		diplomatic_relation = {
+			country = PER
+			relation = guarantee
+			active = yes
+		}
+		diplomatic_relation = {
+			country = PER
+			relation = air_base_access
+			active = yes
+		}
+	}
+	if = {
+		limit = {
+			tag = USA
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = PER
+				modifier = small_increase
+			}
+		}
+		PER = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_increase
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.44 ###  Иран отказал ###
+	title = usa.44.t
+	desc = usa.44.d
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.44.a
+		ai_chance = {
+			base = 100
+		}	
+		if = {
+			limit = {
+				tag = USA
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = PER
+					modifier = small_decrease
+				}
+			}
+			PER = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_decrease
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.45 ###  США проводит бомбардировки МПЛА ###
+	title = usa.45.t
+	desc = usa.45.d
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.45.a
+		ai_chance = {
+			base = 100
+		}	
+		ANG = {
+			damage_building = {
+				type = infrastructure
+				state = 540
+				damage = 1
+			}
+			damage_building = {
+				type = infrastructure
+				state = 892
+				damage = 2
+			}
+		}	
+		ROOT = {
+			add_opinion_modifier = {
+				target = ANG
+				modifier = small_decrease
+			}
+		}
+		ANG = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_decrease
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = usa.46 ### США предлагает провести учения ###
+	title = usa.46.t
+	desc = usa.46.d
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.46.a
+		ai_chance = {
+			base = 100
+		}	
+		army_experience = 5
+		navy_experience = 5
+		air_experience = 5
+		add_timed_idea = {
+			idea = USA_nato_exercises
+			days = 65
+		}	
+	}
+
+	option = {
+		name = usa.46.b
+		ai_chance = {
+			base = 100
+		}	
+		army_experience = 5
+		navy_experience = 5
+		air_experience = 5
+	}
+}
+
+country_event = {
+	id = usa.47 ### США предлагает РСМД ###
+	title = usa.47.t
+	desc = usa.47.d
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.47.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}	
+		FROM = { country_event = { id = usa.48 hours = 6 } }
+	}
+
+	option = {
+		name = usa.47.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				is_historical_focus_on = yes
+			}
+		}	
+		FROM = { country_event = { id = usa.49 hours = 6 } }
+	}
+}
+
+country_event = {
+	id = usa.48 ### СС согласился ###
+	title = usa.48.t
+	desc = usa.48.d
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.48.a
+		ai_chance = {
+			base = 100
+		}	
+		ROOT = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = small_increase
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_increase
+			}
+		}
+		hidden_effect = {
+			country_event = { id = usa.50 days = 176 }
+			SOV = { country_event = { id = usa.50 days = 176 } }
+		}
+	}
+}
+
+country_event = {
+	id = usa.49 ### СС отказался ###
+	title = usa.49.t
+	desc = usa.49.d
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.49.a
+		ai_chance = {
+			base = 100
+		}	
+		ROOT = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = small_decrease
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_decrease
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.50 ### РСМД вступил в силу ###
+	title = usa.50.t
+	desc = usa.50.d
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.50.a
+		ai_chance = {
+			base = 100
+		}	
+		add_nuclear_bombs = -423
+		add_stability = 0.05
 	}
 }

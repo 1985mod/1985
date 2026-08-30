@@ -60,6 +60,16 @@ inflation_effect = {
             add_to_variable = { var = inflation_rate value = weighted_instant }
 
             set_variable = { var = old_inflation value = inflation_rate }
+
+			if = {
+				limit = { check_variable = { current_debt > 50 } }
+				
+				set_temp_variable = { var = inflation_growth_temp value = current_debt }
+				subtract_from_variable = { var = inflation_growth_temp value = 50 }
+                multiply_temp_variable = { var = inflation_growth_temp value = 0.0028 }
+				
+				add_to_variable = { var = inflation_rate value = inflation_growth_temp }
+			}
         }
     }
 }

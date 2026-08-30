@@ -161,6 +161,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
+		add_political_power = 50
 	}
 }
 
@@ -194,7 +195,7 @@ country_event = {
         tag = SOV
         date > 1990.03.11
         has_country_flag = gorbachev
-		NOT = { has_completed_focus = SOV_on_the_side_of_the_sec }
+		SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
     }
 
     immediate = {
@@ -1501,6 +1502,7 @@ country_event = {
 		}
 		retire_ideology_leader = socialism
 		kill_ideology_leader = conservatism
+		add_ideas = SOV_public_concern
     }
 }
 
@@ -2087,6 +2089,69 @@ country_event = {
 			ruling_party = socialism
 			elections_allowed = yes
 		}
+		add_stability = 0.05
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.72 ## Сильный и независимый ##
+	title = SOV_soviet_union.72.t
+	desc = SOV_soviet_union.72.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+    option = {
+        name = SOV_soviet_union.72.a
+		ai_chance = {
+			base = 100
+		}
+		add_ideas = SOV_developed_socialist_state
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.73 ## В Пекине ##
+	title = SOV_soviet_union.73.t
+	desc = SOV_soviet_union.73.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+    option = {
+        name = SOV_soviet_union.73.a
+		ai_chance = {
+			base = 100
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = PRC
+				modifier = medium_increase
+			}
+		}
+		PRC = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = medium_increase
+			}
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.74 ## 30 съезд кпсс ##
+	title = SOV_soviet_union.74.t
+	desc = SOV_soviet_union.74.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+    option = {
+        name = SOV_soviet_union.74.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 50
 		add_stability = 0.05
     }
 }

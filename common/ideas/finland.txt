@@ -30,6 +30,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.1
+				communism_acceptance = 15
 			}
 		}
 		FIN_trade_dependence_on_the_ussr = {
@@ -45,6 +48,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				income_growth_factor = -0.1
+				expense_growth_factor = 0.15
 			}
 		}
 	}

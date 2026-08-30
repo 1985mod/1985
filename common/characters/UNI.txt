@@ -15,4 +15,38 @@ characters = {
 			expire="2012.11.9.1"		
 		}
 	}
+
+	UNI_unita_parliament ={
+		name = UNI_unita_parliament
+		portraits={
+			civilian={
+				large= GFX_Portrait_unita_parliament
+			}
+			army = {
+				large = GFX_Portrait_unita_parliament
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+
+	UNI_holden_roberto ={
+		name = UNI_holden_roberto
+		portraits={
+			civilian={
+				large= GFX_Portrait_holden_roberto
+			}
+			army = {
+				large = GFX_Portrait_holden_roberto
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
 }

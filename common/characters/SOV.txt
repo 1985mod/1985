@@ -76,7 +76,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150			
-			slot = vice_president_or_prime_minister
+			slot = head_of_government
 			idea_token = SOV_gennady_yanaev
 
 			available = {
@@ -185,6 +185,43 @@ characters = {
 		}
 		country_leader = {
 			ideology = liberal_social_democracy
+			traits = {}
+			expire = "2022.05.28.1"
+			id = -1
+		}
+	}
+
+	SOV_Mikhail_Gorbachev_SSG = {
+		name = SOV_Mikhail_Gorbachev_SSG
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Mikhail_Gorbachev_uss
+			}
+			army = {
+				large = GFX_Portrait_Mikhail_Gorbachev_uss
+				small = GFX_Portrait_Mikhail_Gorbachev_SSG_small
+			}
+		}
+		country_leader = {
+			ideology = liberal_social_democracy
+			traits = {}
+			expire = "2022.05.28.1"
+			id = -1
+		}
+	}
+
+	SOV_nursultan_nazarbayev = {
+		name = SOV_nursultan_nazarbayev
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_nursultan_nazarbayev
+			}
+			army = {
+				large = GFX_Portrait_nursultan_nazarbayev
+			}
+		}
+		country_leader = {
+			ideology = the_third_way
 			traits = {}
 			expire = "2022.05.28.1"
 			id = -1

@@ -118,7 +118,7 @@
         relative_position_id = SOV_withdrawal_of_soviet_troops_from_afghanistan
         prerequisite = { focus = SOV_repeal_of_article_11_1 }
         prerequisite = { focus = SOV_parade_of_sovereignties }
-        cost = 4.4
+        cost = 5
         completion_reward = {
             country_event = { id = SOV_soviet_union.25 }
         }
@@ -173,7 +173,7 @@
         prerequisite = { focus = SOV_law_on_the_press }
         cost = 10
         completion_reward = {
-
+            add_political_power = 100
         }
     }
 
@@ -539,52 +539,27 @@
         allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
         x = -1
         y = 1
-        cost = 5
+        cost = 6.5
         completion_reward = {
             remove_ideas = SOV_support_for_regimes_in_eastern_europe
-            DDR = {
+            every_country = {
+                limit = {
+                    has_idea = EEC_support_from_the_ussr
+                }
                 remove_ideas = EEC_support_from_the_ussr
             }
-            CZE = {
-                remove_ideas = EEC_support_from_the_ussr
-            }
-            POL = {
-                remove_ideas = EEC_support_from_the_ussr
-            }
-            HUN = {
-                remove_ideas = EEC_support_from_the_ussr
-            }
-            ROM = {
-                remove_ideas = EEC_support_from_the_ussr
-            }
-            BUL = {
-                remove_ideas = EEC_support_from_the_ussr
-            }
-        }
-    }
-
-    focus = { 
-        id = SOV_negotiations_2_4
-        icon = GFX_NONE
-        relative_position_id = SOV_refusal_to_support_regimes_in_eastern_europe
-        prerequisite = { focus = SOV_refusal_to_support_regimes_in_eastern_europe}
-        allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
-        x = 0
-        y = 1
-        cost = 2.9
-        completion_reward = {
         }
     }
 
     focus = { 
         id = SOV_consent_to_the_unification_of_germany
         icon = GFX_NONE
-        relative_position_id = SOV_negotiations_2_4
-        prerequisite = { focus = SOV_negotiations_2_4}
+        relative_position_id = SOV_refusal_to_support_regimes_in_eastern_europe
+        prerequisite = { focus = SOV_refusal_to_support_regimes_in_eastern_europe }
         allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
         x = 0
         y = 1
-        cost = 7.2
+        cost = 10
         completion_reward = {
             custom_effect_tooltip = we_will_agree_to_the_unification_of_germany
             set_global_flag = agreement_to_the_unification_of_germany

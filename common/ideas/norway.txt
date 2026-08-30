@@ -13,6 +13,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				local_resources_factor = 0.05
+				income_growth_factor = 0.1
 			}
 		}
 		NOR_nato_northern_flank = {

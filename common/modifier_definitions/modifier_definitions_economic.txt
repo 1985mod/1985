@@ -1,0 +1,17 @@
+#############################
+# Economic custom modifiers #
+#############################
+
+income_growth_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+expense_growth_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 1
+	category = country
+}

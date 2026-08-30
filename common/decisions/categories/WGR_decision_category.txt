@@ -11,3 +11,17 @@ WGR_election_campaign_in_germany = {
 		has_country_flag = election_campaign_in_germany_1987
 	}
 }
+
+WGR_two_plus_four_negotiations = {
+    icon = generic_foreign_policy
+	  
+	priority = 90
+	  
+	allowed = {
+		original_tag = WGR
+	}
+	  
+	visible = {
+		has_completed_focus = WGR_2_4
+	}
+}
