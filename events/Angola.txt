@@ -1,0 +1,22 @@
+add_namespace = angola
+
+country_event = {
+    id = angola.1
+    title = angola.1.t
+    desc = angola.1.desc
+
+	trigger = {
+        ANG = {
+            NOT = { has_war_with = UNI }
+        }
+        tag = ANG
+        country_exists = ANG
+    }
+	fire_only_once = yes
+
+    option = {
+        name = angola.1.a
+        set_cosmetic_tag = ANG_peoples_republic_of_angola
+        add_stability = 0.05
+	}
+}

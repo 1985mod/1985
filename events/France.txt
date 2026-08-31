@@ -1,0 +1,70 @@
+add_namespace = france
+
+country_event = {
+	id = france.1 ##  Выборы 1988 года ##
+	title = france.1.t
+	desc = france.1.desc
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+    # Франсуа Миттеран
+	option = {
+		name = france.1.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = socialism
+                popularity = 0.03
+			}
+		}
+	}
+
+	# Жак Ширак
+	option = {
+		name = france.1.b
+		ai_chance = {
+			base = 15
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = conservatism
+                popularity = 0.03
+			}
+		}
+	}
+}

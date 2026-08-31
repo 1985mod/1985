@@ -1,0 +1,292 @@
+ add_namespace = switzerland
+
+country_event = {
+	id = switzerland.1
+	title = switzerland.1.t
+	desc = switzerland.1.desc
+	hidden = yes
+
+	trigger = {
+		tag = SWI
+		has_civil_war = no
+		date > 1985.12.14
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = switzerland.1.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = SWI_alphons_egli
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = switzerland.2
+	title = switzerland.2.t
+	desc = switzerland.2.desc
+	hidden = yes
+
+	trigger = {
+		tag = SWI
+		has_civil_war = no
+		date > 1986.12.14
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = switzerland.2.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = switzerland.3
+	title = switzerland.3.t
+	desc = switzerland.3.desc
+	hidden = yes
+
+	trigger = {
+		tag = SWI
+		has_civil_war = no
+		date > 1987.12.14
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = switzerland.3.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = socialism
+			promote_character = {
+				character = SWI_otto_stich
+				ideology = socialism
+			}
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = switzerland.4
+	title = switzerland.4.t
+	desc = switzerland.4.desc
+	hidden = yes
+
+	trigger = {
+		tag = SWI
+		has_civil_war = no
+		date > 1988.12.14
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = switzerland.4.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = switzerland.5
+	title = switzerland.5.t
+	desc = switzerland.5.desc
+	hidden = yes
+
+	trigger = {
+		tag = SWI
+		has_civil_war = no
+		date > 1989.12.14
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = switzerland.5.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = SWI_arnold_koller
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = switzerland.6
+	title = switzerland.6.t
+	desc = switzerland.6.desc
+	hidden = yes
+
+	trigger = {
+		tag = SWI
+		has_civil_war = no
+		date > 1990.12.14
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = switzerland.6.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = SWI_flavio_cotti
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = switzerland.7
+	title = switzerland.7.t
+	desc = switzerland.7.desc
+	hidden = yes
+
+	trigger = {
+		tag = SWI
+		has_civil_war = no
+		date > 1991.12.11
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = switzerland.7.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = socialism
+			promote_character = {
+				character = SWI_rene_felber
+				ideology = socialism
+			}
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = switzerland.8
+	title = switzerland.8.t
+	desc = switzerland.8.desc
+	hidden = yes
+
+	trigger = {
+		tag = SWI
+		has_civil_war = no
+		date > 1992.12.11
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = switzerland.8.a
+		 set_party_name = {
+            ideology = conservatism
+            long_name = SWI_swiss_peoples_party
+            name = SWI_SPP
+        }
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = SWI_adolf_ogi
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}

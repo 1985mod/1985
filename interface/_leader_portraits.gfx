@@ -83,6 +83,11 @@ spriteTypes = {
 		name = GFX_portrait_FRA_francois_mitterrand
 		textureFile = "gfx/leaders/FRA/Portrait_Francois_Mitterrand.dds"
 	}
+
+	spriteType = {
+		name = GFX_portrait_FRA_jacques_chirac
+		textureFile = "gfx/leaders/FRA/Portrait_Jacques_Chirac.dds"
+	}
 	
 	##PRC##
 	spriteType = {
@@ -109,8 +114,38 @@ spriteTypes = {
     
 	##ITA##
 	spriteType = {
-		name = GFX_portrait_ITA_sandro_pertini
-		texturefile = "gfx/leaders/ITA/Portrait_Sandro_Pertini.dds"
+		name = GFX_portrait_ITA_bettino_craxi
+		texturefile = "gfx/leaders/ITA/Portrait_Bettino_Craxi.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_ITA_amintore_fanfani
+		texturefile = "gfx/leaders/ITA/Portrait_Amintore_Fanfani.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_ITA_giovanni_goria
+		texturefile = "gfx/leaders/ITA/Portrait_Giovanni_Goria.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_ITA_ciriaco_de_mita
+		texturefile = "gfx/leaders/ITA/Portrait_Ciriaco_De_Mita.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_ITA_giulio_andreotti
+		texturefile = "gfx/leaders/ITA/Portrait_Giulio_Andreotti.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_ITA_giuliano_amato
+		texturefile = "gfx/leaders/ITA/Portrait_Giuliano_Amato.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_ITA_carlo_azeglio_ciampi
+		texturefile = "gfx/leaders/ITA/Portrait_Carlo_Azeglio_Ciampi.dds"
 	}
     
 	##JAP##
@@ -337,6 +372,46 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_SWI_kurt_furgler
 		texturefile = "gfx/leaders/SWI/Portrait_Kurt_Furgler.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWI_alphons_egli
+		texturefile = "gfx/leaders/SWI/Portrait_Alphons_Egli.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWI_pierre_aubert
+		texturefile = "gfx/leaders/SWI/Portrait_Pierre_Aubert.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWI_otto_stich
+		texturefile = "gfx/leaders/SWI/Portrait_Otto_Stich.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWI_jean_pascal_delamuraz
+		texturefile = "gfx/leaders/SWI/Portrait_Jean_Pascal_Delamuraz.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWI_arnold_koller
+		texturefile = "gfx/leaders/SWI/Portrait_Arnold_Koller.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWI_flavio_cotti
+		texturefile = "gfx/leaders/SWI/Portrait_Flavio_Cotti.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWI_renе_felber
+		texturefile = "gfx/leaders/SWI/Portrait_Renе_felber.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SWI_Adolf_Ogi
+		texturefile = "gfx/leaders/SWI/Portrait_Adolf_Ogi.dds"
 	}
 	
 	## SWE ##

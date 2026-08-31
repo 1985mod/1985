@@ -1,0 +1,1840 @@
+focus_tree = {
+	id = china_communist_focus_sea
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 1500
+			tag = PRC
+		}
+	}
+	
+    focus = { 
+        id = PRC_reform_the_economic_system
+        icon = GFX_focus_generic_currency_reforms
+        x = 20
+        y = 0
+		relative_position_id = PRC_know_the_enemy
+
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_tax_transfer_practice
+        icon = GFX_focus_ARG_crackdown_on_corruption
+		prerequisite = {
+			focus = PRC_reform_the_economic_system
+		}
+		mutually_exclusive = {
+			focus = PRC_ban_practice_transferring_taxes
+		}
+        x = -1
+        y = 1
+		
+		relative_position_id = PRC_reform_the_economic_system
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_ban_practice_transferring_taxes
+        icon = GFX_focus_RAJ_war_taxes
+		prerequisite = {
+			focus = PRC_reform_the_economic_system
+		}
+		mutually_exclusive = {
+			focus = PRC_tax_transfer_practice
+		}
+        x = 1
+        y = 1
+		
+		relative_position_id = PRC_reform_the_economic_system
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_fight_against_bureaucrats
+        icon = GFX_focus_PRC_promote_paper_bills
+		prerequisite = {
+			focus = PRC_tax_transfer_practice
+			focus = PRC_ban_practice_transferring_taxes
+		}
+        x = 0
+        y = 2
+		
+		relative_position_id = PRC_reform_the_economic_system
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_priority_foreign_trade
+        icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = {
+			focus = PRC_fight_against_bureaucrats
+		}
+		mutually_exclusive = {
+			focus = PRC_eliminate_problem_industry_and_interdependence
+		}
+        x = -7
+        y = 3
+		
+		relative_position_id = PRC_reform_the_economic_system
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_dev_pudong
+        icon = GFX_focus_DEN_develop_bornholm
+		prerequisite = {
+			focus = PRC_priority_foreign_trade
+		}
+        x = -2
+        y = 1
+		
+		relative_position_id = PRC_priority_foreign_trade
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_sudden_liberalization_prices
+        icon = GFX_focus_generic_price_controls
+		prerequisite = {
+			focus = PRC_priority_foreign_trade
+		}
+        x = 0
+        y = 1
+		
+		relative_position_id = PRC_priority_foreign_trade
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_contract_employment_law
+        icon = GFX_focus_GER_prioritize_the_four_year_plan
+		prerequisite = {
+			focus = PRC_priority_foreign_trade
+		}
+        x = 2
+        y = 1
+		
+		relative_position_id = PRC_priority_foreign_trade
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_consolidation_production_contracts
+        icon = GFX_focus_PRC_establish_shorter_market_plans
+		prerequisite = {
+			focus = PRC_dev_pudong
+		}
+		prerequisite = {
+			focus = PRC_sudden_liberalization_prices
+		}
+        x = -1
+        y = 2
+		
+		relative_position_id = PRC_priority_foreign_trade
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_state_guidance_control_production
+        icon = GFX_goal_generic_production2
+		prerequisite = {
+			focus = PRC_consolidation_production_contracts
+		}
+        x = -1
+        y = 3
+		
+		relative_position_id = PRC_priority_foreign_trade
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_reform_of_planned_economy
+        icon = GFX_focus_RAJ_special_economic_zones
+		prerequisite = {
+			focus = PRC_plan_market_development
+		}
+        x = 1
+        y = 3
+		
+		relative_position_id = PRC_priority_foreign_trade
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_modern_market_economy
+        icon = GFX_focus_AFG_a_modern_economy
+		prerequisite = {
+			focus = PRC_state_guidance_control_production
+		}
+		prerequisite = {
+			focus = PRC_reform_of_planned_economy
+		}
+        x = 0
+        y = 4
+		
+		relative_position_id = PRC_priority_foreign_trade
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_revise_organization_chinas_economic_planning_apparatus
+        icon = GFX_focus_generic_economic_recovery
+		prerequisite = {
+			focus = PRC_modern_market_economy
+		}
+        x = 0
+        y = 5
+		
+		relative_position_id = PRC_priority_foreign_trade
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_plan_market_development
+        icon = GFX_focus_CHI_found_fertiliser_plant
+		prerequisite = {
+			focus = PRC_contract_employment_law
+		}
+		prerequisite = {
+			focus = PRC_sudden_liberalization_prices
+		}
+        x = 1
+        y = 2
+		
+		relative_position_id = PRC_priority_foreign_trade
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_price_reform_and_austerity
+        icon = GFX_focus_SWE_socialist_reforms
+		prerequisite = {
+			focus = PRC_priority_foreign_trade
+		}
+        x = -2
+        y = 2
+		
+		relative_position_id = PRC_fight_against_bureaucrats
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_new_economic_zone
+        icon = GFX_focus_RAJ_trickle_down_economics
+		prerequisite = {
+			focus = PRC_priority_foreign_trade
+			focus = PRC_eliminate_problem_industry_and_interdependence
+		}
+        x = 0
+        y = 2
+		
+		relative_position_id = PRC_fight_against_bureaucrats
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_establish_trade_relations_with_the_ussr
+        icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = {
+			focus = PRC_price_reform_and_austerity
+			focus = PRC_new_economic_zone
+			focus = PRC_privatization_agricultural_facilities
+		}
+        x = 0
+        y = 3
+		
+		relative_position_id = PRC_fight_against_bureaucrats
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_call_for_investment
+        icon = GFX_focus_generic_road_investment
+		prerequisite = {
+			focus = PRC_establish_trade_relations_with_the_ussr
+		}
+        x = 0
+        y = 4
+		
+		relative_position_id = PRC_fight_against_bureaucrats
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_soviet_joint_ventures
+        icon = GFX_focus_FIN_approach_the_soviets
+		prerequisite = {
+			focus = PRC_call_for_investment
+		}
+        mutually_exclusive = {
+			focus = PRC_north_korean_joint_ventures	
+			focus = PRC_japanese_joint_ventures
+		}
+        x = -2
+        y = 5
+		
+		relative_position_id = PRC_fight_against_bureaucrats
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_north_korean_joint_ventures
+        icon = GFX_focus_generic_invade_korea
+		prerequisite = {
+			focus = PRC_call_for_investment
+		}
+        mutually_exclusive = {
+			focus = PRC_soviet_joint_ventures	
+			focus = PRC_japanese_joint_ventures
+		}
+        x = 0
+        y = 5
+		
+		relative_position_id = PRC_fight_against_bureaucrats
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_japanese_joint_ventures
+        icon = GFX_focus_PHI_encourage_japanese_investment
+		prerequisite = {
+			focus = PRC_call_for_investment
+		}
+        mutually_exclusive = {
+			focus = PRC_north_korean_joint_ventures	
+			focus = PRC_soviet_joint_ventures
+		}
+        x = 2
+        y = 5
+		
+		relative_position_id = PRC_fight_against_bureaucrats
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_new_great_leap_forward
+        icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = {
+			focus = PRC_soviet_joint_ventures
+			focus = PRC_north_korean_joint_ventures
+			focus = PRC_japanese_joint_ventures
+		}
+        x = 0
+        y = 6
+		
+		relative_position_id = PRC_fight_against_bureaucrats
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_privatization_agricultural_facilities
+        icon = GFX_focus_generic_agricultural_subsidies
+		prerequisite = {
+			focus = PRC_eliminate_problem_industry_and_interdependence
+		}
+        x = 2
+        y = 2
+		
+		relative_position_id = PRC_fight_against_bureaucrats
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_eliminate_problem_industry_and_interdependence
+        icon = GFX_focus_generic_industrialists
+		prerequisite = {
+			focus = PRC_fight_against_bureaucrats
+		}
+        mutually_exclusive = {
+			focus = PRC_priority_foreign_trade		
+		}
+        x = 7
+        y = 3
+		
+		relative_position_id = PRC_reform_the_economic_system
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_state_nationalization
+        icon = GFX_focus_generic_communist_industry
+		prerequisite = {
+			focus = PRC_eliminate_problem_industry_and_interdependence
+		}
+        x = -1
+        y = 1
+		
+		relative_position_id = PRC_eliminate_problem_industry_and_interdependence
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_monitor_the_production_process
+        icon = GFX_focus_generic_industrial_experts
+		prerequisite = {
+			focus = PRC_state_nationalization
+		}
+        x = -2
+        y = 2
+		
+		relative_position_id = PRC_eliminate_problem_industry_and_interdependence
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_involvement_in_market_relations
+        icon = GFX_focus_PRC_urbanization_two
+		prerequisite = {
+			focus = PRC_eliminate_problem_industry_and_interdependence
+		}
+        x = 1
+        y = 1
+		
+		relative_position_id = PRC_eliminate_problem_industry_and_interdependence
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_economic_policies_similar_mao_zedongs
+        icon = GFX_focus_PRC_yanan_rectification_movement
+		prerequisite = {
+			focus = PRC_state_nationalization
+		}
+		prerequisite = {
+			focus = PRC_involvement_in_market_relations
+		}
+        x = 0
+        y = 2
+		
+		relative_position_id = PRC_eliminate_problem_industry_and_interdependence
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_the_second_socialization_society
+        icon = GFX_focus_JAP_incorporate_buddhist_socialism
+		prerequisite = {
+			focus = PRC_economic_policies_similar_mao_zedongs
+		}
+        x = -1
+        y = 3
+		
+		relative_position_id = PRC_eliminate_problem_industry_and_interdependence
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_mobilization_of_agricultural_resources
+        icon = GFX_focus_JAP_central_agricultural_association
+		prerequisite = {
+			focus = PRC_economic_policies_similar_mao_zedongs
+		}
+        x = 1
+        y = 3
+		
+		relative_position_id = PRC_eliminate_problem_industry_and_interdependence
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_glory_to_the_chinese_economy
+        icon = GFX_focus_CHI_planned_economy
+		prerequisite = {
+			focus = PRC_the_second_socialization_society
+			focus = PRC_mobilization_of_agricultural_resources
+		}
+        x = 0
+        y = 4
+		
+		relative_position_id = PRC_eliminate_problem_industry_and_interdependence
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+	
+### Foreign policy ### Внешняя политика ###
+
+    focus = { 
+        id = PRC_fight_against_perceived_opponents
+        icon = GFX_focus_generic_strike_at_democracy2
+        x = 35
+        y = 0
+		
+		relative_position_id = PRC_reform_the_economic_system
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_korean_peninsula
+        icon = GFX_focus_generic_invade_korea
+		prerequisite = {
+			focus = PRC_fight_against_perceived_opponents
+		}
+        x = -4
+        y = 1
+		
+		relative_position_id = PRC_fight_against_perceived_opponents
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_criticism_of_south_korea
+        icon = GFX_focus_JAP_ignite_the_korean_peninsula
+		prerequisite = {
+			focus = PRC_korean_peninsula
+		}
+		mutually_exclusive = {
+			focus = PRC_support_for_the_status_quo
+		}
+        x = 1
+        y = 1
+		
+		relative_position_id = PRC_korean_peninsula
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_demand_to_cancel_american_guarantees
+        icon = GFX_focus_usa_focus_on_europe
+		prerequisite = {
+			focus = PRC_criticism_of_south_korea
+		}
+        x = 2
+        y = 2
+		
+		relative_position_id = PRC_korean_peninsula
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_arms_supplies_to_the_north
+        icon = GFX_focus_generic_reinforcing_the_supply_network
+		prerequisite = {
+			focus = PRC_demand_to_cancel_american_guarantees
+		}
+        x = 2
+        y = 3
+		
+		relative_position_id = PRC_korean_peninsula
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_second_korean_war
+        icon = GFX_focus_CHI_protracted_warfare
+		prerequisite = {
+			focus = PRC_arms_supplies_to_the_north
+		}
+        x = 2
+        y = 4
+		
+		relative_position_id = PRC_korean_peninsula
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_support_for_the_status_quo
+        icon = GFX_focus_SWI_neutrality_on_the_move
+		prerequisite = {
+			focus = PRC_korean_peninsula
+		}
+		mutually_exclusive = {
+			focus = PRC_criticism_of_south_korea
+		}
+        x = -1
+        y = 1
+		
+		relative_position_id = PRC_korean_peninsula
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_market_cooperation_with_north_korea
+        icon = GFX_focus_CHI_registry_of_property
+		prerequisite = {
+			focus = PRC_support_for_the_status_quo
+		}
+        x = -1
+        y = 1
+		
+		relative_position_id = PRC_support_for_the_status_quo
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_market_cooperation_with_south_korea
+        icon = GFX_focus_generic_road_investment
+		prerequisite = {
+			focus = PRC_support_for_the_status_quo
+		}
+        x = -1
+        y = 2
+		
+		relative_position_id = PRC_support_for_the_status_quo
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_condemn_japan_for_second_world_war
+        icon = GFX_focus_AST_war_japan
+		prerequisite = {
+			focus = PRC_market_cooperation_with_north_korea
+		}
+		prerequisite = {
+			focus = PRC_market_cooperation_with_south_korea
+		}
+        x = -1
+        y = 3
+		
+		relative_position_id = PRC_support_for_the_status_quo
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_guarantees_koreans
+        icon = GFX_focus_JAP_korean_volunteer_army
+		prerequisite = {
+			focus = PRC_condemn_japan_for_second_world_war
+		}
+        x = 1
+        y = 1
+		
+		relative_position_id = PRC_condemn_japan_for_second_world_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_lead_to_negotiations
+        icon = GFX_focus_CHI_negotiate_the_nine_powers_treaty
+		prerequisite = {
+			focus = PRC_guarantees_koreans
+		}
+        x = 1
+        y = 2
+		
+		relative_position_id = PRC_condemn_japan_for_second_world_war
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_joint_development_koreas
+        icon = GFX_focus_PRC_rural_region_development
+		prerequisite = {
+			focus = PRC_lead_to_negotiations
+		}
+        x = 1
+        y = 3
+		
+		relative_position_id = PRC_condemn_japan_for_second_world_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_remind_about_our_help
+        icon = GFX_focus_PRC_burn_the_paper_tigers
+		prerequisite = {
+			focus = PRC_second_korean_war
+		}
+        x = -1
+        y = 1
+		
+		relative_position_id = PRC_second_korean_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_bribe_generals_of_north_korea
+        icon = GFX_focus_PRC_invite_soviet_general
+		prerequisite = {
+			focus = PRC_remind_about_our_help
+		}
+        x = -1
+        y = 2
+		
+		relative_position_id = PRC_second_korean_war
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_coup_detat_in_north_korea
+        icon = GFX_focus_PRC_army_doctrines
+		prerequisite = {
+			focus = PRC_bribe_generals_of_north_korea
+		}
+        x = -1
+        y = 3
+		
+		relative_position_id = PRC_second_korean_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_indochina_and_burma
+        icon = GFX_focus_JAP_occupy_indochina
+		prerequisite = {
+			focus = PRC_fight_against_perceived_opponents
+		}
+        x = 5
+        y = 1
+		
+		relative_position_id = PRC_fight_against_perceived_opponents
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_support_burmese_communists
+        icon = GFX_focus_generic_spur_communist_revolutions
+		prerequisite = {
+			focus = PRC_indochina_and_burma
+		}
+		mutually_exclusive = {
+			focus = PRC_support_legitimate_government
+		}
+        x = -5
+        y = 1
+		
+		relative_position_id = PRC_indochina_and_burma
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_support_legitimate_government
+        icon = GFX_focus_generic_democratic_asia
+		prerequisite = {
+			focus = PRC_indochina_and_burma
+		}
+		mutually_exclusive = {
+			focus = PRC_support_burmese_communists
+		}
+        x = -3
+        y = 1
+		
+		relative_position_id = PRC_indochina_and_burma
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_demand_arunachal_pradesh
+        icon = GFX_focus_RAJ_all_india_forward_bloc
+		prerequisite = {
+			focus = PRC_support_burmese_communists
+			focus = PRC_support_legitimate_government
+		}
+		mutually_exclusive = {
+			focus = PRC_sino_indian_treaty_of_friendship
+		}
+        x = -3
+        y = 2
+		
+		relative_position_id = PRC_indochina_and_burma
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_sino_indian_treaty_of_friendship
+        icon = GFX_focus_generic_support_the_left_right
+		prerequisite = {
+			focus = PRC_support_burmese_communists
+			focus = PRC_support_legitimate_government
+		}
+		mutually_exclusive = {
+			focus = PRC_demand_arunachal_pradesh
+		}
+        x = -5
+        y = 2
+		
+		relative_position_id = PRC_indochina_and_burma
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_sino_indian_pact
+        icon = GFX_focus_RAJ_pruna_swaraj
+		prerequisite = {
+			focus = PRC_sino_indian_treaty_of_friendship
+		}
+        x = -5
+        y = 3
+		
+		relative_position_id = PRC_indochina_and_burma
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_try_improve_relations_with_vietnam
+        icon = GFX_focus_generic_strike_at_democracy3
+		prerequisite = {
+			focus = PRC_indochina_and_burma
+		}
+		mutually_exclusive = {
+			focus = PRC_pakistans_support_kashmir
+		}
+        x = 1
+        y = 1
+		
+		relative_position_id = PRC_indochina_and_burma
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_investments_in_vietnam
+        icon = GFX_focus_generic_reduce_unneccessary_expenditure
+		prerequisite = {
+			focus = PRC_indochina_and_burma
+		}
+		mutually_exclusive = {
+			focus = PRC_pakistans_support_kashmir
+		}
+        x = 0
+        y = 1
+		
+		relative_position_id = PRC_try_improve_relations_with_vietnam
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_vietnam_accepted
+        icon = GFX_focus_GER_party_chancellor_hess
+		prerequisite = {
+			focus = PRC_investments_in_vietnam
+		}
+		mutually_exclusive = {
+			focus = PRC_vietnam_rejected
+		}
+        x = -1
+        y = 2
+		
+		relative_position_id = PRC_try_improve_relations_with_vietnam
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_joint_exercises_with_vietnam
+        icon = GFX_focus_GER_party_chancellor_hess
+		prerequisite = {
+			focus = PRC_vietnam_accepted
+		}
+        x = 0
+        y = 1
+		
+		relative_position_id = PRC_vietnam_accepted
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_joint_development_zones
+        icon = GFX_focus_GER_party_chancellor_hess
+		prerequisite = {
+			focus = PRC_joint_exercises_with_vietnam
+		}
+        x = 0
+        y = 2
+		
+		relative_position_id = PRC_vietnam_accepted
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_guarantees_to_vietnam
+        icon = GFX_focus_GER_party_chancellor_hess
+		prerequisite = {
+			focus = PRC_joint_development_zones
+		}
+        x = 0
+        y = 3
+		
+		relative_position_id = PRC_vietnam_accepted
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_vietnam_rejected
+        icon = GFX_focus_por_workers_of_iberia
+		prerequisite = {
+			focus = PRC_investments_in_vietnam
+		}
+		mutually_exclusive = {
+			focus = PRC_vietnam_accepted
+		}
+        x = 1
+        y = 2
+		
+		relative_position_id = PRC_try_improve_relations_with_vietnam
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_new_enemy_continent
+        icon = GFX_focus_por_workers_of_iberia
+		prerequisite = {
+			focus = PRC_vietnam_rejected
+		}
+        x = 0
+        y = 1
+		
+		relative_position_id = PRC_vietnam_rejected
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_militarization_nearby_ports
+        icon = GFX_focus_por_workers_of_iberia
+		prerequisite = {
+			focus = PRC_new_enemy_continent
+		}
+        x = 0
+        y = 2
+		
+		relative_position_id = PRC_vietnam_rejected
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_second_socialist_war
+        icon = GFX_focus_por_workers_of_iberia
+		prerequisite = {
+			focus = PRC_militarization_nearby_ports
+		}
+        x = 0
+        y = 3
+		
+		relative_position_id = PRC_vietnam_rejected
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_pakistans_support_kashmir
+        icon = GFX_focus_por_workers_of_iberia
+		prerequisite = {
+			focus = PRC_indochina_and_burma
+		}
+		mutually_exclusive = {
+			focus = PRC_try_improve_relations_with_vietnam
+		}
+        x = 4
+        y = 1
+		
+		relative_position_id = PRC_indochina_and_burma
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_joint_exercises_with_pakistan
+        icon = GFX_focus_por_workers_of_iberia
+		prerequisite = {
+			focus = PRC_pakistans_support_kashmir
+		}
+        x = 3
+        y = 2
+		
+		relative_position_id = PRC_indochina_and_burma
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_arms_supplies_to_pakistan
+        icon = GFX_focus_por_workers_of_iberia
+		prerequisite = {
+			focus = PRC_pakistans_support_kashmir
+		}
+        x = 5
+        y = 2
+		
+		relative_position_id = PRC_indochina_and_burma
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_brothers_forever
+        icon = GFX_focus_por_workers_of_iberia
+		prerequisite = {
+			focus = PRC_arms_supplies_to_pakistan
+		}
+		prerequisite = {
+			focus = PRC_joint_exercises_with_pakistan
+		}
+        x = 4
+        y = 3
+		
+		relative_position_id = PRC_indochina_and_burma
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+### domestic policy ### внутренняя политика ###
+
+    focus = { 
+        id = PRC_the_future_of_the_pda
+        icon = GFX_focus_por_workers_of_iberia
+        x = 18
+        y = 0
+		
+		relative_position_id = PRC_reform_the_economic_system
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_the_influence_of_the_experience_of_the_asian_economic_tigers
+        icon = GFX_focus_CHL_enlarge_the_textile_industries
+		prerequisite = {
+			focus = PRC_the_future_of_the_pda
+		}
+        x = 0
+        y = 1
+		
+		relative_position_id = PRC_the_future_of_the_pda
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_cpc_elections
+        icon = GFX_focus_PRC_the_chinese_century
+		prerequisite = {
+			focus = PRC_the_influence_of_the_experience_of_the_asian_economic_tigers
+		}
+        x = 0
+        y = 2
+		
+		relative_position_id = PRC_the_future_of_the_pda
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_continuation_of_deng_xiaopings_policies
+        icon = GFX_focus_PRC_embrace_change_in_leadership
+		mutually_exclusive = {
+			focus = PRC_liberal_hu_yaobang		
+		}
+		prerequisite = {
+			focus = PRC_cpc_elections
+		}
+        x = -4
+        y = 1
+		
+		relative_position_id = PRC_cpc_elections
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_the_second_stage_of_the_reform
+        icon = GFX_focus_PRC_assume_leadership
+		prerequisite = {
+			focus = PRC_continuation_of_deng_xiaopings_policies
+		}
+        x = 0
+        y = 1
+		
+		relative_position_id = PRC_continuation_of_deng_xiaopings_policies
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_dismantling_the_planned_system
+        icon = GFX_focus_CHI_baojia_system
+		prerequisite = {
+			focus = PRC_the_second_stage_of_the_reform
+		}
+        x = -2
+        y = 2
+		
+		relative_position_id = PRC_continuation_of_deng_xiaopings_policies
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_foreign_companies_and_investments
+        icon = GFX_focus_PRC_urbanization_two
+		prerequisite = {
+			focus = PRC_the_second_stage_of_the_reform
+		}
+        x = 2
+        y = 2
+		
+		relative_position_id = PRC_continuation_of_deng_xiaopings_policies
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_transition_to_market_economy
+        icon = GFX_focus_generic_economic_recovery
+		prerequisite = {
+			focus = PRC_dismantling_the_planned_system
+		}
+		prerequisite = {
+			focus = PRC_foreign_companies_and_investments
+		}
+        x = 0
+        y = 3
+		
+		relative_position_id = PRC_continuation_of_deng_xiaopings_policies
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_liberal_hu_yaobang
+        icon = GFX_focus_prc_social_democracy
+		mutually_exclusive = {
+			focus = PRC_continuation_of_deng_xiaopings_policies		
+		}
+		prerequisite = {
+			focus = PRC_cpc_elections
+		}
+        x = 4
+        y = 1
+		
+		relative_position_id = PRC_cpc_elections
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_opposition_to_conservatives
+        icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = {
+			focus = PRC_liberal_hu_yaobang
+		}
+        x = -2
+        y = 1
+		
+		relative_position_id = PRC_liberal_hu_yaobang
+			
+        cost = 10
+		
+        completion_reward = {
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.05
+            }
+            add_stability = -0.05
+        }
+    }
+	
+    focus = { 
+        id = PRC_promotion_of_young_communists_to_leadership_positions
+        icon = GFX_focus_generic_social_democracy
+		prerequisite = {
+			focus = PRC_liberal_hu_yaobang
+		}
+        x = 2
+        y = 1
+		
+		relative_position_id = PRC_liberal_hu_yaobang
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_organize_an_underground_movement_for_free_china
+        icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = {
+			focus = PRC_opposition_to_conservatives
+		}
+		prerequisite = {
+			focus = PRC_promotion_of_young_communists_to_leadership_positions
+		}
+        x = 0
+        y = 2
+		
+		relative_position_id = PRC_liberal_hu_yaobang
+			
+        cost = 10
+		
+        completion_reward = {
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.03
+            }
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.03
+            }
+        }
+    }
+	
+    focus = { 
+        id = PRC_weakening_of_the_party_dictatorship
+        icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = {
+			focus = PRC_organize_an_underground_movement_for_free_china
+		}
+        x = 0
+        y = 3
+		
+		relative_position_id = PRC_liberal_hu_yaobang
+			
+        cost = 10
+		
+        completion_reward = {
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.04
+            }
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.04
+            }
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.04
+            }
+            add_political_power = 75
+        }
+    }
+	
+    focus = { 
+        id = PRC_modernization_of_old_china
+        icon = GFX_focus_RAJ_peacock_throne_for_the_modern_age
+		prerequisite = {
+			focus = PRC_transition_to_market_economy
+			focus = PRC_weakening_of_the_party_dictatorship
+		}
+        x = -4
+        y = 5
+		
+		relative_position_id = PRC_liberal_hu_yaobang
+			
+        cost = 10
+		
+        completion_reward = {
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = PRC_modernization_of_old_china
+				bonus = 0.5
+				uses = 2
+				category = air_equipment
+			}
+        }
+    }
+	
+    focus = { 
+        id = PRC_one_china_policy
+        icon = GFX_focus_chi_one_china_policy
+		prerequisite = {
+			focus = PRC_modernization_of_old_china
+		}
+        x = 0
+        y = 1
+		
+		relative_position_id = PRC_modernization_of_old_china
+			
+        cost = 5
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_taiwan_seizure
+        icon = GFX_focus_attack_china
+		prerequisite = {
+			focus = PRC_one_china_policy
+		}
+		mutually_exclusive = {
+			focus = PRC_support_of_friendly_relations_with_the_kuomintang
+		}
+        x = -2
+        y = 2
+		
+		relative_position_id = PRC_modernization_of_old_china
+			
+        cost = 10
+		
+        completion_reward = {
+            create_wargoal = {
+                type = take_state_focus
+                target = CHI
+		    }
+        }
+    }
+    focus = { 
+        id = PRC_support_of_friendly_relations_with_the_kuomintang
+        icon = GFX_focus_chi_proclaim_rival_government
+		prerequisite = {
+			focus = PRC_one_china_policy
+		}
+		mutually_exclusive = {
+			focus = PRC_taiwan_seizure
+		}
+        x = 2
+        y = 2
+		
+		relative_position_id = PRC_modernization_of_old_china
+			
+        cost = 10
+		
+        completion_reward = {
+            add_relation_modifier = {
+            	target = CHI
+            	modifier = FRA_carry_the_revolution_south
+            }
+        }
+    }
+	
+    focus = { 
+        id = PRC_integration_of_taiwan
+        icon = GFX_focus_chi_united_front
+		prerequisite = {
+			focus = PRC_taiwan_seizure
+			focus = PRC_support_of_friendly_relations_with_the_kuomintang
+		}
+        x = 0
+        y = 3
+		
+		relative_position_id = PRC_modernization_of_old_china
+			
+        cost = 10
+		
+        completion_reward = {
+            
+        }
+    }
+	
+    focus = { 
+        id = PRC_one_country_two_systems
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_integration_of_taiwan
+		}
+        x = 0
+        y = 4
+		
+		relative_position_id = PRC_modernization_of_old_china
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+	
+### Army ### Армия ###
+	
+    focus = { 
+        id = PRC_shame_in_the_first_socialist_war
+        icon = GFX_goal_anschluss
+        x = 2
+        y = 2
+		
+		relative_position_id = PRC_new_great_leap_forward
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_army_modernization
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_shame_in_the_first_socialist_war
+		}
+        x = 0
+        y = 1
+		
+		relative_position_id = PRC_shame_in_the_first_socialist_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_lessons_of_war
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_army_modernization
+		}
+        x = 0
+        y = 2
+		
+		relative_position_id = PRC_shame_in_the_first_socialist_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_tank_blitzkrieg
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_lessons_of_war
+		}
+		mutually_exclusive = {
+			focus = PRC_massive_attack		
+		}
+        x = -2
+        y = 3
+		
+		relative_position_id = PRC_shame_in_the_first_socialist_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_massive_attack
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_lessons_of_war
+		}
+		mutually_exclusive = {
+			focus = PRC_tank_blitzkrieg		
+		}
+        x = 2
+        y = 3
+		
+		relative_position_id = PRC_shame_in_the_first_socialist_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+	
+    focus = { 
+        id = PRC_exercises_with_the_dprk
+        icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = PRC_tank_blitzkrieg
+			focus = PRC_massive_attack
+		}
+        x = 0
+        y = 4
+		
+		relative_position_id = PRC_shame_in_the_first_socialist_war
+			
+        cost = 10
+		
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+}

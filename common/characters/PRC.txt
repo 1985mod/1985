@@ -1,21 +1,4 @@
 characters = {
-	PRC_li_xiannian_leader ={
-		name = PRC_li_xiannian_leader
-		portraits ={
-			civilian ={
-				large = GFX_portrait_PRC_li_xiannian
-			}
-		}
-		country_leader={
-			ideology = leninism
-			traits = {  }
-			expire = "1999.1.1.1"
-			
-		}
-
-		id = -1
-	}
-
 	PRC_deng_xiaoping ={
 		name = PRC_deng_xiaoping
 		portraits = {
@@ -27,8 +10,7 @@ characters = {
 			ideology = chinese_socialism
 			traits = {  }
 			expire = "1999.1.1.1"
-			
+			id = -1
 		}
-		id = -1
 	}
 }

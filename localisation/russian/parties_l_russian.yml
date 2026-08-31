@@ -1,7 +1,7 @@
 ﻿l_russian:
 
- communism: "Тоталитарный Социализм"
- communism_noun: "Тоталитарный Социализм"
+ communism: "Социализм"
+ communism_noun: "Социализм"
  communism_desc: "Социалистическое Государство"
 
  socialism: "Социал-Демократия"
@@ -433,10 +433,10 @@
  SWI_liberalism_party_long: "Свободная демократическая партия"
  SWI_conservatism_party: "ХДНП"
  SWI_conservatism_party_long: "Христианско-демократическая народная партия"
- SWI_neutrality_party: "НД"
+ SWI_neutrality_party: "Национальное действие"
  SWI_neutrality_party_long: "Национальное действие"
- SWI_fascism_party: "ШНП"
- SWI_fascism_party_long: "Швейцарская народная партия"
+ SWI_fascism_party: "§RОтсутствует§!"
+ SWI_fascism_party_long: "§RОтсутствует§!"
  
  WGR_socialism_party: "СДПГ"
  WGR_socialism_party_long: "Социал-демократическая партия Германии"
@@ -521,10 +521,10 @@
  NEP_liberalism_party_long: "§RЗапрещено§!"
  NEP_conservatism_party: "§RЗапрещено§!"
  NEP_conservatism_party_long: "§RЗапрещено§!"
- NEP_neutrality_party: "§RЗапрещено§!"
- NEP_neutrality_party_long: "§RЗапрещено§!"
- NEP_fascism_party: "Королевское правительство" 
- NEP_fascism_party_long: "Королевское правительство"
+ NEP_neutrality_party: "Королевское правительство"
+ NEP_neutrality_party_long: "Королевское правительство Непал"
+ NEP_fascism_party: "§RЗапрещено§!" 
+ NEP_fascism_party_long: "§RЗапрещено§!"
 
  BHU_communism_party: "§RЗапрещено§!"
  BHU_communism_party_long: "§RЗапрещено§!"
@@ -534,10 +534,10 @@
  BHU_liberalism_party_long: "§RЗапрещено§!"
  BHU_conservatism_party: "§RЗапрещено§!"
  BHU_conservatism_party_long: "§RЗапрещено§!"
- BHU_neutrality_party: "§RЗапрещено§!"
- BHU_neutrality_party_long: "§RЗапрещено§!"
- BHU_fascism_party: "Королевское правительство"
- BHU_fascism_party_long: "Королевское правительство Бутана"
+ BHU_neutrality_party: "Королевское правительство"
+ BHU_neutrality_party_long: "Королевское правительство Бутана"
+ BHU_fascism_party: "§RЗапрещено§!"
+ BHU_fascism_party_long: "§RЗапрещено§!"
  
  RAJ_communism_party: "КПИ(М)"
  RAJ_communism_party_long: "Коммунистическая партия Индии (марксистская)"
@@ -942,3 +942,8 @@
  AFN_organization_of_the_vanguard_of_afghan_workers: "Организация авангарда рабочих Афганистана"
  AFN_ovaw: "ОАРА"
  AFN_absent: "§RОтсутствует§!"
+ 
+ SWI_swiss_peoples_party: "Швейцарская народная партия"
+ SWI_SPP: "ШНП"
+ 
+ ITA_non_partisan_socialism: "§RБеспартийные§!"

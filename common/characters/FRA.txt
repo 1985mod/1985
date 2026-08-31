@@ -17,4 +17,23 @@ characters = {
 			
 		}
 	}
+
+	FRA_jacques_chirac={
+		name = FRA_jacques_chirac
+		portraits={
+			civilian={
+				large= GFX_portrait_FRA_jacques_chirac
+			}
+			army = {
+				large = GFX_portrait_FRA_jacques_chirac
+				small = GFX_portrait_FRA_jacques_chirac_small
+			}
+		}
+		country_leader={
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1999.1.1.1"
+			
+		}
+	}
 }
