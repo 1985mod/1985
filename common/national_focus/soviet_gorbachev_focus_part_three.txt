@@ -4,7 +4,7 @@
     country = {
         factor = 0
         modifier = {
-            add = 2
+            add = 20000
             tag = SOV
         }
     }
@@ -425,6 +425,24 @@
         prerequisite = { focus = SOV_operation_in_the_baltic_states }
         cost = 10
         completion_reward = {
+            every_core_state = { 
+                limit = {
+                    is_core_of = EST
+                }
+                add_core_of = SOV
+            }
+            every_core_state = { 
+                limit = {
+                    is_core_of = LAT
+                }
+                add_core_of = SOV
+            }
+            every_core_state = { 
+                limit = {
+                    is_core_of = LIT
+                }
+                add_core_of = SOV
+            }
         }
     }
 
