@@ -12,7 +12,152 @@ characters = {
 		country_leader={
 			ideology = classic_conservatism
 			traits={  }
-			expire="2008.8.23.1"		
+			expire="2008.8.23.1"
+			id = -1	
+		}
+	}
+
+	SWI_alphons_egli={
+		name = SWI_alphons_egli
+		portraits={
+			civilian={
+				large= GFX_portrait_SWI_alphons_egli
+			}
+			army = {
+				large = GFX_portrait_SWI_alphons_egli
+			}
+		}
+		country_leader={
+			ideology = classic_conservatism
+			traits={  }
+			expire="2008.8.23.1"
+			id = -1		
+		}
+	}
+
+	SWI_pierre_aubert={
+		name = SWI_pierre_aubert
+		portraits={
+			civilian={
+				large= GFX_portrait_SWI_pierre_aubert
+			}
+			army = {
+				large = GFX_portrait_SWI_pierre_aubert
+			}
+		}
+		country_leader={
+			ideology = classical_social_democracy
+			traits={  }
+			expire="2008.8.23.1"
+			id = -1		
+		}
+	}
+
+	SWI_otto_stich={
+		name = SWI_otto_stich
+		portraits={
+			civilian={
+				large= GFX_portrait_SWI_otto_stich
+			}
+			army = {
+				large = GFX_portrait_SWI_otto_stich
+			}
+		}
+		country_leader={
+			ideology = classical_social_democracy
+			traits={  }
+			expire="2008.8.23.1"
+			id = -1		
+		}
+	}
+
+	SWI_jean_pascal_delamuraz={
+		name = SWI_jean_pascal_delamuraz
+		portraits={
+			civilian={
+				large= GFX_portrait_SWI_jean_pascal_delamuraz
+			}
+			army = {
+				large = GFX_portrait_SWI_jean_pascal_delamuraz
+			}
+		}
+		country_leader={
+			ideology = classic_liberalism
+			traits={  }
+			expire="2008.8.23.1"
+			id = -1		
+		}
+	}
+
+	SWI_arnold_koller={
+		name = SWI_arnold_koller
+		portraits={
+			civilian={
+				large= GFX_portrait_SWI_arnold_koller
+			}
+			army = {
+				large = GFX_portrait_SWI_arnold_koller
+			}
+		}
+		country_leader={
+			ideology = liberal_conservatism
+			traits={  }
+			expire="2008.8.23.1"
+			id = -1		
+		}
+	}
+
+	SWI_flavio_cotti={
+		name = SWI_flavio_cotti
+		portraits={
+			civilian={
+				large= GFX_portrait_SWI_flavio_cotti
+			}
+			army = {
+				large = GFX_portrait_SWI_flavio_cotti
+			}
+		}
+		country_leader={
+			ideology = social_conservatism
+			traits={  }
+			expire="2008.8.23.1"
+			id = -1		
+		}
+	}
+
+	SWI_rene_felber={
+		name = SWI_rene_felber
+		portraits={
+			civilian={
+				large= GFX_portrait_SWI_renе_felber
+			}
+			army = {
+				large = GFX_portrait_SWI_renе_felber
+			}
+		}
+		country_leader={
+			ideology = 	classical_social_democracy
+			traits={  }
+			expire="2008.8.23.1"
+			id = -1		
+		}
+	}
+
+	SWI_adolf_ogi={
+		name = SWI_adolf_ogi
+		portraits={
+			civilian={
+				large= GFX_portrait_SWI_Adolf_Ogi
+			}
+			army = {
+				large = GFX_portrait_SWI_Adolf_Ogi
+			}
+		}
+		country_leader={
+			ideology = 	social_conservatism
+			traits={  }
+			expire="2008.8.23.1"
+			id = -1		
 		}
 	}
 }

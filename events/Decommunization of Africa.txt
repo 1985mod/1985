@@ -1,0 +1,153 @@
+add_namespace = decommunization_of_africa
+
+country_event = {
+    id = decommunization_of_africa.1
+    title = decommunization_of_africa.1.t
+    desc = decommunization_of_africa.1.desc
+
+	trigger = {
+		tag = DAH
+		has_civil_war = no
+		date > 1990.3.1
+	}
+
+	fire_only_once = yes
+
+    option = {
+        name = decommunization_of_africa.1.a
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.15
+		}
+    }
+}
+
+country_event = {
+    id = decommunization_of_africa.2
+    title = decommunization_of_africa.2.t
+    desc = decommunization_of_africa.2.desc
+
+	trigger = {
+		tag = MZB
+		date > 1990.11.30
+    }
+
+	fire_only_once = yes
+
+    option = {
+        name = decommunization_of_africa.2.a
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.15
+		}
+    }
+}
+
+country_event = {
+    id = decommunization_of_africa.3
+    title = decommunization_of_africa.3.t
+    desc = decommunization_of_africa.3.desc
+
+	trigger = {
+		tag = RCG
+		date > 1990.12.10
+    }
+
+	fire_only_once = yes
+
+    option = {
+        name = decommunization_of_africa.3.a
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.15
+		}
+    }
+}
+
+country_event = {
+    id = decommunization_of_africa.4
+    title = decommunization_of_africa.4.t
+    desc = decommunization_of_africa.4.desc
+
+	trigger = {
+		tag = MAD
+		date > 1991.8.14
+    }
+
+	fire_only_once = yes
+
+    option = {
+        name = decommunization_of_africa.4.a
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.15
+		}
+    }
+}
+
+country_event = {
+    id = decommunization_of_africa.5
+    title = decommunization_of_africa.5.t
+    desc = decommunization_of_africa.5.desc
+
+	trigger = {
+		tag = GNB
+		date > 1991.9.5
+    }
+
+	fire_only_once = yes
+
+    option = {
+        name = decommunization_of_africa.5.a
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.10
+		}
+    }
+}
+
+country_event = {
+    id = decommunization_of_africa.6
+    title = decommunization_of_africa.6.t
+    desc = decommunization_of_africa.6.desc
+
+	trigger = {
+		tag = GNB
+		date > 1991.9.5
+    }
+
+	fire_only_once = yes
+
+    option = {
+        name = decommunization_of_africa.6.a
+        drop_cosmetic_tag = yes
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.10
+		}
+    }
+}

@@ -1,21 +1,141 @@
 characters = {
-	ITA_sandro_pertini={
-		name = ITA_sandro_pertini
+	ITA_bettino_craxi={
+		name = ITA_bettino_craxi
 		portraits={
 			civilian={
-				large= GFX_portrait_ITA_sandro_pertini
+				large= GFX_portrait_ITA_bettino_craxi
 			}
 			army = {
-				large = GFX_portrait_ITA_sandro_pertini
-				small = GFX_portrait_ITA_sandro_pertini_small
+				large = GFX_portrait_ITA_bettino_craxi
+				small = GFX_portrait_ITA_bettino_craxi
 			}
 		}
 
 		country_leader = {
-			ideology = classical_social_democracy
+			ideology = the_third_way
 			traits={  }
 			expire="1990.1.1.1"
-			
+			id = -1
+		}
+	}
+
+	ITA_amintore_fanfani={
+		name = ITA_amintore_fanfani
+		portraits={
+			civilian={
+				large= GFX_portrait_ITA_amintore_fanfani
+			}
+			army = {
+				large = GFX_portrait_ITA_amintore_fanfani
+				small = GFX_portrait_ITA_amintore_fanfani
+			}
+		}
+
+		country_leader = {
+			ideology = social_conservatism
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
+		}
+	}
+
+	ITA_carlo_azeglio_ciampi={
+		name = ITA_carlo_azeglio_ciampi
+		portraits={
+			civilian={
+				large= GFX_portrait_ITA_carlo_azeglio_ciampi
+			}
+			army = {
+				large = GFX_portrait_ITA_carlo_azeglio_ciampi
+				small = GFX_portrait_ITA_carlo_azeglio_ciampi
+			}
+		}
+
+		country_leader = {
+			ideology = liberal_social_democracy
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
+		}
+	}
+
+	ITA_ciriaco_de_mita={
+		name = ITA_ciriaco_de_mita
+		portraits={
+			civilian={
+				large= GFX_portrait_ITA_ciriaco_de_mita
+			}
+			army = {
+				large = GFX_portrait_ITA_ciriaco_de_mita
+				small = GFX_portrait_ITA_ciriaco_de_mita
+			}
+		}
+
+		country_leader = {
+			ideology = classic_conservatism
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
+		}
+	}
+
+	ITA_giovanni_goria={
+		name = ITA_giovanni_goria
+		portraits={
+			civilian={
+				large= GFX_portrait_ITA_giovanni_goria
+			}
+			army = {
+				large = GFX_portrait_ITA_giovanni_goria
+				small = GFX_portrait_ITA_giovanni_goria
+			}
+		}
+
+		country_leader = {
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
+		}
+	}
+
+	ITA_giuliano_amato={
+		name = ITA_giuliano_amato
+		portraits={
+			civilian={
+				large= GFX_portrait_ITA_giuliano_amato
+			}
+			army = {
+				large = GFX_portrait_ITA_giuliano_amato
+				small = GFX_portrait_ITA_giuliano_amato
+			}
+		}
+
+		country_leader = {
+			ideology = the_third_way
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
+		}
+	}
+
+	ITA_giulio_andreotti={
+		name = ITA_giulio_andreotti
+		portraits={
+			civilian={
+				large= GFX_portrait_ITA_giulio_andreotti
+			}
+			army = {
+				large = GFX_portrait_ITA_giulio_andreotti
+				small = GFX_portrait_ITA_giulio_andreotti
+			}
+		}
+
+		country_leader = {
+			ideology = classic_conservatism
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
 		}
 	}
 }

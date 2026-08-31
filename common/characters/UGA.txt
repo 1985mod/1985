@@ -10,7 +10,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = marxism_leninism
+			ideology = military_regimes
 			traits={  }
 			expire="2012.11.9.1"	
 		}
@@ -28,7 +28,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = marxism_leninism
+			ideology = authoritarian_socialism
 			traits={  }
 			expire="1985.7.9.1"		
 		}

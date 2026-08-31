@@ -1,0 +1,14 @@
+add_namespace = ethiopia
+
+country_event = {
+    id = ethiopia.1
+    title = ethiopia.1.t
+    desc = ethiopia.1.desc
+
+    is_triggered_only = yes
+
+    option = {
+        name = ethiopia.1.a
+        set_cosmetic_tag = ETH_1987
+	}
+}

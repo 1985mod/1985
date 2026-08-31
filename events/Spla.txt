@@ -1,0 +1,22 @@
+add_namespace = spla
+
+country_event = {
+    id = spla.1
+    title = spla.1.t
+    desc = spla.1.desc
+
+	trigger = {
+        SPL = {
+            NOT = { has_war_with = SUD }
+        }
+        tag = SPL
+        country_exists = SPL
+    }
+	fire_only_once = yes
+
+    option = {
+        name = spla.1.a
+        set_cosmetic_tag = SPL_Republic_of_Sudan
+        add_stability = 0.04
+	}
+}

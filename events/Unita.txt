@@ -1,0 +1,22 @@
+add_namespace = uni
+
+country_event = {
+    id = uni.1
+    title = uni.1.t
+    desc = uni.1.desc
+
+	trigger = {
+        UNI = {
+            NOT = { has_war_with = ANG }
+        }
+        tag = UNI
+        country_exists = UNI
+    }
+	fire_only_once = yes
+
+    option = {
+        name = uni.1.a
+        set_cosmetic_tag = UNI_republic_of_angola
+        add_stability = 0.05
+	}
+}
