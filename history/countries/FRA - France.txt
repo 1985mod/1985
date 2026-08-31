@@ -48,6 +48,11 @@ if = {
 	}
 }
 
+country_event = {
+	id = france.1
+	days = 1223
+}
+
 set_politics = {
 	ruling_party = socialism
 	last_election = "1981.4.26"
@@ -60,6 +65,7 @@ set_popularities = {
 }
 
 recruit_character = FRA_francois_mitterrand
+recruit_character = FRA_jacques_chirac
 add_ideas = {
 	EU_member
 	partial_economic_mobilisation

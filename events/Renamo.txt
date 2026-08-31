@@ -1,0 +1,22 @@
+add_namespace = ren
+
+country_event = {
+    id = ren.1
+    title = ren.1.t
+    desc = ren.1.desc
+
+	trigger = {
+        REN = {
+            NOT = { has_war_with = MZB }
+        }
+        tag = REN
+        country_exists = REN
+    }
+	fire_only_once = yes
+
+    option = {
+        name = uni.1.a
+        set_cosmetic_tag = MZB_Republic_of_Mozambique
+        add_stability = 0.02
+	}
+}

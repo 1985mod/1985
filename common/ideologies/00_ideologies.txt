@@ -44,6 +44,7 @@ ideologies = {
 			can_force_government = yes
 			can_send_volunteers = yes
 			can_lend_lease = yes
+			can_join_factions = no
 			can_puppet = yes
 		}
 
@@ -107,6 +108,7 @@ ideologies = {
 		rules = {
 			can_force_government = yes
 			can_puppet = yes
+			can_join_factions = no
 			can_send_volunteers = yes
 			can_lend_lease = yes
 		}
@@ -164,6 +166,7 @@ ideologies = {
 			can_force_government = yes
 			can_send_volunteers = no
 			can_puppet = no
+			can_join_factions = no
 			can_lower_tension = yes
 			can_guarantee_other_ideologies = yes
 			can_send_volunteers = yes
@@ -235,6 +238,7 @@ ideologies = {
 			can_declare_war_on_same_ideology = yes
 			can_force_government = yes
 			can_send_volunteers = yes
+			can_join_factions = no
 			can_puppet = yes
 			can_lower_tension = yes
 			can_guarantee_other_ideologies = yes
@@ -316,6 +320,7 @@ ideologies = {
 		rules = {
 			can_force_government = yes
 			can_puppet = yes
+			can_join_factions = no
 			can_send_volunteers = yes
 			can_lend_lease = yes
 		}
@@ -377,6 +382,7 @@ ideologies = {
 			can_force_government = yes
 			can_send_volunteers = yes
 			can_lend_lease = yes
+			can_join_factions = no
 			can_puppet = yes
 		}
 

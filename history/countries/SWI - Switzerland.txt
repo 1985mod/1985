@@ -22,11 +22,22 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 75
-	socialism = 25
+	conservatism = 34
+	socialism = 29
+	liberalism = 31
+	neutrality = 3
+	fascism = 3
 }
 
-recruit_character = SWI_kurt_furgler 
+recruit_character = SWI_kurt_furgler
+recruit_character = SWI_alphons_egli
+recruit_character = SWI_pierre_aubert
+recruit_character = SWI_otto_stich
+recruit_character = SWI_jean_pascal_delamuraz
+recruit_character = SWI_arnold_koller
+recruit_character = SWI_flavio_cotti
+recruit_character = SWI_rene_felber
+recruit_character = SWI_adolf_ogi
 
 set_stability = 0.85
 

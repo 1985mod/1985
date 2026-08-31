@@ -7,34 +7,27 @@ country_event = {
 	desc = SOV_soviet_union.1.desc
 	picture = GFX_report_dead_chernenko
 
-	is_triggered_only = yes
+    is_triggered_only = yes
+    fire_only_once = yes
 
-	# КПСС
-	option = {
-		name = SOV_soviet_union.1.a
-		news_event = { id = SOV_soviet_union.2 days = 1 }
-		ai_chance = {
-			base = 10
-		}
-		
+    immediate = {
+        hidden_effect = {
+            set_country_flag = SOV_chernenko_death_flag
+            add_stability = -0.3
+            news_event = {
+                id = news.2
+                hours = 16
+            }
+            country_event = { id = SOV_soviet_union.2  days = 1 }
+            kill_country_leader = yes
+            focus_unlock = yes
+        }
+    }
+
+    option = {
+        name = SOV_soviet_union.1.a
 		effect_tooltip = {
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-		}
-
-		hidden_effect = {
-			kill_ideology_leader = communism
-			promote_character = {
-				character = SOV_KPSS
-				ideology = communism
-			}
-            country_event = { id = news.2 }
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
+            focus_unlock = yes
 		}
 	}
 }

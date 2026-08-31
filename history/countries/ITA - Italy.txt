@@ -64,12 +64,18 @@ if = {
 
 set_convoys = 200
 
-recruit_character = ITA_sandro_pertini
+recruit_character = ITA_bettino_craxi
+recruit_character = ITA_amintore_fanfani
+recruit_character = ITA_giovanni_goria
+recruit_character = ITA_ciriaco_de_mita
+recruit_character = ITA_giulio_andreotti
+recruit_character = ITA_giuliano_amato
+recruit_character = ITA_carlo_azeglio_ciampi
 
 set_politics = {
 	ruling_party = socialism
-	last_election = "1934.3.26"
-	election_frequency = 60
+	last_election = "1983.6.26"
+	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
