@@ -6,7 +6,7 @@ EU_eec = {
 	icon = GFX_decision_category_eng_move_to_secure_the_dominions
 	priority = 100 
 	
-	picture = GFX_picture_decision_cat_tibets_country
+	picture = GFX_picture_decision_cat_eec
 
 	visible = {
 		has_idea = EU_member

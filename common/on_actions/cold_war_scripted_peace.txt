@@ -117,20 +117,12 @@ on_actions = {
         effect = {
             if = {
                 limit = {
-                    ERI = { controls_state = 915 }
                     ERI = { controls_state = 550 }
-                    new_controller = {
-                        has_war_with = ETH
-                    }
+                    new_controller = { has_war_with = ETH }
                 }
-                if = {
-                    limit = {
-                        is_state_controlled_by = { controls_state = 915 country = ERI }
-                        is_state_controlled_by = { controls_state = 550 country = ERI }
-                    }
-                    ERI = {
-                        transfer_state = 550
-                    }
+                ERI = { transfer_state = 550 }
+                ERI = {
+                    white_peace = ETH
                 }
             }
         }
@@ -196,22 +188,15 @@ on_actions = {
                 limit = {
                     SOM = { controls_state = 835 }
                     SOM = { controls_state = 836 }
-                    new_controller = {
-                        has_war_with = ETH
-                    }
+                    new_controller = { has_war_with = ETH }
                 }
-                if = {
-                    limit = {
-                        is_state_controlled_by = { controls_state = 835 country = SOM }
-                        is_state_controlled_by = { controls_state = 836 country = SOM }
-                    }
-                    SOM = {
-                        transfer_state = 835
-                        transfer_state = 836
-                    }
-                    USA = {
-                        united_states_won_the_proxy_war = yes
-                    }
+                USA = {
+                    united_states_won_the_proxy_war = yes
+                }
+                SOM = { transfer_state = 835 }
+                SOM = { transfer_state = 836 }
+                SOM = {
+                    white_peace = ETH
                 }
             }
         }

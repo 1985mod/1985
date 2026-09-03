@@ -80,3 +80,44 @@ USA_preparing_for_war_in_iraq = {
         value = 1000
     }
 }
+
+USA_preparing_for_war_in_iraq_dukakis = {
+    allowed = {
+        original_tag = USA
+        USA = { has_completed_focus = USA_preparation_for_invasion }
+    }
+    enable = {
+        country_exists = IRQ
+        USA = { has_completed_focus = USA_preparation_for_invasion }
+    }
+    abort = {
+        country_exists = KUW
+        USA = { has_completed_focus = USA_landing_in_basra }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = IRQ
+        value = 1000
+    }
+}
+
+USA_preparing_for_war_in_iraq_dukakis_naval_invasion = {
+    allowed = {
+        original_tag = USA
+        USA = { has_completed_focus = USA_preparation_for_invasion }
+    }
+    enable = {
+        country_exists = IRQ
+        USA = { has_completed_focus = USA_preparation_for_invasion }
+    }
+    abort = {
+        country_exists = KUW
+        USA = { has_completed_focus = USA_landing_in_basra }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = naval_invasion_focus
+        value = 1000
+    }
+}

@@ -4,7 +4,7 @@
     country = {
         factor = 0
         modifier = {
-            add = 20000
+            add = 2
             tag = SOV
         }
     }

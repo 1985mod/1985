@@ -18,7 +18,7 @@ peace_ai_desires = {
             ROOT = { tag = ROOT.FROM } #We are negotiating for ourselves
             ROOT.FROM.FROM.FROM = { is_claimed_by = ROOT.FROM } #It is ours
         }
-        ai_desire = 900
+        ai_desire = 950
     }
 
     block_unnatural_annexation = {
@@ -44,7 +44,7 @@ peace_ai_desires = {
                 has_government = fascism
             }
         }
-        ai_desire = 700        
+        ai_desire = 800        
     }
 
     totalitarian_puppet_focus = {
@@ -60,7 +60,7 @@ peace_ai_desires = {
                 }
             }
         }
-        ai_desire = 250
+        ai_desire = 450
     }
 
     # ЛОГИКА ДЛЯ ДЕМОКРАТИЙ / НАТО (Смена правительства / Экспорт рынка)
@@ -77,7 +77,7 @@ peace_ai_desires = {
                 }
             }
         }
-        ai_desire = 300 # Максимальный приоритет демократий на смену режима без оккупации
+        ai_desire = 700 # Максимальный приоритет демократий на смену режима без оккупации
     }
 
     # Снижаем желание либералов и консерваторов плодить марионетки
@@ -93,6 +93,6 @@ peace_ai_desires = {
                 }
             }
         }
-        ai_desire = 500 # Демократии не будут делать марионеток, если можно сменить правительство
+        ai_desire = 400 # Демократии не будут делать марионеток, если можно сменить правительство
     }
 }

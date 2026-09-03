@@ -602,4 +602,4 @@ velocity_effect = {
 
         add_to_variable = { var = velocity value = temp_inflation_rate }
     }
-}
+}   
