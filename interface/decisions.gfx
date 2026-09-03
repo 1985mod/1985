@@ -2970,4 +2970,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_tibets_country.dds"
 	}
 
+	spriteType = {
+		name = "GFX_picture_decision_cat_eec"
+		texturefile = "gfx/interface/decisions/decision_cat_eec.dds"
+	}
+
 }

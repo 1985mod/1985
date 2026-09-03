@@ -37,6 +37,7 @@ country_event = {   ### Ирак вторгается в Кувейт ###
         has_country_leader = { character = IRQ_Saddam_Hussein ruling_only = yes }
         date > 1990.8.1
     }
+    fire_only_once = yes
 
     option = {
 		ai_chance = {

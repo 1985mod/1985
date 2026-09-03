@@ -1,11 +1,11 @@
 state = {
 	id = 67
 	name = "STATE_67"
-	manpower = 2385432
+	manpower = 6239642
 	resources = {
-		steel = 8 #was 11 #was: 11 was 19 # was: 60
-		aluminium = 6 # was: 20
-		coal = 25 # initial distribution / 660 total
+		steel = 27 #was 11 #was: 11 was 19 # was: 60
+		aluminium = 13 # was: 20
+		coal = 55
 	}
 	
 	state_category = city
@@ -19,6 +19,9 @@ state = {
 			11467 5 # Gleiwitz
 		}
 		victory_points = {
+			6464 5 # Katovice
+		}
+		victory_points = {
 			9511 3 # Oppeln
 		}
 		
@@ -29,7 +32,7 @@ state = {
 	}
 
 	provinces = {
-		479 6512 9457 9511 11467 
+		479 506 6464 6512 9457 9511 11467
 	}
 
 	local_supplies = 4.0 

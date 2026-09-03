@@ -47,18 +47,24 @@ on_actions = {
 				set_variable = { var = real_gdp_divided_by_1000 value = real_gdp }
 				divide_variable = { var = real_gdp_divided_by_1000 value = 1000 }
 
-				set_variable = { var = gdp_growth_rate value = real_gdp }
-				subtract_from_variable = { var = gdp_growth_rate value = real_gdp_list^0 }
-				divide_variable = { var = gdp_growth_rate value = real_gdp_list^0 }
+				set_variable = { var = old_real_gdp value = real_gdp_list^0 }
 
-				remove_from_array = {
-					array = real_gdp_list
-					index = 0
+				set_variable = { var = gdp_growth_rate value = real_gdp }
+
+				subtract_from_variable = { var = gdp_growth_rate value = old_real_gdp }
+
+				divide_variable = { var = gdp_growth_rate value = old_real_gdp }
+
+				multiply_variable = { var = gdp_growth_rate value = 100 }
+
+				resize_array = { 
+					array = real_gdp_list 
+					size = 2
 				}
 
-				add_to_array = {
-					array = real_gdp_list
-					value = real_gdp
+				add_to_array = { 
+					array = real_gdp_list 
+					value = real_gdp 
 				}
 
 				remove_from_array = {

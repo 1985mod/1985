@@ -1,0 +1,28 @@
+state = {
+	id = 762
+	name = "STATE_762"
+	
+	manpower = 2300
+
+	state_category = city
+
+	history = {
+		
+		owner = USA
+		add_core_of = CUB
+
+		buildings = {
+			infrastructure = 1
+			13583 = {
+				naval_base = 3
+			}
+		}
+		
+	}
+
+	provinces = {
+		13583
+	}
+
+	local_supplies = 0.0 
+}

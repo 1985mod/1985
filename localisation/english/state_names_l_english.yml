@@ -1150,7 +1150,7 @@
  STATE_959: "Los Andes"
  STATE_960: "San Juan y La Rioja"
  STATE_961: "Amazon" # impassables
- STATE_962: "Amazon" # impassables
+ STATE_962: "Basra"
  STATE_963: "Amazon" # impassables
  STATE_964: "Amazon" # impassables
  STATE_965: "Amazon" # impassables
@@ -1217,7 +1217,7 @@
  STATE_1008: "Qandahar"
  STATE_1009: "Farah"
  STATE_1010: "Al Anbar"
- STATE_1011: "Al Basrah"
+ STATE_1011: "Di-Kare and Maysan"
  STATE_1012: "Kalat"
  STATE_1013: "Musandam"
  STATE_1014: "Bahrain"
