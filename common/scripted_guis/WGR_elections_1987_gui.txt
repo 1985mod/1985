@@ -1,0 +1,6 @@
+scripted_gui = {
+	wgr_elections_1987_scripted_gui = {
+		context_type = decision_category
+		window_name = "wgr_elections_1987_decision_ui_window"
+	}
+}

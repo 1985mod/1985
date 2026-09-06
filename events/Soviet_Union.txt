@@ -814,7 +814,11 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.21.a
-        add_political_power = 25
+        set_country_flag = dmitry_yazov_army_chief
+		army_experience = 10
+		navy_experience = 5
+		deactivate_advisor = SOV_Sokolov
+		activate_advisor = SOV_dmitry_yazov
     }
 }
 
@@ -2047,6 +2051,8 @@ country_event = {
 
 	is_triggered_only = yes
 
+	fire_only_once = yes
+
     option = {
         name = SOV_soviet_union.70.a
 		ai_chance = {
@@ -2070,12 +2076,14 @@ country_event = {
 
 	is_triggered_only = yes
 
+	fire_only_once = yes
+
     option = {
         name = SOV_soviet_union.69.a
 		ai_chance = {
 			base = 100
 		}
-		remove_country_leader = { name = "SOV_Mikhail_Gorbachev_SSG" }
+		retire_ideology_leader = socialism
 		complete_national_focus = SOV_the_first_free_elections_in_the_ussr
 		complete_national_focus = SOV_nazarbayev_path
 		set_politics = {
@@ -2094,12 +2102,20 @@ country_event = {
 
 	is_triggered_only = yes
 
+	fire_only_once = yes
+
     option = {
         name = SOV_soviet_union.72.a
 		ai_chance = {
 			base = 100
 		}
 		add_ideas = SOV_developed_socialist_state
+		if = {
+			limit = {
+				has_idea = SOV_economic_stagnation
+			}
+			remove_idea = SOV_economic_stagnation
+		}
     }
 }
 
@@ -2110,6 +2126,8 @@ country_event = {
 	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
+
+	fire_only_once = yes
 
     option = {
         name = SOV_soviet_union.73.a
@@ -2139,6 +2157,8 @@ country_event = {
 
 	is_triggered_only = yes
 
+	fire_only_once = yes
+
     option = {
         name = SOV_soviet_union.74.a
 		ai_chance = {
@@ -2146,5 +2166,130 @@ country_event = {
 		}
 		add_political_power = 50
 		add_stability = 0.05
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.75 ## СС предлагает перемирие ##
+	title = SOV_soviet_union.75.t
+	desc = SOV_soviet_union.75.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.75.a
+		ai_chance = {
+			base = 80
+		}
+		SOV = { country_event = { id = SOV_soviet_union.76 hours = 12 } }
+    }
+
+    option = {
+        name = SOV_soviet_union.75.b
+		ai_chance = {
+			base = 20
+		}
+		SOV = { country_event = { id = SOV_soviet_union.77 hours = 12 } }
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.76 ## США согласилась ##
+	title = SOV_soviet_union.76.t
+	desc = SOV_soviet_union.76.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.76.a
+		ai_chance = {
+			base = 100
+		}
+		every_country = {
+			limit = {
+				has_war_with = SOV
+			}
+			white_peace = SOV
+		}
+		set_autonomy = {
+			target = BEL
+			autonomous_state = autonomy_integrated_puppet
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = DEN
+			autonomous_state = autonomy_integrated_puppet
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		BEL = {
+			every_state = {
+                limit = {
+                    is_core_of = HOL
+                }
+                add_core_of = BEL
+			}
+			add_state_core = 8
+			annex_country = {
+				target = HOL
+				transfer_troops = no
+			}
+			annex_country = {
+				target = LUX
+				transfer_troops = no
+			}
+		}
+		DDR = {
+			every_state = {
+                limit = {
+                    is_core_of = WGR
+                }
+                add_core_of = DDR
+			}
+			annex_country = {
+				target = WGR
+				transfer_troops = no
+			}
+		}
+		SOV = {
+			set_country_flag = soviet_union_win_in_world_war_three
+		}
+    }
+}
+
+country_event = {
+	id = SOV_soviet_union.77 ## США отказались ##
+	title = SOV_soviet_union.77.t
+	desc = SOV_soviet_union.77.desc
+	picture = GFX_report_dead_of_yeltsin
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = SOV_soviet_union.77.a
+		ai_chance = {
+			base = 100
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = large_decrease
+			}
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = large_decrease
+			}
+		}		
     }
 }

@@ -451,6 +451,10 @@ focus_tree = {
         y = 1
         cost = 1
 
+		bypass = {
+			has_global_flag = capitulation_iraq
+		}
+
 		available = {
 			SAU = { has_war_with = IRQ }
 		}
@@ -484,6 +488,10 @@ focus_tree = {
         y = 1
         cost = 1
 
+		bypass = {
+			has_global_flag = capitulation_iraq
+		}
+
 		available = {
 			SAU = { has_war_with = IRQ }
 		}
@@ -511,6 +519,10 @@ focus_tree = {
         y = 1
         cost = 1
 
+		bypass = {
+			has_global_flag = capitulation_iraq
+		}
+
 		available = {
 			SAU = { has_war_with = IRQ }
 		}
@@ -531,6 +543,10 @@ focus_tree = {
         x = 0
         y = 1
         cost = 1
+
+		bypass = {
+			has_global_flag = capitulation_iraq
+		}
 
 		available = {
 			SAU = { has_war_with = IRQ }

@@ -21,6 +21,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antitank = 1
 	tech_mountaineers = 1
+	interwar_antiair = 1
 }
 
 recruit_character = DEN_poul_schluter

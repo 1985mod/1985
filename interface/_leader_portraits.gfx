@@ -948,4 +948,16 @@ spriteTypes = {
 		name = GFX_Portrait_john_garang
 		textureFile = "gfx/leaders/SPL/Portrait_john_garang.dds"
 	}	
+
+	### WGR ###
+	spriteType = {
+		name = GFX_Portrait_WGR_Helmut_Kohl
+		textureFile = "gfx/leaders/WGR/Portrait_WGR_Helmut_Kohl.dds"
+	}	
+
+	### WGR ###
+	spriteType = {
+		name = GFX_Portrait_johannes_rau
+		textureFile = "gfx/leaders/WGR/Portrait_johannes_rau.dds"
+	}	
 }

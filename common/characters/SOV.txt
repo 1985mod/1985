@@ -244,6 +244,9 @@ characters = {
 		advisor = {
 			slot = army_chief
 			idea_token = SOV_Sokolov
+			visible = {
+				NOT = { has_country_flag = dmitry_yazov_army_chief }
+			}
 			allowed = {
 				original_tag = SOV
 			}
@@ -278,6 +281,7 @@ characters = {
 				large = "gfx/leaders/SOV/Portrait_Dmitry_Yazov.dds"
 			}
 		}	
+		
 		field_marshal={
 			traits = { offensive_doctrine politically_connected }
 			skill=3
@@ -286,6 +290,24 @@ characters = {
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = SOV_dmitry_yazov
+			visible = {
+				has_country_flag = dmitry_yazov_army_chief
+			}
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
 		}
 	}
 

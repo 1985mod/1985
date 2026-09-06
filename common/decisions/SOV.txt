@@ -695,3 +695,84 @@ SOV_discontent_of_the_republics = {
 		}
 	}
 }
+
+SOV_world_war_three = {
+	SOV_copenhagen_armistice = {
+
+		fire_only_once = yes
+		
+		activation = {
+			has_country_flag = soviet_union_win_in_world_war_three
+		}
+		available = {
+			has_country_flag = soviet_union_win_in_world_war_three
+			always = no
+		}
+		icon = mission_icon
+		days_mission_timeout = 120
+		selectable_mission = no
+
+		timeout_effect = {
+			SOV = {
+				declare_war_on = {
+					target = USA
+					type = annex_everything
+				}
+			}
+			set_country_flag = copenhagen_armistice_over
+		}
+	}
+
+	SOV_offer_peace_on_your_terms = {
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 500
+		}
+
+		fire_only_once = yes
+
+		icon = POL_organize_strike_two
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = controls_all_states_in_wgr
+				controls_or_subject_of = yes
+				909 = { is_controlled_by_ROOT_or_subject = yes }
+				58 = { is_controlled_by_ROOT_or_subject = yes }
+				59 = { is_controlled_by_ROOT_or_subject = yes }
+				56 = { is_controlled_by_ROOT_or_subject = yes }
+				57 = { is_controlled_by_ROOT_or_subject = yes }
+				55 = { is_controlled_by_ROOT_or_subject = yes }
+				51 = { is_controlled_by_ROOT_or_subject = yes }
+				42 = { is_controlled_by_ROOT_or_subject = yes }
+				54 = { is_controlled_by_ROOT_or_subject = yes }
+				978 = { is_controlled_by_ROOT_or_subject = yes }
+				50 = { is_controlled_by_ROOT_or_subject = yes }
+				52 = { is_controlled_by_ROOT_or_subject = yes }
+				53 = { is_controlled_by_ROOT_or_subject = yes }
+				54 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+			custom_trigger_tooltip = {
+				tooltip = controls_all_states_in_benelux
+				36 = { is_controlled_by_ROOT_or_subject = yes }
+				7 = { is_controlled_by_ROOT_or_subject = yes }
+				35 = { is_controlled_by_ROOT_or_subject = yes }
+				6 = { is_controlled_by_ROOT_or_subject = yes }
+				977 = { is_controlled_by_ROOT_or_subject = yes }
+				34 = { is_controlled_by_ROOT_or_subject = yes }
+				980 = { is_controlled_by_ROOT_or_subject = yes }
+				8 = { is_controlled_by_ROOT_or_subject = yes }
+			}
+		}
+
+		days_remove = 10
+		
+		cost = 15
+
+		remove_effect = {
+			USA = { country_event = { id = SOV_soviet_union.75 hours = 12 } }
+		}
+	}
+}

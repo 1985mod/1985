@@ -1,0 +1,108 @@
+guiTypes = {
+	containerWindowType = {
+        name = "wgr_elections_1987_decision_ui_window"
+        position = { x = 0 y = 0 }
+		size = { width = 350 height = 490 }
+
+		containerWindowType = {
+			name = "wgr_elections_1987_main_container"
+			position = { x = -5 y = 50 }
+			size = { width = 500 height = 385 }
+
+			containerWindowType = {
+				name = "wgr_elections_1987_main_entry"
+				position = { x = 25 y = -50 }
+				
+				iconType = {
+					name = "wgr_elections_1987_flag_germany"
+					spriteType = "GFX_decision_scripted_flag_of_germany"
+					position = { x = 0 y = 0 }
+				}
+			}
+			
+			gridboxtype = {
+				name = "peoples_deputies_semicircle_main_grid"
+				position = { x = 16 y = 25 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+
+
+		instantTextBoxType = {
+			name = "leader_name_cdu"
+			position = { x = 25 y = 70 }
+			font = "hoi_16mbs"
+			text = "leader_name_cdu"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "leader_name_spd"
+			position = { x = 315 y = 70 }
+			font = "hoi_16mbs"
+			text = "leader_name_spd"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		iconType = {
+			name = "leader_cdu"
+			position = { x = 25 y = 90 }
+			spriteType = "GFX_Portrait_WGR_Helmut_Kohl"
+		}
+
+		iconType = {
+			name = "leader_spd"
+			position = { x = 315 y = 90 }
+			spriteType = "GFX_Portrait_johannes_rau"
+		}
+
+		iconType = {
+			name = "party_cdu"
+			position = { x = 50 y = 310 }
+			spriteType = "GFX_decision_scripted_gui_cdu_party"
+		}
+
+		iconType = {
+			name = "party_spd"
+			position = { x = 340 y = 310 }
+			spriteType = "GFX_decision_scripted_gui_spd_party"
+		}
+
+		instantTextBoxType = {
+			name = "party_name_1"
+			position = { x = 25 y = 390 }
+			font = "hoi_16mbs"
+			text = "party_name_1"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "party_name_2"
+			position = { x = 315 y = 390 }
+			font = "hoi_16mbs"
+			text = "party_name_2"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "parties_desc"
+			position = { x = 25 y = 420 }
+			font = "hoi_16mbs"
+			text = "parties_desc"
+			maxWidth = 450
+			maxHeight = 16
+			format = center
+		}
+	}
+}

@@ -65,7 +65,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 10833
+		location = 13588
 		division_template = "Somali motorized infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -76,7 +76,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 8094
+		location = 13589
 		division_template = "Somali motorized infantry"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -98,7 +98,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 2020
+		location = 13596
 		division_template = "Somali motorized infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.6

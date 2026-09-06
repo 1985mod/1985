@@ -121,6 +121,10 @@ country_event = {   ### Ирак капитулирует ###
 
     fire_only_once = yes
 
+    immediate = {
+        set_global_flag = capitulation_iraq
+    }
+
     option = {
         name = iraq.3.a
         every_country = {
@@ -131,6 +135,7 @@ country_event = {   ### Ирак капитулирует ###
         }
         release = KUW
         KUR = { transfer_state = 1058 }
+        USA = { country_event = { id = usa.52 days = 10 } }
         hidden_effect = {
             delete_unit = {
                 division_template = "Republican Guard"

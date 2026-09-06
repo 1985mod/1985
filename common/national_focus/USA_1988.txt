@@ -1132,27 +1132,12 @@ focus_tree = {
 	}
 
     focus = { 
-        id = USA_the_fate_of_the_ussrs_nuclear_stockpile
+        id = USA_cooperation_with_israel
 		relative_position_id = USA_maintain_good_relations_with_the_ussr
 		prerequisite = { focus = USA_maintain_good_relations_with_the_ussr }
         icon = GFX_	
         x = 0
-        y = 1
-        cost = 5
-		
-        completion_reward = {
-            add_war_support = 0.1
-            add_stability = 0.05
-	    }
-	}
-
-    focus = { 
-        id = USA_cooperation_with_israel
-		relative_position_id = USA_the_fate_of_the_ussrs_nuclear_stockpile
-		prerequisite = { focus = USA_the_fate_of_the_ussrs_nuclear_stockpile }
-        icon = GFX_	
-        x = 0
-        y = 1
+        y = 2
         cost = 5
 		
         completion_reward = {
