@@ -26,6 +26,12 @@ characters = {
 			expire = "1990.2.2.1"
 			id = -1
 		}
+		country_leader = {
+		    ideology = classical_social_democracy 
+			expire = "1990.3.1"
+			id = -1
+			traits = {}
+		}
 	}
 	BUL_Zhelyu_Zhelev = {
         name = BUL_Zhelyu_Zhelev
@@ -39,6 +45,6 @@ characters = {
             traits = { }
             expire = "1997.1.22.1"
 			id = -1
-        }
-    }
+		}
+	}
 }

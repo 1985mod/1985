@@ -1,0 +1,427 @@
+add_namespace = warsaw_pact_countries
+ 
+country_event = {
+    id = warsaw_pact_countries.1 
+    title = warsaw_pact_countries.1.t
+    desc = warsaw_pact_countries.1.desc
+    picture = GFX_report_event_generic_civil_war
+    fire_only_once = yes
+    trigger = {
+        tag = ROM
+        date > 1989.12.16
+        has_government = communism
+        SOV = { has_country_flag = gorbachev }
+    }
+    mean_time_to_happen = {
+        days = 7
+    }
+    option = {
+        name = warsaw_pact_countries.1.a
+        country_event = { id = warsaw_pact_countries.8 days = 179 }
+        set_cosmetic_tag = ROM_revolution
+        retire_country_leader = yes
+        set_politics = {
+            ruling_party = socialism
+            last_election = "1990.5.20"
+            election_frequency = 48
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.66
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.10
+        }
+        set_party_name = {
+            ideology = socialism
+            long_name = ROM_national_salvation_front
+            name = ROM_fsn
+        }
+        set_party_name = {
+            ideology = liberalism
+            long_name = ROM_national_liberal_party
+            name = ROM_pnl
+        }
+        set_party_name = {
+            ideology = conservatism
+            long_name = ROM_christian_democratic_national_peasants_party
+            name = ROM_pntcd
+        }
+         set_party_name = {
+            ideology = neutrality
+            name = ROM_none_partisan
+        }
+        set_party_name = {
+            ideology = fascism
+            name = ROM_none_partisan
+        }
+        set_party_name = {
+            ideology = communism 
+            name = ROM_none_partisan
+        }
+        SOV = {
+            end_puppet = ROM
+        }
+        leave_faction = yes
+    }
+}
+ 
+country_event = {
+    id = warsaw_pact_countries.2
+    title = warsaw_pact_countries.2.t
+    desc = warsaw_pact_countries.2.desc
+    picture = GFX_report_event_generic_rally
+    fire_only_once = yes
+    trigger = {
+        tag = BUL
+        date > 1989.11.10
+        has_government = communism
+        SOV = { has_country_flag = gorbachev }
+    }
+    mean_time_to_happen = {
+        days = 7
+    }
+    option = {
+        name = warsaw_pact_countries.2.c
+        country_event = { id = warsaw_pact_countries.10 days = 800 }
+        retire_country_leader = yes
+        set_politics = {
+            ruling_party = socialism
+            last_election = "1990.4.3"
+            election_frequency = 48
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.9
+        }
+        set_party_name = {
+            ideology = socialism
+            long_name = BUL_bulgarian_socialist_party
+            name = BUL_bsp
+        }
+        set_party_name = {
+            ideology = liberalism
+            long_name = BUL_union_of_democratic_forces
+            name = BUL_sds
+        }
+        set_party_name = {
+            ideology = conservatism
+            name = BUL_none_partisan
+        }
+         set_party_name = {
+            ideology = neutrality
+            name = BUL_none_partisan
+        }
+        set_party_name = {
+            ideology = fascism
+            name = BUL_none_partisan
+        }
+        set_party_name = {
+            ideology = communism 
+            name = BUL_none_partisan
+        }
+        SOV = {
+            end_puppet = BUL
+        }
+        leave_faction = yes
+    }
+}
+ 
+country_event = {
+    id = warsaw_pact_countries.3
+    title = warsaw_pact_countries.3.t
+    desc = warsaw_pact_countries.3.desc
+    picture = GFX_report_event_generic_parliament
+    fire_only_once = yes
+    trigger = {
+        tag = HUN
+        date > 1989.6.13
+        has_government = communism
+        SOV = { has_country_flag = gorbachev }
+    }
+    mean_time_to_happen = {
+        days = 14
+    }
+    option = {
+        country_event = { id = warsaw_pact_countries.7 days = 299 }
+        name = warsaw_pact_countries.3.a
+        retire_country_leader = yes
+        set_party_name = {
+            ideology = socialism
+            long_name = HUN_hungarian_socialist_party
+            name = HUN_MSZP
+        }
+        set_party_name = {
+            ideology = liberalism
+            long_name = HUN_alliance_of_free_democrats
+            name = HUN_SZDSZ
+        }
+        set_party_name = {
+            ideology = conservatism
+            long_name = HUN_hungarian_democratic_forum
+            name = HUN_MDF
+        }
+         set_party_name = {
+            ideology = neutrality
+            name = HUN_none_partisan_neutrality
+        }
+        set_party_name = {
+            ideology = fascism
+            name = HUN_none_partisan_fascism
+        }
+        set_party_name = {
+            ideology = communism 
+            name = HUN_none_partisan_fascism
+        }
+        set_politics = {
+            ruling_party = socialism
+            last_election = "1990.3.25"
+            election_frequency = 48
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.07
+        }
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.23
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.38
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.11
+        }
+        SOV = {
+            end_puppet = HUN
+        }
+        leave_faction = yes
+    }
+}
+ 
+country_event = {
+    id = warsaw_pact_countries.4
+    title = warsaw_pact_countries.4.t
+    desc = warsaw_pact_countries.4.desc
+    picture = GFX_report_event_generic_rally
+    fire_only_once = yes
+    trigger = {
+        tag = POL
+        date > 1989.2.6
+        has_government = communism
+        SOV = { has_country_flag = gorbachev }
+    }
+    mean_time_to_happen = {
+        days = 14
+    }
+    option = {
+        name = warsaw_pact_countries.4.a
+        country_event = { id = warsaw_pact_countries.11 days = 670 }
+        set_cosmetic_tag = POL_1989
+        set_politics = {
+            ruling_party = communism
+            last_election = "1990.3.25"
+            election_frequency = 60
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.4
+        }
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.06
+        }
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.10
+        }
+        set_party_name = {
+            ideology = communism
+            long_name = POL_polish_socialist_party
+            name = POL_pps
+        }
+        set_party_name = {
+            ideology = socialism
+            long_name = POL_social_democracy of_the_republic_of_poland
+            name = POL_sdrp
+        }
+        set_party_name = {
+            ideology = conservatism
+            long_name = POL_independent_self_governing_trade_union_solidarity
+            name =  POL_solidarity
+        }
+         set_party_name = {
+            ideology = neutrality
+            name = POL_none_partisan
+        }
+        set_party_name = {
+            ideology = fascism
+            name = POL_none_partisan
+        }
+        set_party_name = {
+            ideology = liberalism
+            name = POL_none_partisan
+        }
+        SOV = {
+            end_puppet = POL
+        }
+        leave_faction = yes
+    }
+}
+
+country_event = { 
+    id = warsaw_pact_countries.5 #Отставка Кадара#
+    title = warsaw_pact_countries.5.t
+    desc = warsaw_pact_countries.5.desc
+    picture = GFX_report_kadars_resignation
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = warsaw_pact_countries.5.a
+        retire_country_leader = yes
+    }
+}
+
+country_event = {
+    id = warsaw_pact_countries.6 #Отставка Гроса#
+    title = warsaw_pact_countries.6.t
+    desc = warsaw_pact_countries.6.desc
+    picture = GFX_report_event_generic_parliament
+    fire_only_once = yes
+    trigger = {
+        tag = HUN
+        date > 1988.11.24
+        has_government = communism
+        SOV = { has_country_flag = gorbachev }
+    }
+    option = {
+        name = warsaw_pact_countries.6.a
+        retire_country_leader = yes
+    }
+}
+
+country_event = {
+    id = warsaw_pact_countries.7 #Выборы в Венгрии#
+    title = warsaw_pact_countries.7.t
+    desc = warsaw_pact_countries.7.desc
+    picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = warsaw_pact_countries.7.a
+        set_politics = {
+            ruling_party = conservatism
+            last_election = "1990.3.25"
+            election_frequency = 48
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.04
+        }
+    }
+}
+
+country_event = {
+    id = warsaw_pact_countries.8 #Выборы в Румынии#
+    title = warsaw_pact_countries.8.t
+    desc = warsaw_pact_countries.8.desc
+    picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = warsaw_pact_countries.8.a
+        set_politics = {
+            ruling_party = socialism
+            last_election = "1990.6.20"
+            election_frequency = 48
+            elections_allowed = yes
+        }
+        drop_cosmetic_tag = yes
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.03
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.04
+        }
+    }
+}
+
+country_event = { 
+    id = warsaw_pact_countries.9 #Отставка Живкова#
+    title = warsaw_pact_countries.9.t
+    desc = warsaw_pact_countries.9.desc
+    picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = warsaw_pact_countries.9.a
+        retire_country_leader = yes
+    }
+}
+
+country_event = {
+    id = warsaw_pact_countries.10 #Выборы в Болгарии#
+    title = warsaw_pact_countries.10.t
+    desc = warsaw_pact_countries.10.desc
+    picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = warsaw_pact_countries.10.a
+        set_politics = {
+            ruling_party = liberalism
+            last_election = "1990.6.20"
+            election_frequency = 48
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.6
+        }
+    }
+}
+
+country_event = {
+    id = warsaw_pact_countries.11 #Выборы в Польше#
+    title = warsaw_pact_countries.11.t
+    desc = warsaw_pact_countries.11.desc
+    picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = warsaw_pact_countries.11.a
+        set_politics = {
+            ruling_party = conservatism
+        }
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.25
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.74
+        }
+    }
+}

@@ -18,9 +18,8 @@ set_technology = {
 }
 
 recruit_character = CZE_Gustav_Gusak
+recruit_character = CZE_Marian_Calfa
 recruit_character = CZE_Vaclav_Havel
-recruit_character = CZE_Adamec_Ladislav
-recruit_character = CZE_Miroslav_Sladek
 
 add_ideas = {
 	CZE_economy

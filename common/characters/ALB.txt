@@ -1,15 +1,50 @@
 characters = {
-	ALB_Charchani = {
-		name = ALB_Charchani
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/ALB/portrait_aln_Charchani.dds"
+	ALB_enver_hoxha = {
+		name = ALB_enver_hoxha
+		portraits={
+			civilian={
+				large= GFX_portrait_ALB_enver_hoxha
+			}
+			army = {
+				large = GFX_portrait_ALB_enver_hoxha
 			}
 		}
 		country_leader = {
-			ideology = marxism_leninism
+			ideology = stalinism
 			traits = { }
-			expire = "1989.3.1.1"
+			expire = "1985.3.1.1"
+		}
+	}
+	ALB_ramiz_alia = {
+		name = ALB_ramiz_alia
+		portraits={
+			civilian={
+				large= GFX_portrait_ALB_ramiz_alia
+			}
+			army = {
+				large = GFX_portrait_ALB_ramiz_alia
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { }
+			expire = "1992.3.1.1"
+		}
+	}
+	ALB_sali_berisha = {
+		name = ALB_sali_berisha
+		portraits={
+			civilian={
+				large= GFX_portrait_ALB_sali_berisha
+			}
+			army = {
+				large = GFX_portrait_ALB_sali_berisha
+			}
+		}
+		country_leader = {
+			ideology =  national_conservatism
+			traits = { }
+			expire = "1992.3.1.1"
 		}
 	}
 }
