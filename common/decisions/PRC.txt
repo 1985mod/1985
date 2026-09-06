@@ -14,6 +14,10 @@ PRC_tibets_resistance = {
 
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				add = 10
+				is_historical_focus_on = yes
+			}
 		}
 
 		modifier = {
@@ -115,6 +119,10 @@ PRC_tibets_resistance = {
 
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				add = 5
+				is_historical_focus_on = yes
+			}
 		}
 
 	}
@@ -182,6 +190,10 @@ PRC_tibets_resistance = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				add = -5
+				is_historical_focus_on = yes
+			}
 		}
 	}
 }

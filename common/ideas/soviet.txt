@@ -586,5 +586,67 @@ ideas = {
 				army_org_factor = 0.15
 			}
 		}
+    	SOV_free_kurds_idea = {
+			picture = uss_peacekeeping_contingent
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+            targeted_modifier = {
+                tag = TUR
+                attack_bonus_against = 0.25
+            }
+            targeted_modifier = {
+                tag = TUR
+                defense_bonus_against = 0.25
+            }
+			modifier = {
+				war_support_factor = 0.15
+			}
+		}
+    	SOV_the_red_army_is_the_strongest_of_all = {
+			picture = uss_peacekeeping_contingent
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+				army_attack_factor = 0.1
+				war_support_factor = 0.05
+				army_morale_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+    	SOV_romanovs_personality_cult = {
+			picture = uss_peacekeeping_contingent
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.1
+				surrender_limit = 0.5
+				mobilization_speed = 0.15
+			}
+		}
 	}
 }

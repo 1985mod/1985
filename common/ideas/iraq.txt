@@ -65,5 +65,25 @@ ideas = {
 				resistance_target = -0.1
 			}
 		}
+
+		IRQ_no_fly_zone = {
+			picture = no_fly_zone 
+			allowed = {
+				original_tag = IRQ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				air_accidents_factor = 0.75
+				ace_effectiveness_factor = -0.5
+				experience_gain_air_factor = -0.9
+				army_morale_factor = -0.1
+			}
+		}
     }
 }

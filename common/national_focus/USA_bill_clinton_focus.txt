@@ -70,7 +70,42 @@ focus_tree = {
         cost = 7
 		
         completion_reward = {
-
+			if = {
+				limit = {
+					has_idea = depression
+				}
+				swap_ideas = {
+					remove_idea = depression
+					add_idea = recession
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = recession
+				}
+				swap_ideas = {
+					remove_idea = recession
+					add_idea = stagnation
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = stagnation
+				}
+				swap_ideas = {
+					remove_idea = stagnation
+					add_idea = sustainable_growth
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = sustainable_growth
+				}
+				swap_ideas = {
+					remove_idea = sustainable_growth
+					add_idea = economic_boom
+				}  
+			}
 	    }
 	}
 

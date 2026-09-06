@@ -101,3 +101,22 @@ SOV_discontent_of_the_republics = {
 		original_tag = SOV
 	}
 }
+
+SOV_world_war_three = {
+
+    icon = generic_political_actions
+	  
+	priority = 90
+	  
+	allowed = {
+		original_tag = SOV
+	}
+	  
+	visible = {
+		OR = {
+			SOV = { has_war_with = USA }
+			has_country_flag = soviet_union_win_in_world_war_three
+		}
+		original_tag = SOV
+	}
+}

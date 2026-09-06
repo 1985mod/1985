@@ -10,6 +10,8 @@ WGR_election_campaign_in_germany = {
 	visible = {
 		has_country_flag = election_campaign_in_germany_1987
 	}
+
+	scripted_gui = wgr_elections_1987_scripted_gui
 }
 
 WGR_two_plus_four_negotiations = {

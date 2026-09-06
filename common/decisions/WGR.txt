@@ -1,4 +1,31 @@
 WGR_election_campaign_in_germany = {
+	WGR_the_spd_makes_a_move = {
+
+		icon = generic_political_discourse
+
+		activation = {
+			NOT = { has_government = socialism }
+			has_country_flag = election_campaign_in_germany_1987
+		}
+		available = {
+			has_government = conservatism
+			NOT = { has_country_flag = election_campaign_in_germany_1987 }
+		}
+		icon = mission_icon
+		days_mission_timeout = 25
+		selectable_mission = no
+		timeout_effect = {
+			random_list = {
+				50 = {
+					country_event = { id = wgr.27 }
+				}
+				50 = {
+					country_event = { id = wgr.28 }
+				}
+			}
+		}
+	}
+
     WGR_focus_on_stability = {
 	
 		icon = eng_trade_unions_support
@@ -19,10 +46,22 @@ WGR_election_campaign_in_germany = {
 		}
 	
 		remove_effect = {
+			custom_effect_tooltip = support_for_the_cdu_will_increase_by_5
 			add_stability = 0.03
 			add_popularity = {
 				ideology = conservatism
 				popularity = 0.02
+			}
+			FROM = {
+				add_to_variable = {
+					var = WGR.cdu_support
+					value = 5
+				}
+				clamp_variable = {
+					var = WGR.cdu_support
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -49,9 +88,21 @@ WGR_election_campaign_in_germany = {
 		}
 	
 		remove_effect = {
+			custom_effect_tooltip = support_for_the_spd_will_decrease_by_5
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.05
+			}
+			FROM = {
+				subtract_from_variable = {
+					var = WGR.spd_support
+					value = 5
+				}
+				clamp_variable = {
+					var = WGR.spd_support
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -73,10 +124,22 @@ WGR_election_campaign_in_germany = {
 		}
 	
 		remove_effect = {
+			custom_effect_tooltip = support_for_the_cdu_will_increase_by_5
 			add_stability = 0.02
 			add_popularity = {
 				ideology = conservatism
 				popularity = 0.02
+			}
+			FROM = {
+				add_to_variable = {
+					var = WGR.cdu_support
+					value = 5
+				}
+				clamp_variable = {
+					var = WGR.cdu_support
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -92,15 +155,32 @@ WGR_election_campaign_in_germany = {
 			has_country_flag = election_campaign_in_germany_1987
 	    }
 
+		modifier = {
+			stability_weekly = 0.001
+			war_support_weekly = -0.001
+		}
+
 		ai_will_do = {
 			factor = 20
 		}
 	
 		remove_effect = {
+			custom_effect_tooltip = support_for_the_spd_will_increase_by_5
 			add_war_suppport = 0.03
 			add_popularity = {
 				ideology = socialism
 				popularity = 0.03
+			}
+			FROM = {
+				add_to_variable = {
+					var = WGR.spd_support
+					value = 5
+				}
+				clamp_variable = {
+					var = WGR.spd_support
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -130,10 +210,22 @@ WGR_election_campaign_in_germany = {
 		}
 	
 		remove_effect = {
+			custom_effect_tooltip = support_for_the_spd_will_increase_by_5
 			add_stability = 0.02
 			add_popularity = {
 				ideology = socialism
 				popularity = 0.03
+			}
+			FROM = {
+				add_to_variable = {
+					var = WGR.spd_support
+					value = 5
+				}
+				clamp_variable = {
+					var = WGR.spd_support
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}
@@ -160,14 +252,26 @@ WGR_election_campaign_in_germany = {
 		modifier = {
 			political_power_gain = -0.3
 			socialism_drift = 0.02
-			war_support_weekly = -0.01
+			war_support_weekly = -0.0025
 		}
 	
 		remove_effect = {
+			custom_effect_tooltip = support_for_the_spd_will_increase_by_10
 			add_stability = 0.05
 			add_popularity = {
 				ideology = socialism
 				popularity = 0.05
+			}
+			FROM = {
+				add_to_variable = {
+					var = WGR.spd_support
+					value = 10
+				}
+				clamp_variable = {
+					var = WGR.spd_support
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}

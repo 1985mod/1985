@@ -428,7 +428,7 @@ country_event = {
 	   tag = USA
 	   date > 1992.11.01
 	   date < 1994.11.01
-	   liberalism > 0.5
+	   liberalism > party_popularity@conservatism
 	}
 	
 	option = {
@@ -1550,5 +1550,173 @@ country_event = {
 		}	
 		add_nuclear_bombs = -423
 		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = usa.51 ### Победа республиканцев, секонд терм ###
+	title = usa.51.t
+	desc = usa.51.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	trigger = {
+	   tag = USA
+	   date > 1992.11.01
+	   date < 1994.11.01
+	   conservatism > party_popularity@liberalism
+	}
+	
+	option = {
+		name = usa.1.a
+		ai_chance = {
+			base = 10
+		}
+		
+        complete_national_focus = USA_election_day
+		complete_national_focus = USA_republican_victory
+		
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+			custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
+		}
+
+		hidden_effect = {
+			country_event = { id = news.9 }
+			promote_character = {
+				character = USA_george_bush
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.52 ### Демилитаризованная зона ###
+	title = usa.52.t
+	desc = usa.52.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.52.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+		country_event = { id = usa.53 hours = 12 }
+		962 = {
+			set_demilitarized_zone = yes
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = IRQ
+				modifier = small_decrease
+			}
+		}
+		IRQ = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_decrease
+			}
+		}
+	}
+
+	option = {
+		name = usa.52.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				is_historical_focus_on = yes
+			}
+		}
+		country_event = { id = usa.53 hours = 12 }
+		ROOT = {
+			add_opinion_modifier = {
+				target = IRQ
+				modifier = small_increase
+			}
+		}
+		IRQ = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_increase
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa.53 ### Бесполётная зона в Ираке ###
+	title = usa.53.t
+	desc = usa.53.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.53.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+		IRQ = {
+			add_ideas = IRQ_no_fly_zone
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = IRQ
+				modifier = small_decrease
+			}
+		}
+		IRQ = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_decrease
+			}
+		}
+	}
+
+	option = {
+		name = usa.53.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				is_historical_focus_on = yes
+			}
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = IRQ
+				modifier = medium_increase
+			}
+		}
+		IRQ = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = medium_increase
+			}
+		}
 	}
 }

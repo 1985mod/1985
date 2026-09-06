@@ -292,6 +292,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_idea_no_fly_zone"
+        texturefile = "gfx/interface/ideas/IRQ/idea_no_fly_zone.dds"
+    }
+
+    spriteType = {
         name = "GFX_dynamic_modifier_cold_war"
         texturefile = "gfx/interface/ideas/dynamic_modifier_cold_war.dds"
     }

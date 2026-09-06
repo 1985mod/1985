@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_scripted_flag_of_germany"
+		texturefile = "gfx/interface/decisions/decision_scripted_flag_of_germany.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_scripted_gui_cdu_party"
+		texturefile = "gfx/interface/decisions/decision_scripted_gui_cdu_party.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_scripted_gui_spd_party"
+		texturefile = "gfx/interface/decisions/decision_scripted_gui_spd_party.dds"
+	}
+}

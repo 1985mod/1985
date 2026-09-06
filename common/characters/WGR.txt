@@ -3,7 +3,7 @@ characters = {
 		name = WGR_Helmut_Kohl
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/WGR/Portrait_WGR_Helmut_Kohl.dds"
+				large = "GFX_Portrait_WGR_Helmut_Kohl"
 			}
 		}
 		country_leader = {
@@ -18,7 +18,7 @@ characters = {
 		name = WGR_johannes_rau
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/WGR/Portrait_johannes_rau.dds"
+				large = "GFX_Portrait_johannes_rau"
 			}
 		}
 		country_leader = {

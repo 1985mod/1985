@@ -9,10 +9,8 @@ state={
 	history={
 		owner = PRC
 		add_core_of = SIK
+		add_core_of = PRC
 		add_core_of = CHI
-		start_resistance = yes
-		set_resistance = 15
-		set_compliance = 45
 		buildings = {
 			infrastructure = 2
 		}
