@@ -12,6 +12,19 @@ characters = {
             expire = "1989.3.1.1"
         }   
     }
+    CZE_Marian_Calfa = {
+        name = CZE_Marian_Calfa
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CZE/Portrait_Marian_Calfa.dds"
+            }
+        }
+        country_leader = {
+            ideology = marxism_leninism
+            traits = { }
+            expire = "2003.3.1.1"
+        }
+    }  
     CZE_Vaclav_Havel = {
         name = CZE_Vaclav_Havel
         portraits = {
@@ -25,30 +38,4 @@ characters = {
             expire = "2003.3.1.1"
         }
     }  
-    CZE_Adamec_Ladislav = {
-        name = CZE_Adamec_Ladislav
-        portraits = {
-            civilian = {
-                large = "gfx/leaders/CZE/Portrait_Adamec_Ladislav.dds"
-            }
-        }
-        country_leader = {
-            ideology = democratic_socialism
-            traits = { }
-            expire = "2003.3.1.1"
-        }
-    }
-	CZE_Miroslav_Sladek = {
-        name = CZE_Miroslav_Sladek
-        portraits = {
-            civilian = {
-                large = "gfx/leaders/CZE/Portrait_Miroslav_Sladek.dds"
-            }
-        }
-        country_leader = {
-            ideology = classic_conservatism
-            traits = { }
-            expire = "2003.3.1.1"
-        }
-    }
 }

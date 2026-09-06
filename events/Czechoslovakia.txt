@@ -1,102 +1,116 @@
-add_namespace = CZE_Czechoslovakia_kgb
-add_namespace = CZE_Czechoslovakia_lenders
-add_namespace = CZE_Czechoslovakia_perepro
-add_namespace = CZE_global_ralal
-add_namespace = CZE_Czechoslovakia_papy
-add_namespace = CZE_collapse
+add_namespace = Czechoslovakia
 
 country_event = {
-    id = CZE_Czechoslovakia_kgb.1
-    title = CZE_Czechoslovakia_kgb.1.t
-    picture = GFX_CZE_kgb_event
-    desc = CZE_Czechoslovakia_kgb.1.desc
-    is_triggered_only = yes
-
-    option = {
-        name = CZE_Czechoslovakia_kgb.1.a
-        add_political_power = -200
-        add_stability  = 0.05
+    id = Czechoslovakia.1 #Отставка Гусака#
+    title = Czechoslovakia.1.t
+    desc = Czechoslovakia.1.desc
+    picture = GFX_report_event_generic_rally
+    fire_only_once = yes
+    trigger = {
+        tag = CZE
+        date > 1989.12.10
+        has_government = communism
+        SOV = { has_country_flag = gorbachev }
+    }
+    mean_time_to_happen = {
+        days = 14
     }
     option = {
-        name = CZE_Czechoslovakia_kgb.1.b
-        add_stability  = -0.05 
+        name = Czechoslovakia.1.a
+        retire_country_leader = yes
     }
 }
 
 country_event = {
-    id = CZE_Czechoslovakia_lenders.1
-    title = CZE_Czechoslovakia_lenders.1.t
-    desc = CZE_Czechoslovakia_lenders.1.desc
-    is_triggered_only = yes
-
+    id = Czechoslovakia.2 #Бархатная Революция#
+    title = Czechoslovakia.2.t
+    desc = Czechoslovakia.2.desc
+    picture = GFX_report_event_generic_rally
+    fire_only_once = yes
+    trigger = {
+        tag = CZE
+        date > 1989.12.29
+        has_government = communism
+        SOV = { has_country_flag = gorbachev }
+    }
+    mean_time_to_happen = {
+        days = 14
+    }
     option = {
-        name = CZE_Czechoslovakia_lenders.1.a
-        add_extra_state_shared_building_slots = 1
-        add_building_construction = {
-            type = arms_factory
-            level = 2
-            instant_build = yes
+        name = Czechoslovakia.2.a
+        retire_country_leader = yes
+        set_politics = {
+            ruling_party = liberalism
+            last_election = "1989.12.29"
+            election_frequency = 48
+            elections_allowed = yes
         }
-    }
-}
-
-country_event = {
-    id = CZE_Czechoslovakia_perepro.1
-    title = CZE_Czechoslovakia_perepro.1.t
-    desc = CZE_Czechoslovakia_perepro.1.desc
-    is_triggered_only = yes
-
-    option = {
-        name = CZE_Czechoslovakia_perepro.1.a
+        set_party_name = {
+            ideology = liberalism
+            name = CZE_civic_forum
+        }
+        set_party_name = {
+            ideology = socialism
+            name = CZE_social_democracy
+        }
+        set_party_name = {
+            ideology = fascism
+            name = CZE_none_partisan
+        }
+        set_party_name = {
+            ideology = neutrality
+            name = CZE_none_partisan
+        }
+        set_party_name = {
+            ideology = conservatism
+            name = CZE_christian_and_democratic_union_czechoslovak_peoples_party
+        }
+        set_party_name = {
+            ideology = communism 
+            name = CZE_none_partisan
+        }
         add_popularity = {
-            ideology = communism
-            popularity = -0.3
+            ideology = liberalism
+            popularity = 0.4
         }
-    }
-    option = {
-        name = CZE_Czechoslovakia_perepro.1.b
-        add_political_power = -444
-        add_stability  = -0.10 
-    }
-}
-
-news_event = {
-    id = CZE_global_ralal.1
-    title = CZE_global_ralal.1.t
-    picture = GFX_CZE_global_ralal_global_event
-    desc = CZE_global_ralal.1.d
-    is_triggered_only = yes
-
-    option = {
-        name = CZE_global_ralal.1.a
-        ai_will_do = { factor = 1 }
-    }
-    option = {
-        name = CZE_global_ralal.1.b
-        ai_will_do = { factor = 1 }
-    }
-    option = {
-        name = CZE_global_ralal.1.s
-        ai_will_do = { factor = 1 }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.3
+        } 
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.2
+        }     
+        SOV = {
+            end_puppet = CZE
+        }
+        leave_faction = yes
     }
 }
 
 country_event = {
-    id = CZE_Czechoslovakia_papy.1
-    title = CZE_Czechoslovakia_papy.1.t
-    desc = CZE_Czechoslovakia_papy.1.desc
-    is_triggered_only = yes
+	id = Czechoslovakia.3 #Федерализация Чехословакии#
+	title = Czechoslovakia.3.t
+	desc = Czechoslovakia.3.desc
+	picture = GFX_report_event_generic_rally
+    fire_only_once = yesw
 
-    option = {
-        name = CZE_Czechoslovakia_papy.1.a
-        ai_will_do = { factor = 1 }
+	trigger = {
+		tag = CZE
+		has_civil_war = no
+		date > 1990.8.29
+        SOV = { has_country_flag = gorbachev }
     }
+    option = {
+        name = Czechoslovakia.3
+        set_cosmetic_tag = CZE_1990
+	}
 }
 
 country_event = {
-	id = CZE_collapse.1
-	title = CZE_collapse.1.t
-	desc = CZE_collapse.1.desc
+	id = Czechoslovakia.4 #Распад Чехославкии#
+	title = Czechoslovakia.4.t
+	desc = Czechoslovakia.4.desc
 	hidden = yes
 
 	trigger = {
@@ -104,11 +118,30 @@ country_event = {
 		has_civil_war = no
 		date > 1992.12.31
 		NOT = { has_country_flag = collapse }
+        SOV = { has_country_flag = gorbachev }
 	}
 	immediate = {
-		SLO = { transfer_state = 70 }
-		SLO = { transfer_state = 71 }
-		SLO = { transfer_state = 664 }
+        release = SLO
 		set_country_flag = collapse
+        set_cosmetic_tag = CZE_demolish
+        SLO = {
+			set_politics = {
+            last_election = "1992.6.6"
+			ruling_party = conservatism
+			elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.5
+			}
+           add_popularity = {
+				ideology = liberalism
+				popularity = 0.10
+			}
+            add_popularity = {
+				ideology = socialism
+				popularity = 0.14		
+            }
+		}
 	}
 }

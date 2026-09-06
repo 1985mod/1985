@@ -245,11 +245,40 @@ spriteTypes = {
 		name = GFX_Portrait_mohammad_yunus_khales
 		texturefile = "gfx/leaders/AFS/Portrait_mohammad_yunus_khales.dds"
 	}
+    
+	## ALB ##
+	spriteType = {
+		name = GFX_portrait_ALB_enver_hoxha
+		texturefile = "gfx/leaders/ALB/Portrait_enver_hoxha.dds"
+	}
+	spriteType = {
+		name = GFX_portrait_ALB_ramiz_alia
+		texturefile = "gfx/leaders/ALB/Portrait_ramiz_alia.dds"
+	}
+	spriteType = {
+		name = GFX_portrait_ALB_sali_berisha
+		texturefile = "gfx/leaders/ALB/Portrait_sali_berisha.dds"
+	}
 
 	## HUN ##
-	SpriteType = {
-		name = "GFX_portrait_HUN_franz_anton_bach"
-		texturefile = "gfx/leaders/HUN/portrait_HUN_franz_anton_bach.dds"
+	spriteType = {
+		name = GFX_portrait_HUN_janos_kadar
+		texturefile = "gfx/leaders/HUN/portrait_Janos_Kadar.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_HUN_karoly_grosz
+		texturefile = "gfx/leaders/HUN/Portrait_Grosz_Karoly.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_HUN_miklos_nemeth
+		texturefile = "gfx/leaders/HUN/portrait_Miklos_Nemeth.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_HUN_jozsef_antall
+		texturefile = "gfx/leaders/HUN/Portrait_jozsef_antall.dds"
 	}
 
 	## LUX ##
@@ -258,90 +287,16 @@ spriteTypes = {
 		texturefile = "gfx/leaders/LUX/portrait_LUX_charlotte_wilhelmine.dds"
 	}
 
-	## HAN ##
-	SpriteType = {
-		name = "GFX_portrait_HAN_ernest_august"
-		texturefile = "gfx/leaders/HAN/portrait_HAN_ernest_august.dds"
-	}
-
 	## MEK ##
 	SpriteType = {
 		name = "GFX_portrait_MEK_christian_louis"
 		texturefile = "gfx/leaders/MEK/portrait_MEK_christian_louis.dds"
 	}
 
-	## PRE ##
-	SpriteType = {
-		name = "GFX_portrait_PRE_eitel_friedrich"
-		texturefile = "gfx/leaders/PRE/portrait_PRE_eitel_friedrich.dds"
-	}
-
-	## RHI ##
-	SpriteType = {
-		name = "GFX_portrait_RHI_josef_matthes"
-		texturefile = "gfx/leaders/RHI/portrait_RHI_josef_matthes.dds"
-	}
-
-	## SIL ##
-	SpriteType = {
-		name = "GFX_portrait_SIL_alexander_hochberg"
-		texturefile = "gfx/leaders/SIL/portrait_SIL_alexander_hochberg.dds"
-	}
-	SpriteType = {
-		name = "GFX_portrait_SIL_Jozef_iniszkiewicz"
-		texturefile = "gfx/leaders/SIL/portrait_SIL_Józef_iniszkiewicz.dds"
-	}	
-
-	## THU ##
-	SpriteType = {
-		name = "GFX_portrait_THU_erwin_baum"
-		texturefile = "gfx/leaders/THU/portrait_THU_erwin_baum.dds"
-	}
-
-	## WUR ##
-	SpriteType = {
-		name = "GFX_portrait_WUR_philipp_albrecht"
-		texturefile = "gfx/leaders/WUR/portrait_WUR_philipp_albrecht.dds"
-	}
-
-	## BAY ##
-	SpriteType = {
-		name = "GFX_portrait_BAY_rupprecht_of_bavaria"
-		texturefile = "gfx/leaders/BAY/portrait_BAY_rupprecht_of_bavaria.dds"
-	}
-
 	## BLR ##
 	SpriteType = {
 		name = "GFX_portrait_BLR_radaslau_astrouski"
 		texturefile = "gfx/leaders/BLR/portrait_BLR_radaslau_astrouski.dds"
-	}
-
-	## SAX ##
-	SpriteType = {
-		name = "GFX_portrait_SAX_george_of_saxony"
-		texturefile = "gfx/leaders/SAX/portrait_SAX_george_of_saxony.dds"
-	}
-
-	## SHL ##
-	SpriteType = {
-		name = "GFX_portrait_SHL_hermann_ludemann"
-		texturefile = "gfx/leaders/SHL/portrait_SHL_hermann_ludemann.dds"
-	}
-
-	## UBD ##
-	SpriteType = {
-		name = "GFX_portrait_UBD_heinrich_dohna_schlobitten"
-		texturefile = "gfx/leaders/UBD/portrait_UBD_heinrich_dohna_schlobitten.dds"
-	}
-	SpriteType = {
-		name = "GFX_portrait_UBD_sophie_buxhoeveden"
-		texturefile = "gfx/leaders/UBD/portrait_UBD_sophie_buxhoeveden.dds"
-	}
-
-	## HES ##
-	SpriteType = {
-		name = "GFX_portrait_HES_philip_of_hesse"
-		texturefile = "gfx/leaders/HES/portrait_HES_philip_of_hesse.dds"
 	}
 
 	## UKR ##

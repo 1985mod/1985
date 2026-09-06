@@ -16,6 +16,12 @@ set_technology = {
 	paratroopers = 1
 	gw_artillery = 1
 }
+
+country_event = {
+	id = warsaw_pact_countries.9
+	days = 2030
+}
+
 recruit_character = BUL_Todor_Zhivkov
 recruit_character = BUL_Petr_Mladenov
 recruit_character = BUL_Zhelyu_Zhelev
