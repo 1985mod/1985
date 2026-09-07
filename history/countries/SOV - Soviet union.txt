@@ -301,12 +301,6 @@ activate_advisor = SOV_nikolay_baibakov
 
 add_nuclear_bombs = 999
 
-give_guarantee = DDR
-give_guarantee = POL
-give_guarantee = HUN
-give_guarantee = ROM
-give_guarantee = BUL
-give_guarantee = CZE
 give_guarantee = MON
 
 if = {
