@@ -1,0 +1,23 @@
+state={
+	id=1068
+	name="STATE_1068"
+	provinces={
+		13574 13575
+	}
+
+	history = {
+	
+		owner = LBA
+		add_core_of = CHA
+		add_claim_by = LBA
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	manpower=1300
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

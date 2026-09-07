@@ -1,0 +1,31 @@
+state={
+	id=962
+	name="STATE_962"
+	provinces={
+		2089 13580 13581 13582
+	}
+	history={
+		owner = IRQ
+		add_core_of = IRQ
+
+		victory_points = {
+			2089 5 # Basrah
+		}
+
+		buildings = {
+			infrastructure = 2 #was: 5
+			arms_factory = 1
+			industrial_complex = 1
+			synthetic_refinery = 1
+			13581 = {
+				naval_base = 3
+			}
+		}
+	}
+
+
+	manpower=1410000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

@@ -2,7 +2,7 @@ state = {
 	id = 1019
 	name = "STATE_1019" # South Tohoku
 	manpower = 8393000
-	state_category = town # was large_city
+	state_category = large_town
 	resources = {
 		steel = 5
 		coal = 1 #initial distribution
@@ -14,11 +14,8 @@ state = {
 		add_core_of = JAP
 
 		buildings = {
-		
-			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 4
 			infrastructure = 2
-
 		}
 		
 		victory_points = {

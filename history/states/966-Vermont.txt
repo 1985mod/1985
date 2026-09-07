@@ -1,0 +1,23 @@
+state = {
+	id = 966
+	name = "STATE_966"
+
+	manpower = 530035
+	state_category = town
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces = {
+		4445 7629 9675 13158
+	}
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+	
+}

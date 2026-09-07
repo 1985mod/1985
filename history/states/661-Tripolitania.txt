@@ -2,6 +2,10 @@ state={
 	id=661
 	name="STATE_661"
 	manpower = 400000
+
+	resources={
+		oil=8
+	}
 	
 	state_category = wasteland
 	

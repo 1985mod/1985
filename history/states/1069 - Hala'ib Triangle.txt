@@ -1,0 +1,23 @@
+state={
+	id=1069
+	name="STATE_1069"
+	provinces={
+		1977
+	}
+
+	history = {
+	
+		owner = SUD
+		add_core_of = SUD
+		add_claim_by = EGY
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	manpower=1600
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

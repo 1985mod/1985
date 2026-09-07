@@ -10,10 +10,13 @@ state={
 	history={
 		owner = YUG
 		victory_points = { #Dubrovnik
-			6889 3 
+			6889 3
 		}
 		victory_points = { #Split
-			3924 3
+			3924 10
+		}
+		victory_points = { #Split
+			3943 3
 		}
 		buildings = {
 			infrastructure = 3
