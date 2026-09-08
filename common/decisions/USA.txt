@@ -567,7 +567,8 @@ USA_operations_against_the_ayatollahs_cat = {
 
 USA_operation_desert_storm_mission = {
 	USA_operation_desert_storm_transparency = {
-
+		
+		icon = infiltrate_state
 
 		fire_only_once = yes
 		
@@ -601,9 +602,11 @@ USA_operation_desert_storm_mission = {
 				USA = { has_completed_focus = USA_landing_in_basra }
 			}
 		}
-		icon = mission_icon
+
 		days_mission_timeout = 50
+		
 		selectable_mission = no
+
 		complete_effect = {
 			add_political_power = 25
 			add_war_support = 0.05
@@ -614,6 +617,7 @@ USA_operation_desert_storm_mission = {
 			add_political_power = -150
 			add_stability = -0.05
 			add_war_support = -0.15
+			load_focus_tree = USA_failure_operation_desert_storm
 		}
 	}
 }

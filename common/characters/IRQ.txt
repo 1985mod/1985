@@ -12,4 +12,18 @@ characters = {
 			expire = "2011.3.1.1"
 		}
 	}
+
+	IRQ_muhammad_baqir_al_hakim = {
+		name = IRQ_muhammad_baqir_al_hakim
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRQ/Portrait_muhammad_baqir_al_hakim.dds"
+			}
+		}
+		country_leader = {
+			ideology = Political_Islam
+			traits = { }
+			expire = "2011.3.1.1"
+		}
+	}
 }

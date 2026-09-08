@@ -189,6 +189,11 @@ spriteTypes = {
 		name = GFX_Portrait_abdul_rashid
 		texturefile = "gfx/leaders/AFN/Portrait_abdul_rashid.dds"
 	}
+
+	spriteType = {
+		name = GFX_Portrait_shahnawaz_tanai
+		texturefile = "gfx/leaders/AFN/Portrait_shahnawaz_tanai.dds"
+	}
     
 	##AFS##
 	spriteType = {

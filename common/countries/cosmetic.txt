@@ -3,6 +3,11 @@ SOV_USS = {
 	color_ui = rgb { 166 53 65 }	
 }
 
+BEL_benelux = {
+	color = rgb { 125  13  24 }
+	color_ui = rgb { 130  15  27 }		
+}
+
 AFS_islamic_state_of_afghanistan = {
 	color = rgb { 73 87 119 }
 	color_ui = rgb { 80 89 123 }

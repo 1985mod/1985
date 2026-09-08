@@ -82,7 +82,7 @@ SOV_build_army = {
 	
     ai_strategy = {
         type = build_army
-        id = mechanized
+        id = infantry
         value = 320
     }
 }
@@ -96,7 +96,7 @@ USA_build_army = {
 	
     ai_strategy = {
        type = build_army
-       id = modern_armor
+       id = infantry
        value = 200
     }
 }

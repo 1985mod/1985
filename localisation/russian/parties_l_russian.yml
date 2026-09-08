@@ -934,7 +934,7 @@
  SOV_non_partisan_conservatism: "§RБеспартийные§!"
  SOV_non_partisan_liberalism: "§RБеспартийные§!"
  SOV_non_partisan_fascism: "§RБеспартийные§!"
- SOV_communist_party_soVINt_union_reformed_wing: "Коммунистическая Партия Советского Союза (Реформированное крыло)"
+ SOV_communist_party_soviet_union_reformed_wing: "Коммунистическая Партия Советского Союза (Реформированное крыло)"
  SOV_kpss_reformed: "КПСС (Реформированное крыло)"
  
  AFN_peoples_democratic_party_of_afghanistan: "Народно-демократическая партия Афганистана"
@@ -947,3 +947,6 @@
  SWI_SPP: "ШНП"
  
  ITA_non_partisan_socialism: "§RБеспартийные§!"
+ 
+ IRQ_isci: "ВСИРИ"
+ IRQ_islamic_supreme_council_of_iraq: "Верховный исламский совет Ирака"

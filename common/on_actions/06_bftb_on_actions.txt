@@ -76,4 +76,54 @@ on_actions = {
 			}
 		}
 	}
+
+    ### Iraq win
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+					OR = {
+						has_global_flag = iran_refused_global
+						has_global_flag = iraq_refused_global
+					}
+                    FROM = {
+                        tag = IRQ
+                    }
+                    ROOT = {
+                        tag = PER
+                    }
+                }
+
+                IRQ = {
+                    white_peace = PER
+					country_event =  { id = iraq.7 }
+                }
+            }
+        }
+    }
+
+    ### Iran win
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+					OR = {
+						has_global_flag = iran_refused_global
+						has_global_flag = iraq_refused_global
+					}
+                    FROM = {
+                        tag = PER
+                    }
+                    ROOT = {
+                        tag = IRQ
+                    }
+                }
+
+                PER = {
+                    white_peace = IRQ
+					country_event =  { id = iran.5 }
+                }
+            }
+        }
+    }
 }

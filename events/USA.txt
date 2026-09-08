@@ -191,20 +191,7 @@ country_event = {
 	desc = usa.7.d
 	picture = GFX_report_offer_to_join_the_anti_iraq_coalition
 
-	trigger = {
-		OR = {
-			tag = ENG
-			tag = FRA
-			tag = EGY
-			tag = SAU
-			tag = KUW
-			tag = UAE
-			tag = OMA
-			tag = PAK
-		}
-		NOT = { has_war_with = IRQ }
-		USA = { has_completed_focus = USA_form_an_anti_iraq_coalition }
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = usa.7.a
@@ -215,7 +202,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}	
-		FROM = { country_event = usa.8 }
+		USA = { country_event = usa.8 }
 	}
 
 	option = {
@@ -227,7 +214,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		FROM = { country_event = usa.9 }
+		USA = { country_event = usa.9 }
 	}
 }
 
@@ -238,20 +225,7 @@ country_event = {
 	desc = usa.8.d
 	picture = GFX_report_generic_negotiations_between_two_parties
 
-	trigger = {
-		OR = {
-			tag = ENG
-			tag = FRA
-			tag = EGY
-			tag = SAU
-			tag = KUW
-			tag = UAE
-			tag = OMA
-			tag = PAK
-		}
-		NOT = { has_war_with = IRQ }
-		USA = { has_completed_focus = USA_form_an_anti_iraq_coalition }
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = usa.8.a
@@ -273,20 +247,7 @@ country_event = {
 	desc = usa.9.d
 	picture = GFX_report_generic_negotiations_between_two_parties
 
-	trigger = {
-		OR = {
-			tag = ENG
-			tag = FRA
-			tag = EGY
-			tag = SAU
-			tag = KUW
-			tag = UAE
-			tag = OMA
-			tag = PAK
-		}
-		NOT = { has_war_with = IRQ }
-		USA = { has_completed_focus = USA_form_an_anti_iraq_coalition }
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = usa.9.a
@@ -306,13 +267,7 @@ country_event = {
 	desc = usa.10.d
 	picture = GFX_report_offer_to_join_the_anti_iraq_coalition
 
-	trigger = {
-		has_country_flag = anti_iraq_coalition
-		NOT = { has_war_with = IRQ }
-		USA = { has_completed_focus = USA_operation_desert_storm }
-		NOT = { has_global_flag = desert_storm_triggered}
-		NOT = { has_country_flag = operation_desert_storm_start }
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = usa.10.a
@@ -1718,5 +1673,47 @@ country_event = {
 				modifier = medium_increase
 			}
 		}
+	}
+}
+
+country_event = {
+	id = usa.54 ### Признание поражения в Ираке ###
+	title = usa.54.t
+	desc = usa.54.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.54.a
+		ai_chance = {
+			base = 100
+		}
+		add_war_support = -0.15
+		add_ideas = USA_demoralized_army
+		add_ideas = USA_chaos_in_the_country
+	}
+}
+
+country_event = {
+	id = usa.55 ### Признание поражения в Ираке ###
+	title = usa.55.t
+	desc = usa.55.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.55.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = 0.05
+		add_war_support = 0.03
+		add_political_power = 25
 	}
 }
