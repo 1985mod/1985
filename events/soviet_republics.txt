@@ -6,11 +6,7 @@ country_event = {
 	desc = soviet_republics.1.desc
 	picture = GFX_report_dead_chernenko
 
-	trigger = {
-        has_country_flag = conservatism_soviet
-        has_government = communism
-        NOT = { has_country_leader = { character = RUS_alexander_rutskoi ruling_only = yes } }
-    }
+    is_triggered_only = yes
 
 	option = {
 		name = soviet_republics.1.a

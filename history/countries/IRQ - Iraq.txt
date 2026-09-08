@@ -122,12 +122,13 @@ if = {
 }
 
 recruit_character = IRQ_Saddam_Hussein
+recruit_character = IRQ_muhammad_baqir_al_hakim
 
 set_variable = { var = current_debt value = 53.7 }
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1991.1.1"
+	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

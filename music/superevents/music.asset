@@ -9,14 +9,27 @@ music = {
 music = {
 	name = "unification_germany_name"
 	file = "unification_germany.ogg"
-	volume = 0.65
+	volume = 0.95
 }
 
 music = {
 	name = "victory_sec_name"
 	file = "victory_sec.ogg"
-	volume = 0.65
+	volume = 0.95
 }
+
+music = {
+	name = "old_march_name"
+	file = "old_march.ogg"
+	volume = 0.95
+}
+
+music = {
+	name = "born_in_ussr_name"
+	file = "born_in_ussr.ogg"
+	volume = 0.95
+}
+
 
 # General Peace:
 music = {

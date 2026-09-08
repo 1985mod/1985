@@ -201,9 +201,16 @@ country_event = {
             }
             release = LIT
             set_country_flag = collapse_LIT
-            LIT = {
-                set_country_flag = conservatism_soviet
-            }
+			LIT = {
+				set_politics = {
+					ruling_party = socialism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = 0.4
+				}
+			}
         }
 
         # Прибалтика - Латвия (май 1990)
@@ -215,9 +222,16 @@ country_event = {
             }
             release = LAT
             set_country_flag = collapse_LAT
-            LAT = {
-                set_country_flag = conservatism_soviet
-            }
+			LAT = {
+				set_politics = {
+					ruling_party = liberalism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.32
+				}
+			}
         }
 
         # Кавказ - Грузия (апрель 1991)
@@ -229,9 +243,16 @@ country_event = {
             }
             release = GEO
             set_country_flag = collapse_GEO
-            GEO = {
-                set_country_flag = conservatism_soviet
-            }
+			GEO = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.95
+				}
+			}
         }
 
         # Прибалтика - Эстония (март 1991)
@@ -243,9 +264,17 @@ country_event = {
             }
             release = EST
             set_country_flag = collapse_EST
-            EST = {
-                set_country_flag = conservatism_soviet
-            }
+
+			EST = {
+				set_politics = {
+					ruling_party = conservatism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.4
+				}
+			}
         }
 
         # Молдова (август 1991)
@@ -257,9 +286,17 @@ country_event = {
             }
             release = MOL
             set_country_flag = collapse_MOL
-            MOL = {
-                set_country_flag = conservatism_soviet
-            }
+
+			MOL = {
+				set_politics = {
+					ruling_party = conservatism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.4
+				}
+			}
         }
 
         # Кавказ - Армения (сентябрь 1991)
@@ -271,9 +308,17 @@ country_event = {
             }
             release = ARM
             set_country_flag = collapse_ARM
-            ARM = {
-                set_country_flag = conservatism_soviet
-            }
+
+			ARM = {
+				set_politics = {
+					ruling_party = liberalism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.83
+				}
+			}
         }
     }
 }
@@ -301,9 +346,16 @@ country_event = {
             }
             release = UKR
             set_country_flag = collapse_UKR
-            UKR = {
-                set_country_flag = conservatism_soviet
-            }
+			UKR = {
+				set_politics = {
+					ruling_party = conservatism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.4
+				}
+			}
         }
 
         # Беларусь (август 1991)
@@ -315,9 +367,16 @@ country_event = {
             }
             release = BLR
             set_country_flag = collapse_BLR
-            BLR = {
-                set_country_flag = conservatism_soviet
-            }
+			BLR = {
+				set_politics = {
+					ruling_party = socialism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = 0.44
+				}
+			}
         }
 
         # Кавказ - Азербайджан (октябрь 1991)
@@ -329,9 +388,6 @@ country_event = {
             }
             release = AZR
             set_country_flag = collapse_AZR
-            AZR = {
-                set_country_flag = conservatism_soviet
-            }
         }
 
         # Чечня (ноябрь 1991)
@@ -343,9 +399,16 @@ country_event = {
             }
             release = CHE
             set_country_flag = collapse_CHE
-            CHE = {
-                set_country_flag = conservatism_soviet
-            }
+			CHE = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.9
+				}
+			}
         }
 
         # Средняя Азия - Узбекистан (август 1991)
@@ -357,9 +420,16 @@ country_event = {
             }
             release = UZB
             set_country_flag = collapse_UZB
-            UZB = {
-                set_country_flag = conservatism_soviet
-            }
+			UZB = {
+				set_politics = {
+					ruling_party = socialism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = 0.87
+				}
+			}
         }
 
         # Средняя Азия - Туркменистан (октябрь 1991)
@@ -371,9 +441,16 @@ country_event = {
             }
             release = TMS
             set_country_flag = collapse_TMS
-            TMS = {
-                set_country_flag = conservatism_soviet
-            }
+			TMS = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.99
+				}
+			}
         }
 
         # Средняя Азия - Кыргызстан (август 1991)
@@ -385,9 +462,16 @@ country_event = {
             }
             release = KYR
             set_country_flag = collapse_KYR
-            KYR = {
-                set_country_flag = conservatism_soviet
-            }
+			KYR = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.95
+				}
+			}
         }
 
         # Средняя Азия - Таджикистан (август 1991)
@@ -412,9 +496,16 @@ country_event = {
             release = RUS
             set_country_flag = collapse_RUS
 
-            RUS = {
-                set_country_flag = conservatism_soviet
-            }
+			RUS = {
+				set_politics = {
+					ruling_party = conservatism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.4
+				}				
+			}
         }
 
         # Казахстан (декабрь 1991)
@@ -426,10 +517,16 @@ country_event = {
             }
             release = KAZ
             set_country_flag = collapse_KAZ
-            KAZ = {
-                set_country_flag = conservatism_soviet
-            }
-
+			KAZ = {
+				set_politics = {
+					ruling_party = conservatism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.4
+				}
+			}
             clr_country_flag = collapse_right_now
         }
     }
@@ -2230,6 +2327,7 @@ country_event = {
 			end_civil_wars = yes
 		}
 		BEL = {
+			set_cosmetic_tag = BEL_benelux
 			every_state = {
                 limit = {
                     is_core_of = HOL

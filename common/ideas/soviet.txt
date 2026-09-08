@@ -644,7 +644,7 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.15
 				stability_factor = 0.1
-				surrender_limit = 0.5
+				surrender_limit = 0.25
 				mobilization_speed = 0.15
 			}
 		}

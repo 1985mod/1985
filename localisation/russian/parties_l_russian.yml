@@ -934,7 +934,7 @@
  SOV_non_partisan_conservatism: "§RБеспартийные§!"
  SOV_non_partisan_liberalism: "§RБеспартийные§!"
  SOV_non_partisan_fascism: "§RБеспартийные§!"
- SOV_communist_party_soVINt_union_reformed_wing: "Коммунистическая Партия Советского Союза (Реформированное крыло)"
+ SOV_communist_party_soviet_union_reformed_wing: "Коммунистическая Партия Советского Союза (Реформированное крыло)"
  SOV_kpss_reformed: "КПСС (Реформированное крыло)"
  
  RUS_communism_party: "КПРФ"
@@ -1005,3 +1005,6 @@
  ALB_none_partisan: "§RОтсутствует§!"
  ALB_unity_for_human_rights_party: "Партия единства в защиту прав человека"
  ALB_ufhrp: "Певзпч"
+ 
+ IRQ_isci: "ВСИРИ"
+ IRQ_islamic_supreme_council_of_iraq: "Верховный исламский совет Ирака"

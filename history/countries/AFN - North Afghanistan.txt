@@ -43,5 +43,6 @@ recruit_character = AFN_mohammad_najibullah
 recruit_character = AFN_abdul_qadir
 recruit_character = AFN_mohammad_rafiel
 recruit_character = AFN_abdul_rashid
+recruit_character = AFN_shahnawaz_tanai
 
 

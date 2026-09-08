@@ -1,10 +1,9 @@
-add_namespace = iran_iraq_war
 add_namespace = iran
 
 country_event = {
-    id = iran_iraq_war.1
-    title = iran_iraq_war.1.t
-    desc = iran_iraq_war.1.d
+    id = iran.1
+    title = iran.1.t
+    desc = iran.1.d
     picture = GFX_report_event_generic_peace
 
     trigger = {
@@ -16,7 +15,7 @@ country_event = {
     fire_only_once = yes
 
     option = {
-        name = iran_iraq_peace.1.a
+        name = iran.1.a
         white_peace = IRQ
     }
 }
@@ -27,17 +26,113 @@ country_event = {
     desc = iran.2.d
     picture = GFX_report_event_generic_peace
 
-    trigger = {
-        tag = PER
-        has_war_with = IRQ
-		controls_state = 1011
-    }
+    is_triggered_only = yes
 
     fire_only_once = yes
 
     option = {
         name = iran.1.a
         white_peace = IRQ
-		ROOT = { transfer_state = 1011 }
+		ROOT = { 
+            transfer_state = 962
+            transfer_state = 1011 
+        }
+    }
+}
+
+country_event = {
+    id = iran.3
+    title = iran.3.t
+    desc = iran.3.d
+    picture = GFX_report_event_generic_peace
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = iran.1.a
+        IRQ = {
+            add_war_support = -0.15
+            add_stability = -0.05 
+        }
+        set_global_flag = iraq_refused_global
+    }
+}
+
+country_event = {   ### Иран предлагает мир на своих условиях ###
+    id = iran.4
+    title = iran.4.t
+    desc = iran.4.d
+    picture = GFX_report_event_generic_peace
+
+    trigger = {
+        tag = IRQ
+        has_war_with = PER
+        IRQ = { surrender_progress > 0.2 }
+        date < 1989.1.1
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = iraq.4.a
+        PER = { country_event = iran.2 }
+    }
+
+    option = {
+        name = iraq.4.b
+        PER = { country_event = iran.3 }
+    }
+}
+
+country_event = {   ### Смена правительства в Ираке
+    id = iran.5
+    title = iran.5.t
+    desc = iran.5.d
+    picture = GFX_report_event_generic_peace
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = iran.5.a
+        add_stability = 0.05
+        add_political_power = 25
+        set_autonomy = {
+            target = IRQ
+            autonomous_state = autonomy_puppet
+            end_wars = yes
+            end_civil_wars = no
+        }
+        IRQ = {
+            set_cosmetic_tag = IRQ_islam_republic_of_iraq
+            set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+                long_name = IRQ_islamic_supreme_council_of_iraq
+                name = IRQ_isci
+            }
+        }
+        country_event = { id = iran.6 hours = 3 }
+    }
+}
+
+country_event = {   ### Смена правительства в Ираке
+    id = iran.6
+    title = iran.6.t
+    desc = iran.6.d
+    picture = GFX_report_event_generic_peace
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = iran.6.a
+        IRQ = {
+            kill_ideology_leader = fascism
+        }
     }
 }

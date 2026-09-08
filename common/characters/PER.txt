@@ -1,15 +1,30 @@
 characters = {
-	PER_Ali_Khamenei = {
-		name = PER_Ali_Khamenei
+	PER_ruhollah_khomeini = {
+		name = PER_ruhollah_khomeini
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PER/Portrait_PER_Ali_Khamenei.dds"
+				large = "gfx/leaders/PER/Portrait_ruhollah_khomeini.dds"
 			}
 		}
 		country_leader = {
 			ideology = Political_Islam
 			traits = { }
-			expire = "1971.3.1.1"
+			expire = "2026.3.1.1"
+			id = -1
+		}
+	}
+
+	PER_massoud_rajavi = {
+		name = PER_massoud_rajavi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/Portrait_massoud_rajavi.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { }
+			expire = "1988.3.1.1"
 			id = -1
 		}
 	}
@@ -28,3 +43,4 @@ characters = {
 			id = -1
 		}
 	}
+}

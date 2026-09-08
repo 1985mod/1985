@@ -18,3 +18,21 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "old_march_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "born_in_ussr_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}

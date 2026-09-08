@@ -328,6 +328,12 @@ scripted_gui = {
             debt_bg_right_click = {
                 subtract_from_variable = { var = current_debt value = 1 }
                 subtract_from_variable = { var = treasury value = 1 }
+                if = {
+                    limit = {
+                        check_variable = { current_debt < 0 } 
+                    }
+                    set_variable = { var = current_debt value = 0 }
+                }
             }
             debt_bg_control_right_click = {
                 add_to_variable = { var = current_debt value = 10 }
@@ -336,6 +342,12 @@ scripted_gui = {
             debt_bg_control_click = {
                 add_to_variable = { var = current_debt value = 10 }
                 add_to_variable = { var = treasury value = 10 }
+                if = {
+                    limit = {
+                        check_variable = { current_debt < 0 } 
+                    }
+                    set_variable = { var = current_debt value = 0 }
+                }
             }
             debt_bg_shift_click = {
                 add_to_variable = { var = current_debt value = 100 }
@@ -344,6 +356,12 @@ scripted_gui = {
             debt_bg_shift_right_click = {
                 subtract_from_variable = { var = current_debt value = 100 }
                 subtract_from_variable = { var = treasury value = 100 }
+                if = {
+                    limit = {
+                        check_variable = { current_debt < 0 } 
+                    }
+                    set_variable = { var = current_debt value = 0 }
+                }
             }
         }
         triggers = {
