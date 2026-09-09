@@ -822,3 +822,33 @@ news_event = {
 		name = news.36.a
 	}
 }
+
+news_event = {
+	id = news.37 ##	Война в Боснии ##
+	title = news.37.t
+	desc = news.37.desc
+	picture = GFX_news_war_in_bosnia
+    
+    major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.37.a
+	}
+}
+
+news_event = {
+	id = news.38 ##	Распад Чехословакии ##
+	title = news.38.t
+	desc = news.38.desc
+	picture = GFX_news_dissolution_of_czechoslovakia
+    
+    major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.38.a
+	}
+}

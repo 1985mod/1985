@@ -36,4 +36,5 @@ set_popularities = {
 
 add_ideas = {
 	war_economy
+	BRM_civil_war_in_burma
 }

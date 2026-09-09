@@ -22,7 +22,14 @@ country_event = {
 			release = SLV
 			set_country_flag = collapse_SLV
             SLV = {
-                set_country_flag = yugoslav_country
+                set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.6
+				}
             }
 		}
 
@@ -35,8 +42,19 @@ country_event = {
             release = CRO
 			set_country_flag = collapse_CRO
             CRO = {
-                set_country_flag = yugoslav_country
+                set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.6
+				}
+				country_event = { id = croatia.1 }
             }
+			YUG = {
+				country_event = { id = yugoslavia.2 days = 5 }
+			}
 		}
 
 		# Македония – 8 сентября 1991
@@ -49,7 +67,14 @@ country_event = {
 			MAC = { transfer_state = 970 }
 			set_country_flag = collapse_MAC
             MAC = {
-                set_country_flag = yugoslav_country
+                set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.6
+				}
             }
 		}
 
@@ -63,8 +88,19 @@ country_event = {
 			BOS = { transfer_state = 1052 }
 			set_country_flag = collapse_BOS
             BOS = {
-                set_country_flag = yugoslav_country
+                set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.6
+				}
+				country_event = { id = bosnia.1 }
             }
+			YUG = {
+				country_event = { id = yugoslavia.5 days = 5 }
+			}
 		}
 
 		# Черногория – 3 июня 2006
@@ -101,11 +137,7 @@ country_event = {
 	title = yugoslavia.2.t
 	desc = yugoslavia.2.desc
 
-	trigger = {
-		tag = YUG
-		has_civil_war = no
-		date > 1991.06.27
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
@@ -215,18 +247,17 @@ country_event = {
 	title = yugoslavia.5.t
 	desc = yugoslavia.5.desc
 
-	trigger = {
-		tag = YUG
-		has_civil_war = no
-		country_exists = BOS
-		date > 1992.03.1
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	option = {
+		news_event = { id = news.37 hours = 6 }
 		ROOT = {
 			declare_war_on = { target = BOS type = annex_everything }	
+		}
+		BOS = {
+			declare_war_on = { target = CRO type = annex_everything }	
 		}
 		set_province_controller = 6957
 		set_province_controller = 3985

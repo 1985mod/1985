@@ -93,7 +93,7 @@ country_event = {
 	title = Czechoslovakia.3.t
 	desc = Czechoslovakia.3.desc
 	picture = GFX_report_event_generic_rally
-    fire_only_once = yesw
+    fire_only_once = yes
 
 	trigger = {
 		tag = CZE
@@ -112,6 +112,7 @@ country_event = {
 	title = Czechoslovakia.4.t
 	desc = Czechoslovakia.4.desc
 	hidden = yes
+    fire_only_once = yes
 
 	trigger = {
 		tag = CZE
@@ -121,6 +122,7 @@ country_event = {
         SOV = { has_country_flag = gorbachev }
 	}
 	immediate = {
+        news_event = { id = news.38 }
         release = SLO
 		set_country_flag = collapse
         set_cosmetic_tag = CZE_demolish
