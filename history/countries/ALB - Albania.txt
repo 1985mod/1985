@@ -9,7 +9,14 @@ set_technology = {
 	tech_recon = 1
 }
 
-recruit_character = ALB_Charchani
+country_event = {
+	id = albania.1
+	days = 100
+}
+
+recruit_character = ALB_enver_hoxha
+recruit_character = ALB_ramiz_alia
+recruit_character = ALB_sali_berisha
 
 set_politics = {
 	ruling_party = communism

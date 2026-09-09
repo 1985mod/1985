@@ -64,16 +64,6 @@ on_actions = {
 				SOV = { country_event = { id = SOV_soviet_union.71 } }
 				set_global_flag = ssg_elections_resolved
 			}
-			if = {
-				limit = {
-					country_exists = CRO
-					date > 1991.06.01
-					CRO = { has_war_with = YUG }
-					NOT = { has_global_flag = yugoslav_wars_started_on_actions }
-				}
-				CRO = { country_event = { id = croatia.1 } }
-				set_global_flag = yugoslav_wars_started_on_actions
-			}
 		}
 	}
 

@@ -949,6 +949,8 @@
  SOV_non_partisan_fascism: "§RБеспартийные§!"
  SOV_communist_party_soVINt_union_reformed_wing: "Коммунистическая Партия Советского Союза (Реформированное крыло)"
  SOV_kpss_reformed: "КПСС (Реформированное крыло)"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:localisation/replace/parties_l_russian.yml
  peoples_deputies_desc: "Народные депутаты России"
  peoples_deputies_desc_2: "Съезд народных депутатов Российской Федерации — высший орган государственной власти РСФСР (Российской Федерации)."
@@ -965,7 +967,25 @@
  liberalism_drift: "Ежедневная поддержка либерализма"
  socialism_drift: "Ежедневная поддержка социал-демократии"
 =======
+=======
+>>>>>>> Stashed changes
  
+=======
+ 
+ RUS_communism_party: "КПРФ"
+ RUS_communism_party_long: "Коммунистическая партия Российской Федерации"
+ RUS_socialism_party: "СДПР"
+ RUS_socialism_party_long: "Социал-демократическая партия России"
+ RUS_liberalism_party: "Демократический Союз"
+ RUS_liberalism_party_long: "Демократический Союз"
+ RUS_conservatism_party: "§RБеспартийные§!"
+ RUS_conservatism_party_long: "§RБеспартийные§!"
+ RUS_neutrality_party: "ЛДПР"
+ RUS_neutrality_party_long: "Либерально-демократическая партия России"
+ RUS_fascism_party: "НПФ «Память»"
+ RUS_fascism_party_long: "Национально-патриотический фронт «Память»"
+
+>>>>>>> Stashed changes
  AFN_peoples_democratic_party_of_afghanistan: "Народно-демократическая партия Афганистана"
  AFN_pdp_afghanistan: "НДПА"
  AFN_organization_of_the_vanguard_of_afghan_workers: "Организация авангарда рабочих Афганистана"
@@ -976,4 +996,48 @@
  SWI_SPP: "ШНП"
  
  ITA_non_partisan_socialism: "§RБеспартийные§!"
->>>>>>> Stashed changes:localisation/russian/replace/parties_l_russian.yml
+
+ HUN_hungarian_socialist_party: "Венгерская социалистическая партия"
+ HUN_MSZP: "ВСП"
+ HUN_alliance_of_free_democrats: "Альянс свободных демократов"
+ HUN_SZDSZ: "АСД"
+ HUN_hungarian_democratic_forum: "Венгерский демократический форум"
+ HUN_MDF: "ВДф"
+ HUN_none_partisan_neutrality: "§RОтсутствует§!"
+ HUN_none_partisan_fascism: "§RОтсутствует§!"
+ 
+ BUL_bulgarian_socialist_party: "Болгарская социалистическая партия"
+ BUL_bsp: "БСП"
+ BUL_union_of_democratic_forces: "Союз демократических сил"
+ BUL_sds: "СДС"
+ BUL_none_partisan: "§RОтсутствует§!"
+ 
+ ROM_national_salvation_front: "Фронт национального спасения"
+ ROM_fsn: "ФНС"
+ ROM_national_liberal_party: "Национальная либеральная партия"
+ ROM_pnl: "НЛП"
+ ROM_christian_democratic_national_peasants_party: "Христианско-демократическая национал-цэрэнистская партия"
+ ROM_pntcd: "ХДНЦП"
+ ROM_none_partisan: "§RОтсутствует§!"
+ 
+ CZE_civic_forum: "Гражданский форум"
+ CZE_christian_and_democratic_union_czechoslovak_peoples_party: "Христианско-демократический союз — Чехословацкая народная партия"
+ CZE_caducpp: "ХЖСЧНР"
+ CZE_social_democracy: "Социальная демократия"
+ CZE_none_partisan: "§RОтсутствует§!"
+ 
+ POL_polish_socialist_party: "Польская социалистическая партия"
+ POL_pps: "ППС"
+ POL_social_democracy of_the_republic_of_poland: "Социал-демократия Республики Польша"
+ POL_sdrp: "ПЗРП"
+ POL_independent_self_governing_trade_union_solidarity: "Независимый самоуправляемый профсоюз «Солидарность»"
+ POL_solidarity: "Солидарность"
+ POL_none_partisan: "§RОтсутствует§!"
+ 
+ ALB_socialist_party_of_albania: "Социалистическая партия Албании"
+ ALB_pssh: "СПА"
+ ALB_democratic_party_of_albania: "Демократическая партия Албании"
+ ALB_dpa: "ДПА"
+ ALB_none_partisan: "§RОтсутствует§!"
+ ALB_unity_for_human_rights_party: "Партия единства в защиту прав человека"
+ ALB_ufhrp: "Певзпч"

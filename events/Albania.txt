@@ -1,0 +1,91 @@
+add_namespace = albania
+
+country_event = { 
+    id = albania.1 #Смерть Ходжи#
+    title = albania.1.t
+    desc =  albania.1.desc
+    picture = GFX_
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    immediate = {
+        hidden_effect = {
+            set_country_flag = SOV_hoxha_death_flag
+            kill_country_leader = yes
+        }
+    }
+
+    option = {
+        name = albania.1.a
+		effect_tooltip = {
+            kill_country_leader = yes
+		}
+	}
+}
+
+country_event = {
+    id = albania.2 #Падение коммунизма#
+    title = albania.2.t
+    desc = albania.2.desc
+    picture = GFX_report_event_generic_parliament
+    fire_only_once = yes
+    trigger = {
+        tag = ALB
+        date > 1992.8.22
+        has_government = communism
+        SOV = { has_country_flag = gorbachev }
+    }
+    mean_time_to_happen = {
+        days = 7
+    }
+    option = {
+        name = albania.2.a
+        retire_country_leader = yes
+        set_politics = {
+            ruling_party = conservatism
+            last_election = "1990.5.20"
+            election_frequency = 48
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.60
+        }
+        add_popularity = {
+            ideology = socialism
+            popularity = 0.30
+        }
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.03
+        }
+        set_party_name = {
+            ideology = socialism
+            long_name = ALB_socialist_party_of_albania
+            name = ALB_pssh
+        }
+        set_party_name = {
+            ideology = liberalism
+            long_name = ALB_unity_for_human_rights_party
+            name = ALB_ufhrp
+        }
+        set_party_name = {
+            ideology = conservatism
+            long_name = ALB_democratic_party_of_albania
+            name = ALB_dpa
+        }
+         set_party_name = {
+            ideology = neutrality
+            name = ALB_none_partisan
+        }
+        set_party_name = {
+            ideology = fascism
+            name = ALB_none_partisan
+        }
+        set_party_name = {
+            ideology = communism 
+            name = ALB_none_partisan
+        }
+    }
+}
