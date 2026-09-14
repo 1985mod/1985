@@ -15,6 +15,7 @@ guiTypes = {
 				name = "debt_bg"
 				quadTextureSprite ="GFX_tiled_generic_bg_1"
 				size = { width=85 height=30 }
+				pdx_tooltip = "DEBT_TOOLTIP"
 			}
 
 			iconType = {

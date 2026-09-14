@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		FIN_military_neutrality = {
-			picture = GFX_	
+			picture = military_neutrality	
 			allowed = {
 				original_tag = FIN
 			}
@@ -18,7 +18,7 @@ ideas = {
 			}
 		}
 		FIN_treaty_of_friendship_with_the_ussr = {
-			picture = GFX_	
+			picture = friendship_with_ussr	
 			allowed = {
 				original_tag = FIN
 			}
@@ -36,7 +36,7 @@ ideas = {
 			}
 		}
 		FIN_trade_dependence_on_the_ussr = {
-			picture = GFX_	
+			picture = trade_dependence_ussr	
 			allowed = {
 				original_tag = FIN
 			}

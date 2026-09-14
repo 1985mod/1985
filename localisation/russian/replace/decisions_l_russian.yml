@@ -409,4 +409,12 @@
  support_for_the_spd_will_increase_by_5: "Поддержка §YСДПГ§! §Rвозрастёт§! на §Y5%§!"
  support_for_the_spd_will_decrease_by_5: "Поддержка §YСДПГ§! §Rуменьшится§! на §Y5%§!"
  parties_desc: "Предвыборная кампания в ФРГ - ключевая битва за курс страны на исходе Холодной войны. На коне стоит выбор между жестким атлантизмом ХДС Гельмута Коля и курсом на разрядку от СДПГ."
+ USA_election_campaign_in_usa: "Предвыборная кампания в США"
+ leader_name_republicans: "Джордж Г. У. Буш"
+ leader_name_democrats: "Майкл Дукакис"
+ support_republicans_in_the_us: "§GПоддержка§! в §YШтатах§! §Y[?USA.support_republicans_in_us]§!/50"
+ support_democrats_in_the_us: "§GПоддержка§! в §YШтатах§! §Y[?USA.support_democrats_in_us]§!/50"
+ electoral_votes_republicans: "Голосов выборщиков §Y[?USA.electoral_votes_republicans]§!/538"
+ electoral_votes_democrats: "Голосов выборщиков §Y[?USA.electoral_votes_democrats]§!/538"
+ desc_republicans_and_democratic_parties: "Для победы на §Yвыборах§! нам нужно как §Yминимум§! §R270§! §Yвыборщиков§!."
  

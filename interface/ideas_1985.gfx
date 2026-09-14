@@ -288,12 +288,32 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_idea_first_intifada"
-        texturefile = "gfx/interface/ideas/idea_first_intifada.dds"
+        texturefile = "gfx/interface/ideas/PAL/idea_first_intifada.dds"
     }
 
     spriteType = {
         name = "GFX_idea_no_fly_zone"
         texturefile = "gfx/interface/ideas/IRQ/idea_no_fly_zone.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_civil_war_in_burma"
+        texturefile = "gfx/interface/ideas/BRM/idea_civil_war_in_burma.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_military_neutrality"
+        texturefile = "gfx/interface/ideas/FIN/idea_military_neutrality.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_friendship_with_ussr"
+        texturefile = "gfx/interface/ideas/FIN/idea_friendship_with_ussr.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_trade_dependence_ussr"
+        texturefile = "gfx/interface/ideas/FIN/idea_trade_dependence_ussr.dds"
     }
 
     spriteType = {

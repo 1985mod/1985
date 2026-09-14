@@ -12,4 +12,24 @@ characters = {
 			expire = "2011.3.1.1"
 		}
 	}
+
+	PAL_marwan_barghouti = {
+		name = "PAL_marwan_barghouti"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAL/Portrait_marwan_barghouti.dds"
+			}
+			army = {
+				large = "gfx/leaders/PAL/Portrait_marwan_barghouti.dds"
+			}
+		}	
+		corps_commander={
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 }

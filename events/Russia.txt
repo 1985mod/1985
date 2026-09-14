@@ -365,6 +365,9 @@ country_event = {
 		add_political_power = -50
 		add_stability = -0.05
 		add_war_support = 0.05
+		RUS = {
+			add_state_core = 249
+		}
 		set_country_flag = {
 			flag = the_growing_crisis_in_the_caucasus
 			days = 14
@@ -481,8 +484,10 @@ country_event = {
 
     option = {
         name = russia.19.a ### россия согласилась
-		FROM = { transfer_state = 828 }
-		FROM = { transfer_state = 232 }
+		ROOT = { 
+			transfer_state = 828 
+			transfer_state = 232
+		}
 		set_global_flag = caucasus_conflict_over
 		add_stability = -0.1
 		add_war_support = -0.05
@@ -519,7 +524,7 @@ country_event = {
 	id = russia.22 ## отделилась Якутия ##
 	title = russia.22.t
 	desc = russia.22.desc
-	picture = GFX_report_decree_no_1400
+	picture = GFX_report_protests_against_yeltsin
 
 	trigger = {
 		tag = RUS
@@ -542,7 +547,7 @@ country_event = {
 	id = russia.23 ## отделилась Тыва и Карелия ##
 	title = russia.23.t
 	desc = russia.23.desc
-	picture = GFX_report_decree_no_1400
+	picture = GFX_report_protests_against_yeltsin
 
 	trigger = {
 		tag = RUS
@@ -569,10 +574,10 @@ country_event = {
 }
 
 country_event = {
-	id = russia.24 ## Переворот Общества «Память» ##
+	id = russia.24 ## Военный переворот ##
 	title = russia.24.t
 	desc = russia.24.desc
-	picture = GFX_report_decree_no_1400
+	picture = GFX_report_protests_against_yeltsin
 
 	trigger = {
 		tag = RUS
@@ -589,27 +594,48 @@ country_event = {
 
     option = {
         name = russia.24.a
+		set_global_flag = military_coup_in_russia
 		add_war_support = 0.4
-		set_cosmetic_tag = RUS_state_pamyat
+		set_cosmetic_tag = RUS_russian_republic
 		add_stability = -0.15
         set_politics = {
-            ruling_party = fascism
-        	elections_allowed = yes
+            ruling_party = neutrality
+        	elections_allowed = no
+			long_name = RUS_RODINA_congress_of_russian_communities
+			name =  RUS_corc
+        }
+        add_country_leader_role = {
+            character = RUS_alexander_lebed
+            promote_leader = yes
+            country_leader = {
+                ideology = military_regimes
+                expire = "2014.1.1.1"
+            }
         }
 		effect_tooltip = {
 			add_popularity = {
-				ideology = fascism
-				popularity = 0.8
+				ideology = neutrality
+				popularity = 0.7
 			}
 			add_popularity = {
-				ideology = neutrality
-				popularity = 0.2
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.16
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.04
 			}
 		}
 		hidden_effect = {
 			set_popularities = {
-				neutrality = 20
-				fascism = 80
+				neutrality = 70
+				fascism = 10
+				conservatism = 16
+				communism = 4
 			}
 		}
 	}

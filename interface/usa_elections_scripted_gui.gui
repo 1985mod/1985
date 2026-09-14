@@ -1,0 +1,108 @@
+guiTypes = {
+	containerWindowType = {
+        name = "usa_elections_decision_ui_window"
+        position = { x = 0 y = 0 }
+		size = { width = 350 height = 490 }
+
+		containerWindowType = {
+			name = "usa_elections_main_container"
+			position = { x = -5 y = 50 }
+			size = { width = 500 height = 455 }
+		}
+
+
+		instantTextBoxType = {
+			name = "leader_name_republicans"
+			position = { x = 25 y = 5 }
+			font = "hoi_16mbs"
+			text = "leader_name_republicans"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "leader_name_democrats"
+			position = { x = 315 y = 5 }
+			font = "hoi_16mbs"
+			text = "leader_name_democrats"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		iconType = {
+			name = "leader_republicans"
+			position = { x = 25 y = 25 }
+			spriteType = "GFX_Portrait_george_bush"
+		}
+
+		iconType = {
+			name = "leader_democrats"
+			position = { x = 315 y = 25 }
+			spriteType = "GFX_Portrait_michael_dukakis"
+		}
+
+		iconType = {
+			name = "republicans_party"
+			position = { x = 50 y = 250 }
+			spriteType = "GFX_decision_scripted_gui_republicans_party"
+		}
+
+		iconType = {
+			name = "democratic_party"
+			position = { x = 340 y = 250 }
+			spriteType = "GFX_decision_scripted_gui_democratic_party"
+		}
+
+		instantTextBoxType = {
+			name = "support_republicans_in_the_us"
+			position = { x = 25 y = 360 }
+			font = "hoi_16mbs"
+			text = "support_republicans_in_the_us"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "electoral_votes_republicans"
+			position = { x = 25 y = 420 }
+			font = "hoi_16mbs"
+			text = "electoral_votes_republicans"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "support_democrats_in_the_us"
+			position = { x = 315 y = 360 }
+			font = "hoi_16mbs"
+			text = "support_democrats_in_the_us"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "electoral_votes_democrats"
+			position = { x = 315 y = 420 }
+			font = "hoi_16mbs"
+			text = "electoral_votes_democrats"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "desc_republicans_and_democratic_parties"
+			position = { x = 25 y = 470 }
+			font = "hoi_16mbs"
+			text = "desc_republicans_and_democratic_parties"
+			maxWidth = 450
+			maxHeight = 16
+			format = center
+		}
+	}
+}

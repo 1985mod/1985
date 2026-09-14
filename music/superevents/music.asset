@@ -30,6 +30,18 @@ music = {
 	volume = 0.95
 }
 
+music = {
+	name = "soldaty_v_put_name"
+	file = "soldaty_v_put.ogg"
+	volume = 0.95
+}
+
+music = {
+	name = "chechnya_in_flames_name"
+	file = "chechnya_in_flames.ogg"
+	volume = 0.95
+}
+
 
 # General Peace:
 music = {

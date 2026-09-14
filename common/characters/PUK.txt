@@ -1,0 +1,15 @@
+characters = {
+	PUK_jalal_talabani = {
+		name = PUK_jalal_talabani
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PUK/Portrait_jalal_talabani.dds"
+			}
+		}
+		country_leader = {
+			ideology = ethnic_nationalism
+			traits = { }
+			expire = "2011.3.1.1"
+		}
+	}
+}

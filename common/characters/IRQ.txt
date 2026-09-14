@@ -26,4 +26,128 @@ characters = {
 			expire = "2011.3.1.1"
 		}
 	}
+
+	IRQ_adnan_khairallah = {
+		name = "IRQ_adnan_khairallah"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRQ/Portrait_adnan_khairallah.dds"
+			}
+			army = {
+				large = "gfx/leaders/IRQ/Portrait_adnan_khairallah.dds"
+			}
+		}	
+		
+		field_marshal={
+			traits = { politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	IRQ_izzat_ibrahim_al_douri = {
+		name = "IRQ_izzat_ibrahim_al_douri"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRQ/Portrait_izzat_ibrahim_al_douri.dds"
+			}
+			army = {
+				large = "gfx/leaders/IRQ/Portrait_izzat_ibrahim_al_douri.dds"
+			}
+		}	
+		
+		field_marshal={
+			traits = { politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	IRQ_abid_hamid_mahmud = {
+		name = "IRQ_abid_hamid_mahmud"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRQ/Portrait_abid_hamid_mahmud.dds"
+			}
+			army = {
+				large = "gfx/leaders/IRQ/Portrait_abid_hamid_mahmud.dds"
+			}
+		}	
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	IRQ_taha_yassin_ramadan = {
+		name = "IRQ_taha_yassin_ramadan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRQ/Portrait_taha_yassin_ramadan.dds"
+			}
+			army = {
+				large = "gfx/leaders/IRQ/Portrait_taha_yassin_ramadan.dds"
+			}
+		}	
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	IRQ_tariq_aziz = {
+		name = "IRQ_tariq_aziz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRQ/Portrait_tariq_aziz.dds"
+			}
+			army = {
+				large = "gfx/leaders/IRQ/Portrait_tariq_aziz.dds"
+			}
+		}	
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	IRQ_ali_hassan_al_majid = {
+		name = "IRQ_ali_hassan_al_majid"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRQ/Portrait_ali_hassan_al_majid.dds"
+			}
+			army = {
+				large = "gfx/leaders/IRQ/Portrait_ali_hassan_al_majid.dds"
+			}
+		}	
+		corps_commander={
+			skill=1
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 }

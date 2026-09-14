@@ -21,6 +21,12 @@ focus_tree = {
 		
         completion_reward = {
 		    add_political_power = 75
+            unlock_decision_category_tooltip = USA_election_campaign_in_usa
+            set_country_flag = usa_elections
+            set_variable = { var = USA.support_republicans_in_us value = 40 }
+            set_variable = { var = USA.electoral_votes_republicans value = 426 }
+            set_variable = { var = USA.support_democrats_in_us value = 10 }
+            set_variable = { var = USA.electoral_votes_democrats value = 112 }
 	    }
 	}
 	

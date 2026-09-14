@@ -13,4 +13,24 @@ characters = {
 			id = -1
 		}
 	}
+
+	ISR_dan_shomron = {
+		name = "ISR_dan_shomron"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ISR/Portrait_dan_shomron.dds"
+			}
+			army = {
+				large = "gfx/leaders/ISR/Portrait_dan_shomron.dds"
+			}
+		}	
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
 }

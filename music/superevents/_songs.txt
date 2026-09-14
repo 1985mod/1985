@@ -36,3 +36,21 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "soldaty_v_put_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "chechnya_in_flames_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}

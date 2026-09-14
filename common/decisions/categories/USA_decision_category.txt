@@ -178,3 +178,21 @@ USA_space_programs = {
 		original_tag = USA
 	}
 }
+
+USA_election_campaign_in_usa = {
+
+	icon = generic_propaganda
+		
+	priority = 45
+	  
+	allowed = {
+		original_tag = USA
+	}
+	  
+	visible = {
+		has_country_flag = usa_elections
+		original_tag = USA
+	}
+
+	scripted_gui = usa_elections_scripted_gui
+}

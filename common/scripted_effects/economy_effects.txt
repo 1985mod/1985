@@ -66,7 +66,7 @@ inflation_effect = {
 				
 				set_temp_variable = { var = inflation_growth_temp value = current_debt }
 				subtract_from_variable = { var = inflation_growth_temp value = 50 }
-                multiply_temp_variable = { var = inflation_growth_temp value = 0.0028 }
+                multiply_temp_variable = { var = inflation_growth_temp value = 0.0049 }
 				
 				add_to_variable = { var = inflation_rate value = inflation_growth_temp }
 			}
@@ -520,7 +520,7 @@ tax_effect = {
         set_variable = { var = money_supply value = 0 }
     }
 
-    set_variable = { var = science_budget_ratio value = 0.0015 }
+    set_variable = { var = science_budget_ratio value = 0.002 }
 	set_variable = { var = gdp_research_penalty value = nominal_gdp }
 	multiply_variable = { var = gdp_research_penalty value = science_budget_ratio }
 

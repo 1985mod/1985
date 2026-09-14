@@ -25,9 +25,9 @@ Economy = {
 		}
 
 		ai_will_do = {
-            base = -1000
+            base = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = pop_rate value = pop_optimal compare = less_than }
             }
         }
@@ -58,9 +58,9 @@ Economy = {
 		}
 
 		ai_will_do = {
-            base = -1000
+            base = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = pop_rate value = pop_optimal compare = greater_than }
             }
         }		
@@ -91,9 +91,9 @@ Economy = {
 		}
 
 		ai_will_do = {
-            base = -1000
+            base = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = corp_rate value = corp_optimal compare = less_than }
             }
         }
@@ -124,9 +124,9 @@ Economy = {
 		}
 
 		ai_will_do = {
-            base = -1000
+            base = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = corp_rate value = corp_optimal compare = greater_than }
             }
         }		
@@ -157,9 +157,9 @@ Economy = {
 		}
 
 		ai_will_do = {
-            base = -1000
+            base = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = vat_rate value = vat_optimal compare = less_than }
             }
         }
@@ -190,9 +190,9 @@ Economy = {
 		}
 
 		ai_will_do = {
-            base = -1000
+            base = 15
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = vat_rate value = vat_optimal compare = greater_than }
             }
         }		
@@ -223,10 +223,10 @@ Economy = {
 		}
 
 		ai_will_do = {
-            base = -1000
+            base = 5
             modifier = {
-                add = 2000
-                check_variable = { var = inflation_rate value = 8 compare = greater_than }
+                add = 10
+                check_variable = { var = inflation_rate value = 10 compare = greater_than }
             }
         }
 	}
@@ -257,10 +257,10 @@ Economy = {
 		}
 
 		ai_will_do = {
-            base = -1000
+            base = 15
             modifier = {
-                add = 2000
-                check_variable = { var = inflation_rate value = 2 compare = less_than }
+                add = 10
+                check_variable = { var = inflation_rate value = 3 compare = less_than }
             }
         }		
 	}

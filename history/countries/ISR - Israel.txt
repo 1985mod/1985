@@ -20,6 +20,17 @@ add_nuclear_bombs = 32
 
 if = {
 	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		basic_light_tank = 1
+		main_battle_tank = 1
+	}
+}
+
+
+if = {
+	limit = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
@@ -50,6 +61,7 @@ set_popularities = {
 }
 
 recruit_character = ISR_Shimon_Peres
+recruit_character = ISR_dan_shomron
 
 if = {
 	limit = {
