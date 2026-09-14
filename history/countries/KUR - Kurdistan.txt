@@ -7,7 +7,7 @@ oob = "KUR_1985"
 declare_war_on = {
 	target = IRQ
 	type = take_state_focus
-	generator = { 676 }
+	generator = { 1058 1070 }
 }
 
 set_technology = {
@@ -36,4 +36,6 @@ recruit_character = KUR_parliament
 
 add_ideas = {
 	war_economy
+	all_adults_serve
+	KUR_battle_for_freedom
 }

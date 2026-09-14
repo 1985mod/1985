@@ -866,6 +866,18 @@ on_actions = {
 
 			clamp_variable = { var = weekly_income min = 0 }
 			clamp_variable = { var = current_debt min = 0 }
+
+			if = {
+				limit = {
+					check_variable = { var = nominal_gdp value = 0 compare = greater_than }
+				}
+				set_variable = { var = debt_to_gdp value = current_debt }
+				divide_variable = { var = debt_to_gdp value = nominal_gdp }
+				multiply_variable = { var = debt_to_gdp value = 100 }
+			}
+			else = {
+				set_variable = { var = debt_to_gdp value = 0 }
+			}
 		}
 	}
 }

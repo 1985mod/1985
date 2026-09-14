@@ -478,6 +478,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_protests_against_yeltsin"
+		texturefile = "gfx/event_pictures/report_protests_against_yeltsin.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_proclamation_of_a_great_iraq"
 		texturefile = "gfx/event_pictures/news_proclamation_of_a_great_iraq.dds"
 	}

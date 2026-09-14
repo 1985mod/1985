@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		SWE_military_neutrality = {
-			picture = GFX_	
+			picture = military_neutrality	
 			allowed = {
 				original_tag = SWE
 			}

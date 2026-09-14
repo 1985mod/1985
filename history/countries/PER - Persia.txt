@@ -25,6 +25,16 @@ set_technology = {
 
 if = {
 	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		basic_light_tank = 1
+		main_battle_tank = 1
+	}
+}
+
+if = {
+	limit = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
@@ -76,3 +86,6 @@ set_variable = { var = current_debt value = 121.5 }
 recruit_character = PER_ruhollah_khomeini
 recruit_character = PER_massoud_rajavi
 recruit_character = PER_shapour_bakhtiar
+recruit_character = PER_ali_sayad_shirazi
+recruit_character = PER_ali_shamkhani
+recruit_character = PER_mohsen_rezaee

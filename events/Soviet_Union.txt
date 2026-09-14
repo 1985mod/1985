@@ -198,6 +198,7 @@ country_event = {
                 date > 1990.03.11
                 NOT = { has_country_flag = collapse_LIT }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = LIT
             set_country_flag = collapse_LIT
@@ -219,6 +220,7 @@ country_event = {
                 date > 1990.05.04
                 NOT = { has_country_flag = collapse_LAT }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = LAT
             set_country_flag = collapse_LAT
@@ -240,6 +242,7 @@ country_event = {
                 date > 1991.04.09
                 NOT = { has_country_flag = collapse_GEO }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = GEO
             set_country_flag = collapse_GEO
@@ -261,6 +264,7 @@ country_event = {
                 date > 1991.03.20
                 NOT = { has_country_flag = collapse_EST }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = EST
             set_country_flag = collapse_EST
@@ -283,6 +287,7 @@ country_event = {
                 date > 1991.08.27
                 NOT = { has_country_flag = collapse_MOL }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = MOL
             set_country_flag = collapse_MOL
@@ -305,6 +310,7 @@ country_event = {
                 date > 1991.09.21
                 NOT = { has_country_flag = collapse_ARM }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = ARM
             set_country_flag = collapse_ARM
@@ -343,6 +349,7 @@ country_event = {
                 date > 1991.08.24
                 NOT = { has_country_flag = collapse_UKR }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = UKR
             set_country_flag = collapse_UKR
@@ -364,6 +371,7 @@ country_event = {
                 date > 1991.08.25
                 NOT = { has_country_flag = collapse_BLR }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = BLR
             set_country_flag = collapse_BLR
@@ -385,6 +393,7 @@ country_event = {
                 date > 1991.10.18
                 NOT = { has_country_flag = collapse_AZR }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = AZR
             set_country_flag = collapse_AZR
@@ -396,6 +405,7 @@ country_event = {
                 date > 1991.11.01
                 NOT = { has_country_flag = collapse_CHE }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = CHE
             set_country_flag = collapse_CHE
@@ -417,6 +427,7 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_UZB }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = UZB
             set_country_flag = collapse_UZB
@@ -438,6 +449,7 @@ country_event = {
                 date > 1991.10.27
                 NOT = { has_country_flag = collapse_TMS }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = TMS
             set_country_flag = collapse_TMS
@@ -459,6 +471,7 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_KYR }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = KYR
             set_country_flag = collapse_KYR
@@ -480,6 +493,7 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_TAJ }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = TAJ
             set_country_flag = collapse_TAJ
@@ -492,6 +506,7 @@ country_event = {
                 NOT = { has_country_flag = collapse_RUS }
                 NOT = { has_global_flag = ussr_not_collapsed }
                 has_country_flag = independence_of_the_rsfsr
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = RUS
             set_country_flag = collapse_RUS
@@ -514,6 +529,7 @@ country_event = {
                 date > 1991.12.16
                 NOT = { has_country_flag = collapse_KAZ }
                 NOT = { has_global_flag = ussr_not_collapsed }
+				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = KAZ
             set_country_flag = collapse_KAZ

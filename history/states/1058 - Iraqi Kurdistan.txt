@@ -1,7 +1,7 @@
 state={
 	id=1058
 	name="STATE_1058"
-	manpower = 2000000
+	manpower = 1569904
 	
 	state_category = rural
 	
@@ -17,16 +17,25 @@ state={
 		victory_points = {
 			3916 3 
 		}
-		victory_points = {
-			6826 1
-		}
 		add_claim_by = IRQ
+		add_core_of = PUK
 		add_core_of = KUR
+
+		IRQ = {
+			set_province_controller = 3916
+			set_province_controller = 13604
+			set_province_controller = 13605
+			set_province_controller = 13606
+			set_province_controller = 13607
+			set_province_controller = 10804
+			set_province_controller = 5014
+			set_province_controller = 10811
+		}
 	}
 
 	
 	provinces={
-		3916 5014 6826 10804 10811
+		3916 5014 10804 10811 13604 13605 13606 13607 13608
 	}
 
 	local_supplies=0.0 

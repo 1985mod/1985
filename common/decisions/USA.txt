@@ -935,3 +935,27 @@ USA_space_programs = {
 		}
 	}
 }
+
+USA_election_campaign_in_usa = {
+	USA_dukakis_anti_advertising = {
+		cost = 75
+		days_remove = 35
+
+		ai_will_do = {
+			base = 15
+		}
+
+		remove_effect = {
+			CUB = {
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.03
+				}
+			}
+		}
+	}
+}

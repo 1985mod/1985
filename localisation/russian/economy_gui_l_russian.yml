@@ -70,3 +70,4 @@
  STATE_EXPENDITURE_LABEL:0 "Расходы государства"
  BALANCE_VALUE:0 "[?treasury|.2]"
  DEBT_VALUE:0 "[?current_debt|.2]"
+ DEBT_TOOLTIP:0 "Соотношение госдолга к ВВП: §R[?debt_to_gdp|.2]%§!"

@@ -1,0 +1,38 @@
+state={
+	id=1070
+	name="STATE_1070"
+	provinces={
+		6826 13601 13602 13603
+	}
+
+	history = {
+	
+		owner = PUK
+		add_core_of = PUK
+		add_core_of = KUR
+		add_claim_by = IRQ
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			6826 3
+		}
+
+		victory_points = {
+			13602 3
+		}
+
+		IRQ = {
+			set_province_controller = 13600
+			set_province_controller = 13601
+			set_province_controller = 6826
+		}
+	}
+	
+	manpower=430096
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

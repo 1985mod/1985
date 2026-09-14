@@ -626,7 +626,7 @@ country_event = {
 		add_war_support = -0.03
 		add_popularity = {
 			ideology = socialism
-			popularity = 0.03
+			popularity = 0.02
 	    }
 		FROM = {
 			add_to_variable = {
@@ -672,7 +672,7 @@ country_event = {
 	    }
 		add_popularity = {
 			ideology = socialism
-			popularity = 0.02
+			popularity = 0.015
 	    }
 		FROM = {
 			add_to_variable = {

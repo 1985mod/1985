@@ -10,7 +10,6 @@ USA_preparing_for_war_in_iraq = {
 		    original_tag = PAK
             original_tag = USA
 		}
-        USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
     }
     enable = {
         country_exists = IRQ
@@ -50,7 +49,6 @@ USA_preparing_for_war_in_iraq = {
 		    original_tag = PAK
             original_tag = USA
 		}
-        USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
     }
     enable = {
         country_exists = IRQ
@@ -65,7 +63,6 @@ USA_preparing_for_war_in_iraq = {
             original_tag = USA
 		}
         has_country_flag = anti_iraq_coalition
-        USA = { has_completed_focus = USA_increase_influence_in_the_middle_east }
     }
     abort = {
         country_exists = KUW
@@ -84,7 +81,6 @@ USA_preparing_for_war_in_iraq = {
 USA_preparing_for_war_in_iraq_dukakis = {
     allowed = {
         original_tag = USA
-        USA = { has_completed_focus = USA_preparation_for_invasion }
     }
     enable = {
         country_exists = IRQ
@@ -105,7 +101,6 @@ USA_preparing_for_war_in_iraq_dukakis = {
 USA_preparing_for_war_in_iraq_dukakis_naval_invasion = {
     allowed = {
         original_tag = USA
-        USA = { has_completed_focus = USA_preparation_for_invasion }
     }
     enable = {
         country_exists = IRQ

@@ -135,6 +135,7 @@ country_event = {   ### Ирак капитулирует ###
         }
         release = KUW
         KUR = { transfer_state = 1058 }
+        PUK = { transfer_state = 1070 }
         USA = { country_event = { id = usa.52 days = 10 } }
         hidden_effect = {
             delete_unit = {

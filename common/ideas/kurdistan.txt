@@ -1,0 +1,32 @@
+ideas = {
+    country = {
+			KUR_battle_for_freedom = {
+			picture = tiring_war 
+			allowed = {
+				OR = {
+					original_tag = KUR
+					original_tag = PUK
+				}
+			}
+
+            available = {
+				has_war = yes
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.15
+			  	army_core_attack_factor = 0.25
+			  	army_core_defence_factor = 0.6
+			  	breakthrough_factor = 0.35
+			  	surrender_limit = 1.0
+                ai_focus_defense_factor = 5.0
+			}
+		}
+	}
+}
