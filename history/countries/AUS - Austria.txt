@@ -17,6 +17,7 @@ set_technology = {
 }
 
 recruit_character = AUS_fred_sinowatz
+recruit_character = AUS_franz_vranitzky
 
 set_politics = {
 	ruling_party = socialism
@@ -26,7 +27,10 @@ set_politics = {
 }
 
 set_popularities = {
-	socialism = 100
+	socialism = 48
+	liberalism = 8
+	conservatism = 43
+	communism = 1
 }
 
 set_stability = 0.50

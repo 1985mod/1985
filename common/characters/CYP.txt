@@ -10,7 +10,24 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = classic_liberalism
+			ideology = national_conservatism
+			traits={  }
+			expire="1988.1.1.1"		
+		}
+	}
+
+	CYP_george_vassiliou={
+		name = CYP_george_vassiliou
+		portraits={
+			civilian={
+				large= GFX_portrait_CYP_george_vassiliou
+			}
+			army = {
+				large = GFX_portrait_CYP_george_vassiliou
+			}
+		}
+		country_leader={
+			ideology = social_liberalism
 			traits={  }
 			expire="1988.1.1.1"		
 		}

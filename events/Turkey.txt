@@ -1,0 +1,23 @@
+add_namespace = turkey
+
+country_event = {
+	id = turkey.1 
+	title = turkey.1.t
+	desc = turkey.1.desc
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+    trigger = {
+		tag = TUR
+        date > 1989.11.9
+    }
+    option = {
+        name = turkey.1.a
+        retire_country_leader = yes
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}
+    }
+}

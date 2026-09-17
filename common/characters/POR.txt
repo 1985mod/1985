@@ -1,18 +1,36 @@
 characters = {
+	POR_mario_soares ={
+		name = POR_mario_soares
+		portraits={
+			civilian={
+				large= GFX_portrait_POR_mario_soares
+			}
+			army = {
+				large = GFX_portrait_POR_mario_soares
+			}
+		}
+		country_leader={
+			ideology = classical_social_democracy
+			traits={  }
+			expire="1989.11.9.1"
+			id = -1	
+		}
+	}
 	POR_cavaco_silva ={
 		name = POR_Cavaco_Silva
 		portraits={
 			civilian={
-				large= GFX_portrait_POR_Cavaco_Silva
+				large= GFX_portrait_POR_cavaco_silva
 			}
 			army = {
-				large = GFX_portrait_POR_Cavaco_Silva
+				large = GFX_portrait_POR_cavaco_silva
 			}
 		}
 		country_leader={
-			ideology = classic_conservatism
+			ideology = liberal_conservatism
 			traits={  }
-			expire="1989.11.9.1"		
+			expire="1989.11.9.1"
+			id = -1	
 		}
 	}
 }

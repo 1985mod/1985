@@ -9,16 +9,17 @@ set_technology = {
 set_convoys = 5
 
 recruit_character = CYP_spyros_kyprianou
+recruit_character = CYP_george_vassiliou
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = conservatism
 	last_election = "1985.12.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	liberalism = 50
+	conservatism = 50
 	fascism = 8
 	communism = 15
-	neutrality = 27
+	liberalism  = 27
 }

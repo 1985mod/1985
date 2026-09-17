@@ -26,9 +26,6 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.1.a
-		effect_tooltip = {
-            focus_unlock = yes
-		}
 	}
 }
 

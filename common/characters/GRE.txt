@@ -12,7 +12,44 @@ characters = {
 		country_leader={
 			ideology = classical_social_democracy
 			traits={  }
-			expire="1989.11.9.1"		
+			expire="1989.11.9.1"
+			id = -1
+		}
+	}
+
+	GRE_xenophon_zolotas ={
+		name = GRE_xenophon_zolotas
+		portraits={
+			civilian={
+				large= GFX_portrait_GRE_xenophon_zolotas
+			}
+			army = {
+				large = GFX_portrait_GRE_xenophon_zolotas
+			}
+		}
+		country_leader={
+			ideology = liberal_conservatism
+			traits={  }
+			expire="2000.11.9.1"
+			id = -1
+		}
+	}
+
+	GRE_konstantinos_mitsotakis ={
+		name = GRE_konstantinos_mitsotakis
+		portraits={
+			civilian={
+				large= GFX_portrait_GRE_konstantinos_mitsotakis
+			}
+			army = {
+				large = GFX_portrait_GRE_konstantinos_mitsotakis
+			}
+		}
+		country_leader={
+			ideology = liberal_conservatism
+			traits={  }
+			expire="2000.11.9.1"
+			id = -1
 		}
 	}
 }
