@@ -15,4 +15,21 @@ characters = {
 			expire="1989.11.9.1"		
 		}
 	}
+
+	TUR_turgut_ozal={
+		name = TUR_turgut_ozal
+		portraits={
+			civilian={
+				large= GFX_portrait_TUR_turgut_ozal
+			}
+			army = {
+				large = GFX_portrait_TUR_turgut_ozal
+			}
+		}
+		country_leader={
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1993.11.9.1"		
+		}
+	}
 }

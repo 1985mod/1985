@@ -822,3 +822,86 @@ news_event = {
 		name = news.36.a
 	}
 }
+<<<<<<< Updated upstream
+=======
+
+news_event = {
+	id = news.37 ##	Война в Боснии ##
+	title = news.37.t
+	desc = news.37.desc
+	picture = GFX_news_war_in_bosnia
+    
+    major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.37.a
+	}
+}
+
+news_event = {
+	id = news.38 ##	Распад Чехословакии ##
+	title = news.38.t
+	desc = news.38.desc
+	picture = GFX_news_dissolution_of_czechoslovakia
+    
+    major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.38.a
+	}
+}
+
+news_event = {
+	id = news.39 ## Смерть Ходжи ##
+	title = news.39.t
+	desc = news.39.desc
+	picture = GFX_news_the_death_of_hodja
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.39.a
+		trigger = {
+			NOT = {
+				TAG = ALB
+			}
+		}
+	}
+	option = {
+		name = news.39.a
+		trigger = { TAG = ALB }
+		add_stability = -0.05
+	}
+}
+
+news_event = {
+	id = news.40 ## Восстание 8888 ##
+	title = news.40.t
+	desc = news.40.desc
+	picture = GFX_news_8888_uprising
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.40.a
+		trigger = {
+			NOT = {
+				TAG = BRM
+			}
+		}
+	}
+	option = {
+		name = news.40.a
+		trigger = { TAG = BRM }
+		add_stability = -0.15
+	}
+}
+>>>>>>> Stashed changes

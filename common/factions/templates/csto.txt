@@ -1,6 +1,6 @@
 faction_template_CSTO = {
 	name = CSTO
-	icon = GFX_faction_icon_warsaw_pact
+	icon = GFX_faction_icon_csto
 	manifest = faction_manifest_strength_in_unity
 	can_leader_join_other_factions = no
     color = { 65 175 65 }

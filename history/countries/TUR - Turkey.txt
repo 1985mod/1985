@@ -15,20 +15,21 @@ set_technology = {
 }
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1983.11.6"
-	election_frequency = 48
+	last_election = "1982.11.9"
+	election_frequency = 84
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 12
+	conservatism = 60
 	socialism = 10
 	liberalism = 5
     communism = 3
-	neutrality = 60
+	neutrality = 12
     fascism = 10
 }
 
 recruit_character = TUR_kenan_evren
+recruit_character = TUR_turgut_ozal
 
 set_convoys = 20
 set_stability = 0.5

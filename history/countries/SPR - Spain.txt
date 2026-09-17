@@ -17,14 +17,18 @@ set_technology = {
 	basic_train = 1
 }
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = socialism
 	last_election = "1982.10.28"
-	election_frequency = 36
+	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	conservatism = 100
+	socialism = 58
+	conservatism = 27
+	fascism = 4
+	liberalism = 7
+	communism = 4 
 }
 
 recruit_character = SPR_felipe_gonzalez

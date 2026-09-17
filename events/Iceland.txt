@@ -1,0 +1,105 @@
+add_namespace = iceland
+
+country_event = {
+	id = iceland.1
+	title = iceland.1.t
+	desc = iceland.1.desc
+	hidden = yes
+
+	trigger = {
+		tag = ICE
+		date > 1987.7.8
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = iceland.1.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = ICE_thorstei_palsson
+				ideology = conservatism
+			}
+		}
+	}
+}
+
+country_event = {
+	id = iceland.2
+	title = iceland.2.t
+	desc = iceland.2.desc
+	hidden = yes
+
+	trigger = {
+		tag = ICE
+		date > 1988.10.28
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = iceland.2.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = ICE_steingrímur_hermannsson
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = iceland.3
+	title = iceland.3.t
+	desc = iceland.3.desc
+	hidden = yes
+
+	trigger = {
+		tag = ICE
+		date > 1991.4.30
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = iceland.3.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = ICE_Davíð_Oddsson
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}

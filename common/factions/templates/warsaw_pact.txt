@@ -1,9 +1,9 @@
-faction_template_warsaw_pact = {
-	name = warsaw_pact
+faction_template_WARSAW_PACT = {
+	name = WARSAW_PACT
 	icon = GFX_faction_icon_warsaw_pact
 	manifest = faction_manifest_strength_in_unity
 	can_leader_join_other_factions = no
-    color = { 220 20 60 }
+    color = { 139 0 0 }
 
 	goals = {
 		# Short term goals

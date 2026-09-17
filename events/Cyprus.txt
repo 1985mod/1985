@@ -1,0 +1,32 @@
+add_namespace = cyprus
+
+country_event = {
+	id = cyprus.1
+	title = cyprus.1.t
+	desc = cyprus.1.desc
+	hidden = yes
+
+	trigger = {
+		tag = CYP
+		date > 1988.2.28
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = cyprus.1.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+	}
+}

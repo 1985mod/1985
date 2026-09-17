@@ -511,6 +511,29 @@ spriteTypes = {
 		name = "GFX_news_victory_spd_in_1987"
 		texturefile = "gfx/event_pictures/news_victory_spd_in_1987.dds"
 	}
+<<<<<<< Updated upstream
+=======
+
+	spriteType = {
+		name = "GFX_news_war_in_bosnia"
+		texturefile = "gfx/event_pictures/news_war_in_bosnia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_dissolution_of_czechoslovakia"
+		texturefile = "gfx/event_pictures/news_dissolution_of_czechoslovakia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_the_death_of_hodja"
+		texturefile = "gfx/event_pictures/news_the_death_of_hodja.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_8888_uprising"
+		texturefile = "gfx/event_pictures/news_8888_uprising.dds"
+	}
+>>>>>>> Stashed changes
 }
 
 

@@ -11,13 +11,14 @@ country_event = {
 
     immediate = {
         hidden_effect = {
-            set_country_flag = SOV_hoxha_death_flag
+            set_country_flag = ALB_hoxha_death_flag
             kill_country_leader = yes
         }
     }
 
     option = {
         name = albania.1.a
+        news_event = { id = news.39 days = 3 }
 		effect_tooltip = {
             kill_country_leader = yes
 		}
