@@ -57,9 +57,9 @@ on_actions = {
 
 				multiply_variable = { var = gdp_growth_rate value = 100 }
 
-				resize_array = { 
-					array = real_gdp_list 
-					size = 2
+				remove_from_array = {
+					array = real_gdp_list
+					index = 2
 				}
 
 				add_to_array = { 

@@ -1307,10 +1307,6 @@ country_event = {
 			}
 		}
         RUS = {
-			add_popularity = {
-				ideology = conservatism
-				popularity = 0.4
-			}
             set_politics = {
                 ruling_party = conservatism
                 elections_allowed = yes
@@ -1346,24 +1342,27 @@ country_event = {
 	fire_only_once = yes
 
     immediate = {
-        set_country_flag = start_sec_country_flag
+		hidden_effect = {
+			set_country_flag = start_sec_country_flag
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			remove_country_leader = { name = "SOV_mikhail_gorbachev" }
+			promote_character = {
+				character = SOV_gennady_yanaev
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
     }
 
     option = {
         name = SOV_soviet_union.39.a
-		add_popularity = {
-			ideology = communism
-			popularity = 0.05
-		}
-		remove_country_leader = { name = "SOV_mikhail_gorbachev" }
-		promote_character = {
-			character = SOV_gennady_yanaev
-			ideology = communism
-		}
-		set_politics = {
-			ruling_party = communism
-			elections_allowed = no
-		}
+		add_stability = -0.15
     }
 }
 
@@ -1378,7 +1377,7 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.40.a
-        add_political_power = 25
+        add_stability = 0.03
 		add_popularity = {
 			ideology = conservatism
 			popularity = 0.05
@@ -1401,6 +1400,7 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.41.a
+		custom_effect_tooltip = something_is_definitely_wrong
     }
 }
 
@@ -1413,17 +1413,23 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
+
+    immediate = {
+		hidden_effect = {
+			remove_country_leader = { name = "SOV_gennady_yanaev" }
+			promote_character = {
+				character = SOV_mikhail_gorbachev
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+    }
+
     option = {
         name = SOV_soviet_union.42.a
-		remove_country_leader = { name = "SOV_gennady_yanaev" }
-		promote_character = {
-			character = SOV_mikhail_gorbachev
-			ideology = communism
-		}
-		set_politics = {
-			ruling_party = communism
-			elections_allowed = no
-		}
     }
 }
 

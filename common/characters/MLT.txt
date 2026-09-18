@@ -1,0 +1,20 @@
+characters = {
+	MLT_agatha_barbara = {
+		name = MLT_agatha_barbara
+		portraits={
+			civilian={
+				large= GFX_Portrait_agatha_barbara
+			}
+			army = {
+				large = GFX_Portrait_agatha_barbara
+			}
+		}
+
+		country_leader = {
+			ideology = classical_social_democracy
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -12,7 +12,8 @@ country_event = {
 	   tag = USA
 	   date > 1988.11.01
 	   date < 1991.11.01
-	   conservatism > party_popularity@liberalism
+	   check_variable = { var = USA.electoral_votes_republicans value = USA.electoral_votes_democrats compare = greater_than }
+	   check_variable = { var = USA.support_republicans_in_us value = USA.support_democrats_in_us compare = greater_than }
 	}
 	
 	option = {
@@ -61,7 +62,8 @@ country_event = {
 	   tag = USA
 	   date > 1988.11.01
 	   date < 1991.11.01
-	   liberalism > party_popularity@conservatism
+	   check_variable = { var = electoral_votes_republicans value = USA.electoral_votes_democrats compare = greater_than }
+	   check_variable = { var = support_republicans_in_us value = USA.support_democrats_in_us compare = greater_than }
 	}
 	
 	option = {
@@ -134,7 +136,7 @@ country_event = {
 		ai_chance = {
 			base = 75
 		}		
-        FROM = { country_event = usa.5 }
+        USA = { country_event = usa.5 }
 	}
 
 	option = {
@@ -142,7 +144,7 @@ country_event = {
 		ai_chance = {
 			base = 25
 		}	
-		FROM = { country_event = usa.6 }
+		USA = { country_event = usa.6 }
 	}
 }
 
@@ -424,7 +426,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
-		FROM = { country_event = usa.39 hours = 6 }
+		USA = { country_event = usa.39 hours = 6 }
 	}
 
 	option = {
@@ -432,7 +434,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
-		FROM = { country_event = usa.40 hours = 6 }
+		USA = { country_event = usa.40 hours = 6 }
 	}
 }
 
@@ -903,7 +905,7 @@ country_event = {
 		ai_chance = {
 			base = 90
 		}		
-		FROM = { country_event = usa.34 }
+		USA = { country_event = usa.34 }
 	}
 
 	option = {
@@ -911,7 +913,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}		
-		FROM = { country_event = usa.35 }
+		USA = { country_event = usa.35 }
 	}
 }
 

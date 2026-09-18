@@ -1115,6 +1115,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UPPER_LEFT"
 			}
+
+			gridboxtype = {
+				name = "gwtank_chassis_tree"
+				position = { x = 750 y = 40 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UPPER_LEFT"
+			}
 		}
 
 		containerWindowType = {
@@ -2822,7 +2830,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_transport"
-				position = { x = 970 y = 110 }
+				position = { x = 970 y = 100 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2836,7 +2844,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_weapons"
-				position = { x = 1340 y = 110 }
+				position = { x = 1615 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4} 
@@ -2850,7 +2858,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_engines"
-				position = { x = 1875 y = 110 }
+				position = { x = 1270 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2908,7 +2916,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "early_bombs_tree"
-				position = { x = 1150 y = 32 }
+				position = { x = 1750 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2916,7 +2924,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "aa_lmg_tree"
-				position = { x = 1395 y = 32 }
+				position = { x = 1495 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2932,7 +2940,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "engines_1_tree"
-				position = { x = 1870 y = 32 }
+				position = { x = 1220 y = 32 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2940,7 +2948,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "air_torpedoe_1_tree"
-				position = { x = 1630 y = 32 }
+				position = { x = 1900 y = 32 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"

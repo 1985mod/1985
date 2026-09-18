@@ -1,0 +1,250 @@
+division_template = {
+	name = "Infantry Division of India"			# Infantry Brigade
+
+	division_names_group = GEN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+        infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+division_template = {
+	name = "Mountain Division of India"			# Infantry Brigade
+
+	division_names_group = GEN_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+        mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+        mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+division_template = {
+	name = "Armored Brigade of India"			# Infantry Brigade
+
+	division_names_group = GEN_INF_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7273
+		division_template = "Mountain Division of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10905
+		division_template = "Mountain Division of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12754
+		division_template = "Mountain Division of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1377
+		division_template = "Infantry Division of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1377
+		division_template = "Infantry Division of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8087
+		division_template = "Infantry Division of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12295
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4245
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4245
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7565
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9975
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12718
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12041
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2086
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10878
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10810
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7020
+		division_template = "Armored Brigade of India"
+		start_experience_factor = 0.1
+	}
+}

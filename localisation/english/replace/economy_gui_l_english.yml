@@ -6,8 +6,8 @@
  ECONOMY_NAVAL_FACTORIES:0 "[?num_of_naval_factories|Y0]"
 
  REAL_GDP:0 "[Root.real_gdp_display]"
- REAL_GDP_more_than_1000:0 "[?country_gdp_divided_by_1000|2Y]T"
- REAL_GDP_less_than_1000:0 "[?country_gdp|2Y]B"
+ REAL_GDP_more_than_1000:0 "[?real_gdp_divided_by_1000|2Y]T"
+ REAL_GDP_less_than_1000:0 "[?real_gdp|2Y]B"
 
  NOMINAL_GDP:0 "[Root.nominal_gdp_display]"
  NOMINAL_GDP_more_than_1000:0 "[?nominal_gdp_divided_by_1000|2Y]T"
@@ -45,6 +45,8 @@
  EDUCATION_EXPENDITURE:0 "$§R[?education_expenditure|.3]§!"
  WELFARE_EXPENDITURE:0 "$§R[?welfare_expenditure|.3]§!"
  DEFENSE_EXPENDITURE:0 "$§R[?defense_expenditure|.3]§!"
+ SCIENCE_EXPENDITURE:0 "$§R[?current_research_cost|.3]§!"
+ DEBT_SERVICE_EXPENDITURE:0 "$§R[?debt_service_cost|.3]§!"
  EXPENSE:0 "$§R[?expense_budget|.3]§!"
 
  UNEMPLOYMENT_RATE:0 "§R[?unemployment_rate|.2]%"
@@ -66,5 +68,6 @@
  UNEMPLOYMENT_RATE_LABEL:0 "Unemployment Rate:"
  TARGET_UNEMPLOYMENT_LABEL:0 "Target Unemployment:"
  STATE_EXPENDITURE_LABEL:0 "State Expenditure"
- BALANCE_VALUE:0 "$§R[?weekly_balance|.3]§!"
- DEBT_VALUE:0 "$§R[?current_debt|.3]§!"
+ BALANCE_VALUE:0 "[?treasury|.2]"
+ DEBT_VALUE:0 "[?current_debt|.2]"
+ DEBT_TOOLTIP:0 "Debt to GDP ratio: §R[?debt_to_gdp|.2]%§!"

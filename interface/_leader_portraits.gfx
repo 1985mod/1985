@@ -965,4 +965,11 @@ spriteTypes = {
 		name = GFX_Portrait_johannes_rau
 		textureFile = "gfx/leaders/WGR/Portrait_johannes_rau.dds"
 	}	
+
+	### MLT ###
+
+	spriteType = {
+		name = GFX_Portrait_agatha_barbara
+		textureFile = "gfx/leaders/MLT/Portrait_agatha_barbara.dds"
+	}	
 }

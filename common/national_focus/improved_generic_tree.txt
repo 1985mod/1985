@@ -5,42 +5,22 @@ focus_tree = {
 				factor = 100
 				
 				#Albania
-				modifier = { add = 10
-					tag = ALB }
+				modifier = { add = 10 tag = ALB }
 			
 				#Italian Releasables
-				modifier = { add = 10
-					tag = LBV }
+				modifier = { add = 10 tag = LBV }
 
-				modifier = { add = 100
-					tag = BUL }
+				modifier = { add = 100 tag = BUL }
 
-				modifier = { add = 10000
-					tag = CHI }
+				modifier = { add = 10000 tag = CHI }
+				modifier = { add = 10000 tag = PRC }
+				modifier = { add = 10000 tag = AST }
 					
-				#Yugoslav Releasables
-				modifier = { add = 10
-					tag = SLV }
-				modifier = { add = 10
-					tag = CRO } 
-				modifier = { add = 10
-					tag = BOS }
-				modifier = { add = 10
-					tag = MNT }
-				modifier = { add = 10
-					tag = HRZ }
-					
-				#Silesia
-				modifier = { add = 10
-					tag = SIL }
-
-				#Slovakia
-				modifier = { add = 10
-					tag = SLO }
-
-				#Transylvania
-				modifier = { add = 10
-					tag = TRA }
+				modifier = { add = 10 tag = SLV }
+				modifier = { add = 10 tag = CRO } 
+				modifier = { add = 10 tag = BOS }
+				modifier = { add = 10 tag = MNT }
+				modifier = { add = 10 tag = SLO }
 		}
 	
 	default = yes

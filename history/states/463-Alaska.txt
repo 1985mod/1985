@@ -14,7 +14,8 @@ state={
 			}
 			industrial_complex = 1
 		}
-		#add_core_of = USA
+		add_core_of = USA
+		add_core_of = ALA
 		victory_points = {
 			13090 1 
 		}

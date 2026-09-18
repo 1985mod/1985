@@ -68,6 +68,7 @@ if = {
 add_ideas = {
 	service_by_requirement
 	PER_tiring_war
+	limited_exports
 	war_economy
 }
 set_politics = {
