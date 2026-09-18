@@ -34,6 +34,7 @@ state={
 			nuclear_reactor = 1
 		}
 		add_core_of = USA
+		add_core_of = CAL
 		victory_points = {
 			9814 30
 		}

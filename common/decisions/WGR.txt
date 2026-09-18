@@ -89,6 +89,10 @@ WGR_election_campaign_in_germany = {
 	
 		remove_effect = {
 			custom_effect_tooltip = support_for_the_spd_will_decrease_by_5
+			add_days_mission_timeout = {
+				mission = WGR_the_spd_makes_a_move
+				days = 15
+			}
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.05

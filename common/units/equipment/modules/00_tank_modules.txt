@@ -2272,7 +2272,7 @@ equipment_modules = {
 
 	tank_cold_war_weapon_1 = {
 		abbreviation = "tw1"
-		category = tank_small_main_armament
+		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			soft_attack = 15
@@ -2286,14 +2286,14 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_medium_main_armament
 			convert_cost_ic = 3
 		}
 	}
 
 	tank_cold_war_weapon_2 = {
 		abbreviation = "tw2"
-		category = tank_small_main_armament
+		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_cold_war_weapon_1
 		add_stats = {
@@ -2307,14 +2307,14 @@ equipment_modules = {
 		}
 		xp_cost = 2
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_medium_main_armament
 			convert_cost_ic = 4
 		}
 	}
 
 	tank_cold_war_weapon_3 = {
 		abbreviation = "tw3"
-		category = tank_small_main_armament
+		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_cold_war_weapon_2
 		add_stats = {
@@ -2328,7 +2328,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_medium_main_armament
 			convert_cost_ic = 5
 		}
 	}

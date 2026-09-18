@@ -73,8 +73,7 @@ division_template = {
 	support = {
 		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
 		engineer = { x = 0 y = 1 }   
-		armored_maintenance = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
+		logistics_company = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -169,9 +168,8 @@ division_template = {
 	}
 	support = {
 		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
-		engineer = { x = 0 y = 1 }   
-		armored_maintenance = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -199,8 +197,7 @@ division_template = {
 	support = {
 		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
 		engineer = { x = 0 y = 1 }   
-		armored_maintenance = { x = 0 y = 2 }
-		logistics_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -226,8 +223,7 @@ division_template = {
 	support = {
 		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
 		engineer = { x = 0 y = 1 }   
-		armored_maintenance = { x = 0 y = 2 }
-		logistics_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -247,8 +243,7 @@ division_template = {
 	support = {
 		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
 		engineer = { x = 0 y = 1 }   
-		armored_maintenance = { x = 0 y = 2 }
-		logistics_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -275,8 +270,7 @@ division_template = {
 	support = {
 		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
 		engineer = { x = 0 y = 1 }   
-		armored_maintenance = { x = 0 y = 2 }
-		logistics_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -300,7 +294,6 @@ division_template = {
 	support = {
 		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
 		engineer = { x = 0 y = 1 }   
-		armored_maintenance = { x = 0 y = 2 }
 		logistics_company = { x = 0 y = 2 }
 	}
 }
@@ -329,9 +322,8 @@ division_template = {
 	support = {
 		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
 		engineer = { x = 0 y = 1 }   
-		armored_maintenance = { x = 0 y = 2 }
-		logistics_company = { x = 0 y = 3 }
-		anti_air = { x = 0 y = 4 }
+		logistics_company = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -727,764 +719,872 @@ units = {
 		name = "34ya Tankovaya Diviziya"
 		location = 3583
 		division_template = "Tankovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "35ya Motostrelkovaya Diviziya"
 		location = 6521
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "36ya Motostrelkovaya Diviziya"
 		location = 502
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "37ya Gvardeyskaya tankovaya Diviziya"
 		location = 9323
 		division_template = "Tankovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "38ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 4705
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "39ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 9441
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "40ya Motostrelkovaya Diviziya"
 		location = 9895
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "40ya Gvardeyskaya tankovaya Diviziya"
 		location = 281
 		division_template = "Tankovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "41ya Motostrelkovaya Diviziya"
 		location = 7885
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "41ya Gvardeyskaya tankovaya Diviziya"
 		location = 3452
 		division_template = "Tankovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "42ya Gvardeyskaya ychebnaya motostrelkovaya Diviziya"
 		location = 3672
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "42ya Gvardeyskaya tankovaya Diviziya"
 		location = 11437
 		division_template = "Tankovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "43ya Ychebnaya motostrelkovaya Diviziya"
 		location = 11225
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "44ya Ychenbaya tankovaya Diviziya"
 		location = 4824
 		division_template = "Tankovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "45ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 149
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "45ya Gvardeyskaya tankovaya Diviziya"
 		location = 9289
 		division_template = "Tankovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "46ya Motostrelkovaya Diviziya"
 		location = 9461
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "47ya Motostrelkovaya Diviziya"
 		location = 9477
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "47ya Gvardeyskaya tankovaya Diviziya"
 		location = 478
 		division_template = "Tankovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "48ya Motostrelkovaya Diviziya"
 		location = 583
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "48ya Gvardeyskaya uchebnaya tankovaya Diviziya"
 		location = 6508
 		division_template = "Tankovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "49ya Ychenbaya tankovaya Diviziya"
 		location = 4705
 		division_template = "Tankovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "50ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 3392
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "51ya Motostrelkovaya Diviziya"
 		location = 536
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "51ya Tankovaya Diviziya"
 		location = 13254
 		division_template = "Tankovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "52ya Motostrelkovaya Diviziya"
 		location = 12540
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "54ya Motostrelkovaya Diviziya"
 		location = 3121
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "56ya Ychebnaya motostrelkovaya Diviziya"
 		location = 10696
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "57ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 3499
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "58ya Motostrelkovaya Diviziya"
 		location = 12333
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "59ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 13384
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "60ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 4473
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "60ya Tankovaya Diviziya"
 		location = 6410
 		division_template = "Tankovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "61ya Ychebnaya motostrelkovaya Diviziya"
 		location = 12333
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "62ya Motostrelkovaya Diviziya"
 		location = 7789
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "63ya Gvardeyskaya ychebnaya motostrelkovaya Diviziya"
 		location = 9150
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "64ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 9105
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "65ya Motostrelkovaya Diviziya"
 		location = 7375
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "66ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 577
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "67ya Motostrelkovaya Diviziya"
 		location = 7851
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "68ya Motostrelkovaya Diviziya"
 		location = 7856
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "69ya Motostrelkovaya Diviziya"
 		location = 9131
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "70ya Gvardeyskaya ychebnaya motostrelkovaya Diviziya"
 		location = 438
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "71ya Motostrelkovaya Diviziya"
 		location = 11159
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "72ya Motostrelkovaya Diviziya"
 		location = 3752
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "73ya Motostrelkovaya Diviziya"
 		location = 7868
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "74ya Motostrelkovaya Diviziya"
 		location = 4789
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "75ya Motostrelkovaya Diviziya"
 		location = 6997
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "75ya Gvardeyskaya tyazhelaya tankovaya Diviziya"
 		location = 3532
 		division_template = "Tankovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "76ya Tankovaya Diviziya"
 		location = 3392
 		division_template = "Tankovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "77ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 3338
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "78ya Ychebnaya motostrelkovaya Diviziya"
 		location = 12584
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "78ya Tankovaya Diviziya"
 		location = 1591
 		division_template = "Tankovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "79ya Motostrelkovaya Diviziya"
 		location = 1820
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "79ya Gvardeyskaya tankovaya Diviziya"
 		location = 3561
 		division_template = "Tankovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "80ya Gvardeyskaya ychebnaya motostrelkovaya Diviziya"
 		location = 7597
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "81ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 10466
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "82ya Motostrelkovaya Diviziya"
 		location = 11474
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "83ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 6557
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "85ya Motostrelkovaya Diviziya"
 		location = 11474
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "86ya Motostrelkovaya Diviziya"
 		location = 6600
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "87ya Motostrelkovaya Diviziya"
 		location = 12446
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "90ya Gvardeyskaya tankovaya Diviziya"
 		location = 6334
 		division_template = "Tankovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}	
 	division = {
 		name = "91ya Motostrelkovaya Diviziya"
 		location = 481
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "92ya Gvardeyskaya ychebnaya motostrelkovaya Diviziya"
 		location = 11683
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "93ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 6670
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "94ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 11276
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "96ya Motostrelkovaya Diviziya"
 		location = 6339
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "97ya Gvardeyskaya ychebnaya motostrelkovaya Diviziya"
 		location = 11543
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "99ya Motostrelkovaya Diviziya"
 		location = 13063
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "100ya Gvardeyskaya ychebnaya motostrelkovaya Diviziya"
 		location = 1599
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "107ya Motostrelkovaya Diviziya"
 		location = 3320
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "108ya Motostrelkovaya Diviziya"
 		location = 4958
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "111ya Motostrelkovaya Diviziya"
 		location = 3187
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "114ya Motostrelkovaya Diviziya"
 		location = 10671
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "117ya Gvardeyskaya tankovaya Diviziya"
 		location = 11514
 		division_template = "Tankovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "118ya Motostrelkovaya Diviziya"
 		location = 4725
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "120ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 11370
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "121ya Ychebnaya motostrelkovaya Diviziya"
 		location = 9762
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "122ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 4677
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "126ya Motostrelkovaya Diviziya"
 		location = 701
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "127ya Motostrelkovaya Diviziya"
 		location = 12441
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "128ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 3548
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "129ya Ychebnaya motostrelkovaya Diviziya"
 		location = 12189
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "131ya Motostrelkovaya Diviziya"
 		location = 9140
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "134ya Motostrelkovaya Diviziya"
 		location = 1384
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "135ya Motostrelkovaya Diviziya"
 		location = 6686
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "144ya Gvardeyskaya motostrelkovaya Diviziya"
 		location = 3152
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "145ya Motostrelkovaya Diviziya"
 		location = 3653
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "147ya Motostrelkovaya Diviziya"
 		location = 9702
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "150ya Ychebnaya motostrelkovaya Diviziya"
 		location = 4677
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "152ya Motostrelkovaya Diviziya"
 		location = 3658
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "155ya Motostrelkovaya Diviziya"
 		location = 12594
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "157ya Motostrelkovaya Diviziya"
 		location = 12594
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "161ya Motostrelkovaya Diviziya"
 		location = 11464
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "164ya Motostrelkovaya Diviziya"
 		location = 1779
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "167ya Motostrelkovaya Diviziya"
 		location = 12320
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "180ya Motostrelkovaya Diviziya"
 		location = 6727
 		division_template = "Motostrelkovaya Diviziya 6"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "192ya Motostrelkovaya Diviziya"
 		location = 7851
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "193ya Tankovaya Diviziya"
 		location = 3350
 		division_template = "Tankovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "194ya Motostrelkovaya Diviziya"
 		location = 12189
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "199ya Motostrelkovaya Diviziya"
 		location = 664
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "201ya Motostrelkovaya Diviziya"
 		location = 10268
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "203ya Motostrelkovaya Diviziya"
 		location = 1384
 		division_template = "Motostrelkovaya Diviziya 5"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "206ya Motostrelkovaya Diviziya"
 		location = 11351
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "207ya Motostrelkovaya Diviziya"
 		location = 11415
 		division_template = "Motostrelkovaya Diviziya 2"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "213ya Motostrelkovaya Diviziya"
 		location = 12128
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "218ya Motostrelkovaya Diviziya"
 		location = 10627
 		division_template = "Motostrelkovaya Diviziya 4"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "219ya Motostrelkovaya Diviziya"
 		location = 12657
 		division_template = "Motostrelkovaya Diviziya 1"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "242ya Motostrelkovaya Diviziya"
 		location = 10580
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "245ya Motostrelkovaya Diviziya"
 		location = 10528
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "254ya Motostrelkovaya Diviziya"
 		location = 6703
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "265ya Motostrelkovaya Diviziya"
 		location = 957
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "266ya Motostrelkovaya Diviziya"
 		location = 7801
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "270ya Motostrelkovaya Diviziya"
 		location = 3756
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "272ya Motostrelkovaya Diviziya"
 		location = 10722
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "277ya Motostrelkovaya Diviziya"
 		location = 6961
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "295ya Motostrelkovaya Diviziya"
 		location = 7661
 		division_template = "Motostrelkovaya Diviziya 3"
+		start_experience_factor = 0.1
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	division = {
 		name = "7ya Gvardeyskaya vozhdusno-desantnaya Diviziya"
 		location = 6296
 		division_template = "Vozdusno-desantnie voiska"
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "44ya Gvardeyskaya uchebnaya vozhdusno-desantnaya Diviziya"
 		location = 9357
 		division_template = "Vozdusno-desantnie voiska"
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "76ya Gvardeyskaya vozhdusno-desantnaya Diviziya"
 		location = 11202
 		division_template = "Vozdusno-desantnie voiska"
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "98ya Gvardeyskaya vozhdusno-desantnaya Diviziya"
 		location = 3707
 		division_template = "Vozdusno-desantnie voiska"
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "103ya Gvardeyskaya vozhdusno-desantnaya Diviziya"
 		location = 11241
 		division_template = "Vozdusno-desantnie voiska"
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "104ya Gvardeyskaya vozhdusno-desantnaya Diviziya"
 		location = 11674
 		division_template = "Vozdusno-desantnie voiska"
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "105ya Gvardeyskaya vozhdusno-desantnaya Diviziya"
 		location = 1554
 		division_template = "Vozdusno-desantnie voiska"
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "106ya Gvardeyskaya vozhdusno-desantnaya Diviziya"
 		location = 11248
 		division_template = "Vozdusno-desantnie voiska"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "2ya Gvardeyskaya artilleriiskaya Diviziya"
 		location = 6174
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "12ya Artilleriiskaya Diviziya"
 		location = 12540
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "15ya Gvardeyskaya artilleriiskaya Diviziya"
 		location = 11750
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "15ya Uchebnaya artilleriiskaya Diviziya"
 		location = 6122
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "26ya Artilleriiskaya Diviziya"
 		location = 476
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "34ya Artilleriiskaya Diviziya"
 		location = 375
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "51ya Gvardeyskaya artilleriiskaya Diviziya"
 		location = 560
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "55ya Artilleriiskaya Diviziya"
 		location = 11405
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "81ya Artilleriiskaya Diviziya"
 		location = 11691
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "110ya Gvardeyskaya artilleriiskaya Diviziya"
 		location = 3682
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "149ya Artilleriiskaya Diviziya"
 		location = 6332
 		division_template = "Artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	division = {
 		name = "18ya Pulemetno-artilleriiskaya Diviziya"
 		location = 13037
 		division_template = "Pulemetno-artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "122ya Gvardeiskaya pulemetno-artilleriiskaya Diviziya"
 		location = 4705
 		division_template = "Pulemetno-artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "126ya Pulemetno-artilleriiskaya Diviziya"
 		location = 4725
 		division_template = "Pulemetno-artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "127ya Pulemetno-artilleriiskaya Diviziya"
 		location = 6961
 		division_template = "Pulemetno-artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "128ya Pulemetno-artilleriiskaya Diviziya"
 		location = 4805
 		division_template = "Pulemetno-artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "129ya Gvardeiskaya pulemetno-artilleriiskaya Diviziya"
 		location = 11879
 		division_template = "Pulemetno-artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "130ya Pulemetno-artilleriiskaya Diviziya"
 		location = 664
 		division_template = "Pulemetno-artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
 	division = {
 		name = "131ya Gvardeiskaya pulemetno-artilleriiskaya Diviziya"
 		location = 4677
 		division_template = "Pulemetno-artilleriiskaya Diviziya"
+		start_experience_factor = 0.1
 	}
-	
-
-
-
-
-
+}
