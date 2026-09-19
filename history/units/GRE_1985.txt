@@ -1,1 +1,139 @@
-﻿
+﻿division_template = {
+	name = "Merarchía pezikou"
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+}
+division_template = {
+	name = "Michanopoiimeni diaíresi"			
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }   
+		logistics_company = { x = 0 y = 2 }
+	}
+	
+}
+division_template = {
+	name = "Tmíma Dexamenon"			
+	# Note: also Fortress divisions
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		modern_armor = { x = 0 y = 4 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		modern_armor = { x = 1 y = 3 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mechanized = { x = 2 y = 4 }
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+		artillery_brigade = { x = 4 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "I Merarchía pezikou"
+		location = 10163
+		division_template = "Merarchía pezikou"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "II Michanopoiimeni diaíresi"
+		location = 10163
+		division_template = "Michanopoiimeni diaíresi"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "VI Merarchía pezikou"
+		location = 10163
+		division_template = "Merarchía pezikou"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "IX Merarchía pezikou"
+		location = 3980
+		division_template = "Merarchía pezikou"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "X Merarchía pezikou"
+		location = 6990
+		division_template = "Merarchía pezikou"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "XI Merarchía pezikou"
+		location = 9930
+		division_template = "Merarchía pezikou"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "XII Merarchía pezikou"
+		location = 11905
+		division_template = "Merarchía pezikou"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "XV Merarchía pezikou"
+		location = 3914
+		division_template = "Merarchía pezikou"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "XVI Merarchía pezikou"
+		location = 3914
+		division_template = "Merarchía pezikou"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "XX Tmíma Dexamenon"
+		location = 11905
+		division_template = "Tmíma Dexamenon"
+		start_experience_factor = 0.3
+	}
+
+}

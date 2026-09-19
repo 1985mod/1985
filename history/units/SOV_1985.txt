@@ -38,9 +38,9 @@ division_template = {
 		motorized = { x = 1 y = 3 }
 		motorized = { x = 1 y = 4 }
 		artillery_brigade = { x = 2 y = 0 }
-		armored_car = { x = 3 y = 0 }
-		armored_car = { x = 3 y = 1 }
-		armored_car = { x = 3 y = 1 }
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+		light_armor = { x = 3 y = 1 }
 		mechanized = { x = 4 y = 0 }
 		mechanized = { x = 4 y = 1 }
 		mechanized = { x = 4 y = 2 }
@@ -87,7 +87,7 @@ division_template = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
 		modern_armor = { x = 0 y = 2 }
-		modern_armor = { x = 0 y = 3 }
+		light_armor = { x = 0 y = 3 }
 		motorized = { x = 1 y = 0 }
 		mechanized = { x = 1 y = 1 }
 	}
@@ -111,8 +111,8 @@ division_template = {
 		modern_armor = { x = 1 y = 0 }
 		modern_armor = { x = 1 y = 1 }
 		modern_armor = { x = 1 y = 2 }
-		rocket_artillery_brigade = { x = 2 y = 0 }
-		artillery_brigade = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
 	}
 	support = {
 		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
@@ -163,8 +163,8 @@ division_template = {
 		mechanized = { x = 2 y = 2 }
 		mechanized = { x = 2 y = 3 }
 		mechanized = { x = 2 y = 4 }
-		motorized = { x = 3 y = 0 }
-		motorized = { x = 3 y = 1 }
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
 		artillery_brigade = { x = 4 y = 0 }
 	}
 	support = {
@@ -184,10 +184,10 @@ division_template = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
 		modern_armor = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
 		mechanized = { x = 2 y = 0 }
 		mechanized = { x = 2 y = 1 }
 		mechanized = { x = 2 y = 2 }
@@ -243,6 +243,8 @@ division_template = {
 		modern_armor = { x = 0 y = 3 }
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3   }
 	}
 	support = {
 		armored_car_recon = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
@@ -1482,9 +1484,25 @@ units = {
 		location = 4677
 		division_template = "Pulemetno-artilleriiskaya Diviziya"
 	}
+<<<<<<< Updated upstream
 	
 
 
 
 
 
+=======
+}
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.49
+		efficiency = 100
+	}
+}
+>>>>>>> Stashed changes
