@@ -1,1 +1,69 @@
-﻿
+﻿division_template = {
+	name = "Tank Osztály"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Motoros Lövészhadosztály"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		light_armor = { x = 4 y = 0 }
+		light_armor = { x = 4 y = 1 }
+		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
+}	
+units = {
+
+	division = {
+		name = "11 Tank Osztály"
+		location = 3683
+		division_template = "Tank Osztály"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	
+	division = {
+		name = "15 Motoros Lövészhadosztály"
+		location = 699
+		division_template = "Motoros Lövészhadosztály"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+}
