@@ -1,141 +1,145 @@
 ﻿division_template = {
-	name = "Pekhotna Divizija"			# Infantry Division
-
-	division_names_group = BUL_INF_01
+	name = "Motostrelka divizija"
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+		mechanized = { x = 4 y = 0 }
+		mechanized = { x = 4 y = 1 }
+		
 	}
 	support = {
 		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
 	}
 }
-
 division_template = {
-	name = "Konna Divizija" 			# Cavalry Division
-
-	division_names_group = BUL_CAV_01
+	name = "Tankova brigada"
 
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+		
 	}
-}
-
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
+}	
 units = {
+
 	division = {
-		#name = "2-ra Konna divizija"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 949  # Sofia
-		division_template = "Pekhotna Divizija"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	# 1-va Armija
-	division = {
-		#name = "1-va 'Sofiya' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 949  # Sofia
-		division_template = "Pekhotna Divizija"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+		name = "1 гвардейска мотострелкова дивизия"
+		location = 949
+		division_template = "Motostrelka divizija"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.95
 	}
 	division = {
-		#name = "7-ma 'Dupnica' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 7
-		}
-		location = 949  # Sofia
-		division_template = "Pekhotna Divizija"
+		name = "2 мотострелкова дивизия"
+		location = 6814
+		division_template = "Motostrelka divizija"	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	# 2-ra Armija
-	division = {
-		#name = "2-ra 'Plovdiv' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6923  # Plovdiv
-		division_template = "Pekhotna Divizija"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+		start_equipment_factor = 0.8
 	}
 	division = {
-		#name = "8-a 'Stara Zagora' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 6923  # Plovdiv
-		division_template = "Pekhotna Divizija"
+		name = "3 мотострелкова дивизия"
+		location = 6967
+		division_template = "Motostrelka divizija"	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+		start_equipment_factor = 0.8
 	}
 	division = {
-		#name = "10-a 'Kirdzali' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 10
-		}
-		location = 6923  # Plovdiv
-		division_template = "Pekhotna Divizija"
+		name = "5 Танкова бригада"
+		location = 3819
+		division_template = "Tankova brigada"	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	# 3-ta Armija
-	division = {
-		#name = "3-ta 'Sliven' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 9783  # Varna
-		division_template = "Pekhotna Divizija"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+		start_equipment_factor = 0.8
 	}
 	division = {
-		#name = "4-ta 'Schumen' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 9783  # Varna
-		division_template = "Pekhotna Divizija"
+		name = "7 мотострелкова дивизия"
+		location = 9888
+		division_template = "Motostrelka divizija"	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9 Танкова бригада"
+		location = 949
+		division_template = "Tankova brigada"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11 Танкова бригада"
+		location = 6952
+		division_template = "Tankova brigada"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13 Танкова бригада"
+		location = 6967
+		division_template = "Tankova brigada"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17 мотострелкова дивизия"
+		location = 9862
+		division_template = "Motostrelka divizija"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18 мотострелкова дивизия"
+		location = 9769
+		division_template = "Motostrelka divizija"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "19 мотострелкова дивизия"
+		location = 3937
+		division_template = "Motostrelka divizija"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "24 Танкова бригада"
+		location = 9888
+		division_template = "Tankova brigada"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "28 мотострелкова дивизия"
+		location = 949
+		division_template = "Motostrelka divizija"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
 }
 

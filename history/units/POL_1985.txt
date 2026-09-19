@@ -1,1 +1,198 @@
-﻿
+﻿division_template = {
+	name = "Dywizja Zmechanizowana"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+		mechanized = { x = 4 y = 0 }
+		mechanized = { x = 4 y = 1 }
+		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Dywizja Pancerna"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		modern_armor = { x = 1 y = 3 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+		light_armor = { x = 4 y = 0 }
+		light_armor = { x = 4 y = 1 }
+		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
+}	
+division_template = {
+	name = "Brygada Artylerii"
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
+}
+units = {
+
+	division = {
+		name = "1 Dywizja Zmechanizowana"
+		location = 6567
+		division_template = "Dywizja Zmechanizowana"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "2 Dywizja Zmechanizowana"
+		location = 11467
+		division_template = "Dywizja Zmechanizowana"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "3 Dywizja Zmechanizowana"
+		location = 11399
+		division_template = "Dywizja Zmechanizowana"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	
+	division = {
+		name = "4 Dywizja Zmechanizowana"
+		location = 3438
+		division_template = "Dywizja Zmechanizowana"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	
+	division = {
+		name = "5 Dywizja Pancerna"
+		location = 3473
+		division_template = "Dywizja Pancerna"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	
+	division = {
+		name = "8 Dywizja Zmechanizowana"
+		location = 9361
+		division_template = "Dywizja Zmechanizowana"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	
+	division = {
+		name = "9 Dywizja Zmechanizowana"
+		location = 6499
+		division_template = "Dywizja Zmechanizowana"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "10 Dywizja Pancerna"
+		location = 9511
+		division_template = "Dywizja Pancerna"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	
+	division = {
+		name = "11 Dywizja Pancerna"
+		location = 6595
+		division_template = "Dywizja Pancerna"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	
+	division = {
+		name = "12 Dywizja Zmechanizowana"
+		location = 6282
+		division_template = "Dywizja Zmechanizowana"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "15 Dywizja Zmechanizowana"
+		location = 6375
+		division_template = "Dywizja Zmechanizowana"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "16 Dywizja Pancerna"
+		location = 6402
+		division_template = "Dywizja Pancerna"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "20 Dywizja Pancerna"
+		location = 279
+		division_template = "Dywizja Pancerna"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "5 Brygada Artylerii"
+		location = 3460
+		division_template = "Brygada Artylerii"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "6 Brygada Artylerii"
+		location = 3295
+		division_template = "Brygada Artylerii"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "7 Brygada Artylerii"
+		location = 3295
+		division_template = "Brygada Artylerii"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+}
