@@ -1,0 +1,251 @@
+division_template = {	
+	name = "Brigada de infantería motorizada"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+division_template = {	
+	name = "Brigada mecanizada"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {	
+	name = "Brigada blindada"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+		modern_armor = { x = 3 y = 0 }
+		modern_armor = { x = 3 y = 1 }
+		
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {
+	name = "Brigada de caballería"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {   
+	}
+}
+division_template = {	
+	name = "Brigada de artillería"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {
+	name = "Brigada de montaña"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+}
+division_template = {
+	name = "Brigada de infantería territorial"
+
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		logistics_company = { x = 0 y = 1 }		
+	}
+}
+units = {
+
+	division = {
+		name = "Brigada de Infantería Acorazada XI"
+		location = 3938
+		division_template = "Brigada blindada"	
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Brigada de Infantería Mecanizada XII"
+		location = 3938
+		division_template = "Brigada mecanizada"	
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Brigada de Infantería Mecanizada XXI"
+		location = 6954
+		division_template = "Brigada mecanizada"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería Mecanizada XXXI"
+		location = 962
+		division_template = "Brigada mecanizada"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería Mecanizada XXXI"
+		location = 10024
+		division_template = "Brigada mecanizada"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería Motorizada XXII"
+		location = 1048
+		division_template = "Brigada de infantería motorizada"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería Motorizada XXIII"
+		location = 11956
+		division_template = "Brigada de infantería motorizada"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Caballería Jarama"
+		location = 3874
+		division_template = "Brigada de caballería"	
+		start_experience_factor = 1
+	}
+	division = {
+		name = "Brigada de Artillería de Campaña"
+		location = 885
+		division_template = "Brigada de artillería"	
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Brigada de Cazadores de Montaña XLI"
+		location = 3954
+		division_template = "Brigada de montaña"	
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Brigada de Cazadores de Montaña LXI"
+		location = 3933
+		division_template = "Brigada de montaña"	
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Brigada de Cazadores de Montaña LXI"
+		location = 9840
+		division_template = "Brigada de montaña"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería DOT I"
+		location = 3983
+		division_template = "Brigada de infantería territorial"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería DOT II"
+		location = 875
+		division_template = "Brigada de infantería territorial"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería DOT III"
+		location = 4098
+		division_template = "Brigada de infantería territorial"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería DOT IV"
+		location = 6928
+		division_template = "Brigada de infantería territorial"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería DOT V"
+		location = 3816
+		division_template = "Brigada de infantería territorial"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería DOT VI"
+		location = 13598
+		division_template = "Brigada de infantería territorial"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería DOT VII"
+		location = 13597
+		division_template = "Brigada de infantería territorial"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Brigada de Infantería DOT VIII"
+		location = 9793
+		division_template = "Brigada de infantería territorial"	
+		start_experience_factor = 0.2
+	}
+}

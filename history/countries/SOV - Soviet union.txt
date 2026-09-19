@@ -48,6 +48,7 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
+		basic_light_tank_chassis_2 = 1
 		main_battle_tank_chassis = 1
 		main_battle_tank_chassis_2 = 1
 		tank_weapon_1 = 1
@@ -55,6 +56,64 @@ if = {
 		armor_tech_2 = 1
 		engine_tech_1 = 1
 		engine_tech_2 = 1
+	}
+
+	create_equipment_variant = {
+		name = "T-64"
+		type = modern_tank_chassis_1
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_cold_war_weapon_1
+			turret_type_slot = tank_heavy_two_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 1
+			tank_nsb_engine_upgrade = 2
+		}
+		icon = "GFX_SOV_main_battle_tank"
+	}
+	
+	create_equipment_variant = {
+		name = "T-64A"
+		type = modern_tank_chassis_1
+		parent_version = 2
+		modules = {
+			main_armament_slot = tank_cold_war_weapon_1
+			turret_type_slot = tank_heavy_two_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 2
+			tank_nsb_engine_upgrade = 2
+		}
+		icon = "GFX_SOV_main_battle_tank"
+	}
+	
+	create_equipment_variant = {
+		name = "T-64B"
+		type = modern_tank_chassis_1
+		parent_version = 3
+		modules = {
+			main_armament_slot = tank_cold_war_weapon_1
+			turret_type_slot = tank_heavy_two_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = additional_machine_guns
+			special_type_slot_2 = smoke_launchers
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 4
+			tank_nsb_engine_upgrade = 2
+		}
+		icon = "GFX_SOV_main_battle_tank"
 	}
 
 	create_equipment_variant = {
@@ -68,10 +127,11 @@ if = {
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_diesel_engine
 			special_type_slot_1 = additional_machine_guns
+			special_type_slot_2 = smoke_launchers
 		}
 		upgrades = {
-			tank_nsb_armor_upgrade = 1
-			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 3
+			tank_nsb_engine_upgrade = 3
 		}
 		icon = "GFX_SOV_main_battle_tank"
 	}
@@ -331,4 +391,18 @@ if = {
 		available_to_spy_master = yes
 		nationalities = { SOV }
 	}
+}
+
+add_equipment_to_stockpile = {
+    type = modern_tank_chassis_1
+    variant_name = "T-64"
+    amount = 5000
+    producer = SOV
+}
+
+add_equipment_to_stockpile = {
+    type = modern_tank_chassis_1
+    variant_name = "T-64A"
+    amount = 3000
+    producer = SOV
 }
