@@ -1,0 +1,15 @@
+characters = {
+	TEX_bill_clements = {
+		name = TEX_bill_clements
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_bill_clements
+			}
+		}
+		country_leader = {
+			ideology = social_conservatism
+			traits = { }
+			expire = "2011.5.29.1"
+		}
+	}
+}

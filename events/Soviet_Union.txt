@@ -1359,6 +1359,13 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.39.a
+        set_global_flag = sov_start_sec_flag
+		set_global_flag = super_event_visible
+		hidden_effect = {
+			play_song = "victory_sec_name"	
+		}
+		
+		set_global_flag = sov_start_sec_flag
 		add_stability = -0.15
     }
 }
@@ -1458,7 +1465,7 @@ country_event = {
 		KAZ = {
 			add_popularity = {
 				ideology = conservatism
-				popularity = 0.4
+				popularity = 0.2
 			}
             set_politics = {
                 ruling_party = conservatism

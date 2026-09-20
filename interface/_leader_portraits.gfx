@@ -1064,4 +1064,47 @@ spriteTypes = {
 		name = GFX_Portrait_agatha_barbara
 		textureFile = "gfx/leaders/MLT/Portrait_agatha_barbara.dds"
 	}	
+
+	### CAS ###
+
+	spriteType = {
+		name = GFX_Portrait_david_mccloskey
+		textureFile = "gfx/leaders/CAS/Portrait_david_mccloskey.dds"
+	}	
+
+	### CAL ###
+
+	spriteType = {
+		name = GFX_Portrait_george_deukmejian
+		textureFile = "gfx/leaders/CAL/Portrait_george_deukmejian.dds"
+	}	
+
+
+	### CAL ###
+
+	spriteType = {
+		name = GFX_Portrait_norman_bangerter
+		textureFile = "gfx/leaders/UTA/Portrait_norman_bangerter.dds"
+	}	
+
+	### CSA ###
+
+	spriteType = {
+		name = GFX_Portrait_oliver_north
+		textureFile = "gfx/leaders/CSA/Portrait_oliver_north.dds"
+	}
+	
+	### TEX ###
+
+	spriteType = {
+		name = GFX_Portrait_bill_clements
+		textureFile = "gfx/leaders/TEX/Portrait_bill_clements.dds"
+	}	
+
+	### GDU ###
+
+	spriteType = {
+		name = GFX_Portrait_gus_hall
+		textureFile = "gfx/leaders/GDU/Portrait_gus_hall.dds"
+	}	
 }

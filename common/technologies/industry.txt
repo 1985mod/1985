@@ -1700,6 +1700,11 @@ technologies = {
 		path = {
 			research_cost_coeff = 1
 		}
+
+		path = {
+			leads_to_tech = excavation2
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		
@@ -1755,10 +1760,6 @@ technologies = {
 			leads_to_tech = construction3 
 			research_cost_coeff = 1
 		}		
-		path = {
-			leads_to_tech = excavation2 
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1986
@@ -1789,6 +1790,11 @@ technologies = {
 		local_resources_coal_factor = 0.05
 
 		path = {
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = excavation3
 			research_cost_coeff = 1
 		}
 		
@@ -1843,13 +1849,9 @@ technologies = {
 		production_speed_buildings_factor = 0.1
 		#production_speed_buildings_powered_factor = 0.075
 		industry_repair_factor = 0.10
+
 		path = {
 			leads_to_tech = construction4 
-			research_cost_coeff = 1
-		}
-				
-		path = {
-			leads_to_tech = excavation3
 			research_cost_coeff = 1
 		}
 		
@@ -1893,6 +1895,11 @@ technologies = {
 		local_resources_coal_factor = 0.05
 
 		path = {
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = excavation4
 			research_cost_coeff = 1
 		}
 		
@@ -1958,10 +1965,6 @@ technologies = {
 			leads_to_tech = construction5 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = excavation4
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1991
@@ -1992,6 +1995,11 @@ technologies = {
 		local_resources_coal_factor = 0.05
 
 		path = {
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = excavation5
 			research_cost_coeff = 1
 		}
 		
@@ -2045,11 +2053,6 @@ technologies = {
 		production_speed_buildings_factor = 0.1
 		#production_speed_buildings_powered_factor = 0.1
 		industry_repair_factor = 0.10
-		
-		path = {
-			leads_to_tech = excavation5
-			research_cost_coeff = 1
-		}
 
 		
 		research_cost = 2

@@ -91,6 +91,8 @@ if = {
 	}
 }
 
+recruit_character = CAL_george_deukmejian
+
 set_convoys = 100
 
 set_politics = {

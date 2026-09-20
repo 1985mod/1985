@@ -406,6 +406,9 @@ country_event = {
 				days = 60
 				value = 1
 			}
+			CHE = {
+				load_oob = "CHE_1994"
+			}
 		}
 	}
 }
@@ -513,9 +516,9 @@ country_event = {
 		add_war_support = 0.1
 		set_global_flag = caucasus_conflict_over
         declare_war_on = {
-            target = FROM
+            target = RUS
             type = annex_everything
-			generator = { 232 828 }
+			generator = { 821 }
         }
 	}
 }
@@ -638,6 +641,68 @@ country_event = {
 				communism = 4
 			}
 		}
+	}
+}
+
+country_event = {
+	id = russia.25 ## Появление антидудаевской оппозиции ##
+	title = russia.25.t
+	desc = russia.25.desc
+	picture = GFX_report_protests_against_yeltsin
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = russia.24.a
+		add_war_support = 0.05
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = russia.26 ## Провал Штурма Грозного оппозицией ##
+	title = russia.26.t
+	desc = russia.26.desc
+	picture = GFX_report_protests_against_yeltsin
+
+	is_triggered_only = yes
+
+    option = {
+        name = russia.24.a
+		add_war_support = 0.05
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = russia.27 ## Ввод российских войск на территорию Чечни (Первая Чеченская Война) ##
+	title = russia.27.t
+	desc = russia.27.desc
+	picture = GFX_report_protests_against_yeltsin
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    immediate = {
+        hidden_effect = {
+			declare_war_on = {
+				target = CHE
+				type = annex_everything
+				generator = { 821 }
+			}
+			CHE = {
+				load_oob = "CHE_1994"
+			}
+        }
+    }
+
+    option = {
+        name = russia.24.a
+		add_war_support = 0.1
+		add_stability = -0.05
 	}
 }
 

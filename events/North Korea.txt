@@ -1,0 +1,45 @@
+add_namespace = north_korea
+
+country_event = {
+	id = north_korea.1 ##  Ультиматум Северной Кореи ##
+	title = north_korea.1.t
+	desc = north_korea.1.desc
+	picture = GFX_report_dead_chernenko
+
+	trigger = {
+		tag = KOR
+		has_global_flag = super_world_war_3
+		WGR = { surrender_progress > 0.5 }
+	}
+	fire_only_once = yes
+
+	option = {
+		name = north_korea.1.a
+		ai_chance = {
+			base = 10
+		}
+		PRK = {
+			annex_country = {
+				target = KOR
+				transfer_troops = no
+			}
+			add_stability = 0.1
+			add_war_support = 0.05
+		}
+	}
+
+	option = {
+		name = north_korea.1.b
+		ai_chance = {
+			base = 90
+		}
+		PRK = {
+			declare_war_on = {
+				target = KOR
+				type = annex_everything
+			}
+			add_war_support = 0.1
+		}
+		add_war_support = 0.1
+	}
+}

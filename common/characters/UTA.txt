@@ -1,0 +1,15 @@
+characters = {
+	UTA_norman_bangerter = {
+		name = UTA_norman_bangerter
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_norman_bangerter
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = { }
+			expire = "2015.5.15.1"
+		}
+	}
+}

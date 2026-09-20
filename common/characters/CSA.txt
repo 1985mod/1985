@@ -1,0 +1,15 @@
+characters = {
+	CSA_oliver_north = {
+		name = CSA_oliver_north
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_oliver_north
+			}
+		}
+		country_leader = {
+			ideology = military_regimes
+			traits = { }
+			expire = "2003.2.10.1"
+		}
+	}
+}
