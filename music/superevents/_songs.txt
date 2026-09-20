@@ -1,5 +1,5 @@
 
-music_station = "base_music"
+music_station = "radio_station_1985_super_events"
 
 music = {
 	song = "victory_sec_name"
@@ -48,6 +48,24 @@ music = {
 
 music = {
 	song = "chechnya_in_flames_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "its_the_end_of_the_world_as_we_know_it_and_i_feel_fine_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "second_korean_war_name"
 	chance = {
 		modifier = {
 			factor = 0.5

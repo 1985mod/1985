@@ -23,7 +23,10 @@ set_technology = {
 	tech_mountaineers = 1
 }
 
+recruit_character = BEL_mark_eyskens
 recruit_character = BEL_wilfried_martens
+recruit_character = BEL_jean_luc_dehaene
+recruit_character = BEL_louis_van_geyt
 
 set_politics = {
 	ruling_party = conservatism

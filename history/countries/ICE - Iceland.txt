@@ -34,4 +34,6 @@ set_popularities = {
 	communism = 12
 }
 
-recruit_character = ICE_vigdis_finnbogadottir
+recruit_character = ICE_steingrímur_hermannsson
+recruit_character = ICE_thorstei_palsson
+recruit_character = ICE_Davíð_Oddsson

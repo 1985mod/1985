@@ -91,7 +91,7 @@ if = {
 	}
 }
 
-set_convoys = 100
+recruit_character = GDU_gus_hall
 
 set_politics = {
 	ruling_party = communism
@@ -101,8 +101,8 @@ set_politics = {
 }
 
 set_popularities = {
-	communism = 65
-	socialism = 30
+	communism = 93
+	socialism = 2
 	neutrality = 2
 	fascism = 3
 }

@@ -26,6 +26,16 @@ set_technology = {
 	basic_train = 1
 }
 
+country_event = {
+	id = britain.1
+	days = 891
+}
+
+country_event = {
+	id = britain.2
+	days = 2655
+}
+
 add_nuclear_bombs = 307
 
 set_convoys = 500
@@ -64,6 +74,10 @@ set_popularities = {
 }
 
 recruit_character = ENG_margaret_thatcher
+recruit_character = ENG_neil_kinnock
+recruit_character = ENG_david_steel
+recruit_character = ENG_john_major
+recruit_character = ENG_paddy_ashdown
 
 add_ideas = {
 	EU_member

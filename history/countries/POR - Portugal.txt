@@ -15,21 +15,22 @@ set_technology = {
 	basic_train = 1
 }
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = socialism
 	last_election = "1983.4.25"
 	election_frequency = 24
 	elections_allowed = yes
 }
 set_popularities = {
-	communism = 3
-	socialism = 25
-	conservatism = 72
+	communism = 18
+	socialism = 36
+	conservatism = 46
 }
 
 set_convoys = 100
 set_stability = 0.75
 set_convoys = 50
 
+recruit_character = POR_mario_soares
 recruit_character = POR_cavaco_silva
 
 add_ideas = {

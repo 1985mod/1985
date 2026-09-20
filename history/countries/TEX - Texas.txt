@@ -93,6 +93,8 @@ if = {
 
 set_convoys = 100
 
+recruit_character = TEX_bill_clements
+
 set_politics = {
 	ruling_party = conservatism
 	last_election = "1982.3.12"
