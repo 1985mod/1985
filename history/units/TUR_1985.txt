@@ -1,0 +1,356 @@
+division_template = {
+	name = "Piyade Tümeni"		
+
+	division_names_group = GEN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+        infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {
+	name = "Piyade Tugayı"		
+
+	division_names_group = GEN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {
+	name = "Zırhlı Tümen"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		modern_armor = { x = 1 y = 3 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		light_armor = { x = 4 y = 0 }
+		light_armor = { x = 4 y = 1 }
+		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
+}	
+division_template = {
+	name = "Mekanize Tümen"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+		mechanized = { x = 4 y = 0 }
+		mechanized = { x = 4 y = 1 }
+		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Mekanize Tugay"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Tank Tugayı"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+		artillery = { x = 0 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "1 Piyade Tugayı"
+		location = 9755
+		division_template = "Piyade Tugayı"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2 Piyade tümeni"
+		location = 11739
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "3 Piyade tümeni"
+		location = 9932
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "3 taktik piyade tümeni"
+		location = 4512
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "4 Piyade Tugayı"
+		location = 9929
+		division_template = "Piyade Tugayı"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "5 piyade tümeni"
+		location = 9777
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "12 Piyade tümeni"
+		location = 6991
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "14 Piyade tümeni"
+		location = 11811
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "15 Piyade tümeni"
+		location = 11829
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "16 Piyade tümeni"
+		location = 9868
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "23 Mekanize Tümen"
+		location = 9833
+		division_template = "Mekanize Tümen"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "24 Mekanize Tümen"
+		location = 9893
+		division_template = "Mekanize Tümen"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "25 Piyade Tugayı"
+		location = 10472
+		division_template = "Piyade Tugayı"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "26 Piyade Tugayı"
+		location = 10472
+		division_template = "Piyade Tugayı"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "27 Piyade Tugayı"
+		location = 11881
+		division_template = "Piyade Tugayı"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "28 Piyade tümeni"
+		location = 11984
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "39 Piyade tümeni"
+		location = 11984
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "41 Piyade tümeni"
+		location = 9878
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "52 Zırhlı Tümen"
+		location = 9833
+		division_template = "Zırhlı Tümen"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "57 Piyade Tugayı"
+		location = 10472
+		division_template = "Piyade Tugayı"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "60 Piyade tümeni"
+		location = 10472
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "61 Piyade tümeni"
+		location = 11842
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "62 Piyade tümeni"
+		location = 4112
+		division_template = "Piyade Tümeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "70 Mekanize Tugay"
+		location = 947
+		division_template = "Mekanize Tugay"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "71 Mekanize Tugay"
+		location = 922
+		division_template = "Mekanize Tugay"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "72 Mekanize Tugay"
+		location = 904
+		division_template = "Mekanize Tugay"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "73 Mekanize Tugay"
+		location = 12476
+		division_template = "Mekanize Tugay"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "74 Mekanize Tugay"
+		location = 11871
+		division_template = "Mekanize Tugay"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "75 Mekanize Tugay"
+		location = 12029
+		division_template = "Mekanize Tugay"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "90 Tank Tugayı"
+		location = 6995
+		division_template = "Tank Tugayı"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "91 Tank Tugayı"
+		location = 11747
+		division_template = "Tank Tugayı"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "92 Tank Tugayı"
+		location = 1005
+		division_template = "Tank Tugayı"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "93 Tank Tugayı"
+		location = 3870
+		division_template = "Tank Tugayı"
+		start_experience_factor = 0.2
+	}
+		division = {
+		name = "94 Tank Tugayı"
+		location = 11746
+		division_template = "Tank Tugayı"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "95 Tank Tugayı"
+		location = 12387
+		division_template = "Tank Tugayı"
+		start_experience_factor = 0.2
+	}
+}
