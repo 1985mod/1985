@@ -16,7 +16,13 @@ state = {
 		add_core_of = UKR
 
 		victory_points = {
-			3755 1 # Kherson
+			3755 3 # Kherson
+		}
+		victory_points = {
+			6771 1 # Kherson
+		}
+		victory_points = {
+			737 1 # Kherson
 		}
 		
 		buildings = {
