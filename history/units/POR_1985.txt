@@ -1,0 +1,70 @@
+division_template = {
+	name = "Forças defensivas"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		logistics_company = { x = 0 y = 1 }		
+	}
+}
+division_template = {	
+	name = "Brigada mecanizada"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		modern_armor = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+units = {
+	division = {
+		name = "1ª Brigada Mista Independentea"
+		location = 3790
+		division_template = "Brigada mecanizada"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Região Militar Do Norte"
+		location = 9817
+		division_template = "Forças defensivas"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Região Militar do Centro"
+		location = 3798
+		division_template = "Forças defensivas"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Região Militar de Lisboa"
+		location = 11805
+		division_template = "Forças defensivas"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Região Militar do Sul"
+		location = 9869
+		division_template = "Forças defensivas"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Região Militar do Açores"
+		location = 1751
+		division_template = "Forças defensivas"
+		start_experience_factor = 0.1
+	}

@@ -202,7 +202,7 @@ units = {
 	}
 	division = {
 		name = "Brigada de Infantería DOT I"
-		location = 3983
+		location = 3735
 		division_template = "Brigada de infantería territorial"	
 		start_experience_factor = 0.2
 	}
@@ -220,7 +220,7 @@ units = {
 	}
 	division = {
 		name = "Brigada de Infantería DOT IV"
-		location = 6928
+		location = 758
 		division_template = "Brigada de infantería territorial"	
 		start_experience_factor = 0.2
 	}
