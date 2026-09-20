@@ -1723,3 +1723,307 @@ country_event = {
 		add_political_power = 25
 	}
 }
+
+country_event = {
+	id = usa.56 ### Массовые протесты в Америке ###
+	title = usa.56.t
+	desc = usa.56.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.56.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.05
+		add_war_support = -0.03
+		add_political_power = -50
+	}
+}
+
+country_event = {
+	id = usa.57 ### Коммунизм набирает популярность в Америке ###
+	title = usa.57.t
+	desc = usa.57.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.57.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.1
+		add_political_power = -50
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = usa.58 ### Забастовки среднего класса ###
+	title = usa.58.t
+	desc = usa.58.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.58.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.1
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = usa.59 ### Недовольство растёт ###
+	title = usa.59.t
+	desc = usa.59.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.59.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+	}
+}
+
+country_event = {
+	id = usa.60 ### Калифорния отделяется ###
+	title = usa.60.t
+	desc = usa.60.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.60.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.1
+		release = CAL
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = usa.61 ### Техас отделяется ###
+	title = usa.61.t
+	desc = usa.61.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.61.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.1
+		release = TEX
+	}
+}
+
+country_event = {
+	id = usa.62 ### Эффект домино: отделяется запад ###
+	title = usa.62.t
+	desc = usa.62.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.62.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.1
+		release = ALA
+		CAS = {
+			transfer_state = 387
+			transfer_state = 386
+			transfer_state = 385
+			add_state_core = 387
+			add_state_core = 386
+			add_state_core = 385
+		}
+		UTA = {
+			transfer_state = 379
+			transfer_state = 380
+			add_state_core = 379
+			add_state_core = 380
+		}
+		CFN = {
+			transfer_state = 377
+			transfer_state = 376
+			add_state_core = 377
+			add_state_core = 376
+		}
+	}
+}
+
+country_event = {
+	id = usa.63 ### Эффект домино: отделяется юг ###
+	title = usa.63.t
+	desc = usa.63.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.63.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.1
+		release = FLO
+		CSA = {
+			transfer_state = 370
+			transfer_state = 368
+			transfer_state = 367
+			transfer_state = 365
+			transfer_state = 364
+			transfer_state = 363
+			add_state_core = 370
+			add_state_core = 368
+			add_state_core = 367
+			add_state_core = 365
+			add_state_core = 364
+			add_state_core = 363
+		}
+		LOA = {
+			transfer_state = 371
+			add_state_core = 371
+		}
+		ARK = {
+			transfer_state = 372
+			add_state_core = 372
+		}
+	}
+}
+
+country_event = {
+	id = usa.64 ### Эффект домино: отделяется север ###
+	title = usa.64.t
+	desc = usa.64.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.64.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.05
+		NEE = {
+			transfer_state = 357
+			transfer_state = 968
+			transfer_state = 966
+			transfer_state = 963
+			transfer_state = 961
+			add_state_core = 357
+			add_state_core = 968
+			add_state_core = 966
+			add_state_core = 963
+			add_state_core = 961
+		}
+		NYK = {
+			transfer_state = 358
+			add_state_core = 358
+		}
+	}
+}
+
+country_event = {
+	id = usa.65 ### Появляется великие озёры ###
+	title = usa.65.t
+	desc = usa.65.desc
+	picture = GFX_report_republican_victory
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.65.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.2
+		GDU = {
+			transfer_state = 395
+			transfer_state = 394
+			transfer_state = 393
+			transfer_state = 392
+			transfer_state = 391
+			transfer_state = 373
+			add_state_core = 395
+			add_state_core = 394
+			add_state_core = 393
+			add_state_core = 392
+			add_state_core = 391
+			add_state_core = 373
+		}
+		MRA = {
+			transfer_state = 390
+			transfer_state = 389
+			transfer_state = 388
+			transfer_state = 384
+			transfer_state = 383
+			transfer_state = 382
+			transfer_state = 381
+			transfer_state = 374
+			add_state_core = 390
+			add_state_core = 389
+			add_state_core = 388
+			add_state_core = 384
+			add_state_core = 383
+			add_state_core = 382
+			add_state_core = 381
+			add_state_core = 374
+		}
+		set_global_flag = collapse_of_america
+	}
+}

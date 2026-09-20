@@ -44,6 +44,42 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					country_exists = RUS
+					date > 1993.11.01
+					NOT = { has_global_flag = an_anti_dudayev_opposition_emerged }
+				}
+				RUS = { country_event = { id = russia.25 } }
+				set_global_flag = anti_dudayev_opposition_emerged
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1993.9.01
+					NOT = { has_global_flag = the_assault_on_grozny_failed }
+				}
+				RUS = { country_event = { id = russia.26 } }
+				set_global_flag = the_assault_on_grozny_failed
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1993.10.01
+					NOT = { has_global_flag = the_assault_on_grozny_failed_two }
+				}
+				RUS = { country_event = { id = russia.26 } }
+				set_global_flag = the_assault_on_grozny_failed_two
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1993.11.11
+					NOT = { has_global_flag = first_chechen_war_happened }
+				}
+				RUS = { country_event = { id = russia.27 } }
+				set_global_flag = first_chechen_war_happened
+			}
+			if = {
+				limit = {
 					country_exists = SOV
 					date > 1993.03.01
 					conservatism > party_popularity@socialism

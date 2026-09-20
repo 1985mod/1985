@@ -1,13 +1,49 @@
 characters={
-	BRM_Ne_Win={
-		name = BRM_Ne_Win
+	BRM_ne_win={
+		name = BRM_ne_win
 		portraits={
 			civilian={
-				large=GFX_Portrait_Ne_Win
+				large=GFX_Portrait_BRM_ne_win
 			}
 			army = {
-				large =GFX_Portrait_Ne_Win
-				small =GFX_Portrait_Ne_Win 
+				large=GFX_Portrait_BRM_ne_win
+				small=GFX_Portrait_BRM_ne_win
+			}
+		}
+		country_leader={
+			ideology= military_regimes
+			traits={  }
+			expire="1999.1.1.1"
+			id = -1
+		}
+	}
+	BRM_saw_maung={
+		name = BRM_saw_maung
+		portraits={
+			civilian={
+				large=GFX_Portrait_BRM_saw_maung
+			}
+			army = {
+				large=GFX_Portrait_BRM_saw_maung
+				small=GFX_Portrait_BRM_saw_maung
+			}
+		}
+		country_leader={
+			ideology= military_regimes
+			traits={  }
+			expire="1999.1.1.1"
+			id = -1
+		}
+	}
+	BRM_than_shwea={
+		name = BRM_than_shwea
+		portraits={
+			civilian={
+				large=GFX_Portrait_BRM_than_shwea
+			}
+			army = {
+				large=GFX_Portrait_BRM_than_shwea
+				small=GFX_Portrait_BRM_than_shwea
 			}
 		}
 		country_leader={

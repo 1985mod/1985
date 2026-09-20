@@ -3,7 +3,10 @@ characters = {
 		name = PRC_deng_xiaoping
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PRC/Portrait_deng_xiaoping.dds"
+				large = GFX_Portrait_PRC_deng_xiaoping
+			}
+			army = {
+				large = GFX_Portrait_PRC_deng_xiaoping
 			}
 		}
 		country_leader={

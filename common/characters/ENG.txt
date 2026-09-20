@@ -7,14 +7,85 @@ characters = {
 			}
 			army = {
 				large = GFX_portrait_ENG_margaret_thatcher
-				small = GFX_portrait_ENG_margaret_thatcher_small
 			}
 		}
 		country_leader = {
-			ideology = classic_conservatism
+			ideology =  liberal_conservatism
 			traits = {}
 			expire = "2013.3.10.1"
-			id = -7
+			id = -1
+		}
+	}
+
+	ENG_neil_kinnock = {
+		name = ENG_neil_kinnock
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ENG_neil_kinnock
+			}
+			army = {
+				large = GFX_portrait_ENG_neil_kinnock
+			}
+		}
+		country_leader = {
+			ideology = classical_social_democracy
+			traits = {}
+			expire = "2010.3.10.1"
+			id = -1
+		}
+	}
+
+	ENG_david_steel = {
+		name = ENG_david_steel
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ENG_david_steel
+			}
+			army = {
+				large = GFX_portrait_ENG_david_steel
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			traits = {}
+			expire = "2010.3.10.1"
+			id = -1
+		}
+	}
+
+	ENG_john_major = {
+		name = ENG_john_major
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ENG_john_major
+			}
+			army = {
+				large = GFX_portrait_ENG_john_major
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism
+			traits = {}
+			expire = "2010.3.10.1"
+			id = -1
+		}
+	}
+
+	ENG_paddy_ashdown = {
+		name = ENG_paddy_ashdown
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ENG_paddy_ashdown 
+			}
+			army = {
+				large = GFX_portrait_ENG_paddy_ashdown 
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			traits = {}
+			expire = "2010.3.10.1"
+			id = -1
 		}
 	}
 }

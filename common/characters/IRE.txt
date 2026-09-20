@@ -15,4 +15,38 @@ characters = {
 			expire="1989.11.9.1"		
 		}
 	}
+
+	IRE_charles_haughey ={
+		name = IRE_charles_haughey
+		portraits={
+			civilian={
+				large= GFX_portrait_IRE_charles_haughey
+			}
+			army = {
+				large = GFX_portrait_IRE_charles_haughey
+			}
+		}
+		country_leader={
+			ideology = national_conservatism
+			traits={  }
+			expire="1993.11.9.1"		
+		}
+	}
+
+	IRE_albert_reynolds ={
+		name = IRE_albert_reynolds
+		portraits={
+			civilian={
+				large= GFX_portrait_IRE_albert_reynolds
+			}
+			army = {
+				large = GFX_portrait_IRE_albert_reynolds
+			}
+		}
+		country_leader={
+			ideology = national_conservatism 
+			traits={  }
+			expire="1993.11.9.1"		
+		}
+	}
 }

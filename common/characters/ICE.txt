@@ -1,15 +1,46 @@
 characters = {
-	ICE_vigdis_finnbogadottir ={
-		name = ICE_vigdis_finnbogadottir
+	ICE_steingrímur_hermannsson ={
+		name = ICE_steingrímur_hermannsson
 		portraits={
 			civilian={
-				large= GFX_Portrait_vigdis_finnbogaduttir
+				large= GFX_Portrait_ICE_steingrímur_hermannsson
 			}
 		}
 		country_leader={
-			ideology = classic_conservatism
+			ideology = national_conservatism
 			traits={  }
-			expire="1991.11.9.1"		
+			expire="1991.11.9.1"
+			id = -1		
+		}
+	}
+
+	ICE_thorstei_palsson ={
+		name = ICE_thorstei_palsson
+		portraits={
+			civilian={
+				large= GFX_Portrait_ICE_thorsteinn_palsson
+			}
+		}
+		country_leader={
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1991.11.9.1"
+			id = -1		
+		}
+	}
+
+	ICE_Davíð_Oddsson ={
+		name = ICE_Davíð_Oddsson
+		portraits={
+			civilian={
+				large= GFX_Portrait_ICE_Davíð_Oddsson
+			}
+		}
+		country_leader={
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1994.11.9.1"
+			id = -1		
 		}
 	}
 }

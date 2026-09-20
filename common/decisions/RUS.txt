@@ -323,13 +323,19 @@ RUS_caucasus_crisis_category = {
 		selectable_mission = no
 		complete_effect = {
 			add_political_power = 10
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_stability = 0.03
+			add_war_support = -0.05
 		}
 		timeout_effect = {
 			add_political_power = 25
 			add_stability = 0.05
 			add_war_support = -0.15
+			CHE = {
+				declare_war_on = {
+					target = RUS
+					type = annex_everything
+				}
+			}
 		}
 	}
 	chechnya_appeasement = {

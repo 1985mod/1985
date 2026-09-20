@@ -1,0 +1,207 @@
+add_namespace = britain
+
+country_event = {
+	id = britain.1 ##  Выборы 1987 года ##
+	title = britain.1.t
+	desc = britain.1.desc
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+    # Маргарет Тэтчер
+	option = {
+		name = britain.1.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+
+	# Нил Киннок
+	option = {
+		name = britain.1.b
+		ai_chance = {
+			base = 15
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = socialism
+                popularity = 0.15
+			}
+		}
+	}
+
+	# Дэвид Стил
+	option = {
+		name = britain.1.c
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = liberalism
+                popularity = 0.15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = britain.2 ##  Выборы 1992 года ##
+	title = britain.2.t
+	desc = britain.2.desc
+	picture = GFX_report_dead_chernenko
+
+	is_triggered_only = yes
+
+    # Джон Мейджор
+	option = {
+		name = britain.2.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = major
+			remove_country_leader = { name = "ENG_margaret_thatcher" }
+			promote_character = {
+				character = ENG_john_major
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = conservatism
+                popularity = 0.15
+			}
+		}
+	}
+
+	# Нил Киннок
+	option = {
+		name = britain.2.b
+		ai_chance = {
+			base = 15
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_politics = {
+				ruling_party = socialism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = socialism
+                popularity = 0.15
+			}
+		}
+	}
+
+	# Пэдди Эшдаун
+	option = {
+		name = britain.2.c
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+			
+		effect_tooltip = {
+			    set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = ashdown
+			remove_country_leader = { name = "ENG_david_steel" }
+			promote_character = {
+				character = ENG_paddy_ashdown
+				ideology = liberalism
+			}
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = yes
+			}
+			add_popularity = {
+                ideology = liberalism
+                popularity = 0.15
+			}
+		}
+	}
+}

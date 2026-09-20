@@ -1,0 +1,15 @@
+characters = {
+	CAS_david_mccloskey = {
+		name = CAS_david_mccloskey
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_david_mccloskey
+			}
+		}
+		country_leader = {
+			ideology = eco_social_democracy
+			traits = { }
+			expire = "2026.3.1.1"
+		}
+	}
+}
