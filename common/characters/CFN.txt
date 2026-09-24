@@ -1,0 +1,15 @@
+characters = {
+	CFN_rose_mofford = {
+		name = CFN_rose_mofford
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_rose_mofford
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			traits = { }
+			expire = "2026.9.3.1"
+		}
+	}
+}

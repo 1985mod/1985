@@ -99,6 +99,7 @@
  POL_1989: "Республика Польша"
  POL_1989_DEF: "Республика Польша"
  POL_1989_DEF: "Республика Польша"
+ POL_1989_DEF: "Республика Польша"
  BEL_benelux_communism: "Народная Республика Бенилюкс"
  BEL_benelux_communism_DEF: "Народная Республика Бенилюкс"
  BEL_benelux_communism_ADJ: "Бенилюкск"
@@ -128,3 +129,5 @@
  BRM_union_of_myanmar: "Союз Мьянма"
  BRM_union_of_myanmar_DEF: "Союз Мьянма"
  BRM_union_of_myanmar_ADJ: "Мьянмск"
+ BRM_union_of_myanmar_ADJ: "Мьянмск"
+

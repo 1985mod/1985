@@ -41,7 +41,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= classic_liberalism
+			ideology= social_liberalism
 			traits={  }
 			expire="1999.1.1.1"
 			

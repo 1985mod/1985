@@ -62,8 +62,8 @@ country_event = {
 	   tag = USA
 	   date > 1988.11.01
 	   date < 1991.11.01
-	   check_variable = { var = electoral_votes_republicans value = USA.electoral_votes_democrats compare = greater_than }
-	   check_variable = { var = support_republicans_in_us value = USA.support_democrats_in_us compare = greater_than }
+	   check_variable = { var = USA.electoral_votes_democrats value = USA.electoral_votes_republicans compare = greater_than }
+	   check_variable = { var = USA.support_democrats_in_us value = USA.support_republicans_in_us compare = greater_than }
 	}
 	
 	option = {
@@ -1937,6 +1937,18 @@ country_event = {
 		ARK = {
 			transfer_state = 372
 			add_state_core = 372
+		}
+		hidden_effect = {
+			FLO = {
+				set_politics = {
+					ruling_party = conservatism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.03
+				}
+			}
 		}
 	}
 }

@@ -822,8 +822,6 @@ news_event = {
 		name = news.36.a
 	}
 }
-<<<<<<< Updated upstream
-=======
 
 news_event = {
 	id = news.37 ##	Война в Боснии ##
@@ -904,4 +902,3 @@ news_event = {
 		add_stability = -0.15
 	}
 }
->>>>>>> Stashed changes
