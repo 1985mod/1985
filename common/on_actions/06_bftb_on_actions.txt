@@ -100,6 +100,38 @@ on_actions = {
 				SOV = { country_event = { id = SOV_soviet_union.71 } }
 				set_global_flag = ssg_elections_resolved
 			}
+			if = {
+				limit = {
+					country_exists = SOV
+					date > 1991.07.01
+					SOV = { has_country_flag = gorbachev }
+					NOT = { has_global_flag = dismantle_warsaw_pact }
+				}
+				SOV = { country_event = { id = SOV_soviet_union.78 } }
+				set_global_flag = dismantle_warsaw_pact
+			}
+			if = {
+				limit = {
+					USA = { has_government = conservatism }
+					country_exists = NEE
+					NOT = { has_global_flag = liberalism_in_new_england }
+					NOT = { has_global_flag = new_england_leader_set }
+				}
+				NEE = { country_event = { id = new_england.1 days = 12 } }
+				set_global_flag = conservatism_in_new_england
+				set_global_flag = new_england_leader_set
+			}
+			if = {
+				limit = {
+					USA = { has_government = liberalism }
+					country_exists = NEE
+					NOT = { has_global_flag = conservatism_in_new_england }
+					NOT = { has_global_flag = new_england_leader_set }
+				}
+				NEE = { country_event = { id = new_england.2 days = 12 } }
+				set_global_flag = liberalism_in_new_england
+				set_global_flag = new_england_leader_set
+			}
 		}
 	}
 

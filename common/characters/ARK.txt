@@ -1,0 +1,16 @@
+characters = {
+	ARK_bill_clinton = {
+		name = ARK_bill_clinton
+		portraits={
+			civilian={
+				large= GFX_ARK_Portrait_bill_clinton
+			}
+		}
+		country_leader={
+			ideology= classic_liberalism
+			traits={  }
+			expire="1999.1.1.1"
+			
+		}
+	}
+}

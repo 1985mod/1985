@@ -1,0 +1,15 @@
+characters = {
+	MRA_john_piotrowski = {
+		name = MRA_john_piotrowski
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_john_piotrowski
+			}
+		}
+		country_leader = {
+			ideology = military_regimes
+			traits = { }
+			expire = "2026.3.1.1"
+		}
+	}
+}

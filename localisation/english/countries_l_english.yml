@@ -438,8 +438,8 @@
  CAN_DEF: "Canada"
  CAN_ADJ: "Canadian"
  
- BRM: "Union of Burma"
- BRM_DEF: "the Union of Burma"
+ BRM: "Socialist Republic of the Union of Burma"
+ BRM_DEF: "Socialist Republic of the Union of Burma"
  BRM_ADJ: "Burmese"
  
 
@@ -1194,3 +1194,113 @@
  ABK: "Republic of Abkhazia"
  ABK_DEF: "the Republic of Abkhazia"
  ABK_ADJ: "Abkhaz"
+
+ HEZ_liberalism: "Islamic Republic of Lebanon"
+ HEZ_liberalism_DEF: "Islamic Republic of Lebanon"
+ HEZ_conservatism: "Islamic Republic of Lebanon"
+ HEZ_conservatism_DEF: "Islamic Republic of Lebanon"
+ HEZ_neutrality: "Hezbollah"
+ HEZ_neutrality_DEF: "Hezbollah"
+ HEZ: "Hezbollah"
+ HEZ_DEF: "Hezbollah"
+ HEZ_ADJ: "Hezbollah"
+
+ KIO: "Kachin Independence Army"
+ KIO_DEF: "Kachin Independence Army"
+ KIO_ADJ: "Kachin"
+
+ PDB: "People's Democratic Front of Burma"
+ PDB_DEF: "People's Democratic Front of Burma"
+ PDB_ADJ: "Burmese"
+
+ NDB: "National Democratic Front of Burma"
+ NDB_DEF: "National Democratic Front of Burma"
+ NDB_ADJ: "Burmese"
+
+ SPL: "Sudan People's Liberation Army"
+ SPL_DEF: "Sudan People's Liberation Army"
+ SPL_ADJ: "Sudanese"
+
+ PUK: "Patriotic Union of Kurdistan"
+ PUK_DEF: "Patriotic Union of Kurdistan"
+ PUK_ADJ: "Kurdish"
+
+ MRA: "Northern Military Command"
+ MRA_DEF: "Northern Military Command"
+ MRA_ADJ: "American"
+
+ GDU: "Democratic Union of the Great Lakes"
+ GDU_DEF: "Democratic Union of the Great Lakes"
+ GDU_ADJ: "Great Lakes"
+ GDU_conservatism: "Great Lakes Federation" 
+ GDU_conservatism_DEF: "Great Lakes Federation" 
+ GDU_conservatism_ADJ: "Veliko-Ozersk" 
+ GDU_liberalism: "Great Lakes Federation" 
+ GDU_liberalism_DEF: "Great Lakes Federation" 
+ GDU_liberalism_ADJ: "Veliko Ozersk" 
+ GDU_neutrality: "Great Lakes State" 
+ GDU_neutrality: "Great Lakes State" 
+ GDU_neutrality_ADJ: "Veliko Ozersk" 
+ GDU_fascism: "Great Lakes Nation State" 
+ GDU_fascism: "Great Lakes Nation State" 
+ GDU_fascism_ADJ: "Veliko Ozersk" 
+
+ ALA: "State of Alaska" 
+ ALA_DEF: "State of Alaska" 
+ ALA_ADJ: "Alassk" 
+
+ ARK: "Arkansas State" 
+ ARK_DEF: "Arkansas State" 
+ ARK_ADJ: "Arkansas" 
+
+ CAL: "State of California" 
+ CAL_DEF: "State of California" 
+ CAL_ADJ: "Californiysk" 
+
+ CAS: "Republic of Cascadia" 
+ CAS_DEF: "Republic of Cascadia" 
+ CAS_ADJ: "Kaskadysk" 
+
+ CSA: "Confederate States of America" 
+ CSA_DEF: "Confederate States of America" 
+ CSA_ADJ: "American" 
+
+ CFN: "Arizona-New Mexico Federation" 
+ CFN_DEF: "Arizona and New Mexico Federation" 
+ CFN_ADJ: "Arizona-Mexican" 
+
+ FLO: "Florida State" 
+ FLO_DEF: "State of Florida" 
+ FLO_ADJ: "Floridsk" 
+
+ NYK: "New York State" 
+ NYK_DEF: "New York State" 
+ NYK_ADJ: "New York" 
+
+ NEE: "New England Republic" 
+ NEE_DEF: "New England Republic" 
+ NEE_ADJ: "Novo-English" 
+
+ UTA: "Utah Republic" 
+ UTA_DEF: "Republic of Utah" 
+ UTA_ADJ: "Yutsk" 
+
+ LOA: "Louisiana" 
+ LOA_DEF: "Louisiana" 
+ LOA_ADJ: "Louisiana" 
+
+ HAW: "State of Hawaii" 
+ HAW_DEF: "State of Hawaii" 
+ HAW_ADJ: "Hawaiian" 
+
+ PUE: "Freely Associated State of Puerto Rico" 
+ PUE_DEF: "Freely Associated State of Puerto Rico" 
+ PUE_ADJ: "Puerto Rican" 
+
+ TEX: "State of Texas" 
+ TEX_DEF: "State of Texas" 
+ TEX_ADJ: "Texas" 
+
+ ALA: "State of Alaska" 
+ ALA_DEF: "State of Alaska" 
+ ALA_ADJ: "Alassk"

@@ -91,7 +91,9 @@ if = {
 	}
 }
 
-set_convoys = 100
+set_convoys = 50
+
+recruit_character = FLO_bob_martinez
 
 set_politics = {
 	ruling_party = liberalism

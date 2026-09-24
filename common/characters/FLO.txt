@@ -1,0 +1,15 @@
+characters = {
+	FLO_bob_martinez = {
+		name = FLO_bob_martinez
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_bob_martinez
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism
+			traits = { }
+			expire = "2000.9.3.1"
+		}
+	}
+}

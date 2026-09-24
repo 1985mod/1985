@@ -1107,4 +1107,68 @@ spriteTypes = {
 		name = GFX_Portrait_gus_hall
 		textureFile = "gfx/leaders/GDU/Portrait_gus_hall.dds"
 	}	
+
+	### NEE ###
+
+	spriteType = {
+		name = GFX_Portrait_supreme_council_of_new_england
+		textureFile = "gfx/leaders/NEE/Portrait_supreme_council_of_new_england.dds"
+	}	
+
+	spriteType = {
+		name = GFX_Portrait_john_kerry
+		textureFile = "gfx/leaders/NEE/Portrait_john_kerry.dds"
+	}	
+
+	spriteType = {
+		name = GFX_Portrait_john_sununu
+		textureFile = "gfx/leaders/NEE/Portrait_john_sununu.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_william_cohen
+		textureFile = "gfx/leaders/NEE/Portrait_william_cohen.dds"
+	}
+
+	### MRA ###
+
+	spriteType = {
+		name = GFX_Portrait_john_piotrowski
+		textureFile = "gfx/leaders/MRA/Portrait_john_piotrowski.dds"
+	}	
+
+	### NYK ###
+
+	spriteType = {
+		name = GFX_Portrait_mario_cuomo
+		textureFile = "gfx/leaders/NYK/Portrait_mario_cuomo.dds"
+	}	
+
+	### CFN ###
+
+	spriteType = {
+		name = GFX_Portrait_rose_mofford
+		textureFile = "gfx/leaders/CFN/Portrait_rose_mofford.dds"
+	}	
+
+	### FLO ###
+
+	spriteType = {
+		name = GFX_Portrait_bob_martinez
+		textureFile = "gfx/leaders/FLO/Portrait_bob_martinez.dds"
+	}	
+
+	### LOA ###
+
+	spriteType = {
+		name = GFX_Portrait_buddy_roemer
+		textureFile = "gfx/leaders/LOA/Portrait_buddy_roemer.dds"
+	}
+
+	### ARK ###
+
+	spriteType = {
+		name = GFX_ARK_Portrait_bill_clinton
+		textureFile = "gfx/leaders/ARK/ARK_Portrait_bill_clinton.dds"
+	}
 }
