@@ -1,0 +1,1 @@
+# No vanilla country-tag aliases are valid in the TST-only tag database.

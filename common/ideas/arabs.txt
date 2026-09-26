@@ -1,0 +1,62 @@
+ideas = {
+    country = {
+		ARB_gulf_cooperation_council = {
+			picture = gfx
+			allowed = {
+				OR = {
+				original_tag = SAU
+				original_tag = QAT
+				original_tag = UAE
+				original_tag = OMA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.02
+			}
+		}
+
+		ARB_league_of_arab_states = {
+			picture = arab_league
+			allowed = {
+				OR = {
+				original_tag = EGY
+				original_tag = ALG
+				original_tag = QAT
+				original_tag = IRQ
+				original_tag = JOR
+				original_tag = KUW
+				original_tag = LEB
+				original_tag = LBA
+				original_tag = MRT
+				original_tag = MOR
+				original_tag = OMA
+				original_tag = SAU
+				original_tag = SOM
+				original_tag = SUD
+				original_tag = SYR
+				original_tag = TUN
+				original_tag = UAE
+				original_tag = YEM
+				original_tag = SYE
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.02
+			}
+		}
+	}
+}

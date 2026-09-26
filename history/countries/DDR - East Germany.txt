@@ -100,10 +100,13 @@ if = {
 	}
 }
 
-recruit_character = DDR_Erich_Honecker
-recruit_character = DDR_Heinrich_Homann
+recruit_character = DDR_erich_honecker
 recruit_character = DDR_egon_krenz
+recruit_character = DDR_hans_modrow
+recruit_character = DDR_gerald_gotting
 recruit_character = DDR_lothar_de_maiziere
+recruit_character = DDR_ibrahim_bohme
+recruit_character = DDR_manfred_gerlach
 recruit_character = DDR_heinz_kebler
 recruit_character = DDR_manfred_gratz
 recruit_character = DDR_wolfgang_reinhold

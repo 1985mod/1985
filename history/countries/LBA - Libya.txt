@@ -80,5 +80,6 @@ set_popularities = {
 recruit_character = LBA_Muammar_Gaddafi
 
 add_ideas = {
+	ARB_league_of_arab_states
 	partial_economic_mobilisation
 }

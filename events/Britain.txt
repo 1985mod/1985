@@ -205,3 +205,23 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+    id = britain.3
+    title = britain.3.t
+    desc = britain.3.desc
+
+	trigger = {
+        ENG = {
+            NOT = { has_war_with = IRE }
+        }
+        tag = ENG
+        country_exists = ENG
+    }
+	fire_only_once = yes
+
+    option = {
+        name = britain.3.a
+        set_cosmetic_tag = ENG_united_kingdom_of_great_britain_and_ireland
+	}
+}

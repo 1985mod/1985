@@ -326,6 +326,11 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/dynamic_modifier_russia_radical_reforms.dds"
     }
 
+    spriteType = {
+        name = "GFX_idea_arab_league"
+        texturefile = "gfx/interface/ideas/international_organizations/idea_arab_league.dds"
+    }
+
 
     ### inflation and deflation ###
 

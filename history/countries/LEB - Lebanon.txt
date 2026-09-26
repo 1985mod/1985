@@ -55,5 +55,6 @@ recruit_character = LEB_amin_pierre
 recruit_character = LEB_georges_hauy
 
 add_ideas = {
+	ARB_league_of_arab_states
 	war_economy
 }

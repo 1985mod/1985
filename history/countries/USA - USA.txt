@@ -47,6 +47,21 @@ diplomatic_relation = {
 	relation = military_access
 }
 
+diplomatic_relation = {
+	country = JAP
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = PHI
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = AST
+	relation = military_access
+}
+
 add_nuclear_bombs = 999
 
 set_research_slots = 5

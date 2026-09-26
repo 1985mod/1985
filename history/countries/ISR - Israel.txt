@@ -51,18 +51,22 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = socialism
-	last_election = "1986.1.1"
+	last_election = "1984.7.23"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	socialism = 80
-	communism = 20
+	liberalism = 11
+	socialism = 39
+	conservatism = 38
+	fascism = 5
+	communism = 7
 }
 
-recruit_character = ISR_Shimon_Peres
+recruit_character = ISR_shimon_peres
 recruit_character = ISR_dan_shomron
-
+recruit_character = ISR_yitzhak_shamir
+recruit_character = ISR_yitzhak_rabin
 if = {
 	limit = {
 		has_dlc = "La Resistance"

@@ -136,3 +136,19 @@ country_event = {   ### Смена правительства в Ираке
         }
     }
 }
+
+country_event = {   ### Смена правительства в Ираке
+    id = iran.7
+    title = iran.7.t
+    desc = iran.7.d
+    picture = GFX_report_event_generic_peace
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = iran.7.a
+        kill_country_leader = yes
+    }
+}
