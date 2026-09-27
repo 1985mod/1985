@@ -426,7 +426,7 @@ news_event = {
 	}
 	
 	trigger = {
-		date > 1985.8.20
+		date > 1986.8.20
 		NOT = { has_global_flag = iran_contra }
 	}
 
@@ -900,5 +900,86 @@ news_event = {
 		name = news.40.a
 		trigger = { TAG = BRM }
 		add_stability = -0.15
+	}
+}
+
+news_event = {
+	id = news.41 ## Приезд Трампа в Москву ##
+	title = news.41.t
+	desc = news.41.desc
+	picture = GFX_news_trump_in_moscow
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.41.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.41.b
+		trigger = { TAG = SOV }
+	}
+}
+
+news_event = {
+	id = news.42 ## Полёт Матиаса Руста ##
+	title = news.42.t
+	desc = news.42.desc
+	picture = GFX_news_flight_of_marcias_rust
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.42.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.42.b
+		trigger = { TAG = SOV }
+		add_stability = -0.05
+		remove_advisor_role = {
+			character = "SOV_Sokolov"
+			slot = army_chief
+		}
+		army_experience = -10
+	}
+}
+
+news_event = {
+	id = news.43 ## Полёт Матиаса Руста провалился ##
+	title = news.43.t
+	desc = news.43.desc
+	picture = GFX_news_matthias_rust_incident
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.43.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.43.b
+		trigger = { TAG = SOV }
+		add_stability = 0.05
+		add_war_support = 0.03
+		army_experience = 10
 	}
 }

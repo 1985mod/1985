@@ -959,3 +959,141 @@ USA_election_campaign_in_usa = {
 		}
 	}
 }
+
+USA_trade_deficit_cat = {
+	USA_hold_an_oecd_meeting = {
+
+		fire_only_once = yes
+
+		icon = generic_break_treaty
+
+		cost = 25
+		days_remove = 70
+
+		ai_will_do = {
+			base = 35
+		}
+
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = AUS
+						tag = BEL
+						tag = ENG
+						tag = WGR
+						tag = GRE
+						tag = DEN
+						tag = IRE
+						tag = ICE
+						tag = SPR
+						tag = ITA
+						tag = CAN
+						tag = LUX
+						tag = HOL
+						tag = NOR
+						tag = POR
+						tag = USA
+						tag = TUR
+						tag = FRA
+						tag = SWE
+						tag = SWI
+						tag = JAP
+						tag = FIN
+						tag = AST
+						tag = NZL
+					}
+				}
+				country_event = { id = plaza_accord.1 }
+			}
+		}
+	}
+
+	USA_propose_a_plaza_agreement = {
+
+		icon = generic_fundraising
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 5
+
+		visible = {
+			has_global_flag = the_oecd_meeting_took_place
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = FRA
+						tag = WGR
+						tag = JAP
+						tag = ENG
+					}
+				}
+				country_event = { id = plaza_accord.2 }
+			}
+		}
+	}
+	
+	USA_plaza_accord = {
+		
+		icon = SOV_place_hq
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 50
+		}
+		
+		activation = {
+			has_global_flag = the_oecd_meeting_took_place
+			OR = {
+				country_exists = FRA
+				country_exists = WGR
+				country_exists = JAP
+				country_exists = ENG
+				country_exists = USA
+			}
+		}
+		available = {
+			original_tag = USA
+			has_global_flag = the_oecd_meeting_took_place
+			custom_trigger_tooltip = {
+				tooltip = all_countries_agreed_sign_plaza_accord
+				FRA = { has_country_flag = the_country_agreed_to_sign_the_plaza_accord }
+				WGR = { has_country_flag = the_country_agreed_to_sign_the_plaza_accord }
+				JAP = { has_country_flag = the_country_agreed_to_sign_the_plaza_accord }
+				ENG = { has_country_flag = the_country_agreed_to_sign_the_plaza_accord }
+			}
+			OR = {
+				country_exists = FRA
+				country_exists = WGR
+				country_exists = JAP
+				country_exists = ENG
+				country_exists = USA
+			}
+		}
+
+		days_mission_timeout = 164
+		
+		selectable_mission = yes
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = the_country_agreed_to_sign_the_plaza_accord
+				}
+				country_event = { id = plaza_accord.5 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = plaza_accord.6 }
+		}
+	}
+}

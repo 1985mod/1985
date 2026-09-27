@@ -1,0 +1,43 @@
+
+state={
+	id=1081
+	name="STATE_1081"
+	manpower = 12000000
+	
+	state_category = metropolis
+	
+	resources={
+		oil=67
+		aluminium=8
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
+			dockyard = 2
+			1562 = {
+				naval_base = 10
+			}
+			9814 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = {
+			9814 30
+		}
+		victory_points = {
+			1562 15 
+		}
+	}
+
+	provinces={
+		823 1562 4657 4727 7517 7986 9814 9855 10387 10483 11757 11859 11795 12303 12374
+	}
+
+	local_supplies=0.0 
+}

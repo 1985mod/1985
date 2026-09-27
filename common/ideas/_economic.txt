@@ -685,20 +685,20 @@ ideas = {
 
 			available = {
 
-				has_war = yes
+				OR = {
+					has_government = communism
+					has_government = neutrality
+					has_government = fascism
+				}
 				
 				OR = {
+					has_idea = partial_economic_mobilisation
 					has_idea = war_economy
 					has_idea = tot_economic_mobilisation
 					ELSE = {
 						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
 					}
 				}
-				OR = {
-					NOT = {	tag = SOV }
-					NOT = { has_opinion_modifier = MR_pact }
-				}
-
 			}
 
 			rule = {

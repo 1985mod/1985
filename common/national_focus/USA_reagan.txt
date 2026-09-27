@@ -21,6 +21,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
+			add_stability = 0.03
 		    add_political_power = 100
 	    }
 	}
@@ -375,6 +376,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
+			add_stability = 0.05
 			custom_effect_tooltip = we_will_decrease_taxes_by_3_percent 
 			subtract_from_variable = { var = pop_rate value = 3 }
 			tax_effect = yes

@@ -469,7 +469,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "EventWindow_News"
 		position = { x=-282 y=-310 }	
-		size = { width = 547 height = 642 }
+		size = { width = 577 height = 682 }
 		moveable = yes
 		Orientation = CENTER
 		show_sound = world_news_effect
@@ -486,11 +486,10 @@ guiTypes = {
 			size = { width = 581 height =121 }
 			Orientation = UPPER_LEFT
 
-			iconType =
-			{
+			iconType = {
 				name ="event_picture"
 				spriteType = "GFX_news_event_001"
-				position = { x = 11 y = 97 }
+				position = { x = 25 y = 120 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
@@ -498,14 +497,14 @@ guiTypes = {
 			iconType = {
 				name ="event_picture_overlay"
 				spriteType = "GFX_event_news_pic_overlay"
-				position = { x = 11 y = 97 }
+				position = { x = 25 y = 120 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}			
 			
 			instantTextBoxType = {
 				name = "Title"
-				position = { x = 12 y = 70 }
+				position = { x = 27 y = 90 }
 				font = "hoi4_typewriter22"
 				text = "Title text here!"	
 				maxWidth = 490
@@ -515,7 +514,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "btn_minimize"
-				position = {x=10 y=10}
+				position = { x = 15 y = 35 }
 				spriteType = "GFX_event_button_minimize"
 				clicksound = click_default
 			}
@@ -529,7 +528,7 @@ guiTypes = {
 		
 			instantTextBoxType = {
 				name = "Description"
-				position = { x = 15 y = 220 }
+				position = { x = 25 y = 240 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = "Long text here!"	
@@ -548,7 +547,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "options_grid"
-				position = { x = 80 y = -1 }
+				position = { x = 95 y = 10 }
 				size = { width = 300 height = 30 }
 				slotsize = { width = 300 height = 47 }
 				max_slots_horizontal = 1

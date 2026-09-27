@@ -55,6 +55,7 @@ add_ideas = {
 	DDR_showcase_of_socialism
 	EEC_support_from_the_ussr
 	partial_economic_mobilisation
+	closed_economy
 }
 
 add_opinion_modifier = {

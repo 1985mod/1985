@@ -1,0 +1,175 @@
+add_namespace = plaza_accord
+
+country_event = {
+    id = plaza_accord.1 ### Встреча ОЭСР в апреле
+    title = plaza_accord.1.t
+    desc = plaza_accord.1.desc
+	picture = GFX_report_meeting_oecd
+
+	is_triggered_only = yes
+
+    option = {
+        name = plaza_accord.1.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 15
+		add_stability = 0.02
+		set_global_flag = the_oecd_meeting_took_place
+    }
+}
+
+country_event = {
+    id = plaza_accord.2 ### США предлагает подписать "Соглашение Плаза"
+    title = plaza_accord.2.t
+    desc = plaza_accord.2.desc
+	picture = GFX_report_meeting_oecd
+
+	is_triggered_only = yes
+
+    option = {
+        name = plaza_accord.2.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				is_historical_focus_on = yes
+			}
+		}
+		USA = { country_event = { id = plaza_accord.3 hours = 6 } }
+		set_country_flag = the_country_agreed_to_sign_the_plaza_accord
+    }
+
+    option = {
+        name = plaza_accord.2.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				is_historical_focus_on = yes
+			}
+		}
+		USA = { country_event = { id = plaza_accord.4 hours = 6 } }
+    }
+}
+
+country_event = {
+    id = plaza_accord.3 ### Страна согласилась
+    title = plaza_accord.3.t
+    desc = plaza_accord.3.desc
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+    option = {
+        name = plaza_accord.3.a
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = this_country_agreed_to_sign_the_plaza_accord
+    }
+}
+
+country_event = {
+    id = plaza_accord.4 ### Страна отказалась
+    title = plaza_accord.4.t
+    desc = plaza_accord.4.desc
+	picture = GFX_report_generic_negotiations_between_two_parties
+
+	is_triggered_only = yes
+
+    option = {
+        name = plaza_accord.4.a
+		ai_chance = {
+			base = 100
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = small_decrease
+			}
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_decrease
+			}
+		}
+    }
+}
+
+country_event = {
+    id = plaza_accord.5 ### Соглашение "Плаза"
+    title = plaza_accord.5.t
+    desc = plaza_accord.5.desc
+	picture = GFX_report_plaza_accord
+
+	is_triggered_only = yes
+
+    option = {
+        name = plaza_accord.5.a
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				tag = USA
+			}
+			add_stability = 0.05
+			remove_ideas = USA_trade_deficit
+			add_timed_idea = {
+				idea = USA_plaza_accord
+				days = 1095
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = WGR
+					tag = FRA
+					tag = ENG
+				}
+			}
+			add_timed_idea = {
+				idea = WGR_plaza_accord
+				days = 730
+			}
+		}
+		if = {
+			limit = {
+				tag = JAP
+			}
+			add_timed_idea = {
+				idea = JAP_plaza_accord
+				days = 1460
+			}
+		}
+    }
+}
+
+country_event = {
+    id = plaza_accord.6 ### Соглашение "Плаза" провалилось
+    title = plaza_accord.6.t
+    desc = plaza_accord.6.desc
+	picture = GFX_report_plaza_accord
+
+	is_triggered_only = yes
+
+    option = {
+        name = plaza_accord.6.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.05
+		add_political_power = -25
+		if = {
+			limit = {
+				has_idea = USA_trade_deficit
+			}
+			swap_ideas = {
+				remove_idea = USA_trade_deficit
+				add_idea = USA_trade_deficit_2
+			}
+		}
+    }
+}

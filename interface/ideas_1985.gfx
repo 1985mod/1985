@@ -172,6 +172,16 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_idea_trade_deficit"
+        texturefile = "gfx/interface/ideas/USA/idea_trade_deficit.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_plaza_accord"
+        texturefile = "gfx/interface/ideas/USA/idea_plaza_accord.dds"
+    }
+
+    spriteType = {
         name = "GFX_idea_faith_in_islam"
         texturefile = "gfx/interface/ideas/AFS/idea_faith_in_islam.dds"
     }   

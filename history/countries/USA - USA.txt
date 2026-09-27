@@ -203,6 +203,7 @@ add_ideas = {
 	USA_reaganomics_policy
 	USA_stronghold_of_freedom
 	USA_the_endless_war_on_drugs
+	USA_trade_deficit
 	partial_economic_mobilisation
 }
 
