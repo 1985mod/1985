@@ -503,6 +503,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_meeting_oecd"
+		texturefile = "gfx/event_pictures/report_meeting_oecd.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_plaza_accord"
+		texturefile = "gfx/event_pictures/report_plaza_accord.dds"
+	}
+
+	spriteType = {
 		name = "GFX_report_democrats_victory_1992"
 		texturefile = "gfx/event_pictures/report_democrats_victory_1992.dds"
 	}
@@ -541,8 +551,6 @@ spriteTypes = {
 		name = "GFX_news_victory_spd_in_1987"
 		texturefile = "gfx/event_pictures/news_victory_spd_in_1987.dds"
 	}
-<<<<<<< Updated upstream
-=======
 
 	spriteType = {
 		name = "GFX_news_war_in_bosnia"
@@ -563,7 +571,21 @@ spriteTypes = {
 		name = "GFX_news_8888_uprising"
 		texturefile = "gfx/event_pictures/news_8888_uprising.dds"
 	}
->>>>>>> Stashed changes
+
+	spriteType = {
+		name = "GFX_news_trump_in_moscow"
+		texturefile = "gfx/event_pictures/news_trump_in_moscow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_flight_of_marcias_rust"
+		texturefile = "gfx/event_pictures/news_flight_of_marcias_rust.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_matthias_rust_incident"
+		texturefile = "gfx/event_pictures/news_matthias_rust_incident.dds"
+	}
 }
 
 

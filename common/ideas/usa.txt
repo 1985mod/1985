@@ -519,5 +519,66 @@ ideas = {
 				factory_energy_consumption = -0.1
 			}
 		}
+
+		USA_trade_deficit = {
+			picture = trade_deficit 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				min_export = -0.4
+				trade_opinion_factor = 0.15
+				local_resources_factor = -0.1
+				factory_energy_consumption = 0.15
+			}
+		}
+
+		USA_trade_deficit_2 = {
+			picture = trade_deficit 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				min_export = -0.7
+				trade_opinion_factor = 0.25
+				local_resources_factor = -0.15
+				factory_energy_consumption = 0.2
+			}
+		}
+
+		USA_plaza_accord = {
+			picture = plaza_accord 
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				min_export = -0.25
+				trade_opinion_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				local_resources_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
 	}
 }

@@ -417,4 +417,10 @@
  electoral_votes_republicans: "Голосов выборщиков §Y[?USA.electoral_votes_republicans]§!/538"
  electoral_votes_democrats: "Голосов выборщиков §Y[?USA.electoral_votes_democrats]§!/538"
  desc_republicans_and_democratic_parties: "Для победы на §Yвыборах§! нам нужно как §Yминимум§! §R270§! §Yвыборщиков§!."
+ USA_trade_deficit_cat: "Торговый дефицит"
+ USA_hold_an_oecd_meeting: "Провести саммит ОЭСР"
+ USA_propose_a_plaza_agreement: "Предложить подписать «Соглашение Плаза»"
+ the_oecd_meeting_took_place: "Саммит ОЭСР произошёл"
+ all_countries_agreed_sign_plaza_accord: "§YВсе страны согласились подписать «Соглашение Плаза»§!"
+ USA_plaza_accord: "Подписание «Соглашения Плаза»"
  

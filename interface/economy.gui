@@ -491,6 +491,8 @@ guiTypes = {
             maxWidth = 250
             maxHeight = 24
             format = left
+
+            pdx_tooltip = "UNEMPLOYMENT_TOOLTIP"
         }
 
         instantTextBoxType = {
@@ -526,7 +528,7 @@ guiTypes = {
         instantTextBoxType = {
             name = "administration_label"
             position = { x = 300 y = 280 }
-            text = "Civil Administration: "
+            text = "CIVIL_ADMINISTRATION_LABEL"
             font = "hoi_18mbs"
             maxWidth = 250
             maxHeight = 24
@@ -535,7 +537,7 @@ guiTypes = {
 
          instantTextBoxType = {
             name = "administration_expenditure"
-            position = { x = 445 y = 280 }
+            position = { x = 480 y = 280 }
             text = "ADMINISTRATION_EXPENDITURE"
             font = "hoi_18mbs"
             maxWidth = 250
@@ -546,7 +548,7 @@ guiTypes = {
         instantTextBoxType = {
             name = "education_label"
             position = { x = 300 y = 300 }
-            text = "Education: "
+            text = "EDUCATION_LABEL"
             font = "hoi_18mbs"
             maxWidth = 250
             maxHeight = 24
@@ -555,7 +557,7 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "education_expenditure"
-            position = { x = 445 y = 300 }
+            position = { x = 480 y = 300 }
             text = "EDUCATION_EXPENDITURE"
             font = "hoi_18mbs"
             maxWidth = 250
@@ -566,7 +568,7 @@ guiTypes = {
         instantTextBoxType = {
             name = "welfare_label"
             position = { x = 300 y = 320 }
-            text = "Social Welfare: "
+            text = "WELFARE_LABEL"
             font = "hoi_18mbs"
             maxWidth = 250
             maxHeight = 24
@@ -575,7 +577,7 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "welfare_expenditure"
-            position = { x = 445 y = 320 }
+            position = { x = 480 y = 320 }
             text = "WELFARE_EXPENDITURE"
             font = "hoi_18mbs"
             maxWidth = 250
@@ -586,7 +588,7 @@ guiTypes = {
         instantTextBoxType = {
             name = "defense_label"
             position = { x = 300 y = 340 }
-            text = "National Defense: "
+            text = "DEFENCE_LABEL"
             font = "hoi_18mbs"
             maxWidth = 250
             maxHeight = 24
@@ -595,7 +597,7 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "defense_expenditure"
-            position = { x = 445 y = 340 }
+            position = { x = 480 y = 340 }
             text = "DEFENSE_EXPENDITURE"
             font = "hoi_18mbs"
             maxWidth = 250
@@ -606,7 +608,7 @@ guiTypes = {
         instantTextBoxType = {
             name = "science_label"
             position = { x = 300 y = 360 }
-            text = "Science & R&D: "
+            text = "SCIENCE_LABEL"
             font = "hoi_18mbs"
             maxWidth = 250
             maxHeight = 24
@@ -615,7 +617,7 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "science_expenditure"
-            position = { x = 445 y = 360 }
+            position = { x = 480 y = 360 }
             text = "SCIENCE_EXPENDITURE"
             font = "hoi_18mbs"
             maxWidth = 250
@@ -626,7 +628,7 @@ guiTypes = {
         instantTextBoxType = {
             name = "debt_service_label"
             position = { x = 300 y = 380 }
-            text = "Debt Service: "
+            text = "DEBT_SERVICE_LABEL"
             font = "hoi_18mbs"
             maxWidth = 250
             maxHeight = 24
@@ -635,7 +637,7 @@ guiTypes = {
 
         instantTextBoxType = {
             name = "debt_service_expenditure"
-            position = { x = 445 y = 380 }
+            position = { x = 480 y = 380 }
             text = "DEBT_SERVICE_EXPENDITURE"
             font = "hoi_18mbs"
             maxWidth = 250

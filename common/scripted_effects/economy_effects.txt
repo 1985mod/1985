@@ -426,15 +426,47 @@ tax_effect = {
     set_variable = { var = target_unemployment_up value = target_unemployment }
     add_to_variable = { var = target_unemployment_up value = diapason }
 
-    set_variable = { var = unemployment_consumer_goods value = 0.05 }
-    
+    set_variable = { var = unemployment_consumer_goods value = 0.0 }
+
+    if = {
+        limit = {
+            check_variable = { unemployment_rate < target_unemployment_down }
+        }
+        set_temp_variable = { var = unemployment_deviation value = target_unemployment_down }
+        subtract_from_temp_variable = { var = unemployment_deviation value = unemployment_rate }
+        
+        multiply_temp_variable = { var = unemployment_deviation value = 0.0062 }
+        add_to_variable = { var = unemployment_consumer_goods value = unemployment_deviation }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = { unemployment_rate > target_unemployment_up }
+        }
+        set_temp_variable = { var = unemployment_deviation value = unemployment_rate }
+        subtract_from_temp_variable = { var = unemployment_deviation value = target_unemployment_up }
+        
+        multiply_temp_variable = { var = unemployment_deviation value = 0.0075 }
+        add_to_variable = { var = unemployment_consumer_goods value = unemployment_deviation }
+    }
+
+    if = {
+        limit = { check_variable = { unemployment_consumer_goods < -15 } }
+        set_variable = { var = unemployment_consumer_goods value = -15 }
+    }
+    if = {
+        limit = { check_variable = { unemployment_consumer_goods > 30 } }
+        set_variable = { var = unemployment_consumer_goods value = 30 }
+    }
+
     if = {
         limit = {
             check_variable = { unemployment_rate < target_unemployment_down }
         }
         set_variable = { var = unemployment_stability value = target_unemployment_down }
         subtract_from_variable = { var = unemployment_stability value = unemployment_rate }
-        multiply_variable = { var = unemployment_stability value = 0.5 }
+        
+        multiply_variable = { var = unemployment_stability value = -0.005 }
     }
     
     else_if = {
@@ -443,7 +475,8 @@ tax_effect = {
         }
         set_variable = { var = unemployment_stability value = unemployment_rate }
         subtract_from_variable = { var = unemployment_stability value = target_unemployment_up }
-        multiply_variable = { var = unemployment_stability value = 0.5 }
+    
+        multiply_variable = { var = unemployment_stability value = -0.009 }
     }
     
     else = {

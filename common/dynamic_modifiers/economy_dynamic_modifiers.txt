@@ -1,8 +1,11 @@
-unemployment_dynamic = {
+unemployment_dynamic_modifier = {
+
+    hidden = yes
+
     enable = {
         always = yes
     }
 
-    stability_factor = unemployment_stability
-    consumer_goods_factor = unemployment_consumer_goods
+    stability_factor = ROOT.unemployment_stability
+    consumer_goods_factor = ROOT.unemployment_consumer_goods
 }

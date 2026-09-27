@@ -196,3 +196,19 @@ USA_election_campaign_in_usa = {
 
 	scripted_gui = usa_elections_scripted_gui
 }
+
+USA_trade_deficit_cat = {
+
+	icon = gre_paying_ifc_debt
+		
+	priority = 45
+	  
+	allowed = {
+		original_tag = USA
+	}
+	  
+	visible = {
+		NOT = { has_global_flag = plaza_accord_happened }
+		original_tag = USA
+	}
+}
