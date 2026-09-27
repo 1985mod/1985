@@ -31,6 +31,8 @@ set_popularities = {
 }
 
 add_ideas = {
+	ARB_gulf_cooperation_council
+	ARB_league_of_arab_states
 	partial_economic_mobilisation
 }
 

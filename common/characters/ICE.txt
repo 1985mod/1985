@@ -1,6 +1,6 @@
 characters = {
-	ICE_steingrímur_hermannsson ={
-		name = ICE_steingrímur_hermannsson
+	ICE_steingrimur_hermannsson ={
+		name = ICE_steingrimur_hermannsson
 		portraits={
 			civilian={
 				large= GFX_Portrait_ICE_steingrímur_hermannsson
@@ -29,8 +29,8 @@ characters = {
 		}
 	}
 
-	ICE_Davíð_Oddsson ={
-		name = ICE_Davíð_Oddsson
+	ICE_Davio_Oddsson ={
+		name = ICE_Davio_Oddsson
 		portraits={
 			civilian={
 				large= GFX_Portrait_ICE_Davíð_Oddsson

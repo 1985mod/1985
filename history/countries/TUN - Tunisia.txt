@@ -21,5 +21,6 @@ set_popularities = {
 recruit_character = TUN_Tunisia_Habib_Bourguiba
 
 add_ideas = {
+	ARB_gulf_cooperation_council
 	low_economic_mobilisation
 }

@@ -3,6 +3,7 @@
 oob = "GEN_1985"
 
 recruit_character = CHI_chiang_ching_kuo
+recruit_character = CHI_lee_teng_hui
 
 set_stability = 0.2
 set_war_support = 0.5

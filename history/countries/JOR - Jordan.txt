@@ -21,5 +21,6 @@ set_popularities = {
 recruit_character = JOR_Hussein_ibn_Talal
 
 add_ideas = {
+	ARB_league_of_arab_states
 	low_economic_mobilisation
 }

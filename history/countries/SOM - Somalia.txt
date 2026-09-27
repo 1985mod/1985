@@ -43,6 +43,7 @@ recruit_character = SOM_Mohamed_Siad_Barre
 set_convoys = 10
 
 add_ideas = {
+	ARB_league_of_arab_states
 	extensive_conscription
 	war_economy
 }

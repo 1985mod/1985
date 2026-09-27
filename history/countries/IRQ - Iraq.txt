@@ -145,6 +145,7 @@ set_politics = {
 add_ideas = {
 	IRQ_tiring_war
 	IRQ_enfal_operation
+	ARB_league_of_arab_states
     war_economy
 	all_adults_serve
 }

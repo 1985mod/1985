@@ -59,6 +59,7 @@ declare_war_on = {
 set_convoys = 5
 
 add_ideas = {
+	ARB_gulf_cooperation_council
 	limited_conscription
 	partial_economic_mobilisation
 }

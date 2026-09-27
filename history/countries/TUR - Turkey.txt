@@ -24,6 +24,12 @@ if = {
 		main_battle_tank_chassis = 1
 	}
 }
+
+diplomatic_relation = {
+	country = NCY
+	relation = military_access
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1982.11.9"

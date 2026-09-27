@@ -1,27 +1,66 @@
 characters = {
-	ISR_Shimon_Peres = {
-		name = ISR_Shimon_Peres
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/ISR/Portrait_ISR_Shimon_Peres.dds"
+	ISR_shimon_peres = {
+		name = ISR_shimon_peres
+		portraits={
+			civilian={
+				large= GFX_Portrait_ISR_shimon_peres
+			}
+			army = {
+				large = GFX_Portrait_ISR_shimon_peres
 			}
 		}
 		country_leader = {
 			ideology = classical_social_democracy
 			traits = { }
-			expire = "1971.3.1.1"
+			expire = "1989.3.1.1"
+			id = -1
+		}
+	}
+
+	ISR_yitzhak_shamir = {
+		name = ISR_yitzhak_shamir
+		portraits={
+			civilian={
+				large= GFX_Portrait_ISR_yitzhak_shami
+			}
+			army = {
+				large = GFX_Portrait_ISR_yitzhak_shami
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = { }
+			expire = "1992.3.1.1"
+			id = -1
+		}
+	}
+
+	ISR_yitzhak_rabin = {
+		name = ISR_yitzhak_rabin
+		portraits={
+			civilian={
+				large= GFX_Portrait_ISR_yitzhak_rabin
+			}
+			army = {
+				large = GFX_Portrait_ISR_yitzhak_rabin
+			}
+		}
+		country_leader = {
+			ideology = 	classical_social_democracy
+			traits = { }
+			expire = "1992.3.1.1"
 			id = -1
 		}
 	}
 
 	ISR_dan_shomron = {
-		name = "ISR_dan_shomron"
+		name = ISR_dan_shomron
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/ISR/Portrait_dan_shomron.dds"
+				large = GFX_Portrait_ISR_dan_shomron
 			}
 			army = {
-				large = "gfx/leaders/ISR/Portrait_dan_shomron.dds"
+				large = GFX_Portrait_ISR_dan_shomron
 			}
 		}	
 		corps_commander={
