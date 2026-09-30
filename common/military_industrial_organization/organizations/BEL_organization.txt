@@ -456,12 +456,7 @@ BEL_renard_organization = {
 		special_trait_background = yes
 
         available = {
-            owner = {
-            	OR = {
-            		has_completed_focus = COG_standardize_military_production
-            		has_completed_focus = BEL_fn_herstal
-            	}
-            }
+
         }			
 		
 		position = { x=7 y=1 }  
@@ -607,9 +602,7 @@ BEL_fn_herstal_organization = {
 		special_trait_background = yes
 
         available = {
-            owner = {
-                has_completed_focus = BEL_fn_herstal
-            }
+
         }	
 
 		position = { x=0 y=0 }  

@@ -11,7 +11,8 @@ set_technology = {
 	basic_train = 1
 	tech_trucks = 1
 	motorised_infantry = 1
-	atomic_research = 1
+	armored_car1 = 1
+	mechanised_infantry = 1
 }
 
 if = {
