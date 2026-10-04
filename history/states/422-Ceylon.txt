@@ -2,7 +2,7 @@ state=
 {
 	id=422
 	name="STATE_422"
-	manpower = 13562056
+	manpower = 15544154
 	
 	state_category = rural
 
@@ -11,10 +11,10 @@ state=
 	}
 
 	history={
-		add_core_of = RAJ
-		owner = RAJ
+		owner = SRL
+		add_core_of = SRL
 		victory_points = {
-			10201 3 
+			10201 20
 		}
 		buildings = {
 			infrastructure = 2

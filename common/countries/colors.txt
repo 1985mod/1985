@@ -1,4 +1,5 @@
 #reload countrycolors
+
 ENG = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 255 73 121 }
@@ -272,17 +273,14 @@ SIA = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
-
 SPL = {
 	color = rgb { 69 132 103 }
 	color_ui = rgb { 79 135 120 }
 }
-
 SIK = {
 	color = rgb { 71 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
-
 PMR = {
 	color = rgb { 190 213 41 }
 	color_ui = rgb { 199 222 60 }
@@ -347,6 +345,10 @@ SLO = {
 RAJ = {
 	color = rgb { 226  135  40 }
 	color_ui = rgb { 226  135  40 }
+}
+SRL = {
+	color = rgb { 223 130 112 }
+	color_ui = rgb { 223 130 112 }
 }
 CRO = {
 	color = rgb { 230  70  180 }
@@ -493,7 +495,7 @@ DDR = {
 	color_ui = rgb { 165 0 0 }
 }
 KOR = {
-	color = { 25 50 130 }       # Глубокий синий, не слишком яркий
+	color = { 25 50 130 } 
 	color_ui = { 30 60 140 }
 }
 PRK = {

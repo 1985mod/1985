@@ -533,6 +533,34 @@ spriteTypes = {
 		name = "GFX_news_8888_uprising"
 		texturefile = "gfx/event_pictures/news_8888_uprising.dds"
 	}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+
+	spriteType = {
+		name = "GFX_news_trump_in_moscow"
+		texturefile = "gfx/event_pictures/news_trump_in_moscow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_flight_of_marcias_rust"
+		texturefile = "gfx/event_pictures/news_flight_of_marcias_rust.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_matthias_rust_incident"
+		texturefile = "gfx/event_pictures/news_matthias_rust_incident.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_visit_to_wgr"
+		texturefile = "gfx/event_pictures/news_visit_to_wgr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_the_resignation_of_margaret_thatcher"
+		texturefile = "gfx/event_pictures/news_the_resignation_of_margaret_thatcher.dds"
+	}
 >>>>>>> Stashed changes
 }
 

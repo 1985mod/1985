@@ -1,0 +1,39 @@
+characters = {
+	SIK_isa_yusuf_alptekin = {
+		name = SIK_isa_yusuf_alptekin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SIK_isa_yusuf_alptekin
+			}
+			army = {
+				large = GFX_portrait_SIK_isa_yusuf_alptekin
+				small = GFX_portrait_SIK_isa_yusuf_alptekin
+			}
+		}
+		country_leader={
+			ideology = ethnic_nationalism
+			traits={  }
+			expire="1999.1.1.1"
+			id = -1
+		}
+	}
+
+	SIK_ismail_amat = {
+		name = SIK_ismail_amat
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SIK_ismail_amat
+			}
+			army = {
+				large = GFX_portrait_SIK_ismail_amat
+				small = GFX_portrait_SIK_ismail_amat
+			}
+		}
+		country_leader={
+			ideology = chinese_socialism
+			traits={  }
+			expire="1999.1.1.1"
+			id = -1
+		}
+	}
+}

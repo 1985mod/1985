@@ -1,0 +1,35 @@
+characters = {
+	DAG_magomed_yusupov ={
+		name = DAG_magomed_yusupov
+		portraits={
+			civilian={
+				large= GFX_Portrait_DAG_magomed_yusupov
+			}
+			army = {
+				large = GFX_Portrait_DAG_magomed_yusupov
+			}
+		}
+		country_leader={
+			ideology = marxism_leninism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+
+	DAG_mukhu_aliyev ={
+		name = DAG_mukhu_aliyev
+		portraits={
+			civilian={
+				large= GFX_Portrait_DAG_mukhu_aliyev
+			}
+			army = {
+				large = GFX_Portrait_DAG_mukhu_aliyev
+			}
+		}
+		country_leader={
+			ideology = authoritarian_socialism
+			traits={  }
+			expire="2012.11.9.1"		
+		}
+	}
+}

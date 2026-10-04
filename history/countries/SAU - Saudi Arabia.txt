@@ -65,8 +65,4 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
-give_guarantee = KUW
-give_guarantee = OMA
-give_guarantee = UAE
-give_guarantee = QAT
 

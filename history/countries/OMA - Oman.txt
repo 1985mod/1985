@@ -33,8 +33,3 @@ set_popularities = {
 add_ideas = {
 	partial_economic_mobilisation
 }
-
-give_guarantee = KUW
-give_guarantee = SAU
-give_guarantee = UAE
-give_guarantee = QAT

@@ -22,8 +22,3 @@ recruit_character = QAT_Hamad_al_Thani
 add_ideas = {
 	low_economic_mobilisation
 }
-
-give_guarantee = KUW
-give_guarantee = OMA
-give_guarantee = UAE
-give_guarantee = SAU

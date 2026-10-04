@@ -58,6 +58,10 @@ declare_war_on = {
 set_convoys = 5
 
 add_ideas = {
+<<<<<<< Updated upstream
+=======
+	ARB_league_of_arab_states
+>>>>>>> Stashed changes
 	limited_conscription
 	partial_economic_mobilisation
 }

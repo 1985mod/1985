@@ -36,8 +36,3 @@ set_popularities = {
 add_ideas = {
 	partial_economic_mobilisation
 }
-
-give_guarantee = SAU
-give_guarantee = OMA
-give_guarantee = UAE
-give_guarantee = QAT
