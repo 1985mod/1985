@@ -104,19 +104,6 @@ spriteTypes = {
 		name = GFX_Portrait_PRC_deng_xiaoping
 		texturefile = "gfx/leaders/PRC/Portrait_deng_xiaoping.dds"
 	}
-    
-	##CHI##
-	spriteType = {
-		name = GFX_portrait_CHI_chiang_ching_kuo
-		texturefile = "gfx/leaders/CHI/Portrait_Chiang_Ching_Kuo.dds"
-	}
-<<<<<<< Updated upstream
-=======
-
-	spriteType = {
-		name = GFX_portrait_CHI_lee_teng_hui
-		texturefile = "gfx/leaders/CHI/Portrait_Lee_Teng_hui.dds"
-	}
 
 	##SIK##
 	spriteType = {
@@ -128,7 +115,17 @@ spriteTypes = {
 		name = GFX_portrait_SIK_ismail_amat
 		texturefile = "gfx/leaders/SIK/Portrait_Ismail_Amat.dds"
 	}
->>>>>>> Stashed changes
+    
+	##CHI##
+	spriteType = {
+		name = GFX_portrait_CHI_chiang_ching_kuo
+		texturefile = "gfx/leaders/CHI/Portrait_Chiang_Ching_Kuo.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_CHI_lee_teng_hui
+		texturefile = "gfx/leaders/CHI/Portrait_Lee_Teng_hui.dds"
+	}
     
 	##ENG##
 	spriteType = {
@@ -232,6 +229,11 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_Portrait_abdul_rashid
 		texturefile = "gfx/leaders/AFN/Portrait_abdul_rashid.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_shahnawaz_tanai
+		texturefile = "gfx/leaders/AFN/Portrait_shahnawaz_tanai.dds"
 	}
     
 	##AFS##
@@ -580,6 +582,11 @@ spriteTypes = {
 	
 	## DDR ##
 	spriteType = {
+		name = GFX_portrait_DDR_erich_honecker
+		texturefile = "gfx/leaders/DDR/Portrait_Erich_Honecker.dds"
+	}
+
+	spriteType = {
 		name = GFX_portrait_DDR_egon_krenz
 		texturefile = "gfx/leaders/DDR/Portrait_Egon_Krenz.dds"
 	}
@@ -587,6 +594,26 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_DDR_lothar_de_maiziere
 		texturefile = "gfx/leaders/DDR/Portrait_Lothar_de_Maiziere.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_DDR_ibrahim_bohme
+		texturefile = "gfx/leaders/DDR/Portrait_Ibrahim_Bohme.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_DDR_hans_modrow
+		texturefile = "gfx/leaders/DDR/Portrait_Hans_Modrow.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_DDR_manfred_gerlach
+		texturefile = "gfx/leaders/DDR/Portrait_Manfred_Gerlach.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_DDR_gerald_gotting
+		texturefile = "gfx/leaders/DDR/Portrait_Gerald_Gotting.dds"
 	}
 
 	## BEL ##
@@ -701,8 +728,8 @@ spriteTypes = {
 	
 	## PHI ##
 	spriteType = {
-		name = GFX_Portrait_Ferdinand_R_Marcos_J
-		texturefile = "gfx/leaders/PHI/Portrait_Ferdinand_R_Marcos_J.dds"
+		name = GFX_portrait_PHI_ferdinand_marcos
+		texturefile = "gfx/leaders/PHI/Portrait_Ferdinand_Marcos.dds"
 	}
 	
 	## MAL ##
@@ -749,26 +776,48 @@ spriteTypes = {
 	
 	## SYE ##
 	spriteType = {
-		name = "GFX_Portrait_ali_nasser_muhammad"
+		name = GFX_Portrait_ali_nasser_muhammad
 		texturefile = "gfx/leaders/SYE/Portrait_ali_nasser_muhammad.dds"
 	}
+
+	## ISR ##
+	spriteType = {
+		name = GFX_Portrait_ISR_shimon_peres
+		texturefile = "gfx/leaders/ISR/Portrait_Shimon_Peres.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_ISR_dan_shomron
+		texturefile = "gfx/leaders/ISR/Portrait_Dan_Shomron.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_ISR_yitzhak_shami
+		texturefile = "gfx/leaders/ISR/Portrait_Yitzhak_Shamir.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_ISR_yitzhak_rabin
+		texturefile = "gfx/leaders/ISR/Portrait_Yitzhak_Rabin.dds"
+	}
+
 	
 	## PRK ##
 	spriteType = {
 		name = GFX_Portrait_Kim_Sen
-		texturefile = gfx/leaders/PRK/Portrait_Kim_Sen.dds
+		texturefile = "gfx/leaders/PRK/Portrait_Kim_Sen.dds"
 	}
 	
 	## KOR ##
 	spriteType = {
 		name = GFX_Portrait_сhun_doo_hwan
-		texturefile = gfx/leaders/KOR/Portrait_сhun_doo_hwan.dds
+		texturefile = "gfx/leaders/KOR/Portrait_сhun_doo_hwan.dds"
 	}
 
 	## CUB ##
 	spriteType = {
 		name = GFX_Portrait_CUB_Steve_Jobs
-		texturefile = gfx/leaders/CUB/Portrait_CUB_Steve_Jobs.dds
+		texturefile = "gfx/leaders/CUB/Portrait_CUB_Steve_Jobs.dds"
 	}
 	
 	## unknown ##
@@ -795,8 +844,9 @@ spriteTypes = {
 	### 1985 ###
 
 	### PAN ###
+
 	spriteType = {
-		name = GFX_Portrait_Manuel_Noriega
+		name = "GFX_Portrait_Manuel_Noriega"
 		texturefile = "gfx/leaders/PAN/Portrait_Manuel_Noriega.dds"
 	}
 
@@ -821,7 +871,7 @@ spriteTypes = {
 		name = GFX_portrait_SRL_j_r_jayewardene
 		texturefile = "gfx/leaders/SRL/Portrait_J_R_Jayewardene.dds"
 	}
-
+	
 	### ARG ###
 	spriteType = {
 		name = GFX_Portrait_augusto_pinochet
@@ -898,7 +948,7 @@ spriteTypes = {
 	### SUR ###
 
 	spriteType = {
-		name = GFX_Portrait_desi_bouterse
+		name = GFX_Portrait_desi_boutersem
 		texturefile = "gfx/leaders/SUR/Portrait_desi_bouterse.dds"
 	}
 
@@ -1054,6 +1104,7 @@ spriteTypes = {
 	}
 
 	### TAT ###
+
 	spriteType = {
 		name = GFX_Portrait_mintimer_shaimiev
 		textureFile = "gfx/leaders/TAT/Portrait_mintimer_shaimiev.dds"
@@ -1067,22 +1118,6 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_Portrait_union_of_afghan_veterans
 		textureFile = "gfx/leaders/TAT/Portrait_union_of_afghan_veterans.dds"
-	}
-
-	### DAG ###
-	spriteType = {
-		name = GFX_Portrait_DAG_magomed_yusupov
-		textureFile = "gfx/leaders/DAG/Portrait_Magomed_Yusupov.dds"
-	}
-
-	spriteType = {
-		name = GFX_Portrait_DAG_mukhu_aliyev
-		textureFile = "gfx/leaders/DAG/Portrait_Mukhu_Aliyev.dds"
-	}
-
-	spriteType = {
-		name = GFX_Portrait_DAG_magomedali_magomedov
-		textureFile = "gfx/leaders/DAG/Portrait_Magomedali_Magomedov.dds"
 	}
 
 	### SPL ###
@@ -1101,4 +1136,123 @@ spriteTypes = {
 		name = GFX_Portrait_johannes_rau
 		textureFile = "gfx/leaders/WGR/Portrait_johannes_rau.dds"
 	}	
+
+	### MLT ###
+
+	spriteType = {
+		name = GFX_Portrait_agatha_barbara
+		textureFile = "gfx/leaders/MLT/Portrait_agatha_barbara.dds"
+	}	
+
+	### CAS ###
+
+	spriteType = {
+		name = GFX_Portrait_david_mccloskey
+		textureFile = "gfx/leaders/CAS/Portrait_david_mccloskey.dds"
+	}	
+
+	### CAL ###
+
+	spriteType = {
+		name = GFX_Portrait_george_deukmejian
+		textureFile = "gfx/leaders/CAL/Portrait_george_deukmejian.dds"
+	}	
+
+
+	### CAL ###
+
+	spriteType = {
+		name = GFX_Portrait_norman_bangerter
+		textureFile = "gfx/leaders/UTA/Portrait_norman_bangerter.dds"
+	}	
+
+	### CSA ###
+
+	spriteType = {
+		name = GFX_Portrait_oliver_north
+		textureFile = "gfx/leaders/CSA/Portrait_oliver_north.dds"
+	}
+	
+	### TEX ###
+
+	spriteType = {
+		name = GFX_Portrait_bill_clements
+		textureFile = "gfx/leaders/TEX/Portrait_bill_clements.dds"
+	}	
+
+	### GDU ###
+
+	spriteType = {
+		name = GFX_Portrait_gus_hall
+		textureFile = "gfx/leaders/GDU/Portrait_gus_hall.dds"
+	}	
+
+	### NEE ###
+
+	spriteType = {
+		name = GFX_Portrait_supreme_council_of_new_england
+		textureFile = "gfx/leaders/NEE/Portrait_supreme_council_of_new_england.dds"
+	}	
+
+	spriteType = {
+		name = GFX_Portrait_john_kerry
+		textureFile = "gfx/leaders/NEE/Portrait_john_kerry.dds"
+	}	
+
+	spriteType = {
+		name = GFX_Portrait_john_sununu
+		textureFile = "gfx/leaders/NEE/Portrait_john_sununu.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_william_cohen
+		textureFile = "gfx/leaders/NEE/Portrait_william_cohen.dds"
+	}
+
+	### MRA ###
+
+	spriteType = {
+		name = GFX_Portrait_john_piotrowski
+		textureFile = "gfx/leaders/MRA/Portrait_john_piotrowski.dds"
+	}	
+
+	### NYK ###
+
+	spriteType = {
+		name = GFX_Portrait_mario_cuomo
+		textureFile = "gfx/leaders/NYK/Portrait_mario_cuomo.dds"
+	}	
+
+	### CFN ###
+
+	spriteType = {
+		name = GFX_Portrait_rose_mofford
+		textureFile = "gfx/leaders/CFN/Portrait_rose_mofford.dds"
+	}	
+
+	### FLO ###
+
+	spriteType = {
+		name = GFX_Portrait_bob_martinez
+		textureFile = "gfx/leaders/FLO/Portrait_bob_martinez.dds"
+	}	
+
+	### LOA ###
+
+	spriteType = {
+		name = GFX_Portrait_buddy_roemer
+		textureFile = "gfx/leaders/LOA/Portrait_buddy_roemer.dds"
+	}
+
+	### ARK ###
+
+	spriteType = {
+		name = GFX_ARK_Portrait_bill_clinton
+		textureFile = "gfx/leaders/ARK/ARK_Portrait_bill_clinton.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_GER_oswald_lutz"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	}
 }

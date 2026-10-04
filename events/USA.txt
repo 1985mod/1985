@@ -1719,8 +1719,6 @@ country_event = {
 			}
 		}
 	}
-<<<<<<< Updated upstream
-=======
 }
 
 country_event = {
@@ -2083,5 +2081,4 @@ country_event = {
 		}
 		set_global_flag = collapse_of_america
 	}
->>>>>>> Stashed changes
 }
