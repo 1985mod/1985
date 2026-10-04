@@ -1,0 +1,29 @@
+state = {
+	id = 970
+	name = "STATE_970"
+	resources = {
+		oil = 8
+	}
+
+	history = {
+		owner = SYE
+		add_core_of = SYE
+		add_core_of = YEM
+
+		victory_points = { 
+			13355 3
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		13352 13355 13357 13358
+	} 
+	manpower = 290000
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+
+	local_supplies = 0.0 
+}

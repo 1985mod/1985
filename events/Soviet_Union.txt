@@ -771,6 +771,9 @@ country_event = {
             add_state_core = 655
             add_state_core = 875
             add_state_core = 763
+			add_state_core = 1071
+			add_state_core = 1072
+			add_state_core = 1074
         }
     }
 }

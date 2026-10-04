@@ -64,7 +64,6 @@ country_event = {
 				NOT = { has_country_flag = collapse_MAC }
 			}
 			MAC = { transfer_state = 106 }
-			MAC = { transfer_state = 970 }
 			set_country_flag = collapse_MAC
             MAC = {
                 set_politics = {
@@ -117,7 +116,6 @@ country_event = {
 			SER = { transfer_state = 764 }
 			SER = { transfer_state = 108 }
 			SER = { transfer_state = 802 }
-			SER = { transfer_state = 803 }
 		}
 
 		# Косово – 17 февраля 2008
@@ -155,6 +153,11 @@ country_event = {
 		set_province_controller = 984
 		set_province_controller = 3974
 		set_province_controller = 11577
+		hidden_effect = {
+			add_ideas = YUG_anti_war_protests
+			add_ideas = YUG_focus_on_defense
+			add_ideas = YUG_weakness_of_supply
+		}
 	}
 	trigger = {
 		NOT = {

@@ -355,7 +355,7 @@ ideas = {
 				political_power_factor = -0.15
 				stability_factor = -0.05
 				stability_weekly = -0.001
-				liberalism_drift = 0.03
+				liberalism_drift = 0.05
 			}
 		}
 		USA_dispatch_of_peacekeeping_forces = {

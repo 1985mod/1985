@@ -1,0 +1,255 @@
+focus_tree = {
+    id = usa_bush_second_term_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 25
+            tag = USA
+        }
+    }
+
+    default = no
+	
+    continuous_focus_position = { x = 3000 y = 1200 }
+
+    focus = { 
+        id = USA_bush_second_term
+        icon = GFX_	
+        x = 5
+        y = 0
+        cost = 5
+		
+        completion_reward = {
+			load_focus_tree = usa_bush_second_term_focus
+	    }
+	}
+
+    focus = { 
+        id = USA_the_war_in_yugoslavia
+        relative_position_id = USA_bush_second_term
+        icon = GFX_	
+        prerequisite = { focus = USA_bush_second_term }
+        x = -4
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+			add_war_support = 0.03
+            add_political_power = 50
+	    }
+	}
+
+    focus = { 
+        id = USA_un_peacekeeping_mission_in_yugoslavia
+        relative_position_id = USA_the_war_in_yugoslavia
+        icon = GFX_	
+        prerequisite = { focus = USA_the_war_in_yugoslavia }
+        x = -2
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+			add_war_support = 0.03
+            add_political_power = 50
+	    }
+	}
+
+    focus = { 
+        id = USA_cautious_improvement_of_relations_with_the_post_soviet_space
+        relative_position_id = USA_the_war_in_yugoslavia
+        icon = GFX_	
+        prerequisite = { focus = USA_the_war_in_yugoslavia }
+        x = 2
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = RUS
+					modifier = small_increase
+				}
+			}
+			RUS = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = UKR
+					modifier = small_increase
+				}
+			}
+			UKR = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = BLR
+					modifier = small_increase
+				}
+			}
+			BLR = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = MOL
+					modifier = small_increase
+				}
+			}
+			MOL = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+	    }
+	}
+
+    focus = { 
+        id = USA_operation_renewal_of_hope
+        relative_position_id = USA_the_war_in_yugoslavia
+        icon = GFX_	
+        prerequisite = { focus = USA_un_peacekeeping_mission_in_yugoslavia }
+		prerequisite = { focus = USA_cautious_improvement_of_relations_with_the_post_soviet_space }
+        x = 0
+        y = 2
+        cost = 5
+		
+        completion_reward = {
+			add_war_support = 0.03
+            add_political_power = 50
+	    }
+	}
+
+    focus = { 
+        id = USA_stimulating_the_us_economy
+        relative_position_id = USA_bush_second_term
+        icon = GFX_	
+        prerequisite = { focus = USA_bush_second_term }
+        x = 4
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+			if = {
+				limit = {
+					has_idea = depression
+				}
+				swap_ideas = {
+					remove_idea = depression
+					add_idea = recession
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = recession
+				}
+				swap_ideas = {
+					remove_idea = recession
+					add_idea = stagnation
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = stagnation
+				}
+				swap_ideas = {
+					remove_idea = stagnation
+					add_idea = sustainable_growth
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = sustainable_growth
+				}
+				swap_ideas = {
+					remove_idea = sustainable_growth
+					add_idea = economic_boom
+				}  
+			}	
+            add_stability = 0.05
+	    }
+	}
+
+    focus = { 
+        id = USA_reduction_of_taxes_on_capital
+        relative_position_id = USA_stimulating_the_us_economy
+        icon = GFX_	
+        prerequisite = { focus = USA_stimulating_the_us_economy }
+        x = -2
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+            custom_effect_tooltip = we_will_decrease_taxes_on_businesses_by_2_percent
+			subtract_from_variable = { var = corp_rate value = 2 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { corp_rate > 100 } 
+				}
+				set_variable = { var = corp_rate value = 100 }
+			}
+	    }
+	}
+
+    focus = { 
+        id = USA_social_security_reform
+        relative_position_id = USA_stimulating_the_us_economy
+        icon = GFX_	
+        prerequisite = { focus = USA_stimulating_the_us_economy }
+        x = 2
+        y = 1
+        cost = 5
+		
+        completion_reward = {
+			add_ideas = USA_expansion_of_social_programs_idea
+            add_political_power = 50
+	    }
+	}
+
+    focus = { 
+        id = USA_carry_out_military_reform
+        relative_position_id = USA_stimulating_the_us_economy
+        icon = GFX_	
+        prerequisite = { focus = USA_reduction_of_taxes_on_capital }
+		prerequisite = { focus = USA_social_security_reform }
+        x = 0
+        y = 2
+        cost = 5
+		
+        completion_reward = {
+            army_experience = 15
+            add_timed_idea = {
+                idea = USA_soldier_retraining_programs
+                days = 365
+            }
+	    }
+	}
+
+    focus = { 
+        id = USA_prosper_america
+        relative_position_id = USA_bush_second_term
+        icon = GFX_	
+        prerequisite = { focus = USA_operation_renewal_of_hope }
+		prerequisite = { focus = USA_carry_out_military_reform }
+        x = 0
+        y = 4
+        cost = 5
+		
+        completion_reward = {
+			custom_effect_tooltip = thanks_for_the_game_in_1985
+	    }
+	}
+}

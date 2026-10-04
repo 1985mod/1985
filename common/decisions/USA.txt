@@ -945,15 +945,248 @@ USA_election_campaign_in_usa = {
 			base = 15
 		}
 
+		modifier = {
+			political_power_gain = -0.3
+		}
+
 		remove_effect = {
-			CUB = {
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.05
+			custom_effect_tooltip = between_10_and_20_electors_are_joining_our_party
+			set_variable_to_random = {
+				var = electoral_votes_random
+				min = 10
+				max = 20
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.electoral_votes_republicans
+				value = electoral_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.electoral_votes_democrats
+				value = electoral_votes_random
+			}
+			custom_effect_tooltip = between_1_and_2_states_are_joining_our_party
+			set_variable_to_random = {
+				var = state_votes_random
+				min = 1
+				max = 2
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.support_republicans_in_us
+				value = state_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.support_democrats_in_us
+				value = state_votes_random
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_democrats
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_republicans
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_democrats_in_us
+				max = 50
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_republicans_in_us
+				max = 50
+				min = 0
+			}
+		}
+	}
+
+	USA_to_promise_to_continue_reagans_course = {
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			base = 15
+		}
+
+		modifier = {
+			political_power_gain = -0.2
+			conservatism_drift = 0.02
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = between_15_and_30_electors_are_joining_our_party
+			set_variable_to_random = {
+				var = electoral_votes_random
+				min = 15
+				max = 30
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.electoral_votes_republicans
+				value = electoral_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.electoral_votes_democrats
+				value = electoral_votes_random
+			}
+			custom_effect_tooltip = between_1_and_3_states_are_joining_our_party
+			set_variable_to_random = {
+				var = state_votes_random
+				min = 1
+				max = 3
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.support_republicans_in_us
+				value = state_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.support_democrats_in_us
+				value = state_votes_random
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_democrats
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_republicans
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_democrats_in_us
+				max = 50
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_republicans_in_us
+				max = 50
+				min = 0
+			}
+		}
+	}
+
+	USA_to_oppose_abortion = {
+		cost = 50
+		days_remove = 20
+
+		ai_will_do = {
+			base = 15
+		}
+
+		modifier = {
+			political_power_gain = -0.5
+		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					custom_effect_tooltip = between_5_and_15_electors_are_joining_our_party
+					set_variable_to_random = {
+						var = electoral_votes_random
+						min = 5
+						max = 10
+						integer = yes
+					} 
+					add_to_variable = {
+						var = USA.electoral_votes_republicans
+						value = electoral_votes_random
+					}
+					subtract_from_variable = {
+						var = USA.electoral_votes_democrats
+						value = electoral_votes_random
+					}
+					custom_effect_tooltip = between_1_and_2_states_are_joining_our_party
+					set_variable_to_random = {
+						var = state_votes_random
+						min = 1
+						max = 2
+						integer = yes
+					} 
+					add_to_variable = {
+						var = USA.support_republicans_in_us
+						value = state_votes_random
+					}
+					subtract_from_variable = {
+						var = USA.support_democrats_in_us
+						value = state_votes_random
+					}
+					clamp_variable = {
+						var = USA.electoral_votes_democrats
+						max = 538
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.electoral_votes_republicans
+						max = 538
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.support_democrats_in_us
+						max = 50
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.support_republicans_in_us
+						max = 50
+						min = 0
+					}
 				}
-				add_popularity = {
-					ideology = liberalism
-					popularity = 0.03
+				50 = {
+					custom_effect_tooltip = between_15_and_20_electors_democratic_party
+					set_variable_to_random = {
+						var = electoral_votes_random
+						min = 15
+						max = 20
+						integer = yes
+					} 
+					add_to_variable = {
+						var = USA.electoral_votes_democrats
+						value = electoral_votes_random
+					}
+					subtract_from_variable = {
+						var = USA.electoral_votes_republicans
+						value = electoral_votes_random
+					}
+					custom_effect_tooltip = between_1_and_3_states_are_democratic_party
+					set_variable_to_random = {
+						var = state_votes_random
+						min = 1
+						max = 3
+						integer = yes
+					} 
+					add_to_variable = {
+						var = USA.support_democrats_in_us
+						value = state_votes_random
+					}
+					subtract_from_variable = {
+						var = USA.support_republicans_in_us
+						value = state_votes_random
+					}
+					clamp_variable = {
+						var = USA.electoral_votes_democrats
+						max = 538
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.electoral_votes_republicans
+						max = 538
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.support_democrats_in_us
+						max = 50
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.support_republicans_in_us
+						max = 50
+						min = 0
+					}
 				}
 			}
 		}

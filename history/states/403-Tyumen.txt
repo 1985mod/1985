@@ -2,7 +2,7 @@
 state={
 	id=403
 	name="STATE_403" # Tyumen
-	manpower = 1025000
+	manpower = 2825000
 	
 	state_category = rural
 

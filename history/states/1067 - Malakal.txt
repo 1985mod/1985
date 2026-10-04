@@ -15,7 +15,7 @@ state = {
 		}
 		
 		add_core_of = SUD
-		
+		set_demilitarized_zone = yes
 	}
 
 	provinces = {

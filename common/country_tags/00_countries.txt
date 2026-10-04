@@ -203,3 +203,11 @@ HAW = "countries/Hawaii.txt"
 PUE = "countries/Puerto Rico.txt"
 
 
+### Somalia civil war ###
+SSD = "countries/Somali Salvation Democratic Front.txt"
+SNM = "countries/Somali National Movement.txt"
+SDA = "countries/Somali Democratic Alliance.txt"
+SPF = "countries/Somali Patriotic Movement.txt"
+USC = "countries/United Somali Congress.txt"
+
+

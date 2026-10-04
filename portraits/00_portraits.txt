@@ -96,9 +96,14 @@ continent = {
 				"GFX_Portrait_Europe_Generic_1"
 			}
 		}
-		democratic = {
+		liberalism = {
 			male = { 
-				"GFX_Portrait_Europe_Generic_2" 
+				"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		conservatism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_4" 
 			}
 		}
 		fascism = {
@@ -108,7 +113,7 @@ continent = {
 		}
 		neutrality = {
 			male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+				"GFX_Portrait_Europe_Generic_6" 
 			}
 		}
 	}
@@ -143,9 +148,14 @@ continent = {
 				"GFX_Portrait_South_America_Generic_1"
 			}
 		}
-		democratic = {
+		conservatism = {
 			male = { 
 				"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		liberalism = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_1" 
 			}
 		}
 		fascism = {
@@ -191,7 +201,12 @@ continent = {
 				"GFX_Portrait_Europe_Generic_1"
 			}
 		}
-		democratic = {
+		conservatism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
 			male = { 
 				"GFX_Portrait_Europe_Generic_2" 
 			}
@@ -236,31 +251,26 @@ continent = {
 		communism = {
 			male = { 
 				"GFX_Portrait_Africa_Generic_1"	
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
 			}
 		}
-		democratic = {
+		conservatism = {
 			male = { 
 				"GFX_Portrait_Africa_Generic_2" 
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"		
+			}
+		}
+		liberalism = {
+			male = { 
+				"GFX_Portrait_Africa_Generic_2" 
 			}
 		}
 		fascism = {
 			male = { 
 				"GFX_Portrait_Africa_Generic_3" 
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
-				"GFX_Portrait_South_Africa_Army_Generic"
-				"GFX_Portrait_South_Africa_Army_Generic_2"
 			}
 		}
 		neutrality = {
 			male = { 
 				"GFX_Portrait_Africa_Generic_3" 
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
 			}
 		}
 	}
@@ -296,9 +306,19 @@ continent = {
 				"GFX_Portrait_Asia_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
+		conservatism = {
+				male = { 
 				"GFX_Portrait_Asia_Generic_2" 
+			}
+		}
+		socialism = {
+				male = { 
+				"GFX_Portrait_Asia_Generic_1" 
+			}
+		}
+		liberalism = {
+				male = { 
+				"GFX_Portrait_Asia_Generic_3" 
 			}
 		}
 		fascism = {
@@ -341,19 +361,24 @@ continent = {
 				"GFX_Portrait_Arabia_Generic_1"
 			}
 		}
-		democratic = {
+		conservatism = {
 			male = { 
-				"GFX_Portrait_Arabia_Generic_2"
+				"GFX_Portrait_Arabia_Generic_3"
+			}
+		}
+		liberalism = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_3"
 			}
 		}
 		fascism = {
 			male = { 
-				"GFX_Portrait_Arabia_Generic_3" 
+				"GFX_Portrait_Arabia_Generic_2" 
 			}
 		}
 		neutrality = {
 			male = { 
-				"GFX_Portrait_Arabia_Generic_3" 
+				"GFX_Portrait_Arabia_Generic_2" 
 			}
 		}
 	}

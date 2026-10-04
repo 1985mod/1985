@@ -16,6 +16,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_protests_against_yeltsin"
+		texturefile = "gfx/event_pictures/report_protests_against_yeltsin.dds"
+	}
+
+	spriteType = {
 		name = "GFX_report_introduce_troops_in_lithuania"
 		texturefile = "gfx/event_pictures/GFX_report_introduce_troops_in_lithuania.dds"
 	}

@@ -282,4 +282,393 @@ on_actions = {
             }
         }
     }
+
+    ### NATO win
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        tag = USA
+                    }
+                    ROOT = {
+                        tag = SOV
+                    }
+                }
+
+                USA = {
+                    white_peace = SOV
+                }
+                RUS = {
+                    add_state_core = 233
+                    add_state_core = 827
+                    add_state_core = 828
+                    add_state_core = 235
+                    add_state_core = 234
+                    add_state_core = 237
+                    add_state_core = 238
+                    add_state_core = 218
+                    add_state_core = 245
+                    add_state_core = 260
+                    add_state_core = 240
+                    add_state_core = 224
+                    add_state_core = 243
+                    add_state_core = 242
+                    add_state_core = 210
+                    add_state_core = 209
+                    add_state_core = 208
+                    add_state_core = 263
+                    add_state_core = 244
+                    add_state_core = 195
+                    add_state_core = 146
+                    add_state_core = 216
+                    add_state_core = 215
+                    add_state_core = 213
+                    add_state_core = 722
+                    add_state_core = 236
+                    add_state_core = 217
+                    add_state_core = 265
+                    add_state_core = 829
+                    add_state_core = 239
+                    add_state_core = 220
+                    add_state_core = 222
+                    add_state_core = 205
+                    add_state_core = 246
+                    add_state_core = 264
+                    add_state_core = 247
+                    add_state_core = 219
+                    add_state_core = 254
+                    add_state_core = 223
+                    add_state_core = 258
+                    add_state_core = 257
+                    add_state_core = 255
+                    add_state_core = 401
+                    add_state_core = 248
+                    add_state_core = 253
+                    add_state_core = 252
+                    add_state_core = 250
+                    add_state_core = 879
+                    add_state_core = 351
+                    add_state_core = 833
+                    add_state_core = 256
+                    add_state_core = 251
+                    add_state_core = 652
+                    add_state_core = 400
+                    add_state_core = 214
+                    add_state_core = 880
+                    add_state_core = 397
+                    add_state_core = 262
+                    add_state_core = 825
+                    add_state_core = 398
+                    add_state_core = 399
+                    add_state_core = 651
+                    add_state_core = 582
+                    add_state_core = 573
+                    add_state_core = 581
+                    add_state_core = 579
+                    add_state_core = 580
+                    add_state_core = 653
+                    add_state_core = 572
+                    add_state_core = 403
+                    add_state_core = 577
+                    add_state_core = 571
+                    add_state_core = 578
+                    add_state_core = 824
+                    add_state_core = 570
+                    add_state_core = 40
+                    add_state_core = 569
+                    add_state_core = 654
+                    add_state_core = 568
+                    add_state_core = 576
+                    add_state_core = 516
+                    add_state_core = 567
+                    add_state_core = 878
+                    add_state_core = 566
+                    add_state_core = 575
+                    add_state_core = 876
+                    add_state_core = 564
+                    add_state_core = 565
+                    add_state_core = 563
+                    add_state_core = 574
+                    add_state_core = 877
+                    add_state_core = 561
+                    add_state_core = 657
+                    add_state_core = 560
+                    add_state_core = 562
+                    add_state_core = 644
+                    add_state_core = 874
+                    add_state_core = 822
+                    add_state_core = 637
+                    add_state_core = 555
+                    add_state_core = 409
+                    add_state_core = 408
+                    add_state_core = 655
+                    add_state_core = 875
+                    add_state_core = 763
+                    add_state_core = 1071
+                    add_state_core = 1072
+                    set_politics = {
+                        ruling_party = liberalism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = liberalism
+                        popularity = 0.2
+                    }	
+                }
+                release = RUS
+                release = UKR
+                UKR = {
+                    set_politics = {
+                        ruling_party = conservatism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = conservatism
+                        popularity = 0.4
+                    }
+                }
+                release = BLR
+                BLR = {
+                    set_politics = {
+                        ruling_party = socialism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = socialism
+                        popularity = 0.44
+                    }
+                }
+                release = AZR
+                release = CHE
+                release = DAG
+                release = TAT
+                TAT = {
+                    set_politics = {
+                        ruling_party = liberalism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = liberalism
+                        popularity = 0.2
+                    }
+                }
+                release = TAN
+                CHE = {
+                    set_politics = {
+                        ruling_party = fascism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = fascism
+                        popularity = 0.9
+                    }
+                }
+                release = UZB
+                UZB = {
+                    set_politics = {
+                        ruling_party = socialism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = socialism
+                        popularity = 0.87
+                    }
+                }
+                release = TMS
+                TMS = {
+                    set_politics = {
+                        ruling_party = fascism
+                        elections_allowed = no
+                    }
+                    add_popularity = {
+                        ideology = fascism
+                        popularity = 0.99
+                    }
+                }
+                release = KYR
+                KYR = {
+                    set_politics = {
+                        ruling_party = neutrality
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = neutrality
+                        popularity = 0.95
+                    }
+                }
+                release = TAJ
+                release = KAZ
+                KAZ = {
+                    set_politics = {
+                        ruling_party = conservatism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = conservatism
+                        popularity = 0.4
+                    }
+                }
+                POL = {
+                    set_politics = {
+                        ruling_party = conservatism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = conservatism
+                        popularity = 0.4
+                    }
+                }
+                CZE = {
+                    set_politics = {
+                        ruling_party = liberalism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = liberalism
+                        popularity = 0.4
+                    }
+                }
+                SLO = {
+                    set_politics = {
+                        ruling_party = conservatism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = conservatism
+                        popularity = 0.4
+                    }
+                }
+                HUN = {
+                    set_politics = {
+                        ruling_party = conservatism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = conservatism
+                        popularity = 0.4
+                    }
+                }
+                ROM = {
+                    set_politics = {
+                        ruling_party = socialism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = socialism
+                        popularity = 0.4
+                    }
+                }
+                BUL = {
+                    set_politics = {
+                        ruling_party = liberalism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = liberalism
+                        popularity = 0.4
+                    }
+                }
+                release = ARM
+
+                ARM = {
+                    set_politics = {
+                        ruling_party = liberalism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = liberalism
+                        popularity = 0.83
+                    }
+                }
+                release = MOL
+
+                MOL = {
+                    set_politics = {
+                        ruling_party = conservatism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = conservatism
+                        popularity = 0.4
+                    }
+                    transfer_state = 834
+                    add_state_core = 834
+                }
+                release = EST
+
+                EST = {
+                    set_politics = {
+                        ruling_party = conservatism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = conservatism
+                        popularity = 0.4
+                    }
+                }
+                release = GEO
+                GEO = {
+                    set_politics = {
+                        ruling_party = fascism
+                        elections_allowed = no
+                    }
+                    add_popularity = {
+                        ideology = fascism
+                        popularity = 0.95
+                    }
+                }
+                release = LAT
+                LAT = {
+                    set_politics = {
+                        ruling_party = liberalism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = liberalism
+                        popularity = 0.32
+                    }
+                }
+                release = LIT
+                LIT = {
+                    set_politics = {
+                        ruling_party = socialism
+                        elections_allowed = yes
+                    }
+                    add_popularity = {
+                        ideology = socialism
+                        popularity = 0.4
+                    }
+                }
+
+                USA = {
+                    add_to_faction = POL
+                    add_to_faction = CZE
+                    add_to_faction = SLO
+                    add_to_faction = HUN
+                    add_to_faction = ROM
+                    add_to_faction = BUL
+                    add_to_faction = LIT
+                    add_to_faction = LAT
+                    add_to_faction = EST
+                    add_to_faction = BLR
+                    add_to_faction = UKR
+                    add_to_faction = MOL
+                }
+
+                WGR = {
+                    add_state_core = 64
+                    add_state_core = 60
+                    add_state_core = 61
+                    add_state_core = 62
+                    add_state_core = 65
+                    annex_country = {
+                        target = DDR
+                        transfer_troops = no
+                    }
+                    transfer_state = 763
+                }
+            }
+        }
+    }
 }

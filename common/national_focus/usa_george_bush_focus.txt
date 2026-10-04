@@ -183,41 +183,41 @@ focus_tree = {
 			POL = {
 				add_popularity = {
 					ideology = liberalism
-					popularity = 0.03
+					popularity = 0.05
 				}
 				add_popularity = {
 					ideology = conservatism
-					popularity = 0.03
+					popularity = 0.05
 				}
 			}
 			CZE = {
 				add_popularity = {
 					ideology = liberalism
-					popularity = 0.03
+					popularity = 0.05
 				}
 				add_popularity = {
 					ideology = conservatism
-					popularity = 0.03
+					popularity = 0.05
 				}
 			}
 			ROM = {
 				add_popularity = {
 					ideology = liberalism
-					popularity = 0.03
+					popularity = 0.05
 				}
 				add_popularity = {
 					ideology = conservatism
-					popularity = 0.03
+					popularity = 0.05
 				}
 			}
 			BUL = {
 				add_popularity = {
 					ideology = liberalism
-					popularity = 0.03
+					popularity = 0.05
 				}
 				add_popularity = {
 					ideology = conservatism
-					popularity = 0.03
+					popularity = 0.05
 				}
 			}
 			add_political_power = -100
@@ -292,7 +292,7 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-
+			add_political_power = 50
 	    }
 	}
 
