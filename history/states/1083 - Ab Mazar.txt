@@ -1,0 +1,29 @@
+state = {
+
+	id = 1083
+	name = "STATE_1083" #Khiva
+
+	history = {
+
+		owner = AFN
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = AFN
+		add_core_of = AFS
+		
+		AFS = {
+			set_province_controller = 12871
+		}		
+	}
+
+	provinces = {
+	 	12871 13415 13416
+	}
+	
+	manpower = 892
+	buildings_max_level_factor = 1.000
+	state_category = rural
+
+	local_supplies = 0.0 
+}

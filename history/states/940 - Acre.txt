@@ -19,15 +19,11 @@ state = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-
-		victory_points = {
-			13278 2 
-		}
 		
 	}
 
 	provinces = {
-		13278 13279 13280
+		13279 13280
 	}
 
 	local_supplies = 0.0 

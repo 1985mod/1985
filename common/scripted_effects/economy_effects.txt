@@ -497,6 +497,11 @@ tax_effect = {
 
     set_variable = { var = welfare_expenditure value = unemployment_manpower }
 
+    clamp_variable = {
+        var = welfare_expenditure
+        min = 0
+    }
+
     # Defense Expenditure
     set_variable = { var = army_manpower_k_defense value = army_manpower_k }
     multiply_variable = { var = army_manpower_k_defense value = 0.0006 }

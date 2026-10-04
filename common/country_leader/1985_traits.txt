@@ -175,4 +175,16 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	head_of_the_spc_of_the_gdr = {
+		sprite = 13
+
+		economy_cost_factor = -0.1
+		local_resources_factor = 0.1
+		consumer_goods_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

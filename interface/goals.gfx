@@ -14031,6 +14031,51 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/DDR/focus_icon_DDR_xi_congress_of_the_sed.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_icon_WGR_germany_nation"
+		texturefile = "gfx/interface/goals/WGR/focus_icon_WGR_germany_nation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_WGR_german_course"
+		texturefile = "gfx/interface/goals/WGR/focus_icon_WGR_german_course.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_WGR_doctrine_kohl"
+		texturefile = "gfx/interface/goals/WGR/focus_icon_WGR_doctrine_kohl.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_WGR_economic_modern"
+		texturefile = "gfx/interface/goals/WGR/focus_icon_WGR_economic_modern.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_WGR_automatic_factory"
+		texturefile = "gfx/interface/goals/WGR/focus_icon_WGR_automatic_factory.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_WGR_worldlaw_and_safety"
+		texturefile = "gfx/interface/goals/WGR/focus_icon_WGR_worldlaw_and_safety.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_WGR_nato_and_usa"
+		texturefile = "gfx/interface/goals/WGR/focus_icon_WGR_nato_and_usa.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_WGR_course_determination"
+		texturefile = "gfx/interface/goals/WGR/focus_icon_WGR_course_determination.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_icon_WGR_dawn_of_germany"
+		texturefile = "gfx/interface/goals/WGR/focus_icon_WGR_dawn_of_germany.dds"
+	}
+
 	################
 	##PLACEHOLDER###
 	################

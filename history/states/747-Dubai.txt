@@ -1,0 +1,28 @@
+state={
+	id=747
+	name="STATE_747"
+	resources = {
+		oil=25
+	}
+	history = {
+		owner = UAE
+		add_core_of = UAE
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+			dockyard = 8
+			air_base = 6
+		}
+		victory_points = {
+			10904 5
+		}
+	}
+	provinces={
+		10904 13343
+	}
+	manpower=370788
+	buildings_max_level_factor=1.000
+	state_category = city
+    
+	local_supplies=0.0 
+}

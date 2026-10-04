@@ -2,30 +2,22 @@
 state={
 	id=293
 	name="STATE_293"
-	manpower = 7870000
-	
-	state_category = rural
-	
 	resources={
-		oil=1 # was: 1
+		oil=1
 	}
-	history={
+	history = {
 		owner = YEM
+		add_core_of = YEM
+
 		buildings = {
 			infrastructure = 2
-			10840 = {
-				naval_base = 1
-			}
 		}
-		victory_points = {
-			10840 3 
-		}
-		add_core_of = YEM
 	}
-
 	provinces={
-		1920 1973 4924 10752 10840 
+		4924 13285 13344 13347 13349
 	}
-
-	local_supplies=0.0 
+	manpower=2322071
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
 }

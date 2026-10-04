@@ -157,12 +157,6 @@ on_actions = {
 					country_event =  { id = iraq.7 }
                 }
             }
-        }
-    }
-
-    ### Iran win
-    on_capitulation = {
-        effect = {
             if = {
                 limit = {
 					OR = {
@@ -182,6 +176,40 @@ on_actions = {
 					country_event =  { id = iran.5 }
                 }
             }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = ISR
+                    }
+                    ROOT = {
+                        tag = HEZ
+                    }
+                }
+
+                ISR = {
+                    white_peace = HEZ
+                    annex_country = {
+                        target = HEZ
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = SYR
+                    }
+                    ROOT = {
+                        tag = LEB
+                    }
+                }
+
+                SYR = {
+                    white_peace = LEB
+					puppet = LEB
+                }
+            }
         }
     }
+
 }
