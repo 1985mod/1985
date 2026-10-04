@@ -1,0 +1,18 @@
+characters = {
+	SRL_j_r_jayewardene ={
+		name = SRL_j_r_jayewardene
+		portraits={
+			civilian={
+				large= GFX_portrait_SRL_j_r_jayewardene
+			}
+			army = {
+				large = GFX_portrait_SRL_j_r_jayewardene
+			}
+		}
+		country_leader={
+			ideology = classic_liberalism
+			traits={  }
+			expire="1989.11.9.1"		
+		}
+	}
+}

@@ -122,12 +122,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_country_flag = major
-			remove_country_leader = { name = "ENG_margaret_thatcher" }
-			promote_character = {
-				character = ENG_john_major
-				ideology = conservatism
-			}
 			set_politics = {
 				ruling_party = conservatism
 				elections_allowed = yes
@@ -204,24 +198,32 @@ country_event = {
 			}
 		}
 	}
+<<<<<<< Updated upstream
+=======
 }
 
-country_event = {
-    id = britain.3
+country_event = { 
+    id = britain.3 #Отставка Тэтчер#
     title = britain.3.t
     desc = britain.3.desc
-
-	trigger = {
-        ENG = {
-            NOT = { has_war_with = IRE }
-        }
+    fire_only_once = yes
+    trigger = {
         tag = ENG
-        country_exists = ENG
+        date > 1990.11.22
+        has_government = conservatism
     }
-	fire_only_once = yes
-
     option = {
         name = britain.3.a
-        set_cosmetic_tag = ENG_united_kingdom_of_great_britain_and_ireland
-	}
+        news_event = {
+            id = news.45
+            hours = 5
+        }
+        set_country_flag = major
+		remove_country_leader = { name = "ENG_margaret_thatcher" }
+		promote_character = {
+			character = ENG_john_major
+			ideology = conservatism
+		}
+    }
+>>>>>>> Stashed changes
 }

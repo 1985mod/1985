@@ -12,8 +12,7 @@ country_event = {
 	   tag = USA
 	   date > 1988.11.01
 	   date < 1991.11.01
-	   check_variable = { var = USA.electoral_votes_republicans value = USA.electoral_votes_democrats compare = greater_than }
-	   check_variable = { var = USA.support_republicans_in_us value = USA.support_democrats_in_us compare = greater_than }
+	   conservatism > party_popularity@liberalism
 	}
 	
 	option = {
@@ -24,8 +23,6 @@ country_event = {
 		
         complete_national_focus = USA_election_day
 		complete_national_focus = USA_republican_victory
-
-		clr_country_flag = usa_elections
 		
 		effect_tooltip = {
 			set_politics = {
@@ -62,8 +59,7 @@ country_event = {
 	   tag = USA
 	   date > 1988.11.01
 	   date < 1991.11.01
-	   check_variable = { var = USA.electoral_votes_democrats value = USA.electoral_votes_republicans compare = greater_than }
-	   check_variable = { var = USA.support_democrats_in_us value = USA.support_republicans_in_us compare = greater_than }
+	   liberalism > party_popularity@conservatism
 	}
 	
 	option = {
@@ -74,8 +70,6 @@ country_event = {
 		
         complete_national_focus = USA_election_day
 		complete_national_focus = USA_victory_of_the_democrats
-
-		clr_country_flag = usa_elections
 		
 		effect_tooltip = {
 			set_politics = {
@@ -136,7 +130,7 @@ country_event = {
 		ai_chance = {
 			base = 75
 		}		
-        USA = { country_event = usa.5 }
+        FROM = { country_event = usa.5 }
 	}
 
 	option = {
@@ -144,7 +138,7 @@ country_event = {
 		ai_chance = {
 			base = 25
 		}	
-		USA = { country_event = usa.6 }
+		FROM = { country_event = usa.6 }
 	}
 }
 
@@ -197,7 +191,20 @@ country_event = {
 	desc = usa.7.d
 	picture = GFX_report_offer_to_join_the_anti_iraq_coalition
 
-	is_triggered_only = yes
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+			tag = PAK
+		}
+		NOT = { has_war_with = IRQ }
+		USA = { has_completed_focus = USA_form_an_anti_iraq_coalition }
+	}
 
 	option = {
 		name = usa.7.a
@@ -208,7 +215,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}	
-		USA = { country_event = usa.8 }
+		FROM = { country_event = usa.8 }
 	}
 
 	option = {
@@ -220,7 +227,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		USA = { country_event = usa.9 }
+		FROM = { country_event = usa.9 }
 	}
 }
 
@@ -231,7 +238,20 @@ country_event = {
 	desc = usa.8.d
 	picture = GFX_report_generic_negotiations_between_two_parties
 
-	is_triggered_only = yes
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+			tag = PAK
+		}
+		NOT = { has_war_with = IRQ }
+		USA = { has_completed_focus = USA_form_an_anti_iraq_coalition }
+	}
 
 	option = {
 		name = usa.8.a
@@ -253,7 +273,20 @@ country_event = {
 	desc = usa.9.d
 	picture = GFX_report_generic_negotiations_between_two_parties
 
-	is_triggered_only = yes
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = EGY
+			tag = SAU
+			tag = KUW
+			tag = UAE
+			tag = OMA
+			tag = PAK
+		}
+		NOT = { has_war_with = IRQ }
+		USA = { has_completed_focus = USA_form_an_anti_iraq_coalition }
+	}
 
 	option = {
 		name = usa.9.a
@@ -273,7 +306,13 @@ country_event = {
 	desc = usa.10.d
 	picture = GFX_report_offer_to_join_the_anti_iraq_coalition
 
-	is_triggered_only = yes
+	trigger = {
+		has_country_flag = anti_iraq_coalition
+		NOT = { has_war_with = IRQ }
+		USA = { has_completed_focus = USA_operation_desert_storm }
+		NOT = { has_global_flag = desert_storm_triggered}
+		NOT = { has_country_flag = operation_desert_storm_start }
+	}
 
 	option = {
 		name = usa.10.a
@@ -426,7 +465,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
-		USA = { country_event = usa.39 hours = 6 }
+		FROM = { country_event = usa.39 hours = 6 }
 	}
 
 	option = {
@@ -434,7 +473,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
-		USA = { country_event = usa.40 hours = 6 }
+		FROM = { country_event = usa.40 hours = 6 }
 	}
 }
 
@@ -905,7 +944,7 @@ country_event = {
 		ai_chance = {
 			base = 90
 		}		
-		USA = { country_event = usa.34 }
+		FROM = { country_event = usa.34 }
 	}
 
 	option = {
@@ -913,7 +952,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}		
-		USA = { country_event = usa.35 }
+		FROM = { country_event = usa.35 }
 	}
 }
 
@@ -1469,7 +1508,7 @@ country_event = {
 }
 
 country_event = {
-	id = usa.49 ### СС отказался ###
+	id = usa.49 ### СССР отказался ###
 	title = usa.49.t
 	desc = usa.49.d
 	picture = GFX_report_generic_negotiations_between_two_parties
@@ -1680,6 +1719,8 @@ country_event = {
 			}
 		}
 	}
+<<<<<<< Updated upstream
+=======
 }
 
 country_event = {
@@ -1700,6 +1741,10 @@ country_event = {
 		add_war_support = -0.15
 		add_ideas = USA_demoralized_army
 		add_ideas = USA_chaos_in_the_country
+		set_country_leader_portrait = {
+            ideology = conservatism
+            portrait = GFX_portrait_USA_george_bush_failure_of_desert_storm
+        }
 	}
 }
 
@@ -2038,4 +2083,5 @@ country_event = {
 		}
 		set_global_flag = collapse_of_america
 	}
+>>>>>>> Stashed changes
 }

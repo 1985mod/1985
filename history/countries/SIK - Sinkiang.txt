@@ -88,6 +88,9 @@ if = {
 	}
 }
 
+recruit_character = SIK_isa_yusuf_alptekin
+recruit_character = SIK_ismail_amat
+
 set_research_slots = 4
 set_convoys = 50
 set_stability = 0.7
@@ -108,3 +111,4 @@ set_popularities = {
 add_ideas = {
 	low_economic_mobilisation
 }
+

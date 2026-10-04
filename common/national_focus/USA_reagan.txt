@@ -627,6 +627,10 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
+			set_country_leader_portrait = {
+                ideology = conservatism
+                portrait = GFX_portrait_USA_ronald_reagan_1988
+			}
 			ROOT = {
 				add_opinion_modifier = {
 					target = SOV
