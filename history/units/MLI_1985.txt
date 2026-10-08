@@ -1,0 +1,34 @@
+division_template = {
+	name = "Infantry Division of Mali"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+units = {
+	division = {	
+		location = 13551
+		division_template = "Infantry Division of Mali"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		location = 8116
+		division_template = "Infantry Division of Mali"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		location = 4927
+		division_template = "Infantry Division of Mali"
+		start_experience_factor = 0.1
+	}
+}

@@ -17,7 +17,7 @@ state = {
 		add_core_of = MAL
 
 		victory_points = {
-			7387 2 # Brunei Town
+			13378  15 # Brunei Town
 		}
 
 		buildings = {
@@ -28,7 +28,7 @@ state = {
 				naval_base = 1
 			}
 
-			7387 = {
+			13378  = {
 				naval_base = 1
 			}
 
@@ -37,7 +37,7 @@ state = {
 	}
 
 	provinces = {
-		7371 7387 
+		7371 13378  
 	}
 
 	local_supplies = 0.0 

@@ -1,0 +1,48 @@
+division_template = {
+	name = "Infantry division Burkina faso"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        artillery_brigade = { x = 1 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+division_template = {
+	name = "Gendarmerie"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {	
+		location = 10836
+		division_template = "Infantry division Burkina faso"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		location = 13352
+		division_template = "Gendarmerie"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		location = 12851
+		division_template = "Gendarmerie"
+		start_experience_factor = 0.1
+	}
+
+	division = {	
+		location = 7983
+		division_template = "Gendarmerie"
+		start_experience_factor = 0.1
+	}
+}

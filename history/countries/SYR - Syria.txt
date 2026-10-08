@@ -35,11 +35,10 @@ if = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
+		gwtank = 1
 		basic_light_tank = 1
-		main_battle_tank = 1
 	}
 }
-
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -59,7 +58,10 @@ declare_war_on = {
 set_convoys = 5
 
 add_ideas = {
-	ARB_gulf_cooperation_council
+<<<<<<< Updated upstream
+=======
+	ARB_league_of_arab_states
+>>>>>>> Stashed changes
 	limited_conscription
 	partial_economic_mobilisation
 }

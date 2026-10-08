@@ -321,36 +321,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_report_dismantle_warsaw_pact"
-		texturefile = "gfx/event_pictures/report_dismantle_warsaw_pact.dds"
-	}
-
-	spriteType = {
-		name = "GFX_report_kadars_resignation"
-		texturefile = "gfx/event_pictures/report_kadars_resignation.dds"
-	}
-
-	spriteType = {
-		name = "GFX_report_helmut_kohl_speech"
-		texturefile = "gfx/event_pictures/report_helmut_kohl_speech.dds"
-	}
-
-	spriteType = {
-		name = "GFX_report_economic_course_determination"
-		texturefile = "gfx/event_pictures/report_economic_course_determination.dds"
-	}
-
-	spriteType = {
-		name = "GFX_report_eras_of_tension"
-		texturefile = "gfx/event_pictures/report_eras_of_tension.dds"
-	}
-
-	spriteType = {
-		name = "GFX_report_germany_europe_leader"
-		texturefile = "gfx/event_pictures/report_germany_europe_leader.dds"
-	}
-
-	spriteType = {
 		name = "GFX_news_SOV_chernobyl"
 		texturefile = "gfx/event_pictures/news_SOV_chernobyl.dds"
 	}
@@ -508,16 +478,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_report_meeting_oecd"
-		texturefile = "gfx/event_pictures/report_meeting_oecd.dds"
-	}
-
-	spriteType = {
-		name = "GFX_report_plaza_accord"
-		texturefile = "gfx/event_pictures/report_plaza_accord.dds"
-	}
-
-	spriteType = {
 		name = "GFX_report_democrats_victory_1992"
 		texturefile = "gfx/event_pictures/report_democrats_victory_1992.dds"
 	}
@@ -590,6 +550,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_matthias_rust_incident"
 		texturefile = "gfx/event_pictures/news_matthias_rust_incident.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_visit_to_wgr"
+		texturefile = "gfx/event_pictures/news_visit_to_wgr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_the_resignation_of_margaret_thatcher"
+		texturefile = "gfx/event_pictures/news_the_resignation_of_margaret_thatcher.dds"
 	}
 }
 

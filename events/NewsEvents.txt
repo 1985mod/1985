@@ -426,7 +426,7 @@ news_event = {
 	}
 	
 	trigger = {
-		date > 1986.8.20
+		date > 1985.8.20
 		NOT = { has_global_flag = iran_contra }
 	}
 
@@ -903,6 +903,7 @@ news_event = {
 	}
 }
 
+
 news_event = {
 	id = news.41 ## Приезд Трампа в Москву ##
 	title = news.41.t
@@ -981,5 +982,53 @@ news_event = {
 		add_stability = 0.05
 		add_war_support = 0.03
 		army_experience = 10
+	}
+}
+
+news_event = {
+	id = news.44 ## Визит Эриха Хонекера в Западную Германию ##
+	title = news.44.t
+	desc = news.44.desc
+	picture = GFX_news_visit_to_wgr
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.44.a
+		trigger = {
+			NOT = {
+				TAG = DDR	
+			}
+		}
+	}
+	option = {
+		name = news.44.b
+		trigger = { TAG = DDR }
+	}
+}
+
+news_event = {
+	id = news.45 ## Отставка Маргарет Тэтчер ##
+	title = news.45.t
+	desc = news.45.desc
+	picture = GFX_news_the_resignation_of_margaret_thatcher
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.45.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = news.45.b
+		trigger = { TAG = ENG }
 	}
 }

@@ -427,3 +427,90 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = yugoslavia.10	### Предложить ли нам перемирие с Хорватией? ###
+	title = yugoslavia.10.t
+	desc = yugoslavia.10.desc
+
+	trigger = {
+		tag = YUG
+		country_exists = CRO
+		has_war_with = CRO
+		date > 1991.12.16
+		date < 1993.05.16
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.9.a
+		CRO = { country_event = yugoslavia.11 hours = 12 }
+	}
+
+	option = {
+		name = yugoslavia.9.a
+		add_war_support = 0.05
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = yugoslavia.11	### Югославия предлагает перемирие ###
+	title = yugoslavia.11.t
+	desc = yugoslavia.11.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { ### Хорватия согласна ###
+		name = yugoslavia.11.a
+		YUG = { country_event = yugoslavia.12 hours = 6 }
+	}
+
+	option = { ### Хорватия отказалась ###
+		name = yugoslavia.11.b
+		YUG = { country_event = yugoslavia.13 hours = 6 }
+	}
+}
+
+country_event = {
+	id = yugoslavia.12	### Хорватия согласилась ###
+	title = yugoslavia.12.t
+	desc = yugoslavia.12.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.12.a
+		add_timed_idea = {
+			idea = YUG_sarajevo_armistice
+			days = 365
+		}
+		CRO = {
+			add_timed_idea = {
+				idea = CRO_sarajevo_armistice
+				days = 365
+			}
+		}
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = yugoslavia.13	### Хорватия отказалась ###
+	title = yugoslavia.13.t
+	desc = yugoslavia.13.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.13.a
+		add_war_support = -0.05
+	}
+}

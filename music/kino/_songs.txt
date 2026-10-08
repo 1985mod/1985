@@ -70,3 +70,80 @@ music = {
       modifier = { factor = 1 }
     }
 }
+
+music = {
+    song = "vechnaya_vesna_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "vse_idet_po_planu_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "gosudarstvo_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "moya_oborona_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "obshchestvo_pamyat_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "otryad_ne_zametil_poteri_boytsa_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "povezlo_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "rodina_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "russkoye_pole_eksperimentov_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "sistema_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}
+
+music = {
+    song = "soldatami_ne_rozhdayutsya_name"
+    chance = {
+      modifier = { factor = 1 }
+    }
+}

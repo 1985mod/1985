@@ -24,8 +24,3 @@ add_ideas = {
 	ARB_gulf_cooperation_council
 	ARB_league_of_arab_states
 }
-
-give_guarantee = KUW
-give_guarantee = OMA
-give_guarantee = UAE
-give_guarantee = SAU

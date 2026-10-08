@@ -1,11 +1,9 @@
-add_namespace = somali
+add_namespace = somalia
 
 country_event = {
-    id = somali.1
-    title = somali.1.t
-    desc = somali.1.desc
-
-    picture = 
+    id = somalia.1
+    title = somalia.1.t
+    desc = somalia.1.desc
 
     fire_only_once = yes
 
@@ -21,8 +19,217 @@ country_event = {
         }
     }
 
+    immediate = {
+        hidden_effect = {
+            country_event = { id = somalia.2 days = 356 }
+        }
+    }
+
     option = {
-        name = somali.1.a
+        name = somalia.1.a
         white_peace = ETH
+        add_stability = -0.15
+    }
+}
+
+country_event = {
+    id = somalia.2
+    title = somalia.2.t
+    desc = somalia.2.desc
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        country_event = { id = somalia.3 days = 178 }
+        SNM = {
+            transfer_state = 269
+            add_state_core = 269
+        }
+        SDA = {
+            transfer_state = 969
+            add_state_core = 969
+        }
+        SSD = {
+            transfer_state = 1084
+            add_state_core = 1084
+        }
+		set_province_controller = 1905
+		set_province_controller = 8094
+		set_province_controller = 12814
+		set_province_controller = 10921
+        set_province_controller = 1966
+        SSD = {
+            set_province_controller = 12840
+        }
+        SNM = {
+            division_template = {
+                name = "active bayonets"
+                is_locked = no
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                }
+            }
+        }
+        SDA = {
+            division_template = {
+                name = "Barre fighters"
+                is_locked = no
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                }
+            }
+        }
+        SSD = {
+            division_template = {
+                name = "Somali fighters"
+                is_locked = no
+                regiments = {
+                    irregular_infantry = { x = 0 y = 0 }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = somalia.1.a
+        269 = {
+            create_unit = { 
+                division = "name = \"2. active bayonets\" division_template = \"active bayonets\" start_experience_factor = 0.4" 
+                owner = SNM
+            }
+            create_unit = { 
+                division = "name = \"2. active bayonets\" division_template = \"active bayonets\" start_experience_factor = 0.4" 
+                owner = SNM
+            }
+            create_unit = { 
+                division = "name = \"2. active bayonets\" division_template = \"active bayonets\" start_experience_factor = 0.4" 
+                owner = SNM
+            }
+            create_unit = { 
+                division = "name = \"2. active bayonets\" division_template = \"active bayonets\" start_experience_factor = 0.4" 
+                owner = SNM
+            }
+            create_unit = { 
+                division = "name = \"2. active bayonets\" division_template = \"active bayonets\" start_experience_factor = 0.4" 
+                owner = SNM
+            }
+            create_unit = { 
+                division = "name = \"2. active bayonets\" division_template = \"active bayonets\" start_experience_factor = 0.4" 
+                owner = SNM
+            }
+            create_unit = { 
+                division = "name = \"2. active bayonets\" division_template = \"active bayonets\" start_experience_factor = 0.4" 
+                owner = SNM
+            }
+        }
+
+        969 = {
+            create_unit = { 
+                division = "name = \"2. Barre fighters\" division_template = \"Barre fighters\" start_experience_factor = 0.3" 
+                owner = SDA
+            }
+            create_unit = { 
+                division = "name = \"2. Barre fighters\" division_template = \"Barre fighters\" start_experience_factor = 0.2" 
+                owner = SDA
+            }
+        }
+
+        1084 = {
+            create_unit = { 
+                division = "name = \"2. Somali fighters\" division_template = \"Somali fighters\" start_experience_factor = 0.3" 
+                owner = SSD
+            }
+            create_unit = { 
+                division = "name = \"2. Somali fighters\" division_template = \"Somali fighters\" start_experience_factor = 0.2" 
+                owner = SSD
+            }
+            create_unit = { 
+                division = "name = \"2. Somali fighters\" division_template = \"Somali fighters\" start_experience_factor = 0.2" 
+                owner = SSD
+            }
+            create_unit = { 
+                division = "name = \"2. Somali fighters\" division_template = \"Somali fighters\" start_experience_factor = 0.2" 
+                owner = SSD
+            }
+            create_unit = { 
+                division = "name = \"2. Somali fighters\" division_template = \"Somali fighters\" start_experience_factor = 0.2" 
+                owner = SSD
+            }
+        }
+        ROOT = {
+            declare_war_on = {
+                target = SNM
+                type = civil_war
+            }
+            declare_war_on = {
+                target = SSD
+                type = civil_war
+            }
+        }
+        hidden_effect = {
+            set_global_flag =  som_civil_war_in_somalia_flag
+            set_global_flag = super_event_visible
+            play_song = "towradatan_barakeeysan_name"
+            
+            set_global_flag = civil_war_in_somalia_flag
+        }
+    }
+}
+
+country_event = {
+    id = somalia.3
+    title = somalia.3.t
+    desc = somalia.3.desc
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        SPF = {
+            transfer_state = 844
+            add_state_core = 844
+            set_province_controller = 8164
+        }
+        SPF = {
+            division_template = {
+                name = "Movement SPF"
+                is_locked = no
+                regiments = {
+                    irregular_infantry = { x = 0 y = 0 }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = somalia.3.a
+        844 = {
+            create_unit = { 
+                division = "name = \"2. Movement SPF\" division_template = \"Movement SPF\" start_experience_factor = 0.4" 
+                owner = SPF
+            }
+            create_unit = { 
+                division = "name = \"2. Movement SPF\" division_template = \"Movement SPF\" start_experience_factor = 0.4" 
+                owner = SPF
+            }
+            create_unit = { 
+                division = "name = \"2. Movement SPF\" division_template = \"Movement SPF\" start_experience_factor = 0.4" 
+                owner = SPF
+            }
+            create_unit = { 
+                division = "name = \"2. Movement SPF\" division_template = \"Movement SPF\" start_experience_factor = 0.4" 
+                owner = SPF
+            }
+        }
+
+        ROOT = {
+            declare_war_on = {
+                target = SPF
+                type = civil_war
+            }
+        }
     }
 }

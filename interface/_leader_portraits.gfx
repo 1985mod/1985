@@ -54,27 +54,37 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_Portrait_george_bush"
+		name = GFX_portrait_USA_ronald_reagan_1988
+		texturefile = "gfx/leaders/USA/Portrait_Ronald_Reagan_1988.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_george_bush
 		texturefile = "gfx/leaders/USA/Portrait_George_Bush.dds"
 	}
 
 	spriteType = {
-		name = "GFX_Portrait_george_bush_1992"
+		name = GFX_Portrait_george_bush_1992
 		texturefile = "gfx/leaders/USA/Portrait_George_Bush_1992.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_USA_george_bush_failure_of_desert_storm
+		texturefile = "gfx/leaders/USA/Portrait_George_Bush_failure_of_desert_storm.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_Portrait_michael_dukakis"
+		name = GFX_Portrait_michael_dukakis
 		texturefile = "gfx/leaders/USA/Portrait_Michael_Dukakis.dds"
 	}
 
 	spriteType = {
-		name = "GFX_Portrait_bill_clinton"
+		name = GFX_Portrait_bill_clinton
 		texturefile = "gfx/leaders/USA/Portrait_Bill_Clinton.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_Portrait_Muhammadu_Buhari"
+		name = GFX_Portrait_Muhammadu_Buhari
 		texturefile = "gfx/leaders/NGA/Portrait_Muhammadu_Buhari.dds"
 	}
     
@@ -93,6 +103,17 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_Portrait_PRC_deng_xiaoping
 		texturefile = "gfx/leaders/PRC/Portrait_deng_xiaoping.dds"
+	}
+
+	##SIK##
+	spriteType = {
+		name = GFX_portrait_SIK_isa_yusuf_alptekin
+		texturefile = "gfx/leaders/SIK/Portrait_Isa_Yusuf_Alptekin.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SIK_ismail_amat
+		texturefile = "gfx/leaders/SIK/Portrait_Ismail_Amat.dds"
 	}
     
 	##CHI##
@@ -845,6 +866,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ICE/Portrait_Davíð_Oddsson.dds"
 	}
 
+    ### SRL ###
+	spriteType = {
+		name = GFX_portrait_SRL_j_r_jayewardene
+		texturefile = "gfx/leaders/SRL/Portrait_J_R_Jayewardene.dds"
+	}
+	
 	### ARG ###
 	spriteType = {
 		name = GFX_Portrait_augusto_pinochet

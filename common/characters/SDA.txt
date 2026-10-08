@@ -1,0 +1,18 @@
+characters = {
+	SDA_mohamed_farah_abdullahi ={
+		name = SDA_mohamed_farah_abdullahi
+		portraits={
+			civilian={
+				large= GFX_Portrait_mohamed_farah_abdullahi
+			}
+			army = {
+				large = GFX_Portrait_mohamed_farah_abdullahi
+			}
+		}
+		country_leader={
+			ideology = ethnic_nationalism
+			traits={  }
+			expire="2026.10.9.1"		
+		}
+	}
+}

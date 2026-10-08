@@ -14,9 +14,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				send_volunteer_size = 10
-				lend_lease_tension = -0.4
-				request_lease_tension = -0.4
+				send_volunteer_size = 5
+				lend_lease_tension = -0.5
+				request_lease_tension = -0.5
 			}
 		}
 		SOV_economic_stagnation = {
