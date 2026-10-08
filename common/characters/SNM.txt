@@ -1,0 +1,18 @@
+characters = {
+	SNM_ahmed_mohamed_mohamoud ={
+		name = SNM_ahmed_mohamed_mohamoud
+		portraits={
+			civilian={
+				large= GFX_Portrait_ahmed_mohamed_mohamoud
+			}
+			army = {
+				large = GFX_Portrait_ahmed_mohamed_mohamoud
+			}
+		}
+		country_leader={
+			ideology = extreme_nationalism
+			traits={  }
+			expire="2017.05.9.1"		
+		}
+	}
+}

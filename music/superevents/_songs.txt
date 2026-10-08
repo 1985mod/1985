@@ -72,3 +72,12 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "towradatan_barakeeysan_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}

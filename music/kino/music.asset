@@ -57,3 +57,69 @@ music = {
     file = "zvezda_po_imeni_solnce.ogg"
     volume = 0.65
 }
+
+music = {
+    name = "vechnaya_vesna_name"
+    file = "vechnaya_vesna.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "vse_idet_po_planu_name"
+    file = "vse_idet_po_planu.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "gosudarstvo_name"
+    file = "gosudarstvo.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "moya_oborona_name"
+    file = "moya_oborona.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "obshchestvo_pamyat_name"
+    file = "obshchestvo_pamyat.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "otryad_ne_zametil_poteri_boytsa_name"
+    file = "otryad_ne_zametil_poteri_boytsa.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "povezlo_name"
+    file = "povezlo.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "rodina_name"
+    file = "rodina.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "russkoye_pole_eksperimentov_name"
+    file = "russkoye_pole_eksperimentov.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "sistema_name"
+    file = "sistema.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "soldatami_ne_rozhdayutsya_name"
+    file = "soldatami_ne_rozhdayutsya.ogg"
+    volume = 0.65
+}

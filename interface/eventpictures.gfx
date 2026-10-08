@@ -516,8 +516,6 @@ spriteTypes = {
 		name = "GFX_news_victory_spd_in_1987"
 		texturefile = "gfx/event_pictures/news_victory_spd_in_1987.dds"
 	}
-<<<<<<< Updated upstream
-=======
 
 	spriteType = {
 		name = "GFX_news_war_in_bosnia"
@@ -538,9 +536,6 @@ spriteTypes = {
 		name = "GFX_news_8888_uprising"
 		texturefile = "gfx/event_pictures/news_8888_uprising.dds"
 	}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 
 	spriteType = {
 		name = "GFX_news_trump_in_moscow"
@@ -566,7 +561,6 @@ spriteTypes = {
 		name = "GFX_news_the_resignation_of_margaret_thatcher"
 		texturefile = "gfx/event_pictures/news_the_resignation_of_margaret_thatcher.dds"
 	}
->>>>>>> Stashed changes
 }
 
 

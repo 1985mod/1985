@@ -52,3 +52,9 @@ music = {
 	file = "second_korean_war.ogg"
 	volume = 0.95
 }
+
+music = {
+	name = "towradatan_barakeeysan_name"
+	file = "towradatan_barakeeysan.ogg"
+	volume = 0.95
+}

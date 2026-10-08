@@ -81,5 +81,31 @@ ideas = {
 				supply_factor = -0.1
 			}
 		}
+
+		YUG_sarajevo_armistice = {
+			picture = EU_member_2 
+			allowed = {
+				original_tag = YUG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+            targeted_modifier = {
+                tag = CRO
+                attack_bonus_against = -100
+            }
+            targeted_modifier = {
+                tag = CRO
+                defense_bonus_against = -100
+            }
+
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
 	}
 }

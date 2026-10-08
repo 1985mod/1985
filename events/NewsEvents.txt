@@ -822,8 +822,6 @@ news_event = {
 		name = news.36.a
 	}
 }
-<<<<<<< Updated upstream
-=======
 
 news_event = {
 	id = news.37 ##	Война в Боснии ##
@@ -904,9 +902,7 @@ news_event = {
 		add_stability = -0.15
 	}
 }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
+
 
 news_event = {
 	id = news.41 ## Приезд Трампа в Москву ##
@@ -1036,4 +1032,3 @@ news_event = {
 		trigger = { TAG = ENG }
 	}
 }
->>>>>>> Stashed changes

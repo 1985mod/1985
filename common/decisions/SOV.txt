@@ -760,7 +760,6 @@ SOV_world_war_three = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = controls_all_states_in_wgr
-				controls_or_subject_of = yes
 				909 = { is_controlled_by_ROOT_or_subject = yes }
 				58 = { is_controlled_by_ROOT_or_subject = yes }
 				59 = { is_controlled_by_ROOT_or_subject = yes }

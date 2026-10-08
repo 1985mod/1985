@@ -111,7 +111,7 @@ YUG_build_army = {
     ai_strategy = {
        type = build_army
        id = infantry
-       value = 32
+       value = 18
     }
 }
 
