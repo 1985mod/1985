@@ -355,8 +355,12 @@ CRO = {
 	color_ui = rgb { 230 255 122 }
 }
 LBA = {
-	color = rgb { 200 180 90 }
-	color_ui = rgb { 200 180 90 }
+	color = rgb { 72 140 90 }
+	color_ui = rgb { 61 120 77 }
+}
+SUD = {
+	color = rgb { 0 98 51 }
+	color_ui = rgb { 0 98 51 }
 }
 EGY = {
 	color = rgb { 192 147 0 }
@@ -466,6 +470,14 @@ BOT = {
 	color = rgb { 117 170 219 }
 	color_ui = rgb { 167 153 255 }
 }
+GAM = {
+	color = rgb { 40 50 100 }
+	color_ui = rgb { 40 50 100 }
+}
+ZAM = {
+	color = rgb { 117 142 91 }
+	color_ui = rgb { 117 142 91 }
+}
 SOM = {
 	color = rgb { 128 179 235 }
 	color_ui = rgb { 128 179 235 }
@@ -474,9 +486,17 @@ CMR = {
 	color = rgb { 200 131 111 }
 	color_ui = rgb { 200 131 111 }
 }
+TZN = {
+	color = rgb { 139 189 189 }
+	color_ui = rgb { 139 189 189 }
+}
 CHA = {
 	color = rgb { 190 240 30 }
 	color_ui = rgb { 180 230 20 }
+}
+CAR = {
+	color = rgb { 126 200 160 }
+	color_ui = rgb { 126 200 160 }
 }
 BAN = {
 	color = rgb { 0 105 81 }
@@ -533,4 +553,8 @@ KUR = {
 NCY = {
 	color = rgb { 235 99 57 }
 	color_ui = rgb { 230 95 53 }	
+}
+MLT = {
+	color = rgb { 160 0 0 }
+	color_ui = rgb { 90 0 0 }
 }
