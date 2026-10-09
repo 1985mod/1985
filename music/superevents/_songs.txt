@@ -81,3 +81,21 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "armiya_moya_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "everybody_wants_to_rule_the_world_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}

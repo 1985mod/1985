@@ -1052,7 +1052,7 @@ on_actions = {
 				}
 			}
 
-			clamp_variable = { var = weekly_income min = 0 }
+			clamp_variable = { var = treasury min = 0 }
 			clamp_variable = { var = current_debt min = 0 }
 
 			if = {

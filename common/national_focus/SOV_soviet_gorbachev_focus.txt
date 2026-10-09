@@ -158,7 +158,7 @@ focus_tree = {
         cost = 5
         completion_reward = {
             country_event = { id = SOV_soviet_union.7 }
-            add_global_tension = -0.15
+            add_threat  = -0.05
             USA = {
 	            add_opinion_modifier = {
                     target = SOV

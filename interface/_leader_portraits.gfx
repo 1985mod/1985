@@ -17,6 +17,11 @@ spriteTypes = {
 		textureFile = "gfx/leaders/SOV/Portrait_Mikhail_Gorbachev_uss.dds"
 	}
 
+    spriteType = {
+		name = GFX_portrait_SOV_mikhail_gorbachev_1991
+		textureFile = "gfx/leaders/SOV/Portrait_Mikhail_Gorbachev_1991.dds"
+	}
+
 	spriteType = {
 		name = GFX_portrait_gennady_yanaev
 		textureFile = "gfx/leaders/SOV/Portrait_gennady_yanaev.dds"
@@ -1067,8 +1072,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_Portrait_rakhmon_nabiev
-		textureFile = "gfx/leaders/TAJ/Portrait_rakhmon_nabiev.dds"
+		name = GFX_Portrait_sayid_abdulloh_nuri
+		textureFile = "gfx/leaders/TAJ/Portrait_sayid_abdulloh_nuri.dds"
 	}
 
 

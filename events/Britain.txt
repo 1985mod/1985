@@ -183,7 +183,7 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = ashdown
-			remove_country_leader = { name = "ENG_david_steel" }
+			retire_character = { name = "ENG_david_steel" }
 			promote_character = {
 				character = ENG_paddy_ashdown
 				ideology = liberalism
@@ -219,7 +219,7 @@ country_event = {
             hours = 5
         }
         set_country_flag = major
-		remove_country_leader = { name = "ENG_margaret_thatcher" }
+		retire_character = { name = "ENG_margaret_thatcher" }
 		promote_character = {
 			character = ENG_john_major
 			ideology = conservatism

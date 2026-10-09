@@ -22,6 +22,9 @@ ideologies = {
 			democratic_socialism = {
 			}
 
+			left_wing_nationalism = {
+			}
+
 		}
 
 		dynamic_faction_names = {

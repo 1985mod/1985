@@ -9,7 +9,7 @@ characters = {
 		country_leader = {
 			ideology = authoritarian_socialism
 			traits = { }
-			expire = "1990.22.12.1"
+			expire = "1990.12.1"
 			id = -1
 		}
 	}
@@ -23,7 +23,7 @@ characters = {
 		country_leader = {
 			ideology = social_conservatism
 			traits = { }
-			expire = "1995.22.12.1"
+			expire = "1995.12.1"
 			id = -1
 		}
 	}

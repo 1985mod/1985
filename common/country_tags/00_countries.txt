@@ -183,6 +183,7 @@ YEM = "countries/Yeman.txt"
 YUG = "countries/Yugoslavia.txt"
 ZAM = "countries/Zambia.txt"
 ZIM = "countries/Zimbabwe.txt"
+UTO = "countries/United Tajik Opposition.txt"
 
 ### USA collapse countries ###
 MRA = "countries/The Mountain Republics America.txt"

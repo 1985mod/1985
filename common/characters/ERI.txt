@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology = classic_conservatism
+			ideology = left_wing_nationalism
 			traits={  }
 			expire="1991.11.9.1"		
 		}

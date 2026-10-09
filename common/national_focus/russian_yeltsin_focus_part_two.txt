@@ -193,6 +193,9 @@ focus_tree = {
                 ideology = conservatism
                 portrait = GFX_Portrait_boris_yeltsin_1993
             }
+            set_global_flag = rus_black_october_october_flag
+            set_global_flag = super_event_visible
+            play_song = "spokojjnaya_noch_name"	
 		}
     } 
 }

@@ -1,0 +1,118 @@
+add_namespace = tajikistan
+
+country_event = {
+    id = tajikistan.1
+    title = tajikistan.1.t
+    desc = tajikistan.1.desc
+
+    fire_only_once = yes
+
+    trigger = {
+		country_exists = TAJ
+        tag = TAJ
+        has_civil_war = no
+        date > 1992.8.25
+		has_government = communism
+    }
+
+    immediate = {
+            division_template = {
+                name = "National Guard of tajikistan"
+                is_locked = no
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+                }
+            }		
+		UTO = {
+			transfer_state = 1085
+			add_state_core = 1085
+			add_state_core = 742
+            division_template = {
+                name = "Islamic insurgents"
+                is_locked = no
+                regiments = {
+                    irregular_infantry = { x = 0 y = 0 }
+                }
+            }
+            division_template = {
+                name = "Islamic infantry"
+                is_locked = no
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+                }
+            }
+		}
+    }
+
+    option = {
+        name = somalia.1.a
+		add_political_power = -25
+		add_war_support = -0.05
+        add_stability = -0.1
+        742 = {
+            create_unit = { 
+                division = "name = \"2. National Guard of tajikistan\" division_template = \"National Guard of tajikistan\" start_experience_factor = 0.1" 
+                owner = TAJ
+            }
+            create_unit = { 
+                division = "name = \"2. National Guard of tajikistan\" division_template = \"National Guard of tajikistan\" start_experience_factor = 0.2" 
+                owner = TAJ
+            }
+            create_unit = { 
+                division = "name = \"2. National Guard of tajikistan\" division_template = \"National Guard of tajikistan\" start_experience_factor = 0.2" 
+                owner = TAJ
+            }
+            create_unit = { 
+                division = "name = \"2. National Guard of tajikistan\" division_template = \"National Guard of tajikistan\" start_experience_factor = 0.1" 
+                owner = TAJ
+            }
+            create_unit = { 
+                division = "name = \"2. National Guard of tajikistan\" division_template = \"National Guard of tajikistan\" start_experience_factor = 0.2" 
+                owner = TAJ
+            }
+        }
+        UTO = {
+            declare_war_on = {
+                target = TAJ
+                type = civil_war
+            }
+			set_province_controller = 12250
+			set_province_controller = 10205
+			1085 = {
+				create_unit = { 
+					division = "name = \"2. Islamic infantry\" division_template = \"Islamic infantry\" start_experience_factor = 0.1" 
+					owner = UTO
+				}
+				create_unit = { 
+					division = "name = \"2. Islamic infantry\" division_template = \"Islamic infantry\" start_experience_factor = 0.2" 
+					owner = UTO
+				}
+				create_unit = { 
+					division = "name = \"2. Islamic infantry\" division_template = \"Islamic infantry\" start_experience_factor = 0.2" 
+					owner = UTO
+				}
+				create_unit = { 
+					division = "name = \"2. Islamic infantry\" division_template = \"Islamic infantry\" start_experience_factor = 0.1" 
+					owner = UTO
+				}
+				create_unit = { 
+					division = "name = \"2. Islamic infantry\" division_template = \"Islamic infantry\" start_experience_factor = 0.2" 
+					owner = UTO
+				}
+			}
+			742 = {
+				create_unit = { 
+					division = "name = \"2. Islamic insurgents\" division_template = \"Islamic insurgents\" start_experience_factor = 0.1" 
+					owner = UTO
+				}
+				create_unit = { 
+					division = "name = \"2. Islamic insurgents\" division_template = \"Islamic insurgents\" start_experience_factor = 0.2" 
+					owner = UTO
+				}
+			}
+        }
+    }
+}

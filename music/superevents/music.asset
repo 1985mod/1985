@@ -58,3 +58,15 @@ music = {
 	file = "towradatan_barakeeysan.ogg"
 	volume = 0.95
 }
+
+music = {
+	name = "armiya_moya_name"
+	file = "armiya_moya.ogg"
+	volume = 0.95
+}
+
+music = {
+	name = "everybody_wants_to_rule_the_world_name"
+	file = "everybody_wants_to_rule_the_world.ogg"
+	volume = 0.95
+}

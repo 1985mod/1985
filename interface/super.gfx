@@ -1,0 +1,85 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_super_event_picture"
+		textureFile = "gfx/interface/super_events.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_window"
+		textureFile = "gfx/interface/Super_Event_Window.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_close_button"
+		textureFile = "gfx/interface/Super_Event_Close_Button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_underlay"
+		textureFile = "gfx/interface/Super_Event_Underlay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_world_war_three"
+		textureFile = "gfx/interface/sp_events/super_event_world_war_three.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_operation_desert_storm"
+		textureFile = "gfx/interface/sp_events/super_event_operation_desert_storm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_reunification_of_germany"
+		textureFile = "gfx/interface/sp_events/super_reunification_of_germany.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_formation_uss_from_ussr"
+		textureFile = "gfx/interface/sp_events/super_event_formation_uss_from_ussr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_military_coup_detat"
+		textureFile = "gfx/interface/sp_events/super_event_military_coup_detat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_first_chechen_war"
+		textureFile = "gfx/interface/sp_events/super_event_first_chechen_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_collapse_of_america"
+		textureFile = "gfx/interface/sp_events/super_event_collapse_of_america.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_two_korean_war"
+		textureFile = "gfx/interface/sp_events/super_event_two_korean_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_start_sec"
+		textureFile = "gfx/interface/sp_events/super_event_start_sec.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_civil_war_in_somalia"
+		textureFile = "gfx/interface/sp_events/super_event_civil_war_in_somalia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_victory_ussr_in_world_war_three"
+		textureFile = "gfx/interface/sp_events/super_event_victory_ussr_in_world_war_three.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_victory_nato_in_world_war_three"
+		textureFile = "gfx/interface/sp_events/super_event_victory_nato_in_world_war_three.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_event_black_october_yeltsin"
+		textureFile = "gfx/interface/sp_events/super_event_black_october_yeltsin.dds"
+	}
+}
