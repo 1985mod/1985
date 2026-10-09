@@ -33,3 +33,8 @@ recruit_character = INS_Suharto
 add_ideas = {
 	low_economic_mobilisation
 }
+
+declare_war_on = {
+	target = ACE
+	type = annex_everything
+}

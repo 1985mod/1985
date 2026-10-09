@@ -38,6 +38,10 @@ country_event = {
     }
     option = {
         name = Czechoslovakia.2.a
+         news_event = {
+            id = news.47
+            hours = 5
+        }
         retire_country_leader = yes
         set_politics = {
             ruling_party = liberalism

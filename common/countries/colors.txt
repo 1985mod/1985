@@ -414,6 +414,10 @@ INS = {
 	color = rgb { 40  50  120 }
 	color_ui = rgb { 40  50  120 }
 }
+ACE = {
+	color = rgb { 145 156 47 }
+	color_ui = rgb { 145 156 47 }
+}
 VIN = {
 	color = rgb { 230  223  50 }
 	color_ui = rgb { 230  223  50 }

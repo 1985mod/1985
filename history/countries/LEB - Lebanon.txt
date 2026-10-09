@@ -42,6 +42,9 @@ set_popularities = {
 }
 
 recruit_character = LEB_amin_pierre
+recruit_character = LEB_salim_al_huss
+recruit_character = LEB_rene_moawad
+recruit_character = LEB_elias_hrawi
 recruit_character = LEB_georges_hauy
 
 add_ideas = {

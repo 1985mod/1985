@@ -131,7 +131,29 @@ spriteTypes = {
 		name = GFX_portrait_CHI_lee_teng_hui
 		texturefile = "gfx/leaders/CHI/Portrait_Lee_Teng_hui.dds"
 	}
-    
+
+    ## LEB ##
+	spriteType = {
+		name = GFX_portrait_LEB_salim_al_huss
+		texturefile = "gfx/leaders/LEB/Portrait_Salim_al_Huss.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_LEB_rene_moawad
+		texturefile = "gfx/leaders/LEB/Portrait_Rene_Moawad.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_LEB_elias_hrawi
+		texturefile = "gfx/leaders/LEB/Portrait_Elias_Hrawi.dds"
+	}
+
+	## KUW ##
+	spriteType = {
+		name = GFX_portrait_KUW_jaber
+		texturefile = "gfx/leaders/KUW/Portrait_Jaber.dds"
+	}
+
 	##ENG##
 	spriteType = {
 		name = GFX_portrait_ENG_margaret_thatcher
@@ -747,6 +769,12 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_Portrait_Suharto
 		texturefile = "gfx/leaders/INS/Portrait_Suharto.dds"
+	}
+
+	## ACE ##
+	spriteType = {
+		name = GFX_Portrait_ACE_dr_hasan_tiror
+		texturefile = "gfx/leaders/ACE/Portrait_dr_hasan_tiror.dds"
 	}
 	
 	## SAU ##

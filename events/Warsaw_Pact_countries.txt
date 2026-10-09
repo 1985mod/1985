@@ -17,6 +17,10 @@ country_event = {
     }
     option = {
         name = warsaw_pact_countries.1.a
+        news_event = {
+            id = news.50
+            hours = 10
+        }
         country_event = { id = warsaw_pact_countries.8 days = 179 }
         set_cosmetic_tag = ROM_revolution
         retire_country_leader = yes
@@ -85,6 +89,10 @@ country_event = {
     }
     option = {
         name = warsaw_pact_countries.2.c
+        news_event = {
+            id = news.46
+            hours = 10
+        }
         country_event = { id = warsaw_pact_countries.10 days = 800 }
         retire_country_leader = yes
         set_politics = {
@@ -148,6 +156,10 @@ country_event = {
     option = {
         country_event = { id = warsaw_pact_countries.7 days = 299 }
         name = warsaw_pact_countries.3.a
+        news_event = {
+            id = news.49
+            hours = 10
+        }
         retire_country_leader = yes
         set_party_name = {
             ideology = socialism
@@ -222,6 +234,10 @@ country_event = {
     }
     option = {
         name = warsaw_pact_countries.4.a
+        news_event = {
+            id = news.48
+            hours = 10
+        }
         country_event = { id = warsaw_pact_countries.11 days = 670 }
         set_cosmetic_tag = POL_1989
         set_politics = {

@@ -822,8 +822,6 @@ news_event = {
 		name = news.36.a
 	}
 }
-<<<<<<< Updated upstream
-=======
 
 news_event = {
 	id = news.37 ##	Война в Боснии ##
@@ -904,9 +902,6 @@ news_event = {
 		add_stability = -0.15
 	}
 }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 
 news_event = {
 	id = news.41 ## Приезд Трампа в Москву ##
@@ -1036,4 +1031,123 @@ news_event = {
 		trigger = { TAG = ENG }
 	}
 }
->>>>>>> Stashed changes
+
+news_event = {
+	id = news.46 ## Нежная революция ##
+	title = news.46.t
+	desc = news.46.desc
+	picture = GFX_news_gentle_revolution
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.46.a
+		trigger = {
+			NOT = {
+				TAG = BUL
+			}
+		}
+	}
+	option = {
+		name = news.46.b
+		trigger = { TAG = BUL }
+	}
+}
+
+news_event = {
+	id = news.47 ## Бархатная революция ##
+	title = news.47.t
+	desc = news.47.desc
+	picture = GFX_news_velvet_revolution
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.47.a
+		trigger = {
+			NOT = {
+				TAG = CZE
+			}
+		}
+	}
+	option = {
+		name = news.47.b
+		trigger = { TAG = CZE }
+	}
+}
+
+news_event = {
+	id = news.48 ## Революция Солидарности ##
+	title = news.48.t
+	desc = news.48.desc
+	picture = GFX_news_solidarity_revolution
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.48.a
+		trigger = {
+			NOT = {
+				TAG = POL
+			}
+		}
+	}
+	option = {
+		name = news.48.b
+		trigger = { TAG = POL }
+	}
+}
+
+news_event = {
+	id = news.49 ## Переход Венгрии к демократии ##
+	title = news.49.t
+	desc = news.49.desc
+	picture = GFX_news_end_of_communism_in_hungary
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.49.a
+		trigger = {
+			NOT = {
+				TAG = HUN
+			}
+		}
+	}
+	option = {
+		name = news.49.b
+		trigger = { TAG = HUN }
+	}
+}
+
+news_event = {
+	id = news.50 ## Румынская революция ##
+	title = news.50.t
+	desc = news.50.desc
+	picture = GFX_news_romanian_revolution
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.50.a
+		trigger = {
+			NOT = {
+				TAG = ROM
+			}
+		}
+	}
+	option = {
+		name = news.50.b
+		trigger = { TAG = ROM }
+	}
+}

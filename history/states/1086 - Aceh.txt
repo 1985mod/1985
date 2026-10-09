@@ -1,0 +1,45 @@
+state = {
+	id = 1086
+	name = "STATE_1086"
+	manpower = 2900000
+	
+	state_category = town
+	
+	resources = {
+		rubber = 10 # was: 268
+		oil = 2 # was: 24
+		aluminium = 4 # was: 50
+		coal = 2 # initial distribution
+	}
+
+	history = {
+
+		owner = ACE
+		add_core_of = ACE
+		add_core_of = INS
+
+		victory_points = {
+			7658 15
+		}
+
+		buildings = {
+
+			infrastructure = 2
+
+			4652 = {
+				naval_base = 3
+			}
+
+			1648 = {
+				naval_base = 1
+			}
+
+		}
+	}
+
+	provinces = {
+		1648 7658 8360 10509 12488
+	}
+
+	local_supplies = 0.0 
+}

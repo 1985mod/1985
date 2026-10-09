@@ -198,8 +198,6 @@ country_event = {
 			}
 		}
 	}
-<<<<<<< Updated upstream
-=======
 }
 
 country_event = { 
@@ -225,5 +223,4 @@ country_event = {
 			ideology = conservatism
 		}
     }
->>>>>>> Stashed changes
 }
