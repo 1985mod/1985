@@ -1,0 +1,190 @@
+scripted_gui = {
+
+	sp_event_window = {
+		window_name = "sp_event_window"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = super_event_visible
+		}
+		
+		triggers = {
+			super_event_world_war_three_visible = {
+				has_global_flag = sov_world_war_3
+			}
+		}
+
+		triggers = {
+			super_event_operation_desert_storm_visible = {
+				has_global_flag = usa_desert_storm
+			}
+		}
+	
+		triggers = {
+			super_reunification_of_germany_visible = {
+				has_global_flag = wgr_reunification_germany
+			}
+		}
+
+		triggers = {
+			super_event_formation_uss_from_ussr_visible = {
+				has_global_flag = sov_formation_uss
+			}
+		}
+
+		triggers = {
+			super_event_military_coup_detat_visible = {
+				has_global_flag = rus_military_coup
+			}
+		}
+
+		triggers = {
+			super_event_first_chechen_war_visible = {
+				has_global_flag = che_first_chechen_war
+			}
+		}
+
+		triggers = {
+			super_event_collapse_of_america_visible = {
+				has_global_flag = usa_collapse_of_america_flag
+			}
+		}
+
+		triggers = {
+			super_event_two_korean_war_visible = {
+				has_global_flag = prk_two_korean_war_flag
+			}
+		}
+
+		triggers = {
+			super_event_start_sec_visible = {
+				has_global_flag = sov_start_sec_flag
+			}
+		}
+
+		triggers = {
+			super_event_civil_war_in_somalia_visible = {
+				has_global_flag = som_civil_war_in_somalia_flag
+			}
+		}
+
+		triggers = {
+			super_event_victory_ussr_in_world_war_three_visible = {
+				has_global_flag = sov_world_war_three_victory_flag
+			}
+		}
+
+		triggers = {
+			super_event_victory_nato_in_world_war_three_visible = {
+				has_global_flag = nato_world_war_three_victory_flag
+			}
+		}
+
+		triggers = {
+			super_event_black_october_yeltsin_visible = {
+				has_global_flag = rus_black_october_october_flag
+			}
+		}
+		
+		############
+		###BUTTON###
+		############
+		
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = super_event_visible
+				
+				if = {
+					limit = {
+						has_global_flag = sov_world_war_3
+					}
+					clr_global_flag = sov_world_war_3
+				}
+
+				if = {
+					limit = {
+						has_global_flag = usa_desert_storm
+					}
+					clr_global_flag = usa_desert_storm
+				}
+
+				if = {
+					limit = {
+						has_global_flag = wgr_reunification_germany
+					}
+					clr_global_flag = wgr_reunification_germany
+				}
+
+				if = {
+					limit = {
+						has_global_flag = sov_formation_uss
+					}
+					clr_global_flag = sov_formation_uss
+				}
+
+				if = {
+					limit = {
+						has_global_flag = rus_military_coup
+					}
+					clr_global_flag = rus_military_coup
+				}
+
+				if = {
+					limit = {
+						has_global_flag = che_first_chechen_war
+					}
+					clr_global_flag = che_first_chechen_war
+				}
+
+				if = {
+					limit = {
+						has_global_flag = usa_collapse_of_america_flag
+					}
+					clr_global_flag = usa_collapse_of_america_flag
+				}
+
+				if = {
+					limit = {
+						has_global_flag = prk_two_korean_war_flag
+					}
+					clr_global_flag = prk_two_korean_war_flag
+				}
+
+				if = {
+					limit = {
+						has_global_flag = sov_start_sec_flag
+					}
+					clr_global_flag = sov_start_sec_flag
+				}
+
+				if = {
+					limit = {
+						has_global_flag = som_civil_war_in_somalia_flag
+					}
+					clr_global_flag = som_civil_war_in_somalia_flag
+				}
+
+				if = {
+					limit = {
+						has_global_flag = sov_world_war_three_victory_flag
+					}
+					clr_global_flag = sov_world_war_three_victory_flag
+				}
+
+				if = {
+					limit = {
+						has_global_flag = nato_world_war_three_victory_flag
+					}
+					clr_global_flag = nato_world_war_three_victory_flag
+				}
+
+				if = {
+					limit = {
+						has_global_flag = rus_black_october_october_flag
+					}
+					clr_global_flag = rus_black_october_october_flag
+				}
+			}
+		}
+	}
+}

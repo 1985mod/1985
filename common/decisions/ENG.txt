@@ -13,12 +13,11 @@ IRA_conflict_category = {
             NOT = { has_global_flag = Ireland_declied }  
         }
         
-        cost = 0
         days_remove = 7
         
         complete_effect = {
             IRE = {
-        country_event = { id = IRA_focus.2 days = 7 }
+                country_event = { id = IRA_focus.2 days = 7 }
             }
         }
         
@@ -46,7 +45,7 @@ IRA_conflict_category = {
         complete_effect = {
             set_global_flag = IRA_conflict_resolved
             119 = { remove_dynamic_modifier = { modifier = northern_ireland_IRA_activity } }
-        complete_national_focus = IRA_inegrated_North_Ireland
+            complete_national_focus = IRA_inegrated_North_Ireland
         }
         
         ai_will_do = {
@@ -56,34 +55,38 @@ IRA_conflict_category = {
 }
 IRA_peace_category = {
     IRA_offer_autonomy = {
-        visible = {
-        NOT = { has_global_flag = IRA_conflict_resolved }    
-        }
-        available = {
-        NOT = { has_global_flag = IRA_conflict_resolved }
-            is_controller_of_state = 119
-        }
-        cost = 0
+
         days_remove = 7
-    complete_effect = {
-        IRE = {
-        country_event = { id = IRA_focus.2 days = 7 }
+
+        visible = {
+            NOT = { has_global_flag = IRA_conflict_resolved }    
+        }
+
+        available = {
+            NOT = { has_global_flag = IRA_conflict_resolved }
+            controls_state = 119
+        }
+        complete_effect = {
+            IRE = {
+                country_event = { id = IRA_focus.2 days = 7 }
             }
-        }    
+        }
     }
-     IRA_demand_recognition = {
+    IRA_demand_recognition = {
+
+        days_remove = 15
+
         visible = {
             NOT = { has_global_flag = IRA_conflict_resolved }    
         }
         available = {
-            is_controller_of_state = 119
+            controls_state = 119
             NOT = { has_global_flag = IRA_conflict_resolved }
-        cost = 0
-        days_remove = 7    
         }
-    complete_effect = {
-        IRE = {
-        country_event = { id = IRA_focus.3 days = 7 }
+
+        complete_effect = {
+            IRE = {
+                country_event = { id = IRA_focus.3 days = 7 }
             }
         }    
     }

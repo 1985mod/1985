@@ -1072,8 +1072,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_Portrait_rakhmon_nabiev
-		textureFile = "gfx/leaders/TAJ/Portrait_rakhmon_nabiev.dds"
+		name = GFX_Portrait_sayid_abdulloh_nuri
+		textureFile = "gfx/leaders/TAJ/Portrait_sayid_abdulloh_nuri.dds"
 	}
 
 

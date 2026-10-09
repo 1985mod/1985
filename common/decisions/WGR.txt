@@ -170,7 +170,7 @@ WGR_election_campaign_in_germany = {
 	
 		remove_effect = {
 			custom_effect_tooltip = support_for_the_spd_will_increase_by_5
-			add_war_suppport = 0.03
+			add_war_support = 0.03
 			add_popularity = {
 				ideology = socialism
 				popularity = 0.03

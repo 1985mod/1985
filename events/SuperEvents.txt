@@ -1,0 +1,342 @@
+################
+# SUPER EVENTS #
+################
+
+add_namespace = super_event
+
+country_event = {
+	id = super_event.1
+	title = super_event.1.t
+	desc = super_event.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			SOV = { has_government = communism }
+			OR = {
+				SOV = { has_war_with = USA }
+				SOV = { has_war_with = ENG }
+			}
+			NOT = {
+				has_global_flag = super_world_war_3
+			}
+		}
+	}
+
+	option = {
+		name = super.1.a
+		
+        set_global_flag = sov_world_war_3
+		set_global_flag = super_event_visible
+		play_song = "old_march_name"
+		
+		set_global_flag = super_world_war_3
+	}
+}
+
+country_event = {
+	id = super_event.2
+	title = super_event.2.t
+	desc = super_event.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			USA = { has_completed_focus = USA_operation_desert_storm }
+			NOT = {
+				has_global_flag = super_operation_desert_storm
+			}
+		}
+	}
+
+	option = {
+		name = super.2.a
+		
+        set_global_flag = usa_desert_storm
+		set_global_flag = super_event_visible
+		play_song = "los_del_rio_macarena_slowed_reverb_name"
+		
+		set_global_flag = super_operation_desert_storm
+	}
+}
+
+country_event = {
+	id = super_event.3
+	title = super_event.3.t
+	desc = super_event.3.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = { country_exists = DDR }
+			OR = {
+				has_global_flag = GER_unification1
+				has_global_flag = GER_unification2
+			}
+			NOT = {
+				has_global_flag = super_reunification_of_germany
+			}
+		}
+	}
+
+	option = {
+		name = super.3.a
+		
+        set_global_flag = wgr_reunification_germany
+		set_global_flag = super_event_visible
+		play_song = "unification_germany_name"
+		
+		set_global_flag = super_reunification_of_germany
+	}
+}
+
+country_event = {
+	id = super_event.4
+	title = super_event.4.t
+	desc = super_event.4.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = sov_formation_uss
+		set_global_flag = super_event_visible
+		play_song = "born_in_ussr_name"
+	}
+}
+
+country_event = {
+	id = super_event.5
+	title = super_event.5.t
+	desc = super_event.5.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+
+	trigger = {
+		AND = {
+			has_global_flag = military_coup_in_russia
+			NOT = {
+				has_global_flag = military_coup_in_russia_flag
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.5.a
+		
+        set_global_flag = rus_military_coup
+		set_global_flag = super_event_visible
+		play_song = "soldaty_v_put_name"
+		
+		set_global_flag = military_coup_in_russia_flag
+	}
+}
+
+country_event = {
+	id = super_event.6
+	title = super_event.6.t
+	desc = super_event.6.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+
+	trigger = {
+		AND = {
+			RUS = { has_war_with = CHE }
+			NOT = {
+				has_global_flag = first_chechen_war_flag
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.6.a
+		
+        set_global_flag = che_first_chechen_war
+		set_global_flag = super_event_visible
+		play_song = "chechnya_in_flames_name"
+		
+		set_global_flag = first_chechen_war_flag
+	}
+}
+
+country_event = {
+	id = super_event.7
+	title = super_event.7.t
+	desc = super_event.7.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+
+	trigger = {
+		AND = {
+			has_global_flag = collapse_of_america
+			NOT = {
+				has_global_flag = collapse_of_america_flag
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.7.a
+		
+        set_global_flag = usa_collapse_of_america_flag
+		set_global_flag = super_event_visible
+		play_song = "its_the_end_of_the_world_as_we_know_it_and_i_feel_fine_name"
+		
+		set_global_flag = collapse_of_america_flag
+	}
+}
+
+country_event = {
+	id = super_event.8
+	title = super_event.8.t
+	desc = super_event.8.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+
+	trigger = {
+		AND = {
+			PRK = { has_war_with = KOR }
+			NOT = {
+				has_global_flag = two_korean_war_flag
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.8.a
+		
+        set_global_flag = prk_two_korean_war_flag
+		set_global_flag = super_event_visible
+		play_song = "second_korean_war_name"
+		
+		set_global_flag = two_korean_war_flag
+	}
+}
+
+country_event = {
+	id = super_event.9
+	title = super_event.9.t
+	desc = super_event.9.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.9.a
+		
+        set_global_flag = som_civil_war_in_somalia_flag
+		set_global_flag = super_event_visible
+		play_song = "towradatan_barakeeysan_name"
+	}
+}
+
+country_event = {
+	id = super_event.10
+	title = super_event.10.t
+	desc = super_event.10.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.10.a
+		
+        set_global_flag = sov_world_war_three_victory_flag
+		set_global_flag = super_event_visible
+		play_song = "armiya_moya_name"
+	}
+}
+
+country_event = {
+	id = super_event.11
+	title = super_event.11.t
+	desc = super_event.11.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.11.a
+		
+        set_global_flag = nato_world_war_three_victory_flag
+		set_global_flag = super_event_visible
+		play_song = "everybody_wants_to_rule_the_world_name"
+	}
+}
+
+country_event = {
+	id = super_event.12
+	title = super_event.12.t
+	desc = super_event.12.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.13.a
+		
+        set_global_flag = rus_black_october_october_flag
+		set_global_flag = super_event_visible
+		play_song = "spokojjnaya_noch_name"	
+	}
+}

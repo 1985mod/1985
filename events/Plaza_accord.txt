@@ -95,6 +95,12 @@ country_event = {
 				modifier = small_decrease
 			}
 		}
+		every_country = {
+			limit = {
+				has_country_flag = the_country_agreed_to_sign_the_plaza_accord
+			}
+			country_event = { id = plaza_accord.7 hours = 12 }
+		}
     }
 }
 
@@ -169,6 +175,95 @@ country_event = {
 			swap_ideas = {
 				remove_idea = USA_trade_deficit
 				add_idea = USA_trade_deficit_2
+			}
+		}
+    }
+}
+
+country_event = {
+    id = plaza_accord.7 ### одна отказалась, другие тоже
+    title = plaza_accord.7.t
+    desc = plaza_accord.7.desc
+	picture = GFX_report_plaza_accord
+
+	is_triggered_only = yes
+
+    option = { ### Окончательная поддержка США
+        name = plaza_accord.7.a
+		ai_chance = {
+			base = 5
+		}
+		USA = { country_event = { id = plaza_accord.8 hours = 6 } }
+    }
+
+    option = { ### Отказаться от поддержки
+        name = plaza_accord.7.a
+		ai_chance = {
+			base = 95
+		}
+		USA = { country_event = { id = plaza_accord.9 hours = 6 } }
+    }
+}
+
+country_event = {
+    id = plaza_accord.8 ### Поддержала США
+    title = plaza_accord.8.t
+    desc = plaza_accord.8.desc
+	picture = GFX_report_plaza_accord
+
+	is_triggered_only = yes
+
+    option = {
+        name = plaza_accord.8.a
+		ai_chance = {
+			base = 100
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = medium_increase
+			}
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = medium_increase
+			}
+		}
+    }
+}
+
+country_event = {
+    id = plaza_accord.9 ### Отказалась
+    title = plaza_accord.9.t
+    desc = plaza_accord.9.desc
+	picture = GFX_report_plaza_accord
+
+	is_triggered_only = yes
+
+    option = { ### Окончательная поддержка США
+        name = plaza_accord.9.a
+		ai_chance = {
+			base = 100
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = small_decrease
+			}
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_decrease
+			}
+		}
+		FROM = {
+			if = {
+				limit = {
+					has_country_flag = the_country_agreed_to_sign_the_plaza_accord
+				}
+				clr_country_flag = the_country_agreed_to_sign_the_plaza_accord
 			}
 		}
     }
