@@ -1,0 +1,149 @@
+ add_namespace = lebanon
+
+country_event = {
+	id = lebanon.1
+	title = lebanon.1.t
+	desc = lebanon.1.desc
+	hidden = yes
+
+	trigger = {
+		tag = LEB
+		has_civil_war = no
+		date > 1988.9.22
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = lebanon.1.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = LEB_salim_al_huss
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lebanon.2
+	title = lebanon.2.t
+	desc = lebanon.2.desc
+	hidden = yes
+
+	trigger = {
+		tag = LEB
+		has_civil_war = no
+		date > 1989.9.22
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = lebanon.2.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = LEB_rene_moawad
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lebanon.3
+	title = lebanon.3.t
+	desc = lebanon.3.desc
+	hidden = yes
+
+	trigger = {
+		tag = LEB
+		has_civil_war = no
+		date > 1989.11.22
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = lebanon.3.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = LEB_salim_al_huss
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lebanon.4
+	title = lebanon.4.t
+	desc = lebanon.4.desc
+	hidden = yes
+
+	trigger = {
+		tag = LEB
+		has_civil_war = no
+		date > 1989.11.24
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = lebanon.4.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = conservatism
+			promote_character = {
+				character = LEB_elias_hrawi
+				ideology = conservatism
+			}
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+		}
+	}
+}

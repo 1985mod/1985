@@ -84,10 +84,6 @@ news_event = {
         IRQ = { has_war_with = KUW }
 		date > 1990.1.1
 	}
-
-	option = {
-		name = OK
-	}
 }
 
 news_event = {
@@ -169,10 +165,6 @@ news_event = {
 		NOT = { has_global_flag = elections_to_the_supreme_soviet_RSFSR }
 		SOV = { has_completed_focus = SOV_elections_to_the_supreme_council }
 	}
-
-	option = {
-		name = OK
-	}
 }
 
 news_event = {
@@ -239,10 +231,6 @@ news_event = {
 	trigger = {
 	   NOT = { has_global_flag = usa_victory_republicans }
 	}
-
-	option = {
-		name = OK
-	}
 }
 
 news_event = {
@@ -261,10 +249,6 @@ news_event = {
 	
 	trigger = {
 	   NOT = { has_global_flag = usa_victory_democrats }
-	}
-
-	option = {
-		name = OK
 	}
 }
 
@@ -285,10 +269,6 @@ news_event = {
 	   	NOT = { has_global_flag = iraq_victory_in_iran_iraq_war }
 	   	IRQ = { controls_state = 413 }
 	}
-
-	option = {
-		name = OK
-	}
 }
 
 news_event = {
@@ -307,10 +287,6 @@ news_event = {
 		NOT = { PER = { has_war_with = IRQ } }
 	   	NOT = { has_global_flag = iran_victory_in_iran_iraq_war }
 	   	PER = { controls_state = 1011 }
-	}
-
-	option = {
-		name = OK
 	}
 }
 
@@ -331,10 +307,6 @@ news_event = {
 	trigger = {
 	   	NOT = { has_global_flag = coral_sea_aircraft_carrier_accident }
 	}
-
-	option = {
-		name = OK
-	}
 }
 
 news_event = {
@@ -354,10 +326,6 @@ news_event = {
 		SOV = { has_country_flag = SOV_elimination_of_nuclear_weapons }
 		NOT = { has_global_flag = jenev_meeting }
 	}
-
-	option = {
-		name = OK
-	}
 }
 
 news_event = {
@@ -376,10 +344,6 @@ news_event = {
 		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
 		USA = { has_country_flag = USA_support_policy_of_perestroika }
 		NOT = { has_global_flag = michael_dukakis_supports_perestroika_policy }
-	}
-
-	option = {
-		name = OK
 	}
 }
 
@@ -939,7 +903,6 @@ news_event = {
 	}
 }
 
-
 news_event = {
 	id = news.41 ## Приезд Трампа в Москву ##
 	title = news.41.t
@@ -1066,5 +1029,125 @@ news_event = {
 	option = {
 		name = news.45.b
 		trigger = { TAG = ENG }
+	}
+}
+
+news_event = {
+	id = news.46 ## Нежная революция ##
+	title = news.46.t
+	desc = news.46.desc
+	picture = GFX_news_gentle_revolution
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.46.a
+		trigger = {
+			NOT = {
+				TAG = BUL
+			}
+		}
+	}
+	option = {
+		name = news.46.b
+		trigger = { TAG = BUL }
+	}
+}
+
+news_event = {
+	id = news.47 ## Бархатная революция ##
+	title = news.47.t
+	desc = news.47.desc
+	picture = GFX_news_velvet_revolution
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.47.a
+		trigger = {
+			NOT = {
+				TAG = CZE
+			}
+		}
+	}
+	option = {
+		name = news.47.b
+		trigger = { TAG = CZE }
+	}
+}
+
+news_event = {
+	id = news.48 ## Революция Солидарности ##
+	title = news.48.t
+	desc = news.48.desc
+	picture = GFX_news_solidarity_revolution
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.48.a
+		trigger = {
+			NOT = {
+				TAG = POL
+			}
+		}
+	}
+	option = {
+		name = news.48.b
+		trigger = { TAG = POL }
+	}
+}
+
+news_event = {
+	id = news.49 ## Переход Венгрии к демократии ##
+	title = news.49.t
+	desc = news.49.desc
+	picture = GFX_news_end_of_communism_in_hungary
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.49.a
+		trigger = {
+			NOT = {
+				TAG = HUN
+			}
+		}
+	}
+	option = {
+		name = news.49.b
+		trigger = { TAG = HUN }
+	}
+}
+
+news_event = {
+	id = news.50 ## Румынская революция ##
+	title = news.50.t
+	desc = news.50.desc
+	picture = GFX_news_romanian_revolution
+
+	is_triggered_only = yes
+
+    major = yes
+
+	option = {
+		name = news.50.a
+		trigger = {
+			NOT = {
+				TAG = ROM
+			}
+		}
+	}
+	option = {
+		name = news.50.b
+		trigger = { TAG = ROM }
 	}
 }

@@ -3,7 +3,7 @@ characters = {
 		name = KUW_Jaber
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/KUW/Portrait_Jaber.dds"
+				large = GFX_portrait_KUW_jaber
 			}
 		}
 		country_leader = {
