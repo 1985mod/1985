@@ -447,4 +447,12 @@
  AFS_financing_through_saudi_charitable_foundations: "Финансирование через саудовские благотворительные фонды"
  add_250_million_to_treasury_tt: "Добавится §G250 миллионов долларов§! в §Y[Root.GetAdjective]ую§! казну"
  AFS_request_weapons_from_osama_bin_laden: "Запросить оружие у Усамы бен Ладена"
+ AFN_economic_mobilization: "Экономическая мобилизация"
+ AFN_improve_the_supply_system: "Улучшить линии снабжения"
+ AFN_form_food_requisitioning_detachments: "Создать продовольственные отряды"
+ AFN_nationalize_small_scale_industry: "Национализировать промышленность"
+ BRM_counterinsurgency: "Борьба с повстанцами"
+ BRM_large_scale_military_operation_against_the_rebels: "Провести военную кампанию против повстанцев"
+ BRM_combating_drug_trafficking: "Борьба с наркоторговлей"
+ BRM_conduct_a_purge_of_the_party: "Провести чистки в партии"
  
