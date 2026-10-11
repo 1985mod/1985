@@ -1,0 +1,16 @@
+AFN_economic_mobilization = {
+	allowed = {
+		original_tag = AFN
+	}
+
+	icon = SOV_merge_designers
+	priority = 100 
+
+	visible = {
+		OR = {
+			has_government = communism
+			has_government = neutrality
+		}
+		has_war = yes
+	}
+}

@@ -1,0 +1,79 @@
+BRM_counterinsurgency = {
+	BRM_large_scale_military_operation_against_the_rebels = {
+		icon = generic_protection
+
+		available = {
+			has_war = yes
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+		
+		days_remove = 75
+		
+		cost = 100
+
+		modifier = {
+			army_attack_factor = 0.15
+			breakthrough_factor = 0.1
+		}
+
+		remove_effect = {
+			add_war_support = 0.05			
+		}
+	}
+
+	BRM_combating_drug_trafficking = {
+		icon = generic_arrest
+
+		available = {
+			has_war = yes
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+		
+		days_remove = 100
+		
+		cost = 75
+
+		modifier = {
+			political_power_factor = -0.1
+			consumer_goods_factor = 0.1
+		}
+
+		remove_effect = {
+			add_stability = 0.05	
+		}
+	}
+
+	BRM_conduct_a_purge_of_the_party = {
+		icon = eng_trade_unions_support
+
+		available = {
+			has_government = neutrality
+			has_country_leader = { character = BRM_ne_win ruling_only = yes }
+			has_war = yes
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+		
+		days_remove = 150
+		
+		cost = 150
+
+		modifier = {
+			political_power_factor = -0.2
+			consumer_goods_factor = 0.1
+			stability_weekly = 0.001
+		}
+
+		remove_effect = {
+			add_stability = 0.1
+		}
+	}
+}
