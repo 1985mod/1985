@@ -488,6 +488,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_osama_bin_laden"
+		texturefile = "gfx/event_pictures/report_osama_bin_laden.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_proclamation_of_a_great_iraq"
 		texturefile = "gfx/event_pictures/news_proclamation_of_a_great_iraq.dds"
 	}

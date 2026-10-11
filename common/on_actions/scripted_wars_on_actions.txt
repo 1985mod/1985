@@ -1,0 +1,387 @@
+on_actions = {
+    ### Iraq win
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+					OR = {
+						has_global_flag = iran_refused_global
+						has_global_flag = iraq_refused_global
+					}
+                    FROM = {
+                        tag = IRQ
+                    }
+                    ROOT = {
+                        tag = PER
+                    }
+                }
+
+                IRQ = {
+                    white_peace = PER
+					country_event =  { id = iraq.7 }
+                }
+            }
+            if = {
+                limit = {
+					OR = {
+						has_global_flag = iran_refused_global
+						has_global_flag = iraq_refused_global
+					}
+                    FROM = {
+                        tag = PER
+                    }
+                    ROOT = {
+                        tag = IRQ
+                    }
+                }
+
+                PER = {
+                    white_peace = IRQ
+					country_event =  { id = iran.5 }
+                }
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = ISR
+                    }
+                    ROOT = {
+                        tag = HEZ
+                    }
+                }
+
+                ISR = {
+                    white_peace = HEZ
+                    annex_country = {
+                        target = HEZ
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = SYR
+                    }
+                    ROOT = {
+                        tag = LEB
+                    }
+                }
+
+                SYR = {
+                    white_peace = LEB
+					puppet = LEB
+                }
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = BRM
+                    }
+                    ROOT = {
+                        tag = KIO
+                    }
+                }
+
+                BRM = {
+                    white_peace = KIO
+                    annex_country = {
+                        target = KIO
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = BRM
+                    }
+                    ROOT = {
+                        tag = PDB
+                    }
+                }
+
+                BRM = {
+                    white_peace = PDB
+                    annex_country = {
+                        target = PDB
+                        transfer_troops = no
+                    }
+                }
+				PDB = {
+					remove_state_core = 994
+					remove_state_core = 999
+					remove_state_core = 993
+					remove_state_core = 998
+				}
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = BRM
+                    }
+                    ROOT = {
+                        tag = NDB
+                    }
+                }
+
+                BRM = {
+                    white_peace = NDB
+                    annex_country = {
+                        target = NDB
+                        transfer_troops = no
+                    }
+                }
+				NDB = {
+					remove_state_core = 994
+					remove_state_core = 1064
+				}
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = PDB
+                    }
+                    ROOT = {
+                        tag = BRM
+                    }
+                }
+
+                PDB = {
+                    white_peace = BRM
+                    annex_country = {
+                        target = BRM
+                        transfer_troops = no
+                    }
+                }
+				every_core_state = { 
+					limit = {
+						owner = BRM
+					}
+					add_core_of = PDB
+				}
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = PDB
+                    }
+                    ROOT = {
+                        tag = NDB
+                    }
+                }
+
+                PDB = {
+                    white_peace = NDB
+                    annex_country = {
+                        target = NDB
+                        transfer_troops = no
+                    }
+                }
+				every_core_state = { 
+					limit = {
+						owner = NDB
+					}
+					add_core_of = PDB
+				}
+				NDB = {
+					remove_state_core = 994
+					remove_state_core = 1064
+				}
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = PDB
+                    }
+                    ROOT = {
+                        tag = KIO
+                    }
+                }
+
+                PDB = {
+                    white_peace = KIO
+                    annex_country = {
+                        target = KIO
+                        transfer_troops = no
+                    }
+					add_state_core = 998
+                }
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = NDB
+                    }
+                    ROOT = {
+                        tag = BRM
+                    }
+                }
+
+                NDB = {
+                    white_peace = BRM
+                    annex_country = {
+                        target = BRM
+                        transfer_troops = no
+                    }
+                }
+				every_core_state = { 
+					limit = {
+						owner = BRM
+					}
+					add_core_of = NDB
+				}
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = NDB
+                    }
+                    ROOT = {
+                        tag = PDB
+                    }
+                }
+
+                NDB = {
+                    white_peace = PDB
+                    annex_country = {
+                        target = PDB
+                        transfer_troops = no
+                    }
+                }
+				every_core_state = { 
+					limit = {
+						owner = PDB
+					}
+					add_core_of = NDB
+				}
+				PDB = {
+					remove_state_core = 994
+					remove_state_core = 999
+					remove_state_core = 993
+					remove_state_core = 998
+				}
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = NDB
+                    }
+                    ROOT = {
+                        tag = KIO
+                    }
+                }
+
+                NDB = {
+                    white_peace = KIO
+                    annex_country = {
+                        target = KIO
+                        transfer_troops = no
+                    }
+					add_state_core = 998
+                }
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = KIO
+                    }
+                    ROOT = {
+                        tag = BRM
+                    }
+                }
+
+                KIO = {
+                    white_peace = BRM
+					white_peace = PDB
+					white_peace = NDB
+                }
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = YUG
+                    }
+                    ROOT = {
+                        tag = CRO
+                    }
+                }
+
+                YUG = {
+                    white_peace = CRO
+                    annex_country = {
+                        target = CRO
+                        transfer_troops = no
+                    }
+                    country_event = { id = yugoslavia.15 days = 10 }
+                    country_event = { id = yugoslavia.14 days = 40 }
+                }
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = YUG
+                    }
+                    ROOT = {
+                        tag = BOS
+                    }
+                }
+
+                YUG = {
+                    white_peace = BOS
+                    annex_country = {
+                        target = BOS
+                        transfer_troops = no
+                    }
+                }
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = YUG
+                    }
+                    ROOT = {
+                        tag = SLV
+                    }
+                }
+
+                YUG = {
+                    white_peace = SLV
+                    annex_country = {
+                        target = SLV
+                        transfer_troops = no
+                    }
+                }
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = YUG
+                    }
+                    ROOT = {
+                        tag = MAC
+                    }
+                }
+
+                YUG = {
+                    white_peace = MAC
+                    annex_country = {
+                        target = MAC
+                        transfer_troops = no
+                    }
+                }
+            }
+        }
+    }
+}

@@ -72,7 +72,11 @@
  CIVIL_ADMINISTRATION_LABEL:0 "Администрация:"
  EDUCATION_LABEL:0 "Образование:"
  WELFARE_LABEL:0 "Соц. обеспечение:"
- DEFENCE_LABEL:0 "Национальная оборона:"
+
+ DEFENSE_LABEL:0 "[Root.defense_display]"
+ DEFENSE_LABEL_communism:0 "Гос. оборона:"
+ DEFENSE_LABEL_capitalism:0 "Национальная оборона:"
+
  SCIENCE_LABEL:0 "Наука:"
  DEBT_SERVICE_LABEL:0 "Обслуживание госдолга:"
  BALANCE_VALUE:0 "[?treasury|.2]"

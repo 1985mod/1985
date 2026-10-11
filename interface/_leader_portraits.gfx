@@ -1170,6 +1170,11 @@ spriteTypes = {
 		textureFile = "gfx/leaders/WGR/Portrait_johannes_rau.dds"
 	}	
 
+	spriteType = {
+		name = GFX_Portrait_martin_bangemann
+		textureFile = "gfx/leaders/WGR/Portrait_martin_bangemann.dds"
+	}	
+
 	### MLT ###
 
 	spriteType = {

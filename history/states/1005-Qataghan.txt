@@ -22,6 +22,7 @@ state={
 
 		AFN = {
 			set_province_controller = 7519
+			set_province_controller = 13475
 		}
 	}
 	

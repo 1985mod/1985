@@ -83,11 +83,20 @@ set_popularities = {
 
 recruit_character = WGR_Helmut_Kohl
 recruit_character = WGR_johannes_rau
+recruit_character = WGR_martin_bangemann
 recruit_character = WGR_gunter_kiebling
 recruit_character = WGR_hans_henning_von_sandrart
 recruit_character = WGR_hans_joachim_mack
 recruit_character = WGR_leopold_chalupa
 recruit_character = WGR_wolfgang_altenburg
+recruit_character = WGR_richard_freiherr_von_weizsacker
+recruit_character = WGR_hans_dietrich_genscher
+recruit_character = WGR_friedrich_zimmermann
+
+activate_advisor = WGR_richard_freiherr_von_weizsacker
+activate_advisor = WGR_hans_dietrich_genscher
+activate_advisor = WGR_friedrich_zimmermann
+activate_advisor = WGR_martin_bangemann
 
 add_ideas = {
 	EU_member

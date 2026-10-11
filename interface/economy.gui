@@ -588,7 +588,7 @@ guiTypes = {
         instantTextBoxType = {
             name = "defense_label"
             position = { x = 300 y = 340 }
-            text = "DEFENCE_LABEL"
+            text = "DEFENSE_LABEL"
             font = "hoi_18mbs"
             maxWidth = 250
             maxHeight = 24

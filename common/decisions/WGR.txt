@@ -280,3 +280,158 @@ WGR_election_campaign_in_germany = {
 		}
 	}
 }
+
+WGR_franco_german_engine = {
+	joint_initiative_for_a_single_europea_act = {
+		icon = eng_install_government
+
+		cost = 150
+		days_remove = 60
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 20
+		}
+
+	
+		remove_effect = {
+			add_timed_idea = {
+				idea = WGR_initiative_for_a_single_europea_act
+				days = 180
+			}
+			FRA = {
+				add_timed_idea = {
+					idea = WGR_initiative_for_a_single_europea_act
+					days = 180
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = small_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = small_decrease
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_decrease
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = small_decrease
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = small_decrease
+				}
+			}
+		}
+	}
+
+	joint_technology_projects_airbus_and_ariane = {
+		icon = generic_air
+
+		cost = 100
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 10
+		}
+
+	
+		remove_effect = {
+			add_tech_bonus = {
+                bonus = 0.3
+                uses = 1
+                category = electronics
+            }
+			add_tech_bonus = {
+                bonus = 0.3
+                uses = 1
+                category = transport_planes_cat
+            }
+			FRA = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					bonus = 0.3
+					uses = 1
+					category = transport_planes_cat
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = small_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+		}
+	}
+
+	coordination_of_economic_policy_the_franc_mark = {
+		icon = generic_consumer_goods
+
+		cost = 75
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 10
+		}
+
+	
+		remove_effect = {
+			add_stability = 0.03
+			add_to_variable = {
+				var = treasury
+				value = 2
+				tooltip = add_2_billion_to_treasury_tt
+			}	
+			FRA = {
+				add_stability = 0.03
+				add_to_variable = {
+					var = treasury
+					value = 2
+					tooltip = add_2_billion_to_treasury_tt
+				}	
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = small_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+		}
+	}
+}
