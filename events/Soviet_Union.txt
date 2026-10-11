@@ -58,7 +58,7 @@ country_event = {
 
 		hidden_effect = {
             set_country_flag = gorbachev
-			retire_character = { name = "SOV_konstantin_chernenko" }
+			retire_character = SOV_konstantin_chernenko
 			promote_character = {
 				character = SOV_mikhail_gorbachev
 				ideology = communism
@@ -91,7 +91,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			retire_character = { name = "SOV_konstantin_chernenko" }
+			retire_character = SOV_konstantin_chernenko
 			promote_character = {
 				character = SOV_grigory_romanov
 				ideology = communism
@@ -1348,7 +1348,7 @@ country_event = {
 				ideology = communism
 				popularity = 0.05
 			}
-			retire_character = { name = "SOV_mikhail_gorbachev" }
+			retire_character = SOV_mikhail_gorbachev
 			promote_character = {
 				character = SOV_gennady_yanaev
 				ideology = communism
@@ -1423,7 +1423,7 @@ country_event = {
 
     immediate = {
 		hidden_effect = {
-			retire_character = { name = "SOV_gennady_yanaev" }
+			retire_character = SOV_gennady_yanaev
 			promote_character = {
 				character = SOV_mikhail_gorbachev
 				ideology = communism
@@ -2184,7 +2184,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		retire_character = { name = "SOV_Mikhail_Gorbachev_SSG" }
+		retire_character = SOV_Mikhail_Gorbachev_SSG
 		complete_national_focus = SOV_the_first_free_elections_in_the_ussr
 		complete_national_focus = SOV_yeltsin_path
 		set_politics = {

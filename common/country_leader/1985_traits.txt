@@ -187,4 +187,41 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	deregulation_agent = {
+		sprite = 13
+
+		local_resources_factor = 0.1
+		production_speed_buildings_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.03
+		consumer_goods_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	federal_president = {
+		sprite = 13
+
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		party_popularity_stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	genscherism = {
+		sprite = 13
+
+		improve_relations_maintain_cost_factor = 0.15
+		opinion_gain_monthly_factor = 0.2
+		trade_opinion_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

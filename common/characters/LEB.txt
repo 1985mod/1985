@@ -13,6 +13,7 @@ characters = {
 			id = -1
 		}
 	}
+
 	LEB_georges_hauy = {
 		name = LEB_georges_hauy
 		portraits = {
@@ -22,6 +23,51 @@ characters = {
 		}
 		country_leader = {
 			ideology = autocracy
+			traits = {}
+			expire = "2005.3.1"
+			id = -1
+		}
+	}
+
+	LEB_salim_al_huss = {
+		name = LEB_salim_al_huss
+		portraits = {
+			civilian = {
+				large = GFX_portrait_LEB_salim_al_huss
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = {}
+			expire = "2005.3.1"
+			id = -1
+		}
+	}
+
+	LEB_rene_moawad = {
+		name = LEB_rene_moawad
+		portraits = {
+			civilian = {
+				large = GFX_portrait_LEB_rene_moawad
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = {}
+			expire = "2005.3.1"
+			id = -1
+		}
+	}
+
+	LEB_elias_hrawi = {
+		name = LEB_elias_hrawi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_LEB_elias_hrawi
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
 			traits = {}
 			expire = "2005.3.1"
 			id = -1

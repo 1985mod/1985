@@ -183,7 +183,7 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = ashdown
-			retire_character = { name = "ENG_david_steel" }
+			retire_character = ENG_david_steel
 			promote_character = {
 				character = ENG_paddy_ashdown
 				ideology = liberalism
@@ -198,8 +198,6 @@ country_event = {
 			}
 		}
 	}
-<<<<<<< Updated upstream
-=======
 }
 
 country_event = { 
@@ -219,11 +217,10 @@ country_event = {
             hours = 5
         }
         set_country_flag = major
-		retire_character = { name = "ENG_margaret_thatcher" }
+		retire_character = ENG_margaret_thatcher
 		promote_character = {
 			character = ENG_john_major
 			ideology = conservatism
 		}
     }
->>>>>>> Stashed changes
 }

@@ -1,0 +1,29 @@
+PER_change_of_tactics = {
+    icon = generic_foreign_policy
+	  
+	priority = 90
+	  
+	allowed = {
+		original_tag = PER
+	}
+	  
+	visible = {
+		original_tag = PER
+		has_war_with = IRQ
+	}
+}
+
+PER_sale_of_shares_to_workers = {
+    icon = generic_economy
+	  
+	priority = 90
+	  
+	allowed = {
+		original_tag = PER
+	}
+	  
+	visible = {
+		original_tag = PER
+		has_war_with = IRQ
+	}
+}

@@ -488,6 +488,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_osama_bin_laden"
+		texturefile = "gfx/event_pictures/report_osama_bin_laden.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_proclamation_of_a_great_iraq"
 		texturefile = "gfx/event_pictures/news_proclamation_of_a_great_iraq.dds"
 	}
@@ -565,6 +570,31 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_the_resignation_of_margaret_thatcher"
 		texturefile = "gfx/event_pictures/news_the_resignation_of_margaret_thatcher.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_velvet_revolution"
+		texturefile = "gfx/event_pictures/news_velvet_revolution.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_solidarity_revolution"
+		texturefile = "gfx/event_pictures/news_solidarity_revolution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_end_of_communism_in_hungary"
+		texturefile = "gfx/event_pictures/news_end_of_communism_in_hungary.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_gentle_revolution"
+		texturefile = "gfx/event_pictures/news_gentle_revolution.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_romanian_revolution"
+		texturefile = "gfx/event_pictures/news_romanian_revolution.dds"
 	}
 }
 

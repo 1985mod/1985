@@ -29,6 +29,21 @@ defined_text = {
 }
 
 defined_text = {
+	name = defense_display
+	
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = DEFENSE_LABEL_communism
+	}
+	
+	text = {
+		localization_key = DEFENSE_LABEL_capitalism
+	}
+}
+
+defined_text = {
 	name = real_gdp_display
 	
 	text = {

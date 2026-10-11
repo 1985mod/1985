@@ -1,0 +1,31 @@
+division_template = {
+	name = "GAM Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st GAM Division"
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7658
+		division_template = "GAM Division"
+		start_equipment_factor = 0.2
+
+	}
+	division = {
+		name = "2st GAM Division"
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8360
+		division_template = "GAM Division"
+		start_equipment_factor = 0.1
+	}
+}

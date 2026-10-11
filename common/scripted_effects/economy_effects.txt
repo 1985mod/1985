@@ -224,24 +224,24 @@ tax_effect = {
 
     multiply_variable = { var = resource_revenue value = corruption_income_mod }
 
-    if = {
-        limit = { check_variable = { population_tax < 0 } }
-        set_variable = { var = population_tax value = 0 }
+    clamp_variable = {
+        var = population_tax
+        min = 0
     }
 
-    if = {
-        limit = { check_variable = { corporate_tax < 0 } }
-        set_variable = { var = corporate_tax value = 0 }
+    clamp_variable = {
+        var = corporate_tax
+        min = 0
     }
 
-    if = {
-        limit = { check_variable = { vat_tax < 0 } }
-        set_variable = { var = vat_tax value = 0 }
+    clamp_variable = {
+        var = vat_tax
+        min = 0
     }
 
-    if = {
-        limit = { check_variable = { resource_revenue < 0 } }
-        set_variable = { var = resource_revenue value = 0 }
+    clamp_variable = {
+        var = resource_revenue
+        min = 0
     }
 
     set_variable = { var = income_budget value = population_tax }
@@ -498,7 +498,32 @@ tax_effect = {
     set_variable = { var = welfare_expenditure value = unemployment_manpower }
 
     clamp_variable = {
+        var = administration_expenditure
+        min = 0
+    }
+
+    clamp_variable = {
+        var = education_expenditure
+        min = 0
+    }
+
+    clamp_variable = {
         var = welfare_expenditure
+        min = 0
+    }
+
+    clamp_variable = {
+        var = defense_expenditure
+        min = 0
+    }
+
+    clamp_variable = {
+        var = current_research_cost
+        min = 0
+    }
+
+    clamp_variable = {
+        var = debt_service_cost
         min = 0
     }
 
@@ -565,7 +590,7 @@ tax_effect = {
 	set_variable = { var = current_research_cost value = gdp_research_penalty }
 
 
-    ### обслуживание долга ###
+    ### Обслуживание долга ###
 
     set_temp_variable = { var = temp_interest_rate value = interest_rate }
     if = {
@@ -581,6 +606,7 @@ tax_effect = {
     multiply_variable = { var = debt_service_cost value = 7 }
 
     divide_variable = { var = debt_service_cost value = 365 }
+    divide_variable = { var = debt_service_cost value = 50 }
 
     if = {
         limit = { check_variable = { debt_service_cost < 0 } }

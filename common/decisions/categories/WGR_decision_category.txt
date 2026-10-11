@@ -14,6 +14,32 @@ WGR_election_campaign_in_germany = {
 	scripted_gui = wgr_elections_1987_scripted_gui
 }
 
+WGR_franco_german_engine = {
+    icon = generic_foreign_policy
+	  
+	priority = 90
+	  
+	allowed = {
+		original_tag = WGR
+	}
+	  
+	visible = {
+		FRA = {
+			OR = {
+				has_government = conservatism
+				has_government = liberalism
+				has_government = socialism
+			}
+		}
+		WGR = {
+			NOT = { 
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+	}
+}
+
 WGR_two_plus_four_negotiations = {
     icon = generic_foreign_policy
 	  

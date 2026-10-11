@@ -236,7 +236,7 @@ USA_voice_of_america = {
 		icon = generic_speech
 
 		ai_will_do = {
-			base = 100
+			factor = 100
 		}
 
 		available = {
@@ -276,7 +276,7 @@ USA_voice_of_america = {
 		icon = generic_speech
 
 		ai_will_do = {
-			base = 100
+			factor = 100
 		}
 
 		available = {
@@ -336,7 +336,7 @@ USA_war_on_drugs = {
 		icon = generic_speech
 
 		ai_will_do = {
-			base = 100
+			factor = 100
 		}
 
 		available = {
@@ -746,7 +746,7 @@ USA_anti_terrorist_operations = {
 		icon = generic_speech
 
 		ai_will_do = {
-			base = 0
+			factor = 0
 			modifier = {
 				add = 50
 				is_historical_focus_on = yes
@@ -824,7 +824,7 @@ USA_anti_terrorist_operations = {
 		days_re_enable = 120
 
 		ai_will_do = {
-			base = 0
+			factor = 0
 			modifier = {
 				add = 50
 				is_historical_focus_on = yes
@@ -842,7 +842,7 @@ USA_anti_terrorist_operations = {
 		days_remove = 30
 
 		ai_will_do = {
-			base = 0
+			factor = 0
 			modifier = {
 				add = 50
 				is_historical_focus_on = yes
@@ -856,7 +856,7 @@ USA_anti_terrorist_operations = {
 		remove_effect = {
             army_experience = 10		
         	add_doctrine_cost_reduction = {
-    			name = USA_expand_military_bases
+    			name = USA_expand_military_factors
     			cost_reduction = 0.5
      			uses = 1
      			category = land_doctrine
@@ -871,7 +871,7 @@ USA_operations_against_cuba_cat = {
 		days_remove = 35
 
 		ai_will_do = {
-			base = 15
+			factor = 15
 		}
 
 		remove_effect = {
@@ -894,7 +894,7 @@ USA_operations_against_cuba_cat = {
 		days_re_enable = 15
 
 		ai_will_do = {
-			base = 15
+			factor = 15
 		}
 
 		remove_effect = {
@@ -918,7 +918,7 @@ USA_space_programs = {
 		days_remove = 150
 
 		ai_will_do = {
-			base = 15
+			factor = 15
 		}
 
 		remove_effect = {
@@ -942,7 +942,7 @@ USA_election_campaign_in_usa = {
 		days_remove = 35
 
 		ai_will_do = {
-			base = 15
+			factor = 15
 		}
 
 		modifier = {
@@ -1008,7 +1008,7 @@ USA_election_campaign_in_usa = {
 		days_remove = 50
 
 		ai_will_do = {
-			base = 15
+			factor = 15
 		}
 
 		modifier = {
@@ -1075,7 +1075,7 @@ USA_election_campaign_in_usa = {
 		days_remove = 20
 
 		ai_will_do = {
-			base = 15
+			factor = 15
 		}
 
 		modifier = {
@@ -1204,7 +1204,7 @@ USA_trade_deficit_cat = {
 		days_remove = 70
 
 		ai_will_do = {
-			base = 35
+			factor = 35
 		}
 
 		remove_effect = {
@@ -1256,7 +1256,7 @@ USA_trade_deficit_cat = {
 		}
 
 		ai_will_do = {
-			base = 100
+			factor = 100
 		}
 
 		remove_effect = {
@@ -1281,7 +1281,7 @@ USA_trade_deficit_cat = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			base = 50
+			factor = 50
 		}
 		
 		activation = {

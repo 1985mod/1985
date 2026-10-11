@@ -1,0 +1,13 @@
+AFS_sacred_war = {
+	allowed = {
+		original_tag = AFS
+	}
+
+	icon = generic_arms_trade
+	priority = 100 
+
+	visible = {
+		has_government = neutrality
+		has_war_with = AFN
+	}
+}

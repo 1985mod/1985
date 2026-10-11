@@ -29,6 +29,41 @@ characters = {
 		}
 	}
 
+	WGR_martin_bangemann = {
+		name = WGR_martin_bangemann
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_martin_bangemann"
+			}
+			army = {
+				small = "gfx/interface/ideas/WGR/idea_portrait_martin_bangemann.dds"
+			}
+		}
+
+		country_leader = {
+			ideology = social_liberalism
+			traits = { }
+			expire = "2000.3.1.1"
+			id = -1
+		}
+
+		advisor = {
+			cost = 150			
+			slot = minister_of_economy
+			idea_token = WGR_martin_bangemann
+
+			available = {
+				NOT = { has_country_leader = WGR_martin_bangemann }
+			}
+			traits = {
+				deregulation_agent
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
 	WGR_gunter_kiebling = {
 		name = "WGR_gunter_kiebling"
 		portraits = {
@@ -111,6 +146,72 @@ characters = {
 			planning_skill=1
 			logistics_skill=4
 			legacy_id=-1
+		}
+	}
+	#####POLITICAL ADVISORS####
+	WGR_richard_freiherr_von_weizsacker = {
+		name = WGR_richard_freiherr_von_weizsacker
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/WGR/idea_portrait_richard_freiherr_von_weizsacker.dds"
+			}
+		}
+
+		advisor = {
+			cost = 150			
+			slot = head_of_government
+			idea_token = WGR_richard_freiherr_von_weizsacker
+
+			traits = {
+				federal_president
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	WGR_hans_dietrich_genscher = {
+		name = WGR_hans_dietrich_genscher
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/WGR/idea_portrait_hans_dietrich_genscher.dds"
+			}
+		}
+
+		advisor = {
+			cost = 150			
+			slot = minister_of_foreign_affairs
+			idea_token = WGR_hans_dietrich_genscher
+
+			traits = {
+				genscherism
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	WGR_friedrich_zimmermann = {
+		name = WGR_friedrich_zimmermann
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/WGR/idea_portrait_friedrich_zimmermann.dds"
+			}
+		}
+
+		advisor = {
+			cost = 150			
+			slot = minister_of_the_interior
+			idea_token = WGR_friedrich_zimmermann
+
+			traits = {
+				minister_of_the_interior_trait
+			}
+			ai_will_do = {
+				base = 1.5
+			}
 		}
 	}
 }

@@ -514,3 +514,55 @@ country_event = {
 		add_war_support = -0.05
 	}
 }
+
+country_event = {
+	id = yugoslavia.14	### Нападать ли нам на Словению? ###
+	title = yugoslavia.14.t
+	desc = yugoslavia.14.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.14.a
+		ROOT = {
+			declare_war_on = {
+				target = SLV
+				type = annex_everything
+			}
+			add_war_support = 0.05
+		}		
+	}
+
+	option = {
+		name = yugoslavia.14.b
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = yugoslavia.15	### Нападать ли нам на Македонию? ###
+	title = yugoslavia.15.t
+	desc = yugoslavia.15.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.15.a
+		ROOT = {
+			declare_war_on = {
+				target = MAC
+				type = annex_everything
+			}
+			add_war_support = 0.05
+		}		
+	}
+
+	option = {
+		name = yugoslavia.15.b
+		add_stability = 0.05
+	}
+}

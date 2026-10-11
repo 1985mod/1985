@@ -14,15 +14,12 @@ state = {
 
 	history = {
 
-		owner = INS
+		owner = ACE
+		add_core_of = ACE
 		add_core_of = INS
 
 		victory_points = {
-			4652 1 # Medan
-		}
-		
-		victory_points = {
-			12268 1 # Palembang
+			7658 15
 		}
 
 		buildings = {

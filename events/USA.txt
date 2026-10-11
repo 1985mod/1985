@@ -25,6 +25,7 @@ country_event = {
 		complete_national_focus = USA_republican_victory
 		
 		effect_tooltip = {
+			retire_character = USA_ronald_reagan
 			set_politics = {
 				ruling_party = conservatism
 				elections_allowed = yes
@@ -33,7 +34,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			retire_character = { name = "USA_ronald_reagan" }
+			retire_character = USA_ronald_reagan
 			country_event = { id = news.9 }
 			promote_character = {
 				character = USA_george_bush
@@ -80,7 +81,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			retire_character = { name = "USA_ronald_reagan" }
+			retire_character = USA_ronald_reagan
 			country_event = { id = news.10 }
 			promote_character = {
 				character = USA_michael_dukakis
@@ -440,7 +441,7 @@ country_event = {
         complete_national_focus = USA_1992_elections_day
 		complete_national_focus = USA_lets_drink_to_the_democrats
 
-		retire_character = { name = "USA_george_bush" }
+		retire_character = USA_george_bush
 		promote_character = {
 			character = USA_bill_clinton
 			ideology = liberalism
@@ -622,6 +623,7 @@ country_event = {
 		add_stability = 0.01
 		ETH = {
 			add_political_power = 25
+			add_stability = 0.02
 		}
 	}
 }
@@ -659,7 +661,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
-		add_stability = -0.05
+		add_stability = -0.02
 		news_event = { id = news.13 days = 4 }
 	}
 }
@@ -679,7 +681,7 @@ country_event = {
 			base = 100
 		}		
 		add_manpower = -89
-		add_stability = -0.05
+		add_stability = -0.03
 	}
 }
 
