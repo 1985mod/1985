@@ -9,7 +9,6 @@
  #################### 
 
 
-
 #####################
 
  ## #  # ### ###   ## 
@@ -20,13 +19,6 @@
  
 #####################
 
-YUG_jadransko_brodogradiliste_organization = {
-	include = generic_task_force_ship_organization
-	icon = GFX_idea_generic_naval_manufacturer_2
-	allowed = { 
-		tag = YUG
-	}
-}
 
 ###########################
 
@@ -37,53 +29,6 @@ YUG_jadransko_brodogradiliste_organization = {
 #    ### #  # #  # ### ##  
 
 ###########################
-
-YUG_ikarus_organization = {
-	include = generic_light_aircraft_organization
-	icon = GFX_idea_YUG_ikarus
-	allowed = { 
-		tag = YUG
-	}
-	available = {
-		if = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			owner = { has_completed_focus = YUG_ikarus }
-		}
-	}
-}
-
-YUG_rogozarski_organization = {
-	include = generic_medium_aircraft_organization
-	icon = GFX_idea_YUG_rogozarski
-	allowed = { 
-		tag = YUG
-	}
-	available = {
-		if = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			owner = { has_completed_focus = YUG_rogozarski }
-		}
-	}
-}
-YUG_zmaj_organization = {
-	include = generic_heavy_aircraft_organization
-	icon = GFX_idea_YUG_zmaj
-	allowed = { 
-		tag = YUG
-	}
-	available = {
-		if = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			owner = { has_completed_focus = YUG_zmaj }
-		}
-	}
-}
 
 
 ################################### 
@@ -96,11 +41,3 @@ YUG_zmaj_organization = {
 
 
 ###################################
-
-YUG_zastava_arms_organization = {
-	include = generic_infantry_equipment_organization
-	icon = GFX_idea_zastava_arms
-	allowed = { 
-		tag = YUG
-	}
-}

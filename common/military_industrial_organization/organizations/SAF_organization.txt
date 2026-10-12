@@ -7,15 +7,6 @@
  #  #  # #  # # # ## 
 
  #################### 
-SAF_iscor_organization = {
-    name = SAF_iscor_organization
-    include = generic_medium_tank_organization
-    icon = GFX_idea_SAF_idea_iscor
-    allowed = {
-        original_TAG = SAF
-        has_dlc = "Together for Victory"
-    }
-}
 
 
 #####################
@@ -29,7 +20,6 @@ SAF_iscor_organization = {
 #####################
 
 
-
 ###########################
 
 ###  #    ##  #  # ###  ## 
@@ -39,7 +29,6 @@ SAF_iscor_organization = {
 #    ### #  # #  # ### ##  
 
 ###########################
-
 
 
 ################################### 

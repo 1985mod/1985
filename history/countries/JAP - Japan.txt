@@ -45,6 +45,11 @@ if = {
 set_convoys = 400
 
 recruit_character = JAP_yasuhiro_nakasone
+recruit_character = JAP_noboru_takeshita
+recruit_character = JAP_sosuke_uno
+recruit_character = JAP_toshiki_kaifu
+recruit_character = JAP_kiichi_miyazawa 
+recruit_character = JAP_morihiro_hosokawa
 
 set_politics = {
 	ruling_party = conservatism

@@ -221,6 +221,31 @@ spriteTypes = {
 		name = GFX_portrait_JAP_yasuhiro_nakasone
 		texturefile = "gfx/leaders/JAP/Portrait_Yasuhiro_Nakasone.dds"
 	}
+
+	spriteType = {
+		name = GFX_portrait_JAP_noboru_takeshita
+		texturefile = "gfx/leaders/JAP/Portrait_Noboru_Takeshita.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_JAP_sosuke_uno
+		texturefile = "gfx/leaders/JAP/Portrait_Sosuke_Uno.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_JAP_toshiki_kaifu
+		texturefile = "gfx/leaders/JAP/Portrait_Toshiki_Kaifu.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_JAP_kiichi_miyazawa
+		texturefile = "gfx/leaders/JAP/Portrait_Kiichi_Miyazawa.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_JAP_morihiro_hosokawa
+		texturefile = "gfx/leaders/JAP/Portrait_Morihiro_Hosokawa.dds"
+	}
     
 	##AFN##
 	spriteType = {
@@ -811,6 +836,11 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_Portrait_ali_nasser_muhammad
 		texturefile = "gfx/leaders/SYE/Portrait_ali_nasser_muhammad.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_haidar_abu_bakr_al_attas
+		texturefile = "gfx/leaders/SYE/Portrait_Haidar_Abu_Bakr_al_Attas.dds"
 	}
 
 	## ISR ##

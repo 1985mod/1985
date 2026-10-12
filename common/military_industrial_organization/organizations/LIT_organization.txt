@@ -9,7 +9,6 @@
  #################### 
 
 
-
 #####################
 
  ## #  # ### ###   ## 
@@ -31,14 +30,6 @@
 
 ###########################
 
-LIT_anbo_organization = {
-	include = generic_light_aircraft_organization
-	icon = GFX_idea_generic_air_manufacturer_3
-	allowed = {	
-		tag = LIT
-	}
-}
-
 
 ################################### 
 
@@ -50,4 +41,3 @@ LIT_anbo_organization = {
 
 
 ###################################
-

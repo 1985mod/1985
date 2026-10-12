@@ -30,79 +30,80 @@ country_event = {
 }
 
 country_event = {
-	id = SOV_soviet_union.2 ## Выборы генсека ##
-	title = SOV_soviet_union.2.t
-	desc = SOV_soviet_union.2.desc
-	picture = GFX_report_gorbachev_vs_romanov
+    id = SOV_soviet_union.2 ## Выборы генсека ##
+    title = SOV_soviet_union.2.t
+    desc = SOV_soviet_union.2.desc
+    picture = GFX_report_gorbachev_vs_romanov
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	# Михаил Горбачев
-	option = {
-		name = SOV_soviet_union.2.a
-		ai_chance = {
-			base = 50
-			modifier = {
-				add = 50
-				is_historical_focus_on = yes
-			}
-		}
-		
-		effect_tooltip = {
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
+    # Михаил Горбачев
+    option = {
+        name = SOV_soviet_union.2.a
+        ai_chance = {
+            base = 50
+            modifier = {
+                add = 50
+                is_historical_focus_on = yes
+            }
+        }
+        
+        effect_tooltip = {
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
             load_focus_tree = SOV_soviet_gorbachev_focus
-		}
+        }
 
-		hidden_effect = {
+        hidden_effect = {
             set_country_flag = gorbachev
-			remove_country_leader = { name = "SOV_konstantin_chernenko" }
-			promote_character = {
-				character = SOV_mikhail_gorbachev
-				ideology = communism
-			}
-			load_focus_tree = SOV_soviet_gorbachev_focus
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-		}
-	}
+            retire_character = SOV_konstantin_chernenko
+            promote_character = {
+                character = SOV_mikhail_gorbachev
+                ideology = communism
+            }
+            load_focus_tree = SOV_soviet_gorbachev_focus
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+        }
+    }
 
-	# Григорий Pоманов 
-	option = {
-		name = SOV_soviet_union.2.b
-		ai_chance = {
-			base = 30
-			modifier = {
-				add = -30
-				is_historical_focus_on = yes
-			}
-		}
-			
-		effect_tooltip = {
-			    set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-			load_focus_tree = SOV_soviet_romanov_focus
-		}
+    # Григорий Романов 
+    option = {
+        name = SOV_soviet_union.2.b
+        ai_chance = {
+            base = 30
+            modifier = {
+                add = -30
+                is_historical_focus_on = yes
+            }
+        }
+            
+        effect_tooltip = {
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+            load_focus_tree = SOV_soviet_romanov_focus
+        }
 
-		hidden_effect = {
-			remove_country_leader = { name = "SOV_konstantin_chernenko" }
-			promote_character = {
-				character = SOV_grigory_romanov
-				ideology = communism
-			}
-			load_focus_tree = SOV_soviet_romanov_focus
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-		}
-	}
+        hidden_effect = {
+            set_country_flag = romanov
+            retire_character = SOV_konstantin_chernenko
+            promote_character = {
+                character = SOV_grigory_romanov
+                ideology = communism
+            }
+            load_focus_tree = SOV_soviet_romanov_focus
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+        }
+    }
 }
 
 country_event = {

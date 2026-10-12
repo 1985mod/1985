@@ -9,7 +9,6 @@
  #################### 
 
 
-
 #####################
 
  ## #  # ### ###   ## 
@@ -20,13 +19,6 @@
  
 #####################
 
-LAT_lkod_organization = {
-	include = generic_task_force_ship_organization
-	icon = GFX_idea_generic_naval_manufacturer_3
-	allowed = {	
-		tag = LAT
-	}
-}
 
 ###########################
 
@@ -37,14 +29,6 @@ LAT_lkod_organization = {
 #    ### #  # #  # ### ##  
 
 ###########################
-
-LAT_vef_organization = {
-	include = generic_light_aircraft_organization
-	icon = GFX_idea_generic_naval_manufacturer_3
-	allowed = {	
-		tag = LAT
-	}
-}
 
 
 ################################### 
@@ -57,4 +41,3 @@ LAT_vef_organization = {
 
 
 ###################################
-

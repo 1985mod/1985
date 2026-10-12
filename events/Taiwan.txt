@@ -1,0 +1,27 @@
+add_namespace = taiwan
+
+country_event = { 
+    id = taiwan.1
+    title = taiwan.1.t
+    desc =  taiwan.1.desc
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    trigger = {
+		tag = CHI
+        date > 1988.1.13
+    }
+    immediate = {
+        hidden_effect = {
+            kill_country_leader = yes
+        }
+    }
+
+    option = {
+        name = taiwan.1.a
+		effect_tooltip = {
+            kill_country_leader = yes
+		}
+	}
+}

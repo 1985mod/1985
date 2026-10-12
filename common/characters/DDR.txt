@@ -159,4 +159,125 @@ characters = {
 			legacy_id=-1
 		}
 	}
+
+	#####POLITICAL ADVISORS####
+	DDR_gerhard_schurer = {
+		name = DDR_gerhard_schurer
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_gerhard_schurer.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = minister_of_economy
+			idea_token = DDR_gerhard_schurer
+			traits = {
+				head_of_the_spc_of_the_gdr
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	DDR_friedrich_dickel = {
+		name = DDR_friedrich_dickel
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_friedrich_dickel.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = minister_of_the_interior
+			idea_token = DDR_friedrich_dickel
+			traits = {
+				minister_of_the_interior_trait
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	DDR_oskar_fischer = {
+		name = DDR_oskar_fischer
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_oskar_fischer.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = minister_of_foreign_affairs
+			idea_token = DDR_oskar_fischer
+			traits = {
+				good_diplomat
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	DDR_markus_mecke = {
+		name = DDR_markus_mecke
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_markus_meckel.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = minister_of_foreign_affairs
+			idea_token = DDR_markus_mecke
+			traits = {
+				good_diplomat
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	DDR_willi_stoph = {
+		name = DDR_willi_stoph
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_willi_stoph.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = head_of_government
+			idea_token = DDR_willi_stoph
+			traits = {
+				technocrat
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+	
+	DDR_markus_wolf = {
+		name = DDR_markus_wolf
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_markus_wolf.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = political_advisor
+			idea_token = DDR_willi_stoph
+			traits = {
+				heir_to_stagnation
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
 }
