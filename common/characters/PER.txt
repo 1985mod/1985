@@ -1,15 +1,30 @@
 characters = {
-	PER_Ali_Khamenei = {
-		name = PER_Ali_Khamenei
+	PER_ruhollah_khomeini = {
+		name = PER_ruhollah_khomeini
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PER/Portrait_PER_Ali_Khamenei.dds"
+				large = "gfx/leaders/PER/Portrait_ruhollah_khomeini.dds"
 			}
 		}
 		country_leader = {
 			ideology = Political_Islam
 			traits = { }
-			expire = "1971.3.1.1"
+			expire = "2026.3.1.1"
+			id = -1
+		}
+	}
+
+	PER_massoud_rajavi = {
+		name = PER_massoud_rajavi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/Portrait_massoud_rajavi.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocracy
+			traits = { }
+			expire = "1988.3.1.1"
 			id = -1
 		}
 	}
@@ -28,3 +43,64 @@ characters = {
 			id = -1
 		}
 	}
+
+	PER_ali_sayad_shirazi = {
+		name = PER_ali_sayad_shirazi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/Portrait_ali_sayad_shirazi.dds"
+			}
+			army = {
+				large = "gfx/leaders/PER/Portrait_ali_sayad_shirazi.dds"
+			}
+		}
+		field_marshal = {
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	PER_ali_shamkhani = {
+		name = PER_ali_shamkhani
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/Portrait_ali_shamkhani.dds"
+			}
+			army = {
+				large = "gfx/leaders/PER/Portrait_ali_shamkhani.dds"
+			}
+		}
+		corps_commander = {
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	PER_mohsen_rezaee = {
+		name = PER_mohsen_rezaee
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/Portrait_mohsen_rezaee.dds"
+			}
+			army = {
+				large = "gfx/leaders/PER/Portrait_mohsen_rezaee.dds"
+			}
+		}
+		corps_commander = {
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

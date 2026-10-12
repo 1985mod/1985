@@ -11,7 +11,7 @@ focus_tree = {
 
 	focus = {
 		id = WGR_germany_nation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_icon_WGR_germany_nation
 		cost = 10
 		x = 10
 		y = 0
@@ -24,7 +24,7 @@ focus_tree = {
 
 	focus = {
 		id = WGR_german_course
-		icon = GFX_goal_unknown
+		icon = GFX_focus_icon_WGR_german_course
 		cost = 5
         relative_position_id = WGR_germany_nation
         prerequisite = { focus = WGR_germany_nation }
@@ -39,7 +39,7 @@ focus_tree = {
 
 	focus = {
 		id = WGR_economic_modern
-		icon = GFX_goal_unknown
+		icon = GFX_focus_icon_WGR_economic_modern
 		cost = 5
         relative_position_id = WGR_german_course
         prerequisite = { focus = WGR_german_course }
@@ -58,7 +58,7 @@ focus_tree = {
 
 	focus = {
 		id = WGR_automatic_factory
-		icon = GFX_goal_unknown
+		icon = GFX_focus_icon_WGR_automatic_factory
 		cost = 5
         relative_position_id = WGR_economic_modern
         prerequisite = { focus = WGR_economic_modern }
@@ -88,7 +88,7 @@ focus_tree = {
 
 	focus = {
 		id = WGR_doctrine_kohl
-		icon = GFX_goal_unknown
+		icon = GFX_focus_icon_WGR_doctrine_kohl
 		cost = 5
         relative_position_id = WGR_german_course
         prerequisite = { focus = WGR_german_course }
@@ -107,7 +107,7 @@ focus_tree = {
 
 	focus = {
 		id = WGR_worldlaw_and_safety
-		icon = GFX_goal_unknown
+		icon = GFX_focus_icon_WGR_worldlaw_and_safety
 		cost = 5
         relative_position_id = WGR_german_course
         prerequisite = { focus = WGR_german_course }
@@ -122,7 +122,7 @@ focus_tree = {
 
 	focus = {
 		id = WGR_nato_and_usa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_icon_WGR_nato_and_usa
 		cost = 5
         relative_position_id = WGR_worldlaw_and_safety
         prerequisite = { focus = WGR_worldlaw_and_safety }
@@ -171,7 +171,7 @@ focus_tree = {
 
 	focus = {
 		id = WGR_course_determination
-		icon = GFX_goal_unknown
+		icon = GFX_focus_icon_WGR_course_determination
 		cost = 10
 		relative_position_id = WGR_doctrine_kohl
 		prerequisite = { focus = WGR_doctrine_kohl }
@@ -188,7 +188,7 @@ focus_tree = {
 
 	focus = {
 		id = WGR_dawn_of_germany
-		icon = GFX_goal_unknown
+		icon = GFX_focus_icon_WGR_dawn_of_germany
 		cost = 5
         relative_position_id = WGR_course_determination
         prerequisite = { focus = WGR_course_determination }

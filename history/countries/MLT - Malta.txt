@@ -1,6 +1,6 @@
-﻿capital = 
+﻿capital = 116
 
-oob = ""
+oob = "GEN_1985"
 
 set_research_slots = 1
 
@@ -12,26 +12,17 @@ set_technology = {
 	infantry_weapons1 = 1
 }
 set_politics = {
-<<<<<<< Updated upstream
-	ruling_party = conservatism
-	last_election = "1985.1.1"
-	election_frequency = 48
-	elections_allowed = no
-=======
 	ruling_party = socialism
 	last_election = "1981.12.12"
 	election_frequency = 72
 	elections_allowed = yes
->>>>>>> Stashed changes
 }
 
+recruit_character = MLT_agatha_barbara
+
 set_popularities = {
-<<<<<<< Updated upstream
-	conservatism = 100
-=======
 	conservatism = 51
 	socialism = 49
->>>>>>> Stashed changes
 }
 
 add_ideas = {

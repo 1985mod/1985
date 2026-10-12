@@ -5,9 +5,9 @@ state={
 		rubber=2
 	}
 	provinces={
-	   4893 12871 13413 13414 13415 13416
+	   4893 13413 13414
 	}
-	manpower = 15098
+	manpower = 14206
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
@@ -22,7 +22,6 @@ state={
 		
 		AFS = {
 			set_province_controller = 4893
-			set_province_controller = 12871
 		}
 
 	}

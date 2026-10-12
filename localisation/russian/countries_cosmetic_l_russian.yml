@@ -66,13 +66,13 @@
  IRQ_greater_iraq_ADJ: "Иракск"
  RUS_victory_supreme_council: "Российская Федерация"
  RUS_victory_supreme_council_DEF: "Российская Федерация"
- RUS_victory_supreme_council_ADJ: "Русская"
+ RUS_victory_supreme_council_ADJ: "Русск"
  RUS_victory_supreme_council_fascism: "Российская Империя"
  RUS_victory_supreme_council_fascism_DEF: "Российская Империя"
- RUS_victory_supreme_council_fascism_ADJ: "Русская"
+ RUS_victory_supreme_council_fascism_ADJ: "Русск"
  RUS_victory_supreme_council_neutrality: "Российское Государство"
  RUS_victory_supreme_council_neutrality_DEF: "Российская Государство"
- RUS_victory_supreme_council_neutrality_ADJ: "Русская"
+ RUS_victory_supreme_council_neutrality_ADJ: "Русск"
  YEM_united_yemen: "Йеменская Республика"
  YEM_united_yemen_DEF: "Йеменская Республика"
  YEM_united_yemen_ADJ: "Йеменск"
@@ -97,9 +97,8 @@
  CZE_1990: "Чешская и Словацкая Федеративная Республика"
  CZE_1990_DEF: "Чешская и Словацкая Федеративная Республика"
  POL_1989: "Республика Польша"
-<<<<<<< Updated upstream
  POL_1989_DEF: "Республика Польша"
-=======
+ POL_1989_DEF: "Республика Польша"
  POL_1989_DEF: "Республика Польша"
  BEL_benelux_communism: "Народная Республика Бенилюкс"
  BEL_benelux_communism_DEF: "Народная Республика Бенилюкс"
@@ -130,4 +129,5 @@
  BRM_union_of_myanmar: "Союз Мьянма"
  BRM_union_of_myanmar_DEF: "Союз Мьянма"
  BRM_union_of_myanmar_ADJ: "Мьянмск"
->>>>>>> Stashed changes
+ BRM_union_of_myanmar_ADJ: "Мьянмск"
+

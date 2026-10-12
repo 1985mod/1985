@@ -1,5 +1,5 @@
 
-music_station = "base_music"
+music_station = "radio_station_1985_super_events"
 
 music = {
 	song = "victory_sec_name"
@@ -12,6 +12,87 @@ music = {
 
 music = {
 	song = "unification_germany_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "old_march_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "born_in_ussr_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "soldaty_v_put_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "chechnya_in_flames_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "its_the_end_of_the_world_as_we_know_it_and_i_feel_fine_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "second_korean_war_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "towradatan_barakeeysan_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "armiya_moya_name"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "everybody_wants_to_rule_the_world_name"
 	chance = {
 		modifier = {
 			factor = 0.5

@@ -80,7 +80,7 @@ characters = {
 			idea_token = SOV_gennady_yanaev
 
 			available = {
-				NOT = { has_country_leader = SOV_gennady_yanaev }
+				NOT = { has_country_leader = { character = SOV_gennady_yanaev ruling_only = yes } }
 				has_country_flag = the_position_of_vice_president_was_introduced
 			}
 

@@ -25,6 +25,7 @@ country_event = {
 		complete_national_focus = USA_republican_victory
 		
 		effect_tooltip = {
+			retire_character = USA_ronald_reagan
 			set_politics = {
 				ruling_party = conservatism
 				elections_allowed = yes
@@ -33,7 +34,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			remove_country_leader = { name = "USA_ronald_reagan" }
+			retire_character = USA_ronald_reagan
 			country_event = { id = news.9 }
 			promote_character = {
 				character = USA_george_bush
@@ -80,7 +81,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			remove_country_leader = { name = "USA_ronald_reagan" }
+			retire_character = USA_ronald_reagan
 			country_event = { id = news.10 }
 			promote_character = {
 				character = USA_michael_dukakis
@@ -440,7 +441,7 @@ country_event = {
         complete_national_focus = USA_1992_elections_day
 		complete_national_focus = USA_lets_drink_to_the_democrats
 
-		remove_country_leader = { name = "USA_george_bush" }
+		retire_character = USA_george_bush
 		promote_character = {
 			character = USA_bill_clinton
 			ideology = liberalism
@@ -622,6 +623,7 @@ country_event = {
 		add_stability = 0.01
 		ETH = {
 			add_political_power = 25
+			add_stability = 0.02
 		}
 	}
 }
@@ -659,7 +661,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}		
-		add_stability = -0.05
+		add_stability = -0.02
 		news_event = { id = news.13 days = 4 }
 	}
 }
@@ -679,7 +681,7 @@ country_event = {
 			base = 100
 		}		
 		add_manpower = -89
-		add_stability = -0.05
+		add_stability = -0.03
 	}
 }
 
@@ -1569,13 +1571,12 @@ country_event = {
 	}
 	
 	option = {
-		name = usa.1.a
+		name = usa.51.a
 		ai_chance = {
 			base = 10
 		}
 		
-        complete_national_focus = USA_election_day
-		complete_national_focus = USA_republican_victory
+        complete_national_focus = USA_bush_second_term
 		
 		effect_tooltip = {
 			set_politics = {
@@ -1747,7 +1748,7 @@ country_event = {
 }
 
 country_event = {
-	id = usa.55 ### Признание поражения в Ираке ###
+	id = usa.55 ### Обращение Джорджа Буша ###
 	title = usa.55.t
 	desc = usa.55.desc
 	picture = GFX_report_republican_victory
@@ -1785,6 +1786,10 @@ country_event = {
 		add_stability = -0.05
 		add_war_support = -0.03
 		add_political_power = -50
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
 	}
 }
 
@@ -1792,7 +1797,7 @@ country_event = {
 	id = usa.57 ### Коммунизм набирает популярность в Америке ###
 	title = usa.57.t
 	desc = usa.57.desc
-	picture = GFX_report_republican_victory
+	picture = GFX_report_protests_against_yeltsin
 	
 	fire_only_once = yes
 	
@@ -2035,7 +2040,7 @@ country_event = {
 	id = usa.65 ### Появляется великие озёры ###
 	title = usa.65.t
 	desc = usa.65.desc
-	picture = GFX_report_republican_victory
+	picture = GFX_report_protests_against_yeltsin
 	
 	fire_only_once = yes
 	

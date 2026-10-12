@@ -17,5 +17,7 @@ set_convoys = 5
 recruit_character = UAE_Zayed_bin_Sultan_Al_Nahyan
 
 add_ideas = {
+	ARB_gulf_cooperation_council
+	ARB_league_of_arab_states
 	low_economic_mobilisation
 }

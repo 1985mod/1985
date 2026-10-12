@@ -13,7 +13,6 @@
 		cavalry = { x = 2 y = 0 }
 		cavalry = { x = 2 y = 1 }
 		cavalry = { x = 2 y = 2 }
-		light_armor = { x = 3 y = 0}
 	}
 	priority = 2
 }
@@ -28,9 +27,8 @@ division_template = {
 		infantry = { x = 0 y = 2 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
 	}
-	priority = 0
+	priority = 1
 }
 
 division_template = {
@@ -362,6 +360,18 @@ units = {
 		location = 13419
 		division_template = "Garrison"
 		start_equipment_factor = 0.8
+
+	}
+
+	division = {
+		#name = "Jalalabad Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13475
+		division_template = "Garrison"
+		start_equipment_factor = 0.6
 
 	}
 	division = {

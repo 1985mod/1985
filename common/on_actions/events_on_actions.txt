@@ -1,0 +1,154 @@
+on_actions = {
+    on_startup = {
+        effect = { 
+            SOV = {
+                country_event = { id = SOV_soviet_union.1 days = 68 }
+                country_event = { id = SOV_soviet_union.16 days = 548 }
+                country_event = { id = SOV_soviet_union.17 days = 608 }
+                country_event = { id = SOV_soviet_union.18 days = 965 }
+                country_event = { id = SOV_soviet_union.19 days = 1111 }
+                country_event = { id = SOV_soviet_union.22 days = 1865 }
+                country_event = { id = SOV_soviet_union.23 days = 1889 }
+                country_event = { id = SOV_soviet_union.35 days = 2052 }
+                country_event = { id = SOV_soviet_union.8 days = 480 }
+                news_event = { id = news.4 days = 481 }
+                news_event = { id = news.21 days = 1613 }
+            }
+            MLI = {
+                country_event = { id = mali.1 days = 358 }
+            }
+			SUD = {
+				country_event = { id = sudan.1 days = 96 }
+				country_event = { id = sudan.2 days = 1403 }
+			}
+			CHA = {
+				country_event = { id = chad.1 days = 713 }
+			}
+			PHI = {
+				country_event = { id = philippines.1 days = 419 }
+			}
+			USA = {
+				country_event = { id = usa.19 days = 28 }
+				country_event = { id = usa.20 days = 39 }
+				country_event = { id = usa.21 days = 100 }
+				country_event = { id = usa.22 days = 150 }
+				country_event = { id = usa.23 days = 159 }
+				country_event = { id = usa.24 days = 290 }
+				country_event = { id = usa.25 days = 517 }
+				country_event = { id = usa.26 days = 570 }
+				country_event = { id = usa.27 days = 734 }
+				country_event = { id = usa.28 days = 866 }
+			}
+            ISR = {
+                country_event = { id = israel.4 days = 148 }
+            }
+        }
+    }
+
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1992.08.01
+					RUS = {
+						NOT = { has_country_flag = rfg_treaty_signed }
+					}
+					NOT = { has_global_flag = tatar_referendum_happened }
+				}
+				RUS = { country_event = { id = russia.15 } }
+				set_global_flag = tatar_referendum_happened
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1993.11.01
+					NOT = { has_global_flag = an_anti_dudayev_opposition_emerged }
+				}
+				RUS = { country_event = { id = russia.25 } }
+				set_global_flag = anti_dudayev_opposition_emerged
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1993.9.01
+					NOT = { has_global_flag = the_assault_on_grozny_failed }
+				}
+				RUS = { country_event = { id = russia.26 } }
+				set_global_flag = the_assault_on_grozny_failed
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1993.10.01
+					NOT = { has_global_flag = the_assault_on_grozny_failed_two }
+				}
+				RUS = { country_event = { id = russia.26 } }
+				set_global_flag = the_assault_on_grozny_failed_two
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1993.11.11
+					NOT = { has_global_flag = first_chechen_war_happened }
+				}
+				RUS = { country_event = { id = russia.27 } }
+				set_global_flag = first_chechen_war_happened
+			}
+			if = {
+				limit = {
+					country_exists = SOV
+					date > 1993.03.01
+					conservatism > party_popularity@socialism
+					has_global_flag = ussr_not_collapsed
+					NOT = { has_global_flag = ssg_elections_resolved }
+				}
+				SOV = { country_event = { id = SOV_soviet_union.70 } }
+				set_global_flag = ssg_elections_resolved
+			}
+			if = {
+				limit = {
+					country_exists = SOV
+					date > 1993.03.01
+					socialism > party_popularity@conservatism
+					has_global_flag = ussr_not_collapsed
+					NOT = { has_global_flag = ssg_elections_resolved }
+				}
+				SOV = { country_event = { id = SOV_soviet_union.71 } }
+				set_global_flag = ssg_elections_resolved
+			}
+			if = {
+				limit = {
+					country_exists = SOV
+					date > 1991.07.01
+					SOV = { has_country_flag = gorbachev }
+					NOT = { has_global_flag = dismantle_warsaw_pact }
+				}
+				SOV = { country_event = { id = SOV_soviet_union.78 } }
+				set_global_flag = dismantle_warsaw_pact
+			}
+			if = {
+				limit = {
+					USA = { has_government = conservatism }
+					country_exists = NEE
+					NOT = { has_global_flag = liberalism_in_new_england }
+					NOT = { has_global_flag = new_england_leader_set }
+				}
+				NEE = { country_event = { id = new_england.1 days = 12 } }
+				set_global_flag = conservatism_in_new_england
+				set_global_flag = new_england_leader_set
+			}
+			if = {
+				limit = {
+					USA = { has_government = liberalism }
+					country_exists = NEE
+					NOT = { has_global_flag = conservatism_in_new_england }
+					NOT = { has_global_flag = new_england_leader_set }
+				}
+				NEE = { country_event = { id = new_england.2 days = 12 } }
+				set_global_flag = liberalism_in_new_england
+				set_global_flag = new_england_leader_set
+			}
+		}
+	}
+}

@@ -5,7 +5,7 @@ state = {
 	state_category = pastoral
 	
 	resources = {
-		oil = 41
+		oil = 15
 	}
 
 	history = {
@@ -27,7 +27,7 @@ state = {
 	}
 
 	provinces = {
-		8051
+		8051 13320 13321
 	}
 
 	local_supplies = 0.0 

@@ -1,0 +1,17 @@
+BRM_counterinsurgency = {
+    icon = generic_political_actions
+	  
+	priority = 1
+	  
+	allowed = {
+	    original_tag = BRM
+	}
+	  
+	visible = {
+		OR = {
+			has_war_with = KIO
+			has_war_with = PDB
+			has_war_with = NDB
+		}
+	}
+}

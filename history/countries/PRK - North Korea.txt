@@ -57,5 +57,6 @@ set_popularities = {
 }
 
 add_ideas = {
+	all_adults_serve
 	tot_economic_mobilisation
 }

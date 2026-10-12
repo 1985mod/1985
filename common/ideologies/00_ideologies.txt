@@ -300,9 +300,11 @@ ideologies = {
 			}
 			
 			Salafism = {
+				can_be_randomly_selected = no
 			}
 			
 			Political_Islam = {
+				can_be_randomly_selected = no
 			}
 		}
 
@@ -365,6 +367,7 @@ ideologies = {
 			}
 			
 			baathism = {
+				can_be_randomly_selected = no
 			}
 		}
 

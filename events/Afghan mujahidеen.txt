@@ -68,7 +68,7 @@ country_event = {
     }
 
     option = {
-        name = amn.1.a
+        name = amn.2.a
         add_stability = 0.03
 		set_politics = {
 			ruling_party = neutrality
@@ -78,5 +78,75 @@ country_event = {
 			ideology = neutrality
 			popularity = 0.1
 		}
+    }
+}
+
+country_event = {
+    id = amn.3
+    title = amn.3.t
+    desc = amn.3.desc
+
+    picture = GFX_report_osama_bin_laden
+
+    is_triggered_only = yes
+
+    option = {
+        name = amn.3.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 150
+			producer = ROOT
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_grenade_launcher_equipment_0
+			amount = 100
+			producer = ROOT
+		}
+    }
+}
+
+country_event = {
+    id = amn.4
+    title = amn.4.t
+    desc = amn.4.desc
+    
+    picture = GFX_report_osama_bin_laden
+
+    is_triggered_only = yes
+
+    option = {
+        name = amn.4.a
+        add_stability = 0.03
+        add_war_support = -0.03
+        ROOT = {
+            add_opinion_modifier = {
+                target = SAU
+                modifier = small_increase
+            }
+        }
+        SAU = {
+            add_opinion_modifier = {
+                target = AFS
+                modifier = small_increase
+            }
+        }	
+    }
+
+    option = {
+        name = amn.4.b
+        add_stability = -0.03
+        add_war_support = 0.03
+        ROOT = {
+            add_opinion_modifier = {
+                target = SAU
+                modifier = small_decrease
+            }
+        }
+        SAU = {
+            add_opinion_modifier = {
+                target = AFS
+                modifier = small_decrease
+            }
+        }	
     }
 }

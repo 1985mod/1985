@@ -32,4 +32,14 @@ spriteTypes = {
 		noOfFrames = 2
 	}	
 	
+	spriteType = {
+		name = "GFX_radio_station_1985_super_events"
+		texturefile = "gfx/interface/topbar/musicplayer/radio_station_1985_super_events.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_radio_station_1985_super_events"
+		texturefile = "gfx/interface/topbar/musicplayer/radio_station_1985_super_events.dds"
+		noOfFrames = 2
+	}	
 }

@@ -1,0 +1,15 @@
+characters = {
+	LOA_buddy_roemer = {
+		name = LOA_buddy_roemer
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_buddy_roemer
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			traits = { }
+			expire = "2000.3.1.1"
+		}
+	}
+}

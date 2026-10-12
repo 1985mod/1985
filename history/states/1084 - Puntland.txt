@@ -1,0 +1,26 @@
+state = {
+	id = 1084
+	name = "STATE_1084"
+	manpower = 721000
+	resources = {
+		steel = 1
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = SOM
+		add_core_of = SOM
+		victory_points = {
+			10818 2 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces = {
+		1966 4909 10818 10891 13589 13590
+	}
+
+	local_supplies=0.0 
+}

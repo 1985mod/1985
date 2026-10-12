@@ -21,4 +21,6 @@ recruit_character = QAT_Hamad_al_Thani
 
 add_ideas = {
 	low_economic_mobilisation
+	ARB_gulf_cooperation_council
+	ARB_league_of_arab_states
 }

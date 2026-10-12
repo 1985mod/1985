@@ -25,6 +25,16 @@ set_technology = {
 
 if = {
 	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		basic_light_tank = 1
+		main_battle_tank = 1
+	}
+}
+
+if = {
+	limit = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
@@ -41,7 +51,7 @@ if = {
 		parent_version = 1
 		modules = {
 			main_armament_slot = tank_cold_war_weapon_1
-			turret_type_slot = tank_light_three_man_tank_turret
+			turret_type_slot = tank_modern_tank_turret
 			suspension_type_slot = tank_torsion_bar_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_diesel_engine
@@ -58,6 +68,7 @@ if = {
 add_ideas = {
 	service_by_requirement
 	PER_tiring_war
+	limited_exports
 	war_economy
 }
 set_politics = {
@@ -73,5 +84,9 @@ set_convoys = 10
 
 set_variable = { var = current_debt value = 121.5 }
 
-recruit_character = PER_Ali_Khamenei
+recruit_character = PER_ruhollah_khomeini
+recruit_character = PER_massoud_rajavi
 recruit_character = PER_shapour_bakhtiar
+recruit_character = PER_ali_sayad_shirazi
+recruit_character = PER_ali_shamkhani
+recruit_character = PER_mohsen_rezaee

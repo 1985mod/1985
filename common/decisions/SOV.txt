@@ -233,7 +233,7 @@ SOV_prohibition_ussr = {
 		days_remove = 60
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -259,9 +259,6 @@ SOV_prohibition_ussr = {
 
 		icon = generic_political_discourse
 
-		available = {
-		    has_completed_focus = SOV_the_beginning_of_the_anti_alcohol_campaign
-		}
 		days_remove = 60
 		days_re_enable = 240
 
@@ -276,9 +273,10 @@ SOV_prohibition_ussr = {
 
 		icon = eng_propaganda_campaigns
 
-		available = {
-		    has_completed_focus = SOV_the_beginning_of_the_anti_alcohol_campaign
+		ai_will_do = {
+			factor = 15
 		}
+
 		days_remove = 120
 		days_re_enable = 240
 
@@ -289,7 +287,7 @@ SOV_prohibition_ussr = {
 		}
 
 		remove_effect = {
-			add_stability = 0.1
+			add_stability = 0.05
 		}
 	}
 }
@@ -348,11 +346,15 @@ SOV_formation_union_sovereign_states = {
 			has_completed_focus = SOV_novo_ogaryovo_trial
 			NOT = { has_country_flag = start_sec_country_flag }
 		}
+
+		ai_will_do = {
+			factor = 100
+		}
 		
 		days_remove = 10
 		days_re_enable = 25
 		
-		cost = 100
+		cost = 75
 		
 		remove_effect = {
 			custom_effect_tooltip = add_treaty_development_10_percent
@@ -377,6 +379,10 @@ SOV_formation_union_sovereign_states = {
 		available = {
 			has_completed_focus = SOV_novo_ogaryovo_trial
 			NOT = { has_country_flag = start_sec_country_flag }
+		}
+
+		ai_will_do = {
+			factor = 100
 		}
 		
 		days_remove = 30
@@ -408,11 +414,15 @@ SOV_formation_union_sovereign_states = {
 			has_completed_focus = SOV_novo_ogaryovo_trial
 			NOT = { has_country_flag = start_sec_country_flag }
 		}
+
+		ai_will_do = {
+			factor = 100
+		}
 		
 		days_remove = 15
 		days_re_enable = 10
 		
-		cost = 100
+		cost = 75
 		
 		remove_effect = {
 			custom_effect_tooltip = add_treaty_development_15_percent
@@ -438,11 +448,15 @@ SOV_formation_union_sovereign_states = {
 			has_completed_focus = SOV_novo_ogaryovo_trial
 			NOT = { has_country_flag = start_sec_country_flag }
 		}
+
+		ai_will_do = {
+			factor = 100
+		}
 		
 		days_remove = 60
 		days_re_enable = 10
 		
-		cost = 50
+		cost = 25
 		
 		remove_effect = {
 			custom_effect_tooltip = add_treaty_development_5_percent
@@ -470,11 +484,15 @@ SOV_state_emergency_committee = {
 		available = {
 			has_completed_focus = SOV_on_the_side_of_the_sec
 		}
+
+		ai_will_do = {
+			factor = 15
+		}
 		
-		days_remove = 13
+		days_remove = 10
 		days_re_enable = 25
 		
-		cost = 100
+		cost = 75
 		
 		remove_effect = {
 			custom_effect_tooltip = add_state_emergency_committee_influence_20_percent
@@ -499,10 +517,14 @@ SOV_state_emergency_committee = {
 		available = {
 			has_completed_focus = SOV_on_the_side_of_the_sec
 		}
+
+		ai_will_do = {
+			factor = 15
+		}
 		
-		days_remove = 13
+		days_remove = 10
 		
-		cost = 100
+		cost = 75
 		
 		remove_effect = {
 			custom_effect_tooltip = add_state_emergency_committee_influence_15_percent
@@ -535,7 +557,7 @@ SOV_discontent_of_the_republics = {
 			always = no
 		}
 		icon = mission_icon
-		days_mission_timeout = 210
+		days_mission_timeout = 180
 		selectable_mission = no
 		timeout_effect = {
 			custom_effect_tooltip = discontent_among_the_republics_will_increase_by_1
@@ -738,7 +760,6 @@ SOV_world_war_three = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = controls_all_states_in_wgr
-				controls_or_subject_of = yes
 				909 = { is_controlled_by_ROOT_or_subject = yes }
 				58 = { is_controlled_by_ROOT_or_subject = yes }
 				59 = { is_controlled_by_ROOT_or_subject = yes }

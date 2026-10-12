@@ -1,0 +1,15 @@
+characters = {
+	CAL_george_deukmejian = {
+		name = CAL_george_deukmejian
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_george_deukmejian
+			}
+		}
+		country_leader = {
+			ideology = social_conservatism
+			traits = { }
+			expire = "2000.3.1.1"
+		}
+	}
+}

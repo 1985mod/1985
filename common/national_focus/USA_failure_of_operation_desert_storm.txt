@@ -1,0 +1,505 @@
+focus_tree = {
+    id = USA_failure_operation_desert_storm
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 1
+            tag = USA
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 3000 y = 1200 }
+	
+    focus = { 
+        id = USA_operation_desert_storm_failed
+        icon = GFX_none
+        x = 15
+        y = 0
+        cost = 1
+        completion_reward = { 
+            add_war_support = -0.5
+            add_stability = -0.15
+	    }
+	}
+
+	focus = { 
+        id = USA_admit_defeat_in_iraq
+		relative_position_id = USA_operation_desert_storm_failed
+		prerequisite = { focus = USA_operation_desert_storm_failed }
+        icon = GFX_none
+        x = 0
+        y = 1
+        cost = 2
+        completion_reward = { 
+            country_event = { id = usa.54 hours = 3 }
+	    }
+	}
+
+	focus = { 
+        id = USA_address_to_the_nation
+		relative_position_id = USA_admit_defeat_in_iraq
+		prerequisite = { focus = USA_admit_defeat_in_iraq }
+        icon = GFX_none
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = { 
+            country_event = { id = usa.55 hours = 3 }
+	    }
+	}
+
+	focus = { 
+        id = USA_change_deck
+		relative_position_id = USA_address_to_the_nation
+		prerequisite = { focus = USA_address_to_the_nation }
+		mutually_exclusive = { focus = USA_keep_the_old_team }
+        icon = GFX_none
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = { 
+	    }
+	}
+
+	focus = { 
+        id = USA_keep_the_old_team
+		relative_position_id = USA_address_to_the_nation
+		prerequisite = { focus = USA_address_to_the_nation }
+		mutually_exclusive = { focus = USA_change_deck }
+        icon = GFX_none
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = { 
+	    }
+	}
+
+	focus = { 
+        id = USA_covert_support_for_the_resistance_in_kuwait
+		relative_position_id = USA_change_deck
+		prerequisite = { focus = USA_keep_the_old_team focus = USA_change_deck  }
+        icon = GFX_none
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = { 
+            add_political_power = -25
+            if = {
+                limit = {
+                    IRQ = {
+                        controls_state = 656
+                    }
+                }
+                656 = { add_resistance = 15 }
+            }
+	    }
+	}
+
+	focus = { 
+        id = USA_political_stability
+		relative_position_id = USA_covert_support_for_the_resistance_in_kuwait
+		prerequisite = { focus = USA_covert_support_for_the_resistance_in_kuwait  }
+        icon = GFX_none
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = { 
+            add_stability = 0.1
+            remove_ideas = USA_chaos_in_the_country
+	    }
+	}
+
+	focus = { 
+        id = USA_cut_military_spending
+		relative_position_id = USA_admit_defeat_in_iraq
+		prerequisite = { focus = USA_operation_desert_storm_failed  }
+        icon = GFX_none
+        x = -4
+        y = 1
+        cost = 5
+
+        available = {
+            OR = {
+                has_completed_focus = USA_admit_defeat_in_iraq
+                has_idea = USA_chaos_in_the_country
+            }
+        }
+        
+        completion_reward = { 
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = -2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = -2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = -2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = infrastructure
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = infrastructure
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+	    }
+	}
+
+	focus = { 
+        id = USA_investments_in_robotics
+		relative_position_id = USA_cut_military_spending
+		prerequisite = { focus = USA_cut_military_spending }
+        icon = GFX_none
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = { 
+            add_tech_bonus = {
+                bonus = 0.50
+                uses = 1
+                category = electronics
+            }
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 1
+                category = industry
+            }
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	    }
+	}
+
+	focus = { 
+        id = USA_industrial_stimulation
+		relative_position_id = USA_cut_military_spending
+		prerequisite = { focus = USA_cut_military_spending }
+        icon = GFX_none
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = { 
+			if = {
+				limit = {
+					has_idea = depression
+				}
+				swap_ideas = {
+					remove_idea = depression
+					add_idea = recession
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = recession
+				}
+				swap_ideas = {
+					remove_idea = recession
+					add_idea = stagnation
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = stagnation
+				}
+				swap_ideas = {
+					remove_idea = stagnation
+					add_idea = sustainable_growth
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = sustainable_growth
+				}
+				swap_ideas = {
+					remove_idea = sustainable_growth
+					add_idea = economic_boom
+				}  
+			}	
+			random_owned_controlled_state = {
+				limit = {					
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	    }
+	}
+
+	focus = { 
+        id = USA_oil_taxes
+		relative_position_id = USA_industrial_stimulation
+		prerequisite = { focus = USA_industrial_stimulation focus = USA_investments_in_robotics }
+        icon = GFX_none
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = { 
+            add_ideas = USA_oil_taxes
+	    }
+	}
+
+	focus = { 
+        id = USA_military_reforms
+		relative_position_id = USA_admit_defeat_in_iraq
+		prerequisite = { focus = USA_operation_desert_storm_failed }
+        icon = GFX_none
+        x = 4
+        y = 1
+        cost = 5
+        
+        available = {
+            OR = {
+                has_completed_focus = USA_admit_defeat_in_iraq
+                has_idea = USA_demoralized_army
+            }
+        }
+        
+        completion_reward = { 
+            army_experience = 10
+            air_experience = 5
+            navy_experience = 5
+            remove_ideas = USA_demoralized_army
+	    }
+	}
+
+	focus = { 
+        id = USA_who_is_to_blame_for_the_failure
+		relative_position_id = USA_military_reforms
+		prerequisite = { focus = USA_military_reforms }
+        icon = GFX_none
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = { 
+	    }
+	}
+
+	focus = { 
+        id = USA_strengthening_the_armys_influence_in_europe
+		relative_position_id = USA_military_reforms
+		prerequisite = { focus = USA_military_reforms }
+        icon = GFX_none
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = { 
+			army_experience = 10
+			51 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 587
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3547
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 6469
+					instant_build = yes
+				}
+			}
+			42 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11494
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3423
+					instant_build = yes
+				}		
+			}
+			28 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9559
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11502
+					instant_build = yes
+				}		
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3629
+					instant_build = yes
+				}	
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 549
+					instant_build = yes
+				}	
+			}
+	    }
+	}
+
+	focus = { 
+        id = USA_nato_exercises
+		relative_position_id = USA_strengthening_the_armys_influence_in_europe
+		prerequisite = { focus = USA_strengthening_the_armys_influence_in_europe focus = USA_who_is_to_blame_for_the_failure}
+        icon = GFX_none
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = { 
+            add_war_support = 0.05
+            every_country = {
+                limit = {
+                    is_in_faction_with = USA
+                }
+                country_event = { id = usa.46 hours = 3 }
+            }
+	    }
+	}
+}

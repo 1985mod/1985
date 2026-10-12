@@ -1,0 +1,6 @@
+scripted_gui = {
+	usa_elections_scripted_gui = {
+		context_type = decision_category
+		window_name = "usa_elections_decision_ui_window"
+	}
+}

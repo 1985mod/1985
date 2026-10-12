@@ -22,7 +22,14 @@ country_event = {
 			release = SLV
 			set_country_flag = collapse_SLV
             SLV = {
-                set_country_flag = yugoslav_country
+                set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.6
+				}
             }
 		}
 
@@ -35,8 +42,19 @@ country_event = {
             release = CRO
 			set_country_flag = collapse_CRO
             CRO = {
-                set_country_flag = yugoslav_country
+                set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.6
+				}
+				country_event = { id = croatia.1 }
             }
+			YUG = {
+				country_event = { id = yugoslavia.2 days = 5 }
+			}
 		}
 
 		# Македония – 8 сентября 1991
@@ -46,10 +64,16 @@ country_event = {
 				NOT = { has_country_flag = collapse_MAC }
 			}
 			MAC = { transfer_state = 106 }
-			MAC = { transfer_state = 970 }
 			set_country_flag = collapse_MAC
             MAC = {
-                set_country_flag = yugoslav_country
+                set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.6
+				}
             }
 		}
 
@@ -63,8 +87,19 @@ country_event = {
 			BOS = { transfer_state = 1052 }
 			set_country_flag = collapse_BOS
             BOS = {
-                set_country_flag = yugoslav_country
+                set_politics = {
+					ruling_party = fascism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.6
+				}
+				country_event = { id = bosnia.1 }
             }
+			YUG = {
+				country_event = { id = yugoslavia.5 days = 5 }
+			}
 		}
 
 		# Черногория – 3 июня 2006
@@ -81,7 +116,6 @@ country_event = {
 			SER = { transfer_state = 764 }
 			SER = { transfer_state = 108 }
 			SER = { transfer_state = 802 }
-			SER = { transfer_state = 803 }
 		}
 
 		# Косово – 17 февраля 2008
@@ -101,11 +135,7 @@ country_event = {
 	title = yugoslavia.2.t
 	desc = yugoslavia.2.desc
 
-	trigger = {
-		tag = YUG
-		has_civil_war = no
-		date > 1991.06.27
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
@@ -123,6 +153,11 @@ country_event = {
 		set_province_controller = 984
 		set_province_controller = 3974
 		set_province_controller = 11577
+		hidden_effect = {
+			add_ideas = YUG_anti_war_protests
+			add_ideas = YUG_focus_on_defense
+			add_ideas = YUG_weakness_of_supply
+		}
 	}
 	trigger = {
 		NOT = {
@@ -215,18 +250,17 @@ country_event = {
 	title = yugoslavia.5.t
 	desc = yugoslavia.5.desc
 
-	trigger = {
-		tag = YUG
-		has_civil_war = no
-		country_exists = BOS
-		date > 1992.03.1
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	option = {
+		news_event = { id = news.37 hours = 6 }
 		ROOT = {
 			declare_war_on = { target = BOS type = annex_everything }	
+		}
+		BOS = {
+			declare_war_on = { target = CRO type = annex_everything }	
 		}
 		set_province_controller = 6957
 		set_province_controller = 3985
@@ -391,5 +425,144 @@ country_event = {
 				elections_allowed = yes
 			}
 		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.10	### Предложить ли нам перемирие с Хорватией? ###
+	title = yugoslavia.10.t
+	desc = yugoslavia.10.desc
+
+	trigger = {
+		tag = YUG
+		country_exists = CRO
+		has_war_with = CRO
+		date > 1991.12.16
+		date < 1993.05.16
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.9.a
+		CRO = { country_event = yugoslavia.11 hours = 12 }
+	}
+
+	option = {
+		name = yugoslavia.9.a
+		add_war_support = 0.05
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = yugoslavia.11	### Югославия предлагает перемирие ###
+	title = yugoslavia.11.t
+	desc = yugoslavia.11.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { ### Хорватия согласна ###
+		name = yugoslavia.11.a
+		YUG = { country_event = yugoslavia.12 hours = 6 }
+	}
+
+	option = { ### Хорватия отказалась ###
+		name = yugoslavia.11.b
+		YUG = { country_event = yugoslavia.13 hours = 6 }
+	}
+}
+
+country_event = {
+	id = yugoslavia.12	### Хорватия согласилась ###
+	title = yugoslavia.12.t
+	desc = yugoslavia.12.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.12.a
+		add_timed_idea = {
+			idea = YUG_sarajevo_armistice
+			days = 365
+		}
+		CRO = {
+			add_timed_idea = {
+				idea = CRO_sarajevo_armistice
+				days = 365
+			}
+		}
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = yugoslavia.13	### Хорватия отказалась ###
+	title = yugoslavia.13.t
+	desc = yugoslavia.13.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.13.a
+		add_war_support = -0.05
+	}
+}
+
+country_event = {
+	id = yugoslavia.14	### Нападать ли нам на Словению? ###
+	title = yugoslavia.14.t
+	desc = yugoslavia.14.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.14.a
+		ROOT = {
+			declare_war_on = {
+				target = SLV
+				type = annex_everything
+			}
+			add_war_support = 0.05
+		}		
+	}
+
+	option = {
+		name = yugoslavia.14.b
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = yugoslavia.15	### Нападать ли нам на Македонию? ###
+	title = yugoslavia.15.t
+	desc = yugoslavia.15.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.15.a
+		ROOT = {
+			declare_war_on = {
+				target = MAC
+				type = annex_everything
+			}
+			add_war_support = 0.05
+		}		
+	}
+
+	option = {
+		name = yugoslavia.15.b
+		add_stability = 0.05
 	}
 }

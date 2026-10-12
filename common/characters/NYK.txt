@@ -1,0 +1,15 @@
+characters = {
+	NYK_mario_cuomo = {
+		name = NYK_mario_cuomo
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_mario_cuomo
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			traits = { }
+			expire = "2015.1.1.1"
+		}
+	}
+}

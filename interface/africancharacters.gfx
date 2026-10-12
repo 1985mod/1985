@@ -199,6 +199,27 @@ spriteTypes = {
 		name = GFX_portrait_SOM_Mohamed_Siad_Barre
 		textureFile = "gfx/leaders/SOM/Mohamed_Siad_Barre.dds"
 	}
+
+	spriteType = {
+		name = GFX_Portrait_abdullahi_yusuf_ahmed
+		textureFile = "gfx/leaders/SOM/Portrait_abdullahi_yusuf_ahmed.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_ahmed_mohamed_mohamoud
+		textureFile = "gfx/leaders/SOM/Portrait_ahmed_mohamed_mohamoud.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_mohamed_farah_abdullahi
+		textureFile = "gfx/leaders/SOM/Portrait_mohamed_farah_abdullahi.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_shukri_weyrah_kariye
+		textureFile = "gfx/leaders/SOM/Portrait_shukri_weyrah_kariye.dds"
+	}
+	
     ##GHA##
 	spriteType = {
 		name = GFX_portrait_GHA_Jerry_John_Rawlings

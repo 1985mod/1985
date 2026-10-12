@@ -1,0 +1,72 @@
+characters = {
+
+	NEE_supreme_council_of_new_england = {
+		name = NEE_supreme_council_of_new_england
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_supreme_council_of_new_england
+			}
+		}
+		country_leader = {
+			ideology = neoliberalism
+			traits = { }
+			expire = "2026.3.1.1"
+		}
+	}
+
+	NEE_michael_dukakis = {
+		name = NEE_michael_dukakis
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_michael_dukakis
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			traits = { }
+			expire = "2018.3.1.1"
+		}
+	}
+
+	NEE_john_kerry = {
+		name = NEE_john_kerry
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_john_kerry
+			}
+		}
+		country_leader = {
+			ideology = neoliberalism
+			traits = { }
+			expire = "2026.9.1.1"
+		}
+	}
+
+	NEE_john_sununu = {
+		name = NEE_john_sununu
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_john_sununu
+			}
+		}
+		country_leader = {
+			ideology = social_conservatism
+			traits = { }
+			expire = "2026.1.1.1"
+		}
+	}
+
+	NEE_william_cohen = {
+		name = NEE_william_cohen
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_william_cohen
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism
+			traits = { }
+			expire = "2000.1.1.1"
+		}
+	}
+}

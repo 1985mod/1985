@@ -50,7 +50,8 @@
  EXPENSE:0 "$§R[?expense_budget|.3]§!"
 
  UNEMPLOYMENT_RATE:0 "§R[?unemployment_rate|.2]%"
- TARGET_UNEMPLOYMENT:0 "§H[?target_unemployment_down|.2]% - §H[?target_unemployment_up|.2]%"
+ UNEMPLOYMENT_TOOLTIP:0 "§YВлияние нашей текущей безработицы:§!\nСтабильность: [?unemployment_stability|+=3]%\nФактор фабрик, производящих товары народного потребления: §Y[?unemployment_consumer_goods|.3]%§!"
+ TARGET_UNEMPLOYMENT:0 "§H[?target_unemployment_down|.2]% - §H[?target_unemployment_up|.2]%"[?resource_revenue|.3]
 
  REAL_GDP_LABEL:0 "Реальный ВВП   "
  NOMINAL_GDP_LABEL:0 "      Номинальный ВВП"
@@ -68,5 +69,16 @@
  UNEMPLOYMENT_RATE_LABEL:0 "Безработица:"
  TARGET_UNEMPLOYMENT_LABEL:0 "Целевой уровень:"
  STATE_EXPENDITURE_LABEL:0 "Расходы государства"
+ CIVIL_ADMINISTRATION_LABEL:0 "Администрация:"
+ EDUCATION_LABEL:0 "Образование:"
+ WELFARE_LABEL:0 "Соц. обеспечение:"
+
+ DEFENSE_LABEL:0 "[Root.defense_display]"
+ DEFENSE_LABEL_communism:0 "Гос. оборона:"
+ DEFENSE_LABEL_capitalism:0 "Национальная оборона:"
+
+ SCIENCE_LABEL:0 "Наука:"
+ DEBT_SERVICE_LABEL:0 "Обслуживание госдолга:"
  BALANCE_VALUE:0 "[?treasury|.2]"
  DEBT_VALUE:0 "[?current_debt|.2]"
+ DEBT_TOOLTIP:0 "Соотношение госдолга к ВВП: §R[?debt_to_gdp|.2]%§!"

@@ -47,6 +47,21 @@ diplomatic_relation = {
 	relation = military_access
 }
 
+diplomatic_relation = {
+	country = JAP
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = PHI
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = AST
+	relation = military_access
+}
+
 add_nuclear_bombs = 999
 
 set_research_slots = 5
@@ -82,16 +97,16 @@ set_technology = {
 
 add_dynamic_modifier = { modifier = USA_cold_war }
 
-
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
-		gwtank = 1
-		main_battle_tank_chassis = 1
+		basic_light_tank = 1
+		main_battle_tank = 1
 	}
 }
+
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -203,6 +218,7 @@ add_ideas = {
 	USA_reaganomics_policy
 	USA_stronghold_of_freedom
 	USA_the_endless_war_on_drugs
+	USA_trade_deficit
 	partial_economic_mobilisation
 }
 

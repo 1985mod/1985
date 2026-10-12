@@ -1,0 +1,294 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = sov_world_war_3
+        }
+        localization_key = "sp_event_world_war_three"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = usa_desert_storm
+        }
+        localization_key = "sp_event_operation_desert_storm"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = wgr_reunification_germany
+        }
+        localization_key = "sp_super_reunification_of_germany_storm"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = sov_formation_uss
+        }
+        localization_key = "sp_super_event_formation_uss"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = rus_military_coup
+        }
+        localization_key = "sp_super_event_military_coup_detat"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = che_first_chechen_war
+        }
+        localization_key = "sp_super_event_first_chechen_war"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = usa_collapse_of_america_flag
+        }
+        localization_key = "sp_super_event_collapse_of_america"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = prk_two_korean_war_flag
+        }
+        localization_key = "sp_super_event_two_korean_war"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = sov_start_sec_flag
+        }
+        localization_key = "sp_event_start_sec"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = som_civil_war_in_somalia_flag
+        }
+        localization_key = "sp_civil_war_in_somalia"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = sov_world_war_three_victory_flag
+        }
+        localization_key = "sp_sov_world_war_three_victory"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = nato_world_war_three_victory_flag
+        }
+        localization_key = "sp_nato_world_war_three_victory"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = rus_black_october_october_flag
+        }
+        localization_key = "sp_rus_black_october_october"
+    }
+}
+
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+    
+    text = { 
+        trigger = {
+            has_global_flag = sov_world_war_3
+        }
+        localization_key = "sp_event_world_war_three_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = usa_desert_storm
+        }
+        localization_key = "sp_event_operation_desert_storm_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = wgr_reunification_germany
+        }
+        localization_key = "sp_super_reunification_of_germany_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = sov_formation_uss
+        }
+        localization_key = "sp_super_event_formation_uss_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = rus_military_coup
+        }
+        localization_key = "sp_super_event_military_coup_detat_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = che_first_chechen_war
+        }
+        localization_key = "sp_super_event_first_chechen_war_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = usa_collapse_of_america_flag
+        }
+        localization_key = "sp_super_event_collapse_of_america_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = prk_two_korean_war_flag
+        }
+        localization_key = "sp_super_event_two_korean_war_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = sov_start_sec_flag
+        }
+        localization_key = "sp_event_start_sec_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = som_civil_war_in_somalia_flag
+        }
+        localization_key = "sp_civil_war_in_somalia_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = sov_world_war_three_victory_flag
+        }
+        localization_key = "sp_sov_world_war_three_victory_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = nato_world_war_three_victory_flag
+        }
+        localization_key = "sp_nato_world_war_three_victory_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = rus_black_october_october_flag
+        }
+        localization_key = "sp_rus_black_october_october_REMARK"
+    }
+}
+
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+    
+    text = {
+        trigger = {
+            has_global_flag = sov_world_war_3
+        }
+        localization_key = "sp_event_world_war_three_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = usa_desert_storm
+        }
+        localization_key = "sp_event_operation_desert_storm_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = wgr_reunification_germany
+        }
+        localization_key = "sp_super_reunification_of_germany_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = sov_formation_uss
+        }
+        localization_key = "sp_super_event_formation_uss_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = rus_military_coup
+        }
+        localization_key = "sp_super_event_military_coup_detat_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = che_first_chechen_war
+        }
+        localization_key = "sp_super_event_first_chechen_war_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = usa_collapse_of_america_flag
+        }
+        localization_key = "sp_super_event_collapse_of_america_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = prk_two_korean_war_flag
+        }
+        localization_key = "sp_super_event_two_korean_war_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = sov_start_sec_flag
+        }
+        localization_key = "sp_event_start_sec_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = som_civil_war_in_somalia_flag
+        }
+        localization_key = "sp_civil_war_in_somalia_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = sov_world_war_three_victory_flag
+        }
+        localization_key = "sp_sov_world_war_three_victory_flag_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = sov_world_war_three_victory_flag
+        }
+        localization_key = "sp_sov_world_war_three_victory_flag_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = nato_world_war_three_victory_flag
+        }
+        localization_key = "sp_nato_world_war_three_victory_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = rus_black_october_october_flag
+        }
+        localization_key = "sp_rus_black_october_october_QUOTE"
+    }
+}

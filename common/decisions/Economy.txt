@@ -3,6 +3,8 @@ Economy = {
 	ai_increase_pop_rate = {
 		allowed = { always = yes }
 		
+
+		cost = 25
 		available = {
 			has_political_power > 24
 			NOT = { check_variable = { pop_rate > 99 } }
@@ -19,15 +21,12 @@ Economy = {
 				}
 				set_variable = { var = pop_rate value = 100 }
 			}
-			else = {
-				add_political_power = -25
-			}
 		}
 
 		ai_will_do = {
-            base = -1000
+            factor = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = pop_rate value = pop_optimal compare = less_than }
             }
         }
@@ -36,6 +35,7 @@ Economy = {
 	ai_decrease_pop_rate = {
 		allowed = { always = yes }
 		
+		cost = 25
 		available = {
 			has_political_power > 24
 			NOT = { check_variable = { pop_rate < 1 } }
@@ -52,15 +52,12 @@ Economy = {
 				}
 				set_variable = { var = pop_rate value = 0 }
 			}
-			else = {
-				add_political_power = -25
-			}
 		}
 
 		ai_will_do = {
-            base = -1000
+            factor = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = pop_rate value = pop_optimal compare = greater_than }
             }
         }		
@@ -69,6 +66,7 @@ Economy = {
 	ai_increase_corp_rate = {
 		allowed = { always = yes }
 		
+		cost = 25
 		available = {
 			has_political_power > 24
 			NOT = { check_variable = { corp_rate > 99 } }
@@ -85,15 +83,12 @@ Economy = {
 				}
 				set_variable = { var = corp_rate value = 100 }
 			}
-			else = {
-				add_political_power = -25
-			}
 		}
 
 		ai_will_do = {
-            base = -1000
+            factor = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = corp_rate value = corp_optimal compare = less_than }
             }
         }
@@ -102,6 +97,7 @@ Economy = {
 	ai_decrease_corp_rate = {
 		allowed = { always = yes }
 		
+		cost = 25
 		available = {
 			has_political_power > 24
 			NOT = { check_variable = { corp_rate < 1 } }
@@ -118,15 +114,12 @@ Economy = {
 				}
 				set_variable = { var = corp_rate value = 0 }
 			}
-			else = {
-				add_political_power = -25
-			}
 		}
 
 		ai_will_do = {
-            base = -1000
+            factor = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = corp_rate value = corp_optimal compare = greater_than }
             }
         }		
@@ -135,6 +128,7 @@ Economy = {
 	ai_increase_vat_rate = {
 		allowed = { always = yes }
 		
+		cost = 25
 		available = {
 			has_political_power > 24
 			NOT = { check_variable = { vat_rate > 99 } }
@@ -151,15 +145,12 @@ Economy = {
 				}
 				set_variable = { var = vat_rate value = 100 }
 			}
-			else = {
-				add_political_power = -25
-			}
 		}
 
 		ai_will_do = {
-            base = -1000
+            factor = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = vat_rate value = vat_optimal compare = less_than }
             }
         }
@@ -168,6 +159,7 @@ Economy = {
 	ai_decrease_vat_rate = {
 		allowed = { always = yes }
 		
+		cost = 25
 		available = {
 			has_political_power > 24
 			NOT = { check_variable = { vat_rate < 1 } }
@@ -184,15 +176,12 @@ Economy = {
 				}
 				set_variable = { var = vat_rate value = 0 }
 			}
-			else = {
-				add_political_power = -25
-			}
 		}
 
 		ai_will_do = {
-            base = -1000
+            factor = 10
             modifier = {
-                add = 2000
+                add = 5
                 check_variable = { var = vat_rate value = vat_optimal compare = greater_than }
             }
         }		
@@ -200,6 +189,7 @@ Economy = {
 	ai_increase_interest_rate = {
 		allowed = { always = yes }
 		
+		cost = 25
 		available = {
 			has_political_power > 24
 			NOT = { check_variable = { interest_rate > 99 } }
@@ -217,16 +207,13 @@ Economy = {
 				}
 				set_variable = { var = interest_rate value = 100 }
 			}
-			else = {
-				add_political_power = -25
-			}
 		}
 
 		ai_will_do = {
-            base = -1000
+            factor = 10
             modifier = {
-                add = 2000
-                check_variable = { var = inflation_rate value = 8 compare = greater_than }
+                add = 10
+                check_variable = { var = inflation_rate value = 10 compare = greater_than }
             }
         }
 	}
@@ -234,6 +221,7 @@ Economy = {
 	ai_decrease_interest_rate = {
 		allowed = { always = yes }
 		
+		cost = 25
 		available = {
 			has_political_power > 24
 			NOT = { check_variable = { interest_rate < -5 } }
@@ -251,16 +239,13 @@ Economy = {
 				}
 				set_variable = { var = interest_rate value = -5 }
 			}
-			else = {
-				add_political_power = -25
-			}
 		}
 
 		ai_will_do = {
-            base = -1000
+            factor = 20
             modifier = {
-                add = 2000
-                check_variable = { var = inflation_rate value = 2 compare = less_than }
+                add = 10
+                check_variable = { var = inflation_rate value = 3 compare = less_than }
             }
         }		
 	}

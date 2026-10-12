@@ -175,5 +175,53 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.3
 			}
 		}
+		WGR_plaza_accord = {
+			picture = plaza_accord
+			
+			allowed = {
+                OR = {
+                    original_tag = WGR
+					original_tag = ENG
+					original_tag = FRA
+                }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.03
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		WGR_initiative_for_a_single_europea_act = {
+			picture = plaza_accord
+			
+			allowed = {
+                OR = {
+                    original_tag = WGR
+					original_tag = FRA
+                }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.1
+				research_speed_factor = 0.05
+				research_sharing_per_country_bonus_factor = 0.15
+			}
+		}
     }
 }

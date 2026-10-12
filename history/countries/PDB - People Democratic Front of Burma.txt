@@ -17,6 +17,11 @@ set_convoys = 5
 
 recruit_character = PDB_peoples_democratic_front
 
+add_ideas = {
+	war_economy
+	BRM_civil_war_in_burma
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1985.1.1"

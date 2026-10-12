@@ -27,6 +27,16 @@ set_technology = {
 
 if = {
 	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		basic_light_tank = 1
+		main_battle_tank = 1
+	}
+}
+
+if = {
+	limit = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
@@ -70,5 +80,6 @@ set_popularities = {
 recruit_character = LBA_Muammar_Gaddafi
 
 add_ideas = {
+	ARB_league_of_arab_states
 	partial_economic_mobilisation
 }

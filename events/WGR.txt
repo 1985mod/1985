@@ -4,7 +4,7 @@ country_event = {
 	id = wgr.1 ## Курс ФРГ ##
 	title = wgr.1.t
 	desc = wgr.1.desc
-	picture = GFX_report_xi_congress_of_the_sed
+	picture = GFX_report_helmut_kohl_speech
 
 	is_triggered_only = yes
 
@@ -15,7 +15,7 @@ country_event = {
         add_political_power = 10
 		add_popularity = {
 			ideology = conservatism
-			popularity = 0.05
+			popularity = 0.02
 	    }
 	}
 
@@ -24,7 +24,7 @@ country_event = {
         add_political_power = 10
 		add_popularity = {
 			ideology = socialism
-			popularity = 0.05
+			popularity = 0.02
 	    }
 	}
 
@@ -33,7 +33,7 @@ country_event = {
         add_political_power = 10
 		add_popularity = {
 			ideology = liberalism
-			popularity = 0.05
+			popularity = 0.02
 	    }
 	}
 }
@@ -42,7 +42,7 @@ country_event = {
 	id = wgr.2 ## Определение курса ##
 	title = wgr.2.t
 	desc = wgr.2.desc
-	picture = GFX_report_xi_congress_of_the_sed
+	picture = GFX_report_economic_course_determination
 
 	is_triggered_only = yes
 
@@ -53,7 +53,7 @@ country_event = {
         add_political_power = 10
 		add_popularity = {
 			ideology = conservatism
-			popularity = 0.03
+			popularity = 0.015
 	    }
         if = {
 			limit = {
@@ -89,7 +89,7 @@ country_event = {
         add_political_power = 10
 		add_popularity = {
 			ideology = socialism
-			popularity = 0.03
+			popularity = 0.015
 	    }
         if = {
 			limit = {
@@ -125,7 +125,7 @@ country_event = {
 	id = wgr.3 ## Эпоха напряжения ##
 	title = wgr.3.t
 	desc = wgr.3.desc
-	picture = GFX_report_xi_congress_of_the_sed
+	picture = GFX_report_eras_of_tension
 
 	is_triggered_only = yes
 
@@ -141,7 +141,7 @@ country_event = {
 	id = wgr.4 ## Германия - европейский лидер ##
 	title = wgr.4.t
 	desc = wgr.4.desc
-	picture = GFX_report_xi_congress_of_the_sed
+	picture = GFX_report_germany_europe_leader
 
 	is_triggered_only = yes
 
@@ -626,7 +626,7 @@ country_event = {
 		add_war_support = -0.03
 		add_popularity = {
 			ideology = socialism
-			popularity = 0.03
+			popularity = 0.02
 	    }
 		FROM = {
 			add_to_variable = {
@@ -672,7 +672,7 @@ country_event = {
 	    }
 		add_popularity = {
 			ideology = socialism
-			popularity = 0.02
+			popularity = 0.015
 	    }
 		FROM = {
 			add_to_variable = {

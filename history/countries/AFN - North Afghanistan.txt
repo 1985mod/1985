@@ -32,7 +32,7 @@ set_popularities = {
 
 add_ideas = {
 	AFN_kunar_operation
-	extensive_conscription
+	service_by_requirement
 	war_economy
 }
 
@@ -43,5 +43,6 @@ recruit_character = AFN_mohammad_najibullah
 recruit_character = AFN_abdul_qadir
 recruit_character = AFN_mohammad_rafiel
 recruit_character = AFN_abdul_rashid
+recruit_character = AFN_shahnawaz_tanai
 
 

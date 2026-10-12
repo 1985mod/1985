@@ -54,7 +54,7 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = norvik
-			remove_country_leader = { name = "NOR_kare_willoch" }
+			retire_character = NOR_kare_willoch
 			promote_character = {
 				character = NOR_Erling_Norvik
 				ideology = conservatism
@@ -99,7 +99,7 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = syse
-			remove_country_leader = { name = "NOR_Erling_Norvik" }
+			retire_character = NOR_Erling_Norvik
 			promote_character = {
 				character = NOR_jan_syse
 				ideology = conservatism

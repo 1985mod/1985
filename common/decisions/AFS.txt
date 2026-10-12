@@ -1,0 +1,92 @@
+AFS_sacred_war = {
+	AFS_opening_of_training_camps = {
+		icon = infiltrate_state
+
+		available = {
+			has_government = neutrality
+			has_war = yes
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+		
+		days_remove = 90
+
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+
+		modifier = {
+			weekly_manpower = 250
+			experience_gain_army_factor = 0.05
+		}	
+	}
+
+	AFS_financing_through_saudi_charitable_foundations = {
+		icon = ger_mefo_bills
+
+		available = {
+			has_government = neutrality
+			has_war = yes
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+		
+		days_remove = 50
+		
+		cost = 75
+
+		remove_effect = {
+			add_to_variable = {
+				var = treasury
+				value = 0.25
+				tooltip = add_250_million_to_treasury_tt
+			}	
+			ROOT = {
+				add_opinion_modifier = {
+					target = SAU
+					modifier = small_increase
+				}
+			}
+			SAU = {
+				add_opinion_modifier = {
+					target = AFS
+					modifier = small_increase
+				}
+			}			
+		}
+	}
+
+	AFS_request_weapons_from_osama_bin_laden = {
+		icon = generic_reorganize_irregulars
+
+		available = {
+			has_government = neutrality
+			has_war = yes
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+		
+		days_remove = 30
+		
+		cost = 50
+
+		remove_effect = {
+			random_list = {
+				80 = {
+					country_event = { id = amn.3 }
+				}
+				20 = {
+					country_event = { id = amn.4 }
+				}
+			}
+		}
+	}
+}

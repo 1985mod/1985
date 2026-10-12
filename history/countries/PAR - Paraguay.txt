@@ -1,34 +1,8 @@
 ﻿capital = 301
 
 oob = "PAR_1936"
-every_core_state = {
-	ROOT = {
-		add_to_array = { cores_at_game_start = PREV }
-	}
-}
-IF = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "PAR_1936_air_bba"
-	ELSE = {
-		set_air_oob = "PAR_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-
-		}
-	}
-}
 
 set_research_slots = 2
-IF = {
-	limit = {
-		has_dlc = "Trial of Allegiance"
-	}
-	add_timed_idea = {
-		idea = BOL_toll_of_the_chaco_war
-		days = 1400
-	}
-	JUNO_set_shared_military_branch_defaults = yes
-}
 
 
 set_technology = {

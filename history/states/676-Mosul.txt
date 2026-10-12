@@ -19,10 +19,14 @@ state={
 			10106 10
 		}
 		add_core_of = IRQ
+
+		PUK = {
+			set_province_controller = 13599
+		}
 	}
 	
 	provinces={
-		1600 1938 8123 10106 10793 12372 
+		1600 1938 8123 13599 13600 10106 10793 12372 13609
 	}
 
 	local_supplies=0.0 

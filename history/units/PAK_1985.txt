@@ -1,0 +1,377 @@
+division_template = {
+	name = "Infantry Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+}
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+}
+division_template = {	
+	name = "Armored Brigade"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {	
+	name = "Armored Division"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
+		modern_armor = { x = 2 y = 3 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {	
+	name = "Artillery Brigade"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+units = {
+
+	division = {
+		name = "1 tank dvizn"
+		location = 8022
+		division_template = "Armored Division"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "6 tank dvizn"
+		location = 3456
+		division_template = "Armored Division"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "2 tank bregid"
+		location = 10898
+		division_template = "Armored Brigade"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "3 tank bregid"
+		location = 10066
+		division_template = "Armored Brigade"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "4 tank bregid"
+		location = 1910
+		division_template = "Armored Brigade"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "5 tank bregid"
+		location = 12763
+		division_template = "Armored Brigade"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "8 anfntri dvizn"
+		location = 1971
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		name = "10 anfntri dvizn"
+		location = 10887
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		name = "12 anfntri dvizn"
+		location = 10066
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "14 anfntri dvizn"
+		location = 10843
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "15 anfntri dvizn"
+		location = 5105
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "16 anfntri dvizn"
+		location = 12763
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "17 anfntri dvizn"
+		location = 1971
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		name = "18 anfntri dvizn"
+		location = 10887
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		name = "19 anfntri dvizn"
+		location = 10066
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "20 anfntri dvizn"
+		location = 10843
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "21 anfntri dvizn"
+		location = 5105
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "22 anfntri dvizn"
+		location = 12763
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "23 anfntri dvizn"
+		location = 12717
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "24 anfntri dvizn"
+		location = 12774
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "25 anfntri dvizn"
+		location = 3456
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "26 anfntri dvizn"
+		location = 3456
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "6 anfntri bregid"
+		location = 3456
+		division_template = "Infantry Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "7 anfntri bregid"
+		location = 3456
+		division_template = "Infantry Brigade"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "9 anfntri bregid"
+		location = 10898
+		division_template = "Infantry Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "11 anfntri bregid"
+		location = 10898
+		division_template = "Infantry Brigade"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "13 anfntri bregid"
+		location = 5075
+		division_template = "Infantry Brigade"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "15 anfntri bregid"
+		location = 5075
+		division_template = "Infantry Brigade"	
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "27 anfntri bregid"
+		location = 4558
+		division_template = "Infantry Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "28 anfntri bregid"
+		location = 8022
+		division_template = "Infantry Brigade"	
+		start_experience_factor = 0.2
+	}
+	
+	
+	division = {
+		name = "29 artlri bregid"
+		location = 8022
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "30 artlri bregid"
+		location = 8022
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "31 artlri bregid"
+		location = 8022
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "32 artlri bregid"
+		location = 8022
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "33 artlri bregid"
+		location = 8022
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "34 artlri bregid"
+		location = 8022
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "35 artlri bregid"
+		location = 3456
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "36 artlri bregid"
+		location = 3456
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "37 artlri bregid"
+		location = 3456
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "38 artlri bregid"
+		location = 3456
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "39 artlri bregid"
+		location = 3456
+		division_template = "Artillery Brigade"	
+		start_experience_factor = 0.2
+	}
+}

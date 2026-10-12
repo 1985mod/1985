@@ -1,0 +1,15 @@
+characters = {
+	UTO_sayid_abdulloh_nuri ={
+		name = UTO_sayid_abdulloh_nuri
+		portraits={
+			civilian={
+				large= GFX_Portrait_sayid_abdulloh_nuri
+			}
+		}
+		country_leader={
+			ideology = Political_Islam
+			traits={  }
+			expire="2008.8.23.1"		
+		}
+	}
+}

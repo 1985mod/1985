@@ -39,6 +39,7 @@ set_popularities = {
 }
 
 recruit_character = PAL_yasser_arafat
+recruit_character = PAL_marwan_barghouti
 
 set_convoys = 5
 

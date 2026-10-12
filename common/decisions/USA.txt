@@ -236,7 +236,7 @@ USA_voice_of_america = {
 		icon = generic_speech
 
 		ai_will_do = {
-			base = 100
+			factor = 100
 		}
 
 		available = {
@@ -276,7 +276,7 @@ USA_voice_of_america = {
 		icon = generic_speech
 
 		ai_will_do = {
-			base = 100
+			factor = 100
 		}
 
 		available = {
@@ -336,7 +336,7 @@ USA_war_on_drugs = {
 		icon = generic_speech
 
 		ai_will_do = {
-			base = 100
+			factor = 100
 		}
 
 		available = {
@@ -567,7 +567,8 @@ USA_operations_against_the_ayatollahs_cat = {
 
 USA_operation_desert_storm_mission = {
 	USA_operation_desert_storm_transparency = {
-
+		
+		icon = infiltrate_state
 
 		fire_only_once = yes
 		
@@ -601,9 +602,11 @@ USA_operation_desert_storm_mission = {
 				USA = { has_completed_focus = USA_landing_in_basra }
 			}
 		}
-		icon = mission_icon
+
 		days_mission_timeout = 50
+		
 		selectable_mission = no
+
 		complete_effect = {
 			add_political_power = 25
 			add_war_support = 0.05
@@ -614,6 +617,7 @@ USA_operation_desert_storm_mission = {
 			add_political_power = -150
 			add_stability = -0.05
 			add_war_support = -0.15
+			load_focus_tree = USA_failure_operation_desert_storm
 		}
 	}
 }
@@ -737,12 +741,12 @@ USA_anti_terrorist_operations = {
 	USA_operation_eldorado_canyon = {
 		cost = 50
 		fire_only_once = yes
-		days_remove = 50
+		days_remove = 5
 
 		icon = generic_speech
 
 		ai_will_do = {
-			base = 0
+			factor = 0
 			modifier = {
 				add = 50
 				is_historical_focus_on = yes
@@ -820,7 +824,7 @@ USA_anti_terrorist_operations = {
 		days_re_enable = 120
 
 		ai_will_do = {
-			base = 0
+			factor = 0
 			modifier = {
 				add = 50
 				is_historical_focus_on = yes
@@ -838,7 +842,7 @@ USA_anti_terrorist_operations = {
 		days_remove = 30
 
 		ai_will_do = {
-			base = 0
+			factor = 0
 			modifier = {
 				add = 50
 				is_historical_focus_on = yes
@@ -852,7 +856,7 @@ USA_anti_terrorist_operations = {
 		remove_effect = {
             army_experience = 10		
         	add_doctrine_cost_reduction = {
-    			name = USA_expand_military_bases
+    			name = USA_expand_military_factors
     			cost_reduction = 0.5
      			uses = 1
      			category = land_doctrine
@@ -867,7 +871,7 @@ USA_operations_against_cuba_cat = {
 		days_remove = 35
 
 		ai_will_do = {
-			base = 15
+			factor = 15
 		}
 
 		remove_effect = {
@@ -890,7 +894,7 @@ USA_operations_against_cuba_cat = {
 		days_re_enable = 15
 
 		ai_will_do = {
-			base = 15
+			factor = 15
 		}
 
 		remove_effect = {
@@ -914,7 +918,7 @@ USA_space_programs = {
 		days_remove = 150
 
 		ai_will_do = {
-			base = 15
+			factor = 15
 		}
 
 		remove_effect = {
@@ -928,6 +932,401 @@ USA_space_programs = {
 					popularity = 0.03
 				}
 			}
+		}
+	}
+}
+
+USA_election_campaign_in_usa = {
+	USA_dukakis_anti_advertising = {
+		cost = 75
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_gain = -0.3
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = between_10_and_20_electors_are_joining_our_party
+			set_variable_to_random = {
+				var = electoral_votes_random
+				min = 10
+				max = 20
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.electoral_votes_republicans
+				value = electoral_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.electoral_votes_democrats
+				value = electoral_votes_random
+			}
+			custom_effect_tooltip = between_1_and_2_states_are_joining_our_party
+			set_variable_to_random = {
+				var = state_votes_random
+				min = 1
+				max = 2
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.support_republicans_in_us
+				value = state_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.support_democrats_in_us
+				value = state_votes_random
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_democrats
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_republicans
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_democrats_in_us
+				max = 50
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_republicans_in_us
+				max = 50
+				min = 0
+			}
+		}
+	}
+
+	USA_to_promise_to_continue_reagans_course = {
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_gain = -0.2
+			conservatism_drift = 0.02
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = between_15_and_30_electors_are_joining_our_party
+			set_variable_to_random = {
+				var = electoral_votes_random
+				min = 15
+				max = 30
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.electoral_votes_republicans
+				value = electoral_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.electoral_votes_democrats
+				value = electoral_votes_random
+			}
+			custom_effect_tooltip = between_1_and_3_states_are_joining_our_party
+			set_variable_to_random = {
+				var = state_votes_random
+				min = 1
+				max = 3
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.support_republicans_in_us
+				value = state_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.support_democrats_in_us
+				value = state_votes_random
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_democrats
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_republicans
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_democrats_in_us
+				max = 50
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_republicans_in_us
+				max = 50
+				min = 0
+			}
+		}
+	}
+
+	USA_to_oppose_abortion = {
+		cost = 50
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_gain = -0.5
+		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					custom_effect_tooltip = between_5_and_15_electors_are_joining_our_party
+					set_variable_to_random = {
+						var = electoral_votes_random
+						min = 5
+						max = 10
+						integer = yes
+					} 
+					add_to_variable = {
+						var = USA.electoral_votes_republicans
+						value = electoral_votes_random
+					}
+					subtract_from_variable = {
+						var = USA.electoral_votes_democrats
+						value = electoral_votes_random
+					}
+					custom_effect_tooltip = between_1_and_2_states_are_joining_our_party
+					set_variable_to_random = {
+						var = state_votes_random
+						min = 1
+						max = 2
+						integer = yes
+					} 
+					add_to_variable = {
+						var = USA.support_republicans_in_us
+						value = state_votes_random
+					}
+					subtract_from_variable = {
+						var = USA.support_democrats_in_us
+						value = state_votes_random
+					}
+					clamp_variable = {
+						var = USA.electoral_votes_democrats
+						max = 538
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.electoral_votes_republicans
+						max = 538
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.support_democrats_in_us
+						max = 50
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.support_republicans_in_us
+						max = 50
+						min = 0
+					}
+				}
+				50 = {
+					custom_effect_tooltip = between_15_and_20_electors_democratic_party
+					set_variable_to_random = {
+						var = electoral_votes_random
+						min = 15
+						max = 20
+						integer = yes
+					} 
+					add_to_variable = {
+						var = USA.electoral_votes_democrats
+						value = electoral_votes_random
+					}
+					subtract_from_variable = {
+						var = USA.electoral_votes_republicans
+						value = electoral_votes_random
+					}
+					custom_effect_tooltip = between_1_and_3_states_are_democratic_party
+					set_variable_to_random = {
+						var = state_votes_random
+						min = 1
+						max = 3
+						integer = yes
+					} 
+					add_to_variable = {
+						var = USA.support_democrats_in_us
+						value = state_votes_random
+					}
+					subtract_from_variable = {
+						var = USA.support_republicans_in_us
+						value = state_votes_random
+					}
+					clamp_variable = {
+						var = USA.electoral_votes_democrats
+						max = 538
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.electoral_votes_republicans
+						max = 538
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.support_democrats_in_us
+						max = 50
+						min = 0
+					}
+					clamp_variable = {
+						var = USA.support_republicans_in_us
+						max = 50
+						min = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+USA_trade_deficit_cat = {
+	USA_hold_an_oecd_meeting = {
+
+		fire_only_once = yes
+
+		icon = generic_break_treaty
+
+		cost = 25
+		days_remove = 70
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = AUS
+						tag = BEL
+						tag = ENG
+						tag = WGR
+						tag = GRE
+						tag = DEN
+						tag = IRE
+						tag = ICE
+						tag = SPR
+						tag = ITA
+						tag = CAN
+						tag = LUX
+						tag = HOL
+						tag = NOR
+						tag = POR
+						tag = USA
+						tag = TUR
+						tag = FRA
+						tag = SWE
+						tag = SWI
+						tag = JAP
+						tag = FIN
+						tag = AST
+						tag = NZL
+					}
+				}
+				country_event = { id = plaza_accord.1 }
+			}
+		}
+	}
+
+	USA_propose_a_plaza_agreement = {
+
+		icon = generic_fundraising
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 5
+
+		visible = {
+			has_global_flag = the_oecd_meeting_took_place
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = FRA
+						tag = WGR
+						tag = JAP
+						tag = ENG
+					}
+				}
+				country_event = { id = plaza_accord.2 }
+			}
+		}
+	}
+	
+	USA_plaza_accord = {
+		
+		icon = SOV_place_hq
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+		
+		activation = {
+			has_global_flag = the_oecd_meeting_took_place
+			OR = {
+				country_exists = FRA
+				country_exists = WGR
+				country_exists = JAP
+				country_exists = ENG
+				country_exists = USA
+			}
+		}
+		available = {
+			original_tag = USA
+			has_global_flag = the_oecd_meeting_took_place
+			custom_trigger_tooltip = {
+				tooltip = all_countries_agreed_sign_plaza_accord
+				FRA = { has_country_flag = the_country_agreed_to_sign_the_plaza_accord }
+				WGR = { has_country_flag = the_country_agreed_to_sign_the_plaza_accord }
+				JAP = { has_country_flag = the_country_agreed_to_sign_the_plaza_accord }
+				ENG = { has_country_flag = the_country_agreed_to_sign_the_plaza_accord }
+			}
+			OR = {
+				country_exists = FRA
+				country_exists = WGR
+				country_exists = JAP
+				country_exists = ENG
+				country_exists = USA
+			}
+		}
+
+		days_mission_timeout = 164
+		
+		selectable_mission = yes
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = the_country_agreed_to_sign_the_plaza_accord
+				}
+				country_event = { id = plaza_accord.5 }
+			}
+		}
+		timeout_effect = {
+			country_event = { id = plaza_accord.6 }
 		}
 	}
 }

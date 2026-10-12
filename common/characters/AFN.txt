@@ -126,4 +126,21 @@ characters = {
 			legacy_id=-1
 		}
 	}
+
+	AFN_shahnawaz_tanai = {
+		name = AFN_shahnawaz_tanai
+		portraits = {
+			army = {
+				large = GFX_Portrait_shahnawaz_tanai
+			}
+		}
+		corps_commander ={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 }

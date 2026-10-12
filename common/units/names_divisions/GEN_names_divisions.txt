@@ -1,0 +1,26 @@
+﻿# Infantry
+GEN_INF_01 = {
+	name = "Generic infantry division"
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Afar Sefari"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1 Generic infantry division" }
+		2 = { "1 Generic infantry division" }
+		3 = { "1 Generic infantry division" }
+		4 = { "1 Generic infantry division" }
+		5 = { "1 Generic infantry division" }
+		6 = { "1 Generic infantry division" }
+		7 = { "1 Generic infantry division" }
+		8 = { "1 Generic infantry division" }
+		9 = { "1 Generic infantry division" }
+		10 = { "1 Generic infantry division" }
+	}
+}
+

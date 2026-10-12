@@ -44,6 +44,42 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					country_exists = RUS
+					date > 1993.11.01
+					NOT = { has_global_flag = an_anti_dudayev_opposition_emerged }
+				}
+				RUS = { country_event = { id = russia.25 } }
+				set_global_flag = anti_dudayev_opposition_emerged
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1993.9.01
+					NOT = { has_global_flag = the_assault_on_grozny_failed }
+				}
+				RUS = { country_event = { id = russia.26 } }
+				set_global_flag = the_assault_on_grozny_failed
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1993.10.01
+					NOT = { has_global_flag = the_assault_on_grozny_failed_two }
+				}
+				RUS = { country_event = { id = russia.26 } }
+				set_global_flag = the_assault_on_grozny_failed_two
+			}
+			if = {
+				limit = {
+					country_exists = RUS
+					date > 1993.11.11
+					NOT = { has_global_flag = first_chechen_war_happened }
+				}
+				RUS = { country_event = { id = russia.27 } }
+				set_global_flag = first_chechen_war_happened
+			}
+			if = {
+				limit = {
 					country_exists = SOV
 					date > 1993.03.01
 					conservatism > party_popularity@socialism
@@ -66,14 +102,345 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					country_exists = CRO
-					date > 1991.06.01
-					CRO = { has_war_with = YUG }
-					NOT = { has_global_flag = yugoslav_wars_started_on_actions }
+					country_exists = SOV
+					date > 1991.07.01
+					SOV = { has_country_flag = gorbachev }
+					NOT = { has_global_flag = dismantle_warsaw_pact }
 				}
-				CRO = { country_event = { id = croatia.1 } }
-				set_global_flag = yugoslav_wars_started_on_actions
+				SOV = { country_event = { id = SOV_soviet_union.78 } }
+				set_global_flag = dismantle_warsaw_pact
+			}
+			if = {
+				limit = {
+					USA = { has_government = conservatism }
+					country_exists = NEE
+					NOT = { has_global_flag = liberalism_in_new_england }
+					NOT = { has_global_flag = new_england_leader_set }
+				}
+				NEE = { country_event = { id = new_england.1 days = 12 } }
+				set_global_flag = conservatism_in_new_england
+				set_global_flag = new_england_leader_set
+			}
+			if = {
+				limit = {
+					USA = { has_government = liberalism }
+					country_exists = NEE
+					NOT = { has_global_flag = conservatism_in_new_england }
+					NOT = { has_global_flag = new_england_leader_set }
+				}
+				NEE = { country_event = { id = new_england.2 days = 12 } }
+				set_global_flag = liberalism_in_new_england
+				set_global_flag = new_england_leader_set
 			}
 		}
 	}
+
+    ### Iraq win
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+					OR = {
+						has_global_flag = iran_refused_global
+						has_global_flag = iraq_refused_global
+					}
+                    FROM = {
+                        tag = IRQ
+                    }
+                    ROOT = {
+                        tag = PER
+                    }
+                }
+
+                IRQ = {
+                    white_peace = PER
+					country_event =  { id = iraq.7 }
+                }
+            }
+            if = {
+                limit = {
+					OR = {
+						has_global_flag = iran_refused_global
+						has_global_flag = iraq_refused_global
+					}
+                    FROM = {
+                        tag = PER
+                    }
+                    ROOT = {
+                        tag = IRQ
+                    }
+                }
+
+                PER = {
+                    white_peace = IRQ
+					country_event =  { id = iran.5 }
+                }
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = ISR
+                    }
+                    ROOT = {
+                        tag = HEZ
+                    }
+                }
+
+                ISR = {
+                    white_peace = HEZ
+                    annex_country = {
+                        target = HEZ
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = SYR
+                    }
+                    ROOT = {
+                        tag = LEB
+                    }
+                }
+
+                SYR = {
+                    white_peace = LEB
+					puppet = LEB
+                }
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = BRM
+                    }
+                    ROOT = {
+                        tag = KIO
+                    }
+                }
+
+                BRM = {
+                    white_peace = KIO
+                    annex_country = {
+                        target = KIO
+                        transfer_troops = no
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = BRM
+                    }
+                    ROOT = {
+                        tag = PDB
+                    }
+                }
+
+                BRM = {
+                    white_peace = PDB
+                    annex_country = {
+                        target = PDB
+                        transfer_troops = no
+                    }
+                }
+				PDB = {
+					remove_state_core = 994
+					remove_state_core = 999
+					remove_state_core = 993
+					remove_state_core = 998
+				}
+            }
+            if = {
+                limit = {
+                    FROM = {
+                        tag = BRM
+                    }
+                    ROOT = {
+                        tag = NDB
+                    }
+                }
+
+                BRM = {
+                    white_peace = NDB
+                    annex_country = {
+                        target = NDB
+                        transfer_troops = no
+                    }
+                }
+				NDB = {
+					remove_state_core = 994
+					remove_state_core = 1064
+				}
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = PDB
+                    }
+                    ROOT = {
+                        tag = BRM
+                    }
+                }
+
+                PDB = {
+                    white_peace = BRM
+                    annex_country = {
+                        target = BRM
+                        transfer_troops = no
+                    }
+                }
+				every_core_state = { 
+					limit = {
+						owner = BRM
+					}
+					add_core_of = PDB
+				}
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = PDB
+                    }
+                    ROOT = {
+                        tag = NDB
+                    }
+                }
+
+                PDB = {
+                    white_peace = NDB
+                    annex_country = {
+                        target = NDB
+                        transfer_troops = no
+                    }
+                }
+				every_core_state = { 
+					limit = {
+						owner = NDB
+					}
+					add_core_of = PDB
+				}
+				NDB = {
+					remove_state_core = 994
+					remove_state_core = 1064
+				}
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = PDB
+                    }
+                    ROOT = {
+                        tag = KIO
+                    }
+                }
+
+                PDB = {
+                    white_peace = KIO
+                    annex_country = {
+                        target = KIO
+                        transfer_troops = no
+                    }
+					add_state_core = 998
+                }
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = NDB
+                    }
+                    ROOT = {
+                        tag = BRM
+                    }
+                }
+
+                NDB = {
+                    white_peace = BRM
+                    annex_country = {
+                        target = BRM
+                        transfer_troops = no
+                    }
+                }
+				every_core_state = { 
+					limit = {
+						owner = BRM
+					}
+					add_core_of = NDB
+				}
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = NDB
+                    }
+                    ROOT = {
+                        tag = PDB
+                    }
+                }
+
+                NDB = {
+                    white_peace = PDB
+                    annex_country = {
+                        target = PDB
+                        transfer_troops = no
+                    }
+                }
+				every_core_state = { 
+					limit = {
+						owner = PDB
+					}
+					add_core_of = NDB
+				}
+				PDB = {
+					remove_state_core = 994
+					remove_state_core = 999
+					remove_state_core = 993
+					remove_state_core = 998
+				}
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = NDB
+                    }
+                    ROOT = {
+                        tag = KIO
+                    }
+                }
+
+                NDB = {
+                    white_peace = KIO
+                    annex_country = {
+                        target = KIO
+                        transfer_troops = no
+                    }
+					add_state_core = 998
+                }
+            }
+
+            if = {
+                limit = {
+                    FROM = {
+                        tag = KIO
+                    }
+                    ROOT = {
+                        tag = BRM
+                    }
+                }
+
+                BRM = {
+                    white_peace = BRM
+					white_peace = PDB
+					white_peace = NDB
+                }
+            }
+        }
+    }
+
 }

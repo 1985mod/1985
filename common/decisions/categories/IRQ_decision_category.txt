@@ -1,0 +1,13 @@
+IRQ_propaganda_campaign = {
+	allowed = {
+		original_tag = IRQ
+	}
+
+	icon = generic_propaganda
+	priority = 100 
+
+	visible = {
+		has_government = fascism
+		has_country_leader = { character = IRQ_Saddam_Hussein ruling_only = yes }
+	}
+}

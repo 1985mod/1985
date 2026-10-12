@@ -1130,8 +1130,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_Portrait_rakhmon_nabiev
-		textureFile = "gfx/leaders/TAJ/Portrait_rakhmon_nabiev.dds"
+		name = GFX_Portrait_sayid_abdulloh_nuri
+		textureFile = "gfx/leaders/TAJ/Portrait_sayid_abdulloh_nuri.dds"
 	}
 
 
@@ -1198,6 +1198,11 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_Portrait_johannes_rau
 		textureFile = "gfx/leaders/WGR/Portrait_johannes_rau.dds"
+	}	
+
+	spriteType = {
+		name = GFX_Portrait_martin_bangemann
+		textureFile = "gfx/leaders/WGR/Portrait_martin_bangemann.dds"
 	}	
 
 	### MLT ###

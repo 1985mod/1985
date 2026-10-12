@@ -220,27 +220,6 @@ characters = {
 		}
 	}
 
-	RUS_pavel_grachev = {
-		name = "RUS_pavel_grachev"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/RUS/Portrait_pavel_grachev.dds"
-			}
-			army = {
-				large = "gfx/leaders/RUS/Portrait_pavel_grachev.dds"
-			}
-		}	
-		field_marshal={
-			traits = { politically_connected }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-
 	RUS_anatoly_kvashnin = {
 		name = "RUS_anatoly_kvashnin"
 		portraits = {

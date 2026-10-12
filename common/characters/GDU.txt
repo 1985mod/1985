@@ -1,0 +1,15 @@
+characters = {
+	GDU_gus_hall = {
+		name = GDU_gus_hall
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_gus_hall
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = { }
+			expire = "2000.9.3.1"
+		}
+	}
+}

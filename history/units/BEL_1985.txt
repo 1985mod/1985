@@ -1,0 +1,72 @@
+division_template = {
+	name = "Gemechaniseerde brigade"			
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }   
+		logistics_company = { x = 0 y = 2 }
+	}
+	
+}
+division_template = {	
+	name = "Gepantserde brigade"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }   
+	}
+}
+units = {
+	division = {
+		name = "1e gemeganiseerde Brigade"
+		location = 11519
+		division_template = "Gemechaniseerde brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "4e gemeganiseerde Brigade"
+		location = 9482
+		division_template = "Gemechaniseerde brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "7e gemeganiseerde Brigade"
+		location = 9574
+		division_template = "Gemechaniseerde brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "10e gemeganiseerde Brigade"
+		location = 9482
+		division_template = "Gemechaniseerde brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "17e Gepantserde brigade"
+		location = 9482
+		division_template = "Gepantserde brigade"
+		start_experience_factor = 0.2
+	}
+}

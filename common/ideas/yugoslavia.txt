@@ -1,0 +1,111 @@
+ideas = {
+    country = {
+		YUG_anti_war_protests = {
+			picture = unknown
+			
+			allowed = {
+                original_tag = YUG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				OR = {
+					has_war_with = CRO
+					has_war_with = BOS
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                stability_factor = -0.15
+                political_power_factor = -0.05
+                war_support_factor = -0.1
+				conscription_factor = -0.15
+			}
+		}
+
+		YUG_focus_on_defense = {
+			picture = unknown
+			
+			allowed = {
+                original_tag = YUG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				OR = {
+					has_war_with = CRO
+					has_war_with = BOS
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = 0.2
+				breakthrough_factor = -0.1
+			}
+		}
+
+		YUG_weakness_of_supply = {
+			picture = unknown
+			
+			allowed = {
+                original_tag = YUG
+			}
+
+			available = {
+				OR = {
+					has_war_with = CRO
+					has_war_with = BOS
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				supply_consumption_factor = 0.15
+				attrition = 0.2
+				supply_factor = -0.1
+			}
+		}
+
+		YUG_sarajevo_armistice = {
+			picture = EU_member_2 
+			allowed = {
+				original_tag = YUG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+            targeted_modifier = {
+                tag = CRO
+                attack_bonus_against = -100
+            }
+            targeted_modifier = {
+                tag = CRO
+                defense_bonus_against = -100
+            }
+
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+	}
+}

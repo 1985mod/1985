@@ -13,6 +13,24 @@ characters = {
 		country_leader = {
 			ideology = authoritarian_democracy
 			traits = {}
+			expire = "1989.3.10.1"
+			id = -1
+		}
+	}
+	CHI_lee_teng_hui = {
+		name = CHI_lee_teng_hui
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_lee_teng_hui
+			}
+			army = {
+				large = GFX_portrait_CHI_lee_teng_hui
+				small = GFX_portrait_CHI_lee_teng_hui_small
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			traits = {}
 			expire = "2020.3.10.1"
 			id = -90
 		}

@@ -11,24 +11,20 @@ state = {
 			arms_factory = 1
 		}
 		victory_points = { 13473 15 }
-		victory_points = { 13436 3 }
-		victory_points = { 13428 10 }
 		add_core_of = AFN
 		add_core_of = AFS
 		
-		
-	}
-	
 		AFS = {
-			set_province_controller = 13467
-			set_province_controller = 13468
+			set_province_controller = 13445
 		}
 
+	}
+
 	provinces = {
-		13428 13433 13436 13437 13440 13438 13441 13447 13453 13473
+	 	13438 13441 13445 13447 13453 13473
 	}
 	
-	manpower = 1700000
+	manpower = 1486000
 	buildings_max_level_factor = 1.000
 	state_category = rural
 

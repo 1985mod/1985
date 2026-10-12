@@ -2,7 +2,7 @@ on_actions = {
     on_startup = {
         effect = { 
             ISR = {
-                country_event = { id = israel.4 days = 47 }
+                country_event = { id = israel.4 days = 148 }
             }
         }
     }

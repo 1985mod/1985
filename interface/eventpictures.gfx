@@ -1,6 +1,11 @@
 spriteTypes = {
 	
 	spriteType = {
+		name = "GFX_report_event_001"
+		texturefile = "gfx/event_pictures/report_event_001.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_SOV_dead_chernenko2"
 		texturefile = "gfx/event_pictures/news_SOV_dead_chernenko2.dds"
 	}
@@ -13,6 +18,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_dead_chernenko"
 		texturefile = "gfx/event_pictures/report_dead_chernenko.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_protests_against_yeltsin"
+		texturefile = "gfx/event_pictures/report_protests_against_yeltsin.dds"
 	}
 
 	spriteType = {
@@ -478,6 +488,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_osama_bin_laden"
+		texturefile = "gfx/event_pictures/report_osama_bin_laden.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_proclamation_of_a_great_iraq"
 		texturefile = "gfx/event_pictures/news_proclamation_of_a_great_iraq.dds"
 	}
@@ -581,7 +596,6 @@ spriteTypes = {
 		name = "GFX_news_romanian_revolution"
 		texturefile = "gfx/event_pictures/news_romanian_revolution.dds"
 	}
->>>>>>> Stashed changes
 }
 
 

@@ -1,6 +1,6 @@
 ﻿capital = 608
 
-oob = "GEN_1985"
+oob = "PRC_1985"
 
 set_technology = {
 	infantry_weapons = 1
@@ -12,6 +12,9 @@ set_technology = {
 	tech_mountaineers = 1
 	tech_trucks = 1
 	motorised_infantry = 1
+	motorized_rocket_unit = 1
+	armored_car1 = 1
+	mechanised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -20,6 +23,7 @@ set_technology = {
 	fuel_refining = 1
 	basic_train = 1
 	atomic_research = 1
+	interwar_antiair = 1
 }
 
 if = {
@@ -38,7 +42,6 @@ if = {
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "USA_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
 			iw_medium_airframe = 1
@@ -50,7 +53,6 @@ if = {
 			bba_early_transport_plane = 1
 		}
 	else = {
-		set_air_oob = "USA_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			cv_early_fighter = 1
@@ -72,6 +74,20 @@ if = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
 		main_battle_tank_chassis = 1
+	}
+
+	create_equipment_variant = {
+		name = "T-54"
+		type = modern_tank_chassis_1
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = additional_machine_guns
+		}
 	}
 }
 

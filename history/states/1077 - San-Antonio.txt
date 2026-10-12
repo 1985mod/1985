@@ -1,0 +1,39 @@
+
+state={
+	id=1077
+	name="STATE_1077"
+	manpower = 6340000
+	
+	
+	state_category = town
+	
+	resources={
+		oil=200 # was: 580
+	}
+
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 3
+			air_base = 3
+			arms_factory = 2
+			6785 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = {
+			12782 5
+		}
+
+	}
+
+	provinces={
+		1927 2019 2042 4884 5022 5061 6785 6798 6987 8064 12369 12341 12410 12728 12782
+	}
+
+	local_supplies=9.0 
+}

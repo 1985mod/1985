@@ -22,5 +22,6 @@ set_popularities = {
 }
 
 add_ideas = {
+	ARB_league_of_arab_states
 	low_economic_mobilisation
 }

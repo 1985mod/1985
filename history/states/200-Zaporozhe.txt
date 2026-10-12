@@ -17,6 +17,9 @@ state = {
 		victory_points = {
 			6596 2 # Melitopol
 		}
+		victory_points = {
+			9571 1
+		}
 
 		buildings = {
 			industrial_complex = 1

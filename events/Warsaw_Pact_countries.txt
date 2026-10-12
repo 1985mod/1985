@@ -23,7 +23,7 @@ country_event = {
         }
         country_event = { id = warsaw_pact_countries.8 days = 179 }
         set_cosmetic_tag = ROM_revolution
-        retire_country_leader = yes
+        kill_country_leader = yes
         set_politics = {
             ruling_party = socialism
             last_election = "1990.5.20"
@@ -265,7 +265,7 @@ country_event = {
         }
         set_party_name = {
             ideology = socialism
-            long_name = POL_social_democracy of_the_republic_of_poland
+            long_name = POL_social_democracy_of_the_republic_of_poland
             name = POL_sdrp
         }
         set_party_name = {

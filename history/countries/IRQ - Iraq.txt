@@ -5,6 +5,7 @@ oob = "IRQ_1985"
 set_war_support = 0.8
 
 set_research_slots = 3
+
 if = {
 	declare_war_on = {
 		target = PER
@@ -32,6 +33,7 @@ set_technology = {
 	synth_oil_experiments = 1
 }
 
+
 if = {
 	limit = {
 		NOT = {
@@ -52,10 +54,11 @@ if = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
-		gwtank = 1
 		basic_light_tank = 1
+		main_battle_tank = 1
 	}
 }
+
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -122,12 +125,19 @@ if = {
 }
 
 recruit_character = IRQ_Saddam_Hussein
+recruit_character = IRQ_muhammad_baqir_al_hakim
+recruit_character = IRQ_adnan_khairallah
+recruit_character = IRQ_izzat_ibrahim_al_douri
+recruit_character = IRQ_abid_hamid_mahmud
+recruit_character = IRQ_taha_yassin_ramadan
+recruit_character = IRQ_tariq_aziz
+recruit_character = IRQ_ali_hassan_al_majid
 
 set_variable = { var = current_debt value = 53.7 }
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1991.1.1"
+	last_election = "1985.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -135,8 +145,8 @@ set_politics = {
 add_ideas = {
 	IRQ_tiring_war
 	IRQ_enfal_operation
+	ARB_league_of_arab_states
     war_economy
-	limited_exports
 	all_adults_serve
 }
 

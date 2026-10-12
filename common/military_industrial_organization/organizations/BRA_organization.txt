@@ -169,11 +169,7 @@ BRA_fnm_organization = {
 			FROM = { NOT = { has_war_with = BRA } }
 		}
 		ELSE = {
-			FROM = { 
-				OR = { 
-					has_completed_focus = SMB_motorized 
-					has_completed_focus = BRA_fabrica_nacional_de_motores
-				}
+
 		}
 	}
 }

@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_scripted_gui_republicans_party"
+		texturefile = "gfx/interface/decisions/decision_scripted_gui_republicans_party.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_scripted_gui_democratic_party"
+		texturefile = "gfx/interface/decisions/decision_scripted_gui_democratic_party.dds"
+	}
+}

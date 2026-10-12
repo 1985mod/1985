@@ -1,9 +1,13 @@
 characters = {
-	PHI_Ferdinand_R_Marcos_J = {
-		name = PHI_Ferdinand_R_Marcos_J
+	PHI_ferdinand_marcos = {
+		name = PHI_ferdinand_marcos
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PHI/Portrait_Ferdinand_R_Marcos_J.dds"
+				large = GFX_portrait_PHI_ferdinand_marcos
+			}
+			army = {
+				large = GFX_portrait_PHI_ferdinand_marcos
+				small = GFX_portrait_PHI_ferdinand_marcos_small
 			}
 		}
 		country_leader = {
