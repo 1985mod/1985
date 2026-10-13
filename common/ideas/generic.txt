@@ -1,0 +1,162 @@
+ideas = {
+    country = {
+		RCP_resource_excavation = {
+			picture = AFG_electrification
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.03
+			}
+		}
+
+		RCP_autarky = {
+			picture = PRC_first_automative_works
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				min_export = -0.15
+				trade_opinion_factor = -0.2
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+
+		RCP_export_goods = {
+			picture = generic_supply_depot
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				min_export = 0.1
+				trade_opinion_factor = 0.2
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		RCP_road_effort = {
+			picture = ARG_invest_in_roads
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resource_gain_efficiency_per_infrastructure = 0.03
+				local_factory_energy_consumption_per_infrastructure = -0.05
+			}
+		}
+
+		RCP_civilian_factory_focus = {
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				industry_repair_factor = 0.05
+			}
+		}
+
+		RCP_military_industry_focus = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.03
+				
+			}
+		}
+
+		RCP_ship_production_en_masse = {
+			picture = generic_naval_manufacturer_1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				dockyard_donations = 1
+			}
+		}
+
+		RCP_purchasing_equipment_idea = {
+			picture = visit_to_the_usa
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.1
+			}
+		}
+    }
+}

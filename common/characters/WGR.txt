@@ -214,4 +214,74 @@ characters = {
 			}
 		}
 	}
+
+	######GENERALS####
+
+	WGR_manfred_worner = {
+		name = WGR_manfred_worner
+		portraits = {
+		    civilian = {
+				small = "gfx/interface/ideas/WGR/idea_portrait_manfred_worner.dds"
+			}
+			army = {
+				small = "gfx/interface/ideas/WGR/idea_portrait_manfred_worner.dds"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = WGR_manfred_worner
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
+	WGR_eberhard_eimler = {
+		name = WGR_eberhard_eimler
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/WGR/idea_portrait_eberhard_eimler.dds"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = WGR_eberhard_eimler
+			traits = {
+				air_chief_safety_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+
+	}
+
+	WGR_dieter_wellershoff = {
+		name = WGR_dieter_wellershoff
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/WGR/idea_portrait_dieter_wellershoff.dds"
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = WGR_dieter_wellershoff
+			traits = {
+				navy_chief_maneuver_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+
+	}
 }

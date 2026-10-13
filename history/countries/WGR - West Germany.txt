@@ -92,6 +92,9 @@ recruit_character = WGR_wolfgang_altenburg
 recruit_character = WGR_richard_freiherr_von_weizsacker
 recruit_character = WGR_hans_dietrich_genscher
 recruit_character = WGR_friedrich_zimmermann
+recruit_character = WGR_manfred_worner
+recruit_character = WGR_eberhard_eimler
+recruit_character = WGR_dieter_wellershoff
 
 activate_advisor = WGR_richard_freiherr_von_weizsacker
 activate_advisor = WGR_hans_dietrich_genscher

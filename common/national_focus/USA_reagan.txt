@@ -36,6 +36,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
+			add_political_power = 50 
 			ROOT = {
 				add_opinion_modifier = {
 					target = SOV
