@@ -58,7 +58,6 @@ country_event = {
 
         hidden_effect = {
             set_country_flag = gorbachev
-            retire_character = SOV_konstantin_chernenko
             promote_character = {
                 character = SOV_mikhail_gorbachev
                 ideology = communism

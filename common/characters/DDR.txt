@@ -3,7 +3,7 @@ characters = {
 		name = DDR_Erich_Honecker
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/DDR/portrait_DDR_Erich_Honecker.dds"
+				large = "gfx/leaders/DDR/Portrait_Erich_Honecker.dds"
 			}
 		}
 		country_leader = {
@@ -65,11 +65,26 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/DDR/Portrait_heinz_kebler.dds"
+				small = "gfx/interface/ideas/DDR/idea_portrait_heinz_kebler.dds"
 			}
 			army = {
 				large = "gfx/leaders/DDR/Portrait_heinz_kebler.dds"
+				small = "gfx/interface/ideas/DDR/idea_portrait_heinz_kebler.dds"
 			}
-		}	
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = DDR_heinz_kebler
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+
 		field_marshal={
 			skill=3
 			attack_skill=5
@@ -77,6 +92,32 @@ characters = {
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
+		}
+	}
+
+	DDR_heinz_kebler_air = {
+		name = DDR_heinz_kebler_air
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DDR/Portrait_heinz_kebler.dds"
+				small = "gfx/interface/ideas/DDR/idea_portrait_heinz_kebler.dds"
+			}
+			army = {
+				large = "gfx/leaders/DDR/Portrait_heinz_kebler.dds"
+				small = "gfx/interface/ideas/DDR/idea_portrait_heinz_kebler.dds"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = DDR_heinz_kebler_air
+			traits = {
+				air_chief_safety_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
 		}
 	}
 
@@ -157,6 +198,30 @@ characters = {
 			planning_skill=3
 			logistics_skill=1
 			legacy_id=-1
+		}
+	}
+
+	DDR_wilhelm_eim = {
+		name = DDR_wilhelm_eim
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_wilhelm_eim.dds"
+			}
+			army = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_wilhelm_eim.dds"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = DDR_wilhelm_eim
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
 		}
 	}
 
@@ -271,7 +336,7 @@ characters = {
 		advisor = {
 			cost = 150			
 			slot = political_advisor
-			idea_token = DDR_willi_stoph
+			idea_token = DDR_markus_wolf
 			traits = {
 				heir_to_stagnation
 			}
