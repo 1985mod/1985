@@ -35,10 +35,9 @@ focus_tree = {
 		cost = 10
 		ai_will_do = { factor = 1 }
 		available_if_capitulated = yes
-		completion_reward = {
-			
-army_experience = 30
-add_manpower = 20000
+		completion_reward = {		
+			army_experience = 30
+			add_manpower = 20000
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -48,7 +47,7 @@ add_manpower = 20000
 		}
 	}
 	
-		#Focus for Industrial Effort
+	#Focus for Industrial Effort
 	focus = {
 		id = RCP_industrial_effort
 		icon = GFX_goal_generic_production
@@ -57,14 +56,13 @@ add_manpower = 20000
 		cost = 10
 		ai_will_do = { factor = 2 }
 		available_if_capitulated = yes
-		completion_reward = {
-			
-add_tech_bonus = {
-name = industrial_bonus
-bonus = 1.50
-uses = 3
-category = industry
-}
+		completion_reward = {		
+			add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1
+			uses = 3
+			category = industry
+			}
 
 		}
 	}
@@ -82,6 +80,12 @@ category = industry
 			factor = 1
 		}
 		completion_reward = {
+			add_tech_bonus = {
+			name = infantry_weapons
+			bonus = 0.5
+			uses = 2
+			category = industry
+			}
 			army_experience = 30
 		}
 	}
@@ -150,19 +154,18 @@ category = industry
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_army_effort }
-		completion_reward = {
-			
-add_tech_bonus = {
-name = special_forces_bonus
-bonus = 1.0
-uses = 1
-technology = paratroopers
-technology = paratroopers2
-technology = marines
-technology = marines2
-technology = tech_mountaineers
-technology = tech_mountaineers2
-}
+		completion_reward = {			
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
 		}
 	}	
 	
@@ -199,50 +202,50 @@ technology = tech_mountaineers2
 		prerequisite = { focus = RCP_army_effort }
 		completion_reward = {
 			air_experience = 25
-if = {
-limit = {
-capital_scope = {
-NOT = {
-free_building_slots = {
-building = air_base
-size > 1
-}
-}
-}
-}
-random_owned_controlled_state = {
-limit = {
-free_building_slots = {
-building = air_base
-size > 1
-}
-}
-add_building_construction = {
-type = air_base
-level = 2
-instant_build = yes
-}
-ROOT = { set_country_flag = aviation_effort_AB }
-}
-}
-if = {
-limit = {
-capital_scope = {
-free_building_slots = {
-building = air_base
-size > 1
-}
-}
-}
-capital_scope = {
-add_building_construction = {
-type = air_base
-level = 2
-instant_build = yes
-}
-ROOT = { set_country_flag = aviation_effort_AB }
-}
-}
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+							building = air_base
+							size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+						building = air_base
+						size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+						building = air_base
+						size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
 				cost_reduction = 0.5
@@ -263,9 +266,9 @@ ROOT = { set_country_flag = aviation_effort_AB }
 		prerequisite = { focus = RCP_army_effort }
 		available = {
 			any_state = {
-is_coastal = yes
-is_controlled_by = ROOT
-}
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
 		}
 		completion_reward = {
 			navy_experience = 30
@@ -597,7 +600,17 @@ add_doctrine_cost_reduction = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			NOT = { has_idea = RCP_purchasing_equipment_idea }
+		}
+
 		completion_reward = {
+			add_timed_idea = {
+				idea = RCP_purchasing_equipment_idea
+				days = 120
+			}
+			add_political_power = -50
 		}
 	}
 	
@@ -630,22 +643,18 @@ add_doctrine_cost_reduction = {
 		prerequisite = { focus = RCP_aviation_effort }
 		mutually_exclusive = { focus = RCP_bomber_focus }
 		completion_reward = {
-			
-
-add_tech_bonus = {
-name = fighter_bonus
-bonus = 1.0
-uses = 2
-technology = early_fighter
-technology = fighter1
-technology = fighter2
-technology = fighter3
-technology = heavy_fighter1
-technology = heavy_fighter2
-technology = heavy_fighter3
-}
-
-
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
 		}
 	}
 	
@@ -660,19 +669,15 @@ technology = heavy_fighter3
 		prerequisite = { focus = RCP_aviation_effort }
 		mutually_exclusive = { focus = RCP_fighter_focus }
 		completion_reward = {
-			
-
-add_tech_bonus = {
-name = bomber_bonus
-bonus = 1.0
-uses = 2
-technology = strategic_bomber1
-technology = strategic_bomber2
-technology = strategic_bomber3
-category = tactical_bomber
-}
-
-
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
 		}
 	}
 	
@@ -851,7 +856,7 @@ instant_build = yes
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_infrastructure_effort }
 		completion_reward = {
-			
+			add_ideas = RCP_resource_excavation
 		}
 	}
 
@@ -967,15 +972,24 @@ instant_build = yes
 		ai_will_do = {
 			factor = 0.8
 		}
+
+		available = {
+			NOT = { has_idea = RCP_purchasing_equipment_idea }
+		}
+
 		completion_reward = {
-add_equipment_to_stockpile = {
+			add_timed_idea = {
+				idea = RCP_purchasing_equipment_idea
+				days = 120
+			}
+			add_equipment_to_stockpile = {
 				type = artillery_equipment
-				amount = 1000
+				amount = 750
 				producer = ROOT
 			}
-add_equipment_to_stockpile = {
+			add_equipment_to_stockpile = {
 				type = support_equipment_1
-				amount = 1000
+				amount = 750
 				producer = ROOT
 			}
 		}
@@ -994,10 +1008,21 @@ add_equipment_to_stockpile = {
 		ai_will_do = {
 			factor = 0.8
 		}
+
+		available = {
+			NOT = { has_idea = RCP_purchasing_equipment }
+		}
+
 		completion_reward = {
-add_equipment_to_stockpile = {
+
+			
+			add_timed_idea = {
+				idea = RCP_purchasing_equipment_idea
+				days = 120
+			}
+			add_equipment_to_stockpile = {
 				type = motorized_equipment
-				amount = 800
+				amount = 500
 				producer = ROOT
 			}
 		}
@@ -1151,18 +1176,14 @@ category = ss_tech
 			focus = RCP_flexible_navy 
 		}
 		completion_reward = {
-			
-
-add_tech_bonus = {
-name = cr_bonus
-bonus = 1.0
-ahead_reduction = 2
-uses = 1
-category = cl_tech
-category = ca_tech
-}
-
-
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
 		}
 	}
 	
@@ -1179,7 +1200,7 @@ category = ca_tech
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_ideas = RCP_military_industry_focus
 		}
 	}	
 	
@@ -1274,15 +1295,13 @@ instant_build = yes
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_resource_excavation }
-		completion_reward = {
-			
-random_owned_controlled_state = {
-add_resource= { 
-type = steel
-amount = 15
-}
-}
-
+		completion_reward = {		
+			random_owned_controlled_state = {
+				add_resource= { 
+					type = steel
+					amount = 10
+				}
+			}
 		}
 	}
 	
@@ -1313,17 +1332,13 @@ amount = 15
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_equipment_effort }
 		completion_reward = {
-			
-
-add_tech_bonus = {
-name = infantry_artillery_bonus
-bonus = 1.0
-uses = 1
-category = infantry_weapons
-category = artillery
-}
-
-
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
 		}
 	}
 	
@@ -1337,17 +1352,13 @@ category = artillery
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_doctrine_effort }
 		completion_reward = {
-			
-
-army_experience = 20
-add_doctrine_cost_reduction = {
+			army_experience = 20
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
-
-
 		}
 	}
 	
@@ -1378,7 +1389,18 @@ add_doctrine_cost_reduction = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			NOT = { has_idea = RCP_purchasing_equipment_idea }
+		}
+
 		completion_reward = {
+
+			add_timed_idea = {
+				idea = RCP_purchasing_equipment_idea
+				days = 120
+			}
+			
 			add_equipment_to_stockpile = {
 				type = light_tank_equipment
 				amount = 800
@@ -1411,10 +1433,26 @@ add_doctrine_cost_reduction = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			NOT = { has_idea = RCP_purchasing_equipment_idea }
+		}
+
 		completion_reward = {
+
+			add_timed_idea = {
+				idea = RCP_purchasing_equipment_idea
+				days = 120
+			}
+
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
-				amount = 5000
+				amount = 2500
+				producer = ROOT
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_grenade_launcher_equipment_0
+				amount = 1000
 				producer = ROOT
 			}
 		}
@@ -1431,12 +1469,12 @@ add_doctrine_cost_reduction = {
 		prerequisite = { focus = RCP_aviation_effort_ii }
 		completion_reward = {
 			add_tech_bonus = {
-name = CAS_bonus
-bonus = 1.0
-ahead_reduction = 2
-uses = 1
-category = cas_bomber
-}
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
 		}
 	}
 	#Focus for NAV Effort
@@ -1450,12 +1488,12 @@ category = cas_bomber
 		prerequisite = { focus = RCP_aviation_effort_ii }
 		completion_reward = {
 			add_tech_bonus = {
-name = nav_bomber_bonus
-bonus = 1.0
-ahead_reduction = 2
-uses = 1
-category = naval_bomber
-}
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
 		}
 	}
 	
@@ -1468,18 +1506,14 @@ category = naval_bomber
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_submarine_effort }
-		completion_reward = {
-			
-
-add_tech_bonus = {
-name = dd_bonus
-bonus = 1.0
-ahead_reduction = 2
-uses = 1
-category = dd_tech
-}
-
-
+		completion_reward = {			
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}
 	
@@ -1492,21 +1526,17 @@ category = dd_tech
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_cruiser_effort }
-		completion_reward = {
-			
-
-navy_experience = 25
-add_tech_bonus = {
-name = capital_ships_bonus
-bonus = 1.0
-ahead_reduction = 2
-uses = 1
-category = bc_tech
-category = bb_tech
-category = cv_tech
-}
-
-
+		completion_reward = {			
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
 		}
 	}
 	
@@ -1583,7 +1613,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_ideas = RCP_road_effort
 		}
 	}
  
@@ -1657,22 +1687,20 @@ instant_build = yes
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_metal_excavation }
 		completion_reward = {
-			
-random_owned_controlled_state = {
-add_resource= { 
-type = chromium
-amount = 6 
-}
-add_resource= { 
-type = aluminium 
-amount = 12 
-}
-add_resource= { 
-type = tungsten
-amount = 8 
-}
-}
-
+			random_owned_controlled_state = {
+				add_resource= { 
+					type = chromium
+					amount = 4 
+				}
+				add_resource= { 
+					type = aluminium 
+					amount = 8
+				}
+				add_resource= { 
+					type = tungsten
+					amount = 8 
+				}
+			}
 		}
 	}
 	
@@ -2209,7 +2237,23 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-		
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			add_ideas = RCP_civilian_factory_focus		
 		}
 	}
 
@@ -2224,53 +2268,50 @@ instant_build = yes
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_construction_effort_ii }
-		bypass = {
-			
-custom_trigger_tooltip = {
-tooltip = construction_effort_tt
-all_owned_state = {
-free_building_slots = {
-building = industrial_complex
-size < 2
-include_locked = yes
-}
-}
-}
-
+		bypass = {			
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+					building = industrial_complex
+					size < 2
+					include_locked = yes
+					}
+				}
+			}
 		}
-		completion_reward = {
-			
-random_owned_controlled_state = {
-limit = {
-free_building_slots = {
-building = industrial_complex
-size > 0
-include_locked = yes
-}
-OR = {
-is_in_home_area = yes
-NOT = {
-owner = {
-any_owned_state = {
-free_building_slots = {
-building = industrial_complex
-size > 0
-include_locked = yes
-}
-is_in_home_area = yes
-}
-}
-}
-}
-}
-add_extra_state_shared_building_slots = 4
-add_building_construction = {
-type = industrial_complex
-level = 4
-instant_build = yes
-}
-}
 
+		completion_reward = {		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -2289,20 +2330,6 @@ instant_build = yes
 		}
 	}
 
-	
-	#Focus for Intensify Exctraction
-	focus = {
-		id = RCP_intensify_exctraction
-		icon = GFX_goal_generic_construct_civilian
-		x = 43
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_rare_metals_excavation }
-		completion_reward = {
-		}
-	}
-
 		#Focus for Natural Oil
 	focus = {
 		id = RCP_natural_oil
@@ -2314,21 +2341,13 @@ instant_build = yes
 		prerequisite = { 
 			focus = RCP_rare_metals_excavation 
 		}
-		prerequisite = { 
-			focus = RCP_intensify_exctraction 
-		}
-		prerequisite = { 
-			focus = RCP_ 
-		}
-		completion_reward = {
-			
-random_owned_controlled_state = {
-add_resource= { 
-type = oil
-amount = 8
-}
-}
-
+		completion_reward = {		
+			random_owned_controlled_state = {
+				add_resource= { 
+					type = oil
+					amount = 8
+				}
+			}
 		}
 	}
 	
@@ -2385,18 +2404,14 @@ amount = 8
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_equipment_effort_ii }
-		completion_reward = {
-			
-
-add_tech_bonus = {
-name = infantry_artillery_bonus
-ahead_reduction = 2
-uses = 1
-category = infantry_weapons
-category = artillery
-}
-
-
+		completion_reward = {			
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
 		}
 	}
 
@@ -2412,18 +2427,14 @@ category = artillery
 		ai_will_do = {
 			factor = 1
 		}
-			completion_reward = {
-			
-
-army_experience = 30
-add_doctrine_cost_reduction = {
+		completion_reward = {
+			army_experience = 30
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
-
-
 		}
 	}
 
@@ -2437,9 +2448,8 @@ add_doctrine_cost_reduction = {
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_military_youth }
 		completion_reward = {
-army_experience = 20
-set_rule = { can_send_volunteers = yes }
-
+			army_experience = 20
+			set_rule = { can_send_volunteers = yes }
 		}
 	}
 
@@ -2453,16 +2463,14 @@ set_rule = { can_send_volunteers = yes }
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_aviation_effort_iii }
-		completion_reward = {
-			
-add_tech_bonus = {
-name = jet_rocket_bonus
-ahead_reduction = 2
-uses = 2
-category = rocketry
-category = jet_technology
-}
- 
+		completion_reward = {			
+			add_tech_bonus = {
+			name = jet_rocket_bonus
+			ahead_reduction = 2
+			uses = 2
+			category = rocketry
+			category = jet_technology
+			}
 		}
 	}
 
@@ -2475,14 +2483,12 @@ category = jet_technology
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_aviation_effort_iii }
-		completion_reward = {
-			
-add_tech_bonus = {
-name = nuclear_bonus
-ahead_reduction = 2
-category = nuclear
-}
-
+		completion_reward = {		
+			add_tech_bonus = {
+			name = nuclear_bonus
+			ahead_reduction = 1
+			category = nuclear
+			}
 		}
 	}
 
@@ -2683,18 +2689,10 @@ instant_build = yes
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_extra_research_slot }
 		available = {
-			
-
-num_of_factories > 36
-
-
+			num_of_factories > 36
 		}
 		completion_reward = {
-			
-
-add_research_slot = 1
-
-
+			add_research_slot = 1
 		}
 	}
 
@@ -2719,36 +2717,37 @@ add_research_slot = 1
 	focus = {
 		id = RCP_more_metals
 		icon = GFX_goal_generic_construction2
-		x = 44
-		y = 7
+		x = 43
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_intensify_exctraction }
+		prerequisite = { focus = RCP_rare_metals_excavation }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
-add_resource= { 
-type = chromium
-amount = 8
-}
-add_resource= { 
-type = aluminium 
-amount = 10 
-}
-add_resource= { 
-type = tungsten
-amount = 8
-}
-}
+				add_resource= { 
+					type = chromium
+					amount = 4
+				}
+				add_resource= { 
+					type = aluminium 
+					amount = 8 
+				}
+				add_resource= { 
+					type = tungsten
+					amount = 4
+				}
+			}
 
-random_owned_controlled_state = {
-add_resource= { 
-type = steel
-amount = 12 
-}
-}
+			random_owned_controlled_state = {
+				add_resource= { 
+				type = steel
+				amount = 10
+				}
+			}
 		}
 	}
 
@@ -2756,29 +2755,29 @@ amount = 12
 	focus = {
 		id = RCP_synthetic_oil__rubber
 		icon = GFX_focus_generic_rubber
-		x = 46
+		x = 45
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_natural_oil }
+		prerequisite = { focus = RCP_more_metals }
 		completion_reward = {
 			modify_building_resources = {
-           building = synthetic_refinery
-           resource = rubber
-           amount = 1
-        }
-modify_building_resources = {
-           building = synthetic_refinery
-           resource = oil
-           amount = 1
-        }
-
-add_tech_bonus = {
-name = GER_coal_liquidization
-bonus = 2.0
-uses = 1
-category = synth_resources
-}
+				building = synthetic_refinery
+				resource = rubber
+				amount = 1
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = oil
+				amount = 1
+			}
+			add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 2.0
+				uses = 1
+				category = synth_resources
+			}
 		}
 	}
 
@@ -2878,17 +2877,15 @@ instant_build = yes
 			focus = RCP_nuclear_effort 
 			focus = RCP_rocket_effort 
 		}
-		completion_reward = {
-			
-add_tech_bonus = {
-name = secret_bonus
-bonus = 1.0
-uses = 3
-category = electronics
-category = nuclear
-category = rocketry
-}
-
+		completion_reward = {	
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 2
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
 		}
 	}
 
@@ -2905,7 +2902,7 @@ category = rocketry
 			factor = 1
 		}
 		completion_reward = {
-
+			add_ideas = RCP_ship_production_en_masse
 		}
 	}
 
@@ -3046,42 +3043,42 @@ is_in_home_area = yes
 }
 }
 add_extra_state_shared_building_slots = 1
-add_building_construction = {
-type = arms_factory
-level = 1
-instant_build = yes
-}
+	add_building_construction = {
+		type = arms_factory
+		level = 1
+		instant_build = yes
+	}
 }
 
 random_owned_controlled_state = {
-limit = {
-free_building_slots = {
-building = arms_factory
-size > 0
-include_locked = yes
-}
-OR = {
-is_in_home_area = yes
-NOT = {
-owner = {
-any_owned_state = {
-free_building_slots = {
-building = arms_factory
-size > 0
-include_locked = yes
-}
-is_in_home_area = yes
-}
-}
-}
-}
-}
-add_extra_state_shared_building_slots = 1
-add_building_construction = {
-type = arms_factory
-level = 1
-instant_build = yes
-}
+	limit = {
+		free_building_slots = {
+			building = arms_factory
+			size > 0
+			include_locked = yes
+		}
+		OR = {
+			is_in_home_area = yes
+			NOT = {
+				owner = {
+					any_owned_state = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						is_in_home_area = yes
+					}
+				}
+			}
+		}
+	}
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+	type = arms_factory
+	level = 1
+	instant_build = yes
+	}
 }
 		}
 	}
@@ -3100,8 +3097,52 @@ instant_build = yes
 		prerequisite = { 
 			focus = RCP_civilian_factory_focus 
 		}
+
+		available = {
+			OR = {
+				num_of_factories > 50
+				num_of_military_factories > 50
+			}
+		}
+
 		completion_reward = {
-			
+			add_stability = 0.05
+			if = {
+				limit = {
+					has_idea = depression
+				}
+				swap_ideas = {
+					remove_idea = depression
+					add_idea = recession
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = recession
+				}
+				swap_ideas = {
+					remove_idea = recession
+					add_idea = stagnation
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = stagnation
+				}
+				swap_ideas = {
+					remove_idea = stagnation
+					add_idea = sustainable_growth
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = sustainable_growth
+				}
+				swap_ideas = {
+					remove_idea = sustainable_growth
+					add_idea = economic_boom
+				}  
+			}				
 		}
 	}
 
@@ -3114,23 +3155,19 @@ instant_build = yes
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_extra_research_slot_ii }
-		available = {
-			
-has_war = yes
-is_in_faction = yes
-OR = {
-num_of_factories > 40
-any_other_country = {
-is_in_faction_with = ROOT
-num_of_factories > 40
-}
-}
-
+		available = {		
+			has_war = yes
+			is_in_faction = yes
+			OR = {
+				num_of_factories > 40
+				any_other_country = {
+				is_in_faction_with = ROOT
+				num_of_factories > 40
+				}
+			}
 		}
 		completion_reward = {
-			
-add_research_slot = 1
-
+			add_research_slot = 1
 		}
 	}
 
@@ -3143,17 +3180,23 @@ add_research_slot = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = RCP_more_metals 
-		}
-		prerequisite = { 
 			focus = RCP_synthetic_oil__rubber 
 		}
 		mutually_exclusive = { focus = RCP_export_goods }
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = communism 
+				has_government = neutrality
+			}
+		}
+		
 		completion_reward = {
-			
+			add_ideas = RCP_autarky
 		}
 	}
 
@@ -3168,9 +3211,6 @@ add_research_slot = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = RCP_more_metals 
-		}
-		prerequisite = { 
 			focus = RCP_synthetic_oil__rubber 
 		}
 		mutually_exclusive = { focus = RCP_autarky }
@@ -3178,15 +3218,14 @@ add_research_slot = 1
 			factor = 1
 		}
 		available = {
-			NOT = {
-OR = {
-has_government = fascism
-has_government = communism 
-}
-}
+			OR = {
+				has_government = conservatism
+				has_government = liberalism 
+				has_government = socialism 
+			}
 		}
 		completion_reward = {
-			
+			add_ideas = RCP_export_goods
 		}
 	}
 
@@ -3243,14 +3282,25 @@ has_government = communism
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		x = 27
 		y = 9
-		cost = 10
+		cost = 20
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_secret_weapons }
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
 
+		available = {
+			has_tech = atomic_research
+		}
+
+		completion_reward = {
+			complete_special_project = {
+				project = sp:sp_nuclear_reactor
+			}
+
+			complete_special_project = {
+				project = sp:sp_nuclear_bomb
+			}
 		}
 	}
 
@@ -3358,9 +3408,4 @@ has_government = communism
 			
 		}
 	}
-
-
-
-
-#End of focuses 
- }
+}

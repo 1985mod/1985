@@ -59,7 +59,7 @@ USA_war_on_drugs = {
 
 USA_war_on_poverty_cat = {
 
-	icon = SOV_merge_designers
+	icon = gre_investment_decisions
 		
 	priority = 45
 	  

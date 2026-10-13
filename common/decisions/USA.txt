@@ -374,7 +374,7 @@ USA_war_on_poverty_cat = {
 
     USA_support_for_the_homeless = {
 	
-		icon = generic_speech
+		icon = SOV_place_hq
 
 		available = {
 			has_completed_focus = USA_war_on_poverty
@@ -402,7 +402,7 @@ USA_war_on_poverty_cat = {
 
     USA_subsidizing_childcare_programs = {
 	
-		icon = generic_speech
+		icon = generic_political_discourse
 
 		available = {
 			has_completed_focus = USA_war_on_poverty
@@ -428,7 +428,7 @@ USA_war_on_poverty_cat = {
 
     USA_reductions_in_ill_considered_military_spending = {
 	
-		icon = generic_speech
+		icon = generic_merge_plant_materiel
 
 		available = {
 			has_completed_focus = USA_war_on_poverty
@@ -436,13 +436,18 @@ USA_war_on_poverty_cat = {
 		
 		days_remove = 30
 		
-		cost = 75
+		cost = 50
 
 		ai_will_do = {
 			factor = 10
 		}
 		
 		remove_effect = {
+			add_to_variable = {
+				var = treasury
+				value = 10
+				tooltip = add_10_billion_to_treasury_tt
+			}	
             random_owned_controlled_state = {
                 limit = {					
                     is_in_home_area = yes					
@@ -459,13 +464,12 @@ USA_war_on_poverty_cat = {
                     instant_build = yes
                 }
             }
-			add_political_power = 50
 		}
 	}
 
     USA_investments_in_education = {
 	
-		icon = generic_speech
+		icon = generic_construction
 
 		available = {
 			has_completed_focus = USA_war_on_poverty
