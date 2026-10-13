@@ -173,6 +173,12 @@ spriteTypes = {
 		name = GFX_portrait_VOL_Thomas_Sankara
 		textureFile = "gfx/leaders/VOL/Thomas_Sankara.dds"
 	}
+
+	spriteType = {
+		name = GFX_portrait_VOL_blaise_compaore
+		textureFile = "gfx/leaders/VOL/Portrait_Blaise_Compaore.dds"
+	}
+
     ##RWA##
 	spriteType = {
 		name = GFX_portrait_RWA_Yuvenali_Habyarimana

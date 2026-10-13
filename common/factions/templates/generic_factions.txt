@@ -8,7 +8,7 @@ faction_template_generic = {
 		always = no # Fallback template, should not be selectable 
 	}
 	available = {
-		has_democratic_form_of_government = yes
+		has_government = conservatism
 	}
 
 	goals = {
@@ -71,7 +71,7 @@ faction_template_defensive_democratic = {
 		always = yes 
 	}
 	available = {
-		has_democratic_form_of_government = yes
+		has_government = conservatism
 	}
 
 	goals = {
@@ -105,9 +105,17 @@ faction_template_anti_communist = {
 	can_leader_join_other_factions = yes
 	visible = {
 		always = yes 
+		any_other_country = {
+			has_government = communism
+			is_on_same_continent_as = ROOT
+		}
 	}
 	available = {
-		NOT = { has_government = communist }
+		NOT = { has_government = communism }
+		any_other_country = {
+			has_government = communism
+			is_on_same_continent_as = ROOT
+		}
 	}
 
 	goals = {
@@ -143,27 +151,14 @@ faction_template_anti_fascist = {
 	visible = {
 		always = yes 
 		any_other_country = {
-			OR = {
-				has_government = fascist
-				has_government = nationalist
-				has_government = islamist
-			}
-			
+			has_government = fascism
 			is_on_same_continent_as = ROOT
 		}
 	}
 	available = {
-		NOT = { OR = {
-				has_government = fascist
-				has_government = nationalist
-				has_government = islamist
-			} }
+		NOT = { has_government = fascism }
 		any_other_country = {
-			OR = {
-				has_government = fascist
-				has_government = nationalist
-				has_government = islamist
-			}
+			has_government = fascism
 			is_on_same_continent_as = ROOT
 		}
 	}
@@ -199,14 +194,14 @@ faction_template_regional_anti_communist = {
 	visible = {
 		always = yes 
 		any_other_country = {
-			has_government = communist
+			has_government = communism
 			is_on_same_continent_as = ROOT
 		}
 	}
 	available = {
-		NOT = { has_government = communist }
+		NOT = { has_government = communism }
 		any_other_country = {
-			has_government = communist
+			has_government = communism
 			is_on_same_continent_as = ROOT
 		}
 	}
@@ -242,14 +237,14 @@ faction_template_regional_anti_democratic = {
 	visible = {
 		always = yes 
 		any_other_country = {
-			has_democratic_form_of_government = yes
+			has_government = conservatism
 			is_on_same_continent_as = ROOT
 		}
 	}
 	available = {
-		NOT = { has_democratic_form_of_government = yes }
+		NOT = { has_government = conservatism }
 		any_other_country = {
-			has_democratic_form_of_government = yes
+			has_government = conservatism
 			is_on_same_continent_as = ROOT
 		}
 	}
@@ -282,12 +277,8 @@ faction_template_regional = {
 	# color = { 255 0 255 }
 	can_leader_join_other_factions = yes
 	visible = {
-		NOT = { has_government = communist }
-		NOT = { OR = {
-				has_government = fascist
-				has_government = nationalist
-				has_government = islamist
-			} }
+		NOT = { has_government = communism }
+		NOT = { has_government = fascism }
 		NOT = { capital_scope = { is_on_continent = europe } } # There is a European one so no need to use the generic one there
 	}
 
@@ -326,7 +317,7 @@ faction_template_world_revolution = {
 		always = yes 
 	}
 	available = {
-		has_government = communist 
+		has_government = communism 
 	}
 
 	goals = {
@@ -443,7 +434,7 @@ faction_template_pan_american = {
 		# faction_goal_spy_master
 
 		# Medium term
-		#faction_goal_control_panama_canal
+		faction_goal_control_panama_canal
 		
 		# Long term
 		faction_goal_defeating_our_enemies
@@ -497,7 +488,7 @@ faction_template_hipanic_alliance_faction = {
 		# faction_goal_an_infantry_army
 
 		# Medium term
-		#faction_goal_control_panama_canal
+		faction_goal_control_panama_canal
 		
 		# Long term
 		faction_goal_defeating_our_enemies
@@ -521,20 +512,12 @@ faction_template_european_unity = {
 			is_on_continent = europe
 		}
 		NOT = {
-			OR = {
-				has_government = fascist
-				has_government = nationalist
-				has_government = islamist
-			} 
+			has_government = fascism 
 		}
 	}
 	available = {
 		NOT = {
-			OR = {
-				has_government = fascist
-				has_government = nationalist
-				has_government = islamist
-			} 
+			has_government = fascism 
 		}
 	}
 	
@@ -543,7 +526,7 @@ faction_template_european_unity = {
 		# faction_goal_ensure_military_r_d
 
 		# Medium term
-		#faction_goal_convoy_escort_force
+		faction_goal_convoy_escort_force
 		
 		# Long term
 		faction_goal_rule_the_waves
@@ -568,11 +551,7 @@ faction_template_european_dominance = {
 		capital_scope = {
 			is_on_continent = europe
 		}
-		OR = {
-				has_government = fascist
-				has_government = nationalist
-				has_government = islamist
-			}
+		has_government = fascism
 	}
 	
 	goals = {
@@ -580,7 +559,7 @@ faction_template_european_dominance = {
 		# faction_goal_military_infrastructure
 
 		# Medium term
-		#faction_goal_control_ploiesti_oil_fields
+		faction_goal_control_ploiesti_oil_fields
 		
 		# Long term
 		faction_goal_defeat_of_anti_fascists
@@ -612,7 +591,7 @@ faction_template_european_dominance_monarchist = {
 		# faction_goal_military_infrastructure
 
 		# Medium term
-		#faction_goal_control_ploiesti_oil_fields
+		faction_goal_control_ploiesti_oil_fields
 		
 		# Long term
 		faction_goal_defeat_of_communism
@@ -643,7 +622,7 @@ faction_template_asian_dominance = {
 		# faction_goal_an_infantry_army
 
 		# Medium term
-		#faction_goal_control_chinese_metals
+		faction_goal_control_chinese_metals
 		
 		# Long term
 		faction_goal_rule_the_waves

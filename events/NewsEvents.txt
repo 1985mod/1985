@@ -165,6 +165,10 @@ news_event = {
 		NOT = { has_global_flag = elections_to_the_supreme_soviet_RSFSR }
 		SOV = { has_completed_focus = SOV_elections_to_the_supreme_council }
 	}
+
+	option = {
+		name = news.7.a
+	}
 }
 
 news_event = {

@@ -1,12 +1,9 @@
 characters = {
-	DDR_erich_honecker = {
-		name = DDR_erich_honecker
+	DDR_Erich_Honecker = {
+		name = DDR_Erich_Honecker
 		portraits = {
 			civilian = {
-				large = GFX_portrait_DDR_erich_honecker
-			}
-			army = {
-				large = GFX_portrait_DDR_erich_honecker
+				large = "gfx/leaders/DDR/Portrait_Erich_Honecker.dds"
 			}
 		}
 		country_leader = {
@@ -16,15 +13,26 @@ characters = {
 			id = -1
 		}
 	}
+	DDR_Heinrich_Homann = {
+		name = DDR_Heinrich_Homann
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DDR/Portrait_DDR_Heinrich_Homann.dds"
+			}
+		}
+		country_leader = {
+			ideology = extreme_nationalism
+			traits = { }
+			expire = "1990.3.1.1"
+			id = -1
+		}
+	}
 	
 	DDR_egon_krenz = {
 		name = DDR_egon_krenz
 		portraits = {
 			civilian = {
-				large = GFX_portrait_DDR_egon_krenz
-			}
-			army = {
-				large = GFX_portrait_DDR_egon_krenz
+				large = "gfx/leaders/DDR/Portrait_Egon_Krenz.dds"
 			}
 		}
 		country_leader = {
@@ -34,91 +42,16 @@ characters = {
 			id = -1
 		}
 	}
-
-	DDR_gerald_gotting = {
-		name = DDR_gerald_gotting
-		portraits = {
-			civilian = {
-				large = GFX_portrait_DDR_gerald_gotting
-			}
-			army = {
-				large = GFX_portrait_DDR_gerald_gotting
-			}
-		}
-		country_leader = {
-			ideology = social_conservatism
-			traits = { }
-			expire = "1990.3.1.1"
-			id = -1
-		}
-	}
-
+	
 	DDR_lothar_de_maiziere = {
 		name = DDR_lothar_de_maiziere
 		portraits = {
 			civilian = {
-				large = GFX_portrait_DDR_lothar_de_maiziere
-			}
-			army = {
-				large = GFX_portrait_DDR_lothar_de_maiziere
+				large = "gfx/leaders/DDR/Portrait_Lothar_de_Maiziere.dds"
 			}
 		}
 		country_leader = {
 			ideology = classic_conservatism
-			traits = { }
-			expire = "1990.3.1.1"
-			id = -1
-		}
-	}
-
-	DDR_ibrahim_bohme = {
-		name = DDR_ibrahim_bohme
-		portraits = {
-			civilian = {
-				large = GFX_portrait_DDR_ibrahim_bohme
-			}
-			army = {
-				large = GFX_portrait_DDR_ibrahim_bohme
-			}
-		}
-		country_leader = {
-			ideology = classical_social_democracy
-			traits = { }
-			expire = "1990.3.1.1"
-			id = -1
-		}
-	}
-
-	DDR_hans_modrow = {
-		name = DDR_hans_modrow
-		portraits = {
-			civilian = {
-				large = GFX_portrait_DDR_hans_modrow
-			}
-			army = {
-				large = GFX_portrait_DDR_hans_modrow
-			}
-		}
-		country_leader = {
-			ideology = communist_perestroika
-			traits = { }
-			expire = "1990.3.1.1"
-			id = -1
-		}
-	}
-
-	DDR_manfred_gerlach = {
-		name = DDR_manfred_gerlach
-		portraits = {
-			civilian = {
-				large = GFX_portrait_DDR_manfred_gerlach
-			}
-			army = {
-				large = GFX_portrait_DDR_manfred_gerlach
-			}
-		}
-		country_leader = {
-			ideology = social_liberalism
 			traits = { }
 			expire = "1990.3.1.1"
 			id = -1
@@ -132,11 +65,26 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/DDR/Portrait_heinz_kebler.dds"
+				small = "gfx/interface/ideas/DDR/idea_portrait_heinz_kebler.dds"
 			}
 			army = {
 				large = "gfx/leaders/DDR/Portrait_heinz_kebler.dds"
+				small = "gfx/interface/ideas/DDR/idea_portrait_heinz_kebler.dds"
 			}
-		}	
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = DDR_heinz_kebler
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+
 		field_marshal={
 			skill=3
 			attack_skill=5
@@ -144,6 +92,32 @@ characters = {
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
+		}
+	}
+
+	DDR_heinz_kebler_air = {
+		name = DDR_heinz_kebler_air
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DDR/Portrait_heinz_kebler.dds"
+				small = "gfx/interface/ideas/DDR/idea_portrait_heinz_kebler.dds"
+			}
+			army = {
+				large = "gfx/leaders/DDR/Portrait_heinz_kebler.dds"
+				small = "gfx/interface/ideas/DDR/idea_portrait_heinz_kebler.dds"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = DDR_heinz_kebler_air
+			traits = {
+				air_chief_safety_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
 		}
 	}
 
@@ -227,6 +201,30 @@ characters = {
 		}
 	}
 
+	DDR_wilhelm_eim = {
+		name = DDR_wilhelm_eim
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_wilhelm_eim.dds"
+			}
+			army = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_wilhelm_eim.dds"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = DDR_wilhelm_eim
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
 	#####POLITICAL ADVISORS####
 	DDR_gerhard_schurer = {
 		name = DDR_gerhard_schurer
@@ -288,6 +286,26 @@ characters = {
 		}
 	}
 
+	DDR_markus_mecke = {
+		name = DDR_markus_mecke
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_markus_meckel.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = minister_of_foreign_affairs
+			idea_token = DDR_markus_mecke
+			traits = {
+				good_diplomat
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+
 	DDR_willi_stoph = {
 		name = DDR_willi_stoph
 		portraits = {
@@ -301,6 +319,26 @@ characters = {
 			idea_token = DDR_willi_stoph
 			traits = {
 				technocrat
+			}
+			ai_will_do = {
+				base = 1.5
+			}
+		}
+	}
+	
+	DDR_markus_wolf = {
+		name = DDR_markus_wolf
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/DDR/idea_portrait_markus_wolf.dds"
+			}
+		}
+		advisor = {
+			cost = 150			
+			slot = political_advisor
+			idea_token = DDR_markus_wolf
+			traits = {
+				heir_to_stagnation
 			}
 			ai_will_do = {
 				base = 1.5

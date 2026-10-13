@@ -9,7 +9,6 @@
  #################### 
 
 
-
 #####################
 
  ## #  # ### ###   ## 
@@ -20,13 +19,6 @@
  
 #####################
 
-EST_paldiski_port_organization = {
-	include = generic_task_force_ship_organization
-	icon = GFX_idea_generic_naval_manufacturer_3
-	allowed = {	
-		tag = EST
-	}
-}
 
 ###########################
 
@@ -39,7 +31,6 @@ EST_paldiski_port_organization = {
 ###########################
 
 
-
 ################################### 
 
 #   #  ##  ### ### ###  ### ### #   
@@ -50,11 +41,3 @@ EST_paldiski_port_organization = {
 
 
 ###################################
-
-EST_arsenal_organization = {
-	include = generic_infantry_equipment_organization
-	icon = GFX_idea_generic_infantry_equipment_manufacturer_3
-	allowed = {	
-		tag = EST
-	}
-}

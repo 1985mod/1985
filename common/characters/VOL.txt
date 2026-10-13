@@ -12,7 +12,24 @@ characters = {
 		country_leader={
 			ideology = classical_social_democracy
 			traits={  }
-			expire="2012.11.9.1"		
+			expire="1987.11.9.1"		
+		}
+	}
+
+	VOL_blaise_compaore ={
+		name = VOL_blaise_compaore
+		portraits={
+			civilian={
+				large= GFX_portrait_VOL_blaise_compaore
+			}
+			army = {
+				large = GFX_portrait_VOL_blaise_compaore
+			}
+		}
+		country_leader={
+			ideology = military_regimes
+			traits={  }
+			expire="2014.11.9.1"		
 		}
 	}
 }

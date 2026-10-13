@@ -30,79 +30,79 @@ country_event = {
 }
 
 country_event = {
-	id = SOV_soviet_union.2 ## Выборы генсека ##
-	title = SOV_soviet_union.2.t
-	desc = SOV_soviet_union.2.desc
-	picture = GFX_report_gorbachev_vs_romanov
+    id = SOV_soviet_union.2 ## Выборы генсека ##
+    title = SOV_soviet_union.2.t
+    desc = SOV_soviet_union.2.desc
+    picture = GFX_report_gorbachev_vs_romanov
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	# Михаил Горбачев
-	option = {
-		name = SOV_soviet_union.2.a
-		ai_chance = {
-			base = 50
-			modifier = {
-				add = 50
-				is_historical_focus_on = yes
-			}
-		}
-		
-		effect_tooltip = {
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
+    # Михаил Горбачев
+    option = {
+        name = SOV_soviet_union.2.a
+        ai_chance = {
+            base = 50
+            modifier = {
+                add = 50
+                is_historical_focus_on = yes
+            }
+        }
+        
+        effect_tooltip = {
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
             load_focus_tree = SOV_soviet_gorbachev_focus
-		}
+        }
 
-		hidden_effect = {
+        hidden_effect = {
             set_country_flag = gorbachev
-			retire_character = SOV_konstantin_chernenko
-			promote_character = {
-				character = SOV_mikhail_gorbachev
-				ideology = communism
-			}
-			load_focus_tree = SOV_soviet_gorbachev_focus
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-		}
-	}
+            promote_character = {
+                character = SOV_mikhail_gorbachev
+                ideology = communism
+            }
+            load_focus_tree = SOV_soviet_gorbachev_focus
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+        }
+    }
 
-	# Григорий Pоманов 
-	option = {
-		name = SOV_soviet_union.2.b
-		ai_chance = {
-			base = 30
-			modifier = {
-				add = -30
-				is_historical_focus_on = yes
-			}
-		}
-			
-		effect_tooltip = {
-			    set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-			load_focus_tree = SOV_soviet_romanov_focus
-		}
+    # Григорий Романов 
+    option = {
+        name = SOV_soviet_union.2.b
+        ai_chance = {
+            base = 30
+            modifier = {
+                add = -30
+                is_historical_focus_on = yes
+            }
+        }
+            
+        effect_tooltip = {
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+            load_focus_tree = SOV_soviet_romanov_focus
+        }
 
-		hidden_effect = {
-			retire_character = SOV_konstantin_chernenko
-			promote_character = {
-				character = SOV_grigory_romanov
-				ideology = communism
-			}
-			load_focus_tree = SOV_soviet_romanov_focus
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-		}
-	}
+        hidden_effect = {
+            set_country_flag = romanov
+            retire_character = SOV_konstantin_chernenko
+            promote_character = {
+                character = SOV_grigory_romanov
+                ideology = communism
+            }
+            load_focus_tree = SOV_soviet_romanov_focus
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+        }
+    }
 }
 
 country_event = {
@@ -195,20 +195,12 @@ country_event = {
                 date > 1990.03.11
                 NOT = { has_country_flag = collapse_LIT }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = LIT
             set_country_flag = collapse_LIT
-			LIT = {
-				set_politics = {
-					ruling_party = socialism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = socialism
-					popularity = 0.4
-				}
-			}
+            LIT = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Прибалтика - Латвия (май 1990)
@@ -217,20 +209,12 @@ country_event = {
                 date > 1990.05.04
                 NOT = { has_country_flag = collapse_LAT }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = LAT
             set_country_flag = collapse_LAT
-			LAT = {
-				set_politics = {
-					ruling_party = liberalism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = liberalism
-					popularity = 0.32
-				}
-			}
+            LAT = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Кавказ - Грузия (апрель 1991)
@@ -239,20 +223,12 @@ country_event = {
                 date > 1991.04.09
                 NOT = { has_country_flag = collapse_GEO }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = GEO
             set_country_flag = collapse_GEO
-			GEO = {
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.95
-				}
-			}
+            GEO = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Прибалтика - Эстония (март 1991)
@@ -261,21 +237,12 @@ country_event = {
                 date > 1991.03.20
                 NOT = { has_country_flag = collapse_EST }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = EST
             set_country_flag = collapse_EST
-
-			EST = {
-				set_politics = {
-					ruling_party = conservatism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.4
-				}
-			}
+            EST = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Молдова (август 1991)
@@ -284,21 +251,12 @@ country_event = {
                 date > 1991.08.27
                 NOT = { has_country_flag = collapse_MOL }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = MOL
             set_country_flag = collapse_MOL
-
-			MOL = {
-				set_politics = {
-					ruling_party = conservatism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.4
-				}
-			}
+            MOL = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Кавказ - Армения (сентябрь 1991)
@@ -307,21 +265,12 @@ country_event = {
                 date > 1991.09.21
                 NOT = { has_country_flag = collapse_ARM }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = ARM
             set_country_flag = collapse_ARM
-
-			ARM = {
-				set_politics = {
-					ruling_party = liberalism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = liberalism
-					popularity = 0.83
-				}
-			}
+            ARM = {
+                set_country_flag = conservatism_soviet
+            }
         }
     }
 }
@@ -346,20 +295,12 @@ country_event = {
                 date > 1991.08.24
                 NOT = { has_country_flag = collapse_UKR }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = UKR
             set_country_flag = collapse_UKR
-			UKR = {
-				set_politics = {
-					ruling_party = conservatism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.4
-				}
-			}
+            UKR = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Беларусь (август 1991)
@@ -368,20 +309,12 @@ country_event = {
                 date > 1991.08.25
                 NOT = { has_country_flag = collapse_BLR }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = BLR
             set_country_flag = collapse_BLR
-			BLR = {
-				set_politics = {
-					ruling_party = socialism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = socialism
-					popularity = 0.44
-				}
-			}
+            BLR = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Кавказ - Азербайджан (октябрь 1991)
@@ -390,10 +323,12 @@ country_event = {
                 date > 1991.10.18
                 NOT = { has_country_flag = collapse_AZR }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = AZR
             set_country_flag = collapse_AZR
+            AZR = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Чечня (ноябрь 1991)
@@ -402,20 +337,12 @@ country_event = {
                 date > 1991.11.01
                 NOT = { has_country_flag = collapse_CHE }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = CHE
             set_country_flag = collapse_CHE
-			CHE = {
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.9
-				}
-			}
+            CHE = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Средняя Азия - Узбекистан (август 1991)
@@ -424,20 +351,12 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_UZB }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = UZB
             set_country_flag = collapse_UZB
-			UZB = {
-				set_politics = {
-					ruling_party = socialism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = socialism
-					popularity = 0.87
-				}
-			}
+            UZB = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Средняя Азия - Туркменистан (октябрь 1991)
@@ -446,20 +365,12 @@ country_event = {
                 date > 1991.10.27
                 NOT = { has_country_flag = collapse_TMS }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = TMS
             set_country_flag = collapse_TMS
-			TMS = {
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.99
-				}
-			}
+            TMS = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Средняя Азия - Кыргызстан (август 1991)
@@ -468,20 +379,12 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_KYR }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = KYR
             set_country_flag = collapse_KYR
-			KYR = {
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = neutrality
-					popularity = 0.95
-				}
-			}
+            KYR = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Средняя Азия - Таджикистан (август 1991)
@@ -490,7 +393,6 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_TAJ }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = TAJ
             set_country_flag = collapse_TAJ
@@ -503,21 +405,13 @@ country_event = {
                 NOT = { has_country_flag = collapse_RUS }
                 NOT = { has_global_flag = ussr_not_collapsed }
                 has_country_flag = independence_of_the_rsfsr
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = RUS
             set_country_flag = collapse_RUS
 
-			RUS = {
-				set_politics = {
-					ruling_party = conservatism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.4
-				}				
-			}
+            RUS = {
+                set_country_flag = conservatism_soviet
+            }
         }
 
         # Казахстан (декабрь 1991)
@@ -526,20 +420,13 @@ country_event = {
                 date > 1991.12.16
                 NOT = { has_country_flag = collapse_KAZ }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
             }
             release = KAZ
             set_country_flag = collapse_KAZ
-			KAZ = {
-				set_politics = {
-					ruling_party = conservatism
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = 0.4
-				}
-			}
+            KAZ = {
+                set_country_flag = conservatism_soviet
+            }
+
             clr_country_flag = collapse_right_now
         }
     }
@@ -771,9 +658,6 @@ country_event = {
             add_state_core = 655
             add_state_core = 875
             add_state_core = 763
-			add_state_core = 1071
-			add_state_core = 1072
-			add_state_core = 1074
         }
     }
 }
@@ -1307,6 +1191,10 @@ country_event = {
 			}
 		}
         RUS = {
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.4
+			}
             set_politics = {
                 ruling_party = conservatism
                 elections_allowed = yes
@@ -1342,34 +1230,24 @@ country_event = {
 	fire_only_once = yes
 
     immediate = {
-		hidden_effect = {
-			set_country_flag = start_sec_country_flag
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			retire_character = SOV_mikhail_gorbachev
-			promote_character = {
-				character = SOV_gennady_yanaev
-				ideology = communism
-			}
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-		}
+        set_country_flag = start_sec_country_flag
     }
 
     option = {
         name = SOV_soviet_union.39.a
-        set_global_flag = sov_start_sec_flag
-		set_global_flag = super_event_visible
-		hidden_effect = {
-			play_song = "victory_sec_name"	
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
 		}
-		
-		set_global_flag = sov_start_sec_flag
-		add_stability = -0.15
+		remove_country_leader = { name = "SOV_mikhail_gorbachev" }
+		promote_character = {
+			character = SOV_gennady_yanaev
+			ideology = communism
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
     }
 }
 
@@ -1384,7 +1262,7 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.40.a
-        add_stability = 0.03
+        add_political_power = 25
 		add_popularity = {
 			ideology = conservatism
 			popularity = 0.05
@@ -1407,7 +1285,6 @@ country_event = {
 
     option = {
         name = SOV_soviet_union.41.a
-		custom_effect_tooltip = something_is_definitely_wrong
     }
 }
 
@@ -1420,23 +1297,17 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
-
-    immediate = {
-		hidden_effect = {
-			retire_character = SOV_gennady_yanaev
-			promote_character = {
-				character = SOV_mikhail_gorbachev
-				ideology = communism
-			}
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-		}
-    }
-
     option = {
         name = SOV_soviet_union.42.a
+		remove_country_leader = { name = "SOV_gennady_yanaev" }
+		promote_character = {
+			character = SOV_mikhail_gorbachev
+			ideology = communism
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
     }
 }
 
@@ -1468,7 +1339,7 @@ country_event = {
 		KAZ = {
 			add_popularity = {
 				ideology = conservatism
-				popularity = 0.2
+				popularity = 0.4
 			}
             set_politics = {
                 ruling_party = conservatism
@@ -2184,7 +2055,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		retire_character = SOV_Mikhail_Gorbachev_SSG
+		remove_country_leader = { name = "SOV_Mikhail_Gorbachev_SSG" }
 		complete_national_focus = SOV_the_first_free_elections_in_the_ussr
 		complete_national_focus = SOV_yeltsin_path
 		set_politics = {
@@ -2240,7 +2111,7 @@ country_event = {
 			limit = {
 				has_idea = SOV_economic_stagnation
 			}
-			remove_ideas = SOV_economic_stagnation
+			remove_idea = SOV_economic_stagnation
 		}
     }
 }
@@ -2356,7 +2227,6 @@ country_event = {
 			end_civil_wars = yes
 		}
 		BEL = {
-			set_cosmetic_tag = BEL_benelux
 			every_state = {
                 limit = {
                     is_core_of = HOL
@@ -2388,9 +2258,6 @@ country_event = {
 		SOV = {
 			set_country_flag = soviet_union_win_in_world_war_three
 		}
-        set_global_flag = sov_world_war_three_victory_flag
-		set_global_flag = super_event_visible
-		play_song = "armiya_moya_name"
     }
 }
 
@@ -2421,22 +2288,5 @@ country_event = {
 				modifier = large_decrease
 			}
 		}		
-    }
-}
-
-country_event = {
-	id = SOV_soviet_union.78 ## Расформирование ОВД  ##ЦЫ
-	title = SOV_soviet_union.78.t
-	desc = SOV_soviet_union.78.desc
-	picture = GFX_report_dismantle_warsaw_pact
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-    option = {
-        name = SOV_soviet_union.78.a
-		dismantle_faction = yes
-		add_stability = -0.03
-		add_political_power = 50
     }
 }

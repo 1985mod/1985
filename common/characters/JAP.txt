@@ -10,12 +10,106 @@ characters = {
 				small = GFX_portrait_JAP_yasuhiro_nakasone_small
 			}
 		}
-
 		country_leader = {
-			ideology = classic_conservatism
+			ideology = national_conservatism
 			traits={  }
 			expire="1990.1.1.1"
-			
+			id = -1
+		}
+	}
+
+	JAP_noboru_takeshita = {
+		name = JAP_noboru_takeshita
+		portraits={
+			civilian={
+				large= GFX_portrait_JAP_noboru_takeshita
+			}
+			army = {
+				large = GFX_portrait_JAP_noboru_takeshita
+				small = GFX_portrait_JAP_noboru_takeshita_small
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
+		}
+	}
+
+	JAP_sosuke_uno = {
+		name = JAP_sosuke_uno
+		portraits={
+			civilian={
+				large= GFX_portrait_JAP_sosuke_uno
+			}
+			army = {
+				large = GFX_portrait_JAP_sosuke_uno
+				small = GFX_portrait_JAP_sosuke_uno_small
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
+		}
+	}
+
+	JAP_toshiki_kaifu = {
+		name = JAP_toshiki_kaifu
+		portraits={
+			civilian={
+				large= GFX_portrait_JAP_toshiki_kaifu
+			}
+			army = {
+				large = GFX_portrait_JAP_toshiki_kaifu
+				small = GFX_portrait_JAP_toshiki_kaifu_small
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
+		}
+	}
+
+	JAP_kiichi_miyazawa = {
+		name = JAP_kiichi_miyazawa 
+		portraits={
+			civilian={
+				large= GFX_portrait_JAP_kiichi_miyazawa
+			}
+			army = {
+				large = GFX_portrait_JAP_kiichi_miyazawa
+				small = GFX_portrait_JAP_kiichi_miyazawa_small
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
+		}
+	}
+
+	JAP_morihiro_hosokawa = {
+		name = JAP_morihiro_hosokawa
+		portraits={
+			civilian={
+				large= GFX_portrait_JAP_morihiro_hosokawa
+			}
+			army = {
+				large = GFX_portrait_JAP_morihiro_hosokawa
+				small = GFX_portrait_JAP_morihiro_hosokawa_small
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism
+			traits={  }
+			expire="1990.1.1.1"
+			id = -1
 		}
 	}
 }

@@ -101,16 +101,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
 			OR = {
-			has_war_support > 0.55
-		has_defensive_war = yes 
-		}
+				has_war_support > 0.6
+				has_defensive_war = yes 
+			}
 		}
 		
 		
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RCP_defence_of_the_nation
+				days = 180
+			}
+			add_war_support = 0.03
 		}
 	}
 	
@@ -149,7 +154,7 @@ focus_tree = {
 	focus = {
 		id = RCP_special_forces
 		icon = GFX_goal_generic_special_forces
-		x = 20
+		x = 23
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -168,28 +173,6 @@ focus_tree = {
 			}
 		}
 	}	
-	
-	
-
-	#Focus for A Useful Puppet
-	focus = {
-		id = RCP_a_useful_puppet
-		icon = GFX_focus_CZE_german_puppet
-		x = 22
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_army_effort }
-		ai_will_do = {
-			factor = 3
-		}
-		available = {
-			is_puppet = yes
-		}
-		completion_reward = {
-			
-		}
-	}
 	
 		#Focus for Aviation Effort
 	focus = {
@@ -524,12 +507,11 @@ instant_build = yes
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			
-every_army_leader = {
-add_planning = 1
-add_logistics = 1
-}
+		completion_reward = {		
+			every_army_leader = {
+				add_planning = 1
+				add_logistics = 1
+			}
 		}
 	}
 
@@ -544,12 +526,12 @@ add_logistics = 1
 		prerequisite = { focus = RCP_military_research }
 		completion_reward = {
 			add_tech_bonus = {
-name = infantry_artillery_bonus
-bonus = 1.0
-uses = 1
-category = infantry_weapons
-category = artillery
-}
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
 		}
 	}
 	#Focus for Doctrine Effort
@@ -563,7 +545,7 @@ category = artillery
 		prerequisite = { focus = RCP_military_research }
 		completion_reward = {
 			army_experience = 10
-add_doctrine_cost_reduction = {
+				add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
@@ -584,7 +566,10 @@ add_doctrine_cost_reduction = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RCP_immediate_conscription
+				days = 365
+			}
 		}
 	}
 	
@@ -611,24 +596,6 @@ add_doctrine_cost_reduction = {
 				days = 120
 			}
 			add_political_power = -50
-		}
-	}
-	
-	
-	#Focus for Complacent Subjects
-	focus = {
-		id = RCP_complacent_subjects
-		icon = GFX_goal_generic_political_pressure
-		x = 24
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_army_effort }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
 		}
 	}
 	
@@ -910,7 +877,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_ideas = RCP_firearm_production
 		}
 	}
 	
@@ -1028,23 +995,7 @@ instant_build = yes
 		}
 	}
 	
-		#Focus for Even more usefull
-	focus = {
-		id = RCP_even_more_usefull
-		icon = GFX_focus_generic_military_mission
-		x = 22
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = RCP_a_useful_puppet }
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-		}
-	}
-	
-		#Focus for Fighter Production
+	#Focus for Fighter Production
 	focus = {
 		id = RCP_fighter_production
 		icon = GFX_goal_poland_goal
@@ -1372,7 +1323,7 @@ instant_build = yes
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_immediate_conscription }
 		completion_reward = {
-			
+			add_ideas = RCP_military_youth
 		}
 	}
 	 
@@ -1713,19 +1664,15 @@ instant_build = yes
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RCP_bicycle_effort }
-		bypass = {
-			
-has_tech = motorised_infantry
-
+		bypass = {		
+			has_tech = motorised_infantry
 		}
-		completion_reward = {
-			
-add_tech_bonus = {
-name = motorized_bonus
-bonus = 2
-technology = motorised_infantry
-}
-
+		completion_reward = {		
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 2
+				technology = motorised_infantry
+			}
 		}
 	}
 	
@@ -1743,7 +1690,7 @@ technology = motorised_infantry
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_ideas = RCP_artillery__support_equipment_production
 		}
 	}
 
@@ -1807,7 +1754,9 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_manpower = 25000
+			army_experience = 10
+			navy_experience = 5
 		}
 	}
 	
@@ -2253,7 +2202,10 @@ instant_build = yes
                     instant_build = yes
                 }
             }
-			add_ideas = RCP_civilian_factory_focus		
+			add_timed_idea = {
+				idea = RCP_civilian_factory_focus
+				days = 480
+			}		
 		}
 	}
 
@@ -2369,7 +2321,10 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = RCP_reduce_motorized_production_costs
+				days = 720
+			}
 		}
 	}
 
@@ -2391,7 +2346,10 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-	
+			add_timed_idea = {
+				idea = RCP_improve_quality_of_motorized
+				days = 720
+			}	
 		}
 	}
 
@@ -2813,7 +2771,7 @@ instant_build = yes
 			factor = 1
 		}
 		completion_reward = {
-	
+			add_ideas = RCP_aa_and_antitank_production
 		}
 	}
 
@@ -3247,7 +3205,10 @@ random_owned_controlled_state = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RCP_reduce_mechanized_production_costs
+				days = 365
+			}
 		}
 	}
 
@@ -3269,7 +3230,10 @@ random_owned_controlled_state = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RCP_improve_quality_of_mechanized
+				days = 365
+			}
 		}
 	}
 
@@ -3294,6 +3258,7 @@ random_owned_controlled_state = {
 		}
 
 		completion_reward = {
+			set_rule = { can_create_factions = yes }
 			complete_special_project = {
 				project = sp:sp_nuclear_reactor
 			}
@@ -3341,7 +3306,10 @@ random_owned_controlled_state = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RCP_quantity_of_armor
+				days = 480
+			}
 		}
 	}
 
@@ -3363,7 +3331,10 @@ random_owned_controlled_state = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RCP_quality_armor
+				days = 480
+			}
 		}
 	}
 

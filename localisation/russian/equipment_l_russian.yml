@@ -4340,7 +4340,7 @@ l_russian:
  SIA_modern_tank_equipment_1: "M46 «Паттон»"
  SIA_modern_tank_equipment_1_short: "M46"
 
- anti_tank_grenade_launcher_equipment: "Противотанковый гранатомет 1"
+ anti_tank_grenade_launcher_equipment: "Противотанковый гранатомет"
  anti_tank_grenade_launcher_equipment_desc: "Тяжелая и дальнобойная пехотная система, способная пробивать самую мощную броню и уничтожать укрепленные позиции."
  anti_tank_grenade_launcher_equipment_0: "Противотанковый гранатомет 1"
  anti_tank_grenade_launcher_equipment_1: "Противотанковый гранатомет 1"
