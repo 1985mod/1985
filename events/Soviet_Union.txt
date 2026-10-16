@@ -1509,7 +1509,6 @@ country_event = {
 	id = soviet_union.47 ## Желтоксан ##
 	title = soviet_union.47.t
 	desc = soviet_union.47.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1531,7 +1530,6 @@ country_event = {
 	id = soviet_union.48 ## План «Метель-1986» ##
 	title = soviet_union.48.t
 	desc = soviet_union.48.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1547,7 +1545,6 @@ country_event = {
 	id = soviet_union.49 ## События в Новом Узене ##
 	title = soviet_union.49.t
 	desc = soviet_union.49.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	trigger = {
 		has_country_flag = gorbachev
@@ -1574,7 +1571,6 @@ country_event = {
 	id = soviet_union.50 ## Ввод советских войск ##
 	title = soviet_union.50.t
 	desc = soviet_union.50.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1592,7 +1588,6 @@ country_event = {
 	id = soviet_union.51 ## протесты усиливаются ##
 	title = soviet_union.51.t
 	desc = soviet_union.51.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1609,7 +1604,6 @@ country_event = {
 	id = soviet_union.52 ## протесты стихают ##
 	title = soviet_union.52.t
 	desc = soviet_union.52.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1624,7 +1618,6 @@ country_event = {
 	id = soviet_union.53 ## Ферганские погромы ##
 	title = soviet_union.53.t
 	desc = soviet_union.53.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	trigger = {
 		has_country_flag = gorbachev
@@ -1645,7 +1638,6 @@ country_event = {
 	id = soviet_union.54 ## Ввод милиции ##
 	title = soviet_union.54.t
 	desc = soviet_union.54.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1661,7 +1653,6 @@ country_event = {
 	id = soviet_union.55 ## погромы усиливаются ##
 	title = soviet_union.55.t
 	desc = soviet_union.55.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1679,7 +1670,6 @@ country_event = {
 	id = soviet_union.56 ## Массовые беспорядки в Душанбе ##
 	title = soviet_union.56.t
 	desc = soviet_union.56.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	trigger = {
 		has_country_flag = gorbachev
@@ -1698,7 +1688,6 @@ country_event = {
 	id = soviet_union.57 ## Ошские события 1990 года ##
 	title = soviet_union.57.t
 	desc = soviet_union.57.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	trigger = {
 		has_country_flag = gorbachev
@@ -1717,7 +1706,6 @@ country_event = {
 	id = soviet_union.58 ## Статус НКАо ##
 	title = soviet_union.58.t
 	desc = soviet_union.58.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1740,7 +1728,6 @@ country_event = {
 	id = soviet_union.59 ## Дела республик ##
 	title = soviet_union.59.t
 	desc = soviet_union.59.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1760,7 +1747,6 @@ country_event = {
 	id = soviet_union.60 ## Замена старого Тихонова ##
 	title = soviet_union.60.t
 	desc = soviet_union.60.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1797,7 +1783,6 @@ country_event = {
 	id = soviet_union.61 ## Визит Романова в Волгоград ##
 	title = soviet_union.61.t
 	desc = soviet_union.61.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1818,7 +1803,6 @@ country_event = {
 	id = soviet_union.62 ## Вопрос Афганистана ##
 	title = soviet_union.62.t
 	desc = soviet_union.62.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1860,7 +1844,6 @@ country_event = {
 	id = soviet_union.63 ## Партийная грызня ##
 	title = soviet_union.63.t
 	desc = soviet_union.63.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1878,7 +1861,6 @@ country_event = {
 	id = soviet_union.64 ## Визит Романова в Китай ##
 	title = soviet_union.64.t
 	desc = soviet_union.64.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1907,7 +1889,6 @@ country_event = {
 	id = soviet_union.65 ## Противостояние с Китаем ##
 	title = soviet_union.65.t
 	desc = soviet_union.65.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1930,7 +1911,6 @@ country_event = {
 	id = soviet_union.66 ## ССГ предлагает сотрудничество ##
 	title = soviet_union.66.t
 	desc = soviet_union.66.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -1955,7 +1935,6 @@ country_event = {
 	id = soviet_union.67 ## Страна согласилась ##
 	title = soviet_union.67.t
 	desc = soviet_union.67.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -1979,7 +1958,6 @@ country_event = {
 	id = soviet_union.68 ## Страна отказалась ##
 	title = soviet_union.68.t
 	desc = soviet_union.68.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -1995,7 +1973,6 @@ country_event = {
 	id = soviet_union.69 ## ССГ разрешает нац. гвардии ##
 	title = soviet_union.69.t
 	desc = soviet_union.69.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -2049,7 +2026,6 @@ country_event = {
 	id = soviet_union.70 ## Победа Ельцина в ССГ ##
 	title = soviet_union.70.t
 	desc = soviet_union.70.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -2074,7 +2050,6 @@ country_event = {
 	id = soviet_union.71 ## Победа Назарбаева в ССГ ##
 	title = soviet_union.71.t
 	desc = soviet_union.71.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -2100,7 +2075,6 @@ country_event = {
 	id = soviet_union.72 ## Сильный и независимый ##
 	title = soviet_union.72.t
 	desc = soviet_union.72.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -2125,7 +2099,6 @@ country_event = {
 	id = soviet_union.73 ## В Пекине ##
 	title = soviet_union.73.t
 	desc = soviet_union.73.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -2155,7 +2128,6 @@ country_event = {
 	id = soviet_union.74 ## 30 съезд кпсс ##
 	title = soviet_union.74.t
 	desc = soviet_union.74.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -2175,7 +2147,6 @@ country_event = {
 	id = soviet_union.75 ## СС предлагает перемирие ##
 	title = soviet_union.75.t
 	desc = soviet_union.75.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -2202,7 +2173,6 @@ country_event = {
 	id = soviet_union.76 ## США согласилась ##
 	title = soviet_union.76.t
 	desc = soviet_union.76.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 
@@ -2290,7 +2260,6 @@ country_event = {
 	id = soviet_union.77 ## США отказались ##
 	title = soviet_union.77.t
 	desc = soviet_union.77.desc
-	picture = GFX_report_dead_of_yeltsin
 
 	is_triggered_only = yes
 

@@ -250,3 +250,196 @@ economy_category = {
         }		
 	}
 }
+
+economy_policy_cat = {
+
+	increase_funding_for_science = {
+
+		icon = generic_break_treaty
+		days_remove = 50
+
+		allowed = { 
+			always = yes 
+		}
+
+		visible = { 
+			always = yes 
+		}
+
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 35 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_35
+
+		
+		complete_effect = {
+			subtract_from_variable = { var = treasury value = 35 }
+		}
+
+		modifier = {
+			research_speed_factor = 0.05
+			special_project_speed_factor  = 0.05
+			research_sharing_per_country_bonus_factor = 0.1
+		}
+
+		ai_will_do = {
+            factor = 15
+            modifier = {
+                add = 5
+                check_variable = { var = treasury value = 35 compare = greater_than }
+            }
+        }		
+	}
+
+	accelerating_production_automation = {
+
+		icon = generic_civil_support
+		days_remove = 80
+
+		allowed = { 
+			always = yes 
+		}
+
+		visible = { 
+			always = yes 
+		}
+
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 35 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_35
+
+		
+		complete_effect = {
+			subtract_from_variable = { var = treasury value = 35 }
+		}
+
+		modifier = {
+			production_factory_max_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.03
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+		}
+
+		ai_will_do = {
+            factor = 15
+            modifier = {
+                add = 5
+                check_variable = { var = treasury value = 35 compare = greater_than }
+            }
+        }		
+	}
+
+
+	investments_in_the_civilian_sector = {
+
+		icon = generic_factory
+		days_remove = 120
+
+		allowed = { 
+			always = yes 
+		}
+
+		visible = { 
+			always = yes 
+		}
+
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 25 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_25
+
+		
+		complete_effect = {
+			subtract_from_variable = { var = treasury value = 25 }
+		}
+
+		modifier = {
+			production_speed_industrial_complex_factor = 0.1
+			consumer_goods_factor = -0.05
+			industry_repair_factor = 0.1
+		}
+
+		ai_will_do = {
+            factor = 15
+            modifier = {
+                add = 15
+                check_variable = { var = treasury value = 25 compare = greater_than }
+            }
+        }		
+	}
+
+	infrastructure_development_plans = {
+
+		icon = eng_trade_unions_support
+		days_remove = 65
+
+		allowed = { 
+			always = yes 
+		}
+
+		visible = { 
+			always = yes 
+		}
+
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 20 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_20
+
+		complete_effect = {
+			subtract_from_variable = { var = treasury value = 20 }
+		}
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+
+		ai_will_do = {
+            factor = 15
+            modifier = {
+                add = 10
+                check_variable = { var = treasury value = 20 compare = greater_than }
+            }
+        }		
+	}
+
+	investments_in_the_military_sector = {
+
+		icon = generic_merge_plant_tank
+		days_remove = 120
+		
+		allowed = { 
+			always = yes 
+		}
+
+		visible = { 
+			always = yes 
+		}
+
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 20 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_20
+
+		
+		complete_effect = {
+			subtract_from_variable = { var = treasury value = 20 }
+		}
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.1
+			industrial_capacity_factory = 0.05
+		}
+
+		ai_will_do = {
+            factor = 15
+            modifier = {
+                add = 15
+                check_variable = { var = treasury value = 20 compare = greater_than }
+            }
+        }		
+	}
+}
