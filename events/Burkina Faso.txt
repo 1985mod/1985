@@ -9,7 +9,7 @@ country_event = {
     fire_only_once = yes
 
     option = {
-        name = burkina_faso.5.a
+        name = burkina_faso.1.a
         kill_country_leader = yes
 		add_stability = -0.1
 		add_war_support = 0.03

@@ -747,7 +747,7 @@ USA_anti_terrorist_operations = {
 		fire_only_once = yes
 		days_remove = 5
 
-		icon = generic_speech
+		icon = generic_air
 
 		ai_will_do = {
 			factor = 0
@@ -793,6 +793,8 @@ USA_anti_terrorist_operations = {
 		cost = 75
 		fire_only_once = yes
 		days_remove = 3
+
+		icon = generic_air
 		
 		modifier = {
 			experience_gain_army_factor = 0.1
@@ -827,6 +829,8 @@ USA_anti_terrorist_operations = {
 		days_remove = 60
 		days_re_enable = 120
 
+		icon = SWI_dismiss_council
+
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -844,6 +848,8 @@ USA_anti_terrorist_operations = {
 		cost = 75
 		fire_only_once = yes
 		days_remove = 30
+
+		icon = generic_electricity
 
 		ai_will_do = {
 			factor = 0
@@ -945,6 +951,8 @@ USA_election_campaign_in_usa = {
 		cost = 75
 		days_remove = 35
 
+		icon = generic_political_rally
+
 		ai_will_do = {
 			factor = 15
 		}
@@ -1010,6 +1018,8 @@ USA_election_campaign_in_usa = {
 	USA_to_promise_to_continue_reagans_course = {
 		cost = 100
 		days_remove = 50
+
+		icon = SOV_academy_of_sciences
 
 		ai_will_do = {
 			factor = 15
@@ -1077,6 +1087,8 @@ USA_election_campaign_in_usa = {
 	USA_to_oppose_abortion = {
 		cost = 50
 		days_remove = 20
+
+		icon = SWI_no_elected_president
 
 		ai_will_do = {
 			factor = 15
@@ -1192,6 +1204,142 @@ USA_election_campaign_in_usa = {
 						min = 0
 					}
 				}
+			}
+		}
+	}
+
+	USA_focus_on_the_massachusetts_miracle = {
+		cost = 100
+		days_remove = 35
+
+		icon = SWI_dismiss_council
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_gain = -0.35
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = between_15_and_20_electors_democratic_party
+			set_variable_to_random = {
+				var = electoral_votes_random
+				min = 15
+				max = 20
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.electoral_votes_democrats
+				value = electoral_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.electoral_votes_republicans
+				value = electoral_votes_random
+			}
+			custom_effect_tooltip = between_1_and_3_states_are_democratic_party
+			set_variable_to_random = {
+				var = state_votes_random
+				min = 1
+				max = 3
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.support_democrats_in_us
+				value = state_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.support_republicans_in_us
+				value = state_votes_random
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_democrats
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_republicans
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_democrats_in_us
+				max = 50
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_republicans_in_us
+				max = 50
+				min = 0
+			}
+		}
+	}
+
+	USA_image_positioning = {
+		cost = 50
+		days_remove = 50
+		
+		icon = generic_wreckers
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		modifier = {
+			political_power_gain = -0.2
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = between_10_and_15_electors_democratic_party
+			set_variable_to_random = {
+				var = electoral_votes_random
+				min = 10
+				max = 15
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.electoral_votes_democrats
+				value = electoral_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.electoral_votes_republicans
+				value = electoral_votes_random
+			}
+			custom_effect_tooltip = between_1_and_2_states_are_democratic_party
+			set_variable_to_random = {
+				var = state_votes_random
+				min = 1
+				max = 2
+				integer = yes
+			} 
+			add_to_variable = {
+				var = USA.support_democrats_in_us
+				value = state_votes_random
+			}
+			subtract_from_variable = {
+				var = USA.support_republicans_in_us
+				value = state_votes_random
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_democrats
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.electoral_votes_republicans
+				max = 538
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_democrats_in_us
+				max = 50
+				min = 0
+			}
+			clamp_variable = {
+				var = USA.support_republicans_in_us
+				max = 50
+				min = 0
 			}
 		}
 	}

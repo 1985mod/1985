@@ -262,14 +262,30 @@ country_event = {   ### Вопрос Али Хаменеи (Рухолла Хо�
     option = {
         name = iraq.8.a
         PER = {
-            retire_character = PER_Ali_Khamenei
+            retire_character = PER_ruhollah_khomeini
         }
     }
 
     option = {
         name = iraq.8.a
         PER = {
-            retire_character = PER_Ali_Khamenei
+            retire_character = PER_ruhollah_khomeini
         }
+    }
+}   
+
+country_event = {   ### Тишина в персидском заливе
+    id = iraq.9
+    title = iraq.9.t
+    desc = iraq.9.d
+    picture = GFX_report_event_generic_peace
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = iraq.9.a
+        set_global_flag = iraq_did_not_invade_kuwait
     }
 }   

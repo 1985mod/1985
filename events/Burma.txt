@@ -11,9 +11,11 @@ country_event = {
 
     option = {
         name = burma.1.a
-        country_event = { id = burma.2 days = 307 }
         retire_country_leader = yes
         set_cosmetic_tag = BRM_union_of_burma
+        hidden_effect = {
+            country_event = { id = burma.2 days = 307 }
+        }
     }
 }
 
@@ -29,5 +31,6 @@ country_event = {
     option = {
         name = burma.2.a
         set_cosmetic_tag = BRM_union_of_myanmar
+        add_stability = 0.03
     }
 }

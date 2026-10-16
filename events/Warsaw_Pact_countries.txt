@@ -68,7 +68,6 @@ country_event = {
         SOV = {
             end_puppet = ROM
         }
-        leave_faction = yes
     }
 }
  
@@ -134,7 +133,6 @@ country_event = {
         SOV = {
             end_puppet = BUL
         }
-        leave_faction = yes
     }
 }
  
@@ -213,7 +211,6 @@ country_event = {
         SOV = {
             end_puppet = HUN
         }
-        leave_faction = yes
     }
 }
  
@@ -288,7 +285,6 @@ country_event = {
         SOV = {
             end_puppet = POL
         }
-        leave_faction = yes
     }
 }
 

@@ -19,6 +19,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
+		name = communist_china.1.a
 		PRC = {
 			add_state_core = 322
 			add_state_core = 601 
@@ -43,43 +44,68 @@ country_event = {
 	}
 	
 	fire_only_once = yes
-	
-       immediate = {
-	    	TIB = { transfer_state = 322 }
-	    	TIB = { transfer_state = 601 }	
-	  }
-	  
-	  option = {
-			declare_war_on = {
-				target = TIB
-				type = annex_everything
-			}	  
-	  }
-}
 
-country_event = {
-	id = communist_china.3
-	title = communist_china.3.t
-	desc = communist_china.3.desc
-
-	trigger = {
-		tag = PRC
-		has_war = no
-		mean_time_to_happen = { days = 30 }
-		custom_trigger_tooltip = {
-		tooltip = has_tibets_resistance_50_tt
-			check_variable = {
-				PRC.tibets_resistance > 49
+	immediate = {
+		TIB = {
+			transfer_state = 322
+			transfer_state = 601
+			division_template = { 
+					name = "Fighters for independence"
+					is_locked = no
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+				}
 			}
+			322 = {
+				create_unit = { 
+					division = "name = \"1. Fighters for independence\" division_template = \"Fighters for independence\" start_experience_factor = 0.2" 
+					owner = TIB
+				}
+				create_unit = { 
+					division = "name = \"2. Fighters for independence\" division_template = \"Fighters for independence\" start_experience_factor = 0.1" 
+					owner = TIB
+				}
+				create_unit = { 
+					division = "name = \"3. Fighters for independence\" division_template = \"Fighters for independence\" start_experience_factor = 0.1" 
+					owner = TIB
+				}
+				create_unit = { 
+					division = "name = \"4. Fighters for independence\" division_template = \"Fighters for independence\" start_experience_factor = 0.1" 
+					owner = TIB
+				}
+				create_unit = { 
+					division = "name = \"5. Fighters for independence\" division_template = \"Fighters for independence\" start_experience_factor = 0.1" 
+					owner = TIB
+				}
+				create_unit = { 
+					division = "name = \"6. Fighters for independence\" division_template = \"Fighters for independence\" start_experience_factor = 0.1" 
+					owner = TIB
+				}
+				create_unit = { 
+					division = "name = \"7. Fighters for independence\" division_template = \"Fighters for independence\" start_experience_factor = 0.1" 
+					owner = TIB
+				}
+			}  
+			601 = {
+				create_unit = { 
+					division = "name = \"1. Fighters for independence\" division_template = \"Fighters for independence\" start_experience_factor = 0.2" 
+					owner = TIB
+				}
+				create_unit = { 
+					division = "name = \"2. Fighters for independence\" division_template = \"Fighters for independence\" start_experience_factor = 0.1" 
+					owner = TIB
+				}
+			}  
 		}
 	}
-	
-	fire_only_once = yes
 	  
-	  option = {
-			declare_war_on = {
-				target = TIB
-				type = annex_everything
-			}	  
-	  }
+	option = {
+		name = communist_china.2.a
+		declare_war_on = {
+			target = TIB
+			type = annex_everything
+		}	  
+	}
 }

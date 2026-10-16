@@ -4,7 +4,6 @@ country_event = {
 	id = sweden.1 ##  Выборы 1985 года ##
 	title = sweden.1.t
 	desc = sweden.1.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 
@@ -99,7 +98,6 @@ country_event = {
 	id = sweden.2 ##  Выборы 1988 года ##
 	title = sweden.2.t
 	desc = sweden.2.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 
@@ -149,7 +147,7 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = bildt
-			remove_country_leader = { name = "SWE_ulf_adelsoh" }
+			retire_character = SWE_ulf_adelsoh
 			promote_character = {
 				character = SWE_carl_bildt
 				ideology = conservatism
@@ -200,7 +198,6 @@ country_event = {
 	id = sweden.3 ##  Выборы 1991 года ##
 	title = sweden.3.t
 	desc = sweden.3.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 
@@ -224,7 +221,7 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = bildt
-			remove_country_leader = { name = "SWE_ulf_adelsoh" }
+			retire_character = SWE_ulf_adelsoh
 			promote_character = {
 				character = SWE_carl_bildt
 				ideology = conservatism

@@ -1,10 +1,9 @@
  add_namespace = mol
 
 country_event = {
-	id = mol.1 ##  Смерть Черненко ##
+	id = mol.1 ##  Приднестровье ##
 	title = mol.1.t
 	desc = mol.1.desc
-	picture = GFX_report_dead_chernenko
 
 	fire_only_once = yes
 

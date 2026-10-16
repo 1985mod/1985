@@ -22,7 +22,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 50
             hidden_effect = {
-                country_event = { id = SOV_soviet_union.63 days = 17 }
+                country_event = { id = soviet_union.63 days = 17 }
             }
         }
     }
@@ -49,7 +49,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_soviet_union.60 }
+            country_event = { id = soviet_union.60 }
         }
     }
 
@@ -76,7 +76,7 @@ focus_tree = {
         cost = 5
         completion_reward = {
             set_country_flag = SOV_anti_alcohol_campaign_flag
-            country_event = { id = SOV_soviet_union.10 }
+            country_event = { id = soviet_union.10 }
             add_ideas = SOV_anti_alcohol_campaign
             unlock_decision_category_tooltip = SOV_prohibition_ussr
         }
@@ -106,7 +106,7 @@ focus_tree = {
         cost = 2
         completion_reward = {
             custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
-            country_event = { id = SOV_soviet_union.61 }
+            country_event = { id = soviet_union.61 }
         }
     }
 
@@ -312,7 +312,7 @@ focus_tree = {
         cost = 2
 
         completion_reward = {
-            country_event = { id = SOV_soviet_union.62 }
+            country_event = { id = soviet_union.62 }
         }
     }
 
@@ -587,7 +587,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_soviet_union.21 }
+            country_event = { id = soviet_union.21 }
         }
     }
 
@@ -601,7 +601,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_soviet_union.64 }
+            country_event = { id = soviet_union.64 }
         }
     }
 
@@ -689,7 +689,7 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_soviet_union.65 }
+            country_event = { id = soviet_union.65 }
         }
     }
 

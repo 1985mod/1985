@@ -4,7 +4,6 @@ country_event = {
 	id = norway.1 ##  Выборы 1985 года ##
 	title = norway.1.t
 	desc = norway.1.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 
@@ -75,7 +74,6 @@ country_event = {
 	id = norway.2 ##  Выборы 1989 года ##
 	title = norway.2.t
 	desc = norway.2.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 

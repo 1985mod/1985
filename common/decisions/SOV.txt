@@ -793,7 +793,7 @@ SOV_world_war_three = {
 		cost = 15
 
 		remove_effect = {
-			USA = { country_event = { id = SOV_soviet_union.75 hours = 12 } }
+			USA = { country_event = { id = soviet_union.75 hours = 12 } }
 		}
 	}
 }

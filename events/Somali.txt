@@ -93,7 +93,7 @@ country_event = {
     }
 
     option = {
-        name = somalia.1.a
+        name = somalia.2.a
         269 = {
             create_unit = { 
                 division = "name = \"2. active bayonets\" division_template = \"active bayonets\" start_experience_factor = 0.4" 

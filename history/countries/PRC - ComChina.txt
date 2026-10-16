@@ -108,7 +108,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	free_trade
 	limited_conscription
 	partial_economic_mobilisation
 }

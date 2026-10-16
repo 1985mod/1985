@@ -15,7 +15,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_fragile_alliance
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_GER_alliance_with_the_ussr
         x = 10
         y = 0
         cost = 2
@@ -27,7 +27,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_maintain_unity_in_the_new_republics
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_AFG_integrate_tajik_and_uzbek_republics
 		relative_position_id = SOV_fragile_alliance
 		prerequisite = { focus = SOV_fragile_alliance }
         x = 0
@@ -59,7 +59,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_cooperation_with_the_republics
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_CHL_union_of_hispanic_republics
 		relative_position_id = SOV_maintain_unity_in_the_new_republics
 		prerequisite = { focus = SOV_maintain_unity_in_the_new_republics }
         x = -2
@@ -70,7 +70,7 @@ focus_tree = {
                  limit = {
                     is_puppet_of = SOV
                 }
-                country_event = { id = SOV_soviet_union.66 hours = 3 }
+                country_event = { id = soviet_union.66 hours = 3 }
                 add_autonomy_ratio = {
                     value = 0.1
                     localization = SOV_cooperation_with_the_republics
@@ -81,7 +81,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_visa_free_regime_on_the_borders_with_the_republics
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_PHI_open_borders
 		relative_position_id = SOV_maintain_unity_in_the_new_republics
 		prerequisite = { focus = SOV_maintain_unity_in_the_new_republics }
         x = 2
@@ -105,7 +105,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_request_money_for_the_union_budget
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_RAJ_institutional_money_laundering
 		relative_position_id = SOV_maintain_unity_in_the_new_republics
 		prerequisite = { focus = SOV_cooperation_with_the_republics }
 		prerequisite = { focus = SOV_visa_free_regime_on_the_borders_with_the_republics }
@@ -113,6 +113,11 @@ focus_tree = {
         y = 2
         cost = 5
         completion_reward = {
+			add_to_variable = {
+				var = treasury
+				value = 10
+				tooltip = add_10_billion_to_treasury_tt
+			}	
 			custom_effect_tooltip = discontent_among_the_republics_will_increase_by_1
 			add_to_variable = {
 				var = SOV.discontent_of_the_republics
@@ -123,7 +128,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_allow_the_national_guard
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_chi_army_reform
 		relative_position_id = SOV_request_money_for_the_union_budget
 		prerequisite = { focus = SOV_request_money_for_the_union_budget }
         x = -2
@@ -134,14 +139,14 @@ focus_tree = {
                  limit = {
                     is_puppet_of = SOV
                 }
-                country_event = { id = SOV_soviet_union.69 }               
+                country_event = { id = soviet_union.69 }               
             }
         }
     }
 
     focus = { 
         id = SOV_reduce_military_spending
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
 		relative_position_id = SOV_request_money_for_the_union_budget
 		prerequisite = { focus = SOV_request_money_for_the_union_budget }
         x = 2
@@ -166,7 +171,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_perestroika_continues
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_generic_social_democracy
 		relative_position_id = SOV_request_money_for_the_union_budget
 		prerequisite = { focus = SOV_request_money_for_the_union_budget }
         x = 0
@@ -184,46 +189,127 @@ focus_tree = {
 
     focus = { 
         id = SOV_cooperation_with_america_and_europe
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_generic_american_investments
 		relative_position_id = SOV_perestroika_continues
 		prerequisite = { focus = SOV_perestroika_continues }
         x = 0
         y = 1
         cost = 5
         completion_reward = {
-
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}    
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			WGR = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			} 
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = small_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			} 
         }
     }
 
     focus = { 
         id = SOV_ask_the_us_for_humanitarian_aid
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_generic_american_investments
 		relative_position_id = SOV_cooperation_with_america_and_europe
 		prerequisite = { focus = SOV_cooperation_with_america_and_europe }
         x = -2
         y = 1
         cost = 5
         completion_reward = {
-
+            add_political_power = 25
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}    
         }
     }
 
     focus = { 
         id = SOV_asking_for_loans_from_europe
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_GER_european_confederation
 		relative_position_id = SOV_cooperation_with_america_and_europe
 		prerequisite = { focus = SOV_cooperation_with_america_and_europe }
         x = 2
         y = 1
         cost = 5
         completion_reward = {
-
+            add_to_variable = {
+				var = treasury
+				value = 10
+				tooltip = add_10_billion_to_treasury_tt
+			}	
+			WGR = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			} 
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = small_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			} 
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = small_increase
+				}
+			}
+			ITA = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
         }
     }
 
     focus = { 
         id = SOV_peacekeeping_contingent_of_the_uss
-        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        icon = GFX_focus_generic_world_peace
 		relative_position_id = SOV_cooperation_with_america_and_europe
 		prerequisite = { focus = SOV_ask_the_us_for_humanitarian_aid }
 		prerequisite = { focus = SOV_asking_for_loans_from_europe }

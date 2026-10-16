@@ -628,6 +628,7 @@ focus_tree = {
 
         completion_reward = {
 			load_focus_tree = WGR_part_four
+			mark_focus_tree_layout_dirty = yes
 		}
 
 	}
@@ -700,7 +701,8 @@ focus_tree = {
 		y = 1
 
         completion_reward = {
-			add_political_power = 25
+			add_manpower = 10000
+			army_experience = 10
 		}
 	}
 
@@ -714,7 +716,8 @@ focus_tree = {
 		y = 1
 
         completion_reward = {
-			add_political_power = 25
+			add_manpower = 50000
+			add_stability = -0.05
 		}
 	}
 
@@ -778,7 +781,8 @@ focus_tree = {
 		y = 1
 
         completion_reward = {
-			add_political_power = 25
+			add_political_power = 50
+			add_war_support = 0.1
 		}
 	}
 
@@ -792,7 +796,17 @@ focus_tree = {
 		y = 1
 
         completion_reward = {
-			add_political_power = 25
+			DDR = {
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.03
+				}
+				add_stability = 0.05
+			}	
 		}
 	}
 
@@ -806,6 +820,7 @@ focus_tree = {
 		y = 1
 
         completion_reward = {
+			add_war_support = 0.03
 			send_embargo = DDR
 		}
 	}
@@ -821,11 +836,16 @@ focus_tree = {
 		x = 0
 		y = 2
 
+		will_lead_to_war_with = DDR
+
         completion_reward = {
+			add_threat = 5
 			declare_war_on = {
 				target = DDR
 				type = annex_everything
 			}
+			load_focus_tree = WGR_part_four
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 

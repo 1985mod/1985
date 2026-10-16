@@ -15,7 +15,7 @@
 
     focus = { 
         id = SOV_law_on_cooperation
-        icon = GFX_NONE
+        icon = GFX_focus_FIN_finnish_federation_of_trade_unions
         x = 10
         y = 0
         cost = 7.2
@@ -52,20 +52,20 @@
 
     focus = { 
         id = SOV_xix_all_union_conference_of_the_cpsu
-        icon = GFX_
+        icon = GFX_focus_SOV_the_path_of_marxism_leninism
         relative_position_id = SOV_law_on_cooperation
         prerequisite = { focus = SOV_law_on_cooperation }
         x = 0
         y = 1
         cost = 2.9
 		completion_reward = {
-            country_event = { id = SOV_soviet_union.24 }
+            country_event = { id = soviet_union.24 }
 		}
 	}
 
     focus = { 
         id = SOV_withdrawal_of_soviet_troops_from_afghanistan
-        icon = GFX_NONE
+        icon = GFX_focus_PER_communist_afghanistan_intervention
         x = 2
         y = 1
         relative_position_id = SOV_xix_all_union_conference_of_the_cpsu
@@ -86,20 +86,20 @@
 
     focus = { 
         id = SOV_parade_of_sovereignties
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_found_the_warsaw_pact
         x = 0
         y = 1
         relative_position_id = SOV_withdrawal_of_soviet_troops_from_afghanistan
         prerequisite = { focus = SOV_withdrawal_of_soviet_troops_from_afghanistan }
         cost = 7.2
         completion_reward = {
-            country_event = { id = SOV_soviet_union.12 }
+            country_event = { id = soviet_union.12 }
         }
     }
 
     focus = { 
         id = SOV_repeal_of_article_11_1
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_the_last_purge
         x = 2
         y = 1
         relative_position_id = SOV_withdrawal_of_soviet_troops_from_afghanistan
@@ -112,7 +112,7 @@
 
     focus = { 
         id = SOV_visit_to_china
-        icon = GFX_NONE
+        icon = GFX_focus_chi_one_china_policy
         x = 1
         y = 2
         relative_position_id = SOV_withdrawal_of_soviet_troops_from_afghanistan
@@ -120,13 +120,13 @@
         prerequisite = { focus = SOV_parade_of_sovereignties }
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_soviet_union.25 }
+            country_event = { id = soviet_union.25 }
         }
     }
     
     focus = { 
         id = SOV_interregional_deputy_roup
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_third_rome
         x = -2
         y = 1
         relative_position_id = SOV_xix_all_union_conference_of_the_cpsu
@@ -139,20 +139,20 @@
     
     focus = { 
         id = SOV_elections_of_peoples_deputies_of_the_ussr
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_socialism_in_one_country
         x = 0
         y = 1
         relative_position_id = SOV_interregional_deputy_roup
         prerequisite = { focus = SOV_interregional_deputy_roup }
         cost = 10
         completion_reward = {
-            country_event = { id = SOV_soviet_union.26 }
+            country_event = { id = soviet_union.26 }
         }
     }
 
     focus = { 
         id = SOV_law_on_the_press
-        icon = GFX_NONE
+        icon = GFX_focus_generic_printing_press
         x = -2
         y = 1
         relative_position_id = SOV_interregional_deputy_roup
@@ -165,7 +165,7 @@
 
     focus = { 
         id = SOV_carry_out_constitutional_reform
-        icon = GFX_NONE
+        icon = GFX_focus_SWE_socialist_reforms
         x = -1
         y = 2
         relative_position_id = SOV_interregional_deputy_roup
@@ -179,7 +179,7 @@
 
     focus = { 
         id = SOV_the_election_of_gorbachev_as_president_of_the_ussr
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_the_supreme_soviet
         x = 0
         y = 4
         relative_position_id = SOV_xix_all_union_conference_of_the_cpsu
@@ -191,13 +191,13 @@
             date > 1990.2.25
         }
         completion_reward = {
-            country_event = { id = SOV_soviet_union.11 }
+            country_event = { id = soviet_union.11 }
         }
     }
 
     focus = { 
         id = SOV_iii_congress_of_peoples_deputies
-        icon = GFX_NONE
+        icon = GFX_focus_generic_soviet_politics
         x = 0
         y = 1
         relative_position_id = SOV_the_election_of_gorbachev_as_president_of_the_ussr
@@ -205,13 +205,13 @@
         allow_branch = {has_country_flag = SOV_iii_congress_of_peoples_deputies}
         cost = 3
         completion_reward = {
-            country_event = { id = SOV_soviet_union.27 }
+            country_event = { id = soviet_union.27 }
         }
     }
 
     focus = { 
         id = SOV_declaration_of_independence_of_the_rsfsr
-        icon = GFX_NONE
+        icon = GFX_goal_generic_alliance
         x = 0
         y = 1
         relative_position_id = SOV_iii_congress_of_peoples_deputies
@@ -220,13 +220,13 @@
         cost = 5
         completion_reward = {
             set_country_flag = independence_of_the_rsfsr
-            country_event = { id = SOV_soviet_union.13 }
+            country_event = { id = soviet_union.13 }
         }
     }
 
     focus = { 
         id = SOV_transition_to_a_market_economy
-        icon = GFX_NONE
+        icon = GFX_focus_RAJ_issue_bonds_on_the_stock_market
         x = -2
         y = 1
         relative_position_id = SOV_iii_congress_of_peoples_deputies
@@ -266,7 +266,7 @@
 
     focus = { 
         id = SOV_economic_blockade_of_lithuania
-        icon = GFX_NONE
+        icon = GFX_focus_generic_attack_baltics
         x = 2
         y = 1
         relative_position_id = SOV_iii_congress_of_peoples_deputies
@@ -292,7 +292,7 @@
 
     focus = { 
         id = SOV_xxviii_congress_of_the_cpsu
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_the_supreme_soviet
         relative_position_id = SOV_economic_blockade_of_lithuania
         prerequisite = { focus = SOV_economic_blockade_of_lithuania}
         prerequisite = { focus = SOV_declaration_of_independence_of_the_rsfsr}
@@ -302,13 +302,13 @@
         y = 1
         cost = 3
         completion_reward = {
-            country_event = { id = SOV_soviet_union.28 }
+            country_event = { id = soviet_union.28 }
         }
     }
 
     focus = { 
         id = SOV_lift_the_blockade_of_lithuania
-        icon = GFX_NONE
+        icon = GFX_focus_spr_class_war
         relative_position_id = SOV_xxviii_congress_of_the_cpsu
         prerequisite = { focus = SOV_xxviii_congress_of_the_cpsu }
         mutually_exclusive = { focus = SOV_continue_the_blockade_of_the_unrecognized_republic }
@@ -322,7 +322,7 @@
 
     focus = { 
         id = SOV_continue_the_blockade_of_the_unrecognized_republic
-        icon = GFX_NONE
+        icon = GFX_goal_generic_major_war
         relative_position_id = SOV_xxviii_congress_of_the_cpsu
         prerequisite = { focus = SOV_xxviii_congress_of_the_cpsu}
         mutually_exclusive = { focus = SOV_lift_the_blockade_of_lithuania }
@@ -347,7 +347,7 @@
 
     focus = { 
         id = SOV_decree_restoration
-        icon = GFX_NONE
+        icon = GFX_focus_hol_war_on_pacifism
         relative_position_id = SOV_xxviii_congress_of_the_cpsu
         prerequisite = { focus = SOV_lift_the_blockade_of_lithuania focus = SOV_continue_the_blockade_of_the_unrecognized_republic }
         x = 0
@@ -364,7 +364,7 @@
 
     focus = { 
         id = SOV_something_needs_to_be_done
-        icon = GFX_NONE
+        icon = GFX_focus_PRC_revolutionary_war_of_the_masses
         relative_position_id = SOV_decree_restoration
         prerequisite = { focus = SOV_decree_restoration }
         x = 0
@@ -382,20 +382,20 @@
 
     focus = { 
         id = SOV_plenum_of_the_central_committee_of_the_cpsu
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_stalins_cult_of_personality
         relative_position_id = SOV_something_needs_to_be_done
         prerequisite = { focus = SOV_something_needs_to_be_done }
         x = 0
         y = 1
         cost = 4.4
         completion_reward = {
-            country_event = { id = SOV_soviet_union.29 }
+            country_event = { id = soviet_union.29 }
         }
     }
 
     focus = { 
         id = SOV_criticize_the_left
-        icon = GFX_NONE
+        icon = GFX_focus_generic_democratic_europe
         relative_position_id = SOV_plenum_of_the_central_committee_of_the_cpsu
         prerequisite = { focus = SOV_plenum_of_the_central_committee_of_the_cpsu }
         x = -2
@@ -416,7 +416,7 @@
 
     focus = { 
         id = SOV_turn_to_the_conservatives
-        icon = GFX_NONE
+        icon = GFX_focus_generic_communist
         relative_position_id = SOV_plenum_of_the_central_committee_of_the_cpsu
         prerequisite = { focus = SOV_plenum_of_the_central_committee_of_the_cpsu }
         x = 2
@@ -437,45 +437,46 @@
 
     focus = { 
         id = SOV_change_the_deck
-        icon = GFX_NONE
+        icon = GFX_goal_generic_soviet_construction
         relative_position_id = SOV_plenum_of_the_central_committee_of_the_cpsu
         prerequisite = { focus = SOV_criticize_the_left focus = SOV_turn_to_the_conservatives }
         x = 0
         y = 2
         cost = 5
         completion_reward = {
+            add_political_power = 50
         }
     }
 
     focus = { 
         id = SOV_visit_to_wgr
-        icon = GFX_NONE
+        icon = GFX_focus_generic_befriend_germany_democratic
         relative_position_id = SOV_change_the_deck
         prerequisite = { focus = SOV_change_the_deck }
         x = -1
         y = 1
         cost = 1
         completion_reward = {
-            country_event = { id = SOV_soviet_union.30 }
+            country_event = { id = soviet_union.30 }
         }
     }
 
     focus = { 
         id = SOV_visit_to_paris
-        icon = GFX_NONE
+        icon = GFX_focus_chi_reach_out_to_france
         relative_position_id = SOV_change_the_deck
         prerequisite = { focus = SOV_change_the_deck }
         x = 1
         y = 1
         cost = 1
         completion_reward = {
-            country_event = { id = SOV_soviet_union.31 }
+            country_event = { id = soviet_union.31 }
         }
     }
 
     focus = { 
         id = SOV_IV_congress_of_peoples_deputies
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_international_union_of_soviet_republics
         relative_position_id = SOV_change_the_deck
         prerequisite = { focus = SOV_visit_to_wgr }
         prerequisite = { focus = SOV_visit_to_paris }
@@ -484,7 +485,7 @@
         cost = 3
 
         completion_reward = {
-            country_event = { id = SOV_soviet_union.32 }
+            country_event = { id = soviet_union.32 }
             set_country_flag = the_position_of_vice_president_was_introduced
             load_focus_tree = soviet_gorbachev_focus_part_three
         }
@@ -492,20 +493,20 @@
 
     focus = { 
         id = SOV_affairs_of_the_republics
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_international_union_of_soviet_republics
         relative_position_id = SOV_xix_all_union_conference_of_the_cpsu
         allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
         x = 7
         y = 0
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_soviet_union.59 }
+            country_event = { id = soviet_union.59 }
         }
     }
 
     focus = { 
         id = SOV_relaxation_of_supervision_over_the_baltics
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_baltic_security
         relative_position_id = SOV_affairs_of_the_republics
         prerequisite = { focus = SOV_affairs_of_the_republics}
         allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
@@ -518,7 +519,7 @@
 
     focus = { 
         id = SOV_karabakh_conflict
-        icon = GFX_NONE
+        icon = GFX_focus_generic_treaty
         relative_position_id = SOV_affairs_of_the_republics
         prerequisite = { focus = SOV_affairs_of_the_republics}
         allow_branch = {has_country_flag = SOV_affairs_of_the_republics}
@@ -526,13 +527,13 @@
         y = 1
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_soviet_union.58 }
+            country_event = { id = soviet_union.58 }
         }
     }
 
     focus = { 
         id = SOV_refusal_to_support_regimes_in_eastern_europe
-        icon = GFX_NONE
+        icon = GFX_goal_generic_position_armies
         relative_position_id = SOV_karabakh_conflict
         prerequisite = { focus = SOV_karabakh_conflict}
         prerequisite = { focus = SOV_relaxation_of_supervision_over_the_baltics}
@@ -553,7 +554,7 @@
 
     focus = { 
         id = SOV_consent_to_the_unification_of_germany
-        icon = GFX_NONE
+        icon = GFX_focus_generic_befriend_germany_democratic
         relative_position_id = SOV_refusal_to_support_regimes_in_eastern_europe
         prerequisite = { focus = SOV_refusal_to_support_regimes_in_eastern_europe }
         allow_branch = {has_country_flag = SOV_affairs_of_the_republics}

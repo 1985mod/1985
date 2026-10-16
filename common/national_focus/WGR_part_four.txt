@@ -15,6 +15,10 @@ focus_tree = {
 		x = 10
 		y = 0
 
+		available = {
+			NOT = { has_war_with = DDR }
+		}
+
         completion_reward = {
 			country_event = { id = wgr.16 }
 		}

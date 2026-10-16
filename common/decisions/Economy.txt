@@ -1,4 +1,4 @@
-Economy = {
+economy_category = {
 
 	ai_increase_pop_rate = {
 		allowed = { always = yes }

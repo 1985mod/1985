@@ -197,7 +197,7 @@ country_event = {
     }
 
     option = { ### Отказаться от поддержки
-        name = plaza_accord.7.a
+        name = plaza_accord.7.b
 		ai_chance = {
 			base = 95
 		}

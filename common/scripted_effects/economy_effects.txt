@@ -606,7 +606,7 @@ tax_effect = {
     multiply_variable = { var = debt_service_cost value = 7 }
 
     divide_variable = { var = debt_service_cost value = 365 }
-    divide_variable = { var = debt_service_cost value = 50 }
+    divide_variable = { var = debt_service_cost value = 10 }
 
     if = {
         limit = { check_variable = { debt_service_cost < 0 } }

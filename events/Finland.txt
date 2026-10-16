@@ -4,7 +4,6 @@ country_event = {
 	id = finland.1 ##  Выборы 1988 года ##
 	title = finland.1.t
 	desc = finland.1.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 
