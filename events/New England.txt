@@ -4,7 +4,6 @@ country_event = {
 	id = new_england.1 ##  Выборы в Новой Англии (Демократы)  ##
 	title = new_england.1.t
 	desc = new_england.1.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 
@@ -47,7 +46,6 @@ country_event = {
 	id = new_england.2 ##  Выборы в Новой Англии (Республиканцы)  ##
 	title = new_england.2.t
 	desc = new_england.2.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 

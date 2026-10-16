@@ -4,7 +4,6 @@ country_event = {
 	id = north_korea.1 ##  Ультиматум Северной Кореи ##
 	title = north_korea.1.t
 	desc = north_korea.1.desc
-	picture = GFX_report_dead_chernenko
 
 	trigger = {
 		tag = KOR

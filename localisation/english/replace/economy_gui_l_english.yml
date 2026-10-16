@@ -12,7 +12,7 @@
  NOMINAL_GDP:0 "[Root.nominal_gdp_display]"
  NOMINAL_GDP_more_than_1000:0 "[?nominal_gdp_divided_by_1000|2Y]T"
  NOMINAL_GDP_less_than_1000:0 "[?nominal_gdp|2Y]B"
- 
+
  GDP_PER_CAPITA:0 "[?gdp_per_capita|Y2]K"
  GDP_GROWTH_RATE:0 "[?gdp_growth_rate|+=2]%"
  INTEREST_RATE:0 "[?interest_rate]%"
@@ -26,6 +26,7 @@
  CORPORATE_INCOME:0 "$§G[?corporate_tax|.3]"
  VAT_INCOME:0 "$§G[?vat_tax|.3]"
  RESOURCE_REVENUE:0 "$§G[?resource_revenue|.3]"
+ INCOME_LABEL:0 "Income:"
  INCOME:0 "$§G[?income_budget|.3]§!"
 
  Real_GDP_Tooltip:0 "§HReal GDP§!\nThe total value of all goods and services produced by the nation, adjusted for inflation.\n\nOur economic output is directly tied to our industrial capacity. Each active §YCivilian Factory§! contributes §G$15.0B§! to the economy, while each §YMilitary Factory§! and §YNaval Dockyard§! generates §G$10.0B§! in output respectively.\n\n§HGDP Structure:§!\nCivilian Production: [?civ_of_gdp|%0]\nMilitary Industry: [?mil_of_gdp|%0]\nNaval Sector & Dockyards: [?naval_of_gdp|%0]"
@@ -47,9 +48,11 @@
  DEFENSE_EXPENDITURE:0 "$§R[?defense_expenditure|.3]§!"
  SCIENCE_EXPENDITURE:0 "$§R[?current_research_cost|.3]§!"
  DEBT_SERVICE_EXPENDITURE:0 "$§R[?debt_service_cost|.3]§!"
+ EXPENSE_LABEL:0 "Expenses:"
  EXPENSE:0 "$§R[?expense_budget|.3]§!"
 
  UNEMPLOYMENT_RATE:0 "§R[?unemployment_rate|.2]%"
+ UNEMPLOYMENT_TOOLTIP:0 "§YImpact of our current unemployment:§!\nStability: [?unemployment_stability|+=3]%\nConsumer goods factory factor: §Y[?unemployment_consumer_goods|.3]%§!"
  TARGET_UNEMPLOYMENT:0 "§H[?target_unemployment_down|.2]% - §H[?target_unemployment_up|.2]%"
 
  REAL_GDP_LABEL:0 "Real GDP"
@@ -58,7 +61,7 @@
  GDP_GROWTH_LABEL:0 "GDP Growth"
  INFLATION_LABEL:0 "Inflation"
  POPULATION_TAX_RATE_LABEL:0 "Population Tax Rate"
- VAT_RATE_LABEL:0 "Vat Rate"
+ VAT_RATE_LABEL:0 "VAT Rate"
  INTEREST_RATE_LABEL:0 "Interest Rate"
  STATE_REVENUE_LABEL:0 "State Revenue"
  POPULATION_INCOME_LABEL:0 "Population Income:"
@@ -68,6 +71,14 @@
  UNEMPLOYMENT_RATE_LABEL:0 "Unemployment Rate:"
  TARGET_UNEMPLOYMENT_LABEL:0 "Target Unemployment:"
  STATE_EXPENDITURE_LABEL:0 "State Expenditure"
+ CIVIL_ADMINISTRATION_LABEL:0 "Administration:"
+ EDUCATION_LABEL:0 "Education:"
+ WELFARE_LABEL:0 "Social Welfare:"
+ DEFENSE_LABEL:0 "[Root.defense_display]"
+ DEFENSE_LABEL_communism:0 "State Defense:"
+ DEFENSE_LABEL_capitalism:0 "National Defense:"
+ SCIENCE_LABEL:0 "Science:"
+ DEBT_SERVICE_LABEL:0 "Debt Service:"
  BALANCE_VALUE:0 "[?treasury|.2]"
  DEBT_VALUE:0 "[?current_debt|.2]"
  DEBT_TOOLTIP:0 "Debt to GDP ratio: §R[?debt_to_gdp|.2]%§!"

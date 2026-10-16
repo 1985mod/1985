@@ -108,7 +108,7 @@ focus_tree = {
         relative_position_id = DDR_xi_congress_of_the_sed
         prerequisite = { focus = DDR_xi_congress_of_the_sed }
         allow_branch = { has_country_flag = DDR_honeckers_visit_to_bonn }
-        icon = GFX_
+        icon = GFX_focus_generic_befriend_germany_democratic
         x = 0
         y = 1
         cost = 5
@@ -121,7 +121,7 @@ focus_tree = {
         id = DDR_the_fight_against_the_church
         relative_position_id = DDR_honeckers_visit_to_bonn
         prerequisite = { focus = DDR_honeckers_visit_to_bonn }
-        icon = GFX_
+        icon = GFX_focus_PHI_philippine_independent_church
         x = 1
         y = 1
         cost = 5
@@ -134,7 +134,7 @@ focus_tree = {
         id = DDR_unity_with_those_who_disagree
         relative_position_id = DDR_honeckers_visit_to_bonn
         prerequisite = { focus = DDR_honeckers_visit_to_bonn }
-        icon = GFX_
+        icon = GFX_goal_generic_national_unity
         x = -1
         y = 1
         cost = 5
@@ -148,7 +148,7 @@ focus_tree = {
         relative_position_id = DDR_unity_with_those_who_disagree
         prerequisite = { focus = DDR_unity_with_those_who_disagree }
         prerequisite = { focus = DDR_the_fight_against_the_church }
-        icon = GFX_
+        icon = GFX_focus_CHL_suppress_the_nacistas
         x = 1
         y = 1
         cost = 5
@@ -161,7 +161,7 @@ focus_tree = {
         id = DDR_tiananmen_approval
         relative_position_id = DDR_falsification_of_local_elections
         prerequisite = { focus = DDR_falsification_of_local_elections }
-        icon = GFX_
+        icon = GFX_focus_chi_one_china_policy
         x = 0
         y = 1
         cost = 10
@@ -197,7 +197,7 @@ focus_tree = {
         id = DDR_conspiracy_in_the_politburo
         relative_position_id = DDR_tiananmen_approval
         prerequisite = { focus = DDR_tiananmen_approval  }
-        icon = GFX_
+        icon = GFX_focus_generic_communist
         x = 0
         y = 1
         cost = 10
@@ -213,7 +213,7 @@ focus_tree = {
         relative_position_id = DDR_conspiracy_in_the_politburo
         prerequisite = { focus = DDR_conspiracy_in_the_politburo }
         allow_branch = { has_country_flag = DDR_honeckers_resignation }
-        icon = GFX_
+        icon = GFX_focus_generic_spur_communist_revolutions
         x = -2
         y = 1
         cost = 10
@@ -227,7 +227,7 @@ focus_tree = {
         relative_position_id = DDR_conspiracy_in_the_politburo
         prerequisite = { focus = DDR_conspiracy_in_the_politburo }
         allow_branch = { has_country_flag = DDR_honeckers_resignation }
-        icon = GFX_
+        icon = GFX_focus_generic_strike_at_democracy1
         x = 2
         y = 1
         cost = 10
@@ -240,7 +240,7 @@ focus_tree = {
         id = DDR_repeal_of_article_1_of_the_constitution
         relative_position_id = DDR_honeckers_resignation
         prerequisite = { focus = DDR_honeckers_resignation }
-        icon = GFX_
+        icon = GFX_focus_generic_strike_at_democracy2
         x = 0
         y = 1
         cost = 5
@@ -265,7 +265,7 @@ focus_tree = {
         relative_position_id = DDR_conspiracy_in_the_politburo
         prerequisite = { focus = DDR_conspiracy_in_the_politburo }
         allow_branch = { has_country_flag = DDR_honeckers_resignation }
-        icon = GFX_
+        icon = GFX_focus_generic_democratic_europe
         x = 0
         y = 1
         cost = 5
@@ -286,7 +286,7 @@ focus_tree = {
         id = DDR_order_101_do_not_shoot
         relative_position_id = DDR_milkes_sacrifice
         prerequisite = { focus = DDR_milkes_sacrifice }
-        icon = GFX_
+        icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
         x = 0
         y = 1
         cost = 10
@@ -299,7 +299,7 @@ focus_tree = {
         id = DDR_modrow_government
         relative_position_id = DDR_heading_for_the_turn
         prerequisite = { focus = DDR_heading_for_the_turn }
-        icon = GFX_
+        icon = GFX_focus_NOR_continue_nygaardsvold_government
         x = 0
         y = 1
         cost = 5
@@ -313,7 +313,7 @@ focus_tree = {
         relative_position_id = DDR_order_101_do_not_shoot
         prerequisite = { focus = DDR_repeal_of_article_1_of_the_constitution }
         prerequisite = { focus = DDR_modrow_government }
-        icon = GFX_
+        icon = GFX_focus_generic_election
         x = 0
         y = 1
         cost = 10
@@ -324,7 +324,7 @@ focus_tree = {
 
     focus = { 
         id = DDR_socialism_on_the_brink_of_bankruptcy
-        icon = GFX_
+        icon = GFX_focus_prc_agrarian_socialism
         prerequisite = { focus = DDR_new_1985 }
         allow_branch = { has_country_flag = DDR_honeckers_visit_to_bonn }
         x = 5
@@ -339,7 +339,7 @@ focus_tree = {
         id = DDR_combines
         relative_position_id = DDR_socialism_on_the_brink_of_bankruptcy
         prerequisite = { focus = DDR_socialism_on_the_brink_of_bankruptcy }
-        icon = GFX_
+        icon = GFX_focus_AFG_sugar_factory
         x = 0
         y = 1
         cost = 10
@@ -384,7 +384,7 @@ focus_tree = {
         id = DDR_microelectronics_program
         relative_position_id = DDR_combines
         prerequisite = { focus = DDR_combines }
-        icon = GFX_
+        icon = GFX_goal_tfv_generic_tech_sharing
         x = -1
         y = 1
         cost = 5
@@ -401,7 +401,7 @@ focus_tree = {
         id = DDR_intensification_through_automation
         relative_position_id = DDR_combines
         prerequisite = { focus = DDR_combines }
-        icon = GFX_
+        icon = GFX_goal_generic_construct_civ_factory
         x = 1
         y = 1
         cost = 5
@@ -435,7 +435,7 @@ focus_tree = {
         relative_position_id = DDR_microelectronics_program
         prerequisite = { focus = DDR_microelectronics_program }
         prerequisite = { focus = DDR_intensification_through_automation }
-        icon = GFX_
+        icon = GFX_focus_ITA_communist_leadership
         x = 1
         y = 1
         cost = 5
@@ -448,7 +448,7 @@ focus_tree = {
         id = DDR_shortage_of_consumer_goods
         relative_position_id = DDR_shalk_golodkovsky_committee
         prerequisite = { focus = DDR_shalk_golodkovsky_committee }
-        icon = GFX_
+        icon = GFX_goal_generic_consumer_goods
         x = 0
         y = 1
         cost = 5
@@ -460,7 +460,7 @@ focus_tree = {
         id = DDR_import_of_west_german_technology
         relative_position_id = DDR_shalk_golodkovsky_committee
         prerequisite = { focus = DDR_shalk_golodkovsky_committee }
-        icon = GFX_
+        icon = GFX_goal_generic_construction
         x = -2
         y = 1
         cost = 10
@@ -487,7 +487,7 @@ focus_tree = {
         id = DDR_monetary_union
         relative_position_id = DDR_shalk_golodkovsky_committee
         prerequisite = { focus = DDR_shalk_golodkovsky_committee }
-        icon = GFX_
+        icon = GFX_goal_generic_consumer_goods
         x = 2
         y = 1
         cost = 10
@@ -501,7 +501,7 @@ focus_tree = {
         relative_position_id = DDR_import_of_west_german_technology
         prerequisite = { focus = DDR_monetary_union }
 		prerequisite = { focus = DDR_import_of_west_german_technology }
-        icon = GFX_
+        icon = GFX_focus_POL_complete_april_constitution
         x = 2
         y = 1
         cost = 5
@@ -537,7 +537,7 @@ focus_tree = {
         relative_position_id = DDR_new_1985
         prerequisite = { focus = DDR_new_1985 }
         allow_branch = { has_country_flag = DDR_honeckers_visit_to_bonn }
-        icon = GFX_
+        icon = GFX_focus_PRC_immediate_response_to_lack_of_army
         x = 5
         y = 1
         cost = 5
@@ -550,7 +550,7 @@ focus_tree = {
         id = DDR_coalition_warfare_doctrine
         relative_position_id = DDR_national_peoples_army
         prerequisite = { focus = DDR_national_peoples_army }
-        icon = GFX_
+        icon = GFX_focus_CZE_coalition_building
         x = -1
         y = 1
         cost = 5
@@ -563,7 +563,7 @@ focus_tree = {
         id = DDR_mig_29_deliveries
         relative_position_id = DDR_national_peoples_army
         prerequisite = { focus = DDR_national_peoples_army }
-        icon = GFX_
+        icon = GFX_focus_generic_jet_planes
         x = 1
         y = 1
         cost = 5
@@ -577,7 +577,7 @@ focus_tree = {
         relative_position_id = DDR_mig_29_deliveries
         prerequisite = { focus = DDR_mig_29_deliveries }
         prerequisite = { focus = DDR_coalition_warfare_doctrine }
-        icon = GFX_
+        icon = GFX_focus_ger_great_red_menace
         x = -1
         y = 1
         cost = 10
@@ -594,7 +594,7 @@ focus_tree = {
         id = DDR_filter_system
         relative_position_id = DDR_main_directorate_a
         prerequisite = { focus = DDR_main_directorate_a }
-        icon = GFX_
+        icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
         x = -2
         y = 1
         cost = 5
@@ -607,7 +607,7 @@ focus_tree = {
         id = DDR_felix_dzerzhinsky
         relative_position_id = DDR_main_directorate_a
         prerequisite = { focus = DDR_main_directorate_a }
-        icon = GFX_
+        icon = GFX_focus_generic_communist_industry
         x = 2
         y = 1
         cost = 5
@@ -624,7 +624,7 @@ focus_tree = {
         id = DDR_operation_romeo
         relative_position_id = DDR_main_directorate_a
         prerequisite = { focus = DDR_main_directorate_a }
-        icon = GFX_
+        icon = GFX_focus_GER_legacy_of_the_spartacus_league
         x = 0
         y = 1
         cost = 5
@@ -643,7 +643,7 @@ focus_tree = {
         prerequisite = { focus = DDR_operation_romeo }
         prerequisite = { focus = DDR_filter_system }
         prerequisite = { focus = DDR_felix_dzerzhinsky }
-        icon = GFX_
+        icon = GFX_focus_GER_proletarian_dictatorship
         x = 0
         y = 1
         cost = 10
@@ -663,7 +663,7 @@ focus_tree = {
         relative_position_id = DDR_sigma_intercept
         prerequisite = { focus = DDR_sigma_intercept }
         allow_branch = { has_country_flag = DDR_t72_modernization }
-        icon = GFX_
+        icon = GFX_focus_generic_army_tanks2
         x = -1
         y = 1
         cost = 5
@@ -681,7 +681,7 @@ focus_tree = {
         relative_position_id = DDR_sigma_intercept
         prerequisite = { focus = DDR_sigma_intercept }
         allow_branch = { has_country_flag = DDR_t72_modernization }
-        icon = GFX_
+        icon = GFX_focus_generic_conspiracy
         x = 1
         y = 1
         cost = 5
@@ -699,7 +699,7 @@ focus_tree = {
         relative_position_id = DDR_industrial_espionage_in_nato
         prerequisite = { focus = DDR_t72_modernization }
         prerequisite = { focus = DDR_industrial_espionage_in_nato }
-        icon = GFX_
+        icon = GFX_focus_AFG_royal_guard
         x = -1
         y = 1
         cost = 5
@@ -746,7 +746,7 @@ focus_tree = {
         id = DDR_anti_terror_group
         relative_position_id = DDR_border_guard_troops
         prerequisite = { focus = DDR_border_guard_troops }
-        icon = GFX_
+        icon = GFX_focus_PRC_a_modern_army
         x = -1
         y = 1
         cost = 5
@@ -783,7 +783,7 @@ focus_tree = {
         id = DDR_sector_plan
         relative_position_id = DDR_border_guard_troops
         prerequisite = { focus = DDR_border_guard_troops }
-        icon = GFX_
+        icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
         x = 1
         y = 1
         cost = 5
@@ -801,7 +801,7 @@ focus_tree = {
         relative_position_id = DDR_anti_terror_group
         prerequisite = { focus = DDR_anti_terror_group }
         prerequisite = { focus = DDR_sector_plan }
-        icon = GFX_
+        icon = GFX_goal_generic_army_doctrines
         x = 1
         y = 1
         cost = 5

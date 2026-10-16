@@ -191,25 +191,6 @@ characters = {
 		}
 	}
 
-	SOV_Mikhail_Gorbachev_SSG = {
-		name = SOV_Mikhail_Gorbachev_SSG
-		portraits = {
-			civilian = {
-				large = GFX_Portrait_Mikhail_Gorbachev_uss
-			}
-			army = {
-				large = GFX_Portrait_Mikhail_Gorbachev_uss
-				small = GFX_Portrait_Mikhail_Gorbachev_SSG_small
-			}
-		}
-		country_leader = {
-			ideology = liberal_social_democracy
-			traits = {}
-			expire = "2022.05.28.1"
-			id = -1
-		}
-	}
-
 	SOV_nursultan_nazarbayev = {
 		name = SOV_nursultan_nazarbayev
 		portraits = {

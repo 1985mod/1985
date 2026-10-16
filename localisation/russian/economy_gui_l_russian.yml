@@ -26,6 +26,7 @@
  CORPORATE_INCOME:0 "          $§G[?corporate_tax|.3]"
  VAT_INCOME:0 "          $§G[?vat_tax|.3]"
  RESOURCE_REVENUE:0 "          $§G[?resource_revenue|.3]"
+ INCOME_LABEL:0 "Доходы:"
  INCOME:0 "$§G[?income_budget|.3]§!"
 
  Real_GDP_Tooltip:0 "§HРеальный ВВП§!\nОбщая стоимость всех товаров и услуг, произведенных в стране, скорректированная с учетом инфляции.\n\nНаш экономический выпуск напрямую привязан к промышленным мощностям. Каждая активная §Yгражданская фабрика§! приносит в экономику §G15.0 млрд $§!, в то время как каждый §Yвоенный завод§! и §Yверфь§! генерируют по §G10.0 млрд $§! соответственно.\n\n§HСтруктура ВВП:§!\nГражданское производство: [?civ_of_gdp|%0]\nВоенная промышленность: [?mil_of_gdp|%0]\nМорской сектор и верфи: [?naval_of_gdp|%0]"
@@ -47,6 +48,7 @@
  DEFENSE_EXPENDITURE:0 "$§R[?defense_expenditure|.3]§!"
  SCIENCE_EXPENDITURE:0 "$§R[?current_research_cost|.3]§!"
  DEBT_SERVICE_EXPENDITURE:0 "$§R[?debt_service_cost|.3]§!"
+ EXPENSE_LABEL:0 "Расходы:"
  EXPENSE:0 "$§R[?expense_budget|.3]§!"
 
  UNEMPLOYMENT_RATE:0 "§R[?unemployment_rate|.2]%"

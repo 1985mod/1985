@@ -4,7 +4,6 @@ country_event = {
 	id = turkey.1 
 	title = turkey.1.t
 	desc = turkey.1.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 

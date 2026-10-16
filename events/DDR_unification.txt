@@ -19,7 +19,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		news_event = { id = news.28 hours = 24 }
+		news_event = { id = news.28 hours = 12 }
 		set_global_flag = GER_unification1
 		WGR = {
 			annex_country = {
@@ -89,7 +89,6 @@ country_event = {
 			set_global_flag = GER_unification2
 		}
 		WGR = {
-			complete_national_focus = WGR_division_of_the_people
 			complete_national_focus = WGR_accept_separation
 		}
 	}
@@ -102,7 +101,6 @@ country_event = {
 		set_global_flag = GER_unification2
 		WGR = {
 			complete_national_focus = WGR_division_of_the_people
-			complete_national_focus = WGR_other_association
 		}
 		WGR = {
 			add_state_core = 60

@@ -482,7 +482,7 @@ news_event = {
 }
 
 news_event = {
-	id = news.21 ## Инцидент на площади тяньаньмень ##
+	id = news.21 ## Инцидент на площади Тяньаньмэнь ##
 	title = news.21.t
 	desc = news.21.desc
 	picture = GFX_news_tiananmen_square_protests

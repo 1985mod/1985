@@ -655,7 +655,7 @@ country_event = {
 	fire_only_once = yes
 
     option = {
-        name = russia.24.a
+        name = russia.25.a
 		add_war_support = 0.05
 		add_stability = 0.05
 	}
@@ -670,7 +670,7 @@ country_event = {
 	is_triggered_only = yes
 
     option = {
-        name = russia.24.a
+        name = russia.26.a
 		add_war_support = 0.05
 		add_stability = -0.03
 	}
@@ -700,9 +700,10 @@ country_event = {
     }
 
     option = {
-        name = russia.24.a
-		add_war_support = 0.1
-		add_stability = -0.05
+        name = russia.27.a
+		add_political_power = -25
+		add_war_support = 0.05
+		add_stability = -0.1
 	}
 }
 

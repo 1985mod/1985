@@ -47,7 +47,7 @@ focus_tree = {
         prerequisite = { focus = SOV_acceleration_course }
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_soviet_union.9 }
+            country_event = { id = soviet_union.9 }
         }
     }
 
@@ -95,7 +95,7 @@ focus_tree = {
 		}
 
         completion_reward = {
-            country_event = { id = SOV_soviet_union.10 }
+            country_event = { id = soviet_union.10 }
             add_ideas = SOV_anti_alcohol_campaign
             unlock_decision_category_tooltip = SOV_prohibition_ussr
             hidden_effect = {
@@ -157,7 +157,7 @@ focus_tree = {
         prerequisite = { focus = SOV_housing_2000_program }
         cost = 5
         completion_reward = {
-            country_event = { id = SOV_soviet_union.7 }
+            country_event = { id = soviet_union.7 }
             add_threat  = -0.05
             USA = {
 	            add_opinion_modifier = {
@@ -200,7 +200,7 @@ focus_tree = {
         cost = 5
 
         completion_reward = { #event#
-            country_event = { id = SOV_soviet_union.14 }
+            country_event = { id = soviet_union.14 }
         }
     }
 
@@ -248,7 +248,7 @@ focus_tree = {
         cost = 5
 
         completion_reward = { #event#
-            country_event = { id = SOV_soviet_union.15 }
+            country_event = { id = soviet_union.15 }
         }
     }
 
@@ -344,7 +344,7 @@ focus_tree = {
         cost = 5
 
 		select_effect = {
-			country_event = { id = sov_soviet_union.47 days = 15 } 
+			country_event = { id = soviet_union.47 days = 15 } 
 		}
 
         completion_reward = {
@@ -389,7 +389,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_visit_czechoslovakia #event#
-        icon = GFX_NONE
+        icon = GFX_focus_generic_befriend_czechoslovakia
         x = 0
         y = 1
         relative_position_id = SOV_release_of_dissidents
@@ -398,13 +398,13 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-            country_event = { id = SOV_soviet_union.20 }
+            country_event = { id = soviet_union.20 }
         }
     }
 
     focus = { 
         id = SOV_politics_of_glasnost 
-        icon = GFX_NONE
+        icon = GFX_focus_eng_concessions_to_the_trade_unions
         relative_position_id = SOV_visit_czechoslovakia
         prerequisite = { focus = SOV_visit_czechoslovakia }
         x = 0
@@ -424,13 +424,13 @@ focus_tree = {
         id = SOV_election_of_yazov #event#
         relative_position_id = SOV_politics_of_glasnost
         prerequisite = { focus = SOV_politics_of_glasnost }
-        icon = GFX_NONE
+        icon = GFX_focus_SOV_organization_centralization_discipline
         x = 0
         y = 1
         cost = 5
 
         completion_reward = {
-            country_event = { id = SOV_soviet_union.21 }
+            country_event = { id = soviet_union.21 }
         }
     }
 
@@ -438,7 +438,7 @@ focus_tree = {
         id = SOV_law_on_state_enterprise
         relative_position_id = SOV_election_of_yazov
         prerequisite = { focus = SOV_election_of_yazov }
-        icon = GFX_NONE
+        icon = GFX_goal_generic_national_unity
         x = -2
         y = 1
         cost = 10
@@ -452,7 +452,7 @@ focus_tree = {
         id = SOV_first_joint_ventures
         relative_position_id = SOV_election_of_yazov
         prerequisite = { focus = SOV_election_of_yazov }
-        icon = GFX_NONE
+        icon = GFX_goal_generic_construct_civ_factory
         x = 2
         y = 1
         cost = 10
@@ -478,7 +478,7 @@ focus_tree = {
 
     focus = { 
         id = SOV_destruction_of_missiles_in_europe
-        icon = GFX_
+        icon = GFX_focus_JAP_radio_guided_missiles
         x = 0
         y = 2
         cost = 7.2

@@ -40,7 +40,7 @@ country_event = {
 
 	trigger = {
 		tag = IRE
-		date > 1988.10.28
+		date > 1992.10.28
 	}
 
 	fire_only_once = yes

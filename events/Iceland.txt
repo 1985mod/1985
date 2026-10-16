@@ -57,7 +57,7 @@ country_event = {
 		hidden_effect = {
 			retire_ideology_leader = conservatism
 			promote_character = {
-				character = ICE_steingrímur_hermannsson
+				character = ICE_steingrimur_hermannsson
 				ideology = conservatism
 			}
 			set_politics = {
@@ -93,7 +93,7 @@ country_event = {
 		hidden_effect = {
 			retire_ideology_leader = conservatism
 			promote_character = {
-				character = ICE_Davíð_Oddsson
+				character = ICE_Davio_Oddsson
 				ideology = conservatism
 			}
 			set_politics = {

@@ -4,7 +4,6 @@ country_event = {
 	id = britain.1 ##  Выборы 1987 года ##
 	title = britain.1.t
 	desc = britain.1.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 
@@ -99,7 +98,6 @@ country_event = {
 	id = britain.2 ##  Выборы 1992 года ##
 	title = britain.2.t
 	desc = britain.2.desc
-	picture = GFX_report_dead_chernenko
 
 	is_triggered_only = yes
 

@@ -10,7 +10,7 @@ country_event = {
 
 	option = {
 		name = sudan.1.a
-		retire_country_leader = SUD_Jafar_Mohammed_Nimeiri
+		retire_character = SUD_Jafar_Mohammed_Nimeiri
 		add_stability = -0.1
 	}
 }

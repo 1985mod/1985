@@ -4,7 +4,6 @@ country_event = {
 	id = soviet_republics.1 ##  перекат в консерватизм ##
 	title = soviet_republics.1.t
 	desc = soviet_republics.1.desc
-	picture = GFX_report_dead_chernenko
 
     is_triggered_only = yes
 

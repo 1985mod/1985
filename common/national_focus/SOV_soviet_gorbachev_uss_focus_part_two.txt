@@ -2,7 +2,7 @@ focus_tree = {
     id = SOV_soviet_gorbachev_uss_focus_part_two
 
     country = {
-        factor = 0
+        factor = 1
         modifier = {
             add = 5
             tag = SOV
@@ -223,6 +223,10 @@ focus_tree = {
         y = 1
         cost = 5
         
+        available = {
+            always = no
+        }
+
         completion_reward = {
 			add_popularity = {
 				ideology = conservatism
@@ -289,7 +293,19 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-            
+            add_political_power = 25
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}           
         }
     }
 
@@ -344,6 +360,10 @@ focus_tree = {
         y = 1
         cost = 5
         
+        available = {
+            always = no
+        }
+
         completion_reward = {
 			add_popularity = {
 				ideology = socialism

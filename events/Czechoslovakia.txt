@@ -88,7 +88,6 @@ country_event = {
         SOV = {
             end_puppet = CZE
         }
-        leave_faction = yes
     }
 }
 

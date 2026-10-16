@@ -329,6 +329,75 @@ on_actions = {
             if = {
                 limit = {
                     FROM = {
+                        tag = CRO
+                    }
+                    ROOT = {
+                        tag = YUG
+                    }
+                }
+
+                CRO = {
+                    white_peace = YUG
+                    transfer_state = 804
+                    add_state_core = 804
+                }
+                YUG = {
+			        delete_unit = {}
+                }
+                if = {
+                    limit = {
+                        NOT = { country_exists = SER }
+                    }
+                    SER = {
+                        transfer_state = 108
+                        transfer_state = 107
+                        transfer_state = 45
+                        transfer_state = 764
+                    }
+                }
+                if = {
+                    limit = {
+                        NOT = { country_exists = BOS }
+                    }
+                    BOS = {
+                        transfer_state = 104
+                        transfer_state = 1052
+                        transfer_state = 1053
+                        transfer_state = 1048
+                    }
+                    CRO = {
+                        puppet = BOS
+                    }
+                }
+                if = {
+                    limit = {
+                        NOT = { country_exists = KOS }
+                    }
+                    release = KOS
+                }
+                if = {
+                    limit = {
+                        NOT = { country_exists = MAC }
+                    }
+                    release = MAC
+                }
+                if = {
+                    limit = {
+                        NOT = { country_exists = MNT }
+                    }
+                    release = MNT
+                }
+                if = {
+                    limit = {
+                        is_ai = no
+                    }
+                    SER = { change_tag_from = YUG }
+                }
+            }
+
+            if = {
+                limit = {
+                    FROM = {
                         tag = YUG
                     }
                     ROOT = {

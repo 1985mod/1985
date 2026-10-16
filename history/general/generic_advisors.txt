@@ -232,7 +232,6 @@ every_possible_country = {
 # Military advisors
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = USA tag = SOV tag = RUS tag = DDR original_tag = WGR } }
 		is_dynamic_country = no
 	}
 	# generic political advisors
