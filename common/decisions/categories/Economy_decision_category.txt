@@ -10,3 +10,16 @@ economy_category = {
 		always = yes
 	}
 }
+
+economy_policy_cat = {
+	allowed = {
+		always = yes
+	}
+
+	icon = generic_political_actions
+	priority = 100 
+
+	visible = {
+		always = yes
+	}
+}

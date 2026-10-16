@@ -437,4 +437,9 @@ spriteTypes = {
         name = "GFX_icon_minus"
         texturefile = "gfx/interface/icon_minus.dds"
     }
+
+    spriteType = {
+        name = "GFX_money_balance"
+        texturefile = "gfx/texticons/money_balance.dds"
+    }
 }

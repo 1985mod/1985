@@ -1,0 +1,10 @@
+﻿l_russian:
+ decision_cost_MB_20: "£money_balance  §Y20B§!"
+ decision_cost_MB_20_blocked: "£money_balance  §R20B§!"
+ decision_cost_MB_20_tooltip: "Стоимость принятия решения: £money_balance  §Y20B§!"
+ decision_cost_MB_25: "£money_balance  §Y25B§!"
+ decision_cost_MB_25_blocked: "£money_balance  §R25B§!"
+ decision_cost_MB_25_tooltip: "Стоимость принятия решения: £money_balance  §Y25B§!"
+ decision_cost_MB_35: "£money_balance  §Y35B§!"
+ decision_cost_MB_35_blocked: "£money_balance  §R35B§!"
+ decision_cost_MB_35_tooltip: "Стоимость принятия решения: £money_balance  §Y35B§!"
