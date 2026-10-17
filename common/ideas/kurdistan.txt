@@ -1,6 +1,6 @@
 ideas = {
     country = {
-			KUR_battle_for_freedom = {
+		KUR_battle_for_freedom = {
 			picture = tiring_war 
 			allowed = {
 				OR = {
