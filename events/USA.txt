@@ -12,7 +12,8 @@ country_event = {
 	   tag = USA
 	   date > 1988.11.01
 	   date < 1991.11.01
-	   conservatism > party_popularity@liberalism
+	   check_variable = { USA.electoral_votes_republicans > USA.electoral_votes_democrats }
+	   check_variable = { USA.support_republicans_in_us > USA.support_democrats_in_us }
 	}
 	
 	option = {
@@ -60,6 +61,8 @@ country_event = {
 	   tag = USA
 	   date > 1988.11.01
 	   date < 1991.11.01
+	   	check_variable = { USA.electoral_votes_democrats > USA.electoral_votes_republicans }
+	   check_variable = { USA.support_democrats_in_us > USA.support_republicans_in_us }
 	   liberalism > party_popularity@conservatism
 	}
 	

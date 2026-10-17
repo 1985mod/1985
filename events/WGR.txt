@@ -125,7 +125,6 @@ country_event = {
 	id = wgr.3 ## Эпоха напряжения ##
 	title = wgr.3.t
 	desc = wgr.3.desc
-	picture = GFX_report_eras_of_tension
 
 	is_triggered_only = yes
 
@@ -141,7 +140,6 @@ country_event = {
 	id = wgr.4 ## Германия - европейский лидер ##
 	title = wgr.4.t
 	desc = wgr.4.desc
-	picture = GFX_report_germany_europe_leader
 
 	is_triggered_only = yes
 
@@ -169,7 +167,6 @@ country_event = {
 	id = wgr.5 ## Конец холодной войны ##
 	title = wgr.5.t
 	desc = wgr.5.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -177,19 +174,8 @@ country_event = {
 
     option = {
         name = wgr.5.a
-		add_political_power = 25
-        custom_effect_tooltip = add_europeanism_5_percent
-		FROM = {
-			add_to_variable = {
-				var = europeanism
-				value = 5
-			}
-			clamp_variable = {
-				var = europeanism
-				min = 0
-				max = 100
-			}
-		}
+		add_stability = 0.05
+		add_war_support = 0.03
 	}
 }
 
@@ -197,7 +183,6 @@ country_event = {
 	id = wgr.6 ## Германия перед изменениями ##
 	title = wgr.6.t
 	desc = wgr.6.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -212,7 +197,6 @@ country_event = {
 	id = wgr.7 ## Восточный блок шатается ##
 	title = wgr.7.t
 	desc = wgr.7.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -231,7 +215,6 @@ country_event = {
 	id = wgr.8 ## Поддержка протестов в ГДР ##
 	title = wgr.8.t
 	desc = wgr.8.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -251,7 +234,6 @@ country_event = {
 	id = wgr.9 ## Демонстрации в Лейцпиге ##
 	title = wgr.9.t
 	desc = wgr.9.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -275,7 +257,6 @@ country_event = {
 	id = wgr.10 ## германия предлагает эк. сотрудничество ##
 	title = wgr.10.t
 	desc = wgr.10.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -300,7 +281,6 @@ country_event = {
 	id = wgr.11 ## страна отказалась ##
 	title = wgr.11.t
 	desc = wgr.11.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -313,7 +293,6 @@ country_event = {
 	id = wgr.12 ## страна согласилась ##
 	title = wgr.12.t
 	desc = wgr.12.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -327,7 +306,6 @@ country_event = {
 	id = wgr.13 ## крах берлинской стены ##
 	title = wgr.13.t
 	desc = wgr.13.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -350,7 +328,6 @@ country_event = {
 	id = wgr.14 ## переговоры 2+4 ##
 	title = wgr.14.t
 	desc = wgr.14.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -369,7 +346,6 @@ country_event = {
 	id = wgr.15 ## диалог с востоком ##
 	title = wgr.15.t
 	desc = wgr.15.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -388,7 +364,6 @@ country_event = {
 	id = wgr.16 ## Единая Германия ##
 	title = wgr.16.t
 	desc = wgr.16.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -405,7 +380,6 @@ country_event = {
 	id = wgr.17 ## страна соглашается ##
 	title = wgr.17.t
 	desc = wgr.17.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -423,13 +397,11 @@ country_event = {
 	id = wgr.18 ## страна отказалась ##
 	title = wgr.18.t
 	desc = wgr.18.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
     option = {
         name = wgr.18.a
-		add_political_power = 10
 	}
 }
 
@@ -437,7 +409,6 @@ country_event = {
 	id = wgr.19 ## первый раунд ##
 	title = wgr.19.t
 	desc = wgr.19.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -454,7 +425,6 @@ country_event = {
 	id = wgr.20 ## второй раунд ##
 	title = wgr.20.t
 	desc = wgr.20.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -471,7 +441,6 @@ country_event = {
 	id = wgr.21 ## третий раунд ##
 	title = wgr.21.t
 	desc = wgr.21.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -489,7 +458,6 @@ country_event = {
 	id = wgr.22 ## четвертый раунд ##
 	title = wgr.22.t
 	desc = wgr.22.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -504,15 +472,13 @@ country_event = {
 	id = wgr.23 ## Победа ХДС ##
 	title = wgr.23.t
 	desc = wgr.23.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	trigger = {
 		country_exists = WGR
 		tag = WGR
 		date > 1987.02.25
 		date < 1991.01.01
-		conservatism > party_popularity@socialism
-		conservatism > party_popularity@liberalism
+		check_variable = { WGR.cdu_support > WGR.spd_support }
 	}
 
 	fire_only_once = yes
@@ -540,15 +506,13 @@ country_event = {
 	id = wgr.24 ## Победа СДПГ ##
 	title = wgr.24.t
 	desc = wgr.24.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	trigger = {
 		country_exists = WGR
 		tag = WGR
 		date > 1987.02.25
 		date < 1991.01.01
-		socialism > party_popularity@conservatism
-		socialism > party_popularity@liberalism
+		check_variable = { WGR.spd_support > WGR.cdu_support }
 	}
 
 	fire_only_once = yes
@@ -576,7 +540,6 @@ country_event = {
 	id = wgr.25 ## Предвыборная кампания 1987 года ##
 	title = wgr.25.t
 	desc = wgr.25.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	trigger = {
 		country_exists = WGR
@@ -602,7 +565,6 @@ country_event = {
 	id = wgr.26 ## Формирование нового правительства ##
 	title = wgr.26.t
 	desc = wgr.26.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -615,7 +577,6 @@ country_event = {
 	id = wgr.27 ## «Versöhnen statt spalten» или же Стратегия «примирения» ##
 	title = wgr.27.t
 	desc = wgr.27.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
@@ -657,7 +618,6 @@ country_event = {
 	id = wgr.28 ## СДПГ привлекает рабочий класс ##
 	title = wgr.28.t
 	desc = wgr.28.desc
-	picture = GFX_report_xi_congress_of_the_sed
 
 	is_triggered_only = yes
 
