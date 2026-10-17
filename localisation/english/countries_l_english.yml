@@ -1100,6 +1100,10 @@
  SUD: "Sudan"
  SUD_DEF: "Sudan"
  SUD_ADJ: "Sudanese"
+
+ SRL: "Democratic Socialist Republic of Sri Lanka"
+ SRL_DEF: "Democratic Socialist Republic of Sri Lanka"
+ SRL_ADJ: "Sri Lankan"
  
  VOL_conservatism: "Burkina Faso"
  VOL_conservatism_DEF: "Burkina Faso"
@@ -1304,3 +1308,27 @@
  ALA: "State of Alaska" 
  ALA_DEF: "State of Alaska" 
  ALA_ADJ: "Alassk"
+
+ SSD: "Somali Salvation Democratic Front"
+ SSD_DEF: "Somali Salvation Democratic Front"
+ SSD_ADJ: "Somali"
+
+ SNM: "Somali National Movement"
+ SNM_DEF: "Somali National Movement"
+ SNM_ADJ: "Somali"
+
+ SDA: "Somali Democratic Alliance"
+ SDA_DEF: "Somali Democratic Alliance"
+ SDA_ADJ: "Somali"
+
+ SPF: "Somali Patriotic Movement"
+ SPF_DEF: "Somali Patriotic Movement"
+ SPF_ADJ: "Somali"
+
+ USC: "United Somali Congress"
+ USC_DEF: "United Somali Congress"
+ USC_ADJ: "Somali"
+
+ ACE: "Free Aceh Movement"
+ ACE_DEF: "Free Aceh Movement"
+ ACE_ADJ: "Acehnese"
