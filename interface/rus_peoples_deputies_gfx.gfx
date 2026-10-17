@@ -14,4 +14,10 @@ spriteTypes = {
 		name = "GFX_decision_coat_of_arms_of_the_rf"
 		texturefile = "gfx/interface/decision_coat_of_arms_of_the_rf.png"
 	}
+
+	spriteType = {
+		name = "GFX_money_balance_texticons"
+		texturefile = "gfx/texticons/money_balance.dds"
+		legacy_lazy_load = no
+	}
 }
