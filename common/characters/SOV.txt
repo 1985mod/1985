@@ -53,6 +53,12 @@ characters = {
 			expire = "2022.08.30.1"
 			id = -1
 		}
+		country_leader = {
+			ideology = liberal_social_democracy
+			traits = {}
+			expire = "2022.08.30.1"
+			id = -1
+		}
 	}
 
 	SOV_gennady_yanaev = {
@@ -97,7 +103,7 @@ characters = {
 	}
 
 	SOV_Dmitry_Vasilyev = {
-		name = SOV_dmitry_vasilyev
+		name = SOV_Dmitry_Vasilyev
 		portraits = {
 			civilian = {
 				large = GFX_Portrait_Dmitry_Vasilyev
@@ -166,25 +172,6 @@ characters = {
 		}
 		country_leader = {
 			ideology = authoritarian_democracy
-			traits = {}
-			expire = "2022.05.28.1"
-			id = -1
-		}
-	}
-
-	SOV_Mikhail_Gorbachev_SSG = {
-		name = SOV_Mikhail_Gorbachev_SSG
-		portraits = {
-			civilian = {
-				large = GFX_Portrait_Mikhail_Gorbachev_uss
-			}
-			army = {
-				large = GFX_Portrait_Mikhail_Gorbachev_uss
-				small = GFX_Portrait_Mikhail_Gorbachev_SSG_small
-			}
-		}
-		country_leader = {
-			ideology = liberal_social_democracy
 			traits = {}
 			expire = "2022.05.28.1"
 			id = -1
