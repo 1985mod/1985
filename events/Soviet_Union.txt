@@ -491,9 +491,12 @@ country_event = {
             release = RUS
             set_country_flag = collapse_RUS
 
-            RUS = {
-                set_country_flag = conservatism_soviet
-            }
+			RUS = {
+				set_politics = {
+					ruling_party = conservatism
+					elections_allowed = yes
+				}
+			}
         }
 
         # Казахстан (декабрь 1991)

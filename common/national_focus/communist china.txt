@@ -1654,7 +1654,23 @@ focus_tree = {
 		relative_position_id = PRC_modernization_of_old_china
 			
         cost = 10
-		
+	
+        ai_will_do = {
+            factor = 5
+            modifier = {
+                factor = -5
+                is_historical_focus_on = yes
+            }
+        }
+
+        ai_will_do = {
+            factor = 5
+            modifier = {
+                factor = 15
+                is_historical_focus_on = no
+            }
+        }
+
         completion_reward = {
             create_wargoal = {
                 type = take_state_focus
