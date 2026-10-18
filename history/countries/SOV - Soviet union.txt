@@ -322,7 +322,6 @@ add_ideas = {
 recruit_character = SOV_konstantin_chernenko
 recruit_character = SOV_KPSS
 recruit_character = SOV_mikhail_gorbachev
-recruit_character = SOV_Mikhail_Gorbachev_SSG
 recruit_character =	SOV_nursultan_nazarbayev
 recruit_character = SOV_gennady_yanaev
 recruit_character = SOV_boris_yeltsin
