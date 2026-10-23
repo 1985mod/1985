@@ -1,0 +1,459 @@
+focus_tree = {
+    id = DDR_focus_military_coup
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 2
+            tag = DDR
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 730 y = 1600 }
+	
+    focus = { 
+        id = DDR_proclaim_the_german_socialist_republic
+        icon = GFX_
+        x = 10
+        y = 0
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+			add_stability = 0.05
+			set_cosmetic_tag = DDR_german_socialist_republic
+	    }
+	}
+
+    focus = { 
+        id = DDR_rehabilitation_of_erich_honecker
+        relative_position_id = DDR_proclaim_the_german_socialist_republic
+        prerequisite = { focus = DDR_proclaim_the_german_socialist_republic }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+            add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+			add_ideas = DDR_honeckers_banner
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church
+					add_idea = DDR_struggle_against_the_church_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_2
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church_2
+					add_idea = DDR_struggle_against_the_church_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_3
+				}
+				remove_ideas = DDR_struggle_against_the_church_3
+			}
+	    }
+	}
+
+    focus = { 
+        id = DDR_universal_military_conscription
+        relative_position_id = DDR_proclaim_the_german_socialist_republic
+        prerequisite = { focus = DDR_proclaim_the_german_socialist_republic }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+			add_manpower = 25000
+			army_experience = 10
+	    }
+	}
+
+    focus = { 
+        id = DDR_introduce_curfews
+        relative_position_id = DDR_proclaim_the_german_socialist_republic
+        prerequisite = { focus = DDR_proclaim_the_german_socialist_republic }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+			add_stability = 0.15
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church
+					add_idea = DDR_struggle_against_the_church_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_2
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church_2
+					add_idea = DDR_struggle_against_the_church_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_3
+				}
+				remove_ideas = DDR_struggle_against_the_church_3
+			}
+	    }
+	}
+
+    focus = { 
+        id = DDR_red_militarism
+        relative_position_id = DDR_proclaim_the_german_socialist_republic
+        prerequisite = { focus = DDR_universal_military_conscription }
+		prerequisite = { focus = DDR_rehabilitation_of_erich_honecker focus = DDR_introduce_curfews }
+        icon = GFX_
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+			army_experience = 15
+			add_ideas = DDR_red_militarism
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church
+					add_idea = DDR_struggle_against_the_church_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_2
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church_2
+					add_idea = DDR_struggle_against_the_church_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_3
+				}
+				remove_ideas = DDR_struggle_against_the_church_3
+			}
+	    }
+	}
+
+    focus = { 
+        id = DDR_the_steel_shield_of_saxony
+        relative_position_id = DDR_red_militarism
+        prerequisite = { focus = DDR_red_militarism }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+			65 = {
+				add_resource= { 
+					type = steel
+					amount = 12
+				}
+			}
+			65 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 2
+									include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+	    }
+	}
+
+    focus = { 
+        id = DDR_kesslers_tank_doctrine
+        relative_position_id = DDR_red_militarism
+        prerequisite = { focus = DDR_red_militarism }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+			army_experience = 10
+            add_tech_bonus = {
+                bonus = 1.0
+                uses = 1
+                category = cat_medium_armor
+            }
+	    }
+	}
+
+    focus = { 
+        id = DDR_construction_of_military_plants
+        relative_position_id = DDR_red_militarism
+        prerequisite = { focus = DDR_red_militarism }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+			add_ideas = DDR_construction_of_military_plants
+	    }
+	}
+
+    focus = { 
+        id = DDR_construction_of_factories_in_dresden
+        relative_position_id = DDR_kesslers_tank_doctrine
+        prerequisite = { focus = DDR_the_steel_shield_of_saxony }
+		prerequisite = { focus = DDR_kesslers_tank_doctrine }
+        icon = GFX_
+        x = -1
+        y = 1
+        cost = 10
+
+		bypass = {
+			NOT = { controls_state = 65 }
+		}
+        completion_reward = {
+			65 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 2
+									include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+	    }
+	}
+
+    focus = { 
+        id = DDR_military_commissars_at_factories
+        relative_position_id = DDR_kesslers_tank_doctrine
+        prerequisite = { focus = DDR_the_steel_shield_of_saxony }
+		prerequisite = { focus = DDR_construction_of_military_plants }
+        icon = GFX_
+        x = 1
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_popularity = {
+                ideology = communism
+                popularity = 0.1
+            }
+			add_ideas = DDR_military_commissars_at_factories
+	    }
+	}
+
+    focus = { 
+        id = DDR_acceleration_program
+        relative_position_id = DDR_kesslers_tank_doctrine
+        prerequisite = { focus = DDR_construction_of_factories_in_dresden }
+		prerequisite = { focus = DDR_military_commissars_at_factories }
+        icon = GFX_
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_war_support = 0.05
+			add_timed_idea = {
+				idea = DDR_acceleration_program
+				days = 720
+			}
+	    }
+	}
+
+    focus = { 
+        id = DDR_industrial_fortress
+        relative_position_id = DDR_kesslers_tank_doctrine
+        prerequisite = { focus = DDR_acceleration_program }
+        icon = GFX_
+        x = 0
+        y = 3
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+			add_ideas = DDR_industrial_fortress
+	    }
+	}
+
+    focus = { 
+        id = DDR_contract_program
+        relative_position_id = DDR_industrial_fortress
+        prerequisite = { focus = DDR_industrial_fortress }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_stability = 0.05
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 1
+									include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	    }
+	}
+
+    focus = { 
+        id = DDR_construction_battalions
+        relative_position_id = DDR_industrial_fortress
+        prerequisite = { focus = DDR_industrial_fortress }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_manpower = 20000
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 2
+									include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+	    }
+	}
+
+    focus = { 
+        id = DDR_demand_west_berlin
+        relative_position_id = DDR_industrial_fortress
+        prerequisite = { focus = DDR_contract_program }
+		prerequisite = { focus = DDR_construction_battalions }
+        icon = GFX_
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+			WGR = {
+				country_event = { id = ddr.26 hours = 6 }
+			}
+	    }
+	}
+
+    focus = { 
+        id = DDR_course_toward_the_unification_of_germany
+        relative_position_id = DDR_industrial_fortress
+        prerequisite = { focus = DDR_contract_program }
+		prerequisite = { focus = DDR_construction_battalions }
+        icon = GFX_
+        x = 0
+        y = 3
+        cost = 10
+        completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+            every_state = { 
+                limit = {
+                    is_core_of = WGR
+                }
+                add_core_of = DDR
+            }
+	    }
+	}
+}

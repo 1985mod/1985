@@ -19,7 +19,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 			modifier = {
-				add = -20
+				add = -100
 				SOV = { has_country_leader = { character = SOV_grigory_romanov ruling_only = yes } }
 			}
 		}

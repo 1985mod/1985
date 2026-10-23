@@ -35,6 +35,7 @@ country_event = {
 		}
 
 		hidden_effect = {
+			clr_country_flag = usa_elections
 			retire_character = USA_ronald_reagan
 			country_event = { id = news.9 }
 			promote_character = {
@@ -84,6 +85,7 @@ country_event = {
 		}
 
 		hidden_effect = {
+			clr_country_flag = usa_elections
 			retire_character = USA_ronald_reagan
 			country_event = { id = news.10 }
 			promote_character = {

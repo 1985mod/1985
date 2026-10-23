@@ -204,7 +204,7 @@
  RCP_quantity_of_armor:0 "Массовое производство бронетехники"
  RCP_quantity_of_armor_desc:0 ""
  RCP_civilian_factory_focus:0 "Упор на гражданский сектор"
- RCP_civilian_factory_focus_desc:0 "§RИнтегрировать§! государства §YPрибалтики§! в наше государство."
+ RCP_civilian_factory_focus_desc:0 ""
  RCP_autarky:0 "Автаркия"
  RCP_autarky_desc:0 ""
  RCP_complacent_subjects:0 "Самовлюблённые подданные"

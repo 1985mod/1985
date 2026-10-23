@@ -2,9 +2,9 @@ DDR_the_fight_against_the_church_cat = {
 
     DDR_surveillance_of_churches = {
 	
-		icon = generic_speech
+		icon = generic_brainwash
 
-		cost = 75
+		cost = 120
 		days_remove = 30
 
 	    visible = {
@@ -17,15 +17,39 @@ DDR_the_fight_against_the_church_cat = {
 		}
 	
 		remove_effect = {
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church
+					add_idea = DDR_struggle_against_the_church_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_2
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church_2
+					add_idea = DDR_struggle_against_the_church_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_3
+				}
+				remove_ideas = DDR_struggle_against_the_church_3
+			}
             add_stability = 0.05
 		}
 	}
 
     DDR_control_over_activity = {
 	
-		icon = generic_speech
+		icon = hol_war_on_pacifism
 
-		cost = 50
+		cost = 100
 		days_remove = 30
 
 	    visible = {
@@ -38,13 +62,37 @@ DDR_the_fight_against_the_church_cat = {
 		}
 	
 		remove_effect = {
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church
+					add_idea = DDR_struggle_against_the_church_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_2
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church_2
+					add_idea = DDR_struggle_against_the_church_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_3
+				}
+				remove_ideas = DDR_struggle_against_the_church_3
+			}
             add_stability = 0.05
 		}
 	}
 
     DDR_persecution_of_refuseniks = {
 	
-		icon = generic_speech
+		icon = oppression
 
 		cost = 50
 		days_remove = 30
@@ -59,7 +107,32 @@ DDR_the_fight_against_the_church_cat = {
 		}
 	
 		remove_effect = {
-            add_stability = 0.05
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church
+					add_idea = DDR_struggle_against_the_church_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_2
+				}
+				swap_ideas = {
+					remove_idea = DDR_struggle_against_the_church_2
+					add_idea = DDR_struggle_against_the_church_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DDR_struggle_against_the_church_3
+				}
+				remove_ideas = DDR_struggle_against_the_church_3
+			}
+            add_stability = -0.05
+			add_war_support = -0.03
 		}
 	}
 }
@@ -68,10 +141,10 @@ DDR_fight_with_a_satellite = {
 
     DDR_conduct_a_propaganda_campaign_in_the_media = {
 	
-		icon = generic_speech
+		icon = generic_political_discourse
 
 		cost = 75
-		days_remove = 30
+		days_remove = 70
 
 	    visible = {
             country_exists = SOV
@@ -107,7 +180,7 @@ DDR_fight_with_a_satellite = {
 
     DDR_combating_the_culture_of_protest = {
 	
-		icon = generic_speech
+		icon = POL_organize_strike_two
 
 		cost = 50
 		days_remove = 30
@@ -144,10 +217,10 @@ DDR_fight_with_a_satellite = {
 
     DDR_conduct_negotiations_with_moscow = {
 	
-		icon = generic_speech
+		icon = eng_trade_unions_support
 
 		cost = 100
-		days_remove = 30
+		days_remove = 50
 
 	    visible = {
             country_exists = SOV
@@ -159,8 +232,8 @@ DDR_fight_with_a_satellite = {
 		}
 	
 		remove_effect = {
-			add_stability = -0.01
-			add_war_support = 0.01
+			add_stability = -0.03
+			add_war_support = 0.03
 			ROOT = {
 				add_opinion_modifier = {
 					target = SOV
@@ -176,4 +249,215 @@ DDR_fight_with_a_satellite = {
 		}
 	}
 
+}
+
+
+DDR_struggle_for_power = {
+    DDR_politburo_meeting_on_ideological_issues = {
+	
+		icon = generic_consumer_goods
+
+		cost = 50
+		days_remove = 30
+
+	    visible = {
+            original_tag = DDR
+			has_country_flag = struggle_for_power_in_ddr
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+			custom_effect_tooltip = support_for_the_influence_conservative_decrease_by_5
+			custom_effect_tooltip = support_for_the_influence_reformist_increase_by_5
+			FROM = {
+				subtract_from_variable = {
+					var = DDR.influence_conservative
+					value = 5
+				}
+				clamp_variable = {
+					var = DDR.influence_conservative
+					min = 0
+					max = 100
+				}
+			}
+			FROM = {
+				add_to_variable = {
+					var = DDR.influence_reformist
+					value = 5
+				}
+				clamp_variable = {
+					var = DDR.influence_reformist
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+
+    DDR_ensuring_the_neutrality_of_the_stasi = {
+	
+		icon = generic_brainwash
+
+		cost = 100
+		days_remove = 50
+		fire_only_once = yes
+
+	    visible = {
+            original_tag = DDR
+			has_country_flag = struggle_for_power_in_ddr
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		modifier = {
+			conservatism_drift = 0.02
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = support_for_the_influence_conservative_decrease_by_15
+			custom_effect_tooltip = support_for_the_influence_reformist_increase_by_15
+			add_stability = 0.05
+			FROM = {
+				subtract_from_variable = {
+					var = DDR.influence_conservative
+					value = 15
+				}
+				clamp_variable = {
+					var = DDR.influence_conservative
+					min = 0
+					max = 100
+				}
+			}
+			FROM = {
+				add_to_variable = {
+					var = DDR.influence_reformist
+					value = 15
+				}
+				clamp_variable = {
+					var = DDR.influence_reformist
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+
+
+    DDR_dialogue_with_the_church = {
+	
+		icon = generic_political_address
+
+		cost = 75
+		days_remove = 40
+
+	    visible = {
+            original_tag = DDR
+			has_country_flag = struggle_for_power_in_ddr
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = support_for_the_influence_conservative_decrease_by_5
+			custom_effect_tooltip = support_for_the_influence_reformist_increase_by_5
+			add_stability = -0.02
+			FROM = {
+				subtract_from_variable = {
+					var = DDR.influence_conservative
+					value = 5
+				}
+				clamp_variable = {
+					var = DDR.influence_conservative
+					min = 0
+					max = 100
+				}
+			}
+			FROM = {
+				add_to_variable = {
+					var = DDR.influence_reformist
+					value = 5
+				}
+				clamp_variable = {
+					var = DDR.influence_reformist
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+
+    DDR_report_on_economic_backwardness = {
+	
+		icon = generic_wreckers
+
+		cost = 35
+		days_remove = 40
+
+	    visible = {
+            original_tag = DDR
+			has_country_flag = struggle_for_power_in_ddr
+	    }
+
+		ai_will_do = {
+			factor = 20
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = support_for_the_influence_conservative_decrease_by_5
+			custom_effect_tooltip = support_for_the_influence_reformist_increase_by_5
+			add_stability = -0.02
+			FROM = {
+				subtract_from_variable = {
+					var = DDR.influence_conservative
+					value = 5
+				}
+				clamp_variable = {
+					var = DDR.influence_conservative
+					min = 0
+					max = 100
+				}
+			}
+			FROM = {
+				add_to_variable = {
+					var = DDR.influence_reformist
+					value = 5
+				}
+				clamp_variable = {
+					var = DDR.influence_reformist
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+	DDR_plenum_of_the_central_committee = {
+
+		icon = generic_political_discourse
+
+		activation = {
+			has_government = communism
+			has_country_flag = struggle_for_power_in_ddr
+		}
+		available = {
+			has_government = socialism
+			NOT = { has_country_flag = struggle_for_power_in_ddr }
+		}
+		icon = mission_icon
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			country_event = { id = ddr.15 }
+		}
+	}
 }

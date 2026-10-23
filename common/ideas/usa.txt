@@ -533,6 +533,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				consumer_goods_factor = 0.15
 				min_export = -0.4
 				trade_opinion_factor = 0.15
 				local_resources_factor = -0.1
@@ -553,6 +554,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				consumer_goods_factor = 0.25
 				min_export = -0.7
 				trade_opinion_factor = 0.25
 				local_resources_factor = -0.15

@@ -29,3 +29,21 @@ DDR_fight_with_a_satellite = {
 		original_tag = DDR
 	}
 }
+
+DDR_struggle_for_power = {
+
+    icon = usa_congress
+	  
+	priority = 10
+	  
+	allowed = {
+	    original_tag = DDR
+	}
+	  
+	scripted_gui = ddr_struggle_for_power_scripted_gui
+
+	visible = {
+		original_tag = DDR
+		has_country_flag = struggle_for_power_in_ddr
+	}
+}

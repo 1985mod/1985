@@ -87,6 +87,13 @@
   extreme_nationalism: "Extreme Nationalism"
   extreme_nationalism_desc: "Extreme nationalism is a radical ideology postulating the absolute superiority of one's own nation over others and justifying aggressive methods of protecting its interests, including violence, discrimination and expansion. In this system, national egoism is elevated to a cult, individual rights are completely suppressed for the sake of 'national greatness,' and international norms are ignored in favor of domination and suppression of imaginary or real enemies."
 
+  socialism_drift: "Daily support for Social Democrats"
+  socialism_acceptance: "Social Democracy: agreement with diplomatic actions"
+  liberalism_drift: "Daily support for Liberals"
+  liberalism_acceptance: "Liberalism: agreement with diplomatic actions"
+  conservatism_drift: "Daily support for Conservatives"
+  conservatism_acceptance: "Conservatism: agreement with diplomatic actions"
+
   SOV_communism_party: "CPSU"
   SOV_communism_party_long: "Communist Party of the Soviet Union"
   SOV_socialism_party: "§RAbsent§!"

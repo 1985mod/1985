@@ -60,7 +60,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.1
 				stability_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 			}
@@ -106,7 +106,6 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				stability_weekly = 0.0005
-				consumer_goods_factor = 0.05
 				drift_defence_factor = 0.1
 			}
 		}
@@ -200,7 +199,7 @@ ideas = {
 			}
 		}
 
-		WGR_initiative_for_a_single_europea_act = {
+		WGR_initiative_for_a_single_european_act = {
 			picture = plaza_accord
 			
 			allowed = {

@@ -1,0 +1,82 @@
+guiTypes = {
+	containerWindowType = {
+        name = "ddr_struggle_for_power_decision_ui_window"
+        position = { x = 0 y = 0 }
+		size = { width = 350 height = 360 }
+
+		containerWindowType = {
+			name = "ddr_struggle_for_power_decision_ui_window_main_container"
+			position = { x = -5 y = 50 }
+			size = { width = 500 height = 200 }
+
+			containerWindowType = {
+				name = "ddr_struggle_for_power_decision_ui_window_main_entry"
+				position = { x = 25 y = -50 }
+			}
+		
+		}
+
+
+		instantTextBoxType = {
+			name = "leader_name_conservative"
+			position = { x = 25 y = 10 }
+			font = "hoi_16mbs"
+			text = "leader_name_conservative"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "leader_name_reformist"
+			position = { x = 315 y = 10 }
+			font = "hoi_16mbs"
+			text = "leader_name_reformist"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		iconType = {
+			name = "leader_conservative"
+			position = { x = 25 y = 40 }
+			spriteType = "GFX_Portrait_Erich_Honecker"
+		}
+
+		iconType = {
+			name = "leader_reformist"
+			position = { x = 315 y = 40 }
+			spriteType = "GFX_Portrait_Egon_Krenz"
+		}
+
+		instantTextBoxType = {
+			name = "influence_name_1"
+			position = { x = 25 y = 260 }
+			font = "hoi_16mbs"
+			text = "influence_name_1"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "influence_name_2"
+			position = { x = 315 y = 260 }
+			font = "hoi_16mbs"
+			text = "influence_name_2"
+			maxWidth = 150
+			maxHeight = 16
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "struggle_desc"
+			position = { x = 25 y = 290 }
+			font = "hoi_16mbs"
+			text = "struggle_desc"
+			maxWidth = 450
+			maxHeight = 16
+			format = center
+		}
+	}
+}

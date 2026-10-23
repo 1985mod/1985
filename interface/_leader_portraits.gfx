@@ -1323,4 +1323,16 @@ spriteTypes = {
 		name = "GFX_portrait_GER_oswald_lutz"
 		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	}
+
+	### DDR ###
+
+	spriteType = {
+		name = GFX_Portrait_Erich_Honecker
+		textureFile = "gfx/leaders/DDR/Portrait_Erich_Honecker.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_Portrait_Egon_Krenz"
+		texturefile = "gfx/leaders/DDR/Portrait_Egon_Krenz.dds"
+	}
 }

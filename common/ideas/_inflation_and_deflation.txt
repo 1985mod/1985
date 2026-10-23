@@ -133,11 +133,11 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.3
-				stability_factor = -0.25
-				political_power_factor = -0.3
-				production_speed_buildings_factor = -0.5
-				production_factory_efficiency_gain_factor = -0.15
+				consumer_goods_factor = 0.25
+				stability_factor = -0.2
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.4
+				production_factory_efficiency_gain_factor = -0.1
 				research_speed_factor = -0.1
 			}
 
@@ -162,9 +162,9 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.5
 				stability_factor = -0.4
-				political_power_factor = -0.6
-				production_speed_buildings_factor = -0.7
-				production_factory_efficiency_gain_factor = -0.3
+				political_power_factor = -0.45
+				production_speed_buildings_factor = -0.6
+				production_factory_efficiency_gain_factor = -0.25
 				research_speed_factor = -0.2
 			}
 

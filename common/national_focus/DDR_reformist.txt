@@ -1,0 +1,361 @@
+focus_tree = {
+    id = DDR_focus_reformist
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 2
+            tag = DDR
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 730 y = 1600 }
+	
+    focus = { 
+        id = DDR_wind_of_change
+        icon = GFX_
+        x = 10
+        y = 0
+        cost = 5
+        completion_reward = {
+            add_stability = -0.1
+            add_war_support = -0.05
+            add_political_power = 75
+	    }
+	}
+
+    focus = { 
+        id = DDR_the_krenz_government
+        relative_position_id = DDR_wind_of_change
+        prerequisite = { focus = DDR_wind_of_change }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+            add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+            add_timed_idea = {
+                idea = DDR_the_krenz_government
+                days = 365
+            }
+	    }
+	}
+
+    focus = { 
+        id = DDR_new_economic_system
+        relative_position_id = DDR_the_krenz_government
+        prerequisite = { focus = DDR_the_krenz_government }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_ideas = DDR_new_economic_system
+	    }
+	}
+
+    focus = { 
+        id = DDR_reform_of_the_ministry_of_state_security
+        relative_position_id = DDR_the_krenz_government
+        prerequisite = { focus = DDR_the_krenz_government }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_political_power = 25
+            add_stability = 0.1
+            add_timed_idea = {
+                idea = DDR_reform_of_the_ministry_of_state_security
+                days = 480
+            }
+	    }
+	}
+
+    focus = { 
+        id = DDR_independent_trade_unions
+        relative_position_id = DDR_the_krenz_government
+        prerequisite = { focus = DDR_new_economic_system }
+        prerequisite = { focus = DDR_reform_of_the_ministry_of_state_security }
+        icon = GFX_
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_ideas = DDR_independent_trade_unions
+	    }
+	}
+
+    focus = { 
+        id = DDR_transition_to_defense_doctrine
+        relative_position_id = DDR_independent_trade_unions
+        prerequisite = { focus = DDR_independent_trade_unions }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            army_experience = 10
+            add_ideas = DDR_transition_to_defense
+	    }
+	}
+
+    focus = { 
+        id = DDR_development_of_domestic_microelectronics
+        relative_position_id = DDR_independent_trade_unions
+        prerequisite = { focus = DDR_independent_trade_unions }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_research_slot = 1
+            add_tech_bonus = {
+                bonus = 1.0
+                uses = 2
+                category = electronics
+            }
+	    }
+	}
+
+    focus = { 
+        id = DDR_reform_of_the_border_troops
+        relative_position_id = DDR_independent_trade_unions
+        prerequisite = { focus = DDR_independent_trade_unions }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_ideas = DDR_iron_discipline
+	    }
+	}
+
+    focus = { 
+        id = DDR_western_loans
+        relative_position_id = DDR_transition_to_defense_doctrine
+        prerequisite = { focus = DDR_transition_to_defense_doctrine }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = infrastructure
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            WGR = {
+                country_event = { id = ddr.17 hours = 6 }
+            }
+	    }
+	}
+
+    focus = { 
+        id = DDR_bridge_between_east_and_west
+        relative_position_id = DDR_transition_to_defense_doctrine
+        prerequisite = { focus = DDR_transition_to_defense_doctrine }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = small_increase
+				}
+			}   
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = small_increase
+				}
+			}     
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+			WGR = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = medium_increase
+				}
+			}         
+	    }
+	}
+
+    focus = { 
+        id = DDR_ecological_socialism
+        relative_position_id = DDR_transition_to_defense_doctrine
+        prerequisite = { focus = DDR_transition_to_defense_doctrine }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_stability = 0.05
+            add_ideas = DDR_ecological_socialism
+	    }
+	}
+
+    focus = { 
+        id = DDR_dialogue_with_the_church
+        relative_position_id = DDR_transition_to_defense_doctrine
+        prerequisite = { focus = DDR_western_loans }
+        prerequisite = { focus = DDR_bridge_between_east_and_west }
+        prerequisite = { focus = DDR_ecological_socialism }
+        icon = GFX_
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = {
+                    has_idea = DDR_struggle_against_the_church
+                }
+                remove_ideas = DDR_struggle_against_the_church
+            }
+            add_timed_idea = {
+                idea = DDR_struggle_against_the_church_2
+                days = 360
+            }
+	    }
+	}
+
+    focus = { 
+        id = DDR_new_constitution
+        relative_position_id = DDR_dialogue_with_the_church
+        prerequisite = { focus = DDR_dialogue_with_the_church }
+        icon = GFX_
+        x = 0
+        y = 2
+        cost = 5
+        completion_reward = {
+            country_event = { id = ddr.20 }
+	    }
+	}
+
+    focus = { 
+        id = DDR_currency_union
+        relative_position_id = DDR_new_constitution
+        prerequisite = { focus = DDR_new_constitution }
+        icon = GFX_
+        x = -2
+        y = 1
+        cost = 5
+        completion_reward = {
+            WGR = {
+                add_timed_idea = {
+                    idea = DDR_monetary_union
+                    days = 365
+                }
+            }
+            add_timed_idea = {
+                idea = DDR_monetary_union
+                days = 365
+            }
+	    }
+	}
+
+    focus = { 
+        id = DDR_treaty_on_the_foundations_of_relations
+        relative_position_id = DDR_new_constitution
+        prerequisite = { focus = DDR_new_constitution }
+        icon = GFX_
+        x = 2
+        y = 1
+        cost = 5
+        completion_reward = {
+            WGR = {
+                country_event = { id = ddr.21 hours = 6 }
+            }
+	    }
+	}
+
+    focus = { 
+        id = DDR_freedom_of_movement
+        relative_position_id = DDR_new_constitution
+        prerequisite = { focus = DDR_treaty_on_the_foundations_of_relations }
+        prerequisite = { focus = DDR_currency_union }
+        icon = GFX_
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+            WGR = {
+                add_timed_idea = {
+                    idea = DDR_freedom_of_movement
+                    days = 120
+                }
+            }
+            add_timed_idea = {
+                idea = DDR_freedom_of_movement
+                days = 120
+            }            
+	    }
+	}
+
+    focus = { 
+        id = DDR_confederation_with_germany
+        relative_position_id = DDR_freedom_of_movement
+        prerequisite = { focus = DDR_freedom_of_movement }
+        icon = GFX_
+        x = 0
+        y = 1
+        cost = 10
+        completion_reward = {
+            WGR = {
+                country_event = { id = ddr.24 hours = 3 }
+            }            
+	    }
+	}
+}

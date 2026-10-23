@@ -683,16 +683,6 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 	}
 	else_if = {
 		limit = {
-			tag = PTF
-		}
-		NOT = {
-			CAN = {
-				has_idea = PTF_CAN_war_with_ptf
-			}			
-		}
-	}
-	else_if = {
-		limit = {
 			tag = RAJ
 		}
 		NOT = {

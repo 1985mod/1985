@@ -13,7 +13,7 @@ ideas = {
 			removal_cost = -1
 			
             targeted_modifier = {
-                 tag = WGR
+                tag = WGR
                 attack_bonus_against = 0.05
             }
             targeted_modifier = {
@@ -63,7 +63,10 @@ ideas = {
 		DDR_monetary_union = {
 			picture = monetary_union 
 			allowed = {
-				original_tag = DDR
+				OR = {
+					original_tag = DDR
+					original_tag = WGR
+				}
 			}
 
 			allowed_civil_war = {
@@ -73,9 +76,10 @@ ideas = {
 			removal_cost = -1
 		
             modifier = {
-				consumer_goods_factor = -0.2
-				local_resources_factor = -0.3
+				consumer_goods_factor = -0.15
+				local_resources_factor = -0.1
 				production_factory_start_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
             }
 		}
 		DDR_iron_discipline = {
@@ -127,9 +131,327 @@ ideas = {
 		
             modifier = {
 				production_speed_industrial_complex_factor = 0.05
-				production_factory_max_efficiency_factor = -0.1
+				production_factory_max_efficiency_factor = 0.05
 				communism_drift = 0.03
 				socialism_drift = 0.03
+            }
+		}
+		DDR_the_krenz_government = {
+			picture = showcase_of_socialism 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				political_power_factor = 0.1
+				stability_weekly = 0.001
+            }
+		}
+		DDR_new_economic_system = {
+			picture = showcase_of_socialism 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.07
+				production_factory_max_efficiency_factor = 0.05
+            }
+		}
+		DDR_reform_of_the_ministry_of_state_security = {
+			picture = showcase_of_socialism 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				decryption_factor = -0.1
+				intel_network_gain_factor = -0.1
+				decryption_power_factor = -0.05
+				civilian_intel_to_others = 0.5
+            }
+		}
+		DDR_independent_trade_unions = {
+			picture = showcase_of_socialism 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				consumer_goods_factor = -0.15
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.1
+				industrial_capacity_factory = -0.05
+            }
+		}
+		DDR_transition_to_defense = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = -0.05
+				max_dig_in_factor = 0.1
+				dig_in_speed_factor = 0.05
+            }
+		}
+		DDR_transition_to_defense = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = -0.05
+				max_dig_in_factor = 0.1
+				dig_in_speed_factor = 0.05
+            }
+		}
+		DDR_freedom_of_movement = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				monthly_population = 0.1
+				stability_weekly_factor = 0.001
+            }
+		}
+		DDR_ecological_socialism = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.03
+            }
+		}
+		DDR_struggle_against_the_church = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.1
+				foreign_subversive_activites = 0.10
+				conscription = -0.005
+				political_advisor_cost_factor = 0.15
+            }
+		}
+		DDR_struggle_against_the_church_2 = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				foreign_subversive_activites = 0.10
+				conscription = -0.0025
+				political_advisor_cost_factor = 0.1
+            }
+		}
+		DDR_struggle_against_the_church_3 = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				stability_factor = -0.05
+				foreign_subversive_activites = 0.10
+				conscription = -0.0025
+            }
+		}
+		DDR_honeckers_banner = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				political_power_factor = 0.1
+				research_speed_factor = 0.05
+				surrender_limit = 0.15
+				industrial_capacity_factory = -0.05
+            }
+		}
+		DDR_red_militarism = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				army_defence_factor = 0.05
+				army_morale_factor = 0.05
+				army_attack_factor = 0.1
+            }
+		}
+		DDR_construction_of_military_plants = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.03
+				industrial_capacity_factory = 0.05
+            }
+		}
+		DDR_military_commissars_at_factories = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+				conscription_factor = -0.05
+            }
+		}
+		DDR_acceleration_program = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+            }
+		}
+		DDR_industrial_fortress = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
             }
 		}
     }
