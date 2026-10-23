@@ -1,0 +1,6 @@
+scripted_gui = {
+	ddr_struggle_for_power_scripted_gui = {
+		context_type = decision_category
+		window_name = "ddr_struggle_for_power_decision_ui_window"
+	}
+}

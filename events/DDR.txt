@@ -198,7 +198,14 @@ country_event = {
 
     option = {
         name = ddr.9.b
-		add_war_support = 0.05
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.03
+		}
+		unlock_decision_category_tooltip = DDR_struggle_for_power
+		set_variable = { var = DDR.influence_conservative value = 85 }
+		set_variable = { var = DDR.influence_reformist value = 15 }
+		set_country_flag = struggle_for_power_in_ddr
 	}
 }
 
@@ -257,6 +264,8 @@ country_event = {
 	desc = ddr.13.desc
 	picture = GFX_report_first_free_elections
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = DDR
 		country_exists = DDR
@@ -288,5 +297,462 @@ country_event = {
 
     option = {
         name = ddr.14.a
+	}
+}
+
+country_event = {
+	id = ddr.15 ## Пленум ЦК ##
+	title = ddr.15.t
+	desc = ddr.15.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.15.a
+		trigger = {
+			check_variable = { DDR.influence_conservative > DDR.influence_reformist }
+		}
+		clr_country_flag = struggle_for_power_in_ddr
+	}
+
+	option = {
+		name = ddr.15.b
+		trigger = {
+			check_variable = { DDR.influence_reformist > DDR.influence_conservative }
+		}
+		country_event = { id = ddr.16 hours = 48 }
+		clr_country_flag = struggle_for_power_in_ddr
+	}
+}
+
+country_event = {
+	id = ddr.16 ## Вопрос Эриха ##
+	title = ddr.16.t
+	desc = ddr.16.desc
+	picture = GFX_report_honeckers_resignation
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.16.a
+		retire_ideology_leader = communism
+		add_stability = 0.03
+		custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
+		hidden_effect = {
+			load_focus_tree = {
+				tree = DDR_focus_reformist
+				keep_completed = yes
+			}		
+		}
+	}
+
+    option = {
+        name = ddr.16.b
+		kill_ideology_leader = communism
+		add_stability = -0.15
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.02
+		}
+		custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
+		hidden_effect = {
+			load_focus_tree = {
+				tree = DDR_focus_reformist
+				keep_completed = yes
+			}	
+			country_event = { id = ddr.25 hours = 4 }	
+		}
+	}
+}
+
+country_event = {
+	id = ddr.17 ## ГДР просит у нас денег ##
+	title = ddr.17.t
+	desc = ddr.17.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.17.a
+        ai_chance = {
+            base = 95
+        }
+		DDR = { country_event = { id = ddr.18 hours = 3 } }
+		if = {
+			limit = { check_variable = { treasury < 10 } }
+			add_to_variable = {
+				var = treasury
+				value = 10
+			}
+		}
+		subtract_from_variable = { var = treasury value = 10 }
+	}
+
+    option = {
+        name = ddr.17.b
+        ai_chance = {
+            base = 5
+        }
+		DDR = { country_event = { id = ddr.19 hours = 3 } }
+	}
+}
+
+country_event = {
+	id = ddr.18 ## ФРГ соглашается ##
+	title = ddr.18.t
+	desc = ddr.18.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.18.a
+        ai_chance = {
+            base = 100
+        }
+		add_stability = 0.03
+		add_to_variable = {
+			var = treasury
+			value = 10
+			tooltip = add_10_billion_to_treasury_tt
+		}
+		ROOT = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = small_increase
+			}
+		}
+		WGR = {
+			add_opinion_modifier = {
+				target = DDR
+				modifier = small_increase
+			}
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+	}
+}
+
+country_event = {
+	id = ddr.19 ## ФРГ соглашается ##
+	title = ddr.19.t
+	desc = ddr.19.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.19.a
+        ai_chance = {
+            base = 100
+        }
+		ROOT = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = small_decrease
+			}
+		}
+		WGR = {
+			add_opinion_modifier = {
+				target = DDR
+				modifier = small_decrease
+			}
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+	}
+}
+
+country_event = {
+	id = ddr.20 ## Новая конституция ##
+	title = ddr.20.t
+	desc = ddr.20.desc
+	picture = GFX_report_xi_congress_of_the_sed
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.20.a
+        ai_chance = {
+            base = 100
+        }
+		add_political_power = 100
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = yes
+			last_election = "1988.10.15"
+			election_frequency = 48
+		}
+		remove_country_leader_role = {
+			character = DDR_egon_krenz
+			ideology = communism
+		}
+		add_country_leader_role = {
+			character = DDR_egon_krenz
+			promote_leader = yes
+			country_leader = {
+				ideology = democratic_socialism
+				expire = "2022.1.1.1"
+			}
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = ddr.21 ## Договор об основах отношений ##
+	title = ddr.21.t
+	desc = ddr.21.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.21.a
+        ai_chance = {
+            base = 75
+        }
+		DDR = { country_event = { id = ddr.22 hours = 3 } }
+	}
+
+    option = {
+        name = ddr.21.b
+        ai_chance = {
+            base = 25
+        }
+		DDR = { country_event = { id = ddr.23 hours = 3 } }
+	}
+}
+
+country_event = {
+	id = ddr.22 ## ФРГ согласна ##
+	title = ddr.22.t
+	desc = ddr.22.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.22.a
+        ai_chance = {
+            base = 100
+        }
+		add_political_power = 50
+		ROOT = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = medium_increase
+			}
+			diplomatic_relation = {
+				country = WGR
+				relation = guarantee
+				active = yes
+			}
+		}
+		WGR = {
+			add_political_power = 50
+			add_opinion_modifier = {
+				target = DDR
+				modifier = medium_increase
+			}
+			diplomatic_relation = {
+				country = DDR
+				relation = guarantee
+				active = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ddr.23 ## ФРГ отвергла ##
+	title = ddr.23.t
+	desc = ddr.23.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.23.a
+        ai_chance = {
+            base = 100
+        }
+		ROOT = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = medium_decrease
+			}
+		}
+		WGR = {
+			add_opinion_modifier = {
+				target = DDR
+				modifier = medium_decrease
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ddr.24 ## ГДР предлагает конфедерацию ##
+	title = ddr.24.t
+	desc = ddr.24.desc
+	picture = GFX_report_conspiracy_in_the_politburo
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.24.a
+        ai_chance = {
+            base = 90
+        }
+		set_autonomy = {
+			target = DDR
+			autonomous_state = german_confederation
+			end_wars = no
+			end_civil_wars = no
+			keep_subjects = no
+		}
+		hidden_effect = {
+			DDR = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = yes
+					last_election = "1988.10.15"
+					election_frequency = 48
+				}
+			}
+		}
+	}
+
+    option = {
+        name = ddr.24.b
+        ai_chance = {
+            base = 10
+        }
+		ROOT = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = large_decrease
+			}
+		}
+		WGR = {
+			add_opinion_modifier = {
+				target = DDR
+				modifier = large_decrease
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = ddr.25 ## Танки на Унтер-ден-Линден ##
+	title = ddr.25.t
+	desc = ddr.25.desc
+	picture = GFX_report_conspiracy_in_the_politburo
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.25.a
+        ai_chance = {
+            base = 50
+        }
+		add_political_power = 50
+		add_war_support = 0.05
+		add_stability = -0.05
+		set_country_flag = risk_of_a_military_coup
+	}
+
+    option = {
+        name = ddr.25.b
+        ai_chance = {
+            base = 50
+        }
+		add_stability = -0.1
+		add_country_leader_role = {
+			character = DDR_heinz_kebler
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_leninism
+				expire = "1999.1.1.1"
+			}
+		}
+		set_cosmetic_tag = DDR_national_peoples_army_cosmetic
+		custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
+		hidden_effect = {
+			load_focus_tree = {
+				tree = DDR_focus_military_coup
+				keep_completed = yes
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = ddr.26 ## ГДР требует Западный Берлин ##
+	title = ddr.26.t
+	desc = ddr.26.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.26.a
+        ai_chance = {
+            base = 100
+        }
+		DDR = {
+			transfer_state = 1047
+		}
+	}
+
+    option = {
+        name = ddr.26.a
+        ai_chance = {
+            base = 100
+        }
+		DDR = {
+            declare_war_on = {
+                target = WGR
+                type = annex_everything
+            }
+		}
 	}
 }

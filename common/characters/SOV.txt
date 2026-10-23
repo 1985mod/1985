@@ -50,14 +50,8 @@ characters = {
 		country_leader = {
 			ideology = communist_perestroika
 			traits = {}
-			expire = "2022.08.30.1"
-			id = -1
-		}
-		country_leader = {
-			ideology = liberal_social_democracy
-			traits = {}
-			expire = "2022.08.30.1"
-			id = -1
+			expire = "2022.08.30"
+			id = -100
 		}
 	}
 
