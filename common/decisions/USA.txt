@@ -362,9 +362,10 @@ USA_war_on_drugs = {
 				limit = { has_idea = USA_the_endless_war_on_drugs_2 }
 				ROOT = { remove_ideas = USA_the_endless_war_on_drugs_2 }
 			}
+			set_country_flag = invasion_in_panama
       		declare_war_on = {
           		target = PAN
-         		 type = annex_everything
+         		type = annex_everything
       		}	
 		}
 	}
@@ -1476,9 +1477,309 @@ USA_trade_deficit_cat = {
 				}
 				country_event = { id = plaza_accord.5 }
 			}
+			country_event = { id = plaza_accord.5 }
 		}
 		timeout_effect = {
 			country_event = { id = plaza_accord.6 }
+		}
+	}
+}
+
+USA_stabilization_of_the_regime_in_iraq = {
+
+	USA_insurgent_activity = {
+		
+		icon = POL_organize_strike_two
+		
+		activation = {
+			has_global_flag = free_iraq_now
+			country_exists = UNQ
+			custom_trigger_tooltip = {
+			tooltip = has_baathist_resistance_10_tt
+				check_variable = {
+					USA.resistance_baathist > 9
+				}
+			}
+		}
+		available = {
+			original_tag = USA
+			country_exists = UNQ
+			custom_trigger_tooltip = {
+			tooltip = baathist_resistance_less_10_tt
+				check_variable = {
+					USA.resistance_baathist < 9
+				}
+			}
+		}
+
+		days_mission_timeout = 15
+		
+		selectable_mission = no
+
+		timeout_effect = {
+			random_list = {
+				34 = {
+					country_event = { id = usa.72 }
+				}
+				33 = {
+					country_event = { id = usa.73 }
+				}
+				33 = {
+					country_event = { id = usa.74 }
+				}
+			}
+		}
+	}
+
+	USA_public_works_program = {
+
+		icon = generic_operation
+
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 25 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_25
+
+		days_remove = 80
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		remove_effect = {
+			UNQ = {
+				random_owned_controlled_state = {
+					limit = {					
+						is_in_home_area = yes					
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			subtract_from_variable = { var = USA.resistance_baathist value = 3 }
+			custom_effect_tooltip = baathist_resistance_will_decrease_by_3_percent
+			clamp_variable = {
+				var = USA.resistance_baathist
+				max = 100
+				min = 0
+			}	
+		}
+	}
+
+	USA_restoration_of_oil_facilities = {
+
+		icon = generic_industry
+
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 20 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_20
+
+		days_remove = 120
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		modifier = {
+			income_growth_factor = -0.1
+		}
+
+		remove_effect = {
+			UNQ = {
+				add_political_power = 25
+				add_stability = 0.05
+				random_owned_controlled_state = {
+					limit = {					
+						is_in_home_area = yes					
+						free_building_slots = {
+							building = synthetic_refinery
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	USA_training_for_local_police = {
+
+		icon = generic_military
+
+		cost = 50
+		days_remove = 120
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		modifier = {
+			political_power_gain = -0.35
+		}
+
+		remove_effect = {
+			UNQ = {
+				add_stability = 0.1
+			}
+			subtract_from_variable = { var = USA.resistance_baathist value = 10 }
+			custom_effect_tooltip = baathist_resistance_will_decrease_by_10_percent
+			clamp_variable = {
+				var = USA.resistance_baathist
+				max = 100
+				min = 0
+			}	
+		}
+	}
+
+	USA_anti_corruption_purge = {
+
+		icon = generic_arrest
+
+		cost = 100
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		modifier = {
+			political_power_gain = -0.35
+		}
+
+		remove_effect = {
+			UNQ = {
+				add_stability = -0.1
+			}
+			subtract_from_variable = { var = USA.resistance_baathist value = 10 }
+			custom_effect_tooltip = baathist_resistance_will_decrease_by_10_percent
+			clamp_variable = {
+				var = USA.resistance_baathist
+				max = 100
+				min = 0
+			}	
+		}
+	}
+
+	USA_amnesty_program = {
+
+		icon = generic_consumer_goods
+
+		cost = 50
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		modifier = {
+			political_power_gain = -0.35
+		}
+
+		remove_effect = {
+			add_stability = -0.05
+			UNQ = {
+				add_war_support = 0.03
+				army_experience = 5 
+			}
+		}
+	}
+}
+
+USA_upcoming_elections_in_iraq = {
+
+	USA_elections_in_iraq = {
+		
+		icon = SOV_place_hq
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+		
+		activation = {
+			has_global_flag = free_iraq_now
+			country_exists = UNQ
+		}
+		available = {
+			original_tag = USA
+			has_global_flag = free_iraq_now
+			country_exists = UNQ
+			always = no
+		}
+
+		days_mission_timeout = 840
+		
+		selectable_mission = no
+
+		timeout_effect = {
+			UNQ = { country_event = { id = iraq.11 } }
+		}
+	}
+
+	USA_drafting_a_constitution = {
+
+		fire_only_once = yes
+
+		icon = generic_break_treaty
+
+		cost = 120
+		days_remove = 100
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		remove_effect = {
+			UNQ = {
+				add_political_power = 120
+				add_stability = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = USA_elections_in_iraq
+				days = -240
+			}
+		}
+	}
+
+	USA_conduct_population_census = {
+
+		icon = eng_blackshirt_march
+
+		fire_only_once = yes
+
+		cost = 100
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			UNQ = {
+				add_political_power = 50
+				add_stability = 0.1
+			}
+			add_days_mission_timeout = {
+				mission = USA_elections_in_iraq
+				days = -120
+			}
 		}
 	}
 }

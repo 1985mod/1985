@@ -53,6 +53,10 @@ country_event = {
 		}  
 		SOO = {
 			transfer_state = 1057
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
 		}
 	}
 
@@ -117,6 +121,10 @@ country_event = {
 	immediate = {
 		ABK = {
 			transfer_state = 826
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
 		}
 	}
 

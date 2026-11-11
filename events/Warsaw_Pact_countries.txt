@@ -87,7 +87,7 @@ country_event = {
         days = 7
     }
     option = {
-        name = warsaw_pact_countries.2.c
+        name = warsaw_pact_countries.2.a
         news_event = {
             id = news.46
             hours = 10

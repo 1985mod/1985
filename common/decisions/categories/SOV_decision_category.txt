@@ -120,3 +120,39 @@ SOV_world_war_three = {
 		original_tag = SOV
 	}
 }
+
+SOV_separatism_in_the_soviet_union = {
+
+    icon = spr_the_seeds_of_revolution
+	  
+	priority = 90
+	  
+	allowed = {
+		original_tag = SOV
+	}
+	  
+	visible = {
+		SOV = { has_war_with = AFS }
+		has_completed_focus = SOV_special_operations_in_afghanistan
+	}
+}
+
+SOV_baltic_negotiations = {
+
+    icon = spr_the_seeds_of_revolution
+	  
+	priority = 90
+	  
+	allowed = {
+		original_tag = SOV
+	}
+	  
+	visible = {
+		OR = {
+			country_exists = LIT
+			country_exists = LAT
+			country_exists = EST
+		}
+		has_completed_focus = SOV_baltic_negotiations
+	}
+}

@@ -1229,6 +1229,10 @@
  PUK_DEF: "Patriotic Union of Kurdistan"
  PUK_ADJ: "Kurdish"
 
+ UNQ: "UN Coalition in Iraq"
+ UNQ_DEF: "UN Coalition in Iraq"
+ UNQ_ADJ: "Iraqi"
+
  MRA: "Northern Military Command"
  MRA_DEF: "Northern Military Command"
  MRA_ADJ: "American"

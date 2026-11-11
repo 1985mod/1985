@@ -281,3 +281,30 @@ CSTO_fixed_alliance = {
 		value = 1000
 	}
 }
+
+UEF_fixed_alliance = {
+	allowed = {
+		OR = {
+			tag = ITA
+			tag = SPR
+			tag = FRA
+			tag = POR
+		}
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		OR = {
+			ENG = { 
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG" 
+		value = 1000
+	}
+}

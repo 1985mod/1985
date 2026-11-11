@@ -110,7 +110,7 @@ division_template = {
 		modern_armor = { x = 1 y = 0 }
 		modern_armor = { x = 1 y = 1 }
 		modern_armor = { x = 1 y = 2 }
-		rocket_artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 0 }
 		artillery_brigade = { x = 2 y = 1 }
 	}
 	support = {

@@ -2,7 +2,7 @@ RUS_liberalisation_economy = {
 
     RUS_purchase_products_from_other_countries = {
 	
-		icon = generic_speech
+		icon = generic_political_discourse
 
 		cost = 50
 		days_remove = 30
@@ -24,7 +24,7 @@ RUS_liberalisation_economy = {
 
     RUS_price_liberalization = {
 	
-		icon = generic_speech
+		icon = ger_mefo_bills
 
 		cost = 75
 		days_remove = 50
@@ -46,7 +46,7 @@ RUS_liberalisation_economy = {
 
     RUS_the_formation_of_market_mechanisms_in_society = {
 	
-		icon = generic_speech
+		icon = gre_paying_ifc_debt
 
 		cost = 100
 		days_remove = 25
@@ -69,7 +69,7 @@ RUS_liberalisation_economy = {
 
     RUS_economic_reforms = {
 	
-		icon = generic_speech
+		icon = generic_construction
 
 		cost = 75
 		days_remove = 80
@@ -129,7 +129,7 @@ RUS_preparation_for_a_new_constitution = {
 RUS_peoples_deputies_cat = {
     RUS_propose_bill_to_increase_taxes_on_the_population = {
 	
-		icon = generic_speech
+		icon = generic_operation
 
 		cost = 25
 		days_remove = 35
@@ -173,7 +173,7 @@ RUS_peoples_deputies_cat = {
 
    RUS_propose_bill_to_increase_taxes_on_businesses = {
 	
-		icon = generic_speech
+		icon = generic_civil_support
 
 		cost = 25
 		days_remove = 35
@@ -217,7 +217,7 @@ RUS_peoples_deputies_cat = {
 
    RUS_propose_bill_to_increase_the_vat_rate = {
 	
-		icon = generic_speech
+		icon = hol_attract_foreign_investors
 
 		cost = 25
 		days_remove = 35
@@ -261,7 +261,7 @@ RUS_peoples_deputies_cat = {
 
    RUS_propose_bill_to_raise_interest_rates = {
 	
-		icon = generic_speech
+		icon = infiltrate_state
 
 		cost = 25
 		days_remove = 35
@@ -307,6 +307,8 @@ RUS_peoples_deputies_cat = {
 RUS_caucasus_crisis_category = {
 	RUS_terrorist_clashes_management = {
 
+		icon = generic_civil_support
+
 		fire_only_once = yes
 		
 		activation = {
@@ -338,9 +340,14 @@ RUS_caucasus_crisis_category = {
 			}
 		}
 	}
-	chechnya_appeasement = {
+	RUS_chechnya_appeasement = {
 	
-		cost = 35
+		icon = infiltrate_state
+
+		cost = 25
+		days_remove = 10
+
+		fire_only_once = yes
 		
 		complete_effect = {
 			CHE = {
@@ -348,6 +355,225 @@ RUS_caucasus_crisis_category = {
 			}
 
 			add_stability = -0.05
+		}
+	}
+}
+
+RUS_lisbon_protocol = {
+   RUS_accelerate_the_withdrawal_of_troops_from_belarus = {
+
+	 	fire_only_once = yes
+	
+		icon = generic_military
+
+		cost = 50
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				add = 15
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+			NOT = { has_global_flag = russia_kept_everything_for_itself }
+		}
+
+		available = {
+			country_exists = BLR
+		}
+	
+		remove_effect = {
+			add_manpower = 25000
+			add_stability = 0.05
+			add_nuclear_bombs = 81
+			ROOT = {
+				add_opinion_modifier = {
+					target = BLR
+					modifier = small_increase
+				}
+			}
+			BLR = {
+				add_opinion_modifier = {
+					target = RUS
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = RUS
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+
+   RUS_negotiations_with_kazakhstan = {
+
+		fire_only_once = yes
+	
+		icon = CHL_grant_full_rights_to_the_mapuche
+
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 25 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_25
+
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				add = 15
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+			NOT = { has_global_flag = russia_kept_everything_for_itself }
+		}
+
+		available = {
+			country_exists = KAZ
+		}
+	
+		remove_effect = {
+			add_nuclear_bombs = 122
+			ROOT = {
+				add_opinion_modifier = {
+					target = KAZ
+					modifier = small_increase
+				}
+			}
+			KAZ = {
+				add_opinion_modifier = {
+					target = RUS
+					modifier = small_increase
+				}
+			}
+			KAZ = {
+				random_owned_controlled_state = {
+					limit = {					
+						is_in_home_area = yes					
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+   RUS_the_crisis_with_ukraine = {
+
+		fire_only_once = yes
+	
+		icon = generic_confiscation
+
+		cost = 100	
+		days_remove = 35
+
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				add = 15
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+			NOT = { has_global_flag = russia_kept_everything_for_itself }
+		}
+
+		available = {
+			country_exists = UKR
+		}
+	
+		remove_effect = {
+			add_nuclear_bombs = 161
+			ROOT = {
+				add_opinion_modifier = {
+					target = UKR
+					modifier = small_increase
+				}
+			}
+			UKR = {
+				add_opinion_modifier = {
+					target = RUS
+					modifier = small_increase
+				}
+				add_to_variable = {
+					var = treasury
+					value = 10
+					tooltip = add_10_billion_to_treasury_tt
+				}	
+			}
+		}
+	}
+
+   RUS_keep_everything_for_yourself = {
+
+	 	fire_only_once = yes
+	
+		icon = oppression
+
+		cost = 150
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				add = -30
+				is_historical_focus_on = yes
+			}
+		}
+
+		available = {
+			country_exists = RUS
+			country_exists = USA
+			OR = {
+				country_exists = UKR
+				country_exists = BLR
+				country_exists = KAZ
+			}
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = it_could_lead_to_consequences
+			set_global_flag = russia_kept_everything_for_itself
+			add_war_support = 0.3
+			add_nuclear_bombs = 999
+			every_country = {
+				limit = {
+					OR = {
+						has_government = conservatism
+						has_government = liberalism
+						has_government = socialism
+					}
+				}
+				FROM = {
+					add_opinion_modifier = {
+						target = RUS
+						modifier = large_decrease
+					}
+				}
+			}
 		}
 	}
 }

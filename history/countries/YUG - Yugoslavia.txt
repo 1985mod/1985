@@ -74,6 +74,10 @@ recruit_character = YUG_lazar_moysov
 recruit_character = YUG_raif_dizdarevich
 recruit_character = YUG_janez_drnovsek
 recruit_character = YUG_borisav_jovic
+recruit_character = YUG_sejdo_bajramovich
+recruit_character = YUG_stjepan_mesich
+recruit_character = YUG_branko_kostich
+recruit_character = YUG_dobrica_chosich
 
 add_ideas = {
 	partial_economic_mobilisation

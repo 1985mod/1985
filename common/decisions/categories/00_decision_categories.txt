@@ -1,2 +1,13 @@
-lar_local_recruitment = {
+corruption_category = {
+	allowed = {
+		always = yes
+	}
+
+	icon = GER_seize_gold_reserves
+	priority = 100 
+
+	visible = {
+		always = yes
+		NOT = { has_idea = minor_corruption }
+	}
 }

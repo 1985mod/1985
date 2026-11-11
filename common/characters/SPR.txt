@@ -15,4 +15,21 @@ characters = {
 			expire="1991.4.5.1"		
 		}
 	}
+
+	SPR_julio_anguita ={
+		name = SPR_julio_anguita
+		portraits={
+			civilian={
+				large= GFX_Portrait_julio_anguita
+			}
+			army = {
+				large = GFX_Portrait_julio_anguita
+			}
+		}
+		country_leader={
+			ideology = democratic_socialism
+			traits={  }
+			expire="2020.5.16.1"		
+		}
+	}
 }

@@ -185,7 +185,7 @@ focus_tree = {
         cost = 7.2
         completion_reward = {
             add_war_support = -0.03
-            add_stability = 0.03
+            add_stability = 0.05
             add_nuclear_bombs = -150 
         }
     }
@@ -263,7 +263,8 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
-            add_stability = 0.05
+            add_stability = 0.1
+            add_political_power = 50
         }
     }
 
@@ -444,6 +445,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
+            add_stability = 0.1
             add_ideas = SOV_law_on_state_enterprise_idea
         }
     }

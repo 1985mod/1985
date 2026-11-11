@@ -4,8 +4,9 @@ russia_radical_liberalisation_reforms = {
 	icon = GFX_dynamic_modifier_russia_radical_reforms
 	
 	trade_opinion_factor = russia_liberalisation_economy_variable
-	consumer_goods_factor = russia_consumer_goods_factor_variable
+	inflation_rate_factor = russia_liberalisation_economy_variable
 	faction_trade_opinion_factor = russia_liberalisation_economy_variable
+	consumer_goods_factor = russia_consumer_goods_factor_variable
 	stability_factor = russia_consumer_goods_factor_variable
 
 }

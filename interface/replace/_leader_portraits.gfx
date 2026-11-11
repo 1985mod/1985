@@ -257,8 +257,8 @@ spriteTypes = {
 	
 	## SPR ##
 	spriteType = {
-		name = GFX_portrait_SPR_felipe_gonzalez
-		texturefile = "gfx/leaders/SPR/Portrait_Felipe_Gonzalez.dds"
+		name = GFX_Portrait_julio_anguita
+		texturefile = "gfx/leaders/SPR/Portrait_julio_anguita.dds"
 	}
 
 	## SLO ##
@@ -318,6 +318,11 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_DEN_poul_schluter
 		texturefile = "gfx/leaders/DEN/Portrait_Poul_Schluter.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_ole_sohn
+		texturefile = "gfx/leaders/DEN/Portrait_ole_sohn.dds"
 	}
 	
 	## DDR ##
@@ -548,6 +553,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_leonid_kravchuk"
 		texturefile = "gfx/leaders/UKR/Portrait_leonid_kravchuk.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_mykola_plaviuk"
+		texturefile = "gfx/leaders/UKR/Portrait_mykola_plaviuk.dds"
 	}
 
 	## LIT ##

@@ -149,6 +149,45 @@ on_actions = {
 				set_global_flag = liberalism_in_new_england
 				set_global_flag = new_england_leader_set
 			}
+
+			### Corruption events ###
+			every_country = {
+				if = {
+					limit = { 
+						OR = {
+							has_idea = horrific_corruption
+							has_idea = significant_corruption
+							has_idea = moderate_corruption
+							has_idea = low_corruption
+							has_idea = minor_corruption
+						}
+						NOT = { has_country_flag = corruption_event_cooldown }
+					}
+					
+					set_country_flag = {
+						flag = corruption_event_cooldown
+						days = 120
+						value = 1
+					}
+					
+					if = {
+						limit = { has_government = communism }
+						random_list = {
+							35 = { country_event = { id = corruption.4 days = 1 } }
+							35 = { country_event = { id = corruption.5 days = 1 } }
+							30 = {}
+						}
+					}
+					else = {
+						random_list = {
+							10 = { country_event = { id = corruption.1 days = 1 } }
+							5 = { country_event = { id = corruption.2 days = 1 } }
+							5 = { country_event = { id = corruption.3 days = 1 } }
+							80 = {}
+						}
+					}
+				}
+			}
 		}
 	}
 }

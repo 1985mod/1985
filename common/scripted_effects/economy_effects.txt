@@ -62,14 +62,17 @@ inflation_effect = {
             set_variable = { var = old_inflation value = inflation_rate }
 
 			if = {
-				limit = { check_variable = { current_debt > 50 } }
+				limit = { check_variable = { debt_to_gdp > 150 } }
 				
-				set_temp_variable = { var = inflation_growth_temp value = current_debt }
-				subtract_from_variable = { var = inflation_growth_temp value = 50 }
-                multiply_temp_variable = { var = inflation_growth_temp value = 0.0049 }
+				set_temp_variable = { var = inflation_growth_temp value = debt_to_gdp }
+				subtract_from_temp_variable = { var = inflation_growth_temp value = 150 }
+                
+                divide_temp_variable = { var = inflation_growth_temp value = 10 }
+                multiply_temp_variable = { var = inflation_growth_temp value = 1.5 }
 				
 				add_to_variable = { var = inflation_rate value = inflation_growth_temp }
 			}
+            add_to_variable = { var = inflation_rate value = modifier@inflation_rate_factor }
         }
     }
 }
@@ -193,26 +196,26 @@ tax_effect = {
     multiply_variable = { var = vat_tax value = 7 }
     divide_variable = { var = vat_tax value = 365 }
 
-    set_variable = { var = export_oil value = resource_exported@oil }
-    multiply_variable = { var = export_oil value = 0.025 }
+    set_variable = { var = export_oil value = resource_imported@oil }
+    multiply_variable = { var = export_oil value = 0.04 }
 
-    set_variable = { var = export_tungsten value = resource_exported@tungsten }
-    multiply_variable = { var = export_tungsten value = 0.030 }
+    set_variable = { var = export_tungsten value = resource_imported@tungsten }
+    multiply_variable = { var = export_tungsten value = 0.03 }
 
-    set_variable = { var = export_aluminum value = resource_exported@aluminum }
-    multiply_variable = { var = export_aluminum value = 0.032 }
+    set_variable = { var = export_aluminum value = resource_imported@aluminum }
+    multiply_variable = { var = export_aluminum value = 0.3 }
 
-    set_variable = { var = export_steel value = resource_exported@steel }
-    multiply_variable = { var = export_steel value = 0.027 }
+    set_variable = { var = export_steel value = resource_imported@steel }
+    multiply_variable = { var = export_steel value = 0.034 }
 
-    set_variable = { var = export_chromium value = resource_exported@chromium }
-    multiply_variable = { var = export_chromium value = 0.03 }
+    set_variable = { var = export_chromium value = resource_imported@chromium }
+    multiply_variable = { var = export_chromium value = 0.037 }
 
-    set_variable = { var = export_rubber value = resource_exported@rubber }
-    multiply_variable = { var = export_rubber value = 0.03 }
+    set_variable = { var = export_rubber value = resource_imported@rubber }
+    multiply_variable = { var = export_rubber value = 0.036 }
 
-    set_variable = { var = export_coal value = resource_exported@coal }
-    multiply_variable = { var = export_coal value = 0.01 }
+    set_variable = { var = export_coal value = resource_imported@coal }
+    multiply_variable = { var = export_coal value = 0.02 }
 
     set_variable = { var = resource_revenue value = export_oil }
     add_to_variable = { var = resource_revenue value = export_tungsten }
@@ -248,6 +251,7 @@ tax_effect = {
     add_to_variable = { var = income_budget value = corporate_tax }
     add_to_variable = { var = income_budget value = vat_tax }
     add_to_variable = { var = income_budget value = resource_revenue }
+    add_to_variable = { var = income_budget value = modifier@income_growth_factor }
 
     set_temp_variable = { var = A value = max_manpower_k }
     multiply_temp_variable = { var = A value = 0.04 }
@@ -259,16 +263,16 @@ tax_effect = {
     set_temp_variable = { var = B_k value = 1 }
     subtract_from_temp_variable = { var = B_k value = corruption_level }
     multiply_temp_variable = { var = B_k value = 0.5 }
-    add_to_temp_variable = { var = B_k value = 1}
+    add_to_temp_variable = { var = B_k value = 1 }
     multiply_temp_variable = { var = B value = B_k }
 
     set_temp_variable = { var = C value = num_of_civilian_factories }
     multiply_temp_variable = { var = C value = gdp_per_capita }
-    multiply_temp_variable = { var = C value = 0.00015 }
+    multiply_temp_variable = { var = C value = 0.0002 }
 
     set_temp_variable = { var = D value = num_of_military_factories }
     add_to_temp_variable = { var = D value = num_of_naval_factories }
-    multiply_temp_variable = { var = D value = 0.0001 }
+    multiply_temp_variable = { var = D value = 0.0003 }
     multiply_temp_variable = { var = D value = gdp_per_capita }
 
     add_to_temp_variable = { var = A value = B }
@@ -298,7 +302,7 @@ tax_effect = {
     set_variable = { var = administration_expenditure value = A }
 
     set_variable = { var = education_expenditure value = max_manpower_k }
-    multiply_variable = { var = education_expenditure value = 0.6 }
+    multiply_variable = { var = education_expenditure value = 0.7 }
     divide_variable = { var = education_expenditure value = 1000000 }
     multiply_variable = { var = education_expenditure value = gdp_per_capita }
     multiply_variable = { var = education_expenditure value = corruption_k }
@@ -329,7 +333,11 @@ tax_effect = {
     multiply_temp_variable = { var = m_manpower_k value = max_manpower }
     set_variable = { var = labour_force value = employment_rate }
     multiply_variable = { var = labour_force value = m_manpower_k }
-    subtract_from_variable = { var = labour_force value = army_manpower_k }
+    
+    if = {
+        limit = { check_variable = { labour_force < 0 } }
+        set_variable = { var = labour_force value = 0 }
+    }
 
     set_variable = { var = civ_workers_per_fac value = 580 }
     set_temp_variable = { var = civ_workers_per_fac_k value = 19 }
@@ -376,16 +384,68 @@ tax_effect = {
     set_variable = { var = naval_workers value = naval_workers_per_fac }
     multiply_variable = { var = naval_workers value = num_of_naval_factories }
 
+    set_temp_variable = { var = max_industrial value = labour_force }
+    multiply_temp_variable = { var = max_industrial value = 0.3 }
+
+    set_temp_variable = { var = raw_industrial value = civ_workers }
+    add_to_temp_variable = { var = raw_industrial value = mil_workers }
+    add_to_temp_variable = { var = raw_industrial value = naval_workers }
+
+    if = {
+        limit = { check_variable = { raw_industrial > max_industrial } }
+        set_temp_variable = { var = ind_scale value = max_industrial }
+        divide_temp_variable = { var = ind_scale value = raw_industrial }
+        multiply_variable = { var = civ_workers value = ind_scale }
+        multiply_variable = { var = mil_workers value = ind_scale }
+        multiply_variable = { var = naval_workers value = ind_scale }
+    }
+
     set_variable = { var = employment_workers value = civ_workers }
     add_to_variable = { var = employment_workers value = mil_workers }
     add_to_variable = { var = employment_workers value = naval_workers }
     add_to_variable = { var = employment_workers value = army_manpower_k }
 
+    set_temp_variable = { var = service_base_share value = 0.7 }
+    set_temp_variable = { var = service_scale value = gdp_per_capita }
+    multiply_temp_variable = { var = service_scale value = 0.002 }
+    subtract_from_temp_variable = { var = service_base_share value = service_scale }
+
+    if = {
+        limit = { check_variable = { service_base_share < 0.65 } }
+        set_temp_variable = { var = service_base_share value = 0.65 }
+    }
+
+    set_variable = { var = service_workers value = labour_force }
+    multiply_variable = { var = service_workers value = service_base_share }
+
+    set_temp_variable = { var = max_service value = labour_force }
+    subtract_from_temp_variable = { var = max_service value = employment_workers }
+    set_temp_variable = { var = service_fill_rate value = 0.77 }
+    set_temp_variable = { var = service_fill_scale value = gdp_per_capita }
+    multiply_temp_variable = { var = service_fill_scale value = 0.007 }
+    add_to_temp_variable = { var = service_fill_rate value = service_fill_scale }
+    if = {
+        limit = { check_variable = { service_fill_rate > 0.96 } }
+        set_temp_variable = { var = service_fill_rate value = 0.96 }
+    }
+
+    multiply_temp_variable = { var = max_service value = service_fill_rate }
+
+    if = {
+        limit = { check_variable = { service_workers > max_service } }
+        set_variable = { var = service_workers value = max_service }
+    }
+    if = {
+        limit = { check_variable = { service_workers < 0 } }
+        set_variable = { var = service_workers value = 0 }
+    }
+
+    add_to_variable = { var = employment_workers value = service_workers }
+
     set_variable = { var = unemployment_rate value = labour_force }
     subtract_from_variable = { var = unemployment_rate value = employment_workers }
     divide_variable = { var = unemployment_rate value = labour_force }
     multiply_variable = { var = unemployment_rate value = 100 }
-    set_variable = { var = k_unemployment_rate value = unemployment_rate }
 
     if = {
         limit = {
@@ -426,27 +486,22 @@ tax_effect = {
     set_variable = { var = target_unemployment_up value = target_unemployment }
     add_to_variable = { var = target_unemployment_up value = diapason }
 
-    set_variable = { var = unemployment_consumer_goods value = 0.0 }
+    set_variable = { var = unemployment_consumer_goods value = 0 }
+    set_variable = { var = unemployment_stability value = 0 }
 
     if = {
-        limit = {
-            check_variable = { unemployment_rate < target_unemployment_down }
-        }
+        limit = { check_variable = { unemployment_rate < target_unemployment_down } }
         set_temp_variable = { var = unemployment_deviation value = target_unemployment_down }
         subtract_from_temp_variable = { var = unemployment_deviation value = unemployment_rate }
-        
-        multiply_temp_variable = { var = unemployment_deviation value = 0.0062 }
+        multiply_temp_variable = { var = unemployment_deviation value = 0.05 }
         add_to_variable = { var = unemployment_consumer_goods value = unemployment_deviation }
     }
 
     else_if = {
-        limit = {
-            check_variable = { unemployment_rate > target_unemployment_up }
-        }
+        limit = { check_variable = { unemployment_rate > target_unemployment_up } }
         set_temp_variable = { var = unemployment_deviation value = unemployment_rate }
         subtract_from_temp_variable = { var = unemployment_deviation value = target_unemployment_up }
-        
-        multiply_temp_variable = { var = unemployment_deviation value = 0.0075 }
+        multiply_temp_variable = { var = unemployment_deviation value = 0.06 }
         add_to_variable = { var = unemployment_consumer_goods value = unemployment_deviation }
     }
 
@@ -460,32 +515,39 @@ tax_effect = {
     }
 
     if = {
-        limit = {
-            check_variable = { unemployment_rate < target_unemployment_down }
-        }
+        limit = { check_variable = { unemployment_rate < target_unemployment_down } }
         set_variable = { var = unemployment_stability value = target_unemployment_down }
         subtract_from_variable = { var = unemployment_stability value = unemployment_rate }
-        
-        multiply_variable = { var = unemployment_stability value = -0.005 }
+        multiply_variable = { var = unemployment_stability value = -0.04 }
     }
-    
+
     else_if = {
-        limit = {
-            check_variable = { unemployment_rate > target_unemployment_up }
-        }
+        limit = { check_variable = { unemployment_rate > target_unemployment_up } }
         set_variable = { var = unemployment_stability value = unemployment_rate }
         subtract_from_variable = { var = unemployment_stability value = target_unemployment_up }
-    
-        multiply_variable = { var = unemployment_stability value = -0.009 }
-    }
-    
-    else = {
-        set_variable = { var = unemployment_stability value = 2 }
+        multiply_variable = { var = unemployment_stability value = -0.06 }
     }
 
     set_temp_variable = { var = unemployment_manpower value = labour_force }
     subtract_from_temp_variable = { var = unemployment_manpower value = employment_workers }
+
+    if = {
+        limit = { check_variable = { unemployment_manpower < 0 } }
+        set_temp_variable = { var = unemployment_manpower value = 0 }
+    }
+
     divide_temp_variable = { var = unemployment_manpower value = 1000 }
+
+    set_temp_variable = { var = base_welfare value = max_manpower_k }
+    divide_temp_variable = { var = base_welfare value = 1000 }
+    set_temp_variable = { var = base_welfare_pc value = gdp_per_capita }
+    multiply_temp_variable = { var = base_welfare_pc value = 0.15 }
+    
+    multiply_temp_variable = { var = base_welfare value = base_welfare_pc }
+    multiply_temp_variable = { var = base_welfare value = 7 }
+    divide_temp_variable = { var = base_welfare value = 365 }
+    
+    add_to_temp_variable = { var = unemployment_manpower value = base_welfare }
 
     set_temp_variable = { var = gdp_per_capita_for_welfare value = gdp_per_capita }
     multiply_temp_variable = { var = gdp_per_capita_for_welfare value = 0.35 }
@@ -496,6 +558,7 @@ tax_effect = {
     multiply_temp_variable = { var = unemployment_manpower value = corruption_k }
 
     set_variable = { var = welfare_expenditure value = unemployment_manpower }
+    add_to_variable = { var = welfare_expenditure value = modifier@welfare_expenditure_factor }
 
     clamp_variable = {
         var = administration_expenditure
@@ -572,6 +635,7 @@ tax_effect = {
     add_to_variable = { var = expense_budget value = defense_expenditure }
     add_to_variable = { var = expense_budget value = current_research_cost }
     add_to_variable = { var = expense_budget value = debt_service_cost }
+    add_to_variable = { var = expense_budget value = modifier@expense_growth_factor }
 
     # Money supply
     add_to_variable = { var = money_supply value = expense_budget }
@@ -606,7 +670,7 @@ tax_effect = {
     multiply_variable = { var = debt_service_cost value = 7 }
 
     divide_variable = { var = debt_service_cost value = 365 }
-    divide_variable = { var = debt_service_cost value = 10 }
+    divide_variable = { var = debt_service_cost value = 2 }
 
     if = {
         limit = { check_variable = { debt_service_cost < 0 } }
@@ -639,11 +703,10 @@ corruption_effect = {
 
 velocity_effect = {
     every_country = {
-
-        set_temp_variable = { var = inflation_rate_temp }
+        set_temp_variable = { var = inflation_rate_temp value = inflation_rate }
         if = {
-            limit = { check_variable = { inflation_rate < -150 } }
-            set_temp_variable = { var = inflation_rate_temp value = -150 }
+            limit = { check_variable = { inflation_rate < -149 } }
+            set_temp_variable = { var = inflation_rate_temp value = -149 }
         }
 
         set_variable = { var = velocity value = 1 }
@@ -652,6 +715,12 @@ velocity_effect = {
         add_to_temp_variable = { var = temp_velocity_interest_rate value = 5 }
         set_temp_variable = { var = temp_velocity_interest_rate_2 value = interest_rate }
         add_to_temp_variable = { var = temp_velocity_interest_rate_2 value = 25 }
+        
+        if = {
+            limit = { check_variable = { temp_velocity_interest_rate_2 < 0.1 } }
+            set_temp_variable = { var = temp_velocity_interest_rate_2 value = 0.1 }
+        }
+        
         divide_temp_variable = { var = temp_velocity_interest_rate value = temp_velocity_interest_rate_2 }
         multiply_temp_variable = { var = temp_velocity_interest_rate value = 1.7 }
 
@@ -659,11 +728,49 @@ velocity_effect = {
         add_to_temp_variable = { var = temp_inflation_rate value = 50 }
         set_temp_variable = { var = temp_inflation_rate_2 value = inflation_rate_temp }
         add_to_temp_variable = { var = temp_inflation_rate_2 value = 150 }
+        
         divide_temp_variable = { var = temp_inflation_rate value = temp_inflation_rate_2 }
         multiply_temp_variable = { var = temp_inflation_rate value = 0.55 }
         
         subtract_from_variable = { var = velocity value = temp_velocity_interest_rate }
-
         add_to_variable = { var = velocity value = temp_inflation_rate }
+        
+        if = {
+            limit = { check_variable = { velocity < 0.01 } }
+            set_variable = { var = velocity value = 0.01 }
+        }
+        if = {
+            limit = { check_variable = { velocity > 3 } }
+            set_variable = { var = velocity value = 3 }
+        }
+
+        if = {
+            limit = { 
+                check_variable = { debt_to_gdp > 70 } 
+                check_variable = { debt_to_gdp <= 250 }
+            }
+            set_temp_variable = { var = debt_velocity_temp value = debt_to_gdp }
+            subtract_from_temp_variable = { var = debt_velocity_temp value = 70 }
+            divide_temp_variable = { var = debt_velocity_temp value = 100 }
+            
+            set_temp_variable = { var = debt_penalty value = debt_velocity_temp }
+            multiply_temp_variable = { var = debt_penalty value = 0.5 }
+            subtract_from_variable = { var = velocity value = debt_penalty }
+        }
+
+        if = {
+            limit = { check_variable = { debt_to_gdp > 250 } }
+            set_temp_variable = { var = debt_panic_temp value = debt_to_gdp }
+            subtract_from_temp_variable = { var = debt_panic_temp value = 250 }
+            divide_temp_variable = { var = debt_panic_temp value = 100 }
+            
+            multiply_temp_variable = { var = debt_panic_temp value = 1.5 } 
+            
+            if = {
+                limit = { check_variable = { debt_panic_temp > 1.5 } }
+                set_temp_variable = { var = debt_panic_temp value = 1.5 }
+            }
+            add_to_variable = { var = velocity value = debt_panic_temp }
+        }
     }
 }   

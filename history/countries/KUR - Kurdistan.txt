@@ -33,6 +33,7 @@ set_popularities = {
 }
 
 recruit_character = KUR_parliament
+recruit_character = KUR_abdullah_ocalan
 
 add_ideas = {
 	war_economy

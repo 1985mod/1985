@@ -12,7 +12,8 @@ dismissal_rule_world_tension = {
 		base = 0
 		modifier = {  
 			add = 1
-			has_government = democratic
+			has_government = conservatism
+			has_government = liberalism
 			is_faction_leader = yes 
 		}
 	}
@@ -49,14 +50,20 @@ dismissal_rule_offensive_war = {
 
 dismissal_rule_ideology_not_democratic = {
 	type = dismissal_rules
-	visible = { has_government = democratic }
+	visible = { 
+		OR = {
+			has_government = conservatism
+			has_government = liberalism
+		} 
+	}
 	ai_will_do = {
 		base = 0
 	}
 
 	dismiss_member_trigger = {
 		NOT = {
-			has_government = democratic 
+			has_government = conservatism
+			has_government = liberalism 
 		}
 	}
 }
@@ -101,12 +108,20 @@ dismissal_rule_ideology_fascist = {
 
 dismissal_rule_ideology_democratic = {
 	type = dismissal_rules
-	visible = { NOT = { has_government = democratic } }
+	visible = { 
+		OR = {
+			NOT = { has_government = conservatism } 
+			NOT = { has_government = liberalism } 
+		}
+	}
 	ai_will_do = {
 		base = 0
 	}
 
 	dismiss_member_trigger = {
-		has_government = democratic
+		OR = {
+			has_government = conservatism
+			has_government = liberalism
+		}
 	}
 }

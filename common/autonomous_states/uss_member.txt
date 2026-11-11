@@ -24,8 +24,8 @@ autonomy_state = {
 		overlord_trade_cost_factor = -0.6
 		peace_score_ratio_transferred_to_overlord = 0.15
 		lend_lease_tension_with_overlord = -0.5
-		cic_to_overlord_factor = 0.7
-		mic_to_overlord_factor = 0.7
+		cic_to_overlord_factor = 0.4
+		mic_to_overlord_factor = 0.25
 		
 		research_sharing_per_country_bonus_factor = 0.3
 	}
@@ -52,6 +52,12 @@ autonomy_state = {
 			tag = KYR
             tag = TAJ
             tag = TMS
+			tag = LIT
+			tag = LAT
+			tag = EST
+			tag = GEO
+			tag = ABK
+			tag = SOO
 		}
 	}
 

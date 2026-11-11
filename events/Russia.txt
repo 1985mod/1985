@@ -86,10 +86,10 @@ country_event = {
 					ideology = liberalism
 					popularity = 0.4
 				}
-			}			
-			country_event = { id = russia.12 days = 1 }
-			country_event = { id = russia.13 days = 2 }
-			country_event = { id = russia.14 days = 2 }
+			}		
+			country_event = { id = russia.14 hours = 10 }	
+			country_event = { id = russia.12 hours = 12 }
+			country_event = { id = russia.13 days = 1 }
 			set_country_flag = rfg_treaty_signed
 			add_stability = 0.03
 		}
@@ -248,8 +248,8 @@ country_event = {
 
     option = {
         name = russia.10.a
-        add_political_power = -10
-		add_stability = -0.05
+        add_political_power = -25
+		add_stability = 0.05
 		add_ideas = RUS_mass_banditry
     }
 }
@@ -334,17 +334,19 @@ country_event = {
 	fire_only_once = yes
 
 	immediate = {
-		release = TAT
-		TAT = {
-			set_politics = {
-				ruling_party = liberalism
-				elections_allowed = yes
-			}
-			add_popularity = {
-				ideology = liberalism
-				popularity = 0.4
-			}
-		}	
+		hidden_effect = {
+			release = TAT
+			TAT = {
+				set_politics = {
+					ruling_party = liberalism
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.4
+				}
+			}	
+		}
 	}
 
     option = {
@@ -372,6 +374,11 @@ country_event = {
 			flag = the_growing_crisis_in_the_caucasus
 			days = 14
 			value = 1
+		}
+		hidden_effect = {
+			TAT = {
+				country_event = { id = tatarstan.1 days = 5 }
+			}
 		}
 	}
 }
@@ -633,6 +640,7 @@ country_event = {
 				popularity = 0.04
 			}
 		}
+		custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
 		hidden_effect = {
 			set_popularities = {
 				neutrality = 70
@@ -640,6 +648,7 @@ country_event = {
 				conservatism = 16
 				communism = 4
 			}
+			load_focus_tree = RUS_lebed_focus
 		}
 	}
 }
@@ -707,3 +716,162 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = russia.28 ## Ядерное наследство ##
+	title = russia.28.t
+	desc = russia.28.desc
+	picture = GFX_report_nuclear_legacy
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = russia.28.a
+		set_global_flag = the_lisbon_protocol_is_underway
+		add_war_support = 0.03
+		add_nuclear_bombs = 689
+	}
+}
+
+country_event = {
+	id = russia.29 ## Процветающая Россия ##
+	title = russia.29.t
+	desc = russia.29.desc
+	picture = GFX_report_nuclear_legacy
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = russia.29.a
+		add_political_power = 100
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		add_war_support = 0.05
+		custom_effect_tooltip = thanks_for_the_game_in_1985_or_maybe_not
+	}
+}
+
+country_event = {
+	id = russia.30 ## Выстрелы в Кремле ##
+	title = russia.30.t
+	desc = russia.30.desc
+	picture = GFX_report_nuclear_legacy
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = russia.30.a
+		add_political_power = -50
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.2
+		}
+		add_stability = -0.15
+		add_war_support = -0.1
+		kill_country_leader = yes
+		hidden_effect = {
+			country_event = { id = russia.31 hours = 6 }
+		}
+	}
+
+    option = {
+        name = russia.30.b
+		add_political_power = -50
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.2
+		}
+		add_stability = -0.15
+		add_war_support = -0.1
+		kill_country_leader = yes
+		hidden_effect = {
+			country_event = { id = russia.32 hours = 12 }
+		}
+	}
+}
+
+country_event = {
+	id = russia.31 ## Штурм Кремля ##
+	title = russia.31.t
+	desc = russia.31.desc
+	picture = GFX_report_nuclear_legacy
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = russia.31.a
+		add_stability = 0.1
+		add_manpower = -7536
+		drop_cosmetic_tag = yes
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.9
+		}
+	}
+}
+
+country_event = {
+	id = russia.32 ## Штурм Кремля ##
+	title = russia.32.t
+	desc = russia.32.desc
+	picture = GFX_report_nuclear_legacy
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = russia.32.a
+		add_stability = 0.05
+		add_war_support = 0.03
+		drop_cosmetic_tag = yes
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		custom_effect_tooltip = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.56
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.12
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.22
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.07
+			}
+		}
+		hidden_effect = {
+			set_popularities = {
+				neutrality = 0.56
+				conservatism = 0.12
+				socialism = 0.03
+				liberalism = 0.22
+				fascism = 0.07
+			}
+		}
+	}
+}

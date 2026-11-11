@@ -97,4 +97,63 @@ characters = {
 			id = -1
 		}
 	}
+	YUG_sejdo_bajramovich = {
+		name = YUG_sejdo_bajramovich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Portrait_sejdo_bajramovich.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_socialism
+			traits = { }
+			expire = "1993.3.1.1"
+			id = -1
+		}
+	}
+
+	YUG_stjepan_mesich = {
+		name = YUG_stjepan_mesich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Portrait_stjepan_mesich.dds"
+			}
+		}
+		country_leader = {
+			ideology = left_wing_nationalism
+			traits = { }
+			expire = "2026.1.11.1"
+			id = -1
+		}
+	}
+
+	YUG_branko_kostich = {
+		name = YUG_branko_kostich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Portrait_branko_kostich.dds"
+			}
+		}
+		country_leader = {
+			ideology = ethnic_nationalism
+			traits = { }
+			expire = "2020.20.8.1"
+			id = -1
+		}
+	}
+
+	YUG_dobrica_chosich = {
+		name = YUG_dobrica_chosich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Portrait_dobrica_chosich.dds"
+			}
+		}
+		country_leader = {
+			ideology = ethnic_nationalism
+			traits = { }
+			expire = "2014.18.5.1"
+			id = -1
+		}
+	}
 }

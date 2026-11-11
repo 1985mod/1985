@@ -287,7 +287,7 @@ SOV_prohibition_ussr = {
 		}
 
 		remove_effect = {
-			add_stability = 0.05
+			add_stability = 0.08
 		}
 	}
 }
@@ -735,13 +735,51 @@ SOV_world_war_three = {
 		selectable_mission = no
 
 		timeout_effect = {
-			SOV = {
+			set_country_flag = copenhagen_armistice_over
+			if = {
+				limit = {
+					NOT = {
+						FRA = { is_puppet_of = SOV }
+					}
+				}
 				declare_war_on = {
-					target = USA
+					target = FRA
 					type = annex_everything
 				}
 			}
-			set_country_flag = copenhagen_armistice_over
+			if = {
+				limit = {
+					NOT = {
+						ENG = { is_puppet_of = SOV }
+					}
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						ITA = { is_puppet_of = SOV }
+					}
+				}
+				declare_war_on = {
+					target = ITA
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						SPR = { is_puppet_of = SOV }
+					}
+				}
+				declare_war_on = {
+					target = SPR
+					type = annex_everything
+				}
+			}
 		}
 	}
 
@@ -752,8 +790,6 @@ SOV_world_war_three = {
 		ai_will_do = {
 			factor = 500
 		}
-
-		fire_only_once = yes
 
 		icon = POL_organize_strike_two
 
@@ -794,6 +830,438 @@ SOV_world_war_three = {
 
 		remove_effect = {
 			USA = { country_event = { id = soviet_union.75 hours = 12 } }
+		}
+	}
+}
+
+SOV_separatism_in_the_soviet_union = {
+
+	SOV_uprising_in_ukraine = {
+		
+		icon = infiltrate_state
+
+		fire_only_once = yes
+		
+		activation = {
+			SOV = { has_war_with = AFS }
+			OR = {
+				SOV = { has_completed_focus = SOV_special_operations_in_afghanistan }
+				NOT = { has_completed_focus = SOV_suppress_the_partisans }
+			}
+		}
+		available = {
+			OR = {
+				NOT = { SOV = { has_war_with = AFS } }
+				SOV = { has_completed_focus = SOV_suppress_the_partisans }
+			}
+			has_country_flag = troops_into_kyiv
+			has_country_flag = kgb_activated
+		}
+
+		days_mission_timeout = 180
+		
+		selectable_mission = no
+
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		timeout_effect = {
+			set_global_flag = uprising_in_ukraine
+			country_event = { id = soviet_union.79 }
+			add_stability = -0.05
+			add_war_support = -0.06
+		}
+	}
+
+	SOV_uprising_in_baltics = {
+		
+		icon = POL_organize_strike_two
+
+		fire_only_once = yes
+		
+		activation = {
+			SOV = { has_war_with = AFS }
+			OR = {
+				SOV = { has_completed_focus = SOV_special_operations_in_afghanistan }
+				NOT = { has_completed_focus = SOV_suppress_the_partisans }
+			}
+		}
+		available = {
+			OR = {
+				NOT = { SOV = { has_war_with = AFS } }
+				SOV = { has_completed_focus = SOV_suppress_the_partisans }
+			}
+			has_country_flag = troops_into_riga
+			has_country_flag = stabilization_measures_in_baltic_states
+			has_country_flag = kgb_activated
+		}
+
+		days_mission_timeout = 210
+		
+		selectable_mission = no
+
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		timeout_effect = {
+			set_global_flag = uprising_in_baltics
+			country_event = { id = soviet_union.80 }
+			add_stability = -0.05
+			add_war_support = -0.06
+		}
+	}
+
+	SOV_activate_the_kgb = {
+
+		icon = SWI_expand_covert_operations
+
+		fire_only_once = yes
+
+		days_remove = 10
+		
+		cost = 100
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			SOV = { has_war_with = AFS }
+			has_completed_focus = SOV_special_operations_in_afghanistan
+		}
+
+
+		remove_effect = {
+			add_stability = 0.05
+			set_country_flag = kgb_activated
+			add_days_mission_timeout = {
+				mission = SOV_uprising_in_ukraine
+				days = 35
+			}
+			add_days_mission_timeout = {
+				mission = SOV_uprising_in_baltics
+				days = 35
+			}
+		}
+	}
+
+
+	SOV_stabilization_measures_in_baltic_states = {
+
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		cost = 50
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			SOV = { has_war_with = AFS }
+			has_completed_focus = SOV_special_operations_in_afghanistan
+		}
+
+
+		remove_effect = {
+			set_country_flag = stabilization_measures_in_baltic_states
+			add_days_mission_timeout = {
+				mission = SOV_uprising_in_baltics
+				days = 25
+			}
+		}
+	}
+
+	SOV_send_troops_into_kyiv = {
+
+		icon = hol_war_on_pacifism
+
+		fire_only_once = yes
+
+		days_remove = 10
+		
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			SOV = { has_war_with = AFS }
+			has_completed_focus = SOV_special_operations_in_afghanistan
+			divisions_in_state = {
+				type = armor
+				size > 3
+				state = 202
+			}
+		}
+
+
+		remove_effect = {
+			add_stability = -0.03
+			set_country_flag = troops_into_kyiv
+			add_days_mission_timeout = {
+				mission = SOV_uprising_in_ukraine
+				days = 10
+			}
+		}
+	}
+
+	SOV_send_troops_into_riga = {
+
+		icon = oppression
+
+		fire_only_once = yes
+
+		days_remove = 10
+		
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			SOV = { has_war_with = AFS }
+			has_completed_focus = SOV_special_operations_in_afghanistan
+			divisions_in_state = {
+				type = armor
+				size > 3
+				state = 808
+			}
+		}
+
+
+		remove_effect = {
+			add_stability = -0.03
+			set_country_flag = troops_into_riga
+			add_days_mission_timeout = {
+				mission = SOV_uprising_in_ukraine
+				days = 10
+			}
+		}
+	}
+}
+
+SOV_baltic_negotiations = {
+
+	SOV_referendums_in_the_baltic_states = {
+		
+		icon = infiltrate_state
+
+		fire_only_once = yes
+		
+		activation = {
+			OR = {
+				country_exists = LIT
+				country_exists = LAT
+				country_exists = EST
+			}
+			SOV = { has_completed_focus = SOV_baltic_negotiations }
+		}
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = 120
+		
+		selectable_mission = no
+
+		timeout_effect = {
+			if = {
+				limit = {
+					country_exists = LIT
+					check_variable = { SOV.support_in_baltics_states > 49 }
+				}
+				LIT = { country_event = { id = soviet_union.86 } }
+			}
+			if = {
+				limit = {
+					country_exists = LAT
+					check_variable = { SOV.support_in_baltics_states > 49 }
+				}
+				LAT = { country_event = { id = soviet_union.86 } }
+			}
+			if = {
+				limit = {
+					country_exists = EST
+					check_variable = { SOV.support_in_baltics_states > 49 }
+				}
+				EST = { country_event = { id = soviet_union.86 } }
+			}
+			if = {
+				limit = {
+					check_variable = { SOV.support_in_baltics_states < 49 }
+				}
+				SOV = { country_event = { id = soviet_union.87 } }
+			}
+		}
+	}
+
+	SOV_guarantees_for_russian_speakers = {
+
+		icon = hol_war_on_pacifism
+
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		cost = 150
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			OR = {
+				country_exists = LIT
+				country_exists = LAT
+				country_exists = EST
+			}
+			has_completed_focus = SOV_baltic_negotiations
+		}
+
+
+		remove_effect = {
+			add_stability = 0.03
+			set_country_flag = troops_into_kyiv
+			add_days_mission_timeout = {
+				mission = SOV_referendums_in_the_baltic_states
+				days = 10
+			}
+			custom_effect_tooltip = support_in_baltics_states_will_increase_by_10_percent
+			add_to_variable = { var = SOV.support_in_baltics_states value = 10 }
+			clamp_variable = {
+				var = SOV.support_in_baltics_states
+				max = 100
+				min = 0
+			}
+		}
+	}
+
+	SOV_offer_the_baltic_states_special_status = {
+
+		icon = SWI_expand_covert_operations
+
+		fire_only_once = yes
+
+		days_remove = 15
+		
+		cost = 120
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			OR = {
+				country_exists = LIT
+				country_exists = LAT
+				country_exists = EST
+			}
+			has_completed_focus = SOV_baltic_negotiations
+		}
+
+
+		remove_effect = {
+			LIT = {	
+				add_stability = 0.05
+			}
+			LAT = {
+				add_stability = 0.05
+			}
+			EST = {
+				add_stability = 0.05
+			}
+			custom_effect_tooltip = support_in_baltics_states_will_increase_by_10_percent
+			add_to_variable = { var = SOV.support_in_baltics_states value = 10 }
+			clamp_variable = {
+				var = SOV.support_in_baltics_states
+				max = 100
+				min = 0
+			}	
+		}
+	}
+
+
+	SOV_media_campaign = {
+
+		icon = generic_operation
+
+		days_remove = 50
+		
+		cost = 75
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			OR = {
+				country_exists = LIT
+				country_exists = LAT
+				country_exists = EST
+			}
+			has_completed_focus = SOV_baltic_negotiations
+		}
+
+
+		remove_effect = {
+			add_stability = 0.03
+			add_war_support = 0.03
+			custom_effect_tooltip = support_in_baltics_states_will_increase_by_5_percent
+			add_to_variable = { var = SOV.support_in_baltics_states value = 5 }
+			clamp_variable = {
+				var = SOV.support_in_baltics_states
+				max = 100
+				min = 0
+			}	
+		}
+	}
+
+	SOV_support_for_the_interfronts = {
+
+		icon = oppression
+
+		days_remove = 30
+		
+		cost = 50
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			OR = {
+				country_exists = LIT
+				country_exists = LAT
+				country_exists = EST
+			}
+			has_completed_focus = SOV_baltic_negotiations
+		}
+
+
+		remove_effect = {
+			custom_effect_tooltip = support_in_baltics_states_will_increase_by_3_percent
+			add_to_variable = { var = SOV.support_in_baltics_states value = 3 }
+			clamp_variable = {
+				var = SOV.support_in_baltics_states
+				max = 100
+				min = 0
+			}	
 		}
 	}
 }

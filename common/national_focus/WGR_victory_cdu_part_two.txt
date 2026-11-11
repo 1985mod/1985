@@ -1,0 +1,275 @@
+focus_tree = {
+	id = WGR_victory_cdu_part_two
+	country = {
+		factor = 0
+		modifier = {
+			add = 2
+			tag = WGR
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 700 y = 1150 }
+
+	focus = {
+		id = WGR_memorandum_on_the_establishment_of_the_ecb
+		icon = GFX_focus_generic_the_council_of_europe
+		cost = 5
+		x = 10
+		y = 0
+
+		completion_reward = {
+			custom_effect_tooltip = add_europeanism_5_percent
+			FROM = {
+				add_to_variable = {
+					var = europeanism
+					value = 5
+				}
+				clamp_variable = {
+					var = europeanism
+					min = 0
+					max = 100
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = EU_member
+				}
+				add_timed_idea = {
+					idea = EU_economic_cooperation_with_germany
+					days = 180
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_struggle_against_the_republicans
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 5
+		relative_position_id = WGR_memorandum_on_the_establishment_of_the_ecb
+		prerequisite = { focus = WGR_memorandum_on_the_establishment_of_the_ecb }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.5
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.15
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_allocation_of_emergency_subsidies
+		icon = GFX_focus_SIA_a_modern_economy
+		cost = 5
+		relative_position_id = WGR_memorandum_on_the_establishment_of_the_ecb
+		prerequisite = { focus = WGR_memorandum_on_the_establishment_of_the_ecb }
+		x = 2
+		y = 1
+
+		completion_reward = {
+			add_to_variable = {
+				var = treasury
+				value = 5
+				tooltip = add_5_billion_to_treasury_tt
+			}
+			add_timed_idea = {
+				idea = WGR_allocation_of_emergency_subsidies
+				days = 120
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_prague_refugees
+		icon = GFX_focus_DEN_heavy_regulations
+		cost = 5
+		relative_position_id = WGR_memorandum_on_the_establishment_of_the_ecb
+		prerequisite = { focus = WGR_struggle_against_the_republicans }
+		prerequisite = { focus = WGR_allocation_of_emergency_subsidies }
+		x = 0
+		y = 2
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = WGR_aid_to_east_berlin
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		relative_position_id = WGR_prague_refugees
+		prerequisite = { focus = WGR_prague_refugees }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			DDR = { country_event = { id = wgr.30 } }
+		}
+	}
+
+	focus = {
+		id = WGR_speech_in_bundestag
+		icon = GFX_focus_AST_a_democratic_bulwark
+		cost = 10
+		relative_position_id = WGR_prague_refugees
+		prerequisite = { focus = WGR_prague_refugees }
+		x = 2
+		y = 1
+
+		available = {
+			has_global_flag =  berlin_wall_fall
+		}
+
+		completion_reward = {
+			country_event = { id = wgr.34 }
+		}
+	}
+
+	focus = {
+		id = WGR_fashion_foundation
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5
+		relative_position_id = WGR_prague_refugees
+		prerequisite = { focus = WGR_speech_in_bundestag }
+        prerequisite = { focus = WGR_aid_to_east_berlin }
+		x = 0
+		y = 2
+
+		completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = medium_increase
+				}
+			}
+			DDR = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+			add_timed_idea = {
+				idea = WGR_fashion_foundation
+				days = 480
+			}
+			DDR = {
+				add_timed_idea = {
+					idea = WGR_fashion_foundation_ddr
+					days = 480
+				}
+				add_to_variable = {
+					var = treasury
+					value = 5
+					tooltip = add_5_billion_to_treasury_tt
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_to_reassure_paris_and_london
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 5
+		relative_position_id = WGR_fashion_foundation
+		prerequisite = { focus = WGR_fashion_foundation }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = medium_increase
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = medium_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_ten_point_plan
+		icon = GFX_goal_generic_major_alliance
+		cost = 5
+		relative_position_id = WGR_to_reassure_paris_and_london
+		prerequisite = { focus = WGR_to_reassure_paris_and_london }
+		x = 0
+		y = 1
+
+		available = {
+			has_global_flag = berlin_wall_fall
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.03
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = medium_decrease
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_decrease
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_2_plus_4_talks
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		relative_position_id = WGR_ten_point_plan
+		prerequisite = { focus = WGR_ten_point_plan }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = USA
+						tag = SOV
+						tag = ENG
+						tag = FRA
+						tag = DDR
+					}
+				}
+				country_event = { id = wgr.14 hours = 6 }
+			}
+		}
+	}
+}

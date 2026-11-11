@@ -76,6 +76,8 @@ set_popularities = {
 
 recruit_character = FRA_francois_mitterrand
 recruit_character = FRA_jacques_chirac
+recruit_character = FRA_georges_marchais
+
 add_ideas = {
 	EU_member
 	partial_economic_mobilisation

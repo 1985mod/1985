@@ -48,6 +48,8 @@ autonomy_state = {
 			tag = BUL
 			tag = HUN
 			tag = DDR
+			tag = FIN
+			tag = MON
 		}
 	}
 

@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 120
+            add = 1200
             tag = RUS
         }
     }
@@ -36,12 +36,26 @@ focus_tree = {
     } 
 
     focus = { 
-        id = RUS_vi_congress_of_peoples_deputies_of_russia
+        id = RUS_sign_a_federal_agreement_with_the_regions
         icon = GFX_focus_icon_SOV_course_towards_stability
         x = 0
         y = 1
         relative_position_id = RUS_new_year_of_the_ew_russia
         prerequisite = { focus = RUS_new_year_of_the_ew_russia }
+        cost = 5
+
+		completion_reward = {
+            country_event = { id = russia.2 }
+		}
+    } 
+
+    focus = { 
+        id = RUS_vi_congress_of_peoples_deputies_of_russia
+        icon = GFX_focus_icon_SOV_course_towards_stability
+        x = -2
+        y = 1
+        relative_position_id = RUS_sign_a_federal_agreement_with_the_regions
+        prerequisite = { focus = RUS_sign_a_federal_agreement_with_the_regions }
         cost = 5
 
 		available = {
@@ -54,26 +68,12 @@ focus_tree = {
     } 
 
     focus = { 
-        id = RUS_sign_a_federal_agreement_with_the_regions
-        icon = GFX_focus_icon_SOV_course_towards_stability
-        x = -2
-        y = 1
-        relative_position_id = RUS_vi_congress_of_peoples_deputies_of_russia
-        prerequisite = { focus = RUS_vi_congress_of_peoples_deputies_of_russia }
-        cost = 5
-
-		completion_reward = {
-            country_event = { id = russia.2 }
-		}
-    } 
-
-    focus = { 
         id = RUS_visit_to_the_usa
         icon = GFX_focus_icon_SOV_course_towards_stability
         x = 2
         y = 1
-        relative_position_id = RUS_vi_congress_of_peoples_deputies_of_russia
-        prerequisite = { focus = RUS_vi_congress_of_peoples_deputies_of_russia }
+        relative_position_id = RUS_sign_a_federal_agreement_with_the_regions
+        prerequisite = { focus = RUS_sign_a_federal_agreement_with_the_regions }
         cost = 1
 
 		completion_reward = {
@@ -89,8 +89,8 @@ focus_tree = {
         icon = GFX_focus_icon_SOV_course_towards_stability
         x = 0
         y = 2
-        relative_position_id = RUS_vi_congress_of_peoples_deputies_of_russia
-        prerequisite = { focus = RUS_sign_a_federal_agreement_with_the_regions }
+        relative_position_id = RUS_sign_a_federal_agreement_with_the_regions
+        prerequisite = { focus = RUS_vi_congress_of_peoples_deputies_of_russia }
         prerequisite = { focus = RUS_visit_to_the_usa }
         cost = 5
 
@@ -132,6 +132,21 @@ focus_tree = {
 		completion_reward = {
             add_dynamic_modifier = { modifier = russia_radical_liberalisation_reforms }
             unlock_decision_category_tooltip = RUS_liberalisation_economy
+            custom_effect_tooltip = we_will_decrease_the_interest_rate_by_1_percent 
+            subtract_from_variable = { var = interest_rate value = 1 }
+            if = {
+                limit = { 
+                    check_variable = { interest_rate > 100 } 
+                }
+                set_variable = { var = interest_rate value = 100 }
+            }
+            hidden_effect = {
+                velocity_effect = yes
+				set_variable = { var = pop_rate value = 20 }
+				set_variable = { var = corp_rate value = 15 }
+				set_variable = { var = vat_rate value = 10 }
+                set_variable = { var = nominal_gdp value = real_gdp }
+            }
 		}
     }  
 
@@ -145,6 +160,43 @@ focus_tree = {
         cost = 5
 
 		completion_reward = {
+            add_political_power = 50
+			if = {
+				limit = {
+					has_idea = significant_corruption
+				}
+				swap_ideas = {
+					remove_idea = significant_corruption
+					add_idea = horrific_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = moderate_corruption
+				}
+				swap_ideas = {
+					remove_idea = moderate_corruption
+					add_idea = significant_corruption
+				}  
+			}	
+			if = {
+				limit = {
+					has_idea = low_corruption
+				}
+				swap_ideas = {
+					remove_idea = low_corruption
+					add_idea = moderate_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = minor_corruption
+				}
+				swap_ideas = {
+					remove_idea = minor_corruption
+					add_idea = low_corruption
+				}  
+			}
             add_ideas = RUS_privatize_state_property
 		}
     }      
@@ -174,9 +226,14 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
-            swap_ideas = {
-                remove_idea = export_focus
-                add_idea = free_trade
+            if = {
+				limit = {
+                    has_idea = export_focus
+				}
+                swap_ideas = {
+                    remove_idea = export_focus
+                    add_idea = free_trade
+                }  
             }
             if = {
 				limit = {
@@ -209,6 +266,42 @@ focus_tree = {
         cost = 5
 
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = sustainable_growth
+				}
+				swap_ideas = {
+					remove_idea = sustainable_growth
+					add_idea = economic_boom
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = stagnation
+				}
+				swap_ideas = {
+					remove_idea = stagnation
+					add_idea = sustainable_growth
+				}  
+			}	
+			if = {
+				limit = {
+					has_idea = recession
+				}
+				swap_ideas = {
+					remove_idea = recession
+					add_idea = stagnation
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = depression
+				}
+				swap_ideas = {
+					remove_idea = depression
+					add_idea = recession
+				}  
+			}
             add_political_power = 75
 		}
     }    

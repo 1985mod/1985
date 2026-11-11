@@ -55,33 +55,6 @@ country_event = {
 			ideology = conservatism
 			popularity = 0.015
 	    }
-        if = {
-			limit = {
-                has_idea = closed_borders
-			}
-            swap_ideas = {
-                remove_idea = closed_borders
-                add_idea = regulated_migration
-            }  
-        }
-        if = {
-			limit = {
-                has_idea = regulated_migration
-			}
-            swap_ideas = {
-                remove_idea = regulated_migration
-                add_idea = easily_adjustable_migration
-            }  
-        }
-        if = {
-			limit = {
-                has_idea = easily_adjustable_migration
-			}
-            swap_ideas = {
-                remove_idea = easily_adjustable_migration
-                add_idea = open_doors
-            }  
-        }
 	}
 
     option = {
@@ -91,33 +64,6 @@ country_event = {
 			ideology = socialism
 			popularity = 0.015
 	    }
-        if = {
-			limit = {
-                has_idea = open_doors
-			}
-            swap_ideas = {
-                remove_idea = open_doors
-                add_idea = easily_adjustable_migration
-            }  
-        }
-        if = {
-			limit = {
-                 has_idea = easily_adjustable_migration
-			}
-            swap_ideas = {
-                remove_idea = easily_adjustable_migration
-                add_idea = regulated_migration
-            }  
-        }
-        if = {
-			limit = {
-                has_idea = regulated_migration
-			}
-            swap_ideas = {
-                remove_idea = regulated_migration
-                add_idea = closed_borders
-            }  
-        }
 	}
 }
 
@@ -303,24 +249,20 @@ country_event = {
 }
 
 country_event = {
-	id = wgr.13 ## крах берлинской стены ##
+	id = wgr.13 ## Договор подписан ##
 	title = wgr.13.t
 	desc = wgr.13.desc
 
 	is_triggered_only = yes
 
+	fire_only_once = yes
+
     option = {
-        name = wgr.13.a
-		damage_building = {
-			type = infrastructure
-			state = 1047
-			damage = 1
-		}
-		damage_building = {
-			type = infrastructure
-			state = 64
-			damage = 1
-		}
+        name = wgr.33.a
+		add_political_power = 100
+		add_stability = 0.05
+		add_war_support = 0.03
+		DDR = { country_event = DDR_unification.1 days = 30 }
 	}
 }
 
@@ -333,11 +275,25 @@ country_event = {
 
     option = {
         name = wgr.14.a
+		ai_chance = {
+			base = 80
+			modifier = {
+				add = 20
+				is_historical_focus_on = yes
+			}
+		}
 		FROM = { country_event = wgr.17 }
 	}
 
     option = {
         name = wgr.14.b
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = -20
+				is_historical_focus_on = yes
+			}
+		}
 		FROM = { country_event = wgr.18 }
 	}
 }
@@ -369,10 +325,81 @@ country_event = {
 
     option = {
         name = wgr.16.a
+		trigger = {
+			OR = {
+				has_government = conservatism
+				has_government = liberalism
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
 		add_stability = 0.05
 		add_war_support = 0.05
 		remove_ideas = WGR_divided_nation
 		add_ideas = WGR_united_but_at_what_cost
+		news_event = { id = news.28 hours = 12 }
+		set_global_flag = GER_unification1
+		annex_country = {
+			target = DDR
+			transfer_troops = yes
+		}
+		add_state_core = 64
+		60 = {
+			set_compliance = 40
+		}
+		61 = {
+			set_compliance = 40
+		}
+		62 = {
+			set_compliance = 40
+		}
+		65 = {
+			set_compliance = 40
+		}
+		set_capital = { state = 64 }
+		custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
+		hidden_effect = {
+			load_focus_tree = {
+				tree = WGR_part_four
+				keep_completed = yes
+			}	
+		}
+	}
+
+    option = {
+        name = wgr.16.b
+		trigger = {
+			OR = {
+				has_government = socialism
+				has_government = communism
+			}
+		}
+		add_stability = 0.05
+		add_war_support = 0.05
+		news_event = { id = news.28 hours = 12 }
+		set_global_flag = GER_unification1
+		custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
+		set_autonomy = {
+			target = DDR
+			autonomous_state = german_confederation
+			end_wars = no
+			end_civil_wars = no
+			keep_subjects = no
+		}
+		hidden_effect = {
+			load_focus_tree = {
+				tree = WGR_part_four
+				keep_completed = yes
+			}	
+			DDR = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = yes
+					last_election = "1988.10.15"
+					election_frequency = 48
+				}
+			}
+		}
 	}
 }
 
@@ -383,12 +410,21 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			FROM = { country_event = { id = wgr.19 days = 10 } }
+		}		
+	}
+
     option = {
         name = wgr.17.a
 		add_political_power = 10
-		set_country_flag = country_approved
-		hidden_effect = {
-			FROM = { country_event = wgr.19 days = 10 }
+		FROM = { set_country_flag = country_approved }
+		if = {
+			limit = {
+				NOT = { has_country_flag = country_approved }
+			}
+			set_country_flag = country_approved
 		}
 	}
 }
@@ -412,12 +448,15 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			FROM = { country_event = { id = wgr.20 days = 5 } }
+		}		
+	}
+
     option = {
         name = wgr.19.a
 		add_political_power = 10
-		hidden_effect = {
-			ROOT = { country_event = wgr.20 days = 5 }
-		}
 	}
 }
 
@@ -428,12 +467,15 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			FROM = { country_event = { id = wgr.21 days = 5 } }
+		}		
+	}
+
     option = {
         name = wgr.20.a
 		add_political_power = 10
-		hidden_effect = {
-			ROOT = { country_event = wgr.21 days = 5 }
-		}
 	}
 }
 
@@ -444,13 +486,16 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			FROM = { country_event = { id = wgr.22 days = 10 } }
+		}		
+	}
+
     option = {
         name = wgr.21.a
 		add_political_power = 10
 		add_stability = 0.02
-		hidden_effect = {
-			ROOT = { country_event = wgr.22 days = 10 }
-		}
 	}
 }
 
@@ -465,6 +510,12 @@ country_event = {
         name = wgr.22.a
 		add_political_power = 10
 		add_stability = 0.02
+		if = {
+			limit = {
+				SOV = { has_country_flag = country_approved }
+			}
+			WGR = { country_event = { id = wgr.13 days = 5 } }
+		}
 	}
 }
 
@@ -493,8 +544,7 @@ country_event = {
 			elections_allowed = yes
 		}
 		hidden_effect = {
-			complete_national_focus = WGR_victory_for_the_cdu
-			set_country_flag = victory_in_germany_cdu
+			load_focus_tree = WGR_victory_cdu
 			mark_focus_tree_layout_dirty = yes
 		}
 		clr_country_flag = election_campaign_in_germany_1987
@@ -527,8 +577,7 @@ country_event = {
 			elections_allowed = yes
 		}
 		hidden_effect = {
-			complete_national_focus = WGR_victory_for_the_spd
-			set_country_flag = victory_in_germany_spd
+			load_focus_tree = WGR_victory_spd
 			mark_focus_tree_layout_dirty = yes
 		}
 		clr_country_flag = election_campaign_in_germany_1987
@@ -656,5 +705,371 @@ country_event = {
 				max = 100
 			}
 		}
+	}
+}
+
+country_event = {
+	id = wgr.29 ## образование Франко-германской бригады ##
+	title = wgr.29.t
+	desc = wgr.29.desc
+	picture = GFX_report_formation_of_the_franco_german_brigade
+
+	is_triggered_only = yes
+
+	immediate = {
+        division_template = {
+            name = "Franco-German Brigade"
+            is_locked = no
+            regiments = {
+                motorized = { x = 0 y = 0 }
+                motorized = { x = 0 y = 1 }
+                motorized = { x = 0 y = 2 }
+                modern_armor = { x = 1 y = 0 }
+            }
+            support = {
+		        artillery = { x = 0 y = 0 } 
+            }
+        }
+		FRA = {
+			division_template = {
+				name = "Franco-German Brigade"
+				is_locked = no
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					modern_armor = { x = 1 y = 0 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}			
+		}
+	}
+
+    option = {
+        name = wgr.29.a
+		add_war_support = 0.03
+        42 = {
+            create_unit = { 
+                division = "name = \"2. Franco-German Brigade\" division_template = \"Franco-German Brigade\" start_experience_factor = 0.1" 
+                owner = ROOT
+            }
+		}
+        28 = {
+            create_unit = { 
+                division = "name = \"2. Franco-German Brigade\" division_template = \"Franco-German Brigade\" start_experience_factor = 0.1" 
+                owner = FRA
+            }
+		}
+	}
+}
+
+country_event = {
+	id = wgr.30 ## ФРГ предлагает экономическую помощь ##
+	title = wgr.30.t
+	desc = wgr.30.desc
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.30.a	
+		WGR = { country_event = { id = wgr.31 hours = 6 } }
+	}
+
+    option = {
+        name = wgr.30.b
+		WGR = { country_event = { id = wgr.32 hours = 6 } }
+	}
+}
+
+country_event = {
+	id = wgr.31 ## ГДР согласилась ##
+	title = wgr.31.t
+	desc = wgr.31.desc
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.31.a
+		add_political_power = 25
+		if = {
+			limit = { check_variable = { treasury < 10 } }
+			add_to_variable = {
+				var = treasury
+				value = 10
+			}
+		}
+		subtract_from_variable = { var = treasury value = 10 }
+		DDR = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = medium_increase
+			}
+			add_to_variable = {
+				var = treasury
+				value = 10
+			}
+		}
+		add_opinion_modifier = {
+			target = DDR
+			modifier = medium_increase
+		}
+	}
+}
+
+country_event = {
+	id = wgr.32 ## ГДР отказала ##
+	title = wgr.32.t
+	desc = wgr.32.desc
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.32.a
+		ROOT = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = medium_decrease
+			}
+		}
+		WGR = {
+			add_opinion_modifier = {
+				target = DDR
+				modifier = medium_decrease
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wgr.33 ## Берлинская стена пала ##
+	title = wgr.33.t
+	desc = wgr.33.desc
+	picture = GFX_report_order_101
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.33.a
+		custom_effect_tooltip = the_berlin_wall_has_finally_fallen
+		add_stability = 0.05
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = wgr.34 ## Речь Гельмута Коля в Бундестаге ##
+	title = wgr.34.t
+	desc = wgr.34.desc
+	picture = GFX_report_order_101
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.34.a
+		add_political_power = 100
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = wgr.35 ## Немецкий бунт ##
+	title = wgr.35.t
+	desc = wgr.35.desc
+	picture = GFX_report_order_101
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.35.a
+		WGR = { country_event = { id = wgr.36 hours = 12 } }
+	}
+
+    option = {
+        name = wgr.35.b
+		WGR = {
+			add_ideas = WGR_embargo_from_usa
+		}
+		WGR = { country_event = { id = wgr.37 hours = 12 } }
+	}
+}
+
+country_event = {
+	id = wgr.36 ## Ультиматум США ##
+	title = wgr.36.t
+	desc = wgr.36.desc
+	picture = GFX_report_order_101
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.36.a
+		add_political_power = -50
+		add_war_support = -0.03
+		ROOT = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = medium_decrease
+			}
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = medium_decrease
+			}
+		}
+	}
+
+    option = {
+        name = wgr.36.b
+		USA = { country_event = { id = wgr.38 hours = 12 } }
+		ROOT = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = large_decrease
+			}
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = large_decrease
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wgr.37 ## Санкции США ##
+	title = wgr.37.t
+	desc = wgr.37.desc
+	picture = GFX_report_order_101
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.37.a
+		if = {
+			limit = {
+				has_idea = WGR_embargo_from_usa
+			}
+			remove_ideas = WGR_embargo_from_usa
+		}
+		WGR = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_increase
+			}
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = small_increase
+			}
+		}
+	}
+
+    option = {
+        name = wgr.37.b
+		
+	}
+}
+
+country_event = {
+	id = wgr.38 ## ФРГ отказало ##
+	title = wgr.38.t
+	desc = wgr.38.desc
+	picture = GFX_report_order_101
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.38.a
+		add_war_support = -0.05
+		send_embargo = WGR
+		WGR = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = large_decrease
+			}
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = large_decrease
+			}
+		}
+		WGR = {
+			leave_faction = yes
+		}
+	}
+
+    option = {
+        name = wgr.38.b
+		add_stability = 0.05
+		add_war_support = -0.05
+		add_nuclear_bombs = 50
+		WGR = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_decrease
+			}
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = WGR
+				modifier = small_decrease
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = wgr.39 ## ФРГ отказало ##
+	title = wgr.39.t
+	desc = wgr.39.desc
+	picture = GFX_report_order_101
+
+	is_triggered_only = yes
+
+    option = {
+        name = wgr.39.a
+		add_stability = -0.1
+		add_timed_idea = {
+			idea = WGR_following_the_spd_plan
+			days = 180
+		}
+		DDR = {
+			add_timed_idea = {
+				idea = WGR_following_the_spd_plan
+				days = 180
+			}			
+		}
+        add_political_power = 10
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.03
+	    }
+	}
+
+    option = {
+        name = wgr.39.b	
+		add_stability = -0.05
+		add_timed_idea = {
+			idea = WGR_following_the_cdu_plan
+			days = 180
+		}
+		DDR = {
+			add_timed_idea = {
+				idea = WGR_following_the_cdu_plan
+				days = 180
+			}			
+		}
+        add_political_power = 10
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.03
+	    }
 	}
 }

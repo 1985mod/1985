@@ -1,0 +1,5 @@
+﻿l_russian:
+ income_growth_factor: "Доходы"
+ expense_growth_factor: "Расходы"
+ welfare_expenditure_factor: "Расходы на соц. обеспечение"
+ inflation_rate_factor: "Фактор инфляции"

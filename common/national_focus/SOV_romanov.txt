@@ -175,20 +175,11 @@ focus_tree = {
         completion_reward = {
             if = {
 				limit = {
-                    has_idea = horrific_corruption
+                    has_idea = low_corruption
 				}
                 swap_ideas = {
-                    remove_idea = horrific_corruption
-                    add_idea = significant_corruption
-                }  
-            }
-            if = {
-				limit = {
-                    has_idea = significant_corruption
-				}
-                swap_ideas = {
-                    remove_idea = significant_corruption
-                    add_idea = moderate_corruption
+                    remove_idea = low_corruption
+                    add_idea = minor_corruption
                 }  
             }
             if = {
@@ -202,11 +193,20 @@ focus_tree = {
             }
             if = {
 				limit = {
-                    has_idea = low_corruption
+                    has_idea = significant_corruption
 				}
                 swap_ideas = {
-                    remove_idea = low_corruption
-                    add_idea = minor_corruption
+                    remove_idea = significant_corruption
+                    add_idea = moderate_corruption
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = horrific_corruption
+				}
+                swap_ideas = {
+                    remove_idea = horrific_corruption
+                    add_idea = significant_corruption
                 }  
             }
         }
@@ -543,6 +543,8 @@ focus_tree = {
         y = 2
         cost = 5
         completion_reward = {
+            add_war_support = 0.05
+            add_political_power = 50
             custom_effect_tooltip = the_uprisings_in_europe_will_end
         }
     }
@@ -780,6 +782,10 @@ focus_tree = {
         cost = 10
 
         will_lead_to_war_with = USA
+
+		select_effect = {
+			USA = { country_event = { id = usa.66 days = 30 } }
+		}
 
         completion_reward = {
             add_war_support = 0.1

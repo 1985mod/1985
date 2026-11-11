@@ -1,0 +1,529 @@
+corruption_category = {
+    anti_corruption_campaign = {
+        icon = generic_political_address
+
+        allowed = { always = yes }
+
+        available = { 
+            OR = {
+				has_idea = horrific_corruption
+				has_idea = significant_corruption
+				has_idea = moderate_corruption
+				has_idea = low_corruption
+			}
+			NOT = { has_country_flag = fight_against_corruption }
+        }
+
+        visible = { always = yes }
+
+        fire_only_once = no
+
+        days_remove = 240
+
+        cost = 150
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = 3
+				has_idea = minor_corruption
+			}
+			modifier = {
+				add = 8
+				has_idea = low_corruption
+			}
+			modifier = {
+				add = 15
+				has_idea = moderate_corruption
+			}
+			modifier = {
+				add = 20
+				has_idea = significant_corruption
+			}
+			modifier = {
+				add = 30
+				has_idea = horrific_corruption
+			}
+		}
+
+        modifier = {
+			political_power_gain = -0.25
+            stability_weekly_factor = 0.0005
+        }
+
+		complete_effect = {
+			set_country_flag = fight_against_corruption
+		}
+		
+        remove_effect = {
+			random_list = {
+				95 = {
+					if = {
+						limit = {
+							has_idea = low_corruption
+						}
+						swap_ideas = {
+							remove_idea = low_corruption
+							add_idea = minor_corruption
+						}  
+					}
+					if = {
+						limit = {
+							has_idea = moderate_corruption
+						}
+						swap_ideas = {
+							remove_idea = moderate_corruption
+							add_idea = low_corruption
+						}  
+					}
+					if = {
+						limit = {
+							has_idea = significant_corruption
+						}
+						swap_ideas = {
+							remove_idea = significant_corruption
+							add_idea = moderate_corruption
+						}  
+					}
+					if = {
+						limit = {
+							has_idea = horrific_corruption
+						}
+						swap_ideas = {
+							remove_idea = horrific_corruption
+							add_idea = significant_corruption
+						}  
+					}
+					if = {
+						limit = {
+							has_country_flag = fight_against_corruption
+						}
+						clr_country_flag = fight_against_corruption
+					}
+				}
+				5 = {
+					if = {
+						limit = {
+							has_country_flag = fight_against_corruption
+						}
+						clr_country_flag = fight_against_corruption
+					}
+				}
+			}
+        }
+    }
+
+    media_investigation = {
+        icon = generic_wreckers
+
+        allowed = { always = yes }
+
+        available = { 
+            OR = {
+				has_idea = horrific_corruption
+				has_idea = significant_corruption
+				has_idea = moderate_corruption
+				has_idea = low_corruption
+			}
+			NOT = { has_country_flag = fight_against_corruption }
+        }
+
+        visible = { NOT = { has_government = communism } }
+		
+        fire_only_once = no
+
+        days_remove = 70
+
+        cost = 100
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = 3
+				has_idea = minor_corruption
+			}
+			modifier = {
+				add = 8
+				has_idea = low_corruption
+			}
+			modifier = {
+				add = 15
+				has_idea = moderate_corruption
+			}
+			modifier = {
+				add = 20
+				has_idea = significant_corruption
+			}
+			modifier = {
+				add = 30
+				has_idea = horrific_corruption
+			}
+		}
+
+        modifier = {
+            stability_weekly_factor = -0.001
+        }
+
+		complete_effect = {
+			set_country_flag = fight_against_corruption
+		}
+
+        remove_effect = {
+			random_list = {
+				85 = {
+					if = {
+						limit = {
+							has_idea = low_corruption
+						}
+						swap_ideas = {
+							remove_idea = low_corruption
+							add_idea = minor_corruption
+						}  
+					}
+					if = {
+						limit = {
+							has_idea = moderate_corruption
+						}
+						swap_ideas = {
+							remove_idea = moderate_corruption
+							add_idea = low_corruption
+						}  
+					}
+					if = {
+						limit = {
+							has_idea = significant_corruption
+						}
+						swap_ideas = {
+							remove_idea = significant_corruption
+							add_idea = moderate_corruption
+						}  
+					}
+					if = {
+						limit = {
+							has_idea = horrific_corruption
+						}
+						swap_ideas = {
+							remove_idea = horrific_corruption
+							add_idea = significant_corruption
+						}  
+					}
+					if = {
+						limit = {
+							has_country_flag = fight_against_corruption
+						}
+						clr_country_flag = fight_against_corruption
+					}
+				}
+				15 = {
+					if = {
+						limit = {
+							has_country_flag = fight_against_corruption
+						}
+						clr_country_flag = fight_against_corruption
+					}
+				}
+			}
+        }
+    }
+
+    lobbying_transparency = {
+        icon = gre_investment_decisions
+
+        allowed = { always = yes }
+
+        available = { 
+            OR = {
+				has_idea = horrific_corruption
+				has_idea = significant_corruption
+				has_idea = moderate_corruption
+				has_idea = low_corruption
+			}
+			NOT = { has_country_flag = fight_against_corruption }
+        }
+
+        visible = { NOT = { has_government = communism } }
+
+		fire_only_once = yes 
+
+        days_remove = 200
+
+        cost = 150
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = 3
+				has_idea = minor_corruption
+			}
+			modifier = {
+				add = 8
+				has_idea = low_corruption
+			}
+			modifier = {
+				add = 15
+				has_idea = moderate_corruption
+			}
+			modifier = {
+				add = 20
+				has_idea = significant_corruption
+			}
+			modifier = {
+				add = 30
+				has_idea = horrific_corruption
+			}
+		}
+
+		modifier = {
+            industrial_capacity_factory = -0.10
+            stability_factor = -0.05	
+		}
+
+		complete_effect = {
+			set_country_flag = fight_against_corruption
+		}
+
+        remove_effect = {
+			if = {
+				limit = {
+					has_idea = low_corruption
+				}
+				swap_ideas = {
+					remove_idea = low_corruption
+					add_idea = minor_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = moderate_corruption
+				}
+				swap_ideas = {
+					remove_idea = moderate_corruption
+					add_idea = low_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = significant_corruption
+				}
+				swap_ideas = {
+					remove_idea = significant_corruption
+					add_idea = moderate_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = horrific_corruption
+				}
+				swap_ideas = {
+					remove_idea = horrific_corruption
+					add_idea = significant_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_country_flag = fight_against_corruption
+				}
+				clr_country_flag = fight_against_corruption
+			}
+        }
+    }
+
+    party_purge = {
+        icon = generic_assassination
+
+        allowed = { always = yes }
+
+        available = { 
+            OR = {
+				has_idea = horrific_corruption
+				has_idea = significant_corruption
+				has_idea = moderate_corruption
+				has_idea = low_corruption
+			}
+			NOT = { has_country_flag = fight_against_corruption }
+        }
+
+        visible = { has_government = communism }
+
+        days_remove = 80
+
+        cost = 120
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = 3
+				has_idea = minor_corruption
+			}
+			modifier = {
+				add = 8
+				has_idea = low_corruption
+			}
+			modifier = {
+				add = 15
+				has_idea = moderate_corruption
+			}
+			modifier = {
+				add = 20
+				has_idea = significant_corruption
+			}
+			modifier = {
+				add = 30
+				has_idea = horrific_corruption
+			}
+		}
+        
+        modifier = {
+            stability_factor = -0.1
+            industrial_capacity_factory = -0.05
+        }
+
+		complete_effect = {
+			set_country_flag = fight_against_corruption
+		}
+        
+        remove_effect = {
+			if = {
+				limit = {
+					has_idea = low_corruption
+				}
+				swap_ideas = {
+					remove_idea = low_corruption
+					add_idea = minor_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = moderate_corruption
+				}
+				swap_ideas = {
+					remove_idea = moderate_corruption
+					add_idea = low_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = significant_corruption
+				}
+				swap_ideas = {
+					remove_idea = significant_corruption
+					add_idea = moderate_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = horrific_corruption
+				}
+				swap_ideas = {
+					remove_idea = horrific_corruption
+					add_idea = significant_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_country_flag = fight_against_corruption
+				}
+				clr_country_flag = fight_against_corruption
+			}
+        }
+    }
+
+    labor_discipline = {
+        icon = generic_industry
+
+        allowed = { always = yes }
+
+        available = { 
+            OR = {
+				has_idea = horrific_corruption
+				has_idea = significant_corruption
+				has_idea = moderate_corruption
+				has_idea = low_corruption
+			}
+			NOT = { has_country_flag = fight_against_corruption }
+        }
+
+        visible = { has_government = communism }
+
+        days_remove = 110
+
+        cost = 100
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = 3
+				has_idea = minor_corruption
+			}
+			modifier = {
+				add = 8
+				has_idea = low_corruption
+			}
+			modifier = {
+				add = 15
+				has_idea = moderate_corruption
+			}
+			modifier = {
+				add = 20
+				has_idea = significant_corruption
+			}
+			modifier = {
+				add = 30
+				has_idea = horrific_corruption
+			}
+		}
+        
+        modifier = {
+			stability_weekly_factor = -0.0005
+        }
+
+		complete_effect = {
+			set_country_flag = fight_against_corruption
+		}
+        
+        remove_effect = {
+			if = {
+				limit = {
+					has_idea = low_corruption
+				}
+				swap_ideas = {
+					remove_idea = low_corruption
+					add_idea = minor_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = moderate_corruption
+				}
+				swap_ideas = {
+					remove_idea = moderate_corruption
+					add_idea = low_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = significant_corruption
+				}
+				swap_ideas = {
+					remove_idea = significant_corruption
+					add_idea = moderate_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = horrific_corruption
+				}
+				swap_ideas = {
+					remove_idea = horrific_corruption
+					add_idea = significant_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_country_flag = fight_against_corruption
+				}
+				clr_country_flag = fight_against_corruption
+			}
+        }
+    }
+}

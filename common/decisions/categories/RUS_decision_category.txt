@@ -1,5 +1,5 @@
 RUS_liberalisation_economy = {
-    icon = generic_foreign_policy
+    icon = generic_economy
 	  
 	priority = 90
 	  
@@ -14,7 +14,7 @@ RUS_liberalisation_economy = {
 }
 
 RUS_preparation_for_a_new_constitution = {
-    icon = generic_foreign_policy
+    icon = gre_faction_management
 	  
 	priority = 90
 	  
@@ -55,4 +55,23 @@ RUS_caucasus_crisis_category = {
 		has_country_flag = caucasus_crisis_exacerbation
 		NOT = { has_global_flag = caucasus_conflict_over }
 	}
+}
+
+RUS_lisbon_protocol = {
+	icon = generic_political_actions
+	allowed = {
+		original_tag = RUS
+	}
+	
+	visible = {
+		country_exists = RUS
+		OR = {
+			country_exists = BLR
+			country_exists = UKR
+			country_exists = KAZ
+		}
+		has_global_flag = the_lisbon_protocol_is_underway
+	}
+
+	priority = 90
 }

@@ -249,6 +249,96 @@ economy_category = {
             }
         }		
 	}
+
+	ai_pay_1_billion_of_the_debt = {
+		allowed = { always = yes }
+
+		visible = { is_ai = yes }
+		
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 1 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_1
+
+		complete_effect = {
+			subtract_from_variable = { var = treasury value = 1 }
+			subtract_from_variable = { var = current_debt value = 1 }
+			if = {
+				limit = {
+					check_variable = { treasury < 0 }
+				}
+				set_variable = { var = treasury value = 0 }
+			}
+		}
+
+		ai_will_do = {
+            factor = 0
+            modifier = {
+                add = 20
+                check_variable = { var = debt_to_gdp value = 1 compare = greater_than }
+            }
+        }		
+	}
+
+	ai_pay_10_billion_of_the_debt = {
+		allowed = { always = yes }
+
+		visible = { is_ai = yes }
+		
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 10 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_10
+
+		complete_effect = {
+			subtract_from_variable = { var = treasury value = 10 }
+			subtract_from_variable = { var = current_debt value = 10 }
+			if = {
+				limit = {
+					check_variable = { treasury < 0 }
+				}
+				set_variable = { var = treasury value = 0 }
+			}
+		}
+
+		ai_will_do = {
+            factor = 0
+            modifier = {
+                add = 30
+                check_variable = { var = treasury value = 11 compare = greater_than }
+            }
+        }		
+	}
+
+	ai_pay_100_billion_of_the_debt = {
+		allowed = { always = yes }
+
+		visible = { is_ai = yes }
+		
+		custom_cost_trigger = {
+			check_variable = { var = treasury value = 100 compare = greater_than }
+		}
+		custom_cost_text = decision_cost_MB_100
+
+		complete_effect = {
+			subtract_from_variable = { var = treasury value = 100 }
+			subtract_from_variable = { var = current_debt value = 100 }
+			if = {
+				limit = {
+					check_variable = { treasury < 0 }
+				}
+				set_variable = { var = treasury value = 0 }
+			}
+		}
+
+		ai_will_do = {
+            factor = 0
+            modifier = {
+                add = 30
+                check_variable = { var = treasury value = 101 compare = greater_than }
+            }
+        }		
+	}
 }
 
 economy_policy_cat = {

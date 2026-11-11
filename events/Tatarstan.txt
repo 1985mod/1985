@@ -6,15 +6,8 @@ country_event = {
 	desc = tatarstan.1.desc
 	picture = GFX_report_congress_of_the_peoples_deputies_of_russia
 
-	trigger = {
-		tag = TAT
-		country_exists = RUS
-		country_exists = TAT
-		TAT = {
-			has_war_with = RUS
-		}
-		set_global_flag = tatar_referendum_happened
-	}
+	is_triggered_only = yes
+	
 	fire_only_once = yes
 
     option = {

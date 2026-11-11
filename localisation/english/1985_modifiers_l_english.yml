@@ -1,0 +1,5 @@
+﻿l_english:
+ income_growth_factor: "Income"
+ expense_growth_factor: "Expenses"
+ welfare_expenditure_factor: "Social Security Expenditure"
+ inflation_rate_factor: "Inflation Factor"

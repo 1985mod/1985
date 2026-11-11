@@ -71,6 +71,7 @@ set_popularities = {
 }
 
 recruit_character = SPR_felipe_gonzalez
+recruit_character = SPR_julio_anguita
 
 set_convoys = 150
 set_stability = 0.5

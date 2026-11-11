@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 10
+            add = 1
             tag = USA
         }
     }
@@ -658,19 +658,33 @@ focus_tree = {
         }
 		
         completion_reward = {
-			ROOT = {
-      		    declare_war_on = {
-          		   target = IRQ
-         		   type = annex_everything
-      			}	
-			}
+            custom_effect_tooltip = they_will_regret_this
+            UNQ = {
+                transfer_state = 962
+                962 = {
+                    add_compliance = 30
+                }
+            }
+            if = {
+                limit = {
+                    IRQ = {
+                        controls_state = 656
+                    }
+                }
+                UNQ = {
+                    transfer_state = 656
+                    656 = {
+                        add_compliance = 30
+                    }
+                }
+            }
             if = {
                 limit = {
                     IRQ = {
                         controls_state = 1058
                     }
                 }
-                1058 = { add_resistance = 100 }
+                1058 = { add_resistance = 30 }
             }
             if = {
                 limit = {
@@ -682,7 +696,8 @@ focus_tree = {
                 }
             }
             hidden_effect = {
-                load_oob = USA_in_iraq
+                IRQ = { country_event = { id = iraq.10 hours = 10 } }
+                UNQ = { load_oob = USA_in_iraq }
             }
 	    }
 	}

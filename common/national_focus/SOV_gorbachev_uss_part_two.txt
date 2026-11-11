@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 1
         modifier = {
-            add = 5
+            add = 50000
             tag = SOV
         }
     }
@@ -250,7 +250,16 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-
+            custom_effect_tooltip = it_could_lead_to_consequences
+            add_ideas = SOV_shock_therapy
+            add_political_power = 100
+            hidden_effect = {
+                country_event = { id = soviet_union.81 days = 3 }
+                country_event = { id = soviet_union.82 days = 10 }
+                country_event = { id = soviet_union.83 days = 15 }
+                country_event = { id = soviet_union.84 days = 30 }
+                country_event = { id = soviet_union.85 days = 50 }
+            }
         }
     }
 
@@ -264,7 +273,25 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-            
+            add_political_power = 100
+            if = {
+                limit = {
+                    has_idea = SOV_shock_therapy_2
+                }
+                swap_ideas = {
+                    remove_idea = SOV_shock_therapy_2
+                    add_idea = SOV_shock_therapy_3
+                }
+            }
+            if = {
+                limit = {
+                    has_idea = SOV_shock_therapy
+                }
+                swap_ideas = {
+                    remove_idea = SOV_shock_therapy
+                    add_idea = SOV_shock_therapy_2
+                }
+            }     
         }
     }
 
@@ -278,7 +305,24 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-            
+            if = {
+                limit = {
+                    has_idea = SOV_shock_therapy_2
+                }
+                swap_ideas = {
+                    remove_idea = SOV_shock_therapy_2
+                    add_idea = SOV_shock_therapy_3
+                }
+            }
+            if = {
+                limit = {
+                    has_idea = SOV_shock_therapy
+                }
+                swap_ideas = {
+                    remove_idea = SOV_shock_therapy
+                    add_idea = SOV_shock_therapy_2
+                }
+            }          
         }
     }
 
@@ -319,7 +363,8 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-            
+            unlock_decision_category_tooltip = SOV_baltic_negotiations
+            set_variable = { var = SOV.support_in_baltics_states value = 15 }
         }
     }
 
@@ -333,7 +378,7 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-            
+            country_event = { id = soviet_union.88 days = 1 }
         }
     }
 
@@ -347,7 +392,12 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-            
+            set_rule = {
+                desc = SOV_create_uss_defense_union
+                can_create_factions = yes
+            }
+            create_faction_from_template = faction_template_UNION_USS      
+            add_research_slot = 1      
         }
     }
 
@@ -387,7 +437,12 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-
+            add_ideas = SOV_inter_republican_bank
+            add_to_variable = {
+                var = treasury
+                value = 10
+                tooltip = add_10_billion_to_treasury_tt
+            }	
         }
     }
 
@@ -401,7 +456,7 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-
+            add_ideas = SOV_small_scale_privatization
         }
     }
 
@@ -415,7 +470,7 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-
+            add_ideas = SOV_freedom_of_movement_of_goods
         }
     }
 
@@ -430,7 +485,9 @@ focus_tree = {
         cost = 5
         
         completion_reward = {
-
+            add_political_power = 50
+            add_stability = 0.15
+            add_war_support = 0.1
         }
     }
 }

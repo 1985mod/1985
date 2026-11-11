@@ -1,0 +1,9 @@
+scripted_gui = {
+    radio_station_1985_super_events = { 
+        window_name = "radio_station_1985_super_events"
+
+        visible = {
+            has_global_flag = radio_1985_unlocked
+        }
+    }
+}

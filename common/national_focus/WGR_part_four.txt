@@ -3,20 +3,26 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 1
 			tag = WGR
 		}
 	}
 	default = no
 	focus = {
 		id = WGR_united_again
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_tend_to_the_future
 		cost = 5
 		x = 10
 		y = 0
 
 		available = {
+			country_exists = DDR
 			NOT = { has_war_with = DDR }
+		}
+
+		bypass = {
+			NOT = { country_exists = DDR }
+			DDR = { is_subject_of = WGR }
 		}
 
         completion_reward = {
@@ -26,7 +32,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_and_indivisible
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_liberate_exploited_colonial_workers
 		cost = 10
         relative_position_id = WGR_united_again
         prerequisite = { focus = WGR_united_again }
@@ -40,7 +46,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_integrate_east_germany
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_customs_union
 		cost = 5
         relative_position_id = WGR_and_indivisible
         prerequisite = { focus = WGR_and_indivisible }
@@ -60,7 +66,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_decommunization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_proletarian_solidarity
 		cost = 5
         relative_position_id = WGR_and_indivisible
         prerequisite = { focus = WGR_and_indivisible }
@@ -79,7 +85,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_investment_in_new_lands
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_proletarian_dictatorship
 		cost = 5
         relative_position_id = WGR_decommunization
         prerequisite = { focus = WGR_integrate_east_germany }
@@ -141,7 +147,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_center_a_now_europe
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_vereinigte_stahlwerke
 		cost = 5
         relative_position_id = WGR_and_indivisible
         prerequisite = { focus = WGR_and_indivisible }
@@ -156,7 +162,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_a_now_europe
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_factories_for_resources
 		cost = 5
         relative_position_id = WGR_and_indivisible
         prerequisite = { focus = WGR_and_indivisible }
@@ -171,7 +177,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_new_nato_strategy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5
         relative_position_id = WGR_center_a_now_europe
         prerequisite = { focus = WGR_center_a_now_europe }
@@ -192,7 +198,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_future_germany
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_tend_to_the_future
 		cost = 5
         relative_position_id = WGR_and_indivisible
         prerequisite = { focus = WGR_investment_in_new_lands }

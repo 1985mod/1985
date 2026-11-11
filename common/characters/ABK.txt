@@ -1,0 +1,15 @@
+characters = {
+	ABK_vladislav_ardzinba = {
+		name = ABK_vladislav_ardzinba
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_vladislav_ardzinba
+			}
+		}
+		country_leader = {
+			ideology = social_conservatism
+			traits = { }
+			expire = "2010.3.1.1"
+		}
+	}
+}

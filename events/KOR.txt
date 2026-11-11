@@ -17,7 +17,8 @@ country_event = {
 			AND = {
 				tag = PRK
 				OR = {
-					has_government = democratic
+					has_government = liberalism
+					has_government = conservatism
 					controls_state = 527
 				}
 			}

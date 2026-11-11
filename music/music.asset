@@ -2,7 +2,7 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "ill_tie_scarf.ogg"
+	file = "science_city_time.ogg"
 	volume = 0.65
 }
 

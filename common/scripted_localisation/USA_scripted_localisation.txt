@@ -1,0 +1,10 @@
+defined_text = {
+    name = GetCurrentRepublicanPortrait
+    
+    text = {
+        trigger = {
+            has_country_flag = usa_elections
+        }
+        localization_key = US_portrait_bush_key
+    }
+}

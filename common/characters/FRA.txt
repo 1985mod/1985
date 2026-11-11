@@ -36,4 +36,22 @@ characters = {
 			
 		}
 	}
+
+	FRA_georges_marchais = {
+		name = FRA_georges_marchais
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_georges_marchais
+			}
+			army = {
+				large = GFX_Portrait_georges_marchais
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "1997.11.16.1"
+			id = -1
+		}
+	}
 }

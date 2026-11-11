@@ -672,6 +672,127 @@ on_actions = {
                 set_global_flag = nato_world_war_three_victory_flag
                 set_global_flag = super_event_visible
                 play_song = "everybody_wants_to_rule_the_world_name"
+                SOV = {
+                    dismantle_faction = yes
+                }
+            }
+        }
+    }
+
+    ### USSR win France
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    has_global_flag = super_world_war_3
+                    FROM = {
+                        tag = SOV
+                    }
+                    ROOT = {
+                        tag = FRA
+                    }
+                }
+                release = FRA
+                SOV = {
+                    puppet = FRA
+                }
+                FRA = {
+                    set_politics = {
+                        ruling_party = communism
+                        elections_allowed = no
+                        last_election = "1981.4.26"
+                        election_frequency = 84
+                    }
+                }
+            }
+        }
+    }
+
+    ### USSR win Italy
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    has_global_flag = super_world_war_3
+                    FROM = {
+                        tag = SOV
+                    }
+                    ROOT = {
+                        tag = ITA
+                    }
+                }
+                release = ITA
+                SOV = {
+                    puppet = ITA
+                }
+                ITA = {
+                    set_politics = {
+                        ruling_party = communism
+                        elections_allowed = no
+                        last_election = "1983.6.26"
+                        election_frequency = 48
+                    }
+                }
+            }
+        }
+    }
+
+    ### USSR win Spain
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    has_global_flag = super_world_war_3
+                    FROM = {
+                        tag = SOV
+                    }
+                    ROOT = {
+                        tag = SPR
+                    }
+                }
+                SOV = {
+                    puppet = SPR
+                }
+                release = SPR
+                SPR = {
+                    set_cosmetic_tag = SPR_iberian_union
+                    set_politics = {
+                        ruling_party = communism
+                        elections_allowed = no
+                        last_election = "1982.10.28"
+                        election_frequency = 48
+                    }
+                }
+            }
+        }
+    }
+    ### USSR win Portugal
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    has_global_flag = super_world_war_3
+                    SPR = { is_puppet_of = SOV }
+                    FROM = {
+                        tag = SOV
+                    }
+                    ROOT = {
+                        tag = POR
+                    }
+                }
+                SPR = {
+                    white_peace = POR
+                    annex_country = {
+                        target = POR
+                        transfer_troops = no
+                    }               
+                    every_state = { 
+                        limit = {
+                            is_core_of = POR
+                        }
+                        add_core_of = SPR
+                    }     
+                }
             }
         }
     }

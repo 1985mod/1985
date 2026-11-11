@@ -1,0 +1,135 @@
+scripted_map_modes = {
+    unemployment_map_mode = {
+        top = {
+            type = country
+            color = {
+                if = {
+                    limit = { FROM = { check_variable = { unemployment_rate < 5 } } }
+                    set_temp_variable = { red = 0.1 }
+                    set_temp_variable = { green = 0.8 }
+                    set_temp_variable = { blue = 0.1 }
+                    set_temp_variable = { alpha = 0.95 }
+                }
+
+                else_if = {
+                    limit = { FROM = { check_variable = { unemployment_rate < 10 } } }
+                    set_temp_variable = { red = 0.9 }
+                    set_temp_variable = { green = 0.9 }
+                    set_temp_variable = { blue = 0.0 }
+                    set_temp_variable = { alpha = 0.95 }
+                }
+
+                else_if = {
+                    limit = { FROM = { check_variable = { unemployment_rate < 20 } } }
+                    set_temp_variable = { red = 0.9 }
+                    set_temp_variable = { green = 0.5 }
+                    set_temp_variable = { blue = 0.0 }
+                    set_temp_variable = { alpha = 0.95 }
+                }
+
+                else = {
+                    set_temp_variable = { red = 0.8 }
+                    set_temp_variable = { green = 0.1 }
+                    set_temp_variable = { blue = 0.1 }
+                    set_temp_variable = { alpha = 0.95 }
+                }
+            }
+        }
+
+        bottom = {
+            type = none
+        }
+
+        far_text = country
+        near_text = country
+
+        update_daily = yes
+    }
+
+    gdp_per_capita_map_mode = {
+        top = {
+		type = country
+		color = {
+				if = {
+					limit = { FROM = { check_variable = { gdp_per_capita < 1 } } }
+					set_temp_variable = { red = 0.6 }
+					set_temp_variable = { green = 0.0 }
+					set_temp_variable = { blue = 0.0 }
+					set_temp_variable = { alpha = 0.95 }
+				}
+
+				else_if = {
+					limit = { FROM = { check_variable = { gdp_per_capita < 2 } } }
+					set_temp_variable = { red = 0.8 }
+					set_temp_variable = { green = 0.1 }
+					set_temp_variable = { blue = 0.1 }
+					set_temp_variable = { alpha = 0.95 }
+				}
+
+				else_if = {
+					limit = { FROM = { check_variable = { gdp_per_capita < 5 } } }
+					set_temp_variable = { red = 0.9 }
+					set_temp_variable = { green = 0.4 }
+					set_temp_variable = { blue = 0.0 }
+					set_temp_variable = { alpha = 0.95 }
+				}
+
+				else_if = {
+					limit = { FROM = { check_variable = { gdp_per_capita < 7 } } }
+					set_temp_variable = { red = 0.95 }
+					set_temp_variable = { green = 0.6 }
+					set_temp_variable = { blue = 0.2 }
+					set_temp_variable = { alpha = 0.95 }
+				}
+
+				else_if = {
+					limit = { FROM = { check_variable = { gdp_per_capita < 10 } } }
+					set_temp_variable = { red = 0.9 }
+					set_temp_variable = { green = 0.9 }
+					set_temp_variable = { blue = 0.0 }
+					set_temp_variable = { alpha = 0.95 }
+				}
+
+				else_if = {
+					limit = { FROM = { check_variable = { gdp_per_capita < 15 } } }
+					set_temp_variable = { red = 0.5 }
+					set_temp_variable = { green = 0.8 }
+					set_temp_variable = { blue = 0.2 }
+					set_temp_variable = { alpha = 0.95 }
+				}
+
+				else_if = {
+					limit = { FROM = { check_variable = { gdp_per_capita < 25 } } }
+					set_temp_variable = { red = 0.1 }
+					set_temp_variable = { green = 0.7 }
+					set_temp_variable = { blue = 0.1 }
+					set_temp_variable = { alpha = 0.95 }
+				}
+
+				else_if = {
+					limit = { FROM = { check_variable = { gdp_per_capita < 40 } } }
+					set_temp_variable = { red = 0.0 }
+					set_temp_variable = { green = 0.5 }
+					set_temp_variable = { blue = 0.0 }
+					set_temp_variable = { alpha = 0.95 }
+				}
+
+				else = {
+					set_temp_variable = { red = 0.0 }
+					set_temp_variable = { green = 0.6 }
+					set_temp_variable = { blue = 0.8 }
+					set_temp_variable = { alpha = 0.95 }
+				}
+			}
+        }
+
+        bottom = {
+            type = none
+        }
+
+        far_text = country
+        near_text = country
+
+        update_daily = yes
+    }
+}

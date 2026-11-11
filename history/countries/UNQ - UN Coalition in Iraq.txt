@@ -1,0 +1,166 @@
+﻿capital = 962 
+
+oob = "GEN_1985"
+
+set_war_support = 0.8
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	anti_tank_grenade_launcher = 1
+	infantry_at = 1
+	tech_trucks = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	armored_car1 = 1
+	mechanised_infantry = 1
+	interwar_antiair = 1
+	superior_firepower = 1
+	base_strike = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+	basic_train = 1
+	engine_tech_1 = 1
+	paratroopers = 1
+	tech_mountaineers = 1
+}
+
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_fighter = 1
+		fighter1 = 1
+		early_bomber = 1
+		strategic_bomber1 = 1
+		naval_bomber1 = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		basic_light_tank = 1
+		main_battle_tank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		main_battle_tank_chassis = 1
+		main_battle_tank_chassis_2 = 1
+		tank_weapon_1 = 1
+		armor_tech_1 = 1
+		engine_tech_1 = 1
+	}
+
+	create_equipment_variant = {
+		name = "T-72A"
+		type = modern_tank_chassis_2
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_cold_war_weapon_1
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 1
+			tank_nsb_engine_upgrade = 2
+		}
+		icon = "GFX_SOV_main_battle_tank"
+	}
+	create_equipment_variant = {
+		name = "M1 Abrams"
+		type = modern_tank_chassis_2
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_cold_war_weapon_1
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+			special_type_slot_2 = sloped_armor
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 1
+			tank_nsb_engine_upgrade = 2
+		}
+		icon = "GFX_USA_main_battle_tank"
+	}
+}
+	
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+
+recruit_character = UNQ_norman_schwarzkop
+recruit_character = UNQ_ahmed_chalabi
+recruit_character = UNQ_ayad_allawi
+recruit_character = UNQ_masoud_barzani
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1985.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+    war_economy
+	all_adults_serve
+}
+
+set_popularities = {
+	liberalism = 23
+	conservatism = 40
+	fascism = 7
+	neutrality = 30
+}

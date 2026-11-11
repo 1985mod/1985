@@ -106,7 +106,44 @@
         prerequisite = { focus = SOV_withdrawal_of_soviet_troops_from_afghanistan }
         cost = 5
         completion_reward = {
-            add_stability = -0.05
+            add_political_power = 25
+            add_stability = 0.1
+            if = {
+				limit = {
+                    has_idea = low_corruption
+				}
+                swap_ideas = {
+                    remove_idea = low_corruption
+                    add_idea = minor_corruption
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = moderate_corruption
+				}
+                swap_ideas = {
+                    remove_idea = moderate_corruption
+                    add_idea = low_corruption
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = significant_corruption
+				}
+                swap_ideas = {
+                    remove_idea = significant_corruption
+                    add_idea = moderate_corruption
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = horrific_corruption
+				}
+                swap_ideas = {
+                    remove_idea = horrific_corruption
+                    add_idea = significant_corruption
+                }  
+            }
         }
     }
 
@@ -174,6 +211,42 @@
         cost = 10
         completion_reward = {
             add_political_power = 100
+            if = {
+				limit = {
+                    has_idea = low_corruption
+				}
+                swap_ideas = {
+                    remove_idea = low_corruption
+                    add_idea = minor_corruption
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = moderate_corruption
+				}
+                swap_ideas = {
+                    remove_idea = moderate_corruption
+                    add_idea = low_corruption
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = significant_corruption
+				}
+                swap_ideas = {
+                    remove_idea = significant_corruption
+                    add_idea = moderate_corruption
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = horrific_corruption
+				}
+                swap_ideas = {
+                    remove_idea = horrific_corruption
+                    add_idea = significant_corruption
+                }  
+            }
         }
     }
 
