@@ -47,6 +47,7 @@ add_ideas = {
 	DDR_struggle_against_the_church
 	partial_economic_mobilisation
 	closed_economy
+	significant_corruption
 }
 
 add_opinion_modifier = {

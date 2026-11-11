@@ -53,7 +53,7 @@ country_event = {
                 ruling_party = communism
                 elections_allowed = no
             }
-            load_focus_tree = SOV_soviet_gorbachev_focus
+			custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
         }
 
         hidden_effect = {
@@ -74,9 +74,9 @@ country_event = {
     option = {
         name = soviet_union.2.b
         ai_chance = {
-            base = 30
+            base = 50
             modifier = {
-                add = -30
+                add = -50
                 is_historical_focus_on = yes
             }
         }
@@ -86,7 +86,7 @@ country_event = {
                 ruling_party = communism
                 elections_allowed = no
             }
-            load_focus_tree = SOV_soviet_romanov_focus
+            custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
         }
 
         hidden_effect = {
@@ -185,7 +185,6 @@ country_event = {
         tag = SOV
         date > 1990.03.11
         has_country_flag = gorbachev
-		SOV = { NOT = { has_completed_focus = SOV_on_the_side_of_the_sec } }
     }
 
     immediate = {
@@ -334,7 +333,7 @@ country_event = {
                 date > 1991.08.24
                 NOT = { has_country_flag = collapse_UKR }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				NOT = { has_global_flag = SOV_introduce_emergency_flag }
+				NOT = { has_country_flag = SOV_introduce_emergency_flag }
             }
             release = UKR
             set_country_flag = collapse_UKR
@@ -356,7 +355,7 @@ country_event = {
                 date > 1991.08.25
                 NOT = { has_country_flag = collapse_BLR }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				NOT = { has_global_flag = SOV_introduce_emergency_flag }
+				NOT = { has_country_flag = SOV_introduce_emergency_flag }
             }
             release = BLR
             set_country_flag = collapse_BLR
@@ -378,7 +377,7 @@ country_event = {
                 date > 1991.10.18
                 NOT = { has_country_flag = collapse_AZR }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				NOT = { has_global_flag = SOV_introduce_emergency_flag }
+				NOT = { has_country_flag = SOV_introduce_emergency_flag }
             }
             release = AZR
             set_country_flag = collapse_AZR
@@ -390,7 +389,7 @@ country_event = {
                 date > 1991.11.01
                 NOT = { has_country_flag = collapse_CHE }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				NOT = { has_global_flag = SOV_introduce_emergency_flag }
+				NOT = { has_country_flag = SOV_introduce_emergency_flag }
             }
             release = CHE
             set_country_flag = collapse_CHE
@@ -412,7 +411,7 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_UZB }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				NOT = { has_global_flag = SOV_introduce_emergency_flag }
+				NOT = { has_country_flag = SOV_introduce_emergency_flag }
             }
             release = UZB
             set_country_flag = collapse_UZB
@@ -434,7 +433,7 @@ country_event = {
                 date > 1991.10.27
                 NOT = { has_country_flag = collapse_TMS }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				NOT = { has_global_flag = SOV_introduce_emergency_flag }
+				NOT = { has_country_flag = SOV_introduce_emergency_flag }
             }
             release = TMS
             set_country_flag = collapse_TMS
@@ -456,7 +455,7 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_KYR }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				NOT = { has_global_flag = SOV_introduce_emergency_flag }
+				NOT = { has_country_flag = SOV_introduce_emergency_flag }
             }
             release = KYR
             set_country_flag = collapse_KYR
@@ -478,7 +477,7 @@ country_event = {
                 date > 1991.08.31
                 NOT = { has_country_flag = collapse_TAJ }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				NOT = { has_global_flag = SOV_introduce_emergency_flag }
+				NOT = { has_country_flag = SOV_introduce_emergency_flag }
             }
             release = TAJ
             set_country_flag = collapse_TAJ
@@ -490,7 +489,7 @@ country_event = {
                 date > 1991.12.12
                 NOT = { has_country_flag = collapse_RUS }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				NOT = { has_global_flag = SOV_introduce_emergency_flag }
+				NOT = { has_country_flag = SOV_introduce_emergency_flag }
                 has_country_flag = independence_of_the_rsfsr
             }
             release = RUS
@@ -510,7 +509,7 @@ country_event = {
                 date > 1991.12.16
                 NOT = { has_country_flag = collapse_KAZ }
                 NOT = { has_global_flag = ussr_not_collapsed }
-				NOT = { has_global_flag = SOV_introduce_emergency_flag }
+				NOT = { has_country_flag = SOV_introduce_emergency_flag }
             }
             release = KAZ
             set_country_flag = collapse_KAZ
@@ -1291,10 +1290,6 @@ country_event = {
 			}
 		}
         RUS = {
-			add_popularity = {
-				ideology = conservatism
-				popularity = 0.4
-			}
             set_politics = {
                 ruling_party = conservatism
                 elections_allowed = yes
@@ -1307,10 +1302,6 @@ country_event = {
 		trigger = { is_ai = no }
 		RUS = { change_tag_from = SOV }
         RUS = {
-			add_popularity = {
-				ideology = conservatism
-				popularity = 0.4
-			}
             set_politics = {
                 ruling_party = conservatism
                 elections_allowed = yes
@@ -2286,6 +2277,12 @@ country_event = {
 
 	fire_only_once = yes
 
+	immediate = {
+		hidden_effect = {
+			USA = { country_event = { id = usa.56 days = 3 } }
+		}
+	}
+
     option = {
         name = soviet_union.76.a
 		ai_chance = {
@@ -2373,6 +2370,12 @@ country_event = {
 
 	fire_only_once = yes
 
+	immediate = {
+		hidden_effect = {
+			USA = { country_event = { id = usa.56 days = 240 } }
+		}
+	}
+
     option = {
         name = soviet_union.77.a
 		ai_chance = {
@@ -2390,5 +2393,928 @@ country_event = {
 				modifier = large_decrease
 			}
 		}		
+    }
+}
+
+
+country_event = {
+	id = soviet_union.78 ## Расформирование ОВД ##
+	title = soviet_union.78.t
+	desc = soviet_union.78.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = soviet_union.78.a
+		ai_chance = {
+			base = 100
+		}
+		dismantle_faction = yes
+    }
+}
+
+country_event = {
+	id = soviet_union.79 ## Восстание ОУН ##
+	title = soviet_union.79.t
+	desc = soviet_union.79.desc
+	picture = GFX_report_uprising_in_ukraine
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			UKR = {
+				division_template = {
+					name = "Ukrainian rebels"
+					is_locked = no
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+					}
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+					last_election = "1987.12.17"
+					election_frequency = 48
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.8
+				}
+				random_core_state = {
+					limit = {
+						is_core_of = UKR
+						NOT = { is_controlled_by = UKR }
+						NOT = {
+							OR = {
+								state = 227
+								state = 228
+								state = 200
+								state = 196
+								state = 137
+								state = 1073
+								state = 197
+								state = 192
+								state = 766
+								state = 221
+								state = 226
+								state = 259
+								state = 225
+								state = 193
+							}
+						}
+					}
+					transfer_state_to = UKR
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+				}
+
+				random_core_state = {
+					limit = {
+						is_core_of = UKR
+						NOT = { is_controlled_by = UKR }
+						NOT = {
+							OR = {
+								state = 227
+								state = 228
+								state = 200
+								state = 196
+								state = 137
+								state = 1073
+								state = 197
+								state = 192
+								state = 766
+								state = 221
+								state = 226
+								state = 259
+								state = 225
+								state = 193
+							}
+						}
+					}
+					transfer_state_to = UKR
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+				}
+
+				random_core_state = {
+					limit = {
+						is_core_of = UKR
+						NOT = { is_controlled_by = UKR }
+						NOT = {
+							OR = {
+								state = 227
+								state = 228
+								state = 200
+								state = 196
+								state = 137
+								state = 1073
+								state = 197
+								state = 192
+								state = 766
+								state = 221
+								state = 226
+								state = 259
+								state = 225
+								state = 193
+							}
+						}
+					}
+					transfer_state_to = UKR
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+				}
+				random_core_state = {
+					limit = {
+						is_core_of = UKR
+						NOT = { is_controlled_by = UKR }
+						NOT = {
+							OR = {
+								state = 227
+								state = 228
+								state = 200
+								state = 196
+								state = 137
+								state = 1073
+								state = 197
+								state = 192
+								state = 766
+								state = 221
+								state = 226
+								state = 259
+								state = 225
+								state = 193
+							}
+						}
+					}
+					transfer_state_to = UKR
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+					create_unit = { 
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+						owner = UKR
+					}
+				}
+			}			
+		}
+	}
+
+    option = {
+        name = soviet_union.79.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.1
+		add_war_support = -0.05
+		UKR = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+    }
+}
+
+country_event = {
+	id = soviet_union.80 ## Восстание Прибалтики ##
+	title = soviet_union.80.t
+	desc = soviet_union.80.desc
+	picture = GFX_report_mass_gatherings_and_song_marches_in_the_baltics
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			LIT = {
+				division_template = {
+					name = "Baltic insurgents"
+					is_locked = no
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+					}
+				}
+				set_politics = {
+					ruling_party = conservatism
+					elections_allowed = yes
+					last_election = "1987.12.17"
+					election_frequency = 48
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.5
+				}
+				random_core_state = {
+					limit = {
+						is_core_of = LIT
+						NOT = { is_controlled_by = LIT }
+					}
+					transfer_state_to = LIT
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = LIT
+					}
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = LIT
+					}
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = LIT
+					}
+				}
+
+				random_core_state = {
+					limit = {
+						is_core_of = LIT
+						NOT = { is_controlled_by = LIT }
+					}
+					transfer_state_to = LIT
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = LIT
+					}
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = LIT
+					}
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = LIT
+					}
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = LIT
+					}
+				}
+			}		
+			LAT = {
+				division_template = {
+					name = "Baltic insurgents"
+					is_locked = no
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+					}
+				}
+				set_politics = {
+					ruling_party = liberalism
+					elections_allowed = yes
+					last_election = "1987.12.17"
+					election_frequency = 48
+				}
+				add_popularity = {
+					ideology = liberalism
+					popularity = 0.3
+				}
+				random_core_state = {
+					limit = {
+						is_core_of = LAT
+						NOT = { is_controlled_by = LAT }
+					}
+					transfer_state_to = LAT
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = LAT
+					}
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = LAT
+					}
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = LAT
+					}
+				}
+			}	
+			EST = {
+				division_template = {
+					name = "Baltic insurgents"
+					is_locked = no
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+					}
+				}
+				set_politics = {
+					ruling_party = conservatism
+					elections_allowed = yes
+					last_election = "1987.12.17"
+					election_frequency = 48
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.3
+				}
+				random_core_state = {
+					limit = {
+						is_core_of = EST
+						NOT = { is_controlled_by = EST }
+					}
+					transfer_state_to = EST
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = EST
+					}
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = EST
+					}
+					create_unit = { 
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+						owner = EST
+					}
+				}
+			}	
+		}
+	}
+
+    option = {
+        name = soviet_union.79.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.07
+		add_war_support = -0.05
+		LIT = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		LAT = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		EST = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+    }
+}
+
+country_event = {
+	id = soviet_union.81 ## Бешеные цены ##
+	title = soviet_union.81.t
+	desc = soviet_union.81.desc
+	picture = GFX_report_generic_corruption_2
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = soviet_union.81.a
+		ai_chance = {
+			base = 34
+		}
+		add_stability = -0.1
+		add_to_variable = {
+			var = treasury
+			value = 20
+			tooltip = add_20_billion_to_treasury_tt
+		}	
+    }
+
+    option = {
+        name = soviet_union.81.b
+		ai_chance = {
+			base = 33
+		}
+		add_stability = 0.05
+		add_to_variable = {
+			var = treasury
+			value = 5
+			tooltip = add_5_billion_to_treasury_tt
+		}	
+    }
+}
+
+country_event = {
+	id = soviet_union.82 ## Забастовки шахтеров ##
+	title = soviet_union.82.t
+	desc = soviet_union.82.desc
+	picture = GFX_report_generic_corruption
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = soviet_union.82.a
+		ai_chance = {
+			base = 34
+		}
+		add_timed_idea = {
+			idea = SOV_miners_strikes
+			days = 70
+		}
+		add_to_variable = {
+			var = treasury
+			value = 20
+			tooltip = add_20_billion_to_treasury_tt
+		}	
+    }
+
+    option = {
+        name = soviet_union.82.b
+		ai_chance = {
+			base = 33
+		}
+		add_stability = -0.1
+		add_timed_idea = {
+			idea = SOV_miners_strikes
+			days = 15
+		}
+    }
+
+    option = {
+        name = soviet_union.82.c
+		ai_chance = {
+			base = 33
+		}
+		add_stability = 0.03
+		add_timed_idea = {
+			idea = SOV_miners_strikes_2
+			days = 120
+		}
+    }
+}
+
+country_event = {
+	id = soviet_union.83 ## Рождение олигархов ##
+	title = soviet_union.83.t
+	desc = soviet_union.83.desc
+	picture = GFX_report_generic_corruption_5
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = soviet_union.83.a
+		ai_chance = {
+			base = 34
+		}
+		if = {
+			limit = {
+				has_idea = significant_corruption
+			}
+			swap_ideas = {
+				remove_idea = significant_corruption
+				add_idea = horrific_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = moderate_corruption
+			}
+			swap_ideas = {
+				remove_idea = moderate_corruption
+				add_idea = significant_corruption
+			}  
+		}	
+		if = {
+			limit = {
+				has_idea = low_corruption
+			}
+			swap_ideas = {
+				remove_idea = low_corruption
+				add_idea = moderate_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = minor_corruption
+			}
+			swap_ideas = {
+				remove_idea = minor_corruption
+				add_idea = low_corruption
+			}  
+		}	
+		add_ideas = SOV_oligarchs
+    }
+
+    option = {
+        name = soviet_union.83.b
+		ai_chance = {
+			base = 33
+		}
+		add_political_power = -150
+		add_stability = 0.05
+		if = {
+			limit = {
+				has_idea = low_corruption
+			}
+			swap_ideas = {
+				remove_idea = low_corruption
+				add_idea = minor_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = moderate_corruption
+			}
+			swap_ideas = {
+				remove_idea = moderate_corruption
+				add_idea = low_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = significant_corruption
+			}
+			swap_ideas = {
+				remove_idea = significant_corruption
+				add_idea = moderate_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = horrific_corruption
+			}
+			swap_ideas = {
+				remove_idea = horrific_corruption
+				add_idea = significant_corruption
+			}  
+		}
+    }
+
+    option = {
+        name = soviet_union.83.c
+		ai_chance = {
+			base = 33
+		}
+		add_stability = 0.1
+    }
+}
+
+country_event = {
+	id = soviet_union.84 ## Утечка мозгов ##
+	title = soviet_union.84.t
+	desc = soviet_union.84.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = soviet_union.84.a
+		ai_chance = {
+			base = 34
+		}
+		add_research_slot = -1
+    }
+
+    option = {
+        name = soviet_union.84.b
+		ai_chance = {
+			base = 33
+		}
+		add_research_slot = 1
+		add_ideas = SOV_science_cities
+    }
+}
+
+country_event = {
+	id = soviet_union.85 ## Требования МВФ ##
+	title = soviet_union.85.t
+	desc = soviet_union.85.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = soviet_union.85.a
+		ai_chance = {
+			base = 34
+		}
+		add_stability = -0.15
+		add_war_support = -0.1
+		add_to_variable = {
+			var = treasury
+			value = 20
+			tooltip = add_20_billion_to_treasury_tt
+		}	
+		add_timed_idea = {
+			idea = SOV_cost_reduction
+			days = 365
+		}
+    }
+
+    option = {
+        name = soviet_union.85.b
+		ai_chance = {
+			base = 33
+		}
+		add_stability = 0.1
+		add_war_support = 0.05	
+		every_country = {
+			limit = {
+				is_in_faction_with = USA
+			}
+			add_opinion_modifier = {
+				target = FROM
+				modifier = medium_decrease
+			}
+		}
+    }
+}
+
+country_event = {
+	id = soviet_union.86 ## Успешный референдум ##
+	title = soviet_union.86.t
+	desc = soviet_union.86.desc
+	picture = GFX_report_mass_gatherings_and_song_marches_in_the_baltics
+
+	is_triggered_only = yes
+
+    option = {
+        name = soviet_union.86.a
+		ai_chance = {
+			base = 34
+		}
+		SOV = { add_stability = 0.05 }
+		SOV = {
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = uss_member
+				end_wars = no
+				end_civil_wars = yes
+				keep_subjects = no
+			}
+		}
+		if = {
+			limit = {
+				tag = LIT
+			}
+			add_country_leader_role = {
+				character = LIT_algirdas_brazauskas
+				country_leader = {
+					ideology = classical_social_democracy
+					expire = "2010.6.26"
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = LAT
+			}
+			add_country_leader_role = {
+				character = LAT_anatoliy_gorbynov
+				country_leader = {
+					ideology = liberal_social_democracy
+					expire = "2023.8.13"
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = EST
+			}
+			add_country_leader_role = {
+				character = EST_arnold_ruutel
+				country_leader = {
+					ideology = eco_social_democracy
+					expire = "2023.8.13"
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = soviet_union.87 ## Провал референдума ##
+	title = soviet_union.87.t
+	desc = soviet_union.87.desc
+	picture = GFX_report_mass_gatherings_and_song_marches_in_the_baltics
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = soviet_union.87.a
+		ai_chance = {
+			base = 34
+		}
+		add_stability = -0.05
+		add_war_support = 0.05
+    }
+}
+
+country_event = {
+	id = soviet_union.88 ## Грузия отказалась от переговоров ##
+	title = soviet_union.88.t
+	desc = soviet_union.88.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    option = {
+        name = soviet_union.88.a
+		ai_chance = {
+			base = 34
+		}
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		declare_war_on = {
+			target = GEO
+			type = topple_government
+		}
+		country_event = { id = soviet_union.89 }
+    }
+
+    option = {
+        name = soviet_union.88.b
+		ai_chance = {
+			base = 34
+		}	
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.05
+		}
+		add_stability = 0.1
+		country_event = { id = soviet_union.89 }
+    }
+}
+
+country_event = {
+	id = soviet_union.89 ## Гражданская война в Грузии ##
+	title = soviet_union.89.t
+	desc = soviet_union.89.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		GEO = {
+			start_civil_war = {
+				ruling_party = socialism
+				ideology = fascism
+				size = 0.3
+				capital = 1076
+				states = all
+				keep_political_leader = yes
+				keep_political_party_members = yes
+			}
+		}
+		ABK = {
+			transfer_state = 826
+			add_country_leader_role = {
+				character = ABK_vladislav_ardzinba
+				country_leader = {
+					ideology = classical_social_democracy
+					expire = "2010.6.26"
+				}
+			}	
+		}
+		SOO = {
+			transfer_state = 1057
+			add_country_leader_role = {
+				character = SOO_torez_kulumbegov
+				country_leader = {
+					ideology = classical_social_democracy
+					expire = "2010.6.26"
+				}
+			}		
+		}
+		SOV = {
+			set_autonomy = {
+				target = GEO
+				autonomous_state = uss_member
+				end_wars = no
+				end_civil_wars = no
+				keep_subjects = no
+			}
+			set_autonomy = {
+				target = ABK
+				autonomous_state = uss_member
+				end_wars = no
+				end_civil_wars = no
+				keep_subjects = no
+			}
+			set_autonomy = {
+				target = SOO
+				autonomous_state = uss_member
+				end_wars = no
+				end_civil_wars = no
+				keep_subjects = no
+			}
+		}
+		SOO = {
+			add_country_leader_role = {
+				character = SOO_torez_kulumbegov
+				country_leader = {
+					ideology = classical_social_democracy
+					expire = "2010.6.26"
+				}
+			}			
+		}
+	}
+
+    option = {
+        name = soviet_union.89.a
+		ai_chance = {
+			base = 34
+		}
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		if = {
+			limit = {
+				country_exists = ABK
+			}
+			GEO = {
+				annex_country = {
+					target = ABK
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SOO
+			}
+			GEO = {
+				annex_country = {
+					target = SOO
+				}
+			}
+		}
+    }
+
+    option = {
+        name = soviet_union.89.b
+		ai_chance = {
+			base = 34
+		}	
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.05
+		}
+		add_stability = 0.1
     }
 }

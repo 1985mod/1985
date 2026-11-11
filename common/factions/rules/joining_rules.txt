@@ -38,13 +38,23 @@ joining_rule_non_fascist = {
 joining_rule_non_democratic = {
 	type = joining_rules
 	visible = {
-		NOT = { has_government = democratic }
+		OR = {
+			NOT = { 
+				has_government = conservatism 
+				has_government = liberalism
+			}
+		}
 	}
 	ai_will_do = {
 		base = 0
 		modifier = {
 			add = 1
-			NOT = { has_government = democratic }
+			OR = {
+				NOT = { 
+					has_government = conservatism 
+					has_government = liberalism
+				}
+			}
 		}
 		modifier = {
 			add = 1
@@ -53,7 +63,8 @@ joining_rule_non_democratic = {
 	}
 	trigger = {
 		NOT = {
-			has_government = democratic 
+			has_government = conservatism
+			has_government = liberalism
 		}
 		IF = {
 			limit = { NOT = { has_rule = can_join_opposite_factions } }
@@ -137,11 +148,15 @@ joining_rule_democratic_non_aligned = {
 		base = 0
 	}
 	available = {
-		has_government = democratic
+		OR = {
+			has_government = conservatism
+			has_government = liberalism
+		}
 	}
 	trigger = {
 		OR = {
-			has_government = democratic
+			has_government = conservatism
+			has_government = liberalism
 			has_government = neutrality
 		}
 		IF = {
@@ -256,7 +271,8 @@ joining_rule_has_no_offensive_war = {
 			NOT = { tag = ENG }
 			NOT = { tag = USA }
 			OR = {
-				has_government = democratic
+				has_government = conservatism
+				has_government = liberalism
 				has_government = neutrality
 			}
 		}

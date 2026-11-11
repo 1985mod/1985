@@ -212,3 +212,43 @@ USA_trade_deficit_cat = {
 		original_tag = USA
 	}
 }
+
+USA_stabilization_of_the_regime_in_iraq = {
+
+	icon = generic_democracy
+		
+	priority = 100
+	  
+	allowed = {
+		original_tag = USA
+	}
+	  
+	visible = {
+		country_exists = UNQ
+		has_global_flag = free_iraq_now
+		UNQ = {
+			NOT = { has_war_with = IRQ } 
+		}
+		original_tag = USA
+	}
+}
+
+USA_upcoming_elections_in_iraq = {
+
+	icon = generic_democracy
+		
+	priority = 95
+	  
+	allowed = {
+		original_tag = USA
+	}
+	  
+	visible = {
+		country_exists = UNQ
+		has_global_flag = free_iraq_now
+		UNQ = {
+			NOT = { has_war_with = IRQ } 
+		}
+		original_tag = USA
+	}
+}

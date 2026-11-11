@@ -81,6 +81,7 @@ recruit_character = ITA_ciriaco_de_mita
 recruit_character = ITA_giulio_andreotti
 recruit_character = ITA_giuliano_amato
 recruit_character = ITA_carlo_azeglio_ciampi
+recruit_character = ITA_armando_cossutta
 
 set_politics = {
 	ruling_party = socialism

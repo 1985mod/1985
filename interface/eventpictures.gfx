@@ -493,6 +493,116 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_report_dismantle_warsaw_pact"
+		texturefile = "gfx/event_pictures/report_dismantle_warsaw_pact.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_eras_of_tension"
+		texturefile = "gfx/event_pictures/report_eras_of_tension.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_meeting_oecd"
+		texturefile = "gfx/event_pictures/report_meeting_oecd.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_plaza_accord"
+		texturefile = "gfx/event_pictures/report_plaza_accord.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_anti_war_protests"
+		texturefile = "gfx/event_pictures/report_anti_war_protests.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_middle_class_strikes"
+		texturefile = "gfx/event_pictures/report_middle_class_strikes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_release_california"
+		texturefile = "gfx/event_pictures/report_release_california.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_release_texas"
+		texturefile = "gfx/event_pictures/report_release_texas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_west_breaking_away"
+		texturefile = "gfx/event_pictures/report_west_breaking_away.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_south_breaking_away"
+		texturefile = "gfx/event_pictures/report_south_breaking_away.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_emergence_of_communism"
+		texturefile = "gfx/event_pictures/report_emergence_of_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_formation_of_the_franco_german_brigade"
+		texturefile = "gfx/event_pictures/report_formation_of_the_franco_german_brigade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_uprising_in_ukraine"
+		texturefile = "gfx/event_pictures/report_uprising_in_ukraine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_win_in_iraq"
+		texturefile = "gfx/event_pictures/report_win_in_iraq.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_explosion_in_baghdad"
+		texturefile = "gfx/event_pictures/report_explosion_in_baghdad.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_raid_on_the_coalition_warehouse"
+		texturefile = "gfx/event_pictures/report_raid_on_the_coalition_warehouse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_nuclear_legacy"
+		texturefile = "gfx/event_pictures/report_nuclear_legacy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_generic_corruption"
+		texturefile = "gfx/event_pictures/report_generic_corruption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_generic_corruption_2"
+		texturefile = "gfx/event_pictures/report_generic_corruption_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_generic_corruption_3"
+		texturefile = "gfx/event_pictures/report_generic_corruption_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_generic_corruption_4"
+		texturefile = "gfx/event_pictures/report_generic_corruption_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_generic_corruption_5"
+		texturefile = "gfx/event_pictures/report_generic_corruption_5.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_proclamation_of_a_great_iraq"
 		texturefile = "gfx/event_pictures/news_proclamation_of_a_great_iraq.dds"
 	}

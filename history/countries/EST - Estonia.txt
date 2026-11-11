@@ -18,6 +18,7 @@ set_technology = {
 }
 
 recruit_character = EST_lennart_meri
+recruit_character = EST_arnold_ruutel
 
 set_politics = {
 	ruling_party = communism

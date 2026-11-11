@@ -138,4 +138,24 @@ characters = {
 			id = -1
 		}
 	}
+
+	ITA_armando_cossutta = {
+		name = ITA_armando_cossutta
+		portraits={
+			civilian={
+				large= GFX_Portrait_armando_cossutta
+			}
+			army = {
+				large = GFX_Portrait_armando_cossutta
+				small = GFX_portrait_ITA_giulio_andreotti
+			}
+		}
+
+		country_leader = {
+			ideology = marxism_leninism
+			traits={  }
+			expire="2015.12.14.1"
+			id = -1
+		}
+	}
 }

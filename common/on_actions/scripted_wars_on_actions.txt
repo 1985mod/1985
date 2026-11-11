@@ -451,6 +451,70 @@ on_actions = {
                     }
                 }
             }
+
+            if = {
+                limit = {
+                    USA = { has_country_flag = invasion_in_panama }
+                    FROM = {
+                        tag = USA
+                    }
+                    ROOT = {
+                        tag = PAN
+                    }
+                }
+
+                USA = {
+                    white_peace = PAN
+                    clr_country_flag = invasion_in_panama
+                    PAN = {
+                        set_politics = {
+                            ruling_party = conservatism
+                            elections_allowed = yes
+                            last_election = "1989.12.15"
+                            election_frequency = 48
+                        }
+                        add_popularity = {
+                            ideology = conservatism
+                            popularity = 0.56
+                        }
+                    }
+                }
+            }
+
+            if = {
+                limit = {
+                    has_global_flag = un_coalition_in_iraq
+                    FROM = {
+                        tag = UNQ
+                    }
+                    ROOT = {
+                        tag = IRQ
+                    }
+                }
+
+                USA = { country_event = { id = usa.71 days = 5 } }
+                UNQ = {
+                    white_peace = IRQ
+                    annex_country = {
+                        target = IRQ
+                        transfer_troops = yes
+                    }
+                    clr_global_flag = un_coalition_in_iraq
+                    set_global_flag = free_iraq_now
+                    if = {
+                        limit = {
+                            controls_state = 656
+                        }
+                        release = KUW
+                    }
+                    every_state = { 
+                        limit = {
+                            is_core_of = IRQ
+                        }
+                        add_core_of = UNQ
+                    }
+                }
+            }
         }
     }
 }

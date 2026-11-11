@@ -1,0 +1,545 @@
+focus_tree = {
+	id = WGR_victory_spd
+	country = {
+		factor = 0
+		modifier = {
+			add = 2
+			tag = WGR
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 1200 y = 1250 }
+
+	focus = {
+		id = WGR_peoples_candidate
+		icon = GFX_focus_ARG_defense_and_democracy
+		cost = 5
+		x = 15
+		y = 0
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_eco_socialism
+		icon = GFX_focus_generic_social_democracy
+		cost = 5
+		relative_position_id = WGR_peoples_candidate
+		prerequisite = { focus = WGR_peoples_candidate }
+		x = -3
+		y = 1
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 25
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_abandoning_nuclear_energy
+		icon = GFX_focus_generic_nuclear_development
+		cost = 5
+		relative_position_id = WGR_eco_socialism
+		prerequisite = { focus = WGR_eco_socialism }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.03
+			}
+			add_tech_bonus = {
+				name = WGR_development_nuke
+				bonus = 0.5
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_new_social_pact
+		icon = GFX_focus_CHL_revise_the_social_classes
+		cost = 5
+		relative_position_id = WGR_eco_socialism
+		prerequisite = { focus = WGR_eco_socialism }
+		x = 2
+		y = 1
+
+		completion_reward = {
+			army_experience = 15
+			add_political_power = 25
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = WGR_tax_on_the_wealthy
+		icon = GFX_focus_ARG_anti_corruption_policies
+		cost = 10
+		relative_position_id = WGR_eco_socialism
+		prerequisite = { focus = WGR_abandoning_nuclear_energy }
+		prerequisite = { focus = WGR_new_social_pact }
+		x = 0
+		y = 2
+
+		completion_reward = {
+			add_political_power = 50
+			add_timed_idea = {
+				idea = WGR_tax_on_the_wealthy
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_saving_the_ruhr
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 5
+		relative_position_id = WGR_tax_on_the_wealthy
+		prerequisite = { focus = WGR_tax_on_the_wealthy }
+		x = 0
+		y = 1
+
+		bypass = {
+			NOT = { controls_state = 51 }
+		}
+
+		completion_reward = {
+            51 = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+			51 = {
+				add_resource= { 
+					type = coal
+					amount = 8
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_new_eastern_policy
+		icon = GFX_focus_SOV_found_the_warsaw_pact
+		cost = 5
+		relative_position_id = WGR_peoples_candidate
+		prerequisite = { focus = WGR_peoples_candidate }
+		x = 3
+		y = 1
+
+		completion_reward = {
+			add_political_power = 50
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = small_increase
+				}
+			}
+			DDR = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = small_increase
+				}
+			}
+			POL = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = small_increase
+				}
+			}
+			HUN = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = CZE
+					modifier = small_increase
+				}
+			}
+			CZE = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = ROM
+					modifier = small_increase
+				}
+			}
+			ROM = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = BUL
+					modifier = small_increase
+				}
+			}
+			BUL = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_abandoning_the_pershings
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 5
+		relative_position_id = WGR_new_eastern_policy
+		prerequisite = { focus = WGR_new_eastern_policy }
+		x = 1
+		y = 1
+
+		completion_reward = {
+			USA = { country_event = { id = wgr.35 hours = 12 } }
+			add_stability = 0.05
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = medium_increase
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_decrease
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_decrease
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_technology_in_exchange_for_investment
+		icon = GFX_focus_GER_alliance_with_the_ussr
+		cost = 5
+		relative_position_id = WGR_abandoning_the_pershings
+		prerequisite = { focus = WGR_abandoning_the_pershings }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}		
+			SOV = {
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 1
+					category = industry
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_dialogue_with_the_sed
+		icon = GFX_focus_GER_align_south_america
+		cost = 5
+		relative_position_id = WGR_new_eastern_policy
+		prerequisite = { focus = WGR_new_eastern_policy }
+		x = -1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = {
+					DDR = {
+						OR = {
+							has_country_leader = { character = DDR_Erich_Honecker ruling_only = yes }
+							has_country_leader = { character = DDR_egon_krenz ruling_only = yes }
+						}
+					}
+				}
+				DDR = {
+					add_opinion_modifier = {
+						target = WGR
+						modifier = medium_increase
+					}
+					add_popularity = {
+						ideology = socialism
+						popularity = 0.03
+					}
+				}
+				ROOT = {
+					add_opinion_modifier = {
+						target = WGR
+						modifier = medium_increase
+					}				
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_support_for_the_new_forum
+		icon = GFX_focus_GER_tend_to_the_future
+		cost = 5
+		relative_position_id = WGR_dialogue_with_the_sed
+		prerequisite = { focus = WGR_dialogue_with_the_sed }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			DDR = {
+				add_stability = -0.07
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = 0.07
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_pan_european_picnic
+		icon = GFX_goal_generic_attack_allies
+		cost = 5
+		relative_position_id = WGR_support_for_the_new_forum
+		prerequisite = { focus = WGR_technology_in_exchange_for_investment }
+		prerequisite = { focus = WGR_support_for_the_new_forum }
+		x = 1
+		y = 1
+
+		completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}	
+			add_war_support = 0.07
+			DDR = { country_event = ddr.27 }		
+		}
+	}
+
+	focus = {
+		id = WGR_the_german_social_miracle
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 10
+		relative_position_id = WGR_pan_european_picnic
+		prerequisite = { focus = WGR_pan_european_picnic }
+		prerequisite = { focus = WGR_saving_the_ruhr }
+		x = -3
+		y = 1
+
+		completion_reward = {
+			add_ideas = WGR_economy_for_the_people
+		}
+	}
+
+	focus = {
+		id = WGR_reduction_term_of_compulsory_military_service
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		relative_position_id = WGR_the_german_social_miracle
+		prerequisite = { focus = WGR_the_german_social_miracle }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_ideas = WGR_reduction_term_of_compulsory_military_service
+		}
+	}
+
+	focus = {
+		id = WGR_expansion_of_the_civil_service
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		cost = 5
+		relative_position_id = WGR_reduction_term_of_compulsory_military_service
+		prerequisite = { focus = WGR_reduction_term_of_compulsory_military_service }
+		x = -1
+		y = 1
+
+		completion_reward = {
+			add_ideas = WGR_expansion_of_the_civil_service
+		}
+	}
+	
+	focus = {
+		id = WGR_conversion_of_the_defense_industry
+		icon = GFX_goal_generic_military_deal
+		cost = 5
+		relative_position_id = WGR_reduction_term_of_compulsory_military_service
+		prerequisite = { focus = WGR_reduction_term_of_compulsory_military_service }
+		x = 1
+		y = 1
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = -2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                limit = {					
+                    is_in_home_area = yes					
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 2
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = -2
+                    instant_build = yes
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = WGR_militia_of_the_lands
+		icon = GFX_goal_generic_military_sphere
+		cost = 5
+		relative_position_id = WGR_reduction_term_of_compulsory_military_service
+		prerequisite = { focus = WGR_expansion_of_the_civil_service }
+		prerequisite = { focus = WGR_conversion_of_the_defense_industry }
+		x = 0
+		y = 2
+
+		completion_reward = {
+			custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
+			add_ideas = WGR_militia_of_the_lands
+			hidden_effect = {
+				load_focus_tree = WGR_victory_spd_part_two
+			}
+		}	
+	}
+}

@@ -31,3 +31,4 @@ set_popularities = {
 }
 
 recruit_character = UKR_leonid_kravchuk
+recruit_character = UKR_mykola_plaviuk

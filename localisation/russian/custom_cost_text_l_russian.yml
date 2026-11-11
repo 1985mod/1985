@@ -1,4 +1,13 @@
 ﻿l_russian:
+ decision_cost_MB_1: "£money_balance_texticons  §Y1B§!"
+ decision_cost_MB_1_blocked: "£money_balance_texticons  §R1B§!"
+ decision_cost_MB_1_tooltip: "Стоимость принятия решения: £money_balance_texticons  §Y1B§!"
+ decision_cost_MB_10: "£money_balance_texticons  §Y10B§!"
+ decision_cost_MB_10_blocked: "£money_balance_texticons  §R10B§!"
+ decision_cost_MB_10_tooltip: "Стоимость принятия решения: £money_balance_texticons  §Y10B§!"
+ decision_cost_MB_100: "£money_balance_texticons  §Y100B§!"
+ decision_cost_MB_100_blocked: "£money_balance_texticons  §R100B§!"
+ decision_cost_MB_100_tooltip: "Стоимость принятия решения: £money_balance_texticons  §Y100B§!"
  decision_cost_MB_20: "£money_balance_texticons  §Y20B§!"
  decision_cost_MB_20_blocked: "£money_balance_texticons  §R20B§!"
  decision_cost_MB_20_tooltip: "Стоимость принятия решения: £money_balance_texticons  §Y20B§!"

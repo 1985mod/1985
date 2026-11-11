@@ -25,6 +25,7 @@ set_technology = {
 }
 
 recruit_character = DEN_poul_schluter
+recruit_character = DEN_ole_sohn
 
 set_politics = {
 	ruling_party = conservatism

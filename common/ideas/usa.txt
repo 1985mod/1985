@@ -50,6 +50,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				welfare_expenditure_factor = 0.05
 			  	consumer_goods_factor = 0.1
 			  	stability_factor = -0.05
 			  	political_power_factor = -0.05
@@ -68,6 +69,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				welfare_expenditure_factor = 0.1
 			  	consumer_goods_factor = 0.2
 			  	stability_factor = -0.15
 			  	political_power_factor = -0.1
@@ -105,10 +107,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			  stability_factor = 0.03
-			  army_attack_factor = 0.05
-			  army_defence_factor = 0.05
-			  army_org_factor = 0.03
+				stability_factor = 0.03
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.03
 			}
 		}
 		USA_us_world_hegemony = {
@@ -255,6 +257,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 				political_power_factor = -0.05
 				stability_weekly = -0.001
+				income_growth_factor = 0.15
 			}
 		}
 		USA_expansion_of_social_programs_idea = {
@@ -313,6 +316,7 @@ ideas = {
 				political_power_factor = -0.1
 				stability_weekly = -0.002
 				production_factory_efficiency_gain_factor = -0.05
+				income_growth_factor = 0.1
 			}
 		}
 
@@ -335,6 +339,7 @@ ideas = {
 				breakthrough_bonus_against = 0.1
             }
 			modifier = {
+				send_volunteer_size = 5
 				stability_weekly = -0.001
 			}
 		}
@@ -356,6 +361,8 @@ ideas = {
 				stability_factor = -0.05
 				stability_weekly = -0.001
 				liberalism_drift = 0.05
+				income_growth_factor = 0.05
+				expense_growth_factor = -0.1
 			}
 		}
 		USA_dispatch_of_peacekeeping_forces = {
@@ -440,7 +447,7 @@ ideas = {
 		}
 
 		USA_nato_exercises = {
-			picture = operation_in_iraq 
+			picture = cooperation_with_allied_forces 
 			allowed = {
 				original_tag = USA
 			}
@@ -494,6 +501,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				expense_growth_factor = 0.3
 				political_power_factor = -0.3
 				stability_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.15

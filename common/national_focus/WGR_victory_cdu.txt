@@ -1,0 +1,386 @@
+focus_tree = {
+	id = WGR_victory_cdu
+	country = {
+		factor = 0
+		modifier = {
+			add = 2
+			tag = WGR
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 1300 y = 1850 }
+
+	focus = {
+		id = WGR_kohls_coalition
+		icon = GFX_focus_generic_democratic_europe
+		cost = 5
+		x = 15
+		y = 0
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.03
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_to_continue_ones_course
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 5
+		relative_position_id = WGR_kohls_coalition
+		prerequisite = { focus = WGR_kohls_coalition }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = WGR_to_continue_ones_course
+		}
+	}
+
+	focus = {
+		id = WGR_tax_reform
+		icon = GFX_focus_CHI_planned_economy
+		cost = 10
+		relative_position_id = WGR_to_continue_ones_course
+		prerequisite = { focus = WGR_to_continue_ones_course }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = WGR_tax_reform
+				days = 180
+			}
+			custom_effect_tooltip = we_will_decrease_taxes_by_3_percent 
+			subtract_from_variable = { var = pop_rate value = 3 }
+			tax_effect = yes
+			if = {
+				limit = {
+					check_variable = { pop_rate > 100 } 
+				}
+				set_variable = { var = pop_rate value = 100 }
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_ecological_turn
+		icon = GFX_focus_AFG_a_modern_economy
+		cost = 5
+		relative_position_id = WGR_tax_reform
+		prerequisite = { focus = WGR_tax_reform }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 10
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.03
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_social_market_economy
+		icon = GFX_focus_generic_economic_recovery
+		cost = 5
+		relative_position_id = WGR_ecological_turn
+		prerequisite = { focus = WGR_ecological_turn }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_ideas = WGR_social_market_economy
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = WGR_modernization_of_the_bundeswehr
+		icon = GFX_focus_AUS_osterreichische_bundesheer
+		cost = 5
+		relative_position_id = WGR_tax_reform
+		prerequisite = { focus = WGR_tax_reform }
+		x = 2
+		y = 1
+
+		completion_reward = {
+			add_ideas = WGR_modernization_of_the_bundeswehr
+		}
+	}
+
+	focus = {
+		id = WGR_anti_tank_reserves
+		icon = GFX_focus_chi_army_reform
+		cost = 5
+		relative_position_id = WGR_modernization_of_the_bundeswehr
+		prerequisite = { focus = WGR_modernization_of_the_bundeswehr }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = WGR_anti_tank_reserves
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_grenade_launcher_equipment_0
+				amount = 750
+				producer = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_support_for_refugees
+		icon = GFX_focus_RAJ_trickle_down_economics
+		cost = 5
+		relative_position_id = WGR_tax_reform
+		prerequisite = { focus = WGR_social_market_economy }
+		prerequisite = { focus = WGR_anti_tank_reserves }
+		x = 0
+		y = 3
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = WGR_independence_of_the_bundesbank
+		icon = GFX_focus_RAJ_special_economic_zones
+		cost = 10
+		relative_position_id = WGR_support_for_refugees
+		prerequisite = { focus = WGR_support_for_refugees }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_ideas = WGR_independence_of_the_bundesbank
+		}
+	}
+
+	focus = {
+		id = WGR_parliamentary_reform
+		icon = GFX_focus_AFG_parliamentary_democracy
+		cost = 10
+		relative_position_id = WGR_to_continue_ones_course
+		prerequisite = { focus = WGR_to_continue_ones_course }
+		x = 2
+		y = 1
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = WGR_parliamentary_reform
+				days = 365
+			}
+			add_popularity = { 
+				ideology = conservatism
+				popularity = 0.02
+            }
+		}
+	}
+
+	focus = {
+		id = WGR_transatlantic_bridge
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		relative_position_id = WGR_parliamentary_reform
+		prerequisite = { focus = WGR_parliamentary_reform }
+		x = 1
+		y = 1
+
+		completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_face_to_face_with_moscow
+		icon = GFX_focus_attack_soviet
+		cost = 5
+		relative_position_id = WGR_transatlantic_bridge
+		prerequisite = { focus = WGR_transatlantic_bridge }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_war_support = 0.1
+			army_experience = 10
+			air_experience = 5
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_decrease
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_decrease
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_franco_german_brigade
+		icon = GFX_focus_focus_fra_down_marianne
+		cost = 5
+		relative_position_id = WGR_face_to_face_with_moscow
+		prerequisite = { focus = WGR_face_to_face_with_moscow }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			country_event = { id = wgr.29 }
+			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = small_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_the_genscher_course
+		icon = GFX_focus_SOV_found_the_warsaw_pact
+		cost = 5
+		relative_position_id = WGR_face_to_face_with_moscow
+		prerequisite = { focus = WGR_face_to_face_with_moscow }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_political_power = 50
+			ROOT = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = small_increase
+				}
+			}
+			DDR = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = small_increase
+				}
+			}
+			POL = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_alliance_with_mitterrand
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 5
+		relative_position_id = WGR_face_to_face_with_moscow
+		prerequisite = { focus = WGR_face_to_face_with_moscow }
+		x = 2
+		y = 1
+
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = medium_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_bundeswehr_2000
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+		cost = 10
+		relative_position_id = WGR_face_to_face_with_moscow
+		prerequisite = { focus = WGR_franco_german_brigade }
+		prerequisite = { focus = WGR_the_genscher_course }
+		prerequisite = { focus = WGR_alliance_with_mitterrand }
+		x = 0
+		y = 2
+
+		completion_reward = {
+			add_ideas = WGR_bundeswehr_2000
+		}	
+	}
+
+	focus = {
+		id = WGR_healthcare_reform
+		icon = GFX_focus_generic_currency_reforms
+		cost = 10
+		relative_position_id = WGR_bundeswehr_2000
+		prerequisite = { focus = WGR_bundeswehr_2000 }
+		prerequisite = { focus = WGR_independence_of_the_bundesbank }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = WGR_healthcare_reform
+				days = 480
+			}
+			custom_effect_tooltip = new_focus_tree_will_open_up_tooltip_tt
+			hidden_effect = {
+				load_focus_tree = WGR_victory_cdu_part_two
+			}
+		}
+	}
+}

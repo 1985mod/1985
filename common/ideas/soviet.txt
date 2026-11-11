@@ -36,6 +36,7 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.15
 				production_factory_max_efficiency_factor = -0.15
 				production_speed_buildings_factor = -0.1
+				income_growth_factor = -0.05
 			}
 		}	
     	SOV_anti_alcohol_campaign = {
@@ -51,8 +52,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				welfare_expenditure_factor = 0.15
 			 	production_factory_efficiency_gain_factor = 0.05
 			 	stability_factor = 0.05
+				industrial_capacity_factory = 0.05
 			 	consumer_goods_factor = 0.1
 			}
 		}
@@ -86,7 +89,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.03
+				production_speed_industrial_complex_factor = 0.05
 				production_speed_infrastructure_factor = 0.03
 			}
 		}
@@ -146,6 +149,7 @@ ideas = {
 				socialism_drift = 0.02
 				neutrality_drift = 0.01
 				consumer_goods_factor = -0.15
+				expense_growth_factor = -0.1
 			}
 		}
     	SOV_law_on_state_enterprise_idea = {
@@ -180,6 +184,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.1
+				income_growth_factor = 0.15
 				political_power_factor = 0.1
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.15
@@ -277,7 +282,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_start_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
-				line_change_production_efficiency_factor = 0.03
+				industrial_capacity_factory = 0.05
 			}
 		}
     	SOV_fines_for_moonshining = {
@@ -366,9 +371,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.1
 			  	production_factory_efficiency_gain_factor = 0.05
 			 	nuclear_production_factor = 0.05
+				industrial_capacity_factory = 0.1
 			}
 		}
     	SOV_developed_socialist_state = {
@@ -646,6 +652,237 @@ ideas = {
 				stability_factor = 0.1
 				surrender_limit = 0.25
 				mobilization_speed = 0.15
+			}
+		}
+
+    	SOV_shock_therapy = {
+			picture = economic_stagnation
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = -0.45
+				inflation_rate_factor = 2.5
+				production_speed_buildings_factor = -0.4
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.2
+			}
+		}
+
+    	SOV_shock_therapy_2 = {
+			picture = economic_stagnation
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.4
+				inflation_rate_factor = 2.2
+				production_speed_buildings_factor = -0.3
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.15
+			}
+		}
+
+    	SOV_shock_therapy_3 = {
+			picture = economic_stagnation
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.2
+				inflation_rate_factor = 1.2
+				production_speed_buildings_factor = -0.15
+				local_resources_factor = 0.05
+				industrial_capacity_factory = 0.15
+			}
+		}
+
+		SOV_miners_strikes = {
+			picture = plundered_army
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.1
+				production_factory_efficiency_gain_factor = -0.15
+			}
+		}
+
+		SOV_miners_strikes_2 = {
+			picture = plundered_army
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				income_growth_factor = -0.15
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		SOV_oligarchs = {
+			picture = plundered_army
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				income_growth_factor = 0.2
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		SOV_science_cities = {
+			picture = plundered_army
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				expense_growth_factor = 0.1
+				research_speed_factor = 0.05
+				research_sharing_per_country_bonus_factor = 0.15
+			}
+		}
+
+		SOV_cost_reduction = {
+			picture = plundered_army
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				income_growth_factor = 0.05
+				expense_growth_factor = -0.3
+			}
+		}
+
+		SOV_inter_republican_bank = {
+			picture = free_trade_decree
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.15
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		SOV_small_scale_privatization = {
+			picture = privatize_state_property
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				income_growth_factor = 0.05
+			}
+		}
+
+		SOV_freedom_of_movement_of_goods = {
+			picture = free_trade_decree
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.1
+				local_resources_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.05
 			}
 		}
 	}

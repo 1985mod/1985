@@ -15,3 +15,17 @@ expense_growth_factor = {
 	precision = 1
 	category = country
 }
+
+welfare_expenditure_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+inflation_rate_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 1
+	category = country
+}

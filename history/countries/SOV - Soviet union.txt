@@ -317,6 +317,7 @@ add_ideas = {
 	limited_conscription
 	limited_exports
 	partial_economic_mobilisation
+	significant_corruption
 }
 
 recruit_character = SOV_konstantin_chernenko

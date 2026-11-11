@@ -1,0 +1,73 @@
+characters={
+	UNQ_norman_schwarzkop = {
+		name = UNQ_norman_schwarzkop
+		portraits={
+			civilian={
+				large = "gfx/leaders/USA/Portrait_norman_schwarzkop.dds"
+			}
+			army = {
+				large = "gfx/leaders/USA/Portrait_norman_schwarzkop.dds"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democracy
+			traits={  }
+			expire="2013.1.1.1"
+			
+		}
+	}
+
+	UNQ_ahmed_chalabi = {
+		name = UNQ_ahmed_chalabi
+		portraits={
+			civilian={
+				large = "gfx/leaders/IRQ/Portrait_ahmed_chalabi.dds"
+			}
+			army = {
+				large = "gfx/leaders/IRQ/Portrait_ahmed_chalabi.dds"
+			}
+		}
+		country_leader={
+			ideology= neoliberalism
+			traits={  }
+			expire="2015.3.11.1"
+			
+		}
+	}
+
+	UNQ_ayad_allawi = {
+		name = UNQ_ayad_allawi
+		portraits={
+			civilian={
+				large = "gfx/leaders/IRQ/Portrait_ayad_allawi.dds"
+			}
+			army = {
+				large = "gfx/leaders/IRQ/Portrait_ayad_allawi.dds"
+			}
+		}
+		country_leader={
+			ideology= national_conservatism
+			traits={  }
+			expire="2026.1.1.1"
+			
+		}
+	}
+
+	UNQ_masoud_barzani = {
+		name = UNQ_masoud_barzani
+		portraits={
+			civilian={
+				large = "gfx/leaders/IRQ/Portrait_masoud_barzani.dds"
+			}
+			army = {
+				large = "gfx/leaders/IRQ/Portrait_masoud_barzani.dds"
+			}
+		}
+		country_leader={
+			ideology= national_conservatism
+			traits={  }
+			expire="2023.1.1.1"
+			
+		}
+	}
+}

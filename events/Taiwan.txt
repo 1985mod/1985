@@ -4,7 +4,6 @@ country_event = {
     id = taiwan.1
     title = taiwan.1.t
     desc =  taiwan.1.desc
-    picture = GFX_
 
     is_triggered_only = yes
 

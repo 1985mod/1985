@@ -1,0 +1,217 @@
+focus_tree = {
+	id = WGR_victory_spd_part_two
+	country = {
+		factor = 0
+		modifier = {
+			add = 2
+			tag = WGR
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 1200 y = 850 }
+
+	focus = {
+		id = WGR_opposition_to_kohls_plan
+		icon = GFX_focus_GER_strengthen_the_proletarian_international
+		cost = 5
+		x = 15
+		y = 0
+
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = 20
+			add_popularity = {
+				ideology = conservatism
+				popularity = -0.05
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_carry_out_cautious_monetary_integration
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		relative_position_id = WGR_opposition_to_kohls_plan
+		prerequisite = { focus = WGR_opposition_to_kohls_plan }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			country_event = { id = wgr.39 }
+		}
+	}
+
+	focus = {
+		id = WGR_solidarity_fund
+		icon = GFX_focus_generic_road_investment
+		cost = 5
+		relative_position_id = WGR_opposition_to_kohls_plan
+		prerequisite = { focus = WGR_opposition_to_kohls_plan }
+		x = 2
+		y = 1
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = WGR_solidarity_fund
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_investments_in_the_gdr
+		icon = GFX_focus_generic_industry_investment
+		cost = 5
+		relative_position_id = WGR_opposition_to_kohls_plan
+		prerequisite = { focus = WGR_carry_out_cautious_monetary_integration }
+		prerequisite = { focus = WGR_solidarity_fund }
+		x = 0
+		y = 2
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.03
+			}
+			DDR = {
+				random_owned_controlled_state = {
+					limit = {					
+						is_in_home_area = yes					
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {					
+						is_in_home_area = yes					
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = 0.07
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_persuade_paris_and_london
+		icon = GFX_focus_eng_the_sun_never_sets
+		cost = 5
+		relative_position_id = WGR_investments_in_the_gdr
+		prerequisite = { focus = WGR_investments_in_the_gdr }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = medium_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = medium_increase
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_negotiations_with_moscow
+		icon = GFX_focus_SOV_socialism_in_one_country
+		cost = 5
+		relative_position_id = WGR_persuade_paris_and_london
+		prerequisite = { focus = WGR_persuade_paris_and_london }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = small_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = WGR_confederation_a_step_toward_unity
+		icon = GFX_focus_AUS_raid_military_storages
+		cost = 5
+		relative_position_id = WGR_negotiations_with_moscow
+		prerequisite = { focus = WGR_negotiations_with_moscow }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = USA
+						tag = SOV
+						tag = ENG
+						tag = FRA
+						tag = DDR
+					}
+				}
+				country_event = { id = wgr.14 hours = 6 }
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = DDR
+					modifier = medium_increase
+				}
+			}
+			DDR = {
+				add_opinion_modifier = {
+					target = WGR
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+}

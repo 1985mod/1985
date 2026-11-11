@@ -1,0 +1,14 @@
+﻿l_english:
+ MAPMODE_UNEMPLOYMENT_MAP_MODE:0 "Unemployment Rate"
+ MAPMODE_UNEMPLOYMENT_MAP_MODE_NAME:0 "Unemployment Rate"
+ MAPMODE_UNEMPLOYMENT_MAP_MODE_DESCRIPTION:0 "Shows the share of unemployed among the labor force."
+
+ unemployment_map_mode_tooltip:0 "[FROM.owner.GetNameWithFlag]\nUnemployment: §Y[?FROM.CONTROLLER:unemployment_rate|1Y]%§!\nTarget level: §Y[?FROM.CONTROLLER:target_unemployment_down|1Y]% - [?FROM.CONTROLLER:target_unemployment_up|1Y]%§!"
+ unemployment_map_mode_tooltip_delayed:0 "§YEconomic Map Mode§!\nShows the share of unemployed among the working-age population.\n\n§GGreen: §!Less than 5% (Healthy market)\n§YYellow: §!5% - 10% (Natural rate)\n§OOrange: §!10% - 20% (High unemployment)\n§RRed: §!More than 20% (Crisis and poverty)"
+
+ MAPMODE_GDP_PER_CAPITA_MAP_MODE:0 "GDP per Capita"
+ MAPMODE_GDP_PER_CAPITA_MAP_MODE_NAME:0 "GDP per Capita"
+ MAPMODE_GDP_PER_CAPITA_MAP_MODE_DESCRIPTION:0 "Shows the level of economic welfare of citizens."
+
+ gdp_per_capita_map_mode_tooltip:0 "[FROM.owner.GetNameWithFlag]\nGDP per capita: §Y[?FROM.CONTROLLER:gdp_per_capita|1Y] thousand $§!"
+ gdp_per_capita_map_mode_tooltip_delayed:0 "§YEconomic Map Mode§!\nShows the level of welfare of the country's citizens. (thousand $)\n\n§RRed: §!1 - 2.5 (Poverty)\n§OOrange: §!2.5 - 5 (Low income)\n§OPeach: §!5 - 7.5 (Below average)\n§YYellow: §!7.5 - 10 (Middle income)\n§GLight Green: §!10 - 15 (Above average)\n§GGreen: §!15 - 25 (Developed)\n§1Dark Green: §!25 - 40 (Rich)\n§BTurquoise: §!More than 40 (Ultra-rich)"

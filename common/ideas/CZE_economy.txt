@@ -31,7 +31,6 @@ ideas = {
       modifier = {
         trade_opinion_factor = 1
         consumer_goods_factor = 0.05
-        xtra_trade_to_overlord_factor = 0.5
         overlord_trade_cost_factor = 0.5
         
       }

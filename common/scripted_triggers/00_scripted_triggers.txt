@@ -22,9 +22,8 @@ can_ROOT_get_wargoal_on_THIS = {
 #Country scope
 is_JAP_or_ally_of_JAP = {
 	OR = {
-		tag = JAP
-		is_in_faction_with = JAP
-		is_subject_of = JAP
+		always = no
+		always = no
 	}
 }
 
@@ -65,123 +64,123 @@ has_ROOT_at_least_1_div_in_current_state_scope = {
 }
 
 check_has_focus_tree_to_switch_to_fascism = {
-	NOT = { tag = JAP }
-	NOT = { tag = GER }
-	NOT = { tag = MAN }
-	NOT = { tag = ITA }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
 	OR = {
 		NOT = {
 			AND = {
-				tag = SAF
+				always = no
 				has_dlc = "Together for Victory"
 			}
 		}
 		AND = {
-			tag = SAF
+			always = no
 			has_dlc = "Together for Victory"
-			has_completed_focus = SAF_south_africa_first
+			always = no
 		}
 	}
 	NOT = {
 		AND = {
-			tag = RAJ
+			always = no
 			has_dlc = "Together for Victory"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = USA
+			always = no
 			has_dlc = "Man the Guns"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = ENG
+			always = no
 			has_dlc = "Man the Guns"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = FRA
+			always = no
 			has_dlc = "La Resistance"
 		}
 	}
 	NOT = {
 		AND = {
-			original_tag = SPR
+			always = no
 			OR = {
-				has_completed_focus = SPA_the_phalanx_ascendant
-				has_completed_focus = SPA_supremacy_of_the_communion
-				has_completed_focus = SPR_the_popular_front
+				always = no
+				always = no
+				always = no
 			}
 			has_dlc = "La Resistance"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = HUN
+			always = no
 			has_dlc = "Gotterdammerung"
 		}
 	}
 	NOT = {
 		AND = {
-			original_tag = PHI
+			always = no
 			has_dlc =  "No Compromise, No Surrender"
 		}
 	}
 	NOT = {
 		AND = {
-			original_tag = CHI
+			always = no
 			has_dlc =  "No Compromise, No Surrender"
 		}
 	}
 }
 
 check_has_focus_tree_to_switch_to_democratic = {
-	NOT = { tag = MAN }
-	NOT = { tag = FRA }
-	NOT = { tag = USA }
-	NOT = { tag = ENG }
-	NOT = { tag = CAN }
-	NOT = { tag = SAF }
-	NOT = { tag = AST }
-	NOT = { tag = NZL }
-	NOT = { tag = RAJ }
-	NOT = { tag = CZE }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
 	NOT = {
 		AND = {
-			tag = HUN
+			always = no
 			has_dlc = "Death or Dishonor"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = JAP
+			always = no
 			has_dlc = "Waking the Tiger"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = GER
+			always = no
 			has_dlc = "Waking the Tiger"
 		}
 	}
 	NOT = {
 		AND = {
-			original_tag = PHI
+			always = no
 			has_dlc =  "No Compromise, No Surrender"
 		}
 	}
 	NOT = {
 		AND = {
-			original_tag = CHI 
+			always = no 
 			has_dlc =  "No Compromise, No Surrender"
 		}
 	}
 	NOT = {
 		AND = {
 			OR = {
-				original_tag = INS
+				always = no
 			}
 			has_dlc = "Thunder at Our Gates"
 		}
@@ -189,80 +188,80 @@ check_has_focus_tree_to_switch_to_democratic = {
 }
 
 check_has_focus_tree_to_switch_to_communism = {
-	NOT = { tag = PRC }
-	NOT = { tag = SIK }
-	NOT = { tag = MAN }
-	NOT = { tag = SOV }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
+	NOT = { always = no }
 	NOT = {
 		AND = {
-			tag = RAJ
+			always = no
 			has_dlc = "Together for Victory"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = JAP
+			always = no
 			has_dlc = "Waking the Tiger"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = YUN
+			always = no
 			has_dlc = "Waking the Tiger"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = USA
+			always = no
 			has_dlc = "Man the Guns"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = ENG
+			always = no
 			has_dlc = "Man the Guns"
 		}
 	}
 	NOT = {
 		AND = {
-			tag = FRA
+			always = no
 			has_dlc = "La Resistance"
 		}
 	}
 	NOT = {
 		AND = {
-			original_tag = SPR
+			always = no
 			has_dlc = "La Resistance"
 		}
 	}
 	NOT = {
 		AND = {
-			original_tag = NOR
+			always = no
 			has_dlc =  "Arms Against Tyranny"
 		}
 	}
 	NOT = {
 		AND = {
-			original_tag = ARG
+			always = no
 			has_dlc =  "Trial of Allegiance"
 		}
 	}
 	NOT = {
 		AND = {
-			original_tag = GER
+			always = no
 			has_dlc =  "Gotterdammerung"
 		}
 	}
 	NOT = {
 		AND = {
-			original_tag = PHI
+			always = no
 			has_dlc =  "No Compromise, No Surrender"
 		}
 	}
 	NOT = {
 		AND = {
 			OR = {
-				original_tag = INS
+				always = no
 			}
 			has_dlc = "Thunder at Our Gates"
 		}
@@ -357,122 +356,13 @@ has_naval_treaty_trigger = {
 	}
 }
 
-CHI_is_on_historical_plan_trigger = {
-	has_dlc = "Waking the Tiger"
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = CHI_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = CHI_AI_RANDOM_HISTORICAL
-		has_game_rule = {
-			rule = CHI_ai_behavior
-			option = HISTORICAL
-		}
-	}
-}
-SOV_is_on_historical_plan_trigger = {
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = SOV_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
-		has_game_rule = {
-			rule = SOV_ai_behavior
-			option = HISTORICAL
-		}
-	}
-}
-USA_is_on_historical_plan_trigger = {
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = USA_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = USA_AI_DEMOCRATIC_HISTORICAL
-		has_game_rule = {
-			rule = USA_ai_behavior
-			option = DEMOCRATIC_HISTORICAL
-		}
-	}
-}
-ROM_is_on_historical_plan_trigger = {
-	has_dlc = "Death or Dishonor"
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = ROM_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = ROM_AI_RANDOM_FASCIST_HISTORICAL
-		has_game_rule = {
-			rule = ROM_ai_behavior
-			option = FASCIST_HISTORICAL
-		}
-	}
-}
-HUN_is_on_historical_plan_trigger = {
-	has_dlc = "Death or Dishonor"
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = HUN_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = HUN_AI_RANDOM_FASCIST_HISTORICAL
-		has_game_rule = {
-			rule = HUN_ai_behavior
-			option = FASCIST_HISTORICAL
-		}
-	}
-}
-COG_is_on_historical_plan_trigger = {
-	has_dlc = "Gotterdammerung"
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = COG_AI_BEHAVIOR
-				option = DEFAULT
-			}
-		}
-		has_country_flag = COG_AI_RANDOM_HISTORICAL
-		has_game_rule = {
-			rule = COG_AI_BEHAVIOR
-			option = HISTORICAL
-		}
-	}
-}
-ENG_is_on_historical_plan_trigger = {
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = ENG_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
-		has_game_rule = {
-			rule = eng_ai_behavior
-			option = DEMOCRATIC_HISTORICAL
-		}
-	}
-}
+CHI_is_on_historical_plan_trigger = { always = no }
+SOV_is_on_historical_plan_trigger = { always = no }
+USA_is_on_historical_plan_trigger = { always = no }
+ROM_is_on_historical_plan_trigger = { always = no }
+HUN_is_on_historical_plan_trigger = { always = no }
+COG_is_on_historical_plan_trigger = { always = no }
+ENG_is_on_historical_plan_trigger = { always = no }
 
 SOV_save_pp_for_manpower_trouble = {
 	has_manpower < 1000000
@@ -480,86 +370,9 @@ SOV_save_pp_for_manpower_trouble = {
 	surrender_progress > 0
 }
 
-anti_submarine_strategy_required_trigger = {
-	OR = {
-		AND = {
-			tag = ENG
-			not = { is_in_faction_with = GER }
-			GER = {
-				has_navy_size = {
-					type = submarine
-					size > 30
-				}
-			}
-		}
-		AND = {
-			tag = USA
-			not = { is_in_faction_with = GER }
-			GER = {
-				has_navy_size = {
-					type = submarine
-					size > 30
-				}
-			}
-		}
-		AND = {
-			tag = JAP
-			not = { is_in_faction_with = USA }
-		}
-		AND = {
-			has_war = yes
-			any_enemy_country = {
-				has_navy_size = {
-					type = submarine
-					size > 30
-				}
-			}
-		}
-		convoy_threat > 0.3
-	}
-}
+anti_submarine_strategy_required_trigger = { always = no }
 
-should_USA_invade_europe_or_africa = {
-	USA = {
-		OR = {
-			is_in_faction_with = ENG
-			has_military_access_to = ENG
-		}
-	}
-	surrender_progress < 0.05
-	FRA = {
-		has_capitulated = yes
-	}
-	OR = {
-		GER = {
-			exists = yes
-			has_war_with = USA
-		}
-		ITA = {
-			exists = yes
-			has_war_with = USA
-		}
-		SPR = {
-			exists = yes
-			has_war_with = USA
-		}
-		USA = {
-			OR = {
-				AND = {
-					has_government = democratic
-					ENG = { has_government = democratic }
-					OR = {
-						GER = { has_government = fascism }
-						ITA = { has_government = fascism }
-					}
-				}
-				is_in_array = { potential_and_current_enemies = GER }
-				is_in_array = { potential_and_current_enemies = ITA }
-				is_in_array = { potential_and_current_enemies = SPR }
-			}
-		}
-	}
-}
+should_USA_invade_europe_or_africa = { always = no }
 
 enemy_has_equal_or_better_radar_tech_trigger = {
 	custom_trigger_tooltip = {
@@ -643,26 +456,26 @@ is_available_to_collaboration_government = { # occupied_countries.1 should be up
 	is_subject = no
 	if = {
 		limit = {
-			original_tag = ITA
+			always = no
 		}
-		NOT = { FROM = { original_tag = YUG } }
+		NOT = { FROM = { always = no } }
 	}
 
 	if = {
 		limit = {
-			original_tag = POL
+			always = no
 		}
-		NOT = { FROM = { original_tag = DNZ } }
+		NOT = { FROM = { always = no } }
 	}
 	if = {
 		limit = {
-			original_tag = TUR
+			always = no
 		}
-		NOT = { FROM = { original_tag = KUR } }
+		NOT = { FROM = { always = no } }
 	}
 	NOT = {
 		FROM = {
-			original_tag = SDL
+			always = no
 		}
 	}
 	NOT = {
@@ -755,26 +568,26 @@ has_same_ideology = {
 
 is_latin_american_country = {
 	OR = {
-		original_tag = CUB
-		original_tag = ARG
-		original_tag = BRA
-		original_tag = URG
-		original_tag = PAR
-		original_tag = CHL
-		original_tag = BOL
-		original_tag = PRU
-		original_tag = ECU
-		original_tag = COL
-		original_tag = VEN
-		original_tag = PAN
-		original_tag = COS
-		original_tag = NIC
-		original_tag = HON
-		original_tag = ELS
-		original_tag = GUA
-		original_tag = MEX
-		original_tag = HAI
-		original_tag = DOM
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
 	}
 }
 
@@ -1088,87 +901,87 @@ country_can_be_reasonable_target_of_wargoal = { #Expected scopes: Target country
 # Countries will be less likely to try and liberate or puppet these nations 
 is_unlikely_country_tag = {
 	OR = {
-	    tag = BRI
-	    tag = CAT
-	    tag = NAV
-	    tag = GLC
-	    tag = ADU
-	    tag = BRI
-	    tag = OCC
-	    tag = COR
-	    tag = DNZ
-	    tag = KSH
-	    tag = CKK
-	    tag = FER
-	    tag = YAK
-	    tag = VLA
-	    tag = KKP
-	    tag = YAM
-	    tag = TAY
-	    tag = OVO
-	    tag = NEN
-	    tag = KOM
-	    tag = CHU
-	    tag = MEL
-	    tag = RIF
-	    tag = HAR
-	    tag = TIG
-	    tag = AFA
-	    tag = BEG
-	    tag = GBA
-	    tag = SID
-	    tag = ORO
-	    tag = QEM
-	    tag = LBV
-	    tag = PAP
-	    tag = TOS
-	    tag = SPM
-	    tag = TTS
-		tag = BSK
-		tag = TAT
-		tag = UDM
-		tag = KHA
-		tag = VGE
-		tag = KAL
-		tag = KAR
-		tag = SIL
-		tag = KSH
-		tag = ALT
-		tag = BUK
-		tag = KHI
-		tag = SMI
-		tag = QUE
-		tag = YUC
-		tag = RIG
-		tag = WLA
-		tag = GRN
-		tag = EVE
-		tag = SHL
-		tag = MEK
-		tag = HAN
-		tag = SAX
-		tag = PRE
-		tag = BAY
-		tag = WUR
-		tag = THU
-		tag = HES
-		tag = RHI
-		tag = RNG 
-		tag = PSR 
-		tag = GXC
-		tag = YUN
-		tag = SHX
-		tag = XSM
-		tag = SIK
-		tag = GDC
-		tag = SND
-		tag = SIC
-		tag = NXM
-		tag = GSM
-		tag = XIC
-		tag = KHM
-		tag = KUM
-		tag = HBC
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+	    always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no 
+		always = no 
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
 	}
 }
 
@@ -1228,44 +1041,15 @@ has_aat = {
 
 is_aat_sweden = {
 		has_aat = yes
-		original_tag = SWE
+		always = no
 }
 
-is_trotsky_valid_for_mexico = {
-	OR = {
-		has_government = communism
-		has_government = neutrality
-	}
-	has_global_flag = flag_mexico_invited_trotsky_to_government
-	NOT = {
-		OR = {
-			has_global_flag = trotsky_not_welcome_in_mexico
-			has_global_flag = flag_trotsky_dead
-			has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico
-		}
-	}
-	if = {
-		limit = {
-			OR = {
-				SOV_is_left_opposition = yes 
-				SOV_is_right_opposition = yes
-			}
-		}
-		SOV = { NOT = { has_idea = SOV_lev_trotsky } }
-		SOV = { NOT = { has_country_leader = { character = SOV_lev_trotsky } } }
-	}
-	if = {
-		limit = {
-			has_aat = yes 
-		}
-		has_global_flag = AAT_trotsky_in_mexico
-	}	
-}
+is_trotsky_valid_for_mexico = { always = no }
 NOR_trotsky_not_in_sov = {
 	any_other_country = {
-		original_tag = SOV 
+		always = no 
 		has_government = communism 
-		NOT = { has_completed_focus = SOV_the_left_opposition }
+		NOT = { always = no }
 	}
 }
 
@@ -1360,15 +1144,15 @@ is_scandinavian_northern_sea_state = {
 
 is_germanic = {
 	OR = {
-		original_tag = GER
-		original_tag = NOR
-		original_tag = SWE
-		original_tag = DEN
-		original_tag = SWI
-		original_tag = HOL
-		original_tag = LUX
-		original_tag = BEL
-		original_tag = AUS
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
+		always = no
 	}
 }
 
@@ -1508,7 +1292,7 @@ should_play_south_american_music = {
 
 check_allow_alternate_political_events = {
 	OR = {
-		original_tag = PHI
+		always = no
 		#
 	}
 }

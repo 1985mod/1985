@@ -23,33 +23,7 @@ country_event = {
 				SOV = { has_country_leader = { character = SOV_grigory_romanov ruling_only = yes } }
 			}
 		}
-		news_event = { id = news.28 hours = 12 }
-		set_global_flag = GER_unification1
-		WGR = {
-			annex_country = {
-   				target = DDR
-   				transfer_troops = yes
-			}
-		}
-		WGR = {
-			add_state_core = 64
-			60 = {
-				set_compliance = 40
-			}
-			61 = {
-				set_compliance = 40
-			}
-			62 = {
-				set_compliance = 40
-			}
-			65 = {
-				set_compliance = 40
-			}
-		}
-		WGR = {
-			complete_national_focus = WGR_happy_day
-		}
-		WGR = { set_capital = { state = 64 } }
+		WGR = { country_event = { id = wgr.16 hours = 12 } }
 	}
 
 	option = { # ГДР отказывается

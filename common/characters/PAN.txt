@@ -1,5 +1,5 @@
 characters={
-	PAN_manuel_noriega={
+	PAN_manuel_noriega = {
 		name = PAN_manuel_noriega
 		portraits={
 			civilian={
@@ -11,6 +11,24 @@ characters={
 		}
 		country_leader={
 			ideology= military_regimes
+			traits={  }
+			expire="1999.1.1.1"
+			
+		}
+	}
+
+	PAN_guillermo_endara = {
+		name = PAN_guillermo_endara
+		portraits={
+			civilian={
+				large= GFX_Portrait_guillermo_endara
+			}
+			army = {
+				large = GFX_Portrait_guillermo_endara
+			}
+		}
+		country_leader={
+			ideology= national_conservatism
 			traits={  }
 			expire="1999.1.1.1"
 			

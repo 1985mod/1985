@@ -1,0 +1,429 @@
+add_namespace = corruption
+
+country_event = {
+    id = corruption.1
+    title = corruption.1.t
+    desc = corruption.1.desc
+	picture = GFX_report_generic_corruption
+
+	is_triggered_only = yes
+
+	immediate = {		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = significant_corruption
+				}
+				swap_ideas = {
+					remove_idea = significant_corruption
+					add_idea = horrific_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = moderate_corruption
+				}
+				swap_ideas = {
+					remove_idea = moderate_corruption
+					add_idea = significant_corruption
+				}  
+			}	
+			if = {
+				limit = {
+					has_idea = low_corruption
+				}
+				swap_ideas = {
+					remove_idea = low_corruption
+					add_idea = moderate_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = minor_corruption
+				}
+				swap_ideas = {
+					remove_idea = minor_corruption
+					add_idea = low_corruption
+				}  
+			}			
+		}
+	}
+
+    option = {
+        name = corruption.1.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.1
+		}
+    }
+
+    option = {
+        name = corruption.1.b
+		add_political_power = -25
+		add_stability = -0.1
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.1
+		}
+    }
+}
+
+country_event = {
+    id = corruption.2
+    title = corruption.2.t
+    desc = corruption.2.desc
+	picture = GFX_report_generic_corruption_3
+
+	is_triggered_only = yes
+
+	immediate = {		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = significant_corruption
+				}
+				swap_ideas = {
+					remove_idea = significant_corruption
+					add_idea = horrific_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = moderate_corruption
+				}
+				swap_ideas = {
+					remove_idea = moderate_corruption
+					add_idea = significant_corruption
+				}  
+			}	
+			if = {
+				limit = {
+					has_idea = low_corruption
+				}
+				swap_ideas = {
+					remove_idea = low_corruption
+					add_idea = moderate_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = minor_corruption
+				}
+				swap_ideas = {
+					remove_idea = minor_corruption
+					add_idea = low_corruption
+				}  
+			}
+			set_country_flag = corruption_occurred			
+		}
+	}
+
+    option = {
+        name = corruption.2.a
+		add_political_power = -50
+		add_stability = -0.1
+		add_to_variable = {
+			var = treasury
+			value = 20
+			tooltip = add_20_billion_to_treasury_tt
+		}	
+    }
+
+    option = {
+        name = corruption.2.b
+		add_political_power = 25
+		add_stability = -0.15
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.05
+		}
+		add_to_variable = {
+			var = treasury
+			value = 15
+			tooltip = add_15_billion_to_treasury_tt
+		}	
+    }
+}
+
+country_event = {
+    id = corruption.3
+    title = corruption.3.t
+    desc = corruption.3.desc
+	picture = GFX_report_generic_corruption_2
+
+	is_triggered_only = yes
+
+	immediate = {		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = significant_corruption
+				}
+				swap_ideas = {
+					remove_idea = significant_corruption
+					add_idea = horrific_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = moderate_corruption
+				}
+				swap_ideas = {
+					remove_idea = moderate_corruption
+					add_idea = significant_corruption
+				}  
+			}	
+			if = {
+				limit = {
+					has_idea = low_corruption
+				}
+				swap_ideas = {
+					remove_idea = low_corruption
+					add_idea = moderate_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = minor_corruption
+				}
+				swap_ideas = {
+					remove_idea = minor_corruption
+					add_idea = low_corruption
+				}  
+			}			
+		}
+	}
+
+    option = {
+        name = corruption.3.a
+		add_political_power = 25
+		add_stability = -0.05
+    }
+
+    option = {
+        name = corruption.3.b
+		add_political_power = 25
+		add_stability = -0.08
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.03
+		}
+		add_to_variable = {
+			var = treasury
+			value = 15
+			tooltip = add_15_billion_to_treasury_tt
+		}	
+    }
+}
+
+country_event = {
+    id = corruption.4
+    title = corruption.4.t
+    desc = corruption.4.desc
+	picture = GFX_report_generic_corruption_4
+
+	is_triggered_only = yes
+
+	immediate = {		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = significant_corruption
+				}
+				swap_ideas = {
+					remove_idea = significant_corruption
+					add_idea = horrific_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = moderate_corruption
+				}
+				swap_ideas = {
+					remove_idea = moderate_corruption
+					add_idea = significant_corruption
+				}  
+			}	
+			if = {
+				limit = {
+					has_idea = low_corruption
+				}
+				swap_ideas = {
+					remove_idea = low_corruption
+					add_idea = moderate_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = minor_corruption
+				}
+				swap_ideas = {
+					remove_idea = minor_corruption
+					add_idea = low_corruption
+				}  
+			}
+			set_country_flag = corruption_occurred			
+		}
+	}
+
+    option = {
+        name = corruption.4.a
+		add_political_power = -100
+		add_stability = 0.05
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.03
+		}
+		if = {
+			limit = {
+				has_idea = low_corruption
+			}
+			swap_ideas = {
+				remove_idea = low_corruption
+				add_idea = minor_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = moderate_corruption
+			}
+			swap_ideas = {
+				remove_idea = moderate_corruption
+				add_idea = low_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = significant_corruption
+			}
+			swap_ideas = {
+				remove_idea = significant_corruption
+				add_idea = moderate_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = horrific_corruption
+			}
+			swap_ideas = {
+				remove_idea = horrific_corruption
+				add_idea = significant_corruption
+			}  
+		}
+    }
+
+    option = {
+        name = corruption.4.b
+		add_political_power = 25
+		add_stability = -0.05
+		add_to_variable = {
+			var = treasury
+			value = 5
+			tooltip = add_5_billion_to_treasury_tt
+		}	
+    }
+}
+
+country_event = {
+    id = corruption.5
+    title = corruption.5.t
+    desc = corruption.5.desc
+	picture = GFX_report_generic_corruption_5
+
+	is_triggered_only = yes
+
+	immediate = {		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = significant_corruption
+				}
+				swap_ideas = {
+					remove_idea = significant_corruption
+					add_idea = horrific_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = moderate_corruption
+				}
+				swap_ideas = {
+					remove_idea = moderate_corruption
+					add_idea = significant_corruption
+				}  
+			}	
+			if = {
+				limit = {
+					has_idea = low_corruption
+				}
+				swap_ideas = {
+					remove_idea = low_corruption
+					add_idea = moderate_corruption
+				}  
+			}
+			if = {
+				limit = {
+					has_idea = minor_corruption
+				}
+				swap_ideas = {
+					remove_idea = minor_corruption
+					add_idea = low_corruption
+				}  
+			}			
+		}
+	}
+
+    option = {
+        name = corruption.5.a
+		add_political_power = -50
+		add_stability = -0.1
+		if = {
+			limit = {
+				has_idea = low_corruption
+			}
+			swap_ideas = {
+				remove_idea = low_corruption
+				add_idea = minor_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = moderate_corruption
+			}
+			swap_ideas = {
+				remove_idea = moderate_corruption
+				add_idea = low_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = significant_corruption
+			}
+			swap_ideas = {
+				remove_idea = significant_corruption
+				add_idea = moderate_corruption
+			}  
+		}
+		if = {
+			limit = {
+				has_idea = horrific_corruption
+			}
+			swap_ideas = {
+				remove_idea = horrific_corruption
+				add_idea = significant_corruption
+			}  
+		}
+		add_to_variable = {
+			var = treasury
+			value = 10
+			tooltip = add_10_billion_to_treasury_tt
+		}	
+    }
+
+    option = {
+        name = corruption.5.b
+		add_political_power = 50
+		add_stability = -0.05
+    }
+}

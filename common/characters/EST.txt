@@ -13,4 +13,19 @@ characters = {
 			id = -100
 		}
 	}
+
+	EST_arnold_ruutel = {
+		name = EST_arnold_ruutel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/Portrait_arnold_ruutel.dds"
+			}
+		}
+		country_leader = {
+			ideology = left_wing_nationalism
+			traits = {}
+			expire = "2024.31.12"
+			id = -100
+		}
+	}
 }

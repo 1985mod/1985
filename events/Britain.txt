@@ -19,7 +19,7 @@ country_event = {
 		}
 
 		effect_tooltip = {
-			    set_politics = {
+			set_politics = {
 				ruling_party = conservatism
 				elections_allowed = yes
 			}
@@ -219,6 +219,63 @@ country_event = {
 		promote_character = {
 			character = ENG_john_major
 			ideology = conservatism
+		}
+    }
+}
+
+country_event = { 
+    id = britain.4 # Формирование "Объединённого Европейского фронта" #
+    title = britain.4.t
+    desc = britain.4.desc
+
+    fire_only_once = yes
+
+	is_triggered_only = yes
+
+    option = {
+        name = britain.4.a
+		if = {
+			limit = {
+				ROOT = { is_in_faction = yes }
+			}
+			leave_faction = yes
+		}
+		set_rule = {
+			desc = britain.4.t
+			can_create_factions = yes
+		}
+		create_faction_from_template = faction_template_UEF
+		if = {
+			limit = {
+				NOT = {
+					FRA = { is_puppet_of = SOV }
+				}
+			}
+			add_to_faction = FRA
+		}
+		if = {
+			limit = {
+				NOT = {
+					ITA = { is_puppet_of = SOV }
+				}
+			}
+			add_to_faction = ITA
+		}
+		if = {
+			limit = {
+				NOT = {
+					SPR = { is_puppet_of = SOV }
+				}
+			}
+			add_to_faction = SPR
+		}
+		if = {
+			limit = {
+				NOT = {
+					POR = { is_puppet_of = SOV }
+				}
+			}
+			add_to_faction = POR
 		}
     }
 }

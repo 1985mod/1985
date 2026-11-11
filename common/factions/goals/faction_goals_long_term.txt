@@ -666,40 +666,14 @@ faction_goal_disarm_aggression_central_powers = {
 	description = disarm_aggression_central_powers_goal_desc
 	category = long_term
 	group = FOCUS_FILTER_POLITICAL_CHARACTER
-	visible = {
-		FROM = {
-			OR = {
-				original_tag = FRA
-				original_tag = CZE
-			}
-			has_government = democratic
-		}
-		OR = {
-			any_country_with_original_tag = {
-				original_tag_to_check = GER
-				NOT = { has_government = democratic }
-			}
-			any_country_with_original_tag = {
-				original_tag_to_check = HUN
-				NOT = { has_government = democratic }
-			}
-			any_country_with_original_tag = {
-				original_tag_to_check = AUS
-				NOT = { has_government = democratic }
-			}
-			any_country_with_original_tag = {
-				original_tag_to_check = BUL
-				NOT = { has_government = democratic }
-			}
-		}
-	}
 	completed = {
 		OR = {
 			any_country_with_original_tag = {
 				original_tag_to_check = GER
 				OR = {
 					is_in_faction_with = ROOT
-					has_government = democratic
+					has_government = conservatism
+					has_government = liberalism
 				}
 			}
 			GER = { exists = no }
@@ -709,7 +683,8 @@ faction_goal_disarm_aggression_central_powers = {
 				original_tag_to_check = HUN
 				OR = {
 					is_in_faction_with = ROOT
-					has_government = democratic
+					has_government = conservatism
+					has_government = liberalism
 				}
 			}
 			HUN = { exists = no }
@@ -719,7 +694,8 @@ faction_goal_disarm_aggression_central_powers = {
 				original_tag_to_check = AUS
 				OR = {
 					is_in_faction_with = ROOT
-					has_government = democratic
+					has_government = conservatism
+					has_government = liberalism
 				}
 			}
 			AUS = { exists = no }
@@ -729,7 +705,8 @@ faction_goal_disarm_aggression_central_powers = {
 				original_tag_to_check = BUL
 				OR = {
 					is_in_faction_with = ROOT
-					has_government = democratic
+					has_government = conservatism
+					has_government = liberalism
 				}
 			}
 			BUL = { exists = no }
@@ -783,8 +760,8 @@ faction_goal_rule_the_waves = {
 	available = {
 		FROM = {
 			OR = {
-				NOT = { has_government = democratic }
-				NOT = { has_idea = MTG_naval_treaty_adherent }
+				NOT = { has_government = conservatism }
+				NOT = { has_government = liberalism }
 			}
 		}
 	}
@@ -1429,7 +1406,8 @@ faction_goal_defeat_of_anti_fascists = {
 					limit = {
 						OR = {
 							has_government = communism
-							has_government = democratic
+							has_government = conservatism
+							has_government = liberalism
 						}
 					}
 				}
@@ -1495,7 +1473,8 @@ faction_goal_defeat_of_anti_communists = {
 					limit = {
 						OR = {
 							has_government = fascism
-							has_government = democratic
+							has_government = conservatism
+							has_government = liberalism
 						}
 					}
 				}

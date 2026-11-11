@@ -454,5 +454,45 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
             }
 		}
+
+		DDR_operation_romeo = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				agency_upgrade_time = -0.15
+				decryption_factor = 0.1
+				encryption_factor = 0.05
+				operation_risk = -0.3
+            }
+		}
+
+		DDR_felix_dzerzhinsky = {
+			picture = national_people_army 
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+            modifier = {
+				intelligence_agency_defense = 0.5
+				root_out_resistance_effectiveness_factor = 0.1
+				intel_network_gain_factor = 0.15
+				intel_network_gain = 0.1
+            }
+		}
     }
 }

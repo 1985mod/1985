@@ -3,78 +3,11 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 2
 			tag = WGR
 		}
 	}
 	default = no
-
-
-	focus = {
-		id = WGR_victory_for_the_cdu
-		icon = GFX_goal_unknown
-		cost = 5
-		allow_branch = { has_country_flag = victory_in_germany_cdu }
-		x = 15
-		y = 0
-
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
-			add_popularity = {
-				ideology = conservatism
-				popularity = 0.05
-			}
-		}
-	}
-
-	focus = {
-		id = WGR_recognizing_ours_problems
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = WGR_victory_for_the_cdu
-		prerequisite = { focus = WGR_victory_for_the_cdu }
-		x = -2
-		y = 1
-
-		completion_reward = {
-		add_political_power = -50
-		add_stability = 0.02
-		}
-	}
-
-	focus = {
-		id = WGR_parliamentary_reform
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = WGR_victory_for_the_cdu
-		prerequisite = { focus = WGR_victory_for_the_cdu }
-		x = 0
-		y = 1
-
-		completion_reward = {
-			add_stability = 0.03
-			add_political_power = -100
-			add_popularity = { 
-            ideology = conservatism
-            popularity = 0.02
-            }
-		}
-	}
-
-	focus = {
-		id = WGR_formation_of_a_new_government
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = WGR_victory_for_the_cdu
-		prerequisite = { focus = WGR_victory_for_the_cdu }
-		x = 2
-		y = 1
-
-		completion_reward = {
-			country_event = { id = wgr.26 days = 1 }
-		}
-	}
 
 	focus = {
 		id = WGR_developing_our_course
@@ -363,167 +296,6 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = WGR_bundeswehr
-		icon = GFX_goal_generic_military_sphere
-		cost = 5
-		relative_position_id = WGR_franco_germany_engine
-		prerequisite = { focus = WGR_franco_germany_engine }
-		x = -5
-		y = 1
-
-		completion_reward = {
-			army_experience = 10
-		}
-	}
-	focus = {
-		id = WGR_leopard_tank
-		icon = GFX_focus_generic_tank_production
-		cost = 5
-		relative_position_id = WGR_bundeswehr
-		prerequisite = { focus = WGR_bundeswehr }
-		x = -2
-		y = 1
-
-        completion_reward = {
-			add_tech_bonus = {
-				name = WGR_leopard_tank
-				bonus = 1
-				uses = 1
-				category = cat_medium_armor
-			}
-	    }
-	}
-	focus = {
-		id = WGR_german_air_exercises
-		icon = GFX_focus_generic_jet_planes
-		cost = 5
-		relative_position_id = WGR_bundeswehr
-		prerequisite = { focus = WGR_bundeswehr }
-		x = 0
-		y = 1
-
-		completion_reward = {
-			air_experience = 10
-		}
-	}
-
-	focus = {
-		id = WGR_learn_from_nato_exercises
-		icon = GFX_goal_generic_major_alliance
-		cost = 5
-		relative_position_id = WGR_bundeswehr
-		prerequisite = { focus = WGR_bundeswehr }
-		x = 2
-		y = 1
-
-		completion_reward = {
-			army_experience = 10
-		}
-	}
-
-	focus = {
-		id = WGR_nato_force_coordination
-		icon = GFX_goal_generic_demand_territory
-		cost = 5
-		relative_position_id = WGR_german_air_exercises
-		prerequisite = { focus = WGR_leopard_tank }
-		prerequisite = { focus = WGR_german_air_exercises }
-		prerequisite = { focus = WGR_learn_from_nato_exercises }
-		x = 0
-		y = 1
-
-		completion_reward = {
-			army_experience = 10
-		}
-	}
-
-	focus = {
-		id = WGR_rhine_defense_plan
-		icon = GFX_goal_generic_defence
-		cost = 5
-		relative_position_id = WGR_nato_force_coordination
-		prerequisite = { focus = WGR_nato_force_coordination }
-		x = -1
-		y = 1
-
-		available = {
-			51 = { is_controlled_by_ROOT_or_ally = yes }
-			42 = { is_controlled_by_ROOT_or_ally = yes }
-		}
-
-		completion_reward = {
-			army_experience = 10
-			51 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 587
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 3547
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 6469
-					instant_build = yes
-				}
-			}
-			42 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 11494
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 3423
-					instant_build = yes
-				}		
-			}
-		}
-	}
-	focus = {
-		id = WGR_tank_doctrine
-		icon = GFX_goal_generic_build_tank
-		cost = 5
-		relative_position_id = WGR_nato_force_coordination
-		prerequisite = { focus = WGR_nato_force_coordination }
-		x = 1
-		y = 1
-
-		completion_reward = {
-            army_experience = 10		
-        	add_doctrine_cost_reduction = {
-    			name = USA_expand_military_bases
-    			cost_reduction = 0.5
-     			uses = 1
-     			category = land_doctrine
-        	}
-		}
-	}
-	focus = {
-		id = WGR_europe_shield
-		icon = GFX_focus_usa_focus_on_europe
-		cost = 5
-		relative_position_id = WGR_nato_force_coordination
-		prerequisite = { focus = WGR_rhine_defense_plan }
-		prerequisite = { focus = WGR_tank_doctrine }
-		x = 0
-		y = 2
-
-		completion_reward = {
-			army_experience = 10
-		}
-
-	}
 	
 	focus = {
 		id = WGR_computerization_economic
@@ -560,64 +332,6 @@ focus_tree = {
                 category = electronics
             }
 		}
-
-	}
-	focus = {
-		id = WGR_support_siemes
-		icon = GFX_goal_generic_construction
-		cost = 5
-		relative_position_id = WGR_microelectronic_development
-		prerequisite = { focus = WGR_microelectronic_development }
-		x = 0
-		y = 1
-
-        completion_reward = {
-			random_owned_controlled_state = {
-				limit = {					
-					is_in_home_area = yes					
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-	    }
-
-	}
-	focus = {
-		id = WGR_volkswagen
-		icon = GFX_goal_generic_consumer_goods
-		cost = 5
-		relative_position_id = WGR_support_siemes
-		prerequisite = { focus = WGR_support_siemes }
-		x = -1
-		y = 1
-
-        completion_reward = {
-			random_owned_controlled_state = {
-				limit = {					
-					is_in_home_area = yes					
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-	    }
 
 	}
 	focus = {
@@ -660,8 +374,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5
 		relative_position_id = WGR_export_product
-		prerequisite = { focus = WGR_export_product }
-		x = 0
+		prerequisite = { focus = WGR_export_product focus = WGR_microelectronic_development	 }
+		x = -1
 		y = 1
 
 		completion_reward = {
@@ -670,37 +384,23 @@ focus_tree = {
                 uses = 1
                 category = industry
             }	
-		}
-	}
-
-	focus = {
-		id = WGR_germany_fabric
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5
-		relative_position_id = WGR_modernize_the_ruhr_factories
-		prerequisite = { focus = WGR_modernize_the_ruhr_factories }
-		x = 1
-		y = 1
-
-        completion_reward = {
 			random_owned_controlled_state = {
 				limit = {					
 					is_in_home_area = yes					
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-	    }
-
+		}
 	}
 	
 	focus = {
@@ -718,34 +418,12 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_rhine_miracle
-		icon = GFX_goal_generic_national_unity
-		cost = 5
-		relative_position_id = WGR_public_investment
-		prerequisite = {
-			focus = WGR_public_investment
-		}
-		prerequisite = {
-			focus = WGR_germany_fabric
-			focus = WGR_germany_motors
-			focus = WGR_volkswagen
-			focus = WGR_development_germany_company
-		}
-		x = 0
-		y = 1
-
-		completion_reward = {
-			add_ideas = WGR_rhine_miracle
-		}
-
-	}
-	focus = {
 		id = WGR_ecology_reform
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 5
 		relative_position_id = WGR_franco_germany_engine
 		prerequisite = { focus = WGR_franco_germany_engine }
-		x = 0
+		x = -3
 		y = 1
 
 		completion_reward = {
@@ -827,42 +505,96 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WGR_stabili_democratic
-		icon = GFX_focus_generic_democratic_europe
+		id = WGR_leopard_tank
+		icon = GFX_focus_generic_tank_production
 		cost = 5
+		x = 4
+		y = 1
 		relative_position_id = WGR_bundestag
 		prerequisite = { focus = WGR_bundestag }
-		x = 0
+		prerequisite = { focus = WGR_public_investment }
+
+        completion_reward = {
+			add_tech_bonus = {
+				name = WGR_leopard_tank
+				bonus = 1
+				uses = 1
+				category = cat_medium_armor
+			}
+	    }
+	}
+
+	focus = {
+		id = WGR_tank_doctrine
+		icon = GFX_goal_generic_build_tank
+		cost = 5
+		relative_position_id = WGR_franco_germany_engine
+		prerequisite = { focus = WGR_franco_germany_engine }
+		x = 2
 		y = 1
 
 		completion_reward = {
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.03
-			}
-			add_stability = 0.03
+            army_experience = 10		
+        	add_doctrine_cost_reduction = {
+    			name = WGR_tank_doctrine
+    			cost_reduction = 0.5
+     			uses = 1
+     			category = land_doctrine
+        	}
+		}
+	}
+
+	focus = {
+		id = WGR_rhine_defense_plan
+		icon = GFX_goal_generic_defence
+		cost = 5
+		relative_position_id = WGR_leopard_tank
+		prerequisite = { focus = WGR_leopard_tank }
+		x = 0
+		y = 1
+
+		available = {
+			51 = { is_controlled_by_ROOT_or_ally = yes }
+			42 = { is_controlled_by_ROOT_or_ally = yes }
 		}
 
-	}
-	focus = {
-		id = WGR_end_cold_war
-		icon = GFX_focus_SWE_refuge_from_war
-		cost = 5
-		relative_position_id = WGR_stabili_democratic
-		prerequisite = { focus = WGR_stabili_democratic }
-		prerequisite = { focus = WGR_rhine_miracle }
-		prerequisite = { focus = WGR_europe_shield }
-		x = 0
-		y = 1
 		completion_reward = {
+			army_experience = 10
 			load_focus_tree = WGR_part_three
-			USA = {
-				remove_dynamic_modifier = { modifier = USA_cold_war }
+			51 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 587
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3547
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 6469
+					instant_build = yes
+				}
 			}
-			SOV = {
-				remove_dynamic_modifier = { modifier = SOV_cold_war }
+			42 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11494
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3423
+					instant_build = yes
+				}		
 			}
-			country_event = { id = wgr.5 }
 		}
 	}
 }

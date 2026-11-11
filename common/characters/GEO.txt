@@ -32,4 +32,21 @@ characters = {
 			expire="1993.11.9.1"		
 		}
 	}
+
+	GEO_eduard_shevardnadze ={
+		name = GEO_eduard_shevardnadze
+		portraits={
+			civilian={
+				large= GFX_Portrait_eduard_shevardnadze
+			}
+			army = {
+				large = GFX_Portrait_eduard_shevardnadze
+			}
+		}
+		country_leader={
+			ideology = liberal_social_democracy
+			traits={  }
+			expire="2014.7.7.1"		
+		}
+	}
 }

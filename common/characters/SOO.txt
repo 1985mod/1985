@@ -1,0 +1,15 @@
+characters = {
+	SOO_torez_kulumbegov = {
+		name = SOO_torez_kulumbegov
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_torez_kulumbegov
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			traits = { }
+			expire = "2006.10.6.1"
+		}
+	}
+}

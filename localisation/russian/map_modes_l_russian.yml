@@ -1,0 +1,14 @@
+﻿l_russian:
+ MAPMODE_UNEMPLOYMENT_MAP_MODE:0 "Уровень безработицы"
+ MAPMODE_UNEMPLOYMENT_MAP_MODE_NAME:0 "Уровень безработицы"
+ MAPMODE_UNEMPLOYMENT_MAP_MODE_DESCRIPTION:0 "Показывает долю безработных среди рабочей силы."
+
+ unemployment_map_mode_tooltip:0 "[FROM.owner.GetNameWithFlag]\nБезработица: §Y[?FROM.CONTROLLER:unemployment_rate|1Y]%§!\nЦелевой уровень: §Y[?FROM.CONTROLLER:target_unemployment_down|1Y]% - [?FROM.CONTROLLER:target_unemployment_up|1Y]%§!"
+ unemployment_map_mode_tooltip_delayed:0 "§YЭкономический режим карты§!\nПоказывает долю безработных среди трудоспособного населения.\n\n§GЗеленый: §!Менее 5% (Здоровый рынок)\n§YЖелтый: §!5% - 10% (Естественный уровень)\n§OОранжевый: §!10% - 20% (Высокая безработица)\n§RКрасный: §!Более 20% (Кризис и нищета)"
+
+ MAPMODE_GDP_PER_CAPITA_MAP_MODE:0 "ВВП на душу"
+ MAPMODE_GDP_PER_CAPITA_MAP_MODE_NAME:0 "ВВП на душу населения"
+ MAPMODE_GDP_PER_CAPITA_MAP_MODE_DESCRIPTION:0 "Показывает уровень экономического благосостояния граждан."
+
+ gdp_per_capita_map_mode_tooltip:0 "[FROM.owner.GetNameWithFlag]\nВВП на душу: §Y[?FROM.CONTROLLER:gdp_per_capita|1Y] тыс. $§!"
+ gdp_per_capita_map_mode_tooltip_delayed:0 "§YЭкономический режим карты§!\nПоказывает уровень благосостояния граждан страны.(тыс. $) \n\n§RКрасный: §!1 - 2.5 (Бедность)\n§OОранжевый: §!2.5 - 5 (Низкий доход)\n§OПерсиковый: §!5 - 7.5 (Ниже среднего)\n§YЖелтый: §!7.5 - 10 (Средний доход)\n§GСветло-зеленый: §!10 - 15 (Выше среднего)\n§GЗеленый: §!15 - 25 (Развитые)\n§1Темно-зеленый: §!25 - 40 (Богатые)\n§BБирюзовый: §!Более 40 (Сверхбогатые)""

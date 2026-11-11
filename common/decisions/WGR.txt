@@ -297,12 +297,12 @@ WGR_franco_german_engine = {
 	
 		remove_effect = {
 			add_timed_idea = {
-				idea = WGR_initiative_for_a_single_europea_act
+				idea = WGR_initiative_for_a_single_european_act
 				days = 180
 			}
 			FRA = {
 				add_timed_idea = {
-					idea = WGR_initiative_for_a_single_europea_act
+					idea = WGR_initiative_for_a_single_european_act
 					days = 180
 				}
 			}

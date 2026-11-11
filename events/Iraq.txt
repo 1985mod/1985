@@ -4,7 +4,6 @@ country_event = {   ### ирак предлагает мир на своих у�
     id = iraq.1
     title = iraq.1.t
     desc = iraq.1.d
-    picture = GFX_report_event_generic_peace
 
     trigger = {
         tag = PER
@@ -30,7 +29,6 @@ country_event = {   ### Ирак вторгается в Кувейт ###
     id = iraq.2
     title = iraq.2.t
     desc = iraq.2.d
-    picture = GFX_report_event_generic_peace
 
     trigger = {
         tag = IRQ
@@ -115,7 +113,6 @@ country_event = {   ### Ирак капитулирует ###
     id = iraq.3
     title = iraq.3.t
     desc = iraq.3.d
-    picture = GFX_report_event_generic_peace
 
     is_triggered_only = yes
 
@@ -150,7 +147,6 @@ country_event = {   ### Иран соглашается ###
     id = iraq.4
     title = iraq.4.t
     desc = iraq.4.d
-    picture = GFX_report_event_generic_peace
 
     is_triggered_only = yes
 
@@ -167,7 +163,6 @@ country_event = {   ### Иран отказывается
     id = iraq.5
     title = iraq.5.t
     desc = iraq.5.d
-    picture = GFX_report_event_generic_peace
 
     is_triggered_only = yes
 
@@ -187,7 +182,6 @@ country_event = {   ### Провозглашение Великого Ирака
     id = iraq.6
     title = iraq.6.t
     desc = iraq.6.d
-    picture = GFX_report_event_generic_peace
 
     fire_only_once = yes
 
@@ -217,7 +211,6 @@ country_event = {   ### Вопрос правительства Ирана
     id = iraq.7
     title = iraq.7.t
     desc = iraq.7.d
-    picture = GFX_report_event_generic_peace
 
     is_triggered_only = yes
 
@@ -253,7 +246,6 @@ country_event = {   ### Вопрос Али Хаменеи (Рухолла Хо�
     id = iraq.8
     title = iraq.8.t
     desc = iraq.8.d
-    picture = GFX_report_event_generic_peace
 
     is_triggered_only = yes
 
@@ -278,7 +270,6 @@ country_event = {   ### Тишина в персидском заливе
     id = iraq.9
     title = iraq.9.t
     desc = iraq.9.d
-    picture = GFX_report_event_generic_peace
 
     is_triggered_only = yes
 
@@ -289,3 +280,91 @@ country_event = {   ### Тишина в персидском заливе
         set_global_flag = iraq_did_not_invade_kuwait
     }
 }   
+
+country_event = {   ### Войска в Басре
+    id = iraq.10
+    title = iraq.10.t
+    desc = iraq.10.d
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = iraq.10.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 2500
+			producer = ROOT
+		}
+        add_equipment_to_stockpile = {
+            type = motorized_equipment
+            amount = 500
+            producer = ROOT
+        }
+        add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 750
+            producer = ROOT
+        }
+        add_war_support = 0.15
+        UNQ = {
+            add_manpower = 15000
+            declare_war_on = {
+                target = IRQ
+                type = annex_everything
+            }
+        }
+        set_global_flag = un_coalition_in_iraq
+    }
+} 
+
+country_event = {   ### Первые свободные выборы ###
+    id = iraq.11
+    title = iraq.11.t
+    desc = iraq.11.d
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = iraq.11.a
+        set_cosmetic_tag = IRQ_new_iraq
+        set_politics = {
+            ruling_party = liberalism
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = liberalism
+            popularity = 0.15
+        }
+    }
+
+    option = {
+        name = iraq.11.b
+        set_cosmetic_tag = IRQ_new_iraq
+        set_politics = {
+            ruling_party = conservatism
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.05
+        }
+    }
+
+    option = {
+        name = iraq.11.c
+        set_cosmetic_tag = IRQ_new_iraq
+        retire_ideology_leader = conservatism
+        set_politics = {
+            ruling_party = conservatism
+            elections_allowed = yes
+        }
+        add_popularity = {
+            ideology = conservatism
+            popularity = 0.05
+        }
+    }
+} 

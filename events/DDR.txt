@@ -105,6 +105,7 @@ country_event = {
 
     option = {
         name = ddr.5.a
+		add_stability = -0.15
 		add_popularity = {
 			ideology = conservatism
 			popularity = 0.05
@@ -178,6 +179,7 @@ country_event = {
     option = {
         name = ddr.8.a
 		add_stability = -0.03
+		add_political_power = 100
 	}
 }
 
@@ -223,7 +225,7 @@ country_event = {
         name = ddr.10.a
 		retire_ideology_leader = communism
 		add_war_support = -0.03
-        add_stability = -0.03
+        add_stability = -0.05
 	}
 }
 
@@ -754,5 +756,33 @@ country_event = {
                 type = annex_everything
             }
 		}
+	}
+}
+
+country_event = {
+	id = ddr.27 ## Падение берлинской стены ##
+	title = ddr.27.t
+	desc = ddr.27.desc
+	picture = GFX_report_order_101
+
+	trigger = {
+		tag = DDR
+		date > 1989.09.09
+		has_country_leader = { character = DDR_egon_krenz ruling_only = yes }
+		SOV = { has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes } }
+	}
+
+	fire_only_once = yes
+
+    option = {
+        name = ddr.27.a
+        ai_chance = {
+            base = 100
+        }
+		custom_effect_tooltip = the_berlin_wall_has_finally_fallen
+		set_global_flag = berlin_wall_fall
+		WGR = { country_event = { id = wgr.33 days = 1 } }
+		add_stability = 0.05
+		add_war_support = -0.15
 	}
 }

@@ -19,4 +19,18 @@ characters = {
 			traits = {}
 		}
 	}
+	UKR_mykola_plaviuk = {
+		name = UKR_mykola_plaviuk
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_mykola_plaviuk
+			}
+		}
+		country_leader = {
+			ideology = ethnic_nationalism
+			traits = {}
+			expire = "2022.5.10"
+			id = -100
+		}
+	}
 }

@@ -24,7 +24,7 @@ country_event = {
             SLV = {
                 set_politics = {
 					ruling_party = fascism
-					elections_allowed = yes
+					elections_allowed = no
 				}
 				add_popularity = {
 					ideology = fascism
@@ -44,7 +44,7 @@ country_event = {
             CRO = {
                 set_politics = {
 					ruling_party = fascism
-					elections_allowed = yes
+					elections_allowed = no
 				}
 				add_popularity = {
 					ideology = fascism
@@ -68,7 +68,7 @@ country_event = {
             MAC = {
                 set_politics = {
 					ruling_party = fascism
-					elections_allowed = yes
+					elections_allowed = no
 				}
 				add_popularity = {
 					ideology = fascism
@@ -89,7 +89,7 @@ country_event = {
             BOS = {
                 set_politics = {
 					ruling_party = fascism
-					elections_allowed = yes
+					elections_allowed = no
 				}
 				add_popularity = {
 					ideology = fascism
@@ -169,6 +169,24 @@ country_event = {
 		name = yugoslavia.2.b
 		trigger = { is_ai = no }
 		CRO = { change_tag_from = YUG }
+		ROOT = {
+			declare_war_on = { target = CRO type = annex_everything }	
+		}
+		set_province_controller = 13489
+		set_province_controller = 13487
+		set_province_controller = 13483
+		set_province_controller = 13482
+		set_province_controller = 13481
+		set_province_controller = 13480
+		set_province_controller = 13479
+		set_province_controller = 984
+		set_province_controller = 3974
+		set_province_controller = 11577
+		hidden_effect = {
+			add_ideas = YUG_anti_war_protests
+			add_ideas = YUG_focus_on_defense
+			add_ideas = YUG_weakness_of_supply
+		}
 	}
 }
 
@@ -191,7 +209,7 @@ country_event = {
 		effect_tooltip = {
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 
@@ -203,7 +221,7 @@ country_event = {
 			}
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 	}
@@ -228,7 +246,7 @@ country_event = {
 		effect_tooltip = {
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 
@@ -240,7 +258,7 @@ country_event = {
 			}
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 	}
@@ -279,6 +297,18 @@ country_event = {
 		name = yugoslavia.5.b
 		trigger = { is_ai = no }
 		BOS = { change_tag_from = YUG }
+		news_event = { id = news.37 hours = 6 }
+		ROOT = {
+			declare_war_on = { target = BOS type = annex_everything }	
+		}
+		BOS = {
+			declare_war_on = { target = CRO type = annex_everything }	
+		}
+		set_province_controller = 6957
+		set_province_controller = 3985
+		BOS = { set_province_controller = 6942 }
+		BOS = { set_province_controller = 9894 }
+		BOS = { set_province_controller = 982 }
 	}
 }
 
@@ -301,7 +331,7 @@ country_event = {
 		effect_tooltip = {
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 
@@ -313,7 +343,7 @@ country_event = {
 			}
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 	}
@@ -338,7 +368,7 @@ country_event = {
 		effect_tooltip = {
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 
@@ -350,7 +380,7 @@ country_event = {
 			}
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 	}
@@ -375,7 +405,7 @@ country_event = {
 		effect_tooltip = {
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 
@@ -387,7 +417,7 @@ country_event = {
 			}
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 	}
@@ -412,7 +442,7 @@ country_event = {
 		effect_tooltip = {
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 
@@ -424,7 +454,7 @@ country_event = {
 			}
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 		}
 	}
@@ -566,5 +596,152 @@ country_event = {
 	option = {
 		name = yugoslavia.15.b
 		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = yugoslavia.16
+	title = yugoslavia.16.t
+	desc = yugoslavia.16.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1991.05.16
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.16.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = communism
+			promote_character = {
+				character = YUG_sejdo_bajramovich
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.17
+	title = yugoslavia.17.t
+	desc = yugoslavia.17.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1991.06.01
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.17.a
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+
+		hidden_effect = {
+			retire_ideology_leader = communism
+			promote_character = {
+				character = YUG_stjepan_mesich
+				ideology = communism
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.18
+	title = yugoslavia.18.t
+	desc = yugoslavia.18.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1991.12.06
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.17.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.56
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		country_event = { id = yugoslavia.20 days = 140 }
+	}
+}
+
+country_event = {
+	id = yugoslavia.19
+	title = yugoslavia.19.t
+	desc = yugoslavia.19.desc
+	hidden = yes
+
+	trigger = {
+		tag = YUG
+		has_civil_war = no
+		date > 1991.06.15
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.17.a
+		retire_ideology_leader = fascism
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.07
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = {
+	id = yugoslavia.20
+	title = yugoslavia.20.t
+	desc = yugoslavia.20.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = yugoslavia.20.a
+		add_stability = -0.1
+		add_war_support = 0.1
+		set_cosmetic_tag = YUG_federal_republic_of_yugoslavia
 	}
 }

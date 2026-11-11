@@ -103,6 +103,11 @@ spriteTypes = {
 		name = GFX_portrait_FRA_jacques_chirac
 		textureFile = "gfx/leaders/FRA/Portrait_Jacques_Chirac.dds"
 	}
+
+	spriteType = {
+		name = GFX_Portrait_georges_marchais
+		textureFile = "gfx/leaders/FRA/Portrait_georges_marchais.dds"
+	}
 	
 	##PRC##
 	spriteType = {
@@ -214,6 +219,11 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_ITA_carlo_azeglio_ciampi
 		texturefile = "gfx/leaders/ITA/Portrait_Carlo_Azeglio_Ciampi.dds"
+	}
+
+	spriteType = {
+		name = GFX_Portrait_armando_cossutta
+		texturefile = "gfx/leaders/ITA/Portrait_armando_cossutta.dds"
 	}
     
 	##JAP##
@@ -913,6 +923,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/PAN/Portrait_Manuel_Noriega.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Portrait_guillermo_endara"
+		texturefile = "gfx/leaders/PAN/Portrait_guillermo_endara.dds"
+	}
+
 	### ICE ###
 	spriteType = {
 		name = GFX_Portrait_ICE_steingrímur_hermannsson
@@ -1079,6 +1094,11 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_Portrait_state_council_of_georgia
 		textureFile = "gfx/leaders/GEO/Portrait_state_council_of_georgia.dds"
+	}
+	
+	spriteType = {
+		name = GFX_Portrait_eduard_shevardnadze
+		textureFile = "gfx/leaders/GEO/Portrait_eduard_shevardnadze.dds"
 	}
 
     ### ARM ###
@@ -1334,5 +1354,19 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_Portrait_Egon_Krenz"
 		texturefile = "gfx/leaders/DDR/Portrait_Egon_Krenz.dds"
+	}
+
+	### ABK ###
+
+	SpriteType = {
+		name = "GFX_Portrait_vladislav_ardzinba"
+		texturefile = "gfx/leaders/ABK/Portrait_vladislav_ardzinba.dds"
+	}
+
+	### SOO ###
+
+	SpriteType = {
+		name = "GFX_Portrait_torez_kulumbegov"
+		texturefile = "gfx/leaders/SOO/Portrait_torez_kulumbegov.dds"
 	}
 }

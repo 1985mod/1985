@@ -79,5 +79,15 @@ country_event = {
                 owner = ROOT
             }
         }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 2000
+			producer = ROOT
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_grenade_launcher_equipment_0
+			amount = 750
+			producer = ROOT
+		}
     }
 }

@@ -12,4 +12,18 @@ characters = {
 			expire = "2000.3.1.1"
 		}
 	}
+
+	KUR_abdullah_ocalan = {
+		name = KUR_abdullah_ocalan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KUR/Portrait_abdullah_ocalan.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = { }
+			expire = "2025.5.12.1"
+		}
+	}
 }

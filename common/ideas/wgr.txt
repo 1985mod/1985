@@ -222,5 +222,432 @@ ideas = {
 				research_sharing_per_country_bonus_factor = 0.15
 			}
 		}
+		WGR_to_continue_ones_course = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			available = {
+				has_government = conservatism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		WGR_tax_reform = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				trade_opinion_factor = 0.1
+				min_export = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		WGR_social_market_economy = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				min_export = 0.05
+				consumer_goods_factor = -0.05
+				production_factory_start_efficiency_factor = 0.03
+			}
+		}
+
+		WGR_modernization_of_the_bundeswehr = {
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				modern_tank_chassis = {
+					build_cost_ic = -0.05
+					breakthrough = 0.05
+					instant = yes
+				}
+			}
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+
+		WGR_parliamentary_reform = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conservatism_drift = 0.03
+				political_power_gain = 0.15
+				stability_weekly = 0.0005
+			}
+		}
+
+		WGR_independence_of_the_bundesbank = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				local_resources_factor = 0.03
+			}
+		}
+
+		WGR_bundeswehr_2000 = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.05
+				coordination_bonus = 0.05
+				breakthrough_factor = 0.1
+			}
+		}
+
+		WGR_healthcare_reform = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				stability_weekly = 0.001
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.05			
+			}
+		}
+
+		WGR_allocation_of_emergency_subsidies = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05			
+			}
+		}
+
+		WGR_fashion_foundation = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.15			
+			}
+		}
+		WGR_fashion_foundation_ddr = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				local_resources_factor = 0.05
+				min_export = 0.1
+				production_factory_start_efficiency_factor = 0.03
+			}
+		}
+		WGR_tax_on_the_wealthy = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				income_growth_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		WGR_embargo_from_usa = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.45
+				consumer_goods_factor = 0.05
+				min_export = -0.1
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.05
+			}
+		}
+		WGR_economy_for_the_people = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		WGR_reduction_term_of_compulsory_military_service = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		WGR_expansion_of_the_civil_service = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				welfare_expenditure_factor = -0.1
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		WGR_militia_of_the_lands = {
+			picture = plaza_accord
+			
+			allowed = {
+                original_tag = WGR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.25
+				initiative_factor = 0.1
+				dig_in_speed_factor = 0.15
+				army_attack_factor = -0.1
+			}
+		}
+
+		WGR_following_the_spd_plan = {
+			picture = plaza_accord
+			
+			allowed = {
+				OR = {
+					original_tag = WGR
+					original_tag = DDR
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				socialism_drift = 0.02
+				min_export = -0.1
+				income_growth_factor = 0.1
+				expense_growth_factor = -0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		WGR_following_the_cdu_plan = {
+			picture = plaza_accord
+			
+			allowed = {
+				OR = {
+					original_tag = WGR
+					original_tag = DDR
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conservatism_drift = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+
+		WGR_solidarity_fund = {
+			picture = plaza_accord
+			
+			allowed = {
+				OR = {
+					original_tag = WGR
+					original_tag = DDR
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				income_growth_factor = -0.1
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+			}
+		}
     }
 }

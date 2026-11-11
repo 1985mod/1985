@@ -1,0 +1,493 @@
+focus_tree = {
+    id = SOV_soviet_gorbachev_uss_focus_part_two
+
+    country = {
+        factor = 1
+        modifier = {
+            add = 50000
+            tag = SOV
+        }
+    }
+	
+    default = no
+	
+    continuous_focus_position = { x = 1500 y = 200 }
+
+    focus = { 
+        id = SOV_national_elections_of_the_president_of_the_uss
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+        x = 10
+        y = 0
+        cost = 2
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = { 
+        id = SOV_for_yeltsin
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_national_elections_of_the_president_of_the_uss
+		prerequisite = { focus = SOV_national_elections_of_the_president_of_the_uss }
+        x = -2
+        y = 1
+        cost = 5
+
+        available = {
+            NOT = { has_completed_focus = SOV_nursultan_nazarbayev }
+        }
+
+        completion_reward = {
+            add_political_power = 25
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.03
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_to_enjoy_the_popularity_of_the_people
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_for_yeltsin
+		prerequisite = { focus = SOV_for_yeltsin }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.05
+            }
+            add_stability = 0.05
+            add_war_support = 0.03
+        }
+    }
+
+    focus = { 
+        id = SOV_promise_rapid_economic_reforms
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_to_enjoy_the_popularity_of_the_people
+		prerequisite = { focus = SOV_to_enjoy_the_popularity_of_the_people }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.05
+            }
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_advocate_for_even_greater_rights_for_the_republics
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_promise_rapid_economic_reforms
+		prerequisite = { focus = SOV_promise_rapid_economic_reforms }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_popularity = {
+                ideology = conservatism
+                popularity = 0.05
+            }
+            every_country = {
+                 limit = {
+                    is_puppet_of = SOV
+                }
+                add_autonomy_ratio = {
+                    value = 0.2
+                    localization = SOV_cooperation_with_the_republics
+                }               
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_nursultan_nazarbayev
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_national_elections_of_the_president_of_the_uss
+		prerequisite = { focus = SOV_national_elections_of_the_president_of_the_uss }
+        x = 2
+        y = 1
+        cost = 5
+
+        available = {
+            NOT = { has_completed_focus = SOV_for_yeltsin }
+        }
+
+        completion_reward = {
+            add_political_power = 25
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.03
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_first_economics_then_politics
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_nursultan_nazarbayev
+		prerequisite = { focus = SOV_nursultan_nazarbayev }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.05
+            }
+            add_stability = 0.1
+        }
+    }
+
+    focus = { 
+        id = SOV_focus_on_multinationality
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_first_economics_then_politics
+		prerequisite = { focus = SOV_first_economics_then_politics }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_war_support = 0.05
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = 0.03
+            }
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.03
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_bridge_between_different_cultures
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_focus_on_multinationality
+		prerequisite = { focus = SOV_focus_on_multinationality }
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_war_support = 0.05
+            add_popularity = {
+                ideology = socialism
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = 0.03
+            }
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.03
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_the_first_free_elections_in_the_ussr
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_bridge_between_different_cultures
+		prerequisite = { focus = SOV_bridge_between_different_cultures focus = SOV_advocate_for_even_greater_rights_for_the_republics }
+        x = -2
+        y = 1
+        cost = 5
+
+        available = {
+            always = no
+        }
+        
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_yeltsin_path
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_the_first_free_elections_in_the_ussr
+		prerequisite = { focus = SOV_the_first_free_elections_in_the_ussr }
+        x = -2
+        y = 1
+        cost = 5
+        
+        available = {
+            always = no
+        }
+
+        completion_reward = {
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.03
+			}
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_shock_therapy
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_yeltsin_path
+		prerequisite = { focus = SOV_yeltsin_path }
+        x = -2
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            custom_effect_tooltip = it_could_lead_to_consequences
+            add_ideas = SOV_shock_therapy
+            add_political_power = 100
+            hidden_effect = {
+                country_event = { id = soviet_union.81 days = 3 }
+                country_event = { id = soviet_union.82 days = 10 }
+                country_event = { id = soviet_union.83 days = 15 }
+                country_event = { id = soviet_union.84 days = 30 }
+                country_event = { id = soviet_union.85 days = 50 }
+            }
+        }
+    }
+
+    focus = { 
+        id = SOV_save_ruble
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_shock_therapy
+		prerequisite = { focus = SOV_shock_therapy }
+        x = -1
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            add_political_power = 100
+            if = {
+                limit = {
+                    has_idea = SOV_shock_therapy_2
+                }
+                swap_ideas = {
+                    remove_idea = SOV_shock_therapy_2
+                    add_idea = SOV_shock_therapy_3
+                }
+            }
+            if = {
+                limit = {
+                    has_idea = SOV_shock_therapy
+                }
+                swap_ideas = {
+                    remove_idea = SOV_shock_therapy
+                    add_idea = SOV_shock_therapy_2
+                }
+            }     
+        }
+    }
+
+    focus = { 
+        id = SOV_fight_hyperinflation
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_shock_therapy
+		prerequisite = { focus = SOV_shock_therapy }
+        x = 1
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            if = {
+                limit = {
+                    has_idea = SOV_shock_therapy_2
+                }
+                swap_ideas = {
+                    remove_idea = SOV_shock_therapy_2
+                    add_idea = SOV_shock_therapy_3
+                }
+            }
+            if = {
+                limit = {
+                    has_idea = SOV_shock_therapy
+                }
+                swap_ideas = {
+                    remove_idea = SOV_shock_therapy
+                    add_idea = SOV_shock_therapy_2
+                }
+            }          
+        }
+    }
+
+    focus = { 
+        id = SOV_friendship_with_usa
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_shock_therapy
+		prerequisite = { focus = SOV_save_ruble }
+        prerequisite = { focus = SOV_fight_hyperinflation }
+        x = 0
+        y = 2
+        cost = 5
+        
+        completion_reward = {
+            add_political_power = 25
+ 			ROOT = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = small_increase
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = small_increase
+				}
+			}           
+        }
+    }
+
+    focus = { 
+        id = SOV_baltic_negotiations
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_the_first_free_elections_in_the_ussr
+		prerequisite = { focus = SOV_yeltsin_path focus = SOV_nazarbayev_path }
+        x = 0
+        y = 2
+        cost = 5
+        
+        completion_reward = {
+            unlock_decision_category_tooltip = SOV_baltic_negotiations
+            set_variable = { var = SOV.support_in_baltics_states value = 15 }
+        }
+    }
+
+    focus = { 
+        id = SOV_georgia_negotiations
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_baltic_negotiations
+		prerequisite = { focus = SOV_baltic_negotiations }
+        x = 0
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            country_event = { id = soviet_union.88 days = 1 }
+        }
+    }
+
+    focus = { 
+        id = SOV_create_uss_defense_union
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_georgia_negotiations
+		prerequisite = { focus = SOV_georgia_negotiations }
+        x = 0
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            set_rule = {
+                desc = SOV_create_uss_defense_union
+                can_create_factions = yes
+            }
+            create_faction_from_template = faction_template_UNION_USS      
+            add_research_slot = 1      
+        }
+    }
+
+    focus = { 
+        id = SOV_nazarbayev_path
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_the_first_free_elections_in_the_ussr
+		prerequisite = { focus = SOV_the_first_free_elections_in_the_ussr }
+        x = 2
+        y = 1
+        cost = 5
+        
+        available = {
+            always = no
+        }
+
+        completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
+            add_political_power = 50
+        }
+    }
+
+    focus = { 
+        id = SOV_create_an_inter_republican_bank
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_nazarbayev_path
+		prerequisite = { focus = SOV_nazarbayev_path }
+        x = 2
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            add_ideas = SOV_inter_republican_bank
+            add_to_variable = {
+                var = treasury
+                value = 10
+                tooltip = add_10_billion_to_treasury_tt
+            }	
+        }
+    }
+
+    focus = { 
+        id = SOV_conduct_small_scale_privatization
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_create_an_inter_republican_bank
+		prerequisite = { focus = SOV_create_an_inter_republican_bank }
+        x = -1
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            add_ideas = SOV_small_scale_privatization
+        }
+    }
+
+    focus = { 
+        id = SOV_freedom_of_movement_of_goods
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_create_an_inter_republican_bank
+		prerequisite = { focus = SOV_create_an_inter_republican_bank }
+        x = 1
+        y = 1
+        cost = 5
+        
+        completion_reward = {
+            add_ideas = SOV_freedom_of_movement_of_goods
+        }
+    }
+
+    focus = { 
+        id = SOV_policy_of_compromise
+        icon = GFX_focus_icon_SOV_gorbachev_the_new_general_secretary
+		relative_position_id = SOV_create_an_inter_republican_bank
+		prerequisite = { focus = SOV_conduct_small_scale_privatization }
+        prerequisite = { focus = SOV_freedom_of_movement_of_goods }
+        x = 0
+        y = 2
+        cost = 5
+        
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.15
+            add_war_support = 0.1
+        }
+    }
+}
