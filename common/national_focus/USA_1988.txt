@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 80
+            add = 8
             tag = USA
         }
     }
@@ -14,7 +14,7 @@ focus_tree = {
 	
     focus = { 
         id = USA_election_campaign
-        icon = GFX_	
+        icon = GFX_focus_ARG_develop_the_electricity_sector
         x = 10
         y = 0
         cost = 5
@@ -34,7 +34,7 @@ focus_tree = {
         id = USA_on_the_side_of_the_democrats
 		relative_position_id = USA_election_campaign
 		prerequisite = { focus = USA_election_campaign }
-        icon = GFX_	
+        icon = GFX_focus_generic_democratic_europe
         x = 3
         y = 1
         cost = 5
@@ -105,7 +105,7 @@ focus_tree = {
         id = USA_to_oppose_the_death_penalty
 		relative_position_id = USA_on_the_side_of_the_democrats
 		prerequisite = { focus = USA_on_the_side_of_the_democrats }
-        icon = GFX_	
+        icon = GFX_focus_ARG_defense_and_democracy	
         x = 0
         y = 1
         cost = 5
@@ -172,7 +172,7 @@ focus_tree = {
         id = USA_enjoy_reputation_as_a_technocrat
 		relative_position_id = USA_to_oppose_the_death_penalty
 		prerequisite = { focus = USA_to_oppose_the_death_penalty }
-        icon = GFX_	
+        icon = GFX_goal_tfv_generic_tech_sharing	
         x = 0
         y = 1
         cost = 10
@@ -253,7 +253,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = USA_advocate_for_more_funding_for_the_star_wars_program		
 		}
-        icon = GFX_	
+        icon = GFX_focus_USA_uncle_sam	
         x = -2
         y = 1
         cost = 5
@@ -342,7 +342,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PRC_tank_blitzkrieg		
 		}
-        icon = GFX_	
+        icon = GFX_focus_usa_build_the_pentagon	
         x = 2
         y = 1
         cost = 5
@@ -420,7 +420,7 @@ focus_tree = {
         id = USA_advocate_for_cultural_pluralism
 		relative_position_id = USA_enjoy_reputation_as_a_technocrat
 		prerequisite = { focus = USA_star_wars_program_cuts focus = USA_advocate_for_more_funding_for_the_star_wars_program  }
-        icon = GFX_	
+        icon = GFX_focus_AST_a_democratic_bulwark	
         x = 0
         y = 2
         cost = 10
@@ -486,7 +486,7 @@ focus_tree = {
         id = USA_on_the_republican_side
 		relative_position_id = USA_election_campaign
 		prerequisite = { focus = USA_election_campaign }
-        icon = GFX_	
+        icon = GFX_focus_generic_strike_at_democracy2	
         x = -3
         y = 1
         cost = 5
@@ -557,7 +557,7 @@ focus_tree = {
         id = USA_use_reagans_popularity_to_their_advantage
 		relative_position_id = USA_on_the_republican_side
 		prerequisite = { focus = USA_on_the_republican_side }
-        icon = GFX_	
+        icon = GFX_focus_generic_strike_at_democracy1	
         x = 0
         y = 1
         cost = 5
@@ -624,7 +624,7 @@ focus_tree = {
         id = USA_support_of_traditional_values
 		relative_position_id = USA_use_reagans_popularity_to_their_advantage
 		prerequisite = { focus = USA_use_reagans_popularity_to_their_advantage }
-        icon = GFX_	
+        icon = GFX_focus_eng_concessions_to_the_trade_unions	
         x = 0
         y = 1
         cost = 10
@@ -693,7 +693,7 @@ focus_tree = {
         id = USA_harsh_criticism_of_the_democrats
 		relative_position_id = USA_support_of_traditional_values
 		prerequisite = { focus = USA_support_of_traditional_values }
-        icon = GFX_	
+        icon = GFX_focus_generic_strike_at_democracy1	
 		mutually_exclusive = {
 			focus = USA_keep_calm		
 		}
@@ -766,7 +766,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = USA_harsh_criticism_of_the_democrats		
 		}
-        icon = GFX_	
+        icon = GFX_goal_generic_alliance	
         x = -2
         y = 1
         cost = 5
@@ -786,7 +786,7 @@ focus_tree = {
         id = USA_dukakis_anti_advertising
 		relative_position_id = USA_support_of_traditional_values
 		prerequisite = { focus = USA_keep_calm focus = USA_harsh_criticism_of_the_democrats  }
-        icon = GFX_	
+        icon = GFX_focus_generic_strike_at_democracy3	
         x = 0
         y = 2
         cost = 10
@@ -853,7 +853,7 @@ focus_tree = {
         id = USA_election_day
 		relative_position_id = USA_election_campaign
 		prerequisite = { focus = USA_advocate_for_cultural_pluralism focus = USA_dukakis_anti_advertising  }
-        icon = GFX_	
+        icon = GFX_focus_generic_election	
         x = 0
         y = 6
         cost = 5

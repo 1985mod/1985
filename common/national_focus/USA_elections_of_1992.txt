@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 100
+            add = 1
             tag = USA
         }
     }
@@ -15,7 +15,7 @@ focus_tree = {
 
     focus = { 
         id = USA_1992_election_campaign
-        icon = GFX_	
+        icon = GFX_focus_AFG_pashtunistan_referendum	
         x = 5
         y = 1
         cost = 5
@@ -27,7 +27,7 @@ focus_tree = {
 
     focus = { 
         id = USA_we_choose_bush
-        icon = GFX_	
+        icon = GFX_focus_CHI_demonstrate_our_resolve	
         relative_position_id = USA_1992_election_campaign
         prerequisite = { focus = USA_1992_election_campaign }
         x = -2
@@ -48,7 +48,7 @@ focus_tree = {
 
     focus = { 
         id = USA_victory_in_the_primaries
-        icon = GFX_	
+        icon = GFX_focus_BEL_v_for_victory	
         relative_position_id = USA_we_choose_bush
         prerequisite = { focus = USA_we_choose_bush }
         x = 0
@@ -66,7 +66,7 @@ focus_tree = {
 
     focus = { 
         id = USA_increase_defense_spending
-        icon = GFX_	
+        icon = GFX_goal_generic_defence	
         relative_position_id = USA_victory_in_the_primaries
         prerequisite = { focus = USA_victory_in_the_primaries }
         x = 0
@@ -94,7 +94,7 @@ focus_tree = {
 
     focus = { 
         id = USA_promise_military_reforms
-        icon = GFX_	
+        icon = GFX_focus_hol_the_foundations_of_defense	
         relative_position_id = USA_increase_defense_spending
         prerequisite = { focus = USA_increase_defense_spending }
         x = 0
@@ -112,7 +112,7 @@ focus_tree = {
 
     focus = { 
         id = USA_for_bill_clinton
-        icon = GFX_	
+        icon = GFX_focus_CHI_promote_national_currency	
         relative_position_id = USA_1992_election_campaign
         x = 2
         y = 1
@@ -133,7 +133,7 @@ focus_tree = {
 
     focus = { 
         id = USA_its_the_economy_stupid
-        icon = GFX_	
+        icon = GFX_focus_eng_concessions_to_the_trade_unions	
         relative_position_id = USA_for_bill_clinton
         prerequisite = { focus = USA_for_bill_clinton }
         x = 0
@@ -155,7 +155,7 @@ focus_tree = {
 
     focus = { 
         id = USA_promise_economic_reforms
-        icon = GFX_	
+        icon = GFX_focus_DEN_limited_regulations	
         relative_position_id = USA_its_the_economy_stupid
         prerequisite = { focus = USA_its_the_economy_stupid }
         x = 0
@@ -183,7 +183,7 @@ focus_tree = {
 
     focus = { 
         id = USA_the_position_of_the_centrist_political_philosophy_third_way
-        icon = GFX_	
+        icon = GFX_focus_generic_social_democracy	
         relative_position_id = USA_promise_economic_reforms
         prerequisite = { focus = USA_promise_economic_reforms }
         x = 0
@@ -208,7 +208,7 @@ focus_tree = {
 
     focus = { 
         id = USA_1992_elections_day
-        icon = GFX_	
+        icon = GFX_focus_ARG_develop_the_electricity_sector	
         relative_position_id = USA_promise_military_reforms
         prerequisite = { focus = USA_promise_military_reforms focus = USA_the_position_of_the_centrist_political_philosophy_third_way }
         x = 2

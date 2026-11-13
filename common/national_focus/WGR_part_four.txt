@@ -16,7 +16,10 @@ focus_tree = {
 		y = 0
 
 		available = {
-			country_exists = DDR
+			OR = {
+				NOT = { country_exists = DDR }
+				DDR = { is_subject_of = WGR }
+			}
 			NOT = { has_war_with = DDR }
 		}
 

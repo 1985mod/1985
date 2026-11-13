@@ -15,7 +15,7 @@ focus_tree = {
 
     focus = { 
         id = USA_victory_of_the_democrats
-        icon = GFX_	
+        icon = GFX_focus_AFG_pashtunistan_referendum	
         x = 3
         y = 1
         cost = 5
@@ -36,7 +36,7 @@ focus_tree = {
         id = USA_michael_dukakis_inauguration
 		relative_position_id = USA_victory_of_the_democrats
 		prerequisite = { focus = USA_victory_of_the_democrats  }
-        icon = GFX_	
+        icon = GFX_focus_ARG_defense_and_democracy	
         x = 4
         y = 1
         cost = 6
@@ -54,7 +54,7 @@ focus_tree = {
         id = USA_cutting_back_on_bloated_military_programs
 		relative_position_id = USA_michael_dukakis_inauguration
 		prerequisite = { focus = USA_michael_dukakis_inauguration  }
-        icon = GFX_	
+        icon = GFX_focus_AUS_raid_military_storages	
         x = -3
         y = 1
         cost = 10
@@ -151,7 +151,7 @@ focus_tree = {
         id = USA_increasing_federal_grants
 		relative_position_id = USA_cutting_back_on_bloated_military_programs
 		prerequisite = { focus = USA_cutting_back_on_bloated_military_programs  }
-        icon = GFX_	
+        icon = GFX_focus_RAJ_war_taxes	
         x = -2
         y = 1
         cost = 5
@@ -168,7 +168,7 @@ focus_tree = {
         id = USA_investments_in_infrastructure
 		relative_position_id = USA_increasing_federal_grants
 		prerequisite = { focus = USA_increasing_federal_grants  }
-        icon = GFX_	
+        icon = GFX_focus_generic_industry_investment	
         x = 0
         y = 1
         cost = 7.2
@@ -229,7 +229,7 @@ focus_tree = {
         id = USA_expansion_of_social_programs
 		relative_position_id = USA_cutting_back_on_bloated_military_programs
 		prerequisite = { focus = USA_cutting_back_on_bloated_military_programs  }
-        icon = GFX_	
+        icon = GFX_focus_generic_social_democracy	
         x = 2
         y = 1
         cost = 10
@@ -243,7 +243,7 @@ focus_tree = {
         id = USA_war_on_poverty
 		relative_position_id = USA_expansion_of_social_programs
 		prerequisite = { focus = USA_expansion_of_social_programs  }
-        icon = GFX_	
+        icon = GFX_goal_generic_major_war	
         x = 0
         y = 1
         cost = 10
@@ -258,7 +258,7 @@ focus_tree = {
 		relative_position_id = USA_cutting_back_on_bloated_military_programs
 		prerequisite = { focus = USA_war_on_poverty  }
 		prerequisite = { focus = USA_investments_in_infrastructure  }
-        icon = GFX_	
+        icon = GFX_focus_generic_industrialists	
         x = 0
         y = 3
         cost = 6.5
@@ -351,7 +351,7 @@ focus_tree = {
         id = USA_support_the_policy_of_perestroika
 		relative_position_id = USA_michael_dukakis_inauguration
 		prerequisite = { focus = USA_michael_dukakis_inauguration  }
-        icon = GFX_	
+        icon = GFX_focus_generic_industral_devlopment_bucket	
         x = 3
         y = 1
         cost = 5
@@ -377,7 +377,7 @@ focus_tree = {
         id = USA_trade_agreement_with_canada
 		relative_position_id = USA_support_the_policy_of_perestroika
 		prerequisite = { focus = USA_support_the_policy_of_perestroika  }
-        icon = GFX_	
+        icon = GFX_goal_generic_major_alliance	
         x = -2
         y = 1
         cost = 5
@@ -391,7 +391,7 @@ focus_tree = {
         id = USA_economic_assistance_to_the_ussr
 		relative_position_id = USA_trade_agreement_with_canada
 		prerequisite = { focus = USA_trade_agreement_with_canada  }
-        icon = GFX_	
+        icon = GFX_focus_RAJ_special_economic_zones	
         x = 0
         y = 1
         cost = 5
@@ -405,7 +405,7 @@ focus_tree = {
         id = USA_stop_supporting_the_contras
 		relative_position_id = USA_support_the_policy_of_perestroika
 		prerequisite = { focus = USA_support_the_policy_of_perestroika  }
-        icon = GFX_	
+        icon = GFX_focus_generic_support_the_left_right	
         x = 2
         y = 1
         cost = 5
@@ -430,7 +430,7 @@ focus_tree = {
         id = USA_call_for_ratification_of_the_inf_treaty
 		relative_position_id = USA_stop_supporting_the_contras
 		prerequisite = { focus = USA_stop_supporting_the_contras  }
-        icon = GFX_	
+        icon = GFX_focus_POL_support_global_falangism	
         x = 0
         y = 1
         cost = 5
@@ -446,7 +446,7 @@ focus_tree = {
 		relative_position_id = USA_support_the_policy_of_perestroika
 		prerequisite = { focus = USA_economic_assistance_to_the_ussr  }
 		prerequisite = { focus = USA_call_for_ratification_of_the_inf_treaty  }
-        icon = GFX_	
+        icon = GFX_focus_PER_embrace_opulence	
         x = 0
         y = 3
         cost = 10
@@ -473,7 +473,7 @@ focus_tree = {
 		relative_position_id = USA_michael_dukakis_inauguration
 		prerequisite = { focus = USA_repeat_the_massachusetts_miracle_throughout_america  }
 		prerequisite = { focus = USA_blockade_of_south_africa  }
-        icon = GFX_	
+        icon = GFX_focus_SWI_embrace_rote_drei	
         x = 0
         y = 5
         cost = 5
@@ -490,7 +490,7 @@ focus_tree = {
 		relative_position_id = USA_investments_and_diplomacy_are_our_everything
 		prerequisite = { focus = USA_investments_and_diplomacy_are_our_everything  }
 		allow_branch = { has_country_flag = USA_iraq_invasion_in_kuwait_flag }
-        icon = GFX_	
+        icon = GFX_focus_TUR_support_the_golden_square	
         x = 0
         y = 1
         cost = 7.2
@@ -517,7 +517,7 @@ focus_tree = {
 		relative_position_id = USA_economic_blockade_of_iraq
 		prerequisite = { focus = USA_economic_blockade_of_iraq  }
         mutually_exclusive = { focus = USA_we_need_to_act_more_decisively }
-        icon = GFX_	
+        icon = GFX_goal_support_democracy	
         x = -3
         y = 1
         cost = 5
@@ -535,7 +535,7 @@ focus_tree = {
         id = USA_freezing_of_iraqi_assets
 		relative_position_id = USA_we_remain_democrats
 		prerequisite = { focus = USA_we_remain_democrats  }
-        icon = GFX_	
+        icon = GFX_focus_generic_diplomatic_treaty
         x = 0
         y = 2
         cost = 5
@@ -549,7 +549,7 @@ focus_tree = {
         id = USA_diplomatic_isolation_of_iraq
 		relative_position_id = USA_freezing_of_iraqi_assets
 		prerequisite = { focus = USA_freezing_of_iraqi_assets  }
-        icon = GFX_	
+        icon = GFX_goal_generic_forceful_treaty	
         x = 0
         y = 1
         cost = 5
@@ -562,7 +562,7 @@ focus_tree = {
         id = USA_troop_withdrawal_or_war
 		relative_position_id = USA_diplomatic_isolation_of_iraq
 		prerequisite = { focus = USA_diplomatic_isolation_of_iraq  }
-        icon = GFX_	
+        icon = GFX_focus_generic_diplomatic_treaty	
         x = 0
         y = 1
         cost = 5
@@ -585,7 +585,7 @@ focus_tree = {
 		relative_position_id = USA_economic_blockade_of_iraq
 		prerequisite = { focus = USA_economic_blockade_of_iraq  }
         mutually_exclusive = { focus = USA_we_remain_democrats }
-        icon = GFX_	
+        icon = GFX_focus_RAJ_give_me_blood_and_i_will_grant_you_freedom	
         x = 3
         y = 1
         cost = 5
@@ -603,7 +603,7 @@ focus_tree = {
         id = USA_preparation_for_invasion
 		relative_position_id = USA_we_need_to_act_more_decisively
 		prerequisite = { focus = USA_we_need_to_act_more_decisively  }
-        icon = GFX_	
+        icon = GFX_focus_generic_strike_at_democracy2	
         x = 0
         y = 2
         cost = 5
@@ -617,7 +617,7 @@ focus_tree = {
         id = USA_support_for_the_kuwaiti_resistance
 		relative_position_id = USA_preparation_for_invasion
 		prerequisite = { focus = USA_preparation_for_invasion  }
-        icon = GFX_	
+        icon = GFX_focus_generic_strike_at_democracy3	
         x = 0
         y = 1
         cost = 5
@@ -648,7 +648,7 @@ focus_tree = {
         id = USA_landing_in_basra
 		relative_position_id = USA_support_for_the_kuwaiti_resistance
 		prerequisite = { focus = USA_support_for_the_kuwaiti_resistance  }
-        icon = GFX_	
+        icon = GFX_goal_generic_major_war	
         x = 0
         y = 1
         cost = 5
@@ -706,7 +706,7 @@ focus_tree = {
         id = USA_a_new_model_of_collective_security
 		relative_position_id = USA_international_sanctions
 		prerequisite = { focus = USA_troop_withdrawal_or_war focus = USA_landing_in_basra  }
-        icon = GFX_	
+        icon = GFX_focus_eng_move_to_secure_the_dominions	
         x = 0
         y = 4
         cost = 5
@@ -722,7 +722,7 @@ focus_tree = {
         id = USA_international_sanctions
 		relative_position_id = USA_economic_blockade_of_iraq
 		prerequisite = { focus = USA_we_remain_democrats focus = USA_we_need_to_act_more_decisively  }
-        icon = GFX_	
+        icon = GFX_focus_SWE_refuge_from_war	
         x = 0
         y = 2
         cost = 5
@@ -736,7 +736,7 @@ focus_tree = {
         id = USA_develop_space_programs
 		relative_position_id = USA_a_new_model_of_collective_security
 		prerequisite = { focus = USA_a_new_model_of_collective_security }
-        icon = GFX_	
+        icon = GFX_focus_ETH_freedom_at_gunpoint	
         x = -4
         y = 1
         cost = 5
@@ -750,7 +750,7 @@ focus_tree = {
         id = USA_affordable_housing_act
 		relative_position_id = USA_develop_space_programs
 		prerequisite = { focus = USA_develop_space_programs }
-        icon = GFX_	
+        icon = GFX_focus_SWE_hygienic_housing	
         x = -1
         y = 1
         cost = 5
@@ -764,7 +764,7 @@ focus_tree = {
         id = USA_tax_cuts_for_the_middle_class
 		relative_position_id = USA_develop_space_programs
 		prerequisite = { focus = USA_develop_space_programs }
-        icon = GFX_	
+        icon = GFX_focus_RAJ_war_taxes	
         x = 1
         y = 1
         cost = 5
@@ -809,7 +809,7 @@ focus_tree = {
 		relative_position_id = USA_develop_space_programs
 		prerequisite = { focus = USA_affordable_housing_act }
         prerequisite = { focus = USA_tax_cuts_for_the_middle_class }
-        icon = GFX_	
+        icon = GFX_focus_POL_complete_april_constitution	
         x = 0
         y = 2
         cost = 5
@@ -827,7 +827,7 @@ focus_tree = {
         id = USA_maintain_good_relations_with_the_ussr
 		relative_position_id = USA_a_new_model_of_collective_security
 		prerequisite = { focus = USA_a_new_model_of_collective_security }
-        icon = GFX_	
+        icon = GFX_focus_GER_alliance_with_the_ussr	
         x = 0
         y = 1
         cost = 5
@@ -852,7 +852,7 @@ focus_tree = {
         id = USA_cooperation_with_israel
 		relative_position_id = USA_maintain_good_relations_with_the_ussr
 		prerequisite = { focus = USA_maintain_good_relations_with_the_ussr }
-        icon = GFX_	
+        icon = GFX_focus_ETH_adopt_the_lira	
         x = 0
         y = 2
         cost = 5
@@ -878,7 +878,7 @@ focus_tree = {
         id = USA_soldier_retraining_programs
 		relative_position_id = USA_a_new_model_of_collective_security
 		prerequisite = { focus = USA_a_new_model_of_collective_security }
-        icon = GFX_	
+        icon = GFX_focus_generic_soldier_salute	
         x = 4
         y = 1
         cost = 5
@@ -896,7 +896,7 @@ focus_tree = {
         id = USA_conduct_nato_exercises
 		relative_position_id = USA_soldier_retraining_programs
 		prerequisite = { focus = USA_soldier_retraining_programs }
-        icon = GFX_	
+        icon = GFX_focus_hol_gateway_to_europe	
         x = -1
         y = 1
         cost = 5
@@ -916,7 +916,7 @@ focus_tree = {
         id = USA_national_health_service
 		relative_position_id = USA_soldier_retraining_programs
 		prerequisite = { focus = USA_soldier_retraining_programs }
-        icon = GFX_	
+        icon = GFX_focus_generic_currency_reforms	
         x = 1
         y = 1
         cost = 5
@@ -931,7 +931,7 @@ focus_tree = {
 		relative_position_id = USA_soldier_retraining_programs
 		prerequisite = { focus = USA_conduct_nato_exercises }
         prerequisite = { focus = USA_national_health_service }
-        icon = GFX_	
+        icon = GFX_focus_generic_attack_yugoslavia	
         x = 0
         y = 2
         cost = 5
@@ -953,7 +953,7 @@ focus_tree = {
 		relative_position_id = USA_cooperation_with_israel
 		prerequisite = { focus = USA_cooperation_with_israel }
         prerequisite = { focus = USA_yugoslav_conflict focus = USA_digitalization_of_the_usa }
-        icon = GFX_	
+        icon = GFX_focus_generic_election	
         x = 0
         y = 1
         cost = 5

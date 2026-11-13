@@ -1,11 +1,7 @@
-﻿capital = 500
+﻿capital = 505
 
 oob = "BRA_1936"
-every_core_state = {
-	ROOT = {
-		add_to_array = { cores_at_game_start = PREV }
-	}
-}
+
 IF = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "BRA_1936_air_bba"

@@ -26,7 +26,7 @@ economy_category = {
 		ai_will_do = {
             factor = 10
             modifier = {
-                add = 5
+                add = 30
                 check_variable = { var = pop_rate value = pop_optimal compare = less_than }
             }
         }
@@ -57,7 +57,7 @@ economy_category = {
 		ai_will_do = {
             factor = 10
             modifier = {
-                add = 5
+                add = 30
                 check_variable = { var = pop_rate value = pop_optimal compare = greater_than }
             }
         }		
@@ -88,7 +88,7 @@ economy_category = {
 		ai_will_do = {
             factor = 10
             modifier = {
-                add = 5
+                add = 30
                 check_variable = { var = corp_rate value = corp_optimal compare = less_than }
             }
         }
@@ -119,7 +119,7 @@ economy_category = {
 		ai_will_do = {
             factor = 10
             modifier = {
-                add = 5
+                add = 30
                 check_variable = { var = corp_rate value = corp_optimal compare = greater_than }
             }
         }		
@@ -150,7 +150,7 @@ economy_category = {
 		ai_will_do = {
             factor = 10
             modifier = {
-                add = 5
+                add = 30
                 check_variable = { var = vat_rate value = vat_optimal compare = less_than }
             }
         }
@@ -181,7 +181,7 @@ economy_category = {
 		ai_will_do = {
             factor = 10
             modifier = {
-                add = 5
+                add = 30
                 check_variable = { var = vat_rate value = vat_optimal compare = greater_than }
             }
         }		
@@ -212,7 +212,7 @@ economy_category = {
 		ai_will_do = {
             factor = 10
             modifier = {
-                add = 10
+                add = 30
                 check_variable = { var = inflation_rate value = 10 compare = greater_than }
             }
         }

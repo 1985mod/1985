@@ -293,6 +293,11 @@ on_actions = {
 
 				multiply_variable = { var = gdp_per_capita value = 100 }
 
+				clamp_variable = {
+					var = gdp_per_capita
+					min = 0
+				}
+
 				set_variable = { var = civ_of_gdp value = num_of_civ }
 				divide_variable = { var = civ_of_gdp value = real_gdp }
 				add_to_variable = { var = civ_of_gdp value = 0.005 }
@@ -311,7 +316,7 @@ on_actions = {
 				# Nominal GDP effect
 
 				set_variable = { var = money_supply value = real_gdp }
-				set_variable = { var = velocity value = 1 }
+				set_variable = { var = velocity value = 1.157 } 
 
 				set_variable = { var = nominal_gdp value = money_supply }
 				multiply_variable = { var = nominal_gdp value = velocity }
