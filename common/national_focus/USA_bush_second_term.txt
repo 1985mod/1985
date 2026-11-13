@@ -15,7 +15,7 @@ focus_tree = {
 
     focus = { 
         id = USA_bush_second_term
-        icon = GFX_	
+        icon = GFX_focus_ARG_the_american_push	
         x = 5
         y = 0
         cost = 5
@@ -28,7 +28,7 @@ focus_tree = {
     focus = { 
         id = USA_the_war_in_yugoslavia
         relative_position_id = USA_bush_second_term
-        icon = GFX_	
+        icon = GFX_focus_generic_attack_yugoslavia	
         prerequisite = { focus = USA_bush_second_term }
         x = -4
         y = 1
@@ -43,7 +43,7 @@ focus_tree = {
     focus = { 
         id = USA_un_peacekeeping_mission_in_yugoslavia
         relative_position_id = USA_the_war_in_yugoslavia
-        icon = GFX_	
+        icon = GFX_focus_generic_world_peace	
         prerequisite = { focus = USA_the_war_in_yugoslavia }
         x = -2
         y = 1
@@ -58,7 +58,7 @@ focus_tree = {
     focus = { 
         id = USA_cautious_improvement_of_relations_with_the_post_soviet_space
         relative_position_id = USA_the_war_in_yugoslavia
-        icon = GFX_	
+        icon = GFX_focus_chi_mission_to_the_soviet_union	
         prerequisite = { focus = USA_the_war_in_yugoslavia }
         x = 2
         y = 1
@@ -119,7 +119,7 @@ focus_tree = {
     focus = { 
         id = USA_operation_renewal_of_hope
         relative_position_id = USA_the_war_in_yugoslavia
-        icon = GFX_	
+        icon = GFX_focus_ARG_join_the_allies	
         prerequisite = { focus = USA_un_peacekeeping_mission_in_yugoslavia }
 		prerequisite = { focus = USA_cautious_improvement_of_relations_with_the_post_soviet_space }
         x = 0
@@ -135,7 +135,7 @@ focus_tree = {
     focus = { 
         id = USA_stimulating_the_us_economy
         relative_position_id = USA_bush_second_term
-        icon = GFX_	
+        icon = GFX_focus_generic_american_investments	
         prerequisite = { focus = USA_bush_second_term }
         x = 4
         y = 1
@@ -185,7 +185,7 @@ focus_tree = {
     focus = { 
         id = USA_reduction_of_taxes_on_capital
         relative_position_id = USA_stimulating_the_us_economy
-        icon = GFX_	
+        icon = GFX_focus_RAJ_war_taxes	
         prerequisite = { focus = USA_stimulating_the_us_economy }
         x = -2
         y = 1
@@ -211,7 +211,7 @@ focus_tree = {
     focus = { 
         id = USA_social_security_reform
         relative_position_id = USA_stimulating_the_us_economy
-        icon = GFX_	
+        icon = GFX_focus_generic_currency_reforms	
         prerequisite = { focus = USA_stimulating_the_us_economy }
         x = 2
         y = 1
@@ -226,7 +226,7 @@ focus_tree = {
     focus = { 
         id = USA_carry_out_military_reform
         relative_position_id = USA_stimulating_the_us_economy
-        icon = GFX_	
+        icon = GFX_focus_CZE_army_reform	
         prerequisite = { focus = USA_reduction_of_taxes_on_capital }
 		prerequisite = { focus = USA_social_security_reform }
         x = 0
@@ -245,7 +245,7 @@ focus_tree = {
     focus = { 
         id = USA_prosper_america
         relative_position_id = USA_bush_second_term
-        icon = GFX_	
+        icon = GFX_focus_usa_union_representation_act	
         prerequisite = { focus = USA_operation_renewal_of_hope }
 		prerequisite = { focus = USA_carry_out_military_reform }
         x = 0

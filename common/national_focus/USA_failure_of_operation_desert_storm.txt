@@ -2,9 +2,9 @@ focus_tree = {
     id = USA_failure_operation_desert_storm
 
     country = {
-        factor = 1
+        factor = 0
         modifier = {
-            add = 1
+            add = 10
             tag = USA
         }
     }
@@ -15,7 +15,7 @@ focus_tree = {
 	
     focus = { 
         id = USA_operation_desert_storm_failed
-        icon = GFX_none
+        icon = GFX_focus_SIA_the_duty_of_the_thai_people_during_the_war_act
         x = 15
         y = 0
         cost = 1
@@ -33,7 +33,7 @@ focus_tree = {
         id = USA_admit_defeat_in_iraq
 		relative_position_id = USA_operation_desert_storm_failed
 		prerequisite = { focus = USA_operation_desert_storm_failed }
-        icon = GFX_none
+        icon = GFX_goal_generic_territory_or_war
         x = 0
         y = 1
         cost = 2
@@ -46,7 +46,7 @@ focus_tree = {
         id = USA_address_to_the_nation
 		relative_position_id = USA_admit_defeat_in_iraq
 		prerequisite = { focus = USA_admit_defeat_in_iraq }
-        icon = GFX_none
+        icon = GFX_focus_chi_mission_to_the_us
         x = 0
         y = 1
         cost = 5
@@ -60,7 +60,7 @@ focus_tree = {
 		relative_position_id = USA_address_to_the_nation
 		prerequisite = { focus = USA_address_to_the_nation }
 		mutually_exclusive = { focus = USA_keep_the_old_team }
-        icon = GFX_none
+        icon = GFX_focus_usa_focus_on_europe
         x = -1
         y = 1
         cost = 5
@@ -73,7 +73,7 @@ focus_tree = {
 		relative_position_id = USA_address_to_the_nation
 		prerequisite = { focus = USA_address_to_the_nation }
 		mutually_exclusive = { focus = USA_change_deck }
-        icon = GFX_none
+        icon = GFX_focus_usa_union_representation_act
         x = 1
         y = 1
         cost = 5
@@ -85,7 +85,7 @@ focus_tree = {
         id = USA_covert_support_for_the_resistance_in_kuwait
 		relative_position_id = USA_change_deck
 		prerequisite = { focus = USA_keep_the_old_team focus = USA_change_deck  }
-        icon = GFX_none
+        icon = GFX_focus_INS_expand_resistance_membership
         x = 1
         y = 1
         cost = 5
@@ -106,7 +106,7 @@ focus_tree = {
         id = USA_political_stability
 		relative_position_id = USA_covert_support_for_the_resistance_in_kuwait
 		prerequisite = { focus = USA_covert_support_for_the_resistance_in_kuwait  }
-        icon = GFX_none
+        icon = GFX_focus_hol_abandon_the_gold_standard
         x = 0
         y = 1
         cost = 5
@@ -120,7 +120,7 @@ focus_tree = {
         id = USA_cut_military_spending
 		relative_position_id = USA_admit_defeat_in_iraq
 		prerequisite = { focus = USA_operation_desert_storm_failed  }
-        icon = GFX_none
+        icon = GFX_focus_GER_vereinigte_stahlwerke
         x = -4
         y = 1
         cost = 5
@@ -268,7 +268,7 @@ focus_tree = {
         id = USA_investments_in_robotics
 		relative_position_id = USA_cut_military_spending
 		prerequisite = { focus = USA_cut_military_spending }
-        icon = GFX_none
+        icon = GFX_focus_generic_road_investment
         x = -1
         y = 1
         cost = 5
@@ -306,7 +306,7 @@ focus_tree = {
         id = USA_industrial_stimulation
 		relative_position_id = USA_cut_military_spending
 		prerequisite = { focus = USA_cut_military_spending }
-        icon = GFX_none
+        icon = GFX_focus_generic_american_investments
         x = 1
         y = 1
         cost = 5
@@ -370,7 +370,7 @@ focus_tree = {
         id = USA_oil_taxes
 		relative_position_id = USA_industrial_stimulation
 		prerequisite = { focus = USA_industrial_stimulation focus = USA_investments_in_robotics }
-        icon = GFX_none
+        icon = GFX_focus_generic_industry_investment
         x = -1
         y = 1
         cost = 5
@@ -383,7 +383,7 @@ focus_tree = {
         id = USA_military_reforms
 		relative_position_id = USA_admit_defeat_in_iraq
 		prerequisite = { focus = USA_operation_desert_storm_failed }
-        icon = GFX_none
+        icon = GFX_focus_generic_currency_reforms
         x = 4
         y = 1
         cost = 5
@@ -407,7 +407,7 @@ focus_tree = {
         id = USA_who_is_to_blame_for_the_failure
 		relative_position_id = USA_military_reforms
 		prerequisite = { focus = USA_military_reforms }
-        icon = GFX_none
+        icon = GFX_focus_spr_masters_of_our_own_fate
         x = -1
         y = 1
         cost = 5
@@ -419,7 +419,7 @@ focus_tree = {
         id = USA_strengthening_the_armys_influence_in_europe
 		relative_position_id = USA_military_reforms
 		prerequisite = { focus = USA_military_reforms }
-        icon = GFX_none
+        icon = GFX_focus_generic_swooping_falcon
         x = 1
         y = 1
         cost = 5
@@ -492,7 +492,7 @@ focus_tree = {
         id = USA_nato_exercises
 		relative_position_id = USA_strengthening_the_armys_influence_in_europe
 		prerequisite = { focus = USA_strengthening_the_armys_influence_in_europe focus = USA_who_is_to_blame_for_the_failure}
-        icon = GFX_none
+        icon = GFX_focus_generic_red_flags
         x = -1
         y = 1
         cost = 5

@@ -12,7 +12,7 @@ WGR_election_campaign_in_germany = {
 			NOT = { has_country_flag = election_campaign_in_germany_1987 }
 		}
 		icon = mission_icon
-		days_mission_timeout = 25
+		days_mission_timeout = 30
 		selectable_mission = no
 		timeout_effect = {
 			random_list = {
@@ -39,6 +39,10 @@ WGR_election_campaign_in_germany = {
 
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				add = 30
+				is_historical_focus_on = yes
+			}
 		}
 
 		modifier = {
@@ -80,6 +84,10 @@ WGR_election_campaign_in_germany = {
 
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				add = 30
+				is_historical_focus_on = yes
+			}
 		}
 
 		modifier = {
@@ -125,6 +133,10 @@ WGR_election_campaign_in_germany = {
 
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				add = 30
+				is_historical_focus_on = yes
+			}
 		}
 	
 		remove_effect = {
@@ -166,6 +178,10 @@ WGR_election_campaign_in_germany = {
 
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				add = -20
+				is_historical_focus_on = yes
+			}
 		}
 	
 		remove_effect = {

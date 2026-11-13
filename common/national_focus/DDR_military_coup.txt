@@ -15,7 +15,7 @@ focus_tree = {
 	
     focus = { 
         id = DDR_proclaim_the_german_socialist_republic
-        icon = GFX_
+        icon = GFX_focus_GER_integrate_volkskommissariats
         x = 10
         y = 0
         cost = 5
@@ -30,7 +30,7 @@ focus_tree = {
         id = DDR_rehabilitation_of_erich_honecker
         relative_position_id = DDR_proclaim_the_german_socialist_republic
         prerequisite = { focus = DDR_proclaim_the_german_socialist_republic }
-        icon = GFX_
+        icon = GFX_focus_GER_align_south_america
         x = -2
         y = 1
         cost = 10
@@ -72,7 +72,7 @@ focus_tree = {
         id = DDR_universal_military_conscription
         relative_position_id = DDR_proclaim_the_german_socialist_republic
         prerequisite = { focus = DDR_proclaim_the_german_socialist_republic }
-        icon = GFX_
+        icon = GFX_focus_GER_proletarian_solidarity
         x = 0
         y = 1
         cost = 5
@@ -86,7 +86,7 @@ focus_tree = {
         id = DDR_introduce_curfews
         relative_position_id = DDR_proclaim_the_german_socialist_republic
         prerequisite = { focus = DDR_proclaim_the_german_socialist_republic }
-        icon = GFX_
+        icon = GFX_focus_GER_strafbataillon
         x = 2
         y = 1
         cost = 10
@@ -124,7 +124,7 @@ focus_tree = {
         relative_position_id = DDR_proclaim_the_german_socialist_republic
         prerequisite = { focus = DDR_universal_military_conscription }
 		prerequisite = { focus = DDR_rehabilitation_of_erich_honecker focus = DDR_introduce_curfews }
-        icon = GFX_
+        icon = GFX_focus_GER_the_peoples_victory
         x = 0
         y = 2
         cost = 10
@@ -162,7 +162,7 @@ focus_tree = {
         id = DDR_the_steel_shield_of_saxony
         relative_position_id = DDR_red_militarism
         prerequisite = { focus = DDR_red_militarism }
-        icon = GFX_
+        icon = GFX_focus_GER_autarky_ambitions
         x = -2
         y = 1
         cost = 10
@@ -210,7 +210,7 @@ focus_tree = {
         id = DDR_kesslers_tank_doctrine
         relative_position_id = DDR_red_militarism
         prerequisite = { focus = DDR_red_militarism }
-        icon = GFX_
+        icon = GFX_focus_generic_army_tanks2
         x = 0
         y = 1
         cost = 5
@@ -228,7 +228,7 @@ focus_tree = {
         id = DDR_construction_of_military_plants
         relative_position_id = DDR_red_militarism
         prerequisite = { focus = DDR_red_militarism }
-        icon = GFX_
+        icon = GFX_focus_GER_vereinigte_stahlwerke
         x = 2
         y = 1
         cost = 10
@@ -242,7 +242,7 @@ focus_tree = {
         relative_position_id = DDR_kesslers_tank_doctrine
         prerequisite = { focus = DDR_the_steel_shield_of_saxony }
 		prerequisite = { focus = DDR_kesslers_tank_doctrine }
-        icon = GFX_
+        icon = GFX_focus_generic_communist_industry
         x = -1
         y = 1
         cost = 10
@@ -289,7 +289,7 @@ focus_tree = {
         relative_position_id = DDR_kesslers_tank_doctrine
         prerequisite = { focus = DDR_the_steel_shield_of_saxony }
 		prerequisite = { focus = DDR_construction_of_military_plants }
-        icon = GFX_
+        icon = GFX_focus_GER_stakhanovite_movement
         x = 1
         y = 1
         cost = 10
@@ -307,7 +307,7 @@ focus_tree = {
         relative_position_id = DDR_kesslers_tank_doctrine
         prerequisite = { focus = DDR_construction_of_factories_in_dresden }
 		prerequisite = { focus = DDR_military_commissars_at_factories }
-        icon = GFX_
+        icon = GFX_focus_GER_prioritize_the_four_year_plan
         x = 0
         y = 2
         cost = 10
@@ -324,7 +324,7 @@ focus_tree = {
         id = DDR_industrial_fortress
         relative_position_id = DDR_kesslers_tank_doctrine
         prerequisite = { focus = DDR_acceleration_program }
-        icon = GFX_
+        icon = GFX_focus_GER_autarky_achieved
         x = 0
         y = 3
         cost = 10
@@ -338,7 +338,7 @@ focus_tree = {
         id = DDR_contract_program
         relative_position_id = DDR_industrial_fortress
         prerequisite = { focus = DDR_industrial_fortress }
-        icon = GFX_
+        icon = GFX_focus_GER_establish_volkskommissariats
         x = -2
         y = 1
         cost = 5
@@ -381,7 +381,7 @@ focus_tree = {
         id = DDR_construction_battalions
         relative_position_id = DDR_industrial_fortress
         prerequisite = { focus = DDR_industrial_fortress }
-        icon = GFX_
+        icon = GFX_focus_GER_schutztruppe
         x = 2
         y = 1
         cost = 5
@@ -425,7 +425,7 @@ focus_tree = {
         relative_position_id = DDR_industrial_fortress
         prerequisite = { focus = DDR_contract_program }
 		prerequisite = { focus = DDR_construction_battalions }
-        icon = GFX_
+        icon = GFX_focus_GER_establish_volkskommissariats
         x = 0
         y = 2
         cost = 10
@@ -441,7 +441,7 @@ focus_tree = {
         relative_position_id = DDR_industrial_fortress
         prerequisite = { focus = DDR_contract_program }
 		prerequisite = { focus = DDR_construction_battalions }
-        icon = GFX_
+        icon = GFX_focus_GER_hegemony_over_europe
         x = 0
         y = 3
         cost = 10

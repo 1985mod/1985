@@ -196,25 +196,25 @@ tax_effect = {
     multiply_variable = { var = vat_tax value = 7 }
     divide_variable = { var = vat_tax value = 365 }
 
-    set_variable = { var = export_oil value = resource_imported@oil }
+    set_variable = { var = export_oil value = resource_exported@oil }
     multiply_variable = { var = export_oil value = 0.04 }
 
-    set_variable = { var = export_tungsten value = resource_imported@tungsten }
+    set_variable = { var = export_tungsten value = resource_exported@tungsten }
     multiply_variable = { var = export_tungsten value = 0.03 }
 
-    set_variable = { var = export_aluminum value = resource_imported@aluminum }
+    set_variable = { var = export_aluminum value = resource_exported@aluminum }
     multiply_variable = { var = export_aluminum value = 0.3 }
 
-    set_variable = { var = export_steel value = resource_imported@steel }
+    set_variable = { var = export_steel value = resource_exported@steel }
     multiply_variable = { var = export_steel value = 0.034 }
 
-    set_variable = { var = export_chromium value = resource_imported@chromium }
+    set_variable = { var = export_chromium value = resource_exported@chromium }
     multiply_variable = { var = export_chromium value = 0.037 }
 
-    set_variable = { var = export_rubber value = resource_imported@rubber }
+    set_variable = { var = export_rubber value = resource_exported@rubber }
     multiply_variable = { var = export_rubber value = 0.036 }
 
-    set_variable = { var = export_coal value = resource_imported@coal }
+    set_variable = { var = export_coal value = resource_exported@coal }
     multiply_variable = { var = export_coal value = 0.02 }
 
     set_variable = { var = resource_revenue value = export_oil }
@@ -647,11 +647,21 @@ tax_effect = {
         set_variable = { var = money_supply value = 0 }
     }
 
-    set_variable = { var = science_budget_ratio value = 0.002 }
-	set_variable = { var = gdp_research_penalty value = nominal_gdp }
-	multiply_variable = { var = gdp_research_penalty value = science_budget_ratio }
+    set_variable = { var = science_budget_ratio value = 0.005 }
 
-	set_variable = { var = current_research_cost value = gdp_research_penalty }
+    set_temp_variable = { var = science_wealth_bonus value = gdp_per_capita }
+    multiply_temp_variable = { var = science_wealth_bonus value = 0.0001 }
+    add_to_variable = { var = science_budget_ratio value = science_wealth_bonus }
+
+    set_variable = { var = gdp_research_penalty value = nominal_gdp }
+    multiply_variable = { var = gdp_research_penalty value = science_budget_ratio }
+    
+    multiply_variable = { var = gdp_research_penalty value = corruption_k }
+    
+    multiply_variable = { var = gdp_research_penalty value = 7 }
+    divide_variable = { var = gdp_research_penalty value = 365 }
+
+    set_variable = { var = current_research_cost value = gdp_research_penalty }
 
 
     ### Обслуживание долга ###
@@ -709,7 +719,7 @@ velocity_effect = {
             set_temp_variable = { var = inflation_rate_temp value = -149 }
         }
 
-        set_variable = { var = velocity value = 1 }
+        set_variable = { var = velocity value = 1.157 } 
 
         set_temp_variable = { var = temp_velocity_interest_rate value = interest_rate }
         add_to_temp_variable = { var = temp_velocity_interest_rate value = 5 }

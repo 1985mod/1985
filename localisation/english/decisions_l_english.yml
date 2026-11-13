@@ -307,7 +307,7 @@
  add_state_emergency_committee_influence_15_percent: "Will add §R15%§! of §YSCSE§! influence in the country"
  add_state_emergency_committee_influence_10_percent: "Will add §R10%§! of §YSCSE§! influence in the country"
  has_sov_state_emergency_committee_influence_50_precent: "Has §Y50%§! of §RSCSE§! influence in the country"
- start_sec_country_flag: "§RSCSE§! has not begun"
+ start_sec_country_flag: "§RSCSE§! has begun"
  RUS_liberalisation_economy: "Liberalization of the economy"
  RUS_purchase_products_from_other_countries: "Buy products from other countries"
  RUS_price_liberalization: "Price liberalization"

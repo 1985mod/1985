@@ -273,6 +273,14 @@ set_autonomy = {
 	end_wars = no
 }
 
+SOV = {
+	add_relation_rule_override = {
+		target = AFN
+		usage_desc = "SOV_VOLUNTEERS_ALLOWED"
+		can_send_volunteers = yes
+	}
+}
+
 diplomatic_relation = {
 	country = AFN
 	relation = military_access

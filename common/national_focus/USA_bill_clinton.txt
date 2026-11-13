@@ -15,7 +15,7 @@ focus_tree = {
 
     focus = { 
         id = USA_lets_drink_to_the_democrats
-        icon = GFX_	
+        icon = GFX_goal_support_democracy	
         x = 5
         y = 1
         cost = 5
@@ -28,7 +28,7 @@ focus_tree = {
     focus = { 
         id = USA_bill_clinton_inauguration
         relative_position_id = USA_lets_drink_to_the_democrats
-        icon = GFX_	
+        icon = GFX_focus_ARG_defense_and_democracy	
         prerequisite = { focus = USA_lets_drink_to_the_democrats  }
         x = 3
         y = 1
@@ -46,7 +46,7 @@ focus_tree = {
     focus = { 
         id = USA_global_federal_tax_hike
         relative_position_id = USA_bill_clinton_inauguration
-        icon = GFX_	
+        icon = GFX_goal_generic_forceful_treaty	
         prerequisite = { focus = USA_bill_clinton_inauguration  }
         x = 2
         y = 1
@@ -64,7 +64,7 @@ focus_tree = {
         id = USA_fight_crime
         relative_position_id = USA_bill_clinton_inauguration
         prerequisite = { focus = USA_bill_clinton_inauguration  }
-        icon = GFX_	
+        icon = GFX_focus_BRA_coffee_crisis	
         x = 0
         y = 1
         cost = 7
@@ -113,7 +113,7 @@ focus_tree = {
         id = USA_health_care_reform
         relative_position_id = USA_bill_clinton_inauguration
         prerequisite = { focus = USA_bill_clinton_inauguration  }
-        icon = GFX_	
+        icon = GFX_focus_generic_currency_reforms	
         x = -2
         y = 1
         cost = 10
@@ -128,7 +128,7 @@ focus_tree = {
         prerequisite = { focus = USA_health_care_reform focus = USA_global_federal_tax_hike }
         prerequisite = { focus = USA_fight_crime  }
         relative_position_id = USA_fight_crime
-        icon = GFX_	
+        icon = GFX_focus_chi_army_reform	
         x = 0
         y = 1
         cost = 6
@@ -142,7 +142,7 @@ focus_tree = {
         id = USA_act_as_a_mediator_in_the_israeli_palestinian_conflict
         relative_position_id = USA_lobby_for_homosexuals_into_the_army
         prerequisite = { focus = USA_lobby_for_homosexuals_into_the_army  }
-        icon = GFX_	
+        icon = GFX_goal_generic_alliance	
         x = -2
         y = 1
         cost = 6
@@ -179,7 +179,7 @@ focus_tree = {
         id = USA_mediation_in_the_declaration_of_principles
         relative_position_id = USA_lobby_for_homosexuals_into_the_army
         prerequisite = { focus = USA_lobby_for_homosexuals_into_the_army  }
-        icon = GFX_	
+        icon = GFX_goal_generic_major_alliance	
         x = 2
         y = 1
         cost = 1
@@ -221,7 +221,7 @@ focus_tree = {
         prerequisite = { focus = USA_act_as_a_mediator_in_the_israeli_palestinian_conflict  }
         prerequisite = { focus = USA_mediation_in_the_declaration_of_principles  }
         relative_position_id = USA_fight_crime
-        icon = GFX_	
+        icon = GFX_focus_chi_mission_to_the_soviet_union	
         x = 0
         y = 3
         cost = 10

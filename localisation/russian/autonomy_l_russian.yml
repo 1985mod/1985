@@ -33,6 +33,7 @@
  CONTINUOUS_AUTONOMY_EFFECT: "$REASON$: £autonomy_texticon $VAL|+=2$"
  EVENT_AUTONOMY_EFFECT: "$REASON$: £autonomy_texticon $VAL|+=2$"
  LL_TO_OVERLORD_FREEDOM_EFFECT: "Ленд-лиз, отправленный субъектом в метрополию"
+ SUBJECT_OF_NAME: "Марионетка государства:\n$VALUE|H$"
  LL_TO_PUPPET_FREEDOM_EFFECT: "Ленд-лиз, отправленный метрополией субъекту"
  MONTHLY_LL_FREEDOM_TO_PUPPET: "$FLAG$ $VALUE|-2$"
  MONTHLY_LL_FREEDOM_TO_MASTER: "$VALUE|+2$"

@@ -205,7 +205,7 @@ focus_tree = {
         icon = GFX_focus_generic_communist
         x = 0
         y = 1
-        cost = 10
+        cost = 5
         completion_reward = {
             set_country_flag = DDR_honeckers_resignation
             mark_focus_tree_layout_dirty = yes
@@ -221,7 +221,7 @@ focus_tree = {
         icon = GFX_focus_generic_spur_communist_revolutions
         x = -2
         y = 1
-        cost = 10
+        cost = 5
         completion_reward = {
             country_event = { id = ddr.10 }
 	    }
@@ -235,7 +235,7 @@ focus_tree = {
         icon = GFX_focus_generic_strike_at_democracy1
         x = 2
         y = 1
-        cost = 10
+        cost = 5
         completion_reward = {
             add_ideas = DDR_heading_for_the_turn
 	    }
@@ -463,6 +463,42 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
+            if = {
+				limit = {
+                    has_idea = civilian_economy
+				}
+                swap_ideas = {
+                    remove_idea = civilian_economy
+                    add_idea = low_economic_mobilisation
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = low_economic_mobilisation
+				}
+                swap_ideas = {
+                    remove_idea = low_economic_mobilisation
+                    add_idea = partial_economic_mobilisation
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = partial_economic_mobilisation
+				}
+                swap_ideas = {
+                    remove_idea = partial_economic_mobilisation
+                    add_idea = war_economy
+                }  
+            }
+            if = {
+				limit = {
+                    has_idea = war_economy
+				}
+                swap_ideas = {
+                    remove_idea = war_economy
+                    add_idea = tot_economic_mobilisation
+                }  
+            }
 	    }
 	}
 
