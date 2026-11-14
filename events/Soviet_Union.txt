@@ -47,7 +47,7 @@ country_event = {
                 is_historical_focus_on = yes
             }
         }
-        
+
         effect_tooltip = {
             set_politics = {
                 ruling_party = communism
@@ -70,7 +70,7 @@ country_event = {
         }
     }
 
-    # Григорий Романов 
+    # Григорий Романов
     option = {
         name = soviet_union.2.b
         ai_chance = {
@@ -80,7 +80,7 @@ country_event = {
                 is_historical_focus_on = yes
             }
         }
-            
+
         effect_tooltip = {
             set_politics = {
                 ruling_party = communism
@@ -312,7 +312,7 @@ country_event = {
         }
     }
 }
-    
+
 country_event = {
     id = SOV_collapse.2
     title = SOV_collapse.2.t
@@ -325,7 +325,7 @@ country_event = {
         date > 1991.08.24
         NOT = { has_completed_focus = SOV_i_think_ill_stay_in_moscow }
     }
-    
+
     immediate = {
     # Украина (август 1991)
         if = {
@@ -1225,7 +1225,7 @@ country_event = {
             name = SOV_kpss_reformed
         }
 
-		
+
 		add_popularity = {
 			ideology = neutrality
 			popularity = 0.04
@@ -1307,7 +1307,31 @@ country_event = {
                 elections_allowed = yes
             }
         }
+        country_event = { id = soviet_union.777 hours = 1 }
 		news_event = { id = news.32 hours = 12 }
+	}
+}
+
+country_event = {
+	id = soviet_union.777
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_temp_variable = { var = num_of_civ value = num_of_civilian_factories }
+		multiply_temp_variable = { var = num_of_civ value = 15 }
+
+		set_temp_variable = { var = num_of_mil value = num_of_military_factories }
+		multiply_temp_variable = { var = num_of_mil value = 10 }
+
+		set_temp_variable = { var = num_of_naval value = num_of_naval_factories }
+		multiply_temp_variable = { var = num_of_naval value = 10 }
+
+		set_variable = { var = real_gdp value = num_of_civ }
+		add_to_variable = { var = real_gdp value = num_of_mil }
+		add_to_variable = { var = real_gdp value = num_of_naval }
+
+		set_variable = { var = nominal_gdp value = real_gdp }
 	}
 }
 
@@ -1419,7 +1443,7 @@ country_event = {
 
     immediate = {
 		hidden_effect = {
-	        release = KAZ		
+	        release = KAZ
 		}
 		SOV = {
 			delete_unit = {}
@@ -1432,7 +1456,7 @@ country_event = {
 		add_popularity = {
 			ideology = communism
 			popularity = -0.5
-		}	
+		}
 		KAZ = {
 			add_popularity = {
 				ideology = conservatism
@@ -1498,8 +1522,8 @@ country_event = {
 				target = BLR
 				autonomy_state = uss_member
 				freedom_level = 0.3
-				end_wars = no 
-				end_civil_wars = no 
+				end_wars = no
+				end_civil_wars = no
 			}
 		}
         release = UKR
@@ -1508,8 +1532,8 @@ country_event = {
 				target = UKR
 				autonomy_state = uss_member
 				freedom_level = 0.3
-				end_wars = no 
-				end_civil_wars = no 
+				end_wars = no
+				end_civil_wars = no
 			}
 		}
         release = AZR
@@ -1518,8 +1542,8 @@ country_event = {
 				target = AZR
 				autonomy_state = uss_member
 				freedom_level = 0.3
-				end_wars = no 
-				end_civil_wars = no 
+				end_wars = no
+				end_civil_wars = no
 			}
 		}
         release = KAZ
@@ -1528,8 +1552,8 @@ country_event = {
 				target = KAZ
 				autonomy_state = uss_member
 				freedom_level = 0.3
-				end_wars = no 
-				end_civil_wars = no 
+				end_wars = no
+				end_civil_wars = no
 			}
 		}
         release = UZB
@@ -1538,8 +1562,8 @@ country_event = {
 				target = UZB
 				autonomy_state = uss_member
 				freedom_level = 0.3
-				end_wars = no 
-				end_civil_wars = no 
+				end_wars = no
+				end_civil_wars = no
 			}
 		}
         release = TMS
@@ -1548,8 +1572,8 @@ country_event = {
 				target = TMS
 				autonomy_state = uss_member
 				freedom_level = 0.3
-				end_wars = no 
-				end_civil_wars = no 
+				end_wars = no
+				end_civil_wars = no
 			}
 		}
         release = TAJ
@@ -1558,8 +1582,8 @@ country_event = {
 				target = TAJ
 				autonomy_state = uss_member
 				freedom_level = 0.3
-				end_wars = no 
-				end_civil_wars = no 
+				end_wars = no
+				end_civil_wars = no
 			}
 		}
         release = KYR
@@ -1568,8 +1592,8 @@ country_event = {
 				target = KYR
 				autonomy_state = uss_member
 				freedom_level = 0.3
-				end_wars = no 
-				end_civil_wars = no 
+				end_wars = no
+				end_civil_wars = no
 			}
 		}
 		hidden_effect = {
@@ -2040,7 +2064,7 @@ country_event = {
 	immediate = {
 		add_dynamic_modifier = {
 			modifier = SOV_economic_cooperation_with_the_republics
-		}		
+		}
 	}
 
     option = {
@@ -2097,24 +2121,24 @@ country_event = {
 			}
 		}
 		random_core_state = {
-			create_unit = { 
-				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2" 
+			create_unit = {
+				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2"
 				owner = ROOT
 			}
-			create_unit = { 
-				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2" 
+			create_unit = {
+				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2"
 				owner = ROOT
 			}
-			create_unit = { 
-				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2" 
+			create_unit = {
+				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2"
 				owner = ROOT
 			}
-			create_unit = { 
-				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2" 
+			create_unit = {
+				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2"
 				owner = ROOT
 			}
-			create_unit = { 
-				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2" 
+			create_unit = {
+				division = "name = \"1. National Guard\" division_template = \"National Guard\" start_experience_factor = 0.2"
 				owner = ROOT
 			}
 		}
@@ -2392,7 +2416,7 @@ country_event = {
 				target = SOV
 				modifier = large_decrease
 			}
-		}		
+		}
     }
 }
 
@@ -2469,58 +2493,16 @@ country_event = {
 						}
 					}
 					transfer_state_to = UKR
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
-						owner = UKR
-					}
-				}
-
-				random_core_state = {
-					limit = {
-						is_core_of = UKR
-						NOT = { is_controlled_by = UKR }
-						NOT = {
-							OR = {
-								state = 227
-								state = 228
-								state = 200
-								state = 196
-								state = 137
-								state = 1073
-								state = 197
-								state = 192
-								state = 766
-								state = 221
-								state = 226
-								state = 259
-								state = 225
-								state = 193
-							}
-						}
-					}
-					transfer_state_to = UKR
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
-						owner = UKR
-					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
-						owner = UKR
-					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
-						owner = UKR
-					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
 				}
@@ -2549,20 +2531,62 @@ country_event = {
 						}
 					}
 					transfer_state_to = UKR
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
+						owner = UKR
+					}
+				}
+
+				random_core_state = {
+					limit = {
+						is_core_of = UKR
+						NOT = { is_controlled_by = UKR }
+						NOT = {
+							OR = {
+								state = 227
+								state = 228
+								state = 200
+								state = 196
+								state = 137
+								state = 1073
+								state = 197
+								state = 192
+								state = 766
+								state = 221
+								state = 226
+								state = 259
+								state = 225
+								state = 193
+							}
+						}
+					}
+					transfer_state_to = UKR
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
+						owner = UKR
+					}
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
+						owner = UKR
+					}
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
+						owner = UKR
+					}
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
 				}
@@ -2590,24 +2614,24 @@ country_event = {
 						}
 					}
 					transfer_state_to = UKR
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
-					create_unit = { 
-						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4" 
+					create_unit = {
+						division = "name = \"2. Ukrainian rebels\" division_template = \"Ukrainian rebels\" start_experience_factor = 0.4"
 						owner = UKR
 					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -2663,16 +2687,16 @@ country_event = {
 						NOT = { is_controlled_by = LIT }
 					}
 					transfer_state_to = LIT
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = LIT
 					}
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = LIT
 					}
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = LIT
 					}
 				}
@@ -2683,24 +2707,24 @@ country_event = {
 						NOT = { is_controlled_by = LIT }
 					}
 					transfer_state_to = LIT
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = LIT
 					}
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = LIT
 					}
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = LIT
 					}
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = LIT
 					}
 				}
-			}		
+			}
 			LAT = {
 				division_template = {
 					name = "Baltic insurgents"
@@ -2725,20 +2749,20 @@ country_event = {
 						NOT = { is_controlled_by = LAT }
 					}
 					transfer_state_to = LAT
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = LAT
 					}
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = LAT
 					}
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = LAT
 					}
 				}
-			}	
+			}
 			EST = {
 				division_template = {
 					name = "Baltic insurgents"
@@ -2763,20 +2787,20 @@ country_event = {
 						NOT = { is_controlled_by = EST }
 					}
 					transfer_state_to = EST
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = EST
 					}
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = EST
 					}
-					create_unit = { 
-						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3" 
+					create_unit = {
+						division = "name = \"2. Baltic insurgents\" division_template = \"Baltic insurgents\" start_experience_factor = 0.3"
 						owner = EST
 					}
 				}
-			}	
+			}
 		}
 	}
 
@@ -2828,7 +2852,7 @@ country_event = {
 			var = treasury
 			value = 20
 			tooltip = add_20_billion_to_treasury_tt
-		}	
+		}
     }
 
     option = {
@@ -2841,7 +2865,7 @@ country_event = {
 			var = treasury
 			value = 5
 			tooltip = add_5_billion_to_treasury_tt
-		}	
+		}
     }
 }
 
@@ -2868,7 +2892,7 @@ country_event = {
 			var = treasury
 			value = 20
 			tooltip = add_20_billion_to_treasury_tt
-		}	
+		}
     }
 
     option = {
@@ -2918,7 +2942,7 @@ country_event = {
 			swap_ideas = {
 				remove_idea = significant_corruption
 				add_idea = horrific_corruption
-			}  
+			}
 		}
 		if = {
 			limit = {
@@ -2927,8 +2951,8 @@ country_event = {
 			swap_ideas = {
 				remove_idea = moderate_corruption
 				add_idea = significant_corruption
-			}  
-		}	
+			}
+		}
 		if = {
 			limit = {
 				has_idea = low_corruption
@@ -2936,7 +2960,7 @@ country_event = {
 			swap_ideas = {
 				remove_idea = low_corruption
 				add_idea = moderate_corruption
-			}  
+			}
 		}
 		if = {
 			limit = {
@@ -2945,8 +2969,8 @@ country_event = {
 			swap_ideas = {
 				remove_idea = minor_corruption
 				add_idea = low_corruption
-			}  
-		}	
+			}
+		}
 		add_ideas = SOV_oligarchs
     }
 
@@ -2964,7 +2988,7 @@ country_event = {
 			swap_ideas = {
 				remove_idea = low_corruption
 				add_idea = minor_corruption
-			}  
+			}
 		}
 		if = {
 			limit = {
@@ -2973,7 +2997,7 @@ country_event = {
 			swap_ideas = {
 				remove_idea = moderate_corruption
 				add_idea = low_corruption
-			}  
+			}
 		}
 		if = {
 			limit = {
@@ -2982,7 +3006,7 @@ country_event = {
 			swap_ideas = {
 				remove_idea = significant_corruption
 				add_idea = moderate_corruption
-			}  
+			}
 		}
 		if = {
 			limit = {
@@ -2991,7 +3015,7 @@ country_event = {
 			swap_ideas = {
 				remove_idea = horrific_corruption
 				add_idea = significant_corruption
-			}  
+			}
 		}
     }
 
@@ -3051,7 +3075,7 @@ country_event = {
 			var = treasury
 			value = 20
 			tooltip = add_20_billion_to_treasury_tt
-		}	
+		}
 		add_timed_idea = {
 			idea = SOV_cost_reduction
 			days = 365
@@ -3064,7 +3088,7 @@ country_event = {
 			base = 33
 		}
 		add_stability = 0.1
-		add_war_support = 0.05	
+		add_war_support = 0.05
 		every_country = {
 			limit = {
 				is_in_faction_with = USA
@@ -3189,7 +3213,7 @@ country_event = {
         name = soviet_union.88.b
 		ai_chance = {
 			base = 34
-		}	
+		}
 		add_popularity = {
 			ideology = socialism
 			popularity = 0.05
@@ -3228,7 +3252,7 @@ country_event = {
 					ideology = classical_social_democracy
 					expire = "2010.6.26"
 				}
-			}	
+			}
 		}
 		SOO = {
 			transfer_state = 1057
@@ -3238,7 +3262,7 @@ country_event = {
 					ideology = classical_social_democracy
 					expire = "2010.6.26"
 				}
-			}		
+			}
 		}
 		SOV = {
 			set_autonomy = {
@@ -3270,7 +3294,7 @@ country_event = {
 					ideology = classical_social_democracy
 					expire = "2010.6.26"
 				}
-			}			
+			}
 		}
 	}
 
@@ -3310,7 +3334,7 @@ country_event = {
         name = soviet_union.89.b
 		ai_chance = {
 			base = 34
-		}	
+		}
 		add_popularity = {
 			ideology = socialism
 			popularity = 0.05
