@@ -11,21 +11,21 @@ news_event = {
 	picture = GFX_news_sammit_in_rejyavik
 
 	major = yes
-	
+
 	mean_time_to_happen = {
 		days = 3
 	}
 
     trigger = {
-		NOT = { has_global_flag = USA_sammit_in_reykjavik_news }
+		NOT = { has_global_flag = USA_summit_in_reykjavik_news }
 		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
 		has_country_flag = USA_reconsider_relations_with_the_soviet_union
-        has_global_flag = USA_sammit_in_reykjavik
+        has_global_flag = USA_summit_in_reykjavik
         date > 1986.11.13
     }
-	
+
 	immediate = {
-		set_global_flag = USA_sammit_in_reykjavik_news
+		set_global_flag = USA_summit_in_reykjavik_news
 	}
 
     option = {
@@ -68,7 +68,7 @@ news_event = {
 	title = news.3.t
 	desc = news.3.desc
 	picture = GFX_news_iraq_invasion_in_kuweit
-    
+
     major = yes
 
 	mean_time_to_happen = {
@@ -78,7 +78,7 @@ news_event = {
 	immediate = {
 		set_global_flag = iraq_invasion_in_kuweit
 	}
-	
+
 	trigger = {
         NOT = { has_global_flag = iraq_invasion_in_kuweit }
         IRQ = { has_war_with = KUW }
@@ -98,7 +98,7 @@ news_event = {
 	immediate = {
 		set_global_flag = chernobyl_boooooom
 	}
-	
+
 	trigger = {
         NOT = { has_global_flag = chernobyl_boooooom }
 		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
@@ -136,7 +136,7 @@ news_event = {
 	immediate = {
 		set_global_flag = yugoslav_wars_started
 	}
-	
+
 	trigger = {
 		NOT = { has_global_flag = yugoslav_wars_started }
 		YUG = { has_war_with = CRO }
@@ -153,13 +153,13 @@ news_event = {
 	title = news.6.t
 	desc = news.6.desc
 	picture = GFX_news_elections_to_the_supreme_soviet_RSFSR
-    
+
     major = yes
 
 	immediate = {
 		set_global_flag = elections_to_the_supreme_soviet_RSFSR
 	}
-	
+
 	trigger = {
 		tag = SOV
 		NOT = { has_global_flag = elections_to_the_supreme_soviet_RSFSR }
@@ -182,7 +182,7 @@ news_event = {
 	immediate = {
 		set_global_flag = jobs_in_ussr
 	}
-	
+
 	trigger = {
 		NOT = { has_global_flag = jobs_in_ussr }
 		tag = SOV
@@ -208,7 +208,7 @@ news_event = {
 	immediate = {
 		set_global_flag = operation_desert_storm
 	}
-	
+
 	trigger = {
 	   NOT = { has_global_flag = operation_desert_storm }
 	}
@@ -225,13 +225,13 @@ news_event = {
 	picture = GFX_news_victory_republicans
 
 	is_triggered_only = yes
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = usa_victory_republicans
 	}
-	
+
 	trigger = {
 	   NOT = { has_global_flag = usa_victory_republicans }
 	}
@@ -244,13 +244,13 @@ news_event = {
 	picture = GFX_news_victory_democrats
 
 	is_triggered_only = yes
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = usa_victory_democrats
 	}
-	
+
 	trigger = {
 	   NOT = { has_global_flag = usa_victory_democrats }
 	}
@@ -261,13 +261,13 @@ news_event = {
 	title = news.11.t
 	desc = news.11.desc
 	picture = GFX_news_victory_iraq_in_iran_iraq_war
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = iraq_victory_in_iran_iraq_war
 	}
-	
+
 	trigger = {
 		NOT = { PER = { has_war_with = IRQ } }
 	   	NOT = { has_global_flag = iraq_victory_in_iran_iraq_war }
@@ -280,13 +280,13 @@ news_event = {
 	title = news.12.t
 	desc = news.12.desc
 	picture = GFX_news_victory_iran_in_iran_iraq_war
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = iran_victory_in_iran_iraq_war
 	}
-	
+
 	trigger = {
 		NOT = { PER = { has_war_with = IRQ } }
 	   	NOT = { has_global_flag = iran_victory_in_iran_iraq_war }
@@ -299,15 +299,15 @@ news_event = {
 	title = news.13.t
 	desc = news.13.desc
 	picture = GFX_news_victory_iran_in_iran_iraq_war
-    
+
     major = yes
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_global_flag = coral_sea_aircraft_carrier_accident
 	}
-	
+
 	trigger = {
 	   	NOT = { has_global_flag = coral_sea_aircraft_carrier_accident }
 	}
@@ -318,13 +318,13 @@ news_event = {
 	title = news.14.t
 	desc = news.14.desc
 	picture = GFX_news_sammit_in_rejyavik
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = jenev_meeting
 	}
-	
+
 	trigger = {
 		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
 		SOV = { has_country_flag = SOV_elimination_of_nuclear_weapons }
@@ -337,13 +337,13 @@ news_event = {
 	title = news.15.t
 	desc = news.15.desc
 	picture = GFX_news_sammit_in_rejyavik
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = michael_dukakis_supports_perestroika_policy
 	}
-	
+
 	trigger = {
 		has_country_leader = { character = SOV_mikhail_gorbachev ruling_only = yes }
 		USA = { has_country_flag = USA_support_policy_of_perestroika }
@@ -356,13 +356,13 @@ news_event = {
 	title = news.16.t
 	desc = news.16.desc
 	picture = GFX_news_sammit_in_rejyavik
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = call_for_ratification_of_the_inf_treaty
 	}
-	
+
 	trigger = {
 		USA = { has_country_flag = USA_call_for_ratification_of_the_inf_treaty }
 		NOT = { has_global_flag = call_for_ratification_of_the_inf_treaty }
@@ -378,13 +378,13 @@ news_event = {
 	title = news.17.t
 	desc = news.17.desc
 	picture = GFX_news_news_space_shuttle_challenger_disaster
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = space_shuttle_challenger_disaster
 	}
-	
+
 	trigger = {
 		date > 1986.1.28
 		NOT = { has_global_flag = space_shuttle_challenger_disaster }
@@ -400,13 +400,13 @@ news_event = {
 	title = news.18.t
 	desc = news.18.desc
 	picture = GFX_news_halleys_comet
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = halleys_comet
 	}
-	
+
 	trigger = {
 		date > 1986.3.8
 		NOT = { has_global_flag = halleys_comet }
@@ -422,13 +422,13 @@ news_event = {
 	title = news.19.t
 	desc = news.19.desc
 	picture = GFX_news_iran_contras
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = iran_contra
 	}
-	
+
 	trigger = {
 		date > 1985.8.20
 		NOT = { has_global_flag = iran_contra }
@@ -454,13 +454,13 @@ news_event = {
 	title = news.20.t
 	desc = news.20.desc
 	picture = GFX_news_kill_olof_palme
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = kill_olof_palme
 	}
-	
+
 	trigger = {
 		date > 1986.2.28
 		NOT = { has_global_flag = kill_olof_palme }
@@ -486,11 +486,11 @@ news_event = {
 	title = news.21.t
 	desc = news.21.desc
 	picture = GFX_news_tiananmen_square_protests
-    
+
 	is_triggered_only = yes
 
     major = yes
-	
+
 	immediate = {
 		set_global_flag = tiananmen_square_protests
 	}
@@ -516,7 +516,7 @@ news_event = {
 	title = news.22.t
 	desc = news.22.desc
 	picture = GFX_news_proclamation_of_a_great_iraq
-    
+
 	is_triggered_only = yes
 
     major = yes
@@ -542,7 +542,7 @@ news_event = {
 	title = news.23.t
 	desc = news.23.desc
 	picture = GFX_news_yemen_unification
-    
+
 	is_triggered_only = yes
 
     major = yes
@@ -567,7 +567,7 @@ news_event = {
 	title = news.24.t
 	desc = news.24.desc
 	picture = GFX_news_hezbollah_uprising
-    
+
 	is_triggered_only = yes
 
     major = yes
@@ -582,13 +582,13 @@ news_event = {
 	title = news.25.t
 	desc = news.25.desc
 	picture = GFX_news_mujahideen_won_the_afghan_war
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = mujahideen_won_the_afghan_war
 	}
-	
+
 	trigger = {
 		country_exists = AFS
 		AFS = {
@@ -617,13 +617,13 @@ news_event = {
 	title = news.26.t
 	desc = news.26.desc
 	picture = GFX_news_democratic_republic_won_the_afghan_war
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = democratic_republic_won_the_afghan_war
 	}
-	
+
 	trigger = {
 		country_exists = AFN
 		AFN = {
@@ -652,9 +652,9 @@ news_event = {
 	title = news.27.t
 	desc = news.27.desc
 	picture = GFX_news_withdrawal_of_soviet_troops_from_afghanistan
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = withdrawal_of_soviet_troops_from_afghanistan
 	}
@@ -682,9 +682,9 @@ news_event = {
 	title = news.28.t
 	desc = news.28.desc
 	picture = GFX_news_germany_reunification
-    
+
     major = yes
-	
+
 	immediate = {
 		set_global_flag = germany_reunification
 	}
@@ -712,7 +712,7 @@ news_event = {
 	title = news.29.t
 	desc = news.29.desc
 	picture = GFX_news_agasher_war
-    
+
     major = yes
 
 	is_triggered_only = yes
@@ -727,7 +727,7 @@ news_event = {
 	title = news.30.t
 	desc = news.30.desc
 	picture = GFX_news_bombing_of_libya
-    
+
     major = yes
 
 	is_triggered_only = yes
@@ -742,7 +742,7 @@ news_event = {
 	title = news.31.t
 	desc = news.31.desc
 	picture = GFX_news_first_intifada
-    
+
     major = yes
 
 	is_triggered_only = yes
@@ -757,7 +757,7 @@ news_event = {
 	title = news.32.t
 	desc = news.32.desc
 	picture = GFX_news_belovezha_accords
-    
+
     major = yes
 
 	is_triggered_only = yes
@@ -772,7 +772,7 @@ news_event = {
 	title = news.33.t
 	desc = news.33.desc
 	picture = GFX_news_toyota_war
-    
+
     major = yes
 
 	is_triggered_only = yes
@@ -787,7 +787,7 @@ news_event = {
 	title = news.34.t
 	desc = news.34.desc
 	picture = GFX_news_yellow_revolution_in_philippines
-    
+
     major = yes
 
 	is_triggered_only = yes
@@ -802,7 +802,7 @@ news_event = {
 	title = news.35.t
 	desc = news.35.desc
 	picture = GFX_news_victory_cdu_in_1987
-    
+
     major = yes
 
 	is_triggered_only = yes
@@ -817,7 +817,7 @@ news_event = {
 	title = news.36.t
 	desc = news.36.desc
 	picture = GFX_news_victory_spd_in_1987
-    
+
     major = yes
 
 	is_triggered_only = yes
@@ -832,7 +832,7 @@ news_event = {
 	title = news.37.t
 	desc = news.37.desc
 	picture = GFX_news_war_in_bosnia
-    
+
     major = yes
 
 	is_triggered_only = yes
@@ -847,7 +847,7 @@ news_event = {
 	title = news.38.t
 	desc = news.38.desc
 	picture = GFX_news_dissolution_of_czechoslovakia
-    
+
     major = yes
 
 	is_triggered_only = yes
@@ -1002,7 +1002,7 @@ news_event = {
 		name = news.44.a
 		trigger = {
 			NOT = {
-				TAG = DDR	
+				TAG = DDR
 			}
 		}
 	}

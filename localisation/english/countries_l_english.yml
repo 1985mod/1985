@@ -16,7 +16,7 @@
  SYE: "People's Democratic Republic of Yemen"
  SYE_DEF: "the People's Democratic Republic of Yemen"
  SYE_ADJ: "South Yemeni"
- 
+
  NCY: "Turkish Republic of Northern Cyprus"
  NCY_DEF: "the Turkish Republic of Northern Cyprus"
  NCY_ADJ: "Northern Cypriot"
@@ -52,7 +52,7 @@
  ENG: "United Kingdom of Great Britain and Northern Ireland"
  ENG_DEF: "the United Kingdom of Great Britain and Northern Ireland"
  ENG_ADJ: "British"
- 
+
  SOV_fascism: "Union of Soviet Socialist Republics"
  SOV_fascism_DEF: "the Union of Soviet Socialist Republics"
  SOV_neutrality: "Union of Soviet Socialist Republics"
@@ -68,19 +68,19 @@
  USA: "United States of America"
  USA_DEF: "the United States of America"
  USA_ADJ: "American"
- 
+
  SWE: "Kingdom of Sweden"
  SWE_DEF: "the Kingdom of Sweden"
  SWE_ADJ: "Swedish"
- 
+
  FRA: "French Republic"
  FRA_DEF: "the French Republic"
  FRA_ADJ: "French"
- 
+
  LUX: "Grand Duchy of Luxembourg"
  LUX_DEF: "the Grand Duchy of Luxembourg"
  LUX_ADJ: "Luxembourgish"
- 
+
  BEL_conservatism: "Kingdom of Belgium"
  BEL_conservatism_DEF: "the Kingdom of Belgium"
  BEL_conservatism_ADJ: "Belgian"
@@ -90,17 +90,17 @@
  BEL: "Kingdom of Belgium"
  BEL_DEF: "the Kingdom of Belgium"
  BEL_ADJ: "Belgian"
- 
+
  HOL: "Kingdom of the Netherlands"
  HOL_DEF: "the Kingdom of the Netherlands"
  HOL_ADJ: "Dutch"
- 
+
  CZE: "Czechoslovak Republic"
  CZE_DEF: "the Czechoslovak Republic"
  CZE_ADJ: "Czechoslovak"
  CZE_communism: "Czechoslovak Socialist Republic"
  CZE_communism_DEF: "Czechoslovak"
- 
+
  POL_fascism: "Polish Republic"
  POL_fascism_DEF: "the Polish Republic"
  POL_socialism: "Polish Republic"
@@ -123,23 +123,23 @@
  POL_subject_DEF: "$POL$"
  POL_SOV_communism_subject: "Polish People's Republic"
  POL_SOV_communism_subject_DEF: "the Polish People's Republic"
- 
+
  AUS: "Austrian Republic"
  AUS_DEF: "the Austrian Republic"
  AUS_ADJ: "Austrian"
- 
+
  LIT_communism: "Lithuanian Soviet Socialist Republic"
  LIT_communism_DEF: "the Lithuanian Soviet Socialist Republic"
  LIT: "Republic of Lithuania"
  LIT_DEF: "the Republic of Lithuania"
  LIT_ADJ: "Lithuanian"
- 
+
  EST_communism: "Estonian Soviet Socialist Republic"
  EST_communism_DEF: "the Estonian Soviet Socialist Republic"
  EST: "Republic of Estonia"
  EST_DEF: "the Republic of Estonia"
  EST_ADJ: "Estonian"
- 
+
  LAT_communism: "Latvian Soviet Socialist Republic"
  LAT_communism_DEF: "the Latvian Soviet Socialist Republic"
  LAT: "Republic of Latvia"
@@ -200,23 +200,23 @@
  UZB: "Republic of Uzbekistan"
  UZB_DEF: "the Republic of Uzbekistan"
  UZB_ADJ: "Uzbek"
- 
+
  BLR_communism: "Byelorussian Soviet Socialist Republic"
  BLR_communism_DEF: "the Byelorussian Soviet Socialist Republic"
  BLR: "Republic of Belarus"
  BLR_DEF: "the Republic of Belarus"
  BLR_ADJ: "Belarusian"
- 
+
  UKR_communism: "Ukrainian Soviet Socialist Republic"
  UKR_communism_DEF: "the Ukrainian Soviet Socialist Republic"
  UKR: "Ukraine"
  UKR_DEF: "Ukraine"
  UKR_ADJ: "Ukrainian"
- 
+
  PMR: "Pridnestrovian Moldavian Republic"
  PMR_DEF: "the Pridnestrovian Moldavian Republic"
  PMR_ADJ: "Pridnestrovian"
- 
+
  MOL_communism: "Moldavian Soviet Socialist Republic"
  MOL_communism_DEF: "the Moldavian Soviet Socialist Republic"
  MOL: "Republic of Moldova"
@@ -226,18 +226,18 @@
  SPR: "Kingdom of Spain"
  SPR_DEF: "the Kingdom of Spain"
  SPR_ADJ: "Spanish"
- 
+
  ITA: "Italian Republic"
  ITA_DEF: "the Italian Republic"
  ITA_ADJ: "Italian"
- 
+
  ROM_communism: "Socialist Republic of Romania"
  ROM_communism_DEF: "the Socialist Republic of Romania"
  ROM_communism_ADJ: "Romanian"
  ROM: "Romania"
  ROM_DEF: "Romania"
  ROM_ADJ: "Romanian"
- 
+
  YUG_socialism: "Yugoslav Federation"
  YUG_socialism_DEF: "the Yugoslav Federation"
  YUG_liberalism: "Yugoslav Federation"
@@ -318,7 +318,7 @@
  SWI: "Swiss Confederation"
  SWI_DEF: "the Swiss Confederation"
  SWI_ADJ: "Swiss"
- 
+
  TUR: "Turkish Republic"
  TUR_DEF: "the Turkish Republic"
  TUR_ADJ: "Turkish"
@@ -328,7 +328,7 @@
  TUR_conservatism_DEF: "the Turkish Republic"
  TUR_neutrality: "Turkish Republic"
  TUR_neutrality_DEF: "the Turkish Republic"
- 
+
  GRE_liberalism: "Hellenic Republic"
  GRE_liberalism_DEF: "the Hellenic Republic"
  GRE_conservatism: "Hellenic Republic"
@@ -338,17 +338,17 @@
  GRE: "Hellenic Republic"
  GRE_DEF: "the Hellenic Republic"
  GRE_ADJ: "Greek"
- 
+
  ALB_communism: "People's Socialist Republic of Albania"
  ALB_communism_DEF: "the People's Socialist Republic of Albania"
  ALB: "Republic of Albania"
  ALB_DEF: "the Republic of Albania"
  ALB_ADJ: "Albanian"
- 
+
  NOR: "Kingdom of Norway"
  NOR_DEF: "the Kingdom of Norway"
  NOR_ADJ: "Norwegian"
- 
+
  DEN_conservatism: "Kingdom of Denmark"
  DEN_conservatism_DEF: "the Kingdom of Denmark"
  DEN_conservatism_ADJ: "Danish"
@@ -358,7 +358,7 @@
  DEN: "Kingdom of Denmark"
  DEN_DEF: "the Kingdom of Denmark"
  DEN_ADJ: "Danish"
- 
+
  BUL_socialism: "Bulgarian Republic"
  BUL_socialism_DEF: "the Bulgarian Republic"
  BUL_liberalism: "Bulgarian Republic"
@@ -376,7 +376,7 @@
  BUL: "Bulgaria"
  BUL_DEF: "Bulgaria"
  BUL_ADJ: "Bulgarian"
- 
+
  POR_liberalism: "Portuguese Republic"
  POR_liberalism_DEF: "the Portuguese Republic"
  POR_conservatism: "Portuguese Republic"
@@ -386,8 +386,8 @@
  POR: "Portuguese Republic"
  POR_DEF: "the Portuguese Republic"
  POR_ADJ: "Portuguese"
- 
- 
+
+
  FIN_liberalism: "Republic of Finland"
  FIN_liberalism_DEF: "the Republic of Finland"
  FIN_conservatism: "Republic of Finland"
@@ -397,11 +397,11 @@
  FIN: "Republic of Finland"
  FIN_DEF: "the Republic of Finland"
  FIN_ADJ: "Finnish"
- 
+
  IRE: "Ireland"
  IRE_DEF: "Ireland"
  IRE_ADJ: "Irish"
- 
+
  HUN_fascism: "Hungary"
  HUN_fascism_DEF: "Hungary"
  HUN_socialism: "Hungarian Republic"
@@ -421,7 +421,7 @@
  HUN: "Hungary"
  HUN_DEF: "Hungary"
  HUN_ADJ: "Hungarian"
- 
+
  RUS_fascism: "Russian Empire"
  RUS_fascism_DEF: "the Russian Empire"
  RUS_neutrality: "Russian State"
@@ -437,16 +437,16 @@
  CAN: "Canada"
  CAN_DEF: "Canada"
  CAN_ADJ: "Canadian"
- 
+
  BRM: "Socialist Republic of the Union of Burma"
  BRM_DEF: "Socialist Republic of the Union of Burma"
  BRM_ADJ: "Burmese"
- 
+
 
  ELS: "Republic of El Salvador"
  ELS_DEF: "the Republic of El Salvador"
  ELS_ADJ: "Salvadoran"
- 
+
  IRQ_fascism: "Iraqi Republic"
  IRQ_fascism_DEF: "the Iraqi Republic"
  IRQ_conservatism: "Republic of Iraq"
@@ -470,7 +470,7 @@
  JAP: "State of Japan"
  JAP_DEF: "the State of Japan"
  JAP_ADJ: "Japanese"
- 
+
  MEX_liberalism: "United Mexican States"
  MEX_liberalism_DEF: "the United Mexican States"
  MEX_conservatism: "United Mexican States"
@@ -480,18 +480,18 @@
  MEX: "United Mexican States"
  MEX_DEF: "the United Mexican States"
  MEX_ADJ: "Mexican"
- 
+
  MON_communism: "Mongolian People's Republic"
  MON_communism_DEF: "the Mongolian People's Republic"
  MON_communism_ADJ: "Mongolian"
  MON: "Mongolia"
  MON_DEF: "Mongolia"
  MON_ADJ: "Mongolian"
- 
+
  NEP: "Kingdom of Nepal"
  NEP_DEF: "the Kingdom of Nepal"
- NEP_ADJ: "Nepalese"       
- 
+ NEP_ADJ: "Nepalese"
+
  PER_fascism: "New Persian Empire"
  PER_fascism_DEF: "the New Persian Empire"
  PER_conservatism: "Republic of Iran"
@@ -511,7 +511,7 @@
  PER: "Iran"
  PER_DEF: "Iran"
  PER_ADJ: "Iranian"
- 
+
  PHI: "Republic of the Philippines"
  PHI_DEF: "the Republic of the Philippines"
  PHI_ADJ: "Philippine"
@@ -528,13 +528,13 @@
  TAN_DEF: "the Republic of Tuva"
  TAN_ADJ: "Tuvan"
  TAN_communism: "Tuvan Autonomous Soviet Socialist Republic"
- TAN_communism_DEF: "the Tuvan Autonomous Soviet Socialist Republic" 
+ TAN_communism_DEF: "the Tuvan Autonomous Soviet Socialist Republic"
  TAN_communism_ADJ: "Tuvan"
- 
+
  AST: "Commonwealth of Australia"
  AST_DEF: "the Commonwealth of Australia"
  AST_ADJ: "Australian"
- 
+
  CUB_fascism: "Republic of Cuba"
  CUB_fascism_DEF: "the Republic of Cuba"
  CUB_communism: "Republic of Cuba"
@@ -548,81 +548,85 @@
  OMA: "Sultanate of Oman"
  OMA_DEF: "the Sultanate of Oman"
  OMA_ADJ: "Omani"
- 
+
  YEM: "Yemen Arab Republic"
  YEM_DEF: "the Yemen Arab Republic"
  YEM_ADJ: "Yemeni"
- 
+
  ETH_communism: "Provisional Military Government of Socialist Ethiopia"
  ETH_communism_DEF: "the Provisional Military Government of Socialist Ethiopia"
  ETH: "Federal Democratic Republic of Ethiopia"
  ETH_DEF: "the Federal Democratic Republic of Ethiopia"
  ETH_ADJ: "Ethiopian"
- 
+
  ERI_neutrality: "Eritrean People's Liberation Front"
  ERI_neutrality_DEF: "the Eritrean People's Liberation Front"
  ERI: "State of Eritrea"
  ERI_DEF: "the State of Eritrea"
  ERI_ADJ: "Eritrean"
- 
+
  DJI_neutrality: "Republic of Djibouti"
  DJI_neutrality_DEF: "the Republic of Djibouti"
  DJI: "Republic of Djibouti"
  DJI_DEF: "the Republic of Djibouti"
  DJI_ADJ: "Djiboutian"
- 
+
  SOM_communism: "Somali Democratic Republic"
  SOM_communism_DEF: "the Somali Democratic Republic"
  SOM: "Federal Republic of Somalia"
  SOM_DEF: "the Federal Republic of Somalia"
  SOM_ADJ: "Somali"
- 
+
  UGA: "Republic of Uganda"
  UGA_DEF: "the Republic of Uganda"
  UGA_ADJ: "Ugandan"
- 
+
  RWA: "Republic of Rwanda"
  RWA_DEF: "the Republic of Rwanda"
  RWA_ADJ: "Rwandan"
- 
+
  BRD: "Republic of Burundi"
  BRD_DEF: "the Republic of Burundi"
  BRD_ADJ: "Burundian"
- 
+
  TZN_socialism: "United Republic of Tanzania"
  TZN_socialism_DEF: "the United Republic of Tanzania"
  TZN: "United Republic of Tanzania"
  TZN_DEF: "the United Republic of Tanzania"
  TZN_ADJ: "Tanzanian"
- 
+
  MZB_neutrality: "Republic of Mozambique"
  MZB_neutrality_DEF: "the Republic of Mozambique"
  MZB: "People's Republic of Mozambique"
  MZB_DEF: "the People's Republic of Mozambique"
  MZB_ADJ: "Mozambican"
- 
+
+ REN: "Mozambican National Resistance"
+ REN_DEF: "the Mozambican National Resistance"
+ REN_ADJ: "Mozambican"
+
  MLW: "Republic of Malawi"
  MLW_DEF: "the Republic of Malawi"
  MLW_ADJ: "Malawian"
- 
+
  ZAM: "Republic of Zambia"
  ZAM_DEF: "the Republic of Zambia"
  ZAM_ADJ: "Zambian"
- 
+
  ZIM: "Republic of Zimbabwe"
  ZIM_DEF: "the Republic of Zimbabwe"
  ZIM_ADJ: "Zimbabwean"
- 
+
  BOT: "Republic of Botswana"
  BOT_DEF: "the Republic of Botswana"
  BOT_ADJ: "Botswanan"
- 
+
  MAD_communism: "Democratic Republic of Madagascar"
  MAD_communism_DEF: "the Democratic Republic of Madagascar"
  MAD: "Republic of Madagascar"
  MAD_DEF: "the Republic of Madagascar"
  MAD_ADJ: "Malagasy"
- 
+
  SAF_conservatism: "Republic of South Africa"
  SAF_conservatism_DEF: "the Republic of South Africa"
  SAF_liberalism: "Republic of South Africa"
@@ -634,141 +638,141 @@
  SAF: "Republic of South Africa"
  SAF_DEF: "the Republic of South Africa"
  SAF_ADJ: "South African"
- 
+
  CAR: "Central African Republic"
  CAR_DEF: "the Central African Republic"
  CAR_ADJ: "Central African"
- 
+
  NMB: "Republic of Namibia"
  NMB_DEF: "the Republic of Namibia"
  NMB_ADJ: "Namibian"
- 
+
  RCG_communism: "People's Republic of the Congo"
  RCG_communism_DEF: "the People's Republic of the Congo"
  RCG: "Republic of the Congo"
  RCG_DEF: "the Republic of the Congo"
  RCG_ADJ: "Congolese"
- 
+
  GAB: "Gabonese Republic"
  GAB_DEF: "the Gabonese Republic"
  GAB_ADJ: "Gabonese"
- 
+
  EQG: "Republic of Equatorial Guinea"
  EQG_DEF: "the Republic of Equatorial Guinea"
  EQG_ADJ: "Equatorial Guinean"
- 
+
  CMR: "Republic of Cameroon"
  CMR_DEF: "the Republic of Cameroon"
  CMR_ADJ: "Cameroonian"
- 
+
  NGA: "Federal Republic of Nigeria"
  NGA_DEF: "the Federal Republic of Nigeria"
  NGA_ADJ: "Nigerian"
- 
+
  NGR: "Republic of Niger"
  NGR_DEF: "the Republic of Niger"
  NGR_ADJ: "Nigerien"
- 
+
  MRT: "Islamic Republic of Mauritania"
  MRT_DEF: "the Islamic Republic of Mauritania"
  MRT_ADJ: "Mauritanian"
- 
+
  SIE: "Republic of Sierra Leone"
  SIE_DEF: "the Republic of Sierra Leone"
  SIE_ADJ: "Sierra Leonean"
- 
+
  LIB: "Republic of Liberia"
  LIB_DEF: "the Republic of Liberia"
  LIB_ADJ: "Liberian"
- 
+
  IVO: "Republic of Côte d'Ivoire"
  IVO_DEF: "the Republic of Côte d'Ivoire"
  IVO_ADJ: "Ivorian"
- 
+
  GHA: "Republic of Ghana"
  GHA_DEF: "the Republic of Ghana"
  GHA_ADJ: "Ghanaian"
- 
+
  TOG: "Togolese Republic"
  TOG_DEF: "the Togolese Republic"
  TOG_ADJ: "Togolese"
- 
+
  DAH_communism: "People's Republic of Benin"
  DAH_communism_DEF: "the People's Republic of Benin"
  DAH: "Republic of Benin"
  DAH_DEF: "the Republic of Benin"
  DAH_ADJ: "Beninese"
- 
+
  MLI: "Republic of Mali"
  MLI_DEF: "the Republic of Mali"
  MLI_ADJ: "Malian"
- 
+
  SEN: "Republic of Senegal"
  SEN_DEF: "the Republic of Senegal"
  SEN_ADJ: "Senegalese"
- 
+
  GNA_communism: "Guinean People's Revolutionary Republic"
  GNA_communism_DEF: "the Guinean People's Revolutionary Republic"
  GNA: "Republic of Guinea"
  GNA_DEF: "the Republic of Guinea"
  GNA_ADJ: "Guinean"
- 
+
  GNB: "Republic of Guinea-Bissau"
  GNB_DEF: "the Republic of Guinea-Bissau"
  GNB_ADJ: "Guinea-Bissauan"
- 
+
  GAM: "Republic of The Gambia"
  GAM_DEF: "the Republic of The Gambia"
  GAM_ADJ: "Gambian"
- 
+
  SUR: "Republic of Suriname"
  SUR_DEF: "the Republic of Suriname"
  SUR_ADJ: "Surinamese"
- 
+
  GYA: "Co-operative Republic of Guyana"
  GYA_DEF: "the Co-operative Republic of Guyana"
  GYA_ADJ: "Guyanese"
- 
+
  VEN: "Bolivarian Republic of Venezuela"
  VEN_DEF: "the Bolivarian Republic of Venezuela"
  VEN_ADJ: "Venezuelan"
- 
+
  COL: "Republic of Colombia"
  COL_DEF: "the Republic of Colombia"
  COL_ADJ: "Colombian"
- 
+
  ECU: "Republic of Ecuador"
  ECU_DEF: "the Republic of Ecuador"
  ECU_ADJ: "Ecuadorian"
- 
+
  PRU: "Republic of Peru"
  PRU_DEF: "the Republic of Peru"
  PRU_ADJ: "Peruvian"
- 
+
  BOL: "Plurinational State of Bolivia"
  BOL_DEF: "the Plurinational State of Bolivia"
  BOL_ADJ: "Bolivian"
- 
+
  ARG: "Argentine Republic"
  ARG_DEF: "the Argentine Republic"
  ARG_ADJ: "Argentine"
- 
+
  PAR: "Republic of Paraguay"
  PAR_DEF: "the Republic of Paraguay"
  PAR_ADJ: "Paraguayan"
- 
+
  URG: "Oriental Republic of Uruguay"
  URG_DEF: "the Oriental Republic of Uruguay"
  URG_ADJ: "Uruguayan"
- 
+
  CHL: "Republic of Chile"
  CHL_DEF: "the Republic of Chile"
  CHL_ADJ: "Chilean"
- 
+
  BRA: "Federative Republic of Brazil"
  BRA_DEF: "the Federative Republic of Brazil"
  BRA_ADJ: "Brazilian"
- 
+
  PAN_conservatism: "Republic of Panama"
  PAN_conservatism_DEF: "the Republic of Panama"
  PAN_liberalism: "Republic of Panama"
@@ -780,39 +784,39 @@
  PAN: "Republic of Panama"
  PAN_DEF: "the Republic of Panama"
  PAN_ADJ: "Panamanian"
- 
+
  COS: "Republic of Costa Rica"
  COS_DEF: "the Republic of Costa Rica"
  COS_ADJ: "Costa Rican"
- 
+
  NIC: "Republic of Nicaragua"
  NIC_DEF: "the Republic of Nicaragua"
  NIC_ADJ: "Nicaraguan"
- 
+
  HON: "Republic of Honduras"
  HON_DEF: "the Republic of Honduras"
  HON_ADJ: "Honduran"
- 
+
  GUA: "Republic of Guatemala"
  GUA_DEF: "the Republic of Guatemala"
  GUA_ADJ: "Guatemalan"
- 
+
  BLZ: "Belize"
  BLZ_DEF: "Belize"
  BLZ_ADJ: "Belizean"
- 
+
  HAI: "Republic of Haiti"
  HAI_DEF: "the Republic of Haiti"
  HAI_ADJ: "Haitian"
- 
+
  DOM: "Dominican Republic"
  DOM_DEF: "the Dominican Republic"
  DOM_ADJ: "Dominican"
- 
+
  NZL: "New Zealand"
  NZL_DEF: "New Zealand"
  NZL_ADJ: "New Zealand"
- 
+
  SLO_conservatism: "Slovak Republic"
  SLO_conservatism_DEF: "the Slovak Republic"
  SLO_liberalism: "Slovak Republic"
@@ -829,7 +833,7 @@
  SLO: "Slovakia"
  SLO_DEF: "Slovakia"
  SLO_ADJ: "Slovak"
- 
+
  BHU: "Kingdom of Bhutan"
  BHU_DEF: "the Kingdom of Bhutan"
  BHU_ADJ: "Bhutanese"
@@ -845,7 +849,7 @@
  ICE: "Iceland"
  ICE_DEF: "Iceland"
  ICE_ADJ: "Icelandic"
- 
+
  SYR_socialism: "Syrian Republic"
  SYR_socialism_DEF: "the Syrian Republic"
  SYR_liberalism: "Syrian Republic"
@@ -865,16 +869,16 @@
  SYR: "Syria"
  SYR_DEF: "Syria"
  SYR_ADJ: "Syrian"
- 
+
 
  LEB: "Lebanese Republic"
  LEB_DEF: "the Lebanese Republic"
  LEB_ADJ: "Lebanese"
- 
+
  JOR: "Hashemite Kingdom of Jordan"
  JOR_DEF: "the Hashemite Kingdom of Jordan"
  JOR_ADJ: "Jordanian"
- 
+
  EGY_fascism: "Kemetic Empire"
  EGY_fascism_DEF: "the Kemetic Empire"
  EGY_socialism: "Republic of Egypt"
@@ -913,7 +917,7 @@
  LBA: "Libya"
  LBA_DEF: "Libya"
  LBA_ADJ: "Libyan"
- 
+
  DDR_communism: "German Democratic Republic"
  DDR_communism_DEF: "the German Democratic Republic"
  DDR_liberalism: "Republic of Germany"
@@ -927,34 +931,34 @@
  PAL: "State of Palestine"
  PAL_DEF: "the State of Palestine"
  PAL_ADJ: "Palestinian"
- 
+
  ISR: "State of Israel"
  ISR_DEF: "the State of Israel"
  ISR_ADJ: "Israeli"
- 
+
  CAM_communism: "People's Republic of Kampuchea"
  CAM_communism_DEF: "the People's Republic of Kampuchea"
  CAM_communism_ADJ: "Cambodian"
  CAM: "Cambodia"
  CAM_DEF: "Cambodia"
  CAM_ADJ: "Cambodian"
- 
+
  INS: "Republic of Indonesia"
  INS_DEF: "the Republic of Indonesia"
  INS_ADJ: "Indonesian"
- 
+
 
  MAL: "Malaysia"
  MAL_DEF: "Malaysia"
  MAL_ADJ: "Malaysian"
- 
+
  LAO_communism: "Lao People's Democratic Republic"
  LAO_communism_DEF: "the Lao People's Democratic Republic"
  LAO_communism_ADJ: "Lao"
  LAO: "Laos"
  LAO_DEF: "Laos"
  LAO_ADJ: "Lao"
- 
+
  ANG_fascism: "National Union for the Total Independence of Angola"
  ANG_fascism_DEF: "the National Union for the Total Independence of Angola"
  ANG_socialism: "Republic of Angola"
@@ -974,7 +978,7 @@
  ANG: "Angola"
  ANG_DEF: "Angola"
  ANG_ADJ: "Angolan"
- 
+
  UNI_fascism: "National Union for the Total Independence of Angola"
  UNI_fascism_DEF: "the National Union for the Total Independence of Angola"
  UNI_socialism: "Republic of Angola"
@@ -994,7 +998,7 @@
  UNI: "UNITA"
  UNI_DEF: "UNITA"
  UNI_ADJ: "UNITA"
- 
+
  COG_fascism: "Zaire"
  COG_fascism_DEF: "Zaire"
  COG_neutrality: "Republic of Zaire"
@@ -1008,13 +1012,13 @@
  COG: "Congo"
  COG_DEF: "Congo"
  COG_ADJ: "Congolese"
- 
+
  KEN_neutrality: "Republic of Kenya"
  KEN_neutrality_DEF: "the Republic of Kenya"
  KEN: "Republic of Kenya"
  KEN_DEF: "the Republic of Kenya"
  KEN_ADJ: "Kenyan"
- 
+
  PAK: "Islamic Republic of Pakistan"
  PAK_DEF: "the Islamic Republic of Pakistan"
  PAK_ADJ: "Pakistani"
@@ -1022,7 +1026,7 @@
  BAN: "People's Republic of Bangladesh"
  BAN_DEF: "the People's Republic of Bangladesh"
  BAN_ADJ: "Bangladeshi"
- 
+
  PNG_liberalism: "Papua New Guinea"
  PNG_liberalism_DEF: "Papua New Guinea"
  PNG_conservatism: "Papua New Guinea"
@@ -1040,11 +1044,11 @@
  UAE: "United Arab Emirates"
  UAE_DEF: "the United Arab Emirates"
  UAE_ADJ: "Emirati"
- 
+
  KUW: "State of Kuwait"
  KUW_DEF: "the State of Kuwait"
  KUW_ADJ: "Kuwaiti"
- 
+
  CYP_liberalism: "Republic of Cyprus"
  CYP_liberalism_DEF: "the Republic of Cyprus"
  CYP_conservatism: "Republic of Cyprus"
@@ -1054,7 +1058,7 @@
  CYP: "Republic of Cyprus"
  CYP_DEF: "the Republic of Cyprus"
  CYP_ADJ: "Cypriot"
- 
+
  ALG_fascism: "Algerian Caliphate"
  ALG_fascism_DEF: "the Algerian Caliphate"
  ALG_conservatism: "People's Democratic Republic of Algeria"
@@ -1073,7 +1077,7 @@
  ALG: "Algeria"
  ALG_DEF: "Algeria"
  ALG_ADJ: "Algerian"
- 
+
  MOR: "Kingdom of Morocco"
  MOR_DEF: "the Kingdom of Morocco"
  MOR_ADJ: "Moroccan"
@@ -1081,7 +1085,7 @@
  TUN: "Republic of Tunisia"
  TUN_DEF: "the Republic of Tunisia"
  TUN_ADJ: "Tunisian"
- 
+
  SUD_fascism_DEF: "Nubia"
  SUD_socialism: "Democratic Republic of Sudan"
  SUD_socialism_DEF: "the Democratic Republic of Sudan"
@@ -1104,7 +1108,7 @@
  SRL: "Democratic Socialist Republic of Sri Lanka"
  SRL_DEF: "Democratic Socialist Republic of Sri Lanka"
  SRL_ADJ: "Sri Lankan"
- 
+
  VOL_conservatism: "Burkina Faso"
  VOL_conservatism_DEF: "Burkina Faso"
  VOL_conservatism_ADJ: "Burkinabe"
@@ -1114,7 +1118,7 @@
  VOL: "Burkina Faso"
  VOL_DEF: "Burkina Faso"
  VOL_ADJ: "Burkinabe"
- 
+
  CHA_liberalism: "Republic of Chad"
  CHA_liberalism_DEF: "Republic of Chad"
  CHA_conservatism: "Republic of Chad"
@@ -1124,7 +1128,7 @@
  CHA: "Republic of Chad"
  CHA_DEF: "Republic of Chad"
  CHA_ADJ: "Chadian"
- 
+
  KUR: "Kurdistan"
  KUR_ADJ: "Kurdish"
  KUR_DEF: "Kurdistan"
@@ -1156,28 +1160,28 @@
  MAC: "Republic of Macedonia"
  MAC_DEF: "the Republic of Macedonia"
  MAC_ADJ: "Macedonian"
- 
+
  DAG_communism: "Dagestan Autonomous Soviet Socialist Republic"
  DAG_communism_DEF: "the Dagestan Autonomous Soviet Socialist Republic"
  DAG_communism_ADJ: "Dagestani"
  DAG: "Republic of Dagestan"
  DAG_DEF: "the Republic of Dagestan"
  DAG_ADJ: "Dagestani"
- 
+
  TAT_communism: "Tatar Autonomous Soviet Socialist Republic"
  TAT_communism_DEF: "the Tatar Autonomous Soviet Socialist Republic"
  TAT_communism_ADJ: "Tatar"
  TAT: "Republic of Tatarstan"
  TAT_DEF: "the Republic of Tatarstan"
  TAT_ADJ: "Tatar"
- 
+
  YAK_communism: "Yakut Autonomous Soviet Socialist Republic"
  YAK_communism_DEF: "the Yakut Autonomous Soviet Socialist Republic"
  YAK_communism_ADJ: "Yakut"
  YAK: "Sakha Republic (Yakutia)"
  YAK_DEF: "the Sakha Republic (Yakutia)"
  YAK_ADJ: "Yakut"
- 
+
  KAR: "Republic of Karelia"
  KAR_DEF: "the Republic of Karelia"
  KAR_ADJ: "Karelian"
@@ -1191,7 +1195,7 @@
  CHE: "Chechen Republic of Ichkeria"
  CHE_DEF: "the Chechen Republic of Ichkeria"
  CHE_ADJ: "Chechen"
- 
+
  ABK_communism: "Abkhaz Autonomous Soviet Socialist Republic"
  ABK_communism_DEF: "the Abkhaz Autonomous Soviet Socialist Republic"
  ABK_communism_ADJ: "Abkhaz"
@@ -1240,77 +1244,77 @@
  GDU: "Democratic Union of the Great Lakes"
  GDU_DEF: "Democratic Union of the Great Lakes"
  GDU_ADJ: "Great Lakes"
- GDU_conservatism: "Great Lakes Federation" 
- GDU_conservatism_DEF: "Great Lakes Federation" 
- GDU_conservatism_ADJ: "Veliko-Ozersk" 
- GDU_liberalism: "Great Lakes Federation" 
- GDU_liberalism_DEF: "Great Lakes Federation" 
- GDU_liberalism_ADJ: "Veliko Ozersk" 
- GDU_neutrality: "Great Lakes State" 
- GDU_neutrality: "Great Lakes State" 
- GDU_neutrality_ADJ: "Veliko Ozersk" 
- GDU_fascism: "Great Lakes Nation State" 
- GDU_fascism: "Great Lakes Nation State" 
- GDU_fascism_ADJ: "Veliko Ozersk" 
+ GDU_conservatism: "Great Lakes Federation"
+ GDU_conservatism_DEF: "Great Lakes Federation"
+ GDU_conservatism_ADJ: "Veliko-Ozersk"
+ GDU_liberalism: "Great Lakes Federation"
+ GDU_liberalism_DEF: "Great Lakes Federation"
+ GDU_liberalism_ADJ: "Veliko Ozersk"
+ GDU_neutrality: "Great Lakes State"
+ GDU_neutrality: "Great Lakes State"
+ GDU_neutrality_ADJ: "Veliko Ozersk"
+ GDU_fascism: "Great Lakes Nation State"
+ GDU_fascism: "Great Lakes Nation State"
+ GDU_fascism_ADJ: "Veliko Ozersk"
 
- ALA: "State of Alaska" 
- ALA_DEF: "State of Alaska" 
- ALA_ADJ: "Alassk" 
+ ALA: "State of Alaska"
+ ALA_DEF: "State of Alaska"
+ ALA_ADJ: "Alassk"
 
- ARK: "Arkansas State" 
- ARK_DEF: "Arkansas State" 
- ARK_ADJ: "Arkansas" 
+ ARK: "Arkansas State"
+ ARK_DEF: "Arkansas State"
+ ARK_ADJ: "Arkansas"
 
- CAL: "State of California" 
- CAL_DEF: "State of California" 
- CAL_ADJ: "Californiysk" 
+ CAL: "State of California"
+ CAL_DEF: "State of California"
+ CAL_ADJ: "Californiysk"
 
- CAS: "Republic of Cascadia" 
- CAS_DEF: "Republic of Cascadia" 
- CAS_ADJ: "Kaskadysk" 
+ CAS: "Republic of Cascadia"
+ CAS_DEF: "Republic of Cascadia"
+ CAS_ADJ: "Kaskadysk"
 
- CSA: "Confederate States of America" 
- CSA_DEF: "Confederate States of America" 
- CSA_ADJ: "American" 
+ CSA: "Confederate States of America"
+ CSA_DEF: "Confederate States of America"
+ CSA_ADJ: "American"
 
- CFN: "Arizona-New Mexico Federation" 
- CFN_DEF: "Arizona and New Mexico Federation" 
- CFN_ADJ: "Arizona-Mexican" 
+ CFN: "Arizona-New Mexico Federation"
+ CFN_DEF: "Arizona and New Mexico Federation"
+ CFN_ADJ: "Arizona-Mexican"
 
- FLO: "Florida State" 
- FLO_DEF: "State of Florida" 
- FLO_ADJ: "Floridsk" 
+ FLO: "Florida State"
+ FLO_DEF: "State of Florida"
+ FLO_ADJ: "Floridsk"
 
- NYK: "New York State" 
- NYK_DEF: "New York State" 
- NYK_ADJ: "New York" 
+ NYK: "New York State"
+ NYK_DEF: "New York State"
+ NYK_ADJ: "New York"
 
- NEE: "New England Republic" 
- NEE_DEF: "New England Republic" 
- NEE_ADJ: "Novo-English" 
+ NEE: "New England Republic"
+ NEE_DEF: "New England Republic"
+ NEE_ADJ: "Novo-English"
 
- UTA: "Utah Republic" 
- UTA_DEF: "Republic of Utah" 
- UTA_ADJ: "Yutsk" 
+ UTA: "Utah Republic"
+ UTA_DEF: "Republic of Utah"
+ UTA_ADJ: "Yutsk"
 
- LOA: "Louisiana" 
- LOA_DEF: "Louisiana" 
- LOA_ADJ: "Louisiana" 
+ LOA: "Louisiana"
+ LOA_DEF: "Louisiana"
+ LOA_ADJ: "Louisiana"
 
- HAW: "State of Hawaii" 
- HAW_DEF: "State of Hawaii" 
- HAW_ADJ: "Hawaiian" 
+ HAW: "State of Hawaii"
+ HAW_DEF: "State of Hawaii"
+ HAW_ADJ: "Hawaiian"
 
- PUE: "Freely Associated State of Puerto Rico" 
- PUE_DEF: "Freely Associated State of Puerto Rico" 
- PUE_ADJ: "Puerto Rican" 
+ PUE: "Freely Associated State of Puerto Rico"
+ PUE_DEF: "Freely Associated State of Puerto Rico"
+ PUE_ADJ: "Puerto Rican"
 
- TEX: "State of Texas" 
- TEX_DEF: "State of Texas" 
- TEX_ADJ: "Texas" 
+ TEX: "State of Texas"
+ TEX_DEF: "State of Texas"
+ TEX_ADJ: "Texas"
 
- ALA: "State of Alaska" 
- ALA_DEF: "State of Alaska" 
+ ALA: "State of Alaska"
+ ALA_DEF: "State of Alaska"
  ALA_ADJ: "Alassk"
 
  SSD: "Somali Salvation Democratic Front"
