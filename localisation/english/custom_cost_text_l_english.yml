@@ -8,4 +8,12 @@
  decision_cost_MB_35: "£money_balance_texticons  §Y35B§!"
  decision_cost_MB_35_blocked: "£money_balance_texticons  §R35B§!"
  decision_cost_MB_35_tooltip: "Decision cost: £money_balance_texticons  §Y35B§!"
-  
+ decision_cost_MB_1: "£money_balance_texticons  §Y1B§!"
+ decision_cost_MB_1_blocked: "£money_balance_texticons  §R1B§!"
+ decision_cost_MB_1_tooltip: "Decision cost: £money_balance_texticons  §Y1B§!"
+ decision_cost_MB_10: "£money_balance_texticons  §Y10B§!"
+ decision_cost_MB_10_blocked: "£money_balance_texticons  §R10B§!"
+ decision_cost_MB_10_tooltip: "Decision cost: £money_balance_texticons  §Y10B§!"
+ decision_cost_MB_100: "£money_balance_texticons  §Y100B§!"
+ decision_cost_MB_100_blocked: "£money_balance_texticons  §R100B§!"
+ decision_cost_MB_100_tooltip: "Decision cost: £money_balance_texticons  §Y100B§!"
