@@ -765,7 +765,7 @@ country_event = {
 }
 
 country_event = {
-	id = usa.26 ### Сенат США разрешает телевизионную трансляцию своих дебатов ###
+	id = usa.26 ### Состояние ВС ###
 	title = usa.26.t
 	desc = usa.26.d
 	picture = GFX_report_generic_negotiations_between_two_parties
@@ -778,11 +778,17 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		add_popularity = {
-			ideology = conservatism
-			popularity = -0.03
+		navy_experience = 15
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 1500
+			producer = ROOT
 		}
-		add_manpower = -15
+		add_equipment_to_stockpile = {
+			type = anti_tank_grenade_launcher_equipment_0
+			amount = 1000
+			producer = ROOT
+		}
 	}
 }
 

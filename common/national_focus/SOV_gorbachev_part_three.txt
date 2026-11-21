@@ -360,6 +360,9 @@
 					modifier = refused_market_trade
 				}
 			}
+			hidden_effect = {
+				country_event = { id = soviet_union.23 days = 8 }
+			}
         }
     }
 

@@ -8,7 +8,6 @@ on_actions = {
                 country_event = { id = soviet_union.18 days = 965 }
                 country_event = { id = soviet_union.19 days = 1111 }
                 country_event = { id = soviet_union.22 days = 1865 }
-                country_event = { id = soviet_union.23 days = 1889 }
                 country_event = { id = soviet_union.35 days = 2052 }
                 country_event = { id = soviet_union.8 days = 480 }
                 news_event = { id = news.4 days = 481 }
@@ -35,7 +34,6 @@ on_actions = {
 				country_event = { id = usa.23 days = 159 }
 				country_event = { id = usa.24 days = 290 }
 				country_event = { id = usa.25 days = 517 }
-				country_event = { id = usa.26 days = 570 }
 				country_event = { id = usa.27 days = 734 }
 				country_event = { id = usa.28 days = 866 }
 			}

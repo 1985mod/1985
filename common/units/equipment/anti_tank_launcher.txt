@@ -50,9 +50,6 @@ equipments = {
 		visual_level = 0
 	}
 
-
-
-	# Regular Anti tank  1980
 	anti_tank_grenade_launcher_equipment_1 = {
 		year = 1980
 	
@@ -74,7 +71,6 @@ equipments = {
 		build_cost_ic = 0.74
 	}
 
-	# Improved Anti tank  ~1987
 	anti_tank_grenade_launcher_equipment_2 = {
 		year = 1987
 	
@@ -100,7 +96,6 @@ equipments = {
 		
 	}
 	
-	# Advanced Anti tank  ~1990
 	anti_tank_grenade_launcher_equipment_3 = {
 		year = 1990
 	
@@ -119,8 +114,33 @@ equipments = {
 		ap_attack = 65
 		air_attack = 0
 		
-		reliability = 0.8
+		reliability = 0.85
 		build_cost_ic = 1.06
+		resources = {
+			steel = 4
+		}
+	}
+	
+	anti_tank_grenade_launcher_equipment_4 = {
+		year = 1990
+	
+		archetype = anti_tank_grenade_launcher_equipment
+		parent = anti_tank_grenade_launcher_equipment_3
+		priority = 10
+		visual_level = 3
+		
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 7
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 5
+		ap_attack = 65
+		air_attack = 0
+		
+		reliability = 0.9
+		build_cost_ic = 1.2
 		resources = {
 			steel = 4
 		}

@@ -201,7 +201,7 @@ USA_cold_war = {
 	    visible = {
 			IRQ = { has_war_with = PER }
 			original_tag = USA
-			NOT = { set_country_flag = iran_contras }
+			NOT = { has_country_flag = iran_contras }
 	    }
 
 		ai_will_do = {
