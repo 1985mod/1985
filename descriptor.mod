@@ -6,6 +6,7 @@ tags={
 	"Technologies"
 	"Military"
 }
+replace_path="common/ai_equipment"
 replace_path="common/ai_navy/goals"
 replace_path="common/ai_strategy"
 replace_path="common/ai_templates"
